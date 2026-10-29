@@ -1,0 +1,530 @@
+{
+  ".gitattributes": {
+    "bytes": 86,
+    "sha256": "b2dcf0cf4017d588dc863d3efea026ca26be43b647ef0e049cdac22f869a246e"
+  },
+  "ai/file-catalogue.json": {
+    "bytes": 81245,
+    "sha256": "53863e65398effe9267384bfc5302b530be7bcc83076aa0903f864901a280d46"
+  },
+  "ai/ocr-manifest.json": {
+    "bytes": 2446,
+    "sha256": "8337068d5a0b1275d1ce49816a5851061d6dca75a3c72f7e4d96fd586a101225"
+  },
+  "ai/standards-ocr/ISO-6336-1-2019.json": {
+    "bytes": 297514,
+    "sha256": "3abd723dee09e2460357d222e4e9be83145b9c030ac4033c4aae3d3f61fd8746"
+  },
+  "ai/standards-ocr/ISO-6336-1-2019.md": {
+    "bytes": 290822,
+    "sha256": "cad74c77af0ac49d801e9b88db3ddd5842926e0f9c9a4dbbe0e36fc381a66650"
+  },
+  "ai/standards-ocr/ISO-6336-2-2019.json": {
+    "bytes": 85453,
+    "sha256": "ce471e42ab269fc163f098e6a5bd5287aa7c8f35c349f29e62f45c8e12779079"
+  },
+  "ai/standards-ocr/ISO-6336-2-2019.md": {
+    "bytes": 83577,
+    "sha256": "91c8beb0489a063383d03d12365838420803d3b4061b073b16c6c004460d62e5"
+  },
+  "ai/standards-ocr/ISO-6336-3-2019-corrected-2020-11.json": {
+    "bytes": 110182,
+    "sha256": "e5c05fe2f55f4f5c578b83df5246be51f724d2906c1411bc2e5b3ed982fc45b4"
+  },
+  "ai/standards-ocr/ISO-6336-3-2019-corrected-2020-11.md": {
+    "bytes": 107454,
+    "sha256": "a4cf415d79208b95982582139e9fbe21d6da921a0b433c14a8e055f2a5162da0"
+  },
+  "ai/standards-ocr/ISO-6336-5-2016.json": {
+    "bytes": 99888,
+    "sha256": "4aba5e4f088c4e14a6665fcbab70ac02b9819ff73672cf02991c9601b0f9c497"
+  },
+  "ai/standards-ocr/ISO-6336-5-2016.md": {
+    "bytes": 97652,
+    "sha256": "0b00aec8bdbc1fe2d270922e26e4a0c90c7b9e586d7821855103fc48dfdba7ce"
+  },
+  "ai/standards-ocr/ISO-6336-6-2019.json": {
+    "bytes": 82800,
+    "sha256": "64302d8b5bb8d6bf0043c72edd5be410b91d8f59acb233484d67a7e12bb6a8f6"
+  },
+  "ai/standards-ocr/ISO-6336-6-2019.md": {
+    "bytes": 81034,
+    "sha256": "c5564d42d52e474e5af439a55d5e72299f49e0bb3c435627e074fca103361a95"
+  },
+  "ai/standards-ocr/ISO-TR-6336-30-2022.json": {
+    "bytes": 120495,
+    "sha256": "e0fa15cc30cf26341dd47d0e69a93660f04b58aee634801918e165355d11b327"
+  },
+  "ai/standards-ocr/ISO-TR-6336-30-2022.md": {
+    "bytes": 117490,
+    "sha256": "790e383643eb031560c7b8dba6ea9bdb9cee6bf9b5e21db1d9488b3ea90ddf8d"
+  },
+  "AI_START_HERE.md": {
+    "bytes": 4018,
+    "sha256": "1e2210f0b8eb6b5aa179f1934b9c2bfd69d14b2528699c0773d7ce24c3291fce"
+  },
+  "evidence/index.html": {
+    "bytes": 5632,
+    "sha256": "65e264baf31dfcfe9ea50190b6a4dbe4a0adde148f870c6547bbdff0f18084ad"
+  },
+  "evidence/README.zh-CN.md": {
+    "bytes": 6038,
+    "sha256": "de7ab3a37a33249d29d6bdfccb70a619e0afb8ac618c35e0595e6db78094eeb2"
+  },
+  "evidence/reports/K01-spur/K01-spur.extracted.txt": {
+    "bytes": 36724,
+    "sha256": "9000e4bdffe0674ed1d9c8773b7d6ed982a025c8dd14137aab44fa98ac3f0233"
+  },
+  "evidence/reports/K01-spur/K01-spur.html": {
+    "bytes": 767764,
+    "sha256": "2701d1bfc05ad13268120eb098d717b1c6555fb4473df8417c015fcfa9028a30"
+  },
+  "evidence/reports/K01-spur/K01-spur.json": {
+    "bytes": 6500,
+    "sha256": "6477934b51cf0c425d3e7b9f18e8affb5f82db6e953d5cae400aeff48e52d353"
+  },
+  "evidence/reports/K01-spur/K01-spur.pdf": {
+    "bytes": 181022,
+    "sha256": "3dcf71b3d1a138f599c8673263bb5254b246fddf6d4e7a1eba41941ce1150b56"
+  },
+  "evidence/reports/K01-spur/K01-spur.rtf": {
+    "bytes": 109095,
+    "sha256": "7520d1444ff6e384fb206772793f53f558f7f1efc0ff7a2ae738cf538786e7ae"
+  },
+  "evidence/reports/K01-spur/K01-spur.Z12": {
+    "bytes": 371660,
+    "sha256": "822c50af875e6c654a626587e3f8e42b0f6d74d21d537b3980163f8b3c24d531"
+  },
+  "evidence/reports/K01-spur/source-example.Z12": {
+    "bytes": 315824,
+    "sha256": "b4f8de168f0dd334ea2cf04ba54523edcde38cbd1f09bb78903d689c36c4ca82"
+  },
+  "evidence/reports/K02-helical/K02-helical.extracted.txt": {
+    "bytes": 35845,
+    "sha256": "d56787d808c3a185f85d7d6db1c166080c422751d080752120b47ab64455f2bd"
+  },
+  "evidence/reports/K02-helical/K02-helical.html": {
+    "bytes": 754192,
+    "sha256": "99192151b8997112f3d40121861ea578997b21b2b93b0d60e7463c46336cf874"
+  },
+  "evidence/reports/K02-helical/K02-helical.json": {
+    "bytes": 6882,
+    "sha256": "e0df5715eecc955b3e01f359fb8780252e6c7fdd62c0df83f4eb76382290a189"
+  },
+  "evidence/reports/K02-helical/K02-helical.pdf": {
+    "bytes": 180253,
+    "sha256": "1abb2ebf80ec52d6edae6ffdd1e169510222bd4c77a65ffc9b7feea399af37de"
+  },
+  "evidence/reports/K02-helical/K02-helical.rtf": {
+    "bytes": 109953,
+    "sha256": "c56af4c1a71ef87429bc66c8dedac5173eee9d5b8f2a29f2787ebfa3a3b94265"
+  },
+  "evidence/reports/K02-helical/K02-helical.Z12": {
+    "bytes": 374530,
+    "sha256": "be4c252ff9a0a6b3d1da8e1a5b3895c603744caaa4ae575b11e34dbf75f095dc"
+  },
+  "evidence/reports/K02-helical/source-example.Z12": {
+    "bytes": 318546,
+    "sha256": "3e6d8d19bf10945f0017cdaba4ad5d3675240ed56a4e61c1fc806f3db5874d3a"
+  },
+  "evidence/reports/K03-premachining/K03-premachining.extracted.txt": {
+    "bytes": 35178,
+    "sha256": "57074db946477d5f22059479a9c38c74ddc53b19bbf07057727caa9fcf786b6c"
+  },
+  "evidence/reports/K03-premachining/K03-premachining.html": {
+    "bytes": 742776,
+    "sha256": "446f8061e324cf69b36ee848a29d3645fd64d54cd44d25275f0c1ba50bd25174"
+  },
+  "evidence/reports/K03-premachining/K03-premachining.json": {
+    "bytes": 6536,
+    "sha256": "bb6d79162ea4d08032e6180f84c5ed8e5d31f18b14643c4f6a33392c45d54dd8"
+  },
+  "evidence/reports/K03-premachining/K03-premachining.pdf": {
+    "bytes": 177133,
+    "sha256": "05f73b5150204cc6ed9b0de15b14e75a456460e07d078986788682ad49ea396b"
+  },
+  "evidence/reports/K03-premachining/K03-premachining.rtf": {
+    "bytes": 107860,
+    "sha256": "09195df72098e2188b61886402520133863b9b77358147a2ed0e8d3b1883d7de"
+  },
+  "evidence/reports/K03-premachining/K03-premachining.Z12": {
+    "bytes": 372694,
+    "sha256": "8a55df35e782be06fdea9d9df28d5fefdc8e1fb20832c19fd60f276ab102f833"
+  },
+  "evidence/reports/K03-premachining/source-example.Z12": {
+    "bytes": 316852,
+    "sha256": "ea61a6112047fc13558d74b63240a9e36b17b7508ca1a52c24556b93536401a4"
+  },
+  "evidence/reports/K04-EV-stage1/K04-EV-stage1.extracted.txt": {
+    "bytes": 33080,
+    "sha256": "e4ad181680b6b18687cdc88b3184cf485c62ac45cb21839c5e50289d9b58d1d8"
+  },
+  "evidence/reports/K04-EV-stage1/K04-EV-stage1.html": {
+    "bytes": 701200,
+    "sha256": "89d65dc97ea0e8582adf788c268b3cf1689f52afec77fa560600fca9999863fd"
+  },
+  "evidence/reports/K04-EV-stage1/K04-EV-stage1.json": {
+    "bytes": 6746,
+    "sha256": "bf91596f21f2596fa65c0dd8f799914f640031414a2baecc439f8baafc237171"
+  },
+  "evidence/reports/K04-EV-stage1/K04-EV-stage1.pdf": {
+    "bytes": 169533,
+    "sha256": "e8f5e3d02e32ec9635eb9a1951b689f39cb2327506da12ab2ce73abdc1af5c89"
+  },
+  "evidence/reports/K04-EV-stage1/K04-EV-stage1.rtf": {
+    "bytes": 100929,
+    "sha256": "2b4f66744b7a529282fd96eb101a11bf2c51e390b29596bcd4e4fd2f8fc4cc07"
+  },
+  "evidence/reports/K04-EV-stage1/K04-EV-stage1.Z12": {
+    "bytes": 408316,
+    "sha256": "0728f6abb246131eda023d06a1ef89d2b6afbed466dc0f078c47345f585f4d69"
+  },
+  "evidence/reports/K04-EV-stage1/source-example.Z12": {
+    "bytes": 352470,
+    "sha256": "5523e619049addbed056a2391eec18bbb7cfeaea82715d3cecae8b2a5d6b5f3b"
+  },
+  "evidence/reports/K05-EV-stage2/K05-EV-stage2.extracted.txt": {
+    "bytes": 33425,
+    "sha256": "2253468956338f8c89f85e4f704d63a26a98746757797b02214d5d193bafec8d"
+  },
+  "evidence/reports/K05-EV-stage2/K05-EV-stage2.html": {
+    "bytes": 702732,
+    "sha256": "2af59baa3e05534c115f76d0a7fefb8a556bd6eea52960979ae5ba72c67ce91f"
+  },
+  "evidence/reports/K05-EV-stage2/K05-EV-stage2.json": {
+    "bytes": 6656,
+    "sha256": "11b99460f2c49ef412e174241a99e5bed1bcbe6ccf81f8ef7b07a860f4ad850d"
+  },
+  "evidence/reports/K05-EV-stage2/K05-EV-stage2.pdf": {
+    "bytes": 172016,
+    "sha256": "4cdc72fbe63c5339f0e77f2adc424a3fb5d6bfbc8331830adc20928c5adce2aa"
+  },
+  "evidence/reports/K05-EV-stage2/K05-EV-stage2.rtf": {
+    "bytes": 104245,
+    "sha256": "edcc87c47f05b29bc582ed30880d6e4ca196c95e6cb17bfabb461ef6f312ef44"
+  },
+  "evidence/reports/K05-EV-stage2/K05-EV-stage2.Z12": {
+    "bytes": 392508,
+    "sha256": "23c7199369be53dedd435e8eb65020ac68da7b91d34aa9b53d1159606da1c7f1"
+  },
+  "evidence/reports/K05-EV-stage2/source-example.Z12": {
+    "bytes": 336108,
+    "sha256": "fc19a151815fc7b827500b30a28fcd19678cf21fd8662d088d7505ac084d1cd2"
+  },
+  "evidence/reports/report-summary.csv": {
+    "bytes": 1437,
+    "sha256": "a5f4ca202d29e490260fbc4d4a00f161a851226c5ee19ea415d463a977858ce5"
+  },
+  "evidence/scripts/build_index.py": {
+    "bytes": 12639,
+    "sha256": "ed0c93a17ae78e19b1ccf016a42a3c79a6bf70f2686974c7fae57e8f0e35145e"
+  },
+  "evidence/scripts/check_standard_pages.py": {
+    "bytes": 2504,
+    "sha256": "cd18e1a16f42f4ea945e04142ea8fc3c9c74d6b20bf4b728842b971e1b96d3fe"
+  },
+  "evidence/scripts/generate_kisssoft_reports.py": {
+    "bytes": 9031,
+    "sha256": "ce2d28222e1b340d1ab15f67b60fe0985d6709ea1a2dabce3e05ee638ad4acf7"
+  },
+  "evidence/scripts/validate_evidence.py": {
+    "bytes": 3483,
+    "sha256": "10a93429147e20a21ad36d53eef4daa610ff05b09e70ab560b8a26c53d80c50e"
+  },
+  "evidence/SHA256SUMS.json": {
+    "bytes": 10703,
+    "sha256": "df1d236848e3044c910352a7a7a86fa716dd31706f3b5f2fdcd463dfeacdcd6c"
+  },
+  "evidence/standards/core/ISO 6336-1-2019.pdf": {
+    "bytes": 22243451,
+    "sha256": "ca377d983183d122a2ccaf4b9e9265ffb24ead0ef020e9819325e7a6a166e694"
+  },
+  "evidence/standards/core/ISO 6336-2-2019.pdf": {
+    "bytes": 6620471,
+    "sha256": "5e7a4b83c2d91292f6ddce324ea2fee16699b1c385d80b76606fec6b459de5b0"
+  },
+  "evidence/standards/core/ISO 6336-3-2019.pdf": {
+    "bytes": 8042305,
+    "sha256": "f00fea96b736a1d0d34e71496afc3338982d4bc8613571a6c882aae2fe89cf04"
+  },
+  "evidence/standards/core/ISO 6336-5-2016.pdf": {
+    "bytes": 7365168,
+    "sha256": "9a9cefda6687b5c5378a3a4ccccc6384fec3a9d61917d11496a7bde05ce072b5"
+  },
+  "evidence/standards/core/ISO 6336-6-2019.pdf": {
+    "bytes": 6229017,
+    "sha256": "8c2632eacbd050fec583925bcf4ce9e9e4b8e86d5ed162d37da674dab3dec0c7"
+  },
+  "evidence/standards/core/ISO TR 6336-30-2022.pdf": {
+    "bytes": 10207792,
+    "sha256": "1a88df52e23b26b367accacf788fca518503346e6c286619e91ad75052a8a55e"
+  },
+  "evidence/standards/core/ISO-TR-6336-30-2022-supplemented-reading-copy.pdf": {
+    "bytes": 10460902,
+    "sha256": "12834eabe980fd66da9a6e41881339ba0ddda0ff8222af6eec3bfc3401e7b2db"
+  },
+  "evidence/standards/GB-reference/GBT 3480.1-2019 直齿轮和斜齿轮承载能力计算  第1部分：基本原理、概述及通用影响系数.pdf": {
+    "bytes": 2219799,
+    "sha256": "e970041a83c65278d5315bb992f1086f6d92b7eed1bff8d0708040fd0390bd68"
+  },
+  "evidence/standards/GB-reference/GBT 3480.2-2021 直齿轮和斜齿轮承载能力计算  第2部分：齿面接触强度（点蚀）计算.pdf": {
+    "bytes": 955365,
+    "sha256": "4bfba12997b47edadd9ab2674b6f18afb7f9ecb1ef7c9de556098ec7093a4092"
+  },
+  "evidence/standards/GB-reference/GBT 3480.3-2021 直齿轮和斜齿轮承载能力计算  第3部分：轮齿弯曲强度计算.pdf": {
+    "bytes": 1223964,
+    "sha256": "531d5304d473cc4faa0598c6caf82dc02f5fb4c1084e6a082ed653a53b91b5a3"
+  },
+  "evidence/standards/GB-reference/GBT 3480.5-2021 直齿轮和斜齿轮承载能力计算 第5部分：材料的强度和质量.pdf": {
+    "bytes": 5348935,
+    "sha256": "ef1c024e350dbf9dd1049983fa417f613508b9301dba97c73c7b654279b03790"
+  },
+  "evidence/standards/GB-reference/GBT 3480.6-2018 直齿轮和斜齿轮承载能力计算 第6部分：变载荷条件下的使用寿命计算.pdf": {
+    "bytes": 2189568,
+    "sha256": "822650abceca20658a807d3b28db88479f65d65928ebb3ce3887a2bb83558cf6"
+  },
+  "evidence/standards/GB-reference/GBZ 3480.4-2024.pdf": {
+    "bytes": 7019206,
+    "sha256": "93930bddae06329092e19c48266c92730e5c4c410cac59797bbd9448d69c6f69"
+  },
+  "evidence/standards/historical/ISO 6336-1-2006.pdf": {
+    "bytes": 26998491,
+    "sha256": "be922d8f7da3b310c51453179eeb25ea680e1ce0f3663d311191b4c9e56791df"
+  },
+  "evidence/standards/historical/ISO 6336-2-2006.pdf": {
+    "bytes": 8473746,
+    "sha256": "1fa7de0e4a1e72f37663ae120cfe6ba6c1c02a429e0541b947eb1bf564b92326"
+  },
+  "evidence/standards/historical/ISO 6336-3-2006.pdf": {
+    "bytes": 10283275,
+    "sha256": "2b22cefcd3a5ce533c9949611766eae7dfa7ec15810e4bbeb99d06f47992f658"
+  },
+  "evidence/standards/historical/ISO 6336-6-2006.pdf": {
+    "bytes": 6241089,
+    "sha256": "0e46c907f36e360db18f536fe988d247cc4151d9afcf74b3df152a5ad5684e3d"
+  },
+  "evidence/standards/ISO-supplementary/ISO TS 6336-20-2022.pdf": {
+    "bytes": 5865373,
+    "sha256": "f2b70cb1b15f46e0b9d739317718ea23d8cba14e75aca1bde4dbc460e51978c1"
+  },
+  "evidence/standards/ISO-supplementary/ISO TS 6336-21-2022.pdf": {
+    "bytes": 5596528,
+    "sha256": "3a5b2761fab3f70b64fe7903e011d5f093c071bd3cacb23e656abfd2026f8888"
+  },
+  "evidence/standards/ISO-supplementary/ISO TS 6336-4-2019.pdf": {
+    "bytes": 4790269,
+    "sha256": "896aa81440b6b5b96b2e4a9bfad761ce51421b8b58fe54055dbdb225b7ab28c6"
+  },
+  "evidence/standards/ISO-supplementary/ISO_TR 6336-31-2018.pdf": {
+    "bytes": 6278113,
+    "sha256": "c7c8a245a61e60883ae3e5ccc426686e4a318af9c6ba56e3ef9bc57266327edf"
+  },
+  "evidence/standards/ISO-supplementary/ISO_TS 6336-22-2018.pdf": {
+    "bytes": 6197554,
+    "sha256": "8646d115b82c1d6547be077e66d2698284517dc4548cf3abc3f46e55d8da1941"
+  },
+  "evidence/standards/previews/ISO-TR-6336-30-2022-PREVIEW.pdf": {
+    "bytes": 1098094,
+    "sha256": "3bfd40aee62609b1a278494a32c34aceeb7ec1abece98637f64cdaeba7575493"
+  },
+  "evidence/verification/COM-report-reference.txt": {
+    "bytes": 5868,
+    "sha256": "481cff86a05b71ed7fb2bfbd7ad2041f5d59d311185e8757e69e487bab975396"
+  },
+  "evidence/verification/final-validation.json": {
+    "bytes": 3952,
+    "sha256": "a704cf2c33d95ddc45f46c3ce3ff400e3251847e47748a388dfc9cf3cc0fb5d6"
+  },
+  "evidence/verification/K01-spur-all-pages.png": {
+    "bytes": 949740,
+    "sha256": "f6323734241f2a5d2e871ec98ed0acebf7614b0505f66460d1fa9fdf6dcd2379"
+  },
+  "evidence/verification/K01-spur-root-stress.png": {
+    "bytes": 115667,
+    "sha256": "a0b64c747cb40f9078a9ce59526ec0314ebcc267cf776bbf57ff48b586496832"
+  },
+  "evidence/verification/K02-helical-all-pages.png": {
+    "bytes": 919980,
+    "sha256": "7365d394f875abee9fa98386a1147a735882da97ac6e67c630c4bb01e1ebdd4e"
+  },
+  "evidence/verification/K02-helical-root-stress.png": {
+    "bytes": 114543,
+    "sha256": "4f7778699c11f6cc5feff31d788639976274a228550ac96faebd8e541bb41b04"
+  },
+  "evidence/verification/K03-premachining-all-pages.png": {
+    "bytes": 909121,
+    "sha256": "4a4ae83003847ffb3e62dcdfd7a920dbc211a085fd714a4b68aa992d2e05cd31"
+  },
+  "evidence/verification/K03-premachining-root-stress.png": {
+    "bytes": 100637,
+    "sha256": "c4dafedfedb099a54644c25dec8554c80fa6875ad83944c144e8721c5d14446c"
+  },
+  "evidence/verification/K04-EV-stage1-all-pages.png": {
+    "bytes": 853811,
+    "sha256": "5608d54a2214e3383cc438b030971cb99de67fec4df65bcb0b6d81f9e5548cc8"
+  },
+  "evidence/verification/K04-EV-stage1-root-stress.png": {
+    "bytes": 114545,
+    "sha256": "651dfe8bddd66b89d110f832734bd26f6d3669c54cac61abb731bc16374a2f44"
+  },
+  "evidence/verification/K05-EV-stage2-all-pages.png": {
+    "bytes": 875204,
+    "sha256": "1f55502aa31fc19ec556c9290dc51d69094b426166a48752b8d8c4ab1ed28d87"
+  },
+  "evidence/verification/K05-EV-stage2-root-stress.png": {
+    "bytes": 115919,
+    "sha256": "e4df93a4f2cedcfea2e63e826f3f1c89bc56e557d86b1f5deb8076cc8ef4296e"
+  },
+  "evidence/verification/KISSsoft-COM-documentation.txt": {
+    "bytes": 18752,
+    "sha256": "f6a6711405d2ce64a4802e9939fc18dcaf9caafbcc649230558048363ac55ad5"
+  },
+  "evidence/verification/kisssoft-run-summary.json": {
+    "bytes": 37867,
+    "sha256": "40e5c12be8b6209193b5518cbded6e55869c87c95339c09bae58bc4250335b18"
+  },
+  "evidence/verification/local-standards-inventory.json": {
+    "bytes": 8739,
+    "sha256": "aaea1fb39383d6990ea2e017fc9ace65a67fb61dc4b91a21612aecaefbf35970"
+  },
+  "evidence/verification/page-repair-provenance.json": {
+    "bytes": 871,
+    "sha256": "d5c816897edd3f7ce0e5c6c7f2e15157646ac325fac9991258a2f9b09f782d3b"
+  },
+  "evidence/verification/part5-even-page-numbers.json": {
+    "bytes": 1882,
+    "sha256": "e4a7dd57a0e1e8baa728d0ea82b901f09c2ffaaa7ed89259ba72e6938807d97f"
+  },
+  "evidence/verification/part5-even-page-numbers.png": {
+    "bytes": 32348,
+    "sha256": "5252cf918324dafda84849cfebc03b9a7ab6eb5dcc3a47af2fb813d94e2552fa"
+  },
+  "evidence/verification/part5-footer.png": {
+    "bytes": 18252,
+    "sha256": "fca7e34b100488f1dfebf3e2da39e171d1f0c8d81483ac238306ac6f8a466933"
+  },
+  "evidence/verification/part6-last-content-page.png": {
+    "bytes": 316335,
+    "sha256": "7bea40de211dd3fa454886fa292e1c0f0a0fab2ce355d7152b870a45447a281c"
+  },
+  "evidence/verification/standard-discontinuities.png": {
+    "bytes": 1273470,
+    "sha256": "6f92ee6ca9bfcc10180de719ab56d0ce18e2336dc49e28c6b588f3a6f2693a5c"
+  },
+  "evidence/verification/standard-page-sequences.json": {
+    "bytes": 102506,
+    "sha256": "121256ebf310df293b838ed29140560c8fab05506532cbd0421f6a626176817d"
+  },
+  "evidence/verification/standards-covers.png": {
+    "bytes": 411347,
+    "sha256": "dca24ea1779051346544ce6e79b405b90933b5a78c2cf286ed88ca05916da486"
+  },
+  "evidence/verification/standards-end-pages.png": {
+    "bytes": 94189,
+    "sha256": "8970af54e36382e406714aac3a5dff16286044c5ce8f275d1e8e676d5b9207c6"
+  },
+  "evidence/verification/standards-validation.json": {
+    "bytes": 2197,
+    "sha256": "f657e76f071465729aa2bf33eac345bfcf085926175b36dfb86182077766792f"
+  },
+  "evidence/verification/TR30-inserted-page2.png": {
+    "bytes": 126080,
+    "sha256": "b641e062b7fc3dab96cb91a399cc220931fd29a308cadebe45e94c8687b661ac"
+  },
+  "GITHUB_UPLOAD_GUIDE.zh-CN.md": {
+    "bytes": 5190,
+    "sha256": "f645e3dc756c213c70cf28a285a1024ef7ce84454a121839b3c693df81d26f82"
+  },
+  "README.md": {
+    "bytes": 2186,
+    "sha256": "60bf1e0784df69ccceaafee69b7f7fc166869b4dc585219286e27cad7e6586c3"
+  },
+  "standards-source/GBT 3480/GBT 3480.1-2019 直齿轮和斜齿轮承载能力计算  第1部分：基本原理、概述及通用影响系数.pdf": {
+    "bytes": 2219799,
+    "sha256": "e970041a83c65278d5315bb992f1086f6d92b7eed1bff8d0708040fd0390bd68"
+  },
+  "standards-source/GBT 3480/GBT 3480.2-2021 直齿轮和斜齿轮承载能力计算  第2部分：齿面接触强度（点蚀）计算.pdf": {
+    "bytes": 955365,
+    "sha256": "4bfba12997b47edadd9ab2674b6f18afb7f9ecb1ef7c9de556098ec7093a4092"
+  },
+  "standards-source/GBT 3480/GBT 3480.3-2021 直齿轮和斜齿轮承载能力计算  第3部分：轮齿弯曲强度计算.pdf": {
+    "bytes": 1223964,
+    "sha256": "531d5304d473cc4faa0598c6caf82dc02f5fb4c1084e6a082ed653a53b91b5a3"
+  },
+  "standards-source/GBT 3480/GBT 3480.5-2021 直齿轮和斜齿轮承载能力计算 第5部分：材料的强度和质量.pdf": {
+    "bytes": 5348935,
+    "sha256": "ef1c024e350dbf9dd1049983fa417f613508b9301dba97c73c7b654279b03790"
+  },
+  "standards-source/GBT 3480/GBT 3480.6-2018 直齿轮和斜齿轮承载能力计算 第6部分：变载荷条件下的使用寿命计算.pdf": {
+    "bytes": 2189568,
+    "sha256": "822650abceca20658a807d3b28db88479f65d65928ebb3ce3887a2bb83558cf6"
+  },
+  "standards-source/GBT 3480/GBZ 3480.4-2024.pdf": {
+    "bytes": 7019206,
+    "sha256": "93930bddae06329092e19c48266c92730e5c4c410cac59797bbd9448d69c6f69"
+  },
+  "standards-source/ISO 6336-1-2006.pdf": {
+    "bytes": 26998491,
+    "sha256": "be922d8f7da3b310c51453179eeb25ea680e1ce0f3663d311191b4c9e56791df"
+  },
+  "standards-source/ISO 6336-1-2019.pdf": {
+    "bytes": 22243451,
+    "sha256": "ca377d983183d122a2ccaf4b9e9265ffb24ead0ef020e9819325e7a6a166e694"
+  },
+  "standards-source/ISO 6336-2-2006.pdf": {
+    "bytes": 8473746,
+    "sha256": "1fa7de0e4a1e72f37663ae120cfe6ba6c1c02a429e0541b947eb1bf564b92326"
+  },
+  "standards-source/ISO 6336-2-2019.pdf": {
+    "bytes": 6620471,
+    "sha256": "5e7a4b83c2d91292f6ddce324ea2fee16699b1c385d80b76606fec6b459de5b0"
+  },
+  "standards-source/ISO 6336-3-2006.pdf": {
+    "bytes": 10283275,
+    "sha256": "2b22cefcd3a5ce533c9949611766eae7dfa7ec15810e4bbeb99d06f47992f658"
+  },
+  "standards-source/ISO 6336-3-2019.pdf": {
+    "bytes": 8042305,
+    "sha256": "f00fea96b736a1d0d34e71496afc3338982d4bc8613571a6c882aae2fe89cf04"
+  },
+  "standards-source/ISO 6336-5-2016.pdf": {
+    "bytes": 7365168,
+    "sha256": "9a9cefda6687b5c5378a3a4ccccc6384fec3a9d61917d11496a7bde05ce072b5"
+  },
+  "standards-source/ISO 6336-6-2006.pdf": {
+    "bytes": 6241089,
+    "sha256": "0e46c907f36e360db18f536fe988d247cc4151d9afcf74b3df152a5ad5684e3d"
+  },
+  "standards-source/ISO 6336-6-2019.pdf": {
+    "bytes": 6229017,
+    "sha256": "8c2632eacbd050fec583925bcf4ce9e9e4b8e86d5ed162d37da674dab3dec0c7"
+  },
+  "standards-source/ISO TR 6336-30-2022.pdf": {
+    "bytes": 10207792,
+    "sha256": "1a88df52e23b26b367accacf788fca518503346e6c286619e91ad75052a8a55e"
+  },
+  "standards-source/ISO TS 6336-20-2022.pdf": {
+    "bytes": 5865373,
+    "sha256": "f2b70cb1b15f46e0b9d739317718ea23d8cba14e75aca1bde4dbc460e51978c1"
+  },
+  "standards-source/ISO TS 6336-21-2022.pdf": {
+    "bytes": 5596528,
+    "sha256": "3a5b2761fab3f70b64fe7903e011d5f093c071bd3cacb23e656abfd2026f8888"
+  },
+  "standards-source/ISO TS 6336-4-2019.pdf": {
+    "bytes": 4790269,
+    "sha256": "896aa81440b6b5b96b2e4a9bfad761ce51421b8b58fe54055dbdb225b7ab28c6"
+  },
+  "standards-source/ISO_TR 6336-31-2018.pdf": {
+    "bytes": 6278113,
+    "sha256": "c7c8a245a61e60883ae3e5ccc426686e4a318af9c6ba56e3ef9bc57266327edf"
+  },
+  "standards-source/ISO_TS 6336-22-2018.pdf": {
+    "bytes": 6197554,
+    "sha256": "8646d115b82c1d6547be077e66d2698284517dc4548cf3abc3f46e55d8da1941"
+  },
+  "tools/ocr_core_standards.py": {
+    "bytes": 3649,
+    "sha256": "6735872e3f920ed1d37a94362177d9e6db892cf766de1bc4b6f2f4c4b6b5c58c"
+  }
+}

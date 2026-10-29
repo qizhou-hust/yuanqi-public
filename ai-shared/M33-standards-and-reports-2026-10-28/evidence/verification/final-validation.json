@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "source_copy_hash",
+      "file": "GBT 3480.1-2019 直齿轮和斜齿轮承载能力计算  第1部分：基本原理、概述及通用影响系数.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "GBT 3480.2-2021 直齿轮和斜齿轮承载能力计算  第2部分：齿面接触强度（点蚀）计算.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "GBT 3480.3-2021 直齿轮和斜齿轮承载能力计算  第3部分：轮齿弯曲强度计算.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "GBT 3480.5-2021 直齿轮和斜齿轮承载能力计算 第5部分：材料的强度和质量.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "GBT 3480.6-2018 直齿轮和斜齿轮承载能力计算 第6部分：变载荷条件下的使用寿命计算.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "GBZ 3480.4-2024.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO 6336-1-2006.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO 6336-1-2019.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO 6336-2-2006.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO 6336-2-2019.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO 6336-3-2006.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO 6336-3-2019.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO 6336-5-2016.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO 6336-6-2006.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO 6336-6-2019.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO TR 6336-30-2022.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO TS 6336-20-2022.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO TS 6336-21-2022.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO TS 6336-4-2019.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO_TR 6336-31-2018.pdf",
+      "pass": true
+    },
+    {
+      "check": "source_copy_hash",
+      "file": "ISO_TS 6336-22-2018.pdf",
+      "pass": true
+    },
+    {
+      "check": "TR30_page_repair",
+      "pass": true,
+      "original_pages_unchanged": 69,
+      "total_original_pages": 69,
+      "inserted_page_identical": true
+    },
+    {
+      "check": "KISSsoft_report_and_native",
+      "case": "K01-spur",
+      "pages": 14,
+      "pass": true
+    },
+    {
+      "check": "KISSsoft_report_and_native",
+      "case": "K02-helical",
+      "pages": 14,
+      "pass": true
+    },
+    {
+      "check": "KISSsoft_report_and_native",
+      "case": "K03-premachining",
+      "pages": 14,
+      "pass": true
+    },
+    {
+      "check": "KISSsoft_report_and_native",
+      "case": "K04-EV-stage1",
+      "pages": 13,
+      "pass": true
+    },
+    {
+      "check": "KISSsoft_report_and_native",
+      "case": "K05-EV-stage2",
+      "pages": 13,
+      "pass": true
+    },
+    {
+      "check": "six_core_standard_page_sequences",
+      "pass": true
+    },
+    {
+      "check": "manifest_hashes",
+      "files": 90,
+      "pass": true,
+      "mismatches": []
+    }
+  ],
+  "boundary": "Evidence-file readiness only; no claim of gearmath numerical agreement or product approval."
+}

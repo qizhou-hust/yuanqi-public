@@ -1,0 +1,114 @@
+PDF PAGE 150
+I 
+Description of the Public Interface 
+150 
+ 
+▪ 
+CalculateRetVal([out, retval] VARIANT_BOOL* isOk) runs the main calculation for 
+the active module, and returns a value to tell you whether the calculation is OK. 
+▪ 
+SetVar([in] BSTR name, [in] BSTR value) is a function with which you can set 
+variables to a required value. This data is transferred as text. You will find the variable 
+names in the report templates, but there is no guarantee that all these variables will 
+remain the same in the future. 
+▪ 
+GetVar([in] BSTR name, [out, retval] BSTR* value) returns a variable from KISSsoft 
+as text. 
+▪ 
+ShowInterface([in] VARIANT_BOOL wait) displays the graphical user interface. Use 
+the 'wait' parameter to specify whether the function is to wait until the dialog is closed. 
+▪ 
+IsActiveInterface([out, retval] VARIANT_BOOL* isActive) shows whether a KISSsoft 
+dialog is active. 
+▪ 
+IsActive([out, retval] VARIANT_BOOL* isActive) shows whether a module has been 
+loaded. 
+▪ 
+ReleaseModule() releases the loaded module again. You must always release a 
+module again, to reduce the load on the server. 
+▪ 
+LoadFile([in] BSTR file name) loads the specified file. 
+▪ 
+SaveFile([in] BSTR file name) saves the calculation in the specified file. 
+▪ 
+CheckLicense ([in] name BSTR, [out, retval] VARIANT_BOOL* isOk) shows 
+whether the license is valid. 
+▪ 
+GetININame([out, retval] BSTR* name) supplies the name of the loaded INI file. 
+▪ 
+GetVersionFromFile([in] BSTR filename, [out, retval] BSTR* version) supplies the 
+version number (e.g. 2.6) of the KISSsoft module in the calculation file (the version 
+number depends on which module is being used). 
+▪ 
+GetModulFromFile([in] BSTR filename, [out, retval] BSTR* name) supplies the 
+KISSsoft module label (e.g. M040) in the calculation file. You must first fetch a 
+calculation module (GetModule). 
+▪ 
+GetKsoftVersionFromFile([in] BSTR file name, [out, retval] BSTR* kSoftVersion) 
+supplies the KISSsoft version number (e.g. 03-2011), given in the calculation file. 
+▪ 
+GetKsoftVersion([out, retval] BSTR* kSoftVersion) supplies the KISSsoft version 
+(e.g. 03-2011) that is registered and was started via the COM interface. 
+▪ 
+GetDBName([in] BSTR db_name, [in] BSTR table, [in] SHORT flag, [in] LONG ID, 
+[in] LONG order, [out,retval] BSTR *name) Use the 'flag' parameter to specify 
+whether the ID (flag = 0) or the result (flag = 1) is to be used as the input. The output is 
+then either the order and the name of the entry or the ID (in material database 
+BEZ_DIN). No message is displayed if an error occurs. A ‘False’ is returned for the 
+function. 
+▪ 
+GetDBValue([in] BSTR db_name, [in] BSTR table, [in] LONG ID, [in] BSTR 
+fieldname, [out,retval] BSTR *name) supplies the value present in this database field. 
+
+PDF PAGE 151
+I 
+Description of the Public Interface 
+151 
+ 
+No message is displayed if an error occurs. A ‘False’ is returned for the function. Please 
+note that the bearing manufacturers have not approved this function for directly 
+extracting bearing data, which is why this function is disabled. 
+▪ 
+GetKsoftVersionSettings([out, retval] BSTR* kSoftVersionSettings) supplies the 
+KISSsoft version (e.g. 03-2014) of the temporary settings folder in which the personal 
+settings are stored. 
+▪ 
+SetSilentMode([in] VARIANT_BOOL silent) defines whether messages are to be 
+hidden or not, so that calculations can be performed without you having to confirm 
+system prompts. 
+▪ 
+Report([in] LONG show) writes the report. You can specify whether or not this report 
+is to be displayed. The report is created in the Temp directory in the "KISS_?" sub-
+folder. 
+▪ 
+SetDebugFile([in] BSTR path) sets the path and file name of a debug file which can 
+be used for error tracking. 
+▪ 
+ReportWithParameters([in] BSTR infile, [in] BSTR outfile, [in] LONG show, [in] 
+LONG type) creates the report using the specified report template (‘infile’) in the 
+predefined place with the predefined name (‘outfile’) and supplies the file type. You can 
+enter file names either with or without the path. When entering the report template 
+(‘infile’), you should also input the file extension (e.g.’Z012ld0.rpt’). If you do not enter a 
+path for this file, the program will search the default directory (see also Reports) for the 
+file. You must also enter the file extension for an output file. If you do not specify the 
+path, the file is saved to the Temp directory with the name ‘KISS_?’. The file extension 
+should match the specified type. Use the ‘show’ parameter to define whether the report 
+is to be displayed, or not. Use the ‘art’ (meaning ‘type’) parameter to define the output 
+format. (art=0 → rtf format with *1 ; art=1 → rtf format without *1 ; art=2 → html format 
+with *1 ; art=10 → txt format without *1 ; art=20 → txt format in Unicode without *1) ; 
+art=1000 → pprpt format with *1 ; art=1001 → pprpt format without *1).  
+▪ 
+*1 = takes into account the data level 
+▪ 
+Examples of possible combinations: With default report templates → RTF 
+format: ReportWithParameters("C:\Program Files (x86)\KISSsoft 
+2019\rpt\Z070ld0.rpt","C:\Temp\Z070ld0.rtf", 1, 0), HTML format: Call 
+ksoft.ReportWithParameters("Z070ld0.rpt", "C:\Temp\Z070ld0.html", 1, 2), 
+PPRPT format: ReportWithParameters ("C:\Program Files (x86)\KISSsoft 
+2019\rpt\Z070ld0.rpt","C:\Temp\Z070ld0.pprpt", 1, 1000); with drawing 
+stamp report template → TXT format: 
+ReportWithParameters("Z10GEAR1d.rpt","C:\Temp\Z010GEAR1d.txt", 1, 
+10) 
+▪ 
+Message([out] VARIANT *strings, [out] VARIANT *types:, [out] LONG *numElem) 
+returns the messages from the last calculation in the first parameter, as an array 

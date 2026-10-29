@@ -1,0 +1,658 @@
+ 
+ 
+KISSsoft AG 
+ 
+ 
+T. +41 55 254 20 50 
+A Gleason Company 
+ 
+F. +41 55 254 20 51 
+Rosengartenstr. 4, 8608 Bubikon 
+kisssoft.info@gleason.com 
+Switzerland 
+ 
+ 
+www.kisssoft.com 
+Sharing Knowledge 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+KISSsoft Release 2026 
+Tutorial 91: COM interface  
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+2 / 19 
+Table of content 
+1 
+Getting started ........................................................................................................................ 3 
+1.1 
+Setup ....................................................................................................................................................... 3 
+1.2 
+Goals ....................................................................................................................................................... 3 
+1.3 
+Prerequisite ............................................................................................................................................. 3 
+1.4 
+Given data ............................................................................................................................................... 3 
+2 
+Register the KISSsoft COM server .......................................................................................... 4 
+2.1 
+General ................................................................................................................................................... 4 
+2.2 
+Registration process ............................................................................................................................... 4 
+2.2.1 
+Register with batch file ........................................................................................................................ 4 
+2.2.2 
+Register in command prompt .............................................................................................................. 5 
+3 
+Access the COM interface ...................................................................................................... 5 
+3.1 
+Excel (VBA) ............................................................................................................................................. 5 
+3.2 
+Python ..................................................................................................................................................... 9 
+4 
+How to find variable names ................................................................................................... 10 
+4.1 
+Comparison of calculation files ............................................................................................................. 10 
+4.2 
+Searching for variable names in report templates ................................................................................. 11 
+5 
+Remote control KISSsoft ....................................................................................................... 13 
+5.1 
+Code in Excel VBA: ............................................................................................................................... 15 
+5.2 
+Code in Python ...................................................................................................................................... 16 
+6 
+Annex ................................................................................................................................... 17 
+6.1 
+List of calculation modules .................................................................................................................... 17 
+ 
+ 
+ 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+3 / 19 
+1 
+Getting started 
+1.1 Setup 
+This tutorial was last updated with:  
+ 
+ 
+Properties 
+Software release 
+2026 
+Service Pack 
+ 
+Example files 
+- 
+ 
+ 
+1.2 Goals 
+In this tutorial, you will learn about 
+▪ 
+KISSsoft COM server registration. 
+▪ 
+How to call the server from Excel (VBA) or Python. 
+▪ 
+How to find input and output variable names. 
+▪ 
+Remote control KISSsoft using Excel (VBA) or Python. 
+1.3 Prerequisite 
+To successfully complete this tutorial, you are required to know already about 
+▪ 
+No prerequisite 
+1.4 Given data 
+No additional data required. 
+ 
+ 
+ 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+4 / 19 
+2 
+Register the KISSsoft COM server 
+2.1 General 
+KISSsoft offers the possibility of remote control via a COM interface. In Windows, COM (Component Object 
+Model) allows software components, written in different languages, to communicate. It can easily be accessed 
+from Excel (Visual Basic), Python, C++, Java, etc. This tutorial shows how to use the interface with Excel and 
+Python. 
+ 
+KISSsoft provides two COM interfaces, which can be registered simultaneously: 
+▪ 
+KISSsoftCOM: Compatible across all KISSsoft releases. Existing macros or code do not require 
+modification when updating to a new KISSsoft version - only the COM server needs to be re-registered. 
+This interface will be used in this tutorial. 
+▪ 
+KISSsoftCOM20xx: A version specific COM interface, e.g. KISSsoftCOM2026 only works with KISSsoft 
+Release 2026. 
+2.2 Registration process 
+There are two different ways to register the server. 
+2.2.1 
+Register with batch file 
+Go to the “…/bin subfolder” of the KISSsoft installation folder and run the “KISSsoftCOM_Register.bat” file with 
+right click → Run as administrator- 
+ 
+ 
+Figure 1: Run the "KISSsoftCOM_Register.bat" file 
+ 
+If the registration was successful, you will get the two following notifications: 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+5 / 19 
+ 
+Figure 2: Registration successfully completed 
+2.2.2 
+Register in command prompt 
+Alternatively, the server can be registered via the Command Prompt (Run as Administrator), instead of using the 
+batch file. 
+ 
+Figure 3: Server registration in command prompt 
+3 
+Access the COM interface 
+3.1 Excel (VBA) 
+ 
+First, make sure the “Developer” tab is activated. To do this, go to “Files” → “Options” → “Customise Ribbon”. 
+There look for “Developer” in the list and set the flag, see Fehler! Verweisquelle konnte nicht gefunden 
+werden.. 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+6 / 19 
+ 
+Figure 4: Activate the "Developer" tab 
+Click “OK” and switch to the “Developer” tab. Click on “Macros”, choose a Macro name and press “Create”, see 
+Figure 5.  
+ 
+ 
+Figure 5: Create a new Macro 
+The Visual Basic Editor is automatically opened, as shown in Figure 6. 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+7 / 19 
+ 
+Figure 6: Visual Basic Editor 
+To have access to the KISSsoft COM library, it needs to be activated in “References” of the VBAProject. In the 
+Visual Basic window go to “Tools” → “References…”. Set the flag for the KISSsoftCOM type library 1.0 and 
+check that the location path is correct, see Figure 7.  
+ 
+ 
+Figure 7: KISSsoftCOM type library in References - VBAProject 
+To test the connection to the COM server, write a short macro containing the following steps. 
+1. Initialize the KISSsoft COM object. 
+2. Load the calculation module with GetModule()and pass the calculation module as an argument inside 
+the parentheses. (e.g. Z012 for cylindrical gear pair calculation, see Annex for the full list) 
+3. Call the user interface with ShowInterface(True). If the test is successful, the KISSsoft graphical 
+user interface of the calculation module will open during the macro. Look for an orange KISSsoft icon in 
+your task bar, see Figure 8. 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+8 / 19 
+ 
+ 
+Figure 8: KISSsoft icon in the taskbar 
+4. Finally, use ReleaseModule to proper close the calculation module at the end of the macro. 
+ 
+ 
+Sub Tutorial() 
+ 
+'1. initialize KISSsoft COM object 
+Dim ksoft As KISSsoftCOM.CKISSsoft 
+Set ksoft = New KISSsoftCOM.CKISSsoft 
+ 
+'2. load calculation module 
+Call ksoft.GetModule("Z012", True) 
+ 
+'3. show UI 
+Call ksoft.ShowInterface(True) 
+ 
+'4. release calculation module 
+Call ksoft.ReleaseModule 
+ 
+End Sub 
+ 
+Finally, run the macro: 
+ 
+ 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+9 / 19 
+ 
+Figure 9: Test code in Visual Basic 
+3.2 Python 
+To use the KISSsoft COM interface with Python 3.8+, it is recommended to use the win32com module from the 
+pywin32 package. The explanation of the following code is written in section 3.1. 
+ 
+import win32com.client as client 
+ 
+#initialize KISSsoft COM object 
+ksoft = client.Dispatch('KISSsoftCOM.KISSsoft') 
+ 
+#load calculation module 
+ksoft.GetModule('Z012', True) 
+ 
+#show UI 
+ksoft.ShowInterface(True) 
+ 
+#release calculation module 
+ksoft.ReleaseModule() 
+ 
+ 
+Figure 10: Test code in Python 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+10 / 19 
+4 
+How to find variable names 
+The connection to the COM server was successfully tested. KISSsoft can now be remote controlled. To access 
+the parameters, you need to know the variable names. 
+This section provides some general advice to help users to find variable names more easily. A number of 
+sources and methods are available for finding variable names. 
+▪ 
+Variables directory in the manual, which contains a selection of common parameters.  
+▪ 
+Variable list in the software, which is available in each calculation module via Script Editor → Calculation 
+variables. 
+ 
+Figure 11: Calculation variables 
+▪ 
+Comparison of calculation files (Section 4.1). 
+▪ 
+Searching for variables in the report templates (Section 4.2). 
+4.1 Comparison of calculation files 
+This method is especially useful for input variables in the graphical user interface. If you’re looking for result 
+variables, please continue in Section 4.2. 
+ 
+1. Save two (almost) identical calculation files, which only differ in the inputs you’re interested in.  
+Example with a Z12 file (gear pair calculation):  
+Set the application factor to 1.25 and save the file (Example_1.Z12) 
+ 
+ 
+Figure 12: Application factor = 1.25 
+ 
+ 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+11 / 19 
+2. Set the application factor to 1.4 and save the file (Example_2.Z12) 
+ 
+ 
+Figure 13: Application factor = 1.4 
+ 
+Compare the Z12 files in a text editor, e.g. WinMerge: 
+ 
+ 
+Figure 14: File comparison 
+The variable for KA is ZS.KA. This method also works for other UI elements, such as drop-down menus, flags and 
+radio buttons. 
+4.2 Searching for variable names in report templates 
+If you are looking for result variables, e.g. root safeties, the previously described method cannot be used, 
+because result information is not stored in the calculation file. It is recommended to work with the report 
+templates. 
+ 
+Example: 
+Variable for root safety in the gear pair calculation (Z12). 
+ 
+1. Open the main report and check the naming convention for the calculated root safety:  
+ 
+ 
+Figure 15: Safeties in the report 
+2. Search for “Safety for tooth root stress” in all report templates in the rpt directory of the KISSsoft 
+installation folder. In an editor e.g. Notepad++ you can search entire directories for specific words. 
+ 
+ 
+   Figure 16: Search "Safety for tooth root stress in report templates" 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+12 / 19 
+ 
+3. After the search is completed, all the results are displayed. ”Safety for tooth root stress” shows up 
+multiple times in the results. Which one is needed? 
+ 
+ 
+Figure 17: Search results 
+In KISSsoft, go to the report settings (Report → Settings), tab “Information”. When a report was 
+generated, you can find the last used template, see Fehler! Verweisquelle konnte nicht gefunden 
+werden.. In step 1, the main report was opened, which calls various sub reports, hence a list of rpt files 
+is shown in the tab “Information”. When you cross check with the search results from before you find 
+“Z010ISOBendingResulte.rpt” in both. 
+ 
+ 
+Figure 18: List of last used templates 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+13 / 19 
+ 
+Figure 19: Search results in Z010ISOBendingResulte.rpt 
+The variable names are ZPP[0].Fuss.SFnorm for gear 1 and ZPP[1].Fuss.SFnorm for gear 2. 
+It also helps to get familiar with the naming conventions of the report templates to make your search 
+easier. Please refer to the manual for more information about report templates. 
+5 
+Remote control KISSsoft 
+In this section, a simple example macro is used to demonstrate how KISSsoft is remotely controlled. For this 
+purpose, the information gathered in the previous sections is used. The goal is to set the application KA to 1.5 in 
+an existing calculation file and then retrieve the calculated root safeties of both gears. 
+ 
+Note: Various examples are available on demand (kisssoft.support@gleason.com). 
+ 
+The following steps are necessary: 
+▪ 
+Initialize the KISSsoft COM object. 
+▪ 
+Load the cylindrical gear pair calculation module (Z012). 
+▪ 
+Load an existing cylindrical gear pair file. 
+▪ 
+Set the application factor KA = 1.5. 
+▪ 
+Run the calculation. 
+▪ 
+Read the calculated root safeties of both gears. 
+▪ 
+Close the KISSsoft module. 
+ 
+Initialize the KISSsoft COM object: 
+ 
+'initialize KISSsoft COM object 
+Dim ksoft As KISSsoftCOM.CKISSsoft 
+Set ksoft = New KISSsoftoCOM.CKISSsoft 
+ 
+Load the cylindrical gear pair calculation module: 
+ 
+'load calculation module 
+Call ksoft.GetModule("Z012", True) 
+ 
+Load an existing cylindrical gear pair file with the function LoadFile(). Use the path of the file location. 
+ 
+'load file 
+Call ksoft.LoadFile("C:\KISSsoft 2026\example\01 Spur (ISO 6336).Z12") 
+ 
+Set the application factor KA = 1.5 with the function SetVar(). The Variable for KA is ZS.KA, as shown in section 
+4.1. 
+ 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+14 / 19 
+Hint: KISSsoft only accepts Strings with point as decimal separator. Commas or wrong types can cause issues. If 
+Excel uses comma as decimal separator (dependent on operating system and language), it is recommended to 
+write a function, which converts the variable to a String and replaces the comma with a point. 
+ 
+'Set application factor KA 
+Call ksoft.SetVar("ZS.KA", "1.5") 
+ 
+ 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+15 / 19 
+ 
+Optional:  
+ 
+You can briefly check in the UI with ShowInterface(True), if KA was set correctly. Run the macro to open the 
+UI. 
+ 
+'show UI 
+Call ksoft.ShowInterface(True) 
+ 
+ 
+ 
+Close the UI and delete the ShowInterface command. 
+ 
+Run the KISSsoft calculation with Calculate(): 
+ 
+'run the calculation 
+Call ksoft.Calculate 
+ 
+Read the calculated root safeties of both gears with GetVar(). The Variable for SF is ZPP[0].Fuss.SFnorm resp. 
+ZPP[1].Fuss.SFnorm, as shown in section 4.2.  
+Note: GetVar() returns a string. 
+ 
+In this example the message box of Excel is used to print the retrieved values: 
+ 
+'get root safeties 
+SF1 = ksoft.GetVar("ZPP[0].Fuss.SFnorm") 
+SF2 = ksoft.GetVar("ZPP[1].Fuss.SFnorm") 
+ 
+MsgBox ("SF1: " & Round(SF1, 2) & vbNewLine & "SF2: " & Round(SF2, 2)) 
+ 
+Run the macro: 
+ 
+ 
+ 
+Finally, release the calculation module: 
+ 
+'release calculation module 
+Call ksoft.ReleaseModule 
+ 
+ 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+16 / 19 
+5.1 Code in Excel VBA: 
+ 
+Sub Tutorial_Example() 
+ 
+'initialize KISSsoft COM object 
+Dim ksoft As KISSsoftCOM.CKISSsoft 
+Set ksoft = New KISSsoftCOM.CKISSsoft 
+ 
+'load calculation module 
+Call ksoft.GetModule("Z012", True) 
+ 
+'load file 
+Call ksoft.LoadFile("C:\KISSsoft 2026\example\01 Spur (ISO 6336).Z12") 
+ 
+'set application factor KA 
+Call ksoft.SetVar("ZS.KA", "1.5") 
+ 
+'run the calculation 
+Call ksoft.Calculate 
+ 
+'get root safeties 
+SF1 = ksoft.GetVar("ZPP[0].Fuss.SFnorm") 
+SF2 = ksoft.GetVar("ZPP[1].Fuss.SFnorm") 
+ 
+MsgBox ("SF1: " & Round(SF1, 2) & vbNewLine & "SF2: " & Round(SF2, 2)) 
+ 
+'release calculation module 
+Call ksoft.ReleaseModule 
+ 
+End Sub 
+ 
+ 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+17 / 19 
+5.2 Code in Python 
+ 
+import win32com.client as client 
+ 
+#initialize KISSsoft COM object 
+ksoft = client.Dispatch('KISSsoftCOM.KISSsoft') 
+ 
+#load calculation module 
+ksoft.GetModule('Z012', True) 
+ 
+#load file 
+ksoft.LoadFile('C:/KISSsoft 2026/example/01 Spur (ISO 6336).Z12') 
+ 
+#set application factor KA 
+ksoft.SetVar('ZS.KA','1.5') 
+ 
+#run the calculation 
+ksoft.Calculate() 
+ 
+#get root safeties 
+SF1 = float(ksoft.GetVar('ZPP[0].Fuss.SFnorm')) 
+SF2 = float(ksoft.GetVar('ZPP[1].Fuss.SFnorm')) 
+ 
+print(f'SF1: {round(SF1,2)} \nSF2: {round(SF2,2)}') 
+ 
+#release calculation module 
+ksoft.ReleaseModule() 
+ 
+Output: 
+ 
+ 
+ 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+18 / 19 
+6 
+Annex 
+6.1 List of calculation modules 
+The following abbreviations are used for the individual calculation modules: 
+ 
+S020 
+System Module 
+Z011 
+Single Cylindrical Gear Calculation 
+Z012 
+Cylindrical Gear Pair Calculation 
+Z013 
+Cylindrical Gear Pinion with Rack 
+Z014 
+Cylindrical Gear - Planetary Gear Stage 
+Z015 
+Cylindrical gear - Three Gears Train 
+Z016 
+Cylindrical gear - Four Gears Train 
+Z070 
+Bevel and Hypoid Gear Calculation 
+Z060 
+Face Gears 
+Z080 
+Worms with Enveloping Worm Wheels 
+Z170 
+Crossed Helical Gears 
+Z050 
+Beveloid Gears 
+Z040 
+Non-Circular Gears 
+W010 
+Shaft calculation 
+W050 
+Rolling Bearing Calculation 
+W051 
+Rolling Bearing Calculation with Internal Geometry 
+W070 
+Hydrodynamic Plain Journal Bearings 
+W07c 
+Hydrodynamic Plain Thrust Bearings 
+M010 
+Cylindrical Interference Fit 
+M01b 
+Conical Interference Fit 
+M01c 
+Clamped Connections 
+M02a 
+Keys 
+M02b 
+Straight-Sided Splines 
+M02c 
+Splines (Strength) 
+Z09a 
+Splines (Strength and Geometry) 
+M02d 
+Polygons 
+M02e 
+Woodruff Keys 
+M03a 
+Bolts and Pins 
+M040 
+Bolt Calculation according to VDI 2230 
+M050 
+Snap Rings 
+F010 
+Compression Springs and Conical Compression Springs 
+F020 
+Tension Springs 
+F030 
+Leg Springs 
+F040 
+Disc Springs 
+F050 
+Torsion-Bar Springs 
+Z090 
+V-Belts 
+Z091 
+Toothed Belts 
+Z092 
+Chain Drives 
+A010 
+Synchronization 
+A020 
+Friction Clutches 
+K010 
+Tolerance Calculation 
+K120 
+Proof of Strength with Local Stresses 
+K140 
+Hertzian Pressure 
+K150 
+Linear Drive Train 
+
+v2500 © KISSsoft AG. All Rights Reserved. 
+ 
+19 / 19 
+K170 
+Plastics Manager 
+K190 
+Load Spectra 
+ 

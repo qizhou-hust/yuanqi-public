@@ -1,0 +1,2 @@
+# Preserve original bytes so evidence hashes survive Windows/Linux checkouts.
+* -text

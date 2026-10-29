@@ -1,0 +1,108 @@
+[
+  {
+    "file": "ISO 6336-1-2019.pdf",
+    "pdf_pages": 144,
+    "printed_page_range": [
+      1,
+      134
+    ],
+    "sequence_verified": true,
+    "mismatches": [],
+    "all_pages_rendered": true,
+    "visual_ocr_corrections": {
+      "123": 115
+    }
+  },
+  {
+    "file": "ISO 6336-2-2019.pdf",
+    "pdf_pages": 46,
+    "printed_page_range": [
+      1,
+      37
+    ],
+    "sequence_verified": true,
+    "mismatches": [],
+    "all_pages_rendered": true,
+    "visual_ocr_corrections": {}
+  },
+  {
+    "file": "ISO 6336-3-2019.pdf",
+    "pdf_pages": 64,
+    "printed_page_range": [
+      1,
+      55
+    ],
+    "sequence_verified": true,
+    "mismatches": [],
+    "all_pages_rendered": true,
+    "visual_ocr_corrections": {}
+  },
+  {
+    "file": "ISO 6336-5-2016.pdf",
+    "pdf_pages": 54,
+    "printed_page_range": [
+      1,
+      47
+    ],
+    "sequence_verified": true,
+    "mismatches": [],
+    "all_pages_rendered": true,
+    "visual_ocr_corrections": {
+      "8": 2,
+      "10": 4,
+      "12": 6,
+      "14": 8,
+      "16": 10,
+      "18": 12,
+      "20": 14,
+      "22": 16,
+      "24": 18,
+      "26": 20,
+      "28": 22,
+      "30": 24,
+      "32": 26,
+      "34": 28,
+      "36": 30,
+      "38": 32,
+      "40": 34,
+      "42": 36,
+      "44": 38,
+      "46": 40,
+      "48": 42,
+      "50": 44,
+      "52": 46
+    }
+  },
+  {
+    "file": "ISO 6336-6-2019.pdf",
+    "pdf_pages": 44,
+    "printed_page_range": [
+      1,
+      37
+    ],
+    "sequence_verified": true,
+    "mismatches": [],
+    "all_pages_rendered": true,
+    "visual_ocr_corrections": {
+      "43": 37
+    },
+    "visual_evidence": "verification/part6-last-content-page.png"
+  },
+  {
+    "file": "ISO-TR-6336-30-2022-supplemented-reading-copy.pdf",
+    "pdf_pages": 70,
+    "printed_page_range": [
+      1,
+      63
+    ],
+    "original_missing_printed_page": 2,
+    "sequence_verified": true,
+    "all_original_pages_preserved_pixel_identically": true,
+    "inserted_page_matches_preview_pixel_identically": true,
+    "mismatches": [],
+    "visual_ocr_corrections": {
+      "12": 7,
+      "22": 17
+    }
+  }
+]

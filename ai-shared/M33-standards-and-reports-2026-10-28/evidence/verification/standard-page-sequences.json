@@ -1,0 +1,3260 @@
+{
+  "ISO 6336-1-2019.pdf": {
+    "pdf_pages": 144,
+    "sha256": "ca377d983183d122a2ccaf4b9e9265ffb24ead0ef020e9819325e7a6a166e694",
+    "pages": [
+      {
+        "pdf_page": 1,
+        "footer_ocr": "i Reference number\r\n\r\ns ie ISO 6336-1:2019(E)\r\n<ty\r\n\r\n© ISO 2019",
+        "number_candidates": [
+          1
+        ]
+      },
+      {
+        "pdf_page": 2,
+        "footer_ocr": "i Email: copyright@iso.org\r\ns Website: www.iso.org\r\nPublished in Switzerland\r\nii © ISO 2019 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 3,
+        "footer_ocr": "5 GZS “Transmission Dertir ban). enmnenmeesenmecnmmmnascommenncnmeniemmonsmmnansmnanmennct oo\r\n= 624 ‘Dynamicresponse wuss csce secu acne eee DO\r\n© ISO 2019 - All rights reserved iii",
+        "number_candidates": [
+          5
+        ]
+      },
+      {
+        "pdf_page": 4,
+        "footer_ocr": "5 8.3.2 Determination of transverse load factor by calculation o.oo OB\r\nc B33 “Transverse load factors {Om Brap DS wcissiossncsnsasancinsvasnsasisessasansiaasasasnicscceatcsicOd\r\niv © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          5
+        ]
+      },
+      {
+        "pdf_page": 5,
+        "footer_ocr": "2\r\nS\r\nc\r\n© ISO 2019 - All rights reserved Vv",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 6,
+        "footer_ocr": "2\r\nEy\r\nc\r\nvi © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 7,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved vii",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 8,
+        "footer_ocr": "2\r\ney\r\nc\r\nviii © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 9,
+        "footer_ocr": "2\r\n$\r\nc\r\n© ISO 2019 - All rights reserved 1",
+        "number_candidates": [
+          2,
+          1
+        ]
+      },
+      {
+        "pdf_page": 10,
+        "footer_ocr": "2\r\nEy\r\nc\r\n2 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          2
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 3",
+        "number_candidates": [
+          2,
+          3
+        ]
+      },
+      {
+        "pdf_page": 12,
+        "footer_ocr": "2\r\nEy\r\nc\r\n4 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          4
+        ]
+      },
+      {
+        "pdf_page": 13,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 5",
+        "number_candidates": [
+          2,
+          5
+        ]
+      },
+      {
+        "pdf_page": 14,
+        "footer_ocr": "2\r\nEy\r\nc\r\n6 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          6
+        ]
+      },
+      {
+        "pdf_page": 15,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 7",
+        "number_candidates": [
+          2,
+          7
+        ]
+      },
+      {
+        "pdf_page": 16,
+        "footer_ocr": "2\r\nEy\r\nc\r\n8 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          8
+        ]
+      },
+      {
+        "pdf_page": 17,
+        "footer_ocr": "2\r\n$\r\nc\r\n© ISO 2019 - All rights reserved 9",
+        "number_candidates": [
+          2,
+          9
+        ]
+      },
+      {
+        "pdf_page": 18,
+        "footer_ocr": "2\r\nEy\r\nc\r\n10 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          10
+        ]
+      },
+      {
+        "pdf_page": 19,
+        "footer_ocr": "5 ISO 6336-3 specifies the fundamental formulae for use in tooth bending stress calculations for involute\r\ncc external or internal spur and helical gears. In service, internal gears can experience failure modes other\r\n© ISO 2019 - All rights reserved 11",
+        "number_candidates": [
+          5,
+          3,
+          11
+        ]
+      },
+      {
+        "pdf_page": 20,
+        "footer_ocr": "2\r\ng — the consequences of any percentage of failure (failure rate), and\r\ncc\r\n12 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          12
+        ]
+      },
+      {
+        "pdf_page": 21,
+        "footer_ocr": "© MUTMIMUI Valites are made i the 15U G550 series, DUL Valles are NOt Proposed.\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 13",
+        "number_candidates": [
+          13
+        ]
+      },
+      {
+        "pdf_page": 22,
+        "footer_ocr": "Oy ee ee ene angers enn © Sapa eee\r\na | Cast steels St (cast) |\r\nc\r\n\r\n14 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          14
+        ]
+      },
+      {
+        "pdf_page": 23,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 15",
+        "number_candidates": [
+          2,
+          15
+        ]
+      },
+      {
+        "pdf_page": 24,
+        "footer_ocr": "£ b) Factors which account for several influences and which are dealt with as independent of each\r\ns other, but which may nevertheless influence each other to a degree for which no numerical value\r\n16 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          16
+        ]
+      },
+      {
+        "pdf_page": 25,
+        "footer_ocr": "fo} OO EE EE Ee ES Oe\r\nEy\r\ncc\r\n\r\n© ISO 2019 - All rights reserved 17",
+        "number_candidates": [
+          17
+        ]
+      },
+      {
+        "pdf_page": 26,
+        "footer_ocr": "© a\r\n\r\ns 1) _ Kygisalso to be used in the evaluation of K,,, since for tooth bending it is Kj, which represents the determinant\r\nload due to uneven distribution of F, over the face width (see 7.2.2).\r\n18 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          1,
+          18
+        ]
+      },
+      {
+        "pdf_page": 27,
+        "footer_ocr": "fo} dth oti Vite.\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 19",
+        "number_candidates": [
+          19
+        ]
+      },
+      {
+        "pdf_page": 28,
+        "footer_ocr": "6 LUINUIALIVE CHeCL OF LHe GULLY CYCIC IS Presenmred ilh LHe lO OOOO SCTICS dds LICE die NO MMEUIOUS dVallavle\r\n$ for calculating this service life. Correspondingly, the calculation of an equivalent torque value from the\r\n© joad spectrum is not applicable for the rating against this failure mode.\r\n\r\n20 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          6,
+          20
+        ]
+      },
+      {
+        "pdf_page": 29,
+        "footer_ocr": "fo} Se a a a ee ee oe ee ee pS a See e eee enema\r\nEy\r\nc\r\n\r\n© 1SO 2019 - All rights reserved 21",
+        "number_candidates": [
+          21
+        ]
+      },
+      {
+        "pdf_page": 30,
+        "footer_ocr": "2\r\nEy\r\nc\r\n22 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          22
+        ]
+      },
+      {
+        "pdf_page": 31,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 23",
+        "number_candidates": [
+          2,
+          23
+        ]
+      },
+      {
+        "pdf_page": 32,
+        "footer_ocr": "2\r\nEy\r\nc\r\n24 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          24
+        ]
+      },
+      {
+        "pdf_page": 33,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 25",
+        "number_candidates": [
+          2,
+          25
+        ]
+      },
+      {
+        "pdf_page": 34,
+        "footer_ocr": "2\r\nEy\r\nc\r\n26 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          26
+        ]
+      },
+      {
+        "pdf_page": 35,
+        "footer_ocr": "© e) total contact ratio €),= 2,0 for helical gearing.\r\né\r\n© ISO 2019 - All rights reserved 27",
+        "number_candidates": [
+          2,
+          27
+        ]
+      },
+      {
+        "pdf_page": 36,
+        "footer_ocr": "6 PEsSUNAHCe Speed, Mo d COMSCQUCTICE, UIC OYA 1ACOr Call DO CIPO CUY GOCE Il ACCOPrUalCe Witt 0.0.0,\r\n\r\ns 3) Foradefinition of N, see Formula (9). In practice, the calculated resonance sector is broadened to ensure a safe\r\nmargin. See Formulae (10) and (11) and the preamble thereto.\r\n28 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          6,
+          3,
+          9,
+          10,
+          11,
+          28
+        ]
+      },
+      {
+        "pdf_page": 37,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 29",
+        "number_candidates": [
+          2,
+          29
+        ]
+      },
+      {
+        "pdf_page": 38,
+        "footer_ocr": "© 7” _\r\ns b) Main resonance range, Ng < N < 1,15 (see 6.5.5). This field should be avoided. Refined analysis by\r\nMethod A is recommended for K,,.\r\n30 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          1,
+          15,
+          30
+        ]
+      },
+      {
+        "pdf_page": 39,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 31",
+        "number_candidates": [
+          2,
+          31
+        ]
+      },
+      {
+        "pdf_page": 40,
+        "footer_ocr": "2\r\nEy\r\nc\r\n32 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          32
+        ]
+      },
+      {
+        "pdf_page": 41,
+        "footer_ocr": "2 4) Formula (17) is not suitable for the determination of an “optimum’ tip relief C,. The amount C, of tip relief may\r\ns only be used in Formula (17) for gears of ISO tolerance class in the range 1 to 5 as specified in ISO 1328-1:2013. For\r\ngears in the range 6 to 11, B, = 1,0. Also see 4.1.16.\r\n© 1SO 2019 - All rights reserved 33",
+        "number_candidates": [
+          2,
+          4,
+          17,
+          17,
+          1,
+          5,
+          1,
+          6,
+          11,
+          1,
+          33
+        ]
+      },
+      {
+        "pdf_page": 42,
+        "footer_ocr": "5 See 6.5.5 and 6.5.6 for details and explanatory notes.\r\nc\r\n34 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          5,
+          34
+        ]
+      },
+      {
+        "pdf_page": 43,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 35",
+        "number_candidates": [
+          2,
+          35
+        ]
+      },
+      {
+        "pdf_page": 44,
+        "footer_ocr": "© a\r\n\r\ns 5) These presuppositions are a connection with low stiffness of torsion to the other driving elements and a high\r\nflexural strength of the gear shafts.\r\n36 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          5,
+          36
+        ]
+      },
+      {
+        "pdf_page": 45,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 37",
+        "number_candidates": [
+          2,
+          37
+        ]
+      },
+      {
+        "pdf_page": 46,
+        "footer_ocr": "© oo\r\n\r\ns 6) Ifthe rim is very light or if helical gears have a very large overlap ratio, values obtained from Figure 5 or 6 are\r\ntoo unfavourable. Thus, calculated values tend to be safe. The same applies when gears are made of cast iron.\r\n38 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          6,
+          5,
+          6,
+          38
+        ]
+      },
+      {
+        "pdf_page": 47,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 39",
+        "number_candidates": [
+          2,
+          39
+        ]
+      },
+      {
+        "pdf_page": 48,
+        "footer_ocr": "2\r\nEy\r\nc\r\n40 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          40
+        ]
+      },
+      {
+        "pdf_page": 49,
+        "footer_ocr": "© oe ee Eee eee eae eee eee eae aes Oe ees oe\r\ns |: Gear tolerance class in accordance with ISO 1328-1:2013. |\r\n© ISO 2019 - All rights reserved 41",
+        "number_candidates": [
+          1,
+          41
+        ]
+      },
+      {
+        "pdf_page": 50,
+        "footer_ocr": "2\r\nEy\r\nc\r\n42 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          42
+        ]
+      },
+      {
+        "pdf_page": 51,
+        "footer_ocr": "5 plane of action, comprising load induced elastic deformation of gears and housing and displacements of\r\ncc bearings; it can also be caused by manufacturing deviations and thermal distortions.\r\n© 1SO 2019 - All rights reserved 43",
+        "number_candidates": [
+          5,
+          43
+        ]
+      },
+      {
+        "pdf_page": 52,
+        "footer_ocr": "© that all other relevant intiuences be Known.\r\né\r\n44 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          44
+        ]
+      },
+      {
+        "pdf_page": 53,
+        "footer_ocr": "5 — stiffness of the foundation.\r\nc\r\n© 1SO 2019 - All rights reserved 45",
+        "number_candidates": [
+          5,
+          45
+        ]
+      },
+      {
+        "pdf_page": 54,
+        "footer_ocr": "2\r\nEy\r\nc\r\n46 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          46
+        ]
+      },
+      {
+        "pdf_page": 55,
+        "footer_ocr": "© gear body as a part of the snalt. Vilferent diameters are used for Calculating the bending and torsional\r\ns deformation in the area of the gear mesh, which should be between the root and the tip diameter of the\r\n© ISO 2019 - All rights reserved 47",
+        "number_candidates": [
+          47
+        ]
+      },
+      {
+        "pdf_page": 56,
+        "footer_ocr": "2\r\nEy\r\nc\r\n48 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          48
+        ]
+      },
+      {
+        "pdf_page": 57,
+        "footer_ocr": "© oa a\r\nEy\r\nc\r\n\r\n© 1SO 2019 - All rights reserved 49",
+        "number_candidates": [
+          49
+        ]
+      },
+      {
+        "pdf_page": 58,
+        "footer_ocr": "fo} “cal / © Ney Cog eee\r\nfa Fp. Cc\r\ns By “7B\r\n\r\n50 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          50
+        ]
+      },
+      {
+        "pdf_page": 59,
+        "footer_ocr": "5 value of fia: oe ;\r\ncc\r\n© ISO 2019 - All rights reserved 51",
+        "number_candidates": [
+          5,
+          51
+        ]
+      },
+      {
+        "pdf_page": 60,
+        "footer_ocr": "2 . #\r\nEy\r\nc\r\n52 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          52
+        ]
+      },
+      {
+        "pdf_page": 61,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 53",
+        "number_candidates": [
+          2,
+          53
+        ]
+      },
+      {
+        "pdf_page": 62,
+        "footer_ocr": "2\r\nEy\r\nc\r\n54 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          54
+        ]
+      },
+      {
+        "pdf_page": 63,
+        "footer_ocr": "fo} PVT id (20), OF a COMLACL PAallOril CHECK UNG? 10aG 15 TCCOMMMCNUEG,\r\n\r\ns 8) With a favourable position of the contact pattern, the elastic deformations and the manufacturing deviations\r\ncompensate each other. See Figure 12 (compensatory).\r\n© 1SO 2019 - All rights reserved 55",
+        "number_candidates": [
+          20,
+          15,
+          8,
+          12,
+          55
+        ]
+      },
+      {
+        "pdf_page": 64,
+        "footer_ocr": "2 9) Helix angle modification is an alteration of the helix angle, a consequence of which is that the axial pitch is also\r\ns modified. The latter concept is useful when dealing with gears having large overlap ratios and consideration of axial\r\npitch is often necessary.\r\n56 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          9,
+          56
+        ]
+      },
+      {
+        "pdf_page": 65,
+        "footer_ocr": "fo} ee eee ee hee ere ae ee ee eee ne OSE NED: OER eee R ENE AS SEe FOE ERS WU Pale OME MSs ee eees BS wanes\r\nS taken from Figure 13.\r\nc\r\n\r\n© 1SO 2019 - All rights reserved 57",
+        "number_candidates": [
+          57
+        ]
+      },
+      {
+        "pdf_page": 66,
+        "footer_ocr": "2\r\nEy\r\nc\r\n58 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          58
+        ]
+      },
+      {
+        "pdf_page": 67,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 59",
+        "number_candidates": [
+          2,
+          59
+        ]
+      },
+      {
+        "pdf_page": 68,
+        "footer_ocr": "5 Figure 13 — Constant, k’, to take into account the pinion offset\r\noc\r\n60 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          5,
+          13,
+          60
+        ]
+      },
+      {
+        "pdf_page": 69,
+        "footer_ocr": "© . - ——_— i ~~~. aee”.CUCC\r\nS can be determined as follows.\r\ncc\r\n\r\n© ISO 2019 - All rights reserved 61",
+        "number_candidates": [
+          61
+        ]
+      },
+      {
+        "pdf_page": 70,
+        "footer_ocr": "5 bearings or appropriate helix angle modification) and gear pairs suitably crowned, the no load\r\nc\r\n\r\n10) Appropriate control measures should be adopted to ensure that this value is maintained.\r\n\r\n62 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          5,
+          10,
+          62
+        ]
+      },
+      {
+        "pdf_page": 71,
+        "footer_ocr": "fo} GAO VE SEIS PERSIE UGS BEERS, Jbel’ GALINA LEbCAL WE REID V¥ RICCO), Jbe2’ SERRE EIS LEED VUMEVGAIUEIL SESIOCIIRSELESU EEL,\r\nS the directions and signs of the misalignments of bearings axes are to be given careful attention. The\r\nc\r\n\r\n© 1SO 2019 - All rights reserved 63",
+        "number_candidates": [
+          63
+        ]
+      },
+      {
+        "pdf_page": 72,
+        "footer_ocr": "2\r\nEy\r\nc\r\n64 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          64
+        ]
+      },
+      {
+        "pdf_page": 73,
+        "footer_ocr": "2\r\ns — maximum (permissible) transverse load factor, or\r\n© ISO 2019 - All rights reserved 65",
+        "number_candidates": [
+          2,
+          65
+        ]
+      },
+      {
+        "pdf_page": 74,
+        "footer_ocr": "2 11) Formulae (73) and (74) are based on the assumption that the base pitch deviations appropriate to the gear\r\ns tolerance class specified are distributed around the circumference of the pinion and wheel as is consistent with\r\nnormal manufacturing practice. They do not apply when the gear teeth have some intentional deviation.\r\n66 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          11,
+          73,
+          74,
+          66
+        ]
+      },
+      {
+        "pdf_page": 75,
+        "footer_ocr": "io] With limiting values in accordance with Formulae (73) and (74), the least favourable distribution of\r\ns load is assumed, implying that the entire tangential load is transferred by only one pair of mating teeth.\r\nFurthermore, it is recommended that the accuracy of helical gears be so chosen that Kj, and K,, are not\r\n© ISO 2019 - All rights reserved 67",
+        "number_candidates": [
+          73,
+          74,
+          67
+        ]
+      },
+      {
+        "pdf_page": 76,
+        "footer_ocr": "io] Yar tS,\r\n5 y= a ; a2 (80)\r\nc\r\n\r\n68 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          5,
+          80,
+          68
+        ]
+      },
+      {
+        "pdf_page": 77,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 69",
+        "number_candidates": [
+          2,
+          69
+        ]
+      },
+      {
+        "pdf_page": 78,
+        "footer_ocr": "2\r\nEy\r\nc\r\n70 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          70
+        ]
+      },
+      {
+        "pdf_page": 79,
+        "footer_ocr": "fo} CONVET SION Call DE IBRMOLCA WHEE COIMPACG WIL OLTECT UNCET LAINUIES (O.5,. LOT ANCES OFF LIE TEAS ULE Values J,\r\n\r\ns 13) c' atthe outer limit of single pair tooth contact can be assumed to approximate the maximum value of single\r\nstiffness when €, > 1,2.\r\n© ISO 2019 - All rights reserved 71",
+        "number_candidates": [
+          13,
+          1,
+          71
+        ]
+      },
+      {
+        "pdf_page": 80,
+        "footer_ocr": "5 — shaft hub assembly other than under f), e.g. with fitted key;\r\n* specific load (F, Ky K,) / b< 100 N/mm.\r\n72 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          5,
+          100,
+          72
+        ]
+      },
+      {
+        "pdf_page": 81,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 73",
+        "number_candidates": [
+          2,
+          73
+        ]
+      },
+      {
+        "pdf_page": 82,
+        "footer_ocr": "2\r\nEy\r\nc\r\n74 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          74
+        ]
+      },
+      {
+        "pdf_page": 83,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 75",
+        "number_candidates": [
+          2,
+          75
+        ]
+      },
+      {
+        "pdf_page": 84,
+        "footer_ocr": "2\r\nEy\r\nc\r\n76 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          76
+        ]
+      },
+      {
+        "pdf_page": 85,
+        "footer_ocr": "2\r\né —_—\r\n14) When (F;, Ky K,) / b > 100 N/mm, c'can be assumed to be constant.\r\n© 1SO 2019 - All rights reserved 77",
+        "number_candidates": [
+          2,
+          14,
+          100,
+          77
+        ]
+      },
+      {
+        "pdf_page": 86,
+        "footer_ocr": "2\r\nEy\r\nc\r\n78 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          78
+        ]
+      },
+      {
+        "pdf_page": 87,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 79",
+        "number_candidates": [
+          2,
+          79
+        ]
+      },
+      {
+        "pdf_page": 88,
+        "footer_ocr": "fo} \"PUP FDR NOOO Pet FT OOO Ne EE EE ES ae\r\nEy\r\nc\r\n\r\n80 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          80
+        ]
+      },
+      {
+        "pdf_page": 89,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 81",
+        "number_candidates": [
+          2,
+          81
+        ]
+      },
+      {
+        "pdf_page": 90,
+        "footer_ocr": "2 10.5.1). /\r\nEy\r\nc\r\n82 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          82
+        ]
+      },
+      {
+        "pdf_page": 91,
+        "footer_ocr": "© i, Mi <3\r\nEy\r\nc\r\n\r\n© 1SO 2019 - All rights reserved 83",
+        "number_candidates": [
+          3,
+          83
+        ]
+      },
+      {
+        "pdf_page": 92,
+        "footer_ocr": "i «OB\r\nEy\r\nc\r\n84 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          84
+        ]
+      },
+      {
+        "pdf_page": 93,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 85",
+        "number_candidates": [
+          2,
+          85
+        ]
+      },
+      {
+        "pdf_page": 94,
+        "footer_ocr": "2\r\nEy\r\nc\r\n86 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          86
+        ]
+      },
+      {
+        "pdf_page": 95,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 87",
+        "number_candidates": [
+          2,
+          87
+        ]
+      },
+      {
+        "pdf_page": 96,
+        "footer_ocr": "2\r\nEy\r\nc\r\n88 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          88
+        ]
+      },
+      {
+        "pdf_page": 97,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 89",
+        "number_candidates": [
+          2,
+          89
+        ]
+      },
+      {
+        "pdf_page": 98,
+        "footer_ocr": "2\r\nEy\r\nc\r\n90 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          90
+        ]
+      },
+      {
+        "pdf_page": 99,
+        "footer_ocr": "2\r\ns Vig9 _ is the kinematic viscosity of the lubricant at 100 °C.\r\n© ISO 2019 - All rights reserved 91",
+        "number_candidates": [
+          2,
+          100,
+          91
+        ]
+      },
+      {
+        "pdf_page": 100,
+        "footer_ocr": "2\r\nEy\r\nc\r\n92 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          92
+        ]
+      },
+      {
+        "pdf_page": 101,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 93",
+        "number_candidates": [
+          2,
+          93
+        ]
+      },
+      {
+        "pdf_page": 102,
+        "footer_ocr": "© oo\r\n\r\ns 15) Precise knowledge of the coating thickness is of great importance. In case of doubt, the actual coating thickness\r\nshould be determined.\r\n94 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          15,
+          94
+        ]
+      },
+      {
+        "pdf_page": 103,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 95",
+        "number_candidates": [
+          2,
+          95
+        ]
+      },
+      {
+        "pdf_page": 104,
+        "footer_ocr": "2\r\nEy\r\nc\r\n96 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          96
+        ]
+      },
+      {
+        "pdf_page": 105,
+        "footer_ocr": "ee a eae ae ee een ee eee A ee eT ee ae ke\r\n\r\n5 or when the helices have been modified to compensate deformation, proceed in accordance with\r\nre Formula (B.2).\r\n\r\n© ISO 2019 - All rights reserved 97",
+        "number_candidates": [
+          5,
+          97
+        ]
+      },
+      {
+        "pdf_page": 106,
+        "footer_ocr": "2\r\nEy\r\nc\r\n98 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          98
+        ]
+      },
+      {
+        "pdf_page": 107,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 99",
+        "number_candidates": [
+          2,
+          99
+        ]
+      },
+      {
+        "pdf_page": 108,
+        "footer_ocr": "2\r\nEy\r\nc\r\n100 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          100
+        ]
+      },
+      {
+        "pdf_page": 109,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 101",
+        "number_candidates": [
+          2,
+          101
+        ]
+      },
+      {
+        "pdf_page": 110,
+        "footer_ocr": "2\r\nEy\r\nc\r\n102 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          102
+        ]
+      },
+      {
+        "pdf_page": 111,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 103",
+        "number_candidates": [
+          2,
+          103
+        ]
+      },
+      {
+        "pdf_page": 112,
+        "footer_ocr": "2\r\ns a) Actual deflection occurring b) Assumed deflection\r\n104 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          104
+        ]
+      },
+      {
+        "pdf_page": 113,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 105",
+        "number_candidates": [
+          2,
+          105
+        ]
+      },
+      {
+        "pdf_page": 114,
+        "footer_ocr": "2\r\nEy\r\nc\r\n106 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          106
+        ]
+      },
+      {
+        "pdf_page": 115,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 107",
+        "number_candidates": [
+          2,
+          107
+        ]
+      },
+      {
+        "pdf_page": 116,
+        "footer_ocr": "2\r\nEy\r\nc\r\n108 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          108
+        ]
+      },
+      {
+        "pdf_page": 117,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 109",
+        "number_candidates": [
+          2,
+          109
+        ]
+      },
+      {
+        "pdf_page": 118,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n110 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          110
+        ]
+      },
+      {
+        "pdf_page": 119,
+        "footer_ocr": "© where\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 111",
+        "number_candidates": [
+          111
+        ]
+      },
+      {
+        "pdf_page": 120,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n112 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          112
+        ]
+      },
+      {
+        "pdf_page": 121,
+        "footer_ocr": "fo} SUPPL L IVEGLIVINS ONG MAVE LOL UCLICULIUL, PUL Gil ULE SLGALIUIS LMS MEMOULIUE VALUES AL UU Uy\r\nS summing together the deflection increment and integration constant values from columns 14 and 15.\r\nc\r\n\r\n© 1SO 2019 - All rights reserved 113",
+        "number_candidates": [
+          14,
+          113
+        ]
+      },
+      {
+        "pdf_page": 122,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n114 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          114
+        ]
+      },
+      {
+        "pdf_page": 123,
+        "footer_ocr": "2 Figure E.3 — Calculated shaft diagrams\r\né\r\n© ISO 2019 - All rights reserved 415.",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 124,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n116 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          116
+        ]
+      },
+      {
+        "pdf_page": 125,
+        "footer_ocr": "©\r\n\r\n6 Elastic bending and torsional deflections, tooth modifications, lead variations and shaft misalignments\r\n\r\nia cause the gear teeth to not be in contact across the entire face width. The distance between non-\r\n© ISO 2019 - All rights reserved 117",
+        "number_candidates": [
+          6,
+          117
+        ]
+      },
+      {
+        "pdf_page": 126,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n118 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          118
+        ]
+      },
+      {
+        "pdf_page": 127,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 119",
+        "number_candidates": [
+          2,
+          119
+        ]
+      },
+      {
+        "pdf_page": 128,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n120 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          120
+        ]
+      },
+      {
+        "pdf_page": 129,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 121",
+        "number_candidates": [
+          2,
+          121
+        ]
+      },
+      {
+        "pdf_page": 130,
+        "footer_ocr": "©\r\n& Ls; is the load intensity, in newtons per millimetre (N/mm).\r\nc\r\n122 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          122
+        ]
+      },
+      {
+        "pdf_page": 131,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 123",
+        "number_candidates": [
+          2,
+          123
+        ]
+      },
+      {
+        "pdf_page": 132,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n124 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          124
+        ]
+      },
+      {
+        "pdf_page": 133,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 125",
+        "number_candidates": [
+          2,
+          125
+        ]
+      },
+      {
+        "pdf_page": 134,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n126 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          126
+        ]
+      },
+      {
+        "pdf_page": 135,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 127",
+        "number_candidates": [
+          2,
+          127
+        ]
+      },
+      {
+        "pdf_page": 136,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n128 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          128
+        ]
+      },
+      {
+        "pdf_page": 137,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 129",
+        "number_candidates": [
+          2,
+          129
+        ]
+      },
+      {
+        "pdf_page": 138,
+        "footer_ocr": "2\r\nEy\r\nc\r\n130 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          130
+        ]
+      },
+      {
+        "pdf_page": 139,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 131",
+        "number_candidates": [
+          2,
+          131
+        ]
+      },
+      {
+        "pdf_page": 140,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n132 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          132
+        ]
+      },
+      {
+        "pdf_page": 141,
+        "footer_ocr": "©\r\n\r\nS [22] KONIG J., FELBERMAIER M., TOBIE T., STAHL K. Influence of Low Circumferential Speeds on the\r\n\r\nc Lubrication Conditions and the Damage Characteristics of Case-Hardened Gears. Available at\r\n© ISO 2019 - All rights reserved 133",
+        "number_candidates": [
+          22,
+          133
+        ]
+      },
+      {
+        "pdf_page": 142,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n134 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          134
+        ]
+      },
+      {
+        "pdf_page": 143,
+        "footer_ocr": "2\r\nby\r\nc",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 144,
+        "footer_ocr": "2\r\ns ICS 21.200\r\nPrice based on 134 pages\r\n© ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          134
+        ]
+      }
+    ],
+    "observed_max_page": 134,
+    "missing_number_candidates": [
+      115
+    ],
+    "note": "OCR candidates require visual confirmation for every discontinuity; not an automatic completeness verdict."
+  },
+  "ISO 6336-2-2019.pdf": {
+    "pdf_pages": 46,
+    "sha256": "5e7a4b83c2d91292f6ddce324ea2fee16699b1c385d80b76606fec6b459de5b0",
+    "pages": [
+      {
+        "pdf_page": 1,
+        "footer_ocr": "i Reference number\r\n\r\ns Isc ISO 6336-2:2019(E)\r\n<cty\r\n\r\n© ISO 2019",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 2,
+        "footer_ocr": "i Email: copyright@iso.org\r\ns Website: www.iso.org\r\nPublished in Switzerland\r\nii © ISO 2019 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 3,
+        "footer_ocr": "5 12.3 Influence of lubricant film, factors Z,, Z, ANd Zp: Method B.....ccsnsontinninsnntinmnnsnneinnnnnnnamnnnen 24\r\nra DZS21. |GOTET EL ace cinmsinneenmnsimieeninihntcnstnsstesstiectatei ete ist tentissterrssoeen efseetnaieaimsseee ORE\r\n© ISO 2019 - All rights reserved iii",
+        "number_candidates": [
+          5,
+          24
+        ]
+      },
+      {
+        "pdf_page": 4,
+        "footer_ocr": "2\r\ney\r\ncc\r\niv © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 5,
+        "footer_ocr": "2\r\nS\r\nc\r\n© ISO 2019 - All rights reserved Vv",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 6,
+        "footer_ocr": "© MIUIUCNCES, OF CAAIMpie, COCIICICHIL OF ITICUION, GIPCCUON dal Masimituae OF sails dG Unie MMIMence OF\r\ns lubricant on the distribution of pressure. Development has not yet advanced to the stage of directly\r\nvi © ISO 2019 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 7,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved vii",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 8,
+        "footer_ocr": "2\r\nby\r\nc",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 9,
+        "footer_ocr": "© metnod — terms, definitions and surjace texture parameters — AMENDMENT 1; Freak count number\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 1",
+        "number_candidates": [
+          1,
+          1
+        ]
+      },
+      {
+        "pdf_page": 10,
+        "footer_ocr": "2\r\nEy\r\nc\r\n2 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          2
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 3",
+        "number_candidates": [
+          2,
+          3
+        ]
+      },
+      {
+        "pdf_page": 12,
+        "footer_ocr": "2\r\nEy\r\nc\r\n4 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          4
+        ]
+      },
+      {
+        "pdf_page": 13,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 5",
+        "number_candidates": [
+          2,
+          5
+        ]
+      },
+      {
+        "pdf_page": 14,
+        "footer_ocr": "© In unhardened gear tooth flanks shall be taken Into consideration. It 1s a frequent occurrence that pits\r\ns are formed on just one or only a few of the surface hardened gear tooth flanks. In such circumstances,\r\n6 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          6
+        ]
+      },
+      {
+        "pdf_page": 15,
+        "footer_ocr": "© Oy IS Calculated at the pitcn point for pinion and wheel, in Case or non-optmum rank modifications\r\n\r\ns the maximum contact stresses do not appear at the pitch point. Thus the higher contact stresses of\r\nthese contact points are determinant.\r\n\r\n© ISO 2019 - All rights reserved 7",
+        "number_candidates": [
+          7
+        ]
+      },
+      {
+        "pdf_page": 16,
+        "footer_ocr": "2 : the total tangential load between meshes for multiple paths;\r\né\r\n8 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          8
+        ]
+      },
+      {
+        "pdf_page": 17,
+        "footer_ocr": "2\r\n$\r\nc\r\n© ISO 2019 - All rights reserved 9",
+        "number_candidates": [
+          2,
+          9
+        ]
+      },
+      {
+        "pdf_page": 18,
+        "footer_ocr": "2\r\nEy\r\nc\r\n10 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          10
+        ]
+      },
+      {
+        "pdf_page": 19,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 11",
+        "number_candidates": [
+          2,
+          11
+        ]
+      },
+      {
+        "pdf_page": 20,
+        "footer_ocr": "fo} ee ee TE EE Ve\r\nEy\r\nc\r\n\r\n12 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          12
+        ]
+      },
+      {
+        "pdf_page": 21,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 13",
+        "number_candidates": [
+          2,
+          13
+        ]
+      },
+      {
+        "pdf_page": 22,
+        "footer_ocr": "6 For helical gears the contact factors, 4p and Zp, convert the contact stress at the pitcn point to the\r\ns contact stress of the relevant contact point if the pitch point is not determinant.\r\n14 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          6,
+          14
+        ]
+      },
+      {
+        "pdf_page": 23,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 15",
+        "number_candidates": [
+          2,
+          15
+        ]
+      },
+      {
+        "pdf_page": 24,
+        "footer_ocr": "5 adjacent tip circle as appropriate) for spur gears and those helical gears with & 2 in ;\r\nc\r\n16 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          5,
+          2,
+          16
+        ]
+      },
+      {
+        "pdf_page": 25,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 17",
+        "number_candidates": [
+          2,
+          17
+        ]
+      },
+      {
+        "pdf_page": 26,
+        "footer_ocr": "2\r\nEy\r\nc\r\n18 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          18
+        ]
+      },
+      {
+        "pdf_page": 27,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 19",
+        "number_candidates": [
+          2,
+          19
+        ]
+      },
+      {
+        "pdf_page": 28,
+        "footer_ocr": "2\r\nEy\r\nc\r\n20 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          20
+        ]
+      },
+      {
+        "pdf_page": 29,
+        "footer_ocr": "2 calculated in accordance with this document, which the material will endure for at least 2 x 10° to\r\nEy 5 x 107 load cycles (see Figure 6 for the start).\r\n© ISO 2019 - All rights reserved 21",
+        "number_candidates": [
+          2,
+          2,
+          10,
+          5,
+          6,
+          21
+        ]
+      },
+      {
+        "pdf_page": 30,
+        "footer_ocr": "6 4nT tOF stale allG PErerence Stresses Mlay DE tanen TOM MISUre © OF LAVie Oo.\r\nEy\r\ncc\r\n22 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          6,
+          22
+        ]
+      },
+      {
+        "pdf_page": 31,
+        "footer_ocr": "5 a The lower value of Zy.; may be used for critical service. Values between 0,85 and 1,0 may be used for general purpose\r\nc gearing. With optimum lubrication, material, manufacturing and experience 1,0 may be used.\r\n© ISO 2019 - All rights reserved 23",
+        "number_candidates": [
+          5,
+          1,
+          1,
+          23
+        ]
+      },
+      {
+        "pdf_page": 32,
+        "footer_ocr": "© On the erect OF he tuUDricalnt tim,\r\nEy\r\nc\r\n\r\n24 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          24
+        ]
+      },
+      {
+        "pdf_page": 33,
+        "footer_ocr": "2\r\nEy\r\ncc\r\n© ISO 2019 - All rights reserved 25",
+        "number_candidates": [
+          2,
+          25
+        ]
+      },
+      {
+        "pdf_page": 34,
+        "footer_ocr": "© Sy Foz TEATS Me (40)\r\nEy\r\nc\r\n\r\n26 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          40,
+          26
+        ]
+      },
+      {
+        "pdf_page": 35,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 27",
+        "number_candidates": [
+          2,
+          27
+        ]
+      },
+      {
+        "pdf_page": 36,
+        "footer_ocr": "6 Palls. POP PUMOM\"TACh COMLACK, rad — 4+\r\n\r\ns 2) ‘If roughness stated is an Ra value (= CLA value) (= AA value), the following approximation may be used for\r\nconversion: Ra = CLA = AA = Rz/6.\r\n28 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          6,
+          4,
+          2,
+          28
+        ]
+      },
+      {
+        "pdf_page": 37,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 29",
+        "number_candidates": [
+          2,
+          29
+        ]
+      },
+      {
+        "pdf_page": 38,
+        "footer_ocr": "© accordance with the rellabie operating experience or tests on geared transmissions of comparable\r\ns dimensions, materials, lubricants and operating conditions. The provisions given in ISO 6336-1:2019,\r\n4.1.16, are relevant.\r\n30 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          1,
+          30
+        ]
+      },
+      {
+        "pdf_page": 39,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 31",
+        "number_candidates": [
+          2,
+          31
+        ]
+      },
+      {
+        "pdf_page": 40,
+        "footer_ocr": "2\r\nEy\r\nc\r\n32 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          32
+        ]
+      },
+      {
+        "pdf_page": 41,
+        "footer_ocr": "2\r\ns u is the gear ratio; if u > 20 use u = 20.\r\n© 1SO 2019 - All rights reserved 33",
+        "number_candidates": [
+          2,
+          20,
+          33
+        ]
+      },
+      {
+        "pdf_page": 42,
+        "footer_ocr": "2\r\ns The value of Zy, is different for static, limited life and reference stress (stress ranges, see Figure 6).\r\n34 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          6,
+          34
+        ]
+      },
+      {
+        "pdf_page": 43,
+        "footer_ocr": "io] Figure 12 — Work hardening factor, 2, for ductile cast iron gear/surface-hardened pinion, long\r\ns life stress\r\n© ISO 2019 - All rights reserved 35",
+        "number_candidates": [
+          12,
+          2,
+          35
+        ]
+      },
+      {
+        "pdf_page": 44,
+        "footer_ocr": "2\r\nEy\r\nc\r\n36 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          36
+        ]
+      },
+      {
+        "pdf_page": 45,
+        "footer_ocr": "2\r\nEy\r\nc\r\n© 1SO 2019 - All rights reserved 37",
+        "number_candidates": [
+          2,
+          37
+        ]
+      },
+      {
+        "pdf_page": 46,
+        "footer_ocr": "2\r\ns ICS 21.200\r\nPrice based on 37 pages\r\n© ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          37
+        ]
+      }
+    ],
+    "observed_max_page": 37,
+    "missing_number_candidates": [],
+    "note": "OCR candidates require visual confirmation for every discontinuity; not an automatic completeness verdict."
+  },
+  "ISO 6336-3-2019.pdf": {
+    "pdf_pages": 64,
+    "sha256": "f00fea96b736a1d0d34e71496afc3338982d4bc8613571a6c882aae2fe89cf04",
+    "pages": [
+      {
+        "pdf_page": 1,
+        "footer_ocr": "Reference number\r\nISO 6336-3:2019(E)\r\n© ISO 2019",
+        "number_candidates": [
+          3
+        ]
+      },
+      {
+        "pdf_page": 2,
+        "footer_ocr": "Email: copyright@iso.org\r\nWebsite: www.iso.org\r\nPublished in Switzerland\r\nii © ISO 2019 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 3,
+        "footer_ocr": "10 = =— Deep tooth Factor, Voyp -cccoccinnnnnnnnnnnninsninnnninsninnnninnnnininstninninsnstnnininninnnnnnnsnnnnisnnnnnnsnanennnnnannnnnenine 2\r\nLOD General nc ccccssssnsenennnninennuninuninenensiienenainneiseneiensuneneuninennienanienenennuenuensneniensiannanunaeuensnenenennannee 2B\r\n© ISO 2019 - All rights reserved iii",
+        "number_candidates": [
+          10,
+          2
+        ]
+      },
+      {
+        "pdf_page": 4,
+        "footer_ocr": "iv © ISO 2019 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 5,
+        "footer_ocr": "© ISO 2019 - All rights reserved Vv",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 6,
+        "footer_ocr": "OF ULE THOT WOTRKTTIS Palins, WHC Ue COO 1OdQiihs IS UMCGIPeCUlONdal dG the Leet Are OF CONVETIMIONAL\r\nshape, these cracks seldom propagate to failure. Crack propagation ending in failure is most likely to\r\nstem from cracks initiated in tension fillets.\r\nvi © ISO 2019 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 7,
+        "footer_ocr": "© ISO 2019 - All rights reserved vii",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 8,
+        "footer_ocr": "",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 9,
+        "footer_ocr": "ISO 4288:1996, Geometrical Product Specifications (GPS) — Surface texture: Profile method — Rules and\r\nprocedures for the assessment of surface texture\r\n© ISO 2019 - All rights reserved 1",
+        "number_candidates": [
+          1
+        ]
+      },
+      {
+        "pdf_page": 10,
+        "footer_ocr": "2 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "footer_ocr": "© ISO 2019 - All rights reserved 3",
+        "number_candidates": [
+          3
+        ]
+      },
+      {
+        "pdf_page": 12,
+        "footer_ocr": "4 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          4
+        ]
+      },
+      {
+        "pdf_page": 13,
+        "footer_ocr": "© ISO 2019 - All rights reserved 5",
+        "number_candidates": [
+          5
+        ]
+      },
+      {
+        "pdf_page": 14,
+        "footer_ocr": "6 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          6
+        ]
+      },
+      {
+        "pdf_page": 15,
+        "footer_ocr": "The actual tooth root stress o, and the permissible (tooth root) bending stress ogp shall be calculated\r\nseparately for the pinion and the wheel; o, shall be less than d¢p.\r\n© ISO 2019 - All rights reserved 7",
+        "number_candidates": [
+          7
+        ]
+      },
+      {
+        "pdf_page": 16,
+        "footer_ocr": "1) Stresses such as those caused by the shrink-fitting of gear rims, which are superimposed on stresses due to\r\ntooth loading, should be taken into consideration in the calculation of permissible tooth root stress opp.\r\n8 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          1,
+          8
+        ]
+      },
+      {
+        "pdf_page": 17,
+        "footer_ocr": "© ISO 2019 - All rights reserved 9",
+        "number_candidates": [
+          9
+        ]
+      },
+      {
+        "pdf_page": 18,
+        "footer_ocr": "10 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          10
+        ]
+      },
+      {
+        "pdf_page": 19,
+        "footer_ocr": "- into account the influence of tooth dimensions on the tooth bending strength.\r\n© ISO 2019 - All rights reserved 11",
+        "number_candidates": [
+          11
+        ]
+      },
+      {
+        "pdf_page": 20,
+        "footer_ocr": "12 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          12
+        ]
+      },
+      {
+        "pdf_page": 21,
+        "footer_ocr": "Se ee Oo\r\n© ISO 2019 - All rights reserved 13",
+        "number_candidates": [
+          13
+        ]
+      },
+      {
+        "pdf_page": 22,
+        "footer_ocr": "14 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          14
+        ]
+      },
+      {
+        "pdf_page": 23,
+        "footer_ocr": "© ISO 2019 - All rights reserved 15",
+        "number_candidates": [
+          15
+        ]
+      },
+      {
+        "pdf_page": 24,
+        "footer_ocr": "16 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          16
+        ]
+      },
+      {
+        "pdf_page": 25,
+        "footer_ocr": "© ISO 2019 - All rights reserved 17",
+        "number_candidates": [
+          17
+        ]
+      },
+      {
+        "pdf_page": 26,
+        "footer_ocr": "2) _ If the tip of the tooth has been rounded or chamfered, it is necessary to replace the tip diameter, d,, in the\r\ncalculation by dy, the “effective tip diameter”.\r\n18 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2,
+          18
+        ]
+      },
+      {
+        "pdf_page": 27,
+        "footer_ocr": "© ISO 2019 - All rights reserved 19",
+        "number_candidates": [
+          19
+        ]
+      },
+      {
+        "pdf_page": 28,
+        "footer_ocr": "— equivalent numbers of teeth, Zp,\r\n20 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          20
+        ]
+      },
+      {
+        "pdf_page": 29,
+        "footer_ocr": "© ISO 2019 - All rights reserved 21",
+        "number_candidates": [
+          21
+        ]
+      },
+      {
+        "pdf_page": 30,
+        "footer_ocr": "Initial value:\r\n22 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          22
+        ]
+      },
+      {
+        "pdf_page": 31,
+        "footer_ocr": ". Cen\r\nhp, =(cosy, —siny, -tandp,, ye (61)\r\n© ISO 2019 - All rights reserved 23",
+        "number_candidates": [
+          61,
+          23
+        ]
+      },
+      {
+        "pdf_page": 32,
+        "footer_ocr": "3) See 7.3 for the procedure to be followed when grinding notches are present in tooth fillets.\r\n24 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          3,
+          24
+        ]
+      },
+      {
+        "pdf_page": 33,
+        "footer_ocr": "© ISO 2019 - All rights reserved 25",
+        "number_candidates": [
+          25
+        ]
+      },
+      {
+        "pdf_page": 34,
+        "footer_ocr": "The value 1,0 is substituted for €g when &, > 1,0, and 30° is substituted for B when f > 30°.\r\n26 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          1,
+          1,
+          30,
+          30,
+          26
+        ]
+      },
+      {
+        "pdf_page": 35,
+        "footer_ocr": "OO OE ee aa eee\r\n© ISO 2019 - All rights reserved 27",
+        "number_candidates": [
+          27
+        ]
+      },
+      {
+        "pdf_page": 36,
+        "footer_ocr": "cee ence OE SSS EES See\r\n28 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          28
+        ]
+      },
+      {
+        "pdf_page": 37,
+        "footer_ocr": "d) cleanness of gear material,\r\n© ISO 2019 - All rights reserved 29",
+        "number_candidates": [
+          29
+        ]
+      },
+      {
+        "pdf_page": 38,
+        "footer_ocr": "30 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          30
+        ]
+      },
+      {
+        "pdf_page": 39,
+        "footer_ocr": "0,85 and 1,0 may be used for general purpose gearing. With optimum lubrication, material, manufacturing and experience\r\n1,0 may be used.\r\n© ISO 2019 - All rights reserved 31",
+        "number_candidates": [
+          1,
+          1,
+          31
+        ]
+      },
+      {
+        "pdf_page": 40,
+        "footer_ocr": "T5 rep T Call DE Peaa 1POM PISure de ds a TUNCUON OF Gg. anda the Material. tne CUrVES I Uls Erapll tOr each\r\nof the materials were derived from Figure 14 by subtracting from the absolute value Y;, appropriate to\r\neach value of q,, the value of Ys; for that material corresponding to the notch parameter q, = 2,5 (the\r\n32 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          14,
+          2,
+          5,
+          32
+        ]
+      },
+      {
+        "pdf_page": 41,
+        "footer_ocr": "4) Applies for module m = 5 mm. The influence of size is covered by the factor Y, (see Clause 15).\r\n© ISO 2019 - All rights reserved 33",
+        "number_candidates": [
+          4,
+          5,
+          15,
+          33
+        ]
+      },
+      {
+        "pdf_page": 42,
+        "footer_ocr": "34 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          34
+        ]
+      },
+      {
+        "pdf_page": 43,
+        "footer_ocr": "© ISO 2019 - All rights reserved 35",
+        "number_candidates": [
+          35
+        ]
+      },
+      {
+        "pdf_page": 44,
+        "footer_ocr": "36 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          36
+        ]
+      },
+      {
+        "pdf_page": 45,
+        "footer_ocr": "© ISO 2019 - All rights reserved 37",
+        "number_candidates": [
+          37
+        ]
+      },
+      {
+        "pdf_page": 46,
+        "footer_ocr": "compressive stresses (shot peening), grain boundary oxidation and chemical effects. When fillets are\r\nshot-peened and/or are perfectly shaped, a value slightly greater than that obtained from the graph\r\n38 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          38
+        ]
+      },
+      {
+        "pdf_page": 47,
+        "footer_ocr": "© ISO 2019 - All rights reserved 39",
+        "number_candidates": [
+          39
+        ]
+      },
+      {
+        "pdf_page": 48,
+        "footer_ocr": "40 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          40
+        ]
+      },
+      {
+        "pdf_page": 49,
+        "footer_ocr": "The value of Y, may be taken from Figure 17 as a function of the module, material and heat-treatment.\r\n© ISO 2019 - All rights reserved 41",
+        "number_candidates": [
+          17,
+          41
+        ]
+      },
+      {
+        "pdf_page": 50,
+        "footer_ocr": "42 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          42
+        ]
+      },
+      {
+        "pdf_page": 51,
+        "footer_ocr": "© ISO 2019 - All rights reserved 43",
+        "number_candidates": [
+          43
+        ]
+      },
+      {
+        "pdf_page": 52,
+        "footer_ocr": "44 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          44
+        ]
+      },
+      {
+        "pdf_page": 53,
+        "footer_ocr": "© ISO 2019 - All rights reserved 45",
+        "number_candidates": [
+          45
+        ]
+      },
+      {
+        "pdf_page": 54,
+        "footer_ocr": "46 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          46
+        ]
+      },
+      {
+        "pdf_page": 55,
+        "footer_ocr": "OR NR \\ os te\r\nb) For St with steadily increasing elongation curve and 0,2 % proof stress, V and GGG (perl., bai.):\r\n© ISO 2019 - All rights reserved 47",
+        "number_candidates": [
+          2,
+          47
+        ]
+      },
+      {
+        "pdf_page": 56,
+        "footer_ocr": "Y¥; =0,77-Y, +0,22 (A.13)\r\n48 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          22,
+          48
+        ]
+      },
+      {
+        "pdf_page": 57,
+        "footer_ocr": "© ISO 2019 - All rights reserved 49",
+        "number_candidates": [
+          49
+        ]
+      },
+      {
+        "pdf_page": 58,
+        "footer_ocr": "50 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          50
+        ]
+      },
+      {
+        "pdf_page": 59,
+        "footer_ocr": "© ISO 2019 - All rights reserved 51",
+        "number_candidates": [
+          51
+        ]
+      },
+      {
+        "pdf_page": 60,
+        "footer_ocr": "MAaAPGeniis. Ul prineiple, Nerve IS a Gepenaency Of LHe Static MOL SEMSMIVILY TaClOr (alld LHereDy\r\nindirectly Y,), but wide variations usually only occur for case hardening, e.g. smooth semicircular\r\nversus grinding notches.\r\n52 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          52
+        ]
+      },
+      {
+        "pdf_page": 61,
+        "footer_ocr": "© ISO 2019 - All rights reserved 53",
+        "number_candidates": [
+          53
+        ]
+      },
+      {
+        "pdf_page": 62,
+        "footer_ocr": "54 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          54
+        ]
+      },
+      {
+        "pdf_page": 63,
+        "footer_ocr": "© ISO 2019 - All rights reserved 55",
+        "number_candidates": [
+          55
+        ]
+      },
+      {
+        "pdf_page": 64,
+        "footer_ocr": "ICS 21.200\r\nPrice based on 55 pages\r\n© ISO 2019 - All rights reserved",
+        "number_candidates": [
+          55
+        ]
+      }
+    ],
+    "observed_max_page": 55,
+    "missing_number_candidates": [],
+    "note": "OCR candidates require visual confirmation for every discontinuity; not an automatic completeness verdict."
+  },
+  "ISO 6336-5-2016.pdf": {
+    "pdf_pages": 54,
+    "sha256": "9a9cefda6687b5c5378a3a4ccccc6384fec3a9d61917d11496a7bde05ce072b5",
+    "pages": [
+      {
+        "pdf_page": 1,
+        "footer_ocr": "—————S Reference number\r\nIso ISO 6336-5:2016(E)\r\nwernational Organization for Standardization © 1SO 2016\r\nrovided by IHS under licanse with ISO\r\n0 reproduction or networking pennitied without license trom IHS",
+        "number_candidates": [
+          5
+        ]
+      },
+      {
+        "pdf_page": 2,
+        "footer_ocr": "Pax +41 22 /49 09 4/\r\ncopyright@iso.org\r\nwww.iso.org\r\n\r\nserrate pardsadn for Standardization\r\n\r\nrovided by IHS under license with ISO\r\n\r\n0 reproduction or networking permitied without license trom IHS:",
+        "number_candidates": [
+          41,
+          22,
+          49,
+          9,
+          4
+        ]
+      },
+      {
+        "pdf_page": 3,
+        "footer_ocr": "ternational Organizaton PISNAALP ~ All rights reserved iii\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 4,
+        "footer_ocr": "ternational Beganization tor Standardization\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 5,
+        "footer_ocr": "ternational Organization PISMAALP ~ All rights reserved v\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 6,
+        "footer_ocr": "wernational Organization for Standardization\r\nrowided by IHS under license with ISO\r\njo reproduction or networking permitted without license trom IHS.",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 7,
+        "footer_ocr": "standard diagrams\r\nwernational Organization @ASQROL6 - All rights reserved 1\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          1
+        ]
+      },
+      {
+        "pdf_page": 8,
+        "footer_ocr": "©.6. ML tNe Cas® OF SUPIACE UU avilily, Lie CMeCls OF LUD ICalIts, SULTACE POURNNOCSS dllG Bedi REOIICll y, iil\r\n1) American Society for Testing and Materials\r\n\r\nserradcrft) ar tzatr ior foamcariadon\r\n\r\nrovided by IHS under license with ISO\r\n\r\n0 reproduction or networking permitied without license trom IHS:",
+        "number_candidates": [
+          1
+        ]
+      },
+      {
+        "pdf_page": 9,
+        "footer_ocr": "If test values for specific materials are available, they can be used in replacement of the values in\r\nFigures 1 to 16.\r\nternational Organizaton PISNROAP - All rights reserved 3\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          1,
+          3
+        ]
+      },
+      {
+        "pdf_page": 10,
+        "footer_ocr": "is important to note oO} jim is not the contact pressure under continuous load, but rather the upper limit of the contact\r\npressure derived in accordance with ISO 6336-2, which can be sustained without progressive pitting damage, for a\r\nspecified number of load cycles.\r\n\r\nsarrate Abs partzadon for Standardization\r\n\r\nrovided by IHS under license with ISO\r\n\r\n0 reproduction or networking permitied without license trom IHS:",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "footer_ocr": "sernatona! Organization PASQAMLO ~ All rights reserved 5\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": [
+          5
+        ]
+      },
+      {
+        "pdf_page": 12,
+        "footer_ocr": "serrate} artzat ior fomacartadon\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 13,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 7\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": [
+          7
+        ]
+      },
+      {
+        "pdf_page": 14,
+        "footer_ocr": "E In accordance with 150 665-1, 150 665-2, 150 665-5 OF 150 655-5, |\r\nserpaterdf yr dca ior frmndiariadon\r\nrowided by IHS under licanse with ISO\r\nJO reproduction or networking permitted without licenee trom IHS.",
+        "number_candidates": [
+          1,
+          2,
+          5,
+          5
+        ]
+      },
+      {
+        "pdf_page": 15,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 9\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          9
+        ]
+      },
+      {
+        "pdf_page": 16,
+        "footer_ocr": "sorrasrsclA rica ior Sommcariadon\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 17,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 11\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          11
+        ]
+      },
+      {
+        "pdf_page": 18,
+        "footer_ocr": "aerasoratl Rrizaton ke Staaatteto,\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 19,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 13\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          13
+        ]
+      },
+      {
+        "pdf_page": 20,
+        "footer_ocr": "ternational Mfartcaton tor Stanioctzaton\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 21,
+        "footer_ocr": "sernatona! Organization PASQAMLO ~ All rights reserved 15\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          15
+        ]
+      },
+      {
+        "pdf_page": 22,
+        "footer_ocr": "ternational fBaricaton tor Stndactzaton\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 23,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 17\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          17
+        ]
+      },
+      {
+        "pdf_page": 24,
+        "footer_ocr": "serrasesscl oat ior Soamcariadon\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 25,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 19\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          19
+        ]
+      },
+      {
+        "pdf_page": 26,
+        "footer_ocr": "serrascrafth rized tor feamcartadon\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 27,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 21\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          21
+        ]
+      },
+      {
+        "pdf_page": 28,
+        "footer_ocr": "aeratondhtherizaton he Staaatteato\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 29,
+        "footer_ocr": "3) The data of 5,6 may not apply to bevel gears.\r\n\r\n4) Definition of case depth according to Table 5, item 9.\r\nsernatona! Organization @shSuOLP ~ All rights reserved 23\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitied without license trom IHS:",
+        "number_candidates": [
+          3,
+          5,
+          6,
+          4,
+          5,
+          23
+        ]
+      },
+      {
+        "pdf_page": 30,
+        "footer_ocr": "RN SALAA Oe ee. Seen, ene I ee: Ves, Eo —. ene\r\nsarradcratfartzat ior amiartizdon\r\n\r\nrovided by IHS under license with ISO\r\n\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 31,
+        "footer_ocr": "5) Definition of nitriding hardening depth according to Table 7, item 7.\r\nsernatona! Organizaton PASQROLO - All rights reserved 25\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitied without license trom IHS:",
+        "number_candidates": [
+          5,
+          7,
+          25
+        ]
+      },
+      {
+        "pdf_page": 32,
+        "footer_ocr": "6) The material quality grade MX, which existed in the first edition (1995) of this document, was replaced with the\r\nME line in 2003.\r\n\r\nserraterattRarizadon for Standardization\r\n\r\nrovided by IHS under license with ISO\r\n\r\n0 reproduction or networking permitied without license trom IHS:",
+        "number_candidates": [
+          6
+        ]
+      },
+      {
+        "pdf_page": 33,
+        "footer_ocr": "7) The material chosen is either that quoted in the relevant grade according to ISO 683-1, ISO 683-2, ISO 683-3,\r\nISO 683-4 or ISO 683-5 (recommended) or an appropriate National or International Standard.\r\nsernatona! Organization @shSuOLP ~ All rights reserved 27\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitied without license trom IHS:",
+        "number_candidates": [
+          7,
+          1,
+          2,
+          3,
+          4,
+          5,
+          27
+        ]
+      },
+      {
+        "pdf_page": 34,
+        "footer_ocr": "serradcrafth rica tor ramiartadon\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 35,
+        "footer_ocr": "sernatonal Organization ISG. ROLH ~ All rights reserved 29\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          29
+        ]
+      },
+      {
+        "pdf_page": 36,
+        "footer_ocr": "serrascrit farce ior frmncieriadon\r\nrovided by IHS under license with ISO\r\njo reproduction or networking pennitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 37,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 31\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": [
+          31
+        ]
+      },
+      {
+        "pdf_page": 38,
+        "footer_ocr": "| mentioned nere, |\r\naerrascr oh partsados for Standardization\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 39,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 33\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": [
+          33
+        ]
+      },
+      {
+        "pdf_page": 40,
+        "footer_ocr": "tornasond'tfartcaton lor Sinectzaton\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 41,
+        "footer_ocr": "RGLUULIZALIVEL, LEO POM CLO Vk Lae MM pees ME ERAS PEE CUPEEAU EAL AEE VV REE Cae opVsilsew i weguess Mies 10) SUELALe\r\n[hardness (item 7.2) and microstructure (item 10.2) is sufficient. |\r\ndernatona! Organization hSRALP ~ All rights reserved 35\r\nrovided by IHS under licanse with ISO\r\n0 reproduction or networking permitted without license trom IHS",
+        "number_candidates": [
+          10,
+          35
+        ]
+      },
+      {
+        "pdf_page": 42,
+        "footer_ocr": "torasond’ tf faricaton lor Stanactzaton\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 43,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 37\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": [
+          37
+        ]
+      },
+      {
+        "pdf_page": 44,
+        "footer_ocr": "serrascrit i rca ier framcariadon\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 45,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 39\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          39
+        ]
+      },
+      {
+        "pdf_page": 46,
+        "footer_ocr": "EO OO OE OE EE eee, !|LClUL el\r\n1) minimum diameter: 3 x module, and\r\n\r\nsorrasecAth arzaton tor feancartizadon\r\n\r\nrovided by IHS under license with ISO\r\n\r\n0 reproduction or networking permitied without license trom IHS:",
+        "number_candidates": [
+          1,
+          3
+        ]
+      },
+      {
+        "pdf_page": 47,
+        "footer_ocr": "AUSLOMNLE, Ie er antial OAIGAatION ana Erinais temper ON Cas€ MarGenedad Ears ([SC€ Avie oj, it ErOUNa\r\nsurfaces are exposed to shot peening, the risk of abrasive wear shall be evaluated under consideration\r\nof surface roughness and surface hardness, as well as roughness and hardness difference gradients\r\nsematonal Organization PASAAALP ~ All rights reserved 41\r\nrovided by IHS under licanse with ISO\r\n0 reproduction or networking pennitied without license trom IHS",
+        "number_candidates": [
+          41
+        ]
+      },
+      {
+        "pdf_page": 48,
+        "footer_ocr": "saratonl ffarizaton tor Standardization\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 49,
+        "footer_ocr": "sernatonal Organizaton ISG. ROLH ~ All rights reserved 43\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitted without license trom IHS:",
+        "number_candidates": [
+          43
+        ]
+      },
+      {
+        "pdf_page": 50,
+        "footer_ocr": "taratonsftSfarizaton fr Standactzaon\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 51,
+        "footer_ocr": "sernatona! Organization PASQAMLO ~ All rights reserved 45\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          45
+        ]
+      },
+      {
+        "pdf_page": 52,
+        "footer_ocr": "waratonsftfarizaton fr Standartzaon\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 53,
+        "footer_ocr": "sernatonal Organizaton PISGAH ~ All rights reserved 47\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking pernitied without license trom IHS:",
+        "number_candidates": [
+          47
+        ]
+      },
+      {
+        "pdf_page": 54,
+        "footer_ocr": "ICS 21.200\r\n\r\nPrice based on 47 pages\r\nsernatonS Od Q.24 QissedL sights reserved\r\nrovided by IHS under license with ISO\r\n0 reproduction or networking permitied without license trom IHS:",
+        "number_candidates": [
+          47
+        ]
+      }
+    ],
+    "observed_max_page": 47,
+    "missing_number_candidates": [
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46
+    ],
+    "note": "OCR candidates require visual confirmation for every discontinuity; not an automatic completeness verdict."
+  },
+  "ISO 6336-6-2019.pdf": {
+    "pdf_pages": 44,
+    "sha256": "8c2632eacbd050fec583925bcf4ce9e9e4b8e86d5ed162d37da674dab3dec0c7",
+    "pages": [
+      {
+        "pdf_page": 1,
+        "footer_ocr": ") Reference number\r\n} ISO 6336-6:2019(E)\r\n© ISO 2019",
+        "number_candidates": [
+          6
+        ]
+      },
+      {
+        "pdf_page": 2,
+        "footer_ocr": "f Email: copyright@iso.org\r\n] Website: www.iso.org\r\nPublished in Switzerland\r\nii © ISO 2019 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 3,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved iii",
+        "number_candidates": [
+          7
+        ]
+      },
+      {
+        "pdf_page": 4,
+        "footer_ocr": ":\r\niv © ISO 2019 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 5,
+        "footer_ocr": ":\r\n© ISO 2019 - All rights reserved Vv",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 6,
+        "footer_ocr": "7",
+        "number_candidates": [
+          7
+        ]
+      },
+      {
+        "pdf_page": 7,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 1",
+        "number_candidates": [
+          7,
+          1
+        ]
+      },
+      {
+        "pdf_page": 8,
+        "footer_ocr": "j\r\n2 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          2
+        ]
+      },
+      {
+        "pdf_page": 9,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 3",
+        "number_candidates": [
+          7,
+          3
+        ]
+      },
+      {
+        "pdf_page": 10,
+        "footer_ocr": "j\r\n4 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          4
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "footer_ocr": "f to represent the required lifetime, the possibility that there might be torque peaks not frequent enough\r\n: to be evaluated in that measured spectrum shall be considered. These transient peaks can have an\r\n© ISO 2019 - All rights reserved 5",
+        "number_candidates": [
+          5
+        ]
+      },
+      {
+        "pdf_page": 12,
+        "footer_ocr": ") fore] 410 1UU 10 GOL 1609 4,093 310 U,UO/ 6\r\n15 301 wooo | 96 | at | 33400928\r\n6 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          10,
+          4,
+          6,
+          15,
+          6
+        ]
+      },
+      {
+        "pdf_page": 13,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved Z",
+        "number_candidates": [
+          7
+        ]
+      },
+      {
+        "pdf_page": 14,
+        "footer_ocr": "j\r\n8 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          8
+        ]
+      },
+      {
+        "pdf_page": 15,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 9",
+        "number_candidates": [
+          7,
+          9
+        ]
+      },
+      {
+        "pdf_page": 16,
+        "footer_ocr": ")\r\n. Figure 3 — Stress spectrum and S-N curve\r\n10 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          3,
+          10
+        ]
+      },
+      {
+        "pdf_page": 17,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 11",
+        "number_candidates": [
+          7,
+          11
+        ]
+      },
+      {
+        "pdf_page": 18,
+        "footer_ocr": "7\r\n12 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          12
+        ]
+      },
+      {
+        "pdf_page": 19,
+        "footer_ocr": ") ‘The value K,, defined as the application factor, is set equal to unity (1,0) for this calculation, as\r\n: all the application load influences should be taken into account by stress levels included in the\r\ncalculation method.\r\n© ISO 2019 - All rights reserved 13",
+        "number_candidates": [
+          1,
+          13
+        ]
+      },
+      {
+        "pdf_page": 20,
+        "footer_ocr": "7\r\n14 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          14
+        ]
+      },
+      {
+        "pdf_page": 21,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 15",
+        "number_candidates": [
+          7,
+          15
+        ]
+      },
+      {
+        "pdf_page": 22,
+        "footer_ocr": "7\r\n16 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          16
+        ]
+      },
+      {
+        "pdf_page": 23,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 17",
+        "number_candidates": [
+          7,
+          17
+        ]
+      },
+      {
+        "pdf_page": 24,
+        "footer_ocr": ") standard Is required,\r\n7\r\n18 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          18
+        ]
+      },
+      {
+        "pdf_page": 25,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 19",
+        "number_candidates": [
+          7,
+          19
+        ]
+      },
+      {
+        "pdf_page": 26,
+        "footer_ocr": "7\r\n20 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          20
+        ]
+      },
+      {
+        "pdf_page": 27,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 21",
+        "number_candidates": [
+          7,
+          21
+        ]
+      },
+      {
+        "pdf_page": 28,
+        "footer_ocr": "7\r\n22 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          22
+        ]
+      },
+      {
+        "pdf_page": 29,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 23",
+        "number_candidates": [
+          7,
+          23
+        ]
+      },
+      {
+        "pdf_page": 30,
+        "footer_ocr": "7\r\n24 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          24
+        ]
+      },
+      {
+        "pdf_page": 31,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 25",
+        "number_candidates": [
+          7,
+          25
+        ]
+      },
+      {
+        "pdf_page": 32,
+        "footer_ocr": ") QT A\r\n26 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          26
+        ]
+      },
+      {
+        "pdf_page": 33,
+        "footer_ocr": ")\r\n; — Determination of ng 3g¢p on the Figure B.3:\r\n© ISO 2019 - All rights reserved 27",
+        "number_candidates": [
+          27
+        ]
+      },
+      {
+        "pdf_page": 34,
+        "footer_ocr": "7\r\n28 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          28
+        ]
+      },
+      {
+        "pdf_page": 35,
+        "footer_ocr": "NOTE The calculation in Table B.2 is done for pitting (no pitting permissible).\r\n© ISO 2019 - All rights reserved 29",
+        "number_candidates": [
+          29
+        ]
+      },
+      {
+        "pdf_page": 36,
+        "footer_ocr": "» MAU, UTIL CME WEIR OF LIE DOOT IS Ubdloterred LO Cite? Lie SUPPOTL TOUS OF LIE SUPPUTL Lilal LOCKS LIE\r\n+} boom upright.\r\n30 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          30
+        ]
+      },
+      {
+        "pdf_page": 37,
+        "footer_ocr": ")\r\n7 — Forcontact stress:\r\n© ISO 2019 - All rights reserved 31",
+        "number_candidates": [
+          7,
+          31
+        ]
+      },
+      {
+        "pdf_page": 38,
+        "footer_ocr": ") Ps 69,9 AVUETUV 996 0,40 701V4 4,909 eoTt 4,0U7 Fr FIRST 0,007 EV\r\n7 NOTE The product of a, and S,, might exceed the static stress limit, therefore values of Zyy > 1,6 may occur (as in bins 3-7).\r\n32 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          9,
+          40,
+          4,
+          4,
+          7,
+          7,
+          1,
+          6,
+          3,
+          7,
+          32
+        ]
+      },
+      {
+        "pdf_page": 39,
+        "footer_ocr": "f Total 6,001E+05 Miner sum 9,994E-01\r\nJ NOTE The product of o, and S,, might exceed the static stress limit, therefore values of Zyy > 1,6 may occur (as in bins 3-7).\r\n© ISO 2019 - All rights reserved 33",
+        "number_candidates": [
+          6,
+          5,
+          9,
+          1,
+          1,
+          6,
+          3,
+          7,
+          33
+        ]
+      },
+      {
+        "pdf_page": 40,
+        "footer_ocr": "7\r\n34 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          34
+        ]
+      },
+      {
+        "pdf_page": 41,
+        "footer_ocr": "7\r\n© ISO 2019 - All rights reserved 35",
+        "number_candidates": [
+          7,
+          35
+        ]
+      },
+      {
+        "pdf_page": 42,
+        "footer_ocr": ") oa “—\r\n7\r\n36 © ISO 2019 - All rights reserved",
+        "number_candidates": [
+          7,
+          36
+        ]
+      },
+      {
+        "pdf_page": 43,
+        "footer_ocr": "f durch gezielte Auswertung vorhandener Betriebsuntersuchungen. Bericht Nr. ABF 31. VBFEh.\r\n: Diisseldorf (1986)\r\n© ISO 2019 - All rights reserved a7",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 44,
+        "footer_ocr": ")\r\n> ICS 21.200\r\nPrice based on 37 pages\r\n© ISO 2019 - All rights reserved",
+        "number_candidates": [
+          37
+        ]
+      }
+    ],
+    "observed_max_page": 37,
+    "missing_number_candidates": [],
+    "note": "OCR candidates require visual confirmation for every discontinuity; not an automatic completeness verdict."
+  },
+  "ISO TR 6336-30-2022.pdf": {
+    "pdf_pages": 69,
+    "sha256": "1a88df52e23b26b367accacf788fca518503346e6c286619e91ad75052a8a55e",
+    "pages": [
+      {
+        "pdf_page": 1,
+        "footer_ocr": "Reference number\r\nISO/TR 6336-30:2022(E)\r\n© ISO 2022",
+        "number_candidates": [
+          30
+        ]
+      },
+      {
+        "pdf_page": 2,
+        "footer_ocr": "Email: copyright@iso.org\r\nWebsite: www.iso.org\r\nPublished in Switzerland\r\nii © ISO 2022 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 3,
+        "footer_ocr": "© ISO 2022 - All rights reserved iii",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 4,
+        "footer_ocr": "iv © ISO 2022 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 5,
+        "footer_ocr": "provided. Where qualifying comments have been included in this document, they reflect areas of the\r\ncalculation procedures presented in the current standards where points of clarification are required\r\nor editorial errors have been identified. The changes defined within the qualifying comments will be\r\n© ISO 2022 - All rights reserved Vv",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 6,
+        "footer_ocr": "vi © ISO 2022 - All rights reserved",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 7,
+        "footer_ocr": "ES EOS maaan\r\n© ISO 2022 - All rights reserved 1",
+        "number_candidates": [
+          1
+        ]
+      },
+      {
+        "pdf_page": 8,
+        "footer_ocr": "[Ny Number of meshes [=\r\n© ISO 2022 - All rights reserved 3",
+        "number_candidates": [
+          3
+        ]
+      },
+      {
+        "pdf_page": 9,
+        "footer_ocr": "“E MIGOUINELY ALU VN /mm*\r\na\r\n4 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          4
+        ]
+      },
+      {
+        "pdf_page": 10,
+        "footer_ocr": "Sup Permissible contact stress N/mm?\r\nPermissible contact stress (long life)\r\n© ISO 2022 - All rights reserved 5",
+        "number_candidates": [
+          5
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "footer_ocr": "6 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          6
+        ]
+      },
+      {
+        "pdf_page": 12,
+        "footer_ocr": "© ISO 2022 - All rights reserved vd",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 13,
+        "footer_ocr": "8 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          8
+        ]
+      },
+      {
+        "pdf_page": 14,
+        "footer_ocr": "© ISO 2022 - All rights reserved 9",
+        "number_candidates": [
+          9
+        ]
+      },
+      {
+        "pdf_page": 15,
+        "footer_ocr": "10 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          10
+        ]
+      },
+      {
+        "pdf_page": 16,
+        "footer_ocr": "© ISO 2022 - All rights reserved 11",
+        "number_candidates": [
+          11
+        ]
+      },
+      {
+        "pdf_page": 17,
+        "footer_ocr": "ee ee ee ee\r\nJeg __| Overlap ratio | = | 108\r\n12 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          12
+        ]
+      },
+      {
+        "pdf_page": 18,
+        "footer_ocr": "© ISO 2022 - All rights reserved 13",
+        "number_candidates": [
+          13
+        ]
+      },
+      {
+        "pdf_page": 19,
+        "footer_ocr": "14 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          14
+        ]
+      },
+      {
+        "pdf_page": 20,
+        "footer_ocr": "© ISO 2022 - All rights reserved 15",
+        "number_candidates": [
+          15
+        ]
+      },
+      {
+        "pdf_page": 21,
+        "footer_ocr": "ee ee ee ee\r\nJeg __| Overlap ratio | = | 108\r\n16 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          16
+        ]
+      },
+      {
+        "pdf_page": 22,
+        "footer_ocr": "© ISO 2022 - All rights reserved j rg",
+        "number_candidates": []
+      },
+      {
+        "pdf_page": 23,
+        "footer_ocr": "Surface roughness - fillet Ra (Rz) | pm | — | 3,0(18,0) 3,0 (18,0)\r\n18 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          3,
+          18,
+          3,
+          18,
+          18
+        ]
+      },
+      {
+        "pdf_page": 24,
+        "footer_ocr": "© ISO 2022 - All rights reserved 19",
+        "number_candidates": [
+          19
+        ]
+      },
+      {
+        "pdf_page": 25,
+        "footer_ocr": "ee ee ee ee\r\nJeg __| Overlap ratio | — | 600 |\r\n20 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          20
+        ]
+      },
+      {
+        "pdf_page": 26,
+        "footer_ocr": "© ISO 2022 - All rights reserved 21",
+        "number_candidates": [
+          21
+        ]
+      },
+      {
+        "pdf_page": 27,
+        "footer_ocr": "22 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          22
+        ]
+      },
+      {
+        "pdf_page": 28,
+        "footer_ocr": "© ISO 2022 - All rights reserved 23",
+        "number_candidates": [
+          23
+        ]
+      },
+      {
+        "pdf_page": 29,
+        "footer_ocr": "ee ee ee ee\r\nJeg __| Overlap ratio | — | 600 |\r\n24 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          24
+        ]
+      },
+      {
+        "pdf_page": 30,
+        "footer_ocr": "© ISO 2022 - All rights reserved 25",
+        "number_candidates": [
+          25
+        ]
+      },
+      {
+        "pdf_page": 31,
+        "footer_ocr": "26 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          26
+        ]
+      },
+      {
+        "pdf_page": 32,
+        "footer_ocr": "© ISO 2022 - All rights reserved 27",
+        "number_candidates": [
+          27
+        ]
+      },
+      {
+        "pdf_page": 33,
+        "footer_ocr": "28 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          28
+        ]
+      },
+      {
+        "pdf_page": 34,
+        "footer_ocr": "© ISO 2022 - All rights reserved 29",
+        "number_candidates": [
+          29
+        ]
+      },
+      {
+        "pdf_page": 35,
+        "footer_ocr": "30 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          30
+        ]
+      },
+      {
+        "pdf_page": 36,
+        "footer_ocr": "© ISO 2022 - All rights reserved 31",
+        "number_candidates": [
+          31
+        ]
+      },
+      {
+        "pdf_page": 37,
+        "footer_ocr": "“Ww VUE SS SERRE OU REESE, Fw. — 4,VV 4,VVU\r\nlq —*(suefactor ——SSSSSCS~S SS SYS\r\n32 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          4,
+          4,
+          32
+        ]
+      },
+      {
+        "pdf_page": 38,
+        "footer_ocr": "© ISO 2022 - All rights reserved 33",
+        "number_candidates": [
+          33
+        ]
+      },
+      {
+        "pdf_page": 39,
+        "footer_ocr": "Surface roughness - fillet Ra (Rz) | um | — | 3,0(18,0) 3,0 (18,0)\r\n34 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          3,
+          18,
+          3,
+          18,
+          34
+        ]
+      },
+      {
+        "pdf_page": 40,
+        "footer_ocr": "© ISO 2022 - All rights reserved 35",
+        "number_candidates": [
+          35
+        ]
+      },
+      {
+        "pdf_page": 41,
+        "footer_ocr": "Eg Overlap ratio - 4,87\r\nTotal contact ratio | = | 656\r\n36 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          4,
+          36
+        ]
+      },
+      {
+        "pdf_page": 42,
+        "footer_ocr": "© ISO 2022 - All rights reserved 37",
+        "number_candidates": [
+          37
+        ]
+      },
+      {
+        "pdf_page": 43,
+        "footer_ocr": "| (auxiliary factor, see ISO 6336-2:2019) |\r\n38 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          2,
+          38
+        ]
+      },
+      {
+        "pdf_page": 44,
+        "footer_ocr": "© ISO 2022 - All rights reserved 39",
+        "number_candidates": [
+          39
+        ]
+      },
+      {
+        "pdf_page": 45,
+        "footer_ocr": "|2p Single pair tooth contact factor, wheel — 1,03 |\r\n40 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          1,
+          3,
+          40
+        ]
+      },
+      {
+        "pdf_page": 46,
+        "footer_ocr": "Component of equivalent misalignment due to deformations of pm 78,9\r\npinion and wheel shafts\r\n© ISO 2022 - All rights reserved 41",
+        "number_candidates": [
+          9,
+          41
+        ]
+      },
+      {
+        "pdf_page": 47,
+        "footer_ocr": "42 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          42
+        ]
+      },
+      {
+        "pdf_page": 48,
+        "footer_ocr": "Surface roughness (Ra) Ray, = 1,0 pm Rays = 1,0 pm\r\nFillet roughness (Ra) Ray, = 3,0 pm Ray = 3,0 pm\r\n© ISO 2022 - All rights reserved 43",
+        "number_candidates": [
+          1,
+          1,
+          3,
+          3,
+          43
+        ]
+      },
+      {
+        "pdf_page": 49,
+        "footer_ocr": "Mesh misalignment ma = 12,042 pm\r\nLubrication viscosity V49 = 320 mm2/s\r\n44 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          12,
+          42,
+          44
+        ]
+      },
+      {
+        "pdf_page": 50,
+        "footer_ocr": "Base helix angle By =tan™* [tan(B) cos(@, )|=14,825°\r\n© ISO 2022 - All rights reserved 45",
+        "number_candidates": [
+          14,
+          45
+        ]
+      },
+      {
+        "pdf_page": 51,
+        "footer_ocr": "46 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          46
+        ]
+      },
+      {
+        "pdf_page": 52,
+        "footer_ocr": "© ISO 2022 - All rights reserved 47",
+        "number_candidates": [
+          47
+        ]
+      },
+      {
+        "pdf_page": 53,
+        "footer_ocr": "48 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          48
+        ]
+      },
+      {
+        "pdf_page": 54,
+        "footer_ocr": "© ISO 2022 - All rights reserved 49",
+        "number_candidates": [
+          49
+        ]
+      },
+      {
+        "pdf_page": 55,
+        "footer_ocr": "50 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          50
+        ]
+      },
+      {
+        "pdf_page": 56,
+        "footer_ocr": "© ISO 2022 - All rights reserved 51",
+        "number_candidates": [
+          51
+        ]
+      },
+      {
+        "pdf_page": 57,
+        "footer_ocr": "52 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          52
+        ]
+      },
+      {
+        "pdf_page": 58,
+        "footer_ocr": "© ISO 2022 - All rights reserved 53",
+        "number_candidates": [
+          53
+        ]
+      },
+      {
+        "pdf_page": 59,
+        "footer_ocr": "54 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          54
+        ]
+      },
+      {
+        "pdf_page": 60,
+        "footer_ocr": "Se rs Le ee\r\n© ISO 2022 - All rights reserved 55",
+        "number_candidates": [
+          55
+        ]
+      },
+      {
+        "pdf_page": 61,
+        "footer_ocr": "56 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          56
+        ]
+      },
+      {
+        "pdf_page": 62,
+        "footer_ocr": "a\r\n0, “— rad for external gears\r\n© ISO 2022 - All rights reserved 57",
+        "number_candidates": [
+          57
+        ]
+      },
+      {
+        "pdf_page": 63,
+        "footer_ocr": "58 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          58
+        ]
+      },
+      {
+        "pdf_page": 64,
+        "footer_ocr": "© ISO 2022 - All rights reserved 59",
+        "number_candidates": [
+          59
+        ]
+      },
+      {
+        "pdf_page": 65,
+        "footer_ocr": "QsT = 69\r\n60 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          69,
+          60
+        ]
+      },
+      {
+        "pdf_page": 66,
+        "footer_ocr": "© ISO 2022 - All rights reserved 61",
+        "number_candidates": [
+          61
+        ]
+      },
+      {
+        "pdf_page": 67,
+        "footer_ocr": "62 © ISO 2022 - All rights reserved",
+        "number_candidates": [
+          62
+        ]
+      },
+      {
+        "pdf_page": 68,
+        "footer_ocr": "1) Cancelled and replaced by ISO 21920-2:2021.\r\n2) Cancelled and replaced by ISO 21920-3:2021.\r\n© ISO 2022 - All rights reserved 63",
+        "number_candidates": [
+          1,
+          2,
+          2,
+          3,
+          63
+        ]
+      },
+      {
+        "pdf_page": 69,
+        "footer_ocr": "ICS 21.200\r\nPrice based on 63 pages\r\n© ISO 2022 - Allrights reserved",
+        "number_candidates": [
+          63
+        ]
+      }
+    ],
+    "observed_max_page": 63,
+    "missing_number_candidates": [
+      2,
+      7,
+      17
+    ],
+    "note": "OCR candidates require visual confirmation for every discontinuity; not an automatic completeness verdict."
+  }
+}

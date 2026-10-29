@@ -1,0 +1,19 @@
+{
+  "created": "2026-10-29T04:22:47.147928-07:00",
+  "repo": "qizhou-hust/yuanqi-public",
+  "visibility": "public",
+  "mode": "git",
+  "files": [
+    {
+      "path": "files/ISO 1328-1-2013.pdf",
+      "bytes": 30637869,
+      "sha256": "3a8df4712b018ac5fd7a54c45ce8220e8d8b3a173b180bfba75620519aa5e6bb"
+    },
+    {
+      "path": "files/ISO 18265-2013.pdf",
+      "bytes": 45577497,
+      "sha256": "38625c4daccfacae40504b84265f7a6f96c7fff3ff1e06ef2dc48f3d1893619f"
+    }
+  ],
+  "excluded_count": 0
+}

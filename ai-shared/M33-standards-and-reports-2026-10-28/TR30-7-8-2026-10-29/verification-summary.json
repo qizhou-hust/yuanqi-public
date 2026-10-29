@@ -1,0 +1,128 @@
+{
+  "M33_accepted": false,
+  "cases": [
+    {
+      "case": 7,
+      "accepted": false,
+      "input_audit": {
+        "matched": 109,
+        "not_applicable": 20,
+        "derived_matches_printed": 1
+      },
+      "strict_input_closure": false,
+      "ancillary_assumption": "TR30 does not specify a tip-relief length. Native linear relief uses LCa=0.5*mn so Ca=13 is retained; sensitivity at LCa=1*mn is separate. This does not grant strict-input acceptance.",
+      "report_validation": {
+        "pages": 14,
+        "contains_end": true,
+        "contains_2019": true,
+        "unexpanded": false
+      },
+      "reload_ok": true,
+      "reload_differences": {},
+      "values_extracted": 622,
+      "unavailable_optional_template_fields": {
+        "ZR[0].SplineDeff": "Not exposed by this module/configuration",
+        "ZR[0].SplineDref": "Not exposed by this module/configuration",
+        "ZR[0].SplineDrefFlag": "Not exposed by this module/configuration",
+        "ZR[0].SplineIsCrNiMo": "Not exposed by this module/configuration",
+        "ZR[0].SplineK1Streck": "Not exposed by this module/configuration",
+        "ZR[0].SplineK1Zug": "Not exposed by this module/configuration",
+        "ZR[0].SplineMatStrength": "Not exposed by this module/configuration",
+        "ZR[0].SplineRm": "Not exposed by this module/configuration",
+        "ZR[0].SplineRp": "Not exposed by this module/configuration",
+        "ZR[0].mat.Dg": "Not exposed by this module/configuration",
+        "ZR[0].mat.Dk": "Not exposed by this module/configuration",
+        "ZR[1].SplineDeff": "Not exposed by this module/configuration",
+        "ZR[1].SplineDref": "Not exposed by this module/configuration",
+        "ZR[1].SplineDrefFlag": "Not exposed by this module/configuration",
+        "ZR[1].SplineIsCrNiMo": "Not exposed by this module/configuration",
+        "ZR[1].SplineK1Streck": "Not exposed by this module/configuration",
+        "ZR[1].SplineK1Zug": "Not exposed by this module/configuration",
+        "ZR[1].SplineMatStrength": "Not exposed by this module/configuration",
+        "ZR[1].SplineWallthickness": "Not exposed by this module/configuration",
+        "ZR[1].mat.Dg": "Not exposed by this module/configuration",
+        "ZR[1].mat.Dk": "Not exposed by this module/configuration",
+        "ZR[1].mat.limfreduced": "Not exposed by this module/configuration",
+        "ZR[1].mat.wmlmin": "Not exposed by this module/configuration",
+        "ZR[1].mat.wmlpolyalpha": "Not exposed by this module/configuration",
+        "ZR[1].mat.wmlpolygly": "Not exposed by this module/configuration",
+        "ZR[1].mat.wmlpolyglyISO": "Not exposed by this module/configuration",
+        "ZR[1].mat.yw": "Not exposed by this module/configuration"
+      },
+      "printed_quantum_failures": [
+        "sigma_FP_1",
+        "sigma_FP_2",
+        "sigma_Hlim_1",
+        "sigma_Hlim_2",
+        "sigma_HP_1"
+      ],
+      "unmapped_results": [
+        "f_sh0"
+      ],
+      "strict_pass": 75,
+      "comparison_rows": 100,
+      "reference_transcription_sha256": "7c0b593bc746549a62765cab105a3941d836d1a0c3ad58387ef23fee1152b560",
+      "native_sha256": "ba9205dda2b8fcd9f7a6bb5eb40ed7c66924782b886a455fa4b1b95839787f8e"
+    },
+    {
+      "case": 8,
+      "accepted": false,
+      "input_audit": {
+        "matched": 112,
+        "not_applicable": 18,
+        "derived_matches_printed": 3
+      },
+      "strict_input_closure": false,
+      "ancillary_assumption": "TR30 does not specify a tip-relief length. Native linear relief uses LCa=0.5*mn so Ca=13 is retained; sensitivity at LCa=1*mn is separate. This does not grant strict-input acceptance.",
+      "report_validation": {
+        "pages": 16,
+        "contains_end": true,
+        "contains_2019": true,
+        "unexpanded": false
+      },
+      "reload_ok": true,
+      "reload_differences": {},
+      "values_extracted": 622,
+      "unavailable_optional_template_fields": {
+        "ZR[0].SplineDeff": "Not exposed by this module/configuration",
+        "ZR[0].SplineDref": "Not exposed by this module/configuration",
+        "ZR[0].SplineDrefFlag": "Not exposed by this module/configuration",
+        "ZR[0].SplineIsCrNiMo": "Not exposed by this module/configuration",
+        "ZR[0].SplineK1Streck": "Not exposed by this module/configuration",
+        "ZR[0].SplineK1Zug": "Not exposed by this module/configuration",
+        "ZR[0].SplineMatStrength": "Not exposed by this module/configuration",
+        "ZR[0].SplineRm": "Not exposed by this module/configuration",
+        "ZR[0].SplineRp": "Not exposed by this module/configuration",
+        "ZR[0].mat.Dg": "Not exposed by this module/configuration",
+        "ZR[0].mat.Dk": "Not exposed by this module/configuration",
+        "ZR[1].SplineDeff": "Not exposed by this module/configuration",
+        "ZR[1].SplineDref": "Not exposed by this module/configuration",
+        "ZR[1].SplineDrefFlag": "Not exposed by this module/configuration",
+        "ZR[1].SplineIsCrNiMo": "Not exposed by this module/configuration",
+        "ZR[1].SplineK1Streck": "Not exposed by this module/configuration",
+        "ZR[1].SplineK1Zug": "Not exposed by this module/configuration",
+        "ZR[1].SplineMatStrength": "Not exposed by this module/configuration",
+        "ZR[1].SplineWallthickness": "Not exposed by this module/configuration",
+        "ZR[1].mat.Dg": "Not exposed by this module/configuration",
+        "ZR[1].mat.Dk": "Not exposed by this module/configuration",
+        "ZR[1].mat.limfreduced": "Not exposed by this module/configuration",
+        "ZR[1].mat.wmlmin": "Not exposed by this module/configuration",
+        "ZR[1].mat.wmlpolyalpha": "Not exposed by this module/configuration",
+        "ZR[1].mat.wmlpolygly": "Not exposed by this module/configuration",
+        "ZR[1].mat.wmlpolyglyISO": "Not exposed by this module/configuration",
+        "ZR[1].mat.yw": "Not exposed by this module/configuration"
+      },
+      "printed_quantum_failures": [
+        "sigma_F0_1",
+        "sigma_F_2"
+      ],
+      "unmapped_results": [
+        "f_sh0"
+      ],
+      "strict_pass": 79,
+      "comparison_rows": 102,
+      "reference_transcription_sha256": "7c0b593bc746549a62765cab105a3941d836d1a0c3ad58387ef23fee1152b560",
+      "native_sha256": "f43d54fc0667da8a412aee29348e5b17710512841dc985ea5d31263f207d3ed0"
+    }
+  ]
+}

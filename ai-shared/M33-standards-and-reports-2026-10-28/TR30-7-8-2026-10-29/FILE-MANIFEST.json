@@ -1,0 +1,134 @@
+{
+  ".gitattributes": {
+    "bytes": 9,
+    "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+  },
+  "core-regression-tests.txt": {
+    "bytes": 574,
+    "sha256": "0540d55bb4e6226e69de57dd2c82f22f562ab7df3ebb300f23f7d839c4536bc3"
+  },
+  "README.md": {
+    "bytes": 8195,
+    "sha256": "f2336778e7d828cba62c22d94b7b1ea08fd90a7b07617df0c8938f23a021c80b"
+  },
+  "software-reference-hashes.json": {
+    "bytes": 535,
+    "sha256": "9259ad9c43c487d2f318ab3648e785663869301821ffbdae5ae28f50d0063ad7"
+  },
+  "verification-summary.json": {
+    "bytes": 6458,
+    "sha256": "4eaa25c6f8e73eee237dd9e24fc47092290f3a461270ec38534b8883a0e86229"
+  },
+  "scripts/build_cases.py": {
+    "bytes": 12527,
+    "sha256": "6defae9a18e010dbbdad0276b67f2ec30766d378adb0bb26dd5822bfa665524f"
+  },
+  "scripts/check_relief_representation.py": {
+    "bytes": 2015,
+    "sha256": "e0e844253797cec0f7590f84b48b63402701fbd64a2193944f38a9c0fee891b7"
+  },
+  "scripts/fields.json": {
+    "bytes": 2786,
+    "sha256": "d912cf1856439c7f803cdc06df847e1b5b863649501564f1b56cf62176f24825"
+  },
+  "scripts/finalize_reports.py": {
+    "bytes": 19758,
+    "sha256": "98e00ef90db0f232db1312dd0d19aa3e405bc4d85fca28640ff516bbf69ed406"
+  },
+  "TR30-example-7/comparison.csv": {
+    "bytes": 13511,
+    "sha256": "1f9ddf21d07f222ca28ca73ca704a0be463dc6af81ceb360bc6a33c955d46e72"
+  },
+  "TR30-example-7/comparison.json": {
+    "bytes": 50223,
+    "sha256": "8221ba8ff5353e2aca75998608662d60650486103bc73c1fb6e86c195853fb2c"
+  },
+  "TR30-example-7/high-precision-appendix.pdf": {
+    "bytes": 6187,
+    "sha256": "11e226cca16a39d05eecc65016177a7a042ae4dc7c95c8ebcf0018674a1de44e"
+  },
+  "TR30-example-7/high-precision-values.csv": {
+    "bytes": 20046,
+    "sha256": "862560a9e559ec996095750fc9a65d78dcef15a41685bc7f6675f1a99c65c418"
+  },
+  "TR30-example-7/input-audit.csv": {
+    "bytes": 11955,
+    "sha256": "7fc73e1857c4a219b00f827f17f2bd32bcb6db02a5d595405de9ec0892bca6b1"
+  },
+  "TR30-example-7/relief-length-sensitivity.json": {
+    "bytes": 15275,
+    "sha256": "505c4e9581ff62a172e41a0cc13fbd2a438234e0ee2446d2eefe5ff746164f27"
+  },
+  "TR30-example-7/report.txt": {
+    "bytes": 36585,
+    "sha256": "3f9e798ba04e074aca87b0c64e912f6be19d9119b0fab7377720fad32d51e421"
+  },
+  "TR30-example-7/run.json": {
+    "bytes": 102489,
+    "sha256": "8fb57c8f7a71d6ddb9bf5da52dd2502e8e3cf2ca8933b56163b1dffbee7e8b00"
+  },
+  "TR30-example-7/TR30-example-7.pdf": {
+    "bytes": 180222,
+    "sha256": "5686508ae8d6c5ff1f9ce4af356d158b6360f578d2fd48259bb8a0a29a3124f1"
+  },
+  "TR30-example-7/TR30-example-7.rtf": {
+    "bytes": 108626,
+    "sha256": "f7fd08f5acaf3a5d69e4407d149adc179e0f5f17ac73546240068fd524e6d7c6"
+  },
+  "TR30-example-7/TR30-example-7.Z12": {
+    "bytes": 375478,
+    "sha256": "ba9205dda2b8fcd9f7a6bb5eb40ed7c66924782b886a455fa4b1b95839787f8e"
+  },
+  "TR30-example-7/validation.json": {
+    "bytes": 2987,
+    "sha256": "b70729fbe1536adf0429a1e28eabab7a9dfa029661496cbc091836afdd1c8e35"
+  },
+  "TR30-example-8/comparison.csv": {
+    "bytes": 12874,
+    "sha256": "979f5d04790c794e61265052d916fedc6a17de1da40c4d96bebc9ca7396014b2"
+  },
+  "TR30-example-8/comparison.json": {
+    "bytes": 50264,
+    "sha256": "ae99d4fa2353b85ee44f45dc4e2046f9d1ff9642c755db14611e099ccb064b51"
+  },
+  "TR30-example-8/high-precision-appendix.pdf": {
+    "bytes": 5849,
+    "sha256": "c7031825800ea13da9c4dce82252b2faac77a52d948c1314c534e57b6e9cbd48"
+  },
+  "TR30-example-8/high-precision-values.csv": {
+    "bytes": 19927,
+    "sha256": "384c72f52f789111ad4b1a3fb9c4d433ed764141f0e70cc60c8751007e8b474a"
+  },
+  "TR30-example-8/input-audit.csv": {
+    "bytes": 12643,
+    "sha256": "52d750aab77b5e8b10ad795bba58cc90e2ebc762683e6b749c41862e55bcdfe1"
+  },
+  "TR30-example-8/relief-length-sensitivity.json": {
+    "bytes": 15124,
+    "sha256": "4c20febe0f3569c421bd0195203a550737cee87f90263302c740538dda1f6007"
+  },
+  "TR30-example-8/report.txt": {
+    "bytes": 41195,
+    "sha256": "58d40f586acbc0157ff3443873a4a53a40b36301e2b31f55d61881eebd12a2d1"
+  },
+  "TR30-example-8/run.json": {
+    "bytes": 101145,
+    "sha256": "7ed5a2bbd2b3498dea2dd70cf3afb5bc3edc93932ca52bd1697611b4699a1de3"
+  },
+  "TR30-example-8/TR30-example-8.pdf": {
+    "bytes": 195046,
+    "sha256": "5eb72ec62c3ec5ab001e38f75f2353bd638986f499385d7a5e451742745b06bf"
+  },
+  "TR30-example-8/TR30-example-8.rtf": {
+    "bytes": 119721,
+    "sha256": "f81cdba7d55f639c8354e306cfbb860c7c3ec72f792ccc072f35d588c6d9754d"
+  },
+  "TR30-example-8/TR30-example-8.Z12": {
+    "bytes": 376490,
+    "sha256": "f43d54fc0667da8a412aee29348e5b17710512841dc985ea5d31263f207d3ed0"
+  },
+  "TR30-example-8/validation.json": {
+    "bytes": 2925,
+    "sha256": "b503b62affdfa7cf9590a9c37a3d0f4e87773413d9dea8892dd2180febd7331e"
+  }
+}

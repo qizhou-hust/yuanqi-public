@@ -1,0 +1,628 @@
+{
+  "case": 7,
+  "accepted": false,
+  "calculate_ok": true,
+  "messages": [
+    [],
+    [],
+    0
+  ],
+  "counts": {
+    "True": 99,
+    "None": 1
+  },
+  "input_missing_from_TR30": "Relief length and shape",
+  "baseline": {
+    "shape": "linear",
+    "LCa_over_mn": 0.5,
+    "Ca_um": 13
+  },
+  "sensitivity": {
+    "shape": "linear",
+    "LCa_over_mn": 1,
+    "Ca_um": 13
+  },
+  "rows": [
+    {
+      "quantity": "d_1",
+      "LCa_half_mn": 153.39284197185836,
+      "LCa_one_mn": 153.39284197185836,
+      "unchanged": true
+    },
+    {
+      "quantity": "d_2",
+      "LCa_half_mn": 765.1805721619446,
+      "LCa_one_mn": 765.1805721619446,
+      "unchanged": true
+    },
+    {
+      "quantity": "da_1",
+      "LCa_half_mn": 157.99,
+      "LCa_one_mn": 157.99,
+      "unchanged": true
+    },
+    {
+      "quantity": "da_2",
+      "LCa_half_mn": 769.52,
+      "LCa_one_mn": 769.52,
+      "unchanged": true
+    },
+    {
+      "quantity": "db_1",
+      "LCa_half_mn": 143.22771084453598,
+      "LCa_one_mn": 143.22771084453598,
+      "unchanged": true
+    },
+    {
+      "quantity": "db_2",
+      "LCa_half_mn": 714.4731157244876,
+      "LCa_one_mn": 714.4731157244876,
+      "unchanged": true
+    },
+    {
+      "quantity": "xE_1",
+      "LCa_half_mn": 0.18570184672144752,
+      "LCa_one_mn": 0.18570184672144752,
+      "unchanged": true
+    },
+    {
+      "quantity": "xE_2",
+      "LCa_half_mn": 0.11040714365691803,
+      "LCa_one_mn": 0.11040714365691803,
+      "unchanged": true
+    },
+    {
+      "quantity": "df_1",
+      "LCa_half_mn": 149.7884189637082,
+      "LCa_one_mn": 149.7884189637082,
+      "unchanged": true
+    },
+    {
+      "quantity": "df_2",
+      "LCa_half_mn": 761.3211510977688,
+      "LCa_one_mn": 761.3211510977688,
+      "unchanged": true
+    },
+    {
+      "quantity": "d_Ff_1",
+      "LCa_half_mn": 150.80683312330353,
+      "LCa_one_mn": 150.80683312330353,
+      "unchanged": true
+    },
+    {
+      "quantity": "d_Ff_2",
+      "LCa_half_mn": 762.2084355477799,
+      "LCa_one_mn": 762.2084355477799,
+      "unchanged": true
+    },
+    {
+      "quantity": "d_Nf_1",
+      "LCa_half_mn": 151.39208617247877,
+      "LCa_one_mn": 151.39208617247877,
+      "unchanged": true
+    },
+    {
+      "quantity": "d_Nf_2",
+      "LCa_half_mn": 763.1444689854898,
+      "LCa_one_mn": 763.1444689854898,
+      "unchanged": true
+    },
+    {
+      "quantity": "dw_1",
+      "LCa_half_mn": 153.7563106796117,
+      "LCa_one_mn": 153.7563106796117,
+      "unchanged": true
+    },
+    {
+      "quantity": "dw_2",
+      "LCa_half_mn": 766.9936893203884,
+      "LCa_one_mn": 766.9936893203884,
+      "unchanged": true
+    },
+    {
+      "quantity": "F_t",
+      "LCa_half_mn": 6884.284732098091,
+      "LCa_one_mn": 6884.284732098091,
+      "unchanged": true
+    },
+    {
+      "quantity": "K_Falpha",
+      "LCa_half_mn": 1.3688303125884036,
+      "LCa_one_mn": 1.3688303125884036,
+      "unchanged": true
+    },
+    {
+      "quantity": "K_Fbeta",
+      "LCa_half_mn": 1.3606067063514453,
+      "LCa_one_mn": 1.3606067063514453,
+      "unchanged": true
+    },
+    {
+      "quantity": "K_Halpha",
+      "LCa_half_mn": 1.3688303125884036,
+      "LCa_one_mn": 1.3688303125884036,
+      "unchanged": true
+    },
+    {
+      "quantity": "K_Hbeta",
+      "LCa_half_mn": 1.3809487351110064,
+      "LCa_one_mn": 1.3809487351110064,
+      "unchanged": true
+    },
+    {
+      "quantity": "K_V",
+      "LCa_half_mn": 1.6837191321758298,
+      "LCa_one_mn": 1.6837191321758298,
+      "unchanged": true
+    },
+    {
+      "quantity": "S_F_1",
+      "LCa_half_mn": 2.7917467571431853,
+      "LCa_one_mn": 2.7917467571431853,
+      "unchanged": true
+    },
+    {
+      "quantity": "S_F_2",
+      "LCa_half_mn": 2.5027733924458238,
+      "LCa_one_mn": 2.5027733924458238,
+      "unchanged": true
+    },
+    {
+      "quantity": "S_H_1",
+      "LCa_half_mn": 1.303160572670938,
+      "LCa_one_mn": 1.303160572670938,
+      "unchanged": true
+    },
+    {
+      "quantity": "S_H_2",
+      "LCa_half_mn": 1.3314584140223513,
+      "LCa_one_mn": 1.3314584140223513,
+      "unchanged": true
+    },
+    {
+      "quantity": "v_w",
+      "LCa_half_mn": 43.47357264667241,
+      "LCa_one_mn": 43.47357264667241,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_B_1",
+      "LCa_half_mn": 1.0,
+      "LCa_one_mn": 1.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_B_2",
+      "LCa_half_mn": 1.0,
+      "LCa_one_mn": 1.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_DT",
+      "LCa_half_mn": 1.0,
+      "LCa_one_mn": 1.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_F_1",
+      "LCa_half_mn": 0.8570769712869173,
+      "LCa_one_mn": 0.8570769712869173,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_F_2",
+      "LCa_half_mn": 0.8937020351408124,
+      "LCa_one_mn": 0.8937020351408124,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_NT_1",
+      "LCa_half_mn": 0.8504837749295574,
+      "LCa_one_mn": 0.8504837749295574,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_NT_2",
+      "LCa_half_mn": 0.8783137415813516,
+      "LCa_one_mn": 0.8783137415813516,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_N_1",
+      "LCa_half_mn": 0.8504837749295574,
+      "LCa_one_mn": 0.8504837749295574,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_N_2",
+      "LCa_half_mn": 0.8783137415813516,
+      "LCa_one_mn": 0.8783137415813516,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_RrelT_1",
+      "LCa_half_mn": 0.9638811646410465,
+      "LCa_one_mn": 0.9638811646410465,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_RrelT_2",
+      "LCa_half_mn": 0.9638811646410465,
+      "LCa_one_mn": 0.9638811646410465,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_S_1",
+      "LCa_half_mn": 2.2973660385019445,
+      "LCa_one_mn": 2.2973660385019445,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_S_2",
+      "LCa_half_mn": 2.357600334914581,
+      "LCa_one_mn": 2.357600334914581,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_ST",
+      "LCa_half_mn": 2.0,
+      "LCa_one_mn": 2.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_X_1",
+      "LCa_half_mn": 1.0,
+      "LCa_one_mn": 1.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_X_2",
+      "LCa_half_mn": 1.0,
+      "LCa_one_mn": 1.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_beta",
+      "LCa_half_mn": 0.9903519980810247,
+      "LCa_one_mn": 0.9903519980810247,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_drelT_1",
+      "LCa_half_mn": 1.0007793286296267,
+      "LCa_one_mn": 1.0007793286296267,
+      "unchanged": true
+    },
+    {
+      "quantity": "Y_drelT_2",
+      "LCa_half_mn": 1.0027959255816272,
+      "LCa_one_mn": 1.0027959255816272,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_B",
+      "LCa_half_mn": 1.03440804327886,
+      "LCa_one_mn": 1.03440804327886,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_beta",
+      "LCa_half_mn": 1.0263183568278953,
+      "LCa_one_mn": 1.0263183568278953,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_D",
+      "LCa_half_mn": 1.03440804327886,
+      "LCa_one_mn": 1.03440804327886,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_E",
+      "LCa_half_mn": 189.81170043756651,
+      "LCa_one_mn": 189.81170043756651,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_eps",
+      "LCa_half_mn": 0.7702339181428807,
+      "LCa_one_mn": 0.7702339181428807,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_H",
+      "LCa_half_mn": 2.3693568414662534,
+      "LCa_one_mn": 2.3693568414662534,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_L_1",
+      "LCa_half_mn": 0.845788648338574,
+      "LCa_one_mn": 0.845788648338574,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_L_2",
+      "LCa_half_mn": 0.845788648338574,
+      "LCa_one_mn": 0.845788648338574,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_NT_1",
+      "LCa_half_mn": 0.8517055043489609,
+      "LCa_one_mn": 0.8517055043489609,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_NT_2",
+      "LCa_half_mn": 0.9540082684685324,
+      "LCa_one_mn": 0.9540082684685324,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_N_1",
+      "LCa_half_mn": 0.8517055043489609,
+      "LCa_one_mn": 0.8517055043489609,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_N_2",
+      "LCa_half_mn": 0.9540082684685324,
+      "LCa_one_mn": 0.9540082684685324,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_R_1",
+      "LCa_half_mn": 0.9401610628646452,
+      "LCa_one_mn": 0.9401610628646452,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_R_2",
+      "LCa_half_mn": 0.9401610628646452,
+      "LCa_one_mn": 0.9401610628646452,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_V_1",
+      "LCa_half_mn": 1.091926653934392,
+      "LCa_one_mn": 1.091926653934392,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_V_2",
+      "LCa_half_mn": 1.091926653934392,
+      "LCa_one_mn": 1.091926653934392,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_W_1",
+      "LCa_half_mn": 1.0,
+      "LCa_one_mn": 1.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_W_2",
+      "LCa_half_mn": 1.0,
+      "LCa_one_mn": 1.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_X_1",
+      "LCa_half_mn": 1.0,
+      "LCa_one_mn": 1.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "Z_X_2",
+      "LCa_half_mn": 1.0,
+      "LCa_one_mn": 1.0,
+      "unchanged": true
+    },
+    {
+      "quantity": "eps_alpha",
+      "LCa_half_mn": 1.6856007710587289,
+      "LCa_one_mn": 1.6856007710587289,
+      "unchanged": true
+    },
+    {
+      "quantity": "eps_beta",
+      "LCa_half_mn": 4.874982899834453,
+      "LCa_one_mn": 4.874982899834453,
+      "unchanged": true
+    },
+    {
+      "quantity": "eps_gamma",
+      "LCa_half_mn": 6.560583670893182,
+      "LCa_one_mn": 6.560583670893182,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_F0_1",
+      "LCa_half_mn": 48.01853512172702,
+      "LCa_one_mn": 48.01853512172702,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_F0_2",
+      "LCa_half_mn": 51.383279060210256,
+      "LCa_one_mn": 51.383279060210256,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_F_1",
+      "LCa_half_mn": 150.57774022042378,
+      "LCa_one_mn": 150.57774022042378,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_F_2",
+      "LCa_half_mn": 161.12898959512466,
+      "LCa_one_mn": 161.12898959512466,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_Flim_1",
+      "LCa_half_mn": 256.19989479221465,
+      "LCa_one_mn": 256.19989479221465,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_Flim_2",
+      "LCa_half_mn": 237.50867964229354,
+      "LCa_one_mn": 237.50867964229354,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_FP_1",
+      "LCa_half_mn": 420.37491795831704,
+      "LCa_one_mn": 420.37491795831704,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_FP_2",
+      "LCa_half_mn": 403.269347910358,
+      "LCa_one_mn": 403.269347910358,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_H_1",
+      "LCa_half_mn": 374.7803254582033,
+      "LCa_one_mn": 374.7803254582033,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_H_2",
+      "LCa_half_mn": 374.7803254582033,
+      "LCa_one_mn": 374.7803254582033,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_Hlim_1",
+      "LCa_half_mn": 660.4313519200421,
+      "LCa_one_mn": 660.4313519200421,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_Hlim_2",
+      "LCa_half_mn": 602.4134665965282,
+      "LCa_one_mn": 602.4134665965282,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_H0",
+      "LCa_half_mn": 203.08903987835177,
+      "LCa_one_mn": 203.08903987835177,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_HP_1",
+      "LCa_half_mn": 488.3989435499128,
+      "LCa_one_mn": 488.3989435499128,
+      "unchanged": true
+    },
+    {
+      "quantity": "sigma_HP_2",
+      "LCa_half_mn": 499.00441774136004,
+      "LCa_one_mn": 499.00441774136004,
+      "unchanged": true
+    },
+    {
+      "quantity": "c_gamma_alpha",
+      "LCa_half_mn": 19.275117554426192,
+      "LCa_one_mn": 19.275117554426192,
+      "unchanged": true
+    },
+    {
+      "quantity": "c_s",
+      "LCa_half_mn": 12.729566895385972,
+      "LCa_one_mn": 12.729566895385972,
+      "unchanged": true
+    },
+    {
+      "quantity": "m_red",
+      "LCa_half_mn": 0.08138495891468595,
+      "LCa_one_mn": 0.08138495891468595,
+      "unchanged": true
+    },
+    {
+      "quantity": "N_res",
+      "LCa_half_mn": 3.1600531384145847,
+      "LCa_one_mn": 3.1600531384145847,
+      "unchanged": true
+    },
+    {
+      "quantity": "c_gamma_beta",
+      "LCa_half_mn": 16.383849921262264,
+      "LCa_one_mn": 16.383849921262264,
+      "unchanged": true
+    },
+    {
+      "quantity": "f_sh0",
+      "LCa_half_mn": null,
+      "LCa_one_mn": null,
+      "unchanged": null
+    },
+    {
+      "quantity": "F_bx",
+      "LCa_half_mn": 6.634023813276626,
+      "LCa_one_mn": 6.634023813276626,
+      "unchanged": true
+    },
+    {
+      "quantity": "F_by",
+      "LCa_half_mn": 3.2648404937760804,
+      "LCa_one_mn": 3.2648404937760804,
+      "unchanged": true
+    },
+    {
+      "quantity": "y_alpha",
+      "LCa_half_mn": 1.5411784711135652,
+      "LCa_one_mn": 1.5411784711135652,
+      "unchanged": true
+    },
+    {
+      "quantity": "y_beta",
+      "LCa_half_mn": 3.369183319500545,
+      "LCa_one_mn": 3.369183319500545,
+      "unchanged": true
+    },
+    {
+      "quantity": "f_pb",
+      "LCa_half_mn": 6.069254005087686,
+      "LCa_one_mn": 6.069254005087686,
+      "unchanged": true
+    },
+    {
+      "quantity": "f_Hbeta5",
+      "LCa_half_mn": 8.5,
+      "LCa_one_mn": 8.5,
+      "unchanged": true
+    },
+    {
+      "quantity": "f_sh",
+      "LCa_half_mn": 1.402989614077725,
+      "LCa_one_mn": 1.402989614077725,
+      "unchanged": true
+    },
+    {
+      "quantity": "f_ma",
+      "LCa_half_mn": 11.672617529928752,
+      "LCa_one_mn": 11.672617529928752,
+      "unchanged": true
+    },
+    {
+      "quantity": "f_ZCa",
+      "LCa_half_mn": 1.07,
+      "LCa_one_mn": 1.07,
+      "unchanged": true
+    },
+    {
+      "quantity": "f_eps",
+      "LCa_half_mn": 0.7359059346301625,
+      "LCa_one_mn": 0.7359059346301625,
+      "unchanged": true
+    }
+  ],
+  "conclusion": "Numerical invariance for mapped rating outputs is only a sensitivity result, not proof of a source-defined relief geometry."
+}

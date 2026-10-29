@@ -1,0 +1,18 @@
+{
+  "help/e/7674.htm": {
+    "sha256": "3edba48be75d973ace231ce879ebde34a375d785557702a74a095afd935abca0",
+    "bytes": 5080
+  },
+  "dat/K09-001.dat": {
+    "sha256": "5afe93470fb7d88b504389e7166394d97935fe333bfb792a1e4f48826ec969bb",
+    "bytes": 9580
+  },
+  "dat/K09-Haerte.dat": {
+    "sha256": "667bd820a6bc0b0560a3cf53f6b269163ba809fd92f4bd30373c37d5b5376fe1",
+    "bytes": 9359
+  },
+  "rpt/Z012Le0.RPT": {
+    "sha256": "9831d570481aa918f7509eb446be4c5ce3ada975af7d2f59bd79e34eed5c6b6d",
+    "bytes": 44142
+  }
+}

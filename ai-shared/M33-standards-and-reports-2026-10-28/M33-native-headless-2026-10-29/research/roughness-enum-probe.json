@@ -1,0 +1,206 @@
+[
+  {
+    "requested_RZFlag": 0,
+    "requested_Ra": 0.3,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "0",
+      "ZR[0].RAH": "0.5999999999999999778",
+      "ZR[0].RZH": "4.7999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "20"
+    }
+  },
+  {
+    "requested_RZFlag": 0,
+    "requested_Ra": 0.38,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "0",
+      "ZR[0].RAH": "0.5999999999999999778",
+      "ZR[0].RZH": "4.7999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "20"
+    }
+  },
+  {
+    "requested_RZFlag": 0,
+    "requested_Ra": 0.5,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "0",
+      "ZR[0].RAH": "0.5999999999999999778",
+      "ZR[0].RZH": "4.7999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "20"
+    }
+  },
+  {
+    "requested_RZFlag": 1,
+    "requested_Ra": 0.3,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "1",
+      "ZR[0].RAH": "0.2999999999999999889",
+      "ZR[0].RZH": "2.2999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "18"
+    }
+  },
+  {
+    "requested_RZFlag": 1,
+    "requested_Ra": 0.38,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "1",
+      "ZR[0].RAH": "0.38000000000000000444",
+      "ZR[0].RZH": "2.2999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "18"
+    }
+  },
+  {
+    "requested_RZFlag": 1,
+    "requested_Ra": 0.5,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "1",
+      "ZR[0].RAH": "0.5",
+      "ZR[0].RZH": "2.2999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "18"
+    }
+  },
+  {
+    "requested_RZFlag": 2,
+    "requested_Ra": 0.3,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "2",
+      "ZR[0].RAH": "0.2999999999999999889",
+      "ZR[0].RZH": "2.2999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "18"
+    }
+  },
+  {
+    "requested_RZFlag": 2,
+    "requested_Ra": 0.38,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "2",
+      "ZR[0].RAH": "0.38000000000000000444",
+      "ZR[0].RZH": "2.2999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "18"
+    }
+  },
+  {
+    "requested_RZFlag": 2,
+    "requested_Ra": 0.5,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "2",
+      "ZR[0].RAH": "0.5",
+      "ZR[0].RZH": "2.2999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "18"
+    }
+  },
+  {
+    "requested_RZFlag": 3,
+    "requested_Ra": 0.3,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "3",
+      "ZR[0].RAH": "0.2999999999999999889",
+      "ZR[0].RZH": "2.2999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "18"
+    }
+  },
+  {
+    "requested_RZFlag": 3,
+    "requested_Ra": 0.38,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "3",
+      "ZR[0].RAH": "0.38000000000000000444",
+      "ZR[0].RZH": "2.2999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "18"
+    }
+  },
+  {
+    "requested_RZFlag": 3,
+    "requested_Ra": 0.5,
+    "calculate_ok": true,
+    "messages": [
+      [],
+      [],
+      0
+    ],
+    "readback": {
+      "ZR[0].RZFlag": "3",
+      "ZR[0].RAH": "0.5",
+      "ZR[0].RZH": "2.2999999999999998224",
+      "ZR[0].RAF": "3",
+      "ZR[0].RZF": "18"
+    }
+  }
+]

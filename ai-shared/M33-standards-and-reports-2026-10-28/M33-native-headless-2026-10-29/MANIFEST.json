@@ -1,0 +1,630 @@
+{
+  "schema": "m33.public_evidence.v1",
+  "accepted": false,
+  "formal_gate": "BLOCKED_INPUT_IDENTITY",
+  "valid_variants": [
+    "ex7-base-native",
+    "ex7-diag-lim",
+    "ex8-Rz2.3",
+    "ex7-life-g1-N100000",
+    "ex7-life-g1-N600000",
+    "ex7-life-g1-N10000000",
+    "ex7-life-g1-N1000000000",
+    "ex7-life-g1-N10000000000",
+    "ex7-life-g2-N100000",
+    "ex7-life-g2-N600000",
+    "ex7-life-g2-N10000000",
+    "ex7-life-g2-N1000000000",
+    "ex7-life-g2-N10000000000"
+  ],
+  "pdf_pages": 184,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
+      "path": "audit-validation.json",
+      "bytes": 1911,
+      "sha256": "0c97cd92e673605cd7649c544dd384ef44a049b474cd0bea186c7bc6fce7165d"
+    },
+    {
+      "path": "evidence-integrity.json",
+      "bytes": 9784,
+      "sha256": "7ca1359accc600c62aa141a3ac978f3e939ca457efe69d3d8df19dae36e7664d"
+    },
+    {
+      "path": "ex7-base-native/ex7-base-native.pdf",
+      "bytes": 180301,
+      "sha256": "45c3d3a03439fb5d87a0920c747e86084c1fc8cb73831ab14c874ab3db574267"
+    },
+    {
+      "path": "ex7-base-native/ex7-base-native.rtf",
+      "bytes": 108711,
+      "sha256": "c5de46c2fe1605145aae6f81781f715f12384a14a861f5da99d1db28e783f900"
+    },
+    {
+      "path": "ex7-base-native/ex7-base-native.Z12",
+      "bytes": 375712,
+      "sha256": "bf4448e08016beb333bd159abcc40ab3095b2505aff05c2407b6f5231e9d2914"
+    },
+    {
+      "path": "ex7-base-native/high-precision-values.csv",
+      "bytes": 36234,
+      "sha256": "e8a05f151a76669ac1f6cec6faa72d2809ad51668ad2799a49c9f9e4caa4d414"
+    },
+    {
+      "path": "ex7-base-native/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-base-native/report.txt",
+      "bytes": 36672,
+      "sha256": "135af245b4f8714e3a6ae683bb10717c5e09fe8d879a25fa9c0558e93a28200c"
+    },
+    {
+      "path": "ex7-base-native/run.json",
+      "bytes": 95491,
+      "sha256": "13afe0d2d4c5795b26df2186896ec8b382a4a673b43f754bad445e421b2603e5"
+    },
+    {
+      "path": "ex7-diag-lim/ex7-diag-lim.pdf",
+      "bytes": 180434,
+      "sha256": "2f87aa652dfd7866022f4ed11d60516b3546f858a9c6f69506d86cd8d0e059d3"
+    },
+    {
+      "path": "ex7-diag-lim/ex7-diag-lim.rtf",
+      "bytes": 108660,
+      "sha256": "acc0b9c4b55ac00135b0e8099259afb543a9353eb9d5d35747b717102da71576"
+    },
+    {
+      "path": "ex7-diag-lim/ex7-diag-lim.Z12",
+      "bytes": 375460,
+      "sha256": "ffbd953efa7ef4c465db7ba938cd11f8c4ae0e6fe4d75a2edbf2c96ab46abf1d"
+    },
+    {
+      "path": "ex7-diag-lim/high-precision-values.csv",
+      "bytes": 36137,
+      "sha256": "9e1b221f55a345b34ac4a6a76e9c78aff1186f71c4e745ad8cc09046a3c1801e"
+    },
+    {
+      "path": "ex7-diag-lim/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-diag-lim/report.txt",
+      "bytes": 36619,
+      "sha256": "9586ba7f2e7a4864886578ba2dad424749d0161fea75a30356857c055065343f"
+    },
+    {
+      "path": "ex7-diag-lim/run.json",
+      "bytes": 95824,
+      "sha256": "42a1485913ea3674db6ba46f652c1cecb6a7731b8e075b823c7dfa3a0ed61687"
+    },
+    {
+      "path": "ex7-life-g1-N100000/ex7-life-g1-N100000.pdf",
+      "bytes": 180374,
+      "sha256": "e21b586ecc2b55ae1e8a020d1a934b7ed4f641a5c1c8b5f151c2d047a64d1be9"
+    },
+    {
+      "path": "ex7-life-g1-N100000/ex7-life-g1-N100000.rtf",
+      "bytes": 108671,
+      "sha256": "4c8b54e277512b27c04751a6ca046029b8a6ecf32e3b10152ba373e041576ebd"
+    },
+    {
+      "path": "ex7-life-g1-N100000/ex7-life-g1-N100000.Z12",
+      "bytes": 375440,
+      "sha256": "4b2ebfea6cdfafa7568a85fa17550d7d451c613776f621a38263624390cb4492"
+    },
+    {
+      "path": "ex7-life-g1-N100000/high-precision-values.csv",
+      "bytes": 36109,
+      "sha256": "3af8a472f37ef93cdfeb2d68ae6ff93e2dafc379912813c65a22465dc108a205"
+    },
+    {
+      "path": "ex7-life-g1-N100000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g1-N100000/report.txt",
+      "bytes": 36630,
+      "sha256": "ed57b90423e4144d9ecc67bfe3c486135d5304948f78076432dbfffdcb8fb0ba"
+    },
+    {
+      "path": "ex7-life-g1-N100000/run.json",
+      "bytes": 95322,
+      "sha256": "2c6be04e5ceaa1f9f5fe1c0c304350b9c228dec43aa89683384e261b53b8a0aa"
+    },
+    {
+      "path": "ex7-life-g1-N10000000/ex7-life-g1-N10000000.pdf",
+      "bytes": 180452,
+      "sha256": "be6ef18e7eb943cd568dabb133b76a7840b8580df25fea59cc26e89ff4bc308a"
+    },
+    {
+      "path": "ex7-life-g1-N10000000/ex7-life-g1-N10000000.rtf",
+      "bytes": 108675,
+      "sha256": "ea38da7d9f60bf867f047d945b78cd3ba82a5f9c48b666018e5010815caf30e5"
+    },
+    {
+      "path": "ex7-life-g1-N10000000/ex7-life-g1-N10000000.Z12",
+      "bytes": 375702,
+      "sha256": "3052ebdf07c081f56f26878d612c1dd3fe2700490151125a6e2f301a7de246d8"
+    },
+    {
+      "path": "ex7-life-g1-N10000000/high-precision-values.csv",
+      "bytes": 36229,
+      "sha256": "e3422723783552d9e0dfdb047b3c1618ec135ee872140d72804a7551e9905255"
+    },
+    {
+      "path": "ex7-life-g1-N10000000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g1-N10000000/report.txt",
+      "bytes": 36634,
+      "sha256": "f471ffdd204c13191a60868dcf08caf85f1857ce4db06775414f3d5104f9669c"
+    },
+    {
+      "path": "ex7-life-g1-N10000000/run.json",
+      "bytes": 95608,
+      "sha256": "abe0a5073fb7408b7270e7c33e2656587ac1a1e615686518f29ad22db03579ca"
+    },
+    {
+      "path": "ex7-life-g1-N1000000000/ex7-life-g1-N1000000000.pdf",
+      "bytes": 180433,
+      "sha256": "ad50f21ae7d8e5120f0856e3559798b8186a6323be021095f4c36c5b594482dd"
+    },
+    {
+      "path": "ex7-life-g1-N1000000000/ex7-life-g1-N1000000000.rtf",
+      "bytes": 108685,
+      "sha256": "a1c100b7526537fd155b1e981cd964f7f18e37128b554a8d3c96436d0f58be22"
+    },
+    {
+      "path": "ex7-life-g1-N1000000000/ex7-life-g1-N1000000000.Z12",
+      "bytes": 375716,
+      "sha256": "70f6811a6f0eab2228c8da2849e87604fa1a1f980eed0c6e7e0a308d07fe3394"
+    },
+    {
+      "path": "ex7-life-g1-N1000000000/high-precision-values.csv",
+      "bytes": 36213,
+      "sha256": "9570f26cf848534504a1dd3fb26b57fe408b7809e0dffbcff3d132fd014ece15"
+    },
+    {
+      "path": "ex7-life-g1-N1000000000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g1-N1000000000/report.txt",
+      "bytes": 36644,
+      "sha256": "b6e08388de7215d328132a78a1a5ea21467c5b98fb0c322a4f5ed4f71b9008f8"
+    },
+    {
+      "path": "ex7-life-g1-N1000000000/run.json",
+      "bytes": 95556,
+      "sha256": "298024d5fe2341558cd176e7c63896cc469992274aad9db97282eb9e3242b683"
+    },
+    {
+      "path": "ex7-life-g1-N10000000000/ex7-life-g1-N10000000000.pdf",
+      "bytes": 180381,
+      "sha256": "6070d1176ffbeecdd163e68cc23a92a8846cc879d0a743f26cc3f1d015339414"
+    },
+    {
+      "path": "ex7-life-g1-N10000000000/ex7-life-g1-N10000000000.rtf",
+      "bytes": 108690,
+      "sha256": "d63d2fe29157967624930554ed5a69f780dbbe2395f40f44bd8030dd4f17b574"
+    },
+    {
+      "path": "ex7-life-g1-N10000000000/ex7-life-g1-N10000000000.Z12",
+      "bytes": 375720,
+      "sha256": "e2abef3cfc10a5969b5d88c8d94513ac4e26e691f7a5d1f48f2cf451a02ffe64"
+    },
+    {
+      "path": "ex7-life-g1-N10000000000/high-precision-values.csv",
+      "bytes": 36235,
+      "sha256": "bf07f60cc338c801257e271afc6c4706b934a071bce1d6fc5ad39dbbbc316a27"
+    },
+    {
+      "path": "ex7-life-g1-N10000000000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g1-N10000000000/report.txt",
+      "bytes": 36649,
+      "sha256": "604ab6e1f8ca7d3a72a4a43c49fe38be3420fe94d9eae647d38b757ae06eb196"
+    },
+    {
+      "path": "ex7-life-g1-N10000000000/run.json",
+      "bytes": 95550,
+      "sha256": "a7f6cc6100c740de9282857153943b9b5977a60b2a9756163a25225b9faf91c8"
+    },
+    {
+      "path": "ex7-life-g1-N600000/ex7-life-g1-N600000.pdf",
+      "bytes": 180357,
+      "sha256": "b5b56cc939905ae9320f14143edaa59303516a88289ec9cbf1cfc320568faad3"
+    },
+    {
+      "path": "ex7-life-g1-N600000/ex7-life-g1-N600000.rtf",
+      "bytes": 108671,
+      "sha256": "bc3529a8b53e0d85f0a573b212616018e7167e0959dc049d26158d61c93ec84a"
+    },
+    {
+      "path": "ex7-life-g1-N600000/ex7-life-g1-N600000.Z12",
+      "bytes": 375436,
+      "sha256": "633fd8e2cc22db71981166f39818175009438c61913e51561a4b29504a945e37"
+    },
+    {
+      "path": "ex7-life-g1-N600000/high-precision-values.csv",
+      "bytes": 36108,
+      "sha256": "bfc8ff8b13156b0b892c60f0532d864a88f1091606fef2d068c68d0dcfe0778f"
+    },
+    {
+      "path": "ex7-life-g1-N600000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g1-N600000/report.txt",
+      "bytes": 36630,
+      "sha256": "7bdba66cef96c95fcd2465f17f6074c7d76226e1cbdc5ec7e5f904867c364ccc"
+    },
+    {
+      "path": "ex7-life-g1-N600000/run.json",
+      "bytes": 95316,
+      "sha256": "c0957f77877429ee8201c723b214663cff8755f048cbd2e48155bf4c4d2a741b"
+    },
+    {
+      "path": "ex7-life-g2-N100000/ex7-life-g2-N100000.pdf",
+      "bytes": 180282,
+      "sha256": "106aa075d898cd065d71cce81711c648e951f147f889d1e47b27ced430b8e835"
+    },
+    {
+      "path": "ex7-life-g2-N100000/ex7-life-g2-N100000.rtf",
+      "bytes": 108704,
+      "sha256": "756223f58224e8e87196373b1d6313b83bf60b9a79de891e720a9e819e518408"
+    },
+    {
+      "path": "ex7-life-g2-N100000/ex7-life-g2-N100000.Z12",
+      "bytes": 375506,
+      "sha256": "0d35a46ee3db017febcb691372253534232550e4758200bebe7769a0a65e598d"
+    },
+    {
+      "path": "ex7-life-g2-N100000/high-precision-values.csv",
+      "bytes": 36153,
+      "sha256": "0c3923dc78d6330a4697a567ceee0b05294da372e11bb8c1905117ad4787d9b4"
+    },
+    {
+      "path": "ex7-life-g2-N100000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g2-N100000/report.txt",
+      "bytes": 36665,
+      "sha256": "29036e2fbb4f9441b175f5a2d8c9691e4f466478a9163aef9d509b0ad253b092"
+    },
+    {
+      "path": "ex7-life-g2-N100000/run.json",
+      "bytes": 95437,
+      "sha256": "d9d60aed3b49531ee51fa16c6b3a94d9db0db49d8e028bc35156a2be12cc77dc"
+    },
+    {
+      "path": "ex7-life-g2-N10000000/ex7-life-g2-N10000000.pdf",
+      "bytes": 180351,
+      "sha256": "2a3a50b02900f8972a4f8e72a848a28ccca6f4f55946116f5ec21279d77e949b"
+    },
+    {
+      "path": "ex7-life-g2-N10000000/ex7-life-g2-N10000000.rtf",
+      "bytes": 108710,
+      "sha256": "c086d943ed509e0bcd3b7c4e0299406868f495da1a9d893d299b7c7b203eace1"
+    },
+    {
+      "path": "ex7-life-g2-N10000000/ex7-life-g2-N10000000.Z12",
+      "bytes": 375768,
+      "sha256": "2977651e9c51e1b125f8e033f5fdc09cf1c185dac5e2f2c47281a8c9fe8fbe1c"
+    },
+    {
+      "path": "ex7-life-g2-N10000000/high-precision-values.csv",
+      "bytes": 36254,
+      "sha256": "66a1ea8260abd7b57ab02df98ad5776e5a2bb0c87467653354d93c20e67f2bb2"
+    },
+    {
+      "path": "ex7-life-g2-N10000000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g2-N10000000/report.txt",
+      "bytes": 36671,
+      "sha256": "f5aa2b5f2e03bf603fda731ddda2252fde14f2a9a153a9a2426f2a8e86be6184"
+    },
+    {
+      "path": "ex7-life-g2-N10000000/run.json",
+      "bytes": 95683,
+      "sha256": "45c5b2fc3e1312b1f9d4701e5ae4cea955103cf9531bd6b343589716b01d2bea"
+    },
+    {
+      "path": "ex7-life-g2-N1000000000/ex7-life-g2-N1000000000.pdf",
+      "bytes": 180305,
+      "sha256": "164eeac56b21815532183316fe347c39a64e24f0401f3960353359a1383bc5f1"
+    },
+    {
+      "path": "ex7-life-g2-N1000000000/ex7-life-g2-N1000000000.rtf",
+      "bytes": 108720,
+      "sha256": "432e3830fc730b06091a2925a97c4219a02fbe2e3097ff27cb896af338f6c94e"
+    },
+    {
+      "path": "ex7-life-g2-N1000000000/ex7-life-g2-N1000000000.Z12",
+      "bytes": 375778,
+      "sha256": "d4c27dbe831f9bcde27a1bb6a703965795c980173fe9251ea65fd937314ab1e7"
+    },
+    {
+      "path": "ex7-life-g2-N1000000000/high-precision-values.csv",
+      "bytes": 36254,
+      "sha256": "6704ea91ce9c6d105296670b84b1596aaffbbd6cc046bb2545094f54cc16ea49"
+    },
+    {
+      "path": "ex7-life-g2-N1000000000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g2-N1000000000/report.txt",
+      "bytes": 36681,
+      "sha256": "d2bcdc4227cf480aeb58fa9cea02dc9039ae2050b7dfd5a75fdfdd20eb4cb99f"
+    },
+    {
+      "path": "ex7-life-g2-N1000000000/run.json",
+      "bytes": 95671,
+      "sha256": "e7e79d3217a6995808ab8f578586b3110b5ca778ace0b7f1c9fbcf9f6bba1795"
+    },
+    {
+      "path": "ex7-life-g2-N10000000000/ex7-life-g2-N10000000000.pdf",
+      "bytes": 180308,
+      "sha256": "23a239dfe8ee848feda05029425a532d7e16c9d4129e269aca387333bbcc5e84"
+    },
+    {
+      "path": "ex7-life-g2-N10000000000/ex7-life-g2-N10000000000.rtf",
+      "bytes": 108726,
+      "sha256": "92d519146c9d066844075c9a4a2d475d7ca87cf1f32c30a10da0819c656b3594"
+    },
+    {
+      "path": "ex7-life-g2-N10000000000/ex7-life-g2-N10000000000.Z12",
+      "bytes": 375786,
+      "sha256": "00daad9c00c1222507e4ecaaee5b61629cb4e60365661c42bddabbeec7a90af9"
+    },
+    {
+      "path": "ex7-life-g2-N10000000000/high-precision-values.csv",
+      "bytes": 36269,
+      "sha256": "7b4aa769588a46eab541b03cdf73af63e73b417d093be88c8d16e12f36bd4b46"
+    },
+    {
+      "path": "ex7-life-g2-N10000000000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g2-N10000000000/report.txt",
+      "bytes": 36687,
+      "sha256": "dd0dd46bed98e6c7e855c95440332f52ce62d6e6649d19975983c694b9ab51c7"
+    },
+    {
+      "path": "ex7-life-g2-N10000000000/run.json",
+      "bytes": 95595,
+      "sha256": "af147e4c95baa2f71c5ef799fdc9f319d4849b190abacd20c271bd92f74130bc"
+    },
+    {
+      "path": "ex7-life-g2-N600000/ex7-life-g2-N600000.pdf",
+      "bytes": 180298,
+      "sha256": "3ef13f928d70516a09559c08685784449031232bbbcb0e0db6936a090d5c50a2"
+    },
+    {
+      "path": "ex7-life-g2-N600000/ex7-life-g2-N600000.rtf",
+      "bytes": 108704,
+      "sha256": "366c4fe0c3252159f65debaf208e8befdb34c2201830048f98443e6e6791ead5"
+    },
+    {
+      "path": "ex7-life-g2-N600000/ex7-life-g2-N600000.Z12",
+      "bytes": 375622,
+      "sha256": "03d6fbf7e14869b5ab871d0cc68df51312db81d1518759f67feeea749b9c9a82"
+    },
+    {
+      "path": "ex7-life-g2-N600000/high-precision-values.csv",
+      "bytes": 36206,
+      "sha256": "05f5b86112fcf8cea291e31fc67fa85704e1f5b31eb9082d518bb415ce94f7c5"
+    },
+    {
+      "path": "ex7-life-g2-N600000/report-validation.json",
+      "bytes": 117,
+      "sha256": "b98b5a23892d9f6351035ceafc86ca6e6c1015172b4fb3e3b497f6b9c021b414"
+    },
+    {
+      "path": "ex7-life-g2-N600000/report.txt",
+      "bytes": 36665,
+      "sha256": "f23af01fd37aeb218a759bf34153fb198b2d0a0a3c2148d85ba7757bb5865fef"
+    },
+    {
+      "path": "ex7-life-g2-N600000/run.json",
+      "bytes": 95547,
+      "sha256": "c72a62627d0da05225dfa9790228d52159879040ec649f858d8810c3c5c94c9f"
+    },
+    {
+      "path": "ex7-native-material.Z12",
+      "bytes": 375518,
+      "sha256": "f691d20ca5d841c3357fe718b68cc20db54c07c13b8e9684fbf525998171e865"
+    },
+    {
+      "path": "ex8-Rz2.3/ex8-Rz2.3.pdf",
+      "bytes": 195004,
+      "sha256": "ca216140542e56a68431da1c59f4b495dd20df132fc84719f05981572f217b38"
+    },
+    {
+      "path": "ex8-Rz2.3/ex8-Rz2.3.rtf",
+      "bytes": 119774,
+      "sha256": "3f89a59d7cada3a46e024883e3225d93d1ea84981d65a12f647664082b6149d1"
+    },
+    {
+      "path": "ex8-Rz2.3/ex8-Rz2.3.Z12",
+      "bytes": 376612,
+      "sha256": "a43584b2ac10f7964f05d49f3366cac113ebc1218a106bedffce7bccd0d4b87e"
+    },
+    {
+      "path": "ex8-Rz2.3/high-precision-values.csv",
+      "bytes": 36419,
+      "sha256": "0c1e617b7eb8ffda1327e944ec7041bac584796d9a5096c631ec7034d56e0541"
+    },
+    {
+      "path": "ex8-Rz2.3/report-validation.json",
+      "bytes": 117,
+      "sha256": "eed21cf0a3c2741d62b9f19e7c8efef418726b1e41badb28a6242d6dbec07cc1"
+    },
+    {
+      "path": "ex8-Rz2.3/report.txt",
+      "bytes": 41248,
+      "sha256": "4e884ce96d027956ad3551279e4ee70aa055cd624cc21e7b7bc565f6f897dd4c"
+    },
+    {
+      "path": "ex8-Rz2.3/run.json",
+      "bytes": 95068,
+      "sha256": "99b1f1507eaefd484149e55b7e63760653f30b0a29f07b2df9ee68513f07d573"
+    },
+    {
+      "path": "life-curve.json",
+      "bytes": 2201,
+      "sha256": "ec107fe2587d04d54becc445193fc6a80a1631b9e2990d19cd9e7784ab948c2b"
+    },
+    {
+      "path": "LOCAL-RUN-NOTES.md",
+      "bytes": 3842,
+      "sha256": "16da359385ff54c30675924735d7beaebbe2ca9a434fc5a4bfabb10bfff02815"
+    },
+    {
+      "path": "PUBLIC-AUDIT-SUMMARY.md",
+      "bytes": 3137,
+      "sha256": "80c60d13aacfd54bbdc61dd36e743f5e15d685e40547fdb2428638bd0366fdad"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3035,
+      "sha256": "2bc64db67462a013c6e190c71772039dd2ff88265d5f870818e5ced846fa0d46"
+    },
+    {
+      "path": "research/ex8-headless-readonly-recheck.json",
+      "bytes": 245,
+      "sha256": "d1ceaf9f138909825299dfaf2b50b42e6b715089a527ac394c72e69406675823"
+    },
+    {
+      "path": "research/FAILED-ex8-Ra0.38/run.json",
+      "bytes": 95614,
+      "sha256": "1e3de52451200204692d7752ce05ea5b4ddf32fbceea181523177cbf8fb40b85"
+    },
+    {
+      "path": "research/pdf-layout-validation.json",
+      "bytes": 1552,
+      "sha256": "2a6d902b09f231c63623f0624e4ace10de719d641c55490ceabc2ae591a866fd"
+    },
+    {
+      "path": "research/roughness-enum-probe.json",
+      "bytes": 4084,
+      "sha256": "3a40898cef168388cacf63d3955907cd1122ac9783f39bb789937bad6e0ff1f1"
+    },
+    {
+      "path": "research/software-build.json",
+      "bytes": 99,
+      "sha256": "949a23e4fd036d7e9ca133a1af26369c912deca82ef314c3cd4f8dc170a19398"
+    },
+    {
+      "path": "research/software-file-hashes.json",
+      "bytes": 254,
+      "sha256": "207a77b0e2d942a02f09bdf8b79818ccfb5bbc3024d23c15913abfee9184ab95"
+    },
+    {
+      "path": "research/software-file-versions.json",
+      "bytes": 324,
+      "sha256": "57c4a587ed089cb3f219a2cadf8cc20ffba25a773f46eb0aa64d301640b5ce73"
+    },
+    {
+      "path": "screenshots/ex7-gear1-material-HB342.png",
+      "bytes": 70952,
+      "sha256": "c863ff8d182dfb719ac71921012caff9a7b9c8bb67f5ad1b636185b983dac58d"
+    },
+    {
+      "path": "screenshots/ex7-gear1-material-native-applied.png",
+      "bytes": 76974,
+      "sha256": "6b5ca19057f9a306dbe8a786f2bdef1d7666a1ff1374dcc2e584c0dc7b97e586"
+    },
+    {
+      "path": "screenshots/ex7-gear1-native-limits.png",
+      "bytes": 18811,
+      "sha256": "541b33948f827a89cf656fd8c7ecc4471e6e35abffa1ceec4992260a8326425d"
+    },
+    {
+      "path": "screenshots/ex7-gear2-ISO-limits-before.png",
+      "bytes": 76256,
+      "sha256": "b82fa0129f995e7d45bdb066ff930828b375f38ba8f9273b41e8758a59f6716d"
+    },
+    {
+      "path": "screenshots/ex7-gear2-material-HB300.png",
+      "bytes": 70961,
+      "sha256": "01e26681ba823ebdc3153eb307717446a94321dbe578cc69a1b7a0d3d92185f7"
+    },
+    {
+      "path": "screenshots/ex7-gear2-material-native-applied.png",
+      "bytes": 76999,
+      "sha256": "d7614821ba77bec3bad3b6fcfdec65d9e49b324b814c25b10f6c2cc358e8ddeb"
+    },
+    {
+      "path": "screenshots/ex7-gear2-native-limits.png",
+      "bytes": 18764,
+      "sha256": "dadb90999cb4aae5290479d84105f1f514f1a291b2aa4bf5246c8960c9f9e98d"
+    },
+    {
+      "path": "screenshots/ex7-HB300-to-HV-DIN18265.png",
+      "bytes": 51440,
+      "sha256": "f7535225f7b59b23bca4d29aa7500e0b4b5dc3fde44682b78e3df95febb2b1cf"
+    },
+    {
+      "path": "screenshots/ex7-HB342-to-HV-DIN18265.png",
+      "bytes": 51551,
+      "sha256": "7d66b5a787fd4aed29e6772627a451d9e113c74be5c3bb5e9f193af679ca39d9"
+    },
+    {
+      "path": "scripts/export_reports.py",
+      "bytes": 1553,
+      "sha256": "21c0e59da590334a19bd5e1bfe5d6c10500f83af0a612a88effd6b0c6d77daf1"
+    },
+    {
+      "path": "scripts/life_curve.py",
+      "bytes": 1379,
+      "sha256": "a3fda0edc8cccd95356eb6069017c5583bef42fd394bba48c2c31618198b9760"
+    },
+    {
+      "path": "scripts/recheck_native.py",
+      "bytes": 2081,
+      "sha256": "2d627e5cefcb0c2c164562f1c96d9bc7aeb04e3c4326b5b50b8753f59a6673d8"
+    },
+    {
+      "path": "scripts/run_variants.py",
+      "bytes": 5040,
+      "sha256": "0eb8c54288409c72a778e1bdd08c91ce2fdc8e1f365becf741d3992abb603417"
+    },
+    {
+      "path": "scripts/verify_m33_evidence.py",
+      "bytes": 4385,
+      "sha256": "127f490caf8fa19a8263cf24e799d28fefbe3e37f3cae1e78ef513a162ef0f3f"
+    }
+  ],
+  "excluded": [
+    "core source",
+    "TR30 full table transcriptions",
+    "standards PDFs",
+    "installed vendor templates",
+    "UI definition source"
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "schema": "m33.saved_evidence_verification.v1",
+  "evidence_integrity_pass": true,
+  "accepted": false,
+  "formal_gate": "BLOCKED_INPUT_IDENTITY",
+  "valid_variants": 13,
+  "total_pdf_pages": 184,
+  "life_points": 10,
+  "checks": [
+    {
+      "variant": "ex7-base-native",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "bf4448e08016beb333bd159abcc40ab3095b2505aff05c2407b6f5231e9d2914",
+      "run_sha256": "13afe0d2d4c5795b26df2186896ec8b382a4a673b43f754bad445e421b2603e5"
+    },
+    {
+      "variant": "ex7-diag-lim",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.62640606211386,
+          "reconstructed_MPa": 150.62640606211386,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.18106553867275,
+          "reconstructed_MPa": 161.18106553867275,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "ffbd953efa7ef4c465db7ba938cd11f8c4ae0e6fe4d75a2edbf2c96ab46abf1d",
+      "run_sha256": "42a1485913ea3674db6ba46f652c1cecb6a7731b8e075b823c7dfa3a0ed61687"
+    },
+    {
+      "variant": "ex8-Rz2.3",
+      "fields": 1196,
+      "pages": 16,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 320.0083674995829,
+          "reconstructed_MPa": 320.0083674995829,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 347.56660024307644,
+          "reconstructed_MPa": 347.56660024307644,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "a43584b2ac10f7964f05d49f3366cac113ebc1218a106bedffce7bccd0d4b87e",
+      "run_sha256": "99b1f1507eaefd484149e55b7e63760653f30b0a29f07b2df9ee68513f07d573"
+    },
+    {
+      "variant": "ex7-life-g1-N100000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "4b2ebfea6cdfafa7568a85fa17550d7d451c613776f621a38263624390cb4492",
+      "run_sha256": "2c6be04e5ceaa1f9f5fe1c0c304350b9c228dec43aa89683384e261b53b8a0aa"
+    },
+    {
+      "variant": "ex7-life-g1-N600000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "633fd8e2cc22db71981166f39818175009438c61913e51561a4b29504a945e37",
+      "run_sha256": "c0957f77877429ee8201c723b214663cff8755f048cbd2e48155bf4c4d2a741b"
+    },
+    {
+      "variant": "ex7-life-g1-N10000000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "3052ebdf07c081f56f26878d612c1dd3fe2700490151125a6e2f301a7de246d8",
+      "run_sha256": "abe0a5073fb7408b7270e7c33e2656587ac1a1e615686518f29ad22db03579ca"
+    },
+    {
+      "variant": "ex7-life-g1-N1000000000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "70f6811a6f0eab2228c8da2849e87604fa1a1f980eed0c6e7e0a308d07fe3394",
+      "run_sha256": "298024d5fe2341558cd176e7c63896cc469992274aad9db97282eb9e3242b683"
+    },
+    {
+      "variant": "ex7-life-g1-N10000000000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "e2abef3cfc10a5969b5d88c8d94513ac4e26e691f7a5d1f48f2cf451a02ffe64",
+      "run_sha256": "a7f6cc6100c740de9282857153943b9b5977a60b2a9756163a25225b9faf91c8"
+    },
+    {
+      "variant": "ex7-life-g2-N100000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "0d35a46ee3db017febcb691372253534232550e4758200bebe7769a0a65e598d",
+      "run_sha256": "d9d60aed3b49531ee51fa16c6b3a94d9db0db49d8e028bc35156a2be12cc77dc"
+    },
+    {
+      "variant": "ex7-life-g2-N600000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "03d6fbf7e14869b5ab871d0cc68df51312db81d1518759f67feeea749b9c9a82",
+      "run_sha256": "c72a62627d0da05225dfa9790228d52159879040ec649f858d8810c3c5c94c9f"
+    },
+    {
+      "variant": "ex7-life-g2-N10000000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "2977651e9c51e1b125f8e033f5fdc09cf1c185dac5e2f2c47281a8c9fe8fbe1c",
+      "run_sha256": "45c5b2fc3e1312b1f9d4701e5ae4cea955103cf9531bd6b343589716b01d2bea"
+    },
+    {
+      "variant": "ex7-life-g2-N1000000000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "d4c27dbe831f9bcde27a1bb6a703965795c980173fe9251ea65fd937314ab1e7",
+      "run_sha256": "e7e79d3217a6995808ab8f578586b3110b5ca778ace0b7f1c9fbcf9f6bba1795"
+    },
+    {
+      "variant": "ex7-life-g2-N10000000000",
+      "fields": 1196,
+      "pages": 14,
+      "source_hash_checked_locally": true,
+      "root_stress_reconstruction": [
+        {
+          "gear": 1,
+          "reported_MPa": 150.5831565562801,
+          "reconstructed_MPa": 150.5831565562801,
+          "relative_error": 0.0
+        },
+        {
+          "gear": 2,
+          "reported_MPa": 161.13478546324276,
+          "reconstructed_MPa": 161.13478546324276,
+          "relative_error": 0.0
+        }
+      ],
+      "native_sha256": "00daad9c00c1222507e4ecaaee5b61629cb4e60365661c42bddabbeec7a90af9",
+      "run_sha256": "af147e4c95baa2f71c5ef799fdc9f319d4849b190abacd20c271bd92f74130bc"
+    }
+  ],
+  "limit": "Checks saved artifacts and stress reconstruction. Does not certify original-table input identity or source settings."
+}

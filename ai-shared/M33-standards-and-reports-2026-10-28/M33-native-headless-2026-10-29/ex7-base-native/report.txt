@@ -1,0 +1,2191 @@
+ 
+ 
+  
+1/14 
+ 
+ KISSsoft Release 2026 
+ 
+ 
+2o2dy 
+ 
+ File  
+ 
+Name: 
+ex7-base-native 
+Description: 
+TR30 example 7 ex7-base-native - UNACCEPTED 
+Comment: 
+TR30 original inputs; limits from native ISO hardness and endurance-limit dialogs. Ancillary defaults and unresolved input 
+issues are documented. 
+Changed by: 
+AAA 
+on: 29.10.2026 
+at: 15:49:24 
+ 
+ 
+ 
+1 Overview 
+ 
+Calculation method 
+ISO 6336:2019 
+ 
+Drawing or article number: 
+Gear 1: 
+0.000.0 
+Gear 2: 
+0.000.0 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Power (kW) 
+[P] 
+   298.577 
+Speed (1/min) 
+[n] 
+    5400.0 
+    1082.5 
+ 
+Number of load cycles (in mio.) 
+[NL] 
+  9720.000 
+  1948.531 
+ 
+Torque (Nm) 
+[T] 
+     528.0 
+    2633.9 
+Application factor 
+[KA] 
+      1.00 
+Required service life (h) 
+[H] 
+  30000.00 
+ 
+Gear driving (+) / driven (-) 
++ 
+- 
+Working flank Gear 1: 
+Right flank 
+Gear 1 direction of rotation: 
+Clockwise 
+ 
+2 Tooth geometry 
+ 
+Geometry calculation according to 
+ISO 21771:2007 (withdrawn) 
+ 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Center distance (mm) 
+[a] 
+   460.375 
+Center distance allowances (mm) 
+[Aa.e/i] 
+0.000 / 0.000 
+Normal module (mm) 
+[mn] 
+    1.6933 
+Transverse module (mm) 
+[mt] 
+    1.7836 
+Normal diametral pitch (1/in) 
+[Pnd] 
+  15.00000 
+Transverse diametral pitch (1/in) 
+[Ptd] 
+  14.24056 
+Normal pressure angle (°) 
+[αn] 
+   20.0000 
+Helix angle at reference circle (°) 
+[β] 
+   18.3100 
+Number of teeth 
+[z] 
+        86 
+       429 
+Double helical gearing 
+left/right 
+right/left 
+Total facewidth of Gear (mm) 
+[B] 
+    215.90 
+    215.90 
+ 
+Width of intermediate groove (mm) 
+[bNut] 
+     50.80 
+     50.80 
+Facewidth for calculation (mm) 
+[beH] 
+     82.55 
+     82.55 
+Accuracy grade 
+[Q-ISO 1328:2013] 
+A5 
+A5 
+Inner diameter (mm) 
+[di] 
+      0.00 
+      0.00 
+Shaft diameter (mm) 
+[ds] 
+     77.58 
+    377.50 
+Inner diameter of gear rim (mm) 
+[dbi] 
+      0.00 
+      0.00 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+ 
+3 Materials 
+ 
+Gear 1 
+Own input, TR30 example 7 V alloy steel ML, Through hardened steel, alloyed/through hardened, Original TR30 table properties; material 
+
+ 
+ 
+  
+2/14 
+limits from ISO 6336-5 Table 1 
+ 
+ 
+ 
+ 
+Gear 2 
+Own input, TR30 example 7 V alloy steel ML, Through hardened steel, alloyed/through hardened, Original TR30 table properties; material 
+limits from ISO 6336-5 Table 1 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Surface hardness 
+HBW 342 
+HBW 300 
+Material treatment according to ISO 6336:2006 Normal, Life factors ZNT and YNT ≥ 0.85 
+Infinite life strength for tooth root stress (N/mm²) 
+[σFlim] 
+    256.28 
+    237.48 
+Infinite life strength for Hertzian pressure (N/mm²) 
+[σHlim] 
+    660.68 
+    602.32 
+Young's modulus (N/mm²) 
+[E] 
+    206000 
+    206000 
+Poisson's ratio 
+[ν] 
+     0.300 
+     0.300 
+Tensile strength (N/mm²) 
+[σB] 
+   1200.00 
+   1200.00 
+Yield point (N/mm²) 
+[σS] 
+   1000.00 
+   1000.00 
+ 
+3.1 Gear roughness 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Arithmetic mean roughness value Ra, flank (µm) 
+[RAH] 
+      1.00 
+      1.00 
+Arithmetic mean roughness value Ra, root (µm) 
+[RAF] 
+      3.00 
+      3.00 
+Mean peak-to-valley roughness Rz, flank (µm) 
+[RZH] 
+      6.00 
+      6.00 
+Mean peak-to-valley roughness Rz, root (µm) 
+[RZF] 
+     18.00 
+     18.00 
+ 
+3.2 Lubrication 
+ 
+Lubrication type 
+Oil bath lubrication 
+Oil type, own input 
+TR30 example 7: nu40 input; other oil properties are ancillary defaults 
+Lubricant base 
+Mineral-oil base 
+Lubricant factor 
+[XL] 
+     1.000 
+Oil nominal kinematic viscosity at 40°C (mm²/s) 
+[ν40] 
+     25.00 
+Oil nominal kinematic viscosity at 100°C (mm²/s) 
+[ν100] 
+     19.00 
+Specific density at 15°C (kg/dm³) 
+[ρ] 
+     0.890 
+Oil temperature (°C) 
+[TS] 
+    80.000 
+ 
+4 Geometry 
+ 
+ 
+4.1 Reference profiles 
+ 
+ Reference profile Gear 1 
+Reference profile, own input 
+1.25 / 0.38 / 1.0 ISO 53:1998 Profil A 
+Dedendum coefficient 
+[hfP*] 
+     1.250 
+Root radius factor 
+[ρfP*] 
+     0.380 
+ 
+[ρfPmax*] 
+     0.472 
+Addendum coefficient 
+[haP*] 
+     1.001 
+Tip radius factor 
+[ρaP*] 
+     0.000 
+Protuberance height coefficient 
+[hprP*] 
+     0.000 
+Protuberance angle 
+[αprP] 
+     0.000 
+Tip form height coefficient 
+[hFaP*] 
+     0.000 
+Ramp angle 
+[αKP] 
+     0.000 
+ 
+not topping 
+Manufacturing center distance (mm) 
+[a0] 
+    77.309 
+ 
+(mm) 
+[a0.e/i] 
+ 77.011 /77.011 
+Smallest radius of curvature, root rounding (mm) 
+[ρmin.e/i] 
+  0.661 / 0.661 
+ 
+ Reference profile Gear 2 
+Reference profile, own input 
+1.25 / 0.38 / 1.0 ISO 53:1998 Profil A 
+Dedendum coefficient 
+[hfP*] 
+     1.250 
+Root radius factor 
+[ρfP*] 
+     0.380 
+
+ 
+ 
+  
+3/14 
+ 
+[ρfPmax*] 
+     0.472 
+Addendum coefficient 
+[haP*] 
+     1.000 
+Tip radius factor 
+[ρaP*] 
+     0.000 
+Protuberance height coefficient 
+[hprP*] 
+     0.000 
+Protuberance angle 
+[αprP] 
+     0.000 
+Tip form height coefficient 
+[hFaP*] 
+     0.000 
+Ramp angle 
+[αKP] 
+     0.000 
+ 
+not topping 
+Manufacturing center distance (mm) 
+[a0] 
+   383.075 
+ 
+(mm) 
+[a0.e/i] 
+382.777 /382.777 
+Smallest radius of curvature, root rounding (mm) 
+[ρmin.e/i] 
+  0.648 / 0.648 
+ 
+4.1.1 Information on final machining 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Dedendum reference profile 
+[hfP*] 
+     1.250 
+     1.250 
+Tooth root radius reference profile 
+[ρfP*] 
+     0.380 
+     0.380 
+Addendum reference profile 
+[haP*] 
+     1.001 
+     1.000 
+Protuberance height coefficient 
+[hprP*] 
+     0.000 
+     0.000 
+Protuberance angle (°) 
+[αprP] 
+     0.000 
+     0.000 
+Tip form height coefficient 
+[hFaP*] 
+     0.000 
+     0.000 
+Ramp angle (°) 
+[αKP] 
+     0.000 
+     0.000 
+ 
+Type of profile modification: 
+none (only running-in) 
+Tip relief by running in (µm) 
+[Ca L/R] 
+  13.0   /13.0 
+  13.0   /13.0 
+ 
+4.2 Basic data 
+ 
+Overall transmission ratio 
+[itot] 
+    -4.988 
+Gear ratio 
+[u] 
+     4.988 
+Transverse module (mm) 
+[mt] 
+     1.784 
+Transverse pressure angle (°) 
+[αt] 
+    20.976 
+Working pressure angle (°) 
+[αwt] 
+    21.326 
+ 
+(°) 
+[αwt.e/i] 
+  21.326 /21.326 
+Working pressure angle at normal section (°) 
+[αwn] 
+    20.333 
+Base helix angle (°) 
+[βb] 
+    17.170 
+Helix angle at operating pitch circle (°) 
+[βw] 
+    18.350 
+Reference center distance (mm) 
+[ad] 
+   459.287 
+Sum of profile shift coefficients 
+[Σxi] 
+    0.6478 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Profile shift coefficient 
+[x] 
+    0.3615 
+    0.2863 
+Generating profile shift coefficient 
+[xE.e/i] 
+  0.1857/ 0.1857 
+  0.1104/ 0.1104 
+Virtual gear no. of teeth 
+[zn] 
+    99.235 
+   495.019 
+Involute length (mm) 
+[l_dFa-l_dFf] 
+     3.593 
+     3.609 
+ 
+4.3 Diameters and their allowances 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Reference diameter (mm) 
+[d] 
+   153.393 
+   765.181 
+Base diameter (mm) 
+[db] 
+   143.228 
+   714.473 
+Tip alteration (mm) 
+[k*mn] 
+    -0.009 
+    -0.009 
+ 
+Tip diameter (mm) 
+[da] 
+   157.990 
+   769.520 
+ 
+(mm) 
+[da.e/i] 
+ 157.990 /157.990 
+ 769.520 /769.520 
+ 
+Tip diameter allowances (mm) 
+[Ada.e/i] 
+   0.000 / 0.000 
+   0.000 / 0.000 
+ 
+Tip form diameter (mm) 
+[dFa] 
+   157.990 
+   769.520 
+ 
+(mm) 
+[dFa.e/i] 
+ 157.990 /157.990 
+ 769.520 /769.520 
+
+ 
+ 
+  
+4/14 
+ 
+Active tip diameter (mm) 
+[dNa] 
+   157.990 
+   769.520 
+ 
+(mm) 
+[dNa.e/i] 
+ 157.990 /157.990 
+ 769.520 /769.520 
+ 
+V-Circle diameter (mm) 
+[dv] 
+   154.617 
+   766.150 
+ 
+(mm) 
+[dv.e/i] 
+ 154.022 /154.022 
+ 765.554 /765.554 
+ 
+Operating pitch diameter (mm) 
+[dw] 
+   153.756 
+   766.994 
+ 
+(mm) 
+[dw.e/i] 
+ 153.756 /153.756 
+ 766.994 /766.994 
+ 
+Root diameter (mm) 
+[df] 
+   150.384 
+   761.917 
+ 
+(mm) 
+[df.e/i] 
+ 149.788 /149.788 
+ 761.321 /761.321 
+ 
+Active root diameter (mm) 
+[dNf] 
+   151.392 
+   763.144 
+ 
+(mm) 
+[dNf.e/i] 
+ 151.392 /151.392 
+ 763.144 /763.144 
+ 
+Root form diameter (mm) 
+[dFf] 
+   151.336 
+   762.790 
+ 
+(mm) 
+[dFf.e/i] 
+ 150.807 /150.807 
+ 762.208 /762.208 
+ 
+4.4 Tip clearances and tooth heights 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Theoretical tip clearance (mm) 
+[c] 
+     0.422 
+     0.423 
+Effective tip clearance (mm) 
+[c.e/i] 
+   0.719 / 0.719 
+   0.721 / 0.721 
+ 
+Reserve (dNf-dFf)/2 (mm) 
+[cF.e/i] 
+   0.293 / 0.293 
+   0.468 / 0.468 
+ 
+Addendum, mn(haP*+x+k) (mm) 
+[ha] 
+     2.299 
+     2.170 
+ 
+(mm) 
+[ha.e/i] 
+   2.299 / 2.299 
+   2.170 / 2.170 
+ 
+Dedendum, mn(hfP*-x) (mm) 
+[hf] 
+     1.505 
+     1.632 
+ 
+(mm) 
+[hf.e/i] 
+   1.802 / 1.802 
+   1.930 / 1.930 
+ 
+Tooth height (mm) 
+[h] 
+     3.803 
+     3.802 
+ 
+4.5 Roll angle 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Roll angle at dFa (°) 
+[ξFa.e/i] 
+  26.676 /26.676 
+  22.920 /22.920 
+Roll angle to dNf (°) 
+[ξNf.e/i] 
+  19.620 /19.620 
+  21.506 /21.506 
+Roll angle at dFf (°) 
+[ξFf.e/i] 
+  18.884 /18.884 
+  21.291 /21.291 
+ 
+4.6 Tooth thickness and pitch 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Tooth thickness on reference circle, arc, in module 
+[sn*] 
+    1.8339 
+    1.7792 
+Normal tooth thickness at tip circle (mm) 
+[san] 
+     1.310 
+     1.411 
+ 
+(mm) 
+[san.e/i] 
+   1.088 / 1.088 
+   1.193 / 1.193 
+ 
+Normal tooth thickness at tip form circle (mm) 
+[sFan] 
+     1.310 
+     1.411 
+ 
+(mm) 
+[sFan.e/i] 
+   1.088 / 1.088 
+   1.193 / 1.193 
+ 
+Normal space width at root circle (mm) 
+[efn] 
+     1.176 
+     1.132 
+ 
+(mm) 
+[efn.e/i] 
+   1.207 / 1.207 
+   1.138 / 1.138 
+ 
+Pitch on reference circle (mm) 
+[pt] 
+     5.603 
+     5.603 
+Base pitch (mm) 
+[pbt] 
+     5.232 
+     5.232 
+Transverse pitch on contact-path (mm) 
+[pet] 
+     5.232 
+     5.232 
+Lead height (mm) 
+[pz] 
+  1456.272 
+  7264.425 
+Axial pitch (mm) 
+[px] 
+    16.933 
+    16.933 
+
+ 
+ 
+  
+5/14 
+ 
+4.7 Sliding 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Max. sliding velocity at tip (m/s) 
+[vga] 
+     3.654 
+     2.333 
+Specific sliding at the tip 
+[ζa] 
+     0.194 
+     0.144 
+Specific sliding at the root 
+[ζf] 
+    -0.168 
+    -0.240 
+Mean specific sliding 
+[ζm] 
+     0.174 
+ 
+Sliding factor on tip 
+[Kga] 
+     0.084 
+     0.054 
+Sliding factor on root 
+[Kgf] 
+    -0.054 
+    -0.084 
+ 
+4.8 Contact ratios 
+ 
+ 
+------------------ Pair ---------------------- 
+Minimal length of contact line (mm) 
+[Lmin] 
+   144.941 
+Transverse contact ratio 
+[εα] 
+     1.686 
+ 
+[εα.e/m/i] 
+1.686 / 1.686/ 1.686 
+Overlap ratio 
+[εβ] 
+     4.875 
+Total contact ratio 
+[εγ] 
+     6.561 
+ 
+[εγ.e/m/i] 
+6.561 / 6.561/ 6.561 
+Length of path of contact (mm) 
+[gα] 
+     8.819 
+ 
+(mm) 
+[gα.e/m/i] 
+8.819 / 8.819/ 8.819 
+ 
+Approach path of contact (mm) 
+[gf] 
+     3.437 
+ 
+(mm) 
+[gf.e/m/i] 
+3.437 / 3.437/ 3.437 
+Recess path of contact (mm) 
+[ga] 
+     5.383 
+ 
+(mm) 
+[ga.e/m/i] 
+5.383 / 5.383/ 5.383 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Addendum contact ratio 
+[ε] 
+     1.029 
+     0.657 
+ 
+[ε.e/i] 
+   1.029 / 1.029 
+   0.657 / 0.657 
+ 
+Length T1-A and T2-A (mm) 
+[T1A,T2A] 
+    24.522 
+   142.907 
+ 
+(mm) 
+[.e/i] 
+  24.522 / 24.522 
+ 142.907 /142.907 
+Length T1-B and T2-B (mm) 
+[T1B,T2B] 
+    28.110 
+   139.319 
+ 
+(mm) 
+[.e/i] 
+  28.110 / 28.110 
+ 139.319 /139.319 
+Length T1-C and T2-C (mm) 
+[T1C,T2C] 
+    27.959 
+   139.470 
+ 
+(mm) 
+[.e/i] 
+  27.959 / 27.959 
+ 139.470 /139.470 
+Length T1-D and T2-D (mm) 
+[T1D,T2D] 
+    29.754 
+   137.674 
+ 
+(mm) 
+[.e/i] 
+  29.754 / 29.754 
+ 137.674 /137.674 
+Length T1-E and T2-E (mm) 
+[T1E,T2E] 
+    33.342 
+   134.087 
+ 
+(mm) 
+[.e/i] 
+  33.342 / 33.342 
+ 134.087 /134.087 
+Length T1-T2 (mm) 
+[T1T2] 
+   167.429 
+ 
+(mm) 
+[.e/i] 
+ 167.429 /167.429 
+ 
+Diameter of single contact point B (mm) 
+[d-B] 
+ 153.866 
+ 766.884 
+ 
+(mm) 
+[d-B.e/i] 
+ 153.866 /153.866 
+ 766.884 /766.884 
+Diameter of single contact point D (mm) 
+[d-D] 
+ 155.098 
+ 765.695 
+ 
+(mm) 
+[d-D.e/i] 
+ 155.098 /155.098 
+ 765.695 /765.695 
+ 
+5 General influence factors 
+ 
+ 
+5.1 Forces and circumferential speed 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Nominal circum. force at pitch circle (N) 
+[Ft] 
+   6884.28 
+Axial force (N) 
+[Fa] 
+      0.00 
+      0.00 
+Radial force (N) 
+[Fr] 
+   2639.30 
+   2639.30 
+
+ 
+ 
+  
+6/14 
+Normal force (N) 
+[Fnorm] 
+   7716.80 
+   7716.80 
+Nominal circumferential force per mm (N/mm) 
+[w] 
+     41.70 
+ 
+Only as information: Forces at operating pitch circle: 
+Nominal circumferential force (N) 
+[Ftw] 
+   6868.01 
+Axial force (N) 
+[Faw] 
+      0.00 
+      0.00 
+Radial force (N) 
+[Frw] 
+   2681.36 
+ 
+Circumferential speed reference circle (m/s) 
+[v] 
+     43.37 
+Circumferential speed operating pitch circle (m/s) 
+[v(dw)] 
+     43.47 
+ 
+5.2 Contact stiffness 
+ 
+Running-in value (µm) 
+[yp] 
+       1.5 
+Running-in value (µm) 
+[yf] 
+       1.5 
+Correction factor 
+[CM] 
+     0.800 
+Gear blank factor 
+[CR] 
+     1.000 
+Basic rack factor 
+[CB] 
+     0.975 
+Material coefficient 
+[E/Est] 
+     1.000 
+Single stiffness (N/mm/µm) 
+[c'] 
+    12.730 
+Theoretical single stiffness (N/mm/µm) 
+[c'th] 
+    21.392 
+Contact stiffness (N/mm/µm) 
+[cγα] 
+    19.275 
+Contact stiffness (N/mm/µm) 
+[cγβ] 
+    16.384 
+Reduced mass (kg/mm) 
+[mRed] 
+   0.08138 
+Resonance speed (min-1) 
+[nE1] 
+      1709 
+Resonance ratio (-) 
+[N] 
+     3.160 
+ Overcritical range 
+ 
+5.3 Calculation of K factors 
+ 
+Running-in value (µm) 
+[yα] 
+       1.5 
+Bearing distance l of pinion shaft (mm) 
+[l] 
+   355.600 
+Distance s of pinion shaft (mm) 
+[s] 
+     0.000 
+Outside diameter of pinion shaft (mm) 
+[dsh] 
+    63.500 
+Load in accordance with Figure 13, ISO 6336-1:2006 
+[-] 
+         0 
+ 0:a), 1:b), 2:c), 3:d), 4:e) 
+Coefficient K' according to Figure 13, ISO 6336-1:2006 
+[K'] 
+      0.48 
+With stiffening 
+Effective flank line deviation (µm) 
+[Fβy] 
+      3.27 
+from deformation of shaft (µm) 
+[fsh·B1] 
+      1.40 
+ 
+fsh (µm) 
+[fsh] 
+      1.40 
+ 
+B1 
+[B1] 
+      1.00 
+ 
+fHβ5 (µm) 
+[fHβ5] 
+      8.50 
+ Tooth without flank line modification 
+Position of contact pattern: 
+favorable 
+from production tolerances (µm) 
+[fmα*B2] 
+     11.67 
+ B2=1.00 
+Tooth trace deviation, theoretical (µm) 
+[Fβx] 
+      6.63 
+Running-in value (µm) 
+[yβ] 
+      3.37 
+ 
+5.4 K factors 
+ 
+Dynamic factor 
+[Kv] 
+     1.684 
+ 
+Face load factors 
+ 
+- 
+Flank 
+[KHβ] 
+     1.381 
+ 
+- 
+Tooth root 
+[KFβ] 
+     1.361 
+ 
+- 
+Scuffing 
+[KBβ] 
+     1.381 
+ 
+Transverse load factors 
+
+ 
+ 
+  
+7/14 
+ 
+- 
+Flank 
+[KHα] 
+     1.369 
+ 
+- 
+Tooth root 
+[KFα] 
+     1.369 
+ 
+- 
+Scuffing 
+[KBα] 
+     1.369 
+ 
+Application factor 
+[KA] 
+     1.000 
+Mesh load factor 
+[Kγ] 
+     1.000 
+ 
+6 Calculation of tooth root strength (fracture) 
+ 
+Calculation of Tooth form coefficients according method: B 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Calculated with generating profile shift coefficient 
+[xE.i] 
+    0.1857 
+    0.1104 
+Tooth form factor 
+[YF] 
+     0.857 
+     0.894 
+Stress correction factor 
+[YS] 
+     2.297 
+     2.358 
+Load application angle (°) 
+[αFen] 
+    20.410 
+    20.099 
+Load distribution influence factor 
+[fε] 
+     0.736 
+Load application diameter, virtual spur gear (mm) 
+[den] 
+   169.391 
+   839.605 
+Load application diameter (mm) 
+[den] 
+   154.746 
+   766.552 
+Bending moment arm (mm) 
+[hFe] 
+     1.720 
+     1.874 
+ 
+(-) 
+[hFe*] 
+     1.016 
+     1.107 
+Tooth root thickness at critical cross section (mm) 
+[sFn] 
+     3.869 
+     3.958 
+ 
+(-) 
+[sFn*] 
+     2.285 
+     2.338 
+Root fillet radius at critical cross section (mm) 
+[ρF] 
+     0.738 
+     0.673 
+ 
+(-) 
+[ρF*] 
+     0.436 
+     0.397 
+Tangent contact point, virtual spur gear (mm) 
+[x,y] 
+1.934 /75.198 
+Tangent contact point, virtual spur gear (mm) 
+[x,y] 
+1.979 /380.980 
+Diameter at critical cross section (mm) 
+[dsFn] 
+150.445 
+761.971 
+Tangent at critical cross section (°) 
+[αsFn] 
+30.000 
+30.000 
+Notch parameter 
+[qs] 
+2.620 
+2.941 
+ 
+Helix angle factor 
+[Yβ] 
+     0.990 
+Deep tooth factor 
+[YDT] 
+     1.000 
+Gear rim factor 
+[YB] 
+      1.00 
+      1.00 
+Effective facewidth (mm) 
+[beff] 
+     82.55 
+     82.55 
+Nominal stress at tooth root (N/mm²) 
+[σF0] 
+     48.02 
+     51.38 
+Tooth root stress (N/mm²) 
+[σF] 
+    150.58 
+    161.13 
+ 
+Permissible bending stress at root of Test-gear 
+Notch sensitivity factor 
+[YδrelT] 
+     1.001 
+     1.003 
+Surface factor 
+[YRrelT] 
+     0.964 
+     0.964 
+Size factor, tooth root 
+[YX] 
+     1.000 
+     1.000 
+Life factor 
+[YNT] 
+     0.850 
+     0.878 
+YδrelT·YRrelT·YX·YNT 
+     0.820 
+     0.849 
+Alternating bending factor, mean stress influence coefficient 
+ 
+[YM] 
+     1.000 
+     1.000 
+Stress correction factor 
+[YST] 
+      2.00 
+YST·σFlim (N/mm²) 
+[σFE] 
+    512.56 
+    474.96 
+Permissible tooth root stress σFG/SFmin (N/mm²) 
+[σFP] 
+    314.12 
+    301.21 
+Limit strength tooth root (N/mm²) 
+[σFG] 
+    420.51 
+    403.22 
+ 
+6.1 Safety factors 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Required safety 
+[SFmin] 
+      1.34 
+      1.34 
+Safety for tooth root stress 
+[SF=σFG/σF]       2.79 
+      2.50 
+Transmittable power (kW) 
+[kWRating] 
+    622.85 
+    558.13 
+ 
+7 Calculation of flank strength (pitting) 
+ 
+
+ 
+ 
+  
+8/14 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Zone factor 
+[ZH] 
+     2.369 
+Elasticity coefficient (√N/mm) 
+[ZE] 
+   189.812 
+Contact ratio factor 
+[Zε] 
+     0.770 
+Helix angle factor 
+[Zβ] 
+     1.026 
+Effective facewidth (mm) 
+[beff] 
+     82.55 
+Nominal contact stress (N/mm²) 
+[σH0] 
+    203.09 
+Contact stress at operating pitch circle (N/mm²) 
+[σHw] 
+    362.32 
+Coefficient 
+[fZCa] 1.07 
+(Helical gear sets with suitable flank modifications acc. to manufacturers experience) 
+Single tooth contact factor 
+[ZB,ZD] 
+      1.03 
+      1.03 
+Contact stress (N/mm²) 
+[σHB, σHD] 
+    374.79 
+    374.79 
+ 
+Lubricant coefficient for NL 
+[ZL] 
+     0.846 
+     0.846 
+Speed factor at NL 
+[ZV] 
+     1.092 
+     1.092 
+Roughness factor for NL 
+[ZR] 
+     0.940 
+     0.940 
+Material hardening factor for NL 
+[ZW] 
+     1.000 
+     1.000 
+Life factor 
+[ZNT] 
+     0.852 
+     0.954 
+Size factor (flank) 
+[ZX] 
+     1.000 
+     1.000 
+ZL·ZV·ZR·ZNT·ZX 
+     0.740 
+     0.828 
+Limited pitting is permissible: 
+Yes 
+ 
+Permissible contact stress, σHG/SHmin (N/mm²) 
+[σHP] 
+    504.04 
+    514.72 
+Pitting stress limit (N/mm²) 
+[σHG] 
+    488.58 
+    498.93 
+ 
+7.1 Safety factors 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Required safety 
+[SHmin] 
+      0.97 
+      0.97 
+Safety factor for contact stress on operating pitch circle 
+[SHw] 
+      1.35 
+      1.38 
+Safety against pressure, σHG/σHBD Single contact 
+[SHBD] 
+      1.30 
+      1.33 
+Safety regarding transmittable torque 
+[SHBD²] 
+      1.70 
+      1.77 
+Transmittable power (kW) 
+[kWRating] 
+    540.03 
+    563.15 
+ 
+8 Micropitting 
+ 
+Calculation method according to 
+ISO/TS 6336-22:2018 
+ 
+Lubricant load according to FVA Info sheet 54/7 10, TR30 example 7: nu40 input; other oil properties are ancillary defaults 
+Reference data FZG-C Test: 
+Torque (Nm) 
+[T1Ref] 
+   265.100 
+Line load at contact point A (N/mm) 
+[FbbRef,A] 
+   236.300 
+Oil temperature (°C) 
+[θOilRef] 
+    90.000 
+Tooth mass temperature (°C) 
+[θMRef] 
+   128.014 
+Contact temperature (°C) 
+[θBRef,A] 
+   253.676 
+Lubrication gap thickness (µm) 
+[hRef,A] 
+     0.083 
+Specific film thickness in test 
+[λGFT] 
+     0.167 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Calculation of permissible specific film thickness 
+Material coefficient 
+[WW] 
+     0.500 
+Permissible specific film thickness 
+[λGFP] 
+     0.117 
+ 
+Interim results in accordance with ISO/TS 6336-22:2018 
+Coefficient of friction 
+[μm] 
+     0.029 
+Lubricant factor 
+[XL] 
+     1.000 
+Roughness factor 
+[XR] 
+     0.990 
+Lubrication coefficient for lubrication type 
+[XS] 
+     1.000 
+Tooth mass temperature (°C) 
+[θM] 
+    80.416 
+Tip relief factor 
+[XCa(A)] 
+     1.998 
+Loss factor 
+[HV] 
+     0.037 
+
+ 
+ 
+  
+9/14 
+Equivalent Young's modulus (N/mm²) 
+[Er] 
+226373.626 
+Pressure-viscosity coefficient (m²/N) 
+[α38] 
+   0.01589 
+Dynamic viscosity (Ns/m²) 
+[ηtM] 
+    17.414 
+Roughness average value (µm) 
+[Ra] 
+     1.000 
+ 
+Calculation of speeds, load distribution and flank curvature according to method B following ISO/TS 6336-22:2018. 
+ 
+Ca taken as optimal in the calculation. 0=no, 1=yes 
+0 
+0 
+Calculation at point (0:A, 1:AB, 2:B, 3:C, 4:D, 5:DE, 6:E, -1:No Point) 
+0 
+Diameter (mm) 
+[dy] 
+   151.392 
+   769.520 
+Relative radius of curvature (mm) 
+[ρred] 
+    21.907 
+Load sharing factor 
+[XY] 
+     0.771 
+Contact stress (N/mm²) 
+[pH] 
+   237.996 
+Contact stress (N/mm²) 
+[pdyn] 
+   424.597 
+Minimal specific film thickness 
+[λGFY] 
+     1.065 
+(hY=1.065 µm) 
+Safety against micropitting 
+[Sλ(B)] 
+     9.128 
+ 
+9 Tooth flank fracture 
+ 
+Failed to calculate the tooth flank fracture. Please check ISO6336-4_res.TMP file for more information. 
+ 
+10 Scuffing load capacity 
+ 
+Calculation method according to 
+ISO/TS 6336-20/21:2022 
+ 
+ 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Thermal contact coefficient (N/mm/s^.5/K) 
+[BM] 
+    13.780 
+    13.780 
+Relevant tip relief (µm) 
+[Ca] 
+     13.00 
+     13.00 
+Optimal tip relief (µm) 
+[Ceff] 
+      2.16 
+Ca taken as optimal in the calculation. 0=no, 1=yes 
+0 
+0 
+ 
+------------------ Pair ---------------------- 
+Helical load factor for scuffing 
+[KBγ] 
+     1.300 
+Lubrication coefficient for lubrication type 
+[XS] 
+     1.000 
+Scuffing test, load stage 
+[FZGtest] 
+FZG - Test A / 8.3 / 90 (ISO 14635 - 1), 
+14 
+Multiple meshing factor 
+[Xmp] 
+     1.000 
+Relative structural factor, scuffing 
+[XWrelT] 
+     1.000 
+Effective facewidth (mm) 
+[beff] 
+    82.550 
+Applicable circumferential force/facewidth (N/mm) 
+[wBt] 
+   132.716 
+ KBγ = 1.300, wBt·KBγ = 172.531 
+Angle factor 
+[Xαβ] 
+     0.987 
+ ε1 =1.029, ε2 =0.657 
+ 
+10.1 Flash temperature-criteria 
+ 
+ 
+------------------ Pair ---------------------- 
+Lubricant factor 
+[XL] 
+     0.867 
+Tooth mass temperature (°C) 
+[θMi] 
+     81.23 
+ θMi = θoil + XS·0.47·Xmp·θflm 
+Average flash temperature (Δ°C) 
+[θflm] 
+      2.63 
+Scuffing temperature (°C) 
+[θS] 
+    462.25 
+Γ coordinates (point of highest temperature) 
+[Γ] 
+     0.193 
+ [Γ.A]= -0.123, [Γ.E]= 0.193 
+Maximum flash temperature (Δ°C) 
+[θflamax] 
+      6.72 
+Maximum contact temperature (°C) 
+[θBmax] 
+     87.95 
+Flash factor (°K·N^-.75·s^.5·m^-.5·mm) 
+[XM] 
+    50.058 
+Approach factor 
+[XJ] 
+     1.000 
+Load sharing factor 
+[XΓ] 
+     0.771 
+Dynamic viscosity (mPa*s) 
+[ηM] 
+     17.45 
+(80.0 
+°C) 
+
+ 
+ 
+  
+10/14 
+Coefficient of friction 
+[μm] 
+     0.033 
+Required safety 
+[SBmin] 
+     2.000 
+Margin of safety for scuffing, flash temperature 
+[SB] 
+    48.060 
+ 
+10.2 Integral temperature-criteria 
+ 
+ 
+------------------ Pair ---------------------- 
+Lubricant factor 
+[XL] 
+     1.000 
+Tooth mass temperature (°C) 
+[θMC] 
+     80.69 
+ θMC = θoil + XS·0.70·θflaint 
+Integral scuffing temperature (°C) 
+[θSint] 
+    464.55 
+Flash factor (°K·N^-.75·s^.5·m^-.5·mm) 
+[XM] 
+    50.058 
+Running-in factor, well run in 
+[XE] 
+     1.000 
+Contact ratio factor 
+[Xε] 
+     0.228 
+Dynamic viscosity (mPa*s) 
+[ηOil] 
+     17.45 
+(80.0 
+°C) 
+Mean coefficient of friction 
+[μm] 
+     0.029 
+Geometry factor 
+[XBE] 
+     0.090 
+Meshing factor 
+[XQ] 
+     1.000 
+Tip relief factor 
+[XCa] 
+     1.998 
+Mean flash temperature (Δ°C) 
+[θflaint] 
+      0.98 
+Integral tooth flank temperature (°C) 
+[θint] 
+     82.17 
+Required safety 
+[SSmin] 
+     1.800 
+Safety factor for scuffing (intg.-temp.) 
+[SSint] 
+     5.654 
+Safety factor for transmitted moment (int.-T.) 
+[SSL] 
+   177.540 
+ 
+11 Measurements for tooth thickness 
+ 
+ 
+11.1 Tooth thickness tolerances 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Tooth thickness tolerance 
+Own Input 
+Own Input 
+Tooth thickness allowance (normal section) (mm) 
+[Asn.e/i] 
+-0.217 / -0.217 
+-0.217 / -0.217 
+ 
+11.2 Base tangent lengths 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Number of teeth spanned 
+[k] 
+    12.000 
+    56.000 
+Base tangent length (no backlash) (mm) 
+[Wk] 
+    60.272 
+   289.571 
+Base tangent length with allowance (mm) 
+[Wk.e/i] 
+ 60.068 /60.068 
+289.367 /289.367 
+ 
+(mm) 
+[ΔWk.e/i] 
+ -0.204 / -0.204 
+ -0.204 / -0.204 
+Diameter of measuring circle (mm) 
+[dMWk.m] 
+   154.298 
+   766.099 
+ > Gear 2: Base tangent length cannot be measured (gear too thin) 
+ 
+11.3 Measurement over balls and pins 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Theoretical diameter of ball/pin (mm) 
+[DM] 
+     2.901 
+     2.842 
+Effective diameter of ball/pin (mm) 
+[DMeff] 
+     3.000 
+     3.000 
+Radial single-ball measurement, no backlash (mm) 
+[MrK] 
+    79.472 
+   385.294 
+Radial single-ball measurement (mm) 
+[MrK.e/i] 
+ 79.200 /79.200 
+385.002 /385.002 
+ 
+Diameter of measuring circle (mm) 
+[dMMr.m] 
+   154.310 
+   765.965 
+Diametral measurement over two balls, no backlash (mm) 
+[MdK] 
+   158.943 
+   770.583 
+Diametral measurement over two balls (mm) 
+[MdK.e/i] 
+158.399 /158.399 
+769.998 /769.998 
+Diametral measurement over pins, no backlash (mm) 
+[MdR] 
+   158.943 
+   770.588 
+Measurement over pins according to DIN 3960 (mm) 
+[MdR.e/i] 
+158.399 /158.399 
+770.003 /770.003 
+Measurement over 2 pins, free, AGMA 2002 (mm) 
+[dk2f.e/i] 
+  0.000 / 0.000 
+769.997 /769.997 
+Measurement over 2 pins, transverse, AGMA 2002 (mm) 
+[dk2t.e/i] 
+  0.000 / 0.000 
+770.008 /770.008 
+Measurement over 3 pins, axial, AGMA 2002 (mm) 
+[dk3A.e/i] 
+158.399 /158.399 
+770.003 /770.003 
+
+ 
+ 
+  
+11/14 
+ 
+11.4 Tooth thickness 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Medium tip diameter (mm) 
+[da.m] 
+   157.990 
+   769.520 
+Reference chordal height from da.m (mm) 
+[hac] 
+     2.313 
+     2.172 
+Tooth thickness at height hac, chord (mm) 
+[sc] 
+     3.105 
+     3.013 
+ 
+(mm) 
+[sc.e/i] 
+  2.890 / 2.890 
+  2.796 / 2.796 
+ 
+Tooth thickness on reference circle, arc (mm) 
+[sn] 
+     3.105 
+     3.013 
+ 
+(mm) 
+[sn.e/i] 
+  2.889 / 2.889 
+  2.796 / 2.796 
+ 
+11.5 Backlash 
+ 
+ 
+------------------ Pair ---------------------- 
+Circumferential backlash from Aa (mm) 
+[jtw_Aa.e/i] 
+  0.000 / 0.000 
+Radial backlash (mm) 
+[jrw.e/i] 
+  0.589 / 0.589 
+Circumferential backlash (transverse section) (mm) 
+[jtw.e/i] 
+  0.458 / 0.458 
+Normal backlash (mm) 
+[jnw.e/i] 
+  0.407 / 0.407 
+ 
+Center distance allowances (mm) 
+[Aa.e/i] 
+  0.000 / 0.000 
+Backlash free center distance (mm) 
+[aControl.e/i] 
+459.786 /459.786 
+Backlash free center distance, allowances (mm) 
+[jta] 
+ -0.589 / -0.589 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+dNf.i with aControl (mm) 
+[dNf0.i] 
+   150.370 
+   762.008 
+Reserve (dNf0.i-dFf.e)/2 (mm) 
+[cF0.i] 
+    -0.218 
+    -0.100 
+Tip clearance (mm) 
+[c0.i(aControl)]      0.131 
+     0.132 
+ 
+Torsional angle Gear 2 with fixed Gear 1: 
+Total torsional angle (°) 
+[j.tSys] 
+0.0684/ 0.0684 
+(0°4'6"/ 0°4'6") 
+Torsional angle Gear 1 with fixed Gear 2: 
+Total torsional angle (°) 
+[j.tSys] 
+0.3412/ 0.3412 
+(0°20'28"/ 0°20'28") 
+ 
+12 Gear tolerances 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+According to ISO 1328-1:2013, ISO 1328-2:1997 
+[A] 
+[A] 
+Single pitch tolerance (µm) 
+[fpT] 
+± 6.00 
+ (-) 
+± 6.50 
+ (-) 
+Base pitch tolerance (µm) 
+[fpbT] 
+± 5.60 
+ (-) 
+± 6.07 
+ (-) 
+Sector pitch tolerance (µm) 
+[Fpz/8T] 
+± 13.00 
+ (5) 
+± 18.00 
+ (5) 
+Cumulative pitch tolerance, total (µm) 
+[FpT] 
+     20.00 
+ (5) 
+    30.00 
+ (5) 
+Adjacent pitch difference tolerance (µm) 
+[fuT] 
+      8.00 
+ (5) 
+     9.00 
+ (5) 
+Profile form tolerance (µm) 
+[ffαT] 
+      6.00 
+ (-) 
+     6.00 
+ (-) 
+Profile slope tolerance (µm) 
+[fHαT] 
+± 4.80 
+ (5) 
+± 5.50 
+ (5) 
+Profile tolerance, total (µm) 
+[FαT] 
+      7.50 
+ (5) 
+     8.00 
+ (5) 
+Helix form tolerance (µm) 
+[ffβT] 
+      9.00 
+ (5) 
+    10.00 
+ (5) 
+Helix slope tolerance (µm) 
+[fHβT] 
+± 8.00 
+ (-) 
+± 8.50 
+ (-) 
+Helix tolerance, total (µm) 
+[FβT] 
+     12.00 
+ (5) 
+    13.00 
+ (5) 
+Runout tolerance (µm) 
+[FrT] 
+     18.00 
+ (5) 
+    27.00 
+ (5) 
+Single flank composite tolerance, total (µm) 
+[FisT] 
+     26.00 
+ (5) 
+    36.00 
+ (5) 
+Single flank composite tolerance, tooth-to-tooth (µm) 
+[fisT] 
+      5.50 
+ (5) 
+     5.50 
+ (5) 
+Radial composite tolerance, total (µm) 
+[Fi"] 
+     26.00 
+ (5) 
+    40.00 
+ (5) 
+Radial composite tolerance, tooth-to-tooth (µm) 
+[fi"] 
+      6.50 
+ (5) 
+     7.00 
+ (5) 
+ FidT (Fi"), fidT (fi") according to ISO 1328-2:1997 calculated with the geometric mean values for mn and d. 
+ 
+According to ISO 1328-2:2020 
+[R] 
+[R] 
+Radial composite tolerance, total (µm) 
+[FidT] 
+     23.00 
+(37) 
+    39.00 
+(39) 
+Radial composite tolerance, tooth-to-tooth (µm) 
+[fidT] 
+      9.50 
+(37) 
+    16.00 
+(39) 
+
+ 
+ 
+  
+12/14 
+ Own input for tolerance: (-) 
+ 
+Axis alignment tolerances recommendation according to ISO/TR 10064-3:1996, AGMA 915-3-A99 
+Total helix deviation for calculation (µm) 
+[Fβ] 
+13.00 
+Distance between bearings for calculation (mm) 
+[LG] 
+355.60 
+Maximum value for axis deviation error (µm) 
+[fΣβ] 
+± 10.71 
+Maximum value for axis inclination error (µm) 
+[fΣδ] 
+± 21.41 
+ 
+13 Modifications and determination of the tooth form 
+ 
+ 
+13.1 Profile and flank line modifications 
+ 
+Gear 1  
+ Symmetric (both flanks) 
+ - Tip relief, linear 
+ 
+Caa =  13.000 µm 
+LCa = 
+   0.500 ·mn 
+dCa = 
+ 157.283 mm 
+Gear 2  
+ Symmetric (both flanks) 
+ - Tip relief, linear 
+ 
+Caa =  13.000 µm 
+LCa = 
+   0.500 ·mn 
+dCa = 
+ 768.893 mm 
+ 
+ 
+13.1.1 Tip relief verification 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Diameter (mm) 
+[dcheck] 
+   157.956 
+   769.486 
+Tip relief left/right (µm) 
+[Ca L/R] 
+   12.4   /12.4 
+   12.3   /12.3 
+ 
+Diameter (mm) 
+[dNa.i] 
+   157.990 
+   769.520 
+Tip relief left/right (µm) 
+[Ca L/R] 
+   13.0   /13.0 
+   13.0   /13.0 
+ 
+13.2 Data for the tooth form calculation 
+ 
+Data not available. 
+Please run the calculation in the "Tooth form" tab and open the main report again. 
+ 
+14 Supplementary data 
+ 
+Maximal possible centre distance (εα = 1.0) 
+[aMAX] 
+   461.692 
+ 
+14.1 Masses, stiffnesses and moments of inertia 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Mass (kg) 
+[m] 
+    31.565 
+   778.471 
+Total mass (kg) 
+[Σm] 
+   810.036 
+Moment of inertia for system, relative to the input: 
+ calculation without consideration of the exact tooth shape 
+Gears individually ((da+df)/2...di) (kg*m²) 
+[J] 
+   0.09380 
+  57.05462 
+System 
+(da+df)/2...di (kg*m²) 
+[J] 
+   2.38664 
+ 
+14.2 Wear, power loss, sound pressure level 
+ 
+Torsional stiffness at driving gear with fixed driven gear: 
+Torsional stiffness (MNm/rad) 
+[cr] 
+    13.840 
+Torsion when subjected to nominal torque (°) 
+[δcr] 
+     0.002 
+Sound pressure level based on Masuda, without PPTE/δs 
+[dB(A)] 
+    99.808 
+ 
+14.3 Power loss 
+ 
+Average coefficient of friction according to Niemann 
+[μm] 
+     0.028 
+
+ 
+ 
+  
+13/14 
+Wear sliding coefficient by Niemann 
+[ζw] 
+     0.294 
+Loss factor 
+[HV] 
+     0.037 
+Gear power loss (kW) 
+[PVZ] 
+     0.307 
+Meshing efficiency (%) 
+[ηz] 
+    99.897 
+ 
+14.4 Indications for the manufacturing by wire cutting 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Deviation from theoretical tooth trace (µm) 
+[WireErr] 
+    1213.0 
+     243.8 
+Permissible deviation (µm) 
+[Fb/2] 
+       6.0 
+       6.5 
+ 
+15 Service life, damage 
+ 
+Required safety for tooth root 
+[SFmin] 
+    1.3387 
+Required safety for tooth flank 
+[SHmin] 
+    0.9693 
+Required service life 
+[H] 
+30000.0000 
+ 
+Service life (calculated with required safeties): 
+System service life (h) 
+[Hatt] 
+>    1000000 
+ 
+ 
+------- Gear 1 ----------------- Gear 2 ------- 
+Tooth root service life (h) 
+[HFatt] 
+     1e+06 
+     1e+06 
+Tooth flank service life (h) 
+[HHatt] 
+     1e+06 
+     1e+06 
+Note: The entry 1e+006 h means that the Service life > 1,000,000 h. 
+ 
+ 
+15.1 Damage 
+ 
+Damage relative to the required service life (H, 30000.0 h) 
+DF1 (%) 
+<TD 
+CENTER>DF2 
+(%) 
+<TD 
+CENTER>DH1 
+(%) 
+<TD 
+CENTER>DH2 
+(%) 
+  
+0.0000 
+  0.0000 
+  0.0000 
+  0.0000 
+ 
+16 Reliability calculation 
+ 
+ 
+16.1 Calculation method 
+ 
+Calculation method according to B. Bertsche, Reliability in Automotive and Mechanical Engineering, Springer-Verlag Berlin Heidelberg 2008 
+ 
+16.2 Factors 
+ 
+Reliability of material data for σHlim (%) 
+[RσHlim] 
+99.00 
+Reliability of material data for σFlim (%) 
+[RσFlim] 
+99.00 
+ 
+Calculation of coefficients for reliability R(t) 
+R(t) = 100·Exp(-((t·fac-t0)/(T-t0))β) (%) 
+Gear Type 
+fac 
+<TD 
+CENTER>β 
+<TD 
+CENTER>t0 
+<TD 
+CENTER>T 
+<TD 
+CENTER>R(H) 
+ 
+ 
+cycles/h 
+ 
+cycles 
+cycles 
+% 
+1   
+Tooth root 324000    1.700e+00 
+9.654e+29 
+1.484e+30 
+100.0000 
+1   
+Tooth 
+flank 
+324000    1.300e+00 
+9.014e+29 
+4.295e+30 
+100.0000 
+2   
+Tooth root 64951     1.700e+00 
+9.654e+29 
+1.484e+30 
+100.0000 
+2   
+Tooth 
+flank 
+64951     1.300e+00 
+9.014e+29 
+4.295e+30 
+100.0000 
+ fac = Number of load cycles per hour 
+ β = Weibull shape parameter 
+ t0 = Failure-free number of load cycles 
+ T = Characteristic service life (in load cycles) for 63.2% failure probability 
+ R(H) = Reliability for required service life 
+ 
+16.3 Resulting reliabilities and service lifes 
+ 
+Required service life (h) 
+[Hmin] 
+30000.0000 
+
+ 
+ 
+  
+14/14 
+Reliability R, tooth roots subsystem (%) 
+[RsubF] 
+100.0000 
+Reliability R, tooth flanks subsystem (%) 
+[RsubH] 
+100.0000 
+Reliability R, gears subsystem (%) 
+[RsubG] 
+100.0000 
+ 
+Required reliability (%) 
+[Rmin] 
+99.0000 
+Service life H, tooth roots subsystem (h) 
+[HsubF] 
+> 1'000'000 
+Service life H, tooth flanks subsystem (h) 
+[HsubH] 
+> 1'000'000 
+Service life H, gears subsystem (h) 
+[HsubG] 
+> 1'000'000 
+ 
+17 Remarks 
+ 
+ 
+17.1 Conventions 
+ 
+- Specifications with .e/i mean: Maximum value .e and Minimum value .i, taking all tolerances into account. 
+- Specifications with .m mean: Mean value within tolerance. 
+ 
+- The center distance tolerances and the tooth thickness allowance are taken into account for the backlash tolerance. The maximum and 
+minimum clearance corresponding to the largest and smallest allowances are shown. The calculation is performed for the operating pitch 
+circle. 
+ 
+17.2 Calculations and factors 
+ 
+- Calculation of Zβ acc. to Corrigendum 1 ISO 6336-2:2008 with Zβ = 1/(COS(β)^0.5) 
+- Details of calculation method: 
+ 
+cγ according to Method B 
+ 
+Kv according to Method B 
+ 
+KHβ and KFβ according to Method C 
+ 
+fmα according to equation 66, fsh according to 59/60, Fβx according to 54/55/57 
+ 
+KHα, KFα according to Method B 
+- The logarithmically interpolated value must be entered for factors ZL, ZV, ZR, ZW, ZX, YδrelT, YRrelT and YX. This value is calculated from the 
+infinite life strength and static strength values, based on the number of load cycles. 
+ 
+ 
+End of report (lines: 707) 
+ 
+ 
+ 

@@ -1,0 +1,92 @@
+[
+  {
+    "gear": 1,
+    "target_cycles": 100000,
+    "hours": 0.30864197530864196,
+    "actual_cycles": 100000.0,
+    "ZNT": 1.6,
+    "YNT": 1.7270060230666913,
+    "variant": "ex7-life-g1-N100000"
+  },
+  {
+    "gear": 1,
+    "target_cycles": 600000,
+    "hours": 1.8518518518518519,
+    "actual_cycles": 600000.0,
+    "ZNT": 1.6,
+    "YNT": 1.2950509198214328,
+    "variant": "ex7-life-g1-N600000"
+  },
+  {
+    "gear": 1,
+    "target_cycles": 10000000,
+    "hours": 30.864197530864196,
+    "actual_cycles": 9999999.999999998,
+    "ZNT": 1.2999945075764316,
+    "YNT": 0.9761669391190654,
+    "variant": "ex7-life-g1-N10000000"
+  },
+  {
+    "gear": 1,
+    "target_cycles": 1000000000,
+    "hours": 3086.41975308642,
+    "actual_cycles": 1000000000.0,
+    "ZNT": 1.0,
+    "YNT": 0.8901311145946228,
+    "variant": "ex7-life-g1-N1000000000"
+  },
+  {
+    "gear": 1,
+    "target_cycles": 10000000000,
+    "hours": 30864.197530864196,
+    "actual_cycles": 10000000000.0,
+    "ZNT": 0.85,
+    "YNT": 0.85,
+    "variant": "ex7-life-g1-N10000000000"
+  },
+  {
+    "gear": 2,
+    "target_cycles": 100000,
+    "hours": 1.5396210163652022,
+    "actual_cycles": 99999.99999999999,
+    "ZNT": 1.6,
+    "YNT": 1.7270060230666915,
+    "variant": "ex7-life-g2-N100000"
+  },
+  {
+    "gear": 2,
+    "target_cycles": 600000,
+    "hours": 9.237726098191214,
+    "actual_cycles": 599999.9999999999,
+    "ZNT": 1.6,
+    "YNT": 1.2950509198214328,
+    "variant": "ex7-life-g2-N600000"
+  },
+  {
+    "gear": 2,
+    "target_cycles": 10000000,
+    "hours": 153.96210163652023,
+    "actual_cycles": 10000000.0,
+    "ZNT": 1.2999945075764316,
+    "YNT": 0.9761669391190654,
+    "variant": "ex7-life-g2-N10000000"
+  },
+  {
+    "gear": 2,
+    "target_cycles": 1000000000,
+    "hours": 15396.210163652022,
+    "actual_cycles": 999999999.9999999,
+    "ZNT": 1.0,
+    "YNT": 0.8901311145946228,
+    "variant": "ex7-life-g2-N1000000000"
+  },
+  {
+    "gear": 2,
+    "target_cycles": 10000000000,
+    "hours": 153962.10163652024,
+    "actual_cycles": 10000000000.0,
+    "ZNT": 0.85,
+    "YNT": 0.85,
+    "variant": "ex7-life-g2-N10000000000"
+  }
+]

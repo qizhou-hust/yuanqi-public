@@ -1,0 +1,14 @@
+{
+  "variant": "ex8-Rz2.3",
+  "calculate_return": true,
+  "messages": [
+    [],
+    [],
+    0
+  ],
+  "checked_fields": 1196,
+  "differences": {},
+  "accepted": false,
+  "native_file_modified": false,
+  "interface_requested": false
+}

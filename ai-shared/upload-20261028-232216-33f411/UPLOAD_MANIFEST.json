@@ -1,0 +1,14 @@
+{
+  "created": "2026-10-28T23:22:16.981258-07:00",
+  "repo": "qizhou-hust/yuanqi-public",
+  "visibility": "public",
+  "mode": "git",
+  "files": [
+    {
+      "path": "files/子目录/示例报告.txt",
+      "bytes": 136,
+      "sha256": "0f1b3caa0c2c4c0553505b21ae1f5edc70974e1fbfa999548595a9656739ba7b"
+    }
+  ],
+  "excluded_count": 0
+}

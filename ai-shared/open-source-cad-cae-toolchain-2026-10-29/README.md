@@ -4,6 +4,8 @@
 
 **[下载全部归档：open-source-cad-cae-2026-10-29](https://github.com/qizhou-hust/yuanqi-public/releases/tag/open-source-cad-cae-2026-10-29)**
 
+当前仓库为私有：浏览器需登录有权限的 GitHub 账号，命令行需先完成 `gh auth login`；未登录访问可能显示 404。[发布验证记录](PUBLICATION-VERIFICATION.json) 包含 11 个附件的服务器哈希比对结果。
+
 ## 包清单
 
 | 包 | 内容 | 大小 | SHA256 | 说明 |

@@ -1,0 +1,132 @@
+{
+  "schema": "cad-cae-release-publication/1",
+  "checked_at_utc": "2026-10-30T06:54:07.037679+00:00",
+  "repository": "qizhou-hust/yuanqi-public",
+  "tag": "open-source-cad-cae-2026-10-29",
+  "release_url": "https://github.com/qizhou-hust/yuanqi-public/releases/tag/open-source-cad-cae-2026-10-29",
+  "published_at": "2026-10-30T06:54:05Z",
+  "target_commitish": "df1bc32d9aac4c195fb8a2342b7d34fab8e1303a",
+  "draft": false,
+  "asset_count": 11,
+  "assets": [
+    {
+      "asset_name": "AI-CAD-light-build123d-20261027.zip",
+      "bytes": 841624,
+      "sha256": "aedc23b579f2282361362ef390cf8c9eae439bf737bab65df001305c08e86f27",
+      "github_digest": "sha256:aedc23b579f2282361362ef390cf8c9eae439bf737bab65df001305c08e86f27",
+      "asset_id": "RA_kwDOVZGrR84pMhRF",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/AI-CAD-light-build123d-20261027.zip"
+    },
+    {
+      "asset_name": "AI-CAD-light-build123d-20261027.zip.sha256",
+      "bytes": 103,
+      "sha256": "4ac2d2bff890497b70d3dbe7dc333baf9e462ff36435ddf0d7a958a212099969",
+      "github_digest": "sha256:4ac2d2bff890497b70d3dbe7dc333baf9e462ff36435ddf0d7a958a212099969",
+      "asset_id": "RA_kwDOVZGrR84pMtTs",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/AI-CAD-light-build123d-20261027.zip.sha256"
+    },
+    {
+      "asset_name": "CAD-kernel-build123d-Linux-x64-Python312-20261027.zip",
+      "bytes": 66849887,
+      "sha256": "1f4c3c4b245dd150ed2d1c7d675f20e330e1dbc7dc68d68f2a5e9ba039ef614a",
+      "github_digest": "sha256:1f4c3c4b245dd150ed2d1c7d675f20e330e1dbc7dc68d68f2a5e9ba039ef614a",
+      "asset_id": "RA_kwDOVZGrR84pMoaE",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/CAD-kernel-build123d-Linux-x64-Python312-20261027.zip"
+    },
+    {
+      "asset_name": "CAD-kernel-build123d-Linux-x64-Python312-20261027.zip.sha256",
+      "bytes": 121,
+      "sha256": "fe04fdd3f466b8c48367371a20182a6aef17580aab37f54ec1747e27b5a631b3",
+      "github_digest": "sha256:fe04fdd3f466b8c48367371a20182a6aef17580aab37f54ec1747e27b5a631b3",
+      "asset_id": "RA_kwDOVZGrR84pMtT4",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/CAD-kernel-build123d-Linux-x64-Python312-20261027.zip.sha256"
+    },
+    {
+      "asset_name": "CAD-source-collection-20261027.zip",
+      "bytes": 593841501,
+      "sha256": "f0edde2f0fde907f7cd14ded99c86bc21a02e914e1bd3b51fa02e52ca28b1002",
+      "github_digest": "sha256:f0edde2f0fde907f7cd14ded99c86bc21a02e914e1bd3b51fa02e52ca28b1002",
+      "asset_id": "RA_kwDOVZGrR84pMoaB",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/CAD-source-collection-20261027.zip"
+    },
+    {
+      "asset_name": "CAD-source-collection-20261027.zip.sha256",
+      "bytes": 102,
+      "sha256": "2b6b8665d1a18a3cb24ee786c1b47e1ec694cfc1d245fc5c05e639259acd1dfe",
+      "github_digest": "sha256:2b6b8665d1a18a3cb24ee786c1b47e1ec694cfc1d245fc5c05e639259acd1dfe",
+      "asset_id": "RA_kwDOVZGrR84pMtTw",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/CAD-source-collection-20261027.zip.sha256"
+    },
+    {
+      "asset_name": "CATALOG.json",
+      "bytes": 2543,
+      "sha256": "08473a41ac0fe45c23f81bc9fbb13f406831908c931d1d82e36799971df88bc2",
+      "github_digest": "sha256:08473a41ac0fe45c23f81bc9fbb13f406831908c931d1d82e36799971df88bc2",
+      "asset_id": "RA_kwDOVZGrR84pMtTv",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/CATALOG.json"
+    },
+    {
+      "asset_name": "FEA-CalculiX-Gmsh-runtime-2026-10-29.tar.xz",
+      "bytes": 147207152,
+      "sha256": "89a57df5b0e334d306e66dd5853c2930fe0faf528cf2c6ee2deb1368c34becd4",
+      "github_digest": "sha256:89a57df5b0e334d306e66dd5853c2930fe0faf528cf2c6ee2deb1368c34becd4",
+      "asset_id": "RA_kwDOVZGrR84pMsMG",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/FEA-CalculiX-Gmsh-runtime-2026-10-29.tar.xz"
+    },
+    {
+      "asset_name": "FEA-CalculiX-Gmsh-runtime-2026-10-29.tar.xz.sha256",
+      "bytes": 111,
+      "sha256": "980ed7b618eaeb30d9878d938493f9e4844fd32a9ad89290e53d8512ac1caae8",
+      "github_digest": "sha256:980ed7b618eaeb30d9878d938493f9e4844fd32a9ad89290e53d8512ac1caae8",
+      "asset_id": "RA_kwDOVZGrR84pMtTt",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/FEA-CalculiX-Gmsh-runtime-2026-10-29.tar.xz.sha256"
+    },
+    {
+      "asset_name": "SHA256SUMS.txt",
+      "bytes": 437,
+      "sha256": "cb5361029aa5a3154ce0e9e5cf6a858b4dce2c936cf883ade8d14a8ec153c0e4",
+      "github_digest": "sha256:cb5361029aa5a3154ce0e9e5cf6a858b4dce2c936cf883ade8d14a8ec153c0e4",
+      "asset_id": "RA_kwDOVZGrR84pMtUT",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/SHA256SUMS.txt"
+    },
+    {
+      "asset_name": "verify_downloads.py",
+      "bytes": 1335,
+      "sha256": "392a5a5c19a4ab85fc4148345e4d07babf511244984532fb733b7eea9b8d79cb",
+      "github_digest": "sha256:392a5a5c19a4ab85fc4148345e4d07babf511244984532fb733b7eea9b8d79cb",
+      "asset_id": "RA_kwDOVZGrR84pMtUg",
+      "state": "uploaded",
+      "passed": true,
+      "download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/verify_downloads.py"
+    }
+  ],
+  "passed": true,
+  "validation": "Local size/SHA256 matched to GitHub uploaded asset digest before and after publishing; full archives were not downloaded again.",
+  "repository_visibility": "PRIVATE",
+  "anonymous_download_status": 404,
+  "authenticated_catalog_download": {
+    "passed": true,
+    "sha256": "08473a41ac0fe45c23f81bc9fbb13f406831908c931d1d82e36799971df88bc2",
+    "bytes": 2543
+  }
+}

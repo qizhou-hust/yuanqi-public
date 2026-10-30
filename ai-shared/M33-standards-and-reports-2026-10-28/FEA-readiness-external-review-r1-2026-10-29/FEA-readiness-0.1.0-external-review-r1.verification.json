@@ -1,0 +1,125 @@
+{
+  "schema": "external-review-archive-verification/1",
+  "verified_utc": "2026-10-30T03:43:17.883500+00:00",
+  "zip_file": "FEA-readiness-0.1.0-external-review-r1.zip",
+  "zip_bytes": 41035655,
+  "zip_sha256": "0f508efd1e8b8a3982f1a2cdb1da96054fdf280260ab8b9c99bda2d68ffdc0dc",
+  "zip_members": 95,
+  "manifest_files": 94,
+  "crc_and_all_files_sha256_pass": true,
+  "fresh_extraction_path_contains_spaces_and_unicode": true,
+  "clean_python_environment": true,
+  "dependencies_installed_offline_from_bundle": true,
+  "implementation_modified": false,
+  "external_independent_review_completed": false,
+  "author_fresh_zip_audit": {
+    "schema": "fea-readiness.external-audit/1",
+    "started_utc": "2026-10-30T03:42:25.397371+00:00",
+    "mode": "full",
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "new_solver_run": false,
+    "engineering_accepted": false,
+    "checks": {
+      "C1_integrity": {
+        "pass": true,
+        "files": 94,
+        "errors": []
+      },
+      "C2_origin_and_wheel": {
+        "pass": true,
+        "upstream_commit": "492ef02a4f1038f9d6ba2f042eab0c27681ac2aa",
+        "source_files": 64,
+        "locked_native_files": 15,
+        "wheel_sources_identical": true,
+        "historical_lineage": {
+          "source_record_sha": true,
+          "source_exit_code_still_null": true,
+          "repeat_input_sha": true,
+          "repeat_dat_sha": true,
+          "source_dat_sha": true,
+          "repeat_and_old_dat_identical": true
+        },
+        "errors": []
+      },
+      "C3_gate_negative_tests": {
+        "pass": true,
+        "checks": {
+          "valid_fixture": true,
+          "changed_file_rejected": true,
+          "extra_file_rejected": true,
+          "missing_file_rejected": true,
+          "empty_manifest_rejected": true
+        }
+      },
+      "C4_core_tests": {
+        "pass": true,
+        "returncode": 0,
+        "details": {
+          "pass": true,
+          "roster_match": true,
+          "expected_count": 23,
+          "run_count": 23,
+          "discovered": [
+            "test_review.ReviewTests.test_balance_needs_scale_and_common_origin",
+            "test_review.ReviewTests.test_contact_uses_actual_support",
+            "test_review.ReviewTests.test_convergence_identity_monotonic_and_order",
+            "test_review.ReviewTests.test_incomplete_scalar_balance_cannot_substitute_free_body",
+            "test_review.ReviewTests.test_mesh_different_region_is_not_convergence",
+            "test_review.ReviewTests.test_theory_requires_same_definition_and_eligibility",
+            "test_runner_execution.RunnerExecutionTests.test_existing_run_directory_is_rejected_before_solver_launch",
+            "test_runner_execution.RunnerExecutionTests.test_incomplete_final_step_is_not_complete",
+            "test_runner_execution.RunnerExecutionTests.test_nonzero_solver_exit_is_not_complete",
+            "test_runner_execution.RunnerExecutionTests.test_solver_hash_mismatch_is_rejected_before_staging",
+            "test_runner_execution.RunnerExecutionTests.test_staged_input_or_meta_drift_is_rejected",
+            "test_runner_execution.RunnerExecutionTests.test_success_writes_run_record_and_keeps_engineering_acceptance_false",
+            "test_runner_execution.RunnerExecutionTests.test_timeout_is_recorded_and_not_complete",
+            "test_theory.TheoryTests.test_beam_independent_and_scaling",
+            "test_theory.TheoryTests.test_frozen_m37_pitch",
+            "test_theory.TheoryTests.test_hertz_scaling_and_integral",
+            "test_theory.TheoryTests.test_invalid_domains",
+            "test_theory.TheoryTests.test_moment_origin",
+            "test_theory.TheoryTests.test_no_vacuous_pass",
+            "test_workflow.WorkflowTests.test_completion_is_not_exit_code_alone",
+            "test_workflow.WorkflowTests.test_drift_block_and_fresh_directory",
+            "test_workflow.WorkflowTests.test_theory_alone_never_ready",
+            "test_workflow.WorkflowTests.test_units_and_invalid_theory"
+          ],
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "C5_native_replay": {
+        "pass": true,
+        "conditions": {
+          "exact_three_cases": true,
+          "exact_four_mutations": true,
+          "all_mutations_blocked": true,
+          "exact_balance_roster": true,
+          "balance_pass": true,
+          "loaded_edge_flagged": true,
+          "mesh_remains_unknown": true,
+          "theory_remains_unknown": true,
+          "sources_bound": true,
+          "historical_run_complete": true,
+          "engineering_not_accepted": true,
+          "no_solver": true
+        },
+        "returncode": 0,
+        "wall_s": 14.702999999979511
+      },
+      "C6_after_integrity": {
+        "pass": true,
+        "files": 94,
+        "errors": []
+      }
+    },
+    "dependency_versions": {
+      "numpy": "2.2.6",
+      "shapely": "2.0.6"
+    },
+    "pass": true,
+    "not_run": []
+  }
+}

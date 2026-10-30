@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fea-readiness"
+version = "0.1.0"
+description = "Evidence based FEA preparation, analytical estimates and result review"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+m37 = ["numpy>=1.24", "shapely>=2"]
+
+[project.scripts]
+fea-readiness = "fea_readiness.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fea_readiness*"]
+
+[tool.setuptools.package-data]
+fea_readiness = ["adapters/*.json"]

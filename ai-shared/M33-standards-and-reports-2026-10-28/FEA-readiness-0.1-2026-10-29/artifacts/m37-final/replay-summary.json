@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "case": "original_ph00",
+      "expected_ready": false,
+      "actual_ready": false,
+      "matches": true
+    },
+    {
+      "case": "repaired_ph00",
+      "expected_ready": true,
+      "actual_ready": true,
+      "matches": true
+    },
+    {
+      "case": "repaired_ph10",
+      "expected_ready": true,
+      "actual_ready": true,
+      "matches": true
+    }
+  ],
+  "assertions": {
+    "native_matrix": true,
+    "actual_contact_mesh_flagged": true,
+    "theory_unknown_not_failed_physics": true,
+    "raw_sources_intact": true,
+    "actual_run_complete": true,
+    "actual_balance_passes": true,
+    "all_four_semantic_mutations_blocked": true
+  },
+  "all_pass": true,
+  "solver_invoked": false
+}

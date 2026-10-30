@@ -1,0 +1,696 @@
+{
+  "schema": "fea-readiness.prepare/0.1",
+  "case_id": "repaired_ph00",
+  "checks": [
+    {
+      "check_id": "case_id",
+      "status": "PASS",
+      "required": true,
+      "message": "Explicit case identity",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "units",
+      "status": "PASS",
+      "required": true,
+      "message": "Supported unit system is N-mm-MPa; torque_Nm fields convert explicitly",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "analytical_domain",
+      "status": "PASS",
+      "required": true,
+      "message": "Transparent estimate computed; physical applicability remains a separate comparison requirement",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "m37_assets",
+      "status": "PASS",
+      "required": true,
+      "message": "Existing source files match the reviewed SHA256 lock",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "theory_native_binding",
+      "status": "PASS",
+      "required": true,
+      "message": "Source gear, phase, material and per-mm loading agree; nominal geometry excludes thickness allowance and generated fillet",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "prescribed_state",
+      "status": "PASS",
+      "required": true,
+      "message": "Complete bore membership and every prescribed DOF/value match each source-defined step",
+      "measured": {
+        "pass": true,
+        "steps": [
+          {
+            "step": 0,
+            "keys_match": true,
+            "values_match": true,
+            "actual_count": 372,
+            "expected_count": 372
+          },
+          {
+            "step": 1,
+            "keys_match": true,
+            "values_match": true,
+            "actual_count": 373,
+            "expected_count": 373
+          },
+          {
+            "step": 2,
+            "keys_match": true,
+            "values_match": true,
+            "actual_count": 372,
+            "expected_count": 372
+          }
+        ],
+        "bore_nodes": {
+          "PINION": 104,
+          "WHEEL": 184
+        },
+        "expected_rotation_value": -0.00036105411124959393,
+        "scope": "Known nominal bore circles and exact source-defined step supports; not arbitrary mesh BC inference"
+      },
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "phase_contact_binding",
+      "status": "PASS",
+      "required": true,
+      "message": "Every native active pair k/s/point agrees with the analytical phase and line-of-action definition",
+      "measured": {
+        "expected": [
+          [
+            0,
+            -4.8118163066328306,
+            [
+              -4.5216282759201745,
+              18.35426189714865
+            ]
+          ],
+          [
+            1,
+            1.0924465615542678,
+            [
+              1.026563972495484,
+              20.373638729558426
+            ]
+          ]
+        ],
+        "actual": [
+          {
+            "k": 0,
+            "s": -4.8118163066328306,
+            "point": [
+              -4.5216282759201745,
+              18.354261897148646
+            ]
+          },
+          {
+            "k": 1,
+            "s": 1.0924465615542678,
+            "point": [
+              1.026563972495484,
+              20.373638729558422
+            ]
+          }
+        ]
+      },
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "native_profile",
+      "status": "PASS",
+      "required": true,
+      "message": "Pinned CPE6/two-step/penalty profile, material, contact, torque, rigid intent and Jacobian checks",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": [
+        {
+          "input_sha256": "59b501ffa9b59a42d8de9955c129995a7665a6157aa639e866474643d9bdaf3c"
+        }
+      ]
+    },
+    {
+      "check_id": "initial_overlap_screen",
+      "status": "PASS",
+      "required": true,
+      "message": "Eight-chord quadratic-edge interference screen; not certified full curved-boundary nonpenetration",
+      "measured": {
+        "subsegments_per_quadratic_edge": 8,
+        "max_arc_chord_deviation_mm": 0.0017739843225218746,
+        "intersection_area_mm2": 8.530229490835407e-10,
+        "polygon_valid": true,
+        "screen_clear": true,
+        "scope": "Sampled whole-body polygon interference screen, not certified curved-boundary nonpenetration"
+      },
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "step_duration",
+      "status": "PASS",
+      "required": true,
+      "message": "Supported two unit-duration STATIC steps",
+      "measured": [
+        1.0,
+        1.0
+      ],
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    }
+  ],
+  "theory": {
+    "geometry": {
+      "method": "nominal_unshifted_external_spur",
+      "r1_mm": 20.0,
+      "r2_mm": 36.0,
+      "rb1_mm": 18.79385241571817,
+      "rb2_mm": 33.828934348292705,
+      "ra1_mm": 22.0,
+      "ra2_mm": 38.0,
+      "center_distance_mm": 56.0,
+      "base_pitch_mm": 5.904262868187098,
+      "path_start_mm": -4.9963245212636735,
+      "path_end_mm": 4.595991293194672,
+      "contact_ratio": 1.624642403058125,
+      "contact_coordinate_mm": -4.8118163066328306,
+      "nominal_pairs_at_phase": 2,
+      "pair_offsets": [
+        0,
+        1
+      ],
+      "rho1_mm": 2.0285865598805435,
+      "rho2_mm": 17.124541466356906,
+      "Ft_N": 1250.0,
+      "Fr_N": 454.96279283275294,
+      "Fn_N": 1330.22221559489,
+      "full_load_q_N_per_mm": 44.340740519829666,
+      "torque_per_1mm_Nmm": 833.3333333333334,
+      "rack_undercut_screen_zmin": 17.09726434082606,
+      "undercut_screen": false,
+      "scope": "Zero profile shift, standard center distance, no tip/root truncation or relief; nominal undercut screen is not generated fillet verification"
+    },
+    "contact": {
+      "method": "hertz_line_two_convex_bodies",
+      "q_N_per_mm": 44.340740519829666,
+      "E_star_MPa": 113186.81318681319,
+      "R_eff_mm": 1.8137306144030891,
+      "half_width_mm": 0.030077726495274928,
+      "p0_MPa": 938.5081728427336,
+      "a_over_min_radius": 0.014826937676766478,
+      "integrated_line_load_N_per_mm": 44.340740519829666,
+      "scope": "Smooth nonconforming convex cylinders, frictionless elastic small contact patch, plane-strain interior; no edge/plastic/roughness correction",
+      "reference": "M37 post.hertz_line; classical Hertz line contact (see research sources)"
+    },
+    "prediction_role": "single-pair full-load reference; multi-pair pressure requires load sharing"
+  },
+  "native": {
+    "checks": [
+      {
+        "check_id": "m37_assets",
+        "status": "PASS",
+        "required": true,
+        "message": "Existing source files match the reviewed SHA256 lock",
+        "measured": null,
+        "limit": null,
+        "unit": null,
+        "evidence": []
+      },
+      {
+        "check_id": "theory_native_binding",
+        "status": "PASS",
+        "required": true,
+        "message": "Source gear, phase, material and per-mm loading agree; nominal geometry excludes thickness allowance and generated fillet",
+        "measured": null,
+        "limit": null,
+        "unit": null,
+        "evidence": []
+      },
+      {
+        "check_id": "prescribed_state",
+        "status": "PASS",
+        "required": true,
+        "message": "Complete bore membership and every prescribed DOF/value match each source-defined step",
+        "measured": {
+          "pass": true,
+          "steps": [
+            {
+              "step": 0,
+              "keys_match": true,
+              "values_match": true,
+              "actual_count": 372,
+              "expected_count": 372
+            },
+            {
+              "step": 1,
+              "keys_match": true,
+              "values_match": true,
+              "actual_count": 373,
+              "expected_count": 373
+            },
+            {
+              "step": 2,
+              "keys_match": true,
+              "values_match": true,
+              "actual_count": 372,
+              "expected_count": 372
+            }
+          ],
+          "bore_nodes": {
+            "PINION": 104,
+            "WHEEL": 184
+          },
+          "expected_rotation_value": -0.00036105411124959393,
+          "scope": "Known nominal bore circles and exact source-defined step supports; not arbitrary mesh BC inference"
+        },
+        "limit": null,
+        "unit": null,
+        "evidence": []
+      },
+      {
+        "check_id": "phase_contact_binding",
+        "status": "PASS",
+        "required": true,
+        "message": "Every native active pair k/s/point agrees with the analytical phase and line-of-action definition",
+        "measured": {
+          "expected": [
+            [
+              0,
+              -4.8118163066328306,
+              [
+                -4.5216282759201745,
+                18.35426189714865
+              ]
+            ],
+            [
+              1,
+              1.0924465615542678,
+              [
+                1.026563972495484,
+                20.373638729558426
+              ]
+            ]
+          ],
+          "actual": [
+            {
+              "k": 0,
+              "s": -4.8118163066328306,
+              "point": [
+                -4.5216282759201745,
+                18.354261897148646
+              ]
+            },
+            {
+              "k": 1,
+              "s": 1.0924465615542678,
+              "point": [
+                1.026563972495484,
+                20.373638729558422
+              ]
+            }
+          ]
+        },
+        "limit": null,
+        "unit": null,
+        "evidence": []
+      },
+      {
+        "check_id": "native_profile",
+        "status": "PASS",
+        "required": true,
+        "message": "Pinned CPE6/two-step/penalty profile, material, contact, torque, rigid intent and Jacobian checks",
+        "measured": null,
+        "limit": null,
+        "unit": null,
+        "evidence": [
+          {
+            "input_sha256": "59b501ffa9b59a42d8de9955c129995a7665a6157aa639e866474643d9bdaf3c"
+          }
+        ]
+      },
+      {
+        "check_id": "initial_overlap_screen",
+        "status": "PASS",
+        "required": true,
+        "message": "Eight-chord quadratic-edge interference screen; not certified full curved-boundary nonpenetration",
+        "measured": {
+          "subsegments_per_quadratic_edge": 8,
+          "max_arc_chord_deviation_mm": 0.0017739843225218746,
+          "intersection_area_mm2": 8.530229490835407e-10,
+          "polygon_valid": true,
+          "screen_clear": true,
+          "scope": "Sampled whole-body polygon interference screen, not certified curved-boundary nonpenetration"
+        },
+        "limit": null,
+        "unit": null,
+        "evidence": []
+      },
+      {
+        "check_id": "step_duration",
+        "status": "PASS",
+        "required": true,
+        "message": "Supported two unit-duration STATIC steps",
+        "measured": [
+          1.0,
+          1.0
+        ],
+        "limit": null,
+        "unit": null,
+        "evidence": []
+      }
+    ],
+    "files": [
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph00_d12.inp",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph00_d12.meta.json",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\cases\\L3_C001_G1.json",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\cases.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\ccx_io.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\gear_geom.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\inp_writer.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\mesh_gmsh.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\pack_results.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\post.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\run_m37.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\selfcheck.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\study.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\check_before_solve.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\extended_preflight.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-preflight\\semantic_preflight.py",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\expected\\L3_C001_G1.json"
+    ],
+    "report": {
+      "schema": "m37.pre-solve-check/v1",
+      "input_sha256": "59b501ffa9b59a42d8de9955c129995a7665a6157aa639e866474643d9bdaf3c",
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph00_d12.inp",
+      "profile": "M37_L3_CPE6_small_displacement_frictionless_penalty_two_step",
+      "supported_profile_errors": [],
+      "input_checks": {
+        "scope": "checked",
+        "phase": -1,
+        "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph00_d12.inp",
+        "input_sha256": "59b501ffa9b59a42d8de9955c129995a7665a6157aa639e866474643d9bdaf3c",
+        "contact": {
+          "pairs": [
+            {
+              "theoretical_point_mm": [
+                -4.5216282759201745,
+                18.354261897148646
+              ],
+              "pinion": {
+                "element": 10722,
+                "side": 3,
+                "parameter": -0.19379168885104325,
+                "point_mm": [
+                  -4.521627807012283,
+                  18.354262067809255
+                ],
+                "distance_mm": 4.98998651246289e-07,
+                "outward_normal": [
+                  0.9396977120241402,
+                  0.34200615493963854
+                ]
+              },
+              "wheel": {
+                "element": 30842,
+                "side": 3,
+                "parameter": 0.7757282624493579,
+                "point_mm": [
+                  -4.521628285882558,
+                  18.354261893522423
+                ],
+                "distance_mm": 1.0601819818851188e-08,
+                "outward_normal": [
+                  -0.9396862415984053,
+                  -0.3420376694907499
+                ]
+              },
+              "nearest_point_gap_mm": 5.096004710592617e-07,
+              "signed_normal_gap_mm": -5.096004710591374e-07,
+              "opposing_normal_dot": -0.9999999994376312,
+              "pass": true
+            },
+            {
+              "theoretical_point_mm": [
+                1.026563972495484,
+                20.373638729558422
+              ],
+              "pinion": {
+                "element": 10808,
+                "side": 3,
+                "parameter": -0.9251694710944213,
+                "point_mm": [
+                  1.0265635118580951,
+                  20.373638561895447
+                ],
+                "distance_mm": 4.902016699866227e-07,
+                "outward_normal": [
+                  0.9396895535761443,
+                  0.34202857029766776
+                ]
+              },
+              "wheel": {
+                "element": 32863,
+                "side": 3,
+                "parameter": -0.08296983935385385,
+                "point_mm": [
+                  1.0265638106002926,
+                  20.373638670633134
+                ],
+                "distance_mm": 1.7228535213525755e-07,
+                "outward_normal": [
+                  -0.9396921416637569,
+                  -0.34202145970009223
+                ]
+              },
+              "nearest_point_gap_mm": 3.179163178589632e-07,
+              "signed_normal_gap_mm": 3.179163178562964e-07,
+              "opposing_normal_dot": -0.9999999999713706,
+              "pass": true
+            }
+          ],
+          "surfaces_on_exterior": true,
+          "surface_body_identity": true,
+          "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+          "thresholds": {
+            "distance_mm": 0.01,
+            "gap_mm": 0.001,
+            "normal_dot_max": -0.999
+          },
+          "pass": true
+        },
+        "rigid_boundary": {
+          "steps": [
+            {
+              "step": 0,
+              "rigid_mode_constraint_rank": 5,
+              "expected_rank": 5,
+              "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+              "dependent_MPC_DOF_also_prescribed": 0,
+              "pass": true
+            },
+            {
+              "step": 1,
+              "rigid_mode_constraint_rank": 6,
+              "expected_rank": 6,
+              "pinion_rotation_constraint_residual": 0.9922778767136677,
+              "dependent_MPC_DOF_also_prescribed": 0,
+              "pass": true
+            },
+            {
+              "step": 2,
+              "rigid_mode_constraint_rank": 5,
+              "expected_rank": 5,
+              "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+              "dependent_MPC_DOF_also_prescribed": 0,
+              "pass": true
+            }
+          ],
+          "equation_count": 203,
+          "unique_dependent_DOF": true,
+          "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+          "pass": true
+        },
+        "load": {
+          "input_force_N": [
+            0.0,
+            -104.166666667
+          ],
+          "input_moment_about_pinion_center_Nmm": -833.333333336,
+          "target_torque_per_1mm_Nmm": 833.3333333333334,
+          "relative_moment_error": 3.1999661587178705e-12,
+          "required_signed_moment_Nmm": -833.3333333333334,
+          "pass": true,
+          "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+        },
+        "units": {
+          "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+          "plane_model": "CPE6 plane strain",
+          "section_thickness_mm": [
+            1.0,
+            1.0
+          ],
+          "full_gear_face_width_mm": 30.0,
+          "E_MPa": 206000.0,
+          "nu": 0.3,
+          "section_material_assignments": [
+            {
+              "set": "PINION",
+              "material": "STEEL",
+              "thickness_mm": 1.0,
+              "elastic": [
+                206000.0,
+                0.3
+              ]
+            },
+            {
+              "set": "WHEEL",
+              "material": "STEEL",
+              "thickness_mm": 1.0,
+              "elastic": [
+                206000.0,
+                0.3
+              ]
+            }
+          ],
+          "pass": true
+        },
+        "pass": true
+      },
+      "mesh": {
+        "elements": 37997,
+        "minimum_jacobian_mm2": 6.907347169753432e-06,
+        "minimum_element": 15784,
+        "nonpositive_elements": 0,
+        "nonmanifold_edges": 0,
+        "mismatched_shared_midside_nodes": 0,
+        "method": "All stationary candidates of the quadratic TRI6 Jacobian on the reference triangle; floating arithmetic, not interval certification",
+        "pass": true
+      },
+      "ready_for_diagnostic_solve": true,
+      "accepted": false,
+      "not_checked": [
+        "Certified whole-boundary penetration",
+        "Contact-patch pressure convergence",
+        "All elastic stiffness matrix eigenmodes",
+        "Nonlinear geometry applicability",
+        "Model-to-reference definition agreement"
+      ],
+      "execution_contract": "Recheck immediately before launch. The solver input must retain this SHA256. Existing solver wrappers are not silently modified.",
+      "sampled_initial_overlap": {
+        "subsegments_per_quadratic_edge": 8,
+        "max_arc_chord_deviation_mm": 0.0017739843225218746,
+        "intersection_area_mm2": 8.530229490835407e-10,
+        "polygon_valid": true,
+        "screen_clear": true,
+        "scope": "Sampled whole-body polygon interference screen, not certified curved-boundary nonpenetration"
+      },
+      "static_procedures": [
+        [
+          "0.25,1,1e-7,0.5"
+        ],
+        [
+          "0.25,1,1e-7,0.5"
+        ]
+      ],
+      "prescribed_state": {
+        "pass": true,
+        "steps": [
+          {
+            "step": 0,
+            "keys_match": true,
+            "values_match": true,
+            "actual_count": 372,
+            "expected_count": 372
+          },
+          {
+            "step": 1,
+            "keys_match": true,
+            "values_match": true,
+            "actual_count": 373,
+            "expected_count": 373
+          },
+          {
+            "step": 2,
+            "keys_match": true,
+            "values_match": true,
+            "actual_count": 372,
+            "expected_count": 372
+          }
+        ],
+        "bore_nodes": {
+          "PINION": 104,
+          "WHEEL": 184
+        },
+        "expected_rotation_value": -0.00036105411124959393,
+        "scope": "Known nominal bore circles and exact source-defined step supports; not arbitrary mesh BC inference"
+      }
+    },
+    "scope": "M37 L3 known source profile only; UNKNOWN features block; sampled overlap is diagnostic"
+  },
+  "identity": {
+    "case_sha256": "8cb12947d2f22c2f875b673ec96ebc74c21105a606c9e0691b059948823e27b1",
+    "code": {
+      "__init__.py": "782611b4dacf9a05704c3fbfd341b32e59065e7e28fa537843e4ad423f244f08",
+      "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "adapters\\__init__.py": "63415033ec0caead1c30206e0f9c23061f76c8ac888b2c28fefe5cc28e0aaae4",
+      "adapters\\m37-assets.json": "9236900c9f428c361b249802e86dfa3f460960af05df0eb4b9bba0bfe19b6f91",
+      "adapters\\m37.py": "6f6d7cd5aecf49b300b8074a2c70e2d8bf8a31584885e5671c045cd377e53a3a",
+      "adapters\\m37_bridge.py": "317f3fdd4532c3a2d67e59c3ccbf260d3d9bdaec7897d41bd9de7f2de25d8053",
+      "cli.py": "fccd8cecd9db9beacd2beea191dac84b288bf49009a63422f1e452d6bd14ee30",
+      "contracts.py": "c84d4633fc17520327cf0f3fa6d89a70af5558b4acef5ddb9681f2636cad7e04",
+      "pipeline.py": "a6d747b17b5780d2a898e4bb6e699e2e1c549d67d3c3d0400c36c862bc30a2e2",
+      "review.py": "012cbfb0c18b1c07909c35efd163a88d51a6abae5004456bb552834be431196d",
+      "runner.py": "4090f6623535dcc3d7a3b6091611119c85ad01f020fcc5c13e4037af79a534ac",
+      "theory.py": "3b6a0f27ed3bc493b7ae7fe0226b975081fb5aed89d041f0a6af5aafa70bb48c"
+    },
+    "files": {
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph00_d12.inp": "59b501ffa9b59a42d8de9955c129995a7665a6157aa639e866474643d9bdaf3c",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph00_d12.meta.json": "4cc3b7f4d7cf1aca93d2edb96cae0e65bb0e17374716b675fb3c4b7ce3f4acef",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\cases\\L3_C001_G1.json": "eb51523e854d254629f402e8956343ebaa5cf81d92f436f5e37973cac8ee5d77",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\cases.py": "59baacb9325549174fbfd661f539bab81fa7337f035815b163d12049b962daeb",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\ccx_io.py": "8ef1684fa036a2fe91bcd5d3c259d08f0c091d5de9e9d4176db0bd58702f2c1f",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\gear_geom.py": "82a6188b725230386f8b8a6a01b6579598fe3d1874809f9e282b2e5a41a28ef2",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\inp_writer.py": "6a346e8f0150968762d2ed4cb1aa42b5ae8ea1c0c427852899bcaa256682c6be",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\mesh_gmsh.py": "e14b9aa31afbac992dff657b34e837f419164b7dda0c371311bcf329a0059609",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\pack_results.py": "305dc41888b8d65ec8473da4e6c8b15bf30446bd1e3a11af5f259bf5f418688e",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\post.py": "d414686979b02694020f212778bc43ba3b4dca2916874c5e9c43752829b2478d",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\run_m37.py": "7a7d332a0aa597e3ac12186ebe142142a052b464dfb0753ec42b01193c55363b",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\selfcheck.py": "9159bbca024aff9c3eb0949ce89d59f97cb45669f1357373d8f801bc7c679247",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\study.py": "6a70245f4140dbe132f0a56c96af0bf6201d7a312046df05e786f3210c535d2b",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\check_before_solve.py": "3aa9d026288512193cfcaccc2648f2e2e5f592a72bff51d225ff885ecdb4e25f",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\extended_preflight.py": "c375e0997e22405b50515513ed121b4800dd923c8444dd7880d44eb35201f049",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-preflight\\semantic_preflight.py": "0fe46411bc696e2e3607c9695320847286f35065bf5f7d553360fa6e72f9c064",
+      "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\expected\\L3_C001_G1.json": "7218f91af84687b8ab986041b2b9ce7c60f1f80102649e188b7fc2fa77cc288f"
+    },
+    "binding_sha256": "1dafc4000cc1ada69ca7f9cf00621ce104cb985ce8cd5f05d1565b0581875e1a"
+  },
+  "ready_for_diagnostic_solve": true,
+  "engineering_accepted": false,
+  "scope": "Enumerated diagnostic checks only; not complete engineering validation"
+}

@@ -1,0 +1,20 @@
+{
+  "source": "Existing M37 reviewed asset snapshot, no source modifications",
+  "files": {
+    "m37/M37-FEA题目包/cases/L3_C001_G1.json": "eb51523e854d254629f402e8956343ebaa5cf81d92f436f5e37973cac8ee5d77",
+    "m37/M37-FEA题目包/scripts/cases.py": "59baacb9325549174fbfd661f539bab81fa7337f035815b163d12049b962daeb",
+    "m37/M37-FEA题目包/scripts/ccx_io.py": "8ef1684fa036a2fe91bcd5d3c259d08f0c091d5de9e9d4176db0bd58702f2c1f",
+    "m37/M37-FEA题目包/scripts/gear_geom.py": "82a6188b725230386f8b8a6a01b6579598fe3d1874809f9e282b2e5a41a28ef2",
+    "m37/M37-FEA题目包/scripts/inp_writer.py": "6a346e8f0150968762d2ed4cb1aa42b5ae8ea1c0c427852899bcaa256682c6be",
+    "m37/M37-FEA题目包/scripts/mesh_gmsh.py": "e14b9aa31afbac992dff657b34e837f419164b7dda0c371311bcf329a0059609",
+    "m37/M37-FEA题目包/scripts/pack_results.py": "305dc41888b8d65ec8473da4e6c8b15bf30446bd1e3a11af5f259bf5f418688e",
+    "m37/M37-FEA题目包/scripts/post.py": "d414686979b02694020f212778bc43ba3b4dca2916874c5e9c43752829b2478d",
+    "m37/M37-FEA题目包/scripts/run_m37.py": "7a7d332a0aa597e3ac12186ebe142142a052b464dfb0753ec42b01193c55363b",
+    "m37/M37-FEA题目包/scripts/selfcheck.py": "9159bbca024aff9c3eb0949ce89d59f97cb45669f1357373d8f801bc7c679247",
+    "m37/M37-FEA题目包/scripts/study.py": "6a70245f4140dbe132f0a56c96af0bf6201d7a312046df05e786f3210c535d2b",
+    "preprocessing-work/check_before_solve.py": "3aa9d026288512193cfcaccc2648f2e2e5f592a72bff51d225ff885ecdb4e25f",
+    "preprocessing-work/extended_preflight.py": "c375e0997e22405b50515513ed121b4800dd923c8444dd7880d44eb35201f049",
+    "preprocessing-work/m37-preflight/semantic_preflight.py": "0fe46411bc696e2e3607c9695320847286f35065bf5f7d553360fa6e72f9c064",
+    "m37/M37-FEA题目包/expected/L3_C001_G1.json": "7218f91af84687b8ab986041b2b9ce7c60f1f80102649e188b7fc2fa77cc288f"
+  }
+}

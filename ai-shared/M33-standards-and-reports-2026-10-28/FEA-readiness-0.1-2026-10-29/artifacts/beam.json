@@ -1,0 +1,12 @@
+{
+  "beam": {
+    "method": "rectangular_cantilever_tip_force",
+    "nominal_root_bending_MPa": 120.0,
+    "bending_displacement_mm": 0.2,
+    "shear_displacement_mm": 0.00156,
+    "total_displacement_mm": 0.20156000000000002,
+    "stiffness_N_per_mm": 496.13018456042863,
+    "length_depth_ratio": 10.0,
+    "scope": "Uniform rectangular beam, fixed root, transverse end load, linear elastic small deflection; no tooth stress concentration, foundation, rim or contact compliance"
+  }
+}

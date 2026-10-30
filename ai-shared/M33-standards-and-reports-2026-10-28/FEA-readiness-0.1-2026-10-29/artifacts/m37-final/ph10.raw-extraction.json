@@ -1,0 +1,1502 @@
+{
+  "phase": 10,
+  "input_sha256": "a5c3fbc646170e73ffd0826a8f8afef0842ebcbedffc18e6ca31acb720682818",
+  "dat_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f",
+  "actual_balance": {
+    "wheel_RF_N": [
+      -41.745737517,
+      -15.338441796999994
+    ],
+    "contact_surface_force_N": [
+      -41.74574,
+      -15.33844
+    ],
+    "wheel_RF_moment_Nmm": -1504.4345066049298,
+    "contact_moment_global_Nmm": 833.3033,
+    "contact_moment_wheel_center_Nmm": -1504.4581399999997,
+    "input_torque_Nmm": 833.3333333333334,
+    "wheel_contact_force_residual_rel": 6.912479340685832e-08,
+    "wheel_contact_moment_residual_rel": 1.5709155145143685e-05,
+    "pinion_contact_vs_input_torque_residual_rel": 3.604000000000269e-05,
+    "sign_convention": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison.",
+    "scope": "Checks printed contact statistics against wheel-bore RF and input torque; not full-system nodal reaction/energy audit"
+  },
+  "ideal_reference_comparison_unchanged": {
+    "theta_rad": 0.000167646125,
+    "delta_LOA_um": 3.15071653131704,
+    "mesh_stiffness_N_per_mm_um": 14.073224321863911,
+    "p_max_MPa": 5283.265,
+    "contact_normal_force_rel_err": 0.0030085081711857054,
+    "wheel_torque_rel_err": 0.002956337736619844
+  },
+  "active_pressure_elements": [
+    {
+      "element": 7779,
+      "side": 3,
+      "pmax_MPa": 5283.265,
+      "edge_points_mm": [
+        [
+          4.58415610329,
+          21.3791318132
+        ],
+        [
+          4.53280795077,
+          21.5279737105
+        ],
+        [
+          4.5587161175,
+          21.4536329827
+        ]
+      ],
+      "edge_length_chord_mm": 0.157450129117383,
+      "edge_chord_over_contact_target_h": 40.34294294959255,
+      "nearest_theoretical_contact_point_mm": 5.90577681244577
+    },
+    {
+      "element": 9035,
+      "side": 3,
+      "pmax_MPa": 571.0029,
+      "edge_points_mm": [
+        [
+          -1.05401922548,
+          19.616403959
+        ],
+        [
+          -1.05534707113,
+          19.6200485961
+        ],
+        [
+          -1.05468283244,
+          19.6182263923
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988742045075,
+      "edge_chord_over_contact_target_h": 0.9939008776916859,
+      "nearest_theoretical_contact_point_mm": 0.0019729315491783237
+    },
+    {
+      "element": 6353,
+      "side": 3,
+      "pmax_MPa": 570.5682,
+      "edge_points_mm": [
+        [
+          -1.05269389811,
+          19.6127584058
+        ],
+        [
+          -1.05401922548,
+          19.616403959
+        ],
+        [
+          -1.05335624798,
+          19.6145812964
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988369625456,
+      "edge_chord_over_contact_target_h": 0.9939007822677982,
+      "nearest_theoretical_contact_point_mm": 0.001906056779087535
+    },
+    {
+      "element": 6333,
+      "side": 3,
+      "pmax_MPa": 569.1765,
+      "edge_points_mm": [
+        [
+          -1.05534707113,
+          19.6200485961
+        ],
+        [
+          -1.056677447,
+          19.6236922998
+        ],
+        [
+          -1.05601194147,
+          19.6218705641
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789788100570127,
+      "edge_chord_over_contact_target_h": 0.993898332850154,
+      "nearest_theoretical_contact_point_mm": 0.0058519154914843255
+    },
+    {
+      "element": 6318,
+      "side": 3,
+      "pmax_MPa": 565.2813,
+      "edge_points_mm": [
+        [
+          -1.05137107302,
+          19.6091119435
+        ],
+        [
+          -1.05269389811,
+          19.6127584058
+        ],
+        [
+          -1.05203217406,
+          19.6109352886
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988724404876,
+      "edge_chord_over_contact_target_h": 0.9939008731717941,
+      "nearest_theoretical_contact_point_mm": 0.005785044045387254
+    },
+    {
+      "element": 8123,
+      "side": 3,
+      "pmax_MPa": 562.1158,
+      "edge_points_mm": [
+        [
+          -1.056677447,
+          19.6236922998
+        ],
+        [
+          -1.05801037468,
+          19.6273350798
+        ],
+        [
+          -1.05734359093,
+          19.6255138058
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878987281306172,
+      "edge_chord_over_contact_target_h": 0.9939005034112292,
+      "nearest_theoretical_contact_point_mm": 0.009730896346802279
+    },
+    {
+      "element": 6351,
+      "side": 3,
+      "pmax_MPa": 554.8998,
+      "edge_points_mm": [
+        [
+          -1.05005073446,
+          19.6054645805
+        ],
+        [
+          -1.05137107302,
+          19.6091119435
+        ],
+        [
+          -1.05071059417,
+          19.6072883748
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789883689931246,
+      "edge_chord_over_contact_target_h": 0.9939007821057779,
+      "nearest_theoretical_contact_point_mm": 0.009664031819060418
+    },
+    {
+      "element": 6307,
+      "side": 3,
+      "pmax_MPa": 549.3674,
+      "edge_points_mm": [
+        [
+          -1.05801037468,
+          19.6273350798
+        ],
+        [
+          -1.05934586771,
+          19.6309769248
+        ],
+        [
+          -1.05867779957,
+          19.6291561196
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878991703675383,
+      "edge_chord_over_contact_target_h": 0.9939016365407464,
+      "nearest_theoretical_contact_point_mm": 0.013609884016244633
+    },
+    {
+      "element": 6317,
+      "side": 3,
+      "pmax_MPa": 538.74,
+      "edge_points_mm": [
+        [
+          -1.04873286589,
+          19.601816324
+        ],
+        [
+          -1.05005073446,
+          19.6054645805
+        ],
+        [
+          -1.04939149287,
+          19.6036405646
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789886642766214,
+      "edge_chord_over_contact_target_h": 0.9939008577653238,
+      "nearest_theoretical_contact_point_mm": 0.013543017684287905
+    },
+    {
+      "element": 6356,
+      "side": 3,
+      "pmax_MPa": 529.622,
+      "edge_points_mm": [
+        [
+          -1.05934586771,
+          19.6309769248
+        ],
+        [
+          -1.0606839392,
+          19.6346178282
+        ],
+        [
+          -1.06001458038,
+          19.6327974931
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878996375415791,
+      "edge_chord_over_contact_target_h": 0.9939028335658476,
+      "nearest_theoretical_contact_point_mm": 0.01748887274691743
+    },
+    {
+      "element": 7566,
+      "side": 3,
+      "pmax_MPa": 516.5346,
+      "edge_points_mm": [
+        [
+          -1.04741745101,
+          19.5981671823
+        ],
+        [
+          -1.04873286589,
+          19.601816324
+        ],
+        [
+          -1.0480748525,
+          19.5999918625
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789884574744397,
+      "edge_chord_over_contact_target_h": 0.9939008047770622,
+      "nearest_theoretical_contact_point_mm": 0.017422004765545798
+    },
+    {
+      "element": 6325,
+      "side": 3,
+      "pmax_MPa": 500.4066,
+      "edge_points_mm": [
+        [
+          -1.0606839392,
+          19.6346178282
+        ],
+        [
+          -1.0620244217,
+          19.6382578361
+        ],
+        [
+          -1.06135389231,
+          19.6364379373
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789883790578917,
+      "edge_chord_over_contact_target_h": 0.993900784684641,
+      "nearest_theoretical_contact_point_mm": 0.021367860206269608
+    },
+    {
+      "element": 6321,
+      "side": 3,
+      "pmax_MPa": 487.5109,
+      "edge_points_mm": [
+        [
+          -1.04610447282,
+          19.594517163
+        ],
+        [
+          -1.04741745101,
+          19.5981671823
+        ],
+        [
+          -1.04676065827,
+          19.5963422815
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988607587013,
+      "edge_chord_over_contact_target_h": 0.9939008432399268,
+      "nearest_theoretical_contact_point_mm": 0.021300987194564802
+    },
+    {
+      "element": 7565,
+      "side": 3,
+      "pmax_MPa": 466.1597,
+      "edge_points_mm": [
+        [
+          -1.0620244217,
+          19.6382578361
+        ],
+        [
+          -1.06336721496,
+          19.6418969922
+        ],
+        [
+          -1.06269552881,
+          19.640077522
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789883809145108,
+      "edge_chord_over_contact_target_h": 0.9939007851603565,
+      "nearest_theoretical_contact_point_mm": 0.025246842262536758
+    },
+    {
+      "element": 8989,
+      "side": 3,
+      "pmax_MPa": 451.0853,
+      "edge_points_mm": [
+        [
+          -1.04479391427,
+          19.5908662742
+        ],
+        [
+          -1.04610447282,
+          19.594517163
+        ],
+        [
+          -1.04544889173,
+          19.5926918256
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789886237186057,
+      "edge_chord_over_contact_target_h": 0.9939008473732731,
+      "nearest_theoretical_contact_point_mm": 0.025179968786839712
+    },
+    {
+      "element": 7506,
+      "side": 3,
+      "pmax_MPa": 423.3618,
+      "edge_points_mm": [
+        [
+          -1.06336721496,
+          19.6418969922
+        ],
+        [
+          -1.06471233524,
+          19.6455352896
+        ],
+        [
+          -1.06403948367,
+          19.6437162499
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878989112968585,
+      "edge_chord_over_contact_target_h": 0.9939009727322303,
+      "nearest_theoretical_contact_point_mm": 0.029125820492453113
+    },
+    {
+      "element": 7828,
+      "side": 3,
+      "pmax_MPa": 404.4754,
+      "edge_points_mm": [
+        [
+          -1.04348575804,
+          19.5872145241
+        ],
+        [
+          -1.04479391427,
+          19.5908662742
+        ],
+        [
+          -1.04413953693,
+          19.5890405062
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988465431039,
+      "edge_chord_over_contact_target_h": 0.9939008068157562,
+      "nearest_theoretical_contact_point_mm": 0.029058945523681018
+    },
+    {
+      "element": 6326,
+      "side": 3,
+      "pmax_MPa": 367.9818,
+      "edge_points_mm": [
+        [
+          -1.06471233524,
+          19.6455352896
+        ],
+        [
+          -1.06605979774,
+          19.6491727195
+        ],
+        [
+          -1.06538577274,
+          19.6473541135
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988459162532,
+      "edge_chord_over_contact_target_h": 0.9939008052095968,
+      "nearest_theoretical_contact_point_mm": 0.033004794496904376
+    },
+    {
+      "element": 6303,
+      "side": 3,
+      "pmax_MPa": 343.2791,
+      "edge_points_mm": [
+        [
+          -1.04217998402,
+          19.5835619097
+        ],
+        [
+          -1.04348575804,
+          19.5872145241
+        ],
+        [
+          -1.04283257436,
+          19.585388326
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789995806128522,
+      "edge_chord_over_contact_target_h": 0.9939036548232382,
+      "nearest_theoretical_contact_point_mm": 0.03293792275311647
+    },
+    {
+      "element": 9008,
+      "side": 3,
+      "pmax_MPa": 293.1505,
+      "edge_points_mm": [
+        [
+          -1.06605979774,
+          19.6491727195
+        ],
+        [
+          -1.06740961824,
+          19.6528092752
+        ],
+        [
+          -1.06673441258,
+          19.6509911079
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789886235215615,
+      "edge_chord_over_contact_target_h": 0.9939008473227852,
+      "nearest_theoretical_contact_point_mm": 0.03688376658679099
+    },
+    {
+      "element": 8752,
+      "side": 3,
+      "pmax_MPa": 265.1652,
+      "edge_points_mm": [
+        [
+          -1.04087677191,
+          19.5799084039
+        ],
+        [
+          -1.04217998402,
+          19.5835619097
+        ],
+        [
+          -1.04152804323,
+          19.5817352762
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789774985526116,
+      "edge_chord_over_contact_target_h": 0.9938979968075764,
+      "nearest_theoretical_contact_point_mm": 0.03681689671206117
+    },
+    {
+      "element": 6737,
+      "side": 3,
+      "pmax_MPa": 197.5898,
+      "edge_points_mm": [
+        [
+          -1.06740961824,
+          19.6528092752
+        ],
+        [
+          -1.06876181127,
+          19.6564449475
+        ],
+        [
+          -1.06808541734,
+          19.6546272225
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878986860427074,
+      "edge_chord_over_contact_target_h": 0.9939003955707242,
+      "nearest_theoretical_contact_point_mm": 0.0407627329147724
+    },
+    {
+      "element": 6306,
+      "side": 3,
+      "pmax_MPa": 125.2691,
+      "edge_points_mm": [
+        [
+          -1.03957622502,
+          19.5762539342
+        ],
+        [
+          -1.04087677191,
+          19.5799084039
+        ],
+        [
+          -1.04022616598,
+          19.5780812881
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789909772129023,
+      "edge_chord_over_contact_target_h": 0.9939014504015886,
+      "nearest_theoretical_contact_point_mm": 0.04069585799864103
+    }
+  ],
+  "mesh": {
+    "elements": 26780,
+    "minimum_jacobian_mm2": 7.303185452323994e-06,
+    "minimum_element": 26409,
+    "nonpositive_elements": 0,
+    "nonmanifold_edges": 0,
+    "mismatched_shared_midside_nodes": 0,
+    "method": "All stationary candidates of the quadratic TRI6 Jacobian on the reference triangle; floating arithmetic, not interval certification",
+    "pass": true
+  },
+  "tip_initial_gap_samples": [
+    {
+      "t": -1.0,
+      "pinion_point_mm": [
+        4.584156103289999,
+        21.379131813199997
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.46673908380376466,
+        "point_mm": [
+          4.591477919843683,
+          21.38207833137707
+        ],
+        "distance_mm": 0.007892462671031443,
+        "outward_normal": [
+          -0.9276973308417117,
+          -0.37333317874140776
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.007892462671031445
+    },
+    {
+      "t": -0.95,
+      "pinion_point_mm": [
+        4.582895223297824,
+        21.382860682165376
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.5158454737456317,
+        "point_mm": [
+          4.5900128139375855,
+          21.38572132544742
+        ],
+        "distance_mm": 0.007670943651358829,
+        "outward_normal": [
+          -0.927863762693644,
+          -0.37291934500638735
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.007670943651358829
+    },
+    {
+      "t": -0.9,
+      "pinion_point_mm": [
+        4.5816331728533,
+        21.3865891500265
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.5649550181706373,
+        "point_mm": [
+          4.588549236119385,
+          21.389365214315877
+        ],
+        "distance_mm": 0.007452413303035029,
+        "outward_normal": [
+          -0.9280300199222746,
+          -0.37250541220640354
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.007452413303035029
+    },
+    {
+      "t": -0.85,
+      "pinion_point_mm": [
+        4.580369951956425,
+        21.390317216783373
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.6140676673233881,
+        "point_mm": [
+          4.5870871881820525,
+          21.393009994416964
+        ],
+        "distance_mm": 0.007236871830760268,
+        "outward_normal": [
+          -0.9281961022268924,
+          -0.3720913809950515
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0072368718307602685
+    },
+    {
+      "t": -0.8,
+      "pinion_point_mm": [
+        4.5791055606072,
+        21.394044882436
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.6631833714306821,
+        "point_mm": [
+          4.585626671912532,
+          21.39665566218121
+        ],
+        "distance_mm": 0.007024319435684715,
+        "outward_normal": [
+          -0.928362009307772,
+          -0.37167725202658863
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.007024319435684715
+    },
+    {
+      "t": -0.75,
+      "pinion_point_mm": [
+        4.577839998805625,
+        21.397772146984373
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.7123020807019146,
+        "point_mm": [
+          4.584167689091725,
+          21.400302214035182
+        ],
+        "distance_mm": 0.006814756315408242,
+        "outward_normal": [
+          -0.9285277408661778,
+          -0.37126302595592825
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.006814756315408242
+    },
+    {
+      "t": -0.7,
+      "pinion_point_mm": [
+        4.5765732665517,
+        21.4014990104285
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.7614237453295658,
+        "point_mm": [
+          4.582710241494475,
+          21.40394964640152
+        ],
+        "distance_mm": 0.00660818266397992,
+        "outward_normal": [
+          -0.9286932966043663,
+          -0.370848703438632
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.00660818266397992
+    },
+    {
+      "t": -0.6499999999999999,
+      "pinion_point_mm": [
+        4.575305363845425,
+        21.405225472768375
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.8105483154894361,
+        "point_mm": [
+          4.581254330889551,
+          21.407597955698947
+        ],
+        "distance_mm": 0.00640459867188776,
+        "outward_normal": [
+          -0.9288586762255897,
+          -0.3704342851309056
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.00640459867188776
+    },
+    {
+      "t": -0.6,
+      "pinion_point_mm": [
+        4.5740362906868,
+        21.408951534004
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.8596757413410243,
+        "point_mm": [
+          4.57979995903964,
+          21.4112471383423
+        ],
+        "distance_mm": 0.006204004526074248,
+        "outward_normal": [
+          -0.9290238794340986,
+          -0.37001977168959177
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.006204004526074249
+    },
+    {
+      "t": -0.55,
+      "pinion_point_mm": [
+        4.572766047075825,
+        21.412677194135377
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.9088059730280068,
+        "point_mm": [
+          4.578347127701322,
+          21.414897190742565
+        ],
+        "distance_mm": 0.006006400409915413,
+        "outward_normal": [
+          -0.9291889059351451,
+          -0.36960516377216385
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0060064004099154135
+    },
+    {
+      "t": -0.5,
+      "pinion_point_mm": [
+        4.571494633012501,
+        21.4164024531625
+      ],
+      "nearest_wheel": {
+        "element": 23315,
+        "side": 3,
+        "parameter": -0.9579389606784203,
+        "point_mm": [
+          4.5768958386250675,
+          21.41854810930689
+        ],
+        "distance_mm": 0.005811786503234576,
+        "outward_normal": [
+          -0.9293537554349864,
+          -0.36919046203672085
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.005811786503234576
+    },
+    {
+      "t": -0.44999999999999996,
+      "pinion_point_mm": [
+        4.5702220484968255,
+        21.420127311085377
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.9929236170304028,
+        "point_mm": [
+          4.575446059702365,
+          21.42219995273487
+        ],
+        "distance_mm": 0.005620154489231047,
+        "outward_normal": [
+          -0.9295138088373904,
+          -0.36878730886597394
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.005620154489231047
+    },
+    {
+      "t": -0.3999999999999999,
+      "pinion_point_mm": [
+        4.5689482935288,
+        21.423851767904
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.9437814978196938,
+        "point_mm": [
+          4.5739979472747745,
+          21.425852423615463
+        ],
+        "distance_mm": 0.0054315399501468084,
+        "outward_normal": [
+          -0.9296909886187062,
+          -0.36834042091680974
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0054315399501468084
+    },
+    {
+      "t": -0.35,
+      "pinion_point_mm": [
+        4.567673368108426,
+        21.427575823618376
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.8946361840920702,
+        "point_mm": [
+          4.572551503365554,
+          21.429505811425244
+        ],
+        "distance_mm": 0.005246051517236714,
+        "outward_normal": [
+          -0.9298679666222481,
+          -0.3678934147953801
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.005246051517236713
+    },
+    {
+      "t": -0.29999999999999993,
+      "pinion_point_mm": [
+        4.5663972722357,
+        21.4312994782285
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.8454877318978219,
+        "point_mm": [
+          4.571106729965096,
+          21.433160112128867
+        ],
+        "distance_mm": 0.005063689427301261,
+        "outward_normal": [
+          -0.9300447424766276,
+          -0.3674462913019855
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.005063689427301262
+    },
+    {
+      "t": -0.25,
+      "pinion_point_mm": [
+        4.565120005910625,
+        21.435022731734374
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.7963361973100018,
+        "point_mm": [
+          4.569663629056438,
+          21.436815321686197
+        ],
+        "distance_mm": 0.004884453912828324,
+        "outward_normal": [
+          -0.9302213158117372,
+          -0.36699905123784804
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.004884453912828325
+    },
+    {
+      "t": -0.19999999999999996,
+      "pinion_point_mm": [
+        4.5638415691332,
+        21.438745584136
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.7471816364240541,
+        "point_mm": [
+          4.568222202615254,
+          21.44047143605235
+        ],
+        "distance_mm": 0.004708345202005828,
+        "outward_normal": [
+          -0.9303976862587544,
+          -0.3665516954051042
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.004708345202005827
+    },
+    {
+      "t": -0.1499999999999999,
+      "pinion_point_mm": [
+        4.562561961903425,
+        21.442468035433375
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.6980241053573608,
+        "point_mm": [
+          4.566782452609826,
+          21.4441284511777
+        ],
+        "distance_mm": 0.004535363518707244,
+        "outward_normal": [
+          -0.9305738534501474,
+          -0.36610422460679654
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.004535363518707244
+    },
+    {
+      "t": -0.09999999999999998,
+      "pinion_point_mm": [
+        4.561281184221301,
+        21.4461900856265
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.648863660248653,
+        "point_mm": [
+          4.565344381001029,
+          21.447786363007953
+        ],
+        "distance_mm": 0.0043655090824928754,
+        "outward_normal": [
+          -0.9307498170196778,
+          -0.3656566396468636
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0043655090824928754
+    },
+    {
+      "t": -0.04999999999999993,
+      "pinion_point_mm": [
+        4.559999236086825,
+        21.449911734715375
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.5997003572576873,
+        "point_mm": [
+          4.5639079897423125,
+          21.451445167484138
+        ],
+        "distance_mm": 0.0041987821086123195,
+        "outward_normal": [
+          -0.9309255766024064,
+          -0.36520894133013354
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.004198782108612319
+    },
+    {
+      "t": 0.0,
+      "pinion_point_mm": [
+        4.5587161175,
+        21.4536329827
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.5505342525646406,
+        "point_mm": [
+          4.562473280779681,
+          21.455104860542665
+        ],
+        "distance_mm": 0.004035182807991279,
+        "outward_normal": [
+          -0.9311011318346976,
+          -0.36476113046231406
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.004035182807991279
+    },
+    {
+      "t": 0.050000000000000044,
+      "pinion_point_mm": [
+        4.5574318284608255,
+        21.457353829580374
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.5013654023697783,
+        "point_mm": [
+          4.561040256051679,
+          21.458765438115353
+        ],
+        "distance_mm": 0.0038747113872466166,
+        "outward_normal": [
+          -0.9312764823542221,
+          -0.3643132078499845
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.003874711387246616
+    },
+    {
+      "t": 0.10000000000000009,
+      "pinion_point_mm": [
+        4.5561463689693005,
+        21.4610742753565
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.4521938628928326,
+        "point_mm": [
+          4.5596089174893635,
+          21.462426896129465
+        ],
+        "distance_mm": 0.0037173680486669684,
+        "outward_normal": [
+          -0.9314516277999642,
+          -0.36386517430058735
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0037173680486669684
+    },
+    {
+      "t": 0.15000000000000013,
+      "pinion_point_mm": [
+        4.554859739025425,
+        21.464794320028375
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.4030196903726524,
+        "point_mm": [
+          4.558179267016296,
+          21.466089230507734
+        ],
+        "distance_mm": 0.003563152990222193,
+        "outward_normal": [
+          -0.9316265678122235,
+          -0.3634170306224194
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.003563152990222193
+    },
+    {
+      "t": 0.20000000000000018,
+      "pinion_point_mm": [
+        4.5535719386292,
+        21.468513963596
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.3538429410667334,
+        "point_mm": [
+          4.556751306548521,
+          21.4697524371684
+        ],
+        "distance_mm": 0.00341206640555846,
+        "outward_normal": [
+          -0.9318013020326202,
+          -0.36296877762462376
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0034120664055584597
+    },
+    {
+      "t": 0.25,
+      "pinion_point_mm": [
+        4.552282967780625,
+        21.472233206059375
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.3046636712506236,
+        "point_mm": [
+          4.555325037994543,
+          21.473416512025242
+        ],
+        "distance_mm": 0.003264108483991242,
+        "outward_normal": [
+          -0.9319758301041001,
+          -0.3625204161171803
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.003264108483991242
+    },
+    {
+      "t": 0.30000000000000004,
+      "pinion_point_mm": [
+        4.550992826479701,
+        21.4759520474185
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.25548193721760637,
+        "point_mm": [
+          4.5539004632553155,
+          21.477081450987622
+        ],
+        "distance_mm": 0.0031192794105141244,
+        "outward_normal": [
+          -0.9321501516709374,
+          -0.36207194691089817
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0031192794105141244
+    },
+    {
+      "t": 0.3500000000000001,
+      "pinion_point_mm": [
+        4.549701514726425,
+        21.479670487673374
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.2062977952780704,
+        "point_mm": [
+          4.552477584224219,
+          21.48074724996051
+        ],
+        "distance_mm": 0.0029775793657897745,
+        "outward_normal": [
+          -0.9323242663787407,
+          -0.361623370817406
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0029775793657897745
+    },
+    {
+      "t": 0.40000000000000013,
+      "pinion_point_mm": [
+        4.5484090325208,
+        21.483388526824
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.1571113017591716,
+        "point_mm": [
+          4.551056402787043,
+          21.4844139048445
+        ],
+        "distance_mm": 0.002839008526143137,
+        "outward_normal": [
+          -0.9324981738744553,
+          -0.36117468864914387
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.002839008526143137
+    },
+    {
+      "t": 0.4500000000000002,
+      "pinion_point_mm": [
+        4.547115379862825,
+        21.487106164870376
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.10792251300434083,
+        "point_mm": [
+          4.549636920821972,
+          21.48808141153589
+        ],
+        "distance_mm": 0.00270356706357585,
+        "outward_normal": [
+          -0.9326718738063692,
+          -0.36072590121935544
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.00270356706357585
+    },
+    {
+      "t": 0.5,
+      "pinion_point_mm": [
+        4.5458205567525,
+        21.4908234018125
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.05873148537272678,
+        "point_mm": [
+          4.548219140199566,
+          21.491749765926667
+        ],
+        "distance_mm": 0.0025712551457522975,
+        "outward_normal": [
+          -0.9328453658241157,
+          -0.36027700934207757
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.002571255145752297
+    },
+    {
+      "t": 0.55,
+      "pinion_point_mm": [
+        4.5445245631898255,
+        21.494540237650373
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": 0.009538275238746053,
+        "point_mm": [
+          4.5468030627827405,
+          21.495418963904566
+        ],
+        "distance_mm": 0.0024420729359955567,
+        "outward_normal": [
+          -0.9330186495786795,
+          -0.3598280138321325
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0024420729359955567
+    },
+    {
+      "t": 0.6000000000000001,
+      "pinion_point_mm": [
+        4.5432273991748,
+        21.498256672384
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": -0.03965706100834058,
+        "point_mm": [
+          4.54538869042675,
+          21.499089001353106
+        ],
+        "distance_mm": 0.0023160205932964174,
+        "outward_normal": [
+          -0.9331917247223984,
+          -0.359378915505119
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0023160205932964174
+    },
+    {
+      "t": 0.6500000000000001,
+      "pinion_point_mm": [
+        4.541929064707425,
+        21.501972706013373
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": -0.0888544669648709,
+        "point_mm": [
+          4.543976024979179,
+          21.502759874151607
+        ],
+        "distance_mm": 0.0021930982723064284,
+        "outward_normal": [
+          -0.9333645909089693,
+          -0.35892971517740446
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.002193098272306429
+    },
+    {
+      "t": 0.7000000000000002,
+      "pinion_point_mm": [
+        4.5406295597877,
+        21.505688338538498
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": -0.13805388621340897,
+        "point_mm": [
+          4.542565068279912,
+          21.50643157817525
+        ],
+        "distance_mm": 0.0020733061233364236,
+        "outward_normal": [
+          -0.9335372477934513,
+          -0.35848041366611433
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0020733061233364236
+    },
+    {
+      "t": 0.75,
+      "pinion_point_mm": [
+        4.5393288844156245,
+        21.509403569959375
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": -0.18725526232307985,
+        "point_mm": [
+          4.541155822161125,
+          21.510104109295078
+        ],
+        "distance_mm": 0.0019566442923539314,
+        "outward_normal": [
+          -0.9337096950322704,
+          -0.3580310117891252
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0019566442923539314
+    },
+    {
+      "t": 0.8,
+      "pinion_point_mm": [
+        4.5380270385912,
+        21.513118400276
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": -0.23645853885004567,
+        "point_mm": [
+          4.539748288447267,
+          21.51377746337806
+        ],
+        "distance_mm": 0.0018431129209865557,
+        "outward_normal": [
+          -0.9338819322832228,
+          -0.3575815103650552
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0018431129209865557
+    },
+    {
+      "t": 0.8500000000000001,
+      "pinion_point_mm": [
+        4.5367240223144245,
+        21.516832829488372
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": -0.28566365933808063,
+        "point_mm": [
+          4.538342468955043,
+          21.51745163628711
+        ],
+        "distance_mm": 0.0017327121465184425,
+        "outward_normal": [
+          -0.9340539592054795,
+          -0.35713191021325497
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0017327121465184427
+    },
+    {
+      "t": 0.9000000000000001,
+      "pinion_point_mm": [
+        4.5354198355853,
+        21.520546857596496
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": -0.33487056731901904,
+        "point_mm": [
+          4.536938365493395,
+          21.521126623881123
+        ],
+        "distance_mm": 0.0016254421018816521,
+        "outward_normal": [
+          -0.9342257754595903,
+          -0.3566822121537986
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0016254421018816524
+    },
+    {
+      "t": 0.9500000000000002,
+      "pinion_point_mm": [
+        4.534114478403824,
+        21.524260484600372
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": -0.38407920631318176,
+        "point_mm": [
+          4.535535979863488,
+          21.52480242201502
+        ],
+        "distance_mm": 0.0015213029156696948,
+        "outward_normal": [
+          -0.9343973807074867,
+          -0.3562324170074756
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0015213029156696946
+    },
+    {
+      "t": 1.0,
+      "pinion_point_mm": [
+        4.53280795077,
+        21.5279737105
+      ],
+      "nearest_wheel": {
+        "element": 23053,
+        "side": 3,
+        "parameter": -0.4332895198298573,
+        "point_mm": [
+          4.534135313858697,
+          21.52847902653977
+        ],
+        "distance_mm": 0.0014202947121236965,
+        "outward_normal": [
+          -0.9345687746124877,
+          -0.35578252559578205
+        ]
+      },
+      "signed_distance_along_wheel_outward_mm": 0.0014202947121236965
+    }
+  ],
+  "tip_gap_summary": {
+    "minimum_signed_mm": 0.0014202947121236965,
+    "minimum_unsigned_mm": 0.0014202947121236965,
+    "maximum_unsigned_mm": 0.007892462671031443,
+    "interpretation": "Positive means locally outside the wheel along its nearest outward normal; sampled initial geometry, not deformed/contact-gap proof"
+  },
+  "global_interference_screens": [
+    {
+      "subsegments_per_quadratic_edge": 4,
+      "max_arc_chord_deviation_mm": 0.007095937302650228,
+      "intersection_area_mm2": 1.2580049694161974e-09,
+      "polygon_valid": true,
+      "screen_clear": true,
+      "scope": "Sampled whole-body polygon interference screen, not certified curved-boundary nonpenetration"
+    },
+    {
+      "subsegments_per_quadratic_edge": 8,
+      "max_arc_chord_deviation_mm": 0.0017739843256652584,
+      "intersection_area_mm2": 1.3166049896774542e-09,
+      "polygon_valid": true,
+      "screen_clear": true,
+      "scope": "Sampled whole-body polygon interference screen, not certified curved-boundary nonpenetration"
+    },
+    {
+      "subsegments_per_quadratic_edge": 32,
+      "max_arc_chord_deviation_mm": 0.00011087402035615659,
+      "intersection_area_mm2": 1.3352655690467103e-09,
+      "polygon_valid": true,
+      "screen_clear": true,
+      "scope": "Sampled whole-body polygon interference screen, not certified curved-boundary nonpenetration"
+    }
+  ],
+  "actual_pressure_support_review": {
+    "target_contact_h_mm": 0.0039027923499312584,
+    "maximum_active_edge_chord_over_target_h": 40.34294294959255,
+    "original_h_check": {
+      "curve": "P_FLANK",
+      "target": 0.0039027923499312584,
+      "n": 36,
+      "max": 0.0038789995857209866,
+      "median": 0.003878988671741179,
+      "max_over_target": 0.9939036561320792
+    },
+    "interpretation": "Original h_check covers only a disk around theoretical contact points. Audit actual loaded elements too; no pressure is deleted from the result.",
+    "requires_additional_local_mesh_convergence": true,
+    "trigger_ratio": 2,
+    "trigger_is": "Diagnostic refinement trigger, not a replacement for original acceptance threshold"
+  }
+}

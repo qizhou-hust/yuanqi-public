@@ -1,0 +1,3186 @@
+{
+  "schema": "fea-readiness.asset-reuse-audit/v1",
+  "read_only_source_audit": true,
+  "solver_launched": false,
+  "most_likely_remembered_system": {
+    "name": "CADBench R25.20 源绑定 CAD/CAE 工程预览系统（modeling-workbench M1为其后续建模工作包）",
+    "primary_path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze",
+    "original_project_path": "D:/my_Works/自研CAD-CAE系统",
+    "confidence": "Evidence-backed best match, not confirmation of user memory.",
+    "evidence": [
+      "R25.20 README names real Gmsh/CalculiX and source revision invalidation.",
+      "plate_analysis_case + mounting_plate_jobs implements versioned physical assumptions and dual SHA submission.",
+      "step-promotion/acceptance.json stores two historical FE job IDs and stale/current result transition.",
+      "contact_diagnostics, plane_accuracy and fea_integrity contain concrete reusable gear FE review code."
+    ],
+    "alternative": "UMI统一机械智能工作区 contains copied CAD/gear assets but generic adapters/fea is empty and planned."
+  },
+  "requested_topics": {
+    "preprocessing_semantics": [
+      "A01",
+      "A07",
+      "A11",
+      "A12",
+      "A14",
+      "A16"
+    ],
+    "precalculation_Hertz": [
+      "A05",
+      "A11"
+    ],
+    "bending_and_stiffness": [
+      "A06",
+      "A11",
+      "A13"
+    ],
+    "FE_result_review": [
+      "A03",
+      "A04",
+      "A06",
+      "A13",
+      "A15",
+      "A16"
+    ],
+    "CAE_intent_spec": [
+      "A01",
+      "A07",
+      "A16"
+    ],
+    "solver_dispatch_gate": [
+      "A02",
+      "A12"
+    ]
+  },
+  "assets": [
+    {
+      "id": "A01",
+      "title": "CADBench R25.20 源绑定 CAE 工况与失效传播",
+      "files": [
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\plate_analysis_case.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\mounting_plate_jobs.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\artifact_graph.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\README.zh-CN.md",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\reports\\R25.20-STEP-promotion-and-closed-loop.zh-CN.md",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\evidence\\step-promotion\\acceptance.json",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\pyproject.toml"
+      ],
+      "entry_points": [
+        "plate_analysis_case.validate / bound_case",
+        "mounting_plate_jobs.submit / status / verified_completed_report",
+        "artifact_graph"
+      ],
+      "actual_responsibility": "限定安装板的版本化材料、支承、载荷和网格；源SHA+工况SHA双绑定；求解报告与原始工件核验；改源后旧结果stale。",
+      "dependencies": [
+        "Python >=3.12",
+        "UnifiedDocument/project journal",
+        "Gmsh",
+        "CalculiX 2.23",
+        "build123d/OCCT; numpy"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Source directly reviewed; saved acceptance.json reports two historical FE jobs, reaction errors 1.54e-7/8.20e-8 and stale/current transition; not rerun now.",
+      "reuse_method": "复用设计输入/分析工况/观测结果分离和双哈希冻结接口模式；新M37 adapter引用现有deck与meta身份，不把安装板约束移植为齿轮默认值。",
+      "do_not_copy_or_overclaim": [
+        "只支持受控安装板，不能称通用CAE意图协议。",
+        "default_case含未认证铝材和250N示例，不能默填到新任务。"
+      ]
+    },
+    {
+      "id": "A02",
+      "title": "旧 FEA 调度与完成门",
+      "files": [
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\engineering_jobs.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\fea.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\test_contact_workflow.py"
+      ],
+      "entry_points": [
+        "engineering_jobs.validate_bound_plane / validate_bound_whole / submit_job / worker",
+        "fea.run_job / solver_environment"
+      ],
+      "actual_responsibility": "提交前检查源绑定参数、量纲与数值范围；隔离子进程、持久作业状态；零退出码+无ERROR+完成标志+DAT存在+字段完整性。",
+      "dependencies": [
+        "Python",
+        "numpy",
+        "现有CADBench齿轮/原生源模块",
+        "Linux/WSL CalculiX runtime"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Static source reviewed; no old full suite or solver rerun.",
+      "reuse_method": "复用dispatch前重新校验输入身份、运行后保存真实退出码及原始工件的模式；M37继续使用自己的runner适配，不另建第二调度器。",
+      "do_not_copy_or_overclaim": [
+        "旧worker会求解/写新job，资产审计未执行。",
+        "完成单次solver gate不等于压力/网格/相位收敛。"
+      ]
+    },
+    {
+      "id": "A03",
+      "title": "旧结果字段完整性检查",
+      "files": [
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\fea_integrity.py"
+      ],
+      "entry_points": [
+        "final_frames / input_mesh / validate_fields"
+      ],
+      "actual_responsibility": "核DAT最终U/RF/S时间与STA一致、集合展开、节点覆盖、单元/IP覆盖、有限值，拒绝缺行和重复行。",
+      "dependencies": [
+        "Python standard library"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Current read-only probes pass on P02 d18 and ph10; missing-node negative fixture rejected; no FE rerun.",
+      "reuse_method": "作为M37原始字段读取后的独立补充coverage checker；adapter必须声明所请求字段和未覆盖接触字段。",
+      "do_not_copy_or_overclaim": [
+        "不解析接触CF/CSTR覆盖。",
+        "同kind只保留最后set，通用多集合必须扩展并测试，不能默认为全覆盖。"
+      ]
+    },
+    {
+      "id": "A04",
+      "title": "旧接触分支与压力峰定位",
+      "files": [
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\contact_diagnostics.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\test_contact_diagnostics.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\fixtures\\two-patches.inp",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\fixtures\\two-patches.dat"
+      ],
+      "entry_points": [
+        "audit_plane_contact",
+        "fresh_projection_check",
+        "nominal_spur_state"
+      ],
+      "actual_responsibility": "把CPE6的DAT面3/4/5映射回INP S1/S2/S3；按共享边界节点找活动接触分支、峰值边/圆角；全位移下二次边新投影单侧尖峰检查。",
+      "dependencies": [
+        "numpy",
+        "scipy for KDTree projection",
+        "cadbench.gear_plane_fea reader",
+        "all nodal displacement for fresh projection"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Source and three existing tests read; historical two-patch fixture present; no tests or fresh projection executed here.",
+      "reuse_method": "优先移植语义算法为只读adapter或显式调用稳定函数；用M37自己的INP reader提供body/surface/coordinates，避免重写齿形。",
+      "do_not_copy_or_overclaim": [
+        "nominal_spur_state只支持等齿数无变位，不能用于M37 z20/36。",
+        "M37 ph10只打印PMASTER位移，不能运行需全节点U的新投影检查。",
+        "采样点计数不是接触力权重；不得按次数估算load share。",
+        "全局接触重心不一定表示一个接触分支。"
+      ]
+    },
+    {
+      "id": "A05",
+      "title": "无变位直齿 Hertz 预筛选",
+      "files": [
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\spur_precheck.py"
+      ],
+      "entry_points": [
+        "GearCase / geometry / contact_points / hertz_contact / screen"
+      ],
+      "actual_responsibility": "名义中心距、不同齿数直齿副的解析几何、候选相位和每对全载Hertz包络；明确非ISO额定与非FEA。",
+      "dependencies": [
+        "Python standard library"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Current nominal M37 z20/36 pitch Hertz/half-width/contact-ratio match frozen expected to relative 1e-12; physical FE not validated.",
+      "reuse_method": "可作独立解析预计算对照；M37节点C本次只读算术对拍成功。先核model applicability，再输出预期数量级、接触宽度和网格尺寸建议。",
+      "do_not_copy_or_overclaim": [
+        "不支持变位、斜齿或非名义中心距。",
+        "每对全载包络不能把多对法向力相加作平衡。",
+        "不含根部弯曲刚度，不能承担完整预估器。"
+      ]
+    },
+    {
+      "id": "A06",
+      "title": "旧齿根/相位收敛与柔度凝聚",
+      "files": [
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\root_convergence.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\plane_accuracy.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\gear_plane_fea.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\gear_contact.py"
+      ],
+      "entry_points": [
+        "root_convergence.root_stress / study",
+        "plane_accuracy.phase_envelope_gate / study",
+        "gear_plane_fea.root_fields / convergence_gate",
+        "fea.condense_gear_patches",
+        "gear_contact.ltca"
+      ],
+      "actual_responsibility": "齿根原始积分点/固定位置结果与局部网格收敛；相位极值包络；FE逐片载荷求柔度；外部/用户给定柔度的LTCA。",
+      "dependencies": [
+        "numpy/scipy",
+        "CADBench old mesh/deck contracts",
+        "Gmsh/CalculiX for actual condensation"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Static source reviewed; no old full suite or solver rerun.",
+      "reuse_method": "复用“反力平衡与压力/齿根收敛独立”“峰值位置随网格核对”的审查思路；本轮使用M37现有root/stiffness数据，不另算旧齿形。",
+      "do_not_copy_or_overclaim": [
+        "不是现成解析弯曲/单齿刚度预计算器。",
+        "gear_contact默认路径为用户刚度及耦合核，不能当独立FE或ISO真值。",
+        "旧plane/profile/轴坐标与M37不同，不直接替换。"
+      ]
+    },
+    {
+      "id": "A07",
+      "title": "模型语义、坐标、参数与DAG",
+      "files": [
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\src\\modeling_core\\contracts.py",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\src\\modeling_core\\graphs.py",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\standards\\MODELING_STANDARD.md"
+      ],
+      "entry_points": [
+        "CoordinateFrame / Parameter / SemanticContract / PersistentReference",
+        "validate_coordinate_basis / validate_unit_whitelist",
+        "DependencyGraph / SimpleDependencyGraph"
+      ],
+      "actual_responsibility": "CAD-neutral类型、坐标和单位/参数来源；依赖图和约束求解协议；不是通用物理求解器。",
+      "dependencies": [
+        "Python >=3.10",
+        "具体CAD/backend实现另接"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Static source reviewed; no old full suite or solver rerun.",
+      "reuse_method": "复用输入/派生/观测分离、坐标显式化、单位白名单和upstream change使下游失效的合同；用薄映射衔接新CAE意图。",
+      "do_not_copy_or_overclaim": [
+        "ConstraintGraph是协议/抽象边界，不把接口存在当求解能力。",
+        "UMI已有候选副本，不能同时静默sys.path回退两份。"
+      ]
+    },
+    {
+      "id": "A08",
+      "title": "MGS 建模工作包证据规则",
+      "files": [
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\AGENTS.md",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\README.zh-CN.md",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\workbench\\contracts.py",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\workbench\\gates.py",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\workbench\\quality.py",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\reports\\M1-verification.json"
+      ],
+      "entry_points": [
+        "run.ps1 validate / build / verify / qualify / verify-quality",
+        "workbench.gates / quality"
+      ],
+      "actual_responsibility": "原生CAD任务、独立expected、实测与重放、工件哈希、硬门不可由总分抵消。",
+      "dependencies": [
+        "R25.20 WSL runtime",
+        "CADBench/OCP",
+        "独立BenchCAD评分环境仅CAD形状评分"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Saved M1 report read; source hashes can be compared; no current full suite.",
+      "reuse_method": "复用证据状态与不可自证的合同方法；不将形状评分器拉入M37求解可信度门。",
+      "do_not_copy_or_overclaim": [
+        "M1历史55项测试与受限安装板能力不能算当前通用CAE验证。"
+      ]
+    },
+    {
+      "id": "A09",
+      "title": "gear-compiler FE探针和系统因子钩子",
+      "files": [
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tools\\fea_probe.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\src\\gears\\system_hooks.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tests\\test_fea_probe.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tests\\test_system_hooks.py",
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\STATUS.md"
+      ],
+      "entry_points": [
+        "probe_fea_result / compute_safety_factor / assess_mesh_convergence",
+        "register_k_v_model / register_k_hbeta_model / compute_k_v / compute_k_hbeta"
+      ],
+      "actual_responsibility": "读旧whole-pair-report峰值；许用应力存在才给比值；多网格比较；外部动力/支承变形模型注册与缺数据blocked传播。",
+      "dependencies": [
+        "Python standard library",
+        "旧spatial_pair_fea输出schema",
+        "真实外部数据及provenance"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Static source reviewed; no old full suite or solver rerun.",
+      "reuse_method": "保留blocked与来源接口；M37结果由新ingester验，不能只信旧probe读到的passed字段。",
+      "do_not_copy_or_overclaim": [
+        "probe_fea_result转录报告passed并不独立重验raw。",
+        "峰值von Mises/许用强度比不等于ISO齿根疲劳安全系数。"
+      ]
+    },
+    {
+      "id": "A10",
+      "title": "UMI 集成工作区与 FEA 占位",
+      "files": [
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\README.md",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\program\\registry\\MODULES.md",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\program\\registry\\modules.json",
+        "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\pyproject.toml"
+      ],
+      "entry_points": [
+        "program/registry/modules.json",
+        "adapters/fea/"
+      ],
+      "actual_responsibility": "CAD、连杆、优化、齿轮的模块地图及接续规则；通用FEA adapter目录当前为空，注册为planned。",
+      "dependencies": [
+        "目标运行时与领域模块"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Static source reviewed; no old full suite or solver rerun.",
+      "reuse_method": "最可能是用户记得的“统一系统”之一；用registry作集成边界和资产地图，不宣称FEA adapter已完成。",
+      "do_not_copy_or_overclaim": [
+        "旧历史PASS必须重新绑定目标运行时。",
+        "不要在已复制UMI gear模块和gear-compiler两处并行维护同一实现。"
+      ]
+    },
+    {
+      "id": "A11",
+      "title": "当前 M37 原几何、前处理与后处理真源",
+      "files": [
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\gear_geom.py",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\mesh_gmsh.py",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\inp_writer.py",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\cases.py",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\post.py"
+      ],
+      "entry_points": [
+        "SpurGear / PairGeo / build_L2 / build_L3",
+        "Deck",
+        "post.hertz_line / post_L2 / post_L3"
+      ],
+      "actual_responsibility": "冻结M37齿形、CPE6网格、明确1mm单位厚度、P02 HPSTC载荷与齿根外推；L3割线刚度。",
+      "dependencies": [
+        "gmsh",
+        "Python",
+        "CalculiX when solving"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Original M37 L0/L1 accepted numerical gates; highest contiguous L1; L2/L3 remain unaccepted; source/input identities previously checked.",
+      "reuse_method": "新ready adapter只读其INP/meta/raw结果；绝不为接旧系统而生成第二套几何或更改TR30/M37输入。",
+      "do_not_copy_or_overclaim": [
+        "原L3相位索引缺陷另有诊断修复，baseline不可替换。",
+        "c′低载/支承/位移参考疑点保持待证，不能按接近程度调值。"
+      ]
+    },
+    {
+      "id": "A12",
+      "title": "当前 M37 语义预检与dispatch前门",
+      "files": [
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-preflight\\semantic_preflight.py",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\extended_preflight.py",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\check_before_solve.py",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\pre-solve-matrix.json"
+      ],
+      "entry_points": [
+        "read_deck / active_bounds / rigid_check / audit",
+        "jacobian_check / overlap_screen",
+        "check_before_solve.check"
+      ],
+      "actual_responsibility": "接触面到理论点、法向、刚体自由度、加载矩、单位；CPE6二次Jacobian极值；限定profile拒未知关键字与属性；就绪后输入SHA不得变。",
+      "dependencies": [
+        "numpy/scipy per imported modules",
+        "现有M37 meta/INP",
+        "固定known profile"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Current-session semantic/pre-solve matrix evidence exists; this asset search does not rerun it.",
+      "reuse_method": "这是新fea-readiness adapter最直接的已验证入口；只读调用check，solver dispatch再次核同SHA；用现有反例矩阵避免另写重复门。",
+      "do_not_copy_or_overclaim": [
+        "ready_for_diagnostic_solve不等于模型认可。",
+        "不是通用Abaqus/CCX解析器；profile外需明确blocked。",
+        "相交筛查不是全部曲边无穿透证明。"
+      ]
+    },
+    {
+      "id": "A13",
+      "title": "当前 M37 独立接收器与定义审计",
+      "files": [
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\core-work\\gearbase\\gearmath\\tools\\ingest_fea_results.py",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\core-work\\gearbase\\gearmath\\tools\\m37_contract_hashes.json",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-research\\model_definition_audit.py",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-research\\MODEL-DEFINITION-AUDIT.json",
+        "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\repeat-assessment\\repeat-independent-assessment.json"
+      ],
+      "entry_points": [
+        "ingest_fea_results.good_job / artifact_errors / physical_input_errors / assess_l3",
+        "model_definition_audit.audit_l2 / audit_l3"
+      ],
+      "actual_responsibility": "raw artifact/退出码/物理输入身份、冻结参考、数值门；分列真实力矩平衡与理想比偏差，明确割线口径。",
+      "dependencies": [
+        "Python standard library",
+        "冻结expected和现有raw文件"
+      ],
+      "source_and_license": "User local frozen core; contains private standard numerical data; local-only reference, no redistribution.",
+      "validation_status": "22 L3 records checked; 21 non-MORTAR numerical jobs strictly eligible after actual repeats; four numerical criteria still fail; highest L1.",
+      "reuse_method": "本地只读引用core独立gate；新层不复制数值公式或私有标准数据。公开时仅摘要projection和来源哈希，不拷核心。",
+      "do_not_copy_or_overclaim": [
+        "实际力矩平衡不能替代原理想比门。",
+        "重复运行零退出码只赋予新记录资格，旧null不可补造。"
+      ]
+    },
+    {
+      "id": "A14",
+      "title": "HyperMesh 模型审计脚本",
+      "files": [
+        "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\SKILL.md",
+        "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\hm_model_audit.tcl"
+      ],
+      "entry_points": [
+        "hmbatch.exe -tcl hm_model_audit.tcl; HM_MODEL/HM_REPORT/HM_TEMPLATE"
+      ],
+      "actual_responsibility": "实体/组件/材料属性引用、接触连接、重复单元、拓扑清单；无template时只承诺TOPOLOGY_ONLY。",
+      "dependencies": [
+        "Licensed Altair HyperMesh 2026",
+        "对应solver template",
+        "ASCII batch staging path"
+      ],
+      "source_and_license": "User-installed local Codex skill scripts; no explicit reuse license found; Altair runtime is external licensed software.",
+      "validation_status": "Static source reviewed; no old full suite or solver rerun.",
+      "reuse_method": "未来HM输入单独adapter调用；以语义门和导出deck对拍作接口，当前M37不引入HM。",
+      "do_not_copy_or_overclaim": [
+        "仅查阅脚本，不代表当前能自动修复任意网格或完成GUI操作。"
+      ]
+    },
+    {
+      "id": "A15",
+      "title": "OptiStruct 运行与结果摘要",
+      "files": [
+        "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\check_optistruct_run.ps1",
+        "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\compare_optistruct_runs.ps1",
+        "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\hv_result_extrema.tcl"
+      ],
+      "entry_points": [
+        "check_optistruct_run.ps1 -OutPath -NlOutPath -H3dPath",
+        "compare_optistruct_runs.ps1",
+        "hv_result_extrema.tcl"
+      ],
+      "actual_responsibility": "完成标志/ERROR/FATAL、未绑定节点与负compliance、时间线程/输入哈希比较；HyperView可提极值。",
+      "dependencies": [
+        "PowerShell",
+        "OptiStruct OUT/STAT/FEM",
+        "HyperView for H3D extrema"
+      ],
+      "source_and_license": "User-installed local Codex skill scripts; proprietary runtime not included.",
+      "validation_status": "Static source reviewed; no old full suite or solver rerun.",
+      "reuse_method": "作为不同solver的raw evidence adapter，统一输出工程语义，不把不同求解器关键词混成一个通用PASS。",
+      "do_not_copy_or_overclaim": [
+        "check脚本只有完成/error/H3D硬门；平衡行是原文摘要，未执行向量/力矩闭合。"
+      ]
+    },
+    {
+      "id": "A16",
+      "title": "Abaqus case_spec/include 与 ODB报告",
+      "files": [
+        "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\SKILL.md",
+        "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\scripts\\generate_abaqus_case.py",
+        "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\scripts\\postprocess_odb.py",
+        "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\scripts\\make_csv_report.py"
+      ],
+      "entry_points": [
+        "inventory / ensure_names / emit_step / write_case",
+        "postprocess_odb.main",
+        "make_csv_report.classify"
+      ],
+      "actual_responsibility": "base INP命名集/面盘点；基于JSON输出load include（当前只发CLOAD）；读各step末帧U/S简单最大值；许用/位移限值判OK/TBD/NO。",
+      "dependencies": [
+        "Python",
+        "Abaqus Python odbAccess for ODB; licensed Abaqus executable separate"
+      ],
+      "source_and_license": "User-installed local Codex skill scripts; no explicit source license found; Abaqus runtime proprietary and separate.",
+      "validation_status": "Current missing-set rejection probe passed; current DLOAD in-memory probe demonstrates silent omission. No Abaqus run.",
+      "reuse_method": "复用base deck不变、include可审查、缺limit为TBD的约定；新adapter必须先收紧支持类型/单位/坐标/接触输出。",
+      "do_not_copy_or_overclaim": [
+        "contacts只验证名称，write_case未生成case_contact.inp。",
+        "非CLOAD载荷会被静默省略；不能直接作为严格发算门。",
+        "ODB脚本无全反力/力矩/接触合力闭合；末帧最大值不足以认证结果。"
+      ]
+    },
+    {
+      "id": "A17",
+      "title": "名字易混的草图 solver_dispatch",
+      "files": [
+        "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\gcs_integration\\solver_dispatch.py"
+      ],
+      "entry_points": [
+        "solve_report / verify_report"
+      ],
+      "actual_responsibility": "草图几何约束的分块/分区/求解报告重放调度，不是有限元solver launcher。",
+      "dependencies": [
+        "CADBench GCS integration"
+      ],
+      "source_and_license": "User local internal project source; no explicit redistribution license found in inspected project root/metadata.",
+      "validation_status": "Static source reviewed; no old full suite or solver rerun.",
+      "reuse_method": "排除为本次FEA调度复用目标；仅参考版本化solve/replay概念。",
+      "do_not_copy_or_overclaim": [
+        "不能因文件名solver_dispatch就当已有CAE dispatch gate。"
+      ]
+    }
+  ],
+  "source_files": {
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\plate_analysis_case.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\plate_analysis_case.py",
+      "sha256": "31f1f7f2006073333518fed56515f1b8fe9c8538499db1fa43de8e656b69575d",
+      "bytes": 5048,
+      "top_level_entries": [
+        {
+          "name": "default_case",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bound_case",
+          "line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "with_default_case",
+          "line": 79,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "copy",
+        "foundation.document",
+        "math",
+        "re",
+        "unified_document"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\mounting_plate_jobs.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\mounting_plate_jobs.py",
+      "sha256": "cceec8ba9d24a637ba3ee3db1641216b1f458dd32aa82027a807b1fbfa3e4294",
+      "bytes": 17327,
+      "top_level_entries": [
+        {
+          "name": "_submission_lock",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_recover_stalled",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate_plate",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate_settings",
+          "line": 100,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit",
+          "line": 112,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "status",
+          "line": 148,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verified_completed_report",
+          "line": 185,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "artifact",
+          "line": 239,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 251,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "contextlib",
+        "engineering_jobs",
+        "fcntl",
+        "foundation.document",
+        "foundation.parameter_graph",
+        "hashlib",
+        "json",
+        "math",
+        "mounting_plate_workflow",
+        "os",
+        "pathlib",
+        "plate_analysis_case",
+        "r23_cases",
+        "step_interpretation",
+        "subprocess",
+        "sys",
+        "time",
+        "topology_plate_analysis",
+        "topology_unified",
+        "unified",
+        "unified_document",
+        "uuid"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\artifact_graph.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\artifact_graph.py",
+      "sha256": "947433e2d259b43879c42ce04e1654beb2e695aa7ba61e70c33fcfafc43a428b",
+      "bytes": 14509,
+      "top_level_entries": [
+        {
+          "name": "_verified_file",
+          "line": 16,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_node",
+          "line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_built_nodes",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_job_nodes",
+          "line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_surgery_nodes",
+          "line": 122,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "project_graph",
+          "line": 156,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "foundation.document",
+        "gear_system",
+        "hashlib",
+        "json",
+        "mounting_plate_jobs",
+        "pathlib",
+        "step_surgery",
+        "unified_document"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\README.zh-CN.md": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\README.zh-CN.md",
+      "sha256": "1e1fc3c9e8e85defa0ed48ff51cc4bad22a241815a4e225ab4514072257d023d",
+      "bytes": 5469
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\reports\\R25.20-STEP-promotion-and-closed-loop.zh-CN.md": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\reports\\R25.20-STEP-promotion-and-closed-loop.zh-CN.md",
+      "sha256": "9abbeee9e25530bfce67fecbdd0201f6ef3068a1e68b75a00fa0d73a51a81518",
+      "bytes": 4533
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\evidence\\step-promotion\\acceptance.json": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\evidence\\step-promotion\\acceptance.json",
+      "sha256": "e15a0c3c59600d264ec021d9ba526ae2c53be156e76102d6d89666c501c24461",
+      "bytes": 1350
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\pyproject.toml": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\pyproject.toml",
+      "sha256": "3e7a39120024ae983c7cbc94cc5c61de771e853301cd8ee81dce199e054623e2",
+      "bytes": 1236
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\engineering_jobs.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\engineering_jobs.py",
+      "sha256": "f701307ba44226d56b03ff2928a2cb95082d441be926c1d7bfce7d190402a6df",
+      "bytes": 6201,
+      "top_level_entries": [
+        {
+          "name": "atomic_json",
+          "line": 10,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate_bound_plane",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate_bound_whole",
+          "line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit_plane",
+          "line": 57,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit_whole",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit_job",
+          "line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "status",
+          "line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 83,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "gear_plane_fea",
+        "inspect",
+        "json",
+        "math",
+        "pathlib",
+        "plane_load_control",
+        "spatial_pair_fea",
+        "subprocess",
+        "sys",
+        "uuid"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\fea.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\fea.py",
+      "sha256": "081fdac176b50f618a6a417c169d673ee69fd5754541f289334ab20b359ca1ec",
+      "bytes": 22837,
+      "top_level_entries": [
+        {
+          "name": "sha",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "solver_path",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "solver_environment",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_job",
+          "line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_dat",
+          "line": 77,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "static_deck",
+          "line": 90,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 109,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "block_patch",
+          "line": 130,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "support_face_nodes",
+          "line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mesh_step_regions",
+          "line": 169,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mesh_step",
+          "line": 204,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gear_body",
+          "line": 235,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "imported_job",
+          "line": 262,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_generated_deck",
+          "line": 267,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "boundary_traction",
+          "line": 281,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_surface_weights",
+          "line": 299,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "condense_gear_patches",
+          "line": 325,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contact_patch",
+          "line": 364,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 402,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "argparse",
+        "fea_integrity",
+        "gear_contact",
+        "gmsh",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\test_contact_workflow.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\test_contact_workflow.py",
+      "sha256": "d3134a11c24f0e14a2677be1d913d3fe600ea3a2c6eccfb01b8d8c56fade8fb9",
+      "bytes": 2967,
+      "top_level_entries": [
+        {
+          "name": "test_source_torque_width_once",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_no_analysis_geometry_or_load_override",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_web_source_torque_validation",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_bad_target_rejected",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_hertz_independent_known_values",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_accuracy_plan_all_phases_axes",
+          "line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_accuracy_non_nested_phase_grids_rejected",
+          "line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_phase_gate_does_not_confuse_equilibrium_and_convergence",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_wear_lower_velocity_separate_requirement",
+          "line": 62,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "cadbench.contact_accuracy_cases",
+        "cadbench.engineering_jobs",
+        "cadbench.gear_plane_fea",
+        "cadbench.plane_accuracy",
+        "cadbench.plane_load_control",
+        "cadbench.standard_scope",
+        "copy",
+        "math",
+        "numpy",
+        "pytest"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\fea_integrity.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\fea_integrity.py",
+      "sha256": "364987e0824fda32ee58d40223943c2ffa24bc3b479638945527f25538a4b2e8",
+      "bytes": 5606,
+      "top_level_entries": [
+        {
+          "name": "number",
+          "line": 10,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "final_frames",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "input_mesh",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate_fields",
+          "line": 69,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "math",
+        "pathlib",
+        "re"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\contact_diagnostics.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\contact_diagnostics.py",
+      "sha256": "1095f63e55013063329f70993a625d7c82caaf35c3478cd5ab89443606a0bd75",
+      "bytes": 9557,
+      "top_level_entries": [
+        {
+          "name": "fresh_projection_check",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "nominal_spur_state",
+          "line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_plane_contact",
+          "line": 102,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "fea",
+        "gear_plane_fea",
+        "math",
+        "numpy",
+        "pathlib",
+        "scipy.spatial"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\test_contact_diagnostics.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\test_contact_diagnostics.py",
+      "sha256": "7cdf49cfef67f306ebe1f36f83ecb680ea2e575912cb003e89961793596ef947",
+      "bytes": 1967,
+      "top_level_entries": [
+        {
+          "name": "test_actual_two_patch_fixture_cannot_calibrate_one_involute_branch",
+          "line": 9,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_measured_gap_and_phase_transition_agree_with_nominal_tca",
+          "line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_nominal_tca_rejects_invalid_material",
+          "line": 36,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "cadbench.contact_diagnostics",
+        "math",
+        "pathlib",
+        "pytest"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\fixtures\\two-patches.inp": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\fixtures\\two-patches.inp",
+      "sha256": "1e21c595626c996c369a28d984828fcc8b904e02846e81a0dd6e6df72b154875",
+      "bytes": 838
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\fixtures\\two-patches.dat": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\tests\\fixtures\\two-patches.dat",
+      "sha256": "58d8873a096dd07d267a91e2ac2e61e67de52db92b722c9f41c0f871d3bb6101",
+      "bytes": 135
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\spur_precheck.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\spur_precheck.py",
+      "sha256": "d6a6a0a5c0d2a1136d569c7b1e1d8cd6be13ff2df20647cff0939a60a8a8a25c",
+      "bytes": 8089,
+      "top_level_entries": [
+        {
+          "name": "GearCase",
+          "line": 17,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "geometry",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contact_points",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hertz_contact",
+          "line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "screen",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 160,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "json",
+        "math",
+        "pathlib"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\root_convergence.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\root_convergence.py",
+      "sha256": "8f85ef4099737368fa230f96b762dfdbbb2dfd54750095e3dc6fe44192f0929d",
+      "bytes": 7988,
+      "top_level_entries": [
+        {
+          "name": "tensor",
+          "line": 16,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "von_mises",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "root_stress",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "study",
+          "line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "convergence_report",
+          "line": 118,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "fea",
+        "gear_native",
+        "gear_pair_fea",
+        "generated_gears",
+        "json",
+        "math",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\plane_accuracy.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\plane_accuracy.py",
+      "sha256": "a4a254c4648fca0a5302b1e7af5bb6d29883f467ad0f3653e76aa9f4ba060af0",
+      "bytes": 7494,
+      "top_level_entries": [
+        {
+          "name": "json_hash",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "physics_fingerprint",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "phase_envelope_gate",
+          "line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "study",
+          "line": 40,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "fea",
+        "fractions",
+        "gear_plane_fea",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "plane_load_control"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\gear_plane_fea.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\gear_plane_fea.py",
+      "sha256": "059b9bd1ba149a42cc32c8f87752c11c2a125c0dca36d0fbc452c2e0217f4176",
+      "bytes": 42463,
+      "top_level_entries": [
+        {
+          "name": "shape",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "edges",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mesh_plane",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "plane_deck",
+          "line": 142,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contact_data",
+          "line": 189,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "interpolate_plane",
+          "line": 221,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "root_fields",
+          "line": 240,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "solve_plane",
+          "line": 275,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "analyse_plane",
+          "line": 334,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "projection_settlement",
+          "line": 391,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_plane_input",
+          "line": 418,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bound_plane_settings",
+          "line": 430,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "solve_bound_plane",
+          "line": 451,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "phase_study",
+          "line": 459,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metrics",
+          "line": 491,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "convergence_gate",
+          "line": 503,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "plane_study",
+          "line": 520,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hertz_reference",
+          "line": 538,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hertz_patch",
+          "line": 547,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "contact_diagnostics",
+        "fea",
+        "foundation.document",
+        "fractions",
+        "gear_pair_fea",
+        "gear_system",
+        "generated_gears",
+        "gmsh",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "re",
+        "root_convergence",
+        "shutil",
+        "time"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\gear_contact.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\gear_contact.py",
+      "sha256": "2361af84fc3650068d7bf9cd2ab1e71f64ca74a4158ac827d9e6355760a77de3",
+      "bytes": 10744,
+      "top_level_entries": [
+        {
+          "name": "_array",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check_equilibrium",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "solve_contact",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ltca",
+          "line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "planetary_loads",
+          "line": 126,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "gear_materials",
+        "gear_system",
+        "math",
+        "numpy"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\src\\modeling_core\\contracts.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\src\\modeling_core\\contracts.py",
+      "sha256": "f19118483cf06b439c6d0225c57c123acbf15b5258ef23520d12a42e74d10074",
+      "bytes": 13597,
+      "top_level_entries": [
+        {
+          "name": "CoordinateFrame",
+          "line": 46,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "validate_coordinate_basis",
+          "line": 87,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Parameter",
+          "line": 117,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "SemanticContract",
+          "line": 177,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "PersistentReference",
+          "line": 283,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "validate_unit_whitelist",
+          "line": 316,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check_dimension_consistency",
+          "line": 337,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "math",
+        "typing"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\src\\modeling_core\\graphs.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\src\\modeling_core\\graphs.py",
+      "sha256": "0f26105b4a2e0b964bc8a38a6246a8137393e0c727e458e4cd6bc87ee4b3563e",
+      "bytes": 13383,
+      "top_level_entries": [
+        {
+          "name": "GraphCycleError",
+          "line": 35,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "NotConvergedError",
+          "line": 49,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "DependencyGraph",
+          "line": 73,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "ConstraintGraph",
+          "line": 148,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "SimpleDependencyGraph",
+          "line": 282,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "adapt_gear_compiler_constraint_graph",
+          "line": 364,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "abc",
+        "collections",
+        "typing"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\standards\\MODELING_STANDARD.md": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\standards\\MODELING_STANDARD.md",
+      "sha256": "26ffd20a3d9d66101b4ae41405d2bf457055055a37f75166990d99bd7c3b8b7b",
+      "bytes": 5587
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\AGENTS.md": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\AGENTS.md",
+      "sha256": "65ce65c2868e1599f99f56fc1e957899dda20387fee37a2a8571288d234192c1",
+      "bytes": 2241
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\README.zh-CN.md": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\README.zh-CN.md",
+      "sha256": "dbb1deebb6be9f666a0977bc4a4bf2a947c140d2f215f3c9e3275175ccf62d86",
+      "bytes": 11002
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\workbench\\contracts.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\workbench\\contracts.py",
+      "sha256": "bcb7f7109c4a49d57cb956e2e1cd41b47543c9041072007b22634da2be9c1137",
+      "bytes": 5343,
+      "top_level_entries": [
+        {
+          "name": "StrictModel",
+          "line": 10,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Plate",
+          "line": 16,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Native",
+          "line": 25,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Hole",
+          "line": 37,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Expected",
+          "line": 50,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Tolerances",
+          "line": 63,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Edit",
+          "line": 68,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Task",
+          "line": 73,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "load_task",
+          "line": 106,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "plate_expected",
+          "line": 109,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "export_schema",
+          "line": 119,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "cad_adapter",
+        "json",
+        "math",
+        "pathlib",
+        "pydantic",
+        "typing"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\workbench\\gates.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\workbench\\gates.py",
+      "sha256": "47cec30ecfc4f174780130ae4602ebde5bcb71840fa94f19852449b637e697a9",
+      "bytes": 3283,
+      "top_level_entries": [
+        {
+          "name": "check_geometry",
+          "line": 6,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "contracts",
+        "math"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\workbench\\quality.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\workbench\\quality.py",
+      "sha256": "00eed60a616921aee5fdd3e62c7535b2842e9e667bd39c92fba86fdf213f73ff",
+      "bytes": 13576,
+      "top_level_entries": [
+        {
+          "name": "profile",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "candidate_verdict",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "accepted",
+          "line": 40,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "calibration_verdict",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_candidate",
+          "line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "render_quality",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "qualify",
+          "line": 109,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_quality",
+          "line": 139,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 170,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "",
+        "__future__",
+        "argparse",
+        "html",
+        "json",
+        "math",
+        "pathlib",
+        "planning",
+        "runner",
+        "sys"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\reports\\M1-verification.json": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\reports\\M1-verification.json",
+      "sha256": "c03ec016ddd0ba5b7a2f447465e20697875abfa4d4330981dd06eefa890271da",
+      "bytes": 4095
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tools\\fea_probe.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tools\\fea_probe.py",
+      "sha256": "a5567564efd2e7ef2a77baa40568a10cbfb19004abab3b4917b70887e7a14c2d",
+      "bytes": 11344,
+      "top_level_entries": [
+        {
+          "name": "probe_fea_result",
+          "line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compute_safety_factor",
+          "line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assess_mesh_convergence",
+          "line": 131,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "generate_report",
+          "line": 190,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "probe_h2_flagship",
+          "line": 242,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "probe_w2w_flagship",
+          "line": 282,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 321,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "math",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\src\\gears\\system_hooks.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\src\\gears\\system_hooks.py",
+      "sha256": "a8f783b77d61028e8639ff72b5a46f98c6ddef1e30965ee09e13f555666ceb12",
+      "bytes": 8199,
+      "top_level_entries": [
+        {
+          "name": "register_k_v_model",
+          "line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "register_k_hbeta_model",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_missing_inputs",
+          "line": 79,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_invoke_model",
+          "line": 94,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compute_k_v",
+          "line": 125,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compute_k_hbeta",
+          "line": 154,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "clear_hooks",
+          "line": 182,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "list_registered_hooks",
+          "line": 191,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "math",
+        "typing"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tests\\test_fea_probe.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tests\\test_fea_probe.py",
+      "sha256": "2f2d961a356b6d0088ce94d65bc569d935681e88b1654ec6212ec8ca467a8e14",
+      "bytes": 10736,
+      "top_level_entries": [
+        {
+          "name": "TestFEAProbeBasics",
+          "line": 22,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TestSafetyFactor",
+          "line": 85,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TestMeshConvergence",
+          "line": 134,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TestReportGeneration",
+          "line": 189,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TestH2StressRange",
+          "line": 231,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TestW2WStressRange",
+          "line": 253,
+          "kind": "ClassDef"
+        }
+      ],
+      "imports": [
+        "fea_probe",
+        "json",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tests\\test_system_hooks.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tests\\test_system_hooks.py",
+      "sha256": "5be4d5e1604be7092507ad50c20c2aea41e90859fc176f4e00f97cee8d07b3bc",
+      "bytes": 13629,
+      "top_level_entries": [
+        {
+          "name": "TestKVHookRegistration",
+          "line": 16,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TestKHbetaHookRegistration",
+          "line": 160,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TestHookInteraction",
+          "line": 240,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TestBlockedStatusPropagation",
+          "line": 281,
+          "kind": "ClassDef"
+        }
+      ],
+      "imports": [
+        "gears.system_hooks",
+        "pathlib",
+        "sys",
+        "unittest"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\STATUS.md": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\STATUS.md",
+      "sha256": "5b694aceb2009844842dea4074afad34a13f5bc40ce091944c1d47d6e7d0e2f4",
+      "bytes": 14647
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\README.md": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\README.md",
+      "sha256": "f6f0bfecaedbb3bcf449ce72c690a8ef8a4b641ffcc376724912bfd03f9f8351",
+      "bytes": 5575
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\program\\registry\\MODULES.md": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\program\\registry\\MODULES.md",
+      "sha256": "bd2b1d062c4a9539ec723a33a97a45948e67e2a501469e48e8cc179acffd3d16",
+      "bytes": 6089
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\program\\registry\\modules.json": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\program\\registry\\modules.json",
+      "sha256": "00c6fabe7d7df1f63de85b0f2f45cd003f1ffcc7828048c80d8fa40064805fa5",
+      "bytes": 25944
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\pyproject.toml": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\pyproject.toml",
+      "sha256": "d404dc39df8da2fdaf84030ec48a092f32aa286b319edd87ff6053e6fd23a9ed",
+      "bytes": 590
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\gear_geom.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\gear_geom.py",
+      "sha256": "82a6188b725230386f8b8a6a01b6579598fe3d1874809f9e282b2e5a41a28ef2",
+      "bytes": 10211,
+      "top_level_entries": [
+        {
+          "name": "inv",
+          "line": 23,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "inv_inverse",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "SpurGear",
+          "line": 44,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "rot",
+          "line": 177,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "single_contact_diameter",
+          "line": 183,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "involute_normal_at",
+          "line": 199,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "math"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\mesh_gmsh.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\mesh_gmsh.py",
+      "sha256": "e14b9aa31afbac992dff657b34e837f419164b7dda0c371311bcf329a0059609",
+      "bytes": 11580,
+      "top_level_entries": [
+        {
+          "name": "Mesh",
+          "line": 15,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "_signed_area",
+          "line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mesh_2d",
+          "line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gmsh_version",
+          "line": 229,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "gmsh",
+        "math"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\inp_writer.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\inp_writer.py",
+      "sha256": "6a346e8f0150968762d2ed4cb1aa42b5ae8ea1c0c427852899bcaa256682c6be",
+      "bytes": 12204,
+      "top_level_entries": [
+        {
+          "name": "_chunks",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Deck",
+          "line": 20,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "_params",
+          "line": 107,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "lint",
+          "line": 120,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "re"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\cases.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\cases.py",
+      "sha256": "59baacb9325549174fbfd661f539bab81fa7337f035815b163d12049b962daeb",
+      "bytes": 32907,
+      "top_level_entries": [
+        {
+          "name": "edge_load",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "h_check",
+          "line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mesh_record",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "element_types",
+          "line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "finish",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ip_prints",
+          "line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "pressure_col",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_L0",
+          "line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "post_L0",
+          "line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_L0c",
+          "line": 148,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "post_L0c",
+          "line": 190,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hertz_ref",
+          "line": 213,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_L1",
+          "line": 218,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "post_L1",
+          "line": 280,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tooth_pieces",
+          "line": 321,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "l2_gear",
+          "line": 350,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_L2",
+          "line": 354,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "post_L2",
+          "line": 423,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "PairGeo",
+          "line": 476,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "build_L3",
+          "line": 529,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "post_L3",
+          "line": 631,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "ccx_io",
+        "gear_geom",
+        "inp_writer",
+        "json",
+        "math",
+        "mesh_gmsh",
+        "pathlib",
+        "post"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\post.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\scripts\\post.py",
+      "sha256": "d414686979b02694020f212778bc43ba3b4dca2916874c5e9c43752829b2478d",
+      "bytes": 7011,
+      "top_level_entries": [
+        {
+          "name": "principal_max",
+          "line": 7,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_eig3_max",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "solve",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "lstsq",
+          "line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "extrapolate_element",
+          "line": 59,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "richardson",
+          "line": 86,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "penalty_extrapolate",
+          "line": 127,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hertz_line",
+          "line": 138,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ellipse_fit",
+          "line": 146,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "math"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-preflight\\semantic_preflight.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-preflight\\semantic_preflight.py",
+      "sha256": "0fe46411bc696e2e3607c9695320847286f35065bf5f7d553360fa6e72f9c064",
+      "bytes": 14789,
+      "top_level_entries": [
+        {
+          "name": "read_deck",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "edge_nodes",
+          "line": 59,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "curve",
+          "line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "edge_normal",
+          "line": 62,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "nearest",
+          "line": 69,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "active_bounds",
+          "line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rigid_check",
+          "line": 94,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "boundary_edges",
+          "line": 118,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit",
+          "line": 125,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\extended_preflight.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\extended_preflight.py",
+      "sha256": "c375e0997e22405b50515513ed121b4800dd923c8444dd7880d44eb35201f049",
+      "bytes": 9263,
+      "top_level_entries": [
+        {
+          "name": "jacobian_check",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "overlap_screen",
+          "line": 56,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "phase_audit",
+          "line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 132,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "cases",
+        "ccx_io",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "semantic_preflight",
+        "shapely.geometry",
+        "shapely.ops",
+        "sys"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\check_before_solve.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\check_before_solve.py",
+      "sha256": "3aa9d026288512193cfcaccc2648f2e2e5f592a72bff51d225ff885ecdb4e25f",
+      "bytes": 6091,
+      "top_level_entries": [
+        {
+          "name": "check",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 70,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "argparse",
+        "extended_preflight",
+        "json",
+        "math",
+        "pathlib",
+        "semantic_preflight",
+        "sys"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\pre-solve-matrix.json": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\pre-solve-matrix.json",
+      "sha256": "0f1d8c752e279d05625300a15be33a29133109e2bbad701708a7418d7381cfae",
+      "bytes": 237381
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\core-work\\gearbase\\gearmath\\tools\\ingest_fea_results.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\core-work\\gearbase\\gearmath\\tools\\ingest_fea_results.py",
+      "sha256": "3627cd7116d7fcc62a92cc084957a239c5ed16e8dd61cedf404c55bed4856161",
+      "bytes": 31809,
+      "top_level_entries": [
+        {
+          "name": "load",
+          "line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "number",
+          "line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "schema_errors",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "richardson",
+          "line": 90,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "penalty_extrapolate",
+          "line": 128,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "field",
+          "line": 143,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "max_error",
+          "line": 150,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "good_job",
+          "line": 159,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "required_jobs",
+          "line": 170,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "study",
+          "line": 209,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "corrected",
+          "line": 216,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_failed",
+          "line": 230,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assess_l0",
+          "line": 234,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assess_l1",
+          "line": 249,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "correlation",
+          "line": 275,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assess_l2",
+          "line": 283,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assess_l3",
+          "line": 309,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "physical_input_errors",
+          "line": 342,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "artifact_errors",
+          "line": 446,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ingest",
+          "line": 490,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 564,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\core-work\\gearbase\\gearmath\\tools\\m37_contract_hashes.json": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\core-work\\gearbase\\gearmath\\tools\\m37_contract_hashes.json",
+      "sha256": "015aacfbc1354748fe141bddc038642d4ed29512c86bcc093a3644d5bf140647",
+      "bytes": 1020
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-research\\model_definition_audit.py": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-research\\model_definition_audit.py",
+      "sha256": "5a9c5bf175248348af9c87b48e28a816e10b18c94ab8c1e9613ae2205dd7d34b",
+      "bytes": 17297,
+      "top_level_entries": [
+        {
+          "name": "read",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "deck",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "blocks",
+          "line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "common",
+          "line": 64,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "dat",
+          "line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "select",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "nodal",
+          "line": 102,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_rows",
+          "line": 110,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "resultant",
+          "line": 114,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_forces",
+          "line": 121,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "without_cload",
+          "line": 128,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_l2",
+          "line": 132,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "expand_boundary",
+          "line": 182,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_l3",
+          "line": 195,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 289,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "re"
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-research\\MODEL-DEFINITION-AUDIT.json": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-research\\MODEL-DEFINITION-AUDIT.json",
+      "sha256": "740ed07a376bc84fd2cecf18da0bdb70be020637ea0a22c9aa56a00521874428",
+      "bytes": 39240
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\repeat-assessment\\repeat-independent-assessment.json": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\repeat-assessment\\repeat-independent-assessment.json",
+      "sha256": "e22fb01805ecd89e6254fb62e8ace716638526116352d3efddc8ee37e44820a8",
+      "bytes": 22683
+    },
+    "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\SKILL.md": {
+      "path": "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\SKILL.md",
+      "sha256": "691da55185477ae38c94902fbd15b5e6f3874711067b8dbf69d50f8ae01b9387",
+      "bytes": 20501
+    },
+    "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\hm_model_audit.tcl": {
+      "path": "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\hm_model_audit.tcl",
+      "sha256": "b5d2cf03a203b0f618cf48b1312353f5bd00e22577d993231163d524b4bec90e",
+      "bytes": 9706
+    },
+    "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\check_optistruct_run.ps1": {
+      "path": "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\check_optistruct_run.ps1",
+      "sha256": "06e1482a5a1351dbc20e3a29ca917a8e3a6d2ffbda2bf24ddf127a34d61816e8",
+      "bytes": 2605
+    },
+    "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\compare_optistruct_runs.ps1": {
+      "path": "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\compare_optistruct_runs.ps1",
+      "sha256": "7a97850e3400f69e59a43b40c3ef0ad2426e6ac1ab8601fe31c1dc464fd3ba12",
+      "bytes": 3843
+    },
+    "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\hv_result_extrema.tcl": {
+      "path": "C:\\Users\\AAA\\.codex\\skills\\hypermesh-optistruct-2026\\scripts\\hv_result_extrema.tcl",
+      "sha256": "b52f9e692123073ff0d8c22ae54a8cdfc6c05b9de8e88d8a1b369d531140e00f",
+      "bytes": 3867
+    },
+    "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\SKILL.md": {
+      "path": "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\SKILL.md",
+      "sha256": "5988253a5026ebb8ecb84a4ab4506336dd13c8c533b2196d8a4f38f1ea805b81",
+      "bytes": 4869
+    },
+    "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\scripts\\generate_abaqus_case.py": {
+      "path": "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\scripts\\generate_abaqus_case.py",
+      "sha256": "08d681d5d0a16d036bab4139a7e2237943fa4806f80d71eecc284cadffa1d7df",
+      "bytes": 5311,
+      "top_level_entries": [
+        {
+          "name": "read_text",
+          "line": 12,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "collect_names",
+          "line": 16,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "inventory",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ensure_names",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "emit_boundary",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "emit_step",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write_case",
+          "line": 108,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 122,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "pathlib",
+        "re"
+      ]
+    },
+    "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\scripts\\postprocess_odb.py": {
+      "path": "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\scripts\\postprocess_odb.py",
+      "sha256": "4396c57d996d443d29ca79e2a4b76778d33fef8a29bb06b49946f2bf1814dcee",
+      "bytes": 2153,
+      "top_level_entries": [
+        {
+          "name": "magnitude",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 19,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "csv",
+        "math",
+        "odbAccess",
+        "sys"
+      ]
+    },
+    "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\scripts\\make_csv_report.py": {
+      "path": "C:\\Users\\AAA\\.codex\\skills\\hyperworks-abaqus-ai-fea\\scripts\\make_csv_report.py",
+      "sha256": "a994918099505a6d41446731e1b62fbfb5caabaae7259491ad7891de1493ac2d",
+      "bytes": 1957,
+      "top_level_entries": [
+        {
+          "name": "classify",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 23,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "csv",
+        "pathlib"
+      ]
+    },
+    "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\gcs_integration\\solver_dispatch.py": {
+      "path": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\gcs_integration\\solver_dispatch.py",
+      "sha256": "6ac047cc92b1e439476c06dcdbcf41c903a7728b6b60260a8612f9dd4aca545e",
+      "bytes": 775,
+      "top_level_entries": [
+        {
+          "name": "solve_report",
+          "line": 5,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_report",
+          "line": 12,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        ""
+      ]
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\expected\\L3_C001_G1.json": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37\\M37-FEA题目包\\expected\\L3_C001_G1.json",
+      "sha256": "7218f91af84687b8ab986041b2b9ce7c60f1f80102649e188b7fc2fa77cc288f",
+      "bytes": 8537
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L2\\L2_P02_d18.inp": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L2\\L2_P02_d18.inp",
+      "sha256": "80a174f914055bb51ca2257109d86fc76b208b40bb2c1cbba7d57fb91b17ed4e",
+      "bytes": 932349
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L2\\L2_P02_d18.dat": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L2\\L2_P02_d18.dat",
+      "sha256": "088eb6b2169e978612a457f083b151b6f3962aff6e2e6b84de0d5c1991ac49e8",
+      "bytes": 40650
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L2\\L2_P02_d18.sta": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L2\\L2_P02_d18.sta",
+      "sha256": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+      "bytes": 170
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.inp": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.inp",
+      "sha256": "a5c3fbc646170e73ffd0826a8f8afef0842ebcbedffc18e6ca31acb720682818",
+      "bytes": 3237036
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.dat": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.dat",
+      "sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f",
+      "bytes": 1727090
+    },
+    "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.sta": {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.sta",
+      "sha256": "8b81ef2eb70c7ca8b3e32c0a117f8d54ce1387cbcf8fbc725b070d5945220222",
+      "bytes": 674
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\fea_integrity.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\fea_integrity.py",
+      "sha256": "364987e0824fda32ee58d40223943c2ffa24bc3b479638945527f25538a4b2e8",
+      "bytes": 5606,
+      "top_level_entries": [
+        {
+          "name": "number",
+          "line": 10,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "final_frames",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "input_mesh",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate_fields",
+          "line": 69,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "math",
+        "pathlib",
+        "re"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\contact_diagnostics.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\contact_diagnostics.py",
+      "sha256": "1095f63e55013063329f70993a625d7c82caaf35c3478cd5ab89443606a0bd75",
+      "bytes": 9557,
+      "top_level_entries": [
+        {
+          "name": "fresh_projection_check",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "nominal_spur_state",
+          "line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_plane_contact",
+          "line": 102,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "fea",
+        "gear_plane_fea",
+        "math",
+        "numpy",
+        "pathlib",
+        "scipy.spatial"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\spur_precheck.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\spur_precheck.py",
+      "sha256": "d6a6a0a5c0d2a1136d569c7b1e1d8cd6be13ff2df20647cff0939a60a8a8a25c",
+      "bytes": 8089,
+      "top_level_entries": [
+        {
+          "name": "GearCase",
+          "line": 17,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "geometry",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contact_points",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hertz_contact",
+          "line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "screen",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 160,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "json",
+        "math",
+        "pathlib"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\plate_analysis_case.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\plate_analysis_case.py",
+      "sha256": "cd6f5f36ad935ddd31253640d160b16ad7134d7bcc1c3d322aa1bc04ef8457dd",
+      "bytes": 4834,
+      "top_level_entries": [
+        {
+          "name": "default_case",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bound_case",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "with_default_case",
+          "line": 78,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "copy",
+        "foundation.document",
+        "math",
+        "re",
+        "unified_document"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\fea.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\fea.py",
+      "sha256": "081fdac176b50f618a6a417c169d673ee69fd5754541f289334ab20b359ca1ec",
+      "bytes": 22837,
+      "top_level_entries": [
+        {
+          "name": "sha",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "solver_path",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "solver_environment",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_job",
+          "line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_dat",
+          "line": 77,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "static_deck",
+          "line": 90,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 109,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "block_patch",
+          "line": 130,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "support_face_nodes",
+          "line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mesh_step_regions",
+          "line": 169,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mesh_step",
+          "line": 204,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gear_body",
+          "line": 235,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "imported_job",
+          "line": 262,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_generated_deck",
+          "line": 267,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "boundary_traction",
+          "line": 281,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_surface_weights",
+          "line": 299,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "condense_gear_patches",
+          "line": 325,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contact_patch",
+          "line": 364,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 402,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "argparse",
+        "fea_integrity",
+        "gear_contact",
+        "gmsh",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\domains\\gears\\tools\\fea_probe.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\domains\\gears\\tools\\fea_probe.py",
+      "sha256": "a5567564efd2e7ef2a77baa40568a10cbfb19004abab3b4917b70887e7a14c2d",
+      "bytes": 11344,
+      "top_level_entries": [
+        {
+          "name": "probe_fea_result",
+          "line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compute_safety_factor",
+          "line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assess_mesh_convergence",
+          "line": 131,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "generate_report",
+          "line": 190,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "probe_h2_flagship",
+          "line": 242,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "probe_w2w_flagship",
+          "line": 282,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 321,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "math",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\domains\\gears\\src\\gears\\system_hooks.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\domains\\gears\\src\\gears\\system_hooks.py",
+      "sha256": "a8f783b77d61028e8639ff72b5a46f98c6ddef1e30965ee09e13f555666ceb12",
+      "bytes": 8199,
+      "top_level_entries": [
+        {
+          "name": "register_k_v_model",
+          "line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "register_k_hbeta_model",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_missing_inputs",
+          "line": 79,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_invoke_model",
+          "line": 94,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compute_k_v",
+          "line": 125,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compute_k_hbeta",
+          "line": 154,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "clear_hooks",
+          "line": 182,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "list_registered_hooks",
+          "line": 191,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "math",
+        "typing"
+      ]
+    },
+    "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\core\\semantic_model\\modeling_core\\contracts.py": {
+      "path": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\core\\semantic_model\\modeling_core\\contracts.py",
+      "sha256": "f19118483cf06b439c6d0225c57c123acbf15b5258ef23520d12a42e74d10074",
+      "bytes": 13597,
+      "top_level_entries": [
+        {
+          "name": "CoordinateFrame",
+          "line": 46,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "validate_coordinate_basis",
+          "line": 87,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Parameter",
+          "line": 117,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "SemanticContract",
+          "line": 177,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "PersistentReference",
+          "line": 283,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "validate_unit_whitelist",
+          "line": 316,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check_dimension_consistency",
+          "line": 337,
+          "kind": "FunctionDef"
+        }
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "math",
+        "typing"
+      ]
+    }
+  },
+  "bounded_search_findings": {
+    "no_generic_cae_intent_spec_found_in_scanned_source_roots": true,
+    "no_general_fea_solver_dispatch_gate_found": true,
+    "existing_bounded_contracts": "cadbench-plate-analysis-case/0.1, bound_plane/whole settings, Abaqus case_spec and M37 known-profile preflight",
+    "UMI_FEA_adapter_files": [],
+    "excluded_from_bulk_reads": [
+      "vendor runtimes",
+      "site-packages",
+      "binary archives",
+      "unrelated D:/my_Works projects"
+    ],
+    "limited_other_directory_inventory": [
+      "D:/my_Works/hyper_works",
+      "D:/my_Works/aba_Works"
+    ],
+    "license_scope": "No explicit project redistribution license found in inspected internal roots/pyproject; dependency licenses not inferred or combined."
+  },
+  "current_readonly_probes": [
+    {
+      "id": "nominal_M37_Hertz_readonly",
+      "checks": {
+        "half_width": true,
+        "peak": true,
+        "contact_ratio": true
+      },
+      "actual": {
+        "s_mm": 0,
+        "pinion_curvature_mm": 6.840402866513375,
+        "wheel_curvature_mm": 12.312725159724074,
+        "reduced_radius_mm": 4.3974018427585975,
+        "line_load_n_per_mm": 44.340740519829666,
+        "hertz_half_width_mm": 0.04683350819917511,
+        "hertz_peak_mpa": 602.7349481549439
+      },
+      "scope": "Nominal unshifted pitch-point Hertz arithmetic only; does not validate thinned generated tooth or FE response."
+    },
+    {
+      "id": "legacy_field_integrity_L2_P02_d18",
+      "actual": {
+        "passed": true,
+        "final_STA_time": 1.0,
+        "nodes": 16845,
+        "elements": 8276,
+        "fields": {
+          "forces": {
+            "time": 1.0,
+            "set": "FIXED",
+            "rows": 125
+          },
+          "stresses": {
+            "time": 1.0,
+            "set": "ROOTT",
+            "rows": 216
+          }
+        },
+        "method": "final_requested_DAT_fields_match_STA_and_input_set_coverage"
+      },
+      "scope": "Requested U/RF/S only; contact CSTR/CF not covered; existing raw files read only."
+    },
+    {
+      "id": "legacy_field_integrity_L3_C001_G1_ph10_d12",
+      "actual": {
+        "passed": true,
+        "final_STA_time": 2.0,
+        "nodes": 55174,
+        "elements": 26780,
+        "fields": {
+          "forces": {
+            "time": 2.0,
+            "set": "WBORE",
+            "rows": 184
+          },
+          "displacements": {
+            "time": 2.0,
+            "set": "PMASTER",
+            "rows": 1
+          }
+        },
+        "method": "final_requested_DAT_fields_match_STA_and_input_set_coverage"
+      },
+      "scope": "Requested U/RF/S only; contact CSTR/CF not covered; existing raw files read only."
+    },
+    {
+      "id": "missing_nodal_output_negative_control",
+      "rejected": true,
+      "reason": "incomplete or duplicate DAT node coverage: displacements"
+    },
+    {
+      "id": "abaqus_missing_name_negative_control",
+      "rejected": true,
+      "errors": [
+        "Missing NSET for boundary: MISSING"
+      ]
+    },
+    {
+      "id": "abaqus_unsupported_load_gap",
+      "observation": "emit_step accepts a DLOAD entry then emits no load; generic strict contract must reject unsupported types before invoking it.",
+      "emitted_in_memory": "*STEP, NAME=DIAGNOSTIC_ONLY, NLGEOM=NO\n*STATIC\n1.0, 1.0\n*END STEP\n",
+      "production_readiness": false
+    }
+  ],
+  "duplicate_asset_comparisons": [
+    {
+      "a": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\fea_integrity.py",
+      "b": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\fea_integrity.py",
+      "same_sha256": true
+    },
+    {
+      "a": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\contact_diagnostics.py",
+      "b": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\contact_diagnostics.py",
+      "same_sha256": true
+    },
+    {
+      "a": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\spur_precheck.py",
+      "b": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\spur_precheck.py",
+      "same_sha256": true
+    },
+    {
+      "a": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\plate_analysis_case.py",
+      "b": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\plate_analysis_case.py",
+      "same_sha256": false
+    },
+    {
+      "a": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\freeze\\CAD-R25.20-offline-freeze\\app\\src\\cadbench\\fea.py",
+      "b": "D:\\my_Works\\自研CAD-CAE系统\\CAD-R25.18-offline-freeze\\app\\src\\cadbench\\fea.py",
+      "same_sha256": true
+    },
+    {
+      "a": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\tools\\fea_probe.py",
+      "b": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\domains\\gears\\tools\\fea_probe.py",
+      "same_sha256": true
+    },
+    {
+      "a": "D:\\my_Works\\Gears\\gear-compiler\\stage0\\src\\gears\\system_hooks.py",
+      "b": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\domains\\gears\\src\\gears\\system_hooks.py",
+      "same_sha256": true
+    },
+    {
+      "a": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\src\\modeling_core\\contracts.py",
+      "b": "D:\\my_Works\\自研CAD-CAE系统\\modeling-workbench\\unified-mechanical-intelligence\\core\\semantic_model\\modeling_core\\contracts.py",
+      "same_sha256": true
+    }
+  ],
+  "source_hashes_unchanged_after_probes": true,
+  "recommended_integration_order": [
+    "Keep M37 original geometry/deck/post sources authoritative; thin read-only adapter around current profile preflight.",
+    "Represent intent, units, frame, boundary/load expectation, output reference and admissible profile explicitly; map existing fields instead of inventing a second physics engine.",
+    "Import/port contact topology and field coverage in isolated compatibility boundary; add negative fixture proving unknown schema/features reject.",
+    "Keep nominal Hertz prediction, physical equilibrium, reference-ratio comparison and convergence as separate results.",
+    "Use old CAD/CAE runtime only on tasks requiring its native model, not to regenerate M37.",
+    "Keep private core local; publish only allowed summaries and provenance."
+  ],
+  "where_this_review_may_be_wrong": [
+    "Limited source-tree search can miss differently named or unexpanded ZIP/WSL-only implementations; inspect specific archive manifests if user recalls a stronger identifier.",
+    "Saved historical acceptance is not a new end-to-end run; restore pinned WSL/CAD/solver environment before upgrading reuse status.",
+    "Pure arithmetic/field-coverage probes do not prove generalized FEA applicability or complete license provenance."
+  ]
+}

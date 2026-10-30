@@ -1,0 +1,27 @@
+{
+  "case_id": "original_ph00",
+  "units": "N-mm-MPa",
+  "theory": {
+    "kind": "nominal_spur",
+    "inputs": {
+      "z1": 20,
+      "z2": 36,
+      "module_mm": 2.0,
+      "alpha_deg": 20.0,
+      "face_width_mm": 30.0,
+      "torque_Nm": 25.0,
+      "s_mm": -4.8118163066328306
+    },
+    "material": {
+      "E1_MPa": 206000.0,
+      "nu1": 0.3,
+      "E2_MPa": 206000.0,
+      "nu2": 0.3
+    }
+  },
+  "native": {
+    "profile": "m37_l3",
+    "asset_root": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29",
+    "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph00_d12.inp"
+  }
+}

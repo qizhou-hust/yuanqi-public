@@ -1,0 +1,103 @@
+{
+  "schema": "fea-readiness.review/0.1",
+  "checks": [
+    {
+      "check_id": "result_sources",
+      "status": "PASS",
+      "required": true,
+      "message": "Raw source SHA256 binding",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "run_completion",
+      "status": "PASS",
+      "required": true,
+      "message": "Exit, final step, errors and input identity",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "balance.wheel_contact_force_residual_rel",
+      "status": "PASS",
+      "required": true,
+      "message": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison. Diagnostic print-precision screen 1e-4; original mechanical gates unchanged.",
+      "measured": 6.912479340685832e-08,
+      "limit": 0.0001,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "balance.wheel_contact_moment_residual_rel",
+      "status": "PASS",
+      "required": true,
+      "message": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison. Diagnostic print-precision screen 1e-4; original mechanical gates unchanged.",
+      "measured": 1.5709155145143685e-05,
+      "limit": 0.0001,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "balance.pinion_contact_vs_input_torque_residual_rel",
+      "status": "PASS",
+      "required": true,
+      "message": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison. Diagnostic print-precision screen 1e-4; original mechanical gates unchanged.",
+      "measured": 3.604000000000269e-05,
+      "limit": 0.0001,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "actual_contact_mesh",
+      "status": "FAIL",
+      "required": true,
+      "message": "Diagnostic local convergence trigger on actual loaded edges; extra contact may be elastic extended contact, not necessarily penetration",
+      "measured": 40.34294294959255,
+      "limit": 2.0,
+      "unit": null,
+      "evidence": [
+        {
+          "element": 7779,
+          "ratio": 40.34294294959255
+        }
+      ]
+    },
+    {
+      "check_id": "mesh_convergence",
+      "status": "UNKNOWN",
+      "required": true,
+      "message": "No identified three-level mesh study",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    },
+    {
+      "check_id": "theory_comparison",
+      "status": "UNKNOWN",
+      "required": true,
+      "message": "Establish shared quantity definition, topology and analytical applicability first",
+      "measured": null,
+      "limit": null,
+      "unit": null,
+      "evidence": []
+    }
+  ],
+  "failed": [
+    "actual_contact_mesh"
+  ],
+  "unknown": [
+    "mesh_convergence",
+    "theory_comparison"
+  ],
+  "engineering_accepted": false,
+  "next_discriminating_checks": [
+    "Refine the actual loaded edge and its counterpart at fixed physical inputs; retain all pressure and compare patch force/width/peak across meshes",
+    "Establish load sharing, extended contact, root/rim compliance, secant versus tangent stiffness and the reference definition before comparison"
+  ],
+  "decision": "diagnostic_action_required"
+}

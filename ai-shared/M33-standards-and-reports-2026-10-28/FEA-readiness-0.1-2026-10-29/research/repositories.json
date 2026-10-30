@@ -1,0 +1,67 @@
+[
+  {
+    "repo": "ContactEngineering/ContactMechanics",
+    "commit": "40ad18ea9caec4a613b297e188f33f9e3bc9f254",
+    "branch": "master",
+    "license_api": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit_url": "https://github.com/ContactEngineering/ContactMechanics/commit/40ad18ea9caec4a613b297e188f33f9e3bc9f254"
+  },
+  {
+    "repo": "sfepy/sfepy",
+    "commit": "3172572d618acffc01f00084fc18a6d5fa3ef24d",
+    "branch": "master",
+    "license_api": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "spdx_id": "BSD-3-Clause",
+      "url": "https://api.github.com/licenses/bsd-3-clause",
+      "node_id": "MDc6TGljZW5zZTU="
+    },
+    "commit_url": "https://github.com/sfepy/sfepy/commit/3172572d618acffc01f00084fc18a6d5fa3ef24d"
+  },
+  {
+    "repo": "llnl/Tribol",
+    "commit": "1c123f04bef123af2e1c806a43e9d4454dc46d27",
+    "branch": "develop",
+    "license_api": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit_url": "https://github.com/llnl/Tribol/commit/1c123f04bef123af2e1c806a43e9d4454dc46d27"
+  },
+  {
+    "repo": "SteveDoyle2/pyNastran",
+    "commit": "f51e9ffa74222f93750618d4766e59f2f96751c3",
+    "branch": "main",
+    "license_api": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "commit_url": "https://github.com/SteveDoyle2/pyNastran/commit/f51e9ffa74222f93750618d4766e59f2f96751c3"
+  },
+  {
+    "repo": "Wells-Group/asimov-contact",
+    "commit": "f605fffdcabe470e6d20525c424aa985b36b3c42",
+    "branch": "main",
+    "license_api": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit_url": "https://github.com/Wells-Group/asimov-contact/commit/f605fffdcabe470e6d20525c424aa985b36b3c42"
+  }
+]

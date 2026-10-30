@@ -1,0 +1,11 @@
+{
+  "kind": "rectangular_cantilever",
+  "inputs": {
+    "force_N": 100,
+    "length_mm": 50,
+    "width_mm": 10,
+    "depth_mm": 5,
+    "E_MPa": 200000,
+    "nu": 0.3
+  }
+}

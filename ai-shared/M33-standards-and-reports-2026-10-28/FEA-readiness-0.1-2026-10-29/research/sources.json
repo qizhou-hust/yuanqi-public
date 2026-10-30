@@ -1,0 +1,1041 @@
+{
+  "schema": "fea-readiness.research-sources/v1",
+  "created_utc": "2026-10-30T02:57:43.470907+00:00",
+  "scope": "Public content inspection and independently written rule mapping. No external code executed, no paid full text, no configuration changes.",
+  "literature_count": 10,
+  "new_open_source_count": 6,
+  "literature": [
+    {
+      "id": "L01",
+      "kind": "literature_or_official_technical_source",
+      "title": "NASA-STD-7009B: Standard for Models and Simulations",
+      "identifier": "NASA-STD-7009B, 2024-03-05",
+      "artifacts": [
+        {
+          "id": "nasa-7009.html",
+          "requested_url": "https://standards.nasa.gov/standard/NASA/NASA-STD-7009",
+          "retrieved_utc": "2026-10-30T02:32:18.691903+00:00",
+          "final_url": "https://standards.nasa.gov/standard/NASA/NASA-STD-7009",
+          "content_type": "text/html; charset=UTF-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-7009.html",
+          "bytes": 27196,
+          "sha256": "540d4a9024d526db21bef8fd4c9db0818b0c5cef5d1dfa151cfa600eeb9714da"
+        },
+        {
+          "id": "nasa-7009B.pdf",
+          "requested_url": "https://standards.nasa.gov/sites/default/files/standards/NASA/B/1/NASA-STD-7009B-Final-3-5-2024.pdf",
+          "retrieved_utc": "2026-10-30T02:33:34.440420+00:00",
+          "final_url": "https://standards.nasa.gov/sites/default/files/standards/NASA/B/1/NASA-STD-7009B-Final-3-5-2024.pdf",
+          "content_type": "application/pdf",
+          "http_status": 200,
+          "local_file": "cache/nasa-7009B.pdf",
+          "bytes": 1417365,
+          "sha256": "7b95a2065325dc3035c35ce110557d817555d3f22210ce5f6ce0bb2fb4ccd8b4"
+        }
+      ],
+      "reading_scope": "88-page public PDF: definitions and sections 4.1-4.3, especially printed/PDF pp25,28-30,32-33; p28 visually verified.",
+      "verified_content": [
+        "Records units and vector frames (M&S46); assumptions, abstractions, and limits (M&S11-13).",
+        "Separates implementation/code verification, per-use solution verification, conceptual validation, empirical validation.",
+        "Records verification/validation domains, numerical errors, aspects not verified, uncertainty and sensitivity."
+      ],
+      "applicability_boundary": "General modeling standard; no universal gear-contact error tolerance or automatic certification procedure.",
+      "rights_status": "Official NASA public-release PDF; no third-party source redistribution in deliverable.",
+      "external_code_executed": false
+    },
+    {
+      "id": "L02",
+      "kind": "literature_or_official_technical_source",
+      "title": "ASME V&V 10: Standard for Verification and Validation in Computational Solid Mechanics",
+      "identifier": "V&V10-2019 (R2025)",
+      "artifacts": [
+        {
+          "id": "asme-vv10-official.html",
+          "requested_url": "https://www.asme.org/codes-standards/find-codes-standards/standard-for-verification-and-validation-in-computational-solid-mechanics",
+          "retrieved_utc": "2026-10-30T02:48:42.864110+00:00",
+          "final_url": "https://www.asme.org/codes-standards/find-codes-standards/standard-for-verification-and-validation-in-computational-solid-mechanics",
+          "content_type": "text/html; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/asme-vv10-official.html",
+          "bytes": 169592,
+          "sha256": "570d9b963f13940224111f9a4e9da61466db13834d59de9f51eedfb019401d84"
+        },
+        {
+          "id": "asme-vv10-illustration.html",
+          "requested_url": "https://www.asme.org/codes-standards/find-codes-standards/an-illustration-of-the-concepts-of-verification-and-validation-in-computational-solid-mechanics",
+          "retrieved_utc": "2026-10-30T02:48:42.865111+00:00",
+          "final_url": "https://www.asme.org/codes-standards/find-codes-standards/an-illustration-of-the-concepts-of-verification-and-validation-in-computational-solid-mechanics",
+          "content_type": "text/html; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/asme-vv10-illustration.html",
+          "bytes": 169761,
+          "sha256": "bbe7d87f1ab623f30210d014e232d3b7d497ddd814e0c96dc019c7e94dfcde87"
+        }
+      ],
+      "reading_scope": "Official public product scope and V&V10.1 public description only; paid standard text not obtained.",
+      "verified_content": [
+        "V&V10 supplies common terminology, a conceptual framework and general guidance for computational solid-mechanics VVUQ.",
+        "V&V10.1 publicly describes an example-based supplement rather than a substitute for case-specific verification."
+      ],
+      "applicability_boundary": "Not a full-text clause review; cannot claim compliance or infer a numerical acceptance threshold.",
+      "rights_status": "Copyright ASME; public descriptive pages, paid full text deliberately not downloaded.",
+      "external_code_executed": false
+    },
+    {
+      "id": "L03",
+      "kind": "literature_or_official_technical_source",
+      "title": "NAFEMS Code Verification",
+      "identifier": "Official NAFEMS Code Verification page",
+      "artifacts": [
+        {
+          "id": "nafems-codeverification.html",
+          "requested_url": "https://www.nafems.org/publications/code-verification/",
+          "retrieved_utc": "2026-10-30T02:40:05.680054+00:00",
+          "final_url": "https://www.nafems.org/publications/code-verification/",
+          "content_type": "text/html",
+          "http_status": 200,
+          "local_file": "cache/nafems-codeverification.html",
+          "bytes": 25302,
+          "sha256": "cf7c7d06ad90c96cd62e59ef2a231b6a07c102ed1e831b5e659aa8e1b4441cea"
+        }
+      ],
+      "reading_scope": "Public explanatory text and vendor verification table.",
+      "verified_content": [
+        "Vendor benchmark checks are performed by vendors; NAFEMS encourages users to independently verify quoted benchmark results."
+      ],
+      "applicability_boundary": "A benchmark or vendor manual does not prove a new application model or installed binary.",
+      "rights_status": "NAFEMS copyright; public page read, no member-only manual downloaded.",
+      "external_code_executed": false
+    },
+    {
+      "id": "L04",
+      "kind": "literature_or_official_technical_source",
+      "title": "NAFEMS Code Verification Exemplars in Computational Solid Mechanics",
+      "identifier": "NAFEMS R0135, 2026-03-03; A. van den Bos, P. van der Aa",
+      "artifacts": [
+        {
+          "id": "nafems-r0135.html",
+          "requested_url": "https://www.nafems.org/publications/resource_center/r0135/",
+          "retrieved_utc": "2026-10-30T02:40:05.681387+00:00",
+          "final_url": "https://www.nafems.org/publications/resource_center/r0135/",
+          "content_type": "text/html",
+          "http_status": 200,
+          "local_file": "cache/nafems-r0135.html",
+          "bytes": 25628,
+          "sha256": "ef550cf16ac449a7c3d761556db7352d18c93c2ed6e27f2b1293472270b08a50"
+        }
+      ],
+      "reading_scope": "Public preface, table of contents and bibliographic details only.",
+      "verified_content": [
+        "Rigorous examples estimate observed asymptotic mesh-convergence order using multiple resolutions and an exact solution.",
+        "Method can be applied by an end user without source-code access; publication is scoped to linear solid mechanics."
+      ],
+      "applicability_boundary": "Paid/member full text not read; do not transfer linear exact-solution assumptions to changing contact active sets.",
+      "rights_status": "NAFEMS copyright; only public preface/contents used.",
+      "external_code_executed": false
+    },
+    {
+      "id": "L05",
+      "kind": "literature_or_official_technical_source",
+      "title": "Examining Spatial (Grid) Convergence",
+      "identifier": "NASA Glenn WIND verification tutorial",
+      "artifacts": [
+        {
+          "id": "nasa-spatial-current.html",
+          "requested_url": "https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html",
+          "retrieved_utc": "2026-10-30T02:40:06.895556+00:00",
+          "final_url": "https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html",
+          "content_type": "text/html; charset=UTF-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-spatial-current.html",
+          "bytes": 29126,
+          "sha256": "bd279deb8664487d47500c03b06997ee9f5c052ab8a8ea19ea41e639386bd1f0"
+        }
+      ],
+      "reading_scope": "Public full tutorial: refinement ratio, observed order, asymptotic range, Richardson extrapolation and GCI caveats.",
+      "verified_content": [
+        "Last-two-grid relative difference ignores refinement ratio and order and can be artificially small.",
+        "Three grids help estimate order and test asymptotic range; a converged numerical value may still differ from physical truth.",
+        "Extrapolation has smoothness/asymptotic assumptions and is invalid locally at discontinuities; near-zero normalization needs another scale."
+      ],
+      "applicability_boundary": "CFD tutorial: transfer convergence reasoning, not its numerical safety factors as universal FEA acceptance gates.",
+      "rights_status": "Official public NASA technical webpage; cite URL and retrieved hash.",
+      "external_code_executed": false
+    },
+    {
+      "id": "L06",
+      "kind": "literature_or_official_technical_source",
+      "title": "Contact stresses in meshing spur gear teeth: Use of an incremental finite element procedure",
+      "identifier": "NASA NTRS 19920014293; Hsieh, Huston, Oswald; 1992",
+      "artifacts": [
+        {
+          "id": "nasa-contact-incremental-metadata.json",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/19920014293",
+          "retrieved_utc": "2026-10-30T02:40:08.341779+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/19920014293",
+          "content_type": "application/json; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-contact-incremental-metadata.json",
+          "bytes": 3734,
+          "sha256": "d82698f52e6d431e2efb026172d21bf392b9c3842ac7df661294229f9d6132de"
+        },
+        {
+          "id": "nasa-contact-incremental.txt",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/19920014293/downloads/19920014293.txt",
+          "retrieved_utc": "2026-10-30T02:36:09.828467+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/19920014293/downloads/19920014293.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-contact-incremental.txt",
+          "bytes": 34445,
+          "sha256": "05b25771040fcf4fa6dd14cfcaf71af3c8b1e2d8cfbc84201559907e9898426e"
+        },
+        {
+          "id": "nasa-contact-incremental.pdf",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/19920014293/downloads/19920014293.pdf",
+          "retrieved_utc": "2026-10-30T02:36:11.332572+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/19920014293/downloads/19920014293.pdf",
+          "content_type": "application/pdf",
+          "http_status": 200,
+          "local_file": "cache/nasa-contact-incremental.pdf",
+          "bytes": 788683,
+          "sha256": "4feb97d96f902a601e563fffa35f63da81b242d991b25baeffe947a9626b3d6d"
+        }
+      ],
+      "reading_scope": "Abstract, formulation assumptions, semicylinder comparison, spur-gear results and discussion; PDF p13 (printed p11) visually verified.",
+      "verified_content": [
+        "Model is 2D plane strain, small displacement, linearly elastic, with Coulomb friction cases.",
+        "Contact extent is unknown a priori and solved incrementally; contact-boundary estimates are more load-increment sensitive than stresses.",
+        "The examined gear result was about 10 percent above Hertz pressure; a formula comparison is not universally exact."
+      ],
+      "applicability_boundary": "Old specific models and loading; no claim that its error or mesh is appropriate to current M37.",
+      "rights_status": "NTRS PUBLIC / GOV_PUBLIC_USE_PERMITTED; technical text publicly available; no blanket claim all NASA-hosted works are public domain.",
+      "external_code_executed": false
+    },
+    {
+      "id": "L07",
+      "kind": "literature_or_official_technical_source",
+      "title": "Effect of extended tooth contact on the modeling of spur gear transmissions",
+      "identifier": "NASA NTRS 19930019222; Lin, Wang, Oswald, Coy; 1993",
+      "artifacts": [
+        {
+          "id": "nasa-extended-contact-metadata.json",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/19930019222",
+          "retrieved_utc": "2026-10-30T02:40:08.450866+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/19930019222",
+          "content_type": "application/json; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-extended-contact-metadata.json",
+          "bytes": 5075,
+          "sha256": "39e983a353691733c48a775e1e33577e471c09e382fc431ee2f0bf6bae42ce8d"
+        },
+        {
+          "id": "nasa-extended-contact.txt",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/19930019222/downloads/19930019222.txt",
+          "retrieved_utc": "2026-10-30T02:36:09.916937+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/19930019222/downloads/19930019222.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-extended-contact.txt",
+          "bytes": 29795,
+          "sha256": "59b388bbf40f5ec75d9e907eb5407f1debde0ae7fe1d53b35c604a2374cd2237"
+        },
+        {
+          "id": "nasa-extended-contact.pdf",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/19930019222/downloads/19930019222.pdf",
+          "retrieved_utc": "2026-10-30T02:45:40.361030+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/19930019222/downloads/19930019222.pdf",
+          "content_type": "application/pdf",
+          "http_status": 200,
+          "local_file": "cache/nasa-extended-contact.pdf",
+          "bytes": 647042,
+          "sha256": "ed4e03d5b92c37150e77f304f5df40c9fa17933c752872a9112888e48a27d8f8"
+        }
+      ],
+      "reading_scope": "Abstract, introduction, loaded-contact formulation and conclusions; PDF p3 visually verified.",
+      "verified_content": [
+        "Elastic tooth deflection can advance entry and delay exit of adjacent tooth pairs.",
+        "Ignoring extended contact underestimates contact zone and mean mesh stiffness and overstates individual tooth load, especially for heavily loaded low-contact-ratio gears."
+      ],
+      "applicability_boundary": "Supports an active-contact diagnostic, not automatic attribution of current extra contact to a correct physical mechanism.",
+      "rights_status": "NTRS public-use access; PDF explicitly credits copyright 1993 H.H. Lin/AIAA with permission. Do not redistribute as public-domain work.",
+      "external_code_executed": false
+    },
+    {
+      "id": "L08",
+      "kind": "literature_or_official_technical_source",
+      "title": "Gear Tooth Root Stresses of a Very Heavily Loaded Gear Pair—Case Study: Orbiter Body Flap Actuator Pinion and Ring Gear",
+      "identifier": "DETC2015-46274; NASA NTRS 20150016602; Krantz and Handschuh; 2015",
+      "artifacts": [
+        {
+          "id": "nasa-gear-root-metadata.json",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/20150016602",
+          "retrieved_utc": "2026-10-30T02:53:51.463070+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20150016602",
+          "content_type": "application/json; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-gear-root-metadata.json",
+          "bytes": 4526,
+          "sha256": "f8cf495caedb680300e319eb503c86a5c87b51eb9980aefcec0f7938c3385510"
+        },
+        {
+          "id": "nasa-gear-root.txt",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/20150016602/downloads/20150016602.txt",
+          "retrieved_utc": "2026-10-30T02:33:37.231488+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20150016602/downloads/20150016602.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-gear-root.txt",
+          "bytes": 31327,
+          "sha256": "88f64247271cd35d45615ab5f2553bb5c5b53d0f26349923527c2cd426736331"
+        },
+        {
+          "id": "nasa-gear-root.pdf",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/20150016602/downloads/20150016602.pdf",
+          "retrieved_utc": "2026-10-30T02:45:40.318076+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20150016602/downloads/20150016602.pdf",
+          "content_type": "application/pdf",
+          "http_status": 200,
+          "local_file": "cache/nasa-gear-root.pdf",
+          "bytes": 357360,
+          "sha256": "ea68a431809cc4c47f82d9b540793936eaba33a32d9cb2ca78954bc3b1574602"
+        }
+      ],
+      "reading_scope": "Abstract, tooth-load/model description, comparison approach and conclusion; PDF p1 visually verified.",
+      "verified_content": [
+        "Undeformed theoretical HPSTC and single-tooth loading can be conservative when deformation changes tooth-to-tooth load sharing.",
+        "This specific internal/external pair reported HPSTC-to-contact-analysis maximum-root-stress ratios 1.40 (ring) and 1.28 (pinion).",
+        "Coarse system-level meshes were insufficient for local root/fillet stress; refined tooth analysis and load-transfer assumptions matter."
+      ],
+      "applicability_boundary": "Specific heavily loaded actuator pair; ratios are examples, not correction factors for other gears.",
+      "rights_status": "PDF states U.S. Government work, unrestricted public release; still cite original rather than bundle PDF.",
+      "external_code_executed": false
+    },
+    {
+      "id": "L09",
+      "kind": "literature_or_official_technical_source",
+      "title": "Code_Aster SSNV104: Contact de deux sphères",
+      "identifier": "Official DocAster v6.04.104",
+      "artifacts": [
+        {
+          "id": "codeaster-doc-host.html",
+          "requested_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/index.html",
+          "retrieved_utc": "2026-10-30T02:40:07.341774+00:00",
+          "final_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/index.html",
+          "content_type": "text/html; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/codeaster-doc-host.html",
+          "bytes": 25658,
+          "sha256": "a050fa804100f2eb3e3279ec36208bf579ff600bb3c345ec40bf797f37520a58"
+        },
+        {
+          "id": "codeaster-reference.html",
+          "requested_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/Probl_me_de_r_f_rence.html",
+          "retrieved_utc": "2026-10-30T02:48:00.142384+00:00",
+          "final_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/Probl_me_de_r_f_rence.html",
+          "content_type": "text/html; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/codeaster-reference.html",
+          "bytes": 18934,
+          "sha256": "5d3118e231b507d194cea789d1bf7163b28b6c76f091cf521f5e8e093f5b1155"
+        },
+        {
+          "id": "codeaster-reference-solution.html",
+          "requested_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/Solution_de_r_f_rence.html",
+          "retrieved_utc": "2026-10-30T02:48:00.143387+00:00",
+          "final_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/Solution_de_r_f_rence.html",
+          "content_type": "text/html; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/codeaster-reference-solution.html",
+          "bytes": 21147,
+          "sha256": "f18cd501286f488345799dad96c3bfc28870f5e7236313fc11c36d45fd088623"
+        },
+        {
+          "id": "codeaster-model-a.html",
+          "requested_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/Mod_lisation_A.html",
+          "retrieved_utc": "2026-10-30T02:48:00.143387+00:00",
+          "final_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/Mod_lisation_A.html",
+          "content_type": "text/html; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/codeaster-model-a.html",
+          "bytes": 27082,
+          "sha256": "1fcb26edf4c22177875b527cd8b645860c726409cdb4f695a07d2cf576bc11d2"
+        },
+        {
+          "id": "codeaster-summary.html",
+          "requested_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/Synth_se_des_r_sultats.html",
+          "retrieved_utc": "2026-10-30T02:48:00.144370+00:00",
+          "final_url": "https://codeaster.gitlab.io/doc/docaster/manuals/man_v/v6/v6.04.104/Synth_se_des_r_sultats.html",
+          "content_type": "text/html; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/codeaster-summary.html",
+          "bytes": 17720,
+          "sha256": "698e713c1ddd56f341a71f53b9cbed0cf4974a2ece8fe877b2ed1202c2634123"
+        }
+      ],
+      "reading_scope": "Full public index, reference geometry/material/loading, analytic reference, model A result table and cross-model synthesis.",
+      "verified_content": [
+        "Hertz reference explicitly assumes frictionless contact and contact half-width much smaller than sphere radius.",
+        "ANALYTIQUE, NON_REGRESSION and AUTRE_ASTER references are distinguished; locations H/I differ across model variants.",
+        "Normal smoothing and geometric contact convergence affect symmetry/pressure; a test comparison must preserve output location and method."
+      ],
+      "applicability_boundary": "Web documentation is retrieved/hash-frozen, not pinned to the independently inspected source commit; document table alone is not current-run evidence.",
+      "rights_status": "EDF R&D copyrighted public documentation; source test license separately GPL-3.0-or-later.",
+      "external_code_executed": false
+    },
+    {
+      "id": "L10",
+      "kind": "literature_or_official_technical_source",
+      "title": "A multi-purpose method for analysis of spur gear tooth loading",
+      "identifier": "NASA NTRS 19820002528",
+      "artifacts": [
+        {
+          "id": "nasa-tooth-loading-metadata.json",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/19820002528",
+          "retrieved_utc": "2026-10-30T02:53:51.462108+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/19820002528",
+          "content_type": "application/json; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-tooth-loading-metadata.json",
+          "bytes": 3984,
+          "sha256": "cee0cb2e0a94ff112e5a8d0f51c0bf10bf0b92baf4d42900708bdbbd1d1089b7"
+        },
+        {
+          "id": "nasa-tooth-loading.txt",
+          "requested_url": "https://ntrs.nasa.gov/api/citations/19820002528/downloads/19820002528.txt",
+          "retrieved_utc": "2026-10-30T02:33:37.296543+00:00",
+          "final_url": "https://ntrs.nasa.gov/api/citations/19820002528/downloads/19820002528.txt",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/nasa-tooth-loading.txt",
+          "bytes": 116363,
+          "sha256": "cfb8464230cc5913ce916c29ebdae11d0d97547e54da57289b2769fe6e3f7452"
+        }
+      ],
+      "reading_scope": "NTRS full-text OCR: modeling assumptions, tooth-pair compliance components, loaded-profile iteration and contact/load-sharing discussion around printed pp3,16-17; not every appendix/formula.",
+      "verified_content": [
+        "Tooth-pair deformation includes bending, normal/shear, surrounding hub rocking, rim/hub torsion and local Hertz compliance.",
+        "Loaded contact positions, load sharing and stiffness are iterated; a rigid line-of-action contact model has a stated narrower scope."
+      ],
+      "applicability_boundary": "OCR is imperfect and formulas were not transcribed as implementation authority; use for compliance definitions and assumptions, not numeric constants.",
+      "rights_status": "NTRS public technical report; rights recorded in metadata, no automatic public-domain assumption.",
+      "external_code_executed": false
+    }
+  ],
+  "open_source": [
+    {
+      "repo": "ContactEngineering/ContactMechanics",
+      "commit": "40ad18ea9caec4a613b297e188f33f9e3bc9f254",
+      "branch": "master",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "commit_url": "https://github.com/ContactEngineering/ContactMechanics/commit/40ad18ea9caec4a613b297e188f33f9e3bc9f254",
+      "id": "O01",
+      "kind": "open_source_implementation",
+      "license_verified": "MIT",
+      "reading_scope": "Hertz formulas and test_hertz fully read; Systems relevant normal-force/contact-area interface inspected.",
+      "verified_content": [
+        "Checks imposed F, displacement, contact area, elastic energy and interior pressure separately with different tolerances.",
+        "Hertz energy U=2Fδ/5, not the linear-force law Fδ/2."
+      ],
+      "applicability_boundary": "FFT elastic-half-space method, not general finite-body FEA or a full gear solver; upstream tests not run.",
+      "artifacts": [
+        {
+          "id": "source/ContactEngineering--ContactMechanics/README.md",
+          "requested_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/README.md",
+          "retrieved_utc": "2026-10-30T02:36:05.664908+00:00",
+          "final_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/ContactEngineering--ContactMechanics/README.md",
+          "bytes": 3072,
+          "sha256": "2b58e9649296da7311ebe68b0c8dc2ee6c4c1717fe63d8267229fe2f114649e4"
+        },
+        {
+          "id": "source/ContactEngineering--ContactMechanics/LICENSE.md",
+          "requested_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/LICENSE.md",
+          "retrieved_utc": "2026-10-30T02:36:05.666896+00:00",
+          "final_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/LICENSE.md",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/ContactEngineering--ContactMechanics/LICENSE.md",
+          "bytes": 1040,
+          "sha256": "65f082dfee3fc13088c47bb37ec861594ac4ec42750a7f06970b0634ba314781"
+        },
+        {
+          "id": "source/ContactEngineering--ContactMechanics/ContactMechanics/ReferenceSolutions/Hertz.py",
+          "requested_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/ContactMechanics/ReferenceSolutions/Hertz.py",
+          "retrieved_utc": "2026-10-30T02:36:05.668893+00:00",
+          "final_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/ContactMechanics/ReferenceSolutions/Hertz.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/ContactEngineering--ContactMechanics/ContactMechanics/ReferenceSolutions/Hertz.py",
+          "bytes": 15578,
+          "sha256": "ed09eaac8aea24cde207f30be6caa7608ab20978a711aa789ba3444028bfaf25"
+        },
+        {
+          "id": "source/ContactEngineering--ContactMechanics/test/test_hertz.py",
+          "requested_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/test/test_hertz.py",
+          "retrieved_utc": "2026-10-30T02:36:05.669891+00:00",
+          "final_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/test/test_hertz.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/ContactEngineering--ContactMechanics/test/test_hertz.py",
+          "bytes": 8830,
+          "sha256": "7054f8f7a23385edc86ddfe321b6e817600e38ea1b905dfc7f1d8b29d0c504d6"
+        },
+        {
+          "id": "source/ContactEngineering--ContactMechanics/ContactMechanics/Systems.py",
+          "requested_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/ContactMechanics/Systems.py",
+          "retrieved_utc": "2026-10-30T02:36:05.670891+00:00",
+          "final_url": "https://raw.githubusercontent.com/ContactEngineering/ContactMechanics/40ad18ea9caec4a613b297e188f33f9e3bc9f254/ContactMechanics/Systems.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/ContactEngineering--ContactMechanics/ContactMechanics/Systems.py",
+          "bytes": 39695,
+          "sha256": "deadeaf3301d0a7f54322825a135a0880df6fc0547366d9a969fd608f641ac59"
+        }
+      ],
+      "external_code_executed": false,
+      "installed": false
+    },
+    {
+      "repo": "sfepy/sfepy",
+      "commit": "3172572d618acffc01f00084fc18a6d5fa3ef24d",
+      "branch": "master",
+      "license_api": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "commit_url": "https://github.com/sfepy/sfepy/commit/3172572d618acffc01f00084fc18a6d5fa3ef24d",
+      "id": "O04",
+      "kind": "open_source_implementation",
+      "license_verified": "BSD-3-Clause",
+      "reading_scope": "Three example definitions, region/BC export instruction, penalty/IPC and nonlinear solver controls.",
+      "verified_content": [
+        "Example explicitly supports exporting regions and EBC nodes without solve.",
+        "Linear elastic material and small deformation can still have nonlinear contact.",
+        "Penalty stiffness/zero-gap regularization and IPC examples must not be silently treated as hard Hertz contact."
+      ],
+      "applicability_boundary": "Examples illustrate formulations, not independently verified universal benchmark results; IPC portions explicitly experimental.",
+      "artifacts": [
+        {
+          "id": "source/sfepy--sfepy/README.rst",
+          "requested_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/README.rst",
+          "retrieved_utc": "2026-10-30T02:36:05.793963+00:00",
+          "final_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/README.rst",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/sfepy--sfepy/README.rst",
+          "bytes": 3078,
+          "sha256": "a21864a25dbe043bbd62167c2ff00bfb1ca72cf6c82c96b71810ae31821c203d"
+        },
+        {
+          "id": "source/sfepy--sfepy/LICENSE",
+          "requested_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/LICENSE",
+          "retrieved_utc": "2026-10-30T02:36:06.467184+00:00",
+          "final_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/sfepy--sfepy/LICENSE",
+          "bytes": 1520,
+          "sha256": "140ea44d41653f8db8dd69c15a3d43bc3f63d0641f7279c7fbfb397aba971445"
+        },
+        {
+          "id": "source/sfepy--sfepy/sfepy/examples/linear_elasticity/elastic_contact_sphere.py",
+          "requested_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/sfepy/examples/linear_elasticity/elastic_contact_sphere.py",
+          "retrieved_utc": "2026-10-30T02:36:06.493705+00:00",
+          "final_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/sfepy/examples/linear_elasticity/elastic_contact_sphere.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/sfepy--sfepy/sfepy/examples/linear_elasticity/elastic_contact_sphere.py",
+          "bytes": 2755,
+          "sha256": "462ed6919e17a07393070d92d92b65574bc08f3e88cb77a904e24c394fa477ff"
+        },
+        {
+          "id": "source/sfepy--sfepy/sfepy/examples/linear_elasticity/two_bodies_contact.py",
+          "requested_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/sfepy/examples/linear_elasticity/two_bodies_contact.py",
+          "retrieved_utc": "2026-10-30T02:36:06.494834+00:00",
+          "final_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/sfepy/examples/linear_elasticity/two_bodies_contact.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/sfepy--sfepy/sfepy/examples/linear_elasticity/two_bodies_contact.py",
+          "bytes": 9829,
+          "sha256": "06d4ac7524ff12a0242bc9438596b78f33b35ae1a2bb3811ba4c933ff0bec47f"
+        },
+        {
+          "id": "source/sfepy--sfepy/sfepy/examples/linear_elasticity/elastic_contact_planes.py",
+          "requested_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/sfepy/examples/linear_elasticity/elastic_contact_planes.py",
+          "retrieved_utc": "2026-10-30T02:36:06.496516+00:00",
+          "final_url": "https://raw.githubusercontent.com/sfepy/sfepy/3172572d618acffc01f00084fc18a6d5fa3ef24d/sfepy/examples/linear_elasticity/elastic_contact_planes.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/sfepy--sfepy/sfepy/examples/linear_elasticity/elastic_contact_planes.py",
+          "bytes": 4817,
+          "sha256": "81f3a3fc084dd246c7418f66542214320fcf342f58ff88e494c757a11cc70163"
+        }
+      ],
+      "external_code_executed": false,
+      "installed": false
+    },
+    {
+      "repo": "llnl/Tribol",
+      "commit": "1c123f04bef123af2e1c806a43e9d4454dc46d27",
+      "branch": "develop",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "commit_url": "https://github.com/llnl/Tribol/commit/1c123f04bef123af2e1c806a43e9d4454dc46d27",
+      "id": "O03",
+      "kind": "open_source_implementation",
+      "license_verified": "MIT",
+      "reading_scope": "Force-test diagnostics and assertions, MFEM patch displacement tests, README scope and license.",
+      "verified_content": [
+        "Contact search/enforcement are separately parameterized; patch test spans order, search and enforcement choices.",
+        "One force test uses abs(F)-abs(pSum)<=tol, a one-sided bound, so do not copy it as an equality/conservation gate."
+      ],
+      "applicability_boundary": "MFEM-integrated contact library; ENERGY_MORTAR name is not proof of global work-energy balance; all results are static-source findings.",
+      "artifacts": [
+        {
+          "id": "source/llnl--Tribol/README.md",
+          "requested_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/README.md",
+          "retrieved_utc": "2026-10-30T02:36:06.522302+00:00",
+          "final_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/llnl--Tribol/README.md",
+          "bytes": 3757,
+          "sha256": "6fe6b83f8b2e910d8e0701b518ea839672d2bc705aadc641ad002049fbdbd438"
+        },
+        {
+          "id": "source/llnl--Tribol/LICENSE",
+          "requested_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/LICENSE",
+          "retrieved_utc": "2026-10-30T02:36:06.700720+00:00",
+          "final_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/llnl--Tribol/LICENSE",
+          "bytes": 1104,
+          "sha256": "c460cb9701a89a7defa405826da557e9630932e46a1958b93adfd25419f82571"
+        },
+        {
+          "id": "source/llnl--Tribol/src/tests/tribol_mortar_force.cpp",
+          "requested_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/src/tests/tribol_mortar_force.cpp",
+          "retrieved_utc": "2026-10-30T02:36:07.153801+00:00",
+          "final_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/src/tests/tribol_mortar_force.cpp",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/llnl--Tribol/src/tests/tribol_mortar_force.cpp",
+          "bytes": 14536,
+          "sha256": "cbc550ff38b22991f504035df85ae08f0d61f3343bd2b183b4b261d05cd5dbf0"
+        },
+        {
+          "id": "source/llnl--Tribol/src/tests/tribol_energy_mortar_patch.cpp",
+          "requested_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/src/tests/tribol_energy_mortar_patch.cpp",
+          "retrieved_utc": "2026-10-30T02:36:07.194643+00:00",
+          "final_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/src/tests/tribol_energy_mortar_patch.cpp",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/llnl--Tribol/src/tests/tribol_energy_mortar_patch.cpp",
+          "bytes": 16085,
+          "sha256": "3e17f71381465103a9acf01071a57509d6e0d3a7840f4e986a7843226b103a4f"
+        },
+        {
+          "id": "source/llnl--Tribol/src/examples/mfem_mortar_lm_patch.cpp",
+          "requested_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/src/examples/mfem_mortar_lm_patch.cpp",
+          "retrieved_utc": "2026-10-30T02:36:07.308564+00:00",
+          "final_url": "https://raw.githubusercontent.com/llnl/Tribol/1c123f04bef123af2e1c806a43e9d4454dc46d27/src/examples/mfem_mortar_lm_patch.cpp",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/llnl--Tribol/src/examples/mfem_mortar_lm_patch.cpp",
+          "bytes": 20252,
+          "sha256": "7b8729c7ab235266a03574194836055989bc902dd9e097c25db7c47285385356"
+        }
+      ],
+      "external_code_executed": false,
+      "installed": false
+    },
+    {
+      "repo": "SteveDoyle2/pyNastran",
+      "commit": "f51e9ffa74222f93750618d4766e59f2f96751c3",
+      "branch": "main",
+      "license_api": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "commit_url": "https://github.com/SteveDoyle2/pyNastran/commit/f51e9ffa74222f93750618d4766e59f2f96751c3",
+      "id": "O05",
+      "kind": "open_source_implementation",
+      "license_verified": "BSD-3-Clause-like text; GitHub API NOASSERTION",
+      "reading_scope": "Card validation/verification loop, load summation coordinates/origin/unsupported branch, selected resultant tests, full license.",
+      "verified_content": [
+        "Checks card fields/references separately from loads resultants; sums F/M about explicit p0 and transforms output coordinates.",
+        "Unsupported load types only log warnings before returning partial sums; readiness wrapper must propagate incompleteness.",
+        "Full license has three BSD-style redistribution/non-endorsement conditions despite API NOASSERTION."
+      ],
+      "applicability_boundary": "BDF structure validation does not prove mechanical sufficiency; gravity is optional and defaults false; library does not solve FEA.",
+      "artifacts": [
+        {
+          "id": "source/SteveDoyle2--pyNastran/LICENSE.md",
+          "requested_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/LICENSE.md",
+          "retrieved_utc": "2026-10-30T02:36:07.395249+00:00",
+          "final_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/LICENSE.md",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/SteveDoyle2--pyNastran/LICENSE.md",
+          "bytes": 1523,
+          "sha256": "ed3f3f031a9d1da6802011e40ba0b5582dbcca19b902e259ea197cfca7f9e153"
+        },
+        {
+          "id": "source/SteveDoyle2--pyNastran/README.md",
+          "requested_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/README.md",
+          "retrieved_utc": "2026-10-30T02:36:07.401031+00:00",
+          "final_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/SteveDoyle2--pyNastran/README.md",
+          "bytes": 14143,
+          "sha256": "97e697cec264b7f1cce324435b75135b6e17da9c8ae29d93887a5ea8b407b74e"
+        },
+        {
+          "id": "source/SteveDoyle2--pyNastran/pyNastran/bdf/bdf_interface/verify_validate.py",
+          "requested_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/pyNastran/bdf/bdf_interface/verify_validate.py",
+          "retrieved_utc": "2026-10-30T02:36:07.490703+00:00",
+          "final_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/pyNastran/bdf/bdf_interface/verify_validate.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/SteveDoyle2--pyNastran/pyNastran/bdf/bdf_interface/verify_validate.py",
+          "bytes": 12952,
+          "sha256": "a1f9f34fdae4d9156674d52e7e3eb076cd94bae2b8d72c8e28b620d83508b3ad"
+        },
+        {
+          "id": "source/SteveDoyle2--pyNastran/pyNastran/bdf/mesh_utils/loads.py",
+          "requested_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/pyNastran/bdf/mesh_utils/loads.py",
+          "retrieved_utc": "2026-10-30T02:53:51.461072+00:00",
+          "final_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/pyNastran/bdf/mesh_utils/loads.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/SteveDoyle2--pyNastran/pyNastran/bdf/mesh_utils/loads.py",
+          "bytes": 48576,
+          "sha256": "85a225e8436c4097a2e663c72d02bc43d1844a88cbb9b6a79df22b095103d616"
+        },
+        {
+          "id": "source/SteveDoyle2--pyNastran/pyNastran/bdf/mesh_utils/test/test_sum_loads.py",
+          "requested_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/pyNastran/bdf/mesh_utils/test/test_sum_loads.py",
+          "retrieved_utc": "2026-10-30T02:36:07.842736+00:00",
+          "final_url": "https://raw.githubusercontent.com/SteveDoyle2/pyNastran/f51e9ffa74222f93750618d4766e59f2f96751c3/pyNastran/bdf/mesh_utils/test/test_sum_loads.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/SteveDoyle2--pyNastran/pyNastran/bdf/mesh_utils/test/test_sum_loads.py",
+          "bytes": 25048,
+          "sha256": "3ac9483b9963425bab83f300211b70b577bda15a260c047d25872af6a04b5db7"
+        }
+      ],
+      "external_code_executed": false,
+      "installed": false
+    },
+    {
+      "repo": "Wells-Group/asimov-contact",
+      "commit": "f605fffdcabe470e6d20525c424aa985b36b3c42",
+      "branch": "main",
+      "license_api": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "commit_url": "https://github.com/Wells-Group/asimov-contact/commit/f605fffdcabe470e6d20525c424aa985b36b3c42",
+      "id": "O02",
+      "kind": "open_source_implementation",
+      "license_verified": "MIT",
+      "reading_scope": "Hertz demo, contact-update/Newton convergence paths and selected custom-kernel comparisons.",
+      "verified_content": [
+        "Separate 2D line/3D sphere Hertz predictions, facet tags, contact quadrature, nonlinear convergence and contact detection updates.",
+        "README explicitly describes highly experimental status; Newton failure can raise rather than silently yield accepted output."
+      ],
+      "applicability_boundary": "FEniCSx/Nitsche implementation; demo-generated analytic pressure is not proof of an assertion or a successful local run.",
+      "artifacts": [
+        {
+          "id": "source/Wells-Group--asimov-contact/README.md",
+          "requested_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/README.md",
+          "retrieved_utc": "2026-10-30T02:36:08.055899+00:00",
+          "final_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/README.md",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/Wells-Group--asimov-contact/README.md",
+          "bytes": 1045,
+          "sha256": "158f9ea2a5724ae3ab712dc58c32a779ce41b5484eb480dc1192adef3417055c"
+        },
+        {
+          "id": "source/Wells-Group--asimov-contact/LICENSE",
+          "requested_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/LICENSE",
+          "retrieved_utc": "2026-10-30T02:36:08.110405+00:00",
+          "final_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/LICENSE",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/Wells-Group--asimov-contact/LICENSE",
+          "bytes": 1079,
+          "sha256": "5021baab4b1e6c4f2bca24d2f245e7c7c6eab1edfba6c250712425723b21dc94"
+        },
+        {
+          "id": "source/Wells-Group--asimov-contact/python/demos/hertz_contact/demo_hertzian_contact.py",
+          "requested_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/python/demos/hertz_contact/demo_hertzian_contact.py",
+          "retrieved_utc": "2026-10-30T02:36:08.261825+00:00",
+          "final_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/python/demos/hertz_contact/demo_hertzian_contact.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/Wells-Group--asimov-contact/python/demos/hertz_contact/demo_hertzian_contact.py",
+          "bytes": 17512,
+          "sha256": "93e44a3b071cc16152f9748f684ee9f20541aa1e7d2bccdd601617827195d4ad"
+        },
+        {
+          "id": "source/Wells-Group--asimov-contact/python/dolfinx_contact/newton_solver.py",
+          "requested_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/python/dolfinx_contact/newton_solver.py",
+          "retrieved_utc": "2026-10-30T02:36:08.366756+00:00",
+          "final_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/python/dolfinx_contact/newton_solver.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/Wells-Group--asimov-contact/python/dolfinx_contact/newton_solver.py",
+          "bytes": 16031,
+          "sha256": "c9969132edb2b98da4aa2168583cbb319c27de4cb547f479d5a7383f675962c0"
+        },
+        {
+          "id": "source/Wells-Group--asimov-contact/python/tests/test_contact_kernels.py",
+          "requested_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/python/tests/test_contact_kernels.py",
+          "retrieved_utc": "2026-10-30T02:36:08.668178+00:00",
+          "final_url": "https://raw.githubusercontent.com/Wells-Group/asimov-contact/f605fffdcabe470e6d20525c424aa985b36b3c42/python/tests/test_contact_kernels.py",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/Wells-Group--asimov-contact/python/tests/test_contact_kernels.py",
+          "bytes": 11619,
+          "sha256": "4dc0072dd437917c759b570991ef7ab27e96de264ea48a865631c8d22a8742a6"
+        }
+      ],
+      "external_code_executed": false,
+      "installed": false
+    },
+    {
+      "repo": "codeaster/src",
+      "commit": "7cb48262af47548277f4824ea47f1cc90848f057",
+      "branch": "main",
+      "commit_url": "https://gitlab.com/codeaster/src/-/commit/7cb48262af47548277f4824ea47f1cc90848f057",
+      "provider": "GitLab",
+      "id": "O06",
+      "kind": "open_source_implementation",
+      "license_verified": "GPL-3.0-or-later per inspected test headers",
+      "reading_scope": "Pinned SSNV104 A/B command files, reference result assertions, export settings, copyright/license headers.",
+      "verified_content": [
+        "SSNV104A explicitly compares SIYY analytic -2798.3 with 14% tolerance while preserving separate regression values.",
+        "SSNV104B exercises penalty configurations with a distinct 7% analytic criterion; these are example-specific tolerances.",
+        "README distinguishes public src from repositories containing proprietary validation/material data."
+      ],
+      "applicability_boundary": "Do not copy GPL source into a differently licensed stdlib package; implement independent generic rules and cite. Public source differs from any proprietary data collections.",
+      "artifacts": [
+        {
+          "id": "source/codeaster--src/README.md",
+          "requested_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/README.md/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+          "retrieved_utc": "2026-10-30T02:48:42.866109+00:00",
+          "final_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/README.md/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/codeaster--src/README.md",
+          "bytes": 3660,
+          "sha256": "b6dde7a1ef012eea6297b0d18b6d054e4bf1545879e564c8f2a16f2dcf5f8306"
+        },
+        {
+          "id": "source/codeaster--src/astest/ssnv104a.comm",
+          "requested_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/astest%2Fssnv104a.comm/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+          "retrieved_utc": "2026-10-30T02:48:43.814513+00:00",
+          "final_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/astest%2Fssnv104a.comm/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/codeaster--src/astest/ssnv104a.comm",
+          "bytes": 10060,
+          "sha256": "a2ac8561662fa1e87e9ca821d0d386730b6850c0011d4305ed858c4b57a157de"
+        },
+        {
+          "id": "source/codeaster--src/astest/ssnv104a.export",
+          "requested_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/astest%2Fssnv104a.export/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+          "retrieved_utc": "2026-10-30T02:48:43.868290+00:00",
+          "final_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/astest%2Fssnv104a.export/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/codeaster--src/astest/ssnv104a.export",
+          "bytes": 195,
+          "sha256": "0756da2fec38344ed5801901767b22690e5daf8832ee6552201eed7fda3f3b57"
+        },
+        {
+          "id": "source/codeaster--src/astest/ssnv104b.comm",
+          "requested_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/astest%2Fssnv104b.comm/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+          "retrieved_utc": "2026-10-30T02:48:43.963083+00:00",
+          "final_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/astest%2Fssnv104b.comm/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "local_file": "cache/source/codeaster--src/astest/ssnv104b.comm",
+          "bytes": 9165,
+          "sha256": "d230eeec3408a82f37f914a536d6cd0a99a1963318135968366b8931ec720387"
+        }
+      ],
+      "external_code_executed": false,
+      "installed": false
+    }
+  ],
+  "failed_or_noncontent_attempts": [
+    {
+      "id": "asme-vv10.html",
+      "requested_url": "https://www.asme.org/codes-standards/find-codes-standards/v-v-10-standard-verification-validation-computational-solid-mechanics",
+      "retrieved_utc": "2026-10-30T02:33:34.442998+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "nafems-search.html",
+      "requested_url": "https://www.nafems.org/knowledgebase/",
+      "retrieved_utc": "2026-10-30T02:33:34.509642+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "codeaster-ssnv104.pdf",
+      "requested_url": "https://www.code-aster.org/V2/doc/v15/en/man_v/v6/v6.04.104.pdf",
+      "retrieved_utc": "2026-10-30T02:33:35.622254+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "sandia-vv.json",
+      "requested_url": "https://api.osti.gov/api/v1/records?search=verification%20validation%20computational%20fluid%20dynamics%20Oberkampf%20Trucano&rows=4",
+      "retrieved_utc": "2026-10-30T02:33:36.417180+00:00",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>"
+    },
+    {
+      "id": "nasa-spatial.html",
+      "requested_url": "https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html",
+      "retrieved_utc": "2026-10-30T02:36:08.774321+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)>"
+    },
+    {
+      "id": "nasa-verify.html",
+      "requested_url": "https://www.grc.nasa.gov/www/wind/valid/tutorial/verify.html",
+      "retrieved_utc": "2026-10-30T02:36:09.014978+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)>"
+    },
+    {
+      "id": "asme-search.html",
+      "requested_url": "https://www.asme.org/codes-standards/find-codes-standards/v-v-10-verification-validation-computational-solid-mechanics",
+      "retrieved_utc": "2026-10-30T02:36:09.530105+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "codeaster-doc-index.html",
+      "requested_url": "https://www.code-aster.org/V2/doc/default/en/index.php?man=V",
+      "retrieved_utc": "2026-10-30T02:36:09.540972+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "codeaster-ssnv104-fr.pdf",
+      "requested_url": "https://www.code-aster.org/V2/doc/default/fr/man_v/v6/v6.04.104.pdf",
+      "retrieved_utc": "2026-10-30T02:36:09.778022+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "asme-vv10-product.html",
+      "requested_url": "https://www.asme.org/codes-standards/find-codes-standards/v-v-10-standard-for-verification-and-validation-in-computational-solid-mechanics",
+      "retrieved_utc": "2026-10-30T02:40:05.682796+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "asme-vv-home.html",
+      "requested_url": "https://www.asme.org/codes-standards/publications-information/verification-validation",
+      "retrieved_utc": "2026-10-30T02:40:05.727357+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "springer-vv-overview.html",
+      "requested_url": "https://link.springer.com/article/10.1007/s00366-007-0072-z",
+      "retrieved_utc": "2026-10-30T02:40:06.768010+00:00",
+      "final_url": "https://link.springer.com/article/10.1007/s00366-007-0072-z",
+      "content_type": "text/html; charset=utf-8",
+      "http_status": 200,
+      "local_file": "cache/springer-vv-overview.html",
+      "bytes": 3038,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea"
+    },
+    {
+      "id": "nasa-spatial-alternate.html",
+      "requested_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/verification-assessment/",
+      "retrieved_utc": "2026-10-30T02:40:07.028719+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "asme-ddg.html",
+      "requested_url": "https://html.duckduckgo.com/html/?q=ASME+V%26V+10+2019+standard+site%3Aasme.org",
+      "retrieved_utc": "2026-10-30T02:45:40.317076+00:00",
+      "final_url": "https://html.duckduckgo.com/html/?q=ASME+V%26V+10+2019+standard+site%3Aasme.org",
+      "content_type": "text/html; charset=UTF-8",
+      "http_status": 202,
+      "local_file": "cache/asme-ddg.html",
+      "bytes": 14302,
+      "sha256": "c976a110299c2d583b791b9e552ccf0c1008edf34a3e211e613759ecc0e7a6e6"
+    },
+    {
+      "id": "codeaster-doc-gitlab.json",
+      "requested_url": "https://gitlab.com/api/v4/projects/codeaster%2Fdoc",
+      "retrieved_utc": "2026-10-30T02:45:40.318076+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "source/codeaster--src/LICENSE.txt",
+      "requested_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/LICENSE.txt/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+      "retrieved_utc": "2026-10-30T02:48:42.866109+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "source/codeaster--src/COPYING",
+      "requested_url": "https://gitlab.com/api/v4/projects/codeaster%2Fsrc/repository/files/COPYING/raw?ref=7cb48262af47548277f4824ea47f1cc90848f057",
+      "retrieved_utc": "2026-10-30T02:48:42.966912+00:00",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "supplementary_metadata_only": [
+    {
+      "doi": "10.1115/1.2910291",
+      "scope": "Crossref bibliographic record only; not counted as reviewed text"
+    },
+    {
+      "doi": "10.1115/1.2960953",
+      "scope": "Crossref bibliographic record only; not counted as reviewed text"
+    },
+    {
+      "doi": "10.1007/s00366-007-0072-z",
+      "scope": "Crossref metadata verified; publisher challenge prevented full text. Not counted as reviewed text."
+    }
+  ],
+  "distribution": {
+    "public": [
+      "LITERATURE-AND-OPEN-SOURCE.md",
+      "sources.json",
+      "repositories.json"
+    ],
+    "local_only": [
+      "cache/",
+      "retrieval.json",
+      "*-plan.json"
+    ],
+    "note": "Links and hashes are delivered; downloaded full text/code/images are not bundled."
+  }
+}

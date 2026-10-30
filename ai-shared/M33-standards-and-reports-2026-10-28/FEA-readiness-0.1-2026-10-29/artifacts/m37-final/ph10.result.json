@@ -1,0 +1,632 @@
+{
+  "schema": "fea-readiness.result/0.1",
+  "input_sha256": "a5c3fbc646170e73ffd0826a8f8afef0842ebcbedffc18e6ca31acb720682818",
+  "run": {
+    "returncode": 0,
+    "timed_out": false,
+    "final_step_complete": true,
+    "error_free": true,
+    "finished_marker": true,
+    "dat_present": true,
+    "complete": true,
+    "scope": "Process and final step only; raw field completeness and physical acceptance require result review",
+    "input_sha256": "a5c3fbc646170e73ffd0826a8f8afef0842ebcbedffc18e6ca31acb720682818"
+  },
+  "sources": [
+    {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-ph10-ph11-evidence\\ph10\\L3_C001_G1_ph10_d12.inp",
+      "sha256": "a5c3fbc646170e73ffd0826a8f8afef0842ebcbedffc18e6ca31acb720682818"
+    },
+    {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-ph10-ph11-evidence\\ph10\\L3_C001_G1_ph10_d12.dat",
+      "sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-ph10-ph11-evidence\\ph10\\L3_C001_G1_ph10_d12.log",
+      "sha256": "af13281ae3b09f93d3aff61e68a0c8fc2b156ddb770fc22181eca162f2b96619"
+    },
+    {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-ph10-ph11-evidence\\ph10\\L3_C001_G1_ph10_d12.sta",
+      "sha256": "8b81ef2eb70c7ca8b3e32c0a117f8d54ce1387cbcf8fbc725b070d5945220222"
+    },
+    {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-ph10-ph11-evidence\\ph10\\L3_C001_G1_ph10_d12.meta.json",
+      "sha256": "0ebf4036b12b313260dadc6682b82b854931467cc3370b8ee1061c28f3a9842b"
+    },
+    {
+      "path": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\preprocessing-work\\m37-ph10-ph11-evidence\\ph10\\repeat-record.json",
+      "sha256": "18e4c40d66c2e3a41e07f96aee3e0cc63248874b4d18cad15b7ea892e99fc49d"
+    }
+  ],
+  "balance_residuals": [
+    {
+      "name": "wheel_contact_force_residual_rel",
+      "value": 6.912479340685832e-08,
+      "limit": 0.0001,
+      "definition": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison. Diagnostic print-precision screen 1e-4; original mechanical gates unchanged.",
+      "kind": "force",
+      "free_body": "wheel",
+      "moment_origin_mm": [
+        0,
+        56,
+        0
+      ],
+      "scale": 44.340740519829666,
+      "extraction_id": "pinned_extended_preflight.phase_audit:CF_RF_final_step",
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "name": "wheel_contact_moment_residual_rel",
+      "value": 1.5709155145143685e-05,
+      "limit": 0.0001,
+      "definition": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison. Diagnostic print-precision screen 1e-4; original mechanical gates unchanged.",
+      "kind": "moment",
+      "free_body": "wheel",
+      "moment_origin_mm": [
+        0,
+        56,
+        0
+      ],
+      "scale": 1504.4345066049298,
+      "extraction_id": "pinned_extended_preflight.phase_audit:CF_RF_final_step",
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "name": "pinion_contact_vs_input_torque_residual_rel",
+      "value": 3.604000000000269e-05,
+      "limit": 0.0001,
+      "definition": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison. Diagnostic print-precision screen 1e-4; original mechanical gates unchanged.",
+      "kind": "moment",
+      "free_body": "pinion_torque_only",
+      "moment_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "scale": 833.3333333333334,
+      "extraction_id": "pinned_extended_preflight.phase_audit:CF_RF_final_step",
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    }
+  ],
+  "active_contact_elements": [
+    {
+      "element": 7779,
+      "side": 3,
+      "pmax_MPa": 5283.265,
+      "edge_points_mm": [
+        [
+          4.58415610329,
+          21.3791318132
+        ],
+        [
+          4.53280795077,
+          21.5279737105
+        ],
+        [
+          4.5587161175,
+          21.4536329827
+        ]
+      ],
+      "edge_length_chord_mm": 0.157450129117383,
+      "edge_chord_over_contact_target_h": 40.34294294959255,
+      "nearest_theoretical_contact_point_mm": 5.90577681244577,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 9035,
+      "side": 3,
+      "pmax_MPa": 571.0029,
+      "edge_points_mm": [
+        [
+          -1.05401922548,
+          19.616403959
+        ],
+        [
+          -1.05534707113,
+          19.6200485961
+        ],
+        [
+          -1.05468283244,
+          19.6182263923
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988742045075,
+      "edge_chord_over_contact_target_h": 0.9939008776916859,
+      "nearest_theoretical_contact_point_mm": 0.0019729315491783237,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6353,
+      "side": 3,
+      "pmax_MPa": 570.5682,
+      "edge_points_mm": [
+        [
+          -1.05269389811,
+          19.6127584058
+        ],
+        [
+          -1.05401922548,
+          19.616403959
+        ],
+        [
+          -1.05335624798,
+          19.6145812964
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988369625456,
+      "edge_chord_over_contact_target_h": 0.9939007822677982,
+      "nearest_theoretical_contact_point_mm": 0.001906056779087535,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6333,
+      "side": 3,
+      "pmax_MPa": 569.1765,
+      "edge_points_mm": [
+        [
+          -1.05534707113,
+          19.6200485961
+        ],
+        [
+          -1.056677447,
+          19.6236922998
+        ],
+        [
+          -1.05601194147,
+          19.6218705641
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789788100570127,
+      "edge_chord_over_contact_target_h": 0.993898332850154,
+      "nearest_theoretical_contact_point_mm": 0.0058519154914843255,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6318,
+      "side": 3,
+      "pmax_MPa": 565.2813,
+      "edge_points_mm": [
+        [
+          -1.05137107302,
+          19.6091119435
+        ],
+        [
+          -1.05269389811,
+          19.6127584058
+        ],
+        [
+          -1.05203217406,
+          19.6109352886
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988724404876,
+      "edge_chord_over_contact_target_h": 0.9939008731717941,
+      "nearest_theoretical_contact_point_mm": 0.005785044045387254,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 8123,
+      "side": 3,
+      "pmax_MPa": 562.1158,
+      "edge_points_mm": [
+        [
+          -1.056677447,
+          19.6236922998
+        ],
+        [
+          -1.05801037468,
+          19.6273350798
+        ],
+        [
+          -1.05734359093,
+          19.6255138058
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878987281306172,
+      "edge_chord_over_contact_target_h": 0.9939005034112292,
+      "nearest_theoretical_contact_point_mm": 0.009730896346802279,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6351,
+      "side": 3,
+      "pmax_MPa": 554.8998,
+      "edge_points_mm": [
+        [
+          -1.05005073446,
+          19.6054645805
+        ],
+        [
+          -1.05137107302,
+          19.6091119435
+        ],
+        [
+          -1.05071059417,
+          19.6072883748
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789883689931246,
+      "edge_chord_over_contact_target_h": 0.9939007821057779,
+      "nearest_theoretical_contact_point_mm": 0.009664031819060418,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6307,
+      "side": 3,
+      "pmax_MPa": 549.3674,
+      "edge_points_mm": [
+        [
+          -1.05801037468,
+          19.6273350798
+        ],
+        [
+          -1.05934586771,
+          19.6309769248
+        ],
+        [
+          -1.05867779957,
+          19.6291561196
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878991703675383,
+      "edge_chord_over_contact_target_h": 0.9939016365407464,
+      "nearest_theoretical_contact_point_mm": 0.013609884016244633,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6317,
+      "side": 3,
+      "pmax_MPa": 538.74,
+      "edge_points_mm": [
+        [
+          -1.04873286589,
+          19.601816324
+        ],
+        [
+          -1.05005073446,
+          19.6054645805
+        ],
+        [
+          -1.04939149287,
+          19.6036405646
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789886642766214,
+      "edge_chord_over_contact_target_h": 0.9939008577653238,
+      "nearest_theoretical_contact_point_mm": 0.013543017684287905,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6356,
+      "side": 3,
+      "pmax_MPa": 529.622,
+      "edge_points_mm": [
+        [
+          -1.05934586771,
+          19.6309769248
+        ],
+        [
+          -1.0606839392,
+          19.6346178282
+        ],
+        [
+          -1.06001458038,
+          19.6327974931
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878996375415791,
+      "edge_chord_over_contact_target_h": 0.9939028335658476,
+      "nearest_theoretical_contact_point_mm": 0.01748887274691743,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 7566,
+      "side": 3,
+      "pmax_MPa": 516.5346,
+      "edge_points_mm": [
+        [
+          -1.04741745101,
+          19.5981671823
+        ],
+        [
+          -1.04873286589,
+          19.601816324
+        ],
+        [
+          -1.0480748525,
+          19.5999918625
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789884574744397,
+      "edge_chord_over_contact_target_h": 0.9939008047770622,
+      "nearest_theoretical_contact_point_mm": 0.017422004765545798,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6325,
+      "side": 3,
+      "pmax_MPa": 500.4066,
+      "edge_points_mm": [
+        [
+          -1.0606839392,
+          19.6346178282
+        ],
+        [
+          -1.0620244217,
+          19.6382578361
+        ],
+        [
+          -1.06135389231,
+          19.6364379373
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789883790578917,
+      "edge_chord_over_contact_target_h": 0.993900784684641,
+      "nearest_theoretical_contact_point_mm": 0.021367860206269608,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6321,
+      "side": 3,
+      "pmax_MPa": 487.5109,
+      "edge_points_mm": [
+        [
+          -1.04610447282,
+          19.594517163
+        ],
+        [
+          -1.04741745101,
+          19.5981671823
+        ],
+        [
+          -1.04676065827,
+          19.5963422815
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988607587013,
+      "edge_chord_over_contact_target_h": 0.9939008432399268,
+      "nearest_theoretical_contact_point_mm": 0.021300987194564802,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 7565,
+      "side": 3,
+      "pmax_MPa": 466.1597,
+      "edge_points_mm": [
+        [
+          -1.0620244217,
+          19.6382578361
+        ],
+        [
+          -1.06336721496,
+          19.6418969922
+        ],
+        [
+          -1.06269552881,
+          19.640077522
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789883809145108,
+      "edge_chord_over_contact_target_h": 0.9939007851603565,
+      "nearest_theoretical_contact_point_mm": 0.025246842262536758,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 8989,
+      "side": 3,
+      "pmax_MPa": 451.0853,
+      "edge_points_mm": [
+        [
+          -1.04479391427,
+          19.5908662742
+        ],
+        [
+          -1.04610447282,
+          19.594517163
+        ],
+        [
+          -1.04544889173,
+          19.5926918256
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789886237186057,
+      "edge_chord_over_contact_target_h": 0.9939008473732731,
+      "nearest_theoretical_contact_point_mm": 0.025179968786839712,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 7506,
+      "side": 3,
+      "pmax_MPa": 423.3618,
+      "edge_points_mm": [
+        [
+          -1.06336721496,
+          19.6418969922
+        ],
+        [
+          -1.06471233524,
+          19.6455352896
+        ],
+        [
+          -1.06403948367,
+          19.6437162499
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878989112968585,
+      "edge_chord_over_contact_target_h": 0.9939009727322303,
+      "nearest_theoretical_contact_point_mm": 0.029125820492453113,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 7828,
+      "side": 3,
+      "pmax_MPa": 404.4754,
+      "edge_points_mm": [
+        [
+          -1.04348575804,
+          19.5872145241
+        ],
+        [
+          -1.04479391427,
+          19.5908662742
+        ],
+        [
+          -1.04413953693,
+          19.5890405062
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988465431039,
+      "edge_chord_over_contact_target_h": 0.9939008068157562,
+      "nearest_theoretical_contact_point_mm": 0.029058945523681018,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6326,
+      "side": 3,
+      "pmax_MPa": 367.9818,
+      "edge_points_mm": [
+        [
+          -1.06471233524,
+          19.6455352896
+        ],
+        [
+          -1.06605979774,
+          19.6491727195
+        ],
+        [
+          -1.06538577274,
+          19.6473541135
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878988459162532,
+      "edge_chord_over_contact_target_h": 0.9939008052095968,
+      "nearest_theoretical_contact_point_mm": 0.033004794496904376,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6303,
+      "side": 3,
+      "pmax_MPa": 343.2791,
+      "edge_points_mm": [
+        [
+          -1.04217998402,
+          19.5835619097
+        ],
+        [
+          -1.04348575804,
+          19.5872145241
+        ],
+        [
+          -1.04283257436,
+          19.585388326
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789995806128522,
+      "edge_chord_over_contact_target_h": 0.9939036548232382,
+      "nearest_theoretical_contact_point_mm": 0.03293792275311647,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 9008,
+      "side": 3,
+      "pmax_MPa": 293.1505,
+      "edge_points_mm": [
+        [
+          -1.06605979774,
+          19.6491727195
+        ],
+        [
+          -1.06740961824,
+          19.6528092752
+        ],
+        [
+          -1.06673441258,
+          19.6509911079
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789886235215615,
+      "edge_chord_over_contact_target_h": 0.9939008473227852,
+      "nearest_theoretical_contact_point_mm": 0.03688376658679099,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 8752,
+      "side": 3,
+      "pmax_MPa": 265.1652,
+      "edge_points_mm": [
+        [
+          -1.04087677191,
+          19.5799084039
+        ],
+        [
+          -1.04217998402,
+          19.5835619097
+        ],
+        [
+          -1.04152804323,
+          19.5817352762
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789774985526116,
+      "edge_chord_over_contact_target_h": 0.9938979968075764,
+      "nearest_theoretical_contact_point_mm": 0.03681689671206117,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6737,
+      "side": 3,
+      "pmax_MPa": 197.5898,
+      "edge_points_mm": [
+        [
+          -1.06740961824,
+          19.6528092752
+        ],
+        [
+          -1.06876181127,
+          19.6564449475
+        ],
+        [
+          -1.06808541734,
+          19.6546272225
+        ]
+      ],
+      "edge_length_chord_mm": 0.003878986860427074,
+      "edge_chord_over_contact_target_h": 0.9939003955707242,
+      "nearest_theoretical_contact_point_mm": 0.0407627329147724,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    },
+    {
+      "element": 6306,
+      "side": 3,
+      "pmax_MPa": 125.2691,
+      "edge_points_mm": [
+        [
+          -1.03957622502,
+          19.5762539342
+        ],
+        [
+          -1.04087677191,
+          19.5799084039
+        ],
+        [
+          -1.04022616598,
+          19.5780812881
+        ]
+      ],
+      "edge_length_chord_mm": 0.0038789909772129023,
+      "edge_chord_over_contact_target_h": 0.9939014504015886,
+      "nearest_theoretical_contact_point_mm": 0.04069585799864103,
+      "source_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f"
+    }
+  ],
+  "contact_mesh_trigger_ratio": 2.0,
+  "mesh_study": null,
+  "theory_comparison": {
+    "actual": 5283.265,
+    "predicted": 631.0807746897741,
+    "applicable": null,
+    "tolerance": null,
+    "definition": "UNKNOWN: global maximum includes neighboring tip contact; nominal single-pair Hertz cannot yet classify its peak"
+  },
+  "scope": "Historical actual solver results replayed; no new solve, no change to frozen numerical acceptance"
+}

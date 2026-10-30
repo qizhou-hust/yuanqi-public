@@ -1,0 +1,14 @@
+{
+  "contact": {
+    "method": "hertz_line_two_convex_bodies",
+    "q_N_per_mm": 44.340740519829666,
+    "E_star_MPa": 113186.81318681319,
+    "R_eff_mm": 4.397401842758598,
+    "half_width_mm": 0.04683350819917512,
+    "p0_MPa": 602.7349481549439,
+    "a_over_min_radius": 0.0068466008673911125,
+    "integrated_line_load_N_per_mm": 44.340740519829666,
+    "scope": "Smooth nonconforming convex cylinders, frictionless elastic small contact patch, plane-strain interior; no edge/plastic/roughness correction",
+    "reference": "M37 post.hertz_line; classical Hertz line contact (see research sources)"
+  }
+}

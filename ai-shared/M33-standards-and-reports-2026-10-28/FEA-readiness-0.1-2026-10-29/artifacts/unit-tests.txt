@@ -1,0 +1,28 @@
+test_balance_needs_scale_and_common_origin (test_review.ReviewTests.test_balance_needs_scale_and_common_origin) ... ok
+test_contact_uses_actual_support (test_review.ReviewTests.test_contact_uses_actual_support) ... ok
+test_convergence_identity_monotonic_and_order (test_review.ReviewTests.test_convergence_identity_monotonic_and_order) ... ok
+test_incomplete_scalar_balance_cannot_substitute_free_body (test_review.ReviewTests.test_incomplete_scalar_balance_cannot_substitute_free_body) ... ok
+test_mesh_different_region_is_not_convergence (test_review.ReviewTests.test_mesh_different_region_is_not_convergence) ... ok
+test_theory_requires_same_definition_and_eligibility (test_review.ReviewTests.test_theory_requires_same_definition_and_eligibility) ... ok
+test_existing_run_directory_is_rejected_before_solver_launch (test_runner_execution.RunnerExecutionTests.test_existing_run_directory_is_rejected_before_solver_launch) ... ok
+test_incomplete_final_step_is_not_complete (test_runner_execution.RunnerExecutionTests.test_incomplete_final_step_is_not_complete) ... ok
+test_nonzero_solver_exit_is_not_complete (test_runner_execution.RunnerExecutionTests.test_nonzero_solver_exit_is_not_complete) ... ok
+test_solver_hash_mismatch_is_rejected_before_staging (test_runner_execution.RunnerExecutionTests.test_solver_hash_mismatch_is_rejected_before_staging) ... ok
+test_staged_input_or_meta_drift_is_rejected (test_runner_execution.RunnerExecutionTests.test_staged_input_or_meta_drift_is_rejected) ... ok
+test_success_writes_run_record_and_keeps_engineering_acceptance_false (test_runner_execution.RunnerExecutionTests.test_success_writes_run_record_and_keeps_engineering_acceptance_false) ... ok
+test_timeout_is_recorded_and_not_complete (test_runner_execution.RunnerExecutionTests.test_timeout_is_recorded_and_not_complete) ... ok
+test_beam_independent_and_scaling (test_theory.TheoryTests.test_beam_independent_and_scaling) ... ok
+test_frozen_m37_pitch (test_theory.TheoryTests.test_frozen_m37_pitch) ... ok
+test_hertz_scaling_and_integral (test_theory.TheoryTests.test_hertz_scaling_and_integral) ... ok
+test_invalid_domains (test_theory.TheoryTests.test_invalid_domains) ... ok
+test_moment_origin (test_theory.TheoryTests.test_moment_origin) ... ok
+test_no_vacuous_pass (test_theory.TheoryTests.test_no_vacuous_pass) ... ok
+test_completion_is_not_exit_code_alone (test_workflow.WorkflowTests.test_completion_is_not_exit_code_alone) ... ok
+test_drift_block_and_fresh_directory (test_workflow.WorkflowTests.test_drift_block_and_fresh_directory) ... ok
+test_theory_alone_never_ready (test_workflow.WorkflowTests.test_theory_alone_never_ready) ... ok
+test_units_and_invalid_theory (test_workflow.WorkflowTests.test_units_and_invalid_theory) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.265s
+
+OK

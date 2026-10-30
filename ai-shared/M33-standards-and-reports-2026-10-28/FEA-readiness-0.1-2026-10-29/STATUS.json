@@ -1,0 +1,39 @@
+{
+  "schema": "fea-readiness.status/0.1",
+  "version": "0.1.0",
+  "verified_utc": "2026-10-30T03:22:43.079050+00:00",
+  "unit_tests": {
+    "status": "closed",
+    "count": 23,
+    "returncode": 0,
+    "evidence": "artifacts/unit-tests.txt"
+  },
+  "native_replay": {
+    "status": "closed",
+    "solver_invoked": false,
+    "assertions": {
+      "native_matrix": true,
+      "actual_contact_mesh_flagged": true,
+      "theory_unknown_not_failed_physics": true,
+      "raw_sources_intact": true,
+      "actual_run_complete": true,
+      "actual_balance_passes": true,
+      "all_four_semantic_mutations_blocked": true
+    }
+  },
+  "engineering_accepted": false,
+  "new_real_fea_solve": false,
+  "deferred": [
+    "WSL runtime adapter actual launch",
+    "source-field extraction manifest",
+    "actual tooth-section compliance integration",
+    "3D/helical/nonlinear material adapters",
+    "automatic contact refinement"
+  ],
+  "source_unchanged": true,
+  "native_sources": {
+    "count": 15,
+    "changed": []
+  },
+  "wheel": "artifacts/wheel-smoke.json"
+}

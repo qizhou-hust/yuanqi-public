@@ -1,0 +1,69 @@
+{
+  "solver_invoked": false,
+  "rows": [
+    {
+      "mutation": "nonzero_fixed_wheel",
+      "ready": false,
+      "checks": {
+        "case_id": "PASS",
+        "units": "PASS",
+        "analytical_domain": "PASS",
+        "m37_assets": "PASS",
+        "theory_native_binding": "PASS",
+        "prescribed_state": "FAIL",
+        "phase_contact_binding": "PASS",
+        "native_profile": "PASS",
+        "initial_overlap_screen": "PASS",
+        "step_duration": "PASS"
+      }
+    },
+    {
+      "mutation": "wrong_pair_point",
+      "ready": false,
+      "checks": {
+        "case_id": "PASS",
+        "units": "PASS",
+        "analytical_domain": "PASS",
+        "m37_assets": "PASS",
+        "theory_native_binding": "PASS",
+        "prescribed_state": "PASS",
+        "phase_contact_binding": "FAIL",
+        "native_profile": "FAIL",
+        "initial_overlap_screen": "PASS",
+        "step_duration": "PASS"
+      }
+    },
+    {
+      "mutation": "wrong_phase",
+      "ready": false,
+      "checks": {
+        "case_id": "PASS",
+        "units": "PASS",
+        "analytical_domain": "PASS",
+        "m37_assets": "PASS",
+        "theory_native_binding": "PASS",
+        "prescribed_state": "PASS",
+        "phase_contact_binding": "FAIL",
+        "native_profile": "PASS",
+        "initial_overlap_screen": "PASS",
+        "step_duration": "PASS"
+      }
+    },
+    {
+      "mutation": "wrong_preload",
+      "ready": false,
+      "checks": {
+        "case_id": "PASS",
+        "units": "PASS",
+        "analytical_domain": "PASS",
+        "m37_assets": "PASS",
+        "theory_native_binding": "PASS",
+        "prescribed_state": "FAIL",
+        "phase_contact_binding": "PASS",
+        "native_profile": "PASS",
+        "initial_overlap_screen": "PASS",
+        "step_duration": "PASS"
+      }
+    }
+  ]
+}

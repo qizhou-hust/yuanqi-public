@@ -1,0 +1,74 @@
+{
+  "created": "2026-10-29T19:02:52.120539-07:00",
+  "repo": "qizhou-hust/yuanqi-public",
+  "visibility": "public",
+  "mode": "git",
+  "files": [
+    {
+      "path": "files/10/DIN 3967：1978.pdf",
+      "bytes": 10829300,
+      "sha256": "bc5c2245cf12cb8708d98041108d62a021c7eab743b6288bc2fe0a07219b322e"
+    },
+    {
+      "path": "files/10/DIN 6892 (2012-08-00).pdf",
+      "bytes": 11474323,
+      "sha256": "26a7bb8b454fee5e8988bd3bc5d35b663cfa1bd85132b2e2c8fa4733ad318bcb"
+    },
+    {
+      "path": "files/10/DIN 7190-1 2017 English.pdf",
+      "bytes": 11362075,
+      "sha256": "ebe5efded5fa69f8204c368969d5a267a15ee1e12c3179c674f91d3afb88fb85"
+    },
+    {
+      "path": "files/10/DIN 743-1-2012(E).pdf",
+      "bytes": 5538424,
+      "sha256": "0f5ebd44dbe4988f9dc21c029f6b5459a0f39725bd597bdfa7897ec24bfa197a"
+    },
+    {
+      "path": "files/10/DIN 743-2 (2012-12-00).pdf",
+      "bytes": 9137888,
+      "sha256": "0c913f7fccfdce3791d0da2fb29c28bfa97cf284151e9f60cf41946336d470f8"
+    },
+    {
+      "path": "files/10/DIN 743-3 (2012-12-00).pdf",
+      "bytes": 1937603,
+      "sha256": "8d2b46d732815cf26d521fd12210b07441303d66f8897f0fabc651440dde4163"
+    },
+    {
+      "path": "files/10/DIN 743-4-2012(E).pdf",
+      "bytes": 1899728,
+      "sha256": "fadeb86d585c9f17edf58bfe46dada14830c5d27a3b763a5f97a2c4e09233e00"
+    },
+    {
+      "path": "files/10/DIN EN 14179-1 2016 EN.pdf",
+      "bytes": 11028825,
+      "sha256": "72371bdbe909ccc9358f9e149f32d5a503893d747c27b0b2b6a28d54070ee65b"
+    },
+    {
+      "path": "files/10/DIN EN 14179-2 2005 EN.pdf",
+      "bytes": 20324809,
+      "sha256": "6e97bca9b968d296c222b4e90776c1952a64cd93a29f242622d5385b9e8c3d4e"
+    },
+    {
+      "path": "files/10/ISO 281 2007.pdf",
+      "bytes": 28310804,
+      "sha256": "71cc101ac3ef8142bea7c56f5d0db596197dfef954ed21f9866d17608fd69ac4"
+    },
+    {
+      "path": "files/10/ISO TS 6336-20 2022(OCR).pdf",
+      "bytes": 22902366,
+      "sha256": "074202e3a297ebba74df8f6ad277e7f6b96f6204c9f07bde0ceb0ad1d3d133e9"
+    },
+    {
+      "path": "files/10/ISO TS 6336-21 2022(OCR).pdf",
+      "bytes": 21717535,
+      "sha256": "abc7d7b8dd33ed43ee59bd01bfd6da5d914fd9207ddc3463e9e6fe5f7232fc22"
+    },
+    {
+      "path": "files/10/ISO TS 6336-22 2018(OCR).pdf",
+      "bytes": 24464808,
+      "sha256": "47d7bb1b31ecb9f5fbcfd6c0a9e68192319c5e991456e0ff3d12abee78b44d45"
+    }
+  ],
+  "excluded_count": 0
+}

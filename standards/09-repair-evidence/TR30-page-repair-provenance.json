@@ -1,0 +1,17 @@
+{
+  "source": "standards\\core\\ISO TR 6336-30-2022.pdf",
+  "source_sha256": "1a88df52e23b26b367accacf788fca518503346e6c286619e91ad75052a8a55e",
+  "source_pages": 69,
+  "missing_printed_page": 2,
+  "inserted_pdf_page": 8,
+  "preview": "standards\\previews\\ISO-TR-6336-30-2022-PREVIEW.pdf",
+  "preview_sha256": "3bfd40aee62609b1a278494a32c34aceeb7ec1abece98637f64cdaeba7575493",
+  "preview_source_url": "https://cdn.standards.iteh.ai/samples/84147/9ae91150411a40e592ecb65e1429702b/ISO-TR-6336-30-2022.pdf",
+  "preview_pdf_page": 8,
+  "output": "standards\\core\\ISO-TR-6336-30-2022-supplemented-reading-copy.pdf",
+  "output_pages": 70,
+  "output_sha256": "12834eabe980fd66da9a6e41881339ba0ddda0ff8222af6eec3bfc3401e7b2db",
+  "watermarks_retained": true,
+  "original_source_unchanged": true,
+  "status": "SUPPLEMENTED_READING_COPY_NOT_PUBLISHER_ORIGINAL"
+}

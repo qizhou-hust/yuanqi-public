@@ -1,0 +1,404 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 21,
+      "sha256": "a04c1ecee5f831666e805f64d7ab9b1f22cbb8550d7ca83bdad379e5f9a7439c"
+    },
+    {
+      "path": "01-ISO-6336/ISO 6336-1-2019.pdf",
+      "bytes": 22243451,
+      "sha256": "ca377d983183d122a2ccaf4b9e9265ffb24ead0ef020e9819325e7a6a166e694"
+    },
+    {
+      "path": "01-ISO-6336/ISO 6336-2-2019.pdf",
+      "bytes": 6620471,
+      "sha256": "5e7a4b83c2d91292f6ddce324ea2fee16699b1c385d80b76606fec6b459de5b0"
+    },
+    {
+      "path": "01-ISO-6336/ISO 6336-3-2019.pdf",
+      "bytes": 8042305,
+      "sha256": "f00fea96b736a1d0d34e71496afc3338982d4bc8613571a6c882aae2fe89cf04"
+    },
+    {
+      "path": "01-ISO-6336/ISO 6336-5-2016.pdf",
+      "bytes": 7365168,
+      "sha256": "9a9cefda6687b5c5378a3a4ccccc6384fec3a9d61917d11496a7bde05ce072b5"
+    },
+    {
+      "path": "01-ISO-6336/ISO 6336-6-2019.pdf",
+      "bytes": 6229017,
+      "sha256": "8c2632eacbd050fec583925bcf4ce9e9e4b8e86d5ed162d37da674dab3dec0c7"
+    },
+    {
+      "path": "01-ISO-6336/ISO TR 6336-30-2022.pdf",
+      "bytes": 10207792,
+      "sha256": "1a88df52e23b26b367accacf788fca518503346e6c286619e91ad75052a8a55e"
+    },
+    {
+      "path": "01-ISO-6336/ISO TS 6336-20-2022.pdf",
+      "bytes": 5865373,
+      "sha256": "f2b70cb1b15f46e0b9d739317718ea23d8cba14e75aca1bde4dbc460e51978c1"
+    },
+    {
+      "path": "01-ISO-6336/ISO TS 6336-21-2022.pdf",
+      "bytes": 5596528,
+      "sha256": "3a5b2761fab3f70b64fe7903e011d5f093c071bd3cacb23e656abfd2026f8888"
+    },
+    {
+      "path": "01-ISO-6336/ISO TS 6336-4-2019.pdf",
+      "bytes": 4790269,
+      "sha256": "896aa81440b6b5b96b2e4a9bfad761ce51421b8b58fe54055dbdb225b7ab28c6"
+    },
+    {
+      "path": "01-ISO-6336/ISO_TR 6336-31-2018.pdf",
+      "bytes": 6278113,
+      "sha256": "c7c8a245a61e60883ae3e5ccc426686e4a318af9c6ba56e3ef9bc57266327edf"
+    },
+    {
+      "path": "01-ISO-6336/ISO_TS 6336-22-2018.pdf",
+      "bytes": 6197554,
+      "sha256": "8646d115b82c1d6547be077e66d2698284517dc4548cf3abc3f46e55d8da1941"
+    },
+    {
+      "path": "01-ISO-6336/README.md",
+      "bytes": 2058,
+      "sha256": "4c8cdf15ee97f93cfda899fbe2d122c3192d8e2247a304d6155044609eadf599"
+    },
+    {
+      "path": "02-GB-3480/GBT 3480.1-2019 直齿轮和斜齿轮承载能力计算  第1部分：基本原理、概述及通用影响系数.pdf",
+      "bytes": 2219799,
+      "sha256": "e970041a83c65278d5315bb992f1086f6d92b7eed1bff8d0708040fd0390bd68"
+    },
+    {
+      "path": "02-GB-3480/GBT 3480.2-2021 直齿轮和斜齿轮承载能力计算  第2部分：齿面接触强度（点蚀）计算.pdf",
+      "bytes": 955365,
+      "sha256": "4bfba12997b47edadd9ab2674b6f18afb7f9ecb1ef7c9de556098ec7093a4092"
+    },
+    {
+      "path": "02-GB-3480/GBT 3480.3-2021 直齿轮和斜齿轮承载能力计算  第3部分：轮齿弯曲强度计算.pdf",
+      "bytes": 1223964,
+      "sha256": "531d5304d473cc4faa0598c6caf82dc02f5fb4c1084e6a082ed653a53b91b5a3"
+    },
+    {
+      "path": "02-GB-3480/GBT 3480.5-2021 直齿轮和斜齿轮承载能力计算 第5部分：材料的强度和质量.pdf",
+      "bytes": 5348935,
+      "sha256": "ef1c024e350dbf9dd1049983fa417f613508b9301dba97c73c7b654279b03790"
+    },
+    {
+      "path": "02-GB-3480/GBT 3480.6-2018 直齿轮和斜齿轮承载能力计算 第6部分：变载荷条件下的使用寿命计算.pdf",
+      "bytes": 2189568,
+      "sha256": "822650abceca20658a807d3b28db88479f65d65928ebb3ce3887a2bb83558cf6"
+    },
+    {
+      "path": "02-GB-3480/GBZ 3480.4-2024.pdf",
+      "bytes": 7019206,
+      "sha256": "93930bddae06329092e19c48266c92730e5c4c410cac59797bbd9448d69c6f69"
+    },
+    {
+      "path": "02-GB-3480/README.md",
+      "bytes": 2532,
+      "sha256": "c4fb27e26f3b445989571634e4c4427a505653d2b54a18855d9b7a28c4f5c29d"
+    },
+    {
+      "path": "03-M36-shafts-bearings-keys/DIN 6885-1 (2021-06-00).pdf",
+      "bytes": 3424379,
+      "sha256": "085487dc67842ad43c671ff7ffe363385a311b69435bb497799ca3c44e94c220"
+    },
+    {
+      "path": "03-M36-shafts-bearings-keys/DIN 6892 (2012-08-00).pdf",
+      "bytes": 11474323,
+      "sha256": "26a7bb8b454fee5e8988bd3bc5d35b663cfa1bd85132b2e2c8fa4733ad318bcb"
+    },
+    {
+      "path": "03-M36-shafts-bearings-keys/DIN 7190-1 2017 English.pdf",
+      "bytes": 11362075,
+      "sha256": "ebe5efded5fa69f8204c368969d5a267a15ee1e12c3179c674f91d3afb88fb85"
+    },
+    {
+      "path": "03-M36-shafts-bearings-keys/DIN 743-1-2012(E).pdf",
+      "bytes": 5538424,
+      "sha256": "0f5ebd44dbe4988f9dc21c029f6b5459a0f39725bd597bdfa7897ec24bfa197a"
+    },
+    {
+      "path": "03-M36-shafts-bearings-keys/DIN 743-2 (2012-12-00).pdf",
+      "bytes": 9137888,
+      "sha256": "0c913f7fccfdce3791d0da2fb29c28bfa97cf284151e9f60cf41946336d470f8"
+    },
+    {
+      "path": "03-M36-shafts-bearings-keys/DIN 743-3 (2012-12-00).pdf",
+      "bytes": 1937603,
+      "sha256": "8d2b46d732815cf26d521fd12210b07441303d66f8897f0fabc651440dde4163"
+    },
+    {
+      "path": "03-M36-shafts-bearings-keys/DIN 743-4-2012(E).pdf",
+      "bytes": 1899728,
+      "sha256": "fadeb86d585c9f17edf58bfe46dada14830c5d27a3b763a5f97a2c4e09233e00"
+    },
+    {
+      "path": "03-M36-shafts-bearings-keys/ISO 281 2007.pdf",
+      "bytes": 28310804,
+      "sha256": "71cc101ac3ef8142bea7c56f5d0db596197dfef954ed21f9866d17608fd69ac4"
+    },
+    {
+      "path": "03-M36-shafts-bearings-keys/README.md",
+      "bytes": 1666,
+      "sha256": "59343a6df05609104bf3c70736325316d832ffa22b06d755b26df49792cf088c"
+    },
+    {
+      "path": "04-M39-thermal-clearance/DIN 3967：1978.pdf",
+      "bytes": 10829300,
+      "sha256": "bc5c2245cf12cb8708d98041108d62a021c7eab743b6288bc2fe0a07219b322e"
+    },
+    {
+      "path": "04-M39-thermal-clearance/ISO-TR 14179-1-2001.pdf",
+      "bytes": 17648860,
+      "sha256": "19085bec7d8e91c52dc558062ab3c070011b2c7dc1b2ccdc32dd186c542156ee"
+    },
+    {
+      "path": "04-M39-thermal-clearance/README.md",
+      "bytes": 552,
+      "sha256": "31829454495660bdd8211b5d0f915e17a2653c56ef64267b4994fd5646d1c939"
+    },
+    {
+      "path": "05-engineering-readers/DIN-6885-1_2021-06_ENGINEERING_CORRECTIONS.pdf",
+      "bytes": 3226366,
+      "sha256": "b7a1eb87199f0c9ca79704ffc8307b34b7b158d0d4d4275a5a35c6f74b97cccd"
+    },
+    {
+      "path": "05-engineering-readers/ISO-TR-14179-1_WITH_SOURCED_PAGE_ii.pdf",
+      "bytes": 17690386,
+      "sha256": "fff3ccccd8dc41d36bdab6153d26db55860b81c6c3ce3eb289ce583c9f2ce855"
+    },
+    {
+      "path": "05-engineering-readers/ISO-TR-14179-2_ENGINEERING_READER.pdf",
+      "bytes": 12496029,
+      "sha256": "776a1fe2ff873d661cf2ad88916ea50a53ec05db6925854f09961f827252de7f"
+    },
+    {
+      "path": "05-engineering-readers/ISO-TR-6336-30-2022-supplemented-reading-copy.pdf",
+      "bytes": 10460902,
+      "sha256": "12834eabe980fd66da9a6e41881339ba0ddda0ff8222af6eec3bfc3401e7b2db"
+    },
+    {
+      "path": "05-engineering-readers/README.md",
+      "bytes": 1227,
+      "sha256": "82a58b1f1802ef6f195f09cab03f8cdbb5cc58add368ac854f44501fd3c087ff"
+    },
+    {
+      "path": "06-historical-editions/ISO 6336-1-2006.pdf",
+      "bytes": 26998491,
+      "sha256": "be922d8f7da3b310c51453179eeb25ea680e1ce0f3663d311191b4c9e56791df"
+    },
+    {
+      "path": "06-historical-editions/ISO 6336-2-2006.pdf",
+      "bytes": 8473746,
+      "sha256": "1fa7de0e4a1e72f37663ae120cfe6ba6c1c02a429e0541b947eb1bf564b92326"
+    },
+    {
+      "path": "06-historical-editions/ISO 6336-3-2006.pdf",
+      "bytes": 10283275,
+      "sha256": "2b22cefcd3a5ce533c9949611766eae7dfa7ec15810e4bbeb99d06f47992f658"
+    },
+    {
+      "path": "06-historical-editions/ISO 6336-6-2006.pdf",
+      "bytes": 6241089,
+      "sha256": "0e46c907f36e360db18f536fe988d247cc4151d9afcf74b3df152a5ad5684e3d"
+    },
+    {
+      "path": "06-historical-editions/README.md",
+      "bytes": 856,
+      "sha256": "cfdd6d50df09b9e31e8aa94390e57aa663f4ccc78e8677b05c59296c7a9bf407"
+    },
+    {
+      "path": "07-previews/ISO-TR-6336-30-2022-PREVIEW.pdf",
+      "bytes": 1098094,
+      "sha256": "3bfd40aee62609b1a278494a32c34aceeb7ec1abece98637f64cdaeba7575493"
+    },
+    {
+      "path": "07-previews/README.md",
+      "bytes": 375,
+      "sha256": "7ef4b7e46b1fc2bf642694c78aedac74030062d4b5622dac02a9bde7705646b5"
+    },
+    {
+      "path": "08-alternate-copies/ISO TS 6336-20 2022(OCR).pdf",
+      "bytes": 22902366,
+      "sha256": "074202e3a297ebba74df8f6ad277e7f6b96f6204c9f07bde0ceb0ad1d3d133e9"
+    },
+    {
+      "path": "08-alternate-copies/ISO TS 6336-21 2022(OCR).pdf",
+      "bytes": 21717535,
+      "sha256": "abc7d7b8dd33ed43ee59bd01bfd6da5d914fd9207ddc3463e9e6fe5f7232fc22"
+    },
+    {
+      "path": "08-alternate-copies/ISO TS 6336-22 2018(OCR).pdf",
+      "bytes": 24464808,
+      "sha256": "47d7bb1b31ecb9f5fbcfd6c0a9e68192319c5e991456e0ff3d12abee78b44d45"
+    },
+    {
+      "path": "08-alternate-copies/README.md",
+      "bytes": 946,
+      "sha256": "7f6917ab7074257b5a61f753a064a918e8e44304b2113b5e8abf3761bd16c771"
+    },
+    {
+      "path": "09-repair-evidence/.gitattributes",
+      "bytes": 13,
+      "sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b"
+    },
+    {
+      "path": "09-repair-evidence/DIN-6885-1_2021-06_ENGINEERING_CORRECTIONS.pdf",
+      "bytes": 3226366,
+      "sha256": "b7a1eb87199f0c9ca79704ffc8307b34b7b158d0d4d4275a5a35c6f74b97cccd"
+    },
+    {
+      "path": "09-repair-evidence/ENGINEERING_REPAIR_REPORT.pdf",
+      "bytes": 24688,
+      "sha256": "645a294af9d91269db3e7258178fa22bc16325242ce266f58273c9f35c33cc13"
+    },
+    {
+      "path": "09-repair-evidence/ISO-TR-14179-1_WITH_SOURCED_PAGE_ii.pdf",
+      "bytes": 17690386,
+      "sha256": "fff3ccccd8dc41d36bdab6153d26db55860b81c6c3ce3eb289ce583c9f2ce855"
+    },
+    {
+      "path": "09-repair-evidence/ISO-TR-14179-2_ENGINEERING_READER.pdf",
+      "bytes": 12496029,
+      "sha256": "776a1fe2ff873d661cf2ad88916ea50a53ec05db6925854f09961f827252de7f"
+    },
+    {
+      "path": "09-repair-evidence/manifest.json",
+      "bytes": 3964,
+      "sha256": "32b41f2a6604a0455c35b0710b2d868458058130b76292f9cccacfbd70547f18"
+    },
+    {
+      "path": "09-repair-evidence/README.md",
+      "bytes": 1334,
+      "sha256": "1f45d19c84b01adc50121b361bd84f32b2f35da0eb850e8312f8e0fed9047930"
+    },
+    {
+      "path": "09-repair-evidence/SOURCE_CONTEXT.md",
+      "bytes": 770,
+      "sha256": "35e8322ab862edc830f1e685c73e9e03519c0770a9d45b3afed27e0c2b047608"
+    },
+    {
+      "path": "09-repair-evidence/Table12_recovered.csv",
+      "bytes": 363,
+      "sha256": "56230b70790498c549f3843e6f5a36cce68f59d4a0ce2118406dd30d6d873e81"
+    },
+    {
+      "path": "09-repair-evidence/TR30-page-repair-provenance.json",
+      "bytes": 871,
+      "sha256": "d5c816897edd3f7ce0e5c6c7f2e15157646ac325fac9991258a2f9b09f782d3b"
+    },
+    {
+      "path": "09-repair-evidence/verification_results.json",
+      "bytes": 6614,
+      "sha256": "05f4c63a963f3d0eab7f0f4eee2746d90bd5fcf37e99ee618e239d16d7c95174"
+    },
+    {
+      "path": "09-repair-evidence/verify_repairs.py",
+      "bytes": 5340,
+      "sha256": "900a10f54685cc2dc4b7e71ad5c989017d782edfb949aca2e512607027d3dc05"
+    },
+    {
+      "path": "09-repair-evidence/工程修复说明.md",
+      "bytes": 17161,
+      "sha256": "7311d05a9b22bf02e42056146e383c0e743a9430cecb56f76d3b6f14b10e5fc9"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-1-2019.json",
+      "bytes": 297514,
+      "sha256": "3abd723dee09e2460357d222e4e9be83145b9c030ac4033c4aae3d3f61fd8746"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-1-2019.md",
+      "bytes": 290822,
+      "sha256": "cad74c77af0ac49d801e9b88db3ddd5842926e0f9c9a4dbbe0e36fc381a66650"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-2-2019.json",
+      "bytes": 85453,
+      "sha256": "ce471e42ab269fc163f098e6a5bd5287aa7c8f35c349f29e62f45c8e12779079"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-2-2019.md",
+      "bytes": 83577,
+      "sha256": "91c8beb0489a063383d03d12365838420803d3b4061b073b16c6c004460d62e5"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-3-2019-corrected-2020-11.json",
+      "bytes": 110182,
+      "sha256": "e5c05fe2f55f4f5c578b83df5246be51f724d2906c1411bc2e5b3ed982fc45b4"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-3-2019-corrected-2020-11.md",
+      "bytes": 107454,
+      "sha256": "a4cf415d79208b95982582139e9fbe21d6da921a0b433c14a8e055f2a5162da0"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-5-2016.json",
+      "bytes": 99888,
+      "sha256": "4aba5e4f088c4e14a6665fcbab70ac02b9819ff73672cf02991c9601b0f9c497"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-5-2016.md",
+      "bytes": 97652,
+      "sha256": "0b00aec8bdbc1fe2d270922e26e4a0c90c7b9e586d7821855103fc48dfdba7ce"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-6-2019.json",
+      "bytes": 82800,
+      "sha256": "64302d8b5bb8d6bf0043c72edd5be410b91d8f59acb233484d67a7e12bb6a8f6"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-6336-6-2019.md",
+      "bytes": 81034,
+      "sha256": "c5564d42d52e474e5af439a55d5e72299f49e0bb3c435627e074fca103361a95"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-TR-6336-30-2022.json",
+      "bytes": 120495,
+      "sha256": "e0fa15cc30cf26341dd47d0e69a93660f04b58aee634801918e165355d11b327"
+    },
+    {
+      "path": "10-OCR-navigation/ISO-TR-6336-30-2022.md",
+      "bytes": 117490,
+      "sha256": "790e383643eb031560c7b8dba6ea9bdb9cee6bf9b5e21db1d9488b3ea90ddf8d"
+    },
+    {
+      "path": "10-OCR-navigation/README.md",
+      "bytes": 466,
+      "sha256": "53de3c6efe67dbc354dc1148780dc4dc7867132545663724df1d40864c8dda2a"
+    },
+    {
+      "path": "10-OCR-navigation/source-ocr-manifest.json",
+      "bytes": 2446,
+      "sha256": "8337068d5a0b1275d1ce49816a5851061d6dca75a3c72f7e4d96fd586a101225"
+    },
+    {
+      "path": "AI_START_HERE.md",
+      "bytes": 1906,
+      "sha256": "f51342f678e650e6f2ca047c7b1d292e80c67dbb43b555b2537403100d45d17f"
+    },
+    {
+      "path": "CATALOGUE.json",
+      "bytes": 32480,
+      "sha256": "3818cb5366f69820a4a90d54b950000e87b73a56eae2599b7780fb044cf831a4"
+    },
+    {
+      "path": "CATALOGUE.md",
+      "bytes": 9755,
+      "sha256": "8bbbce43f28d6681d88de69a9b274fe7823b6e10a89307333b0fcb2f863371aa"
+    },
+    {
+      "path": "KNOWN_ISSUES.md",
+      "bytes": 2140,
+      "sha256": "fb308e351860ff55c1957024e4fb353aa8929a711b49a58acc82709e8a81b84a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4245,
+      "sha256": "d790b630c4a1ae04db8c4d0b968040bd458c7056991ecedea10fc656fdcce9ab"
+    }
+  ]
+}

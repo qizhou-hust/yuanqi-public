@@ -1,0 +1,574 @@
+{
+  "schema_version": 1,
+  "scope": "Repository standards consolidated on 2026-10-29; not a complete certification corpus",
+  "pdf_count": 39,
+  "files": [
+    {
+      "standard": "ISO 6336-1:2019",
+      "purpose": "基本原理、概述及通用影响系数",
+      "status": "identity_and_sequence_checked",
+      "note": "既有记录已检查封面版次及页码；未逐字逐式认证。",
+      "path": "01-ISO-6336/ISO 6336-1-2019.pdf",
+      "bytes": 22243451,
+      "sha256": "ca377d983183d122a2ccaf4b9e9265ffb24ead0ef020e9819325e7a6a166e694",
+      "pdf_pages": 144,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/core/ISO 6336-1-2019.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO 6336-1-2019.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO%206336-1-2019.pdf"
+    },
+    {
+      "standard": "ISO 6336-2:2019",
+      "purpose": "齿面接触强度（点蚀）",
+      "status": "identity_and_sequence_checked",
+      "note": "既有记录已检查封面版次及页码；未逐字逐式认证。",
+      "path": "01-ISO-6336/ISO 6336-2-2019.pdf",
+      "bytes": 6620471,
+      "sha256": "5e7a4b83c2d91292f6ddce324ea2fee16699b1c385d80b76606fec6b459de5b0",
+      "pdf_pages": 46,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/core/ISO 6336-2-2019.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO 6336-2-2019.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO%206336-2-2019.pdf"
+    },
+    {
+      "standard": "ISO 6336-3:2019",
+      "purpose": "轮齿弯曲强度",
+      "status": "identity_and_sequence_checked",
+      "note": "既有记录已检查封面版次及页码；未逐字逐式认证。 既有检查记录注明2020-11 corrected version。",
+      "path": "01-ISO-6336/ISO 6336-3-2019.pdf",
+      "bytes": 8042305,
+      "sha256": "f00fea96b736a1d0d34e71496afc3338982d4bc8613571a6c882aae2fe89cf04",
+      "pdf_pages": 64,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/core/ISO 6336-3-2019.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO 6336-3-2019.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO%206336-3-2019.pdf"
+    },
+    {
+      "standard": "ISO 6336-5:2016",
+      "purpose": "材料强度和质量",
+      "status": "identity_and_sequence_checked",
+      "note": "既有记录已检查封面版次及页码；未逐字逐式认证。",
+      "path": "01-ISO-6336/ISO 6336-5-2016.pdf",
+      "bytes": 7365168,
+      "sha256": "9a9cefda6687b5c5378a3a4ccccc6384fec3a9d61917d11496a7bde05ce072b5",
+      "pdf_pages": 54,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/core/ISO 6336-5-2016.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO 6336-5-2016.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO%206336-5-2016.pdf"
+    },
+    {
+      "standard": "ISO 6336-6:2019",
+      "purpose": "变载荷寿命",
+      "status": "identity_and_sequence_checked",
+      "note": "既有记录已检查封面版次及页码；未逐字逐式认证。",
+      "path": "01-ISO-6336/ISO 6336-6-2019.pdf",
+      "bytes": 6229017,
+      "sha256": "8c2632eacbd050fec583925bcf4ce9e9e4b8e86d5ed162d37da674dab3dec0c7",
+      "pdf_pages": 44,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/core/ISO 6336-6-2019.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO 6336-6-2019.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO%206336-6-2019.pdf"
+    },
+    {
+      "standard": "ISO/TR 6336-30:2022",
+      "purpose": "ISO 6336 第1、2、3、5部分应用算例",
+      "status": "known_missing_page",
+      "note": "原扫描69页，缺正文第2页；阅读时结合05目录补页本及补页记录。",
+      "path": "01-ISO-6336/ISO TR 6336-30-2022.pdf",
+      "bytes": 10207792,
+      "sha256": "1a88df52e23b26b367accacf788fca518503346e6c286619e91ad75052a8a55e",
+      "pdf_pages": 69,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/core/ISO TR 6336-30-2022.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO TR 6336-30-2022.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO%20TR%206336-30-2022.pdf"
+    },
+    {
+      "standard": "ISO/TS 6336-20:2022",
+      "purpose": "胶合承载能力：闪温法",
+      "status": "catalogued",
+      "note": "沿用既有目录身份，未逐式技术认证。",
+      "path": "01-ISO-6336/ISO TS 6336-20-2022.pdf",
+      "bytes": 5865373,
+      "sha256": "f2b70cb1b15f46e0b9d739317718ea23d8cba14e75aca1bde4dbc460e51978c1",
+      "pdf_pages": 42,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/ISO-supplementary/ISO TS 6336-20-2022.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO TS 6336-20-2022.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO%20TS%206336-20-2022.pdf"
+    },
+    {
+      "standard": "ISO/TS 6336-21:2022",
+      "purpose": "胶合承载能力：积分温度法",
+      "status": "catalogued",
+      "note": "沿用既有目录身份，未逐式技术认证。",
+      "path": "01-ISO-6336/ISO TS 6336-21-2022.pdf",
+      "bytes": 5596528,
+      "sha256": "3a5b2761fab3f70b64fe7903e011d5f093c071bd3cacb23e656abfd2026f8888",
+      "pdf_pages": 44,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/ISO-supplementary/ISO TS 6336-21-2022.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO TS 6336-21-2022.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO%20TS%206336-21-2022.pdf"
+    },
+    {
+      "standard": "ISO/TS 6336-4:2019",
+      "purpose": "齿面断裂承载能力",
+      "status": "catalogued",
+      "note": "沿用既有目录身份，未逐式技术认证。",
+      "path": "01-ISO-6336/ISO TS 6336-4-2019.pdf",
+      "bytes": 4790269,
+      "sha256": "896aa81440b6b5b96b2e4a9bfad761ce51421b8b58fe54055dbdb225b7ab28c6",
+      "pdf_pages": 33,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/ISO-supplementary/ISO TS 6336-4-2019.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO TS 6336-4-2019.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO%20TS%206336-4-2019.pdf"
+    },
+    {
+      "standard": "ISO/TR 6336-31:2018",
+      "purpose": "微点蚀承载能力计算算例",
+      "status": "catalogued",
+      "note": "沿用既有目录身份，未逐式技术认证。",
+      "path": "01-ISO-6336/ISO_TR 6336-31-2018.pdf",
+      "bytes": 6278113,
+      "sha256": "c7c8a245a61e60883ae3e5ccc426686e4a318af9c6ba56e3ef9bc57266327edf",
+      "pdf_pages": 56,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/ISO-supplementary/ISO_TR 6336-31-2018.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO_TR 6336-31-2018.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO_TR%206336-31-2018.pdf"
+    },
+    {
+      "standard": "ISO/TS 6336-22:2018",
+      "purpose": "微点蚀承载能力",
+      "status": "catalogued",
+      "note": "沿用既有目录身份，未逐式技术认证。",
+      "path": "01-ISO-6336/ISO_TS 6336-22-2018.pdf",
+      "bytes": 6197554,
+      "sha256": "8646d115b82c1d6547be077e66d2698284517dc4548cf3abc3f46e55d8da1941",
+      "pdf_pages": 48,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/ISO-supplementary/ISO_TS 6336-22-2018.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO_TS 6336-22-2018.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/01-ISO-6336/ISO_TS%206336-22-2018.pdf"
+    },
+    {
+      "standard": "GB/T 3480.1:2019",
+      "purpose": "基本原理、概述及通用影响系数",
+      "status": "reference_catalogued",
+      "note": "中文参考；不自动等同于同编号ISO版次，未逐页技术审查。",
+      "path": "02-GB-3480/GBT 3480.1-2019 直齿轮和斜齿轮承载能力计算  第1部分：基本原理、概述及通用影响系数.pdf",
+      "bytes": 2219799,
+      "sha256": "e970041a83c65278d5315bb992f1086f6d92b7eed1bff8d0708040fd0390bd68",
+      "pdf_pages": 94,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/GB-reference/GBT 3480.1-2019 直齿轮和斜齿轮承载能力计算  第1部分：基本原理、概述及通用影响系数.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/GBT 3480/GBT 3480.1-2019 直齿轮和斜齿轮承载能力计算  第1部分：基本原理、概述及通用影响系数.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/02-GB-3480/GBT%203480.1-2019%20%E7%9B%B4%E9%BD%BF%E8%BD%AE%E5%92%8C%E6%96%9C%E9%BD%BF%E8%BD%AE%E6%89%BF%E8%BD%BD%E8%83%BD%E5%8A%9B%E8%AE%A1%E7%AE%97%20%20%E7%AC%AC1%E9%83%A8%E5%88%86%EF%BC%9A%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E3%80%81%E6%A6%82%E8%BF%B0%E5%8F%8A%E9%80%9A%E7%94%A8%E5%BD%B1%E5%93%8D%E7%B3%BB%E6%95%B0.pdf"
+    },
+    {
+      "standard": "GB/T 3480.2:2021",
+      "purpose": "齿面接触强度（点蚀）",
+      "status": "reference_catalogued",
+      "note": "中文参考；不自动等同于同编号ISO版次，未逐页技术审查。",
+      "path": "02-GB-3480/GBT 3480.2-2021 直齿轮和斜齿轮承载能力计算  第2部分：齿面接触强度（点蚀）计算.pdf",
+      "bytes": 955365,
+      "sha256": "4bfba12997b47edadd9ab2674b6f18afb7f9ecb1ef7c9de556098ec7093a4092",
+      "pdf_pages": 40,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/GB-reference/GBT 3480.2-2021 直齿轮和斜齿轮承载能力计算  第2部分：齿面接触强度（点蚀）计算.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/GBT 3480/GBT 3480.2-2021 直齿轮和斜齿轮承载能力计算  第2部分：齿面接触强度（点蚀）计算.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/02-GB-3480/GBT%203480.2-2021%20%E7%9B%B4%E9%BD%BF%E8%BD%AE%E5%92%8C%E6%96%9C%E9%BD%BF%E8%BD%AE%E6%89%BF%E8%BD%BD%E8%83%BD%E5%8A%9B%E8%AE%A1%E7%AE%97%20%20%E7%AC%AC2%E9%83%A8%E5%88%86%EF%BC%9A%E9%BD%BF%E9%9D%A2%E6%8E%A5%E8%A7%A6%E5%BC%BA%E5%BA%A6%EF%BC%88%E7%82%B9%E8%9A%80%EF%BC%89%E8%AE%A1%E7%AE%97.pdf"
+    },
+    {
+      "standard": "GB/T 3480.3:2021",
+      "purpose": "轮齿弯曲强度",
+      "status": "reference_catalogued",
+      "note": "中文参考；不自动等同于同编号ISO版次，未逐页技术审查。",
+      "path": "02-GB-3480/GBT 3480.3-2021 直齿轮和斜齿轮承载能力计算  第3部分：轮齿弯曲强度计算.pdf",
+      "bytes": 1223964,
+      "sha256": "531d5304d473cc4faa0598c6caf82dc02f5fb4c1084e6a082ed653a53b91b5a3",
+      "pdf_pages": 60,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/GB-reference/GBT 3480.3-2021 直齿轮和斜齿轮承载能力计算  第3部分：轮齿弯曲强度计算.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/GBT 3480/GBT 3480.3-2021 直齿轮和斜齿轮承载能力计算  第3部分：轮齿弯曲强度计算.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/02-GB-3480/GBT%203480.3-2021%20%E7%9B%B4%E9%BD%BF%E8%BD%AE%E5%92%8C%E6%96%9C%E9%BD%BF%E8%BD%AE%E6%89%BF%E8%BD%BD%E8%83%BD%E5%8A%9B%E8%AE%A1%E7%AE%97%20%20%E7%AC%AC3%E9%83%A8%E5%88%86%EF%BC%9A%E8%BD%AE%E9%BD%BF%E5%BC%AF%E6%9B%B2%E5%BC%BA%E5%BA%A6%E8%AE%A1%E7%AE%97.pdf"
+    },
+    {
+      "standard": "GB/T 3480.5:2021",
+      "purpose": "材料强度和质量",
+      "status": "reference_catalogued",
+      "note": "中文参考；不自动等同于同编号ISO版次，未逐页技术审查。",
+      "path": "02-GB-3480/GBT 3480.5-2021 直齿轮和斜齿轮承载能力计算 第5部分：材料的强度和质量.pdf",
+      "bytes": 5348935,
+      "sha256": "ef1c024e350dbf9dd1049983fa417f613508b9301dba97c73c7b654279b03790",
+      "pdf_pages": 44,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/GB-reference/GBT 3480.5-2021 直齿轮和斜齿轮承载能力计算 第5部分：材料的强度和质量.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/GBT 3480/GBT 3480.5-2021 直齿轮和斜齿轮承载能力计算 第5部分：材料的强度和质量.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/02-GB-3480/GBT%203480.5-2021%20%E7%9B%B4%E9%BD%BF%E8%BD%AE%E5%92%8C%E6%96%9C%E9%BD%BF%E8%BD%AE%E6%89%BF%E8%BD%BD%E8%83%BD%E5%8A%9B%E8%AE%A1%E7%AE%97%20%E7%AC%AC5%E9%83%A8%E5%88%86%EF%BC%9A%E6%9D%90%E6%96%99%E7%9A%84%E5%BC%BA%E5%BA%A6%E5%92%8C%E8%B4%A8%E9%87%8F.pdf"
+    },
+    {
+      "standard": "GB/T 3480.6:2018",
+      "purpose": "变载荷寿命",
+      "status": "reference_catalogued",
+      "note": "中文参考；不自动等同于同编号ISO版次，未逐页技术审查。",
+      "path": "02-GB-3480/GBT 3480.6-2018 直齿轮和斜齿轮承载能力计算 第6部分：变载荷条件下的使用寿命计算.pdf",
+      "bytes": 2189568,
+      "sha256": "822650abceca20658a807d3b28db88479f65d65928ebb3ce3887a2bb83558cf6",
+      "pdf_pages": 28,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/GB-reference/GBT 3480.6-2018 直齿轮和斜齿轮承载能力计算 第6部分：变载荷条件下的使用寿命计算.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/GBT 3480/GBT 3480.6-2018 直齿轮和斜齿轮承载能力计算 第6部分：变载荷条件下的使用寿命计算.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/02-GB-3480/GBT%203480.6-2018%20%E7%9B%B4%E9%BD%BF%E8%BD%AE%E5%92%8C%E6%96%9C%E9%BD%BF%E8%BD%AE%E6%89%BF%E8%BD%BD%E8%83%BD%E5%8A%9B%E8%AE%A1%E7%AE%97%20%E7%AC%AC6%E9%83%A8%E5%88%86%EF%BC%9A%E5%8F%98%E8%BD%BD%E8%8D%B7%E6%9D%A1%E4%BB%B6%E4%B8%8B%E7%9A%84%E4%BD%BF%E7%94%A8%E5%AF%BF%E5%91%BD%E8%AE%A1%E7%AE%97.pdf"
+    },
+    {
+      "standard": "GB/Z 3480.4:2024",
+      "purpose": "齿面断裂承载能力",
+      "status": "reference_catalogued",
+      "note": "中文参考；不自动等同于同编号ISO版次，未逐页技术审查。",
+      "path": "02-GB-3480/GBZ 3480.4-2024.pdf",
+      "bytes": 7019206,
+      "sha256": "93930bddae06329092e19c48266c92730e5c4c410cac59797bbd9448d69c6f69",
+      "pdf_pages": 32,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/GB-reference/GBZ 3480.4-2024.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/GBT 3480/GBZ 3480.4-2024.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/02-GB-3480/GBZ%203480.4-2024.pdf"
+    },
+    {
+      "standard": "DIN 6885-1:2021-06",
+      "purpose": "平键及键槽尺寸与公差",
+      "status": "superseded_with_known_errata",
+      "note": "2021-06已被2021-11修正版替代；05目录按官方公告修正两处质量值，仍有未确认列和脚注。",
+      "path": "03-M36-shafts-bearings-keys/DIN 6885-1 (2021-06-00).pdf",
+      "bytes": 3424379,
+      "sha256": "085487dc67842ad43c671ff7ffe363385a311b69435bb497799ca3c44e94c220",
+      "pdf_pages": 17,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/DIN 6885-1 (2021-06-00).pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/03-M36-shafts-bearings-keys/DIN%206885-1%20%282021-06-00%29.pdf"
+    },
+    {
+      "standard": "DIN 6892:2012-08",
+      "purpose": "平键连接的计算与设计",
+      "status": "catalogued",
+      "note": "已收录；未逐式技术认证。",
+      "path": "03-M36-shafts-bearings-keys/DIN 6892 (2012-08-00).pdf",
+      "bytes": 11474323,
+      "sha256": "26a7bb8b454fee5e8988bd3bc5d35b663cfa1bd85132b2e2c8fa4733ad318bcb",
+      "pdf_pages": 48,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/DIN 6892 (2012-08-00).pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/03-M36-shafts-bearings-keys/DIN%206892%20%282012-08-00%29.pdf"
+    },
+    {
+      "standard": "DIN 7190-1:2017",
+      "purpose": "圆柱面过盈配合：计算与设计",
+      "status": "catalogued",
+      "note": "已收录；未逐式技术认证。",
+      "path": "03-M36-shafts-bearings-keys/DIN 7190-1 2017 English.pdf",
+      "bytes": 11362075,
+      "sha256": "ebe5efded5fa69f8204c368969d5a267a15ee1e12c3179c674f91d3afb88fb85",
+      "pdf_pages": 46,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/DIN 7190-1 2017 English.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/03-M36-shafts-bearings-keys/DIN%207190-1%202017%20English.pdf"
+    },
+    {
+      "standard": "DIN 743-1:2012",
+      "purpose": "轴和轮轴承载能力：基本原理",
+      "status": "catalogued",
+      "note": "已收录；本次整理只核文件与既有记录，不新增技术验收结论。",
+      "path": "03-M36-shafts-bearings-keys/DIN 743-1-2012(E).pdf",
+      "bytes": 5538424,
+      "sha256": "0f5ebd44dbe4988f9dc21c029f6b5459a0f39725bd597bdfa7897ec24bfa197a",
+      "pdf_pages": 25,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/DIN 743-1-2012(E).pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/03-M36-shafts-bearings-keys/DIN%20743-1-2012%28E%29.pdf"
+    },
+    {
+      "standard": "DIN 743-2:2012",
+      "purpose": "轴和轮轴：形状系数与缺口系数",
+      "status": "catalogued",
+      "note": "已收录；本次整理只核文件与既有记录，不新增技术验收结论。",
+      "path": "03-M36-shafts-bearings-keys/DIN 743-2 (2012-12-00).pdf",
+      "bytes": 9137888,
+      "sha256": "0c913f7fccfdce3791d0da2fb29c28bfa97cf284151e9f60cf41946336d470f8",
+      "pdf_pages": 34,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/DIN 743-2 (2012-12-00).pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/03-M36-shafts-bearings-keys/DIN%20743-2%20%282012-12-00%29.pdf"
+    },
+    {
+      "standard": "DIN 743-3:2012",
+      "purpose": "轴和轮轴：材料强度",
+      "status": "catalogued",
+      "note": "已收录；本次整理只核文件与既有记录，不新增技术验收结论。",
+      "path": "03-M36-shafts-bearings-keys/DIN 743-3 (2012-12-00).pdf",
+      "bytes": 1937603,
+      "sha256": "8d2b46d732815cf26d521fd12210b07441303d66f8897f0fabc651440dde4163",
+      "pdf_pages": 9,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/DIN 743-3 (2012-12-00).pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/03-M36-shafts-bearings-keys/DIN%20743-3%20%282012-12-00%29.pdf"
+    },
+    {
+      "standard": "DIN 743-4:2012",
+      "purpose": "轴和轮轴：疲劳与等效损伤应力",
+      "status": "catalogued",
+      "note": "已收录；本次整理只核文件与既有记录，不新增技术验收结论。",
+      "path": "03-M36-shafts-bearings-keys/DIN 743-4-2012(E).pdf",
+      "bytes": 1899728,
+      "sha256": "fadeb86d585c9f17edf58bfe46dada14830c5d27a3b763a5f97a2c4e09233e00",
+      "pdf_pages": 11,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/DIN 743-4-2012(E).pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/03-M36-shafts-bearings-keys/DIN%20743-4-2012%28E%29.pdf"
+    },
+    {
+      "standard": "ISO 281:2007",
+      "purpose": "滚动轴承额定动载荷与额定寿命",
+      "status": "catalogued",
+      "note": "已收录；未逐式技术认证。",
+      "path": "03-M36-shafts-bearings-keys/ISO 281 2007.pdf",
+      "bytes": 28310804,
+      "sha256": "71cc101ac3ef8142bea7c56f5d0db596197dfef954ed21f9866d17608fd69ac4",
+      "pdf_pages": 57,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/ISO 281 2007.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/03-M36-shafts-bearings-keys/ISO%20281%202007.pdf"
+    },
+    {
+      "standard": "DIN 3967:1978",
+      "purpose": "齿轮侧隙、齿厚偏差与齿厚公差",
+      "status": "catalogued",
+      "note": "已收录；未逐式技术认证。",
+      "path": "04-M39-thermal-clearance/DIN 3967：1978.pdf",
+      "bytes": 10829300,
+      "sha256": "bc5c2245cf12cb8708d98041108d62a021c7eab743b6288bc2fe0a07219b322e",
+      "pdf_pages": 24,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/DIN 3967：1978.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/04-M39-thermal-clearance/DIN%203967%EF%BC%9A1978.pdf"
+    },
+    {
+      "standard": "ISO/TR 14179-1:2001",
+      "purpose": "齿轮热容量：95°C油池温度下的热平衡评级",
+      "status": "frontmatter_incomplete",
+      "note": "34页扫描，正文1–30连续、版权页ii未见；05目录有来源补全阅读本。",
+      "path": "04-M39-thermal-clearance/ISO-TR 14179-1-2001.pdf",
+      "bytes": 17648860,
+      "sha256": "19085bec7d8e91c52dc558062ab3c070011b2c7dc1b2ccdc32dd186c542156ee",
+      "pdf_pages": 34,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/ISO-TR 14179-1-2001.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/04-M39-thermal-clearance/ISO-TR%2014179-1-2001.pdf"
+    },
+    {
+      "standard": "DIN 6885-1:2021-06 工程标注本",
+      "purpose": "官方明确质量值更正",
+      "status": "engineering_partial_repair",
+      "note": "修正0.528→0.628和2180→3180；未变成2021-11官方版，未确认列/脚注保留标识。",
+      "path": "05-engineering-readers/DIN-6885-1_2021-06_ENGINEERING_CORRECTIONS.pdf",
+      "bytes": 3226366,
+      "sha256": "b7a1eb87199f0c9ca79704ffc8307b34b7b158d0d4d4275a5a35c6f74b97cccd",
+      "pdf_pages": 18,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/engineering-repair-R1/DIN-6885-1_2021-06_ENGINEERING_CORRECTIONS.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/05-engineering-readers/DIN-6885-1_2021-06_ENGINEERING_CORRECTIONS.pdf"
+    },
+    {
+      "standard": "ISO/TR 14179-1:2001 来源补全本",
+      "purpose": "补入同版预览版权页ii",
+      "status": "engineering_partial_repair",
+      "note": "正式版扫描+同版预览版权页；保留水印，不使用PROOF校样正文，未逐式认证。",
+      "path": "05-engineering-readers/ISO-TR-14179-1_WITH_SOURCED_PAGE_ii.pdf",
+      "bytes": 17690386,
+      "sha256": "fff3ccccd8dc41d36bdab6153d26db55860b81c6c3ce3eb289ce583c9f2ce855",
+      "pdf_pages": 36,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/engineering-repair-R1/ISO-TR-14179-1_WITH_SOURCED_PAGE_ii.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/05-engineering-readers/ISO-TR-14179-1_WITH_SOURCED_PAGE_ii.pdf"
+    },
+    {
+      "standard": "ISO/TR 14179-2:2001 工程阅读本",
+      "purpose": "热容量：损耗、散热与热平衡计算",
+      "status": "engineering_partial_repair",
+      "note": "52页：45页源扫描及前置工程说明。表12从源PDF41恢复到40页；错乱公式参照前置说明，未闭合公式仍未确认。非官方修正版。",
+      "path": "05-engineering-readers/ISO-TR-14179-2_ENGINEERING_READER.pdf",
+      "bytes": 12496029,
+      "sha256": "776a1fe2ff873d661cf2ad88916ea50a53ec05db6925854f09961f827252de7f",
+      "pdf_pages": 52,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/engineering-repair-R1/ISO-TR-14179-2_ENGINEERING_READER.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/05-engineering-readers/ISO-TR-14179-2_ENGINEERING_READER.pdf"
+    },
+    {
+      "standard": "ISO/TR 6336-30:2022",
+      "purpose": "ISO 6336 第1、2、3、5部分应用算例",
+      "status": "sourced_reading_copy",
+      "note": "70页补页阅读本；由同版预览补入正文第2页，保留水印；非出版方重新签发版本。",
+      "path": "05-engineering-readers/ISO-TR-6336-30-2022-supplemented-reading-copy.pdf",
+      "bytes": 10460902,
+      "sha256": "12834eabe980fd66da9a6e41881339ba0ddda0ff8222af6eec3bfc3401e7b2db",
+      "pdf_pages": 70,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/core/ISO-TR-6336-30-2022-supplemented-reading-copy.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/05-engineering-readers/ISO-TR-6336-30-2022-supplemented-reading-copy.pdf"
+    },
+    {
+      "standard": "ISO 6336-1:2006",
+      "purpose": "基本原理、概述及通用影响系数",
+      "status": "historical",
+      "note": "2006历史版本，仅用于历史比较，禁止混入2019版公式链。",
+      "path": "06-historical-editions/ISO 6336-1-2006.pdf",
+      "bytes": 26998491,
+      "sha256": "be922d8f7da3b310c51453179eeb25ea680e1ce0f3663d311191b4c9e56791df",
+      "pdf_pages": 118,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/historical/ISO 6336-1-2006.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO 6336-1-2006.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/06-historical-editions/ISO%206336-1-2006.pdf"
+    },
+    {
+      "standard": "ISO 6336-2:2006",
+      "purpose": "齿面接触强度（点蚀）",
+      "status": "historical",
+      "note": "2006历史版本，仅用于历史比较，禁止混入2019版公式链。",
+      "path": "06-historical-editions/ISO 6336-2-2006.pdf",
+      "bytes": 8473746,
+      "sha256": "1fa7de0e4a1e72f37663ae120cfe6ba6c1c02a429e0541b947eb1bf564b92326",
+      "pdf_pages": 40,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/historical/ISO 6336-2-2006.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO 6336-2-2006.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/06-historical-editions/ISO%206336-2-2006.pdf"
+    },
+    {
+      "standard": "ISO 6336-3:2006",
+      "purpose": "轮齿弯曲强度",
+      "status": "historical",
+      "note": "2006历史版本，仅用于历史比较，禁止混入2019版公式链。",
+      "path": "06-historical-editions/ISO 6336-3-2006.pdf",
+      "bytes": 10283275,
+      "sha256": "2b22cefcd3a5ce533c9949611766eae7dfa7ec15810e4bbeb99d06f47992f658",
+      "pdf_pages": 50,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/historical/ISO 6336-3-2006.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO 6336-3-2006.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/06-historical-editions/ISO%206336-3-2006.pdf"
+    },
+    {
+      "standard": "ISO 6336-6:2006",
+      "purpose": "变载荷寿命",
+      "status": "historical",
+      "note": "2006历史版本，仅用于历史比较，禁止混入2019版公式链。",
+      "path": "06-historical-editions/ISO 6336-6-2006.pdf",
+      "bytes": 6241089,
+      "sha256": "0e46c907f36e360db18f536fe988d247cc4151d9afcf74b3df152a5ad5684e3d",
+      "pdf_pages": 30,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/historical/ISO 6336-6-2006.pdf",
+        "ai-shared/M33-standards-and-reports-2026-10-28/standards-source/ISO 6336-6-2006.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/06-historical-editions/ISO%206336-6-2006.pdf"
+    },
+    {
+      "standard": "ISO/TR 6336-30:2022",
+      "purpose": "ISO 6336 第1、2、3、5部分应用算例",
+      "status": "preview_only",
+      "note": "仅公开预览；用于补页溯源，不是完整标准。",
+      "path": "07-previews/ISO-TR-6336-30-2022-PREVIEW.pdf",
+      "bytes": 1098094,
+      "sha256": "3bfd40aee62609b1a278494a32c34aceeb7ec1abece98637f64cdaeba7575493",
+      "pdf_pages": 15,
+      "source_paths": [
+        "ai-shared/M33-standards-and-reports-2026-10-28/evidence/standards/previews/ISO-TR-6336-30-2022-PREVIEW.pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/07-previews/ISO-TR-6336-30-2022-PREVIEW.pdf"
+    },
+    {
+      "standard": "ISO/TS 6336-20:2022",
+      "purpose": "胶合承载能力：闪温法",
+      "status": "alternate_copy",
+      "note": "后续收到的同版OCR/扫描文件；与01目录不同字节，未证明内容完全等同或质量更高。公式须对照原图。",
+      "path": "08-alternate-copies/ISO TS 6336-20 2022(OCR).pdf",
+      "bytes": 22902366,
+      "sha256": "074202e3a297ebba74df8f6ad277e7f6b96f6204c9f07bde0ceb0ad1d3d133e9",
+      "pdf_pages": 42,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/ISO TS 6336-20 2022(OCR).pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/08-alternate-copies/ISO%20TS%206336-20%202022%28OCR%29.pdf"
+    },
+    {
+      "standard": "ISO/TS 6336-21:2022",
+      "purpose": "胶合承载能力：积分温度法",
+      "status": "alternate_copy",
+      "note": "后续收到的同版OCR/扫描文件；与01目录不同字节，未证明内容完全等同或质量更高。公式须对照原图。",
+      "path": "08-alternate-copies/ISO TS 6336-21 2022(OCR).pdf",
+      "bytes": 21717535,
+      "sha256": "abc7d7b8dd33ed43ee59bd01bfd6da5d914fd9207ddc3463e9e6fe5f7232fc22",
+      "pdf_pages": 44,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/ISO TS 6336-21 2022(OCR).pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/08-alternate-copies/ISO%20TS%206336-21%202022%28OCR%29.pdf"
+    },
+    {
+      "standard": "ISO/TS 6336-22:2018",
+      "purpose": "微点蚀承载能力",
+      "status": "alternate_copy",
+      "note": "后续收到的同版OCR/扫描文件；与01目录不同字节，未证明内容完全等同或质量更高。公式须对照原图。",
+      "path": "08-alternate-copies/ISO TS 6336-22 2018(OCR).pdf",
+      "bytes": 24464808,
+      "sha256": "47d7bb1b31ecb9f5fbcfd6c0a9e68192319c5e991456e0ff3d12abee78b44d45",
+      "pdf_pages": 48,
+      "source_paths": [
+        "ai-shared/upload-20261029-190252-1c8703/files/10/ISO TS 6336-22 2018(OCR).pdf"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/qizhou-hust/yuanqi-public/main/standards/08-alternate-copies/ISO%20TS%206336-22%202018%28OCR%29.pdf"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "standard": "ISO-TR-6336-30-2022",
+    "source": "evidence/standards/core/ISO-TR-6336-30-2022-supplemented-reading-copy.pdf",
+    "source_sha256": "12834eabe980fd66da9a6e41881339ba0ddda0ff8222af6eec3bfc3401e7b2db",
+    "pdf_pages": 70,
+    "markdown": "ai/standards-ocr/ISO-TR-6336-30-2022.md",
+    "json": "ai/standards-ocr/ISO-TR-6336-30-2022.json",
+    "status": "OCR_UNVERIFIED_USE_PDF_IMAGES_FOR_FORMULAS"
+  },
+  {
+    "standard": "ISO-6336-1-2019",
+    "source": "evidence/standards/core/ISO 6336-1-2019.pdf",
+    "source_sha256": "ca377d983183d122a2ccaf4b9e9265ffb24ead0ef020e9819325e7a6a166e694",
+    "pdf_pages": 144,
+    "markdown": "ai/standards-ocr/ISO-6336-1-2019.md",
+    "json": "ai/standards-ocr/ISO-6336-1-2019.json",
+    "status": "OCR_UNVERIFIED_USE_PDF_IMAGES_FOR_FORMULAS"
+  },
+  {
+    "standard": "ISO-6336-2-2019",
+    "source": "evidence/standards/core/ISO 6336-2-2019.pdf",
+    "source_sha256": "5e7a4b83c2d91292f6ddce324ea2fee16699b1c385d80b76606fec6b459de5b0",
+    "pdf_pages": 46,
+    "markdown": "ai/standards-ocr/ISO-6336-2-2019.md",
+    "json": "ai/standards-ocr/ISO-6336-2-2019.json",
+    "status": "OCR_UNVERIFIED_USE_PDF_IMAGES_FOR_FORMULAS"
+  },
+  {
+    "standard": "ISO-6336-3-2019-corrected-2020-11",
+    "source": "evidence/standards/core/ISO 6336-3-2019.pdf",
+    "source_sha256": "f00fea96b736a1d0d34e71496afc3338982d4bc8613571a6c882aae2fe89cf04",
+    "pdf_pages": 64,
+    "markdown": "ai/standards-ocr/ISO-6336-3-2019-corrected-2020-11.md",
+    "json": "ai/standards-ocr/ISO-6336-3-2019-corrected-2020-11.json",
+    "status": "OCR_UNVERIFIED_USE_PDF_IMAGES_FOR_FORMULAS"
+  },
+  {
+    "standard": "ISO-6336-5-2016",
+    "source": "evidence/standards/core/ISO 6336-5-2016.pdf",
+    "source_sha256": "9a9cefda6687b5c5378a3a4ccccc6384fec3a9d61917d11496a7bde05ce072b5",
+    "pdf_pages": 54,
+    "markdown": "ai/standards-ocr/ISO-6336-5-2016.md",
+    "json": "ai/standards-ocr/ISO-6336-5-2016.json",
+    "status": "OCR_UNVERIFIED_USE_PDF_IMAGES_FOR_FORMULAS"
+  },
+  {
+    "standard": "ISO-6336-6-2019",
+    "source": "evidence/standards/core/ISO 6336-6-2019.pdf",
+    "source_sha256": "8c2632eacbd050fec583925bcf4ce9e9e4b8e86d5ed162d37da674dab3dec0c7",
+    "pdf_pages": 44,
+    "markdown": "ai/standards-ocr/ISO-6336-6-2019.md",
+    "json": "ai/standards-ocr/ISO-6336-6-2019.json",
+    "status": "OCR_UNVERIFIED_USE_PDF_IMAGES_FOR_FORMULAS"
+  }
+]

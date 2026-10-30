@@ -1,0 +1,141 @@
+{
+  "schema": "m37.repeat-assessment-public-summary/v1",
+  "source_local_report_sha256": "e22fb01805ecd89e6254fb62e8ace716638526116352d3efddc8ee37e44820a8",
+  "scope": "22 L3 records (21 penalty records eligible, one unchanged failed MORTAR record); replace only ph10/ph11 with actual new-process evidence in memory.",
+  "accepted": false,
+  "baseline_changed": false,
+  "diagnostic_changed": false,
+  "core_changed": false,
+  "thresholds_changed": false,
+  "highest_contiguous_numerical_level_after_supplement": "L1",
+  "strict_run_eligibility_satisfied": true,
+  "strict_eligibility_scope": "All 21 records used by the frozen penalty L3 gate, including all 16 distinct phases. The separate MORTAR variant remains solver_failed.",
+  "job_count": 22,
+  "successful_gate_job_count": 21,
+  "phase_count": 16,
+  "gate_criterion_count": 8,
+  "source_contract_errors": [],
+  "job_identity_and_artifact_errors": [],
+  "strict_L3_assessment": {
+    "pass": false,
+    "checks": {
+      "mesh": true,
+      "sigma_H": true,
+      "c_prime": false,
+      "c_gamma": false,
+      "phase": true,
+      "torque": false,
+      "force": false,
+      "pitch_single_pair": true
+    },
+    "ratios": {
+      "sigma_H": 1.0052507853655144,
+      "c_prime": 0.7839781589852018,
+      "c_gamma": 0.6854183858151229
+    },
+    "sigma_H_mesh": {
+      "levels_h": [
+        0.005854188524896888,
+        0.0039027923499312584,
+        0.0026018615666208392
+      ],
+      "values": [
+        604.8201,
+        604.7065,
+        604.9156
+      ],
+      "relative_changes": [
+        0.0001878597302989458,
+        0.00034566805683311014
+      ],
+      "monotone": false,
+      "observed_order": null,
+      "order_used": 2.0,
+      "status": "nonmonotone_assumed_p2",
+      "extrapolated": 605.08288,
+      "gci_fine": 0.00034566805683311025
+    },
+    "c_prime_mesh": {
+      "levels_h": [
+        0.005854188524896888,
+        0.0039027923499312584,
+        0.0026018615666208392
+      ],
+      "values": [
+        12.289637136921641,
+        12.290837560954103,
+        12.291653983256856
+      ],
+      "relative_changes": [
+        9.766820418121856e-05,
+        6.642086604986061e-05
+      ],
+      "monotone": true,
+      "observed_order": 0.9507560010915554,
+      "order_used": 0.9507560010915554,
+      "status": "observed_order",
+      "extrapolated": 12.293389770689217,
+      "gci_fine": 0.00017652093798013516
+    },
+    "sigma_H_penalty": {
+      "penalties": [
+        1583481632.095761,
+        395870408.02394027,
+        791740816.0478805
+      ],
+      "values": [
+        605.384,
+        604.2186,
+        604.9156
+      ],
+      "model": "f(K)=f_inf-c/K",
+      "f_inf": 605.7325,
+      "c": 606088905.2677287,
+      "max_abs_residual_rel": 8.483235468733455e-05
+    },
+    "c_prime_penalty": {
+      "penalties": [
+        1583481632.095761,
+        395870408.02394027,
+        791740816.0478805
+      ],
+      "values": [
+        12.292478519769618,
+        12.289997239509573,
+        12.291653983256856
+      ],
+      "model": "f(K)=f_inf-c/K",
+      "f_inf": 12.293306891643262,
+      "c": 1309976.4397406655,
+      "max_abs_residual_rel": 1.3370902586014233e-07
+    },
+    "sigma_H_FE": 605.89978,
+    "c_prime_FE": 12.295042679075623,
+    "c_gamma_FE_16": 15.785211156519802,
+    "c_gamma_FE_8": 15.90356996420268,
+    "phase_change": 0.007498082002785984,
+    "max_torque_error": 0.002956337736619844,
+    "max_force_error": 0.0030085081711857054
+  },
+  "numeric_metrics_identical_to_prior_diagnostic": [
+    "ratios",
+    "sigma_H_FE",
+    "c_prime_FE",
+    "c_gamma_FE_16",
+    "c_gamma_FE_8",
+    "phase_change",
+    "max_torque_error",
+    "max_force_error"
+  ],
+  "actual_balance_metrics_substituted_for_ideal_reference_gates": false,
+  "baseline_results_sha256": "330c842cf7470429d0d2c478d840efc8ce253c112f127c46243fa2de7ee7ff05",
+  "diagnostic_sha256": "a008dc6b7265da056350ae3e3ce7904ce638ff454fa0f2a5f6fdaa93d5f7c7b0",
+  "repeat_results_sha256": "0954aa5f078c8472b8837afb0eaa3da5512adbecff2eb3d81629cd9eeda01345",
+  "limitations": [
+    "New process return codes are evidence for the repeat runs only; old null return codes remain null.",
+    "Scalar extraction is reused from the repeat evidence, with byte-identical DAT and unchanged values; raw stress extraction is not independently rerun here.",
+    "This is an L3 supplement, not a regenerated full 82-job baseline; original L2 remains failed and highest contiguous level remains L1.",
+    "True force/moment balance audit does not replace the frozen ideal-ratio and ideal-normal-force thresholds.",
+    "No automatic promotion of numerical agreement to validated physical model or product evidence."
+  ]
+}

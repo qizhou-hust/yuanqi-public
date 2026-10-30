@@ -1,0 +1,14 @@
+{
+  "schema": "m37.geometry-viewer/v1",
+  "source_geometries": {
+    "original_ph00": "93f5d0554fdc5c0ec146a5a69c137a565cf1267296bdde9127ed3a2e6a566471",
+    "periodic_ph00": "96d259a51e457675be19ec66c0015444a3058154bf9bdfa5773193812c075d05",
+    "periodic_ph10": "4d67639ebb68e6cee315df12fad300078f9c1944d7469b9bec35d62954a25c69"
+  },
+  "output": "M37-preprocessing-3D-review.html",
+  "sha256": "92f5bbc2dc4dad23f7559187e56bf0cfe64c1f115c5fc399c74d17bcc11196b0",
+  "external_network_required": false,
+  "geometry": "2D exterior quadratic edges sampled at 5 points, extruded 1 mm; no 3D solve",
+  "normal_arrow_length": "Graphical scale only; vector direction from original quadratic edge",
+  "pressure": "Actual final DAT pressure attached to original, undeformed element edge; not a reconstructed 3D stress field"
+}

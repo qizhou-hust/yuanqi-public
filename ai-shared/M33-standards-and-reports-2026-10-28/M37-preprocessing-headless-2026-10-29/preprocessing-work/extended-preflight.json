@@ -1,0 +1,2933 @@
+{
+  "schema": "m37.extended-preflight/v1",
+  "accepted": false,
+  "physical_input_changed": false,
+  "scope": "Additional read-only diagnostic; formal original acceptance gates unchanged",
+  "phases": [
+    {
+      "phase": 9,
+      "input_sha256": "87211cd94b856d36aa41c02757b4227b7a0f0d3020f4c3ed031c19cef8c569ae",
+      "dat_sha256": "cd03f3e7d523c0de879ad5a8a343cc4443f34b6299e3634e9c8c4d776d9dc675",
+      "actual_balance": {
+        "wheel_RF_N": [
+          -41.66876696200001,
+          -15.176076685999995
+        ],
+        "contact_surface_force_N": [
+          -41.66877,
+          -15.17608
+        ],
+        "wheel_RF_moment_Nmm": -1500.1231206591654,
+        "contact_moment_global_Nmm": 833.3115,
+        "contact_moment_wheel_center_Nmm": -1500.1396199999997,
+        "input_torque_Nmm": 833.3333333333334,
+        "wheel_contact_force_residual_rel": 1.0139163650497518e-07,
+        "wheel_contact_moment_residual_rel": 1.099865778156497e-05,
+        "pinion_contact_vs_input_torque_residual_rel": 2.6200000000017096e-05,
+        "sign_convention": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison.",
+        "scope": "Checks printed contact statistics against wheel-bore RF and input torque; not full-system nodal reaction/energy audit"
+      },
+      "ideal_reference_comparison_unchanged": {
+        "theta_rad": 0.000135070125,
+        "delta_LOA_um": 2.5384879950226056,
+        "mesh_stiffness_N_per_mm_um": 17.4673823972269,
+        "p_max_MPa": 491.734,
+        "contact_normal_force_rel_err": 0.00012650849094021389,
+        "wheel_torque_rel_err": 8.208043944356784e-05
+      },
+      "active_pressure_elements": [
+        {
+          "element": 10697,
+          "side": 3,
+          "pmax_MPa": 491.734,
+          "edge_points_mm": [
+            [
+              -1.40035984168,
+              19.4890339714
+            ],
+            [
+              -1.40168686516,
+              19.4926789153
+            ],
+            [
+              -1.40102301957,
+              19.4908565639
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789956626187087,
+          "edge_chord_over_contact_target_h": 0.9939026509281312,
+          "nearest_theoretical_contact_point_mm": 0.0007397641442494925
+        },
+        {
+          "element": 10748,
+          "side": 3,
+          "pmax_MPa": 490.4961,
+          "edge_points_mm": [
+            [
+              -1.40168686516,
+              19.4926789153
+            ],
+            [
+              -1.40301656249,
+              19.4963228726
+            ],
+            [
+              -1.40235137756,
+              19.4945010156
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789843765641625,
+          "edge_chord_over_contact_target_h": 0.9938997591384755,
+          "nearest_theoretical_contact_point_mm": 0.004618753979275276
+        },
+        {
+          "element": 10746,
+          "side": 3,
+          "pmax_MPa": 488.7505,
+          "edge_points_mm": [
+            [
+              -1.39903548376,
+              19.4853880801
+            ],
+            [
+              -1.40035984168,
+              19.4890339714
+            ],
+            [
+              -1.39969733205,
+              19.4872111472
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789750284940173,
+          "edge_chord_over_contact_target_h": 0.9938973639123637,
+          "nearest_theoretical_contact_point_mm": 0.0031392190142707174
+        },
+        {
+          "element": 10706,
+          "side": 3,
+          "pmax_MPa": 483.8112,
+          "edge_points_mm": [
+            [
+              -1.40301656249,
+              19.4963228726
+            ],
+            [
+              -1.40434895735,
+              19.4999658473
+            ],
+            [
+              -1.4036824219,
+              19.4981444843
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789870749713325,
+          "edge_chord_over_contact_target_h": 0.9939004505427133,
+          "nearest_theoretical_contact_point_mm": 0.00849774062809305
+        },
+        {
+          "element": 13145,
+          "side": 3,
+          "pmax_MPa": 480.8189,
+          "edge_points_mm": [
+            [
+              -1.39771376093,
+              19.4817412211
+            ],
+            [
+              -1.39903548376,
+              19.4853880801
+            ],
+            [
+              -1.39837429403,
+              19.4835647705
+            ]
+          ],
+          "edge_length_chord_mm": 0.00387898592485831,
+          "edge_chord_over_contact_target_h": 0.9939001558529323,
+          "nearest_theoretical_contact_point_mm": 0.007018199458392913
+        },
+        {
+          "element": 10751,
+          "side": 3,
+          "pmax_MPa": 470.3325,
+          "edge_points_mm": [
+            [
+              -1.40434895735,
+              19.4999658473
+            ],
+            [
+              -1.40568406714,
+              19.503607827
+            ],
+            [
+              -1.40501617173,
+              19.501786962
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789862446985826,
+          "edge_chord_over_contact_target_h": 0.9939002378045824,
+          "nearest_theoretical_contact_point_mm": 0.012376724713294077
+        },
+        {
+          "element": 10705,
+          "side": 3,
+          "pmax_MPa": 466.0946,
+          "edge_points_mm": [
+            [
+              -1.39639465636,
+              19.4780934125
+            ],
+            [
+              -1.39771376093,
+              19.4817412211
+            ],
+            [
+              -1.39705388228,
+              19.479917434
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789875546081463,
+          "edge_chord_over_contact_target_h": 0.9939005734385199,
+          "nearest_theoretical_contact_point_mm": 0.0108971864807934
+        },
+        {
+          "element": 10714,
+          "side": 3,
+          "pmax_MPa": 448.7264,
+          "edge_points_mm": [
+            [
+              -1.40568406714,
+              19.503607827
+            ],
+            [
+              -1.40702191012,
+              19.5072488029
+            ],
+            [
+              -1.4063526456,
+              19.5054284403
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878985607543283,
+          "edge_chord_over_contact_target_h": 0.9939000745483181,
+          "nearest_theoretical_contact_point_mm": 0.016255706320931124
+        },
+        {
+          "element": 10745,
+          "side": 3,
+          "pmax_MPa": 443.5351,
+          "edge_points_mm": [
+            [
+              -1.39507815156,
+              19.4744446689
+            ],
+            [
+              -1.39639465636,
+              19.4780934125
+            ],
+            [
+              -1.39573607992,
+              19.476269156
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789837260532834,
+          "edge_chord_over_contact_target_h": 0.9938995924601537,
+          "nearest_theoretical_contact_point_mm": 0.014776170137315976
+        },
+        {
+          "element": 13321,
+          "side": 3,
+          "pmax_MPa": 417.4729,
+          "edge_points_mm": [
+            [
+              -1.40702191012,
+              19.5072488029
+            ],
+            [
+              -1.40836250441,
+              19.5108887668
+            ],
+            [
+              -1.40769186228,
+              19.509068912
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878985723572656,
+          "edge_chord_over_contact_target_h": 0.9939001042781531,
+          "nearest_theoretical_contact_point_mm": 0.020134686770226156
+        },
+        {
+          "element": 13481,
+          "side": 3,
+          "pmax_MPa": 412.6892,
+          "edge_points_mm": [
+            [
+              -1.3937642236,
+              19.4707949941
+            ],
+            [
+              -1.39507815156,
+              19.4744446689
+            ],
+            [
+              -1.39442086655,
+              19.4726199467
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878986056924189,
+          "edge_chord_over_contact_target_h": 0.9939001896917501,
+          "nearest_theoretical_contact_point_mm": 0.018655149267489585
+        },
+        {
+          "element": 10679,
+          "side": 3,
+          "pmax_MPa": 407.5157,
+          "edge_points_mm": [
+            [
+              4.14560450717,
+              21.5145276199
+            ],
+            [
+              4.14427331077,
+              21.5181735396
+            ],
+            [
+              4.14493920492,
+              21.516350688
+            ]
+          ],
+          "edge_length_chord_mm": 0.003881341818779887,
+          "edge_chord_over_contact_target_h": 0.9945037990166837,
+          "nearest_theoretical_contact_point_mm": 0.007250851783244669
+        },
+        {
+          "element": 13055,
+          "side": 3,
+          "pmax_MPa": 407.3087,
+          "edge_points_mm": [
+            [
+              4.14693342105,
+              21.5108808674
+            ],
+            [
+              4.14560450717,
+              21.5145276199
+            ],
+            [
+              4.14626919913,
+              21.5127043291
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038813420226401748,
+          "edge_chord_over_contact_target_h": 0.9945038512511531,
+          "nearest_theoretical_contact_point_mm": 0.003369509770503496
+        },
+        {
+          "element": 10657,
+          "side": 3,
+          "pmax_MPa": 400.1766,
+          "edge_points_mm": [
+            [
+              4.14826089443,
+              21.5072335878
+            ],
+            [
+              4.14693342105,
+              21.5108808674
+            ],
+            [
+              4.14759731952,
+              21.5090572866
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038813443618421766,
+          "edge_chord_over_contact_target_h": 0.9945044506173997,
+          "nearest_theoretical_contact_point_mm": 0.0005118331430701621
+        },
+        {
+          "element": 13873,
+          "side": 3,
+          "pmax_MPa": 396.4856,
+          "edge_points_mm": [
+            [
+              4.14958707254,
+              21.5035858423
+            ],
+            [
+              4.14826089443,
+              21.5072335878
+            ],
+            [
+              4.14892414498,
+              21.505409774
+            ]
+          ],
+          "edge_length_chord_mm": 0.003881339409558346,
+          "edge_chord_over_contact_target_h": 0.9945031817095547,
+          "nearest_theoretical_contact_point_mm": 0.004393174861659714
+        },
+        {
+          "element": 11925,
+          "side": 3,
+          "pmax_MPa": 389.8147,
+          "edge_points_mm": [
+            [
+              4.14427331077,
+              21.5181735396
+            ],
+            [
+              4.14293981878,
+              21.5218186203
+            ],
+            [
+              4.14360684277,
+              21.5199961814
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038813418036687686,
+          "edge_chord_over_contact_target_h": 0.9945037951448102,
+          "nearest_theoretical_contact_point_mm": 0.011132192158627882
+        },
+        {
+          "element": 14173,
+          "side": 3,
+          "pmax_MPa": 388.2924,
+          "edge_points_mm": [
+            [
+              4.15091195967,
+              21.4999376256
+            ],
+            [
+              4.14958707254,
+              21.5035858423
+            ],
+            [
+              4.15024967742,
+              21.5017617926
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038813413915037747,
+          "edge_chord_over_contact_target_h": 0.9945036895370922,
+          "nearest_theoretical_contact_point_mm": 0.008274515246826795
+        },
+        {
+          "element": 10674,
+          "side": 3,
+          "pmax_MPa": 374.001,
+          "edge_points_mm": [
+            [
+              4.1522355573,
+              21.4962889405
+            ],
+            [
+              4.15091195967,
+              21.4999376256
+            ],
+            [
+              4.15157391962,
+              21.4981133414
+            ]
+          ],
+          "edge_length_chord_mm": 0.003881341732584609,
+          "edge_chord_over_contact_target_h": 0.9945037769311433,
+          "nearest_theoretical_contact_point_mm": 0.012155856535719371
+        },
+        {
+          "element": 10716,
+          "side": 3,
+          "pmax_MPa": 373.4143,
+          "edge_points_mm": [
+            [
+              -1.40836250441,
+              19.5108887668
+            ],
+            [
+              -1.40970571536,
+              19.5145277656
+            ],
+            [
+              -1.40903380478,
+              19.5127083791
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878985424385872,
+          "edge_chord_over_contact_target_h": 0.9939000276184805,
+          "nearest_theoretical_contact_point_mm": 0.024013663742834156
+        },
+        {
+          "element": 10721,
+          "side": 3,
+          "pmax_MPa": 371.084,
+          "edge_points_mm": [
+            [
+              -1.39245285249,
+              19.4671444007
+            ],
+            [
+              -1.3937642236,
+              19.4707949941
+            ],
+            [
+              -1.3931082199,
+              19.4689698119
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789852230015766,
+          "edge_chord_over_contact_target_h": 0.9938999760184266,
+          "nearest_theoretical_contact_point_mm": 0.022534127452350054
+        },
+        {
+          "element": 10659,
+          "side": 3,
+          "pmax_MPa": 360.4528,
+          "edge_points_mm": [
+            [
+              4.14293981878,
+              21.5218186203
+            ],
+            [
+              4.14160417544,
+              21.5254629136
+            ],
+            [
+              4.14227225699,
+              21.5236408624
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038813421374704338,
+          "edge_chord_over_contact_target_h": 0.9945038806737432,
+          "nearest_theoretical_contact_point_mm": 0.01501353249965774
+        },
+        {
+          "element": 14612,
+          "side": 3,
+          "pmax_MPa": 353.0681,
+          "edge_points_mm": [
+            [
+              4.15355786728,
+              21.4926397885
+            ],
+            [
+              4.1522355573,
+              21.4962889405
+            ],
+            [
+              4.15289687308,
+              21.4944644229
+            ]
+          ],
+          "edge_length_chord_mm": 0.003881341778601914,
+          "edge_chord_over_contact_target_h": 0.9945037887220102,
+          "nearest_theoretical_contact_point_mm": 0.016037197254331677
+        },
+        {
+          "element": 12374,
+          "side": 3,
+          "pmax_MPa": 324.5361,
+          "edge_points_mm": [
+            [
+              4.15487889164,
+              21.4889901708
+            ],
+            [
+              4.15355786728,
+              21.4926397885
+            ],
+            [
+              4.15421854,
+              21.4908150379
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038813418705209873,
+          "edge_chord_over_contact_target_h": 0.9945038122741403,
+          "nearest_theoretical_contact_point_mm": 0.01991853776431773
+        },
+        {
+          "element": 11437,
+          "side": 3,
+          "pmax_MPa": 316.358,
+          "edge_points_mm": [
+            [
+              4.14160417544,
+              21.5254629136
+            ],
+            [
+              4.14026652378,
+              21.5291064697
+            ],
+            [
+              4.14093559189,
+              21.5272847803
+            ]
+          ],
+          "edge_length_chord_mm": 0.003881341651718128,
+          "edge_chord_over_contact_target_h": 0.9945037562109836,
+          "nearest_theoretical_contact_point_mm": 0.018894870651439404
+        },
+        {
+          "element": 13775,
+          "side": 3,
+          "pmax_MPa": 316.0889,
+          "edge_points_mm": [
+            [
+              -1.39114401823,
+              19.4634928965
+            ],
+            [
+              -1.39245285249,
+              19.4671444007
+            ],
+            [
+              -1.39179811905,
+              19.4653187628
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789856976755026,
+          "edge_chord_over_contact_target_h": 0.9939000976426083,
+          "nearest_theoretical_contact_point_mm": 0.026413102703026207
+        },
+        {
+          "element": 14231,
+          "side": 3,
+          "pmax_MPa": 313.8593,
+          "edge_points_mm": [
+            [
+              -1.40970571536,
+              19.5145277656
+            ],
+            [
+              -1.4110513765,
+              19.5181658594
+            ],
+            [
+              -1.41037823816,
+              19.5163469252
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878985743889743,
+          "edge_chord_over_contact_target_h": 0.9939001094839354,
+          "nearest_theoretical_contact_point_mm": 0.027892636423747803
+        },
+        {
+          "element": 10670,
+          "side": 3,
+          "pmax_MPa": 286.5643,
+          "edge_points_mm": [
+            [
+              4.15619863232,
+              21.4853400887
+            ],
+            [
+              4.15487889164,
+              21.4889901708
+            ],
+            [
+              4.15553892234,
+              21.4871651876
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038813418812570105,
+          "edge_chord_over_contact_target_h": 0.9945038150249972,
+          "nearest_theoretical_contact_point_mm": 0.023799877967898894
+        },
+        {
+          "element": 1043,
+          "side": 3,
+          "pmax_MPa": 251.0022,
+          "edge_points_mm": [
+            [
+              4.14026652378,
+              21.5291064697
+            ],
+            [
+              4.13892700503,
+              21.5327493401
+            ],
+            [
+              4.1395969891,
+              21.5309279872
+            ]
+          ],
+          "edge_length_chord_mm": 0.003881341937113947,
+          "edge_chord_over_contact_target_h": 0.9945038293370414,
+          "nearest_theoretical_contact_point_mm": 0.022776207828320405
+        },
+        {
+          "element": 10713,
+          "side": 3,
+          "pmax_MPa": 244.0732,
+          "edge_points_mm": [
+            [
+              -1.38983791627,
+              19.4598404139
+            ],
+            [
+              -1.39114401823,
+              19.4634928965
+            ],
+            [
+              -1.39049060812,
+              19.4616667812
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789858820593966,
+          "edge_chord_over_contact_target_h": 0.9939001448867038,
+          "nearest_theoretical_contact_point_mm": 0.03029207858185806
+        },
+        {
+          "element": 10711,
+          "side": 3,
+          "pmax_MPa": 234.2045,
+          "edge_points_mm": [
+            [
+              -1.4110513765,
+              19.5181658594
+            ],
+            [
+              -1.41239950674,
+              19.5218030392
+            ],
+            [
+              -1.41172513162,
+              19.5199845636
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878985955316711,
+          "edge_chord_over_contact_target_h": 0.993900163657191,
+          "nearest_theoretical_contact_point_mm": 0.031771608034083784
+        },
+        {
+          "element": 10700,
+          "side": 3,
+          "pmax_MPa": 233.4758,
+          "edge_points_mm": [
+            [
+              4.1575170914,
+              21.4816895433
+            ],
+            [
+              4.15619863232,
+              21.4853400887
+            ],
+            [
+              4.15685802194,
+              21.4835148738
+            ]
+          ],
+          "edge_length_chord_mm": 0.003881342044073294,
+          "edge_chord_over_contact_target_h": 0.9945038567428928,
+          "nearest_theoretical_contact_point_mm": 0.027681217160755462
+        },
+        {
+          "element": 10677,
+          "side": 3,
+          "pmax_MPa": 165.9514,
+          "edge_points_mm": [
+            [
+              4.13892700503,
+              21.5327493401
+            ],
+            [
+              4.13758575952,
+              21.536391575
+            ],
+            [
+              4.13825658938,
+              21.5345705339
+            ]
+          ],
+          "edge_length_chord_mm": 0.003881341853646338,
+          "edge_chord_over_contact_target_h": 0.9945038079504029,
+          "nearest_theoretical_contact_point_mm": 0.026657544153182562
+        },
+        {
+          "element": 10698,
+          "side": 3,
+          "pmax_MPa": 155.6519,
+          "edge_points_mm": [
+            [
+              4.1588342707,
+              21.4780385364
+            ],
+            [
+              4.1575170914,
+              21.4816895433
+            ],
+            [
+              4.1581758409,
+              21.4798640974
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038813416098299656,
+          "edge_chord_over_contact_target_h": 0.9945037454781137,
+          "nearest_theoretical_contact_point_mm": 0.03156255557167267
+        },
+        {
+          "element": 10756,
+          "side": 3,
+          "pmax_MPa": 82.54736,
+          "edge_points_mm": [
+            [
+              -1.38853467124,
+              19.4561869107
+            ],
+            [
+              -1.38983791627,
+              19.4598404139
+            ],
+            [
+              -1.38918593735,
+              19.4580137879
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878986109877462,
+          "edge_chord_over_contact_target_h": 0.9939002032597979,
+          "nearest_theoretical_contact_point_mm": 0.034171046230076524
+        },
+        {
+          "element": 12124,
+          "side": 3,
+          "pmax_MPa": 75.03733,
+          "edge_points_mm": [
+            [
+              -1.41239950674,
+              19.5218030392
+            ],
+            [
+              -1.41375012475,
+              19.525439295
+            ],
+            [
+              -1.41307450362,
+              19.5236212832
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789850801427923,
+          "edge_chord_over_contact_target_h": 0.9938999394141773,
+          "nearest_theoretical_contact_point_mm": 0.03565057585117416
+        }
+      ],
+      "mesh": {
+        "elements": 38233,
+        "minimum_jacobian_mm2": 6.707286147130742e-06,
+        "minimum_element": 14334,
+        "nonpositive_elements": 0,
+        "nonmanifold_edges": 0,
+        "mismatched_shared_midside_nodes": 0,
+        "method": "All stationary candidates of the quadratic TRI6 Jacobian on the reference triangle; floating arithmetic, not interval certification",
+        "pass": true
+      },
+      "actual_pressure_support_review": {
+        "target_contact_h_mm": 0.0039027923499312584,
+        "maximum_active_edge_chord_over_target_h": 0.9945044506173997,
+        "original_h_check": {
+          "curve": "P_FLANK",
+          "target": 0.0039027923499312584,
+          "n": 72,
+          "max": 0.003881351885027211,
+          "median": 0.003881339463597649,
+          "max_over_target": 0.9945063782590368
+        },
+        "interpretation": "Original h_check covers only a disk around theoretical contact points. Audit actual loaded elements too; no pressure is deleted from the result.",
+        "requires_additional_local_mesh_convergence": false,
+        "trigger_ratio": 2,
+        "trigger_is": "Diagnostic refinement trigger, not a replacement for original acceptance threshold"
+      }
+    },
+    {
+      "phase": 10,
+      "input_sha256": "a5c3fbc646170e73ffd0826a8f8afef0842ebcbedffc18e6ca31acb720682818",
+      "dat_sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f",
+      "actual_balance": {
+        "wheel_RF_N": [
+          -41.745737517,
+          -15.338441796999994
+        ],
+        "contact_surface_force_N": [
+          -41.74574,
+          -15.33844
+        ],
+        "wheel_RF_moment_Nmm": -1504.4345066049298,
+        "contact_moment_global_Nmm": 833.3033,
+        "contact_moment_wheel_center_Nmm": -1504.4581399999997,
+        "input_torque_Nmm": 833.3333333333334,
+        "wheel_contact_force_residual_rel": 6.912479340685832e-08,
+        "wheel_contact_moment_residual_rel": 1.5709155145143685e-05,
+        "pinion_contact_vs_input_torque_residual_rel": 3.604000000000269e-05,
+        "sign_convention": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison.",
+        "scope": "Checks printed contact statistics against wheel-bore RF and input torque; not full-system nodal reaction/energy audit"
+      },
+      "ideal_reference_comparison_unchanged": {
+        "theta_rad": 0.000167646125,
+        "delta_LOA_um": 3.15071653131704,
+        "mesh_stiffness_N_per_mm_um": 14.073224321863911,
+        "p_max_MPa": 5283.265,
+        "contact_normal_force_rel_err": 0.0030085081711857054,
+        "wheel_torque_rel_err": 0.002956337736619844
+      },
+      "active_pressure_elements": [
+        {
+          "element": 7779,
+          "side": 3,
+          "pmax_MPa": 5283.265,
+          "edge_points_mm": [
+            [
+              4.58415610329,
+              21.3791318132
+            ],
+            [
+              4.53280795077,
+              21.5279737105
+            ],
+            [
+              4.5587161175,
+              21.4536329827
+            ]
+          ],
+          "edge_length_chord_mm": 0.157450129117383,
+          "edge_chord_over_contact_target_h": 40.34294294959255,
+          "nearest_theoretical_contact_point_mm": 5.90577681244577
+        },
+        {
+          "element": 9035,
+          "side": 3,
+          "pmax_MPa": 571.0029,
+          "edge_points_mm": [
+            [
+              -1.05401922548,
+              19.616403959
+            ],
+            [
+              -1.05534707113,
+              19.6200485961
+            ],
+            [
+              -1.05468283244,
+              19.6182263923
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878988742045075,
+          "edge_chord_over_contact_target_h": 0.9939008776916859,
+          "nearest_theoretical_contact_point_mm": 0.0019729315491783237
+        },
+        {
+          "element": 6353,
+          "side": 3,
+          "pmax_MPa": 570.5682,
+          "edge_points_mm": [
+            [
+              -1.05269389811,
+              19.6127584058
+            ],
+            [
+              -1.05401922548,
+              19.616403959
+            ],
+            [
+              -1.05335624798,
+              19.6145812964
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878988369625456,
+          "edge_chord_over_contact_target_h": 0.9939007822677982,
+          "nearest_theoretical_contact_point_mm": 0.001906056779087535
+        },
+        {
+          "element": 6333,
+          "side": 3,
+          "pmax_MPa": 569.1765,
+          "edge_points_mm": [
+            [
+              -1.05534707113,
+              19.6200485961
+            ],
+            [
+              -1.056677447,
+              19.6236922998
+            ],
+            [
+              -1.05601194147,
+              19.6218705641
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789788100570127,
+          "edge_chord_over_contact_target_h": 0.993898332850154,
+          "nearest_theoretical_contact_point_mm": 0.0058519154914843255
+        },
+        {
+          "element": 6318,
+          "side": 3,
+          "pmax_MPa": 565.2813,
+          "edge_points_mm": [
+            [
+              -1.05137107302,
+              19.6091119435
+            ],
+            [
+              -1.05269389811,
+              19.6127584058
+            ],
+            [
+              -1.05203217406,
+              19.6109352886
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878988724404876,
+          "edge_chord_over_contact_target_h": 0.9939008731717941,
+          "nearest_theoretical_contact_point_mm": 0.005785044045387254
+        },
+        {
+          "element": 8123,
+          "side": 3,
+          "pmax_MPa": 562.1158,
+          "edge_points_mm": [
+            [
+              -1.056677447,
+              19.6236922998
+            ],
+            [
+              -1.05801037468,
+              19.6273350798
+            ],
+            [
+              -1.05734359093,
+              19.6255138058
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878987281306172,
+          "edge_chord_over_contact_target_h": 0.9939005034112292,
+          "nearest_theoretical_contact_point_mm": 0.009730896346802279
+        },
+        {
+          "element": 6351,
+          "side": 3,
+          "pmax_MPa": 554.8998,
+          "edge_points_mm": [
+            [
+              -1.05005073446,
+              19.6054645805
+            ],
+            [
+              -1.05137107302,
+              19.6091119435
+            ],
+            [
+              -1.05071059417,
+              19.6072883748
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789883689931246,
+          "edge_chord_over_contact_target_h": 0.9939007821057779,
+          "nearest_theoretical_contact_point_mm": 0.009664031819060418
+        },
+        {
+          "element": 6307,
+          "side": 3,
+          "pmax_MPa": 549.3674,
+          "edge_points_mm": [
+            [
+              -1.05801037468,
+              19.6273350798
+            ],
+            [
+              -1.05934586771,
+              19.6309769248
+            ],
+            [
+              -1.05867779957,
+              19.6291561196
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878991703675383,
+          "edge_chord_over_contact_target_h": 0.9939016365407464,
+          "nearest_theoretical_contact_point_mm": 0.013609884016244633
+        },
+        {
+          "element": 6317,
+          "side": 3,
+          "pmax_MPa": 538.74,
+          "edge_points_mm": [
+            [
+              -1.04873286589,
+              19.601816324
+            ],
+            [
+              -1.05005073446,
+              19.6054645805
+            ],
+            [
+              -1.04939149287,
+              19.6036405646
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789886642766214,
+          "edge_chord_over_contact_target_h": 0.9939008577653238,
+          "nearest_theoretical_contact_point_mm": 0.013543017684287905
+        },
+        {
+          "element": 6356,
+          "side": 3,
+          "pmax_MPa": 529.622,
+          "edge_points_mm": [
+            [
+              -1.05934586771,
+              19.6309769248
+            ],
+            [
+              -1.0606839392,
+              19.6346178282
+            ],
+            [
+              -1.06001458038,
+              19.6327974931
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878996375415791,
+          "edge_chord_over_contact_target_h": 0.9939028335658476,
+          "nearest_theoretical_contact_point_mm": 0.01748887274691743
+        },
+        {
+          "element": 7566,
+          "side": 3,
+          "pmax_MPa": 516.5346,
+          "edge_points_mm": [
+            [
+              -1.04741745101,
+              19.5981671823
+            ],
+            [
+              -1.04873286589,
+              19.601816324
+            ],
+            [
+              -1.0480748525,
+              19.5999918625
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789884574744397,
+          "edge_chord_over_contact_target_h": 0.9939008047770622,
+          "nearest_theoretical_contact_point_mm": 0.017422004765545798
+        },
+        {
+          "element": 6325,
+          "side": 3,
+          "pmax_MPa": 500.4066,
+          "edge_points_mm": [
+            [
+              -1.0606839392,
+              19.6346178282
+            ],
+            [
+              -1.0620244217,
+              19.6382578361
+            ],
+            [
+              -1.06135389231,
+              19.6364379373
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789883790578917,
+          "edge_chord_over_contact_target_h": 0.993900784684641,
+          "nearest_theoretical_contact_point_mm": 0.021367860206269608
+        },
+        {
+          "element": 6321,
+          "side": 3,
+          "pmax_MPa": 487.5109,
+          "edge_points_mm": [
+            [
+              -1.04610447282,
+              19.594517163
+            ],
+            [
+              -1.04741745101,
+              19.5981671823
+            ],
+            [
+              -1.04676065827,
+              19.5963422815
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878988607587013,
+          "edge_chord_over_contact_target_h": 0.9939008432399268,
+          "nearest_theoretical_contact_point_mm": 0.021300987194564802
+        },
+        {
+          "element": 7565,
+          "side": 3,
+          "pmax_MPa": 466.1597,
+          "edge_points_mm": [
+            [
+              -1.0620244217,
+              19.6382578361
+            ],
+            [
+              -1.06336721496,
+              19.6418969922
+            ],
+            [
+              -1.06269552881,
+              19.640077522
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789883809145108,
+          "edge_chord_over_contact_target_h": 0.9939007851603565,
+          "nearest_theoretical_contact_point_mm": 0.025246842262536758
+        },
+        {
+          "element": 8989,
+          "side": 3,
+          "pmax_MPa": 451.0853,
+          "edge_points_mm": [
+            [
+              -1.04479391427,
+              19.5908662742
+            ],
+            [
+              -1.04610447282,
+              19.594517163
+            ],
+            [
+              -1.04544889173,
+              19.5926918256
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789886237186057,
+          "edge_chord_over_contact_target_h": 0.9939008473732731,
+          "nearest_theoretical_contact_point_mm": 0.025179968786839712
+        },
+        {
+          "element": 7506,
+          "side": 3,
+          "pmax_MPa": 423.3618,
+          "edge_points_mm": [
+            [
+              -1.06336721496,
+              19.6418969922
+            ],
+            [
+              -1.06471233524,
+              19.6455352896
+            ],
+            [
+              -1.06403948367,
+              19.6437162499
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878989112968585,
+          "edge_chord_over_contact_target_h": 0.9939009727322303,
+          "nearest_theoretical_contact_point_mm": 0.029125820492453113
+        },
+        {
+          "element": 7828,
+          "side": 3,
+          "pmax_MPa": 404.4754,
+          "edge_points_mm": [
+            [
+              -1.04348575804,
+              19.5872145241
+            ],
+            [
+              -1.04479391427,
+              19.5908662742
+            ],
+            [
+              -1.04413953693,
+              19.5890405062
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878988465431039,
+          "edge_chord_over_contact_target_h": 0.9939008068157562,
+          "nearest_theoretical_contact_point_mm": 0.029058945523681018
+        },
+        {
+          "element": 6326,
+          "side": 3,
+          "pmax_MPa": 367.9818,
+          "edge_points_mm": [
+            [
+              -1.06471233524,
+              19.6455352896
+            ],
+            [
+              -1.06605979774,
+              19.6491727195
+            ],
+            [
+              -1.06538577274,
+              19.6473541135
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878988459162532,
+          "edge_chord_over_contact_target_h": 0.9939008052095968,
+          "nearest_theoretical_contact_point_mm": 0.033004794496904376
+        },
+        {
+          "element": 6303,
+          "side": 3,
+          "pmax_MPa": 343.2791,
+          "edge_points_mm": [
+            [
+              -1.04217998402,
+              19.5835619097
+            ],
+            [
+              -1.04348575804,
+              19.5872145241
+            ],
+            [
+              -1.04283257436,
+              19.585388326
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789995806128522,
+          "edge_chord_over_contact_target_h": 0.9939036548232382,
+          "nearest_theoretical_contact_point_mm": 0.03293792275311647
+        },
+        {
+          "element": 9008,
+          "side": 3,
+          "pmax_MPa": 293.1505,
+          "edge_points_mm": [
+            [
+              -1.06605979774,
+              19.6491727195
+            ],
+            [
+              -1.06740961824,
+              19.6528092752
+            ],
+            [
+              -1.06673441258,
+              19.6509911079
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789886235215615,
+          "edge_chord_over_contact_target_h": 0.9939008473227852,
+          "nearest_theoretical_contact_point_mm": 0.03688376658679099
+        },
+        {
+          "element": 8752,
+          "side": 3,
+          "pmax_MPa": 265.1652,
+          "edge_points_mm": [
+            [
+              -1.04087677191,
+              19.5799084039
+            ],
+            [
+              -1.04217998402,
+              19.5835619097
+            ],
+            [
+              -1.04152804323,
+              19.5817352762
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789774985526116,
+          "edge_chord_over_contact_target_h": 0.9938979968075764,
+          "nearest_theoretical_contact_point_mm": 0.03681689671206117
+        },
+        {
+          "element": 6737,
+          "side": 3,
+          "pmax_MPa": 197.5898,
+          "edge_points_mm": [
+            [
+              -1.06740961824,
+              19.6528092752
+            ],
+            [
+              -1.06876181127,
+              19.6564449475
+            ],
+            [
+              -1.06808541734,
+              19.6546272225
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878986860427074,
+          "edge_chord_over_contact_target_h": 0.9939003955707242,
+          "nearest_theoretical_contact_point_mm": 0.0407627329147724
+        },
+        {
+          "element": 6306,
+          "side": 3,
+          "pmax_MPa": 125.2691,
+          "edge_points_mm": [
+            [
+              -1.03957622502,
+              19.5762539342
+            ],
+            [
+              -1.04087677191,
+              19.5799084039
+            ],
+            [
+              -1.04022616598,
+              19.5780812881
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789909772129023,
+          "edge_chord_over_contact_target_h": 0.9939014504015886,
+          "nearest_theoretical_contact_point_mm": 0.04069585799864103
+        }
+      ],
+      "mesh": {
+        "elements": 26780,
+        "minimum_jacobian_mm2": 7.303185452323994e-06,
+        "minimum_element": 26409,
+        "nonpositive_elements": 0,
+        "nonmanifold_edges": 0,
+        "mismatched_shared_midside_nodes": 0,
+        "method": "All stationary candidates of the quadratic TRI6 Jacobian on the reference triangle; floating arithmetic, not interval certification",
+        "pass": true
+      },
+      "tip_initial_gap_samples": [
+        {
+          "t": -1.0,
+          "pinion_point_mm": [
+            4.584156103289999,
+            21.379131813199997
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.46673908380376466,
+            "point_mm": [
+              4.591477919843683,
+              21.38207833137707
+            ],
+            "distance_mm": 0.007892462671031443,
+            "outward_normal": [
+              -0.9276973308417117,
+              -0.37333317874140776
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.007892462671031445
+        },
+        {
+          "t": -0.95,
+          "pinion_point_mm": [
+            4.582895223297824,
+            21.382860682165376
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.5158454737456317,
+            "point_mm": [
+              4.5900128139375855,
+              21.38572132544742
+            ],
+            "distance_mm": 0.007670943651358829,
+            "outward_normal": [
+              -0.927863762693644,
+              -0.37291934500638735
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.007670943651358829
+        },
+        {
+          "t": -0.9,
+          "pinion_point_mm": [
+            4.5816331728533,
+            21.3865891500265
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.5649550181706373,
+            "point_mm": [
+              4.588549236119385,
+              21.389365214315877
+            ],
+            "distance_mm": 0.007452413303035029,
+            "outward_normal": [
+              -0.9280300199222746,
+              -0.37250541220640354
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.007452413303035029
+        },
+        {
+          "t": -0.85,
+          "pinion_point_mm": [
+            4.580369951956425,
+            21.390317216783373
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.6140676673233881,
+            "point_mm": [
+              4.5870871881820525,
+              21.393009994416964
+            ],
+            "distance_mm": 0.007236871830760268,
+            "outward_normal": [
+              -0.9281961022268924,
+              -0.3720913809950515
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0072368718307602685
+        },
+        {
+          "t": -0.8,
+          "pinion_point_mm": [
+            4.5791055606072,
+            21.394044882436
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.6631833714306821,
+            "point_mm": [
+              4.585626671912532,
+              21.39665566218121
+            ],
+            "distance_mm": 0.007024319435684715,
+            "outward_normal": [
+              -0.928362009307772,
+              -0.37167725202658863
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.007024319435684715
+        },
+        {
+          "t": -0.75,
+          "pinion_point_mm": [
+            4.577839998805625,
+            21.397772146984373
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.7123020807019146,
+            "point_mm": [
+              4.584167689091725,
+              21.400302214035182
+            ],
+            "distance_mm": 0.006814756315408242,
+            "outward_normal": [
+              -0.9285277408661778,
+              -0.37126302595592825
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.006814756315408242
+        },
+        {
+          "t": -0.7,
+          "pinion_point_mm": [
+            4.5765732665517,
+            21.4014990104285
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.7614237453295658,
+            "point_mm": [
+              4.582710241494475,
+              21.40394964640152
+            ],
+            "distance_mm": 0.00660818266397992,
+            "outward_normal": [
+              -0.9286932966043663,
+              -0.370848703438632
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.00660818266397992
+        },
+        {
+          "t": -0.6499999999999999,
+          "pinion_point_mm": [
+            4.575305363845425,
+            21.405225472768375
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.8105483154894361,
+            "point_mm": [
+              4.581254330889551,
+              21.407597955698947
+            ],
+            "distance_mm": 0.00640459867188776,
+            "outward_normal": [
+              -0.9288586762255897,
+              -0.3704342851309056
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.00640459867188776
+        },
+        {
+          "t": -0.6,
+          "pinion_point_mm": [
+            4.5740362906868,
+            21.408951534004
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.8596757413410243,
+            "point_mm": [
+              4.57979995903964,
+              21.4112471383423
+            ],
+            "distance_mm": 0.006204004526074248,
+            "outward_normal": [
+              -0.9290238794340986,
+              -0.37001977168959177
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.006204004526074249
+        },
+        {
+          "t": -0.55,
+          "pinion_point_mm": [
+            4.572766047075825,
+            21.412677194135377
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.9088059730280068,
+            "point_mm": [
+              4.578347127701322,
+              21.414897190742565
+            ],
+            "distance_mm": 0.006006400409915413,
+            "outward_normal": [
+              -0.9291889059351451,
+              -0.36960516377216385
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0060064004099154135
+        },
+        {
+          "t": -0.5,
+          "pinion_point_mm": [
+            4.571494633012501,
+            21.4164024531625
+          ],
+          "nearest_wheel": {
+            "element": 23315,
+            "side": 3,
+            "parameter": -0.9579389606784203,
+            "point_mm": [
+              4.5768958386250675,
+              21.41854810930689
+            ],
+            "distance_mm": 0.005811786503234576,
+            "outward_normal": [
+              -0.9293537554349864,
+              -0.36919046203672085
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.005811786503234576
+        },
+        {
+          "t": -0.44999999999999996,
+          "pinion_point_mm": [
+            4.5702220484968255,
+            21.420127311085377
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.9929236170304028,
+            "point_mm": [
+              4.575446059702365,
+              21.42219995273487
+            ],
+            "distance_mm": 0.005620154489231047,
+            "outward_normal": [
+              -0.9295138088373904,
+              -0.36878730886597394
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.005620154489231047
+        },
+        {
+          "t": -0.3999999999999999,
+          "pinion_point_mm": [
+            4.5689482935288,
+            21.423851767904
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.9437814978196938,
+            "point_mm": [
+              4.5739979472747745,
+              21.425852423615463
+            ],
+            "distance_mm": 0.0054315399501468084,
+            "outward_normal": [
+              -0.9296909886187062,
+              -0.36834042091680974
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0054315399501468084
+        },
+        {
+          "t": -0.35,
+          "pinion_point_mm": [
+            4.567673368108426,
+            21.427575823618376
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.8946361840920702,
+            "point_mm": [
+              4.572551503365554,
+              21.429505811425244
+            ],
+            "distance_mm": 0.005246051517236714,
+            "outward_normal": [
+              -0.9298679666222481,
+              -0.3678934147953801
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.005246051517236713
+        },
+        {
+          "t": -0.29999999999999993,
+          "pinion_point_mm": [
+            4.5663972722357,
+            21.4312994782285
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.8454877318978219,
+            "point_mm": [
+              4.571106729965096,
+              21.433160112128867
+            ],
+            "distance_mm": 0.005063689427301261,
+            "outward_normal": [
+              -0.9300447424766276,
+              -0.3674462913019855
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.005063689427301262
+        },
+        {
+          "t": -0.25,
+          "pinion_point_mm": [
+            4.565120005910625,
+            21.435022731734374
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.7963361973100018,
+            "point_mm": [
+              4.569663629056438,
+              21.436815321686197
+            ],
+            "distance_mm": 0.004884453912828324,
+            "outward_normal": [
+              -0.9302213158117372,
+              -0.36699905123784804
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.004884453912828325
+        },
+        {
+          "t": -0.19999999999999996,
+          "pinion_point_mm": [
+            4.5638415691332,
+            21.438745584136
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.7471816364240541,
+            "point_mm": [
+              4.568222202615254,
+              21.44047143605235
+            ],
+            "distance_mm": 0.004708345202005828,
+            "outward_normal": [
+              -0.9303976862587544,
+              -0.3665516954051042
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.004708345202005827
+        },
+        {
+          "t": -0.1499999999999999,
+          "pinion_point_mm": [
+            4.562561961903425,
+            21.442468035433375
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.6980241053573608,
+            "point_mm": [
+              4.566782452609826,
+              21.4441284511777
+            ],
+            "distance_mm": 0.004535363518707244,
+            "outward_normal": [
+              -0.9305738534501474,
+              -0.36610422460679654
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.004535363518707244
+        },
+        {
+          "t": -0.09999999999999998,
+          "pinion_point_mm": [
+            4.561281184221301,
+            21.4461900856265
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.648863660248653,
+            "point_mm": [
+              4.565344381001029,
+              21.447786363007953
+            ],
+            "distance_mm": 0.0043655090824928754,
+            "outward_normal": [
+              -0.9307498170196778,
+              -0.3656566396468636
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0043655090824928754
+        },
+        {
+          "t": -0.04999999999999993,
+          "pinion_point_mm": [
+            4.559999236086825,
+            21.449911734715375
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.5997003572576873,
+            "point_mm": [
+              4.5639079897423125,
+              21.451445167484138
+            ],
+            "distance_mm": 0.0041987821086123195,
+            "outward_normal": [
+              -0.9309255766024064,
+              -0.36520894133013354
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.004198782108612319
+        },
+        {
+          "t": 0.0,
+          "pinion_point_mm": [
+            4.5587161175,
+            21.4536329827
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.5505342525646406,
+            "point_mm": [
+              4.562473280779681,
+              21.455104860542665
+            ],
+            "distance_mm": 0.004035182807991279,
+            "outward_normal": [
+              -0.9311011318346976,
+              -0.36476113046231406
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.004035182807991279
+        },
+        {
+          "t": 0.050000000000000044,
+          "pinion_point_mm": [
+            4.5574318284608255,
+            21.457353829580374
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.5013654023697783,
+            "point_mm": [
+              4.561040256051679,
+              21.458765438115353
+            ],
+            "distance_mm": 0.0038747113872466166,
+            "outward_normal": [
+              -0.9312764823542221,
+              -0.3643132078499845
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.003874711387246616
+        },
+        {
+          "t": 0.10000000000000009,
+          "pinion_point_mm": [
+            4.5561463689693005,
+            21.4610742753565
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.4521938628928326,
+            "point_mm": [
+              4.5596089174893635,
+              21.462426896129465
+            ],
+            "distance_mm": 0.0037173680486669684,
+            "outward_normal": [
+              -0.9314516277999642,
+              -0.36386517430058735
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0037173680486669684
+        },
+        {
+          "t": 0.15000000000000013,
+          "pinion_point_mm": [
+            4.554859739025425,
+            21.464794320028375
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.4030196903726524,
+            "point_mm": [
+              4.558179267016296,
+              21.466089230507734
+            ],
+            "distance_mm": 0.003563152990222193,
+            "outward_normal": [
+              -0.9316265678122235,
+              -0.3634170306224194
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.003563152990222193
+        },
+        {
+          "t": 0.20000000000000018,
+          "pinion_point_mm": [
+            4.5535719386292,
+            21.468513963596
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.3538429410667334,
+            "point_mm": [
+              4.556751306548521,
+              21.4697524371684
+            ],
+            "distance_mm": 0.00341206640555846,
+            "outward_normal": [
+              -0.9318013020326202,
+              -0.36296877762462376
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0034120664055584597
+        },
+        {
+          "t": 0.25,
+          "pinion_point_mm": [
+            4.552282967780625,
+            21.472233206059375
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.3046636712506236,
+            "point_mm": [
+              4.555325037994543,
+              21.473416512025242
+            ],
+            "distance_mm": 0.003264108483991242,
+            "outward_normal": [
+              -0.9319758301041001,
+              -0.3625204161171803
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.003264108483991242
+        },
+        {
+          "t": 0.30000000000000004,
+          "pinion_point_mm": [
+            4.550992826479701,
+            21.4759520474185
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.25548193721760637,
+            "point_mm": [
+              4.5539004632553155,
+              21.477081450987622
+            ],
+            "distance_mm": 0.0031192794105141244,
+            "outward_normal": [
+              -0.9321501516709374,
+              -0.36207194691089817
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0031192794105141244
+        },
+        {
+          "t": 0.3500000000000001,
+          "pinion_point_mm": [
+            4.549701514726425,
+            21.479670487673374
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.2062977952780704,
+            "point_mm": [
+              4.552477584224219,
+              21.48074724996051
+            ],
+            "distance_mm": 0.0029775793657897745,
+            "outward_normal": [
+              -0.9323242663787407,
+              -0.361623370817406
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0029775793657897745
+        },
+        {
+          "t": 0.40000000000000013,
+          "pinion_point_mm": [
+            4.5484090325208,
+            21.483388526824
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.1571113017591716,
+            "point_mm": [
+              4.551056402787043,
+              21.4844139048445
+            ],
+            "distance_mm": 0.002839008526143137,
+            "outward_normal": [
+              -0.9324981738744553,
+              -0.36117468864914387
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.002839008526143137
+        },
+        {
+          "t": 0.4500000000000002,
+          "pinion_point_mm": [
+            4.547115379862825,
+            21.487106164870376
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.10792251300434083,
+            "point_mm": [
+              4.549636920821972,
+              21.48808141153589
+            ],
+            "distance_mm": 0.00270356706357585,
+            "outward_normal": [
+              -0.9326718738063692,
+              -0.36072590121935544
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.00270356706357585
+        },
+        {
+          "t": 0.5,
+          "pinion_point_mm": [
+            4.5458205567525,
+            21.4908234018125
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.05873148537272678,
+            "point_mm": [
+              4.548219140199566,
+              21.491749765926667
+            ],
+            "distance_mm": 0.0025712551457522975,
+            "outward_normal": [
+              -0.9328453658241157,
+              -0.36027700934207757
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.002571255145752297
+        },
+        {
+          "t": 0.55,
+          "pinion_point_mm": [
+            4.5445245631898255,
+            21.494540237650373
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": 0.009538275238746053,
+            "point_mm": [
+              4.5468030627827405,
+              21.495418963904566
+            ],
+            "distance_mm": 0.0024420729359955567,
+            "outward_normal": [
+              -0.9330186495786795,
+              -0.3598280138321325
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0024420729359955567
+        },
+        {
+          "t": 0.6000000000000001,
+          "pinion_point_mm": [
+            4.5432273991748,
+            21.498256672384
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": -0.03965706100834058,
+            "point_mm": [
+              4.54538869042675,
+              21.499089001353106
+            ],
+            "distance_mm": 0.0023160205932964174,
+            "outward_normal": [
+              -0.9331917247223984,
+              -0.359378915505119
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0023160205932964174
+        },
+        {
+          "t": 0.6500000000000001,
+          "pinion_point_mm": [
+            4.541929064707425,
+            21.501972706013373
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": -0.0888544669648709,
+            "point_mm": [
+              4.543976024979179,
+              21.502759874151607
+            ],
+            "distance_mm": 0.0021930982723064284,
+            "outward_normal": [
+              -0.9333645909089693,
+              -0.35892971517740446
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.002193098272306429
+        },
+        {
+          "t": 0.7000000000000002,
+          "pinion_point_mm": [
+            4.5406295597877,
+            21.505688338538498
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": -0.13805388621340897,
+            "point_mm": [
+              4.542565068279912,
+              21.50643157817525
+            ],
+            "distance_mm": 0.0020733061233364236,
+            "outward_normal": [
+              -0.9335372477934513,
+              -0.35848041366611433
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0020733061233364236
+        },
+        {
+          "t": 0.75,
+          "pinion_point_mm": [
+            4.5393288844156245,
+            21.509403569959375
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": -0.18725526232307985,
+            "point_mm": [
+              4.541155822161125,
+              21.510104109295078
+            ],
+            "distance_mm": 0.0019566442923539314,
+            "outward_normal": [
+              -0.9337096950322704,
+              -0.3580310117891252
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0019566442923539314
+        },
+        {
+          "t": 0.8,
+          "pinion_point_mm": [
+            4.5380270385912,
+            21.513118400276
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": -0.23645853885004567,
+            "point_mm": [
+              4.539748288447267,
+              21.51377746337806
+            ],
+            "distance_mm": 0.0018431129209865557,
+            "outward_normal": [
+              -0.9338819322832228,
+              -0.3575815103650552
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0018431129209865557
+        },
+        {
+          "t": 0.8500000000000001,
+          "pinion_point_mm": [
+            4.5367240223144245,
+            21.516832829488372
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": -0.28566365933808063,
+            "point_mm": [
+              4.538342468955043,
+              21.51745163628711
+            ],
+            "distance_mm": 0.0017327121465184425,
+            "outward_normal": [
+              -0.9340539592054795,
+              -0.35713191021325497
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0017327121465184427
+        },
+        {
+          "t": 0.9000000000000001,
+          "pinion_point_mm": [
+            4.5354198355853,
+            21.520546857596496
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": -0.33487056731901904,
+            "point_mm": [
+              4.536938365493395,
+              21.521126623881123
+            ],
+            "distance_mm": 0.0016254421018816521,
+            "outward_normal": [
+              -0.9342257754595903,
+              -0.3566822121537986
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0016254421018816524
+        },
+        {
+          "t": 0.9500000000000002,
+          "pinion_point_mm": [
+            4.534114478403824,
+            21.524260484600372
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": -0.38407920631318176,
+            "point_mm": [
+              4.535535979863488,
+              21.52480242201502
+            ],
+            "distance_mm": 0.0015213029156696948,
+            "outward_normal": [
+              -0.9343973807074867,
+              -0.3562324170074756
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0015213029156696946
+        },
+        {
+          "t": 1.0,
+          "pinion_point_mm": [
+            4.53280795077,
+            21.5279737105
+          ],
+          "nearest_wheel": {
+            "element": 23053,
+            "side": 3,
+            "parameter": -0.4332895198298573,
+            "point_mm": [
+              4.534135313858697,
+              21.52847902653977
+            ],
+            "distance_mm": 0.0014202947121236965,
+            "outward_normal": [
+              -0.9345687746124877,
+              -0.35578252559578205
+            ]
+          },
+          "signed_distance_along_wheel_outward_mm": 0.0014202947121236965
+        }
+      ],
+      "tip_gap_summary": {
+        "minimum_signed_mm": 0.0014202947121236965,
+        "minimum_unsigned_mm": 0.0014202947121236965,
+        "maximum_unsigned_mm": 0.007892462671031443,
+        "interpretation": "Positive means locally outside the wheel along its nearest outward normal; sampled initial geometry, not deformed/contact-gap proof"
+      },
+      "global_interference_screens": [
+        {
+          "subsegments_per_quadratic_edge": 4,
+          "max_arc_chord_deviation_mm": 0.007095937302650228,
+          "intersection_area_mm2": 1.2580049694161974e-09,
+          "polygon_valid": true,
+          "screen_clear": true,
+          "scope": "Sampled whole-body polygon interference screen, not certified curved-boundary nonpenetration"
+        },
+        {
+          "subsegments_per_quadratic_edge": 8,
+          "max_arc_chord_deviation_mm": 0.0017739843256652584,
+          "intersection_area_mm2": 1.3166049896774542e-09,
+          "polygon_valid": true,
+          "screen_clear": true,
+          "scope": "Sampled whole-body polygon interference screen, not certified curved-boundary nonpenetration"
+        },
+        {
+          "subsegments_per_quadratic_edge": 32,
+          "max_arc_chord_deviation_mm": 0.00011087402035615659,
+          "intersection_area_mm2": 1.3352655690467103e-09,
+          "polygon_valid": true,
+          "screen_clear": true,
+          "scope": "Sampled whole-body polygon interference screen, not certified curved-boundary nonpenetration"
+        }
+      ],
+      "actual_pressure_support_review": {
+        "target_contact_h_mm": 0.0039027923499312584,
+        "maximum_active_edge_chord_over_target_h": 40.34294294959255,
+        "original_h_check": {
+          "curve": "P_FLANK",
+          "target": 0.0039027923499312584,
+          "n": 36,
+          "max": 0.0038789995857209866,
+          "median": 0.003878988671741179,
+          "max_over_target": 0.9939036561320792
+        },
+        "interpretation": "Original h_check covers only a disk around theoretical contact points. Audit actual loaded elements too; no pressure is deleted from the result.",
+        "requires_additional_local_mesh_convergence": true,
+        "trigger_ratio": 2,
+        "trigger_is": "Diagnostic refinement trigger, not a replacement for original acceptance threshold"
+      }
+    },
+    {
+      "phase": 11,
+      "input_sha256": "c38f66d0cf64c744b47a69d0b3b09a791a075eb4dcc7cce010529c480c5d4384",
+      "dat_sha256": "089f419e7f337ee18d62064baf8e5e9ef3b94698456ae91828f9fa4f827fd823",
+      "actual_balance": {
+        "wheel_RF_N": [
+          -41.66448438199998,
+          -15.173424628999998
+        ],
+        "contact_surface_force_N": [
+          -41.66448,
+          -15.17342
+        ],
+        "wheel_RF_moment_Nmm": -1499.872809280544,
+        "contact_moment_global_Nmm": 833.308,
+        "contact_moment_wheel_center_Nmm": -1499.9028799999996,
+        "input_torque_Nmm": 833.3333333333334,
+        "wheel_contact_force_residual_rel": 1.437534060965048e-07,
+        "wheel_contact_moment_residual_rel": 2.004884632184517e-05,
+        "pinion_contact_vs_input_torque_residual_rel": 3.0400000000054204e-05,
+        "sign_convention": "CF reported on pinion; wheel support RF has same sign. Contact moment transferred from global origin to wheel center before comparison.",
+        "scope": "Checks printed contact statistics against wheel-bore RF and input torque; not full-system nodal reaction/energy audit"
+      },
+      "ideal_reference_comparison_unchanged": {
+        "theta_rad": 0.000193406375,
+        "delta_LOA_um": 3.6348508680090443,
+        "mesh_stiffness_N_per_mm_um": 12.198778472613622,
+        "p_max_MPa": 624.3707,
+        "contact_normal_force_rel_err": 1.4873007590827696e-05,
+        "wheel_torque_rel_err": 8.479381297062597e-05
+      },
+      "active_pressure_elements": [
+        {
+          "element": 8772,
+          "side": 3,
+          "pmax_MPa": 624.3707,
+          "edge_points_mm": [
+            [
+              -0.706292531372,
+              19.7399629041
+            ],
+            [
+              -0.707618650267,
+              19.7436081792
+            ],
+            [
+              -0.706955293034,
+              19.7417856505
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878997535233143,
+          "edge_chord_over_contact_target_h": 0.9939031307421379,
+          "nearest_theoretical_contact_point_mm": 0.0008491682538813812
+        },
+        {
+          "element": 6167,
+          "side": 3,
+          "pmax_MPa": 623.7675,
+          "edge_points_mm": [
+            [
+              -0.707618650267,
+              19.7436081792
+            ],
+            [
+              -0.7089471583,
+              19.7472525817
+            ],
+            [
+              -0.708282604322,
+              19.7454304885
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789951244823807,
+          "edge_chord_over_contact_target_h": 0.9939025130431812,
+          "nearest_theoretical_contact_point_mm": 0.0030298264222089048
+        },
+        {
+          "element": 7408,
+          "side": 3,
+          "pmax_MPa": 621.2526,
+          "edge_points_mm": [
+            [
+              -0.704968788596,
+              19.7363167622
+            ],
+            [
+              -0.706292531372,
+              19.7399629041
+            ],
+            [
+              -0.705630363637,
+              19.7381399407
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038790006047874502,
+          "edge_chord_over_contact_target_h": 0.9939039172442194,
+          "nearest_theoretical_contact_point_mm": 0.004728167527070212
+        },
+        {
+          "element": 6186,
+          "side": 3,
+          "pmax_MPa": 621.0021,
+          "edge_points_mm": [
+            [
+              -0.7089471583,
+              19.7472525817
+            ],
+            [
+              -0.710278070384,
+              19.7508961114
+            ],
+            [
+              -0.709612313009,
+              19.7490744559
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878999310404331,
+          "edge_chord_over_contact_target_h": 0.9939035855885731,
+          "nearest_theoretical_contact_point_mm": 0.006908823709918197
+        },
+        {
+          "element": 6170,
+          "side": 3,
+          "pmax_MPa": 613.7869,
+          "edge_points_mm": [
+            [
+              -0.703647412064,
+              19.7326697687
+            ],
+            [
+              -0.704968788596,
+              19.7363167622
+            ],
+            [
+              -0.70430780552,
+              19.7344933719
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878994396538567,
+          "edge_chord_over_contact_target_h": 0.9939023265244663,
+          "nearest_theoretical_contact_point_mm": 0.008607164612977263
+        },
+        {
+          "element": 6166,
+          "side": 3,
+          "pmax_MPa": 613.286,
+          "edge_points_mm": [
+            [
+              -0.710278070384,
+              19.7508961114
+            ],
+            [
+              -0.711611396175,
+              19.7545387542
+            ],
+            [
+              -0.710944430089,
+              19.7527175421
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789952608029045,
+          "edge_chord_over_contact_target_h": 0.993902547972153,
+          "nearest_theoretical_contact_point_mm": 0.01078781888720552
+        },
+        {
+          "element": 9274,
+          "side": 3,
+          "pmax_MPa": 601.3091,
+          "edge_points_mm": [
+            [
+              -0.702328385439,
+              19.7290219216
+            ],
+            [
+              -0.703647412064,
+              19.7326697687
+            ],
+            [
+              -0.702987605226,
+              19.7308459497
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878997254758451,
+          "edge_chord_over_contact_target_h": 0.9939030588770046,
+          "nearest_theoretical_contact_point_mm": 0.012486159973774275
+        },
+        {
+          "element": 6185,
+          "side": 3,
+          "pmax_MPa": 600.2193,
+          "edge_points_mm": [
+            [
+              -0.711611396175,
+              19.7545387542
+            ],
+            [
+              -0.712947132262,
+              19.7581805188
+            ],
+            [
+              -0.712278969649,
+              19.7563597454
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878999909246609,
+          "edge_chord_over_contact_target_h": 0.9939037390280145,
+          "nearest_theoretical_contact_point_mm": 0.014666816451217776
+        },
+        {
+          "element": 7478,
+          "side": 3,
+          "pmax_MPa": 583.8371,
+          "edge_points_mm": [
+            [
+              -0.701011696235,
+              19.7253732298
+            ],
+            [
+              -0.702328385439,
+              19.7290219216
+            ],
+            [
+              -0.701669749591,
+              19.7271976811
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789975910451216,
+          "edge_chord_over_contact_target_h": 0.9939031450426626,
+          "nearest_theoretical_contact_point_mm": 0.016365152724412718
+        },
+        {
+          "element": 6157,
+          "side": 3,
+          "pmax_MPa": 578.6806,
+          "edge_points_mm": [
+            [
+              -0.712947132262,
+              19.7581805188
+            ],
+            [
+              -0.714285093969,
+              19.7618214638
+            ],
+            [
+              -0.713615840568,
+              19.7600010919
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878997553805486,
+          "edge_chord_over_contact_target_h": 0.99390313550087,
+          "nearest_theoretical_contact_point_mm": 0.018545810901349463
+        },
+        {
+          "element": 6144,
+          "side": 3,
+          "pmax_MPa": 561.0513,
+          "edge_points_mm": [
+            [
+              -0.699697328601,
+              19.7217236937
+            ],
+            [
+              -0.701011696235,
+              19.7253732298
+            ],
+            [
+              -0.700354222565,
+              19.7235485654
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038790045143702752,
+          "edge_chord_over_contact_target_h": 0.9939049189841211,
+          "nearest_theoretical_contact_point_mm": 0.02024415018704889
+        },
+        {
+          "element": 6179,
+          "side": 3,
+          "pmax_MPa": 555.3856,
+          "edge_points_mm": [
+            [
+              -0.714285093969,
+              19.7618214638
+            ],
+            [
+              -0.715625243783,
+              19.7654616039
+            ],
+            [
+              -0.714954894226,
+              19.7636416341
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878997482802944,
+          "edge_chord_over_contact_target_h": 0.9939031173081156,
+          "nearest_theoretical_contact_point_mm": 0.022424801638186068
+        },
+        {
+          "element": 6183,
+          "side": 3,
+          "pmax_MPa": 532.2546,
+          "edge_points_mm": [
+            [
+              -0.698385272139,
+              19.7180733295
+            ],
+            [
+              -0.699697328601,
+              19.7217236937
+            ],
+            [
+              -0.699041012212,
+              19.7198986143
+            ]
+          ],
+          "edge_length_chord_mm": 0.003879001282818395,
+          "edge_chord_over_contact_target_h": 0.9939040909739196,
+          "nearest_theoretical_contact_point_mm": 0.024123146605514866
+        },
+        {
+          "element": 6180,
+          "side": 3,
+          "pmax_MPa": 526.087,
+          "edge_points_mm": [
+            [
+              -0.715625243783,
+              19.7654616039
+            ],
+            [
+              -0.716967594976,
+              19.7691009327
+            ],
+            [
+              -0.716296143055,
+              19.7672813692
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789974013715613,
+          "edge_chord_over_contact_target_h": 0.993903096443213,
+          "nearest_theoretical_contact_point_mm": 0.026303791350200254
+        },
+        {
+          "element": 6348,
+          "side": 3,
+          "pmax_MPa": 496.6246,
+          "edge_points_mm": [
+            [
+              -0.697075516059,
+              19.7144221528
+            ],
+            [
+              -0.698385272139,
+              19.7180733295
+            ],
+            [
+              -0.697730107947,
+              19.7162478437
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789885645255863,
+          "edge_chord_over_contact_target_h": 0.9939008322064351,
+          "nearest_theoretical_contact_point_mm": 0.028002131795290573
+        },
+        {
+          "element": 6152,
+          "side": 3,
+          "pmax_MPa": 490.1231,
+          "edge_points_mm": [
+            [
+              -0.716967594976,
+              19.7691009327
+            ],
+            [
+              -0.718312160672,
+              19.772739444
+            ],
+            [
+              -0.717639600021,
+              19.7709202905
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878997472426164,
+          "edge_chord_over_contact_target_h": 0.9939031146493066,
+          "nearest_theoretical_contact_point_mm": 0.030182779267158136
+        },
+        {
+          "element": 6155,
+          "side": 3,
+          "pmax_MPa": 452.4673,
+          "edge_points_mm": [
+            [
+              -0.695768039283,
+              19.7107701513
+            ],
+            [
+              -0.697075516059,
+              19.7144221528
+            ],
+            [
+              -0.696421493336,
+              19.7125962538
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789960654513674,
+          "edge_chord_over_contact_target_h": 0.9939027541446549,
+          "nearest_theoretical_contact_point_mm": 0.03188111230569588
+        },
+        {
+          "element": 7356,
+          "side": 3,
+          "pmax_MPa": 445.6246,
+          "edge_points_mm": [
+            [
+              -0.718312160672,
+              19.772739444
+            ],
+            [
+              -0.719658952389,
+              19.7763771277
+            ],
+            [
+              -0.718985277474,
+              19.7745583897
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789935073701215,
+          "edge_chord_over_contact_target_h": 0.9939020986956797,
+          "nearest_theoretical_contact_point_mm": 0.034061762923665494
+        },
+        {
+          "element": 7293,
+          "side": 3,
+          "pmax_MPa": 396.9364,
+          "edge_points_mm": [
+            [
+              -0.69446282956,
+              19.7071173377
+            ],
+            [
+              -0.695768039283,
+              19.7107701513
+            ],
+            [
+              -0.695115151903,
+              19.7089438454
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789972437924046,
+          "edge_chord_over_contact_target_h": 0.9939030560672096,
+          "nearest_theoretical_contact_point_mm": 0.03576009411630703
+        },
+        {
+          "element": 7619,
+          "side": 3,
+          "pmax_MPa": 389.4553,
+          "edge_points_mm": [
+            [
+              -0.719658952389,
+              19.7763771277
+            ],
+            [
+              -0.721007986887,
+              19.7800139885
+            ],
+            [
+              -0.720333188823,
+              19.7781956622
+            ]
+          ],
+          "edge_length_chord_mm": 0.00387900123167978,
+          "edge_chord_over_contact_target_h": 0.9939040778708359,
+          "nearest_theoretical_contact_point_mm": 0.03794074371086735
+        },
+        {
+          "element": 6159,
+          "side": 3,
+          "pmax_MPa": 324.017,
+          "edge_points_mm": [
+            [
+              -0.693159872554,
+              19.7034637198
+            ],
+            [
+              -0.69446282956,
+              19.7071173377
+            ],
+            [
+              -0.693811070497,
+              19.7052906292
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789973857567108,
+          "edge_chord_over_contact_target_h": 0.9939030924422697,
+          "nearest_theoretical_contact_point_mm": 0.039639072745917346
+        },
+        {
+          "element": 6169,
+          "side": 3,
+          "pmax_MPa": 314.802,
+          "edge_points_mm": [
+            [
+              -0.721007986887,
+              19.7800139885
+            ],
+            [
+              -0.722359271851,
+              19.7836500069
+            ],
+            [
+              -0.721683346849,
+              19.7818321022
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789948258645146,
+          "edge_chord_over_contact_target_h": 0.9939024365292807,
+          "nearest_theoretical_contact_point_mm": 0.04181972169456512
+        },
+        {
+          "element": 8064,
+          "side": 3,
+          "pmax_MPa": 213.8091,
+          "edge_points_mm": [
+            [
+              -0.691859285847,
+              19.6998092577
+            ],
+            [
+              -0.693159872554,
+              19.7034637198
+            ],
+            [
+              -0.692509264884,
+              19.7016366
+            ]
+          ],
+          "edge_length_chord_mm": 0.003878997167148919,
+          "edge_chord_over_contact_target_h": 0.9939030364290946,
+          "nearest_theoretical_contact_point_mm": 0.04351804886152016
+        },
+        {
+          "element": 591,
+          "side": 3,
+          "pmax_MPa": 202.5546,
+          "edge_points_mm": [
+            [
+              -0.722359271851,
+              19.7836500069
+            ],
+            [
+              -0.723712823631,
+              19.7872851875
+            ],
+            [
+              -0.723035763956,
+              19.7854677032
+            ]
+          ],
+          "edge_length_chord_mm": 0.0038789999246915037,
+          "edge_chord_over_contact_target_h": 0.9939037429854105,
+          "nearest_theoretical_contact_point_mm": 0.04569869617079391
+        }
+      ],
+      "mesh": {
+        "elements": 26737,
+        "minimum_jacobian_mm2": 6.6892738777911945e-06,
+        "minimum_element": 10078,
+        "nonpositive_elements": 0,
+        "nonmanifold_edges": 0,
+        "mismatched_shared_midside_nodes": 0,
+        "method": "All stationary candidates of the quadratic TRI6 Jacobian on the reference triangle; floating arithmetic, not interval certification",
+        "pass": true
+      },
+      "actual_pressure_support_review": {
+        "target_contact_h_mm": 0.0039027923499312584,
+        "maximum_active_edge_chord_over_target_h": 0.9939049189841211,
+        "original_h_check": {
+          "curve": "P_FLANK",
+          "target": 0.0039027923499312584,
+          "n": 36,
+          "max": 0.0038790045138808052,
+          "median": 0.0038789975089796834,
+          "max_over_target": 0.9939049188587058
+        },
+        "interpretation": "Original h_check covers only a disk around theoretical contact points. Audit actual loaded elements too; no pressure is deleted from the result.",
+        "requires_additional_local_mesh_convergence": false,
+        "trigger_ratio": 2,
+        "trigger_is": "Diagnostic refinement trigger, not a replacement for original acceptance threshold"
+      }
+    }
+  ],
+  "limitations": [
+    "Full curved-boundary interference is not mathematically certified.",
+    "Stiffness reference identity, neighboring tooth-tip pressure convergence, and contact discretization remain open.",
+    "Positive Jacobian does not certify good aspect ratio, contact mesh resolution, or pressure convergence."
+  ]
+}

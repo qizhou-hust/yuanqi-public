@@ -1,0 +1,5099 @@
+{
+  "schema": "m37.semantic-preflight/v1",
+  "scope": "Input geometry and boundary semantics only; no stress/model/product acceptance claim",
+  "cases": [
+    {
+      "scope": "original",
+      "phase": 0,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph00_d12.inp",
+      "input_sha256": "9c92d1028776eace607d469a1dcd626e35f240dfc671d244d670ad8ba2f0b6f7",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -4.5216282759201745,
+              18.354261897148646
+            ],
+            "pinion": {
+              "element": 10556,
+              "side": 3,
+              "parameter": -0.19379168885104325,
+              "point_mm": [
+                -4.521627807012283,
+                18.354262067809255
+              ],
+              "distance_mm": 4.98998651246289e-07,
+              "outward_normal": [
+                0.9396977120241402,
+                0.34200615493963854
+              ]
+            },
+            "wheel": {
+              "element": 33787,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                -12.3977609605,
+                88.10048061009999
+              ],
+              "distance_mm": 70.18951838287504,
+              "outward_normal": [
+                0.8509126551226636,
+                0.525307199029386
+              ]
+            },
+            "nearest_point_gap_mm": 70.18951826590953,
+            "signed_normal_gap_mm": 16.452451721298694,
+            "opposing_normal_dot": 0.9792589704533049,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              1.026563972495484,
+              20.373638729558422
+            ],
+            "pinion": {
+              "element": 10636,
+              "side": 3,
+              "parameter": -0.9251694710944213,
+              "point_mm": [
+                1.0265635118580951,
+                20.373638561895447
+              ],
+              "distance_mm": 4.902016699866227e-07,
+              "outward_normal": [
+                0.9396895535761443,
+                0.34202857029766776
+              ]
+            },
+            "wheel": {
+              "element": 33788,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                11.1365553103,
+                88.55952192610002
+              ],
+              "distance_mm": 68.9313179341792,
+              "outward_normal": [
+                0.9894978697357512,
+                -0.1445474516842496
+              ]
+            },
+            "nearest_point_gap_mm": 68.93131816758964,
+            "signed_normal_gap_mm": 32.82177388127877,
+            "opposing_normal_dot": 0.8803814532367986,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 1,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph01_d12.inp",
+      "input_sha256": "649e904700d38d8a2ead0783a9122ba5e7379e685636fb271ee121d2f58e950a",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -4.174866260394196,
+              18.480472949174256
+            ],
+            "pinion": {
+              "element": 10766,
+              "side": 3,
+              "parameter": 0.2175045554651197,
+              "point_mm": [
+                -4.174865832609237,
+                18.48047310490566
+              ],
+              "distance_mm": 4.55249646480994e-07,
+              "outward_normal": [
+                0.9396711484085978,
+                0.34207913243643917
+              ]
+            },
+            "wheel": {
+              "element": 34037,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                -12.7471783352,
+                87.9633348812
+              ],
+              "distance_mm": 70.00966102312461,
+              "outward_normal": [
+                0.8451319318388539,
+                0.5345577777811549
+              ]
+            },
+            "nearest_point_gap_mm": 70.00966092094504,
+            "signed_normal_gap_mm": 15.713482341808948,
+            "opposing_normal_dot": 0.977007153808321,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              1.3733259880214632,
+              20.499849781584032
+            ],
+            "pinion": {
+              "element": 10822,
+              "side": 3,
+              "parameter": -0.9256862639196671,
+              "point_mm": [
+                1.3733255383672827,
+                20.499849617928977
+              ],
+              "distance_mm": 4.785100410208195e-07,
+              "outward_normal": [
+                0.9396964374867874,
+                0.3420096568441311
+              ]
+            },
+            "wheel": {
+              "element": 34038,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                10.7807304968,
+                88.67906336159999
+              ],
+              "distance_mm": 68.82517289467,
+              "outward_normal": [
+                0.991015736734445,
+                -0.1337453159728795
+              ]
+            },
+            "nearest_point_gap_mm": 68.82517311825029,
+            "signed_normal_gap_mm": 32.158054421810355,
+            "opposing_normal_dot": 0.8855117676823075,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 2,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph02_d12.inp",
+      "input_sha256": "2715184dd582d68cff038d7216b30b5fd28ec9c66579f568f087c9dbd1145690",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -3.828104244868218,
+              18.606684001199866
+            ],
+            "pinion": {
+              "element": 14415,
+              "side": 3,
+              "parameter": 0.8270993953984676,
+              "point_mm": [
+                -3.8281040180021715,
+                18.60668408380724
+              ],
+              "distance_mm": 2.4143773822122497e-07,
+              "outward_normal": [
+                0.9396461712095532,
+                0.34214773553426747
+              ]
+            },
+            "wheel": {
+              "element": 33884,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                15.960007356000002,
+                86.4864477667
+              ],
+              "distance_mm": 70.7052451349157,
+              "outward_normal": [
+                0.9559925612702992,
+                -0.2933909044190926
+              ]
+            },
+            "nearest_point_gap_mm": 70.70524499211696,
+            "signed_normal_gap_mm": 41.818730520752325,
+            "opposing_normal_dot": 0.7979117163291076,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              1.7200880035474413,
+              20.626060833609642
+            ],
+            "pinion": {
+              "element": 1975,
+              "side": 3,
+              "parameter": -0.8355492272500767,
+              "point_mm": [
+                1.7200876721119918,
+                20.626060712985858
+              ],
+              "distance_mm": 3.5270321043290125e-07,
+              "outward_normal": [
+                0.9397006876766852,
+                0.34199797891210526
+              ]
+            },
+            "wheel": {
+              "element": 33884,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                15.960007356000002,
+                86.4864477667
+              ],
+              "distance_mm": 67.38223705206538,
+              "outward_normal": [
+                0.9559925612702992,
+                -0.2933909044190926
+              ]
+            },
+            "nearest_point_gap_mm": 67.38223724000724,
+            "signed_normal_gap_mm": 35.905381582149545,
+            "opposing_normal_dot": 0.7980077708969714,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 3,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph03_d12.inp",
+      "input_sha256": "610263c719e97a2baea78d5d8cd9835bcc34f4fb3e7769a5829a1c714d0847e1",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -3.4813422293422387,
+              18.73289505322548
+            ],
+            "pinion": {
+              "element": 13143,
+              "side": 3,
+              "parameter": -0.7169496420210901,
+              "point_mm": [
+                -3.481342372956316,
+                18.73289500093104
+              ],
+              "distance_mm": 1.5283884196144665e-07,
+              "outward_normal": [
+                0.9396438437787403,
+                0.3421541273296501
+              ]
+            },
+            "wheel": {
+              "element": 33978,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                15.6265088538,
+                86.65872719590001
+              ],
+              "distance_mm": 70.56223242847648,
+              "outward_normal": [
+                0.9591360190650072,
+                -0.282945395672257
+              ]
+            },
+            "nearest_point_gap_mm": 70.56223251770693,
+            "signed_normal_gap_mm": 41.19567861087148,
+            "opposing_normal_dot": 0.8044353207226989,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              2.0668500190734203,
+              20.752271885635253
+            ],
+            "pinion": {
+              "element": 10685,
+              "side": 3,
+              "parameter": -0.6548047458744679,
+              "point_mm": [
+                2.0668498731770177,
+                20.75227183253815
+              ],
+              "distance_mm": 1.5525805189343275e-07,
+              "outward_normal": [
+                0.939702648804994,
+                0.34199259031282847
+              ]
+            },
+            "wheel": {
+              "element": 33978,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                15.6265088538,
+                86.65872719590001
+              ],
+              "distance_mm": 67.28688727588835,
+              "outward_normal": [
+                0.9591360190650072,
+                -0.282945395672257
+              ]
+            },
+            "nearest_point_gap_mm": 67.28688735729718,
+            "signed_normal_gap_mm": 35.281566849036764,
+            "opposing_normal_dot": 0.8045374288966212,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 4,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph04_d12.inp",
+      "input_sha256": "f2a99968eb5ab319440e5f6ba0cccb918c74c4889af2559d146f54411bfc5272",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -3.13458021381626,
+              18.85910610525109
+            ],
+            "pinion": {
+              "element": 10982,
+              "side": 3,
+              "parameter": 0.052129052004595076,
+              "point_mm": [
+                -3.134580607958958,
+                18.859105961768805
+              ],
+              "distance_mm": 4.194468174840385e-07,
+              "outward_normal": [
+                0.9396726401803649,
+                0.3420750345998118
+              ]
+            },
+            "wheel": {
+              "element": 33916,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                15.2911509533,
+                86.8273585433
+              ],
+              "distance_mm": 70.42152304888883,
+              "outward_normal": [
+                0.9621653499368136,
+                -0.27246621695353174
+              ]
+            },
+            "nearest_point_gap_mm": 70.42152329049972,
+            "signed_normal_gap_mm": 40.56439817693891,
+            "opposing_normal_dot": 0.8109165640735311,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              2.4136120345993994,
+              20.878482937660866
+            ],
+            "pinion": {
+              "element": 10883,
+              "side": 3,
+              "parameter": -0.3834805045814818,
+              "point_mm": [
+                2.4136121016039667,
+                20.878482962046323
+              ],
+              "distance_mm": 7.130401498304591e-08,
+              "outward_normal": [
+                0.939702588956471,
+                0.34199275476025226
+              ]
+            },
+            "wheel": {
+              "element": 33916,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                15.2911509533,
+                86.8273585433
+              ],
+              "distance_mm": 67.19438371062505,
+              "outward_normal": [
+                0.9621653499368136,
+                -0.27246621695353174
+              ]
+            },
+            "nearest_point_gap_mm": 67.19438367385042,
+            "signed_normal_gap_mm": 34.65509423170038,
+            "opposing_normal_dot": 0.8109677982247897,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 5,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph05_d12.inp",
+      "input_sha256": "3a2502a298d19f43823339c4a4d4dd3023f096980d60a51fae51e160bc3beb4d",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -2.787818198290281,
+              18.9853171572767
+            ],
+            "pinion": {
+              "element": 14750,
+              "side": 3,
+              "parameter": -0.37298709115987816,
+              "point_mm": [
+                -2.7878186692140066,
+                18.985316985873517
+              ],
+              "distance_mm": 5.011468909492606e-07,
+              "outward_normal": [
+                0.9396920013198364,
+                0.34202184528991786
+              ]
+            },
+            "wheel": {
+              "element": 34005,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                14.953973558799998,
+                86.9923217432
+              ],
+              "distance_mm": 70.28316902005592,
+              "outward_normal": [
+                0.9650801928708362,
+                -0.2619546169251261
+              ]
+            },
+            "nearest_point_gap_mm": 70.2831693047848,
+            "signed_normal_gap_mm": 39.93170150548423,
+            "opposing_normal_dot": 0.8172839364099846,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              2.7603740501253777,
+              21.004693989686476
+            ],
+            "pinion": {
+              "element": 10860,
+              "side": 3,
+              "parameter": -0.021548466768853244,
+              "point_mm": [
+                2.760374317442532,
+                21.004694086974773
+              ],
+              "distance_mm": 2.8447051440521804e-07,
+              "outward_normal": [
+                0.9397007427426877,
+                0.34199782760836556
+              ]
+            },
+            "wheel": {
+              "element": 34005,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                14.953973558799998,
+                86.9923217432
+              ],
+              "distance_mm": 67.10477543002598,
+              "outward_normal": [
+                0.9650801928708362,
+                -0.2619546169251261
+              ]
+            },
+            "nearest_point_gap_mm": 67.10477528578315,
+            "signed_normal_gap_mm": 34.02595957126901,
+            "opposing_normal_dot": 0.8172986641266063,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 6,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph06_d12.inp",
+      "input_sha256": "b48c3983d5823b1ebd559067b0609397a35bae70ca566c644200aae451b9f507",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -2.4410561827643025,
+              19.11152820930231
+            ],
+            "pinion": {
+              "element": 11099,
+              "side": 3,
+              "parameter": -0.14528808234105567,
+              "point_mm": [
+                -2.441056598728269,
+                19.11152805791905
+              ],
+              "distance_mm": 4.426543947433465e-07,
+              "outward_normal": [
+                0.9397036856043773,
+                0.3419897414565963
+              ]
+            },
+            "wheel": {
+              "element": 34044,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                14.6150167909,
+                87.1535971669
+              ],
+              "distance_mm": 70.14722213540207,
+              "outward_normal": [
+                0.9678802002875364,
+                -0.2514118491466904
+              ]
+            },
+            "nearest_point_gap_mm": 70.14722238338254,
+            "signed_normal_gap_mm": 39.297344648924685,
+            "opposing_normal_dot": 0.8235403181448995,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              3.1071360656513565,
+              21.130905041712087
+            ],
+            "pinion": {
+              "element": 11042,
+              "side": 3,
+              "parameter": 0.43083406258057466,
+              "point_mm": [
+                3.1071364807002766,
+                21.130905192771102
+              ],
+              "distance_mm": 4.4168363383496227e-07,
+              "outward_normal": [
+                0.9396973055442706,
+                0.3420072717835655
+              ]
+            },
+            "wheel": {
+              "element": 34044,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                14.6150167909,
+                87.1535971669
+              ],
+              "distance_mm": 67.01811094207221,
+              "outward_normal": [
+                0.9678802002875364,
+                -0.2514118491466904
+              ]
+            },
+            "nearest_point_gap_mm": 67.01811072198757,
+            "signed_normal_gap_mm": 33.39416487789917,
+            "opposing_normal_dot": 0.8235297356791259,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 7,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph07_d12.inp",
+      "input_sha256": "7c4a7f01b41b85849caad5482734fc8399ff5a88c5a59a5dd143dc5e714ed594",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -2.094294167238324,
+              19.237739261327924
+            ],
+            "pinion": {
+              "element": 11998,
+              "side": 3,
+              "parameter": -0.8702686494986445,
+              "point_mm": [
+                -2.094294435448668,
+                19.237739163722793
+              ],
+              "distance_mm": 2.854182020984899e-07,
+              "outward_normal": [
+                0.9397100169237348,
+                0.3419723440472843
+              ]
+            },
+            "wheel": {
+              "element": 34002,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                14.2743209822,
+                87.3111656239
+              ],
+              "distance_mm": 70.01373392878673,
+              "outward_normal": [
+                0.9705650393841183,
+                -0.24083916692536667
+              ]
+            },
+            "nearest_point_gap_mm": 70.01373408639222,
+            "signed_normal_gap_mm": 38.66098108505396,
+            "opposing_normal_dot": 0.8296893551333723,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              3.453898081177335,
+              21.257116093737697
+            ],
+            "pinion": {
+              "element": 766,
+              "side": 3,
+              "parameter": -0.9802038917111682,
+              "point_mm": [
+                3.453898551364537,
+                21.25711626487211
+              ],
+              "distance_mm": 5.003628603154623e-07,
+              "outward_normal": [
+                0.9396924492327662,
+                0.3420206146636855
+              ]
+            },
+            "wheel": {
+              "element": 34002,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                14.2743209822,
+                87.3111656239
+              ],
+              "distance_mm": 66.93443815473549,
+              "outward_normal": [
+                0.9705650393841183,
+                -0.24083916692536667
+              ]
+            },
+            "nearest_point_gap_mm": 66.93443790984293,
+            "signed_normal_gap_mm": 32.75971581856508,
+            "opposing_normal_dot": 0.8296606790916545,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 8,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph08_d12.inp",
+      "input_sha256": "423e803bc0f8d145f1dc9d6915625ace341b8c67a319aa77390e27b80b1c5ce0",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -1.747532151712345,
+              19.363950313353534
+            ],
+            "pinion": {
+              "element": 10629,
+              "side": 3,
+              "parameter": 0.34539193294725273,
+              "point_mm": [
+                -1.7475322198994334,
+                19.363950288539705
+              ],
+              "distance_mm": 7.256173335474346e-08,
+              "outward_normal": [
+                0.9397114032192375,
+                0.3419685346047668
+              ]
+            },
+            "wheel": {
+              "element": 34079,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                13.931926672099998,
+                87.4650083654
+              ],
+              "distance_mm": 69.88275564698225,
+              "outward_normal": [
+                0.9731343914487907,
+                -0.23023782525812755
+              ]
+            },
+            "nearest_point_gap_mm": 69.88275568646243,
+            "signed_normal_gap_mm": 38.02258535269716,
+            "opposing_normal_dot": 0.8357313927951315,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              3.8006600967033135,
+              21.38332714576331
+            ],
+            "pinion": {
+              "element": 11877,
+              "side": 3,
+              "parameter": -0.49800540652803227,
+              "point_mm": [
+                3.8006604892896085,
+                21.38332728866131
+              ],
+              "distance_mm": 4.1778443870326544e-07,
+              "outward_normal": [
+                0.9396862559951092,
+                0.3420376299384237
+              ]
+            },
+            "wheel": {
+              "element": 34079,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                13.931926672099998,
+                87.4650083654
+              ],
+              "distance_mm": 66.85380434377265,
+              "outward_normal": [
+                0.9731343914487907,
+                -0.23023782525812755
+              ]
+            },
+            "nearest_point_gap_mm": 66.8538041430311,
+            "signed_normal_gap_mm": 32.12263316564944,
+            "opposing_normal_dot": 0.8356910128071262,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 9,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph09_d12.inp",
+      "input_sha256": "bba954d0338443d68cb18f9dc4ba1545118f4fb76f4bef573214f8680d446c13",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -1.4007701361863665,
+              19.490161365379144
+            ],
+            "pinion": {
+              "element": 14152,
+              "side": 3,
+              "parameter": -0.38142052095950585,
+              "point_mm": [
+                -1.4007699911455032,
+                19.490161418161588
+              ],
+              "distance_mm": 1.543464879864808e-07,
+              "outward_normal": [
+                0.9397095134198661,
+                0.34197372762859807
+              ]
+            },
+            "wheel": {
+              "element": 33636,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                13.587874602,
+                87.6151070856
+              ],
+              "distance_mm": 69.75433821971649,
+              "outward_normal": [
+                0.9755879506388804,
+                -0.21960908580527655
+              ]
+            },
+            "nearest_point_gap_mm": 69.75433813700096,
+            "signed_normal_gap_mm": 37.38191353183769,
+            "opposing_normal_dot": 0.8416687406992075,
+            "pass": false
+          },
+          {
+            "theoretical_point_mm": [
+              4.147422112229292,
+              21.50953819778892
+            ],
+            "pinion": {
+              "element": 10631,
+              "side": 3,
+              "parameter": 0.2637401292713212,
+              "point_mm": [
+                4.1474222542663455,
+                21.509538249492625
+              ],
+              "distance_mm": 1.5115487931911558e-07,
+              "outward_normal": [
+                0.9396789162116342,
+                0.34205779398711045
+              ]
+            },
+            "wheel": {
+              "element": 33636,
+              "side": 3,
+              "parameter": -1.0,
+              "point_mm": [
+                13.587874602,
+                87.6151070856
+              ],
+              "distance_mm": 66.77625611841947,
+              "outward_normal": [
+                0.9755879506388804,
+                -0.21960908580527655
+              ]
+            },
+            "nearest_point_gap_mm": 66.77625604715467,
+            "signed_normal_gap_mm": 31.482919077007907,
+            "opposing_normal_dot": 0.8416204286953936,
+            "pass": false
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": false
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": false
+    },
+    {
+      "scope": "original",
+      "phase": 10,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.inp",
+      "input_sha256": "a5c3fbc646170e73ffd0826a8f8afef0842ebcbedffc18e6ca31acb720682818",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -1.0540081206603877,
+              19.616372417404754
+            ],
+            "pinion": {
+              "element": 6353,
+              "side": 3,
+              "parameter": 0.982759688310177,
+              "point_mm": [
+                -1.054007790224263,
+                19.616372537660183
+              ],
+              "distance_mm": 3.516381672042548e-07,
+              "outward_normal": [
+                0.9397049452171492,
+                0.34198628033070944
+              ]
+            },
+            "wheel": {
+              "element": 22197,
+              "side": 3,
+              "parameter": 0.007307249044282658,
+              "point_mm": [
+                -1.0540082597718272,
+                19.61637236677101
+              ],
+              "distance_mm": 1.4803975363590048e-07,
+              "outward_normal": [
+                -0.9396897556950883,
+                -0.34202801499541724
+              ]
+            },
+            "nearest_point_gap_mm": 4.996779207373653e-07,
+            "signed_normal_gap_mm": -4.996779206940926e-07,
+            "opposing_normal_dot": -0.999999999013748,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "original",
+      "phase": 11,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph11_d12.inp",
+      "input_sha256": "c38f66d0cf64c744b47a69d0b3b09a791a075eb4dcc7cce010529c480c5d4384",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -0.7072461051344092,
+              19.742583469430368
+            ],
+            "pinion": {
+              "element": 8772,
+              "side": 3,
+              "parameter": 0.4378287108244727,
+              "point_mm": [
+                -0.7072456565807865,
+                19.742583632682926
+              ],
+              "distance_mm": 4.773381926544612e-07,
+              "outward_normal": [
+                0.9396977441837423,
+                0.34200606657775245
+              ]
+            },
+            "wheel": {
+              "element": 20792,
+              "side": 3,
+              "parameter": 0.20006812730691692,
+              "point_mm": [
+                -0.7072462505700828,
+                19.742583416494917
+              ],
+              "distance_mm": 1.5476982003496357e-07,
+              "outward_normal": [
+                -0.9396901383350978,
+                -0.3420269637262021
+              ]
+            },
+            "nearest_point_gap_mm": 6.321080126605285e-07,
+            "signed_normal_gap_mm": -6.321080126511558e-07,
+            "opposing_normal_dot": -0.9999999997527302,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "original",
+      "phase": 12,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph12_d12.inp",
+      "input_sha256": "f55214a48f9a812c4e4d0254086a1b8f38fc6050b0e45472d9004de3bba9ac7a",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -0.3604840896084302,
+              19.86879452145598
+            ],
+            "pinion": {
+              "element": 6440,
+              "side": 3,
+              "parameter": -0.016239250338444207,
+              "point_mm": [
+                -0.36048363014864143,
+                19.86879468869156
+              ],
+              "distance_mm": 4.889489101452883e-07,
+              "outward_normal": [
+                0.9396887472134061,
+                0.3420307856911412
+              ]
+            },
+            "wheel": {
+              "element": 21100,
+              "side": 3,
+              "parameter": 0.4430299508258656,
+              "point_mm": [
+                -0.36048424028857723,
+                19.868794466611845
+              ],
+              "distance_mm": 1.603508204202732e-07,
+              "outward_normal": [
+                -0.939690527898151,
+                -0.342025893432784
+              ]
+            },
+            "nearest_point_gap_mm": 6.492997305639257e-07,
+            "signed_normal_gap_mm": -6.492997305633894e-07,
+            "opposing_normal_dot": -0.9999999999864475,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "original",
+      "phase": 13,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph13_d12.inp",
+      "input_sha256": "8371a3b0ab02fb6738e63c7b54384f0d84c126885979c83231c907ced5388440",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -0.01372207408245205,
+              19.99500557348159
+            ],
+            "pinion": {
+              "element": 6487,
+              "side": 3,
+              "parameter": -0.37954812977484,
+              "point_mm": [
+                -0.013721751211487547,
+                19.99500569101245
+              ],
+              "distance_mm": 3.435973858141133e-07,
+              "outward_normal": [
+                0.9396781747774364,
+                0.3420598308000307
+              ]
+            },
+            "wheel": {
+              "element": 20871,
+              "side": 3,
+              "parameter": 0.7362094233994528,
+              "point_mm": [
+                -0.013722229002646205,
+                19.99500551709438
+              ],
+              "distance_mm": 1.6486292415158708e-07,
+              "outward_normal": [
+                -0.9396909297023884,
+                -0.34202478950371534
+              ]
+            },
+            "nearest_point_gap_mm": 5.084603098882677e-07,
+            "signed_normal_gap_mm": -5.08460309851107e-07,
+            "opposing_normal_dot": -0.9999999993047096,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "original",
+      "phase": 14,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph14_d12.inp",
+      "input_sha256": "a37935c4aaea1cbd0688447b3c8c9bf861b201fa0a8812d8b178d3d43b734655",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              0.33303994144352694,
+              20.1212166255072
+            ],
+            "pinion": {
+              "element": 6477,
+              "side": 3,
+              "parameter": -0.6521337195664458,
+              "point_mm": [
+                0.33303993860952974,
+                20.121216624475466
+              ],
+              "distance_mm": 3.0159597097472245e-09,
+              "outward_normal": [
+                0.939666932507663,
+                0.34209071304500377
+              ]
+            },
+            "wheel": {
+              "element": 20522,
+              "side": 3,
+              "parameter": -0.9204172008966134,
+              "point_mm": [
+                0.33303978322982597,
+                20.121216567921454
+              ],
+              "distance_mm": 1.6836773178897775e-07,
+              "outward_normal": [
+                -0.939691346241305,
+                -0.3420236450878854
+              ]
+            },
+            "nearest_point_gap_mm": 1.653517720871405e-07,
+            "signed_normal_gap_mm": -1.6535177165029748e-07,
+            "opposing_normal_dot": -0.9999999974529293,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "original",
+      "phase": 15,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\runs\\L3\\L3_C001_G1_ph15_d12.inp",
+      "input_sha256": "d3c0b622876753bbcd3af41a8cc51116f5ba16a93db3013e4390157da2a40227",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              0.679801956969506,
+              20.24742767753281
+            ],
+            "pinion": {
+              "element": 101,
+              "side": 3,
+              "parameter": -0.833995306391865,
+              "point_mm": [
+                0.6798016324787712,
+                20.247427559413943
+              ],
+              "distance_mm": 3.453205805931372e-07,
+              "outward_normal": [
+                0.9396796852207647,
+                0.3420556814078731
+              ]
+            },
+            "wheel": {
+              "element": 20828,
+              "side": 3,
+              "parameter": -0.5267977536078996,
+              "point_mm": [
+                0.6798017964415618,
+                20.247427619104943
+              ],
+              "distance_mm": 1.7083043139160364e-07,
+              "outward_normal": [
+                -0.9396917361079246,
+                -0.34202257394867175
+              ]
+            },
+            "nearest_point_gap_mm": 1.7449014941123982e-07,
+            "signed_normal_gap_mm": 1.7449014930751092e-07,
+            "opposing_normal_dot": -0.999999999379336,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 0,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph00_d12.inp",
+      "input_sha256": "59b501ffa9b59a42d8de9955c129995a7665a6157aa639e866474643d9bdaf3c",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -4.5216282759201745,
+              18.354261897148646
+            ],
+            "pinion": {
+              "element": 10722,
+              "side": 3,
+              "parameter": -0.19379168885104325,
+              "point_mm": [
+                -4.521627807012283,
+                18.354262067809255
+              ],
+              "distance_mm": 4.98998651246289e-07,
+              "outward_normal": [
+                0.9396977120241402,
+                0.34200615493963854
+              ]
+            },
+            "wheel": {
+              "element": 30842,
+              "side": 3,
+              "parameter": 0.7757282624493579,
+              "point_mm": [
+                -4.521628285882558,
+                18.354261893522423
+              ],
+              "distance_mm": 1.0601819818851188e-08,
+              "outward_normal": [
+                -0.9396862415984053,
+                -0.3420376694907499
+              ]
+            },
+            "nearest_point_gap_mm": 5.096004710592617e-07,
+            "signed_normal_gap_mm": -5.096004710591374e-07,
+            "opposing_normal_dot": -0.9999999994376312,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              1.026563972495484,
+              20.373638729558422
+            ],
+            "pinion": {
+              "element": 10808,
+              "side": 3,
+              "parameter": -0.9251694710944213,
+              "point_mm": [
+                1.0265635118580951,
+                20.373638561895447
+              ],
+              "distance_mm": 4.902016699866227e-07,
+              "outward_normal": [
+                0.9396895535761443,
+                0.34202857029766776
+              ]
+            },
+            "wheel": {
+              "element": 32863,
+              "side": 3,
+              "parameter": -0.08296983935385385,
+              "point_mm": [
+                1.0265638106002926,
+                20.373638670633134
+              ],
+              "distance_mm": 1.7228535213525755e-07,
+              "outward_normal": [
+                -0.9396921416637569,
+                -0.34202145970009223
+              ]
+            },
+            "nearest_point_gap_mm": 3.179163178589632e-07,
+            "signed_normal_gap_mm": 3.179163178562964e-07,
+            "opposing_normal_dot": -0.9999999999713706,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 1,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph01_d12.inp",
+      "input_sha256": "bd2138d7e359565f8e1de20f4736eb62e4033d8c08276d1f3a3a3c48730ff4fb",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -4.174866260394196,
+              18.480472949174256
+            ],
+            "pinion": {
+              "element": 11285,
+              "side": 3,
+              "parameter": 0.2175045554651197,
+              "point_mm": [
+                -4.174865832609237,
+                18.48047310490566
+              ],
+              "distance_mm": 4.55249646480994e-07,
+              "outward_normal": [
+                0.9396711484085978,
+                0.34207913243643917
+              ]
+            },
+            "wheel": {
+              "element": 35673,
+              "side": 3,
+              "parameter": -0.927111856281388,
+              "point_mm": [
+                -4.174866289024713,
+                18.480472938752985
+              ],
+              "distance_mm": 3.046817062755456e-08,
+              "outward_normal": [
+                -0.9396861507630289,
+                -0.3420379190443104
+              ]
+            },
+            "nearest_point_gap_mm": 4.857178170811417e-07,
+            "signed_normal_gap_mm": -4.857178170793037e-07,
+            "opposing_normal_dot": -0.9999999990381927,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              1.3733259880214632,
+              20.499849781584032
+            ],
+            "pinion": {
+              "element": 10982,
+              "side": 3,
+              "parameter": -0.9256862639196671,
+              "point_mm": [
+                1.3733255383672827,
+                20.499849617928977
+              ],
+              "distance_mm": 4.785100410208195e-07,
+              "outward_normal": [
+                0.9396964374867874,
+                0.3420096568441311
+              ]
+            },
+            "wheel": {
+              "element": 31223,
+              "side": 3,
+              "parameter": 0.41111020751773547,
+              "point_mm": [
+                1.3733258256581808,
+                20.49984972248861
+              ],
+              "distance_mm": 1.7278340360582652e-07,
+              "outward_normal": [
+                -0.9396925779110218,
+                -0.34202026112342837
+              ]
+            },
+            "nearest_point_gap_mm": 3.0572663743218533e-07,
+            "signed_normal_gap_mm": 3.0572663742598087e-07,
+            "opposing_normal_dot": -0.9999999999363265,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 2,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph02_d12.inp",
+      "input_sha256": "508359bdf9029f5a4e5e9019af9d6aa1055349f073ad9cada8c92634844d62a9",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -3.828104244868218,
+              18.606684001199866
+            ],
+            "pinion": {
+              "element": 14268,
+              "side": 3,
+              "parameter": 0.8270993953984676,
+              "point_mm": [
+                -3.8281040180021715,
+                18.60668408380724
+              ],
+              "distance_mm": 2.4143773822122497e-07,
+              "outward_normal": [
+                0.9396461712095532,
+                0.34214773553426747
+              ]
+            },
+            "wheel": {
+              "element": 31238,
+              "side": 3,
+              "parameter": 0.4962053675500328,
+              "point_mm": [
+                -3.828104291085093,
+                18.606683984377426
+              ],
+              "distance_mm": 4.91832700555254e-08,
+              "outward_normal": [
+                -0.9396869111067925,
+                -0.34203583013271466
+              ]
+            },
+            "nearest_point_gap_mm": 2.906210079869791e-07,
+            "signed_normal_gap_mm": -2.9062100792794354e-07,
+            "opposing_normal_dot": -0.999999992908721,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              1.7200880035474413,
+              20.626060833609642
+            ],
+            "pinion": {
+              "element": 13090,
+              "side": 3,
+              "parameter": -0.8355492272500767,
+              "point_mm": [
+                1.7200876721119918,
+                20.626060712985858
+              ],
+              "distance_mm": 3.5270321043290125e-07,
+              "outward_normal": [
+                0.9397006876766852,
+                0.34199797891210526
+              ]
+            },
+            "wheel": {
+              "element": 31126,
+              "side": 3,
+              "parameter": 0.9554511424426231,
+              "point_mm": [
+                1.7200878414945358,
+                20.626060774627444
+              ],
+              "distance_mm": 1.72453019558553e-07,
+              "outward_normal": [
+                -0.9396930576478433,
+                -0.34201894305498215
+              ]
+            },
+            "nearest_point_gap_mm": 1.8025019095829564e-07,
+            "signed_normal_gap_mm": 1.8025019091724535e-07,
+            "opposing_normal_dot": -0.9999999997511436,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 3,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph03_d12.inp",
+      "input_sha256": "6fe24f6bb9ef8565b04af735328d09080e35cd9672db754e64af188354609ee9",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -3.4813422293422387,
+              18.73289505322548
+            ],
+            "pinion": {
+              "element": 11078,
+              "side": 3,
+              "parameter": -0.7169496420210901,
+              "point_mm": [
+                -3.481342372956316,
+                18.73289500093104
+              ],
+              "distance_mm": 1.5283884196144665e-07,
+              "outward_normal": [
+                0.9396438437787403,
+                0.3421541273296501
+              ]
+            },
+            "wheel": {
+              "element": 16450,
+              "side": 3,
+              "parameter": 0.06311126917451103,
+              "point_mm": [
+                -3.481342291605381,
+                18.732895030562442
+              ],
+              "distance_mm": 6.625943066984739e-08,
+              "outward_normal": [
+                -0.9396872500792625,
+                -0.3420348988604433
+              ]
+            },
+            "nearest_point_gap_mm": 8.657941223299913e-08,
+            "signed_normal_gap_mm": 8.657941182497213e-08,
+            "opposing_normal_dot": -0.9999999919502327,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              2.0668500190734203,
+              20.752271885635253
+            ],
+            "pinion": {
+              "element": 11114,
+              "side": 3,
+              "parameter": -0.6548047458744679,
+              "point_mm": [
+                2.0668498731770177,
+                20.75227183253815
+              ],
+              "distance_mm": 1.5525805189343275e-07,
+              "outward_normal": [
+                0.939702648804994,
+                0.34199259031282847
+              ]
+            },
+            "wheel": {
+              "element": 33432,
+              "side": 3,
+              "parameter": -0.44997500349576175,
+              "point_mm": [
+                2.0668498581336063,
+                20.752271827058404
+              ],
+              "distance_mm": 1.7126841756971478e-07,
+              "outward_normal": [
+                -0.9396934723329614,
+                -0.3420178037103066
+              ]
+            },
+            "nearest_point_gap_mm": 1.601036627410774e-08,
+            "signed_normal_gap_mm": -1.6010365614625152e-08,
+            "opposing_normal_dot": -0.9999999996400384,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 4,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph04_d12.inp",
+      "input_sha256": "81f7406698ba08c0cbf2785464631ccfc0833bbd26c6c0862b914628b73b37ad",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -3.13458021381626,
+              18.85910610525109
+            ],
+            "pinion": {
+              "element": 10692,
+              "side": 3,
+              "parameter": 0.052129052004595076,
+              "point_mm": [
+                -3.134580607958958,
+                18.859105961768805
+              ],
+              "distance_mm": 4.194468174840385e-07,
+              "outward_normal": [
+                0.9396726401803649,
+                0.3420750345998118
+              ]
+            },
+            "wheel": {
+              "element": 32504,
+              "side": 3,
+              "parameter": -0.09536678218464914,
+              "point_mm": [
+                -3.1345802908079863,
+                18.85910607722711
+              ],
+              "distance_mm": 8.193332261353679e-08,
+              "outward_normal": [
+                -0.9396875948542902,
+                -0.3420339516436334
+              ]
+            },
+            "nearest_point_gap_mm": 3.3751349496774274e-07,
+            "signed_normal_gap_mm": 3.3751349494873887e-07,
+            "opposing_normal_dot": -0.9999999990442743,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              2.4136120345993994,
+              20.878482937660866
+            ],
+            "pinion": {
+              "element": 11622,
+              "side": 3,
+              "parameter": -0.3834805045814818,
+              "point_mm": [
+                2.4136121016039667,
+                20.878482962046323
+              ],
+              "distance_mm": 7.130401498304591e-08,
+              "outward_normal": [
+                0.939702588956471,
+                0.34199275476025226
+              ]
+            },
+            "wheel": {
+              "element": 32374,
+              "side": 3,
+              "parameter": 0.19486922645167135,
+              "point_mm": [
+                2.4136118756618927,
+                20.87848287981303
+              ],
+              "distance_mm": 1.6913752703028052e-07,
+              "outward_normal": [
+                -0.9396939250658678,
+                -0.3420165598246717
+              ]
+            },
+            "nearest_point_gap_mm": 2.4044154199724654e-07,
+            "signed_normal_gap_mm": -2.404415419590594e-07,
+            "opposing_normal_dot": -0.999999999679128,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 5,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph05_d12.inp",
+      "input_sha256": "bdb2922e5eb4d8339bde389e9e96cbdd8f28425b165138ef7e403061d149728c",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -2.787818198290281,
+              18.9853171572767
+            ],
+            "pinion": {
+              "element": 10574,
+              "side": 3,
+              "parameter": -0.37298709115987816,
+              "point_mm": [
+                -2.7878186692140066,
+                18.985316985873517
+              ],
+              "distance_mm": 5.011468909492606e-07,
+              "outward_normal": [
+                0.9396920013198364,
+                0.34202184528991786
+              ]
+            },
+            "wheel": {
+              "element": 33197,
+              "side": 3,
+              "parameter": -0.20362781744256844,
+              "point_mm": [
+                -2.787818288682952,
+                18.985317124375058
+              ],
+              "distance_mm": 9.619435003684414e-08,
+              "outward_normal": [
+                -0.9396879448011571,
+                -0.3420329902149462
+              ]
+            },
+            "nearest_point_gap_mm": 4.049525409208103e-07,
+            "signed_normal_gap_mm": 4.0495254091919617e-07,
+            "opposing_normal_dot": -0.9999999999296676,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              2.7603740501253777,
+              21.004693989686476
+            ],
+            "pinion": {
+              "element": 14564,
+              "side": 3,
+              "parameter": -0.021548466768853244,
+              "point_mm": [
+                2.760374317442532,
+                21.004694086974773
+              ],
+              "distance_mm": 2.8447051440521804e-07,
+              "outward_normal": [
+                0.9397007427426877,
+                0.34199782760836556
+              ]
+            },
+            "wheel": {
+              "element": 31564,
+              "side": 3,
+              "parameter": 0.8899750367368954,
+              "point_mm": [
+                2.7603738938472318,
+                21.00469393280684
+              ],
+              "distance_mm": 1.6630740156123705e-07,
+              "outward_normal": [
+                -0.939694474950251,
+                -0.34201504900804014
+              ]
+            },
+            "nearest_point_gap_mm": 4.507779159488065e-07,
+            "signed_normal_gap_mm": -4.5077791593850496e-07,
+            "opposing_normal_dot": -0.9999999998320692,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 6,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph06_d12.inp",
+      "input_sha256": "eb41bf679a3d8bbdf49314d6a682a63a800d6b34b5de077d5c3b8a1ffcaf36cf",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -2.4410561827643025,
+              19.11152820930231
+            ],
+            "pinion": {
+              "element": 10869,
+              "side": 3,
+              "parameter": -0.14528808234105567,
+              "point_mm": [
+                -2.441056598728269,
+                19.11152805791905
+              ],
+              "distance_mm": 4.426543947433465e-07,
+              "outward_normal": [
+                0.9397036856043773,
+                0.3419897414565963
+              ]
+            },
+            "wheel": {
+              "element": 31333,
+              "side": 3,
+              "parameter": -0.26182534755386166,
+              "point_mm": [
+                -2.4410562852962863,
+                19.111528171982254
+              ],
+              "distance_mm": 1.0911275960426923e-07,
+              "outward_normal": [
+                -0.9396882990167954,
+                -0.34203201705530695
+              ]
+            },
+            "nearest_point_gap_mm": 3.3354163528557293e-07,
+            "signed_normal_gap_mm": 3.3354163524945603e-07,
+            "opposing_normal_dot": -0.9999999989880134,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              3.1071360656513565,
+              21.130905041712087
+            ],
+            "pinion": {
+              "element": 10797,
+              "side": 3,
+              "parameter": 0.43083406258057466,
+              "point_mm": [
+                3.1071364807002766,
+                21.130905192771102
+              ],
+              "distance_mm": 4.4168363383496227e-07,
+              "outward_normal": [
+                0.9396973055442706,
+                0.3420072717835655
+              ]
+            },
+            "wheel": {
+              "element": 31299,
+              "side": 3,
+              "parameter": -0.3645855031696021,
+              "point_mm": [
+                3.1071359126876317,
+                21.130904986039006
+              ],
+              "distance_mm": 1.627801983708168e-07,
+              "outward_normal": [
+                -0.93969491583176,
+                -0.34201383767318755
+              ]
+            },
+            "nearest_point_gap_mm": 6.044638322028781e-07,
+            "signed_normal_gap_mm": -6.044638322018053e-07,
+            "opposing_normal_dot": -0.9999999999755891,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 7,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph07_d12.inp",
+      "input_sha256": "876964aafbd6a1ea016407ac47ee088df1c00490233c798ebf6504cfd5194b67",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -2.094294167238324,
+              19.237739261327924
+            ],
+            "pinion": {
+              "element": 11085,
+              "side": 3,
+              "parameter": -0.8702686494986445,
+              "point_mm": [
+                -2.094294435448668,
+                19.237739163722793
+              ],
+              "distance_mm": 2.854182020984899e-07,
+              "outward_normal": [
+                0.9397100169237348,
+                0.3419723440472843
+              ]
+            },
+            "wheel": {
+              "element": 31388,
+              "side": 3,
+              "parameter": -0.26979096568035726,
+              "point_mm": [
+                -2.094294280679292,
+                19.237739220037298
+              ],
+              "distance_mm": 1.2072186611195447e-07,
+              "outward_normal": [
+                -0.9396886541936585,
+                -0.3420310412516832
+              ]
+            },
+            "nearest_point_gap_mm": 1.6469633639475513e-07,
+            "signed_normal_gap_mm": 1.6469633622207802e-07,
+            "opposing_normal_dot": -0.999999998049136,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              3.453898081177335,
+              21.257116093737697
+            ],
+            "pinion": {
+              "element": 11204,
+              "side": 3,
+              "parameter": -0.9802038917111682,
+              "point_mm": [
+                3.453898551364537,
+                21.25711626487211
+              ],
+              "distance_mm": 5.003628603154623e-07,
+              "outward_normal": [
+                0.9396924492327662,
+                0.3420206146636855
+              ]
+            },
+            "wheel": {
+              "element": 31496,
+              "side": 3,
+              "parameter": 0.3506711858917845,
+              "point_mm": [
+                3.4538979323696495,
+                21.257116039577514
+              ],
+              "distance_mm": 1.5835735745150458e-07,
+              "outward_normal": [
+                -0.9396954320232553,
+                -0.34201241941576854
+              ]
+            },
+            "nearest_point_gap_mm": 6.587202177623859e-07,
+            "signed_normal_gap_mm": -6.58720217760937e-07,
+            "opposing_normal_dot": -0.9999999999619704,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 8,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph08_d12.inp",
+      "input_sha256": "dcd35552f51c2ffda5fe67abdff739aaf698e0f4256a537555fd85ea45c239c0",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -1.747532151712345,
+              19.363950313353534
+            ],
+            "pinion": {
+              "element": 13727,
+              "side": 3,
+              "parameter": 0.34539193294725273,
+              "point_mm": [
+                -1.7475322198994334,
+                19.363950288539705
+              ],
+              "distance_mm": 7.256173335474346e-08,
+              "outward_normal": [
+                0.9397114032192375,
+                0.3419685346047668
+              ]
+            },
+            "wheel": {
+              "element": 17383,
+              "side": 3,
+              "parameter": -0.2275884601861574,
+              "point_mm": [
+                -1.7475322748833158,
+                19.3639502685215
+              ],
+              "distance_mm": 1.3107631134894308e-07,
+              "outward_normal": [
+                -0.9396890222008583,
+                -0.3420300301950031
+              ]
+            },
+            "nearest_point_gap_mm": 5.8514578342339115e-08,
+            "signed_normal_gap_mm": -5.851457771350773e-08,
+            "opposing_normal_dot": -0.9999999978586911,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              3.8006600967033135,
+              21.38332714576331
+            ],
+            "pinion": {
+              "element": 10674,
+              "side": 3,
+              "parameter": -0.49800540652803227,
+              "point_mm": [
+                3.8006604892896085,
+                21.38332728866131
+              ],
+              "distance_mm": 4.1778443870326544e-07,
+              "outward_normal": [
+                0.9396862559951092,
+                0.3420376299384237
+              ]
+            },
+            "wheel": {
+              "element": 33057,
+              "side": 3,
+              "parameter": 0.9070676857789578,
+              "point_mm": [
+                3.8006599525459612,
+                21.38332709329596
+              ],
+              "distance_mm": 1.5340849059690377e-07,
+              "outward_normal": [
+                -0.9396960479752049,
+                -0.3420107270536721
+              ]
+            },
+            "nearest_point_gap_mm": 5.711929292541882e-07,
+            "signed_normal_gap_mm": -5.711929292373039e-07,
+            "opposing_normal_dot": -0.999999999590176,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 9,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph09_d12.inp",
+      "input_sha256": "87211cd94b856d36aa41c02757b4227b7a0f0d3020f4c3ed031c19cef8c569ae",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -1.4007701361863665,
+              19.490161365379144
+            ],
+            "pinion": {
+              "element": 10697,
+              "side": 3,
+              "parameter": -0.38142052095950585,
+              "point_mm": [
+                -1.4007699911455032,
+                19.490161418161588
+              ],
+              "distance_mm": 1.543464879864808e-07,
+              "outward_normal": [
+                0.9397095134198661,
+                0.34197372762859807
+              ]
+            },
+            "wheel": {
+              "element": 30990,
+              "side": 3,
+              "parameter": -0.13523469730949453,
+              "point_mm": [
+                -1.4007702678983247,
+                19.490161317438503
+              ],
+              "distance_mm": 1.4016542036130058e-07,
+              "outward_normal": [
+                -0.9396893851651337,
+                -0.3420290329898519
+              ]
+            },
+            "nearest_point_gap_mm": 2.94511908220593e-07,
+            "signed_normal_gap_mm": -2.945119081051211e-07,
+            "opposing_normal_dot": -0.9999999982680853,
+            "pass": true
+          },
+          {
+            "theoretical_point_mm": [
+              4.147422112229292,
+              21.50953819778892
+            ],
+            "pinion": {
+              "element": 10657,
+              "side": 3,
+              "parameter": 0.2637401292713212,
+              "point_mm": [
+                4.1474222542663455,
+                21.509538249492625
+              ],
+              "distance_mm": 1.5115487931911558e-07,
+              "outward_normal": [
+                0.9396789162116342,
+                0.34205779398711045
+              ]
+            },
+            "wheel": {
+              "element": 30964,
+              "side": 3,
+              "parameter": 0.36351140919447605,
+              "point_mm": [
+                4.147421973406783,
+                21.509538147263463
+              ],
+              "distance_mm": 1.4773121160552536e-07,
+              "outward_normal": [
+                -0.9396965411580028,
+                -0.34200937199978304
+              ]
+            },
+            "nearest_point_gap_mm": 2.988860908254164e-07,
+            "signed_normal_gap_mm": -2.988860907284317e-07,
+            "opposing_normal_dot": -0.9999999986723362,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 10,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph10_d12.inp",
+      "input_sha256": "a5c3fbc646170e73ffd0826a8f8afef0842ebcbedffc18e6ca31acb720682818",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -1.0540081206603877,
+              19.616372417404754
+            ],
+            "pinion": {
+              "element": 6353,
+              "side": 3,
+              "parameter": 0.982759688310177,
+              "point_mm": [
+                -1.054007790224263,
+                19.616372537660183
+              ],
+              "distance_mm": 3.516381672042548e-07,
+              "outward_normal": [
+                0.9397049452171492,
+                0.34198628033070944
+              ]
+            },
+            "wheel": {
+              "element": 22197,
+              "side": 3,
+              "parameter": 0.007307249044282658,
+              "point_mm": [
+                -1.0540082597718272,
+                19.61637236677101
+              ],
+              "distance_mm": 1.4803975363590048e-07,
+              "outward_normal": [
+                -0.9396897556950883,
+                -0.34202801499541724
+              ]
+            },
+            "nearest_point_gap_mm": 4.996779207373653e-07,
+            "signed_normal_gap_mm": -4.996779206940926e-07,
+            "opposing_normal_dot": -0.999999999013748,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 11,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph11_d12.inp",
+      "input_sha256": "c38f66d0cf64c744b47a69d0b3b09a791a075eb4dcc7cce010529c480c5d4384",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -0.7072461051344092,
+              19.742583469430368
+            ],
+            "pinion": {
+              "element": 8772,
+              "side": 3,
+              "parameter": 0.4378287108244727,
+              "point_mm": [
+                -0.7072456565807865,
+                19.742583632682926
+              ],
+              "distance_mm": 4.773381926544612e-07,
+              "outward_normal": [
+                0.9396977441837423,
+                0.34200606657775245
+              ]
+            },
+            "wheel": {
+              "element": 20792,
+              "side": 3,
+              "parameter": 0.20006812730691692,
+              "point_mm": [
+                -0.7072462505700828,
+                19.742583416494917
+              ],
+              "distance_mm": 1.5476982003496357e-07,
+              "outward_normal": [
+                -0.9396901383350978,
+                -0.3420269637262021
+              ]
+            },
+            "nearest_point_gap_mm": 6.321080126605285e-07,
+            "signed_normal_gap_mm": -6.321080126511558e-07,
+            "opposing_normal_dot": -0.9999999997527302,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 12,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph12_d12.inp",
+      "input_sha256": "f55214a48f9a812c4e4d0254086a1b8f38fc6050b0e45472d9004de3bba9ac7a",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -0.3604840896084302,
+              19.86879452145598
+            ],
+            "pinion": {
+              "element": 6440,
+              "side": 3,
+              "parameter": -0.016239250338444207,
+              "point_mm": [
+                -0.36048363014864143,
+                19.86879468869156
+              ],
+              "distance_mm": 4.889489101452883e-07,
+              "outward_normal": [
+                0.9396887472134061,
+                0.3420307856911412
+              ]
+            },
+            "wheel": {
+              "element": 21100,
+              "side": 3,
+              "parameter": 0.4430299508258656,
+              "point_mm": [
+                -0.36048424028857723,
+                19.868794466611845
+              ],
+              "distance_mm": 1.603508204202732e-07,
+              "outward_normal": [
+                -0.939690527898151,
+                -0.342025893432784
+              ]
+            },
+            "nearest_point_gap_mm": 6.492997305639257e-07,
+            "signed_normal_gap_mm": -6.492997305633894e-07,
+            "opposing_normal_dot": -0.9999999999864475,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 13,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph13_d12.inp",
+      "input_sha256": "8371a3b0ab02fb6738e63c7b54384f0d84c126885979c83231c907ced5388440",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              -0.01372207408245205,
+              19.99500557348159
+            ],
+            "pinion": {
+              "element": 6487,
+              "side": 3,
+              "parameter": -0.37954812977484,
+              "point_mm": [
+                -0.013721751211487547,
+                19.99500569101245
+              ],
+              "distance_mm": 3.435973858141133e-07,
+              "outward_normal": [
+                0.9396781747774364,
+                0.3420598308000307
+              ]
+            },
+            "wheel": {
+              "element": 20871,
+              "side": 3,
+              "parameter": 0.7362094233994528,
+              "point_mm": [
+                -0.013722229002646205,
+                19.99500551709438
+              ],
+              "distance_mm": 1.6486292415158708e-07,
+              "outward_normal": [
+                -0.9396909297023884,
+                -0.34202478950371534
+              ]
+            },
+            "nearest_point_gap_mm": 5.084603098882677e-07,
+            "signed_normal_gap_mm": -5.08460309851107e-07,
+            "opposing_normal_dot": -0.9999999993047096,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 14,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph14_d12.inp",
+      "input_sha256": "a37935c4aaea1cbd0688447b3c8c9bf861b201fa0a8812d8b178d3d43b734655",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              0.33303994144352694,
+              20.1212166255072
+            ],
+            "pinion": {
+              "element": 6477,
+              "side": 3,
+              "parameter": -0.6521337195664458,
+              "point_mm": [
+                0.33303993860952974,
+                20.121216624475466
+              ],
+              "distance_mm": 3.0159597097472245e-09,
+              "outward_normal": [
+                0.939666932507663,
+                0.34209071304500377
+              ]
+            },
+            "wheel": {
+              "element": 20522,
+              "side": 3,
+              "parameter": -0.9204172008966134,
+              "point_mm": [
+                0.33303978322982597,
+                20.121216567921454
+              ],
+              "distance_mm": 1.6836773178897775e-07,
+              "outward_normal": [
+                -0.939691346241305,
+                -0.3420236450878854
+              ]
+            },
+            "nearest_point_gap_mm": 1.653517720871405e-07,
+            "signed_normal_gap_mm": -1.6535177165029748e-07,
+            "opposing_normal_dot": -0.9999999974529293,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "scope": "periodic",
+      "phase": 15,
+      "input": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\runs\\L3\\L3_C001_G1_ph15_d12.inp",
+      "input_sha256": "d3c0b622876753bbcd3af41a8cc51116f5ba16a93db3013e4390157da2a40227",
+      "contact": {
+        "pairs": [
+          {
+            "theoretical_point_mm": [
+              0.679801956969506,
+              20.24742767753281
+            ],
+            "pinion": {
+              "element": 101,
+              "side": 3,
+              "parameter": -0.833995306391865,
+              "point_mm": [
+                0.6798016324787712,
+                20.247427559413943
+              ],
+              "distance_mm": 3.453205805931372e-07,
+              "outward_normal": [
+                0.9396796852207647,
+                0.3420556814078731
+              ]
+            },
+            "wheel": {
+              "element": 20828,
+              "side": 3,
+              "parameter": -0.5267977536078996,
+              "point_mm": [
+                0.6798017964415618,
+                20.247427619104943
+              ],
+              "distance_mm": 1.7083043139160364e-07,
+              "outward_normal": [
+                -0.9396917361079246,
+                -0.34202257394867175
+              ]
+            },
+            "nearest_point_gap_mm": 1.7449014941123982e-07,
+            "signed_normal_gap_mm": 1.7449014930751092e-07,
+            "opposing_normal_dot": -0.999999999379336,
+            "pass": true
+          }
+        ],
+        "surfaces_on_exterior": true,
+        "surface_body_identity": true,
+        "scope": "Initial nearest surfaces and normals at theoretical contact points; not a full interference or pressure-distribution proof",
+        "thresholds": {
+          "distance_mm": 0.01,
+          "gap_mm": 0.001,
+          "normal_dot_max": -0.999
+        },
+        "pass": true
+      },
+      "rigid_boundary": {
+        "steps": [
+          {
+            "step": 0,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 1,
+            "rigid_mode_constraint_rank": 6,
+            "expected_rank": 6,
+            "pinion_rotation_constraint_residual": 0.9922778767136677,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          },
+          {
+            "step": 2,
+            "rigid_mode_constraint_rank": 5,
+            "expected_rank": 5,
+            "pinion_rotation_constraint_residual": 1.4512132349311869e-09,
+            "dependent_MPC_DOF_also_prescribed": 0,
+            "pass": true
+          }
+        ],
+        "equation_count": 203,
+        "unique_dependent_DOF": true,
+        "scope": "Rigid-mode algebra in the 2D plane; not a stiffness-matrix rank or 3D stability proof",
+        "pass": true
+      },
+      "load": {
+        "input_force_N": [
+          0.0,
+          -104.166666667
+        ],
+        "input_moment_about_pinion_center_Nmm": -833.333333336,
+        "target_torque_per_1mm_Nmm": 833.3333333333334,
+        "relative_moment_error": 3.1999661587178705e-12,
+        "required_signed_moment_Nmm": -833.3333333333334,
+        "pass": true,
+        "interpretation": "A generalized load at the rigid bore master supplies the torque. Its raw resultant force need not be zero; bore constraints provide balancing reactions."
+      },
+      "units": {
+        "unit_system": "N, mm, MPa; declared from source case, not encoded by CalculiX",
+        "plane_model": "CPE6 plane strain",
+        "section_thickness_mm": [
+          1.0,
+          1.0
+        ],
+        "full_gear_face_width_mm": 30.0,
+        "E_MPa": 206000.0,
+        "nu": 0.3,
+        "section_material_assignments": [
+          {
+            "set": "PINION",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          },
+          {
+            "set": "WHEEL",
+            "material": "STEEL",
+            "thickness_mm": 1.0,
+            "elastic": [
+              206000.0,
+              0.3
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true
+    }
+  ],
+  "P02_clipped_loads": [
+    {
+      "id": "L2_P02_d8_clipped",
+      "inp_sha256": "f6144cfd2f356fb8d2d3b17d6060f2e92b5a62d7639a94b0730703a58d324395",
+      "force_N": [
+        -92.33923936822767,
+        -52.898092472367054
+      ],
+      "force_relative_error": 1.3353835310935955e-16,
+      "moment_Nmm": 210.71577433241865,
+      "moment_ratio": 1.0000000233845765,
+      "pass": true
+    },
+    {
+      "id": "L2_P02_d12_clipped",
+      "inp_sha256": "d495d10d1222442c5318bf379fdebcfbf08d48a029b7e08d4ae218ef74a3cd99",
+      "force_N": [
+        -92.33923936822761,
+        -52.89809247236704
+      ],
+      "force_relative_error": 4.006150593280787e-16,
+      "moment_Nmm": 210.71576315239733,
+      "moment_ratio": 0.9999999703272225,
+      "pass": true
+    },
+    {
+      "id": "L2_P02_d18_clipped",
+      "inp_sha256": "df675c95f9cc7e78f6b2da9fc18d75e9910d1d4bfef94e89149d90564f1cb74e",
+      "force_N": [
+        -92.3392393682276,
+        -52.89809247236702
+      ],
+      "force_relative_error": 6.676917655467978e-16,
+      "moment_Nmm": 210.7157760405838,
+      "moment_ratio": 1.0000000314910669,
+      "pass": true
+    }
+  ],
+  "P02_relative_moment_spread": 6.116384432264255e-08,
+  "regression": {
+    "original_invalid_phases_fail": true,
+    "original_valid_phases_pass": true,
+    "periodic_16_pass": true,
+    "P02_force_and_moment_stable": true
+  }
+}

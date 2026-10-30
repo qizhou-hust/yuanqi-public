@@ -1,0 +1,17 @@
+{
+  "schema": "m37.viewer-qa/v1",
+  "browser": "isolated headless Chrome via Playwright CLI",
+  "desktop_input_used": false,
+  "viewport": [1440,1150],
+  "checks": {
+    "page_loaded": true,
+    "both_tabs_rendered": true,
+    "source_geometry_and_selected_contact_surfaces_visible": true,
+    "ph10_pressure_location_visible": true,
+    "two_dimensional_extrusion_limitation_visible": true,
+    "console_errors_after_favicon_fix": 0
+  },
+  "nonblocking_warning": "Plotly Canvas2D willReadFrequently performance suggestion",
+  "screenshots": ["M37-ph00-comparison.png", "M37-ph10-tip.png"],
+  "scope": "Visual artifact QA, not independent geometry/physics certification"
+}

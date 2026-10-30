@@ -1,0 +1,62 @@
+{
+  "schema": "m37.independent-profile-checks/v1",
+  "source_sha256": {
+    "preprocessing-work\\check_before_solve.py": "3aa9d026288512193cfcaccc2648f2e2e5f592a72bff51d225ff885ecdb4e25f",
+    "preprocessing-work\\m37-preflight\\semantic_preflight.py": "0fe46411bc696e2e3607c9695320847286f35065bf5f7d553360fa6e72f9c064",
+    "preprocessing-work\\extended_preflight.py": "c375e0997e22405b50515513ed121b4800dd923c8444dd7880d44eb35201f049"
+  },
+  "scope": "Independent AST-loaded calls on copied local fixtures. No solver. Unknown BOUNDARY FIXED is a real physical step mutation.",
+  "rows": [
+    {
+      "fixture": "baseline",
+      "input_sha256": "59b501ffa9b59a42d8de9955c129995a7665a6157aa639e866474643d9bdaf3c",
+      "ready_for_diagnostic_solve": true,
+      "profile_errors": [],
+      "input_pass": true,
+      "mesh_pass": true
+    },
+    {
+      "fixture": "reversed_torque",
+      "input_sha256": "8eb4268c4d9b52b8afd068c00ec5d1410f851879c7f3ab10444bdae902a8144e",
+      "ready_for_diagnostic_solve": false,
+      "profile_errors": [
+        "Signed input torque mismatch: profile requires clockwise drive"
+      ],
+      "input_pass": false,
+      "mesh_pass": true
+    },
+    {
+      "fixture": "wrong_second_material",
+      "input_sha256": "5e7d4e11ba148d0575d01777700978e7d645cedffd2e167bf1013fc6f49cea9f",
+      "ready_for_diagnostic_solve": false,
+      "profile_errors": [
+        "Expected one linear isotropic material",
+        "Material identity mismatch",
+        "Wrong section/material assignment"
+      ],
+      "input_pass": false,
+      "mesh_pass": true
+    },
+    {
+      "fixture": "missing_material_reference",
+      "input_sha256": "4b9ca5bc4e954cf3f3ce0cae4f68b9b4b1252c7b240d72170490074571e9429b",
+      "ready_for_diagnostic_solve": false,
+      "profile_errors": [
+        "Wrong section/material assignment"
+      ],
+      "input_pass": false,
+      "mesh_pass": true
+    },
+    {
+      "fixture": "fixed_closure_step",
+      "input_sha256": "e676dab289fbe4da0f85956754fbf22610f7d2a7b3e502ea5bbb0d7ce5520faf",
+      "ready_for_diagnostic_solve": false,
+      "profile_errors": [
+        "Unsupported BOUNDARY attribute(s): ['FIXED']"
+      ],
+      "input_pass": true,
+      "mesh_pass": true
+    }
+  ],
+  "no_acceptance_change": true
+}

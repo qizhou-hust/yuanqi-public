@@ -1,0 +1,1231 @@
+{
+  "schema": "m37.model-definition-independent-audit/v1",
+  "scope": "Read-only audit of existing P02 original/clipped decks and existing ph10; no source, result or gate changes; no solves.",
+  "method": "Independent stdlib parser; supplied FEA package is read only and not imported.",
+  "acceptance_effect": "NONE; M37 remains unaccepted. Low-load reference is OPEN_DEFINITION_QUESTION.",
+  "L2_P02": [
+    {
+      "variant": "original",
+      "div": 8,
+      "inp": "m37-results\\runs\\L2\\L2_P02_d8.inp",
+      "input": {
+        "node_count": 10535,
+        "all_node_z_zero": true,
+        "element_type_counts": {
+          "CPE6": 5150
+        },
+        "solid_sections": [
+          {
+            "line": 15695,
+            "elset": "SECTOR",
+            "thickness_mm": 1.0
+          }
+        ],
+        "elastic": [
+          {
+            "line": 15693,
+            "E_MPa": 206000.0,
+            "nu": 0.3
+          }
+        ],
+        "steps": [
+          {
+            "line": 15716,
+            "parameters": {}
+          }
+        ],
+        "explicit_nlgeom": false
+      },
+      "fixed_node_count": 125,
+      "fixed_geometry": {
+        "inner_arc_including_corners": 53,
+        "right_radial_cut_excluding_corners": 36,
+        "left_radial_cut_excluding_corners": 36
+      },
+      "fixed_inner_radius_mm": 9.100000000000001,
+      "fixed_radial_half_angle_rad": 0.5543987035746694,
+      "boundaries": [
+        {
+          "keyword": "*BOUNDARY",
+          "parameters": {},
+          "line": 15714,
+          "step": 0,
+          "rows": [
+            {
+              "line": 15715,
+              "values": [
+                "FIXED",
+                "1",
+                "2"
+              ]
+            }
+          ]
+        }
+      ],
+      "load_node_count": 5,
+      "load_origin": {
+        "Fx_N_per_mm": -92.33923936823001,
+        "Fy_N_per_mm": -52.89809247228,
+        "Mz_Nmm_per_mm": 1704.6828906421345
+      },
+      "load_30deg_neutral": {
+        "Fx_N_per_mm": -92.33923936823001,
+        "Fy_N_per_mm": -52.89809247228,
+        "Mz_Nmm_per_mm": 215.3986600470165
+      },
+      "load_magnitude_N_per_mm": 106.41777724754998,
+      "load_to_intended_Fn_ratio": 0.9999999999996126,
+      "load_to_nominal_point_moment_ratio": 1.02222373130974,
+      "reaction_origin": {
+        "Fx_N_per_mm": 92.33923664,
+        "Fy_N_per_mm": 52.898093779999996,
+        "Mz_Nmm_per_mm": -1704.682856611561
+      },
+      "reaction_30deg_neutral": {
+        "Fx_N_per_mm": 92.33923664,
+        "Fy_N_per_mm": 52.898093779999996,
+        "Mz_Nmm_per_mm": -215.39867001842893
+      },
+      "raw_RF_header_line": 8,
+      "force_balance_rel": 2.8429965969483652e-08,
+      "moment_balance_rel_origin": 1.9962993513259306e-08,
+      "moment_balance_rel_30deg_neutral": 4.6292824767205935e-08,
+      "only_CLOAD_semantic_difference_between_variants": true,
+      "meta_load_patch_length_mm": 0.19761358037550136
+    },
+    {
+      "variant": "clipped",
+      "div": 8,
+      "inp": "m37-diag-p02\\L2_P02_d8_clipped.inp",
+      "input": {
+        "node_count": 10535,
+        "all_node_z_zero": true,
+        "element_type_counts": {
+          "CPE6": 5150
+        },
+        "solid_sections": [
+          {
+            "line": 15695,
+            "elset": "SECTOR",
+            "thickness_mm": 1.0
+          }
+        ],
+        "elastic": [
+          {
+            "line": 15693,
+            "E_MPa": 206000.0,
+            "nu": 0.3
+          }
+        ],
+        "steps": [
+          {
+            "line": 15716,
+            "parameters": {}
+          }
+        ],
+        "explicit_nlgeom": false
+      },
+      "fixed_node_count": 125,
+      "fixed_geometry": {
+        "inner_arc_including_corners": 53,
+        "right_radial_cut_excluding_corners": 36,
+        "left_radial_cut_excluding_corners": 36
+      },
+      "fixed_inner_radius_mm": 9.100000000000001,
+      "fixed_radial_half_angle_rad": 0.5543987035746694,
+      "boundaries": [
+        {
+          "keyword": "*BOUNDARY",
+          "parameters": {},
+          "line": 15714,
+          "step": 0,
+          "rows": [
+            {
+              "line": 15715,
+              "values": [
+                "FIXED",
+                "1",
+                "2"
+              ]
+            }
+          ]
+        }
+      ],
+      "load_node_count": 7,
+      "load_origin": {
+        "Fx_N_per_mm": -92.33923936822767,
+        "Fy_N_per_mm": -52.898092472367054,
+        "Mz_Nmm_per_mm": 1700.000004927499
+      },
+      "load_30deg_neutral": {
+        "Fx_N_per_mm": -92.33923936822767,
+        "Fy_N_per_mm": -52.898092472367054,
+        "Mz_Nmm_per_mm": 210.71577433241865
+      },
+      "load_magnitude_N_per_mm": 106.41777724759122,
+      "load_to_intended_Fn_ratio": 1.0000000000000002,
+      "load_to_nominal_point_moment_ratio": 1.0000000233845765,
+      "reaction_origin": {
+        "Fx_N_per_mm": 92.33923537,
+        "Fy_N_per_mm": 52.8980917,
+        "Mz_Nmm_per_mm": -1699.999983010473
+      },
+      "reaction_30deg_neutral": {
+        "Fx_N_per_mm": 92.33923537,
+        "Fy_N_per_mm": 52.8980917,
+        "Mz_Nmm_per_mm": -210.71581690040972
+      },
+      "raw_RF_header_line": 8,
+      "force_balance_rel": 3.826565813555866e-08,
+      "moment_balance_rel_origin": 1.289236823362614e-08,
+      "moment_balance_rel_30deg_neutral": 2.020161575859501e-07,
+      "only_CLOAD_semantic_difference_between_variants": true,
+      "meta_load_patch_length_mm": 0.19999995913500918
+    },
+    {
+      "variant": "original",
+      "div": 12,
+      "inp": "m37-results\\runs\\L2\\L2_P02_d12.inp",
+      "input": {
+        "node_count": 13230,
+        "all_node_z_zero": true,
+        "element_type_counts": {
+          "CPE6": 6485
+        },
+        "solid_sections": [
+          {
+            "line": 19725,
+            "elset": "SECTOR",
+            "thickness_mm": 1.0
+          }
+        ],
+        "elastic": [
+          {
+            "line": 19723,
+            "E_MPa": 206000.0,
+            "nu": 0.3
+          }
+        ],
+        "steps": [
+          {
+            "line": 19746,
+            "parameters": {}
+          }
+        ],
+        "explicit_nlgeom": false
+      },
+      "fixed_node_count": 125,
+      "fixed_geometry": {
+        "inner_arc_including_corners": 53,
+        "right_radial_cut_excluding_corners": 36,
+        "left_radial_cut_excluding_corners": 36
+      },
+      "fixed_inner_radius_mm": 9.100000000000001,
+      "fixed_radial_half_angle_rad": 0.5543987035746694,
+      "boundaries": [
+        {
+          "keyword": "*BOUNDARY",
+          "parameters": {},
+          "line": 19744,
+          "step": 0,
+          "rows": [
+            {
+              "line": 19745,
+              "values": [
+                "FIXED",
+                "1",
+                "2"
+              ]
+            }
+          ]
+        }
+      ],
+      "load_node_count": 5,
+      "load_origin": {
+        "Fx_N_per_mm": -92.33923936824,
+        "Fy_N_per_mm": -52.89809247238,
+        "Mz_Nmm_per_mm": 1695.3091399031734
+      },
+      "load_30deg_neutral": {
+        "Fx_N_per_mm": -92.33923936824,
+        "Fy_N_per_mm": -52.89809247238,
+        "Mz_Nmm_per_mm": 206.02490930789418
+      },
+      "load_magnitude_N_per_mm": 106.41777724760836,
+      "load_to_intended_Fn_ratio": 1.0000000000001612,
+      "load_to_nominal_point_moment_ratio": 0.9777384478138806,
+      "reaction_origin": {
+        "Fx_N_per_mm": 92.33923904,
+        "Fy_N_per_mm": 52.89809394,
+        "Mz_Nmm_per_mm": -1695.3091481578253
+      },
+      "reaction_30deg_neutral": {
+        "Fx_N_per_mm": 92.33923904,
+        "Fy_N_per_mm": 52.89809394,
+        "Mz_Nmm_per_mm": -206.0249228565323
+      },
+      "raw_RF_header_line": 8,
+      "force_balance_rel": 1.41318335097822e-08,
+      "moment_balance_rel_origin": 4.869113076882977e-09,
+      "moment_balance_rel_30deg_neutral": 6.576213608365858e-08,
+      "only_CLOAD_semantic_difference_between_variants": true,
+      "meta_load_patch_length_mm": 0.19582685402924138
+    },
+    {
+      "variant": "clipped",
+      "div": 12,
+      "inp": "m37-diag-p02\\L2_P02_d12_clipped.inp",
+      "input": {
+        "node_count": 13230,
+        "all_node_z_zero": true,
+        "element_type_counts": {
+          "CPE6": 6485
+        },
+        "solid_sections": [
+          {
+            "line": 19725,
+            "elset": "SECTOR",
+            "thickness_mm": 1.0
+          }
+        ],
+        "elastic": [
+          {
+            "line": 19723,
+            "E_MPa": 206000.0,
+            "nu": 0.3
+          }
+        ],
+        "steps": [
+          {
+            "line": 19746,
+            "parameters": {}
+          }
+        ],
+        "explicit_nlgeom": false
+      },
+      "fixed_node_count": 125,
+      "fixed_geometry": {
+        "inner_arc_including_corners": 53,
+        "right_radial_cut_excluding_corners": 36,
+        "left_radial_cut_excluding_corners": 36
+      },
+      "fixed_inner_radius_mm": 9.100000000000001,
+      "fixed_radial_half_angle_rad": 0.5543987035746694,
+      "boundaries": [
+        {
+          "keyword": "*BOUNDARY",
+          "parameters": {},
+          "line": 19744,
+          "step": 0,
+          "rows": [
+            {
+              "line": 19745,
+              "values": [
+                "FIXED",
+                "1",
+                "2"
+              ]
+            }
+          ]
+        }
+      ],
+      "load_node_count": 7,
+      "load_origin": {
+        "Fx_N_per_mm": -92.33923936822761,
+        "Fy_N_per_mm": -52.89809247236704,
+        "Mz_Nmm_per_mm": 1699.9999937474765
+      },
+      "load_30deg_neutral": {
+        "Fx_N_per_mm": -92.33923936822761,
+        "Fy_N_per_mm": -52.89809247236704,
+        "Mz_Nmm_per_mm": 210.71576315239736
+      },
+      "load_magnitude_N_per_mm": 106.41777724759116,
+      "load_to_intended_Fn_ratio": 0.9999999999999996,
+      "load_to_nominal_point_moment_ratio": 0.9999999703272227,
+      "reaction_origin": {
+        "Fx_N_per_mm": 92.33923764,
+        "Fy_N_per_mm": 52.89809252,
+        "Mz_Nmm_per_mm": -1699.9999703126157
+      },
+      "reaction_30deg_neutral": {
+        "Fx_N_per_mm": 92.33923764,
+        "Fy_N_per_mm": 52.89809252,
+        "Mz_Nmm_per_mm": -210.71576759108325
+      },
+      "raw_RF_header_line": 8,
+      "force_balance_rel": 1.6246194572220818e-08,
+      "moment_balance_rel_origin": 1.3785212315467431e-08,
+      "moment_balance_rel_30deg_neutral": 2.1064802297289834e-08,
+      "only_CLOAD_semantic_difference_between_variants": true,
+      "meta_load_patch_length_mm": 0.19999997873837178
+    },
+    {
+      "variant": "original",
+      "div": 18,
+      "inp": "m37-results\\runs\\L2\\L2_P02_d18.inp",
+      "input": {
+        "node_count": 16845,
+        "all_node_z_zero": true,
+        "element_type_counts": {
+          "CPE6": 8276
+        },
+        "solid_sections": [
+          {
+            "line": 25131,
+            "elset": "SECTOR",
+            "thickness_mm": 1.0
+          }
+        ],
+        "elastic": [
+          {
+            "line": 25129,
+            "E_MPa": 206000.0,
+            "nu": 0.3
+          }
+        ],
+        "steps": [
+          {
+            "line": 25152,
+            "parameters": {}
+          }
+        ],
+        "explicit_nlgeom": false
+      },
+      "fixed_node_count": 125,
+      "fixed_geometry": {
+        "inner_arc_including_corners": 53,
+        "right_radial_cut_excluding_corners": 36,
+        "left_radial_cut_excluding_corners": 36
+      },
+      "fixed_inner_radius_mm": 9.100000000000001,
+      "fixed_radial_half_angle_rad": 0.5543987035746694,
+      "boundaries": [
+        {
+          "keyword": "*BOUNDARY",
+          "parameters": {},
+          "line": 25150,
+          "step": 0,
+          "rows": [
+            {
+              "line": 25151,
+              "values": [
+                "FIXED",
+                "1",
+                "2"
+              ]
+            }
+          ]
+        }
+      ],
+      "load_node_count": 5,
+      "load_origin": {
+        "Fx_N_per_mm": -92.33923936824,
+        "Fy_N_per_mm": -52.89809247238,
+        "Mz_Nmm_per_mm": 1704.4974333197447
+      },
+      "load_30deg_neutral": {
+        "Fx_N_per_mm": -92.33923936824,
+        "Fy_N_per_mm": -52.89809247238,
+        "Mz_Nmm_per_mm": 215.21320272446533
+      },
+      "load_magnitude_N_per_mm": 106.41777724760836,
+      "load_to_intended_Fn_ratio": 1.0000000000001612,
+      "load_to_nominal_point_moment_ratio": 1.021343601061399,
+      "reaction_origin": {
+        "Fx_N_per_mm": 92.33924071,
+        "Fy_N_per_mm": 52.898091029999996,
+        "Mz_Nmm_per_mm": -1704.497451280473
+      },
+      "reaction_30deg_neutral": {
+        "Fx_N_per_mm": 92.33924071,
+        "Fy_N_per_mm": 52.898091029999996,
+        "Mz_Nmm_per_mm": -215.213199044751
+      },
+      "raw_RF_header_line": 8,
+      "force_balance_rel": 1.851165834544848e-08,
+      "moment_balance_rel_origin": 1.0537257404796724e-08,
+      "moment_balance_rel_30deg_neutral": 1.7097995284031747e-08,
+      "only_CLOAD_semantic_difference_between_variants": true,
+      "meta_load_patch_length_mm": 0.1979305672303694
+    },
+    {
+      "variant": "clipped",
+      "div": 18,
+      "inp": "m37-diag-p02\\L2_P02_d18_clipped.inp",
+      "input": {
+        "node_count": 16845,
+        "all_node_z_zero": true,
+        "element_type_counts": {
+          "CPE6": 8276
+        },
+        "solid_sections": [
+          {
+            "line": 25131,
+            "elset": "SECTOR",
+            "thickness_mm": 1.0
+          }
+        ],
+        "elastic": [
+          {
+            "line": 25129,
+            "E_MPa": 206000.0,
+            "nu": 0.3
+          }
+        ],
+        "steps": [
+          {
+            "line": 25152,
+            "parameters": {}
+          }
+        ],
+        "explicit_nlgeom": false
+      },
+      "fixed_node_count": 125,
+      "fixed_geometry": {
+        "inner_arc_including_corners": 53,
+        "right_radial_cut_excluding_corners": 36,
+        "left_radial_cut_excluding_corners": 36
+      },
+      "fixed_inner_radius_mm": 9.100000000000001,
+      "fixed_radial_half_angle_rad": 0.5543987035746694,
+      "boundaries": [
+        {
+          "keyword": "*BOUNDARY",
+          "parameters": {},
+          "line": 25150,
+          "step": 0,
+          "rows": [
+            {
+              "line": 25151,
+              "values": [
+                "FIXED",
+                "1",
+                "2"
+              ]
+            }
+          ]
+        }
+      ],
+      "load_node_count": 7,
+      "load_origin": {
+        "Fx_N_per_mm": -92.3392393682276,
+        "Fy_N_per_mm": -52.89809247236702,
+        "Mz_Nmm_per_mm": 1700.0000066356629
+      },
+      "load_30deg_neutral": {
+        "Fx_N_per_mm": -92.3392393682276,
+        "Fy_N_per_mm": -52.89809247236702,
+        "Mz_Nmm_per_mm": 210.7157760405838
+      },
+      "load_magnitude_N_per_mm": 106.41777724759113,
+      "load_to_intended_Fn_ratio": 0.9999999999999993,
+      "load_to_nominal_point_moment_ratio": 1.0000000314910669,
+      "reaction_origin": {
+        "Fx_N_per_mm": 92.3392377,
+        "Fy_N_per_mm": 52.89809464,
+        "Mz_Nmm_per_mm": -1700.0000212933744
+      },
+      "reaction_30deg_neutral": {
+        "Fx_N_per_mm": 92.3392377,
+        "Fy_N_per_mm": 52.89809464,
+        "Mz_Nmm_per_mm": -210.715817604138
+      },
+      "raw_RF_header_line": 8,
+      "force_balance_rel": 2.5702982742757374e-08,
+      "moment_balance_rel_origin": 8.622183211891565e-09,
+      "moment_balance_rel_30deg_neutral": 1.972493706958479e-07,
+      "only_CLOAD_semantic_difference_between_variants": true,
+      "meta_load_patch_length_mm": 0.1999999565576839
+    }
+  ],
+  "L3_ph10": {
+    "inp": "m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.inp",
+    "input": {
+      "node_count": 55174,
+      "all_node_z_zero": true,
+      "element_type_counts": {
+        "CPE6": 26780
+      },
+      "solid_sections": [
+        {
+          "line": 81967,
+          "elset": "PINION",
+          "thickness_mm": 1.0
+        },
+        {
+          "line": 81969,
+          "elset": "WHEEL",
+          "thickness_mm": 1.0
+        }
+      ],
+      "elastic": [
+        {
+          "line": 81965,
+          "E_MPa": 206000.0,
+          "nu": 0.3
+        }
+      ],
+      "steps": [
+        {
+          "line": 83118,
+          "parameters": {
+            "INC": "300"
+          }
+        },
+        {
+          "line": 83124,
+          "parameters": {
+            "INC": "300"
+          }
+        }
+      ],
+      "explicit_nlgeom": false
+    },
+    "master_node": 5722,
+    "master_coordinate_mm": [
+      8.0,
+      0.0,
+      0.0
+    ],
+    "pinion_bore_node_count": 104,
+    "wheel_bore_node_count": 184,
+    "equation_count": 203,
+    "equation_error_lines": [],
+    "equation_coefficient_max_abs_rounding_difference": 6.210032488240813e-13,
+    "dependent_DOF_conflicts_with_final_boundary": [],
+    "step2_remaining_pinion_bore_DOF": [
+      [
+        5722,
+        2
+      ]
+    ],
+    "boundary_blocks": [
+      {
+        "keyword": "*BOUNDARY",
+        "parameters": {},
+        "line": 83112,
+        "step": 0,
+        "rows": [
+          {
+            "line": 83113,
+            "values": [
+              "WBORE",
+              "1",
+              "2"
+            ]
+          },
+          {
+            "line": 83114,
+            "values": [
+              "5722",
+              "1",
+              "1"
+            ]
+          },
+          {
+            "line": 83115,
+            "values": [
+              "5723",
+              "2",
+              "2"
+            ]
+          },
+          {
+            "line": 83116,
+            "values": [
+              "5725",
+              "1",
+              "1"
+            ]
+          },
+          {
+            "line": 83117,
+            "values": [
+              "5727",
+              "2",
+              "2"
+            ]
+          }
+        ]
+      },
+      {
+        "keyword": "*BOUNDARY",
+        "parameters": {},
+        "line": 83121,
+        "step": 1,
+        "rows": [
+          {
+            "line": 83122,
+            "values": [
+              "5722",
+              "2",
+              "2",
+              "-0.00036105411125"
+            ]
+          }
+        ]
+      },
+      {
+        "keyword": "*BOUNDARY",
+        "parameters": {
+          "OP": "NEW"
+        },
+        "line": 83127,
+        "step": 2,
+        "rows": [
+          {
+            "line": 83128,
+            "values": [
+              "WBORE",
+              "1",
+              "2"
+            ]
+          },
+          {
+            "line": 83129,
+            "values": [
+              "5722",
+              "1",
+              "1"
+            ]
+          },
+          {
+            "line": 83130,
+            "values": [
+              "5723",
+              "2",
+              "2"
+            ]
+          },
+          {
+            "line": 83131,
+            "values": [
+              "5725",
+              "1",
+              "1"
+            ]
+          },
+          {
+            "line": 83132,
+            "values": [
+              "5727",
+              "2",
+              "2"
+            ]
+          }
+        ]
+      }
+    ],
+    "initial_and_final_boundary_semantically_equal": true,
+    "closure_prescribed_master_y_mm": -0.00036105411125,
+    "CLOAD_full_torque_Nmm_per_mm": -833.333333336,
+    "meta_WBORE_coordinates_max_difference_mm": 6.477382843980975e-11,
+    "outputs": [
+      {
+        "time": 1.25,
+        "step2_load_fraction": 0.25,
+        "raw_lines": {
+          "PMASTER_U": 8,
+          "WBORE_RF": 12,
+          "contact_F_M0": 4544,
+          "contact_CG_mean_normal": 4548,
+          "contact_MCG": 4552,
+          "contact_area_normal_shear": 4556
+        },
+        "PMASTER_displacement_mm": [
+          0.0,
+          -0.0004087072,
+          0.0
+        ],
+        "delta_LOA_um": 0.9601478497551761,
+        "applied_nominal_T_Nmm_per_mm": 208.33333333333334,
+        "ideal_Fn_N_per_mm": 11.085185129957416,
+        "contact_force_moment_global": [
+          -10.41646,
+          -3.791856,
+          -1.081603e-15,
+          -1.824939e-10,
+          5.007544e-10,
+          208.3317
+        ],
+        "contact_cg_mean_normal": [
+          -1.053588,
+          19.61672,
+          -9.741456e-16,
+          0.9396766,
+          0.3420635,
+          9.209406e-17
+        ],
+        "contact_area_normal_shear": [
+          0.04432628,
+          -11.08516,
+          2.75281e-05
+        ],
+        "contact_Mz_about_wheel_center": -374.9900599999999,
+        "WBORE_reaction_about_wheel_center": {
+          "Fx_N_per_mm": -10.4164603992,
+          "Fy_N_per_mm": -3.7918558121,
+          "Mz_Nmm_per_mm": -374.98809673762634
+        },
+        "wheel_force_balance_rel": 3.9801935255289e-08,
+        "wheel_moment_balance_rel": 5.235505105332127e-06,
+        "pinion_contact_moment_vs_applied_rel": 7.839999999987413e-06,
+        "wheel_reaction_vs_ideal_ratio_rel": 3.174203299643826e-05,
+        "normal_scalar_vs_ideal_Fn_rel": 2.266985812299379e-06,
+        "printed_normal_scalar_minus_F_dot_mean_normal": -7.483080004533349e-07,
+        "printed_Mcg_minus_shifted_Mz": -2.8613071996020885e-05,
+        "secant_from_undeformed_reference_N_per_mm_um": 11.545289751764772,
+        "incremental_chord_from_previous_output_N_per_mm_um": null
+      },
+      {
+        "time": 1.5,
+        "step2_load_fraction": 0.5,
+        "raw_lines": {
+          "PMASTER_U": 4563,
+          "WBORE_RF": 4567,
+          "contact_F_M0": 11035,
+          "contact_CG_mean_normal": 11039,
+          "contact_MCG": 11043,
+          "contact_area_normal_shear": 11047
+        },
+        "PMASTER_displacement_mm": [
+          0.0,
+          -0.0007989763,
+          0.0
+        ],
+        "delta_LOA_um": 1.8769803332320705,
+        "applied_nominal_T_Nmm_per_mm": 416.6666666666667,
+        "ideal_Fn_N_per_mm": 22.170370259914833,
+        "contact_force_moment_global": [
+          -20.83271,
+          -7.583707,
+          1.022609e-15,
+          5.660172e-09,
+          -1.553266e-08,
+          416.6603
+        ],
+        "contact_cg_mean_normal": [
+          -1.053117,
+          19.61686,
+          7.606795e-15,
+          0.9396772,
+          0.3420618,
+          -4.503041e-17
+        ],
+        "contact_area_normal_shear": [
+          0.06299672,
+          -22.17012,
+          0.0001626983
+        ],
+        "contact_Mz_about_wheel_center": -749.9714599999998,
+        "WBORE_reaction_about_wheel_center": {
+          "Fx_N_per_mm": -20.83270752,
+          "Fy_N_per_mm": -7.583707231,
+          "Mz_Nmm_per_mm": -749.9640962358773
+        },
+        "wheel_force_balance_rel": 1.1234646145587785e-07,
+        "wheel_moment_balance_rel": 9.818725798562708e-06,
+        "pinion_contact_moment_vs_applied_rel": 1.5280000000029757e-05,
+        "wheel_reaction_vs_ideal_ratio_rel": 4.7871685496981325e-05,
+        "normal_scalar_vs_ideal_Fn_rel": 1.1288034971823076e-05,
+        "printed_normal_scalar_minus_F_dot_mean_normal": -9.316953999416455e-07,
+        "printed_Mcg_minus_shifted_Mz": 7.062531896905163e-05,
+        "secant_from_undeformed_reference_N_per_mm_um": 11.811722194093806,
+        "incremental_chord_from_previous_output_N_per_mm_um": 12.090742125452605
+      },
+      {
+        "time": 1.875,
+        "step2_load_fraction": 0.875,
+        "raw_lines": {
+          "PMASTER_U": 11054,
+          "WBORE_RF": 11058,
+          "contact_F_M0": 18882,
+          "contact_CG_mean_normal": 18886,
+          "contact_MCG": 18890,
+          "contact_area_normal_shear": 18894
+        },
+        "PMASTER_displacement_mm": [
+          0.0,
+          -0.001207577,
+          0.0
+        ],
+        "delta_LOA_um": 2.836877989826963,
+        "applied_nominal_T_Nmm_per_mm": 729.1666666666667,
+        "ideal_Fn_N_per_mm": 38.79814795485096,
+        "contact_force_moment_global": [
+          -36.51698,
+          -13.39715,
+          1.807867e-15,
+          4.447522e-10,
+          -1.215174e-09,
+          729.1436
+        ],
+        "contact_cg_mean_normal": [
+          -0.9039231,
+          19.66797,
+          -7.400761e-17,
+          0.9395185,
+          0.3424886,
+          -1.942896e-17
+        ],
+        "contact_area_normal_shear": [
+          0.07841045,
+          -38.89675,
+          0.08022255
+        ],
+        "contact_Mz_about_wheel_center": -1315.8072799999995,
+        "WBORE_reaction_about_wheel_center": {
+          "Fx_N_per_mm": -36.516983677,
+          "Fy_N_per_mm": -13.3971519561,
+          "Mz_Nmm_per_mm": -1315.7883866600569
+        },
+        "wheel_force_balance_rel": 1.0707602279376965e-07,
+        "wheel_moment_balance_rel": 1.4358744042424456e-05,
+        "pinion_contact_moment_vs_applied_rel": 3.163428571440038e-05,
+        "wheel_reaction_vs_ideal_ratio_rel": 0.0025054374552814155,
+        "normal_scalar_vs_ideal_Fn_rel": 0.0025414111329174374,
+        "printed_normal_scalar_minus_F_dot_mean_normal": -5.783799963410274e-07,
+        "printed_Mcg_minus_shifted_Mz": -7.551023510465882e-05,
+        "secant_from_undeformed_reference_N_per_mm_um": 13.676354109687134,
+        "incremental_chord_from_previous_output_N_per_mm_um": 17.32244847218497
+      },
+      {
+        "time": 2.0,
+        "step2_load_fraction": 1.0,
+        "raw_lines": {
+          "PMASTER_U": 18901,
+          "WBORE_RF": 18905,
+          "contact_F_M0": 27177,
+          "contact_CG_mean_normal": 27181,
+          "contact_MCG": 27185,
+          "contact_area_normal_shear": 27189
+        },
+        "PMASTER_displacement_mm": [
+          0.0,
+          -0.001341169,
+          0.0
+        ],
+        "delta_LOA_um": 3.15071653131704,
+        "applied_nominal_T_Nmm_per_mm": 833.3333333333334,
+        "ideal_Fn_N_per_mm": 44.340740519829666,
+        "contact_force_moment_global": [
+          -41.74574,
+          -15.33844,
+          -4.028207e-16,
+          -3.435303e-11,
+          9.085607e-11,
+          833.3033
+        ],
+        "contact_cg_mean_normal": [
+          -0.9113985,
+          19.6654,
+          -1.750463e-14,
+          0.9395056,
+          0.3425239,
+          1.299885e-17
+        ],
+        "contact_area_normal_shear": [
+          0.08226252,
+          -44.47414,
+          0.1116364
+        ],
+        "contact_Mz_about_wheel_center": -1504.4581399999997,
+        "WBORE_reaction_about_wheel_center": {
+          "Fx_N_per_mm": -41.745737517,
+          "Fy_N_per_mm": -15.338441797,
+          "Mz_Nmm_per_mm": -1504.4345066049127
+        },
+        "wheel_force_balance_rel": 6.89170118846134e-08,
+        "wheel_moment_balance_rel": 1.5708908382799915e-05,
+        "pinion_contact_moment_vs_applied_rel": 3.604000000000269e-05,
+        "wheel_reaction_vs_ideal_ratio_rel": 0.002956337736608475,
+        "normal_scalar_vs_ideal_Fn_rel": 0.0030085081711857054,
+        "printed_normal_scalar_minus_F_dot_mean_normal": -1.2051399949086772e-06,
+        "printed_Mcg_minus_shifted_Mz": 0.00023260433998495422,
+        "secant_from_undeformed_reference_N_per_mm_um": 14.073224321863911,
+        "incremental_chord_from_previous_output_N_per_mm_um": 17.660649768071735
+      }
+    ]
+  },
+  "L2_clipped_existing_convergence_report": {
+    "scope": "load-patch diagnostic only, not a replacement baseline",
+    "original": {
+      "values": [
+        2.7322732892975075,
+        2.628858699665819,
+        2.7022889955715126
+      ],
+      "observed_order": null,
+      "order_used": 2.0,
+      "last_relative_change": 0.027173368957217496,
+      "extrapolated_YFS": 2.761033232296067,
+      "FE_over_ISO": 0.8510413300732456,
+      "pass_ratio": false,
+      "pass_mesh": false
+    },
+    "clipped": {
+      "values": [
+        2.6922611668981222,
+        2.669068446917123,
+        2.664294592634044
+      ],
+      "observed_order": 3.898447485297881,
+      "order_used": 3.898447485297881,
+      "last_relative_change": 0.0017917892023942557,
+      "extrapolated_YFS": 2.6630572914294075,
+      "FE_over_ISO": 0.8208419199194605,
+      "pass_ratio": false,
+      "pass_mesh": true
+    },
+    "input_identity": "Original regenerated input deck SHA equals baseline before changing only CLOAD. Fixed analytical involute-arclength interval +/-0.05m, quadratic-edge clipping and shape-function integration. Same total Fn and direction.",
+    "boundary": "Eliminating load moment drift does not by itself explain or close the remaining FE/ISO model discrepancy."
+  },
+  "L3_reference_definition": {
+    "line_load_N_per_mm": 41.666666666666664,
+    "c_prime_th_CB": {
+      "value": 15.682889297567408,
+      "unit": "N/(mm*um)",
+      "source": "c'th·C_B·C_R（C_R=1，不含 C_M=0.8 与低载系数）：FE 理想几何主比较量"
+    },
+    "c_prime_ISO": {
+      "value": 10.080063162262865,
+      "unit": "N/(mm*um)",
+      "source": "gearbase dyn.c_s = c'th·0.8·C_R·C_B·cosβ·E/E_St·(w/100)^0.25（信息）",
+      "formula_chain": [
+        {
+          "depth": 0,
+          "name": "c_s",
+          "value": 10.080063162262865,
+          "unit": "N/(mm*um)",
+          "id": "dyn.c_s",
+          "ref": "ISO 6336-1:2019 9.3 式(82)(85)(90)-(92) 单齿刚度 c' = c'th·C_M·C_R·C_B·cosβ，C_M=0.8；同材料时 2E1E2/(E1+E2)=E；载荷 <100 N/mm 时乘 (载荷/100)^0.25"
+        },
+        {
+          "depth": 1,
+          "name": "C_B",
+          "value": 0.975,
+          "unit": "1",
+          "id": "dyn.C_B",
+          "ref": "ISO 6336-1:2019 9.3 式(88)(89) 基本齿条系数 C_B（两轮同刀具，均值即本值）"
+        },
+        {
+          "depth": 1,
+          "name": "C_R",
+          "value": 1.0,
+          "unit": "1",
+          "input": true
+        },
+        {
+          "depth": 1,
+          "name": "E",
+          "value": 206000.0,
+          "unit": "MPa",
+          "input": true
+        },
+        {
+          "depth": 1,
+          "name": "E_St",
+          "value": 206000.0,
+          "unit": "MPa",
+          "input": true
+        },
+        {
+          "depth": 1,
+          "name": "beta",
+          "value": 0.0,
+          "unit": "deg",
+          "input": true
+        },
+        {
+          "depth": 1,
+          "name": "c_th",
+          "value": 16.085014664171702,
+          "unit": "N/(mm*um)",
+          "id": "dyn.c_th",
+          "ref": "ISO 6336-1:2019 9.3 式(83) 理论单齿刚度 c'th = 1/q'"
+        },
+        {
+          "depth": 1,
+          "name": "line_load",
+          "value": 41.666666666666664,
+          "unit": "N/mm",
+          "id": "dyn.line_load",
+          "ref": "ISO 6336-1:2019 6.5 单位齿宽载荷 F_t·K_A·K_γ/b"
+        },
+        {
+          "depth": 1,
+          "name": "w_ref",
+          "value": 100.0,
+          "unit": "N/mm",
+          "input": true
+        }
+      ]
+    },
+    "c_gamma_alpha_th": {
+      "value": 23.03003754086271,
+      "unit": "N/(mm*um)",
+      "source": "c'th·C_B·(0.75εα+0.25)：主比较量"
+    },
+    "c_gamma_alpha_ISO": {
+      "value": 14.802389319753042,
+      "unit": "N/(mm*um)",
+      "source": "gearbase dyn.c_gamma_alpha（信息）"
+    },
+    "low_load_factor_arithmetic_only": 0.8034284189446517,
+    "low_load_reference_status": "OPEN_DEFINITION_QUESTION; arithmetic proximity does not authorize changing reference or acceptance gates.",
+    "supplied_notes_are_author_claims": [
+      "FE 用齿厚减薄 Asn=-0.02m 只为给非工作齿面留侧隙；ISO 值按名义变位（差异 <0.1%）",
+      "σH 比较：节点 C 处单对齿承全载，FE 峰值应与 Hertz 值（Zε=1）比；FE/σH0（含 Zε）仅作信息",
+      "c' 比较：FE 是理想几何、无误差，主比较对象为 c'th·C_B（不含经验系数 C_M=0.8 与 (w/100)^0.25）"
+    ]
+  },
+  "official_contact_definition": {
+    "provenance": "Official-source location supplied by sibling audit; local pinned source directly read and hashed by this audit. Not treated as a numerical validation of the installed binary.",
+    "commit": "9e4fc4a856259ebfae0d7a2659c2c4a8030fe542",
+    "url": "https://github.com/Dhondtguido/CalculiX/blob/9e4fc4a856259ebfae0d7a2659c2c4a8030fe542/src/printoutcontact.f#L179",
+    "definition": "CF is the selected slave surface resultant; M0 uses current coordinates co+vold; mean normal is area-averaged and not renormalized. Last normal-force scalar is total resultant F dot mean normal, not integral pressure magnitude or ideal T/rb."
+  },
+  "source_files": {
+    "m37\\M37-FEA题目包\\cases\\L2_yfs_matrix.json": {
+      "sha256": "4daa76b03f55ffacd8ec177a64ade5b97a80f22f8ad86346ae2cd1fe08d2b4be",
+      "bytes": 1699
+    },
+    "m37-results\\runs\\L2\\L2_P02_d8.inp": {
+      "sha256": "df1d26fa2a36c6a88cd43f79bebedb31bff7552fec2676266b409ca4d3187186",
+      "bytes": 572237
+    },
+    "m37-diag-p02\\L2_P02_d8_clipped.inp": {
+      "sha256": "f6144cfd2f356fb8d2d3b17d6060f2e92b5a62d7639a94b0730703a58d324395",
+      "bytes": 572367
+    },
+    "m37-results\\runs\\L2\\L2_P02_d8.meta.json": {
+      "sha256": "b173f6a4747693c86f857a6325ed3cb1b8e0ca710fa1c5b1e23d3a5ef5eafaa8",
+      "bytes": 8440
+    },
+    "m37-results\\runs\\L2\\L2_P02_d8.dat": {
+      "sha256": "472e25a5ec08cc30a14b485915452eccaa0bb1ef2c907ea4e7334ad35815b800",
+      "bytes": 22398
+    },
+    "m37-diag-p02\\L2_P02_d8_clipped.meta.json": {
+      "sha256": "fa6116051cab78acffc81073e7d62fe9c073a4c755c0d600a91064a0c7d8a14e",
+      "bytes": 11586
+    },
+    "m37-diag-p02\\L2_P02_d8_clipped.dat": {
+      "sha256": "33549d01297d5e8b5d22afe7f5f11fe57021b920adc6dec3e969062c9a0893da",
+      "bytes": 22398
+    },
+    "m37-results\\runs\\L2\\L2_P02_d12.inp": {
+      "sha256": "0587be25440a8c50c4c1deda9ce5a3464e09857854350ecc6c99c7504686460f",
+      "bytes": 726106
+    },
+    "m37-diag-p02\\L2_P02_d12_clipped.inp": {
+      "sha256": "d495d10d1222442c5318bf379fdebcfbf08d48a029b7e08d4ae218ef74a3cd99",
+      "bytes": 726238
+    },
+    "m37-results\\runs\\L2\\L2_P02_d12.meta.json": {
+      "sha256": "10b6a0d43e8bcff0ded484f486e53cac7d50877659d4c0b8384da503341d2ffc",
+      "bytes": 11380
+    },
+    "m37-results\\runs\\L2\\L2_P02_d12.dat": {
+      "sha256": "4a8255e92e5fae70efea7d4867e38384a19e38fd0b3c0150b70615cb343d0824",
+      "bytes": 29418
+    },
+    "m37-diag-p02\\L2_P02_d12_clipped.meta.json": {
+      "sha256": "2709f46efe995e28651312dbe20e04bc2986f6b2c3fd4d0fdf0a7c6e53f5ec14",
+      "bytes": 15202
+    },
+    "m37-diag-p02\\L2_P02_d12_clipped.dat": {
+      "sha256": "7d1c9584a2c2ee65e35d58ff39ebae5a5cabb26c5e7f07f67bbb789152769a48",
+      "bytes": 29418
+    },
+    "m37-results\\runs\\L2\\L2_P02_d18.inp": {
+      "sha256": "80a174f914055bb51ca2257109d86fc76b208b40bb2c1cbba7d57fb91b17ed4e",
+      "bytes": 932349
+    },
+    "m37-diag-p02\\L2_P02_d18_clipped.inp": {
+      "sha256": "df675c95f9cc7e78f6b2da9fc18d75e9910d1d4bfef94e89149d90564f1cb74e",
+      "bytes": 932482
+    },
+    "m37-results\\runs\\L2\\L2_P02_d18.meta.json": {
+      "sha256": "e7812e1570ddcb214a4f294f07809e8830f2eb0ef81a73ee485da0368d90b802",
+      "bytes": 16065
+    },
+    "m37-results\\runs\\L2\\L2_P02_d18.dat": {
+      "sha256": "088eb6b2169e978612a457f083b151b6f3962aff6e2e6b84de0d5c1991ac49e8",
+      "bytes": 40650
+    },
+    "m37-diag-p02\\L2_P02_d18_clipped.meta.json": {
+      "sha256": "46feaf9ca8029af28f15d2787c7b8729d9fac7af373b1b1afa75069f20932add",
+      "bytes": 20954
+    },
+    "m37-diag-p02\\L2_P02_d18_clipped.dat": {
+      "sha256": "24e1e7682251c17a4bf82182ec7ec645a2b65d413e768edc39e77fa28c82caf1",
+      "bytes": 40650
+    },
+    "m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.inp": {
+      "sha256": "a5c3fbc646170e73ffd0826a8f8afef0842ebcbedffc18e6ca31acb720682818",
+      "bytes": 3237036
+    },
+    "m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.meta.json": {
+      "sha256": "0ebf4036b12b313260dadc6682b82b854931467cc3370b8ee1061c28f3a9842b",
+      "bytes": 13910
+    },
+    "m37-results\\runs\\L3\\L3_C001_G1_ph10_d12.dat": {
+      "sha256": "2875d98fe49f910e9a47c4ce80330d8fbcab024600dd859edfd3661470e5786f",
+      "bytes": 1727090
+    },
+    "m37\\M37-FEA题目包\\expected\\L3_C001_G1.json": {
+      "sha256": "7218f91af84687b8ab986041b2b9ce7c60f1f80102649e188b7fc2fa77cc288f",
+      "bytes": 8537
+    },
+    "m37-diag-p02\\comparison.json": {
+      "sha256": "90220c78bed225ab01eb850f3cca21d64602eece73dd068602c79e37b6d2f311",
+      "bytes": 1197
+    },
+    "m37\\M37-FEA题目包\\scripts\\cases.py": {
+      "sha256": "59baacb9325549174fbfd661f539bab81fa7337f035815b163d12049b962daeb",
+      "bytes": 32907
+    },
+    "m37\\M37-FEA题目包\\scripts\\inp_writer.py": {
+      "sha256": "6a346e8f0150968762d2ed4cb1aa42b5ae8ea1c0c427852899bcaa256682c6be",
+      "bytes": 12204
+    },
+    "m37\\M37-FEA题目包\\scripts\\ccx_io.py": {
+      "sha256": "8ef1684fa036a2fe91bcd5d3c259d08f0c091d5de9e9d4176db0bd58702f2c1f",
+      "bytes": 8504
+    },
+    "m37\\M37-FEA题目包\\scripts\\post.py": {
+      "sha256": "d414686979b02694020f212778bc43ba3b4dca2916874c5e9c43752829b2478d",
+      "bytes": 7011
+    },
+    "m37\\M37-FEA题目包\\scripts\\study.py": {
+      "sha256": "6a70245f4140dbe132f0a56c96af0bf6201d7a312046df05e786f3210c535d2b",
+      "bytes": 16005
+    },
+    "m37\\M37-FEA题目包\\expected\\L2_yfs_matrix.json": {
+      "sha256": "f4b862b83b8b8d9006dcc10abf9f938b9a081ffdf352561c480c14f0a6cada7f",
+      "bytes": 61237
+    },
+    "m37\\M37-FEA题目包\\cases\\L3_C001_G1.json": {
+      "sha256": "eb51523e854d254629f402e8956343ebaa5cf81d92f436f5e37973cac8ee5d77",
+      "bytes": 956
+    },
+    "m37-diag-p02\\diagnostic-controller.py": {
+      "sha256": "4c0cb65065e536531cea8a098217200010abb989fc6d05e67ccc54e5a545095d",
+      "bytes": 5763
+    },
+    "preprocessing-research\\sources\\Dhondtguido--CalculiX\\doc\\CalculiX.tex": {
+      "sha256": "da5d06c336f208db0f7d09ae03237670b58e9de4461a692aa84b62df6542f953",
+      "bytes": 1767728
+    },
+    "preprocessing-research\\sources\\Dhondtguido--CalculiX\\src\\printoutcontact.f": {
+      "sha256": "b38fc9f35acd1fa715b4089c5a3b63c01821084a89ae9f315ca729efccc441b5",
+      "bytes": 9222
+    },
+    "preprocessing-research\\model_definition_audit.py": {
+      "sha256": "5a9c5bf175248348af9c87b48e28a816e10b18c94ab8c1e9613ae2205dd7d34b",
+      "bytes": 17297
+    }
+  }
+}

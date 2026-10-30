@@ -1,0 +1,32 @@
+{
+  "scope": "Original baseline and diagnostics frozen before subsequent preprocessing and repeat-evidence work",
+  "packages": [
+    {
+      "file": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-results\\M37-results-20261029-c4bec53c.zip",
+      "bytes": 56489845,
+      "sha256": "92bf1336def938a1a522816773c467a9286395dd616f671253418cfc5370d03c",
+      "members": 561,
+      "input_decks": 82,
+      "zip_crc_ok": true,
+      "unique_paths": true
+    },
+    {
+      "file": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-l3-periodic-diagnostic\\M37-L3-periodic-diagnostic-20261029.zip",
+      "bytes": 30664464,
+      "sha256": "1d8729886f72c48f75544c34147b656822c5af29fcefa303be9e31457a0bf557",
+      "members": 139,
+      "input_decks": 17,
+      "zip_crc_ok": true,
+      "unique_paths": true
+    },
+    {
+      "file": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m37-diag-p02\\M37-P02-clipped-load-diagnostic-20261029.zip",
+      "bytes": 1991853,
+      "sha256": "431a8a32743173a11f7c0236caec5d413040ec57ba7fe0286e43dfca132b8638",
+      "members": 33,
+      "input_decks": 6,
+      "zip_crc_ok": true,
+      "unique_paths": true
+    }
+  ]
+}

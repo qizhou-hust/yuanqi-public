@@ -1,0 +1,33 @@
+{
+  "all_match": true,
+  "archives": [
+    {
+      "file": "core-work\\gearbase-v0.9.1-core-local.zip",
+      "sha256": "54889602db685345405e4d370648ac8f89bc920f2686aa6ce2aef71faa7d6f07",
+      "manifest": "core-work/delivery-manifest.json",
+      "manifest_sha256": "1a966e5916fb0daa49bba315d2c7a242ec46f14a55cb40ce6e00a5a3e084e2e7",
+      "manifest_and_previously_frozen_hash_match": true
+    },
+    {
+      "file": "m37-results\\M37-results-20261029-c4bec53c.zip",
+      "sha256": "92bf1336def938a1a522816773c467a9286395dd616f671253418cfc5370d03c",
+      "manifest": "m37-results/delivery-manifest.json",
+      "manifest_sha256": "490991e852864bcb5f5e5821badc09cd7541cc7ffc93133dcf6175afd966d483",
+      "manifest_and_previously_frozen_hash_match": true
+    },
+    {
+      "file": "m37-l3-periodic-diagnostic\\M37-L3-periodic-diagnostic-20261029.zip",
+      "sha256": "1d8729886f72c48f75544c34147b656822c5af29fcefa303be9e31457a0bf557",
+      "manifest": "m37-l3-periodic-diagnostic/M37-L3-periodic-diagnostic-20261029.manifest.json",
+      "manifest_sha256": "1a3de82099196cabb36f28df1d6ae3cea9cfb78a657e4aae78c6ac6c0ad08fc2",
+      "manifest_and_previously_frozen_hash_match": true
+    },
+    {
+      "file": "m37-diag-p02\\M37-P02-clipped-load-diagnostic-20261029.zip",
+      "sha256": "431a8a32743173a11f7c0236caec5d413040ec57ba7fe0286e43dfca132b8638",
+      "manifest": "m37-diag-p02/M37-P02-clipped-load-diagnostic-20261029.manifest.json",
+      "manifest_sha256": "17323f83267d522e0b02047ba9c9b4f1d481c092ae86b53c5f0ffcecf1f86540",
+      "manifest_and_previously_frozen_hash_match": true
+    }
+  ]
+}

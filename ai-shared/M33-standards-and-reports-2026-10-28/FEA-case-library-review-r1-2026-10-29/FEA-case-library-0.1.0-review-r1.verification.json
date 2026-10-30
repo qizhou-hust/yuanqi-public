@@ -1,0 +1,109 @@
+{
+  "schema": "case-library.delivery-validation/1",
+  "zip": {
+    "name": "FEA-case-library-0.1.0-review-r1.zip",
+    "bytes": 134521101,
+    "sha256": "f6f54fc9dc4f2cfc34e374a1b42e375e99038f3cec3efcf8c69c2cc877a6c682",
+    "members": 1079,
+    "CRC_test_passed": true
+  },
+  "fresh_extraction": {
+    "tested": true,
+    "unicode_and_space_path": true,
+    "isolated_venv_without_pip": true,
+    "python_version": "3.12.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "audit": {
+      "schema": "case-library.audit/1",
+      "solver_executed": false,
+      "engineering_accepted": false,
+      "passed": true,
+      "integrity": {
+        "files": 1078,
+        "bytes": 559571364,
+        "passed": true
+      },
+      "tests": {
+        "passed": true,
+        "returncode": 0,
+        "log": "unit-tests.log"
+      },
+      "sources": {
+        "passed": true,
+        "returncode": 0,
+        "log": "public-sources.log"
+      },
+      "public": {
+        "physical_FE_cases": 2,
+        "new_actual_jobs_replayed": 10,
+        "passed": true
+      },
+      "legacy": {
+        "schema": "case-library.legacy-verification/v1",
+        "passed": true,
+        "errors": [],
+        "cases": 20,
+        "historical_entries": 124,
+        "raw_artifacts": 769,
+        "source_mappings": 1013,
+        "bytes_verified": 530482294,
+        "scope_counts": {
+          "baseline": 82,
+          "periodic-diagnostic": 16,
+          "p02-clipped": 3,
+          "smoke": 6,
+          "repeat": 2,
+          "commercial_candidate_or_diagnostic": 13,
+          "earlier_commercial_candidate": 2
+        },
+        "all_14_L2_points_with_3_meshes": true,
+        "original_phase_entries": 16,
+        "corrected_phase_entries": 16,
+        "original_unstarted_entries": 9,
+        "solver_executed": false,
+        "engineering_accepted": false,
+        "scope": "File identity and historical coverage only; no new FE or KISSsoft computation."
+      },
+      "catalog": {
+        "physical_cases": 25,
+        "old_cases": 20,
+        "new_public_cases": 5,
+        "passed": true
+      }
+    },
+    "unit_tests_log": "test_bc_and_load_order_must_match_supported_step (test_case_contracts.ContractTests.test_bc_and_load_order_must_match_supported_step) ... ok\ntest_case_mesh_level_binds_load_roster (test_case_contracts.ContractTests.test_case_mesh_level_binds_load_roster) ... ok\ntest_duplicate_final_blocks_rejected_including_conflicts (test_case_contracts.ContractTests.test_duplicate_final_blocks_rejected_including_conflicts) ... ok\ntest_duplicate_node_rejected (test_case_contracts.ContractTests.test_duplicate_node_rejected) ... ok\ntest_empty_mesh_roster_blocked (test_case_contracts.ContractTests.test_empty_mesh_roster_blocked) ... ok\ntest_missing_reference_blocked (test_case_contracts.ContractTests.test_missing_reference_blocked) ... ok\ntest_native_positive_and_mutations (test_case_contracts.ContractTests.test_native_positive_and_mutations) ... ok\ntest_raw_field_missing_duplicate_nonfinite_wrong_time (test_case_contracts.ContractTests.test_raw_field_missing_duplicate_nonfinite_wrong_time) ... ok\ntest_redistributed_existing_dofs_rejected_even_with_same_resultants (test_case_contracts.ContractTests.test_redistributed_existing_dofs_rejected_even_with_same_resultants) ... ok\ntest_runtime_must_bind_actual_executable_and_digest (test_case_contracts.ContractTests.test_runtime_must_bind_actual_executable_and_digest) ... ok\ntest_self_equilibrated_extra_load_is_not_uniform_body_force (test_case_contracts.ContractTests.test_self_equilibrated_extra_load_is_not_uniform_body_force) ... ok\ntest_sphere_load_roster_positive_and_component_change (test_case_contracts.ContractTests.test_sphere_load_roster_positive_and_component_change) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.030s\n\nOK\n",
+    "source_check_log": "{\"status\": \"PASS\", \"mode\": \"check\", \"public_physical_cases\": 5, \"new_source_catalog_contracts\": 3, \"Hertz_scalar_checks\": 4, \"FE_solver_runs\": 0, \"artifacts_verified\": 5}\n"
+  },
+  "package_gate_negative_tests": [
+    {
+      "scenario": "missing",
+      "rejected": true,
+      "reason": "Exact file set differs: ['raw.dat']"
+    },
+    {
+      "scenario": "changed",
+      "rejected": true,
+      "reason": "Content identity: raw.dat"
+    },
+    {
+      "scenario": "extra",
+      "rejected": true,
+      "reason": "Exact file set differs: ['unlisted.txt']"
+    },
+    {
+      "scenario": "empty",
+      "rejected": true,
+      "reason": "Manifest must be nonempty/unique"
+    }
+  ],
+  "replay_runs_solver": false,
+  "engineering_accepted": false,
+  "independent_external_review": "Not yet performed; this file records packaging verification by the submitting team.",
+  "public_archive": {
+    "name": "FEA-case-library-0.1.0-review-r1.tar.xz",
+    "bytes": 94877984,
+    "sha256": "2679aab2120259e5c32c35017d4458c29b744edfc676bfacbecca1360f528860",
+    "members": 1079,
+    "every_payload_file_identical_to_validated_zip": true
+  }
+}

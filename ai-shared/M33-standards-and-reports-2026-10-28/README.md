@@ -1,5 +1,7 @@
 # M33 标准与 KISSsoft 报告资料包
 
+[计算问题案例库独立审查包：25例、公开基准与完整原始证据（2026-10-29）](FEA-case-library-review-r1-2026-10-29/README.md)
+
 [TR30 例7/例8复算候选（2026-10-29，M33仍未验收）](TR30-7-8-2026-10-29/README.md)
 
 [外部 AI 从这里开始](AI_START_HERE.md) · [本地上传 GitHub 教程](GITHUB_UPLOAD_GUIDE.zh-CN.md) · [完整 ZIP 下载](https://github.com/qizhou-hust/yuanqi-public/releases/tag/m33-evidence-2026-10-28)

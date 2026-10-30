@@ -1,0 +1,204 @@
+{
+  "schema": "case-library.catalog/1",
+  "physical_case_count": 25,
+  "entries": [
+    {
+      "id": "M37-L0-tension",
+      "contract": "legacy/cases/M37-L0-tension.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L0-contact",
+      "contract": "legacy/cases/M37-L0-contact.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS_PENALTY; MORTAR_FAILED",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L1",
+      "contract": "legacy/cases/M37-L1.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS_PENALTY; MORTAR_FAILED",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P01",
+      "contract": "legacy/cases/M37-L2-P01.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P02",
+      "contract": "legacy/cases/M37-L2-P02.json",
+      "class": "historical",
+      "status": "NUMERICAL_FAIL",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P03",
+      "contract": "legacy/cases/M37-L2-P03.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P04",
+      "contract": "legacy/cases/M37-L2-P04.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P05",
+      "contract": "legacy/cases/M37-L2-P05.json",
+      "class": "historical",
+      "status": "NUMERICAL_FAIL",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P06",
+      "contract": "legacy/cases/M37-L2-P06.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P07",
+      "contract": "legacy/cases/M37-L2-P07.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P08",
+      "contract": "legacy/cases/M37-L2-P08.json",
+      "class": "historical",
+      "status": "NUMERICAL_FAIL",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P09",
+      "contract": "legacy/cases/M37-L2-P09.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P10",
+      "contract": "legacy/cases/M37-L2-P10.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P11",
+      "contract": "legacy/cases/M37-L2-P11.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P12",
+      "contract": "legacy/cases/M37-L2-P12.json",
+      "class": "historical",
+      "status": "NUMERICAL_FAIL",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P13",
+      "contract": "legacy/cases/M37-L2-P13.json",
+      "class": "historical",
+      "status": "NUMERICAL_PASS",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L2-P14",
+      "contract": "legacy/cases/M37-L2-P14.json",
+      "class": "historical",
+      "status": "NUMERICAL_FAIL",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M37-L3",
+      "contract": "legacy/cases/M37-L3.json",
+      "class": "historical",
+      "status": "NOT_ACCEPTED; process repeat does not close numerical gates",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M33-TR30-7",
+      "contract": "legacy/cases/M33-TR30-7.json",
+      "class": "historical",
+      "status": "NOT_ACCEPTED",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "M33-TR30-8",
+      "contract": "legacy/cases/M33-TR30-8.json",
+      "class": "historical",
+      "status": "NOT_ACCEPTED",
+      "new_solve_this_round": false,
+      "evidence_scope": "Archived raw identities and historical coverage; not all metrics independently re-extracted this round"
+    },
+    {
+      "id": "COMET-CANTILEVER-PLANE-STRESS",
+      "contract": "cases/public/comet-beam.json",
+      "class": "runnable_public_benchmark",
+      "status": "DISPLACEMENT_COMPARED_OVERALL_INCOMPLETE",
+      "new_solve_this_round": true
+    },
+    {
+      "id": "COMET-HOLLOW-SPHERE-EXTERNAL-PRESSURE",
+      "contract": "cases/public/comet-sphere.json",
+      "class": "runnable_public_benchmark",
+      "status": "DISPLACEMENT_COMPARED_OVERALL_INCOMPLETE",
+      "new_solve_this_round": true
+    },
+    {
+      "id": "ASTER-SSNV104B-HERTZ-SPHERES",
+      "contract": "cases/catalog/aster-ssnv104b-hertz.json",
+      "class": "source_only_analytic_check_available",
+      "status": "FE_NOT_RUN",
+      "new_solve_this_round": false
+    },
+    {
+      "id": "CCX-COOK-US3-128",
+      "contract": "cases/catalog/ccx-cook-us3.json",
+      "class": "source_only_adapter_unsupported",
+      "status": "FE_NOT_RUN",
+      "new_solve_this_round": false
+    },
+    {
+      "id": "CCX-BEAM8F-MODAL",
+      "contract": "cases/catalog/ccx-beam8f-modal.json",
+      "class": "source_only_adapter_unsupported",
+      "status": "FE_NOT_RUN",
+      "new_solve_this_round": false
+    }
+  ],
+  "evidence_policy": "Public FE, exact analytic, approximate theory, software regression, same-family formula and commercial result remain distinct. No experiment data.",
+  "variant_policy": "Mesh/phase/thickness/algorithm variants do not increase physical-case count.",
+  "engineering_accepted": false
+}

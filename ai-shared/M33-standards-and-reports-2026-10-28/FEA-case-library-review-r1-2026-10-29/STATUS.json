@@ -1,0 +1,26 @@
+{
+  "schema": "case-library.status/1",
+  "physical_cases": 25,
+  "historical_cases": 20,
+  "new_public_sources": 5,
+  "new_actual_FE_physical_cases": 2,
+  "new_actual_solver_jobs": 10,
+  "source_only_FE_not_run": 3,
+  "historical_entries": 124,
+  "historical_artifacts": 769,
+  "new_unit_tests_passed": 12,
+  "public_reference_scalar_checks_passed": 4,
+  "M33_accepted": false,
+  "M37_L2_accepted": false,
+  "M37_L3_accepted": false,
+  "engineering_accepted": false,
+  "overall": "REVIEW_EVIDENCE_PACKAGE_WITH_EXPLICIT_FAILURES_AND_OPEN_ITEMS",
+  "open_items": [
+    "profile-specific RF balance qualification",
+    "stress/energy qualification",
+    "Cook US3 adapter",
+    "modal adapter",
+    "Hertz sphere FE adapter and finite-body applicability"
+  ],
+  "portable_audit": "python -B tools/replay.py --output ../new-review-directory"
+}

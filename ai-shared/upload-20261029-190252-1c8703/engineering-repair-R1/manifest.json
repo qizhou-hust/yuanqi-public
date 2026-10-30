@@ -1,0 +1,114 @@
+{
+  "edition": "engineering_repair_R1",
+  "official_edition": false,
+  "compliance_acceptance": false,
+  "sources": [
+    {
+      "id": "S1",
+      "file": "（原版）ISO TR 14179-2-2001.pdf",
+      "url": null,
+      "sha256": "bcf59bd75060378b118555eda38286ee1c2d51bc29838196407466becba720ad",
+      "bytes": 12441297
+    },
+    {
+      "id": "S2",
+      "file": "ISO-TR 14179-1-2001.pdf",
+      "url": null,
+      "sha256": "19085bec7d8e91c52dc558062ab3c070011b2c7dc1b2ccdc32dd186c542156ee",
+      "bytes": 17648860
+    },
+    {
+      "id": "S3",
+      "file": "ISO-TR-14179-1-2001_PREVIEW_EN.pdf",
+      "url": "https://standards.iteh.ai/catalog/standards/sist/9e17c6ce-4b4e-445c-9128-38485e037e97/iso-tr-14179-1-2001",
+      "sha256": "15ea8799e38296931d9a7a9389fd19be16bf2db66e5bcea0b30ad65bd638682f",
+      "bytes": 285372
+    },
+    {
+      "id": "S4",
+      "file": "Chalmers_2020_Electric_Transmission_System_Efficiency_Simulation.pdf",
+      "url": "https://odr.chalmers.se/bitstreams/fe6d6e5c-3377-4c10-9bc3-3c5f38824e3d/download",
+      "sha256": "b8cc8c06321a4326393b9795c947b31f5777202c7680f773f342a82b42f4eeee",
+      "bytes": 4376265
+    },
+    {
+      "id": "S5",
+      "file": "MIT_Introduction_to_Engineering_Heat_Transfer.pdf",
+      "url": "https://ocw.mit.edu/courses/16-050-thermal-energy-fall-2002/87d9f4544b7fd64a77201382500d057c_10_part3.pdf",
+      "sha256": "bf64eb1e5c8ec46662fd5364ddf3a895ceb277f9c5de4e64cd91d2204fe085c3",
+      "bytes": 897546
+    },
+    {
+      "id": "S6",
+      "file": "DIN_Media_6885-1_2021-11_DE.txt",
+      "url": "https://www.dinmedia.de/de/norm/din-6885-1/346315269",
+      "sha256": "a18858c90061f944361ede6fd7f4b1059746f83d00e083542cfb4c4e6817e01e",
+      "bytes": 6569
+    },
+    {
+      "id": "S7",
+      "file": "DIN 6885-1 (2021-06-00).pdf",
+      "url": null,
+      "sha256": "085487dc67842ad43c671ff7ffe363385a311b69435bb497799ca3c44e94c220",
+      "bytes": 3424379
+    }
+  ],
+  "outputs": [
+    {
+      "file": "DIN-6885-1_2021-06_ENGINEERING_CORRECTIONS.pdf",
+      "sha256": "b7a1eb87199f0c9ca79704ffc8307b34b7b158d0d4d4275a5a35c6f74b97cccd",
+      "bytes": 3226366
+    },
+    {
+      "file": "ENGINEERING_REPAIR_REPORT.pdf",
+      "sha256": "645a294af9d91269db3e7258178fa22bc16325242ce266f58273c9f35c33cc13",
+      "bytes": 24688
+    },
+    {
+      "file": "ISO-TR-14179-1_WITH_SOURCED_PAGE_ii.pdf",
+      "sha256": "fff3ccccd8dc41d36bdab6153d26db55860b81c6c3ce3eb289ce583c9f2ce855",
+      "bytes": 17690386
+    },
+    {
+      "file": "ISO-TR-14179-2_ENGINEERING_READER.pdf",
+      "sha256": "776a1fe2ff873d661cf2ad88916ea50a53ec05db6925854f09961f827252de7f",
+      "bytes": 12496029
+    },
+    {
+      "file": "README.md",
+      "sha256": "1f45d19c84b01adc50121b361bd84f32b2f35da0eb850e8312f8e0fed9047930",
+      "bytes": 1334
+    },
+    {
+      "file": "Table12_recovered.csv",
+      "sha256": "56230b70790498c549f3843e6f5a36cce68f59d4a0ce2118406dd30d6d873e81",
+      "bytes": 363
+    },
+    {
+      "file": "verification_results.json",
+      "sha256": "05f4c63a963f3d0eab7f0f4eee2746d90bd5fcf37e99ee618e239d16d7c95174",
+      "bytes": 6614
+    },
+    {
+      "file": "verify_repairs.py",
+      "sha256": "900a10f54685cc2dc4b7e71ad5c989017d782edfb949aca2e512607027d3dc05",
+      "bytes": 5340
+    },
+    {
+      "file": "工程修复说明.md",
+      "sha256": "7311d05a9b22bf02e42056146e383c0e743a9430cecb56f76d3b6f14b10e5fc9",
+      "bytes": 17161
+    }
+  ],
+  "unresolved": [
+    "TR2 fin empirical area weighting",
+    "TR2 foundation correction",
+    "TR2 shaft/coupling split heat-flow interpretation",
+    "DIN Table2 column13 exact corrected cells",
+    "DIN Table2 footnote g exact revised wording",
+    "TR2 equations 1-24 not fully reconstructed in this review",
+    "TR2 equations 59-64 correlation applicability not independently verified",
+    "TR1 full formula-level verification not performed",
+    "Final 59.7 C viscosity/loss iteration not independently reproduced"
+  ]
+}

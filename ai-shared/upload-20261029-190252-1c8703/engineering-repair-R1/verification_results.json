@@ -1,0 +1,279 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Table12 printed sum W",
+      "actual": 398.59,
+      "expected": 398.6,
+      "abs_tol": 0.02,
+      "passed": true
+    },
+    {
+      "name": "bearing 1: P=2*pi*n*T/60",
+      "actual": 105.76695267085637,
+      "expected": 105.6,
+      "abs_tol": 1.056,
+      "passed": true
+    },
+    {
+      "name": "bearing 1: torque rounded consistency",
+      "actual": 1.01,
+      "expected": 1.01,
+      "abs_tol": 0.011,
+      "passed": true
+    },
+    {
+      "name": "bearing 2: P=2*pi*n*T/60",
+      "actual": 163.36281798666923,
+      "expected": 163.1,
+      "abs_tol": 1.631,
+      "passed": true
+    },
+    {
+      "name": "bearing 2: torque rounded consistency",
+      "actual": 1.56,
+      "expected": 1.56,
+      "abs_tol": 0.011,
+      "passed": true
+    },
+    {
+      "name": "bearing 3: P=2*pi*n*T/60",
+      "actual": 45.84369079750906,
+      "expected": 45.84,
+      "abs_tol": 0.45840000000000003,
+      "passed": true
+    },
+    {
+      "name": "bearing 3: torque rounded consistency",
+      "actual": 1.95,
+      "expected": 1.95,
+      "abs_tol": 0.011,
+      "passed": true
+    },
+    {
+      "name": "bearing 4: P=2*pi*n*T/60",
+      "actual": 29.386981280454524,
+      "expected": 29.39,
+      "abs_tol": 0.2939,
+      "passed": true
+    },
+    {
+      "name": "bearing 4: torque rounded consistency",
+      "actual": 1.25,
+      "expected": 1.25,
+      "abs_tol": 0.011,
+      "passed": true
+    },
+    {
+      "name": "bearing 5: P=2*pi*n*T/60",
+      "actual": 22.347771701188556,
+      "expected": 22.38,
+      "abs_tol": 0.2238,
+      "passed": true
+    },
+    {
+      "name": "bearing 5: torque rounded consistency",
+      "actual": 3.8600000000000003,
+      "expected": 3.85,
+      "abs_tol": 0.011,
+      "passed": true
+    },
+    {
+      "name": "bearing 6: P=2*pi*n*T/60",
+      "actual": 13.408663020713133,
+      "expected": 13.42,
+      "abs_tol": 0.1342,
+      "passed": true
+    },
+    {
+      "name": "bearing 6: torque rounded consistency",
+      "actual": 2.31,
+      "expected": 2.31,
+      "abs_tol": 0.011,
+      "passed": true
+    },
+    {
+      "name": "bearing 7: P=2*pi*n*T/60",
+      "actual": 6.580285724429573,
+      "expected": 6.58,
+      "abs_tol": 0.0658,
+      "passed": true
+    },
+    {
+      "name": "bearing 7: torque rounded consistency",
+      "actual": 4.59,
+      "expected": 4.59,
+      "abs_tol": 0.011,
+      "passed": true
+    },
+    {
+      "name": "bearing 8: P=2*pi*n*T/60",
+      "actual": 12.2717311113545,
+      "expected": 12.28,
+      "abs_tol": 0.12279999999999999,
+      "passed": true
+    },
+    {
+      "name": "bearing 8: torque rounded consistency",
+      "actual": 8.56,
+      "expected": 8.56,
+      "abs_tol": 0.011,
+      "passed": true
+    },
+    {
+      "name": "bearing1 no-load torque Nm",
+      "actual": 0.8866425713466695,
+      "expected": 0.886,
+      "abs_tol": 0.002,
+      "passed": true
+    },
+    {
+      "name": "bearing7 low-speed torque Nm",
+      "actual": 0.559872,
+      "expected": 0.56,
+      "abs_tol": 0.001,
+      "passed": true
+    },
+    {
+      "name": "sample radiation coefficient",
+      "actual": 6.500824417125,
+      "expected": 6.5,
+      "abs_tol": 0.05,
+      "passed": true
+    },
+    {
+      "name": "sample natural convection coefficient",
+      "actual": 9.866025650492181,
+      "expected": 9.9,
+      "abs_tol": 0.06,
+      "passed": true
+    },
+    {
+      "name": "sample total coefficient",
+      "actual": 15.083158352822002,
+      "expected": 15.1,
+      "abs_tol": 0.1,
+      "passed": true
+    },
+    {
+      "name": "sample housing heat W: printed rounding allowance",
+      "actual": 1085.8222408192207,
+      "expected": 1085.0,
+      "abs_tol": 6.0,
+      "passed": true
+    },
+    {
+      "name": "sample one oil-temperature iteration",
+      "actual": 59.779624509740884,
+      "expected": 59.8,
+      "abs_tol": 0.05,
+      "passed": true
+    },
+    {
+      "name": "fin analytical vs finite volume tip_h=0",
+      "actual": 4.1248900056071784,
+      "expected": 4.1248799779003065,
+      "abs_tol": 0.00041248900056071785,
+      "passed": true
+    },
+    {
+      "name": "fin analytical vs finite volume tip_h=15",
+      "actual": 4.168664589586582,
+      "expected": 4.168654624966361,
+      "abs_tol": 0.0004168664589586582,
+      "passed": true
+    },
+    {
+      "name": "fin analytical vs finite volume tip_h=100",
+      "actual": 4.378548291099851,
+      "expected": 4.378538569668926,
+      "abs_tol": 0.00043785482910998515,
+      "passed": true
+    },
+    {
+      "name": "radiation mean-temperature approximation vs Stefan-Boltzmann",
+      "actual": 6.500824417125,
+      "expected": 6.430525233808271,
+      "abs_tol": 0.15,
+      "passed": true
+    },
+    {
+      "name": "DIN official correction table1 mass kg/1000",
+      "actual": 0.628,
+      "expected": 0.628,
+      "abs_tol": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "DIN official correction table2 mass kg/1000",
+      "actual": 3179.25,
+      "expected": 3180.0,
+      "abs_tol": 1.0,
+      "passed": true
+    }
+  ],
+  "sample": {
+    "alpha_rad": 6.500824417125,
+    "alpha_free": 9.866025650492181,
+    "alpha_air": 16.366850067617182,
+    "U": 15.083158352822002,
+    "area": 2.05683,
+    "Q_W": 1085.8222408192207
+  },
+  "next_temperature_C": 59.779624509740884,
+  "sensitivity_illustration": [
+    {
+      "loss_scale": 0.8,
+      "UA_scale": 0.8,
+      "equilibrium_C_linear": 59.55924901948177
+    },
+    {
+      "loss_scale": 0.8,
+      "UA_scale": 1,
+      "equilibrium_C_linear": 52.647399215585416
+    },
+    {
+      "loss_scale": 0.8,
+      "UA_scale": 1.2,
+      "equilibrium_C_linear": 48.03949934632118
+    },
+    {
+      "loss_scale": 1,
+      "UA_scale": 0.8,
+      "equilibrium_C_linear": 68.1990612743522
+    },
+    {
+      "loss_scale": 1,
+      "UA_scale": 1,
+      "equilibrium_C_linear": 59.55924901948177
+    },
+    {
+      "loss_scale": 1,
+      "UA_scale": 1.2,
+      "equilibrium_C_linear": 53.799374182901474
+    },
+    {
+      "loss_scale": 1.2,
+      "UA_scale": 0.8,
+      "equilibrium_C_linear": 76.83887352922265
+    },
+    {
+      "loss_scale": 1.2,
+      "UA_scale": 1,
+      "equilibrium_C_linear": 66.47109882337813
+    },
+    {
+      "loss_scale": 1.2,
+      "UA_scale": 1.2,
+      "equilibrium_C_linear": 59.559249019481776
+    }
+  ],
+  "NOT_verified": [
+    "Full ISO compliance",
+    "Full table11 to table12 recalculation",
+    "Final 59.7 C fixed-point result",
+    "Product temperature prediction",
+    "DIN full corrected edition",
+    "Finned housing empirical area weighting"
+  ]
+}

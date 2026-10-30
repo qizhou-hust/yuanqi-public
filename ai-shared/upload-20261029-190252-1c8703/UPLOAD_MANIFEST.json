@@ -97,7 +97,7 @@
     }
   ],
   "excluded_count": 1,
-  "updated": "2026-10-30T02:56:32.846346+00:00",
+  "updated": "2026-10-30T04:01:39.124943+00:00",
   "verification_scope": "文件哈希、标准身份及新增文件页面检查；不是技术验收或出版方完整性认证。",
   "removed_files": [
     {
@@ -115,8 +115,14 @@
       "bytes": 8173992,
       "sha256": "0f41672d6656c9813723d1288408ee5361a3e020bb53b2386a2435f057dca56d",
       "status": "rejected_quality",
-      "reason": "公式错乱、拆页；PDF 第 40 页表 12 内容空缺。未上传，需店家替换完整文件。"
+      "reason": "源文件公式错乱、拆页，未作为已验证原版上传。更正：表12内容在PDF41，PDF40仅标题，先前缺表判断有误。新增有来源标识的工程阅读本见engineering-repair-R1，不能当作官方完整修正版。"
     }
   ],
-  "edition_reference": "https://www.dinmedia.de/en/standard/din-6885-1/346315269"
+  "edition_reference": "https://www.dinmedia.de/en/standard/din-6885-1/346315269",
+  "repair_package": {
+    "path": "engineering-repair-R1/manifest.json",
+    "official_edition": false,
+    "compliance_acceptance": false,
+    "verification": "30 scoped checks passed; see verification_results.json and explicit NOT_verified list"
+  }
 }

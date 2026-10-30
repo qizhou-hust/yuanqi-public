@@ -1,5 +1,7 @@
 # 计算问题案例库 v0.1.0 独立审查包 r1
 
+[外部独立审查提示词：架构、成果、失败、冻结边界与后续路线](EXTERNAL-REVIEW-PROMPT.zh-CN.md)（同时审查系统包和案例库包）。
+
 下载单文件完整包：[FEA-case-library-0.1.0-review-r1.tar.xz](FEA-case-library-0.1.0-review-r1.tar.xz)（90.48 MiB），[SHA256](FEA-case-library-0.1.0-review-r1.tar.xz.sha256)。1079个成员、25个物理案例；与本地完整ZIP的每个解压文件逐字节相同。ZIP为128.29 MiB，超过GitHub普通仓库单文件上限，所以此目录提供相同内容的tar.xz。
 
 在新空目录下载后解压，仅需Python标准库，也可用7-Zip/支持xz的tar：

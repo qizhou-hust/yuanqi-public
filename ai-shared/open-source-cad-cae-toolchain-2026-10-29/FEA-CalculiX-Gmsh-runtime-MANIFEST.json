@@ -1,6 +1,5 @@
 {
   "schema": "fea-toolchain.manifest/1",
-  "file_count": 24,
   "files": [
     {
       "path": "calculix/ccx_2.23.pdf",
@@ -29,18 +28,23 @@
     },
     {
       "path": "COMPONENTS.json",
-      "bytes": 6124,
-      "sha256": "f3052239448bc00e96f120078b197190691cbea70aa8af149c803d4e6bb3b70a"
+      "bytes": 6579,
+      "sha256": "80f798c17d297bcfde43d0a31796562511ccc85158f1c2355c41a003c506ccbb"
     },
     {
       "path": "gmsh/gmsh-4.15.2-source.tgz",
-      "bytes": 16777216,
-      "sha256": "c43d8de76527749e487c8f9ea5c0cd0a337fabb3d73fa12d336cab467f2e29ce"
+      "bytes": 18496049,
+      "sha256": "be3f66f225d27ba9fa014f07e83169285da8a051b0e8ab7103d88066b39bdd3e"
     },
     {
       "path": "gmsh/linux/gmsh-4.15.2-py2.py3-none-manylinux_2_24_x86_64.whl",
       "bytes": 40006930,
       "sha256": "4076a948ce22625330d1413d4982e22b5c69fc2f0f7951f5df64c778cf54108c"
+    },
+    {
+      "path": "gmsh/source-retrieval.json",
+      "bytes": 636,
+      "sha256": "00d0e5b396f85928f83a0f27e304a65c43dcc48a8d7b045039e57bd95fa15c17"
     },
     {
       "path": "gmsh/windows/gmsh-4.15.2-py2.py3-none-win_amd64.whl",
@@ -113,6 +117,11 @@
       "sha256": "a6ad7fd2294e8e04d553919b5beed0269ebc6f73d41261ed1059c7fde83227f0"
     },
     {
+      "path": "verification-archives.json",
+      "bytes": 1859,
+      "sha256": "d60d8c064d83271cdf82bd9672c749dffcf122bd722f51a42a9abe5f7bc2cb05"
+    },
+    {
       "path": "verification-linux.json",
       "bytes": 772,
       "sha256": "a112c9f0200d60fea8323476f8fc50dabe9682a8a282ecf1aeaa17f17b007e4d"
@@ -123,5 +132,6 @@
       "sha256": "22305e4b94b41d61dcd22fa0353fada71eb623a1e22adab9c36b1835d3386cf6"
     }
   ],
-  "scope": "All files except this manifest; archive sidecar is separate."
+  "scope": "All files except this manifest; archive sidecar is separate.",
+  "file_count": 26
 }

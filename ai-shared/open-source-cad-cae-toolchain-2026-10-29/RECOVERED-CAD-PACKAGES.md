@@ -4,9 +4,9 @@
 
 | 原包 | 字节 | 当前SHA256 | 核验 |
 |---|---:|---|---|
-| [开源CAD源码合集_20261027.zip](D:/my_Works/精翔爬梯/开源CAD源码合集_20261027.zip) | 593,841,501 | `f0edde2f0fde907f7cd14ded99c86bc21a02e914e1bd3b51fa02e52ca28b1002` | PASS |
-| [AI_CAD轻量包_build123d_20261027.zip](D:/my_Works/精翔爬梯/AI_CAD轻量包_build123d_20261027.zip) | 841,624 | `aedc23b579f2282361362ef390cf8c9eae439bf737bab65df001305c08e86f27` | PASS |
-| [CAD内核_build123d_Linux_x64_Python312_20261027.zip](D:/my_Works/精翔爬梯/CAD内核_build123d_Linux_x64_Python312_20261027.zip) | 66,849,887 | `1f4c3c4b245dd150ed2d1c7d675f20e330e1dbc7dc68d68f2a5e9ba039ef614a` | PASS |
+| [开源CAD源码合集_20261027.zip](https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/CAD-source-collection-20261027.zip) | 593,841,501 | `f0edde2f0fde907f7cd14ded99c86bc21a02e914e1bd3b51fa02e52ca28b1002` | PASS |
+| [AI_CAD轻量包_build123d_20261027.zip](https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/AI-CAD-light-build123d-20261027.zip) | 841,624 | `aedc23b579f2282361362ef390cf8c9eae439bf737bab65df001305c08e86f27` | PASS |
+| [CAD内核_build123d_Linux_x64_Python312_20261027.zip](https://github.com/qizhou-hust/yuanqi-public/releases/download/open-source-cad-cae-2026-10-29/CAD-kernel-build123d-Linux-x64-Python312-20261027.zip) | 66,849,887 | `1f4c3c4b245dd150ed2d1c7d675f20e330e1dbc7dc68d68f2a5e9ba039ef614a` | PASS |
 
 源码合集：12个主项目 + 25份固定提交子模块归档、25处放置映射。对37份内部ZIP重做CRC和manifest大小/SHA核对，原SHA256SUMS也逐项重验。FreeCAD主源码为提交 `1ec79da434be621d89c97287188b53b2ec2ce8a3`，同时保留OndselSolver、GSL、AddonManager、coin、pivy五个直接子模块，以及coin的cpack.d和doxygen-awesome-css两个递归子模块，共七处放置。它是源码快照，不是Windows安装版，也不是完整离线编译工具链。
 

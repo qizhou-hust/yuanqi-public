@@ -20,4 +20,4 @@
 
 **[开源 CAD / CAE 集中索引](ai-shared/open-source-cad-cae-toolchain-2026-10-29/README.md)** · [下载全部归档](https://github.com/qizhou-hust/yuanqi-public/releases/tag/open-source-cad-cae-2026-10-29)
 
-包含 FreeCAD 等 12 个开源 CAD 项目的源码合集、build123d/OCP 轻量运行包，以及 CalculiX/Gmsh 无头运行包。大文件通过 Release 资产分发，索引、SHA256 和验证边界保留在仓库内。
+包含 FreeCAD 等 12 个开源 CAD 项目的源码合集、build123d 轻量源码及 OCP 内核包，以及 CalculiX/Gmsh 无头运行包。大文件通过 Release 资产分发，索引、SHA256 和验证边界保留在仓库内。

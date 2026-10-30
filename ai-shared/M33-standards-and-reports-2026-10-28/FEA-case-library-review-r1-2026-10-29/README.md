@@ -14,6 +14,8 @@ python -B tools/replay.py --output ../case-library-audit
 
 先读 [START-HERE.md](START-HERE.md)。这是证据重放，不启动新FEA；再次计算需另备对应求解器。已在Windows干净venv与中文空格解压目录完成重放，12项代码测试、10个新真实作业复核、全部旧证据身份/覆盖检查通过。公开tar.xz的每个成员已对比经过重放的ZIP内容。见[制包验证](FEA-case-library-0.1.0-review-r1.verification.json)。外部独立审查尚未进行。
 
+计算工具附件已集中放在 [开源 CAD / CAE 工具链目录](../../open-source-cad-cae-toolchain-2026-10-29/README.md)：含 CalculiX/Gmsh 无头运行包、FreeCAD 等 12 项目源码合集及 build123d/OCP 配套包。工具链 smoke 仅证明基本调用，案例验收状态仍以本审查包为准。
+
 ## 内容与实际完成度
 
 - 已有20个物理案例：M33两例及M37十八例，124条历史作业记录、769份去重原始工件。包括全部14个L2参数点各三级网格、原始及修正16相位、失败与未启动记录。历史作业本轮未重新求解。

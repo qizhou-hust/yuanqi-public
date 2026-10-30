@@ -1,0 +1,54 @@
+{
+  "schema": "fea-toolchain.archive-integrity/1",
+  "checks": [
+    {
+      "path": "calculix/ccx_2.23.src.tar.bz2",
+      "bytes": 1551289,
+      "sha256": "9c88385c10fb04f5dc6c4e98027a51bebdd8aee3920e05190d6c1dd08357d6e7",
+      "members": 1197,
+      "passed": true
+    },
+    {
+      "path": "calculix/ccx_2.23.tar.bz2",
+      "bytes": 2502788,
+      "sha256": "35d426fed5eb164fbbaaafa20819d13d22e30bc2b9bc9c6c4ed957e9468355dd",
+      "members": 1,
+      "passed": true
+    },
+    {
+      "path": "gmsh/gmsh-4.15.2-source.tgz",
+      "bytes": 18496049,
+      "sha256": "be3f66f225d27ba9fa014f07e83169285da8a051b0e8ab7103d88066b39bdd3e",
+      "members": 4920,
+      "passed": true
+    },
+    {
+      "path": "gmsh/linux/gmsh-4.15.2-py2.py3-none-manylinux_2_24_x86_64.whl",
+      "bytes": 40006930,
+      "sha256": "4076a948ce22625330d1413d4982e22b5c69fc2f0f7951f5df64c778cf54108c",
+      "members": 450,
+      "passed": true
+    },
+    {
+      "path": "gmsh/windows/gmsh-4.15.2-py2.py3-none-win_amd64.whl",
+      "bytes": 42235999,
+      "sha256": "7b36083bb410fa27c5d0e052929d1a9844a5b09169d66017b72b41aabd49d711",
+      "members": 449,
+      "passed": true
+    },
+    {
+      "path": "python/python-runtime-cpython-3.12.14-linux-x86_64-gnu.tar.gz",
+      "bytes": 37705507,
+      "sha256": "212116c9cdb8b3e9dc416a771dee32eff95e63d24e52a2ff0f41c370c8c2fc27",
+      "members": 5334,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "rejected_truncated_gmsh_source": {
+    "bytes": 16777216,
+    "sha256": "c43d8de76527749e487c8f9ea5c0cd0a337fabb3d73fa12d336cab467f2e29ce",
+    "failure": "EOFError: compressed file ended before end-of-stream marker"
+  },
+  "smoke": "Existing dual-platform smoke evidence is retained; this publication step checks archive integrity, not engineering acceptance."
+}

@@ -1,0 +1,4 @@
+f0edde2f0fde907f7cd14ded99c86bc21a02e914e1bd3b51fa02e52ca28b1002  CAD-source-collection-20261027.zip
+aedc23b579f2282361362ef390cf8c9eae439bf737bab65df001305c08e86f27  AI-CAD-light-build123d-20261027.zip
+1f4c3c4b245dd150ed2d1c7d675f20e330e1dbc7dc68d68f2a5e9ba039ef614a  CAD-kernel-build123d-Linux-x64-Python312-20261027.zip
+89a57df5b0e334d306e66dd5853c2930fe0faf528cf2c6ee2deb1368c34becd4  FEA-CalculiX-Gmsh-runtime-2026-10-29.tar.xz

@@ -1,0 +1,127 @@
+{
+  "schema": "fea-toolchain.manifest/1",
+  "file_count": 24,
+  "files": [
+    {
+      "path": "calculix/ccx_2.23.pdf",
+      "bytes": 6281257,
+      "sha256": "a0bf3fc03f374912ff2bf28da3f7dfb6a61428dd7f41b281a2e7e1fdb318f330"
+    },
+    {
+      "path": "calculix/ccx_2.23.src.tar.bz2",
+      "bytes": 1551289,
+      "sha256": "9c88385c10fb04f5dc6c4e98027a51bebdd8aee3920e05190d6c1dd08357d6e7"
+    },
+    {
+      "path": "calculix/ccx_2.23.tar.bz2",
+      "bytes": 2502788,
+      "sha256": "35d426fed5eb164fbbaaafa20819d13d22e30bc2b9bc9c6c4ed957e9468355dd"
+    },
+    {
+      "path": "calculix/DOWNLOADS.json",
+      "bytes": 581,
+      "sha256": "d9dde959d8cf4a424a183938bda0467ebab20dd27be26f6fbc7808b59cb7c9f0"
+    },
+    {
+      "path": "calculix/GPL-2.0.txt",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "COMPONENTS.json",
+      "bytes": 6124,
+      "sha256": "f3052239448bc00e96f120078b197190691cbea70aa8af149c803d4e6bb3b70a"
+    },
+    {
+      "path": "gmsh/gmsh-4.15.2-source.tgz",
+      "bytes": 16777216,
+      "sha256": "c43d8de76527749e487c8f9ea5c0cd0a337fabb3d73fa12d336cab467f2e29ce"
+    },
+    {
+      "path": "gmsh/linux/gmsh-4.15.2-py2.py3-none-manylinux_2_24_x86_64.whl",
+      "bytes": 40006930,
+      "sha256": "4076a948ce22625330d1413d4982e22b5c69fc2f0f7951f5df64c778cf54108c"
+    },
+    {
+      "path": "gmsh/windows/gmsh-4.15.2-py2.py3-none-win_amd64.whl",
+      "bytes": 42235999,
+      "sha256": "7b36083bb410fa27c5d0e052929d1a9844a5b09169d66017b72b41aabd49d711"
+    },
+    {
+      "path": "licenses/gcc-7-base-copyright",
+      "bytes": 64079,
+      "sha256": "6bc44a664ef0c6baec2135c5ea2e4c5aed7ac660de80a4d24e9129690d2d886a"
+    },
+    {
+      "path": "licenses/libxft2-copyright",
+      "bytes": 1438,
+      "sha256": "5960983c962c864d7d73eae6bb9b3b06c1940a23fc6d22ce10ef0f0cde8fd48d"
+    },
+    {
+      "path": "linux-libs/libgfortran.so.4.0.0",
+      "bytes": 1959960,
+      "sha256": "d87b8024db66386051efbabb393cce9b8a580bb9be6e461043f74fd7653c9894"
+    },
+    {
+      "path": "linux-libs/libquadmath.so.0.0.0",
+      "bytes": 297840,
+      "sha256": "d84683d5b7f14caad12058c852597beae23ef578d8a7853280524ed69d758d11"
+    },
+    {
+      "path": "linux-libs/libXft.so.2.3.6",
+      "bytes": 106024,
+      "sha256": "6bea200ccc0cdc29aa7f76d6cba942454503b5e8f45c6d722633df39412fc27b"
+    },
+    {
+      "path": "prepare.py",
+      "bytes": 3800,
+      "sha256": "16e3c77d6ba3c59fa4eeadc3266cc8ac1e03e03e983c7dc1fd950665ad922e92"
+    },
+    {
+      "path": "python/python-runtime-cpython-3.12.14-linux-x86_64-gnu.tar.gz",
+      "bytes": 37705507,
+      "sha256": "212116c9cdb8b3e9dc416a771dee32eff95e63d24e52a2ff0f41c370c8c2fc27"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2513,
+      "sha256": "5a64a5ebe5fc36f3a8463d89ea1da4d352cf723abd3ab4ac766563189152ae18"
+    },
+    {
+      "path": "smoke.py",
+      "bytes": 3939,
+      "sha256": "0965c03cd7cbcbbb1114482e5250e89ec32e983c9e2ecd4b44d2046c0b1c28c7"
+    },
+    {
+      "path": "upstream-runtime/gcc-7-base_7.5.0-3ubuntu1~18.04_amd64.deb",
+      "bytes": 18268,
+      "sha256": "6c30e2237e5a7c7264d24b2130b160271232a7748325a4659af19f4d861e9a23"
+    },
+    {
+      "path": "upstream-runtime/libgfortran4_7.5.0-3ubuntu1~18.04_amd64.deb",
+      "bytes": 492148,
+      "sha256": "f89b2473bc251ba0c8eb9479ad31d5f96019e2ea1f8be466beea3a68b11b19fc"
+    },
+    {
+      "path": "upstream-runtime/libquadmath0_16-20260322-1ubuntu1_amd64.deb",
+      "bytes": 155450,
+      "sha256": "420e777fef436f397a85ddedde53fbb44f92c7ca8e87d581f9d86573859e1aa4"
+    },
+    {
+      "path": "upstream-runtime/libxft2_2.3.6-1build2_amd64.deb",
+      "bytes": 45110,
+      "sha256": "a6ad7fd2294e8e04d553919b5beed0269ebc6f73d41261ed1059c7fde83227f0"
+    },
+    {
+      "path": "verification-linux.json",
+      "bytes": 772,
+      "sha256": "a112c9f0200d60fea8323476f8fc50dabe9682a8a282ecf1aeaa17f17b007e4d"
+    },
+    {
+      "path": "verification-windows.json",
+      "bytes": 418,
+      "sha256": "22305e4b94b41d61dcd22fa0353fada71eb623a1e22adab9c36b1835d3386cf6"
+    }
+  ],
+  "scope": "All files except this manifest; archive sidecar is separate."
+}

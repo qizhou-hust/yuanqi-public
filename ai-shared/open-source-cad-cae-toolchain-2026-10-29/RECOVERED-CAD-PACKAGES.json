@@ -1,0 +1,2941 @@
+{
+  "schema": "toolchain.recovered-user-CAD-archives/v1",
+  "source_thread": {
+    "id": "01a17c18-68a5-73d2-a394-9620974c038a",
+    "title": "检索并打包开源CAD源码",
+    "project_path": "D:/my_Works/精翔爬梯"
+  },
+  "all_verified": true,
+  "scripts_executed": false,
+  "gui_launched": false,
+  "downloaded": false,
+  "packages": [
+    {
+      "file": "D:/my_Works/精翔爬梯/开源CAD源码合集_20261027.zip",
+      "bytes": 593841501,
+      "sha256": "f0edde2f0fde907f7cd14ded99c86bc21a02e914e1bd3b51fa02e52ca28b1002",
+      "sidecar": "D:/my_Works/精翔爬梯/开源CAD源码合集_20261027.zip.sha256.txt",
+      "sidecar_sha256": "2709d00d03ef91075b80bc8cff6eaf0ff8718f0d3b47118e3d882e403256d14b",
+      "sidecar_expected": "f0edde2f0fde907f7cd14ded99c86bc21a02e914e1bd3b51fa02e52ca28b1002",
+      "new_download": false,
+      "scripts_executed": false,
+      "runtime_revalidated_this_check": false,
+      "sidecar_match": true,
+      "outer_crc_error": null,
+      "outer_files": 156,
+      "unique_paths": true,
+      "safe_paths": true,
+      "outer_uncompressed_bytes": 596274976,
+      "kind": "fixed_commit_source_collection",
+      "primary_projects": 12,
+      "submodule_archives": 25,
+      "submodule_placements": 25,
+      "submodule_mapping_complete_as_declared": true,
+      "submodule_mapping_paths_present": true,
+      "source_build_environment_complete": false,
+      "FreeCAD_source_included": true,
+      "FreeCAD_installer_included": false,
+      "scope": "Source snapshots and declared submodules. No Git history, compiler/Qt/system/dependency offline build closure; not stable release or installed software proof.",
+      "internal_file_checks": [
+        {
+          "path": "sources/FreeCAD_1ec79da434be.zip",
+          "bytes": 91297226,
+          "sha256": "9a628e54863536f91e1b16ccc08480982dc00fcee33b3c22ab20c2d428d9f133",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 13301,
+          "declared_files": 13301,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/LibreCAD_f37ef6b10f96.zip",
+          "bytes": 94016084,
+          "sha256": "aac2a298b6beb739c4cb437f156504aac9c57d133efa3dbe2f09577caa8b2799",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 5888,
+          "declared_files": 5888,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/QCAD_f07c755ad56f.zip",
+          "bytes": 96274003,
+          "sha256": "4964cf71feb8852a3e1ea8df466cf832b0dc76dae59115b6885ae640a5a08d37",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 41490,
+          "declared_files": 41490,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/SolveSpace_30e1c3ac0beb.zip",
+          "bytes": 3991461,
+          "sha256": "ab34e559d2cb7889ac2f0b3e67dea1407d9308e2840fcd2df7dcff1d98629e2b",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 677,
+          "declared_files": 677,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/OpenSCAD_e5721012999b.zip",
+          "bytes": 27668900,
+          "sha256": "7e0715d534135bb7b1ecd40c55ec9ae582a96e9090b115eea4b5f797dfccad7a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 3763,
+          "declared_files": 3763,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/CadQuery_8178185a24a0.zip",
+          "bytes": 8042239,
+          "sha256": "5e7efe793134b282f893bda486bb48c4b34cd88b8a7c1b3242d869567a92b9aa",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 219,
+          "declared_files": 219,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/build123d_c49a0493ad00.zip",
+          "bytes": 23877031,
+          "sha256": "c0d7c91e6d15d17d91e6de3a757b7a31adf6447e2b2e62f584825f172dec60d4",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 777,
+          "declared_files": 777,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/OpenCASCADE_53706f78a864.zip",
+          "bytes": 66600249,
+          "sha256": "9d7da6a1fa4213de36cff765b69f0c1a9ad8ef567d2c576408b483ea61c97bb8",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 34543,
+          "declared_files": 34543,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/Chili3D_03a6a542e841.zip",
+          "bytes": 11444458,
+          "sha256": "e00a17e6b1084b464a2f1f1b77742cd6253fe7930666a45b5a90ae7c92397ba2",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 1131,
+          "declared_files": 1131,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/Dune3D_d01faaf16f30.zip",
+          "bytes": 2086040,
+          "sha256": "c4efdc415013d67a47d879ae6662c7ed583bd68576075d6e0ab52a1866ec99db",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 857,
+          "declared_files": 857,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/Truck_b0a38a17f443.zip",
+          "bytes": 683450,
+          "sha256": "cf7548664289c7d90216d8534ee88cd1c3d25db343d608b710099908fc2426bc",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 339,
+          "declared_files": 339,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "sources/replicad_6ef8ae10f7cb.zip",
+          "bytes": 17608618,
+          "sha256": "f4d12a84b1800a6aa8c6a990df00267355bd3499bfddc4e73b7a6c870ee5cc09",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 433,
+          "declared_files": 433,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/madler__zlib_51b7f2abdade.zip",
+          "bytes": 1728531,
+          "sha256": "8be92f276c1280aa4f46a878008c7bf295b6ca8da0eb27b41e3666d894f0d32c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 257,
+          "declared_files": 257,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/microsoft__GSL_543d0dd3fe96.zip",
+          "bytes": 92975,
+          "sha256": "6f78e69feac8cc161d179f4107e84883e13786bee5db957b56519a4b97fa3cbd",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 49,
+          "declared_files": 49,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/glennrp__libpng_2b978915d823.zip",
+          "bytes": 1918576,
+          "sha256": "c351a6e1da6daf9af0c15488fdcc73467afe0ca0a3bb4efa1d73b031ccb31571",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 599,
+          "declared_files": 599,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/freetype__freetype_42608f77f207.zip",
+          "bytes": 2985417,
+          "sha256": "458f3bef657a2f9af1b925770e6e4e169077200dad833b8303b7c78502f1a6c5",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 734,
+          "declared_files": 734,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/solvespace__libdxfrw_8359399ff3eb.zip",
+          "bytes": 722664,
+          "sha256": "69fe2145c4342ebc14b3a17ef0e79feaf6d87e419106d6520988573d40b8b6f5",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 49,
+          "declared_files": 49,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/solvespace__angle_3500f85f2a0d.zip",
+          "bytes": 3535908,
+          "sha256": "545fd73f047945ccc2afdc221a6174af0444a3d61bf238a11818caa75e79b669",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 1106,
+          "declared_files": 1106,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/solvespace__pixman_6564d88d8b87.zip",
+          "bytes": 944228,
+          "sha256": "9a198076cdf39c72520faa83699ccbbab7c41942040ea1cdabc7db1a7add60f8",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 232,
+          "declared_files": 232,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/solvespace__cairo_e4cd47fcde35.zip",
+          "bytes": 52122405,
+          "sha256": "eb6ea3b981b99a916543e1922bb06f202d15446ae5d54e7e3d2f60d99f8be3e7",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 4936,
+          "declared_files": 4936,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/microsoft__mimalloc_f81bf1b31af8.zip",
+          "bytes": 1450765,
+          "sha256": "40e746b59b198930f484026c6184094a3fa57392dfc60ae028609d2af397279e",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 303,
+          "declared_files": 303,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/microsoft__mimalloc_30b2d9d89099.zip",
+          "bytes": 1612592,
+          "sha256": "df70769aaf1712543e1aee473007bb2e43d14706e931e06d47b2933b8a01e8ed",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 370,
+          "declared_files": 370,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/FreeCAD__OndselSolver_4be80eef02a3.zip",
+          "bytes": 5068716,
+          "sha256": "6ccaedce377b3b48eb6bad66696c2d549a64f1dbb73dca25f56d941eadb1743e",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 742,
+          "declared_files": 742,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/catchorg__Catch2_5aa8d113215b.zip",
+          "bytes": 1469661,
+          "sha256": "f5e460a79e99d0ae9b590f1fd8145d05d88db8be3a9316572b5af3c937655438",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 560,
+          "declared_files": 560,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/FreeCAD__AddonManager_745c1b1ebc8b.zip",
+          "bytes": 867517,
+          "sha256": "5e3e1f9a515ae3beabe0685f8d66c457878959fa4ce931eb234fcf3ccdca31be",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 228,
+          "declared_files": 228,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/FreeCAD__pivy_515f038d32f1.zip",
+          "bytes": 6656219,
+          "sha256": "7a27631d33c1979e16711eaa0369f192698bfedb6f634882999ec3dc8f451ed9",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 457,
+          "declared_files": 457,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/FreeCAD__coin_50e37f04e702.zip",
+          "bytes": 9085548,
+          "sha256": "605d888fe3a5bb8c0cd75064d3cafc5ebe9a472c0914dec3db7a5ada2dd029c5",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 2864,
+          "declared_files": 2864,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/openscad__MCAD_1ea402208c31.zip",
+          "bytes": 73565,
+          "sha256": "74dfd9687e83cce3e3f5ad5b6fb3d11f7fc9b1bf46f454d88aaadf8008187950",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 52,
+          "declared_files": 52,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/arsenm__sanitizers-cmake_bcb1fc68616e.zip",
+          "bytes": 19944,
+          "sha256": "8051fdc8eeb2736c64fd9c315df6a30a0bda33978dc34590b08afd5e34978619",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 14,
+          "declared_files": 14,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/gitlab.com__libeigen__eigen_3147391d946b.zip",
+          "bytes": 3834956,
+          "sha256": "b25400ffb607b0b638395816fbddc93c25396ae42a20cd9f6a4462ed98f847c6",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 1784,
+          "declared_files": 1784,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/AngusJohnson__Clipper2_c7f820f6a03f.zip",
+          "bytes": 817906,
+          "sha256": "f01c612608b0068eff5671548ab9a7e1c0d731ec6c248af8693ab19a33a13dcb",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 223,
+          "declared_files": 223,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/ricosjp__resources4truck_9bf9de1426c5.zip",
+          "bytes": 16142437,
+          "sha256": "c2c604a89ca93f602c100cb3ea71a2bdaad53534c21f74bcf84b0eeabbf8087f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 36,
+          "declared_files": 36,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/elalish__manifold_ce50d78021d6.zip",
+          "bytes": 31105323,
+          "sha256": "d3c1c6e2d0426a17b6db9aa56e7e63f89446dee39b81675be334bef2d8a5ebee",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 382,
+          "declared_files": 382,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/floriankirsch__OpenCSG_9bf122715213.zip",
+          "bytes": 349567,
+          "sha256": "26d4e4bcd01268e22a7c0ebda074451e2c4c58527a01d4d9443d0412f2b47651",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 73,
+          "declared_files": 73,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/nyorain__dlg_72dfcc858c04.zip",
+          "bytes": 848679,
+          "sha256": "8eec7f44b6e3526d9b5b8d6138469701d9fa9e9dda5a222ab7d39e01764e63d9",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 28,
+          "declared_files": 28,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/coin3d__cpack.d_118ac5a21bcf.zip",
+          "bytes": 13534,
+          "sha256": "11b44f31eaec63b0b4d2af31b14b0094b55ba6c738c4f69052c2c156c9d96da2",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 13,
+          "declared_files": 13,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        },
+        {
+          "path": "submodules/coin3d__doxygen-awesome-css_6217657eef6a.zip",
+          "bytes": 5983974,
+          "sha256": "b412de84f3e4e4657119463ee1dc5548554f4c0291f12e4e90ea5042ee477608",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null,
+          "files": 37,
+          "declared_files": 37,
+          "historical_lfs_pointer_count": 0,
+          "historical_lfs_scan_reexecuted": false
+        }
+      ],
+      "internal_SHA256SUMS_checks": [
+        {
+          "path": "sources/FreeCAD_1ec79da434be.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/LibreCAD_f37ef6b10f96.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/QCAD_f07c755ad56f.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/SolveSpace_30e1c3ac0beb.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/OpenSCAD_e5721012999b.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/CadQuery_8178185a24a0.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/build123d_c49a0493ad00.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/OpenCASCADE_53706f78a864.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/Chili3D_03a6a542e841.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/Dune3D_d01faaf16f30.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/Truck_b0a38a17f443.zip",
+          "matches": true
+        },
+        {
+          "path": "sources/replicad_6ef8ae10f7cb.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/madler__zlib_51b7f2abdade.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/microsoft__GSL_543d0dd3fe96.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/glennrp__libpng_2b978915d823.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/freetype__freetype_42608f77f207.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/solvespace__libdxfrw_8359399ff3eb.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/solvespace__angle_3500f85f2a0d.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/solvespace__pixman_6564d88d8b87.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/solvespace__cairo_e4cd47fcde35.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/microsoft__mimalloc_f81bf1b31af8.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/microsoft__mimalloc_30b2d9d89099.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/FreeCAD__OndselSolver_4be80eef02a3.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/catchorg__Catch2_5aa8d113215b.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/FreeCAD__AddonManager_745c1b1ebc8b.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/FreeCAD__pivy_515f038d32f1.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/FreeCAD__coin_50e37f04e702.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/openscad__MCAD_1ea402208c31.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/arsenm__sanitizers-cmake_bcb1fc68616e.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/gitlab.com__libeigen__eigen_3147391d946b.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/AngusJohnson__Clipper2_c7f820f6a03f.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/ricosjp__resources4truck_9bf9de1426c5.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/elalish__manifold_ce50d78021d6.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/floriankirsch__OpenCSG_9bf122715213.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/nyorain__dlg_72dfcc858c04.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/coin3d__cpack.d_118ac5a21bcf.zip",
+          "matches": true
+        },
+        {
+          "path": "submodules/coin3d__doxygen-awesome-css_6217657eef6a.zip",
+          "matches": true
+        }
+      ],
+      "verified": true
+    },
+    {
+      "file": "D:/my_Works/精翔爬梯/AI_CAD轻量包_build123d_20261027.zip",
+      "bytes": 841624,
+      "sha256": "aedc23b579f2282361362ef390cf8c9eae439bf737bab65df001305c08e86f27",
+      "sidecar": "D:/my_Works/精翔爬梯/AI_CAD轻量包_build123d_20261027.zip.sha256.txt",
+      "sidecar_sha256": "26451585951fd569d736e327d1e86b4bce4aa6ce98ec9dad689bec6e4acc4934",
+      "sidecar_expected": "aedc23b579f2282361362ef390cf8c9eae439bf737bab65df001305c08e86f27",
+      "new_download": false,
+      "scripts_executed": false,
+      "runtime_revalidated_this_check": false,
+      "sidecar_match": true,
+      "outer_crc_error": null,
+      "outer_files": 250,
+      "unique_paths": true,
+      "safe_paths": true,
+      "outer_uncompressed_bytes": 2766425,
+      "kind": "selected_build123d_source_and_text_docs",
+      "commit": "c49a0493ad0003ae2bf940be1d59b6d1f41d0788",
+      "upstream_archive_sha256": "c0d7c91e6d15d17d91e6de3a757b7a31adf6447e2b2e62f584825f172dec60d4",
+      "upstream_files_checked": 246,
+      "full_repository": false,
+      "offline_runtime_complete": false,
+      "scope": "Source/docs/examples subset. Excludes large images, tests, CI, OCCT binding and Python dependencies. Installer would need network; not executed.",
+      "internal_file_checks": [
+        {
+          "path": "build123d/CITATION.cff",
+          "bytes": 471,
+          "sha256": "72cd5b3dafd79c50728f418e0b4a335ad35c4d36ffb5e18664cfb887275d9376",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/MANIFEST.in",
+          "bytes": 62,
+          "sha256": "e99e9ef3863d7cb73937ee8be7477aaf3695d40ef3a710358396211607945825",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/NOTICE",
+          "bytes": 625,
+          "sha256": "7b7c0e58f119b8e17eba8faa015ab48dedd1131836d30c8a56fa6dbf56d22ce0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/README.md",
+          "bytes": 11849,
+          "sha256": "3abc2803abe8a35a6e447e8819fdaa10d29f915273caaca9d05cdbd402e89ff0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/OpenSCAD.rst",
+          "bytes": 9800,
+          "sha256": "ec2f8119195ae1ec383c82564917cf44b8b1424c5fa2cc1bd6fd002343da5bc1",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/advanced.rst",
+          "bytes": 204,
+          "sha256": "8a5046a416c2fdebae66f4c29175cbbfafffb5720e9cccdeac79a8814e11282f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/advantages.rst",
+          "bytes": 4119,
+          "sha256": "0de46c0ffa4e9d932cb9c634bcef4fa00e13305b667ddb3a848f739eaf6e6bb8",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/algebra_definition.rst",
+          "bytes": 4510,
+          "sha256": "a564871ac211c3f23206dff1af9627e13ac4cb00daaf8d42488d62049488bad6",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/algebra_performance.rst",
+          "bytes": 1893,
+          "sha256": "f01c20f5d60a0bb066ecbe10ab873d6d4bec5e9a33e18432943148e9cd808d90",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assemblies.rst",
+          "bytes": 11358,
+          "sha256": "0ed7d9499634ffa84125e574a9dd0f516dd7edca8ea5fcf1780fbaa46cf07597",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/readme/readme.py",
+          "bytes": 3049,
+          "sha256": "8f8f6d9210ef83b0af20a85118f446e4d57b067c2294837fb07fba1172b359e8",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-23-02-02-sm_hanger.py",
+          "bytes": 4591,
+          "sha256": "1cc880cb73b069b8592490ca88ec49efd283f17d073d747f5e795124e216319e",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-23-t-24-curved_support.py",
+          "bytes": 2192,
+          "sha256": "32eb6e181c16665c42f3ea772816f3a397b10f3b573ae400a52092025127f764",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-24-SPO-06-Buffer_Stand.py",
+          "bytes": 2147,
+          "sha256": "0885faf07d826007809442cde118dc3e1291bea3692266d83103645737ecc6d8",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0101.py",
+          "bytes": 1621,
+          "sha256": "470ae0d1e38870434f00103f3e728b2a6cae1fbdd3156b0c9d3b41bb459e104a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0102.py",
+          "bytes": 1583,
+          "sha256": "9772cb353d2a7f82c8084080259e4299e47a90d3148a7b64c449956e60a39d15",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0103.py",
+          "bytes": 1212,
+          "sha256": "efe5d579cdfdfd9f572b272e802362801c69cd3881670fb8c9f5e43b9d4764e0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0104.py",
+          "bytes": 2034,
+          "sha256": "90cea692ea8479abc680a13139e88bdc93dbdc4ce379fa857495236abff7e412",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0105.py",
+          "bytes": 891,
+          "sha256": "d2e96a11720f84d9b78213d821d8f3dbf26b42ae674063295e59b35c62fd264b",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0106.py",
+          "bytes": 1877,
+          "sha256": "c89e2bcc6a2ffd890883e9e7a3c9ea4da3e8ab292c274eafbebc345c5f36e328",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0107.py",
+          "bytes": 1815,
+          "sha256": "495d128012c232e24a4d5f21d6b873f903cd5a7066b406780047a4b414975a25",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0108.py",
+          "bytes": 1819,
+          "sha256": "016ad2fadad9901a0bf2bbb4e95de0d3801337a1821fc6731888194c392f886b",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0109.py",
+          "bytes": 2152,
+          "sha256": "2ae384534b14b55e419acf2e050e6bef82e399d935ad69c657cb44b081aa79bd",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/assets/ttt/ttt-ppp0110.py",
+          "bytes": 2338,
+          "sha256": "70bfe68e8396baf355580848024eb6681a780ec8080504c46277c882d6abd2c9",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/build123d_lexer.py",
+          "bytes": 2340,
+          "sha256": "0fd52c2157ffb3bec1c89b4b8c111b4612af0c0b5d17a4132e27e2d3f3499cf5",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/build_line.rst",
+          "bytes": 9647,
+          "sha256": "0ffd01ca7e8bb65ed051080bdede6a9019767ae4b12251a616f01b195b4a90f8",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/build_part.rst",
+          "bytes": 3238,
+          "sha256": "36ba7da31908824b490c8ddfc904c2bc23009f1057acde77be9ff66e4e8b899e",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/build_sheet.rst",
+          "bytes": 4957,
+          "sha256": "0ce60e39e6a55fc03016f22264e197ce7d1c3a0c96f08e89c8ee7f1c7a31632d",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/build_sketch.rst",
+          "bytes": 6048,
+          "sha256": "f62d9af85ba158269504b89d40e25cdb75c8e6155859f04c0067027e24bf4db0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/builder_api_reference.rst",
+          "bytes": 1430,
+          "sha256": "fe7c78393eba324780a136e4fcbaf216b260c728cd4cb193867f92318f73b5e3",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/builders.rst",
+          "bytes": 220,
+          "sha256": "500c5ad49cddd996ee61e3cec89fd34de07be64a5b237e486f1b39db7cb3bd60",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/center.py",
+          "bytes": 1110,
+          "sha256": "030795716b7236fa9fb348416e022b760bc0d546ebf1d1a8249772a12863a0b0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/center.rst",
+          "bytes": 1046,
+          "sha256": "84947500354d083b551176400dd36050f3fdf6e10b210ffa63a3742eddfea0ab",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/cheat_sheet.rst",
+          "bytes": 27373,
+          "sha256": "9327ef49a12badeb0a3080300309c8caaa5cc69dc713d80348191ccfe0b0d353",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/conf.py",
+          "bytes": 4693,
+          "sha256": "ff5715e2faede7fecac2838147f1913631945c2c6d584ff64cf0cf973e4228fc",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/constraint_examples.py",
+          "bytes": 9973,
+          "sha256": "2ae2dbdd110efa8a1f8bd4dec28afed5b401c80439c9414d215a7e680c5ac83a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/debugging_logging.rst",
+          "bytes": 3386,
+          "sha256": "9e51fd4c9466fbd8bbc6ce457a4aa2c4492c8743b2598e16d82d11afcd4b60da",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/direct_api_reference.rst",
+          "bytes": 3518,
+          "sha256": "747ed45e3a03946a3b8c9f5f00e0a1bae006b2c9d9ad1e0e520b57bdc6d8cf62",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/examples_1.rst",
+          "bytes": 24290,
+          "sha256": "8750f979b3fb1bbd2bafa7adcfdb317f35eebe15c7b82bd371a078eb5c0d7c8d",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/external.rst",
+          "bytes": 10084,
+          "sha256": "f4cd665c9fb21e9836aace27fe5a3b374db4d3415335088a4468552658dcd9bc",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/general_examples.py",
+          "bytes": 21759,
+          "sha256": "41de989707b4af51d7273941a4e641b95ca37a94757df2e5967fd21811c1aeb8",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/general_examples_algebra.py",
+          "bytes": 16259,
+          "sha256": "5a92534cf54dc2d4e5230520a39469bec5331f4488ac73b8efdf13bef0402a79",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/heart_token.py",
+          "bytes": 1930,
+          "sha256": "2fbc7d48c583b16b40cc36925139e8d675599b701907b68d785513295024ad34",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/import_export.rst",
+          "bytes": 14338,
+          "sha256": "8088c56745cc3099282b3fc04ec459d4c4225d3f6690f73ad32dc56fb9e81595",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/index.rst",
+          "bytes": 3731,
+          "sha256": "18a66e44837d7d7b458f0476f3ada5798cdeac38d8550a1de64631da618e70d0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/installation.rst",
+          "bytes": 3629,
+          "sha256": "cd3e1fac51e357b76ce1e123e88dd7ecbb5f7e48adf0d293923fad7e4d83a85f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/introduction.rst",
+          "bytes": 15324,
+          "sha256": "62e8455184b7e779e38532fba9d150cd9ce9da5d6bea041158d890aa20158a82",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/introductory_examples.rst",
+          "bytes": 36576,
+          "sha256": "612eaed0bf4fc24fd63ebbdb4f4f811cbdd03f92efc8bc7b8c2188c762cd3da7",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/joints.rst",
+          "bytes": 8908,
+          "sha256": "1b2c527e1f465720f209a2967aa91b92dfdb7e19f84ed4e63e16e208e83958cb",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/key_concepts.rst",
+          "bytes": 10507,
+          "sha256": "c4a0033952375ba6a86d4f69dc5e5b1a96669d5a6ddcc46cf18781dca34e6866",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/key_concepts_algebra.rst",
+          "bytes": 8836,
+          "sha256": "eb75715af69c4aac84fc9855b63a88619564fc55c0340a110a8f758bc116acc6",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/key_concepts_builder.rst",
+          "bytes": 20648,
+          "sha256": "7f5731c4d6eca81d547ef40f053ed51490fe2a49ecc6f838e36c05c6958d3456",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/line_types.py",
+          "bytes": 1598,
+          "sha256": "a2aac4993176cbe84edefb6080c0d7a2c5da0bd436f6429640f3a6158a3fe9d0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/location_arithmetic.rst",
+          "bytes": 4577,
+          "sha256": "98941c67f824faf28e4f1239ed44acecd2d3124324544ddcaaf484ee2be6d797",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/moving_objects.rst",
+          "bytes": 3735,
+          "sha256": "03335dcdbb60382f6a8c5a5c392b53a9bb31dcd635bdd266e46b8321e7e5360a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects.rst",
+          "bytes": 17409,
+          "sha256": "dd226e8db774e4323902c1b9feb50259c4f2478064a0596d64a94a58f23ecb21",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects/examples/text.py",
+          "bytes": 1058,
+          "sha256": "eeccc8a77f57ac6c8b54e0580e1731f4c3929ee8ab5ba1724856d4d14fd0a052",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects/text.rst",
+          "bytes": 8564,
+          "sha256": "6f33afe28f6322bd7ccea01f4615116a7750b81113a2f1be4648b70bb533c50c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects_1d.py",
+          "bytes": 10019,
+          "sha256": "311408dbff2efe22c8436ee5b31702e55e2d93652e4292614ff89ac27bcba908",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects_1d_airfoil.py",
+          "bytes": 323,
+          "sha256": "9dd8d98787682c254f830f31b33d0a00bc1db93a348b737a263b4620409bb0c6",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects_1d_blend_curve.py",
+          "bytes": 563,
+          "sha256": "226ab235370b2d80dc9164976dbd9a7717497c262ff8ce511b2f57109e0eb401",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects_1d_bspline.py",
+          "bytes": 453,
+          "sha256": "b3ca6afb2bc7bb5545b1ccbcfa060d284bf323e95c722d59711d9241acd01956",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects_1d_constrained.py",
+          "bytes": 895,
+          "sha256": "a4b25ee207bd50460959c7efeff24f8472483d5ec67ec6ca1733a436a851cf10",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects_1d_ellipticalstartarc.py",
+          "bytes": 767,
+          "sha256": "a80af950ede5c3e6d4db49f596a14dc68f99b211168790c272fdf0c93fd2f584",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects_1d_parabolic_hyperbolic.py",
+          "bytes": 763,
+          "sha256": "eac44d8f9c50b234f6411baab42dd3d28982f1266648fd5a801afe41029645f4",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects_2d.py",
+          "bytes": 11991,
+          "sha256": "9f53b19b03d1dfbfdc94f5f78e7c91b4f944f51581288e7f68980a31e9b37ea3",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/objects_3d.py",
+          "bytes": 2143,
+          "sha256": "6973d44d6b177fd69996a52b58433954c3580fbdcfd3fc86a49c8f16faf1487b",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/operations.rst",
+          "bytes": 14166,
+          "sha256": "b40b8ef9751ada89c2d83796ea46550869b4141808a512512a8783ea044f6713",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/pack_demo.py",
+          "bytes": 1773,
+          "sha256": "8e5c5add5c28d96b3f6d7b8f693d1c0f8b29a1a7d412be1c45791eb5dff259a0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/rigid_joints_pipe.py",
+          "bytes": 965,
+          "sha256": "edab1e56fd3c591e6d152b26883107f8ee7a9867deb652fcdd259474364d5016",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/rod_end.py",
+          "bytes": 1612,
+          "sha256": "81d3c920887aa92d142e1bf1f1b1fd3fac34ee63bcc062e6484c29ff140899d6",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/selector_example.py",
+          "bytes": 1937,
+          "sha256": "47988f8e32ef48ec7893598990e06e499cee7f043fecc09660f1639a43b63564",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/selectors.rst",
+          "bytes": 8316,
+          "sha256": "5a293d2d19f6f5c79b20aa3613d6ef2cc888e5773b3843d040576ade0e249c22",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/bend.rst",
+          "bytes": 4496,
+          "sha256": "48e2fb591e9108d744be3b1bb51a46f5a6f3f54bf2b38f61d1ed957b5db12198",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/bend_relief.rst",
+          "bytes": 4283,
+          "sha256": "c0a69032b9151b67fb9074d6862117897902686c593ba79a4801f63d4639436a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/concepts.rst",
+          "bytes": 12254,
+          "sha256": "67f6c7060d819f011a2be58340e2712ea9fb3a2381d4025999cc77c75f1c6b50",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/corner_relief.rst",
+          "bytes": 5167,
+          "sha256": "79fa7897baae134c216b54bef348a67afa445f8120250e99f6ad2d49116c9bb3",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/cutouts.rst",
+          "bytes": 4784,
+          "sha256": "fdb68f4b56502cb3bbb78d1c6a08490bdb9f6a0f113c79851252755caa43db02",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/flange.rst",
+          "bytes": 9055,
+          "sha256": "ef14ea1290fc3a7a9c74b6bf7c07829fc379aab5ab1f9366279ee5c4c098ab65",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/hem.rst",
+          "bytes": 4980,
+          "sha256": "340fce8b9cecc8fd54d2a837602e8a6f96cecd154fe0dc1ab29472da4202c4e0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/index.rst",
+          "bytes": 4415,
+          "sha256": "08089483421cc58728846bd5a5084d93864423b4cd68a196504af4f713db4791",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/jog.rst",
+          "bytes": 3143,
+          "sha256": "03d517b198f2a99ea8590482a8d1b39dbb2bbcc13f65b82e5b1a6ffdb73e8baa",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/miter.rst",
+          "bytes": 4139,
+          "sha256": "df38b0387c66d812c5c94149bf2dfb6bff18ca405eea40ecd763ce295b7beab0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/recipes.rst",
+          "bytes": 6272,
+          "sha256": "3e0dca23af26c8d00e44e1dd3652b453be938026c1882dee9e51b8ec978742f0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/reference.rst",
+          "bytes": 2372,
+          "sha256": "280f38f8d3c870cc4c126e2e2bd8053148c400ab2943b0524d95907cdec1c531",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/sheet_shells.rst",
+          "bytes": 3900,
+          "sha256": "0de4a6eb2ebf373d38587adf8e8b128f6185bb9259f0097b254af88cd7734918",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/thicken.rst",
+          "bytes": 2691,
+          "sha256": "0b51a8fa80254629d8df64ea39c5cabcd4118724051720526baf135785bb7a99",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/tutorial.rst",
+          "bytes": 6677,
+          "sha256": "3f12016c2cf296a92c58f134465d3af0188980692f26fbbde61643b9fa847991",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal/unfold.rst",
+          "bytes": 5189,
+          "sha256": "dc828d724788459ae5dee83c7c17e251242728f571ba14700eba09ea63fde46f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_metal_examples.py",
+          "bytes": 25184,
+          "sha256": "2cb10b8f100cf2a058a594f2c8d1125037a047b1e420efe6f33bb20585688d38",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/sheet_surfaces.py",
+          "bytes": 3731,
+          "sha256": "190ddc2936a88f3cc23af8cbab2fb0d4a120125eff83a7d9f009fb4dce48168f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/slide_latch.py",
+          "bytes": 2239,
+          "sha256": "771402bb4584d1840d2581d7c7a8bca9d9ef526942a5c0132dcb4aada26142c7",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/spitfire_wing_gordon.py",
+          "bytes": 2609,
+          "sha256": "bf968bef1065f2a0f5d8e2f5eee934133f8f1ff290b075ae6dd1ee2c90f5e3d3",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tech_drawing_tutorial.rst",
+          "bytes": 2548,
+          "sha256": "faff8988780d5d6e51e5fd6d6407480181f3908ac09511b97b4d97d5e62f8735",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/technical_drawing.py",
+          "bytes": 6052,
+          "sha256": "6ad073be7b5369b6538da513c9e8492c350abb5e046ac52e0064613609ac5e48",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tips.rst",
+          "bytes": 12874,
+          "sha256": "8e86ca51e0f9b2da62a7d2e7d2a11478ce8c271197647a7cc8e40376084396dd",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection.rst",
+          "bytes": 28414,
+          "sha256": "0db86afa222a402c061aa2d91c422cf05de970283a77e6d0ad2c3cedfe88a094",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/filter_all_edges_circle.py",
+          "bytes": 1759,
+          "sha256": "63492b250ca4164f815d5ffff83e3c686733dabfdd2913a41e2ab044b1fc24c2",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/filter_axisplane.py",
+          "bytes": 1477,
+          "sha256": "a4c2cdfce252c5610d6424171efcedd7655d70fa0efb39d4b4e6c3ed23dd9e4b",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/filter_geomtype.py",
+          "bytes": 669,
+          "sha256": "5d5eabb0eb1b282590dbf5c2970150cc2c2785edc6c72a83e42cdbba92461eb6",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/filter_inner_wire_count.py",
+          "bytes": 1538,
+          "sha256": "8c8fd1fb59bf1a348fcbfbc9be2b95b88f7c81aa21e4a46fa00661823070d6b8",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/filter_nested.py",
+          "bytes": 1067,
+          "sha256": "2b8a60b5e821f8a4da32c018dc55d3c5753a22f4de3afda7cf962682446b6a05",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/filter_shape_properties.py",
+          "bytes": 979,
+          "sha256": "390d4a741f1f6e92363c91117039da54652e669d70dbdd071faca8f30b62338f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/group_axis.py",
+          "bytes": 783,
+          "sha256": "7fa4986136402998b2b30846f0a235ffd87b3dcc9a8e15d8092e73c4da839204",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/group_hole_area.py",
+          "bytes": 1098,
+          "sha256": "86437b4c04308228736c280badf13547616623d203bc37a964deda815006909b",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/group_properties_with_keys.py",
+          "bytes": 2092,
+          "sha256": "27ffdc7870c7342c8da8bbcc0ac0878da5d801aa71c9be09942cb9c815896c7c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/selectors_operators.py",
+          "bytes": 3257,
+          "sha256": "8280b6280ad7407a2723680fed6b7356e0f892c638829f5d618e09044c5e0398",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/sort_along_wire.py",
+          "bytes": 879,
+          "sha256": "66a5ce5f0d168737898658166f4e302eb275391324a1e91a04a1910f3f205e88",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/sort_axis.py",
+          "bytes": 925,
+          "sha256": "00d28024945e51d1e252259c5211add8f79b97794778ff6c8bbf1f30eb64ddbf",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/sort_distance_from.py",
+          "bytes": 737,
+          "sha256": "8e5ee2cde68725add46ca08b03e9fa6da25463492ef070bff70164ded526b005",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/examples/sort_sortby.py",
+          "bytes": 1443,
+          "sha256": "900f0e683fb1e29587e1e67528bffb75e854066128c183347116907ff0fa5434",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/filter_examples.rst",
+          "bytes": 5879,
+          "sha256": "97d02e31dee0fab658201f8102857afb41b329e33fa9b7fd9e98cea1128ecede",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/group_examples.rst",
+          "bytes": 3474,
+          "sha256": "a3de776370464f5720aee097e703714f68e35af7412d1efb0d343b448a08baf4",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/topology_selection/sort_examples.rst",
+          "bytes": 3786,
+          "sha256": "c5608b9c7fc36310b042fedf77b64395ba46d36787f819509d2ab674596b0d58",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tttt.rst",
+          "bytes": 6795,
+          "sha256": "fc37e22c019f3064875b7d420934b4d376cad02a883f5ef0256bc02fa1f336e6",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_constraints.rst",
+          "bytes": 28786,
+          "sha256": "2dbf543dd4ea77a565349e899cfff7319bb5149e5f5b423c93a0f79a05fd8df1",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_design.rst",
+          "bytes": 14572,
+          "sha256": "2b86e2de465f4e94e4b673ff78a21ae0ef872550b5762d7106922c41803819b0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_joints.py",
+          "bytes": 12355,
+          "sha256": "8c7377982b05f16c5eaff2c1a091e21528175dd1ea823d82e231ef207999bf00",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_joints.rst",
+          "bytes": 11199,
+          "sha256": "f196af24fcb0bcc301d37e022477e425391517e8fbaaab54d141b6a02bc8497f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_lego.rst",
+          "bytes": 8943,
+          "sha256": "dc518eae962d511d54f07d99e772138a8463224deeb252cc83c6cd82556fba23",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_materials.rst",
+          "bytes": 10526,
+          "sha256": "252904aa6e276ec2a6cb53156b1586b6bad34cdf9b679e863c2a3938670970d3",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_selectors.rst",
+          "bytes": 6760,
+          "sha256": "5a22d92aca592cf3fe1cff8518c6545f7fcea117c6868b5f178f197e7258e462",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_spitfire_wing_gordon.rst",
+          "bytes": 3825,
+          "sha256": "f4659d6d303189ea9cdfbbb6658b0515059aa399c73f6973b113d729c8a2aaf0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_stl_reconstruction.rst",
+          "bytes": 11990,
+          "sha256": "e6035cb8643dfc9096db62ddc46289cccf4d4da6c45595595bcf98e4c998f367",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_surface_heart_token.rst",
+          "bytes": 5227,
+          "sha256": "52d0b2a6d5412d0103728fdd6c0c39a757b26dfafa643ba60adb7529d24cf0c2",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorial_surface_modeling.rst",
+          "bytes": 2584,
+          "sha256": "8607bba38e4fa1f2d685120190379a1062b2aadcde158e8f3552b1d570756d14",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/docs/tutorials.rst",
+          "bytes": 708,
+          "sha256": "e0e93ba9ab4e9d6fe5fc407afe7508dc94baa453fc33759078d167e499b3ec43",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/benchy.py",
+          "bytes": 2613,
+          "sha256": "86a000b9a1f1654573286308210a201e639df6c76e66e939f7b537c7fd9d3d0a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/benchy_v2024.py",
+          "bytes": 2558,
+          "sha256": "5c4aa8cee8b3e7abf10ffe9336ca540d66c625ea3d982e71aadf4d5ba2d6310b",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/bicycle_tire.py",
+          "bytes": 4579,
+          "sha256": "4db649059cfa25de3e4c906acda2c0a9b88b406c0598edf57ecac681ddba4966",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/boxes_on_faces.py",
+          "bytes": 1106,
+          "sha256": "46d4713bb61673fd7278bdc87f13ff9cfb8f2dcf55e6149313c83a9efa5be3f6",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/boxes_on_faces_algebra.py",
+          "bytes": 327,
+          "sha256": "62ee4c2cd0b8d1a0687089e06af58b2960053f8a9329c011e3303698cc19a0ed",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/bracelet.py",
+          "bytes": 6377,
+          "sha256": "b349a89e594b7b414e0393a868658f36a64d25b419b2c60ced378e0f9b53afc8",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/build123d_customizable_logo.py",
+          "bytes": 3773,
+          "sha256": "12be1d50dbbfe44a7ac7c137383cc4a80dcdd3fbdf1b084c5147ca6bc6d291fc",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/build123d_customizable_logo_algebra.py",
+          "bytes": 2355,
+          "sha256": "6cdbb8beaf476ba9b2f7ce2e15f4c5b417bff08c449dfba95172fb35b862cb87",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/build123d_logo.py",
+          "bytes": 3873,
+          "sha256": "76dbf017665b7251e733a22faf55ab4e8ff3fb34c0e7a8596a7a4dd4615606a1",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/build123d_logo_algebra.py",
+          "bytes": 1750,
+          "sha256": "f70924a97248f90b719361607741a195e99394da070fcfd5b284618e5f7385d0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/canadian_flag.py",
+          "bytes": 3670,
+          "sha256": "70496455a6377bcac97b212683d9d99d31f54d51e00e7fb1bb4c3041fc218f8c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/canadian_flag_algebra.py",
+          "bytes": 2901,
+          "sha256": "fd5922e57ed5ae953440a1b06b9881af210f60ea0f11b1511d08745d86cfcaeb",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/cast_bearing_unit.py",
+          "bytes": 2711,
+          "sha256": "aeb7984dc7913b31824182cedf8c8da6d6fba04a29de909199b732eacf3e846e",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/circuit_board.py",
+          "bytes": 1261,
+          "sha256": "93422cffbe315435c700bfda14fc8698ccce01202cd6672bfd7cace60ea94b3f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/circuit_board_algebra.py",
+          "bytes": 604,
+          "sha256": "89fd45844f3dc78a88400e174ca00c95ca602a8696e102ab911179872daa1c87",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/clock.py",
+          "bytes": 2175,
+          "sha256": "467cafe6067d4b19fe0b31e12ba2584eace2ed267549d2243a35c2290985ddef",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/clock_algebra.py",
+          "bytes": 891,
+          "sha256": "23a8313355468c43968fda1bbcd4c9fc8a69876c7bd387bbfde1fb5f4a57be59",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/custom_sketch_objects.py",
+          "bytes": 6635,
+          "sha256": "6f9caa02aba6c9c6ad6c3f51021f4ec50ba70d4b2730729ed270558e7015c5ef",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/custom_sketch_objects_algebra.py",
+          "bytes": 3948,
+          "sha256": "376f338c50718e35b12eeb7ecfeaf8ca3a1f0dd41c6ac007fc3676be99d375ee",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/din_rail.py",
+          "bytes": 2806,
+          "sha256": "9b85dc5ecd7295f7a0c24d88dc9d78b128b2daccd8d24ad68e793f578b711b7a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/din_rail_algebra.py",
+          "bytes": 1359,
+          "sha256": "da6ea146bb4835b8246d2cd4ec18a2e121c15aba69b80e6feed6f6ec89115685",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/dual_color_3mf.py",
+          "bytes": 2029,
+          "sha256": "848037a6348e131055f93e2b814fe92a8da0194a1a707fdbf2e292e53bbba044",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/extrude.py",
+          "bytes": 3836,
+          "sha256": "865c63b6df41605b359a145c5fba64eb7c73b33cb5b3d5298aa032384a8fd9ff",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/extrude_algebra.py",
+          "bytes": 2557,
+          "sha256": "2ce55261202927518cd61d8f33b9d0bfcf87f6ae36acdc4167c4351770715997",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/fast_grid_holes.py",
+          "bytes": 2211,
+          "sha256": "59e6271d1c2d0f37e7b4c869db1609cb4c75d01073c6380718ca8535b0e6242e",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/handle.py",
+          "bytes": 1955,
+          "sha256": "93db4cbb17e8f41439db0ef28e1ca42b0720bc64366fb7c63180f71dbb7d7818",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/handle_algebra.py",
+          "bytes": 1004,
+          "sha256": "aa07364e911ccad9851aec1041c5512603a331d13788ec2767aa4a2023ae8736",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/heat_exchanger.py",
+          "bytes": 2815,
+          "sha256": "a4d67aa7734aade93e8b420027b183f249b012cc0f162f556fffdfb00244b98f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/heat_exchanger_algebra.py",
+          "bytes": 1661,
+          "sha256": "f5820c5357b4823881b002cdb17c88d52445124266f2d19623717e8c7fce8ae7",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/holes.py",
+          "bytes": 1982,
+          "sha256": "b025a328d5c63ef742298a0f7148500cd83c8aaf2f16f97a90ece1f4eee51f30",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/holes_algebra.py",
+          "bytes": 1085,
+          "sha256": "2060321f62602bbd354948308739a4e5071837df2e90c2c51c475321c42d3e05",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/intersecting_chamfers.py",
+          "bytes": 620,
+          "sha256": "f6b60dc28bbb19996f14aec7c85f84372640d4f2951805e755552a150ac209e2",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/intersecting_chamfers_algebra.py",
+          "bytes": 563,
+          "sha256": "05c6aca3d658b82744bdaec76a112a182b861770f68f34b67c3320388c0c70a1",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/intersecting_pipes.py",
+          "bytes": 1593,
+          "sha256": "63c44e2b54fb1e1f021fa5648960d7126d6e7aa214afd7fdc5066b6529c2c40a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/joints.py",
+          "bytes": 3637,
+          "sha256": "4d0c0fa4a6b5bae67da1f0e51ea17dfa1af6cb1e4e688887574c488269d7273e",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/joints_algebra.py",
+          "bytes": 3425,
+          "sha256": "3191dcb2c23690bf2b0d418a16280bfe44fd9b3405b9ace8c0b23c1cc8aed572",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/key_cap.py",
+          "bytes": 2584,
+          "sha256": "0e3b3e77b88e488ef093b308415072dddded3e971e72081bf1c0a51ad9ce2e73",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/key_cap_algebra.py",
+          "bytes": 1480,
+          "sha256": "73bbd42fab4e903c5a74941d3847a7d1c017d4bd90a735bba24f4db2f84393cf",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/lego.py",
+          "bytes": 5495,
+          "sha256": "7270c1a9c37bfafd245d398f3ef8c77eba3fffe20981fcba7b94e3a0d961f686",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/lego_algebra.py",
+          "bytes": 2115,
+          "sha256": "6452762c460fd69333daa54e8162e960eeee056377733521f0e866bbc16a6f4d",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/loft.py",
+          "bytes": 1407,
+          "sha256": "f99021f98a54525cad9c408f23f70c4f5ce910be4610df9f54b7ce895b450d57",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/loft_algebra.py",
+          "bytes": 426,
+          "sha256": "968eff67eba3ebedae1cc8fb9fc1486b1dc9c6936f92fb58e4db057888f71fa3",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/maker_coin.py",
+          "bytes": 2358,
+          "sha256": "bfa335dd12e90672b62e9fc160d181eb7dad56810edd631aef3b92d6e5390682",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/mixed_algebra_context.py",
+          "bytes": 801,
+          "sha256": "26068a76946216ffdd7dcf4df3a78d1138c8597b56525eb47c364bddd982e3e0",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/multiple_workplanes.py",
+          "bytes": 255,
+          "sha256": "a994bd812e7dd426b203394174cdf4656f0065b4abfde7e29445b87c492e1ee9",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/multiple_workplanes_algebra.py",
+          "bytes": 170,
+          "sha256": "23ab0229c209db1a8692ae8d309c8b2e4d64996e801014bc9fe5e74d1fb5f66e",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/packed_boxes.py",
+          "bytes": 1175,
+          "sha256": "412e5653316421ac29a3e3a1951a752caaf155fb24b7854e539eee19480d8275",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/pegboard_j_hook.py",
+          "bytes": 2323,
+          "sha256": "148c9b788315cdb520a211f5b995106a6a6c43cc02a6aa7705272ef4cfc42982",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/pegboard_j_hook_algebra.py",
+          "bytes": 1258,
+          "sha256": "28bc5b65aee88971c1beaaff6a040b488c66171083063932454648c9f100156b",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/pillow_block.py",
+          "bytes": 1614,
+          "sha256": "c1435eb6963c57fb6ef1a7188da98047eb35508e86e6d8aefcfabfc77af68dec",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/pillow_block_algebra.py",
+          "bytes": 833,
+          "sha256": "b21d6453ff9ce35299e92b4e6db5965d0c56877db94beb92f07ddd3da2541bef",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/platonic_solids.py",
+          "bytes": 4816,
+          "sha256": "e74aae4d3f20e85936dbb027d97422a22dfd42bc951e2b7564bc860ad8d17423",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/playing_cards.py",
+          "bytes": 10639,
+          "sha256": "9311dcde307e0adf830fac2252911f8c8c6d5ef0f97dee95a5acf16e3cbcde6c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/projection.py",
+          "bytes": 3192,
+          "sha256": "1cbd6688073abf95cae8262f20fcd9c0a843f633c5db2659584dc7b5dda44abb",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/projection_algebra.py",
+          "bytes": 2313,
+          "sha256": "9d1e8b7c6c61205aa3ce78a00181fa983c1836a3604b17bdf27c49cbe2b76cb5",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/python_logo.py",
+          "bytes": 4943,
+          "sha256": "1a275acf6e6f8aabe5758918ed17c76f9bcb87bae2a0d09c8c56bf00874c5c29",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/roller_coaster.py",
+          "bytes": 1370,
+          "sha256": "02825c0c9a59ef27061cb39e5378e7d47956ce75a38898c697b17258df47c8a7",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/roller_coaster_algebra.py",
+          "bytes": 589,
+          "sha256": "9d75f7a83f42e60978fbafc48333fdabc4e70dc7559f6b00cba5ab8830956afa",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/shamrock.py",
+          "bytes": 1943,
+          "sha256": "eb9db318b32d5c01dabe6d76a7ae5c750b98a6e41567d14e1022d744cd2b4c77",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/spring.py",
+          "bytes": 285,
+          "sha256": "2266f142bbd05604aa49923acf119a535bb0fb9f8ec61ff6aaba6136a293722d",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/stud_wall.py",
+          "bytes": 4830,
+          "sha256": "43038116e2bae0e1d0f166bb06feb8b288389b605e43a5f4b3c9ccce4c70b7c5",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/tea_cup.py",
+          "bytes": 3984,
+          "sha256": "c96c3d23eb65345e9238cb624803f563592ebf1e2987e51acb7edee0eb2cfc63",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/tea_cup_algebra.py",
+          "bytes": 1891,
+          "sha256": "a2e4de219b8fd3752b2e6670a0ad79fdb13e3ef6bc9d82cf03f55efd4baad652",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/toy_truck.py",
+          "bytes": 6125,
+          "sha256": "19ad031294926ac3b1a0aa99a4a817ef1f38e327ba5e2e61333bf3674dd29f7f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/twist_extrude.py",
+          "bytes": 1266,
+          "sha256": "1e102bd27a5ad31d2d25529257cb1fb6e2dcd75af0fc4f6a67ed30be7e00b71c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/vase.py",
+          "bytes": 2712,
+          "sha256": "5d7b59db01f4e6edd76fe9d823e670864549b1be2c3c279a0324fac91eccced5",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/examples/vase_algebra.py",
+          "bytes": 892,
+          "sha256": "291972e453aae5742f33b6b5e1e4fb6afae75ade2eed7c6ed4d4e67cb7c26dba",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/pyproject.toml",
+          "bytes": 3273,
+          "sha256": "82c9b34aed223f149a3e20049bae01679713aff7aa325b1af57349607d10b8a6",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/__init__.py",
+          "bytes": 5582,
+          "sha256": "d93eb61c843ad8c675127226659efe84e11fe57f1210f407674f025c3bbbbfeb",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/_dev/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/_dev/scm_version.py",
+          "bytes": 312,
+          "sha256": "3c4d05840b2fe9ef8479619ee55e54cc8f5eee411c3762c7242f2d4e2fe8557a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/brep_from_stl.py",
+          "bytes": 67582,
+          "sha256": "2ee1f81ba5464bb0933742a168f88cfc58ec539d5599f6f3c5fd05ac5828e849",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/build_common.py",
+          "bytes": 71326,
+          "sha256": "960df381c92cca10907338de433709cccde85da989f8957249a21fbda2bd196f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/build_constants.py",
+          "bytes": 1963,
+          "sha256": "602c9289110e1fc67d1681d72fa1a173acf2d0d5698d30b9f32342f03df55fde",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/build_enums.py",
+          "bytes": 15131,
+          "sha256": "a106b19e296a319d5f6571c60d4b42620f824667bdc72f45d2faf305d4bd97ec",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/build_line.py",
+          "bytes": 3883,
+          "sha256": "725fe0f676d09f3c85aef7a6d510ae849a9ca19308a66e0d7e209cbbfe6805c9",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/build_part.py",
+          "bytes": 5916,
+          "sha256": "6eab9b6f4c44583f645f16b5943b11c50dc8f48dd894e3b5ea5cabdcfade6904",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/build_sheet.py",
+          "bytes": 13443,
+          "sha256": "121eb5baf304a821241e9d222cd19ff4c8fe8fdf0d4b22635ba5042d70f623fa",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/build_sketch.py",
+          "bytes": 4090,
+          "sha256": "1fc778f4b4008c6c163c841c843036755907af5e5a5f2686d75eb30cef33d9ed",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/data/fonts/reliefsinglelineclean/OFL.txt",
+          "bytes": 4404,
+          "sha256": "005834fd32a01fb021a44167cafd4fa3df8058a7b0fb7319bd19b445d2fe24a3",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/data/fonts/reliefsinglelineclean/ReliefSingleLineClean-Regular.otf",
+          "bytes": 42300,
+          "sha256": "e5db32f8f38fba0e5ad508be4eb72568ea825c88ed0f9b2e951cd1db5254096c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/drafting.py",
+          "bytes": 37899,
+          "sha256": "649f33178d16d91edfb85002b34db38ea3a3e417ff095a2fc329b9e9e3135733",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/exporters.py",
+          "bytes": 63736,
+          "sha256": "f0f1ad338c8465c0dd276825743acd6e071ea60e35e78065ee752eb676e0412e",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/exporters3d.py",
+          "bytes": 26940,
+          "sha256": "3ff755e83308a5c6d81cd853a3d6de39b00e04ddf625fc0f639243980c85e324",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/geometry.py",
+          "bytes": 140013,
+          "sha256": "919e1c61ff70111158ed266f3f990156b8313d0f341b4e683dc3532f024c79d3",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/import_dxf.py",
+          "bytes": 16639,
+          "sha256": "c5e143aa5b0599e34384fa628ddbd3d9a20ae8ee1374c2e724714ee9a0729c6c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/importers.py",
+          "bytes": 16012,
+          "sha256": "8ff49427f56808017094d600143ab9e089f3cf1f90cfad1901402d0e35455326",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/joints.py",
+          "bytes": 29552,
+          "sha256": "c4c9336b17658aafd6390c8c499878d29334eee0794e121350e8279103162292",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/jupyter_tools.py",
+          "bytes": 2090,
+          "sha256": "55720a959dcdc25a868e424bb6b683dc46fa23ab693fc8436c3db525297e0c5a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/mesher.py",
+          "bytes": 24593,
+          "sha256": "cab09659b4d1b679664cc79fd1a7054db7ce475788ca48d5aa4daf8eacde050c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/objects_curve.py",
+          "bytes": 83011,
+          "sha256": "5ee6c253ebecec4004760ea63e0198617eb271ea88ce5cf9581deccc005d0125",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/objects_part.py",
+          "bytes": 20293,
+          "sha256": "833dd74b2e21d9bcfc9acb89ace9104824a690c08cfb4957bb12d45ffc1034af",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/objects_sketch.py",
+          "bytes": 31307,
+          "sha256": "a02c2c584b428ff746bac7f589bd6773745b542f4dca5ebd0ac7bbf740740554",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/operations_generic.py",
+          "bytes": 50348,
+          "sha256": "617a909a571cb55f5dd8182adf1445d21d50dc7334a3b375efd97f550a51e0e4",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/operations_part.py",
+          "bytes": 31802,
+          "sha256": "50a3704cd654cd2885edbd25236ac6e4c3e902e7ecb1a70511c2aaf046d28d0d",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/operations_sheet.py",
+          "bytes": 134534,
+          "sha256": "30056d6066f00b4e4f93d2d06c1d5df89984e478075667b232ace531f317a705",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/operations_sketch.py",
+          "bytes": 11595,
+          "sha256": "61d840dee333ebe7159ca5c74278db4d1caa65f5498a05fa71d5c82ee5d0a9f9",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/pack.py",
+          "bytes": 2710,
+          "sha256": "b195f338a5ff780b7537e8e802be359907b4ca754344e598f4f371951d055591",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/pack_utils.py",
+          "bytes": 4398,
+          "sha256": "4eed5efe54a9944912b6402a5e4a4d3455c56d3d3aa907474d6928c78442b219",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/persistence.py",
+          "bytes": 4420,
+          "sha256": "ff688d78d46671f239600b32c69d624c3847fc6589ecb3f6a3651d5ba25eb82d",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/py.typed",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/sheet_utils.py",
+          "bytes": 33063,
+          "sha256": "2d3b8975caa222fc153b78ccf9c2908fef67ecf42bcc09ffbb06fe6f721e43aa",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/template_render.js",
+          "bytes": 4489,
+          "sha256": "c82cb9c642cfb17fd6f367fa45b8b1eb6b30b7338b63f68e1d5c545de03a3f7c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/text.py",
+          "bytes": 11921,
+          "sha256": "68856bb51eb687141b458712674dca0a77042815ddcb9ab6569f38863afa695f",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/__init__.py",
+          "bytes": 2438,
+          "sha256": "1ec084e5522178c44729abe3db9daf26e7a2e699af15e24dcb409eb6937061d2",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/composite.py",
+          "bytes": 40985,
+          "sha256": "878859730d5c44f78eb18aa27e9794cd6343b08edf0f81e70407560ceca33d0c",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/constrained_lines.py",
+          "bytes": 32679,
+          "sha256": "21861052d7250aa945e3fe1b5a5b5a78eab81e53bf06fd6cef0dbba4f919dacb",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/history.py",
+          "bytes": 15513,
+          "sha256": "291cdba78af0f50d56fa0b27696c8448e7162185430c6afa12efa02d24e4a4bd",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/kernel.py",
+          "bytes": 1479,
+          "sha256": "89dcf441306f7deeb28072d4e322a7c8ab6fe7340a399679197ff686f4555649",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/one_d.py",
+          "bytes": 196010,
+          "sha256": "673651940850477241aefcd4fb2e9b045c777eb54882596c8a6e0247ba9996f1",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/shape_core.py",
+          "bytes": 168170,
+          "sha256": "b0269dc92a201338317c289482806d1af6c8c8d93edb0b62fa064f728bba81ec",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/three_d.py",
+          "bytes": 75977,
+          "sha256": "bab34af34a84a2be6385946af8ba54c3c1896455205138efee37b04e4f8ca08a",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/two_d.py",
+          "bytes": 133021,
+          "sha256": "854414dd238cf691b3b85e225af6f243066db50aa457443b4876abe80bc32f8d",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/utils.py",
+          "bytes": 17782,
+          "sha256": "95d7a12cd15eaa35949e81c8684ed0859f8df69f1de026aa8b22fc64fb49a52b",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/uv_write.py",
+          "bytes": 38955,
+          "sha256": "7cead3234ab27c3595e737dcb60ef51c10f091c7871c44d587e43cd2fa96a729",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/topology/zero_d.py",
+          "bytes": 20844,
+          "sha256": "07fba37bfd9960a9c6ceacc831ace744358a9fe3e9f126bb22c0444e71c4e816",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/version.py",
+          "bytes": 543,
+          "sha256": "39c14e631348a0a63b7fa54fc2f82b30496f95248bf23429f5d0299a2208a870",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        },
+        {
+          "path": "build123d/src/build123d/vtk_tools.py",
+          "bytes": 6861,
+          "sha256": "ec579928ddaac515b25ca524960ee1b95d0cf039679154d65eb76901943db544",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true
+        }
+      ],
+      "internal_SHA256SUMS_checks": [],
+      "verified": true
+    },
+    {
+      "file": "D:/my_Works/精翔爬梯/CAD内核_build123d_Linux_x64_Python312_20261027.zip",
+      "bytes": 66849887,
+      "sha256": "1f4c3c4b245dd150ed2d1c7d675f20e330e1dbc7dc68d68f2a5e9ba039ef614a",
+      "sidecar": "D:/my_Works/精翔爬梯/CAD内核_build123d_Linux_x64_Python312_20261027.zip.sha256.txt",
+      "sidecar_sha256": "c0eb3bea02905f5037edbb88a1734e554173ddfbd8b96b50495b3538603ded6f",
+      "sidecar_expected": "1f4c3c4b245dd150ed2d1c7d675f20e330e1dbc7dc68d68f2a5e9ba039ef614a",
+      "new_download": false,
+      "scripts_executed": false,
+      "runtime_revalidated_this_check": false,
+      "sidecar_match": true,
+      "outer_crc_error": null,
+      "outer_files": 19,
+      "unique_paths": true,
+      "safe_paths": true,
+      "outer_uncompressed_bytes": 66880026,
+      "kind": "binary_OCCT_binding_wheels_only",
+      "target": "CPython 3.12; Linux x86_64; glibc >= 2.28",
+      "wheels": [
+        {
+          "filename": "cadquery_ocp_novtk-8.0.1.1.0-cp312-cp312-manylinux_2_28_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/33/07/ab496c866d8b3c94c4fe0f8c38dc4773a6dcc7f4826c680ac1cd7dba88b4/cadquery_ocp_novtk-8.0.1.1.0-cp312-cp312-manylinux_2_28_x86_64.whl",
+          "bytes": 66825837,
+          "sha256": "9df1e3700016bee819c0a8627880f37de47540eef63e8adb368f659a0fdeff78",
+          "pypi_sha256_match": true,
+          "zip_crc": "PASS"
+        },
+        {
+          "filename": "cadquery_ocp_proxy-8.0.1.1.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/13/5e/29c3d8c4b290dee82387468a33ac06c663518a167963cdb9ff48e6bbd8f9/cadquery_ocp_proxy-8.0.1.1.0-py3-none-any.whl",
+          "bytes": 3250,
+          "sha256": "98c71bb60cfb651afe179b134ab88580fd75384fce0cc6d633f727002cd18abd",
+          "pypi_sha256_match": true,
+          "zip_crc": "PASS"
+        }
+      ],
+      "historical_verification": {
+        "target": "CPython 3.12; Linux x86_64; glibc >= 2.28",
+        "build123d_version_constraint": "PASS",
+        "official_pypi_sha256": "PASS",
+        "archive_crc": "PASS",
+        "kernel_dependency_closure": "PASS",
+        "installer_syntax": "PASS",
+        "runtime": {
+          "kernel": "8.0.1.1.0",
+          "solid_valid": true,
+          "volume_mm3": 6000.0,
+          "step_roundtrip": "PASS",
+          "hidden_line_projection_visible_edges": 4,
+          "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+          "machine": "x86_64",
+          "glibc": [
+            "glibc",
+            "2.43"
+          ]
+        },
+        "full_build123d_modeling_and_2d_export": "NOT_RUN",
+        "full_build123d_dependency_bundle": false
+      },
+      "full_build123d_runtime_complete": false,
+      "scope": "Linux x86_64 CPython3.12 glibc>=2.28 only; 2 kernel/proxy wheels. Python/pip/full build123d dependencies and GUI/VTK absent. Historical kernel test retained, not repeated.",
+      "internal_file_checks": [
+        {
+          "path": "wheels/cadquery_ocp_novtk-8.0.1.1.0-cp312-cp312-manylinux_2_28_x86_64.whl",
+          "bytes": 66825837,
+          "sha256": "9df1e3700016bee819c0a8627880f37de47540eef63e8adb368f659a0fdeff78",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null
+        },
+        {
+          "path": "wheels/cadquery_ocp_proxy-8.0.1.1.0-py3-none-any.whl",
+          "bytes": 3250,
+          "sha256": "98c71bb60cfb651afe179b134ab88580fd75384fce0cc6d633f727002cd18abd",
+          "sha256_matches_manifest": true,
+          "size_matches_manifest": true,
+          "current_nested_crc_error": null
+        }
+      ],
+      "internal_SHA256SUMS_checks": [
+        {
+          "path": "wheels/cadquery_ocp_novtk-8.0.1.1.0-cp312-cp312-manylinux_2_28_x86_64.whl",
+          "matches": true
+        },
+        {
+          "path": "wheels/cadquery_ocp_proxy-8.0.1.1.0-py3-none-any.whl",
+          "matches": true
+        }
+      ],
+      "verified": true
+    }
+  ],
+  "projects": [
+    {
+      "name": "FreeCAD",
+      "repository": "FreeCAD/FreeCAD",
+      "github_url": "https://github.com/FreeCAD/FreeCAD",
+      "category": "三维参数化CAD",
+      "default_branch": "main",
+      "license_summary": "LGPL 2.1 为主；以源码内各组件声明为准",
+      "path": "sources/FreeCAD_1ec79da434be.zip",
+      "bytes": 91297226,
+      "sha256": "9a628e54863536f91e1b16ccc08480982dc00fcee33b3c22ab20c2d428d9f133",
+      "commit": "1ec79da434be621d89c97287188b53b2ec2ce8a3",
+      "archive_root": "FreeCAD-1ec79da434be621d89c97287188b53b2ec2ce8a3",
+      "file_count": 13301,
+      "submodule_placements": 7
+    },
+    {
+      "name": "LibreCAD",
+      "repository": "LibreCAD/LibreCAD",
+      "github_url": "https://github.com/LibreCAD/LibreCAD",
+      "category": "二维CAD",
+      "default_branch": "master",
+      "license_summary": "GPL 2.0 为主；含第三方组件声明",
+      "path": "sources/LibreCAD_f37ef6b10f96.zip",
+      "bytes": 94016084,
+      "sha256": "aac2a298b6beb739c4cb437f156504aac9c57d133efa3dbe2f09577caa8b2799",
+      "commit": "f37ef6b10f96434f505715841cd3712513c9365d",
+      "archive_root": "LibreCAD-f37ef6b10f96434f505715841cd3712513c9365d",
+      "file_count": 5888,
+      "submodule_placements": 1
+    },
+    {
+      "name": "QCAD",
+      "repository": "qcad/qcad",
+      "github_url": "https://github.com/qcad/qcad",
+      "category": "二维CAD",
+      "default_branch": "master",
+      "license_summary": "GPL 3.0（含可选例外）；第三方许可另列",
+      "path": "sources/QCAD_f07c755ad56f.zip",
+      "bytes": 96274003,
+      "sha256": "4964cf71feb8852a3e1ea8df466cf832b0dc76dae59115b6885ae640a5a08d37",
+      "commit": "f07c755ad56f63c27c6fc4fba604a33d0ed0b65a",
+      "archive_root": "qcad-f07c755ad56f63c27c6fc4fba604a33d0ed0b65a",
+      "file_count": 41490,
+      "submodule_placements": 0
+    },
+    {
+      "name": "SolveSpace",
+      "repository": "solvespace/solvespace",
+      "github_url": "https://github.com/solvespace/solvespace",
+      "category": "三维参数化CAD",
+      "default_branch": "master",
+      "license_summary": "GPL 3.0",
+      "path": "sources/SolveSpace_30e1c3ac0beb.zip",
+      "bytes": 3991461,
+      "sha256": "ab34e559d2cb7889ac2f0b3e67dea1407d9308e2840fcd2df7dcff1d98629e2b",
+      "commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "archive_root": "solvespace-30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "file_count": 677,
+      "submodule_placements": 10
+    },
+    {
+      "name": "OpenSCAD",
+      "repository": "openscad/openscad",
+      "github_url": "https://github.com/openscad/openscad",
+      "category": "程序化建模",
+      "default_branch": "master",
+      "license_summary": "GPL 2.0 + CGAL 链接例外；依赖各有许可证",
+      "path": "sources/OpenSCAD_e5721012999b.zip",
+      "bytes": 27668900,
+      "sha256": "7e0715d534135bb7b1ecd40c55ec9ae582a96e9090b115eea4b5f797dfccad7a",
+      "commit": "e5721012999ba873f6dd74ffd89fa33f7dd11f63",
+      "archive_root": "openscad-e5721012999ba873f6dd74ffd89fa33f7dd11f63",
+      "file_count": 3763,
+      "submodule_placements": 6
+    },
+    {
+      "name": "CadQuery",
+      "repository": "CadQuery/cadquery",
+      "github_url": "https://github.com/CadQuery/cadquery",
+      "category": "Python参数化建模",
+      "default_branch": "master",
+      "license_summary": "Apache 2.0",
+      "path": "sources/CadQuery_8178185a24a0.zip",
+      "bytes": 8042239,
+      "sha256": "5e7efe793134b282f893bda486bb48c4b34cd88b8a7c1b3242d869567a92b9aa",
+      "commit": "8178185a24a035c9af7f4679033be14267f6a6ef",
+      "archive_root": "cadquery-8178185a24a035c9af7f4679033be14267f6a6ef",
+      "file_count": 219,
+      "submodule_placements": 0
+    },
+    {
+      "name": "build123d",
+      "repository": "gumyr/build123d",
+      "github_url": "https://github.com/gumyr/build123d",
+      "category": "Python参数化建模",
+      "default_branch": "dev",
+      "license_summary": "Apache 2.0",
+      "path": "sources/build123d_c49a0493ad00.zip",
+      "bytes": 23877031,
+      "sha256": "c0d7c91e6d15d17d91e6de3a757b7a31adf6447e2b2e62f584825f172dec60d4",
+      "commit": "c49a0493ad0003ae2bf940be1d59b6d1f41d0788",
+      "archive_root": "build123d-c49a0493ad0003ae2bf940be1d59b6d1f41d0788",
+      "file_count": 777,
+      "submodule_placements": 0
+    },
+    {
+      "name": "OpenCASCADE",
+      "repository": "Open-Cascade-SAS/OCCT",
+      "github_url": "https://github.com/Open-Cascade-SAS/OCCT",
+      "category": "几何内核",
+      "default_branch": "master",
+      "license_summary": "LGPL 2.1 + OCCT exception",
+      "path": "sources/OpenCASCADE_53706f78a864.zip",
+      "bytes": 66600249,
+      "sha256": "9d7da6a1fa4213de36cff765b69f0c1a9ad8ef567d2c576408b483ea61c97bb8",
+      "commit": "53706f78a8640c4407bdcc6752df13a270b159f2",
+      "archive_root": "OCCT-53706f78a8640c4407bdcc6752df13a270b159f2",
+      "file_count": 34543,
+      "submodule_placements": 0
+    },
+    {
+      "name": "Chili3D",
+      "repository": "xiangechen/chili3d",
+      "github_url": "https://github.com/xiangechen/chili3d",
+      "category": "浏览器CAD",
+      "default_branch": "main",
+      "license_summary": "AGPL 3.0",
+      "path": "sources/Chili3D_03a6a542e841.zip",
+      "bytes": 11444458,
+      "sha256": "e00a17e6b1084b464a2f1f1b77742cd6253fe7930666a45b5a90ae7c92397ba2",
+      "commit": "03a6a542e841a7f1952f67aa729e0658a8096c08",
+      "archive_root": "chili3d-03a6a542e841a7f1952f67aa729e0658a8096c08",
+      "file_count": 1131,
+      "submodule_placements": 0
+    },
+    {
+      "name": "Dune3D",
+      "repository": "dune3d/dune3d",
+      "github_url": "https://github.com/dune3d/dune3d",
+      "category": "三维参数化CAD",
+      "default_branch": "main",
+      "license_summary": "GPL 3.0",
+      "path": "sources/Dune3D_d01faaf16f30.zip",
+      "bytes": 2086040,
+      "sha256": "c4efdc415013d67a47d879ae6662c7ed583bd68576075d6e0ab52a1866ec99db",
+      "commit": "d01faaf16f309e55834c3b93dddce5c852453cfe",
+      "archive_root": "dune3d-d01faaf16f309e55834c3b93dddce5c852453cfe",
+      "file_count": 857,
+      "submodule_placements": 0
+    },
+    {
+      "name": "Truck",
+      "repository": "ricosjp/truck",
+      "github_url": "https://github.com/ricosjp/truck",
+      "category": "Rust几何内核",
+      "default_branch": "master",
+      "license_summary": "Apache 2.0",
+      "path": "sources/Truck_b0a38a17f443.zip",
+      "bytes": 683450,
+      "sha256": "cf7548664289c7d90216d8534ee88cd1c3d25db343d608b710099908fc2426bc",
+      "commit": "b0a38a17f44371a5bd74af05f12d119f57d82664",
+      "archive_root": "truck-b0a38a17f44371a5bd74af05f12d119f57d82664",
+      "file_count": 339,
+      "submodule_placements": 1
+    },
+    {
+      "name": "replicad",
+      "repository": "sgenoud/replicad",
+      "github_url": "https://github.com/sgenoud/replicad",
+      "category": "浏览器程序化建模",
+      "default_branch": "main",
+      "license_summary": "MIT",
+      "path": "sources/replicad_6ef8ae10f7cb.zip",
+      "bytes": 17608618,
+      "sha256": "f4d12a84b1800a6aa8c6a990df00267355bd3499bfddc4e73b7a6c870ee5cc09",
+      "commit": "6ef8ae10f7cb708ec34c74b37f3be255c3c2dbc8",
+      "archive_root": "replicad-6ef8ae10f7cb708ec34c74b37f3be255c3c2dbc8",
+      "file_count": 433,
+      "submodule_placements": 0
+    }
+  ],
+  "submodule_placements": [
+    {
+      "project": "FreeCAD",
+      "checkout_path": "src/3rdParty/OndselSolver",
+      "parent_repository": "FreeCAD/FreeCAD",
+      "parent_commit": "1ec79da434be621d89c97287188b53b2ec2ce8a3",
+      "declared_url": "https://github.com/FreeCAD/OndselSolver.git",
+      "repository": "FreeCAD/OndselSolver",
+      "commit": "4be80eef02a3486cda0d78f3ccbb308d207a9639",
+      "archive_path": "submodules/FreeCAD__OndselSolver_4be80eef02a3.zip",
+      "archive_root": "OndselSolver-4be80eef02a3486cda0d78f3ccbb308d207a9639"
+    },
+    {
+      "project": "FreeCAD",
+      "checkout_path": "src/3rdParty/GSL",
+      "parent_repository": "FreeCAD/FreeCAD",
+      "parent_commit": "1ec79da434be621d89c97287188b53b2ec2ce8a3",
+      "declared_url": "https://github.com/microsoft/GSL",
+      "repository": "microsoft/GSL",
+      "commit": "543d0dd3fe966ddf20e884b44e5fdbf12cb43784",
+      "archive_path": "submodules/microsoft__GSL_543d0dd3fe96.zip",
+      "archive_root": "GSL-543d0dd3fe966ddf20e884b44e5fdbf12cb43784"
+    },
+    {
+      "project": "FreeCAD",
+      "checkout_path": "src/Mod/AddonManager",
+      "parent_repository": "FreeCAD/FreeCAD",
+      "parent_commit": "1ec79da434be621d89c97287188b53b2ec2ce8a3",
+      "declared_url": "https://github.com/FreeCAD/AddonManager.git",
+      "repository": "FreeCAD/AddonManager",
+      "commit": "745c1b1ebc8bc684439210c5fa237d2c6287153b",
+      "archive_path": "submodules/FreeCAD__AddonManager_745c1b1ebc8b.zip",
+      "archive_root": "AddonManager-745c1b1ebc8bc684439210c5fa237d2c6287153b"
+    },
+    {
+      "project": "FreeCAD",
+      "checkout_path": "src/3rdParty/coin",
+      "parent_repository": "FreeCAD/FreeCAD",
+      "parent_commit": "1ec79da434be621d89c97287188b53b2ec2ce8a3",
+      "declared_url": "https://github.com/FreeCAD/coin.git",
+      "repository": "FreeCAD/coin",
+      "commit": "50e37f04e7027661ea2318d0425b7836ac819568",
+      "archive_path": "submodules/FreeCAD__coin_50e37f04e702.zip",
+      "archive_root": "coin-50e37f04e7027661ea2318d0425b7836ac819568"
+    },
+    {
+      "project": "FreeCAD",
+      "checkout_path": "src/3rdParty/pivy",
+      "parent_repository": "FreeCAD/FreeCAD",
+      "parent_commit": "1ec79da434be621d89c97287188b53b2ec2ce8a3",
+      "declared_url": "https://github.com/FreeCAD/pivy.git",
+      "repository": "FreeCAD/pivy",
+      "commit": "515f038d32f163a976acd8a8cd9e8d26e1d0b884",
+      "archive_path": "submodules/FreeCAD__pivy_515f038d32f1.zip",
+      "archive_root": "pivy-515f038d32f163a976acd8a8cd9e8d26e1d0b884"
+    },
+    {
+      "project": "LibreCAD",
+      "checkout_path": "externals/Catch2",
+      "parent_repository": "LibreCAD/LibreCAD",
+      "parent_commit": "f37ef6b10f96434f505715841cd3712513c9365d",
+      "declared_url": "https://github.com/catchorg/Catch2.git",
+      "repository": "catchorg/Catch2",
+      "commit": "5aa8d113215bd9a97ecc1a2f3fc9506947a2fa57",
+      "archive_path": "submodules/catchorg__Catch2_5aa8d113215b.zip",
+      "archive_root": "Catch2-5aa8d113215bd9a97ecc1a2f3fc9506947a2fa57"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/zlib",
+      "parent_repository": "solvespace/solvespace",
+      "parent_commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "declared_url": "https://github.com/madler/zlib",
+      "repository": "madler/zlib",
+      "commit": "51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf",
+      "archive_path": "submodules/madler__zlib_51b7f2abdade.zip",
+      "archive_root": "zlib-51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/libpng",
+      "parent_repository": "solvespace/solvespace",
+      "parent_commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "declared_url": "https://github.com/glennrp/libpng",
+      "repository": "glennrp/libpng",
+      "commit": "2b978915d82377df13fcbb1fb56660195ded868a",
+      "archive_path": "submodules/glennrp__libpng_2b978915d823.zip",
+      "archive_root": "libpng-2b978915d82377df13fcbb1fb56660195ded868a"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/freetype",
+      "parent_repository": "solvespace/solvespace",
+      "parent_commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "declared_url": "https://github.com/freetype/freetype.git",
+      "repository": "freetype/freetype",
+      "commit": "42608f77f20749dd6ddc9e0536788eaad70ea4b5",
+      "archive_path": "submodules/freetype__freetype_42608f77f207.zip",
+      "archive_root": "freetype-42608f77f20749dd6ddc9e0536788eaad70ea4b5"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/libdxfrw",
+      "parent_repository": "solvespace/solvespace",
+      "parent_commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "declared_url": "https://github.com/solvespace/libdxfrw.git",
+      "repository": "solvespace/libdxfrw",
+      "commit": "8359399ff3eb96aec14fb160c9a5bc4796b60717",
+      "archive_path": "submodules/solvespace__libdxfrw_8359399ff3eb.zip",
+      "archive_root": "libdxfrw-8359399ff3eb96aec14fb160c9a5bc4796b60717"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/pixman",
+      "parent_repository": "solvespace/solvespace",
+      "parent_commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "declared_url": "https://github.com/solvespace/pixman",
+      "repository": "solvespace/pixman",
+      "commit": "6564d88d8b872514f8bb7692337b5b1f96d18e98",
+      "archive_path": "submodules/solvespace__pixman_6564d88d8b87.zip",
+      "archive_root": "pixman-6564d88d8b872514f8bb7692337b5b1f96d18e98"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/cairo",
+      "parent_repository": "solvespace/solvespace",
+      "parent_commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "declared_url": "https://github.com/solvespace/cairo",
+      "repository": "solvespace/cairo",
+      "commit": "e4cd47fcde357b50a99064d3a65dcf41a0b4dd02",
+      "archive_path": "submodules/solvespace__cairo_e4cd47fcde35.zip",
+      "archive_root": "cairo-e4cd47fcde357b50a99064d3a65dcf41a0b4dd02"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/angle",
+      "parent_repository": "solvespace/solvespace",
+      "parent_commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "declared_url": "https://github.com/solvespace/angle",
+      "repository": "solvespace/angle",
+      "commit": "3500f85f2a0da4c1baefc224d14f5f9a9545ddda",
+      "archive_path": "submodules/solvespace__angle_3500f85f2a0d.zip",
+      "archive_root": "angle-3500f85f2a0da4c1baefc224d14f5f9a9545ddda"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/mimalloc",
+      "parent_repository": "solvespace/solvespace",
+      "parent_commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "declared_url": "https://github.com/microsoft/mimalloc",
+      "repository": "microsoft/mimalloc",
+      "commit": "f81bf1b31af819a31195e08f9546dc80f8931587",
+      "archive_path": "submodules/microsoft__mimalloc_f81bf1b31af8.zip",
+      "archive_root": "mimalloc-f81bf1b31af819a31195e08f9546dc80f8931587"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/eigen",
+      "parent_repository": "solvespace/solvespace",
+      "parent_commit": "30e1c3ac0beb77fe3e098315b1bb662840ddc99a",
+      "declared_url": "https://gitlab.com/libeigen/eigen.git",
+      "repository": "gitlab.com/libeigen/eigen",
+      "commit": "3147391d946bb4b6c68edd901f2add6ac1f31f8c",
+      "archive_path": "submodules/gitlab.com__libeigen__eigen_3147391d946b.zip",
+      "archive_root": "eigen-3147391d946bb4b6c68edd901f2add6ac1f31f8c"
+    },
+    {
+      "project": "OpenSCAD",
+      "checkout_path": "libraries/MCAD",
+      "parent_repository": "openscad/openscad",
+      "parent_commit": "e5721012999ba873f6dd74ffd89fa33f7dd11f63",
+      "declared_url": "https://github.com/openscad/MCAD.git",
+      "repository": "openscad/MCAD",
+      "commit": "1ea402208c3127ffb443931e9bb1681c191dacca",
+      "archive_path": "submodules/openscad__MCAD_1ea402208c31.zip",
+      "archive_root": "MCAD-1ea402208c3127ffb443931e9bb1681c191dacca"
+    },
+    {
+      "project": "OpenSCAD",
+      "checkout_path": "submodules/mimalloc",
+      "parent_repository": "openscad/openscad",
+      "parent_commit": "e5721012999ba873f6dd74ffd89fa33f7dd11f63",
+      "declared_url": "https://github.com/microsoft/mimalloc.git",
+      "repository": "microsoft/mimalloc",
+      "commit": "30b2d9d89099bee08e9f67a1ffb3e12e7ba45227",
+      "archive_path": "submodules/microsoft__mimalloc_30b2d9d89099.zip",
+      "archive_root": "mimalloc-30b2d9d89099bee08e9f67a1ffb3e12e7ba45227"
+    },
+    {
+      "project": "OpenSCAD",
+      "checkout_path": "submodules/manifold",
+      "parent_repository": "openscad/openscad",
+      "parent_commit": "e5721012999ba873f6dd74ffd89fa33f7dd11f63",
+      "declared_url": "https://github.com/elalish/manifold.git",
+      "repository": "elalish/manifold",
+      "commit": "ce50d78021d64507f89e8c9fc2c2e51018117857",
+      "archive_path": "submodules/elalish__manifold_ce50d78021d6.zip",
+      "archive_root": "manifold-ce50d78021d64507f89e8c9fc2c2e51018117857"
+    },
+    {
+      "project": "OpenSCAD",
+      "checkout_path": "submodules/sanitizers-cmake",
+      "parent_repository": "openscad/openscad",
+      "parent_commit": "e5721012999ba873f6dd74ffd89fa33f7dd11f63",
+      "declared_url": "https://github.com/arsenm/sanitizers-cmake.git",
+      "repository": "arsenm/sanitizers-cmake",
+      "commit": "bcb1fc68616e9645ca5acea2992412606373ab04",
+      "archive_path": "submodules/arsenm__sanitizers-cmake_bcb1fc68616e.zip",
+      "archive_root": "sanitizers-cmake-bcb1fc68616e9645ca5acea2992412606373ab04"
+    },
+    {
+      "project": "OpenSCAD",
+      "checkout_path": "submodules/OpenCSG",
+      "parent_repository": "openscad/openscad",
+      "parent_commit": "e5721012999ba873f6dd74ffd89fa33f7dd11f63",
+      "declared_url": "https://github.com/floriankirsch/OpenCSG.git",
+      "repository": "floriankirsch/OpenCSG",
+      "commit": "9bf122715213dca05e70993dd8672fe3aa36c518",
+      "archive_path": "submodules/floriankirsch__OpenCSG_9bf122715213.zip",
+      "archive_root": "OpenCSG-9bf122715213dca05e70993dd8672fe3aa36c518"
+    },
+    {
+      "project": "OpenSCAD",
+      "checkout_path": "submodules/Clipper2",
+      "parent_repository": "openscad/openscad",
+      "parent_commit": "e5721012999ba873f6dd74ffd89fa33f7dd11f63",
+      "declared_url": "https://github.com/AngusJohnson/Clipper2.git",
+      "repository": "AngusJohnson/Clipper2",
+      "commit": "c7f820f6a03fa91f189b866d27bf40dfe47abaa6",
+      "archive_path": "submodules/AngusJohnson__Clipper2_c7f820f6a03f.zip",
+      "archive_root": "Clipper2-c7f820f6a03fa91f189b866d27bf40dfe47abaa6"
+    },
+    {
+      "project": "Truck",
+      "checkout_path": "resources",
+      "parent_repository": "ricosjp/truck",
+      "parent_commit": "b0a38a17f44371a5bd74af05f12d119f57d82664",
+      "declared_url": "https://github.com/ricosjp/resources4truck.git",
+      "repository": "ricosjp/resources4truck",
+      "commit": "9bf9de1426c5fc2f2b8d63f501dca0d3c53ebd91",
+      "archive_path": "submodules/ricosjp__resources4truck_9bf9de1426c5.zip",
+      "archive_root": "resources4truck-9bf9de1426c5fc2f2b8d63f501dca0d3c53ebd91"
+    },
+    {
+      "project": "FreeCAD",
+      "checkout_path": "src/3rdParty/coin/cpack.d",
+      "parent_repository": "FreeCAD/coin",
+      "parent_commit": "50e37f04e7027661ea2318d0425b7836ac819568",
+      "declared_url": "https://github.com/coin3d/cpack.d",
+      "repository": "coin3d/cpack.d",
+      "commit": "118ac5a21bcf57f0f90e2b0e681c9dcbf07074c2",
+      "archive_path": "submodules/coin3d__cpack.d_118ac5a21bcf.zip",
+      "archive_root": "cpack.d-118ac5a21bcf57f0f90e2b0e681c9dcbf07074c2"
+    },
+    {
+      "project": "FreeCAD",
+      "checkout_path": "src/3rdParty/coin/docs/doxygen-awesome",
+      "parent_repository": "FreeCAD/coin",
+      "parent_commit": "50e37f04e7027661ea2318d0425b7836ac819568",
+      "declared_url": "https://github.com/coin3d/doxygen-awesome-css.git",
+      "repository": "coin3d/doxygen-awesome-css",
+      "commit": "6217657eef6aec24a0e4ecea4695031c1a622cf3",
+      "archive_path": "submodules/coin3d__doxygen-awesome-css_6217657eef6a.zip",
+      "archive_root": "doxygen-awesome-css-6217657eef6aec24a0e4ecea4695031c1a622cf3"
+    },
+    {
+      "project": "SolveSpace",
+      "checkout_path": "extlib/freetype/subprojects/dlg",
+      "parent_repository": "freetype/freetype",
+      "parent_commit": "42608f77f20749dd6ddc9e0536788eaad70ea4b5",
+      "declared_url": "https://github.com/nyorain/dlg.git",
+      "repository": "nyorain/dlg",
+      "commit": "72dfcc858c040c54a6a0b88fcb7e70ee186d3167",
+      "archive_path": "submodules/nyorain__dlg_72dfcc858c04.zip",
+      "archive_root": "dlg-72dfcc858c040c54a6a0b88fcb7e70ee186d3167"
+    }
+  ],
+  "FreeCAD_resolution": "Located existing FreeCAD source snapshot, 5 direct submodules and 2 recursively included coin submodules (7 placements total); no claim of installed FreeCAD executable.",
+  "previous_inventory_role": "R25.20/CADBench runtime is separate secondary material; FreeCAD installation search was bounded and did not search this recovered source collection project."
+}

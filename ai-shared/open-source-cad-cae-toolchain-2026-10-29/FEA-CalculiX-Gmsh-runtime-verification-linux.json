@@ -1,0 +1,25 @@
+{
+  "schema": "fea-toolchain.smoke/1",
+  "platform": "Linux x86_64 / WSL2 Ubuntu 26.04.1 / bundled CPython 3.12.14",
+  "headless": true,
+  "gmsh_version": "4.15.2",
+  "gmsh_boolean_volume": 0.9685840734641019,
+  "gmsh_expected_volume": 0.968584073464102,
+  "gmsh_nodes": 430,
+  "gmsh_volume_elements": 1446,
+  "gmsh_passed": true,
+  "calculix_version": "2.23",
+  "calculix_returncode": 0,
+  "calculix_ux": [
+    0.001,
+    0.001,
+    0.001,
+    0.001
+  ],
+  "calculix_expected_ux": 0.001,
+  "calculix_support_RF_x": -1.0,
+  "calculix_expected_RF_x": -1.0,
+  "calculix_passed": true,
+  "source": "tools/prepare.py --output /tmp/...; actual smoke performed after fresh package copy; no engineering case accepted.",
+  "engineering_accepted": false
+}

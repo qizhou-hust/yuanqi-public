@@ -1,0 +1,13 @@
+{
+  "schema": "fea-toolchain.smoke/1",
+  "platform": "Windows 11 / CPython 3.12.4 AMD64",
+  "headless": true,
+  "gmsh_version": "4.15.2",
+  "gmsh_boolean_volume": 0.9685840734641019,
+  "gmsh_expected_volume": 0.968584073464102,
+  "gmsh_nodes": 425,
+  "gmsh_volume_elements": 1402,
+  "gmsh_passed": true,
+  "calculix": "not_run_on_native_Windows; use WSL2/Linux runtime",
+  "engineering_accepted": false
+}

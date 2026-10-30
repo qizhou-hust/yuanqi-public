@@ -1,0 +1,41 @@
+{
+  "schema": "open-source-cad-cae.catalog/1",
+  "release_tag": "open-source-cad-cae-2026-10-29",
+  "repository": "qizhou-hust/yuanqi-public",
+  "packages": [
+    {
+      "filename": "开源CAD源码合集_20261027.zip",
+      "kind": "cad-source-bundle",
+      "bytes": 593841501,
+      "sha256": "f0edde2f0fde907f7cd14ded99c86bc21a02e914e1bd3b51fa02e52ca28b1002",
+      "release_asset": true,
+      "freecad": "source snapshot; not an installer"
+    },
+    {
+      "filename": "AI_CAD轻量包_build123d_20261027.zip",
+      "kind": "cad-lightweight-source",
+      "bytes": 841624,
+      "sha256": "aedc23b579f2282361362ef390cf8c9eae439bf737bab65df001305c08e86f27",
+      "release_asset": true
+    },
+    {
+      "filename": "CAD内核_build123d_Linux_x64_Python312_20261027.zip",
+      "kind": "cad-runtime-kernel",
+      "bytes": 66849887,
+      "sha256": "1f4c3c4b245dd150ed2d1c7d675f20e330e1dbc7dc68d68f2a5e9ba039ef614a",
+      "release_asset": true,
+      "platform": "Linux x86_64 / CPython 3.12 / glibc >= 2.28"
+    },
+    {
+      "filename": "FEA-CalculiX-Gmsh-runtime-2026-10-29.tar.xz",
+      "kind": "fea-runtime-smoke-bundle",
+      "bytes": 145328168,
+      "sha256": "71cba837d77148d79c6b7946b76686a52445aa518e81d612c40f24493e3ed722",
+      "release_asset": true,
+      "scope": "toolchain smoke only; not engineering acceptance"
+    }
+  ],
+  "source_projects": [
+    "FreeCAD", "LibreCAD", "QCAD", "SolveSpace", "OpenSCAD", "CadQuery", "build123d", "OpenCASCADE/OCCT", "Chili3D", "Dune3D", "Truck", "replicad"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "schema": "fea-toolchain-components/1",
+  "components": [
+    {
+      "path": "calculix/ccx_2.23.tar.bz2",
+      "sha256": "35d426fed5eb164fbbaaafa20819d13d22e30bc2b9bc9c6c4ed957e9468355dd",
+      "bytes": 2502788,
+      "role": "original CalculiX binary/source/manual/license",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "calculix/ccx_2.23.src.tar.bz2",
+      "sha256": "9c88385c10fb04f5dc6c4e98027a51bebdd8aee3920e05190d6c1dd08357d6e7",
+      "bytes": 1551289,
+      "role": "original CalculiX binary/source/manual/license",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "calculix/ccx_2.23.pdf",
+      "sha256": "a0bf3fc03f374912ff2bf28da3f7dfb6a61428dd7f41b281a2e7e1fdb318f330",
+      "bytes": 6281257,
+      "role": "original CalculiX binary/source/manual/license",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "calculix/GPL-2.0.txt",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "bytes": 18092,
+      "role": "original CalculiX binary/source/manual/license",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "calculix/DOWNLOADS.json",
+      "sha256": "d9dde959d8cf4a424a183938bda0467ebab20dd27be26f6fbc7808b59cb7c9f0",
+      "bytes": 581,
+      "role": "original CalculiX binary/source/manual/license",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "linux-libs/libgfortran.so.4.0.0",
+      "sha256": "d87b8024db66386051efbabb393cce9b8a580bb9be6e461043f74fd7653c9894",
+      "bytes": 1959960,
+      "role": "private unmodified ABI library",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "linux-libs/libXft.so.2.3.6",
+      "sha256": "6bea200ccc0cdc29aa7f76d6cba942454503b5e8f45c6d722633df39412fc27b",
+      "bytes": 106024,
+      "role": "private unmodified ABI library",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "linux-libs/libquadmath.so.0.0.0",
+      "sha256": "d84683d5b7f14caad12058c852597beae23ef578d8a7853280524ed69d758d11",
+      "bytes": 297840,
+      "role": "same runtime used by 10 case-library jobs",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "upstream-runtime/libgfortran4_7.5.0-3ubuntu1~18.04_amd64.deb",
+      "sha256": "f89b2473bc251ba0c8eb9479ad31d5f96019e2ea1f8be466beea3a68b11b19fc",
+      "bytes": 492148,
+      "role": "original distribution package",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "upstream-runtime/gcc-7-base_7.5.0-3ubuntu1~18.04_amd64.deb",
+      "sha256": "6c30e2237e5a7c7264d24b2130b160271232a7748325a4659af19f4d861e9a23",
+      "bytes": 18268,
+      "role": "original distribution package",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "upstream-runtime/libxft2_2.3.6-1build2_amd64.deb",
+      "sha256": "a6ad7fd2294e8e04d553919b5beed0269ebc6f73d41261ed1059c7fde83227f0",
+      "bytes": 45110,
+      "role": "original distribution package",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "upstream-runtime/libquadmath0_16-20260322-1ubuntu1_amd64.deb",
+      "sha256": "420e777fef436f397a85ddedde53fbb44f92c7ca8e87d581f9d86573859e1aa4",
+      "bytes": 155450,
+      "role": "original distribution package",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "licenses/gcc-7-base-copyright",
+      "sha256": "6bc44a664ef0c6baec2135c5ea2e4c5aed7ac660de80a4d24e9129690d2d886a",
+      "bytes": 64079,
+      "role": "original copyright/exception",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "licenses/libxft2-copyright",
+      "sha256": "5960983c962c864d7d73eae6bb9b3b06c1940a23fc6d22ce10ef0f0cde8fd48d",
+      "bytes": 1438,
+      "role": "original copyright/exception",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "python/python-runtime-cpython-3.12.14-linux-x86_64-gnu.tar.gz",
+      "sha256": "212116c9cdb8b3e9dc416a771dee32eff95e63d24e52a2ff0f41c370c8c2fc27",
+      "bytes": 37705507,
+      "role": "unmodified previous bundled standalone interpreter",
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "gmsh/linux/gmsh-4.15.2-py2.py3-none-manylinux_2_24_x86_64.whl",
+      "sha256": "4076a948ce22625330d1413d4982e22b5c69fc2f0f7951f5df64c778cf54108c",
+      "bytes": 40006930,
+      "role": "official wheel with embedded license, executable wrapper and library",
+      "upstream_url": "https://files.pythonhosted.org/packages/ab/d4/336becb1488ac4fbab205043987128839c8c62d54e2036b7e887bd009040/gmsh-4.15.2-py2.py3-none-manylinux_2_24_x86_64.whl",
+      "upstream_hash_verified": true,
+      "source_kind": "reused_local_frozen_asset"
+    },
+    {
+      "path": "gmsh/windows/gmsh-4.15.2-py2.py3-none-win_amd64.whl",
+      "sha256": "7b36083bb410fa27c5d0e052929d1a9844a5b09169d66017b72b41aabd49d711",
+      "bytes": 42235999,
+      "role": "official wheel with embedded license, executable wrapper and library",
+      "upstream_url": "https://files.pythonhosted.org/packages/78/e9/63c763c0d75544680800651d5ea8c7c3203ae4b5e054706f19a54021a7fb/gmsh-4.15.2-py2.py3-none-win_amd64.whl",
+      "upstream_hash_verified": true,
+      "source_kind": "reused_local_frozen_asset"
+    }
+  ],
+  "FreeCAD": "Included separately as original 12-project source collection; no FreeCAD binary claimed.",
+  "provenance": {
+    "CalculiX": "Reused byte-identical CalculiX 2.23 assets from prior CAD-R25.20 offline freeze; executable identity is the same as the 10 new case-library jobs.",
+    "Gmsh": "Gmsh 4.15.2 Linux/Windows wheels reused from prior runtime plus official 4.15.2 source archive.",
+    "FreeCAD": "Not included in this runtime package; supplied in the separate original source collection attachment.",
+    "build123d": "Not included in this runtime package; use the original build123d light package and CAD kernel package attachment."
+  }
+}

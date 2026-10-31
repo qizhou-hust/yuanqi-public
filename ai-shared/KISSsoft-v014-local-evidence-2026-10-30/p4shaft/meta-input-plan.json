@@ -1,0 +1,62 @@
+[
+  [
+    "Cylindrical gear",
+    "position",
+    60
+  ],
+  [
+    "Cylindrical gear",
+    "pitchDiameter",
+    40
+  ],
+  [
+    "Cylindrical gear",
+    "pressureAngle",
+    20
+  ],
+  [
+    "Cylindrical gear",
+    "numberOfTeeth",
+    20
+  ],
+  [
+    "Cylindrical gear",
+    "helixAngle",
+    0
+  ],
+  [
+    "Cylindrical gear",
+    "powerOrTorque",
+    25
+  ],
+  [
+    "Cylindrical gear",
+    "isDriven",
+    1
+  ],
+  [
+    "Coupling / Motor",
+    "position",
+    150
+  ],
+  [
+    "Coupling / Motor",
+    "powerOrTorque",
+    25
+  ],
+  [
+    "Coupling / Motor",
+    "isDriven",
+    0
+  ],
+  [
+    "Coupling / Motor",
+    "axialForceFactor",
+    0
+  ],
+  [
+    "Coupling / Motor",
+    "radialForceFactor",
+    0
+  ]
+]

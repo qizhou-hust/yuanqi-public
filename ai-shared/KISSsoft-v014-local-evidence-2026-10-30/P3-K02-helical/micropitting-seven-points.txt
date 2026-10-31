@@ -1,0 +1,332 @@
+ 
+ 
+  
+1/2 
+ 
+ KISSsoft Release 2026 
+ 
+ 
+2o2dy 
+ 
+ File  
+ 
+Name: 
+P3-K02-helical 
+Description: 
+KISSsoft example 
+Changed by: 
+AAA 
+on: 30.10.2026 
+at: 19:35:09 
+ 
+ 
+ 
+Micropitting according to ISO/TS 6336-22 
+ 
+ 
+1 Overview 
+ 
+ 
+Lubricant load according to FVA Info sheet 54/7 10, Mobilgear 600 XP 150 
+Reference data FZG-C Test: 
+Torque (Nm) 
+[T1Ref] 
+   265.100 
+Line load at contact point A (N/mm) 
+[FbbRef,A] 
+   236.300 
+Oil temperature (°C) 
+[θOilRef] 
+    90.000 
+Tooth mass temperature (°C) 
+[θMRef] 
+   128.037 
+Contact temperature (°C) 
+[θBRef,A] 
+   253.806 
+Lubrication gap thickness (µm) 
+[hRef,A] 
+     0.043 
+Specific film thickness in test 
+[λGFT] 
+     0.085 
+ 
+1.1 Calculated for gear pair 1-2 
+ 
+ 
+Calculation at point (0:A, 1:AB, 2:B, 3:C, 4:D, 5:DE, 6:E, -1:No Point) 
+1 
+ 
+ 
+Diameter (mm) 
+[dy] 
+    40.877 
+   162.962 
+Relative radius of curvature (mm) 
+[ρred] 
+     5.162 
+Load sharing factor 
+[XY] 
+     0.658 
+ XY interpolated between the values XY(εb=0.8) and XY(εb=1.2) according to ISO/TC60/WG6. 
+Contact stress (N/mm²) 
+[pH] 
+   689.325 
+Contact stress (N/mm²) 
+[pdyn] 
+   947.689 
+Minimal specific film thickness 
+[λGFY] 
+     0.061 
+(hY=0.183 µm) 
+Safety against micropitting 
+[Sλ(B)] 
+     0.511 
+ 
+2 Calculation with nominal load 
+ 
+ 
+ 
+2.1 Calculated for gear pair 1-2 
+ 
+ 
+Equivalent Young's modulus (N/mm²) 
+[Er] 
+226373.6 
+Roughness average value (µm) 
+[Ra] 
+3.000 
+Elasticity coefficient (√N/mm) 
+[ZE] 
+189.812 
+Lubricant factor 
+[XL] 
+1.000 
+Lubrication coefficient for lubrication type 
+[XS] 
+1.000 
+Tip relief factor 
+[XCa] 
+1.817 
+Coefficient of friction 
+[μm] 
+0.106 
+Tooth mass temperature (°C) 
+[θM] 
+78.410 
+Dynamic viscosity (Ns/m²) 
+[ηtM] 
+23.768 
+Pressure-viscosity coefficient (m²/N) 
+[α38] 
+0.0205 ·10-6 
+Pressure-viscosity coefficient at mass temperature (m²/N) 
+[αθM] 
+0.0166 ·10-6 
+ 
+ 
+A 
+AB 
+B 
+C 
+D 
+DE 
+E 
+g (mm) 
+0.000  
+1.298  
+2.595  
+2.973  
+4.547  
+5.845  
+7.142  
+Γ 
+-0.388  
+-0.218  
+-0.049  
+0.000  
+0.205  
+0.375  
+0.544  
+d1 (mm) 
+40.193  
+40.877  
+41.712  
+41.982  
+43.232  
+44.403  
+45.692  
+
+ 
+ 
+  
+2/2 
+d2 (mm) 
+163.973  
+162.962  
+161.986  
+161.708  
+160.585  
+159.699  
+158.852  
+ρt,1 (mm) 
+4.695  
+5.992  
+7.290  
+7.668  
+9.242  
+10.540  
+11.837  
+ρt,2 (mm) 
+32.508  
+31.210  
+29.912  
+29.535  
+27.960  
+26.663  
+25.365  
+ρn (mm) 
+4.213  
+5.162  
+6.019  
+6.251  
+7.133  
+7.757  
+8.288  
+X 
+0.000  
+0.658  
+0.874  
+0.874  
+0.874  
+0.658  
+0.000  
+pH 
+(N/mm²) 
+0.000  
+689.325  
+736.036  
+722.255  
+676.134  
+562.349  
+0.000  
+pdyn 
+(N/mm²) 
+0.000  
+947.689  
+1011.908  
+992.961  
+929.553  
+773.121  
+0.000  
+vr,1 (m/s) 
+1.450  
+1.851  
+2.252  
+2.369  
+2.855  
+3.256  
+3.657  
+vr,2 (m/s) 
+2.607  
+2.503  
+2.399  
+2.369  
+2.242  
+2.138  
+2.034  
+vg (m/s) 
+-1.157  
+-0.652  
+-0.147  
+0.000  
+0.613  
+1.118  
+1.622  
+v∑ (m/s) 
+4.057  
+4.354  
+4.651  
+4.737  
+5.098  
+5.394  
+5.691  
+θfl (Δ°C) 
+0.000  
+18.900  
+4.898  
+0.000  
+18.727  
+26.363  
+0.000  
+θB (°C) 
+78.410  
+97.310  
+83.308  
+78.410  
+97.137  
+104.773  
+78.410  
+GM 
+3757.807  
+3757.807  
+3757.807  
+3757.807  
+3757.807  
+3757.807  
+3757.807  
+U 
+50.564 ·10-12 44.280 ·10-12 40.566 ·10-12 39.787 ·10-12 37.518 ·10-12 36.509 ·10-12 36.049 ·10-12 
+W 
+0.000 ·10-4 
+1.101 ·10-4 
+1.255 ·10-4 
+1.209 ·10-4 
+1.059 ·10-4 
+0.733 ·10-4 
+0.000 ·10-4 
+αθB (m²/N) 0.017 ·10-6 
+0.015 ·10-6 
+0.016 ·10-6 
+0.017 ·10-6 
+0.015 ·10-6 
+0.014 ·10-6 
+0.017 ·10-6 
+SGF 
+1.000  
+0.502  
+0.826  
+1.000  
+0.505  
+0.395  
+1.000  
+h (μm) 
+23.2448 
+0.1832 
+0.2204 
+0.2367 
+0.2269 
+0.2405 
+24.4047 
+λGF 
+7.748  
+0.061  
+0.073  
+0.079  
+0.076  
+0.080  
+8.135  
+Sλ 
+64.835  
+0.511  
+0.615  
+0.660  
+0.633  
+0.671  
+68.071  
+ 
+ 
+End of report (lines: 273) 
+ 
+ 
+ 

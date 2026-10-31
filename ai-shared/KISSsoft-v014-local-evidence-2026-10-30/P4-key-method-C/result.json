@@ -1,0 +1,309 @@
+{
+  "case": {
+    "id": "P4-key-method-C",
+    "module": "M02A",
+    "source": "D:\\Program Files\\KISSsoft AG\\KISSsoft 2026\\example\\08 Keys (DIN 6892 Example 1).M2A",
+    "template": "M02ALe0.RPT",
+    "ext": ".M2A",
+    "set": {
+      "m02Aa.Methode": 0,
+      "m02Aa.iANZ": 1,
+      "m02Aa.phiFak": 1,
+      "m02Aa.Mnenn": 25,
+      "m02Aa.StossFak": 1.25,
+      "m02Aw.dWa": 25,
+      "m02Aw.di": 0,
+      "m02Ak.bKeil": 8,
+      "m02Ak.hKeil": 7,
+      "m02Ak.b": 8,
+      "m02Ak.h": 7,
+      "m02Aw.lW": 24,
+      "m02An.lN": 24,
+      "m02Aw.t1MaxW": 4,
+      "m02Aa.TRmin": 0,
+      "m02Aw.mat.DBID": 19999,
+      "m02Aw.mat.Rp": 800,
+      "m02Aw.mat.typ": 2,
+      "m02An.mat.DBID": 19999,
+      "m02An.mat.Rp": 355,
+      "m02An.mat.typ": 2,
+      "m02Ak.mat.DBID": 19999,
+      "m02Ak.mat.Rp": 350,
+      "m02Ak.mat.typ": 2
+    },
+    "open": [
+      "Maximum torque/peak-count unspecified: source Mmax/NL retained and logged; judge equivalent-load branch separately.",
+      "Key form A database ID not mapped; ltr=24 entered directly. Verify effective supporting height=3 mm after calculation.",
+      "Rm and component material classification inherited: method C Rp-driven equivalent branch requires verification.",
+      "D.3 Mt=52526 Nm has no complete geometry/material input; no fabricated native case."
+    ],
+    "get": [
+      "m02Aa.Methode",
+      "m02Aa.Meq",
+      "m02Aa.Mmax",
+      "m02Aa.NL",
+      "m02Aw.htW",
+      "m02Aw.peq",
+      "m02Aw.pzul",
+      "m02Aw.Resulteq",
+      "m02Aw.ResultW",
+      "m02An.peq",
+      "m02An.pzul",
+      "m02An.Resulteq",
+      "m02An.ResultN",
+      "m02Ak.peq",
+      "m02Ak.pzul",
+      "m02Ak.Resulteq",
+      "m02Ak.ResultP"
+    ]
+  },
+  "scope": "mapped user inputs on vendor seed; inspect retained inputs and open items",
+  "set_log": [
+    {
+      "var": "m02Aa.Methode",
+      "before": "1",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m02Aa.iANZ",
+      "before": "1",
+      "set": "1",
+      "readback": "1"
+    },
+    {
+      "var": "m02Aa.phiFak",
+      "before": "1",
+      "set": "1",
+      "readback": "1"
+    },
+    {
+      "var": "m02Aa.Mnenn",
+      "before": "4000",
+      "set": "25",
+      "readback": "25"
+    },
+    {
+      "var": "m02Aa.StossFak",
+      "before": "1.5",
+      "set": "1.25",
+      "readback": "1.25"
+    },
+    {
+      "var": "m02Aw.dWa",
+      "before": "120",
+      "set": "25",
+      "readback": "25"
+    },
+    {
+      "var": "m02Aw.di",
+      "before": "0",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m02Ak.bKeil",
+      "before": "32",
+      "set": "8",
+      "readback": "8"
+    },
+    {
+      "var": "m02Ak.hKeil",
+      "before": "18",
+      "set": "7",
+      "readback": "7"
+    },
+    {
+      "var": "m02Ak.b",
+      "before": "32",
+      "set": "8",
+      "readback": "8"
+    },
+    {
+      "var": "m02Ak.h",
+      "before": "18",
+      "set": "7",
+      "readback": "7"
+    },
+    {
+      "var": "m02Aw.lW",
+      "before": "93",
+      "set": "24",
+      "readback": "24"
+    },
+    {
+      "var": "m02An.lN",
+      "before": "93",
+      "set": "24",
+      "readback": "24"
+    },
+    {
+      "var": "m02Aw.t1MaxW",
+      "before": "11",
+      "set": "4",
+      "readback": "4"
+    },
+    {
+      "var": "m02Aa.TRmin",
+      "before": "0",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m02Aw.mat.DBID",
+      "before": "19999",
+      "set": "19999",
+      "readback": "19999"
+    },
+    {
+      "var": "m02Aw.mat.Rp",
+      "before": "310",
+      "set": "800",
+      "readback": "800"
+    },
+    {
+      "var": "m02Aw.mat.typ",
+      "before": "2",
+      "set": "2",
+      "readback": "2"
+    },
+    {
+      "var": "m02An.mat.DBID",
+      "before": "19999",
+      "set": "19999",
+      "readback": "19999"
+    },
+    {
+      "var": "m02An.mat.Rp",
+      "before": "130",
+      "set": "355",
+      "readback": "355"
+    },
+    {
+      "var": "m02An.mat.typ",
+      "before": "7",
+      "set": "2",
+      "readback": "2"
+    },
+    {
+      "var": "m02Ak.mat.DBID",
+      "before": "19999",
+      "set": "19999",
+      "readback": "19999"
+    },
+    {
+      "var": "m02Ak.mat.Rp",
+      "before": "430",
+      "set": "350",
+      "readback": "350"
+    },
+    {
+      "var": "m02Ak.mat.typ",
+      "before": "2",
+      "set": "2",
+      "readback": "2"
+    }
+  ],
+  "version": "2026",
+  "source_sha256": "4e5288719a94043ca148f2dbe7881ca067294811030437e604ddf5a222900b8c",
+  "license": true,
+  "calculate_ok": false,
+  "messages": [
+    [],
+    [],
+    0
+  ],
+  "values": {
+    "m02Aa.Methode": "0",
+    "m02Aa.iANZ": "1",
+    "m02Aa.phiFak": "1",
+    "m02Aa.Mnenn": "25",
+    "m02Aa.StossFak": "1.25",
+    "m02Aw.dWa": "25",
+    "m02Aw.di": "0",
+    "m02Ak.bKeil": "8",
+    "m02Ak.hKeil": "7",
+    "m02Ak.b": "8",
+    "m02Ak.h": "7",
+    "m02Aw.lW": "24",
+    "m02An.lN": "24",
+    "m02Aw.t1MaxW": "4",
+    "m02Aa.TRmin": "0",
+    "m02Aw.mat.DBID": "19999",
+    "m02Aw.mat.Rp": "800",
+    "m02Aw.mat.typ": "2",
+    "m02An.mat.DBID": "19999",
+    "m02An.mat.Rp": "355",
+    "m02An.mat.typ": "2",
+    "m02Ak.mat.DBID": "19999",
+    "m02Ak.mat.Rp": "350",
+    "m02Ak.mat.typ": "2",
+    "m02Aa.Meq": "0",
+    "m02Aa.Mmax": "15000",
+    "m02Aa.NL": "10000",
+    "m02Aw.htW": "8.1273291792038442338",
+    "m02Aw.peq": "0",
+    "m02Aw.pzul": "0",
+    "m02Aw.Resulteq": "0",
+    "m02Aw.ResultW": "0",
+    "m02An.peq": "0",
+    "m02An.pzul": "0",
+    "m02An.Resulteq": "0",
+    "m02An.ResultN": "0",
+    "m02Ak.peq": "",
+    "m02Ak.pzul": "0",
+    "m02Ak.Resulteq": "0",
+    "m02Ak.ResultP": "0"
+  },
+  "get_errors": {},
+  "sha256": "3d08c528350e24c7c7c17921d735877340d39b1271c0a986bc2285720b19e599",
+  "reload_ok": false,
+  "reload_messages": [
+    [],
+    [],
+    0
+  ],
+  "reload_values": {
+    "m02Aa.Methode": "0",
+    "m02Aa.iANZ": "1",
+    "m02Aa.phiFak": "1",
+    "m02Aa.Mnenn": "25",
+    "m02Aa.StossFak": "1.25",
+    "m02Aw.dWa": "25",
+    "m02Aw.di": "0",
+    "m02Ak.bKeil": "8",
+    "m02Ak.hKeil": "7",
+    "m02Ak.b": "8",
+    "m02Ak.h": "7",
+    "m02Aw.lW": "24",
+    "m02An.lN": "24",
+    "m02Aw.t1MaxW": "4",
+    "m02Aa.TRmin": "0",
+    "m02Aw.mat.DBID": "19999",
+    "m02Aw.mat.Rp": "800",
+    "m02Aw.mat.typ": "2",
+    "m02An.mat.DBID": "19999",
+    "m02An.mat.Rp": "355",
+    "m02An.mat.typ": "2",
+    "m02Ak.mat.DBID": "19999",
+    "m02Ak.mat.Rp": "350",
+    "m02Ak.mat.typ": "2",
+    "m02Aa.Meq": "0",
+    "m02Aa.Mmax": "15000",
+    "m02Aa.NL": "10000",
+    "m02Aw.htW": "8.1273291792038442338",
+    "m02Aw.peq": "0",
+    "m02Aw.pzul": "0",
+    "m02Aw.Resulteq": "0",
+    "m02Aw.ResultW": "0",
+    "m02An.peq": "0",
+    "m02An.pzul": "0",
+    "m02An.Resulteq": "0",
+    "m02An.ResultN": "0",
+    "m02Ak.peq": "",
+    "m02Ak.pzul": "0",
+    "m02Ak.Resulteq": "0",
+    "m02Ak.ResultP": "0"
+  },
+  "reload_differences": {}
+}

@@ -1,0 +1,103 @@
+KISSsoft v0.14 local external-evidence run / 2026-10-30
+Software: KISSsoft Release 2026; KISSsoft.exe file version 26.0.0.0.
+Scope: user-requested local calculations, no gearbase source changes or acceptance flags.
+Status: PARTIAL. Successful calculations are not product approvals.
+
+P1 / Z012 / frozen TR30 example 7
+Source SHA256: ba9205dda2b8fcd9f7a6bb5eb40ed7c66924782b886a455fa4b1b95839787f8e.
+No input edits. Calculation and saved-native reload succeeded without exported-value drift.
+Reported fsh (KHdat.fsh00) = 1.402989614077725 um.
+KHbeta-chain reconstruction confirms Fm/b_total = 70.20715878122054 N/mm.
+fsh/(Fm/b_total) = 0.019983569174900226 um*mm/N.
+fsh/(Fm/b_single_side) = 0.009991784587450111 um*mm/N.
+These are derived normalizations, NOT independent KISSsoft fsh0 exports.
+D2/TR30 fsh0 symbol convention remains OPEN. See P1-preflight.md.
+
+P2 / Z012 / K01 optimized
+Only z1,z2,mn,b1,b2,x1 changed, plus necessary explicit derived-center mapping.
+Keeping the source a=303 causes CalculateRetVal=false (preserved diagnostic).
+Derived center from inv(alpha_w)=inv(alpha)+2*(x1+x2)*tan(alpha)/(z1+z2):
+a=274.0557937879646 mm. No output-matching optimization was performed.
+Calculation and native reload succeed, exported-value drift absent.
+          KISSsoft                     User gearbase
+SH1/2     0.994970277 / 1.028609897     1.0000 / 1.0347
+SF1/2     1.497975481 / 1.394528151     1.4993 / 1.4004
+epsilon_a 1.587000554                   1.5907
+san1/2    3.300265868 / 4.920837332 mm  3.281 / 4.908 mm
+SH1 is below 1; source minimum SF=1.4 is also missed by member 2.
+No numeric-equivalence claim. See P2-comparison.json, run.json, native/report.
+C001 optional case was not reconstructed from incomplete source evidence.
+
+P3 / Z012 / original K01-K05, NOT optimized K01
+Inherited explicit lubricant settings and other baseline inputs; documented changes:
+RechSt.ScoringStandard=1 (ISO/TS 6336-20/21:2022), MicropittingStandard=1.
+All five calculate and reload successfully without exported-value drift.
+Case        SintS         SB             Slambda(B)
+K01         4.40766417    10.93483859     1.66718888
+K02         4.79846034    13.63392626     0.51111841
+K03         3.79326468     8.58351506     NOT CALCULATED (missing oil test data)
+K04         3.41353753     2.36925262     NOT CALCULATED (missing oil test data)
+K05         3.52681190     4.94892485     NOT CALCULATED (missing oil test data)
+K01/K02 seven-point micropitting native outputs and special PDF/TXT are included.
+K01/K02 inherited Slambda_min=2; neither passes that minimum.
+K03-K05 have FZGtestMP=MicroPittingTest=0. Their zero results are invalid placeholders.
+Oil test SKS/temperature or lambdaGFP is still needed for K03-K05.
+Not all requested flash-temperature distributions are independently exported.
+Input records are in saved native models and p3-detail.json; full field audit separately.
+
+P4 / M010 / DIN 7190-1:2017 elastic range
+Use ONLY P4-fit-A1..A4-mapped-v2 as current mapped cases.
+Initial cases retained as diagnostics: database roughness overwrote Rz=6 to 4.8.
+Mapped v2 uses confirmed Own Input roughness DBIndex19999; readback Rz=6/6,
+embedding=4.8 um. Four calculations and native reloads succeed without drift.
+A1 p=90.00000000000003 MPa; A2 p=113.1975 MPa;
+A3 p=49.99999999999999 MPa; A4 p=43.53325706440909 MPa.
+A1/A3 pressure inputs translated into diametral interference using elastic compliance;
+this is not independent confirmation of that translation equation.
+Native safety outputs and torque limits are retained in result.json and PDF/TXT.
+K, xi_w and appendix-specific definitions need explicit mapping before equivalence claim.
+
+P4 / M02A key / W010 shaft and ISO281
+Key causal probe: the unmodified vendor example calculates successfully with method B.
+Changing ONLY m02Aa.Methode to 0 (method C) fails with an empty message list.
+The same failure occurs after the other mapped user inputs calculate successfully in B.
+This bounds the trigger to the method-C path in this local setup; the root cause is OPEN.
+See key_causal_probe.py, key-causal-probe.json and both debug logs.
+Diagnostic Rm/peak placeholders in key v3/v4 are explicit experiments, not user inputs.
+Failed key variants and incomplete shaft candidates must not be used as accepted evidence.
+DIN6892 appendix D.3 input identity is not established; no invented geometry.
+Shaft corrected static candidate: p4shaft/P4-shaft-corrected-static.W10.
+Readback speed=900 rpm; torque25 Nm represented by P=2.356194490192345 kW.
+Support readback: A X/Y/Z fixed, rotations free; B X/Z fixed, Y free, rotations free.
+Calculate and native reload both succeed, listed-value drift absent.
+Native gear force: Fx=454.9627928 N, Fz=1250 N.
+Native support forces: A Fx=-227.4320413,Fz=-624.8643979 N;
+                       B Fx=-227.4295066,Fz=-624.8574339 N.
+These still have a small force-balance residual and do not qualify DIN743 strength.
+DIN743 sections S1/S2/S3, coefficients, and ISO281 6206-RZ life remain NOT VERIFIED.
+The generated W010 standard report contains only consistency messages; it is not a
+complete shaft result report. Input/native serialized outputs and exact support
+readbacks are in p4shaft/corrected-static-result.json for further work.
+
+P3 field-level audit: review.txt records exact mappings and remaining gaps.
+P3-supplemental-scalars.json adds directly re-read lambdaGFP and thetaM for K01/K02.
+Missing independent -21 fields: theta_flaE, theta_MT, theta_flaintT.
+Missing -20 distributions: XJ / XGamma. Do not mark these external-evidence items closed.
+
+Package inputs
+Both supplied stage ZIPs are byte-corrupted. See package-validation.json and
+input-preflight.md. No trusted v0.14 source could be extracted. This run uses
+the user's explicit prompt and preserved, hashed local native baselines.
+
+Verification
+Run: python -I verify_evidence.py. Machine verification is in verification.json.
+Original source hashes, saved-native hashes, listed reloads, P3 seven-point records,
+four fit pressures/embedding and PDF readability/directive expansion are checked.
+Failed diagnostics deliberately remain in the package, labelled by result records.
+Private standard page images are excluded from the delivery ZIP.
+
+Where This Review May Be Wrong
+1. Native vendor automatic geometry settings can explain part of P2 differences;
+   no claim is made that gearbase formulas are wrong before input/factor reconciliation.
+2. Derived fsh0 normalizations do not establish the TR30 symbol definition.
+3. Inherited lubrication/material choices are calculation inputs, not supplier test evidence.

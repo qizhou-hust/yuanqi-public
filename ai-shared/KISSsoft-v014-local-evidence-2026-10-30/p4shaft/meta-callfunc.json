@@ -1,0 +1,78 @@
+{
+  "log": [
+    [
+      "Cylindrical gear",
+      "position",
+      60,
+      null
+    ],
+    [
+      "Cylindrical gear",
+      "pitchDiameter",
+      40,
+      null
+    ],
+    [
+      "Cylindrical gear",
+      "pressureAngle",
+      20,
+      null
+    ],
+    [
+      "Cylindrical gear",
+      "numberOfTeeth",
+      20,
+      null
+    ],
+    [
+      "Cylindrical gear",
+      "helixAngle",
+      0,
+      null
+    ],
+    [
+      "Cylindrical gear",
+      "powerOrTorque",
+      25,
+      null
+    ],
+    [
+      "Cylindrical gear",
+      "isDriven",
+      1,
+      null
+    ],
+    [
+      "Coupling / Motor",
+      "position",
+      150,
+      null
+    ],
+    [
+      "Coupling / Motor",
+      "powerOrTorque",
+      25,
+      null
+    ],
+    [
+      "Coupling / Motor",
+      "isDriven",
+      0,
+      null
+    ],
+    [
+      "Coupling / Motor",
+      "axialForceFactor",
+      0,
+      null
+    ],
+    [
+      "Coupling / Motor",
+      "radialForceFactor",
+      0,
+      null
+    ]
+  ],
+  "before": "",
+  "after": ""
+}

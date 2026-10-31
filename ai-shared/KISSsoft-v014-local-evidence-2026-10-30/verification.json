@@ -1,0 +1,339 @@
+{
+  "status": "PASS_FOR_LISTED_GATES_NOT_ALL_REQUESTS_COMPLETE",
+  "calculations": [
+    {
+      "id": "P1-TR30-example7-unchanged",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true,
+      "source_hash_matches": true,
+      "native_hash_matches": true
+    },
+    {
+      "id": "P2-K01-geometry-mapped",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true,
+      "source_hash_matches": true,
+      "native_hash_matches": true
+    },
+    {
+      "id": "P2-K01-requested-edits",
+      "calculated": false,
+      "reloaded": false,
+      "no_drift": true,
+      "source_hash_matches": true,
+      "native_hash_matches": true
+    },
+    {
+      "id": "P3-K01-spur",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true,
+      "source_hash_matches": true,
+      "native_hash_matches": true
+    },
+    {
+      "id": "P3-K02-helical",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true,
+      "source_hash_matches": true,
+      "native_hash_matches": true
+    },
+    {
+      "id": "P3-K03-premachining",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true,
+      "source_hash_matches": true,
+      "native_hash_matches": true
+    },
+    {
+      "id": "P3-K04-EV-stage1",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true,
+      "source_hash_matches": true,
+      "native_hash_matches": true
+    },
+    {
+      "id": "P3-K05-EV-stage2",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true,
+      "source_hash_matches": true,
+      "native_hash_matches": true
+    },
+    {
+      "id": "P4-fit-A1",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true
+    },
+    {
+      "id": "P4-fit-A1-mapped-v2",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true
+    },
+    {
+      "id": "P4-fit-A2",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true
+    },
+    {
+      "id": "P4-fit-A2-mapped-v2",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true
+    },
+    {
+      "id": "P4-fit-A3",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true
+    },
+    {
+      "id": "P4-fit-A3-mapped-v2",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true
+    },
+    {
+      "id": "P4-fit-A4",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true
+    },
+    {
+      "id": "P4-fit-A4-mapped-v2",
+      "calculated": true,
+      "reloaded": true,
+      "no_drift": true
+    },
+    {
+      "id": "P4-key-equivalent-peak-v4",
+      "calculated": false,
+      "reloaded": false,
+      "no_drift": true
+    },
+    {
+      "id": "P4-key-geometry-v3",
+      "calculated": false,
+      "reloaded": false,
+      "no_drift": true
+    },
+    {
+      "id": "P4-key-method-C",
+      "calculated": false,
+      "reloaded": false,
+      "no_drift": true
+    },
+    {
+      "id": "P4-key-method-C-mapped-v2",
+      "calculated": false,
+      "reloaded": false,
+      "no_drift": true
+    }
+  ],
+  "pdfs": [
+    {
+      "path": "P1-TR30-example7-unchanged\\P1-TR30-example7-unchanged.pdf",
+      "pages": 14,
+      "text_chars": 34061,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P2-K01-geometry-mapped\\P2-K01-geometry-mapped.pdf",
+      "pages": 14,
+      "text_chars": 34351,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P2-K01-requested-edits\\P2-K01-requested-edits.pdf",
+      "pages": 12,
+      "text_chars": 27428,
+      "unexpanded": false,
+      "consistent_warning": true
+    },
+    {
+      "path": "P3-K01-spur\\micropitting-seven-points.pdf",
+      "pages": 2,
+      "text_chars": 3641,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P3-K01-spur\\P3-K01-spur.pdf",
+      "pages": 14,
+      "text_chars": 34171,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P3-K02-helical\\micropitting-seven-points.pdf",
+      "pages": 2,
+      "text_chars": 3666,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P3-K02-helical\\P3-K02-helical.pdf",
+      "pages": 14,
+      "text_chars": 33313,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P3-K03-premachining\\micropitting-seven-points.pdf",
+      "pages": 1,
+      "text_chars": 311,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P3-K03-premachining\\P3-K03-premachining.pdf",
+      "pages": 14,
+      "text_chars": 32732,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P3-K04-EV-stage1\\micropitting-seven-points.pdf",
+      "pages": 1,
+      "text_chars": 276,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P3-K04-EV-stage1\\P3-K04-EV-stage1.pdf",
+      "pages": 13,
+      "text_chars": 30768,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P3-K05-EV-stage2\\micropitting-seven-points.pdf",
+      "pages": 1,
+      "text_chars": 276,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P3-K05-EV-stage2\\P3-K05-EV-stage2.pdf",
+      "pages": 13,
+      "text_chars": 31088,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P4-fit-A1\\P4-fit-A1.pdf",
+      "pages": 3,
+      "text_chars": 7207,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P4-fit-A1-mapped-v2\\P4-fit-A1-mapped-v2.pdf",
+      "pages": 3,
+      "text_chars": 7193,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P4-fit-A2\\P4-fit-A2.pdf",
+      "pages": 3,
+      "text_chars": 7219,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P4-fit-A2-mapped-v2\\P4-fit-A2-mapped-v2.pdf",
+      "pages": 3,
+      "text_chars": 7205,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P4-fit-A3\\P4-fit-A3.pdf",
+      "pages": 3,
+      "text_chars": 7464,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P4-fit-A3-mapped-v2\\P4-fit-A3-mapped-v2.pdf",
+      "pages": 3,
+      "text_chars": 7450,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P4-fit-A4\\P4-fit-A4.pdf",
+      "pages": 3,
+      "text_chars": 7462,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P4-fit-A4-mapped-v2\\P4-fit-A4-mapped-v2.pdf",
+      "pages": 3,
+      "text_chars": 7448,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "P4-key-equivalent-peak-v4\\P4-key-equivalent-peak-v4.pdf",
+      "pages": 2,
+      "text_chars": 3491,
+      "unexpanded": false,
+      "consistent_warning": true
+    },
+    {
+      "path": "P4-key-geometry-v3\\P4-key-geometry-v3.pdf",
+      "pages": 2,
+      "text_chars": 3484,
+      "unexpanded": false,
+      "consistent_warning": true
+    },
+    {
+      "path": "P4-key-method-C\\P4-key-method-C.pdf",
+      "pages": 2,
+      "text_chars": 3443,
+      "unexpanded": false,
+      "consistent_warning": true
+    },
+    {
+      "path": "P4-key-method-C-mapped-v2\\P4-key-method-C-mapped-v2.pdf",
+      "pages": 2,
+      "text_chars": 3453,
+      "unexpanded": false,
+      "consistent_warning": true
+    },
+    {
+      "path": "p4shaft\\P4-shaft-corrected-static.pdf",
+      "pages": 3,
+      "text_chars": 425,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "p4shaft\\P4-shaft-load-mapped.pdf",
+      "pages": 3,
+      "text_chars": 420,
+      "unexpanded": false,
+      "consistent_warning": false
+    },
+    {
+      "path": "p4shaft\\P4-shaft-static-run.pdf",
+      "pages": 3,
+      "text_chars": 419,
+      "unexpanded": false,
+      "consistent_warning": false
+    }
+  ]
+}

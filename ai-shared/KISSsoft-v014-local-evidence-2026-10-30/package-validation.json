@@ -1,0 +1,26 @@
+[
+  {
+    "source": "C:\\Users\\AAA\\Downloads\\gearbase-v0.13-阶段包1-2026-10-30.zip",
+    "bytes": 44924672,
+    "sha256": "239210f8dfb2974837e93ad0f1d6456507fdc2b505d3596aa73ead3627106ccb",
+    "zip_open_error": "BadZipFile: Bad magic number for central directory",
+    "eocd_position": 44924648,
+    "eocd_claimed_central_offset": 1572716527,
+    "eocd_claimed_comment_bytes": 377,
+    "actual_bytes_after_eocd": 2,
+    "request_read": "not present",
+    "extracted": false
+  },
+  {
+    "source": "C:\\Users\\AAA\\Downloads\\gearbase-v0.14-阶段包2-2026-10-30.zip",
+    "bytes": 25308044,
+    "sha256": "ffdbc2e8dba1c1a678ebf886399bbd1a6c09a641386960efbec25c00c7188a60",
+    "zip_open_error": "BadZipFile: Bad offset for central directory",
+    "eocd_position": 25308014,
+    "eocd_claimed_central_offset": 3220111360,
+    "eocd_claimed_comment_bytes": 61373,
+    "actual_bytes_after_eocd": 8,
+    "request_read": "error: Error -3 while decompressing data: invalid code lengths set",
+    "extracted": false
+  }
+]

@@ -1,0 +1,465 @@
+ 
+ 
+  
+1/3 
+ 
+ KISSsoft Release 2026 
+ 
+ 
+2o2dy 
+ 
+ File  
+ 
+Name: 
+P4-fit-A1 
+Description: 
+KISSsoft example 
+Changed by: 
+AAA 
+on: 30.10.2026 
+at: 19:34:48 
+ 
+ 
+ 
+1 Overview 
+ 
+Calculation method: According to DIN 7190-1:2017, elastic range 
+ 
+with additions such as centrifugal force, micro sliding, mounting, etc. 
+ 
+for a horizontal or longitudinal interference fit 
+ 
+Diameter shaft (mm) 
+[DiA]/[DiI] 
+ 50.00 
+/ 0.00 
+Diameter hub (mm) 
+[DaA]/[DaI] 
+100.00  /50.00 
+Length of Interference fit (mm) 
+[l] 
+     40.00 
+ 
+Diameter of joint (mm) 
+[DF] 
+     50.00 
+with special allowances: 
+Upper allowance Shaft (µm) 
+[AoI] 
+      60.6 
+Lower allowance Shaft (µm) 
+[AuI] 
+      60.6 
+Tolerance measure Shaft (µm) 
+[TI] 
+       0.0 
+Upper allowance Hub (µm) 
+[AoA] 
+       0.0 
+Lower allowance Hub (µm) 
+[AuA] 
+       0.0 
+Tolerance measure Hub (µm) 
+[TA] 
+       0.0 
+Largest interference (µm) 
+[Po] 
+      60.6 
+Smallest interference (µm) 
+[Pu] 
+      60.6 
+ 
+Nominal torque (Nm) 
+[T] 
+      0.00 
+Application factor 
+[KA] 
+      1.00 
+Service torque (Nm) 
+[Tb] 
+      0.00 
+Axial force (N) 
+[FA] 
+      0.00 
+Bending moment (Nm) 
+[Mb] 
+      0.00 
+Radial force (N) 
+[Fr] 
+      0.00 
+Circumferential force (N) 
+[Fu] 
+      0.00 
+Speed (1/min) 
+[n] 
+      0.00 
+Interference (µm) 
+[P] 
+  60.6    (  60.6   .. 
+  60.6 
+) 
+Embedding (µm) 
+[s] 
+      3.84 
+Effective interference at 20°C(68°F) (µm) 
+[Pw] 
+ 56.77   (  56.8   .. 
+  56.8 
+) 
+Effective interference at working temp.. (µm) 
+[PwTh] 
+ 56.77   (  56.8   .. 
+  56.8 
+) 
+Service temperature shaft (°C) 
+[ThB] 
+      20.0 
+Service temperature hub (°C) 
+[ThB] 
+      20.0 
+Pressure stress by 
+- Interference (after mounting) (N/mm²) 
+[pM] 
+ 91.55   ( 91.55  .. 
+ 91.55 
+) 
+- Interference (working) (N/mm²) 
+[p] 
+ 91.55   ( 91.55  .. 
+ 91.55 
+) 
+- Bending moment (N/mm²) 
+[pb] 
+      0.00 
+- Radial force (N/mm²) 
+[pr] 
+      0.00 
+Coefficient of friction, longitudinal 
+[μa] 
+     0.120 
+Coefficient of friction, circumferential 
+[μu] 
+     0.120 
+Safety against sliding 
+[Sr] 
+> 1000 
+Required safety against sliding 
+[SSr] 
+      1.50 
+ 
+Equivalent stress according to von Mises 
+σV = (σR²+τT²-σR·τT)^0.5 
+ 
+ 
+1.1 Shaft 
+ 
+
+ 
+ 
+  
+2/3 
+Material, own Input 
+C45 (1) 
+Young's modulus (N/mm²) 
+[EI] 
+ 215000.00 
+Poisson's ratio (-) 
+[νI] 
+      0.30 
+Density (kg/m³) 
+[ρ] 
+   7830.00 
+Coefficient of thermal expansion (10^-6/K) 
+[α] 
+     11.50 
+Tensile strength (component's raw diameter) (N/mm²) 
+[Rm] 
+    650.00 
+Yield point (component's raw diameter) (N/mm²) 
+[Rp] 
+    200.00 
+Component raw diameter (mm) 
+[deff] 
+        55 
+ 
+Surface class of roughness 
+N6  Rz=4.8 (Grinding) 
+Surface roughness (µm) 
+[Rz] 
+      4.80 
+External diameter (mm) 
+[DiA] 
+     50.00 
+Diameter increase during operation (µm) 
+[ΔD] 
+-14.90   (-14.90  .. 
+-14.90 
+) 
+Diameter increase during operation (o/oo) 
+[ΔD] 
+ -0.30   ( -0.30  .. 
+ -0.30 
+) 
+Equivalent stress outer diameter (N/mm²) 
+[σVa] 
+ 91.55   ( 91.55  .. 
+ 91.55 
+) 
+- Radial stress (N/mm²) 
+[σRa] 
+-91.55   (-91.55  .. 
+-91.55 
+) 
+- Tangential stress (N/mm²) 
+[σTa] 
+-91.55   (-91.55  .. 
+-91.55 
+) 
+- With outside load (N/mm²) 
+[σVaMF] 
+ 91.55   ( 91.55  .. 
+ 91.55 
+) 
+Inner diameter (mm) 
+[DiI] 
+      0.00 
+Equivalent stress inner diameter (N/mm²) 
+[σVi] 
+ 91.55   ( 91.55  .. 
+ 91.55 
+) 
+- Radial stress (N/mm²) 
+[σRi] 
+-91.55   (-91.55  .. 
+-91.55 
+) 
+- Tangential stress (N/mm²) 
+[σTi] 
+-91.55   (-91.55  .. 
+-91.55 
+) 
+ 
+Safety against fracture 
+[SiRm] 
+  7.10   (  7.10  .. 
+  7.10 
+) 
+Required safety against fracture 
+[SSi.Rm] 
+     1.50 
+ 
+Safety against yield point 
+[Si.Rp] 
+  2.18   (  2.18  .. 
+  2.18 
+) 
+Required safety against yield point 
+[SSi.Rp] 
+     1.10 
+ 
+ 
+1.2 Hub 
+ 
+Material, own Input 
+C45 (1) 
+Young's modulus (N/mm²) 
+[EA] 
+ 215000.00 
+Poisson's ratio (-) 
+[νA] 
+      0.30 
+Density (kg/m³) 
+[ρ] 
+   7830.00 
+Coefficient of thermal expansion (10^-6/K) 
+[α] 
+     11.50 
+Tensile strength (wall thickness) (N/mm²) 
+[Rm] 
+    700.00 
+Yield point (wall thickness) (N/mm²) 
+[Rp] 
+    300.00 
+The hub material strength values are defined using the wall thickness as the raw diameter. 
+Component raw diameter (wall thickness) (mm) 
+[deff] 
+        26 
+ 
+Surface class of roughness 
+N6  Rz=4.8 (Grinding) 
+Surface roughness (µm) 
+[Rz] 
+      4.80 
+External diameter (mm) 
+[DaA] 
+    100.00 
+Diameter increase during operation (µm) 
+[ΔD] 
+ 28.39   ( 28.39  .. 
+ 28.39 
+) 
+Diameter increase during operation (o/oo) 
+[ΔD] 
+  0.28   (  0.28  .. 
+  0.28 
+) 
+Equivalent stress outer diameter (N/mm²) 
+[σVa] 
+ 61.03   ( 61.03  .. 
+ 61.03 
+) 
+- Radial stress (N/mm²) 
+[σRa] 
+  0.00   (  0.00  .. 
+  0.00 
+) 
+- Tangential stress (N/mm²) 
+[σTa] 
+ 61.03   ( 61.03  .. 
+ 61.03 
+) 
+Inner diameter (mm) 
+[DaI] 
+     50.00 
+Diameter increase during operation (µm) 
+[ΔD] 
+ 41.87   ( 41.87  .. 
+ 41.87 
+) 
+Diameter increase during operation (o/oo) 
+[ΔD] 
+  0.84   (  0.84  .. 
+  0.84 
+) 
+Equivalent stress inner diameter (N/mm²) 
+[σVi] 
+213.61   (213.61  .. 
+213.61 
+) 
+- Radial stress (N/mm²) 
+[σRi] 
+-91.55   (-91.55  .. 
+-91.55 
+) 
+- Tangential stress (N/mm²) 
+[σTi] 
+152.58   (152.58  .. 
+152.58 
+) 
+- Radial stress with outside load (N/mm²) 
+[σRai] 
+-91.55   (-91.55  .. 
+-91.55 
+) 
+- Tangential stress with outside load (N/mm²) 
+[σTai] 
+152.58   (152.58  .. 
+152.58 
+) 
+- With outside load (N/mm²) 
+[σViMF] 
+213.61   (213.61  .. 
+213.61 
+) 
+
+ 
+ 
+  
+3/3 
+ 
+Safety against fracture 
+[Si.Rm] 
+  3.28   (  3.28  .. 
+  3.28 
+) 
+Required safety against fracture 
+[SSi.Rm] 
+     1.50 
+ 
+Safety against yield point 
+[Si.Re] 
+  1.40   (  1.40  .. 
+  1.40 
+) 
+Required safety against yield point 
+[SSi.Re] 
+     1.10 
+ 
+Mere elastic stress, no verification of elastic plastic interference fit according to DIN 7190-1. 
+ 
+2 Service / Mounting / Dismounting 
+ 
+Transverse-interference-fit: 
+Mounting clearance (mm) 
+[PsTh] 
+     0.050 
+Temperature difference for mounting: 
+Shaft temperature: (°C) Hub temperature: [ThA] (°C) 
+Mount with shaft temperature 20 °C: 
+Assembly temperature shaft (°C) 
+[θΙ] 
+        20 
+Assembly temperature hub (°C) 
+[θΑ] 
+   212.372 
+Mount with shaft temperature -150 °C: 
+Assembly temperature shaft (°C) 
+[θΙ] 
+      -150 
+Assembly temperature hub (°C) 
+[θΑ] 
+    86.720 
+ calculated using the coefficient of thermal expansion 
+Sub-cooling of the shaft according to DIN 7190-1 (10^-6/K) 
+[αw] 
+      8.50 
+ 
+Longitudinal pressure fit: 
+Assembly temperature shaft (°C) 
+[θM] 
+     20.00 
+Assembly temperature hub (°C) 
+[θM] 
+     20.00 
+Coefficient of friction, longitudinal 
+[μe=μa* 
+1.300 ]    0.16 
+Press on (force) (kN) 
+[Fpress] 
+ 89.73   ( 89.73  .. 
+ 89.73 
+) 
+Coefficient of friction, longitudinal 
+[μll=μa* 1.600 ]    0.19 
+Press out (force) (kN) 
+[Fpress] 
+110.44   (110.44  .. 
+110.44 
+) 
+ 
+Coefficient of friction 
+[μ] 
+  0.19 
+Max. torque to avoid Micro sliding (Nm) 
+[Tlimit] 
+528.34   (528.34  .. 
+528.34 ) 
+ 
+ 
+ 
+Notice concerning the display: 
+Number-1 (Number-2.. Number-3): 
+ 
+Number-1: Value calculated with the mean allowance 
+ 
+Number-2: Value of the smallest possible allowance 
+ 
+Number-3: Value of the largest possible allowance 
+ 
+Notice: All strains and stresses are calculated for the purely elastic case. 
+ 
+ 
+End of report (lines: 154) 
+ 
+ 
+ 

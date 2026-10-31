@@ -1,0 +1,122 @@
+P1/P2/P3 CURRENT DELIVERY REVIEW — READ ONLY
+Date: 2026-10-30 local / 2026-10-31 UTC
+Scope: user-requested field coverage against current run.json, p3-detail.json, TXT and PDF.
+This reviewer performed P1 preflight earlier, so P1 is a follow-up verification, not fully independent of prior analysis. No COM/GUI calls in this review; no source or existing report changes. Objective-review and cross-tool skills applied.
+
+FINDINGS FIRST
+1. P3 -20 requested XJ/XΓ distribution is not delivered. Scalar XJ, scalar XΓ and maximum-temperature Γ are present. A single scalar/maximum point is not a distribution. No confirmed distribution array API or installed standalone scoring-intermediate template was found; do not invent names. The seven micropitting points are from the -22 chain and cannot silently replace a -20 distribution.
+2. P3 -21 is not the full requested chain: independent θflaE, θMT and θflaintT are missing from current JSON/TXT/PDF field mappings. Existing FIT.theSint is total critical integral temperature, not automatically proof of its test/reference components. No confirmed direct variable for these three was found in Z010Scoringe/Lefte/Righte or English template search.
+3. P3 -22 K03/K04/K05 is not calculated: oil micropitting test data flags are zero, seven_points_valid=false; zeros are invalid placeholders. Valid results exist only for K01/K02.
+4. P3 -22 exact scalar θM and λGFP are visible in PDF/TXT, but not captured full precision in p3-detail.json. Official template supplies exact candidate keys for the primary runner to read; this is a fixable extraction gap, not proof that the software lacks them.
+5. P2 all listed requested outputs/factors are available, but external numeric equivalence fails: SH1=0.994970277<1; SF2=1.394528151<source SFmin=1.4. Do not label P2 numeric validation passed.
+
+P1 STATUS
+Source SHA256 ba9205dda2b8fcd9f7a6bb5eb40ed7c66924782b886a455fa4b1b95839787f8e; no edits; current run/reload true and no exported-value drift.
+fsh00=1.402989614077725 is fsh, not fsh0. Standard-total-width normalization 0.019983569174900226 and per-side normalization 0.009991784587450111 um*mm/N are DERIVED, not direct fsh0 exports. KHbeta intermediate reconstruction verifies the standard-total-width specific load; D2 symbol convention remains OPEN. See P1-preflight.md.
+
+P2 IDENTITY AND READOUT
+Current: P2-K01-geometry-mapped/run.json; failed P2-K01-requested-edits is preserved diagnostic, not evidence of successful recomputation.
+z1=23,z2=68,mn=6 mm,b1=b2=28.3 mm,x1=.427; x2=-.24850000000001285 (source -.2485 within numerical rounding), alpha_n=20deg,beta=0.
+Source a=303 fails under the six edits; explicit geometry-derived a=274.0557937879646 is necessary and documented seventh edit. This is a mapping, not independent confirmation of the derived-center equation.
+Material both: mat.bez=18CrNiMo7-6, mat.DBID=10260, HRC61/HV720, limh=1500, limf=425 MPa. Inputs retained from hashed K01 baseline; source manufacturing, heat-treatment database branch and tolerances remain relevant to differences.
+san is an output geometry structure, not a single scalar: nominal/E/i differ. The nominal values below are not minimum tolerance-limit top thickness.
+ZR[0].san.nul = 3.3002658684301482
+ZR[0].san.E = 3.2569532742771883
+ZR[0].san.i = 3.137304781473626
+ZR[1].san.nul = 4.92083733240713
+ZR[1].san.E = 4.829556053658747
+ZR[1].san.i = 4.726651744171836
+Required P2 requested field mapping (all present):
+SH | ZPP[0].Flanke.SH=0.9949702774670364, ZPP[1].Flanke.SH=1.0286098973916171
+SF | ZPP[0].Fuss.SFnorm=1.4979754805719578, ZPP[1].Fuss.SFnorm=1.394528151137848
+epsa | ZP[0].Eps.a=1.587000553569075
+aw | ZP[0].a=274.0557937879646
+KV | ZP[0].KV.KV=1.0185636407672811
+KHb | ZP[0].KHb=1.0329210609474986
+KHa | ZP[0].KHa=1.0
+ZNT | ZR[0].Flanke.ZNT=0.9301998270622774, ZR[1].Flanke.ZNT=0.9616495792256754
+YNT | ZR[0].Fuss.YNT=0.9015612172465877, ZR[1].Fuss.YNT=0.921355741795757
+ZV | ZPP[0].Flanke.ZV=0.9725028976845385, ZPP[1].Flanke.ZV=0.9725028976845385
+ZL | ZPP[0].Flanke.ZL=1.020000396454635, ZPP[1].Flanke.ZL=1.020000396454635
+ZR | ZPP[0].Flanke.ZR=0.978612996756152, ZPP[1].Flanke.ZR=0.978612996756152
+YX | ZR[0].Fuss.YX=0.99, ZR[1].Fuss.YX=0.99
+Ydelta_rel | ZPP[0].Fuss.Ydrel=0.9994553242460918, ZPP[1].Fuss.Ydrel=0.9939466974785194
+YR_rel | ZR[0].Fuss.YR=0.956738365558955, ZR[1].Fuss.YR=0.956738365558955
+Optional C001 not reconstructed. User target SH/SF/epsa/san differences are already correctly recorded in P2-comparison.json. Cause has not been closed by the presence of all factors.
+
+P3 VERSION / VALIDITY CHECK
+All five run.json: RechSt.ScoringStandard=1, ScoringStandardUsed=1. p3-detail.json: MicropittingStandard=1.
+All five main PDFs explicitly state ISO/TS 6336-20/21:2022 and ISO/TS 6336-22:2018; edition evidence is visible in reports, not inferred from integer IDs.
+No full-version-equivalence claim beyond the actual vendor report labels is made.
+
+P3 -21 requested field matrix
+Format: quantity | confirmed key | per-case K01,K02,K03,K04,K05 values
+θoil | ZS.Oil.theOil | 80.0, 75.0, 70.0, 70.0, 70.0
+ηoil | ZP[0].FIT.etaOil | 30.067588534938785, 26.820151822404807, 41.86910595219346, 12.464048867637139, 12.464048867637139
+μmC | ZP[0].FIT.mym | 0.05989266584913506, 0.10506624977285983, 0.11130903417069703, 0.0567896824062138, 0.0686236428509296
+XM | ZP[0].FIT.XM | 50.05756321885999, 50.05756321885999, 50.05756321885999, 50.05756321885999, 50.05756321885999
+XBE | ZP[0].FIT.XBE | 0.29797846392976046, 0.23596547290628583, 0.4441738902146934, 0.29649904398336535, 0.2568935115661689
+Xαβ | ZP[0].FIT.Xalfbet | 0.9775374163623524, 0.9927346828648234, 1.0147810685216059, 0.9756710989997638, 1.011441024333506
+XQ | ZP[0].FIT.XQ | 1.0, 1.0, 1.0, 1.0, 1.0
+XCa | ZP[0].FIT.XCa | 1.1109425226417677, 1.81702965754498, 1.2470143871499668, 1.980796374567229, 1.8942098994781742
+Xε | ZP[0].FIT.XE | 0.2304942574084819, 0.24388063338700597, 0.2785022126663652, 0.21920888778766115, 0.22500813812653256
+XE | ZP[0].Scoring_XE | 1.0, 1.0, 1.0, 1.0, 1.0
+KBγ | ZP[0].Kbg | 1.0, 1.2396182581865753, 1.0, 1.3, 1.2999949353297846
+wBt | DERIVED Scoring_wBT/Kbg | 664.5881704362401, 183.22794168231852, 151.80754648952274, 473.6932920200208, 672.2242548419239
+θflaE | MISSING | NOT VERIFIED; no mapped direct output
+θfla,int | ZP[0].FIT.theflaint | 10.576687338425229, 7.732865972110042, 11.413498026692187, 16.890920417130662, 15.326478251622879
+θM | ZP[0].FIT.theMC | 87.40368113689766, 80.41300618047703, 77.98944861868453, 81.82364429199146, 80.72853477613602
+θint | ZP[0].FIT.theint | 103.2687121445355, 92.01230513864209, 95.10969565872281, 107.16002491768745, 103.71825215357033
+θMT | MISSING | NOT VERIFIED; no mapped direct output
+θflaintT | MISSING | NOT VERIFIED; no mapped direct output
+XWrelT | ZP[0].XWrelT | 1.0, 1.5, 1.0, 1.0, 1.0
+θintS | ZP[0].FIT.theSint | 455.17380263076444, 441.51739731908356, 360.77624965856006, 365.79476644103875, 365.79476644103875
+SintS | ZP[0].FIT.SSint | 4.407664172219951, 4.798460343470528, 3.7932646841087028, 3.413537526909085, 3.5268119048075075
+SSl | ZP[0].FIT.SSL | 16.123531044620854, 21.5442524885454, 11.580237913299749, 7.960026052088199, 8.772541503451503
+Critical mapping: FIT.XE = contact ratio Xepsilon (Z010Scoringe.rpt:297); Scoring_XE = running-in XE (:292/294). They are not interchangeable.
+wBt = Scoring_wBT/Kbg under 2022 method per Z010Scoringe.rpt:182-186. Scoring_wBT itself includes KBγ; report prints both.
+θflaE/θMT/θflaintT cannot be silently reconstructed from final safety. If needed, require official detailed intermediate output or a clearly labelled formula reconstruction with independent definitions.
+
+P3 -20 requested field matrix
+μm | ZP[0].FBT.mymy | 0.0669620597655176, 0.08543841171288363, 0.08736062720209506, 0.05177638047873273, 0.06318614517380483
+XJ scalar | ZP[0].Scoring_XJ | 1.0, 1.0, 1.0, 1.0, 1.0
+XΓ scalar | ZP[0].FBT.XGam | 0.3669451719836484, 0.657759662476434, 1.0, 0.6609989011445039, 0.5796073181026782
+XJ/XΓ distributions | MISSING | NOT DELIVERED
+θfl,max | ZP[0].FBT.theflamax | 26.16931224424686, 21.53581919520325, 26.052511160287565, 103.18051550674652, 46.85564570645019
+max Γ | ZP[0].FBT.Gamma | 0.6246607877762113, 0.37442569227818556, 0.6407248587361296, -0.5946286439754921, -0.34603207164222916
+θM/θMi | ZP[0].FBT.them | 87.84966735849386, 80.26355086923165, 76.42987327779389, 91.58563632211118, 82.8750111423416
+θB,max | ZP[0].FBT.theB | 114.01897960274073, 101.7993700644349, 102.48238443808145, 194.7661518288577, 129.7306568487918
+θS | ZP[0].FBT.thes | 451.99205090502625, 440.3806352415403, 348.81303598724844, 365.6025318083079, 365.6025318083079
+SB | ZP[0].FBT.SB | 10.93483858860531, 13.633926258827714, 8.583515059330919, 2.369252617599261, 4.9489248470283185
+Z010Scoringe.rpt:227/234/235/243/247/255 maps Γ, thetaflashmax, thetaBmax, XJ, XGamma, mu. Existing output gives critical-point scalars, not XGamma(g) distribution.
+
+P3 -22 requested mapping and coverage
+analysisPoints index mapping 0=A,1=AB,2=B,3=C,4=D,5=DE,6=E.
+pdynY => ZP[0].MP_ISO.analysisPoints[i].phidynYB; pHYB is static pH, not pdyn.
+thetaflY => .Theta_flY; thetaBY => .TheBY; rho_nY => .ronY; hY => .hY; lambdaGFY => .lamGFY.
+vSigmaY => DERIVED ZPP[0].MP_ISO.analysisPoints[i].vrY + ZPP[1].MP_ISO.analysisPoints[i].vrY. Both full-precision components are exported; do not use vgY, which is sliding speed.
+Minimum lambdaGF and position => ZP[0].MP_ISO.lamGFY, .CriticalPoint, gear-specific ZPP[j].MP_ISO.dy.
+Slambda => ZP[0].MP_ISO.SlamB (method B).
+lambdaGFP => visible in main TXT/PDF; official key ZP[0].RefMP.lamGFP is supplied by Z010Micropittinge.rpt:52, but not yet read in current JSON.
+thetaM => visible in main/special TXT/PDF; official key ZP[0].MP_ISO.th0 is supplied by Z10MICROPITTINGRPSne.rpt:17, but not yet read in current JSON.
+Extraction reason: enrich_p3.py substitutes #mesh and gear indices but not #paarNr and does not recursively parse the executed Z10MICROPITTINGRPSne.rpt. This explains missing scalar mappings without changing underlying calculations.
+P3-K01-spur | seven_points_valid=True | minLambda=0.23835860656886654 | CriticalPoint=0.0 | Slambda=1.6671888754803288
+vSigmaY [A,AB,B,C,D,DE,E], m/s, DERIVED = [1.9859952245855022, 2.169414648039205, 2.352834071492908, 2.3681714851122337, 2.5346683988146346, 2.7180878222683376, 2.9015072457220388]
+P3-K02-helical | seven_points_valid=True | minLambda=0.061082011721993956 | CriticalPoint=1.0 | Slambda=0.511118413198046
+vSigmaY [A,AB,B,C,D,DE,E], m/s, DERIVED = [4.05748568628033, 4.354272564338716, 4.651059442397098, 4.73743923334993, 5.097543542710827, 5.394330420769208, 5.691117298827594]
+P3-K03-premachining | seven_points_valid=False | minLambda=0.0 | CriticalPoint=0.0 | Slambda=0.0
+NOT CALCULATED: FZGtestMP=0 and MicroPittingTest=0. All corresponding seven-point zeros and critical-point zeros must remain invalid, not result values.
+P3-K04-EV-stage1 | seven_points_valid=False | minLambda=0.0 | CriticalPoint=0.0 | Slambda=0.0
+NOT CALCULATED: FZGtestMP=0 and MicroPittingTest=0. All corresponding seven-point zeros and critical-point zeros must remain invalid, not result values.
+P3-K05-EV-stage2 | seven_points_valid=False | minLambda=0.0 | CriticalPoint=0.0 | Slambda=0.0
+NOT CALCULATED: FZGtestMP=0 and MicroPittingTest=0. All corresponding seven-point zeros and critical-point zeros must remain invalid, not result values.
+
+VERIFICATION PERFORMED THIS REVIEW
+Parsed every P1/P2/P3 run.json and all five p3-detail.json. Opened all corresponding PDFs with PyMuPDF, extracted report text and confirmed edition labels and readable pages.
+All successful P1/P2-mapped/P3 records report calculate/reload true, source_unchanged true and zero drift. Failed P2 requested-six-edit record reports false/false. These current JSON claims were checked as records; this subagent did not independently execute COM.
+This review is field-content coverage, not a visual layout approval of every PDF page. Existing PDF QA is separate.
+
+Where This Review May Be Wrong
+1. θflaE/θMT/θflaintT may be available in an uninspected vendor special report or hidden calculation state; absence from these templates/exports does not prove software incapability. Resolve using official detailed-output documentation.
+2. μmC/thetaM naming in the user contract may distinguish variants beyond vendor scalar labels; mappings above follow official report labels and should be checked against the user formula definitions.
+3. P2 data differences may result from manufacturing tolerances, automatic addendum geometry or other inherited options. No formula defect is established before full input identity and factor reconstruction.

@@ -1,0 +1,25 @@
+ 
+ 
+  
+1/1 
+ 
+ KISSsoft Release 2026 
+ 
+ 
+2o2dy 
+ 
+ File  
+ 
+Name: 
+P3-K04-EV-stage1 
+Changed by: 
+AAA 
+on: 30.10.2026 
+at: 19:35:15 
+ 
+ 
+ 
+Micropitting according to ISO/TS 6336-22 
+ 
+Calculation has not been carried out, lubricant: Load stage micropitting test not known. 
+ 

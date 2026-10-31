@@ -1,0 +1,62 @@
+[
+  [
+    "Cylindrical gear",
+    "position",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Cylindrical gear",
+    "pitchDiameter",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Cylindrical gear",
+    "pressureAngle",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Cylindrical gear",
+    "numberOfTeeth",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Cylindrical gear",
+    "helixAngle",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Cylindrical gear",
+    "powerOrTorque",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Cylindrical gear",
+    "isDriven",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Coupling / Motor",
+    "position",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Coupling / Motor",
+    "powerOrTorque",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Coupling / Motor",
+    "isDriven",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Coupling / Motor",
+    "axialForceFactor",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ],
+  [
+    "Coupling / Motor",
+    "radialForceFactor",
+    "KISSsoftCOM2026.KISSsoft.GetElementData"
+  ]
+]

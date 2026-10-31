@@ -1,0 +1,50 @@
+[
+  {
+    "field": "ZPP[0].Flanke.SH",
+    "gearbase_user": 1,
+    "KISSsoft": 0.9949702774670364,
+    "relative_delta_pct": -0.5029722532963632
+  },
+  {
+    "field": "ZPP[1].Flanke.SH",
+    "gearbase_user": 1.0347,
+    "KISSsoft": 1.0286098973916171,
+    "relative_delta_pct": -0.5885863156840466
+  },
+  {
+    "field": "ZPP[0].Fuss.SFnorm",
+    "gearbase_user": 1.4993,
+    "KISSsoft": 1.4979754805719578,
+    "relative_delta_pct": -0.08834252171294849
+  },
+  {
+    "field": "ZPP[1].Fuss.SFnorm",
+    "gearbase_user": 1.4004,
+    "KISSsoft": 1.394528151137848,
+    "relative_delta_pct": -0.4192979764461643
+  },
+  {
+    "field": "ZP[0].Eps.a",
+    "gearbase_user": 1.5907,
+    "KISSsoft": 1.587000553569075,
+    "relative_delta_pct": -0.23256719877569706
+  },
+  {
+    "field": "ZR[0].san.nul",
+    "gearbase_user": 3.281,
+    "KISSsoft": 3.3002658684301482,
+    "relative_delta_pct": 0.5871950146342
+  },
+  {
+    "field": "ZR[1].san.nul",
+    "gearbase_user": 4.908,
+    "KISSsoft": 4.92083733240713,
+    "relative_delta_pct": 0.26155933999856534
+  },
+  {
+    "field": "ZP[0].a",
+    "gearbase_user": 274.056,
+    "KISSsoft": 274.0557937879646,
+    "relative_delta_pct": -7.524448849134816e-05
+  }
+]

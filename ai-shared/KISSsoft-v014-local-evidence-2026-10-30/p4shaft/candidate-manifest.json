@@ -1,0 +1,25 @@
+{
+  "seed": "D:\\Program Files\\KISSsoft AG\\KISSsoft 2026\\example\\01 Shafts.W10",
+  "seed_sha256": "af82ea88e8484dda3ce60c6150a980802acc05e8804e3f84e96adf1fa6476068",
+  "candidate_sha256": "b5d6c1efe1b3bef82b8f9f97a73f3f64e228f999fef1e6710ad5da3e5907d8f9",
+  "outer_cylinders": 4,
+  "shaft_start_global_mm": -10,
+  "boundaries_global_mm": [
+    -10,
+    10,
+    90,
+    110,
+    160
+  ],
+  "diameters_mm": [
+    30,
+    34,
+    30,
+    25
+  ],
+  "Qu_activated_count": 0,
+  "plain_support_count": 2,
+  "load_plan_must_apply": true,
+  "COM_executed": false,
+  "calculated": false
+}

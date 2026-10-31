@@ -1,0 +1,400 @@
+{
+  "case": {
+    "id": "P4-fit-A4",
+    "module": "M010",
+    "source": "D:\\Program Files\\KISSsoft AG\\KISSsoft 2026\\example\\01 Cylindrical Interference Fit.M10",
+    "template": "M010Le0.RPT",
+    "ext": ".M10",
+    "set": {
+      "m01allg.df": 50,
+      "m01w.di": 10,
+      "m01n.da": 125,
+      "m01allg.l": 40,
+      "m01allg.eigenTol": true,
+      "m01allg.VarAussenD": false,
+      "m01w.tol.min": 65,
+      "m01w.tol.max": 65,
+      "m01n.tol.min": 0,
+      "m01n.tol.max": 0,
+      "m01my.axial": 0.12,
+      "m01my.umfang": 0.12,
+      "m01sollSi.Ru": 1.5,
+      "m01sollSi.ReW": 1.2,
+      "m01sollSi.ReN": 1.2,
+      "m01allg.n": 0,
+      "m01allg.FA": 0,
+      "m01allg.Fr": 0,
+      "m01allg.Mb": 0,
+      "m01M.nenn": 0,
+      "m01allg.cb": 1,
+      "m01w.tempB": 20,
+      "m01n.tempB": 20,
+      "m01w.mat.DBID": 19999,
+      "m01w.mat.E": 215000,
+      "m01w.mat.ny": 0.3,
+      "m01w.mat.Rp": 300,
+      "m01w.oberfl.rz": 6,
+      "m01w.werkstofffestigkeit": 1,
+      "m01n.mat.DBID": 19999,
+      "m01n.mat.E": 70000,
+      "m01n.mat.ny": 0.3,
+      "m01n.mat.Rp": 150,
+      "m01n.oberfl.rz": 6,
+      "m01n.werkstofffestigkeit": 1
+    },
+    "reference": {
+      "p_input_MPa": null,
+      "U_input_um": 65,
+      "translated_U_um": 65,
+      "expected_elastic_p_MPa": 43.533257064409106,
+      "embedding_um": 4.800000000000001,
+      "inner_E_MPa": 215000
+    },
+    "open": [
+      "Inner E=215000 and both nu=.3 carried from common steel contract; verify appendix A original before equivalence claim.",
+      "gF field not exposed in source: compare reported m01allg.s with 4.8um; reject numeric equivalence if different.",
+      "Zero external load isolates pressure/stress; sliding safety is undefined/infinite. Torque capacity may be derived from native pressure.",
+      "Rm, hypothesis and elastic-plastic flag inherited and recorded; compare yield branch only until contract is complete."
+    ],
+    "get": [
+      "m01allg.s",
+      "m01allg.hypoIndex",
+      "m01allg.elastplastFlag",
+      "m01allg.uebermass[0]",
+      "m01r.p[0]",
+      "m01r.abmass[0]",
+      "m01w.SiRe[0]",
+      "m01n.SiRe[0]",
+      "m01w.sigmaVa[0]",
+      "m01n.sigmaVi[0]",
+      "m01M.grenz[0]"
+    ]
+  },
+  "scope": "mapped user inputs on vendor seed; inspect retained inputs and open items",
+  "set_log": [
+    {
+      "var": "m01allg.df",
+      "before": "60",
+      "set": "50",
+      "readback": "50"
+    },
+    {
+      "var": "m01w.di",
+      "before": "10",
+      "set": "10",
+      "readback": "10"
+    },
+    {
+      "var": "m01n.da",
+      "before": "90",
+      "set": "125",
+      "readback": "125"
+    },
+    {
+      "var": "m01allg.l",
+      "before": "50",
+      "set": "40",
+      "readback": "40"
+    },
+    {
+      "var": "m01allg.eigenTol",
+      "before": "false",
+      "set": "true",
+      "readback": "true"
+    },
+    {
+      "var": "m01allg.VarAussenD",
+      "before": "false",
+      "set": "false",
+      "readback": "false"
+    },
+    {
+      "var": "m01w.tol.min",
+      "before": "53",
+      "set": "65",
+      "readback": "65"
+    },
+    {
+      "var": "m01w.tol.max",
+      "before": "72",
+      "set": "65",
+      "readback": "65"
+    },
+    {
+      "var": "m01n.tol.min",
+      "before": "0",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m01n.tol.max",
+      "before": "19",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m01my.axial",
+      "before": "0.10000000000000000555",
+      "set": "0.12",
+      "readback": "0.11999999999999999556"
+    },
+    {
+      "var": "m01my.umfang",
+      "before": "0.10000000000000000555",
+      "set": "0.12",
+      "readback": "0.11999999999999999556"
+    },
+    {
+      "var": "m01sollSi.Ru",
+      "before": "1.1999999999999999556",
+      "set": "1.5",
+      "readback": "1.5"
+    },
+    {
+      "var": "m01sollSi.ReW",
+      "before": "1",
+      "set": "1.2",
+      "readback": "1.1999999999999999556"
+    },
+    {
+      "var": "m01sollSi.ReN",
+      "before": "1",
+      "set": "1.2",
+      "readback": "1.1999999999999999556"
+    },
+    {
+      "var": "m01allg.n",
+      "before": "0",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m01allg.FA",
+      "before": "200",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m01allg.Fr",
+      "before": "0",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m01allg.Mb",
+      "before": "0",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m01M.nenn",
+      "before": "400",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m01allg.cb",
+      "before": "1",
+      "set": "1",
+      "readback": "1"
+    },
+    {
+      "var": "m01w.tempB",
+      "before": "20",
+      "set": "20",
+      "readback": "20"
+    },
+    {
+      "var": "m01n.tempB",
+      "before": "20",
+      "set": "20",
+      "readback": "20"
+    },
+    {
+      "var": "m01w.mat.DBID",
+      "before": "10010",
+      "set": "19999",
+      "readback": "19999"
+    },
+    {
+      "var": "m01w.mat.E",
+      "before": "206000",
+      "set": "215000",
+      "readback": "215000"
+    },
+    {
+      "var": "m01w.mat.ny",
+      "before": "0.2999999999999999889",
+      "set": "0.3",
+      "readback": "0.2999999999999999889"
+    },
+    {
+      "var": "m01w.mat.Rp",
+      "before": "430",
+      "set": "300",
+      "readback": "300"
+    },
+    {
+      "var": "m01w.oberfl.rz",
+      "before": "4.7999999999999998224",
+      "set": "6",
+      "readback": "6"
+    },
+    {
+      "var": "m01w.werkstofffestigkeit",
+      "before": "1",
+      "set": "1",
+      "readback": "1"
+    },
+    {
+      "var": "m01n.mat.DBID",
+      "before": "10010",
+      "set": "19999",
+      "readback": "19999"
+    },
+    {
+      "var": "m01n.mat.E",
+      "before": "206000",
+      "set": "70000",
+      "readback": "70000"
+    },
+    {
+      "var": "m01n.mat.ny",
+      "before": "0.2999999999999999889",
+      "set": "0.3",
+      "readback": "0.2999999999999999889"
+    },
+    {
+      "var": "m01n.mat.Rp",
+      "before": "490",
+      "set": "150",
+      "readback": "150"
+    },
+    {
+      "var": "m01n.oberfl.rz",
+      "before": "4.7999999999999998224",
+      "set": "6",
+      "readback": "6"
+    },
+    {
+      "var": "m01n.werkstofffestigkeit",
+      "before": "1",
+      "set": "1",
+      "readback": "1"
+    }
+  ],
+  "version": "2026",
+  "source_sha256": "46dbcda89a159a5c62b5a0e0b4f6b0b0246678a0992cd13067dbee1d81e6c107",
+  "license": true,
+  "calculate_ok": true,
+  "messages": [
+    [],
+    [],
+    0
+  ],
+  "values": {
+    "m01allg.df": "50",
+    "m01w.di": "10",
+    "m01n.da": "125",
+    "m01allg.l": "40",
+    "m01allg.eigenTol": "true",
+    "m01allg.VarAussenD": "false",
+    "m01w.tol.min": "65",
+    "m01w.tol.max": "65",
+    "m01n.tol.min": "0",
+    "m01n.tol.max": "0",
+    "m01my.axial": "0.11999999999999999556",
+    "m01my.umfang": "0.11999999999999999556",
+    "m01sollSi.Ru": "1.5",
+    "m01sollSi.ReW": "1.1999999999999999556",
+    "m01sollSi.ReN": "1.1999999999999999556",
+    "m01allg.n": "0",
+    "m01allg.FA": "0",
+    "m01allg.Fr": "0",
+    "m01allg.Mb": "0",
+    "m01M.nenn": "0",
+    "m01allg.cb": "1",
+    "m01w.tempB": "20",
+    "m01n.tempB": "20",
+    "m01w.mat.DBID": "19999",
+    "m01w.mat.E": "215000",
+    "m01w.mat.ny": "0.2999999999999999889",
+    "m01w.mat.Rp": "300",
+    "m01w.oberfl.rz": "4.7999999999999998224",
+    "m01w.werkstofffestigkeit": "1",
+    "m01n.mat.DBID": "19999",
+    "m01n.mat.E": "70000",
+    "m01n.mat.ny": "0.2999999999999999889",
+    "m01n.mat.Rp": "150",
+    "m01n.oberfl.rz": "4.7999999999999998224",
+    "m01n.werkstofffestigkeit": "1",
+    "m01allg.s": "3.8399999999999998579",
+    "m01allg.hypoIndex": "10010",
+    "m01allg.elastplastFlag": "true",
+    "m01allg.uebermass[0]": "65",
+    "m01r.p[0]": "44.227475117263466586",
+    "m01r.abmass[0]": "61.159999999999996589",
+    "m01w.SiRe[0]": "3.2558946586528509926",
+    "m01n.SiRe[0]": "1.6378444090312371806",
+    "m01w.sigmaVa[0]": "46.180722903336288709",
+    "m01n.sigmaVi[0]": "91.58379097116005596",
+    "m01M.grenz[0]": "270.11161123469008771"
+  },
+  "get_errors": {},
+  "sha256": "696f378806065eadfa9f5a7986a214b7a93cd72da744a51ed766ad2f7d40c9ec",
+  "reload_ok": true,
+  "reload_messages": [
+    [],
+    [],
+    0
+  ],
+  "reload_values": {
+    "m01allg.df": "50",
+    "m01w.di": "10",
+    "m01n.da": "125",
+    "m01allg.l": "40",
+    "m01allg.eigenTol": "true",
+    "m01allg.VarAussenD": "false",
+    "m01w.tol.min": "65",
+    "m01w.tol.max": "65",
+    "m01n.tol.min": "0",
+    "m01n.tol.max": "0",
+    "m01my.axial": "0.11999999999999999556",
+    "m01my.umfang": "0.11999999999999999556",
+    "m01sollSi.Ru": "1.5",
+    "m01sollSi.ReW": "1.1999999999999999556",
+    "m01sollSi.ReN": "1.1999999999999999556",
+    "m01allg.n": "0",
+    "m01allg.FA": "0",
+    "m01allg.Fr": "0",
+    "m01allg.Mb": "0",
+    "m01M.nenn": "0",
+    "m01allg.cb": "1",
+    "m01w.tempB": "20",
+    "m01n.tempB": "20",
+    "m01w.mat.DBID": "19999",
+    "m01w.mat.E": "215000",
+    "m01w.mat.ny": "0.2999999999999999889",
+    "m01w.mat.Rp": "300",
+    "m01w.oberfl.rz": "4.7999999999999998224",
+    "m01w.werkstofffestigkeit": "1",
+    "m01n.mat.DBID": "19999",
+    "m01n.mat.E": "70000",
+    "m01n.mat.ny": "0.2999999999999999889",
+    "m01n.mat.Rp": "150",
+    "m01n.oberfl.rz": "4.7999999999999998224",
+    "m01n.werkstofffestigkeit": "1",
+    "m01allg.s": "3.8399999999999998579",
+    "m01allg.hypoIndex": "10010",
+    "m01allg.elastplastFlag": "true",
+    "m01allg.uebermass[0]": "65",
+    "m01r.p[0]": "44.227475117263466586",
+    "m01r.abmass[0]": "61.159999999999996589",
+    "m01w.SiRe[0]": "3.2558946586528509926",
+    "m01n.SiRe[0]": "1.6378444090312371806",
+    "m01w.sigmaVa[0]": "46.180722903336288709",
+    "m01n.sigmaVi[0]": "91.58379097116005596",
+    "m01M.grenz[0]": "270.11161123469008771"
+  },
+  "reload_differences": {}
+}

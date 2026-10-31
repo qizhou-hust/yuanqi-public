@@ -1,0 +1,72 @@
+ 
+ 
+  
+1/3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Shaft 
+ 
+ 
+ 
+P4-shaft-corrected-static 
+ 
+ 
+ 
+ 
+Changed on 
+30.10.2026, 21:27:49 
+Changed by 
+AAA 
+ 
+ 
+ 
+ 
+Description 
+P4 candidate - STATIC PREP ONLY - loads/supports must be 
+verified before calculation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2o2dy (5416) 
+ 
+KISSsoft Release 2026  
+
+ 
+ 
+  
+2/3 
+ 
+ 
+Contents 
+ 
+ 
+ 
+
+ 
+ 
+  
+3/3 
+ 
+ 
+1 Messages 
+ 
+ 
+ 
+ 
+Calculation is consistent. 
+ 
+ 
+Calculation is consistent. 

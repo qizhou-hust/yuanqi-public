@@ -1,0 +1,174 @@
+{
+  "created_utc": "2026-10-31T11:18:55.306718+00:00",
+  "KISSsoft_release": "2026",
+  "exe_version": "26.0.0.0",
+  "overall_status": "PARTIAL_REQUEST_CLOSURE_WITH_EXPLICIT_OPEN_ITEMS",
+  "execution": "All subsequent solver calls use COM GetModule(module, False), SetSilentMode(True); no mouse or keyboard input. Earlier GUI error/database setup retained as provenance.",
+  "P5": {
+    "A": {
+      "case": "P5-A-tip-coefficient-input",
+      "SH1": "1.0014633877146772445",
+      "SH2": "1.0353225375747803216",
+      "SF1": "1.5152954781161036557",
+      "SF2": "1.4044681760904471624",
+      "epsilon_alpha": "1.5837243030965757473",
+      "a_mm": "274.18390994938926042",
+      "kXmn_mm": [
+        "0",
+        "0"
+      ],
+      "shaft_l_S_dsh_mm": [
+        "88",
+        "8.8000000000000007105",
+        "44"
+      ],
+      "tolerances_um": {
+        "gear1": {
+          "fpT": "11",
+          "ffalphaT": "12",
+          "fHbetaT": "9"
+        },
+        "gear2": {
+          "fpT": "11",
+          "ffalphaT": "12",
+          "fHbetaT": "9.5"
+        }
+      },
+      "fresh_headless_module_ok": true,
+      "pass_user_SH_ge_1_SF_ge_1_4": true,
+      "accepted_in_gearbase": false
+    },
+    "B": {
+      "case": "P5-B-auto",
+      "SH1": "1.0005261124965774133",
+      "SH2": "1.0343535733878581606",
+      "SF1": "1.5122471517526683282",
+      "SF2": "1.4028557338294551649",
+      "epsilon_alpha": "1.5790493774950267181",
+      "a_mm": "274.18390994938926042",
+      "kXmn_mm": [
+        "-0.018999999999999999528",
+        "-0.018999999999999999528"
+      ],
+      "shaft_l_S_dsh_mm": [
+        "57.200000000000002842",
+        "5.7200000000000006395",
+        "28.600000000000001421"
+      ],
+      "tolerances_um": {
+        "gear1": {
+          "fpT": "11",
+          "ffalphaT": "12",
+          "fHbetaT": "9"
+        },
+        "gear2": {
+          "fpT": "11",
+          "ffalphaT": "12",
+          "fHbetaT": "9.5"
+        }
+      },
+      "fresh_headless_module_ok": true,
+      "pass_user_SH_ge_1_SF_ge_1_4": true,
+      "accepted_in_gearbase": false
+    }
+  },
+  "R1": {
+    "R1-L1-S1": {
+      "fatigue_safety": "88.286602441404085084",
+      "static_safety": "212.1685516715067763",
+      "torsional_amplitude_Nmm": "0",
+      "Rz_um": "6.2999999999999998224",
+      "fresh_module_ok": true
+    },
+    "R1-L1-S2": {
+      "fatigue_safety": "47.257122420265304186",
+      "static_safety": "44.569561153112218221",
+      "torsional_amplitude_Nmm": "0",
+      "Rz_um": "6.2999999999999998224",
+      "fresh_module_ok": true
+    },
+    "R1-L1-S3a": {
+      "fatigue_safety": null,
+      "static_safety": "31.767602749621790537",
+      "torsional_amplitude_Nmm": "0",
+      "Rz_um": "6.2999999999999998224",
+      "fresh_module_ok": true
+    },
+    "R1-L80-S1": {
+      "fatigue_safety": "88.279966412985089619",
+      "static_safety": "212.15260410415712045",
+      "torsional_amplitude_Nmm": "0",
+      "Rz_um": "6.2999999999999998224",
+      "fresh_module_ok": true
+    },
+    "R1-L80-S2": {
+      "fatigue_safety": "71.75581587915627324",
+      "static_safety": "70.971965675239275129",
+      "torsional_amplitude_Nmm": "0",
+      "Rz_um": "6.2999999999999998224",
+      "fresh_module_ok": true
+    },
+    "R1-L80-S3a": {
+      "fatigue_safety": null,
+      "static_safety": "42.356803666162420541",
+      "torsional_amplitude_Nmm": "0",
+      "Rz_um": "6.2999999999999998224",
+      "fresh_module_ok": true
+    }
+  },
+  "R2": {
+    "bearing1": {
+      "Fr": "664.91682105948166281",
+      "Fa": "0",
+      "P": "664.91682105948166281",
+      "Lh_basic": "526977.8900876478292",
+      "C": "20.300000000000000711",
+      "C0": "11.199999999999999289",
+      "L10_million_rev_derived": 28456.806064732984
+    },
+    "bearing2": {
+      "Fr": "664.92029219518633454",
+      "Fa": "0",
+      "P": "664.92029219518633454",
+      "Lh_basic": "526969.63705833524",
+      "C": "20.300000000000000711",
+      "C0": "11.199999999999999289",
+      "L10_million_rev_derived": 28456.3604011501
+    }
+  },
+  "R5": {
+    "R5-fit-A1-T500": {
+      "Sr": "3.3929200658769778087",
+      "Tnom_Nm": "500",
+      "Tlimit_micro_sliding_Nm": "519.40264347746051499"
+    },
+    "R5-fit-A2-T500": {
+      "Sr": "4.267445212856767256",
+      "Tnom_Nm": "500",
+      "Tlimit_micro_sliding_Nm": "653.27867483377599456"
+    },
+    "R5-fit-A3-T500": {
+      "Sr": "1.8849555921538752035",
+      "Tnom_Nm": "500",
+      "Tlimit_micro_sliding_Nm": "305.36630286775783816"
+    },
+    "R5-fit-A4-T500": {
+      "Sr": "1.6411651269646025941",
+      "Tnom_Nm": "500",
+      "Tlimit_micro_sliding_Nm": "265.87179523100616052"
+    }
+  },
+  "open_items": [
+    "Supplied v0.15 stage ZIP fails SHA256 and ZIP integrity. Not extracted/used. Original binary direct URL still needed.",
+    "M39 direct FIT theta_flaE/theta_MT/theta_flaintT fields and independent source of FZG LS14 T1T=714.2 Nm remain unconfirmed.",
+    "M39 K01/K03 -20 Gamma curve tables and definitive equation(3)/(4)/(5) implementation selection not exported headlessly.",
+    "M39 K04 XCa=1.980796374567229 differs from predicted 1.776 despite verified MPoptCa=false on both gears.",
+    "M39 K03-K05 oil-specific micropitting SKS/test temperature/lambdaGFP missing; no invented inputs or validation claim.",
+    "R3 force residual remains 0.38510232902006986 N at all four density settings; solver mechanism not closed.",
+    "R2 X/Y/e not independently exposed as computed outputs. Catalogue X1=1/Y1=0 is separate evidence; stored FAKTE=0 is not claimed as calculated e.",
+    "R4 user Method C nominal result uses retained/explicit supplemental Rm and peak-load assumptions. Do not treat as full material/peak-load validation.",
+    "R5 maximum torque to avoid micro sliding definition confirmed in vendor report template; no independent DIN clause claim.",
+    "P6 optional C001 not run: actual shaft arrangement and remaining source inputs incomplete.",
+    "M33 native fsh0 definition remains unconfirmed; consistency of fsh/KHb alone does not settle fsh0 normalization."
+  ]
+}

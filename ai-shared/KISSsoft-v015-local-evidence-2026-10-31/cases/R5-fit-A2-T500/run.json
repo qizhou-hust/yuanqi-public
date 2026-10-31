@@ -1,0 +1,139 @@
+{
+  "case": {
+    "id": "R5-fit-A2-T500",
+    "module": "M010",
+    "source": "D:\\my_Works\\Gears\\kisssoft-v014-run\\P4-fit-A2-mapped-v2\\P4-fit-A2-mapped-v2.M10",
+    "template": "M010Le0.RPT",
+    "ext": ".M10",
+    "set": {
+      "m01M.nenn": 500
+    },
+    "reference": {
+      "p_input_MPa": null,
+      "U_input_um": 75,
+      "translated_U_um": 75,
+      "expected_elastic_p_MPa": 113.1975,
+      "embedding_um": 4.800000000000001,
+      "inner_E_MPa": 215000
+    },
+    "open": [
+      "Inner E=215000 and both nu=.3 carried from common steel contract; verify appendix A original before equivalence claim.",
+      "gF field not exposed in source: compare reported m01allg.s with 4.8um; reject numeric equivalence if different.",
+      "Zero external load isolates pressure/stress; sliding safety is undefined/infinite. Torque capacity may be derived from native pressure.",
+      "Rm, hypothesis and elastic-plastic flag inherited and recorded; compare yield branch only until contract is complete.",
+      "Tlimit=m01M.grenz is maximum torque to avoid micro sliding, not gross frictional torque capacity or safety-adjusted capacity. See official M010Le0.RPT lines412-418."
+    ],
+    "get": [
+      "m01allg.s",
+      "m01allg.hypoIndex",
+      "m01allg.elastplastFlag",
+      "m01allg.uebermass[0]",
+      "m01r.p[0]",
+      "m01r.abmass[0]",
+      "m01w.SiRe[0]",
+      "m01n.SiRe[0]",
+      "m01w.sigmaVa[0]",
+      "m01n.sigmaVi[0]",
+      "m01M.grenz[0]",
+      "m01allg.pF",
+      "m01allg.zeta",
+      "m01allg.qpaqa",
+      "m01M.nenn",
+      "m01M.cb",
+      "m01allg.FU",
+      "m01r.si[0]",
+      "m01r.si[1]",
+      "m01r.si[2]",
+      "m01M.grenz[0]",
+      "m01M.grenz[1]",
+      "m01M.grenz[2]",
+      "m01my.umfang",
+      "m01sollSi.Ru"
+    ],
+    "derived_requests": {
+      "QI": "DiI/DF",
+      "QA": "DF/DaA",
+      "K": "elastic total compliance times EI if definition confirmed",
+      "xi": "native m01allg.zeta may denote plasticity ratio, not presumed same as requested xi"
+    }
+  },
+  "scope": "mapped user inputs on vendor seed; inspect retained inputs and open items",
+  "set_log": [
+    {
+      "var": "m01M.nenn",
+      "before": "0",
+      "set": "500",
+      "readback": "500"
+    }
+  ],
+  "version": "2026",
+  "source_sha256": "64c36ba27063cb6dced30d07efa92edb01df55b9da05d1085aad9021846b4f0b",
+  "license": true,
+  "calculate_ok": true,
+  "messages": [
+    [],
+    [],
+    0
+  ],
+  "values": {
+    "m01M.nenn": "500",
+    "m01allg.s": "4.8000000000000007105",
+    "m01allg.hypoIndex": "10010",
+    "m01allg.elastplastFlag": "true",
+    "m01allg.uebermass[0]": "75",
+    "m01r.p[0]": "113.19750000000001933",
+    "m01r.abmass[0]": "70.200000000000002842",
+    "m01w.SiRe[0]": "1.7668234722498283862",
+    "m01n.SiRe[0]": "1.1358150893034610895",
+    "m01w.sigmaVa[0]": "113.19750000000003354",
+    "m01n.sigmaVi[0]": "264.12750000000005457",
+    "m01M.grenz[0]": "653.27867483377599456",
+    "m01allg.pF": "0",
+    "m01allg.zeta": "0",
+    "m01allg.qpaqa": "0",
+    "m01M.cb": "500",
+    "m01allg.FU": "20000",
+    "m01r.si[0]": "4.267445212856767256",
+    "m01r.si[1]": "4.267445212856767256",
+    "m01r.si[2]": "4.267445212856767256",
+    "m01M.grenz[1]": "653.27867483377599456",
+    "m01M.grenz[2]": "653.27867483377599456",
+    "m01my.umfang": "0.11999999999999999556",
+    "m01sollSi.Ru": "1.5"
+  },
+  "get_errors": {},
+  "sha256": "40c6992f7e44b23b2634d7b7f77b95226e87a657b4f2bb3ca76dc1ac99618e13",
+  "reload_ok": true,
+  "reload_messages": [
+    [],
+    [],
+    0
+  ],
+  "reload_values": {
+    "m01M.nenn": "500",
+    "m01allg.s": "4.8000000000000007105",
+    "m01allg.hypoIndex": "10010",
+    "m01allg.elastplastFlag": "true",
+    "m01allg.uebermass[0]": "75",
+    "m01r.p[0]": "113.19750000000001933",
+    "m01r.abmass[0]": "70.200000000000002842",
+    "m01w.SiRe[0]": "1.7668234722498283862",
+    "m01n.SiRe[0]": "1.1358150893034610895",
+    "m01w.sigmaVa[0]": "113.19750000000003354",
+    "m01n.sigmaVi[0]": "264.12750000000005457",
+    "m01M.grenz[0]": "653.27867483377599456",
+    "m01allg.pF": "0",
+    "m01allg.zeta": "0",
+    "m01allg.qpaqa": "0",
+    "m01M.cb": "500",
+    "m01allg.FU": "20000",
+    "m01r.si[0]": "4.267445212856767256",
+    "m01r.si[1]": "4.267445212856767256",
+    "m01r.si[2]": "4.267445212856767256",
+    "m01M.grenz[1]": "653.27867483377599456",
+    "m01M.grenz[2]": "653.27867483377599456",
+    "m01my.umfang": "0.11999999999999999556",
+    "m01sollSi.Ru": "1.5"
+  },
+  "reload_differences": {}
+}

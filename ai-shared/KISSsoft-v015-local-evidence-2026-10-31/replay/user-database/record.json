@@ -1,0 +1,11 @@
+{
+  "database": "W000",
+  "table": "W010OBER",
+  "ID": 20000,
+  "NAME": "M36_Rz6.3_v015",
+  "RA_um": 0.76,
+  "RA_note": "Auxiliary value inherited from copied vendor Rz6.0 record; not inferred from Rz, not used by this DIN743 Rz contract",
+  "RZ_um": 6.3,
+  "created_via": "KISSsoft GUI Database tool; original vendor KDB unchanged",
+  "udb_sha256": "4508c7d7b2b8c33b9eae9a6734523d2af343dd94ca0f6dae7a4a9c8f2792f55f"
+}

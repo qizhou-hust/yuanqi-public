@@ -1,0 +1,82 @@
+[
+  {
+    "case": "P5-A-tip-coefficient-input",
+    "original_rtf_sha256": "1062bb21b24c2d0da0cd457515236959db7deeed0378fe43d9e7a70b3a58b8de",
+    "rendering_copy_sha256": "abe0303d63d264a1e105b2f9e1306c4f6de6c097760e3b8f736d0c61289ab9a8",
+    "rendering_copy": "render-sources\\P5-A-tip-coefficient-input.rtf",
+    "operation": "Remove literal leaked HTML token <TD CENTER> only; no numeric text changes; original vendor RTF unchanged",
+    "removed_token_count": 10,
+    "pdf_pages": 14,
+    "pdf_sha256": "a2917a69eff3b5487ca3649dd8643c1936f040ab7006935cbe4f015ab73383f7"
+  },
+  {
+    "case": "P5-B-auto",
+    "original_rtf_sha256": "ffb6b61084d5774a2d33a04f9e990264e4d73e8f7875e8429abd86b2cde4c820",
+    "rendering_copy_sha256": "4229bbf18dfb2bcdb93c83a45879a3df6946f5e23608c604287caf92fd924e98",
+    "rendering_copy": "render-sources\\P5-B-auto.rtf",
+    "operation": "Remove literal leaked HTML token <TD CENTER> only; no numeric text changes; original vendor RTF unchanged",
+    "removed_token_count": 10,
+    "pdf_pages": 14,
+    "pdf_sha256": "4f4177531aa77be9ad294b2e2c17d64e8b856a6ac0543f8d344f7d298fbb582e"
+  },
+  {
+    "case": "M39-K01-runin0",
+    "original_rtf_sha256": "e7b9b0d43a8f3d40e3613e264227c59d0679631dcd88638e89eb5454ae7ea6bd",
+    "rendering_copy_sha256": "f4abd4c08fbc5bfa2a2e6346e420bc82f756e0b49660454f6378e3a26fe997b9",
+    "rendering_copy": "render-sources\\M39-K01-runin0.rtf",
+    "operation": "Remove literal leaked HTML token <TD CENTER> only; no numeric text changes; original vendor RTF unchanged",
+    "removed_token_count": 7,
+    "pdf_pages": 14,
+    "pdf_sha256": "ed2e925caa20d7b1e44b05cd81be3951ea7ebc5057559677f03247916fa8b056"
+  },
+  {
+    "case": "M39-K02-helical-Ca-not-optimal",
+    "original_rtf_sha256": "e684fee474a660eb7ba256ef2302fe32109322abf5a537250bda2a1c93f8f362",
+    "rendering_copy_sha256": "f8a1fb7243979d864a863ef2d9dc2902fb9fc6174d6364d10d67eb9791c99bbe",
+    "rendering_copy": "render-sources\\M39-K02-helical-Ca-not-optimal.rtf",
+    "operation": "Remove literal leaked HTML token <TD CENTER> only; no numeric text changes; original vendor RTF unchanged",
+    "removed_token_count": 10,
+    "pdf_pages": 14,
+    "pdf_sha256": "9a9535fb4ab502f5ea5e6c3614396e131469096b145af99cf45f38392cc833a0"
+  },
+  {
+    "case": "M39-K04-EV-stage1-Ca-not-optimal",
+    "original_rtf_sha256": "7a52f8578e5fdbf324f4d6ec7428f5e2a3c1fd1c0855fe8397d124d4aff8d6f4",
+    "rendering_copy_sha256": "6eb4470fefab88e40f374057b3ce703c7266fa5f80c575f8689bd08488da7f88",
+    "rendering_copy": "render-sources\\M39-K04-EV-stage1-Ca-not-optimal.rtf",
+    "operation": "Remove literal leaked HTML token <TD CENTER> only; no numeric text changes; original vendor RTF unchanged",
+    "removed_token_count": 7,
+    "pdf_pages": 13,
+    "pdf_sha256": "762874e6d0997f3dbec96ab27372972452e036d1baa675c79d20d4708e6dd856"
+  },
+  {
+    "case": "M39-K05-EV-stage2-Ca-not-optimal",
+    "original_rtf_sha256": "c7d909a1d9cb0a25aa7c73933f06604daa9bf0af10069ac5de71e5defbe23887",
+    "rendering_copy_sha256": "e42641498740510a97d27bea91c9068c0a9a597db34cba9702238800438049db",
+    "rendering_copy": "render-sources\\M39-K05-EV-stage2-Ca-not-optimal.rtf",
+    "operation": "Remove literal leaked HTML token <TD CENTER> only; no numeric text changes; original vendor RTF unchanged",
+    "removed_token_count": 10,
+    "pdf_pages": 13,
+    "pdf_sha256": "a2b02f40b00fefde8b0a6dba233bf1ff78faae1da5b902c50ec9fa7f7ab09f90"
+  },
+  {
+    "case": "M39-baseline-K01-spur",
+    "original_rtf_sha256": "867234aee35be9c4d2db0eb97ba85ae5ac1c3859452b0c61dc5c493761ff8c2a",
+    "rendering_copy_sha256": "04a3b37ffd8141be03145aa51e7c4a00dacbbf1d4d9c5c385bed60e310df8295",
+    "rendering_copy": "render-sources\\M39-baseline-K01-spur.rtf",
+    "operation": "Remove literal leaked HTML token <TD CENTER> only; no numeric text changes; original vendor RTF unchanged",
+    "removed_token_count": 7,
+    "pdf_pages": 14,
+    "pdf_sha256": "d0af0bc3d5093b51a57213e67e48529f999612dfd48d1bbc50925a1bcf5d0be6"
+  },
+  {
+    "case": "M39-baseline-K03-premachining",
+    "original_rtf_sha256": "08b1abb8289c17a6b50115dfa40750f1c0062156c9183cc6b4319a098c1becd9",
+    "rendering_copy_sha256": "b9ce1701fd8d5758dca9c769db0a2c2b06479b9755dbedbefb7dd75a658195c1",
+    "rendering_copy": "render-sources\\M39-baseline-K03-premachining.rtf",
+    "operation": "Remove literal leaked HTML token <TD CENTER> only; no numeric text changes; original vendor RTF unchanged",
+    "removed_token_count": 10,
+    "pdf_pages": 14,
+    "pdf_sha256": "0a818e938a228265e99c71dd9239090329e37b90321be0427526c9ffd15b6659"
+  }
+]

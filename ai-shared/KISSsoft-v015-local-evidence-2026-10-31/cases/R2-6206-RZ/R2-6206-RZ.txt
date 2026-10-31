@@ -1,0 +1,90 @@
+Rolling bearing calculation according to
+ ISO 76 & ISO 281
+R2-6206-RZ-run
+Changed on | 31.10.2026, 04:08:27 | 
+Changed by | AAA | 
+ |  | 
+ |  | 
+Description | KISSsoft example | 
+ |  | 
+ |  | 
+ |  | 
+ |  | 
+ |  | 
+ | 2o2dy (5416) | 
+ | KISSsoft Release 2026  |
+Contents
+1	 Messages
+2	 Overview
+2.1	 Rolling bearing 1
+2.2	 Rolling bearing 2
+3	 Remarks
+1 Messages
+| Calculation is consistent. |
+2 Overview
+Calculation method:	ISO 281:2007 and manufacturer's notes
+- With constant a23-factor (1.0)
+General data:
+Speed (1/min)	   900.000
+Axial force (N)	     0.000
+Required service life (h)	  5000.000
+2.1 Rolling bearing 1
+Designation	SKF 6206-RZ
+Type	Deep groove ball bearing (single row)
+SKF Explorer
+Bearing clearance:	C0
+Radial and axial load
+Radial force (N)	[Fr]	   664.917
+Axial force (N)	[Fa]	     0.000
+Inner diameter (mm)	[d]	    30.000
+External diameter (mm)	[D]	    62.000
+Width (mm)	[B]	    16.000
+Basic dynamic load rating (kN)	[C]	    20.300
+Basic static load rating (kN)	[C0]	    11.200
+Fatigue load limit (kN)	[Cu]	     0.475
+Dynamic equivalent load (N)	[P]	   664.917
+2.1.1 Results of bearing calculation according to ISO 281:2007
+Speed limit (oil) (1/min)	[nmax]	   12000
+Static equivalent load (N)	[P0]	   664.917
+Basic rating life (h)	[L10h]	526977.890
+Bearing rating life (h)	[L10h]	526977.890
+Static safety factor	[S0]	    16.844
+2.1.2 Friction
+Rolling moment of friction (Nmm)	[Mrr]	    14.279
+Sliding moment of friction (Nmm)	[Msl]	     3.093
+Moment of friction, seals (Nmm)	[Mseal]	     0.000
+Mseal according to SKF Main Catalog 17000/1 EN: 2018
+Moment of friction flow losses (Nmm)	[Mdrag]	     0.000
+Total moment of friction (Nmm)	[M]	    17.372
+2.2 Rolling bearing 2
+Designation	SKF 6206-RZ
+Type	Deep groove ball bearing (single row)
+SKF Explorer
+Bearing clearance:	C0
+Only radial load
+Radial force (N)	[Fr]	   664.920
+Axial force (N)	[Fa]	     0.000
+Inner diameter (mm)	[d]	    30.000
+External diameter (mm)	[D]	    62.000
+Width (mm)	[B]	    16.000
+Basic dynamic load rating (kN)	[C]	    20.300
+Basic static load rating (kN)	[C0]	    11.200
+Fatigue load limit (kN)	[Cu]	     0.475
+Dynamic equivalent load (N)	[P]	   664.920
+2.2.1 Results of bearing calculation according to ISO 281:2007
+Speed limit (oil) (1/min)	[nmax]	   12000
+Static equivalent load (N)	[P0]	   664.920
+Basic rating life (h)	[L10h]	526969.637
+Bearing rating life (h)	[L10h]	526969.637
+Static safety factor	[S0]	    16.844
+2.2.2 Friction
+Rolling moment of friction (Nmm)	[Mrr]	    14.279
+Sliding moment of friction (Nmm)	[Msl]	     3.094
+Moment of friction, seals (Nmm)	[Mseal]	     0.000
+Mseal according to SKF Main Catalog 17000/1 EN: 2018
+Moment of friction flow losses (Nmm)	[Mdrag]	     0.000
+Total moment of friction (Nmm)	[M]	    17.373
+3 Remarks
+The moment of friction M is calculated according to the details in the SKF Catalog 2018.
+This is always calculated with a coefficient for additives in the lubricant mybl=0.15.
+End of report (lines: 122)

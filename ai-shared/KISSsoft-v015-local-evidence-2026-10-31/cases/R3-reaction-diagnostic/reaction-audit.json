@@ -1,0 +1,307 @@
+{
+  "R1b_native_support_reactions": {
+    "P4 Support A": {
+      "raw_serialized_components": [
+        "-227.4149464",
+        "0",
+        "-624.8174302"
+      ],
+      "F_N": [
+        -227.4149464,
+        0.0,
+        -624.8174302
+      ],
+      "magnitude_N": 664.9168210594817
+    },
+    "Cylindrical gear": {
+      "raw_serialized_components": [
+        "454.9627928",
+        "0",
+        "1250"
+      ],
+      "F_N": [
+        454.9627928,
+        0.0,
+        1250.0
+      ],
+      "magnitude_N": 1330.222215583688
+    },
+    "P4 Support B": {
+      "raw_serialized_components": [
+        "-227.4161336",
+        "0",
+        "-624.820692"
+      ],
+      "F_N": [
+        -227.4161336,
+        0.0,
+        -624.820692
+      ],
+      "magnitude_N": 664.9202921951863
+    },
+    "Coupling / Motor": {
+      "raw_serialized_components": [
+        "0",
+        "0",
+        "0"
+      ],
+      "F_N": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "magnitude_N": 0.0
+    }
+  },
+  "density_study": [
+    {
+      "density_setting": 2,
+      "maximum_deflection_mm_raw": "0.0037860189577105787459",
+      "forces": {
+        "P4 Support A": {
+          "raw_serialized_components": [
+            "-227.4149464",
+            "0",
+            "-624.8174302"
+          ],
+          "F_N": [
+            -227.4149464,
+            0.0,
+            -624.8174302
+          ]
+        },
+        "Cylindrical gear": {
+          "raw_serialized_components": [
+            "454.9627928",
+            "0",
+            "1250"
+          ],
+          "F_N": [
+            454.9627928,
+            0.0,
+            1250.0
+          ]
+        },
+        "P4 Support B": {
+          "raw_serialized_components": [
+            "-227.4161336",
+            "0",
+            "-624.820692"
+          ],
+          "F_N": [
+            -227.4161336,
+            0.0,
+            -624.820692
+          ]
+        },
+        "Coupling / Motor": {
+          "raw_serialized_components": [
+            "0",
+            "0",
+            "0"
+          ],
+          "F_N": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "force_balance_residual_N": [
+        0.13171280000000252,
+        0.0,
+        0.361877800000002
+      ],
+      "residual_norm_N": 0.38510232902006986,
+      "precision": "External reaction vectors from native serialized results: approximately 10 significant digits; deflection is raw GetVar precision.",
+      "interpretation": "Identical densities do not establish mesh convergence: linear cylindrical shaft uses analytical transfer matrices."
+    },
+    {
+      "density_setting": 4,
+      "maximum_deflection_mm_raw": "0.0037860189577105787459",
+      "forces": {
+        "P4 Support A": {
+          "raw_serialized_components": [
+            "-227.4149464",
+            "0",
+            "-624.8174302"
+          ],
+          "F_N": [
+            -227.4149464,
+            0.0,
+            -624.8174302
+          ]
+        },
+        "Cylindrical gear": {
+          "raw_serialized_components": [
+            "454.9627928",
+            "0",
+            "1250"
+          ],
+          "F_N": [
+            454.9627928,
+            0.0,
+            1250.0
+          ]
+        },
+        "P4 Support B": {
+          "raw_serialized_components": [
+            "-227.4161336",
+            "0",
+            "-624.820692"
+          ],
+          "F_N": [
+            -227.4161336,
+            0.0,
+            -624.820692
+          ]
+        },
+        "Coupling / Motor": {
+          "raw_serialized_components": [
+            "0",
+            "0",
+            "0"
+          ],
+          "F_N": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "force_balance_residual_N": [
+        0.13171280000000252,
+        0.0,
+        0.361877800000002
+      ],
+      "residual_norm_N": 0.38510232902006986,
+      "precision": "External reaction vectors from native serialized results: approximately 10 significant digits; deflection is raw GetVar precision.",
+      "interpretation": "Identical densities do not establish mesh convergence: linear cylindrical shaft uses analytical transfer matrices."
+    },
+    {
+      "density_setting": 8,
+      "maximum_deflection_mm_raw": "0.0037860189577105787459",
+      "forces": {
+        "P4 Support A": {
+          "raw_serialized_components": [
+            "-227.4149464",
+            "0",
+            "-624.8174302"
+          ],
+          "F_N": [
+            -227.4149464,
+            0.0,
+            -624.8174302
+          ]
+        },
+        "Cylindrical gear": {
+          "raw_serialized_components": [
+            "454.9627928",
+            "0",
+            "1250"
+          ],
+          "F_N": [
+            454.9627928,
+            0.0,
+            1250.0
+          ]
+        },
+        "P4 Support B": {
+          "raw_serialized_components": [
+            "-227.4161336",
+            "0",
+            "-624.820692"
+          ],
+          "F_N": [
+            -227.4161336,
+            0.0,
+            -624.820692
+          ]
+        },
+        "Coupling / Motor": {
+          "raw_serialized_components": [
+            "0",
+            "0",
+            "0"
+          ],
+          "F_N": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "force_balance_residual_N": [
+        0.13171280000000252,
+        0.0,
+        0.361877800000002
+      ],
+      "residual_norm_N": 0.38510232902006986,
+      "precision": "External reaction vectors from native serialized results: approximately 10 significant digits; deflection is raw GetVar precision.",
+      "interpretation": "Identical densities do not establish mesh convergence: linear cylindrical shaft uses analytical transfer matrices."
+    },
+    {
+      "density_setting": 16,
+      "maximum_deflection_mm_raw": "0.0037860189577105787459",
+      "forces": {
+        "P4 Support A": {
+          "raw_serialized_components": [
+            "-227.4149464",
+            "0",
+            "-624.8174302"
+          ],
+          "F_N": [
+            -227.4149464,
+            0.0,
+            -624.8174302
+          ]
+        },
+        "Cylindrical gear": {
+          "raw_serialized_components": [
+            "454.9627928",
+            "0",
+            "1250"
+          ],
+          "F_N": [
+            454.9627928,
+            0.0,
+            1250.0
+          ]
+        },
+        "P4 Support B": {
+          "raw_serialized_components": [
+            "-227.4161336",
+            "0",
+            "-624.820692"
+          ],
+          "F_N": [
+            -227.4161336,
+            0.0,
+            -624.820692
+          ]
+        },
+        "Coupling / Motor": {
+          "raw_serialized_components": [
+            "0",
+            "0",
+            "0"
+          ],
+          "F_N": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "force_balance_residual_N": [
+        0.13171280000000252,
+        0.0,
+        0.361877800000002
+      ],
+      "residual_norm_N": 0.38510232902006986,
+      "precision": "External reaction vectors from native serialized results: approximately 10 significant digits; deflection is raw GetVar precision.",
+      "interpretation": "Identical densities do not establish mesh convergence: linear cylindrical shaft uses analytical transfer matrices."
+    }
+  ],
+  "section_shear_warning": "Internal section shear is not identical to the displayed external reaction. It must not replace external reactions when auditing residuals."
+}

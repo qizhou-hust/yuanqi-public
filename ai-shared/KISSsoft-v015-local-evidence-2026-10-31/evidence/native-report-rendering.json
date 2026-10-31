@@ -1,0 +1,65 @@
+[
+  {
+    "native": "R1-L1-S1-run.pprpt",
+    "native_sha256": "4caf6c7872dee3b7160a64165999d532801ac7e91bdb72573ad83fc2c4a3b07a",
+    "pdf": "R1-L1-S1-run.pdf",
+    "text_chars": 10897,
+    "pages": 4,
+    "is_vendor_native_pdf": false,
+    "content_source": "unedited vendor PPRPT textual content"
+  },
+  {
+    "native": "R1-L1-S2-run.pprpt",
+    "native_sha256": "377ee774ab4a2b91cde383906be98f9e6090dcb16ea34d31ef6964af1ec78792",
+    "pdf": "R1-L1-S2-run.pdf",
+    "text_chars": 10708,
+    "pages": 4,
+    "is_vendor_native_pdf": false,
+    "content_source": "unedited vendor PPRPT textual content"
+  },
+  {
+    "native": "R1-L1-S3a-run.pprpt",
+    "native_sha256": "575c8a78bb35a45baf6c1662e83c4663d71bf981bae21b0f1184b66a5318ca7e",
+    "pdf": "R1-L1-S3a-run.pdf",
+    "text_chars": 10861,
+    "pages": 4,
+    "is_vendor_native_pdf": false,
+    "content_source": "unedited vendor PPRPT textual content"
+  },
+  {
+    "native": "R1-L80-S1-run.pprpt",
+    "native_sha256": "2da8cdea297a359af4e67b46ceb3dafdbaddd7e22584b2c79b0a967c3ef7a508",
+    "pdf": "R1-L80-S1-run.pdf",
+    "text_chars": 10899,
+    "pages": 4,
+    "is_vendor_native_pdf": false,
+    "content_source": "unedited vendor PPRPT textual content"
+  },
+  {
+    "native": "R1-L80-S2-run.pprpt",
+    "native_sha256": "2800f31dca2d2059308e1ad6af416c8c53485731695fbf0c67d76de40b1a0a95",
+    "pdf": "R1-L80-S2-run.pdf",
+    "text_chars": 10710,
+    "pages": 4,
+    "is_vendor_native_pdf": false,
+    "content_source": "unedited vendor PPRPT textual content"
+  },
+  {
+    "native": "R1-L80-S3a-run.pprpt",
+    "native_sha256": "d802e5b0659a282662b54f009a88f99f949e8f0cfec24390e4b40c4d1d1ab4f9",
+    "pdf": "R1-L80-S3a-run.pdf",
+    "text_chars": 10863,
+    "pages": 4,
+    "is_vendor_native_pdf": false,
+    "content_source": "unedited vendor PPRPT textual content"
+  },
+  {
+    "native": "R2-6206-RZ-run.pprpt",
+    "native_sha256": "9be12b0532d6cad5c824d92b43ba3f7bd68139fc092f919910ceaa6bf90f3042",
+    "pdf": "R2-6206-RZ-run.pdf",
+    "text_chars": 2951,
+    "pages": 2,
+    "is_vendor_native_pdf": false,
+    "content_source": "unedited vendor PPRPT textual content"
+  }
+]

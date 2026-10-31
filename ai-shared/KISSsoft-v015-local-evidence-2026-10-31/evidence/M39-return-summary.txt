@@ -1,0 +1,98 @@
+M39 v0.15 逐项回传总结（静态核验，不调用COM）
+日期：2026-10-31
+约束：本分路仅文件和PDF读取；未启动GUI，未占鼠标/键盘，未调用COM。后续保持无头约束。只新增本总结；不修改原件、native或既有报告。
+
+结论先列
+1. K01 RunIn0已真实保存，-20 FBT.mymy=.07608358912413522，与用户预测吻合。-21 FIT.mym仍=.05989266584913506，不能笼统声称所有μm都变化。
+2. K02/K05关闭最优Ca后XCa分别1.670123183564783 /1.0766126627824164，符合预测。
+3. K04两轮MPoptCa=false已从保存后的UTF16原生文件独立确认，CaValid也false；XCa仍1.980796374567229，与用户预测约1.776不符。不是编辑未生效，不调Ca追目标；K04用户差异继续OPEN。
+4. Ceff当前分支有直接标准正文依据：-21:2022式38/39、-22:2018式97/98。与-20:2022 Annex B式B.1不是同一编号或同一字面表达，必须区分。
+5. θflaE/θMT/θflaintT独立FIT字段、714.2试验扭矩原始表来源、-20曲线无头数值导出接口仍OPEN。已有派生/反解不能冒充独立软件读取。
+
+A. 本轮运行与保存原件身份核验
+以下运行文件位于本总结同级对应子目录，每项均检查run.json、保存的UTF16 Z12；独立计算保存native SHA256和source SHA256与记录一致。所有下列运行记录calculate=true,reload=true,reload_differences={}。这是静态独立复核记录/文件，不是本分路再次执行求解。
+  M39-baseline-K01-spur:
+    native_sha256=0b616c0d6851947aada9eea4adf55442696c1ba33342b737c605e1a897d74536
+    saved RechSt.Scoring_RunIn=1, ZR[0].MPoptCa=false, ZR[1].MPoptCa=false
+  M39-baseline-K03-premachining:
+    native_sha256=26ab34ee671e64577606f58db0ed252c632ae23e6191482e21326fe4a056c586
+    saved RechSt.Scoring_RunIn=1, ZR[0].MPoptCa=false, ZR[1].MPoptCa=false
+  M39-K01-runin0:
+    native_sha256=d7525c4d359940b280b9a9c1672e85c34203d1de30b347543b6e8d5b9dc51d90
+    saved RechSt.Scoring_RunIn=0, ZR[0].MPoptCa=false, ZR[1].MPoptCa=false
+  M39-K02-helical-Ca-not-optimal:
+    native_sha256=6c924361202255b04244b2ce35781dd8ae504e5d7c91654d36be7ffac41bfebd
+    saved RechSt.Scoring_RunIn=1, ZR[0].MPoptCa=false, ZR[1].MPoptCa=false
+  M39-K04-EV-stage1-Ca-not-optimal:
+    native_sha256=ec5bc523b08958fd0a19c3eea0d9959c4e9583ff672ba24c0ae8d407ebd3336b
+    saved RechSt.Scoring_RunIn=1, ZR[0].MPoptCa=false, ZR[1].MPoptCa=false
+  M39-K05-EV-stage2-Ca-not-optimal:
+    native_sha256=75ac3fac0d1316e527cdb2b1ad5326b5b35f64d601f572fcd3d3d1eb37f27b92
+    saved RechSt.Scoring_RunIn=1, ZR[0].MPoptCa=false, ZR[1].MPoptCa=false
+
+B. K01 RunIn0逐项回传
+输入只改 RechSt.Scoring_RunIn:1->0，run.json edits读回0，UTF16原件也保存0。
+读取项                         baseline                 RunIn0
+FBT.mymy（-20 μm）              .0669620597655176       .07608358912413522
+FIT.mym（-21 μmC）              .05989266584913506      .05989266584913506
+两者是不同方法的摩擦系数，不应合并报告。用户RunIn0 μm=.0760835891241对应本次-20字段；其吻合不说明-21 μmC改变。
+官方模板Z010Scoringe.rpt第243/247/255行映射XJ/XΓ/μm；292/294行是Scoring_XE跑合因子；297行FIT.XE是重合度Xε。避免把两个XE混同。
+
+C. 关闭按最优Ca：K02/K04/K05
+准确编辑：ZR[0].MPoptCa=true->false；ZR[1].MPoptCa=true->false。
+run.json的edits均读回false，保存后的UTF16原件均有这两个false，计算输出ZPP[0/1].CaValid均false。CaValid是结果状态，不用作输入替代MPoptCa。
+M39-K02-helical-Ca-not-optimal
+  Ceff=6.22771856045497; Ceq1=5.0; Ceq2=5.0
+  eps1=0.9169471290286803, eps2=0.6537651178399024; eps1/eps2=1.4025635568602288
+  FIT.XCa=1.670123183564783; 由本次Ca/Ceff饱和口径重建=1.670123183564783
+M39-K04-EV-stage1-Ca-not-optimal
+  Ceff=19.04808877106534; Ceq1=30.475356776268782; Ceq2=31.740760993161366
+  eps1=1.0184071150774352, eps2=1.0073165230966186; eps1/eps2=1.011010036792331
+  FIT.XCa=1.980796374567229; 由本次Ca/Ceff饱和口径重建=1.980796374567229
+M39-K05-EV-stage2-Ca-not-optimal
+  Ceff=29.078858777302493; Ceq1=0.0; Ceq2=0.0
+  eps1=0.9658939837553476, eps2=0.9501902274892317; eps1/eps2=1.0165269604041407
+  FIT.XCa=1.0766126627824164; 由本次Ca/Ceff饱和口径重建=1.0766126627824164
+K04详细边界：Ceq1/Ceff≈1.600、Ceq2/Ceff≈1.666，均超过1；-21式35/37把所选Ca截到Ceff。按式33，Ca/Ceff=1、epsmax=1.0184071150774352得到1.980796374567229。因此“关闭最优Ca仍不变”在当前几何和等效修形下可解释；但这不关闭用户1.776的来源差异。若用户1.776采用原始Ca而非含配对齿根修形的Ceq、另一制造修形口径或不同Ceff，该输入/定义身份须另外举证，不能由目标值倒推。
+K04保持OPEN；K02/K05仅本项数值吻合，不自动授予其他方法或材料输入一致性。
+
+D. Ceff公式准确出处与分支，禁止混编号
+本轮已目读本地扫描原文：
+  M36-M39-standards-2026-10-29/M39/FULL_LOCAL/ISO-TS-6336-21-2022_FULL_LOCAL_SCAN.pdf
+    PDF21/印15，6.1.13正文：式38 Ceff=KA*Ft/(b*c′)，直齿；式39 Ceff=KA*Ft/(b*cγ)，斜齿。
+    PDF20/印14式33为XCa；34/35选Ca1并截顶；36/37选Ca2并截顶。
+  ISO-TS-6336-22-2018_FULL_LOCAL_SCAN.pdf
+    PDF39/印31，14.4正文：式97直齿、式98斜齿，分支同上；92为XCa，93–96为Ca选择。
+  ISO-TS-6336-20-2022_FULL_LOCAL_SCAN.pdf
+    PDF37/印31 Annex B式B.1：Ceff=KA*Kmp*Ft/(b*cosαt*cγ)。B.2/B.3是等效齿顶修形Ceq（包含对轮齿根修形），不是直齿/斜齿两支Ceff。
+因此把“Ceff(3/4)/(5)”直接写作上述任一标准正式编号不成立，除非显式说明是用户资料/本地稿件的自编号并给出对照。正文38/39、97/98与附录B.1应分开引用。
+此前m39-preflight列出-20 B.1作为比较；本总结补齐当前软件数值分支最直接的-21正文38/39出处，应优先引用正文，而非只留附录比较造成误解。
+
+数值重建：五个v014基线Ceff精确等于KA*Ft/(bMin*c_used)，直齿K01/K03取KV.cStr，斜齿K02/K04/K05取KV.cg。
+K01=49.04365953735443；K02=6.22771856045497；K03=7.776448253740514；K04=19.04808877106534；K05=29.078858777302493。
+所有例Scoring_Xmp=1；它是否出现在另一标准表达中在当前五例不能由数值区分，不得据此推广任意Kmp分支。正文38/39本身没有Kmp或额外cos项。
+
+E. K03取哪轮Ca、A.6/A.7术语边界
+K03当前eps1=.8812417079475937，eps2=.4861192075409522，比例1.812809891642381>1.5。若小轮驱动大轮，-21式34/35选小轮Ca1；Ceq1=2对应XCa1.2470143871499668，当前软件恰相同。错用Ceq2=3.2则1.3541792745799166。
+该结论需配合实际驱动方向，不能把齿数较小等同于永远驱动。
+若A.6/A.7指标准Annex A的表A.6/A.7：其位于-21 PDF35/36、印29/30，两表分别两轮Ca都40 /都0，均驱动轮1。因两轮Ca相同，这两表本身不能区分软件取哪轮；要用K03不等Ca证据及正文分支。
+
+F. K02 XY七点、epsilon_beta插值和端点
+已有有效K02基线：epsilon_beta=1.026748414049295。
+-22:2018 PDF34/印26，11.9式77，在.8<epsilon_beta<1.2时对.8与1.2两支线性插值。
+软件七点XY（A/AB/B/C/D/DE/E）：0；.657587032366908；.874151514805289；.874151514805289；.874151514805289；.6575870323669082；1.9427378105812604e-15。
+A动态压力0，E约4.065367445322284e-5MPa，是零载端点的数值残差。A/E大hY不能当有限载荷下膜厚能力证据，控制点为AB。七点来自-22方法，不能静默替代用户要求-20 θfl(Γ)/XJ/XΓ曲线。
+
+G. 氮化材料WW=1
+K02主报告的有效微点蚀段显示WW1.000，材料身份为小轮31CrMoV9/Nitriding steel/HV800，大轮42CrMo4(3)/Through hardened steel/HV550。只确认此已保存材料组合，不能推广“所有氮化材料WW=1”。官方精确字段ZP[0].RefMP.WW，见Z010Micropittinge.rpt第51行；λGFP在同模板52行。
+
+H. 三个FIT温度、油品FZG14/714.2及曲线仍未闭合
+精确直接FIT字段已确认theMC/theflaint/theint/theSint及各系数；θflaE/θMT/θflaintT仍无独立直接字段证据。K01θflaE=theflaint/FIT.XE=45.886988497423715是定义派生，非独立读取。
+K01油品与FZG14是源原件真实输入：油ID10640、ScoringTest1、FZGtestA14、ν40=220。
+-21:2022 PDF24/印18，式47–49用T1T714.2可重建软件θintS455.17380263076444，其中θMT244.266、θflaintT140.60520175384295；但式50近似3.726*14²=730.296，不能当714.2的原始表格来源。当前只反解一致，714.2来源仍OPEN。
+-20曲线：已有最大温度、最大位置Γ、XJ/XΓ标量。未找到已确认的无头COM曲线数值导出函数名和参数签名。静态FlashTempISO信号或ExportGraphicAsDXF符号不能冒充已验证接口。本分路不操作GUI、不占鼠标/键盘，也不建议绕过无头要求；曲线数值导出保留OPEN。
+
+Where This Review May Be Wrong
+1. 部分精确FIT字段或曲线函数可能存在于未公开结构；静态搜索未发现不证明软件没有能力，需要官方接口表或已保存结构直接证据。
+2. K04饱和解释依当前Ceq/当前标准分支。用户1.776可能对应不同制造修形输入，需要输入身份逐项对齐，不能仅凭这个解释关闭差异。
+3. 静态核验确认实际保存输入、输出记录、hash和重开记录；本分路没有再次独立执行求解，求解状态依主路机器运行记录。

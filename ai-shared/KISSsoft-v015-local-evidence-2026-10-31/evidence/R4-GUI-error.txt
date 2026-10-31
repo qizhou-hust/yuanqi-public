@@ -1,0 +1,518 @@
+Window: "KISSsoft - License number 5416 - Key - 08 Keys (DIN 6892 Example 1).M2A", App: KISSsoftCOM2026.exe.
+	0 窗口 (settable, string) KISSsoft - License number 5416 - Key - 08 Keys (DIN 6892 Example 1).M2A Secondary Actions: Raise
+		1 窗口 (settable, string) Error Secondary Actions: Raise
+			2 标题栏 (settable, string) Value: Error
+				3 菜单栏 系统 ID: MenuBar
+					4 菜单项 系统
+				5 按钮 关闭
+			6 图像 ID: qt_msgboxex_icon_label
+			7 文本 DIN 6892 Method C: No changing torque! Use method B! ID: qt_msgbox_label
+			8 组 (settable, string) ID: qt_msgbox_buttonbox
+				9 按钮 (settable, string) OK
+		10 标题栏 (settable, string) Value: KISSsoft - License number 5416 - Key - 08 Keys (DIN 6892 Example 1).M2A
+			11 菜单栏 系统 ID: MenuBar
+				12 菜单项 系统
+			13 按钮 最小化
+			14 按钮 最大化
+			15 按钮 关闭
+		16 窗口 (settable, string) Information Secondary Actions: Raise ID: Info
+			17 自定义 (settable, string)
+				18 文本
+					19 组 (settable, string) ID: qt_scrollarea_viewport
+					20 组 (settable, string) ID: qt_scrollarea_vcontainer
+						21 滚动条 (settable, float) Value: 0
+			22 自定义 (settable, string)
+				23 文本 Information
+				24 按钮 (settable, string)
+				25 按钮 (settable, string)
+		26 窗口 (settable, string) Graphics list Secondary Actions: Raise ID: GraphicList
+			27 组 (settable, string)
+				28 表格 (settable, string)
+					29 窗格 (settable, string)
+					30 标头 (settable, string) Label
+					31 标头 (settable, string) Status
+				32 按钮 (disabled, settable, string) Display
+				33 组 (settable, string)
+					34 按钮 (disabled, settable, string)
+					35 按钮 (disabled, settable, string)
+					36 按钮 (disabled, settable, string)
+					37 按钮 (disabled, settable, string)
+					38 自定义 (settable, string)
+					39 按钮 (disabled, settable, string)
+					40 按钮 (settable, string)
+			41 自定义 (settable, string)
+				42 文本 Graphics list
+				43 按钮 (settable, string)
+				44 按钮 (settable, string)
+		45 窗口 (settable, string) Messages Secondary Actions: Raise ID: Meldungen
+			46 编辑 Value: ￼ For brittle materials, the strength verification for the hub in a transition fit must be performed according to DIN 7190 (cylindrical interference fits)! ￼ DIN 6892 Method C: No changing torque! Use method B! ￼ DIN 6892 Method C: No changing torque! Use method B!
+				47 组 (settable, string) ID: qt_scrollarea_viewport
+				48 组 (settable, string) ID: qt_scrollarea_vcontainer
+					49 滚动条 (settable, float) Value: 42
+			50 自定义 (settable, string)
+				51 文本 Messages
+				52 按钮 (settable, string)
+				53 按钮 (settable, string)
+		54 窗口 (settable, string) Results (special calculation) Secondary Actions: Raise ID: SpecialResults
+			55 自定义 (settable, string)
+				56 组 (settable, string)
+					57 自定义 (settable, string)
+			58 自定义 (settable, string)
+				59 文本 Results (special calculation)
+				60 按钮 (settable, string)
+				61 按钮 (settable, string)
+		62 窗口 (settable, string) Examples Secondary Actions: Raise ID: Examples
+			63 树 (settable, string)
+				64 树项目 (settable, string) Systems
+				65 树项目 (settable, string) Single gear
+				66 树项目 (settable, string) Gear pair
+				67 树项目 (settable, string) Pinion with rack
+				68 树项目 (settable, string) Planetary gear
+				69 树项目 (settable, string) Three and four gears train
+				70 树项目 (settable, string) Bevel and Hypoid gears
+				71 树项目 (settable, string) Face gears
+				72 树项目 (settable, string) Worms with enveloping worm wheel
+				73 树项目 (settable, string) Crossed helical gears
+				74 树项目 (settable, string) Beveloid gears
+				75 树项目 (settable, string) Non circular gears
+			76 自定义 (settable, string)
+				77 文本 Examples
+				78 按钮 (settable, string)
+				79 按钮 (settable, string)
+		80 窗口 (settable, string) Search Secondary Actions: Raise ID: Search
+			81 自定义 (settable, string)
+				82 组 (settable, string)
+					83 自定义 (settable, string) Search Results
+						84 自定义 (settable, string)
+							85 自定义 (settable, string)
+								86 自定义 (settable, string) Search term:
+									87 文本 Search term:
+							88 自定义 (settable, string)
+								89 自定义 (settable, string)
+									90 自定义 (settable, string)
+										91 编辑 (settable, string)
+										92 文本 
+										93 按钮 (settable, string) Go
+			94 自定义 (settable, string)
+				95 文本 Search
+				96 按钮 (settable, string)
+				97 按钮 (settable, string)
+		98 窗口 (settable, string) Contents Secondary Actions: Raise ID: Contents
+			99 树 (settable, string)
+				100 树项目 (settable, string) General
+				101 树项目 (settable, string) Systems
+				102 树项目 (settable, string) Gears
+				103 树项目 (settable, string) Shafts and Bearings
+				104 树项目 (settable, string) Connections
+				105 树项目 (settable, string) Springs
+				106 树项目 (settable, string) Belts and chain drives
+				107 树项目 (settable, string) Automotive
+				108 树项目 (settable, string) Various
+				109 树项目 (settable, string) KISSsys
+				110 树项目 (settable, string) Bibliography and Variable Directory
+			111 自定义 (settable, string)
+				112 文本 Contents
+				113 按钮 (settable, string)
+				114 按钮 (settable, string)
+		115 菜单栏 (settable, string)
+			116 菜单项 (settable, string) File
+			117 菜单项 (settable, string) Project
+			118 菜单项 (settable, string) View
+			119 菜单项 (settable, string) Calculation
+			120 菜单项 (settable, string) Report
+			121 菜单项 (settable, string) Graphics
+			122 菜单项 (settable, string) Table
+			123 菜单项 (settable, string) Script
+			124 菜单项 (settable, string) Extras
+			125 菜单项 (settable, string) Help
+		126 工具栏 (settable, string) ID: mainToolBar
+			127 按钮 (settable, string) New
+			128 按钮 (settable, string) Open
+			129 按钮 (settable, string) Open exclusively
+			130 按钮 (settable, string) Save
+			131 按钮 (settable, string) Mail to
+			132 按钮 (settable, string) Restore
+			133 组 (settable, string)
+			134 按钮 (settable, string) New
+			135 按钮 (settable, string) Open
+			136 组 (settable, string)
+			137 按钮 (settable, string) Run
+			138 按钮 (settable, string) Generate
+			139 按钮 (settable, string) Notes
+			140 按钮 (settable, string) Settings
+			141 组 (settable, string)
+			142 按钮 (settable, string) Script Editor
+			143 按钮 (settable, string) KUI elements
+			144 按钮 (settable, string) Calculation variables
+			145 组 (settable, string)
+			146 按钮 (settable, string) Hardness conversion
+			147 按钮 (settable, string) Database tool
+			148 按钮 (settable, string) Calculator
+			149 按钮 (settable, string) Manual
+		150 工具栏 (settable, string) ID: logoToolBar
+			151 组 (settable, string)
+				152 文本 Release 2026
+				153 组 (settable, string)
+		154 状态栏
+			155 缩略图 (settable, string)
+			156 文本 INCONSISTENT
+		157 选项卡 (settable, string) Projects
+			158 选项卡项目 (settable, string) Projects
+		159 选项卡 (settable, string) Tutorials
+			160 选项卡项目 (settable, string) Contents
+			161 选项卡项目 (settable, string) Search
+			162 选项卡项目 (settable, string) Examples
+			163 选项卡项目 (settable, string) Tutorials
+			164 按钮 (settable, string) Scroll Left ID: ScrollLeftButton
+			165 按钮 (disabled, settable, string) Scroll Right ID: ScrollRightButton
+		166 选项卡 (settable, string) Results (basic calculation)
+			167 选项卡项目 (settable, string) Results (basic calculation)
+			168 选项卡项目 (settable, string) Results (special calculation)
+			169 选项卡项目 (settable, string) Messages
+			170 选项卡项目 (settable, string) Information
+			171 选项卡项目 (settable, string) Graphics list
+		172 窗口 (settable, string) Projects Secondary Actions: Raise ID: Projects
+			173 树 (settable, string)
+			174 自定义 (settable, string)
+				175 文本 Projects
+				176 按钮 (settable, string)
+				177 按钮 (settable, string)
+		178 窗口 (settable, string) Tutorials Secondary Actions: Raise ID: Tutorials
+			179 树 (settable, string)
+				180 树项目 (settable, string) System
+				181 树项目 (settable, string) Single Gear
+				182 树项目 (settable, string) Gear Pair
+				183 树项目 (settable, string) Planetary
+				184 树项目 (settable, string) Bevel and Hypoid Gears
+				185 树项目 (settable, string) Other Gear (Worm, Crossed Helical)
+				186 树项目 (settable, string) Shaft
+				187 树项目 (settable, string) Bearing
+				188 树项目 (settable, string) Other Modules (Bolt, Interference fit, Key)
+				189 树项目 (settable, string) COM, Skript
+			190 自定义 (settable, string)
+				191 文本 Tutorials
+				192 按钮 (settable, string)
+				193 按钮 (settable, string)
+		194 窗口 (settable, string) Results (basic calculation) Secondary Actions: Raise ID: StdResults
+			195 自定义 (settable, string)
+				196 组 (settable, string)
+					197 自定义 (settable, string)
+			198 自定义 (settable, string)
+				199 文本 Results (basic calculation)
+				200 按钮 (settable, string)
+				201 按钮 (settable, string)
+		202 自定义 (settable, string)
+			203 组 (settable, string)
+				204 自定义 (settable, string) ID: qt_tabwidget_stackedwidget
+					205 组 (settable, string) Description: M02A_BasicData.kui ID: qt_tabwidget_stackedwidget.M02A_BasicData
+						206 组 (settable, string)
+							207 组 (settable, string) ID: qt_scrollarea_viewport
+								208 组 (settable, string)
+									209 组 (settable, string) Operating data
+										210 文本 Nominal torque Description: Tn ID: Tn_TEXTLABEL
+										211 文本 Tn Description: Tn ID: Tn_FORMULA
+										212 编辑 (settable, string) Operating data Description: Tn Value: 4000.0000 ID: Tn_INPUT_0
+										213 文本 Operating data
+										214 文本 Nm Description: Tn ID: Tn_UNIT
+										215 组 (settable, string) Operating data
+											216 按钮 (settable, string) Description: Tn ID: Tn_SIZE_BUTTON
+										217 文本 Maximum torque Description: Tmax ID: Tmax_TEXTLABEL
+										218 文本 Tmax Description: Tmax ID: Tmax_FORMULA
+										219 编辑 (settable, string) Operating data Description: Tmax Value: 15000.0000 ID: Tmax_INPUT_0
+										220 文本 Operating data
+										221 文本 Nm Description: Tmax ID: Tmax_UNIT
+										222 组 (settable, string) Operating data
+										223 文本 Frictional torque Description: TR ID: TR_TEXTLABEL
+										224 文本 TR Description: TR ID: TR_FORMULA
+										225 编辑 (settable, string) Operating data Description: TR Value: 0.0000 ID: TR_INPUT_0
+										226 文本 Operating data
+										227 文本 Nm Description: TR ID: TR_UNIT
+										228 组 (settable, string) Operating data
+										229 文本 Application factor Description: KA ID: KA_TEXTLABEL
+										230 文本 KA Description: KA ID: KA_FORMULA
+										231 编辑 (settable, string) Operating data Description: KA Value: 1.5000 ID: KA_INPUT_0
+										232 文本 Operating data
+										233 文本 Operating data Description: KA ID: KA_UNIT
+										234 组 (settable, string) Operating data
+											235 按钮 (settable, string) Description: KA ID: KA_INFO_BUTTON
+										236 文本 Number of load peaks Description: NL ID: NL_TEXTLABEL
+										237 文本 NL Description: NL ID: NL_FORMULA
+										238 编辑 (settable, string) Operating data Description: NL Value: 10000 ID: NL_INPUT_0
+										239 文本 Operating data
+										240 文本 Operating data Description: NL ID: NL_UNIT
+										241 组 (settable, string) Operating data
+									242 组 (settable, string) Geometry
+										243 文本 Standard Description: Standard ID: Standard_TEXTLABEL
+										244 文本 Geometry Description: Standard ID: Standard_FORMULA
+										245 组合框 (settable, string) Geometry Description: Standard Value: DIN 6885.1:1968 Default ID: Standard_INPUT_0
+											246 列表 (settable, string)
+												247 列表项目 (selectable, settable, string) Own Input
+												248 列表项目 (selectable, settable, string) DIN 6885.1:1968 Default
+												249 列表项目 (selectable, settable, string) DIN 6885.1:1968 Form G,H,J
+												250 列表项目 (selectable, settable, string) DIN 6885.2:1967
+												251 列表项目 (selectable, settable, string) DIN 6885.3:1956
+												252 列表项目 (selectable, settable, string) ANSI B17.1-1967 (R1998) Square
+												253 列表项目 (selectable, settable, string) ANSI B17.1-1967 (R1998) Rectangular
+										254 文本 Geometry
+										255 文本 Geometry Description: Standard ID: Standard_UNIT
+										256 组 (settable, string) Geometry
+											257 按钮 (settable, string) Description: Standard ID: Standard_PLUS_BUTTON
+										258 文本 Shaft diameter Description: d ID: d_TEXTLABEL
+										259 文本 d Description: d ID: d_FORMULA
+										260 编辑 (settable, string) Geometry Description: d Value: 120.0000 ID: d_INPUT_0
+										261 文本 Geometry
+										262 文本 mm Description: d ID: d_UNIT
+										263 组 (settable, string) Geometry
+										264 文本 Big outside diameter of hub Description: D2 ID: D2_TEXTLABEL
+										265 文本 D2 Description: D2 ID: D2_FORMULA
+										266 编辑 Geometry Description: D2 Value: 200.0000 ID: D2_INPUT_0
+										267 文本 Geometry
+										268 文本 mm Description: D2 ID: D2_UNIT
+										269 组 (settable, string) Geometry
+											270 按钮 (settable, string) Description: D2 ID: D2_INFO_BUTTON
+										271 文本 Small outside diameter of hub Description: D1 ID: D1_TEXTLABEL
+										272 文本 D1 Description: D1 ID: D1_FORMULA
+										273 编辑 (settable, string) Geometry Description: D1 Value: 200.0000 ID: D1_INPUT_0
+										274 文本 Geometry
+										275 文本 mm Description: D1 ID: D1_UNIT
+										276 组 (settable, string) Geometry
+											277 按钮 (settable, string) Description: D1 ID: D1_INFO_BUTTON
+										278 文本 Key length of shaft Description: l1tr ID: l1tr_TEXTLABEL
+										279 文本 l1tr Description: l1tr ID: l1tr_FORMULA
+										280 编辑 (settable, string) Geometry Description: l1tr Value: 93.0000 ID: l1tr_INPUT_0
+										281 文本 Geometry
+										282 文本 mm Description: l1tr ID: l1tr_UNIT
+										283 组 (settable, string) Geometry
+											284 按钮 (settable, string) Description: l1tr ID: l1tr_SIZE_BUTTON
+										285 文本 Key length of hub Description: l2tr ID: l2tr_TEXTLABEL
+										286 文本 l2tr Description: l2tr ID: l2tr_FORMULA
+										287 编辑 (settable, string) Geometry Description: l2tr Value: 93.0000 ID: l2tr_INPUT_0
+										288 文本 Geometry
+										289 文本 mm Description: l2tr ID: l2tr_UNIT
+										290 组 (settable, string) Geometry
+											291 按钮 (settable, string) Description: l2tr ID: l2tr_SIZE_BUTTON
+										292 文本 Number of keys Description: NumberOfKeys ID: NumberOfKeys_TEXTLABEL
+										293 文本 i Description: NumberOfKeys ID: NumberOfKeys_FORMULA
+										294 编辑 (settable, string) Geometry Description: NumberOfKeys Value: 1 ID: NumberOfKeys_INPUT_0
+										295 文本 Geometry
+										296 文本 Geometry Description: NumberOfKeys ID: NumberOfKeys_UNIT
+										297 组 (settable, string) Geometry
+										298 文本 Distance Description: a0 ID: a0_TEXTLABEL
+										299 文本 a0 Description: a0 ID: a0_FORMULA
+										300 编辑 Geometry Description: a0 Value: 96.0000 ID: a0_INPUT_0
+										301 文本 Geometry
+										302 文本 mm Description: a0 ID: a0_UNIT
+										303 组 (settable, string) Geometry
+											304 按钮 (settable, string) Description: a0 ID: a0_INFO_BUTTON
+										305 文本 Width of hub-part with D2 Description: c ID: c_TEXTLABEL
+										306 文本 c Description: c ID: c_FORMULA
+										307 编辑 Geometry Description: c Value: 17.0000 ID: c_INPUT_0
+										308 复选框 (settable, string) Geometry Description: c ID: c_EDITBUTTON
+										309 文本 mm Description: c ID: c_UNIT
+										310 组 (settable, string) Geometry
+											311 按钮 (settable, string) Description: c ID: c_INFO_BUTTON
+										312 文本 Chamfer on shaft Description: s1 ID: s1_TEXTLABEL
+										313 文本 s1 Description: s1 ID: s1_FORMULA
+										314 编辑 Geometry Description: s1 Value: 0.0000 ID: s1_INPUT_0
+										315 文本 Geometry
+										316 文本 mm Description: s1 ID: s1_UNIT
+										317 组 (settable, string) Geometry
+											318 按钮 (settable, string) Description: s1 ID: s1_INFO_BUTTON
+										319 文本 Chamfer on hub Description: s2 ID: s2_TEXTLABEL
+										320 文本 s2 Description: s2 ID: s2_FORMULA
+										321 编辑 Geometry Description: s2 Value: 0.8000 ID: s2_INPUT_0
+										322 文本 Geometry
+										323 文本 mm Description: s2 ID: s2_UNIT
+										324 组 (settable, string) Geometry
+											325 按钮 (settable, string) Description: s2 ID: s2_INFO_BUTTON
+										326 文本 Inside diameter of shaft Description: di ID: di_TEXTLABEL
+										327 文本 di Description: di ID: di_FORMULA
+										328 编辑 (settable, string) Geometry Description: di Value: 0.0000 ID: di_INPUT_0
+										329 文本 Geometry
+										330 文本 mm Description: di ID: di_UNIT
+										331 组 (settable, string) Geometry
+									332 组 (settable, string) Materials
+										333 文本 Shaft Description: MaterialShaft ID: MaterialShaft_TEXTLABEL
+										334 组合框 (settable, string) Materials Description: MaterialShaft Value: Through hardened steel ID: MaterialShaft_INPUT_-1
+											335 列表 (settable, string)
+												336 列表项目 (selectable, settable, string) Neutral
+												337 列表项目 (selectable, settable, string) Structural steel
+												338 列表项目 (selectable, settable, string) Through hardened steel
+												339 列表项目 (selectable, settable, string) Case hardening steel
+												340 列表项目 (selectable, settable, string) Nitriding steel
+												341 列表项目 (selectable, settable, string) Stainless steel
+												342 列表项目 (selectable, settable, string) GJS (Cast iron spheroidal graphite)
+												343 列表项目 (selectable, settable, string) ADI (Austempered ductile iron)
+												344 列表项目 (selectable, settable, string) GJL (Cast iron flake graphite)
+												345 列表项目 (selectable, settable, string) Bronze
+												346 列表项目 (selectable, settable, string) Aluminum alloy
+												347 列表项目 (selectable, settable, string) Wrought aluminum alloy
+												348 列表项目 (selectable, settable, string) Cast aluminum alloy
+												349 列表项目 (selectable, settable, string) Free cutting steel
+												350 列表项目 (selectable, settable, string) Thermoplastic (PA)
+												351 列表项目 (selectable, settable, string) Thermoplastic (POM, ...)
+												352 列表项目 (selectable, settable, string) Laminated fabric HGW
+												353 列表项目 (selectable, settable, string) Molded laminated wood
+												354 列表项目 (selectable, settable, string) GS (Steel casting)
+												355 列表项目 (selectable, settable, string) Spring steel
+												356 列表项目 (selectable, settable, string) GJM, GTS (All-black malleable iron)
+												357 列表项目 (selectable, settable, string) Dry powdered metal
+												358 列表项目 (selectable, settable, string) Nickel-based alloys
+												359 列表项目 (selectable, settable, string) Magnesium alloys
+												360 列表项目 (selectable, settable, string) Titanium alloys
+										361 组合框 (settable, string) Materials Description: MaterialShaft Value: Own Input ID: MaterialShaft_INPUT_-1
+											362 列表 (settable, string)
+												363 列表项目 (selectable, settable, string) Own Input
+												364 列表项目 (selectable, settable, string) C45 (1), unalloyed/through hardened
+												365 列表项目 (selectable, settable, string) C45 (2), flame/induction-hardened
+												366 列表项目 (selectable, settable, string) C60, unalloyed/through hardened
+												367 列表项目 (selectable, settable, string) 30CrNiMo8 (1), alloyed/through hardened
+												368 列表项目 (selectable, settable, string) 34CrMo4, alloyed/through hardened
+												369 列表项目 (selectable, settable, string) 34CrNiMo6 (1), alloyed/through hardened
+												370 列表项目 (selectable, settable, string) 34CrNiMo6 (2), flame/induction-hardened
+												371 列表项目 (selectable, settable, string) 42CrMo4 (1), alloyed/through hardened
+												372 列表项目 (selectable, settable, string) 42CrMo4 (2), flame/induction-hardened
+												373 列表项目 (selectable, settable, string) 42CrMo4 (3), nitrided
+												374 列表项目 (selectable, settable, string) C 40, unalloyed/through hardened
+												375 列表项目 (selectable, settable, string) 25CrMo4, alloyed/through hardened
+												376 列表项目 (selectable, settable, string) 25CrMoS4, alloyed/through hardened
+												377 列表项目 (selectable, settable, string) BS 080M40 (ENB), unalloyed/through hardened
+												378 列表项目 (selectable, settable, string) Steel, Grade 1, HB200(AGMA), alloyed/through hardened
+												379 列表项目 (selectable, settable, string) Steel, Grade 1, HB250(AGMA), alloyed/through hardened
+												380 列表项目 (selectable, settable, string) Steel, Grade 1, HB300(AGMA), alloyed/through hardened
+												381 列表项目 (selectable, settable, string) Steel, Grade 1, HB350(AGMA), alloyed/through hardened
+												382 列表项目 (selectable, settable, string) Steel, Grade 1, HB400(AGMA), alloyed/through hardened
+												383 列表项目 (selectable, settable, string) Steel, Grade 2, HB200(AGMA), alloyed/through hardened
+												384 列表项目 (selectable, settable, string) Steel, Grade 2, HB250(AGMA), alloyed/through hardened
+												385 列表项目 (selectable, settable, string) Steel, Grade 2, HB300(AGMA), alloyed/through hardened
+												386 列表项目 (selectable, settable, string) Steel, Grade 2, HB350(AGMA), alloyed/through hardened
+												387 列表项目 (selectable, settable, string) Steel, Grade 2, HB400(AGMA), alloyed/through hardened
+												388 列表项目 (selectable, settable, string) Steel, Grade 1, HRC50, Type A(AGMA), flame/induction-hardened
+												389 列表项目 (selectable, settable, string) Steel, Grade 1, HRC54, Type A(AGMA), flame/induction-hardened
+												390 列表项目 (selectable, settable, string) Steel, Grade 2, HRC50, Type A(AGMA), flame/induction-hardened
+												391 列表项目 (selectable, settable, string) Steel, Grade 2, HRC54, Type A(AGMA), flame/induction-hardened
+												392 列表项目 (selectable, settable, string) Steel, Grade 1, HRC50, Type B(AGMA), flame/induction-hardened
+												393 列表项目 (selectable, settable, string) Steel, Grade 1, HRC54, Type B(AGMA), flame/induction-hardened
+												394 列表项目 (selectable, settable, string) Steel, Grade 2, HRC50, Type B(AGMA), flame/induction-hardened
+										395 组 (settable, string) Materials
+											396 按钮 (settable, string) Description: MaterialShaft ID: MaterialShaft_PLUS_BUTTON
+										397 文本 Hub Description: MaterialHub ID: MaterialHub_TEXTLABEL
+										398 组合框 (settable, string) Materials Description: MaterialHub Value: GJL (Cast iron flake graphite) ID: MaterialHub_INPUT_-1
+											399 列表 (settable, string)
+												400 列表项目 (selectable, settable, string) Neutral
+												401 列表项目 (selectable, settable, string) Structural steel
+												402 列表项目 (selectable, settable, string) Through hardened steel
+												403 列表项目 (selectable, settable, string) Case hardening steel
+												404 列表项目 (selectable, settable, string) Nitriding steel
+												405 列表项目 (selectable, settable, string) Stainless steel
+												406 列表项目 (selectable, settable, string) GJS (Cast iron spheroidal graphite)
+												407 列表项目 (selectable, settable, string) ADI (Austempered ductile iron)
+												408 列表项目 (selectable, settable, string) GJL (Cast iron flake graphite)
+												409 列表项目 (selectable, settable, string) Bronze
+												410 列表项目 (selectable, settable, string) Aluminum alloy
+												411 列表项目 (selectable, settable, string) Wrought aluminum alloy
+												412 列表项目 (selectable, settable, string) Cast aluminum alloy
+												413 列表项目 (selectable, settable, string) Free cutting steel
+												414 列表项目 (selectable, settable, string) Thermoplastic (PA)
+												415 列表项目 (selectable, settable, string) Thermoplastic (POM, ...)
+												416 列表项目 (selectable, settable, string) Laminated fabric HGW
+												417 列表项目 (selectable, settable, string) Molded laminated wood
+												418 列表项目 (selectable, settable, string) GS (Steel casting)
+												419 列表项目 (selectable, settable, string) Spring steel
+												420 列表项目 (selectable, settable, string) GJM, GTS (All-black malleable iron)
+												421 列表项目 (selectable, settable, string) Dry powdered metal
+												422 列表项目 (selectable, settable, string) Nickel-based alloys
+												423 列表项目 (selectable, settable, string) Magnesium alloys
+												424 列表项目 (selectable, settable, string) Titanium alloys
+										425 组合框 (settable, string) Materials Description: MaterialHub Value: Own Input ID: MaterialHub_INPUT_-1
+											426 列表 (settable, string)
+												427 列表项目 (selectable, settable, string) Own Input
+												428 列表项目 (selectable, settable, string) EN-GJL-150 (GG 15), untreated
+												429 列表项目 (selectable, settable, string) EN-GJL-200 (GG 20), untreated
+												430 列表项目 (selectable, settable, string) EN-GJL-250 (GG 25), untreated
+												431 列表项目 (selectable, settable, string) EN-GJL-350 (GG 35), untreated
+												432 列表项目 (selectable, settable, string) ASTM A48 Gray, Class30(AGMA), untreated
+												433 列表项目 (selectable, settable, string) ASTM A48 Gray, Class40(AGMA), untreated
+										434 组 (settable, string) Materials
+											435 按钮 (settable, string) Description: MaterialHub ID: MaterialHub_PLUS_BUTTON
+										436 文本 Keys Description: MaterialKey ID: MaterialKey_TEXTLABEL
+										437 组合框 (settable, string) Materials Description: MaterialKey Value: Through hardened steel ID: MaterialKey_INPUT_-1
+											438 列表 (settable, string)
+												439 列表项目 (selectable, settable, string) Neutral
+												440 列表项目 (selectable, settable, string) Structural steel
+												441 列表项目 (selectable, settable, string) Through hardened steel
+												442 列表项目 (selectable, settable, string) Case hardening steel
+												443 列表项目 (selectable, settable, string) Nitriding steel
+												444 列表项目 (selectable, settable, string) Stainless steel
+												445 列表项目 (selectable, settable, string) GJS (Cast iron spheroidal graphite)
+												446 列表项目 (selectable, settable, string) ADI (Austempered ductile iron)
+												447 列表项目 (selectable, settable, string) GJL (Cast iron flake graphite)
+												448 列表项目 (selectable, settable, string) Bronze
+												449 列表项目 (selectable, settable, string) Aluminum alloy
+												450 列表项目 (selectable, settable, string) Wrought aluminum alloy
+												451 列表项目 (selectable, settable, string) Cast aluminum alloy
+												452 列表项目 (selectable, settable, string) Free cutting steel
+												453 列表项目 (selectable, settable, string) Thermoplastic (PA)
+												454 列表项目 (selectable, settable, string) Thermoplastic (POM, ...)
+												455 列表项目 (selectable, settable, string) Laminated fabric HGW
+												456 列表项目 (selectable, settable, string) Molded laminated wood
+												457 列表项目 (selectable, settable, string) GS (Steel casting)
+												458 列表项目 (selectable, settable, string) Spring steel
+												459 列表项目 (selectable, settable, string) GJM, GTS (All-black malleable iron)
+												460 列表项目 (selectable, settable, string) Dry powdered metal
+												461 列表项目 (selectable, settable, string) Nickel-based alloys
+												462 列表项目 (selectable, settable, string) Magnesium alloys
+												463 列表项目 (selectable, settable, string) Titanium alloys
+										464 组合框 (settable, string) Materials Description: MaterialKey Value: Own Input ID: MaterialKey_INPUT_-1
+											465 列表 (settable, string)
+												466 列表项目 (selectable, settable, string) Own Input
+												467 列表项目 (selectable, settable, string) C45 (1), unalloyed/through hardened
+												468 列表项目 (selectable, settable, string) C45 (2), flame/induction-hardened
+												469 列表项目 (selectable, settable, string) C60, unalloyed/through hardened
+												470 列表项目 (selectable, settable, string) 30CrNiMo8 (1), alloyed/through hardened
+												471 列表项目 (selectable, settable, string) 34CrMo4, alloyed/through hardened
+												472 列表项目 (selectable, settable, string) 34CrNiMo6 (1), alloyed/through hardened
+												473 列表项目 (selectable, settable, string) 34CrNiMo6 (2), flame/induction-hardened
+												474 列表项目 (selectable, settable, string) 42CrMo4 (1), alloyed/through hardened
+												475 列表项目 (selectable, settable, string) 42CrMo4 (2), flame/induction-hardened
+												476 列表项目 (selectable, settable, string) 42CrMo4 (3), nitrided
+												477 列表项目 (selectable, settable, string) C 40, unalloyed/through hardened
+												478 列表项目 (selectable, settable, string) 25CrMo4, alloyed/through hardened
+												479 列表项目 (selectable, settable, string) 25CrMoS4, alloyed/through hardened
+												480 列表项目 (selectable, settable, string) BS 080M40 (ENB), unalloyed/through hardened
+												481 列表项目 (selectable, settable, string) Steel, Grade 1, HB200(AGMA), alloyed/through hardened
+												482 列表项目 (selectable, settable, string) Steel, Grade 1, HB250(AGMA), alloyed/through hardened
+												483 列表项目 (selectable, settable, string) Steel, Grade 1, HB300(AGMA), alloyed/through hardened
+												484 列表项目 (selectable, settable, string) Steel, Grade 1, HB350(AGMA), alloyed/through hardened
+												485 列表项目 (selectable, settable, string) Steel, Grade 1, HB400(AGMA), alloyed/through hardened
+												486 列表项目 (selectable, settable, string) Steel, Grade 2, HB200(AGMA), alloyed/through hardened
+												487 列表项目 (selectable, settable, string) Steel, Grade 2, HB250(AGMA), alloyed/through hardened
+												488 列表项目 (selectable, settable, string) Steel, Grade 2, HB300(AGMA), alloyed/through hardened
+												489 列表项目 (selectable, settable, string) Steel, Grade 2, HB350(AGMA), alloyed/through hardened
+												490 列表项目 (selectable, settable, string) Steel, Grade 2, HB400(AGMA), alloyed/through hardened
+												491 列表项目 (selectable, settable, string) Steel, Grade 1, HRC50, Type A(AGMA), flame/induction-hardened
+												492 列表项目 (selectable, settable, string) Steel, Grade 1, HRC54, Type A(AGMA), flame/induction-hardened
+												493 列表项目 (selectable, settable, string) Steel, Grade 2, HRC50, Type A(AGMA), flame/induction-hardened
+												494 列表项目 (selectable, settable, string) Steel, Grade 2, HRC54, Type A(AGMA), flame/induction-hardened
+												495 列表项目 (selectable, settable, string) Steel, Grade 1, HRC50, Type B(AGMA), flame/induction-hardened
+												496 列表项目 (selectable, settable, string) Steel, Grade 1, HRC54, Type B(AGMA), flame/induction-hardened
+												497 列表项目 (selectable, settable, string) Steel, Grade 2, HRC50, Type B(AGMA), flame/induction-hardened
+										498 组 (settable, string) Materials
+											499 按钮 (settable, string) Description: MaterialKey ID: MaterialKey_PLUS_BUTTON
+							500 组 (settable, string) ID: qt_scrollarea_vcontainer
+								501 滚动条 (settable, float) Value: 0
+				502 选项卡 (settable, string) M02A_BasicData
+					503 选项卡项目 (settable, string) M02A_BasicData
+		1 窗口 (settable, string) Error Secondary Actions: Raise
+			2 标题栏 (settable, string) Value: Error
+				3 菜单栏 系统 ID: MenuBar
+					4 菜单项 系统
+				5 按钮 关闭
+			6 图像 ID: qt_msgboxex_icon_label
+			7 文本 DIN 6892 Method C: No changing torque! Use method B! ID: qt_msgbox_label
+			8 组 (settable, string) ID: qt_msgbox_buttonbox
+				9 按钮 (settable, string) OK
+
+Document text: ```
+0.0000
+```

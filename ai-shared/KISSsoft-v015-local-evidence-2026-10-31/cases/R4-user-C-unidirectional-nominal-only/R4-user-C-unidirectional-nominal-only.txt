@@ -1,0 +1,229 @@
+ 
+ 
+  
+1/2 
+ 
+ KISSsoft Release 2026 
+ 
+ 
+2o2dy 
+ 
+ File  
+ 
+Name: 
+R4-user-C-unidirectional-nominal-only 
+Description: 
+KISSsoft example 
+Changed by: 
+AAA 
+on: 31.10.2026 
+at: 03:42:52 
+ 
+ 
+ 
+1 Overview 
+ 
+Calculation method: 
+DIN 6892-C:2012 
+ 
+Label 
+DIN 6885.1:1968 Default 
+Key width (mm) 
+[b] 
+      8.00 
+Key height (mm) 
+[h] 
+      7.00 
+ 
+Shaft diameter (mm) 
+[d] 
+     25.00 
+ 
+Nominal torque (Nm) 
+[Tn] 
+     25.00 
+ Application factor 
+[KA] 
+      1.25 
+ equivalent torque (Nm) 
+[Teq] 
+     31.25 
+Maximum torque (Nm) 
+[Tmax] 
+     31.25 
+Minimal frictional torque for interference fit (Nm) 
+[TRmin] 
+     0.00 
+Number of load peaks 
+[NL] 
+         1 
+ 
+Number of keys 
+[i] 
+         1 
+Load factor 
+[phi] 
+      1.00 
+ 
+equivalent circumferential stress (N) 
+[Feq] 
+   2500.00 
+Maximal circumferential force (N) 
+[Fmax] 
+   2500.00 
+Contact coefficient for equivalent surface pressure 
+[Kνeq] 
+      1.00 
+Contact coefficient for maximal surface pressure 
+[Kνmax] 
+     1.00 
+Friction factor for equivalent torsional moment 
+[KReq] 
+     1.000 
+Friction factor for maximum peak torsional moment 
+[KRmax] 
+     1.000 
+ 
+Shaft groove depth (minimum value) (mm) 
+[t1] 
+      4.00 
+Supporting key length (mm) 
+[ltr] 
+     24.00 
+Supporting key height (mm) 
+[h-t1] 
+      3.00 
+Equivalent effective surface pressure (N/mm²) 
+[peq] 
+     34.72 
+Maximum effective surface pressure (N/mm²) 
+[pmax] 
+     34.72 
+ 
+2 Shaft 
+ 
+Material, own Input 
+1 C 60 N 
+Type 
+Through hardened steel 
+Treatment 
+unalloyed/through hardened 
+Tensile strength (component's raw diameter) (N/mm²) 
+[Rm] 
+   1000.00 
+Yield point (component's raw diameter) (N/mm²) 
+[Rp] 
+    800.00 
+Component raw diameter (mm) 
+[deff] 
+        26 
+ 
+Permissible surface pressure (N/mm²) 
+[pzul] 
+    720.00 
+Load peak frequency coefficient 
+[fL] 
+      1.50 
+Safety factor, equivalent load (fw pzul/peq) 
+[SFeq] 
+     20.74 
+Safety, maximum load (fL pzul/pmax) 
+[SFmax] 
+    31.10 
+Minimal safety 
+[SF] 
+     20.74 
+ 
+3 Hub 
+ 
+Material, own Input 
+USER Rp355; Rm355 computational lower-bound only 
+
+ 
+ 
+  
+2/2 
+Type 
+Through hardened steel 
+Treatment 
+untreated 
+Tensile strength (wall thickness) (N/mm²) 
+[Rm] 
+    355.00 
+Yield point (wall thickness) (N/mm²) 
+[Rp] 
+    355.00 
+The hub material strength values are defined using the wall thickness as the raw diameter. 
+Component raw diameter (wall thickness) (mm) 
+[deff] 
+        90 
+ 
+Permissible surface pressure (N/mm²) 
+[pzul] 
+    319.50 
+Load peak frequency coefficient 
+[fL] 
+      1.50 
+Safety factor, equivalent load (fw pzul/peq) 
+[SFeq] 
+      9.20 
+Safety, maximum load (fL pzul/pmax) 
+[SFmax] 
+    13.80 
+Minimal safety 
+[SF] 
+      9.20 
+ 
+4 Key 
+ 
+Material, own Input 
+C45 K 
+Type 
+Through hardened steel 
+Treatment 
+unalloyed/through hardened 
+Tensile strength (N/mm²) 
+[Rm] 
+    680.00 
+Diameter range (mm) 
+[d]              (  7.0    - 
+  7.0 
+) 
+ 
+ 
+Yield point (N/mm²) 
+[Rp] 
+    350.00 
+Diameter range (mm) 
+[d]              (  7.0    - 
+  7.0 
+) 
+ 
+ 
+Permissible surface pressure (N/mm²) 
+[pzul] 
+    315.00 
+Load peak frequency coefficient 
+[fL] 
+      1.50 
+Safety factor, equivalent load (fw pzul/peq) 
+[SFeq] 
+      9.07 
+Safety, maximum load (fL pzul/pmax) 
+[SFmax] 
+    13.61 
+Minimal safety 
+[SF] 
+      9.07 
+ 
+Remarks: 
+Safety = minimum (pzul/peq, fL pzul/pmax) 
+Condition according to DIN 6892 Safety >= 1.0 
+Supporting key height: h - t1 
+ 
+ 
+ 
+End of report (lines: 85) 
+ 
+ 
+ 

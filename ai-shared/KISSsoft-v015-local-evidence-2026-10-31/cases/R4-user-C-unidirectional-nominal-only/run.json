@@ -1,0 +1,473 @@
+{
+  "case": {
+    "module": "M02A",
+    "source": "D:\\Program Files\\KISSsoft AG\\KISSsoft 2026\\example\\08 Keys (DIN 6892 Example 1).M2A",
+    "template": "M02ALe0.RPT",
+    "ext": ".M2A",
+    "get": [
+      "m02Aa.Methode",
+      "m02Aa.MomArt",
+      "m02Aa.TmaxRuck",
+      "m02Aa.Mnenn",
+      "m02Aa.Mmax",
+      "m02Aa.NL",
+      "m02Aa.NW",
+      "m02Aa.Meq",
+      "m02Aw.htW",
+      "m02An.htN",
+      "m02Aa.Klamda_e",
+      "m02Aa.Klamda",
+      "m02Aa.KReq",
+      "m02Aa.KR",
+      "m02Aa.fw",
+      "m02Aw.peq",
+      "m02An.peq",
+      "m02Aw.pmax",
+      "m02An.pmax",
+      "m02Aw.pzul",
+      "m02Aw.fL",
+      "m02Aw.Resulteq",
+      "m02Aw.Resultmax",
+      "m02Aw.ResultW",
+      "m02Aw.fs",
+      "m02Aw.mat.Rm",
+      "m02Aw.mat.Rp",
+      "m02An.pzul",
+      "m02An.fL",
+      "m02An.Resulteq",
+      "m02An.Resultmax",
+      "m02An.ResultN",
+      "m02An.fs",
+      "m02An.mat.Rm",
+      "m02An.mat.Rp",
+      "m02Ak.pzul",
+      "m02Ak.fL",
+      "m02Ak.Resulteq",
+      "m02Ak.Resultmax",
+      "m02Ak.ResultP",
+      "m02Ak.fs",
+      "m02Ak.mat.Rm",
+      "m02Ak.mat.Rp"
+    ],
+    "set": {
+      "m02Aa.TmaxRuck": 0,
+      "m02Aa.MomArt": 0,
+      "m02Aa.NW": 0,
+      "m02Aa.iANZ": 1,
+      "m02Aa.phiFak": 1,
+      "m02Aa.Mnenn": 25,
+      "m02Aa.StossFak": 1.25,
+      "m02Aw.dWa": 25,
+      "m02Aw.di": 0,
+      "m02Ak.bKeil": 8,
+      "m02Ak.hKeil": 7,
+      "m02Ak.b": 8,
+      "m02Ak.h": 7,
+      "m02Aw.lW": 24,
+      "m02An.lN": 24,
+      "m02Aw.t1MaxW": 4,
+      "m02Aa.TRmin": 0,
+      "m02Aw.mat.DBID": 19999,
+      "m02Aw.mat.Rp": 800,
+      "m02Aw.mat.typ": 2,
+      "m02An.mat.DBID": 19999,
+      "m02An.mat.Rp": 355,
+      "m02An.mat.typ": 2,
+      "m02Ak.mat.DBID": 19999,
+      "m02Ak.mat.Rp": 350,
+      "m02Ak.mat.typ": 2,
+      "m02Ak.d": 25,
+      "m02Aw.mat.Rm": 1000,
+      "m02Aw.t1MinW": 4,
+      "m02An.t2MinN": 3,
+      "m02An.t2MaxN": 3,
+      "m02An.mat.Rm": 355,
+      "m02Aa.Mmax": 25,
+      "m02Aa.NL": 1,
+      "m02An.mat.bez": "USER Rp355; Rm355 computational lower-bound only",
+      "m02Aa.Methode": 0
+    },
+    "id": "R4-user-C-unidirectional-nominal-only",
+    "open": [
+      "Method C nominal equivalent-load verification only. No peak-load/reversal acceptance: Mmax=25,N_L=1 computational placeholders, not supplied duty.",
+      "Hub Rm=355 computational lower bound copied from prior v3, not a supplied material value. Shaft Rm=1000 explicitly from user P4.1.",
+      "User did not supply reverse load; unidirectional branch is declared assumption for method C feasibility. Do not claim it matches actual duty.",
+      "Geometry method C must read back h-t1=3 and ltr24, p_eq34.7222. Standard nominal geometry/type A entered through effective support inputs; full key tolerances not released."
+    ]
+  },
+  "scope": "mapped user inputs on vendor seed; inspect retained inputs and open items",
+  "set_log": [
+    {
+      "var": "m02Aa.TmaxRuck",
+      "before": "15000",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m02Aa.MomArt",
+      "before": "1",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m02Aa.NW",
+      "before": "250000",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m02Aa.iANZ",
+      "before": "1",
+      "set": "1",
+      "readback": "1"
+    },
+    {
+      "var": "m02Aa.phiFak",
+      "before": "1",
+      "set": "1",
+      "readback": "1"
+    },
+    {
+      "var": "m02Aa.Mnenn",
+      "before": "4000",
+      "set": "25",
+      "readback": "25"
+    },
+    {
+      "var": "m02Aa.StossFak",
+      "before": "1.5",
+      "set": "1.25",
+      "readback": "1.25"
+    },
+    {
+      "var": "m02Aw.dWa",
+      "before": "120",
+      "set": "25",
+      "readback": "25"
+    },
+    {
+      "var": "m02Aw.di",
+      "before": "0",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m02Ak.bKeil",
+      "before": "32",
+      "set": "8",
+      "readback": "8"
+    },
+    {
+      "var": "m02Ak.hKeil",
+      "before": "18",
+      "set": "7",
+      "readback": "7"
+    },
+    {
+      "var": "m02Ak.b",
+      "before": "32",
+      "set": "8",
+      "readback": "8"
+    },
+    {
+      "var": "m02Ak.h",
+      "before": "18",
+      "set": "7",
+      "readback": "7"
+    },
+    {
+      "var": "m02Aw.lW",
+      "before": "93",
+      "set": "24",
+      "readback": "24"
+    },
+    {
+      "var": "m02An.lN",
+      "before": "93",
+      "set": "24",
+      "readback": "24"
+    },
+    {
+      "var": "m02Aw.t1MaxW",
+      "before": "11",
+      "set": "4",
+      "readback": "4"
+    },
+    {
+      "var": "m02Aa.TRmin",
+      "before": "0",
+      "set": "0",
+      "readback": "0"
+    },
+    {
+      "var": "m02Aw.mat.DBID",
+      "before": "19999",
+      "set": "19999",
+      "readback": "19999"
+    },
+    {
+      "var": "m02Aw.mat.Rp",
+      "before": "310",
+      "set": "800",
+      "readback": "800"
+    },
+    {
+      "var": "m02Aw.mat.typ",
+      "before": "2",
+      "set": "2",
+      "readback": "2"
+    },
+    {
+      "var": "m02An.mat.DBID",
+      "before": "19999",
+      "set": "19999",
+      "readback": "19999"
+    },
+    {
+      "var": "m02An.mat.Rp",
+      "before": "130",
+      "set": "355",
+      "readback": "355"
+    },
+    {
+      "var": "m02An.mat.typ",
+      "before": "7",
+      "set": "2",
+      "readback": "2"
+    },
+    {
+      "var": "m02Ak.mat.DBID",
+      "before": "19999",
+      "set": "19999",
+      "readback": "19999"
+    },
+    {
+      "var": "m02Ak.mat.Rp",
+      "before": "430",
+      "set": "350",
+      "readback": "350"
+    },
+    {
+      "var": "m02Ak.mat.typ",
+      "before": "2",
+      "set": "2",
+      "readback": "2"
+    },
+    {
+      "var": "m02Ak.d",
+      "before": "130",
+      "set": "25",
+      "readback": "25"
+    },
+    {
+      "var": "m02Aw.mat.Rm",
+      "before": "600",
+      "set": "1000",
+      "readback": "1000"
+    },
+    {
+      "var": "m02Aw.t1MinW",
+      "before": "0",
+      "set": "4",
+      "readback": "4"
+    },
+    {
+      "var": "m02An.t2MinN",
+      "before": "0",
+      "set": "3",
+      "readback": "3"
+    },
+    {
+      "var": "m02An.t2MaxN",
+      "before": "7.4000000000000003553",
+      "set": "3",
+      "readback": "3"
+    },
+    {
+      "var": "m02An.mat.Rm",
+      "before": "200",
+      "set": "355",
+      "readback": "355"
+    },
+    {
+      "var": "m02Aa.Mmax",
+      "before": "15000",
+      "set": "25",
+      "readback": "25"
+    },
+    {
+      "var": "m02Aa.NL",
+      "before": "10000",
+      "set": "1",
+      "readback": "1"
+    },
+    {
+      "var": "m02An.mat.bez",
+      "before": "EN GJL-250",
+      "set": "USER Rp355; Rm355 computational lower-bound only",
+      "readback": "USER Rp355; Rm355 computational lower-bound only"
+    },
+    {
+      "var": "m02Aa.Methode",
+      "before": "1",
+      "set": "0",
+      "readback": "0"
+    }
+  ],
+  "version": "2026",
+  "source_sha256": "4e5288719a94043ca148f2dbe7881ca067294811030437e604ddf5a222900b8c",
+  "license": true,
+  "calculate_ok": true,
+  "messages": [
+    [],
+    [],
+    0
+  ],
+  "values": {
+    "m02Aa.TmaxRuck": "0",
+    "m02Aa.MomArt": "0",
+    "m02Aa.NW": "0",
+    "m02Aa.iANZ": "1",
+    "m02Aa.phiFak": "1",
+    "m02Aa.Mnenn": "25",
+    "m02Aa.StossFak": "1.25",
+    "m02Aw.dWa": "25",
+    "m02Aw.di": "0",
+    "m02Ak.bKeil": "8",
+    "m02Ak.hKeil": "7",
+    "m02Ak.b": "8",
+    "m02Ak.h": "7",
+    "m02Aw.lW": "24",
+    "m02An.lN": "24",
+    "m02Aw.t1MaxW": "4",
+    "m02Aa.TRmin": "0",
+    "m02Aw.mat.DBID": "19999",
+    "m02Aw.mat.Rp": "800",
+    "m02Aw.mat.typ": "2",
+    "m02An.mat.DBID": "19999",
+    "m02An.mat.Rp": "355",
+    "m02An.mat.typ": "2",
+    "m02Ak.mat.DBID": "19999",
+    "m02Ak.mat.Rp": "350",
+    "m02Ak.mat.typ": "2",
+    "m02Ak.d": "30",
+    "m02Aw.mat.Rm": "1000",
+    "m02Aw.t1MinW": "4",
+    "m02An.t2MinN": "3",
+    "m02An.t2MaxN": "3.2999999999999998224",
+    "m02An.mat.Rm": "355",
+    "m02Aa.Mmax": "31.25",
+    "m02Aa.NL": "1",
+    "m02An.mat.bez": "USER Rp355; Rm355 computational lower-bound only",
+    "m02Aa.Methode": "0",
+    "m02Aa.Meq": "31.25",
+    "m02Aw.htW": "3",
+    "m02An.htN": "3",
+    "m02Aa.Klamda_e": "1",
+    "m02Aa.Klamda": "1",
+    "m02Aa.KReq": "1",
+    "m02Aa.KR": "1",
+    "m02Aa.fw": "1",
+    "m02Aw.peq": "34.722222222222221433",
+    "m02An.peq": "34.722222222222221433",
+    "m02Aw.pmax": "34.722222222222221433",
+    "m02An.pmax": "34.722222222222221433",
+    "m02Aw.pzul": "720",
+    "m02Aw.fL": "1.5",
+    "m02Aw.Resulteq": "20.736000000000000654",
+    "m02Aw.Resultmax": "31.103999999999999204",
+    "m02Aw.ResultW": "20.736000000000000654",
+    "m02Aw.fs": "0.9000000000000000222",
+    "m02An.pzul": "319.5",
+    "m02An.fL": "1.5",
+    "m02An.Resulteq": "9.2016000000000008896",
+    "m02An.Resultmax": "13.802400000000000446",
+    "m02An.ResultN": "9.2016000000000008896",
+    "m02An.fs": "0.9000000000000000222",
+    "m02Ak.pzul": "315",
+    "m02Ak.fL": "1.5",
+    "m02Ak.Resulteq": "9.0720000000000009521",
+    "m02Ak.Resultmax": "13.60800000000000054",
+    "m02Ak.ResultP": "9.0720000000000009521",
+    "m02Ak.fs": "0.9000000000000000222",
+    "m02Ak.mat.Rm": "680"
+  },
+  "get_errors": {},
+  "sha256": "f6528a20ed9b34ec136b6a56d323ddc3ae245e44a8d8e46f08e085b4c5e092f6",
+  "reload_ok": true,
+  "reload_messages": [
+    [],
+    [],
+    0
+  ],
+  "reload_values": {
+    "m02Aa.TmaxRuck": "0",
+    "m02Aa.MomArt": "0",
+    "m02Aa.NW": "0",
+    "m02Aa.iANZ": "1",
+    "m02Aa.phiFak": "1",
+    "m02Aa.Mnenn": "25",
+    "m02Aa.StossFak": "1.25",
+    "m02Aw.dWa": "25",
+    "m02Aw.di": "0",
+    "m02Ak.bKeil": "8",
+    "m02Ak.hKeil": "7",
+    "m02Ak.b": "8",
+    "m02Ak.h": "7",
+    "m02Aw.lW": "24",
+    "m02An.lN": "24",
+    "m02Aw.t1MaxW": "4",
+    "m02Aa.TRmin": "0",
+    "m02Aw.mat.DBID": "19999",
+    "m02Aw.mat.Rp": "800",
+    "m02Aw.mat.typ": "2",
+    "m02An.mat.DBID": "19999",
+    "m02An.mat.Rp": "355",
+    "m02An.mat.typ": "2",
+    "m02Ak.mat.DBID": "19999",
+    "m02Ak.mat.Rp": "350",
+    "m02Ak.mat.typ": "2",
+    "m02Ak.d": "30",
+    "m02Aw.mat.Rm": "1000",
+    "m02Aw.t1MinW": "4",
+    "m02An.t2MinN": "3",
+    "m02An.t2MaxN": "3.2999999999999998224",
+    "m02An.mat.Rm": "355",
+    "m02Aa.Mmax": "31.25",
+    "m02Aa.NL": "1",
+    "m02An.mat.bez": "USER Rp355; Rm355 computational lower-bound only",
+    "m02Aa.Methode": "0",
+    "m02Aa.Meq": "31.25",
+    "m02Aw.htW": "3",
+    "m02An.htN": "3",
+    "m02Aa.Klamda_e": "1",
+    "m02Aa.Klamda": "1",
+    "m02Aa.KReq": "1",
+    "m02Aa.KR": "1",
+    "m02Aa.fw": "1",
+    "m02Aw.peq": "34.722222222222221433",
+    "m02An.peq": "34.722222222222221433",
+    "m02Aw.pmax": "34.722222222222221433",
+    "m02An.pmax": "34.722222222222221433",
+    "m02Aw.pzul": "720",
+    "m02Aw.fL": "1.5",
+    "m02Aw.Resulteq": "20.736000000000000654",
+    "m02Aw.Resultmax": "31.103999999999999204",
+    "m02Aw.ResultW": "20.736000000000000654",
+    "m02Aw.fs": "0.9000000000000000222",
+    "m02An.pzul": "319.5",
+    "m02An.fL": "1.5",
+    "m02An.Resulteq": "9.2016000000000008896",
+    "m02An.Resultmax": "13.802400000000000446",
+    "m02An.ResultN": "9.2016000000000008896",
+    "m02An.fs": "0.9000000000000000222",
+    "m02Ak.pzul": "315",
+    "m02Ak.fL": "1.5",
+    "m02Ak.Resulteq": "9.0720000000000009521",
+    "m02Ak.Resultmax": "13.60800000000000054",
+    "m02Ak.ResultP": "9.0720000000000009521",
+    "m02Ak.fs": "0.9000000000000000222",
+    "m02Ak.mat.Rm": "680"
+  },
+  "reload_differences": {}
+}

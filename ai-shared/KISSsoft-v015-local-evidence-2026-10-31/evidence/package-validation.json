@@ -1,0 +1,10 @@
+{
+  "file": "C:\\Users\\AAA\\Downloads\\gearbase-v0.15-stage3.zip",
+  "bytes": 25652163,
+  "actual_sha256": "399aa2d18e30d5736c0ec4c4bf8e9d5109d6cb72adcffe4808efcb9c899280f4",
+  "expected_sha256": "e907f1cdb721a6ac5f921acf800cf7fc49df5b32cc5a5183a53f14ba534c6ed9",
+  "hash_match": false,
+  "zip_readable": false,
+  "header_has_UTF8_replacement_bytes": true,
+  "action": "NOT_EXTRACTED_OR_USED; waiting for original binary direct URL"
+}

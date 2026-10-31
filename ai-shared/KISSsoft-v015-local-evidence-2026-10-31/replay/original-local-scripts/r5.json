@@ -1,0 +1,237 @@
+{
+  "status": "OPTIONAL_PREPARED_NOT_EXECUTED",
+  "cases": [
+    {
+      "id": "R5-fit-A1-T500",
+      "module": "M010",
+      "source": "D:\\my_Works\\Gears\\kisssoft-v014-run\\P4-fit-A1-mapped-v2\\P4-fit-A1-mapped-v2.M10",
+      "template": "M010Le0.RPT",
+      "ext": ".M10",
+      "set": {
+        "m01M.nenn": 500
+      },
+      "reference": {
+        "p_input_MPa": 90,
+        "U_input_um": null,
+        "translated_U_um": 60.613953488372104,
+        "expected_elastic_p_MPa": 90.00000000000003,
+        "embedding_um": 4.800000000000001,
+        "inner_E_MPa": 215000
+      },
+      "open": [
+        "Inner E=215000 and both nu=.3 carried from common steel contract; verify appendix A original before equivalence claim.",
+        "gF field not exposed in source: compare reported m01allg.s with 4.8um; reject numeric equivalence if different.",
+        "Zero external load isolates pressure/stress; sliding safety is undefined/infinite. Torque capacity may be derived from native pressure.",
+        "Rm, hypothesis and elastic-plastic flag inherited and recorded; compare yield branch only until contract is complete.",
+        "Tlimit=m01M.grenz is maximum torque to avoid micro sliding, not gross frictional torque capacity or safety-adjusted capacity. See official M010Le0.RPT lines412-418."
+      ],
+      "get": [
+        "m01allg.s",
+        "m01allg.hypoIndex",
+        "m01allg.elastplastFlag",
+        "m01allg.uebermass[0]",
+        "m01r.p[0]",
+        "m01r.abmass[0]",
+        "m01w.SiRe[0]",
+        "m01n.SiRe[0]",
+        "m01w.sigmaVa[0]",
+        "m01n.sigmaVi[0]",
+        "m01M.grenz[0]",
+        "m01allg.pF",
+        "m01allg.zeta",
+        "m01allg.qpaqa",
+        "m01M.nenn",
+        "m01M.cb",
+        "m01allg.FU",
+        "m01r.si[0]",
+        "m01r.si[1]",
+        "m01r.si[2]",
+        "m01M.grenz[0]",
+        "m01M.grenz[1]",
+        "m01M.grenz[2]",
+        "m01my.umfang",
+        "m01sollSi.Ru"
+      ],
+      "derived_requests": {
+        "QI": "DiI/DF",
+        "QA": "DF/DaA",
+        "K": "elastic total compliance times EI if definition confirmed",
+        "xi": "native m01allg.zeta may denote plasticity ratio, not presumed same as requested xi"
+      }
+    },
+    {
+      "id": "R5-fit-A2-T500",
+      "module": "M010",
+      "source": "D:\\my_Works\\Gears\\kisssoft-v014-run\\P4-fit-A2-mapped-v2\\P4-fit-A2-mapped-v2.M10",
+      "template": "M010Le0.RPT",
+      "ext": ".M10",
+      "set": {
+        "m01M.nenn": 500
+      },
+      "reference": {
+        "p_input_MPa": null,
+        "U_input_um": 75,
+        "translated_U_um": 75,
+        "expected_elastic_p_MPa": 113.1975,
+        "embedding_um": 4.800000000000001,
+        "inner_E_MPa": 215000
+      },
+      "open": [
+        "Inner E=215000 and both nu=.3 carried from common steel contract; verify appendix A original before equivalence claim.",
+        "gF field not exposed in source: compare reported m01allg.s with 4.8um; reject numeric equivalence if different.",
+        "Zero external load isolates pressure/stress; sliding safety is undefined/infinite. Torque capacity may be derived from native pressure.",
+        "Rm, hypothesis and elastic-plastic flag inherited and recorded; compare yield branch only until contract is complete.",
+        "Tlimit=m01M.grenz is maximum torque to avoid micro sliding, not gross frictional torque capacity or safety-adjusted capacity. See official M010Le0.RPT lines412-418."
+      ],
+      "get": [
+        "m01allg.s",
+        "m01allg.hypoIndex",
+        "m01allg.elastplastFlag",
+        "m01allg.uebermass[0]",
+        "m01r.p[0]",
+        "m01r.abmass[0]",
+        "m01w.SiRe[0]",
+        "m01n.SiRe[0]",
+        "m01w.sigmaVa[0]",
+        "m01n.sigmaVi[0]",
+        "m01M.grenz[0]",
+        "m01allg.pF",
+        "m01allg.zeta",
+        "m01allg.qpaqa",
+        "m01M.nenn",
+        "m01M.cb",
+        "m01allg.FU",
+        "m01r.si[0]",
+        "m01r.si[1]",
+        "m01r.si[2]",
+        "m01M.grenz[0]",
+        "m01M.grenz[1]",
+        "m01M.grenz[2]",
+        "m01my.umfang",
+        "m01sollSi.Ru"
+      ],
+      "derived_requests": {
+        "QI": "DiI/DF",
+        "QA": "DF/DaA",
+        "K": "elastic total compliance times EI if definition confirmed",
+        "xi": "native m01allg.zeta may denote plasticity ratio, not presumed same as requested xi"
+      }
+    },
+    {
+      "id": "R5-fit-A3-T500",
+      "module": "M010",
+      "source": "D:\\my_Works\\Gears\\kisssoft-v014-run\\P4-fit-A3-mapped-v2\\P4-fit-A3-mapped-v2.M10",
+      "template": "M010Le0.RPT",
+      "ext": ".M10",
+      "set": {
+        "m01M.nenn": 500
+      },
+      "reference": {
+        "p_input_MPa": 50,
+        "U_input_um": null,
+        "translated_U_um": 73.94254073722512,
+        "expected_elastic_p_MPa": 50.0,
+        "embedding_um": 4.800000000000001,
+        "inner_E_MPa": 215000
+      },
+      "open": [
+        "Inner E=215000 and both nu=.3 carried from common steel contract; verify appendix A original before equivalence claim.",
+        "gF field not exposed in source: compare reported m01allg.s with 4.8um; reject numeric equivalence if different.",
+        "Zero external load isolates pressure/stress; sliding safety is undefined/infinite. Torque capacity may be derived from native pressure.",
+        "Rm, hypothesis and elastic-plastic flag inherited and recorded; compare yield branch only until contract is complete.",
+        "Tlimit=m01M.grenz is maximum torque to avoid micro sliding, not gross frictional torque capacity or safety-adjusted capacity. See official M010Le0.RPT lines412-418."
+      ],
+      "get": [
+        "m01allg.s",
+        "m01allg.hypoIndex",
+        "m01allg.elastplastFlag",
+        "m01allg.uebermass[0]",
+        "m01r.p[0]",
+        "m01r.abmass[0]",
+        "m01w.SiRe[0]",
+        "m01n.SiRe[0]",
+        "m01w.sigmaVa[0]",
+        "m01n.sigmaVi[0]",
+        "m01M.grenz[0]",
+        "m01allg.pF",
+        "m01allg.zeta",
+        "m01allg.qpaqa",
+        "m01M.nenn",
+        "m01M.cb",
+        "m01allg.FU",
+        "m01r.si[0]",
+        "m01r.si[1]",
+        "m01r.si[2]",
+        "m01M.grenz[0]",
+        "m01M.grenz[1]",
+        "m01M.grenz[2]",
+        "m01my.umfang",
+        "m01sollSi.Ru"
+      ],
+      "derived_requests": {
+        "QI": "DiI/DF",
+        "QA": "DF/DaA",
+        "K": "elastic total compliance times EI if definition confirmed",
+        "xi": "native m01allg.zeta may denote plasticity ratio, not presumed same as requested xi"
+      }
+    },
+    {
+      "id": "R5-fit-A4-T500",
+      "module": "M010",
+      "source": "D:\\my_Works\\Gears\\kisssoft-v014-run\\P4-fit-A4-mapped-v2\\P4-fit-A4-mapped-v2.M10",
+      "template": "M010Le0.RPT",
+      "ext": ".M10",
+      "set": {
+        "m01M.nenn": 500
+      },
+      "reference": {
+        "p_input_MPa": null,
+        "U_input_um": 65,
+        "translated_U_um": 65,
+        "expected_elastic_p_MPa": 43.533257064409106,
+        "embedding_um": 4.800000000000001,
+        "inner_E_MPa": 215000
+      },
+      "open": [
+        "Inner E=215000 and both nu=.3 carried from common steel contract; verify appendix A original before equivalence claim.",
+        "gF field not exposed in source: compare reported m01allg.s with 4.8um; reject numeric equivalence if different.",
+        "Zero external load isolates pressure/stress; sliding safety is undefined/infinite. Torque capacity may be derived from native pressure.",
+        "Rm, hypothesis and elastic-plastic flag inherited and recorded; compare yield branch only until contract is complete.",
+        "Tlimit=m01M.grenz is maximum torque to avoid micro sliding, not gross frictional torque capacity or safety-adjusted capacity. See official M010Le0.RPT lines412-418."
+      ],
+      "get": [
+        "m01allg.s",
+        "m01allg.hypoIndex",
+        "m01allg.elastplastFlag",
+        "m01allg.uebermass[0]",
+        "m01r.p[0]",
+        "m01r.abmass[0]",
+        "m01w.SiRe[0]",
+        "m01n.SiRe[0]",
+        "m01w.sigmaVa[0]",
+        "m01n.sigmaVi[0]",
+        "m01M.grenz[0]",
+        "m01allg.pF",
+        "m01allg.zeta",
+        "m01allg.qpaqa",
+        "m01M.nenn",
+        "m01M.cb",
+        "m01allg.FU",
+        "m01r.si[0]",
+        "m01r.si[1]",
+        "m01r.si[2]",
+        "m01M.grenz[0]",
+        "m01M.grenz[1]",
+        "m01M.grenz[2]",
+        "m01my.umfang",
+        "m01sollSi.Ru"
+      ],
+      "derived_requests": {
+        "QI": "DiI/DF",
+        "QA": "DF/DaA",
+        "K": "elastic total compliance times EI if definition confirmed",
+        "xi": "native m01allg.zeta may denote plasticity ratio, not presumed same as requested xi"
+      }
+    }
+  ]
+}

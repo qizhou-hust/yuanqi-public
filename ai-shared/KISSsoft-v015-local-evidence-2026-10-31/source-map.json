@@ -1,0 +1,74 @@
+{
+  "D:\\my_Works\\Gears\\M33-evidence-2026-10-28\\reports\\K01-spur\\K01-spur.Z12": {
+    "packaged_path": "sources/822c50af875e-K01-spur.Z12",
+    "sha256": "822c50af875e6c654a626587e3f8e42b0f6d74d21d537b3980163f8b3c24d531"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\P3-K01-spur\\P3-K01-spur.Z12": {
+    "packaged_path": "sources/9fc15302056b-P3-K01-spur.Z12",
+    "sha256": "9fc15302056be2eb67811e52e89699314e88503f643ae59e9871ed3526e110f3"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\P3-K02-helical\\P3-K02-helical.Z12": {
+    "packaged_path": "sources/a39ba6d4e8e2-P3-K02-helical.Z12",
+    "sha256": "a39ba6d4e8e293b58c9b4c4f4118f2702cdb4495a79ad53c17908694ccff9f73"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\P3-K04-EV-stage1\\P3-K04-EV-stage1.Z12": {
+    "packaged_path": "sources/a4de7984b53a-P3-K04-EV-stage1.Z12",
+    "sha256": "a4de7984b53a3966837c09f826322c6e6fa93ac17fe3815383d2e1672ed7ab85"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\P3-K05-EV-stage2\\P3-K05-EV-stage2.Z12": {
+    "packaged_path": "sources/e2422a4568a8-P3-K05-EV-stage2.Z12",
+    "sha256": "e2422a4568a87fba70bf7e3c5428ae5584673b33d77fcf7d276b35022db4f56f"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\P3-K03-premachining\\P3-K03-premachining.Z12": {
+    "packaged_path": "sources/73a063a1d859-P3-K03-premachining.Z12",
+    "sha256": "73a063a1d859be6f84dca137fdf98e993e38c9c8aad4b2a010e91c87eb652f3a"
+  },
+  "D:\\Program Files\\KISSsoft AG\\KISSsoft 2026\\example\\08 Keys (DIN 6892 Example 1).M2A": {
+    "packaged_path": "sources/4e5288719a94-08 Keys (DIN 6892 Example 1).M2A",
+    "sha256": "4e5288719a94043ca148f2dbe7881ca067294811030437e604ddf5a222900b8c"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\P4-fit-A1-mapped-v2\\P4-fit-A1-mapped-v2.M10": {
+    "packaged_path": "sources/77f279cab2f7-P4-fit-A1-mapped-v2.M10",
+    "sha256": "77f279cab2f727d0917c80e81e5e88f1795d7f886065d4f6b73cf231dae37b2e"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\P4-fit-A2-mapped-v2\\P4-fit-A2-mapped-v2.M10": {
+    "packaged_path": "sources/64c36ba27063-P4-fit-A2-mapped-v2.M10",
+    "sha256": "64c36ba27063cb6dced30d07efa92edb01df55b9da05d1085aad9021846b4f0b"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\P4-fit-A3-mapped-v2\\P4-fit-A3-mapped-v2.M10": {
+    "packaged_path": "sources/01e0bfeb5afe-P4-fit-A3-mapped-v2.M10",
+    "sha256": "01e0bfeb5afeb9c826afe82a79de9f720e7a9ff7b249bbc26b3be65afadd596c"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\P4-fit-A4-mapped-v2\\P4-fit-A4-mapped-v2.M10": {
+    "packaged_path": "sources/c4d96c9e2327-P4-fit-A4-mapped-v2.M10",
+    "sha256": "c4d96c9e232707095a519900ee293fd92e7386b16f730f60ea85ca992ad2dd1c"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\shaftprep\\R1-L1-S1.W10": {
+    "packaged_path": "sources/16f6d6b28ab4-R1-L1-S1.W10",
+    "sha256": "16f6d6b28ab48b7884d889e38d7c3c9313f417c184ad6fc8d878f05d83ca9ebe"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\shaftprep\\R1-L1-S2.W10": {
+    "packaged_path": "sources/b98f8b8013be-R1-L1-S2.W10",
+    "sha256": "b98f8b8013bec3eef1a5dc2d66ec662e140a9e1f44cd6beb8cbb98c28cb813a9"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\shaftprep\\R1-L1-S3a.W10": {
+    "packaged_path": "sources/8a8e38206268-R1-L1-S3a.W10",
+    "sha256": "8a8e38206268a4063d2157a7928bee0ac5af65b358c8f740a745d8a369e9ebf6"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\shaftprep\\R1-L80-S1.W10": {
+    "packaged_path": "sources/16f6d6b28ab4-R1-L80-S1.W10",
+    "sha256": "16f6d6b28ab48b7884d889e38d7c3c9313f417c184ad6fc8d878f05d83ca9ebe"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\shaftprep\\R1-L80-S2.W10": {
+    "packaged_path": "sources/b98f8b8013be-R1-L80-S2.W10",
+    "sha256": "b98f8b8013bec3eef1a5dc2d66ec662e140a9e1f44cd6beb8cbb98c28cb813a9"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\shaftprep\\R1-L80-S3a.W10": {
+    "packaged_path": "sources/8a8e38206268-R1-L80-S3a.W10",
+    "sha256": "8a8e38206268a4063d2157a7928bee0ac5af65b358c8f740a745d8a369e9ebf6"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v014-run\\p4shaft\\P4-shaft-corrected-static.W10": {
+    "packaged_path": "sources/c4651d6ad9a1-P4-shaft-corrected-static.W10",
+    "sha256": "c4651d6ad9a1a4b430db1d6119c1fc437d01a011ae488c801b747f8a723b34d3"
+  }
+}

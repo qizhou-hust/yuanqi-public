@@ -1,0 +1,295 @@
+Shaft
+R1-L1-S3a-run
+Changed on | 31.10.2026, 04:07:30 | 
+Changed by | AAA | 
+ |  | 
+ |  | 
+Description | P4 candidate - STATIC PREP ONLY - loads/supports must be verified before calculation | 
+ |  | 
+ |  | 
+ |  | 
+ |  | 
+ |  | 
+ | 2o2dy (5416) | 
+ | KISSsoft Release 2026  |
+Contents
+1	 Messages
+2	 Input data
+2.1	 Shafts
+2.2	 Weight force
+2.3	 Shaft modeling
+2.4	 Shear deformations
+2.5	 Rolling bearings
+2.6	 Housing
+2.7	 Load applications
+3	 Shaft definition (Shaft)
+3.1	 Outer contour
+3.2	 Forces
+3.3	 Bearing
+4	 Gears
+5	 Results
+5.1	 Shafts
+5.2	 Bearing
+5.3	 'Shaft' Bearing 'P4 Support A'
+5.4	 'Shaft' Bearing 'P4 Support B'
+6	 Strength calculation according to DIN 743:2012
+6.1	 Summary
+6.2	 Calculation details
+1 Messages
+| Calculation is consistent. |
+2 Input data
+Coordinate system shaft:	see picture W-002
+2.1 Shafts
+2.1.1 Shaft 'Shaft'
+Drawing	W-007
+Initial position (mm)	   -10.000
+Length (mm)	   170.000
+Speed (1/min)	   900.000
+Direction of rotation:	clockwise
+Material, own Input	P4 custom DIN743 1000/800/500/400/300
+Young's modulus (N/mm²)	206000.000
+Poisson's ratio nu	     0.300
+Density (kg/m³)	  7830.000
+Coefficient of thermal expansion (10^-6/K)	    11.500
+Temperature (°C)	    20.000
+Mass of shaft (kg)	     0.982
+Mass of shaft, including additional masses (kg)	     0.982
+Mass moment of inertia (kg*mm²)	   122.100
+Momentum of mass GD2 (Nm²)	     0.005
+2.2 Weight force
+The direction of the weight is not considered
+2.3 Shaft modeling
+2.4 Shear deformations
+Consider deformations due to shearing
+Shear correction factor	     1.100
+2.5 Rolling bearings
+Rolling bearing stiffness is calculated from inner bearing geometry
+Tolerance field:	Mean value
+2.6 Housing
+Reference temperature (°C)	    20.000
+2.7 Load applications
+3 Shaft definition (Shaft)
+3.1 Outer contour
+3.1.1 Cylinder (Cylinder 1), 0.000mm ...20.000mm
+Diameter (mm)	[d]	   30.0000
+Length (mm)	[l]	   20.0000
+Surface roughness (µm)	[Rz]	    4.8000
+3.1.2 Cylinder (Cylinder 2), 20.000mm ...100.000mm
+Diameter (mm)	[d]	   34.0000
+Length (mm)	[l]	   80.0000
+Surface roughness (µm)	[Rz]	   16.0000
+3.1.3 Cylinder (Cylinder 3), 100.000mm ...120.000mm
+Diameter (mm)	[d]	   30.0000
+Length (mm)	[l]	   20.0000
+Surface roughness (µm)	[Rz]	    4.8000
+3.1.4 Cylinder (Cylinder 4), 120.000mm ...170.000mm
+Diameter (mm)	[d]	   25.0000
+Length (mm)	[l]	   50.0000
+Surface roughness (µm)	[Rz]	    4.8000
+3.2 Forces
+3.2.1 Coupling (Coupling / Motor)
+Position on shaft (mm)	[ylocal]	        150.0000
+Position in global system (mm)	[yglobal]	        140.0000
+Effective diameter (mm)	[d]	          0.0000
+Radial force factor (-)	[K2]	          0.0000
+Direction of the radial force (°)	[ρ]	          0.0000
+Axial force factor (-)	[K3]	          0.0000
+Length of load application (mm)	[l]	          1.0000
+Power (kW)	[P]	          2.3562	driving (output)
+Torque (Nm)	[T]	        -25.0000
+Axial force (N)	[Fy]	          0.0000
+Radial force X (N)	[Fx]	          0.0000
+Radial force Z (N)	[Fz]	          0.0000
+Bending moment X (Nm)	[Mx]	          0.0000
+Bending moment Z (Nm)	[Mz]	          0.0000
+Mass (kg)	[M]	          0.0000
+Mass moment of inertia (kg*m²)	[Jp]	      0.0000e+00
+Mass moment of inertia around X-axis (kg*m²)	[Jxx]	      0.0000e+00
+Mass moment of inertia around Z-axis (kg*m²)	[Jzz]	      0.0000e+00
+3.2.2 Cylindrical gear (Cylindrical gear)
+Position on shaft (mm)	[ylocal]	         60.0000
+Position in global system (mm)	[yglobal]	         50.0000
+Operating pitch diameter (mm)	[dw]	         40.0000
+Spur gear
+Gear geometry: symmetric
+Working pressure angle at normal section (°)	[αwn]	         20.0000
+Position of contact (°)	[αpos]	        180.0000
+Length of load application (mm)	[l]	          1.0000
+Power (kW)	[P]	          2.3562	driven (input)
+Torque (Nm)	[T]	         25.0000
+Axial force (N)	[Fy]	          0.0000
+Radial force X (N)	[Fx]	        454.9628
+Radial force Z (N)	[Fz]	       1250.0000
+Bending moment X (Nm)	[Mx]	         -0.0000
+Bending moment Z (Nm)	[Mz]	         -0.0000
+3.3 Bearing
+3.3.1 P4 Support A (Own input)
+Bearing position (mm)	[ylokal]	  10.000
+Bearing position (mm)	[yglobal]	   0.000
+Degrees of freedom
+X: fixed; Y: fixed; Z: fixed;
+Rx: free; Ry: free; Rz: free;
+3.3.2 P4 Support B (Own input)
+Bearing position (mm)	[ylokal]	 110.000
+Bearing position (mm)	[yglobal]	 100.000
+Degrees of freedom
+X: fixed; Y: free; Z: fixed;
+Rx: free; Ry: free; Rz: free;
+4 Gears
+Gears are considered only as load application.
+5 Results
+5.1 Shafts
+Maximum deflection (μm)	     3.786
+Position of the maximum (mm)	   160.000
+Mass center of gravity (mm)	    76.630
+Total axial load (N)	     0.000
+Torsion of the shaft under torque (°)	    -0.024
+(Difference between left and right shaft end)
+Nominal stresses, without taking into account stress concentrations
+GEH(von Mises): sigV = ((sigB+sigZ,D)^2 + 3*(tauT+tauS)^2)^1/2
+SSH(Tresca): sigV = ((sigB-sigZ,D)^2 + 4*(tauT+tauS)^2)^1/2
+5.2 Bearing
+5.3 'Shaft' Bearing 'P4 Support A'
+Position (Y-coordinate)	[y]	10.00	mm
+Bearing reaction force	[Fx]	-0.227	kN
+Bearing reaction force	[Fy]	0.000	kN
+Bearing reaction force	[Fz]	-0.625	kN
+Bearing reaction force	[Fr]	0.665	kN
+Inclination angle	[αFr]	-110.000	°
+Displacement of bearing	[ux]	0.000	µm
+Displacement of bearing	[uy]	0.000	µm
+Displacement of bearing	[uz]	0.000	µm
+Displacement of bearing	[ur]	0.000	µm
+Misalignment of bearing	[rx]	0.059	mrad
+Misalignment of bearing	[rz]	-0.022	mrad
+Misalignment of bearing	[rr]	0.063	mrad
+5.4 'Shaft' Bearing 'P4 Support B'
+Position (Y-coordinate)	[y]	110.00	mm
+Bearing reaction force	[Fx]	-0.227	kN
+Bearing reaction force	[Fy]	0.000	kN
+Bearing reaction force	[Fz]	-0.625	kN
+Bearing reaction force	[Fr]	0.665	kN
+Inclination angle	[αFr]	-110.000	°
+Displacement of bearing	[ux]	0.000	µm
+Displacement of bearing	[uy]	-0.000	µm
+Displacement of bearing	[uz]	0.000	µm
+Displacement of bearing	[ur]	0.000	µm
+Misalignment of bearing	[rx]	-0.059	mrad
+Misalignment of bearing	[rz]	0.022	mrad
+Misalignment of bearing	[rr]	0.063	mrad
+6 Strength calculation according to DIN 743:2012
+6.1 Summary
+Shaft
+Drawing	W-007
+Material	P4 custom DIN743 1000/800/500/400/300
+Material type	Through hardened steel
+Material treatment	alloyed/through hardened
+Surface treatment	No
+Calculation of endurance limit and the static strength
+Calculation for load case 1 (σmv = const)
+Cross section	Position (Y-Coord) (mm)
+S3a	  130.00	Smooth shaft
+Results:
+Cross section	βσ	KFσ	K2d	SD	SS
+S3a	    1.00	    0.88	    0.92	 9999.99	   31.77
+Required safeties:	    1.20	    1.20
+Abbreviations:
+βσ: Notch factor, bending
+KFσ: Surface factor
+K2d: size factor bending
+SD: Safety endurance limit
+SS: Safety against yield point
+6.1.1 Utilization (%)
+Cross section	Static (yield point)	Endurance
+S3a	   3.777	   0.010
+Maximum utilization (%)	[A]	     3.777
+Utilization = Smin/S (%)
+6.2 Calculation details
+General statements
+Label	                                                       Shaft
+Drawing	                                                       W-007
+Length (mm)	[l]	    170.00
+Speed (1/min)	[n]	    900.00
+Material	P4 custom DIN743 1000/800/500/400/300
+Material type	Through hardened steel
+Material treatment	alloyed/through hardened
+Surface treatment	No
+Tension/Compression Bending Torsion Shearing
+Load factor static calculation	   2.000	   2.000	   2.000	   2.000
+Stress ratio	   0.000	  -1.000	   1.000	  -1.000
+Load factor endurance limit	   1.000	   1.000	   1.000	   1.000
+Reference diameter material (mm)	[dB]	     16.00
+σB according to DIN 743 (at dB) (N/mm²)	[σB]	   1000.00
+σB according to DIN 743 (at dB) (N/mm²)	[σS]	    800.00
+[σzdW], bei dB (N/mm²)	    400.00
+[σbW],	bei dB (N/mm²)	    500.00
+[τtW],	bei dB (N/mm²)	    300.00
+Thickness of raw material (mm)	[dWerkst]	     25.00
+Material data (σB, σS, σW) according to DIN 743/3 for reference diameter
+Material strength values for shaft diameter calculated with size factor K1(deff)
+Material strength calculated from size of raw material
+Geometric size factor K1(deff) calculated from raw material diameter
+[σBeff] (N/mm²)	    949.61
+[σSeff] (N/mm²)	    747.28
+[σbFK] (N/mm²)	    896.74
+[τtFK] (N/mm²)	    517.73
+[σbBRand] (N/mm²)	    708.00
+[σzdW] (N/mm²)	    379.84
+[σbW] (N/mm²)	    474.80
+[τtW] (N/mm²)	    284.88
+Endurance limit for single stage use
+Calculation for load case 1 (σ.mv = const)
+6.2.1 Cross section 'S3a'	Smooth shaft
+Comment	      M36 R1 independent section, local coordinate
+Position (Y-Coordinate) (mm)	[y]	130.000
+External diameter (mm)	[da]	 25.000
+Inner diameter (mm)	[di]	  0.000
+Notch effect	Smooth shaft
+Mean roughness (µm)	[Rz]	  6.300
+Tension/Compression Bending Torsion Shearing
+Load: (N) (Nm)
+Mean value	[Fzdm, Mbm, Tm, Fqm]	   0.000	   0.000	  25.000	   0.000
+Amplitude	[Fzda, Mba, Ta, Fqa]	   0.000	   0.000	   0.000	   0.000
+Maximum value	[Fzdmax, Mbmax, Tmax, Fqmax]	   0.000	   0.000	  25.000	   0.000
+Maximum value (static safety)	     0.0	     0.0	    50.0	     0.0
+Maximum value	[Fzdmax, Mbmax, Tmax, Fqmax]	     0.0	     0.0	    25.0	     0.0
+Maximum value (static safety)	     0.0	     0.0	    50.0	     0.0
+Cross section, moment of resistance: (mm²)
+[A, Wb, Wt]	 490.874	1533.981	3067.962
+Stresses: (N/mm²)
+[σzdm, σbm, τm, τqm] (N/mm²)	  0.000	  0.000	  8.149	  0.000
+[σzda, σba, τa, τqa] (N/mm²)	  0.000	  0.000	  0.000	  0.000
+[σzdmax,σbmax,τmax,τqmax] (N/mm²)	  0.000	  0.000	 16.297	  0.000
+Technological size influence	[K1(σB)]	  0.950
+[K1(σS)]	  0.934
+Tension/Compression Bending Torsion
+Notch effect coefficient	[ß]	  1.000	  1.000	  1.000
+Geometrical size influence	[K2(d)]	  1.000	  0.920	  0.920
+Influence coefficient surface roughness	[KF]	  0.881	  0.881	  0.932
+Own input of
+Surface treatment factor	[KV]	  1.000	  1.000	  1.000
+Total influence coefficient	[K]	  1.135	  1.222	  1.161
+Present safety for endurance limit:
+Equivalent mean stress (N/mm²)	[σmV]	 14.114
+Equivalent mean stress (N/mm²)	[τmV]	  8.149
+Fatigue limit of part (N/mm²)	[σWK]	334.653	388.407	245.411
+Influence coefficient of mean stress sensitivity.
+[ψσK]	  0.214	  0.257	  0.148
+Permissible amplitude (N/mm²)	[σADK]	331.635	384.779	244.202
+Safety against fatigue	[S]	9999.990
+Required safety against fatigue	[Smin]	  1.200
+Result (%)	[S/Smin]	1000000.0
+Present safety
+for proof against exceed of yield point:
+Static notch sensitivity factor	[K2F]	  1.000	  1.200	  1.200
+Increase coefficient	[γF]	  1.000	  1.000	  1.000
+Yield stress of part (N/mm²)	[σFK]	747.281	896.737	517.731
+Safety yield stress	[S]	 31.768
+Required safety	[Smin]	  1.200
+Result (%)	[S/Smin]	 2647.3
+Remarks:
+-	The shearing force is not considered in the analysis specified in DIN 743.
+-	Cross section with interference fit: The notch factors for the 'Slight interference fit' case are no longer defined in DIN 743.
+	The notch factors are taken from the FKM Guideline, except if those for the 'tight interference fit' according to DIN are smaller,
+in which case they will be used.
+End of report (lines: 382)

@@ -1,0 +1,250 @@
+{
+  "status": "PASS_LISTED_CHECKS_ONLY",
+  "scope": "P5 complete; other requested items have explicit open evidence gaps",
+  "all_future_calls_headless": true,
+  "calculation_checks": [
+    {
+      "case": "M39-baseline-K01-spur",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "M39-baseline-K03-premachining",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "M39-K01-runin0",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "M39-K02-helical-Ca-not-optimal",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "M39-K04-EV-stage1-Ca-not-optimal",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "M39-K05-EV-stage2-Ca-not-optimal",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "P5-A-explicit-shaft-auto-tip",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "P5-A-fixed-tip",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "P5-A-shaft-explicit",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "P5-A-tip-coefficient-input",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "P5-B-auto",
+      "calculated_and_reloaded": true,
+      "source_and_native_hashes": true
+    },
+    {
+      "case": "R4-DIN6892-D1-B-D2-270",
+      "calculated_and_reloaded": true
+    },
+    {
+      "case": "R4-user-C-unidirectional-nominal-only",
+      "calculated_and_reloaded": true
+    },
+    {
+      "case": "R4-vendor-B-unchanged",
+      "calculated_and_reloaded": true
+    },
+    {
+      "case": "R4-vendor-C-unidirectional",
+      "calculated_and_reloaded": true
+    },
+    {
+      "case": "R5-fit-A1-T500",
+      "calculated_and_reloaded": true
+    },
+    {
+      "case": "R5-fit-A2-T500",
+      "calculated_and_reloaded": true
+    },
+    {
+      "case": "R5-fit-A3-T500",
+      "calculated_and_reloaded": true
+    },
+    {
+      "case": "R5-fit-A4-T500",
+      "calculated_and_reloaded": true
+    },
+    {
+      "case": "R1-L1-S1-run",
+      "fresh_module_and_real_roughness_record": true
+    },
+    {
+      "case": "R1-L1-S2-run",
+      "fresh_module_and_real_roughness_record": true
+    },
+    {
+      "case": "R1-L1-S3a-run",
+      "fresh_module_and_real_roughness_record": true
+    },
+    {
+      "case": "R1-L80-S1-run",
+      "fresh_module_and_real_roughness_record": true
+    },
+    {
+      "case": "R1-L80-S2-run",
+      "fresh_module_and_real_roughness_record": true
+    },
+    {
+      "case": "R1-L80-S3a-run",
+      "fresh_module_and_real_roughness_record": true
+    }
+  ],
+  "pdf_checks": [
+    {
+      "file": "M39-baseline-K01-spur\\M39-baseline-K01-spur.pdf",
+      "pages": 14,
+      "chars": 34085
+    },
+    {
+      "file": "M39-baseline-K03-premachining\\M39-baseline-K03-premachining.pdf",
+      "pages": 14,
+      "chars": 32609
+    },
+    {
+      "file": "M39-K01-runin0\\M39-K01-runin0.pdf",
+      "pages": 14,
+      "chars": 34085
+    },
+    {
+      "file": "M39-K02-helical-Ca-not-optimal\\M39-K02-helical-Ca-not-optimal.pdf",
+      "pages": 14,
+      "chars": 33193
+    },
+    {
+      "file": "M39-K04-EV-stage1-Ca-not-optimal\\M39-K04-EV-stage1-Ca-not-optimal.pdf",
+      "pages": 13,
+      "chars": 30688
+    },
+    {
+      "file": "M39-K05-EV-stage2-Ca-not-optimal\\M39-K05-EV-stage2-Ca-not-optimal.pdf",
+      "pages": 13,
+      "chars": 30968
+    },
+    {
+      "file": "P5-A-explicit-shaft-auto-tip\\P5-A-explicit-shaft-auto-tip.pdf",
+      "pages": 14,
+      "chars": 34359
+    },
+    {
+      "file": "P5-A-fixed-tip\\P5-A-fixed-tip.pdf",
+      "pages": 14,
+      "chars": 34345
+    },
+    {
+      "file": "P5-A-shaft-explicit\\P5-A-shaft-explicit.pdf",
+      "pages": 14,
+      "chars": 34350
+    },
+    {
+      "file": "P5-A-tip-coefficient-input\\P5-A-tip-coefficient-input.pdf",
+      "pages": 14,
+      "chars": 34223
+    },
+    {
+      "file": "P5-B-auto\\P5-B-auto.pdf",
+      "pages": 14,
+      "chars": 34206
+    },
+    {
+      "file": "R4-DIN6892-D1-B-D2-270\\R4-DIN6892-D1-B-D2-270.pdf",
+      "pages": 3,
+      "chars": 4985
+    },
+    {
+      "file": "R4-user-C-unidirectional-nominal-only\\R4-user-C-unidirectional-nominal-only.pdf",
+      "pages": 2,
+      "chars": 3432
+    },
+    {
+      "file": "R4-vendor-B-unchanged\\R4-vendor-B-unchanged.pdf",
+      "pages": 3,
+      "chars": 4984
+    },
+    {
+      "file": "R4-vendor-C-unidirectional\\R4-vendor-C-unidirectional.pdf",
+      "pages": 2,
+      "chars": 3391
+    },
+    {
+      "file": "R5-fit-A1-T500\\R5-fit-A1-T500.pdf",
+      "pages": 3,
+      "chars": 7218
+    },
+    {
+      "file": "R5-fit-A2-T500\\R5-fit-A2-T500.pdf",
+      "pages": 3,
+      "chars": 7230
+    },
+    {
+      "file": "R5-fit-A3-T500\\R5-fit-A3-T500.pdf",
+      "pages": 3,
+      "chars": 7571
+    },
+    {
+      "file": "R5-fit-A4-T500\\R5-fit-A4-T500.pdf",
+      "pages": 3,
+      "chars": 7569
+    },
+    {
+      "file": "shaftprep\\R1-L1-S1-run.pdf",
+      "pages": 4,
+      "chars": 11662
+    },
+    {
+      "file": "shaftprep\\R1-L1-S2-run.pdf",
+      "pages": 4,
+      "chars": 11466
+    },
+    {
+      "file": "shaftprep\\R1-L1-S3a-run.pdf",
+      "pages": 4,
+      "chars": 11641
+    },
+    {
+      "file": "shaftprep\\R1-L80-S1-run.pdf",
+      "pages": 4,
+      "chars": 11664
+    },
+    {
+      "file": "shaftprep\\R1-L80-S2-run.pdf",
+      "pages": 4,
+      "chars": 11468
+    },
+    {
+      "file": "shaftprep\\R1-L80-S3a-run.pdf",
+      "pages": 4,
+      "chars": 11643
+    },
+    {
+      "file": "shaftprep\\R2-6206-RZ-run.pdf",
+      "pages": 2,
+      "chars": 3245
+    }
+  ]
+}

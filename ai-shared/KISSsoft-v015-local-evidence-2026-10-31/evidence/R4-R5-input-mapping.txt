@@ -1,0 +1,44 @@
+R4/R5 只读准备与变量映射
+
+本子任务未启动COM或GUI；仅生成配置、驱动入口、标准PDF页图和本说明。主路独占COM。
+
+R4：此前方法C失败的标准原因已找到，不能再记为“未知API故障”。
+本地 DIN6892:2012-08 原图第32页D.1.2明确说：由于转矩方向反转，方法C不能应用（见7.2）。第31页D.1说明为可逆工作、50000h、每小时5次换向，峰载每5小时一次；第32页TmaxRuck15000Nm。安装08 Keys例的MomArt1/TmaxRuck15000/NW250000与之对应。
+单向方法C需明确MomArt0、TmaxRuck0、NW0，再Methode0。此为有意改变标准算例的工况分支，仅验证方法C路径；不能把它作为D.1原题的C解。
+
+执行入口：python D:/my_Works/Gears/kisssoft-v015-run/run_connections.py r4.json
+四例依次为：
+1 R4-vendor-B-unchanged：官方08 Keys原例不改。
+2 R4-vendor-C-unidirectional：只将工况改为单向（MomArt0/TmaxRuck0/NW0），最后Methode0。
+3 R4-DIN6892-D1-B-D2-270：方法B原例仅D2由200改270，重现D.1本题。
+4 R4-user-C-unidirectional-nominal-only：沿用旧P4输入+单向分支，峰载25/NL1、毂Rm355均仅计算占位，禁止形成峰值/寿命/最终选材接受结论。轴Rm1000有用户P4.1来源。
+
+D.1输入原图依据：
+第31页图D.1：左轴120H7/n6、右轴130、左毂200、孔圈270、外轮廓360、125键长、键宽32、轴向140/42/22。
+第32页：DIN6885-1 A32×18×125；Tn4000,Tmax15000,Tback15000,KA1.5；轴1C60N，毂GJL250，键C45K。
+第32页：t1=11,r1=.7,s1=0,s2=.8，ltr=125-32=93。
+第33页：c=42-(140-22-(125-32))=17，D1=200,D2=270，等效D约207；a0=140-22-22=96；Klambda=1.07；TRmin0，KReq=KRmax=1。
+第34页：轴Re310、毂Rm200、键Re430；fs1.3/2/1.1，pzul403/400/473MPa；NW250000=>fw.58；NL10000=>fL1.4/1.2/1.4。
+安装原例D2=200与原标准D2=270确有区别，不能视作不改即精确复刻。
+
+输出字段映射（来自官方M02ALe0.RPT）：
+Methode0=C:2012，1=B:2012。
+t1tr=m02Aw.htW；t2tr=m02An.htN。
+Klambda_e=m02Aa.Klamda_e；Klambda=m02Aa.Klamda。
+KReq=m02Aa.KReq；KRmax=m02Aa.KR。
+p1eq=m02Aw.peq；p2eq=m02An.peq；p1max=m02Aw.pmax；p2max=m02An.pmax。
+pzul轴/毂/键=m02Aw.pzul / m02An.pzul / m02Ak.pzul。
+fW=m02Aa.fw；fL轴/毂/键=m02Aw.fL / m02An.fL / m02Ak.fL。
+等效安全=m02A[w/n/k].Resulteq；峰载安全=.Resultmax；总最小安全=.ResultW/.ResultN/.ResultP。
+注意：方法C中htW标签写h-t1，方法B写t1tr；不能跨方法用同一名称声称物理定义相同。
+用户C预期h-t1=3mm、ltr24、peq=2*(25*1.25)*1000/(25*3*24)=34.72222MPa，需读回证明。
+M_tzul无官方确认直接COM字段；应由原生pzul及本方法有效面积/载荷系数透明推导并注明推导，不能凭空命名GetVar字段。
+
+R5可选：python D:/my_Works/Gears/kisssoft-v015-run/run_connections.py r5.json
+复用v014已验证4fit native，只改m01M.nenn=500Nm。原生Sr=m01r.si[0/1/2]，Tlimit=m01M.grenz[0/1/2]。
+定义证据：本机官方M010Le0.RPT第412行比较grenz[1]与nenn，第414行提示微滑可能发生，第418行明确Tlimit为“避免微滑的最大转矩”。因此Tlimit不等同总摩擦滑移转矩，也不等同含Sr1.5的许用传矩。
+纯扭矩、FA=0、KA1时，宏观摩擦滑移转矩应为 pi*DF^2*l*p*mu/2 /1000 (Nm)，Sr为此值/500。若还需“按Sr要求的允许扭矩”，再除以m01sollSi.Ru；必须分列，不能用grenz代替。
+保留4fit原open：内E/nu共同契约来源、Rm/强度假设、零载荷旧例范围等；本次T500仅使滑移安全成为有限可核查值，不升级产品工况成熟度。
+
+数据来源：完整标准PDF sha256=26a7bb8b454fee5e8988bd3bc5d35b663cfa1bd85132b2e2c8fa4733ad318bcb。
+页图DIN6892-D1-p31.png至35.png均由本地原PDF渲染并视觉检查；r4.json保留显示参考值，比较需遵守原图显示精度，不能把标准四舍五入值当全精度商业结果。

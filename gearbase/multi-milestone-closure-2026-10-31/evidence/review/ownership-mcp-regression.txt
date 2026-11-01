@@ -1,0 +1,33 @@
+RED reproduced: test_preview_is_read_only_and_token_is_sha256 failed before fix; 17 tests, 1 failure.
+Cause: source_sha256:null changed the legacy token payload.
+Fix: append source_sha256 only for source-owned heads.
+
+GREEN:
+test_design_id_is_sha256_of_canonical_json (test_mcp_p0.TestIds.test_design_id_is_sha256_of_canonical_json) ... ok
+test_ids_stable_across_processes_and_hash_seeds (test_mcp_p0.TestIds.test_ids_stable_across_processes_and_hash_seeds) ... ok
+test_nan_request_has_no_fake_id (test_mcp_p0.TestIds.test_nan_request_has_no_fake_id) ... ok
+test_no_builtin_hash_in_tool_layer (test_mcp_p0.TestIds.test_no_builtin_hash_in_tool_layer) ... ok
+test_baseline_none_requires_selector_choice (test_mcp_p0.TestParametersNeverDropped.test_baseline_none_requires_selector_choice) ... ok
+test_blocked_results_keep_parameters_too (test_mcp_p0.TestParametersNeverDropped.test_blocked_results_keep_parameters_too) ... ok
+test_echo_in_original_unit (test_mcp_p0.TestParametersNeverDropped.test_echo_in_original_unit) ... ok
+test_every_model_tool_echoes_all_parameters (test_mcp_p0.TestParametersNeverDropped.test_every_model_tool_echoes_all_parameters) ... ok
+test_preview_commit_and_stale_over_stdio (test_mcp_p0.TestStdioRoundtrip.test_preview_commit_and_stale_over_stdio) ... ok
+test_commit_applies_and_changes_base (test_mcp_p0.TestTwoPhaseWrite.test_commit_applies_and_changes_base) ... ok
+test_commit_without_valid_token_rejected (test_mcp_p0.TestTwoPhaseWrite.test_commit_without_valid_token_rejected) ... ok
+test_design_arg_conflicts_with_overrides (test_mcp_p0.TestTwoPhaseWrite.test_design_arg_conflicts_with_overrides) ... ok
+test_designs_are_independent_and_delete_override (test_mcp_p0.TestTwoPhaseWrite.test_designs_are_independent_and_delete_override) ... ok
+test_invalid_edit_gets_no_token_and_cannot_commit (test_mcp_p0.TestTwoPhaseWrite.test_invalid_edit_gets_no_token_and_cannot_commit) ... ok
+test_preview_is_read_only_and_token_is_sha256 (test_mcp_p0.TestTwoPhaseWrite.test_preview_is_read_only_and_token_is_sha256) ... ok
+test_stale_token_rejected_and_state_unchanged (test_mcp_p0.TestTwoPhaseWrite.test_stale_token_rejected_and_state_unchanged) ... ok
+test_tool_names_valid (test_mcp_p0.TestTwoPhaseWrite.test_tool_names_valid) ... ok
+test_imported_source_edits_do_not_fall_back_to_baseline (test_m34_closure.TestM34Closure.test_imported_source_edits_do_not_fall_back_to_baseline) ... ok
+test_pruning_matches_exhaustive_small_domain (test_m34_closure.TestM34Closure.test_pruning_matches_exhaustive_small_domain) ... ok
+test_seed_domain_and_rank_match_old_solver (test_m34_closure.TestM34Closure.test_seed_domain_and_rank_match_old_solver) ... ok
+test_source_only_change_invalidates_preview_token (test_m34_closure.TestM34Closure.test_source_only_change_invalidates_preview_token) ... ok
+test_source_owned_chain_rejects_projection_only_write (test_m34_closure.TestM34Closure.test_source_owned_chain_rejects_projection_only_write) ... ok
+test_store_checks_source_hash_before_mutation (test_m34_closure.TestM34Closure.test_store_checks_source_hash_before_mutation) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.704s
+
+OK

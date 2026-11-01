@@ -1,0 +1,50 @@
+{
+  "schema": "gearbase.metadata-closeout/1",
+  "passed": true,
+  "functional_source_commit": "ffd95397c697dcbee5ea40bfc4847b5c557397db",
+  "functional_source_manifest_sha256": "2a92f1094f859c4b3c2f785f2bee9984710cc6895da2abfb45f530bc4f343024",
+  "changed_source_files_after_hosted_ci": [
+    "PACKAGE-CONTENTS.sha256",
+    "docs/M34-closure.md",
+    "docs/M38-closure.md",
+    "docs/milestone-closure-2026-10-31.md",
+    "output/m38/closure.json",
+    "output/m38/portable-hosted-receipt.json",
+    "output/milestones-current.json",
+    "output/milestones-current.md"
+  ],
+  "executable_sources_unchanged": true,
+  "only_docs_outputs_checksums_changed": true,
+  "frontier_identity_current": true,
+  "checks": [
+    {
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "gearmath.tools.package_hashes",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "tests.test_package",
+        "tests.test_m38_ai_native",
+        "tests.test_sys_design_check.TestMilestones",
+        "tests.test_m34_closure",
+        "tests.test_m34_source_reads",
+        "tests.test_flagship_workflow",
+        "tests.test_m39_source_frontier",
+        "-v"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

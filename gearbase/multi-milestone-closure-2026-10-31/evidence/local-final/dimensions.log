@@ -1,0 +1,83 @@
+test_case_standard_string_parsed (tests.test_inputs_editions.TestEditions.test_case_standard_string_parsed) ... ok
+test_missing_profile_blocked_not_defaulted (tests.test_inputs_editions.TestEditions.test_missing_profile_blocked_not_defaulted) ... ok
+test_mixed_years_across_parts_allowed (tests.test_inputs_editions.TestEditions.test_mixed_years_across_parts_allowed) ... ok
+test_mixed_years_within_part_rejected (tests.test_inputs_editions.TestEditions.test_mixed_years_within_part_rejected) ... ok
+test_profile_disagreeing_with_library_blocked (tests.test_inputs_editions.TestEditions.test_profile_disagreeing_with_library_blocked) ... ok
+test_profile_recorded_in_output_and_sha (tests.test_inputs_editions.TestEditions.test_profile_recorded_in_output_and_sha) ... ok
+test_refs_parse_into_part_and_edition (tests.test_inputs_editions.TestEditions.test_refs_parse_into_part_and_edition) ... ok
+test_ai_rate_face_width_in_newton_is_blocked_not_pass (tests.test_inputs_editions.TestInputDimensions.test_ai_rate_face_width_in_newton_is_blocked_not_pass) ... ok
+test_declaration_table_consistent_with_formula_usage (tests.test_inputs_editions.TestInputDimensions.test_declaration_table_consistent_with_formula_usage) ... ok
+test_dimension_check_enforced_on_rate_path_without_spec (tests.test_inputs_editions.TestInputDimensions.test_dimension_check_enforced_on_rate_path_without_spec) ... ok
+test_face_width_in_newton_rejected_at_set (tests.test_inputs_editions.TestInputDimensions.test_face_width_in_newton_rejected_at_set) ... ok
+test_input_domain_rejected (tests.test_inputs_editions.TestInputDimensions.test_input_domain_rejected) ... ok
+test_same_dimension_other_unit_accepted (tests.test_inputs_editions.TestInputDimensions.test_same_dimension_other_unit_accepted) ... ok
+test_undeclared_free_variable_in_library_is_an_error (tests.test_inputs_editions.TestInputDimensions.test_undeclared_free_variable_in_library_is_an_error) ... ok
+test_undeclared_input_rejected (tests.test_inputs_editions.TestInputDimensions.test_undeclared_input_rejected) ... ok
+test_unused_input_reported_without_spec (tests.test_inputs_editions.TestInputDimensions.test_unused_input_reported_without_spec) ... ok
+test_ai_rate_missing_limit_blocks (tests.test_inputs_editions.TestMissingLimits.test_ai_rate_missing_limit_blocks) ... ok
+test_bad_inputs_never_raise_on_rate_path (tests.test_inputs_editions.TestMissingLimits.test_bad_inputs_never_raise_on_rate_path) ... ok
+test_mcp_returns_structured_block (tests.test_inputs_editions.TestMissingLimits.test_mcp_returns_structured_block) ... ok
+test_missing_limit_in_case_data_blocks (tests.test_inputs_editions.TestMissingLimits.test_missing_limit_in_case_data_blocks) ... ok
+test_missing_safety_limit_blocks_instead_of_keyerror (tests.test_inputs_editions.TestMissingLimits.test_missing_safety_limit_blocks_instead_of_keyerror) ... ok
+test_input_spec_is_kernel_generic (tests.test_inputs_editions.TestProvenanceStaysSeparate.test_input_spec_is_kernel_generic) ... ok
+test_provenance_categories_reported_separately (tests.test_inputs_editions.TestProvenanceStaysSeparate.test_provenance_categories_reported_separately) ... ok
+test_exactly_one_formula_per_output (tests.test_kernel_ext.TestSelectors.test_exactly_one_formula_per_output) ... ok
+test_external_requires_evidence_input (tests.test_kernel_ext.TestSelectors.test_external_requires_evidence_input) ... ok
+test_method_diff (tests.test_kernel_ext.TestSelectors.test_method_diff) ... ok
+test_no_match_and_ambiguity (tests.test_kernel_ext.TestSelectors.test_no_match_and_ambiguity) ... ok
+test_unselected_selector_lists_options (tests.test_kernel_ext.TestSelectors.test_unselected_selector_lists_options) ... ok
+test_degC_not_allowed_as_formula_unit (tests.test_kernel_ext.TestTemperature.test_degC_not_allowed_as_formula_unit) ... ok
+test_degC_offset_conversion (tests.test_kernel_ext.TestTemperature.test_degC_offset_conversion) ... ok
+test_temperature_plus_length_rejected (tests.test_kernel_ext.TestTemperature.test_temperature_plus_length_rejected) ... ok
+test_viscosity_and_heat_units (tests.test_kernel_ext.TestTemperature.test_viscosity_and_heat_units) ... ok
+test_boolop_condition (tests.test_kernel_ext.TestWhere.test_boolop_condition) ... ok
+test_branch_dimension_mismatch_rejected (tests.test_kernel_ext.TestWhere.test_branch_dimension_mismatch_rejected) ... ok
+test_comparison_dimension_checked (tests.test_kernel_ext.TestWhere.test_comparison_dimension_checked) ... ok
+test_cond_must_be_comparison (tests.test_kernel_ext.TestWhere.test_cond_must_be_comparison) ... ok
+test_kink_reporting (tests.test_kernel_ext.TestWhere.test_kink_reporting) ... ok
+test_min_max_with_duals_and_kinks (tests.test_kernel_ext.TestWhere.test_min_max_with_duals_and_kinks) ... ok
+test_unselected_branch_not_evaluated (tests.test_kernel_ext.TestWhere.test_unselected_branch_not_evaluated) ... ok
+test_value_and_derivative_follow_selected_branch (tests.test_kernel_ext.TestWhere.test_value_and_derivative_follow_selected_branch) ... ok
+test_case_formulas_do_not_inherit_library_level (tests.test_registry.TestAssessments.test_case_formulas_do_not_inherit_library_level)
+案例适配器改写的同 id 公式在该案例里不继承库级等级。 ... ok
+test_consistency_checker_catches_drift (tests.test_registry.TestAssessments.test_consistency_checker_catches_drift) ... ok
+test_cross_file_consistency (tests.test_registry.TestAssessments.test_cross_file_consistency) ... ok
+test_every_vector_replays_from_its_record (tests.test_registry.TestAssessments.test_every_vector_replays_from_its_record)
+每条测试向量只凭记录里的公式（expr/unit/domain/版次）即可复现期望值，库级与案例级都核对。 ... ok
+test_files_match_code_and_rules (tests.test_registry.TestAssessments.test_files_match_code_and_rules)
+防漂移：评定、案例级注册表、库级注册表都由代码/规则重新生成并逐字节核对 ... ok
+test_levels_follow_the_benchmark_rules (tests.test_registry.TestAssessments.test_levels_follow_the_benchmark_rules) ... ok
+test_source_check_rule (tests.test_registry.TestAssessments.test_source_check_rule) ... ok
+test_c001 (tests.test_registry.TestEvidenceOnRealModels.test_c001) ... ok
+test_tr30_example1 (tests.test_registry.TestEvidenceOnRealModels.test_tr30_example1) ... ok
+test_every_library_formula_is_registered (tests.test_registry.TestExport.test_every_library_formula_is_registered)
+pair_model 特化出的每条公式（C001 基线，及显式系数方法组）都在注册表里且内容相同。 ... ok
+test_evidence_levels_from_registry (tests.test_registry.TestExport.test_evidence_levels_from_registry) ... ok
+test_export_is_deterministic_and_valid (tests.test_registry.TestExport.test_export_is_deterministic_and_valid) ... ok
+test_fields_not_invented (tests.test_registry.TestExport.test_fields_not_invented)
+评定数据是规则产物：没有通过的对拍行用到的公式等级为 null；source_check 只来自公式文本里的明确措辞； ... ok
+test_file_matches_code (tests.test_registry.TestExport.test_file_matches_code)
+防漂移：data/registry/formulas-v1.json 必须与代码里的公式对象一致（改公式后运行 ... ok
+test_all_strong_has_no_weakeners (tests.test_registry.TestPropagation.test_all_strong_has_no_weakeners) ... ok
+test_bad_level_rejected (tests.test_registry.TestPropagation.test_bad_level_rejected) ... ok
+test_blocked_has_no_evidence (tests.test_registry.TestPropagation.test_blocked_has_no_evidence) ... ok
+test_does_not_change_numbers_or_status (tests.test_registry.TestPropagation.test_does_not_change_numbers_or_status) ... ok
+test_fixed_point_formula (tests.test_registry.TestPropagation.test_fixed_point_formula) ... ok
+test_input_provenance_caps (tests.test_registry.TestPropagation.test_input_provenance_caps) ... ok
+test_ties_list_every_binding_link (tests.test_registry.TestPropagation.test_ties_list_every_binding_link) ... ok
+test_unassessed_is_weaker_than_e0 (tests.test_registry.TestPropagation.test_unassessed_is_weaker_than_e0) ... ok
+test_weakest_link (tests.test_registry.TestPropagation.test_weakest_link) ... ok
+test_c001_chain (tests.test_registry.TestRealModel.test_c001_chain) ... ok
+test_explain_tool_carries_evidence (tests.test_registry.TestRealModel.test_explain_tool_carries_evidence) ... ok
+test_registry_level_rules (tests.test_registry.TestSchema.test_registry_level_rules) ... ok
+test_rejections (tests.test_registry.TestSchema.test_rejections) ... ok
+test_valid_entry (tests.test_registry.TestSchema.test_valid_entry) ... ok
+test_e3_plus_needs_sourced_vector (tests.test_registry.TestVectorSchema.test_e3_plus_needs_sourced_vector)
+E3 及以上必须有带 source 的测试向量；E2 及以下不要求。 ... ok
+test_extended_vector_fields (tests.test_registry.TestVectorSchema.test_extended_vector_fields) ... ok
+test_replay_detects_wrong_vector (tests.test_registry.TestVectorSchema.test_replay_detects_wrong_vector) ... ok
+
+----------------------------------------------------------------------
+Ran 71 tests in 5.589s
+
+OK

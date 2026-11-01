@@ -1,0 +1,12 @@
+{
+  "client": "Claude Code",
+  "version": "2.1.304",
+  "headless": true,
+  "server": "gearbase-multi-work/mcp_server.py",
+  "MCP_discovery": true,
+  "actual_model_tool_call": false,
+  "model_request_http_status": 403,
+  "reason": "insufficient account quota",
+  "raw_balance_redacted": true,
+  "persistent_user_config_modified": false
+}

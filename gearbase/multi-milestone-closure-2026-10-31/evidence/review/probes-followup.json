@@ -1,0 +1,140 @@
+[
+  {
+    "input": "999 kW",
+    "reply": "-九百九十九 kW",
+    "input_lexical_sources": [
+      {
+        "value": 999.0,
+        "token": "999",
+        "span": [
+          0,
+          3
+        ],
+        "quote": "999"
+      }
+    ],
+    "reply_lexical_sources": [
+      {
+        "value": 999.0,
+        "token": "九百九十九",
+        "span": [
+          1,
+          6
+        ],
+        "quote": "九百九十九"
+      }
+    ],
+    "numbers_checked": 1,
+    "bad": []
+  },
+  {
+    "input": "15万小时",
+    "reply": "10000小时",
+    "input_lexical_sources": [
+      {
+        "value": 15.0,
+        "token": "15",
+        "span": [
+          0,
+          2
+        ],
+        "quote": "15"
+      },
+      {
+        "value": 10000.0,
+        "token": "万",
+        "span": [
+          2,
+          3
+        ],
+        "quote": "万"
+      }
+    ],
+    "reply_lexical_sources": [
+      {
+        "value": 10000.0,
+        "token": "10000",
+        "span": [
+          0,
+          5
+        ],
+        "quote": "10000"
+      }
+    ],
+    "numbers_checked": 1,
+    "bad": []
+  },
+  {
+    "input": "一万亿小时",
+    "reply": "1000100000000小时",
+    "input_lexical_sources": [
+      {
+        "value": 1000100000000.0,
+        "token": "一万亿",
+        "span": [
+          0,
+          3
+        ],
+        "quote": "一万亿"
+      }
+    ],
+    "reply_lexical_sources": [
+      {
+        "value": 1000100000000.0,
+        "token": "1000100000000",
+        "span": [
+          0,
+          13
+        ],
+        "quote": "1000100000000"
+      }
+    ],
+    "numbers_checked": 1,
+    "bad": []
+  },
+  {
+    "input": "ISO/TS 6336-20",
+    "reply": "6336 kW",
+    "input_lexical_sources": [
+      {
+        "value": 6336.0,
+        "token": "6336",
+        "span": [
+          7,
+          11
+        ],
+        "quote": "6336"
+      },
+      {
+        "value": 20.0,
+        "token": "20",
+        "span": [
+          12,
+          14
+        ],
+        "quote": "20"
+      }
+    ],
+    "reply_lexical_sources": [
+      {
+        "value": 6336.0,
+        "token": "6336",
+        "span": [
+          0,
+          4
+        ],
+        "quote": "6336"
+      }
+    ],
+    "numbers_checked": 1,
+    "bad": []
+  },
+  {
+    "input": "需要齿轮",
+    "reply": "NaN kW",
+    "input_lexical_sources": [],
+    "reply_lexical_sources": [],
+    "numbers_checked": 0,
+    "bad": []
+  }
+]

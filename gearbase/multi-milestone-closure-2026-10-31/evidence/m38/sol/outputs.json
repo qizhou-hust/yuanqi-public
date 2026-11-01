@@ -1,0 +1,3091 @@
+{
+  "GAB-001": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 15,
+      "speed_rpm": 1450,
+      "ratio": 1.8,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 20000,
+      "material": "20CrMnTi渗碳淬火"
+    },
+    "parser_derivations": [],
+    "reply_text": "已提取明确输入，尚未进行设计校核。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15,
+        "speed_rpm": 1450,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 20000,
+        "material": "20CrMnTi渗碳淬火"
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 1.8,
+            "ratio_tol": 0.02,
+            "max_b_over_d1": 1.2
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 98.78582674669366,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 1450,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.0,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.4,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.02,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 2
+          }
+        },
+        {
+          "quantity": "T_1",
+          "value": 98.78582674669366,
+          "unit": "N*m",
+          "formula_id": "torque_from_power_speed",
+          "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+          "operands": {
+            "power_kW": 15,
+            "speed_rpm": 1450
+          }
+        }
+      ],
+      "post_checks": [],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 20000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "20CrMnTi渗碳淬火",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-002": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 7.5,
+      "speed_rpm": 960,
+      "ratio": 2.5,
+      "ratio_tol_percent": 3,
+      "max_b_over_d1": 1.0,
+      "min_S_H": 1.2,
+      "min_S_F": 1.5,
+      "life_h": 30000,
+      "material": "45钢调质",
+      "max_center_distance_mm": 180
+    },
+    "parser_derivations": [],
+    "reply_text": "已提取明确输入及中心距限制。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 7.5,
+        "speed_rpm": 960,
+        "ratio": 2.5,
+        "ratio_tol_percent": 3,
+        "max_b_over_d1": 1.0,
+        "min_S_H": 1.2,
+        "min_S_F": 1.5,
+        "life_h": 30000,
+        "material": "45钢调质",
+        "max_center_distance_mm": 180
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 2.5,
+            "ratio_tol": 0.03,
+            "max_b_over_d1": 1.0
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 74.60387957432596,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 960,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.2,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.5,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.03,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 3
+          }
+        },
+        {
+          "quantity": "T_1",
+          "value": 74.60387957432596,
+          "unit": "N*m",
+          "formula_id": "torque_from_power_speed",
+          "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+          "operands": {
+            "power_kW": 7.5,
+            "speed_rpm": 960
+          }
+        }
+      ],
+      "post_checks": [
+        {
+          "field": "max_center_distance_mm",
+          "limit": 180,
+          "check_quantity": "a_w",
+          "sense": "<=",
+          "how": "优化后用 gear_explain(a_w) 取值与该上限比较；模板 stage_sizing 的约束集不含此项"
+        }
+      ],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 30000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "45钢调质",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-003": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "torque_Nm": 120,
+      "speed_rpm": 1000,
+      "ratio": 3,
+      "ratio_tol_percent": 1,
+      "max_b_over_d1": 0.8,
+      "min_S_H": 1.1,
+      "min_S_F": 1.3,
+      "life_h": 10000,
+      "material": "40Cr调质"
+    },
+    "parser_derivations": [],
+    "reply_text": "已提取明确输入，尚未进行设计校核。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "torque_Nm": 120,
+        "speed_rpm": 1000,
+        "ratio": 3,
+        "ratio_tol_percent": 1,
+        "max_b_over_d1": 0.8,
+        "min_S_H": 1.1,
+        "min_S_F": 1.3,
+        "life_h": 10000,
+        "material": "40Cr调质"
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 3.0,
+            "ratio_tol": 0.01,
+            "max_b_over_d1": 0.8
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 120,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 1000,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.1,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.3,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.01,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 1
+          }
+        }
+      ],
+      "post_checks": [],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 10000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "40Cr调质",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-004": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "torque_Nm": 300,
+      "speed_rpm": 500,
+      "ratio": 4,
+      "ratio_tol_percent": 2.5,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.25,
+      "life_h": 50000,
+      "material": "17CrNiMo6渗碳淬火",
+      "max_face_width_mm": 60
+    },
+    "parser_derivations": [],
+    "reply_text": "已提取明确输入及齿宽限制。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "torque_Nm": 300,
+        "speed_rpm": 500,
+        "ratio": 4,
+        "ratio_tol_percent": 2.5,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.25,
+        "life_h": 50000,
+        "material": "17CrNiMo6渗碳淬火",
+        "max_face_width_mm": 60
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 4.0,
+            "ratio_tol": 0.025,
+            "max_b_over_d1": 1.2
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 300,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 500,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.0,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.25,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.025,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 2.5
+          }
+        }
+      ],
+      "post_checks": [
+        {
+          "field": "max_face_width_mm",
+          "limit": 60,
+          "check_quantity": "b",
+          "sense": "<=",
+          "how": "优化后用 gear_explain(b) 取值与该上限比较；模板 stage_sizing 的约束集不含此项"
+        }
+      ],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 50000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "17CrNiMo6渗碳淬火",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-005": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 0.75,
+      "speed_rpm": 1400,
+      "ratio": 2,
+      "ratio_tol_percent": 5,
+      "max_b_over_d1": 1.5,
+      "min_S_H": 1.0,
+      "min_S_F": 1.2,
+      "life_h": 8000,
+      "material": "45钢调质"
+    },
+    "parser_derivations": [],
+    "reply_text": "已提取明确输入，尚未进行设计校核。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 0.75,
+        "speed_rpm": 1400,
+        "ratio": 2,
+        "ratio_tol_percent": 5,
+        "max_b_over_d1": 1.5,
+        "min_S_H": 1.0,
+        "min_S_F": 1.2,
+        "life_h": 8000,
+        "material": "45钢调质"
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 2.0,
+            "ratio_tol": 0.05,
+            "max_b_over_d1": 1.5
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 5.115694599382351,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 1400,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.0,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.2,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.05,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 5
+          }
+        },
+        {
+          "quantity": "T_1",
+          "value": 5.115694599382351,
+          "unit": "N*m",
+          "formula_id": "torque_from_power_speed",
+          "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+          "operands": {
+            "power_kW": 0.75,
+            "speed_rpm": 1400
+          }
+        }
+      ],
+      "post_checks": [],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 8000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "45钢调质",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-006": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 90,
+      "speed_rpm": 750,
+      "ratio": 1.6,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.0,
+      "min_S_H": 1.3,
+      "min_S_F": 1.6,
+      "life_h": 40000,
+      "material": "42CrMo调质",
+      "max_center_distance_mm": 320
+    },
+    "parser_derivations": [],
+    "reply_text": "已提取明确输入及中心距限制。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 90,
+        "speed_rpm": 750,
+        "ratio": 1.6,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.0,
+        "min_S_H": 1.3,
+        "min_S_F": 1.6,
+        "life_h": 40000,
+        "material": "42CrMo调质",
+        "max_center_distance_mm": 320
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 1.6,
+            "ratio_tol": 0.02,
+            "max_b_over_d1": 1.0
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 1145.9155902616465,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 750,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.3,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.6,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.02,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 2
+          }
+        },
+        {
+          "quantity": "T_1",
+          "value": 1145.9155902616465,
+          "unit": "N*m",
+          "formula_id": "torque_from_power_speed",
+          "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+          "operands": {
+            "power_kW": 90,
+            "speed_rpm": 750
+          }
+        }
+      ],
+      "post_checks": [
+        {
+          "field": "max_center_distance_mm",
+          "limit": 320,
+          "check_quantity": "a_w",
+          "sense": "<=",
+          "how": "优化后用 gear_explain(a_w) 取值与该上限比较；模板 stage_sizing 的约束集不含此项"
+        }
+      ],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 40000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "42CrMo调质",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-007": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 11,
+      "speed_rpm": 1470,
+      "torque_Nm": 71.5,
+      "ratio": 1.8,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 25000,
+      "material": "20CrMnTi渗碳淬火"
+    },
+    "parser_derivations": [],
+    "reply_text": "保留原文同时给出的功率、转速和转矩供一致性检查。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 11,
+        "speed_rpm": 1470,
+        "torque_Nm": 71.5,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 25000,
+        "material": "20CrMnTi渗碳淬火"
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 1.8,
+            "ratio_tol": 0.02,
+            "max_b_over_d1": 1.2
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 71.5,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 1470,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.0,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.4,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.02,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 2
+          }
+        }
+      ],
+      "post_checks": [],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 25000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "20CrMnTi渗碳淬火",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-008": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 4,
+      "speed_rpm": 2900,
+      "ratio": 1.2,
+      "ratio_tol_percent": 4,
+      "max_b_over_d1": 0.9,
+      "min_S_H": 1.0,
+      "min_S_F": 1.3,
+      "life_h": 15000,
+      "material": "40Cr调质"
+    },
+    "parser_derivations": [],
+    "reply_text": "已提取明确输入，尚未进行设计校核。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 4,
+        "speed_rpm": 2900,
+        "ratio": 1.2,
+        "ratio_tol_percent": 4,
+        "max_b_over_d1": 0.9,
+        "min_S_H": 1.0,
+        "min_S_F": 1.3,
+        "life_h": 15000,
+        "material": "40Cr调质"
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 1.2,
+            "ratio_tol": 0.04,
+            "max_b_over_d1": 0.9
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 13.17144356622582,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 2900,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.0,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.3,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.04,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 4
+          }
+        },
+        {
+          "quantity": "T_1",
+          "value": 13.17144356622582,
+          "unit": "N*m",
+          "formula_id": "torque_from_power_speed",
+          "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+          "operands": {
+            "power_kW": 4,
+            "speed_rpm": 2900
+          }
+        }
+      ],
+      "post_checks": [],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 15000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "40Cr调质",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-009": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 15
+    },
+    "parser_derivations": [],
+    "reply_text": "请补充转速、传动比及允许偏差、齿宽系数上限、接触和弯曲安全系数、寿命及材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "speed_rpm",
+          "question": "小轮（输入轴）转速是多少 r/min？",
+          "why": "n_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-010": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "ratio": 3.5,
+      "life_h": 20000
+    },
+    "parser_derivations": [],
+    "reply_text": "请补充功率或转矩、转速、传动比允许偏差、齿宽系数上限、安全系数及材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "speed_rpm",
+          "question": "小轮（输入轴）转速是多少 r/min？",
+          "why": "n_1 是模型输入，不能推测"
+        },
+        {
+          "field": "torque_Nm",
+          "question": "请给出小轮名义转矩（N·m），或给出输入功率（kW）与转速。",
+          "why": "T_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "ratio": 3.5,
+        "life_h": 20000
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "ratio": 3.5,
+        "life_h": 20000
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-011": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "speed_rpm": 1450,
+      "ratio": 1.8
+    },
+    "parser_derivations": [],
+    "reply_text": "请补充功率或转矩、传动比允许偏差、齿宽系数上限、安全系数、寿命及材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "torque_Nm",
+          "question": "请给出小轮名义转矩（N·m），或给出输入功率（kW）与转速。",
+          "why": "T_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "speed_rpm": 1450,
+        "ratio": 1.8
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "speed_rpm": 1450,
+        "ratio": 1.8
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-012": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 22,
+      "speed_rpm": 1470,
+      "max_center_distance_mm": 200
+    },
+    "parser_derivations": [],
+    "reply_text": "请明确传动比及允许偏差、齿宽系数上限、安全系数、寿命及材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 22,
+        "speed_rpm": 1470,
+        "max_center_distance_mm": 200
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 22,
+        "speed_rpm": 1470,
+        "max_center_distance_mm": 200
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-013": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "torque_Nm": 200,
+      "speed_rpm": 600,
+      "ratio": 2.2,
+      "min_S_H": 1.2
+    },
+    "parser_derivations": [],
+    "reply_text": "请确认级数、传动比允许偏差、齿宽系数上限、弯曲安全系数、寿命及材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "torque_Nm": 200,
+        "speed_rpm": 600,
+        "ratio": 2.2,
+        "min_S_H": 1.2
+      },
+      "understood": {
+        "gear_type": "spur",
+        "torque_Nm": 200,
+        "speed_rpm": 600,
+        "ratio": 2.2,
+        "min_S_H": 1.2
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-014": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1
+    },
+    "parser_derivations": [],
+    "reply_text": "请先提供载荷与转速、目标传动比及允许偏差、齿宽系数上限、安全系数、寿命及材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "speed_rpm",
+          "question": "小轮（输入轴）转速是多少 r/min？",
+          "why": "n_1 是模型输入，不能推测"
+        },
+        {
+          "field": "torque_Nm",
+          "question": "请给出小轮名义转矩（N·m），或给出输入功率（kW）与转速。",
+          "why": "T_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-015": {
+    "parsed_requirement": {
+      "power_kW": 5.5,
+      "speed_rpm": 1000,
+      "ratio": 2,
+      "material": "45钢调质",
+      "life_h": 12000
+    },
+    "parser_derivations": [],
+    "reply_text": "请确认齿轮类型、级数、传动比允许偏差、齿宽系数上限及接触和弯曲安全系数。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        }
+      ],
+      "requirement": {
+        "power_kW": 5.5,
+        "speed_rpm": 1000,
+        "ratio": 2,
+        "material": "45钢调质",
+        "life_h": 12000
+      },
+      "understood": {
+        "power_kW": 5.5,
+        "speed_rpm": 1000,
+        "ratio": 2,
+        "material": "45钢调质",
+        "life_h": 12000
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-016": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "min_S_F": 1.5,
+      "min_S_H": 1.1
+    },
+    "parser_derivations": [],
+    "reply_text": "请补充功率或转矩、转速、传动比及允许偏差、齿宽系数上限、寿命及材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "speed_rpm",
+          "question": "小轮（输入轴）转速是多少 r/min？",
+          "why": "n_1 是模型输入，不能推测"
+        },
+        {
+          "field": "torque_Nm",
+          "question": "请给出小轮名义转矩（N·m），或给出输入功率（kW）与转速。",
+          "why": "T_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "min_S_F": 1.5,
+        "min_S_H": 1.1
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "min_S_F": 1.5,
+        "min_S_H": 1.1
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-017": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 15
+    },
+    "parser_derivations": [],
+    "reply_text": "请明确转速、传动比及允许偏差、齿宽系数上限、安全系数、寿命及材料热处理，概数不作为确定输入。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "speed_rpm",
+          "question": "小轮（输入轴）转速是多少 r/min？",
+          "why": "n_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-018": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1
+    },
+    "parser_derivations": [],
+    "reply_text": "请量化功率或转矩、转速、传动比及允许偏差、齿宽系数上限、安全系数和寿命，并明确材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "speed_rpm",
+          "question": "小轮（输入轴）转速是多少 r/min？",
+          "why": "n_1 是模型输入，不能推测"
+        },
+        {
+          "field": "torque_Nm",
+          "question": "请给出小轮名义转矩（N·m），或给出输入功率（kW）与转速。",
+          "why": "T_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-019": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 11,
+      "speed_rpm": 1470,
+      "ratio": 2
+    },
+    "parser_derivations": [],
+    "reply_text": "请区分接触与弯曲安全系数，并提供运行时长以明确寿命小时数；还需传动比允许偏差、齿宽系数上限和材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 11,
+        "speed_rpm": 1470,
+        "ratio": 2
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 11,
+        "speed_rpm": 1470,
+        "ratio": 2
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-020": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "speed_rpm": 1450,
+      "ratio": 1.8
+    },
+    "parser_derivations": [],
+    "reply_text": "请明确马力制式或提供千瓦功率，并补充传动比允许偏差、齿宽系数上限、安全系数、寿命和材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "torque_Nm",
+          "question": "请给出小轮名义转矩（N·m），或给出输入功率（kW）与转速。",
+          "why": "T_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "speed_rpm": 1450,
+        "ratio": 1.8
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "speed_rpm": 1450,
+        "ratio": 1.8
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-021": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1
+    },
+    "parser_derivations": [],
+    "reply_text": "请确认功率、转速、传动比的确定值及允许偏差，并补充齿宽系数上限、安全系数、寿命和材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "speed_rpm",
+          "question": "小轮（输入轴）转速是多少 r/min？",
+          "why": "n_1 是模型输入，不能推测"
+        },
+        {
+          "field": "torque_Nm",
+          "question": "请给出小轮名义转矩（N·m），或给出输入功率（kW）与转速。",
+          "why": "T_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-022": {
+    "parsed_requirement": {
+      "gear_type": "spur"
+    },
+    "parser_derivations": [],
+    "reply_text": "请量化载荷、转速、传动比、寿命和尺寸限制，并明确级数、传动比允许偏差、齿宽系数上限、安全系数和材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "speed_rpm",
+          "question": "小轮（输入轴）转速是多少 r/min？",
+          "why": "n_1 是模型输入，不能推测"
+        },
+        {
+          "field": "torque_Nm",
+          "question": "请给出小轮名义转矩（N·m），或给出输入功率（kW）与转速。",
+          "why": "T_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur"
+      },
+      "understood": {
+        "gear_type": "spur"
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-023": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 7.5,
+      "speed_rpm": 1440,
+      "ratio": 2,
+      "min_S_H": 1.2
+    },
+    "parser_derivations": [],
+    "reply_text": "请明确弯曲安全系数及寿命运行小时数，并补充传动比允许偏差、齿宽系数上限和材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 7.5,
+        "speed_rpm": 1440,
+        "ratio": 2,
+        "min_S_H": 1.2
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 7.5,
+        "speed_rpm": 1440,
+        "ratio": 2,
+        "min_S_H": 1.2
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-024": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 15,
+      "speed_rpm": 1450,
+      "ratio": 12,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 20000,
+      "material": "20CrMnTi渗碳淬火"
+    },
+    "parser_derivations": [],
+    "reply_text": "保留明确原始输入，适用范围与可行性需另行检查。",
+    "compile_result": {
+      "status": "blocked_invalid_inputs",
+      "errors": [
+        {
+          "name": "target_ratio",
+          "code": "out_of_domain",
+          "message": "target_ratio 须为 [1.0, 8.0] 内的有限数；超出模板范围，不裁剪也不替换，请改需求或另选模板"
+        }
+      ],
+      "questions": [],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15,
+        "speed_rpm": 1450,
+        "ratio": 12,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 20000,
+        "material": "20CrMnTi渗碳淬火"
+      }
+    }
+  },
+  "GAB-025": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 15,
+      "speed_rpm": 1450,
+      "ratio": 2.37,
+      "ratio_tol_percent": 0,
+      "max_b_over_d1": 0.1,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 20000,
+      "material": "20CrMnTi渗碳淬火"
+    },
+    "parser_derivations": [],
+    "reply_text": "保留明确输入及严格偏差要求，尚未判断可行性。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15,
+        "speed_rpm": 1450,
+        "ratio": 2.37,
+        "ratio_tol_percent": 0,
+        "max_b_over_d1": 0.1,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 20000,
+        "material": "20CrMnTi渗碳淬火"
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 2.37,
+            "ratio_tol": 0.0,
+            "max_b_over_d1": 0.1
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 98.78582674669366,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 1450,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.0,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.4,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.0,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 0
+          }
+        },
+        {
+          "quantity": "T_1",
+          "value": 98.78582674669366,
+          "unit": "N*m",
+          "formula_id": "torque_from_power_speed",
+          "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+          "operands": {
+            "power_kW": 15,
+            "speed_rpm": 1450
+          }
+        }
+      ],
+      "post_checks": [],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 20000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "20CrMnTi渗碳淬火",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-026": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 55,
+      "speed_rpm": 1480,
+      "ratio": 1.8,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.5,
+      "min_S_F": 2.0,
+      "life_h": 60000,
+      "material": "45钢调质",
+      "max_center_distance_mm": 60
+    },
+    "parser_derivations": [],
+    "reply_text": "已提取明确输入及中心距限制，尚未判断可行性。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 55,
+        "speed_rpm": 1480,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.5,
+        "min_S_F": 2.0,
+        "life_h": 60000,
+        "material": "45钢调质",
+        "max_center_distance_mm": 60
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 1.8,
+            "ratio_tol": 0.02,
+            "max_b_over_d1": 1.2
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 354.8725082454423,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 1480,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.5,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 2.0,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.02,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 2
+          }
+        },
+        {
+          "quantity": "T_1",
+          "value": 354.8725082454423,
+          "unit": "N*m",
+          "formula_id": "torque_from_power_speed",
+          "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+          "operands": {
+            "power_kW": 55,
+            "speed_rpm": 1480
+          }
+        }
+      ],
+      "post_checks": [
+        {
+          "field": "max_center_distance_mm",
+          "limit": 60,
+          "check_quantity": "a_w",
+          "sense": "<=",
+          "how": "优化后用 gear_explain(a_w) 取值与该上限比较；模板 stage_sizing 的约束集不含此项"
+        }
+      ],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 60000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "45钢调质",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-027": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 3,
+      "speed_rpm": 1450,
+      "ratio": 0.8,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 9000,
+      "material": "40Cr调质"
+    },
+    "parser_derivations": [],
+    "reply_text": "原文传动比与减速描述存在疑问，请确认；保留原值供校验。",
+    "compile_result": {
+      "status": "blocked_invalid_inputs",
+      "errors": [
+        {
+          "name": "target_ratio",
+          "code": "out_of_domain",
+          "message": "target_ratio 须为 [1.0, 8.0] 内的有限数；超出模板范围，不裁剪也不替换，请改需求或另选模板"
+        }
+      ],
+      "questions": [],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 3,
+        "speed_rpm": 1450,
+        "ratio": 0.8,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 9000,
+        "material": "40Cr调质"
+      }
+    }
+  },
+  "GAB-028": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "torque_Nm": 80,
+      "speed_rpm": 900,
+      "ratio": 3,
+      "ratio_tol_percent": 80,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 9000,
+      "material": "40Cr调质"
+    },
+    "parser_derivations": [],
+    "reply_text": "保留原文偏差要求，适用范围需检查。",
+    "compile_result": {
+      "status": "blocked_invalid_inputs",
+      "errors": [
+        {
+          "name": "ratio_tol",
+          "code": "out_of_domain",
+          "message": "ratio_tol 须为 [0.0, 0.5] 内的有限数；超出模板范围，不裁剪也不替换，请改需求或另选模板"
+        }
+      ],
+      "questions": [],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "torque_Nm": 80,
+        "speed_rpm": 900,
+        "ratio": 3,
+        "ratio_tol_percent": 80,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 9000,
+        "material": "40Cr调质"
+      }
+    }
+  },
+  "GAB-029": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 2,
+      "ratio": 16,
+      "power_kW": 30,
+      "speed_rpm": 1470
+    },
+    "parser_derivations": [],
+    "reply_text": "已保留多级传动需求，需使用相应设计流程。",
+    "compile_result": {
+      "status": "blocked_unsupported_scope",
+      "errors": [
+        {
+          "name": "stages",
+          "code": "unsupported_scope",
+          "message": "模板 stage_sizing 只覆盖单级传动"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 2,
+        "ratio": 16,
+        "power_kW": 30,
+        "speed_rpm": 1470
+      },
+      "available_templates": [
+        "stage_sizing"
+      ]
+    }
+  },
+  "GAB-030": {
+    "parsed_requirement": {
+      "gear_type": "helical",
+      "stages": 1,
+      "power_kW": 15,
+      "speed_rpm": 1450,
+      "ratio": 3
+    },
+    "parser_derivations": [],
+    "reply_text": "已保留斜齿传动类型，螺旋角无对应结构化字段，需相应设计流程。",
+    "compile_result": {
+      "status": "blocked_unsupported_scope",
+      "errors": [
+        {
+          "name": "gear_type",
+          "code": "unsupported_scope",
+          "message": "模板 stage_sizing 只覆盖直齿（spur / 直齿）"
+        }
+      ],
+      "requirement": {
+        "gear_type": "helical",
+        "stages": 1,
+        "power_kW": 15,
+        "speed_rpm": 1450,
+        "ratio": 3
+      },
+      "available_templates": [
+        "stage_sizing"
+      ]
+    }
+  },
+  "GAB-031": {
+    "parsed_requirement": {
+      "gear_type": "worm",
+      "power_kW": 2.2,
+      "speed_rpm": 1440,
+      "ratio": 20
+    },
+    "parser_derivations": [],
+    "reply_text": "已保留蜗杆传动类型，需相应设计流程。",
+    "compile_result": {
+      "status": "blocked_unsupported_scope",
+      "errors": [
+        {
+          "name": "gear_type",
+          "code": "unsupported_scope",
+          "message": "模板 stage_sizing 只覆盖直齿（spur / 直齿）"
+        }
+      ],
+      "requirement": {
+        "gear_type": "worm",
+        "power_kW": 2.2,
+        "speed_rpm": 1440,
+        "ratio": 20
+      },
+      "available_templates": [
+        "stage_sizing"
+      ]
+    }
+  },
+  "GAB-032": {
+    "parsed_requirement": {
+      "gear_type": "planetary",
+      "power_kW": 45,
+      "speed_rpm": 1500,
+      "ratio": 5
+    },
+    "parser_derivations": [],
+    "reply_text": "已保留行星传动类型，需相应设计流程。",
+    "compile_result": {
+      "status": "blocked_unsupported_scope",
+      "errors": [
+        {
+          "name": "gear_type",
+          "code": "unsupported_scope",
+          "message": "模板 stage_sizing 只覆盖直齿（spur / 直齿）"
+        }
+      ],
+      "requirement": {
+        "gear_type": "planetary",
+        "power_kW": 45,
+        "speed_rpm": 1500,
+        "ratio": 5
+      },
+      "available_templates": [
+        "stage_sizing"
+      ]
+    }
+  },
+  "GAB-033": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 15,
+      "speed_rpm": 1450,
+      "torque_Nm": 200,
+      "ratio": 1.8,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 20000,
+      "material": "20CrMnTi渗碳淬火"
+    },
+    "parser_derivations": [],
+    "reply_text": "保留功率、转速和转矩原值，需检查一致性。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "torque_Nm",
+          "question": "给出的转矩与 功率+转速 换算的转矩不一致，请确认以哪个为准（或更正其中一项）。",
+          "why": "两个来源冲突时不择一"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15,
+        "speed_rpm": 1450,
+        "torque_Nm": 200,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 20000,
+        "material": "20CrMnTi渗碳淬火"
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15,
+        "speed_rpm": 1450,
+        "torque_Nm": 200,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 20000,
+        "material": "20CrMnTi渗碳淬火"
+      },
+      "notes": [
+        {
+          "conflict": "torque_vs_power_speed",
+          "derivation": {
+            "quantity": "T_1",
+            "value": 98.78582674669366,
+            "unit": "N*m",
+            "formula_id": "torque_from_power_speed",
+            "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+            "operands": {
+              "power_kW": 15,
+              "speed_rpm": 1450
+            }
+          },
+          "given_torque_Nm": 200
+        }
+      ],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-034": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 5,
+      "speed_rpm": 1000,
+      "torque_Nm": 50,
+      "ratio": 2,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 9000,
+      "material": "45钢调质"
+    },
+    "parser_derivations": [],
+    "reply_text": "保留功率、转速和转矩原值，需检查一致性。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "torque_Nm",
+          "question": "给出的转矩与 功率+转速 换算的转矩不一致，请确认以哪个为准（或更正其中一项）。",
+          "why": "两个来源冲突时不择一"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 5,
+        "speed_rpm": 1000,
+        "torque_Nm": 50,
+        "ratio": 2,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 9000,
+        "material": "45钢调质"
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 5,
+        "speed_rpm": 1000,
+        "torque_Nm": 50,
+        "ratio": 2,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 9000,
+        "material": "45钢调质"
+      },
+      "notes": [
+        {
+          "conflict": "torque_vs_power_speed",
+          "derivation": {
+            "quantity": "T_1",
+            "value": 47.74648292756861,
+            "unit": "N*m",
+            "formula_id": "torque_from_power_speed",
+            "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+            "operands": {
+              "power_kW": 5,
+              "speed_rpm": 1000
+            }
+          },
+          "given_torque_Nm": 50
+        }
+      ],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-035": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1
+    },
+    "parser_derivations": [],
+    "reply_text": "现有输入不足以选齿数和模数，请提供载荷、转速、传动比及偏差、齿宽系数上限、安全系数、寿命和材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "speed_rpm",
+          "question": "小轮（输入轴）转速是多少 r/min？",
+          "why": "n_1 是模型输入，不能推测"
+        },
+        {
+          "field": "torque_Nm",
+          "question": "请给出小轮名义转矩（N·m），或给出输入功率（kW）与转速。",
+          "why": "T_1 是模型输入，不能推测"
+        },
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-036": {
+    "parsed_requirement": {
+      "power_kW": 15,
+      "speed_rpm": 1450
+    },
+    "parser_derivations": [],
+    "reply_text": "请明确齿轮类型、级数、传动比及偏差、齿宽系数上限、接触与弯曲安全系数、寿命和材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "power_kW": 15,
+        "speed_rpm": 1450
+      },
+      "understood": {
+        "power_kW": 15,
+        "speed_rpm": 1450
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-037": {
+    "parsed_requirement": {
+      "power_kW": 10000,
+      "speed_rpm": 10000
+    },
+    "parser_derivations": [],
+    "reply_text": "已记录明确的功率与转速，仍缺齿轮类型、级数、传动比及偏差、齿宽系数上限、安全系数、寿命和材料热处理，不能据此给出可行结论。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "ratio",
+          "question": "目标传动比 i 是多少？",
+          "why": "target_ratio 是模板参数，无默认"
+        },
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "power_kW": 10000,
+        "speed_rpm": 10000
+      },
+      "understood": {
+        "power_kW": 10000,
+        "speed_rpm": 10000
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-038": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 15,
+      "speed_rpm": 1450,
+      "ratio": 1.8
+    },
+    "parser_derivations": [],
+    "reply_text": "保留原文明确的公制输入；请澄清单位冲突并补充传动比允许偏差、齿宽系数上限、安全系数、寿命和材料热处理。",
+    "compile_result": {
+      "status": "needs_clarification",
+      "questions": [
+        {
+          "field": "ratio_tol_percent",
+          "question": "传动比允许的相对偏差是多少（百分数）？",
+          "why": "ratio_tol 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "max_b_over_d1",
+          "question": "齿宽/小轮分度圆直径（齿宽系数）上限是多少？",
+          "why": "max_b_over_d1 是模板参数，不采用模板默认值"
+        },
+        {
+          "field": "min_S_H",
+          "question": "接触安全系数下限是多少？",
+          "why": "S_Hmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "min_S_F",
+          "question": "弯曲安全系数下限是多少？",
+          "why": "S_Fmin 是模型限值，不采用基线值"
+        },
+        {
+          "field": "life_h",
+          "question": "要求寿命是多少小时（若以年计，请同时给出每天运行小时数与每年天数）？",
+          "why": "寿命决定 Z_NT/Y_NT，需要明确"
+        },
+        {
+          "field": "material",
+          "question": "材料与热处理是什么？σHlim、σFlim 取自哪个标准或试验证据？",
+          "why": "材料极限是模型输入，不能推测"
+        }
+      ],
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15,
+        "speed_rpm": 1450,
+        "ratio": 1.8
+      },
+      "understood": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15,
+        "speed_rpm": 1450,
+        "ratio": 1.8
+      },
+      "notes": [],
+      "message": "缺项或冲突项见 questions；未使用任何默认值，也未编译。"
+    }
+  },
+  "GAB-039": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "power_kW": 15,
+      "speed_rpm": 1450,
+      "ratio": 1.8,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 20000,
+      "material": "20CrMnTi 渗碳淬火"
+    },
+    "parser_derivations": [
+      {
+        "quantity": "power_kW",
+        "value": 15,
+        "unit": "kW",
+        "formula_id": "w_to_kw",
+        "expr": "P[kW] = P[W] / 1000",
+        "operands": {
+          "power_W": 15000
+        }
+      }
+    ],
+    "reply_text": "功率按登记换算式转换，其他明确输入已提取。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "power_kW": 15,
+        "speed_rpm": 1450,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 20000,
+        "material": "20CrMnTi 渗碳淬火"
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 1.8,
+            "ratio_tol": 0.02,
+            "max_b_over_d1": 1.2
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 98.78582674669366,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 1450,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.0,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.4,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.02,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 2
+          }
+        },
+        {
+          "quantity": "T_1",
+          "value": 98.78582674669366,
+          "unit": "N*m",
+          "formula_id": "torque_from_power_speed",
+          "expr": "T[N·m] = P[kW]·1000 / (n[r/min]·2π/60)",
+          "operands": {
+            "power_kW": 15,
+            "speed_rpm": 1450
+          }
+        }
+      ],
+      "post_checks": [],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 20000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "20CrMnTi 渗碳淬火",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  },
+  "GAB-040": {
+    "parsed_requirement": {
+      "gear_type": "spur",
+      "stages": 1,
+      "torque_Nm": 95,
+      "speed_rpm": 1450,
+      "ratio": 1.8,
+      "ratio_tol_percent": 2,
+      "max_b_over_d1": 1.2,
+      "min_S_H": 1.0,
+      "min_S_F": 1.4,
+      "life_h": 20000,
+      "material": "45钢调质"
+    },
+    "parser_derivations": [],
+    "reply_text": "已提取明确输入，尚未进行设计校核。",
+    "compile_result": {
+      "status": "pass_pending_human_confirmation",
+      "requirement": {
+        "gear_type": "spur",
+        "stages": 1,
+        "torque_Nm": 95,
+        "speed_rpm": 1450,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.0,
+        "min_S_F": 1.4,
+        "life_h": 20000,
+        "material": "45钢调质"
+      },
+      "agent_proposed_inputs": [
+        "S_Fmin",
+        "S_Hmin",
+        "T_1",
+        "max_b_over_d1",
+        "n_1",
+        "ratio_tol",
+        "target_ratio"
+      ],
+      "template_call": {
+        "tool": "optimize_nlp",
+        "arguments": {
+          "template": "stage_sizing",
+          "template_params": {
+            "target_ratio": 1.8,
+            "ratio_tol": 0.02,
+            "max_b_over_d1": 1.2
+          }
+        }
+      },
+      "rating_edit": {
+        "tool": "gear_preview_edit",
+        "arguments": {
+          "edit": {
+            "params": {
+              "T_1": {
+                "value": 95,
+                "unit": "N*m",
+                "provenance": "agent_proposed"
+              },
+              "n_1": {
+                "value": 1450,
+                "unit": "rpm",
+                "provenance": "agent_proposed"
+              },
+              "S_Hmin": {
+                "value": 1.0,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              },
+              "S_Fmin": {
+                "value": 1.4,
+                "unit": "1",
+                "provenance": "agent_proposed"
+              }
+            }
+          }
+        }
+      },
+      "derivations": [
+        {
+          "quantity": "ratio_tol",
+          "value": 0.02,
+          "unit": "1",
+          "formula_id": "percent_to_fraction",
+          "expr": "x = p / 100",
+          "operands": {
+            "percent": 2
+          }
+        }
+      ],
+      "post_checks": [],
+      "unapplied": [
+        {
+          "field": "life_h",
+          "value": 20000,
+          "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+        },
+        {
+          "field": "material",
+          "value": "45钢调质",
+          "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+        }
+      ],
+      "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+      "scope_assumptions": [
+        "转速 speed_rpm 按小轮（输入轴）转速理解",
+        "模板 stage_sizing 覆盖单级直齿"
+      ],
+      "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+    }
+  }
+}

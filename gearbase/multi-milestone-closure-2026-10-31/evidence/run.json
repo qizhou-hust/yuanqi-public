@@ -1,0 +1,25 @@
+{
+  "schema": "gearbase.milestone-delivery-run/1",
+  "version": "0.16",
+  "headless": true,
+  "mouse_used": false,
+  "source_ci_commit": "ffd95397c697dcbee5ea40bfc4847b5c557397db",
+  "source_ci_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41266599287",
+  "closed": [
+    "M32",
+    "M38"
+  ],
+  "partial": [
+    "M33",
+    "M34",
+    "M39"
+  ],
+  "KISSsoft_scope": "No additional commercial calculation run in this software milestone pass; existing v014-v016 native/report evidence retained without altered version claims.",
+  "client": {
+    "name": "Claude Code",
+    "version": "2.1.304",
+    "MCP_discovery": true,
+    "actual_model_tool_call": false,
+    "blocked_reason": "HTTP403 insufficient account quota"
+  }
+}

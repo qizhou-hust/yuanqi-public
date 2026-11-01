@@ -1,0 +1,670 @@
+{
+  "schema": "gearbase.model-bench-output/1",
+  "model": {
+    "name": "gpt-6.1-sol",
+    "version": "Codex collaboration preset; build identifier not exposed"
+  },
+  "run": {
+    "id": "m38-sol-actual-2026-10-31",
+    "kind": "actual_model_run",
+    "started_at": "2026-11-01T02:17:54+00:00",
+    "completed_at": "2026-11-01T02:18:30.336477+00:00",
+    "provider": "Codex collaboration agent",
+    "receipt": {
+      "path": "sol-receipt.json",
+      "sha256": "5b2cb10a599e56c0938185916ac39a10d7698f2fc79f6b31332e2c8012b432a3"
+    }
+  },
+  "bench_sha256": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae",
+  "cases": [
+    {
+      "id": "GAB-001",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi渗碳淬火"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确输入，尚未进行设计校核。"
+      }
+    },
+    {
+      "id": "GAB-002",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 7.5,
+          "speed_rpm": 960,
+          "ratio": 2.5,
+          "ratio_tol_percent": 3,
+          "max_b_over_d1": 1.0,
+          "min_S_H": 1.2,
+          "min_S_F": 1.5,
+          "life_h": 30000,
+          "material": "45钢调质",
+          "max_center_distance_mm": 180
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确输入及中心距限制。"
+      }
+    },
+    {
+      "id": "GAB-003",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "torque_Nm": 120,
+          "speed_rpm": 1000,
+          "ratio": 3,
+          "ratio_tol_percent": 1,
+          "max_b_over_d1": 0.8,
+          "min_S_H": 1.1,
+          "min_S_F": 1.3,
+          "life_h": 10000,
+          "material": "40Cr调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确输入，尚未进行设计校核。"
+      }
+    },
+    {
+      "id": "GAB-004",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "torque_Nm": 300,
+          "speed_rpm": 500,
+          "ratio": 4,
+          "ratio_tol_percent": 2.5,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.25,
+          "life_h": 50000,
+          "material": "17CrNiMo6渗碳淬火",
+          "max_face_width_mm": 60
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确输入及齿宽限制。"
+      }
+    },
+    {
+      "id": "GAB-005",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 0.75,
+          "speed_rpm": 1400,
+          "ratio": 2,
+          "ratio_tol_percent": 5,
+          "max_b_over_d1": 1.5,
+          "min_S_H": 1.0,
+          "min_S_F": 1.2,
+          "life_h": 8000,
+          "material": "45钢调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确输入，尚未进行设计校核。"
+      }
+    },
+    {
+      "id": "GAB-006",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 90,
+          "speed_rpm": 750,
+          "ratio": 1.6,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.0,
+          "min_S_H": 1.3,
+          "min_S_F": 1.6,
+          "life_h": 40000,
+          "material": "42CrMo调质",
+          "max_center_distance_mm": 320
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确输入及中心距限制。"
+      }
+    },
+    {
+      "id": "GAB-007",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 11,
+          "speed_rpm": 1470,
+          "torque_Nm": 71.5,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 25000,
+          "material": "20CrMnTi渗碳淬火"
+        },
+        "parser_derivations": [],
+        "reply_text": "保留原文同时给出的功率、转速和转矩供一致性检查。"
+      }
+    },
+    {
+      "id": "GAB-008",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 4,
+          "speed_rpm": 2900,
+          "ratio": 1.2,
+          "ratio_tol_percent": 4,
+          "max_b_over_d1": 0.9,
+          "min_S_H": 1.0,
+          "min_S_F": 1.3,
+          "life_h": 15000,
+          "material": "40Cr调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确输入，尚未进行设计校核。"
+      }
+    },
+    {
+      "id": "GAB-009",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 15
+        },
+        "parser_derivations": [],
+        "reply_text": "请补充转速、传动比及允许偏差、齿宽系数上限、接触和弯曲安全系数、寿命及材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-010",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "ratio": 3.5,
+          "life_h": 20000
+        },
+        "parser_derivations": [],
+        "reply_text": "请补充功率或转矩、转速、传动比允许偏差、齿宽系数上限、安全系数及材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-011",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "speed_rpm": 1450,
+          "ratio": 1.8
+        },
+        "parser_derivations": [],
+        "reply_text": "请补充功率或转矩、传动比允许偏差、齿宽系数上限、安全系数、寿命及材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-012",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 22,
+          "speed_rpm": 1470,
+          "max_center_distance_mm": 200
+        },
+        "parser_derivations": [],
+        "reply_text": "请明确传动比及允许偏差、齿宽系数上限、安全系数、寿命及材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-013",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "torque_Nm": 200,
+          "speed_rpm": 600,
+          "ratio": 2.2,
+          "min_S_H": 1.2
+        },
+        "parser_derivations": [],
+        "reply_text": "请确认级数、传动比允许偏差、齿宽系数上限、弯曲安全系数、寿命及材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-014",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1
+        },
+        "parser_derivations": [],
+        "reply_text": "请先提供载荷与转速、目标传动比及允许偏差、齿宽系数上限、安全系数、寿命及材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-015",
+      "output": {
+        "parsed_requirement": {
+          "power_kW": 5.5,
+          "speed_rpm": 1000,
+          "ratio": 2,
+          "material": "45钢调质",
+          "life_h": 12000
+        },
+        "parser_derivations": [],
+        "reply_text": "请确认齿轮类型、级数、传动比允许偏差、齿宽系数上限及接触和弯曲安全系数。"
+      }
+    },
+    {
+      "id": "GAB-016",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "min_S_F": 1.5,
+          "min_S_H": 1.1
+        },
+        "parser_derivations": [],
+        "reply_text": "请补充功率或转矩、转速、传动比及允许偏差、齿宽系数上限、寿命及材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-017",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 15
+        },
+        "parser_derivations": [],
+        "reply_text": "请明确转速、传动比及允许偏差、齿宽系数上限、安全系数、寿命及材料热处理，概数不作为确定输入。"
+      }
+    },
+    {
+      "id": "GAB-018",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1
+        },
+        "parser_derivations": [],
+        "reply_text": "请量化功率或转矩、转速、传动比及允许偏差、齿宽系数上限、安全系数和寿命，并明确材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-019",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 11,
+          "speed_rpm": 1470,
+          "ratio": 2
+        },
+        "parser_derivations": [],
+        "reply_text": "请区分接触与弯曲安全系数，并提供运行时长以明确寿命小时数；还需传动比允许偏差、齿宽系数上限和材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-020",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "speed_rpm": 1450,
+          "ratio": 1.8
+        },
+        "parser_derivations": [],
+        "reply_text": "请明确马力制式或提供千瓦功率，并补充传动比允许偏差、齿宽系数上限、安全系数、寿命和材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-021",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1
+        },
+        "parser_derivations": [],
+        "reply_text": "请确认功率、转速、传动比的确定值及允许偏差，并补充齿宽系数上限、安全系数、寿命和材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-022",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur"
+        },
+        "parser_derivations": [],
+        "reply_text": "请量化载荷、转速、传动比、寿命和尺寸限制，并明确级数、传动比允许偏差、齿宽系数上限、安全系数和材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-023",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 7.5,
+          "speed_rpm": 1440,
+          "ratio": 2,
+          "min_S_H": 1.2
+        },
+        "parser_derivations": [],
+        "reply_text": "请明确弯曲安全系数及寿命运行小时数，并补充传动比允许偏差、齿宽系数上限和材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-024",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 12,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi渗碳淬火"
+        },
+        "parser_derivations": [],
+        "reply_text": "保留明确原始输入，适用范围与可行性需另行检查。"
+      }
+    },
+    {
+      "id": "GAB-025",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 2.37,
+          "ratio_tol_percent": 0,
+          "max_b_over_d1": 0.1,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi渗碳淬火"
+        },
+        "parser_derivations": [],
+        "reply_text": "保留明确输入及严格偏差要求，尚未判断可行性。"
+      }
+    },
+    {
+      "id": "GAB-026",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 55,
+          "speed_rpm": 1480,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.5,
+          "min_S_F": 2.0,
+          "life_h": 60000,
+          "material": "45钢调质",
+          "max_center_distance_mm": 60
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确输入及中心距限制，尚未判断可行性。"
+      }
+    },
+    {
+      "id": "GAB-027",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 3,
+          "speed_rpm": 1450,
+          "ratio": 0.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 9000,
+          "material": "40Cr调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "原文传动比与减速描述存在疑问，请确认；保留原值供校验。"
+      }
+    },
+    {
+      "id": "GAB-028",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "torque_Nm": 80,
+          "speed_rpm": 900,
+          "ratio": 3,
+          "ratio_tol_percent": 80,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 9000,
+          "material": "40Cr调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "保留原文偏差要求，适用范围需检查。"
+      }
+    },
+    {
+      "id": "GAB-029",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 2,
+          "ratio": 16,
+          "power_kW": 30,
+          "speed_rpm": 1470
+        },
+        "parser_derivations": [],
+        "reply_text": "已保留多级传动需求，需使用相应设计流程。"
+      }
+    },
+    {
+      "id": "GAB-030",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "helical",
+          "stages": 1,
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 3
+        },
+        "parser_derivations": [],
+        "reply_text": "已保留斜齿传动类型，螺旋角无对应结构化字段，需相应设计流程。"
+      }
+    },
+    {
+      "id": "GAB-031",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "worm",
+          "power_kW": 2.2,
+          "speed_rpm": 1440,
+          "ratio": 20
+        },
+        "parser_derivations": [],
+        "reply_text": "已保留蜗杆传动类型，需相应设计流程。"
+      }
+    },
+    {
+      "id": "GAB-032",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "planetary",
+          "power_kW": 45,
+          "speed_rpm": 1500,
+          "ratio": 5
+        },
+        "parser_derivations": [],
+        "reply_text": "已保留行星传动类型，需相应设计流程。"
+      }
+    },
+    {
+      "id": "GAB-033",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "torque_Nm": 200,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi渗碳淬火"
+        },
+        "parser_derivations": [],
+        "reply_text": "保留功率、转速和转矩原值，需检查一致性。"
+      }
+    },
+    {
+      "id": "GAB-034",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 5,
+          "speed_rpm": 1000,
+          "torque_Nm": 50,
+          "ratio": 2,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 9000,
+          "material": "45钢调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "保留功率、转速和转矩原值，需检查一致性。"
+      }
+    },
+    {
+      "id": "GAB-035",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1
+        },
+        "parser_derivations": [],
+        "reply_text": "现有输入不足以选齿数和模数，请提供载荷、转速、传动比及偏差、齿宽系数上限、安全系数、寿命和材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-036",
+      "output": {
+        "parsed_requirement": {
+          "power_kW": 15,
+          "speed_rpm": 1450
+        },
+        "parser_derivations": [],
+        "reply_text": "请明确齿轮类型、级数、传动比及偏差、齿宽系数上限、接触与弯曲安全系数、寿命和材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-037",
+      "output": {
+        "parsed_requirement": {
+          "power_kW": 10000,
+          "speed_rpm": 10000
+        },
+        "parser_derivations": [],
+        "reply_text": "已记录明确的功率与转速，仍缺齿轮类型、级数、传动比及偏差、齿宽系数上限、安全系数、寿命和材料热处理，不能据此给出可行结论。"
+      }
+    },
+    {
+      "id": "GAB-038",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 1.8
+        },
+        "parser_derivations": [],
+        "reply_text": "保留原文明确的公制输入；请澄清单位冲突并补充传动比允许偏差、齿宽系数上限、安全系数、寿命和材料热处理。"
+      }
+    },
+    {
+      "id": "GAB-039",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi 渗碳淬火"
+        },
+        "parser_derivations": [
+          {
+            "quantity": "power_kW",
+            "value": 15,
+            "unit": "kW",
+            "formula_id": "w_to_kw",
+            "expr": "P[kW] = P[W] / 1000",
+            "operands": {
+              "power_W": 15000
+            }
+          }
+        ],
+        "reply_text": "功率按登记换算式转换，其他明确输入已提取。"
+      }
+    },
+    {
+      "id": "GAB-040",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "spur",
+          "stages": 1,
+          "torque_Nm": 95,
+          "speed_rpm": 1450,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.0,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "45钢调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确输入，尚未进行设计校核。"
+      }
+    }
+  ]
+}

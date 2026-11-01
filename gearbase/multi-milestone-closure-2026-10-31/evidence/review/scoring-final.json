@@ -1,0 +1,65 @@
+{
+  "rules": {
+    "hallucinated_number_rate": 0.0,
+    "numbers_checked": 721,
+    "numbers_untraceable": 0,
+    "hallucination_gate": "pass",
+    "compile_accuracy": null,
+    "clarification_recall": null,
+    "clarification_precision": null,
+    "clarification_selfcheck": 1.0,
+    "clarification_selfcheck_fields": {
+      "required": 140,
+      "asked": 140
+    },
+    "outcome_distribution": {
+      "blocked_invalid_inputs": 3,
+      "blocked_unsupported_scope": 4,
+      "needs_clarification": 21,
+      "pass_pending_human_confirmation": 12
+    },
+    "clarification_inconsistent_cases": []
+  },
+  "sol-output": {
+    "hallucinated_number_rate": 0.0,
+    "numbers_checked": 684,
+    "numbers_untraceable": 0,
+    "hallucination_gate": "pass",
+    "compile_accuracy": null,
+    "clarification_recall": null,
+    "clarification_precision": null,
+    "clarification_selfcheck": 1.0,
+    "clarification_selfcheck_fields": {
+      "required": 138,
+      "asked": 138
+    },
+    "outcome_distribution": {
+      "blocked_invalid_inputs": 3,
+      "blocked_unsupported_scope": 4,
+      "needs_clarification": 21,
+      "pass_pending_human_confirmation": 12
+    },
+    "clarification_inconsistent_cases": []
+  },
+  "terra-output": {
+    "hallucinated_number_rate": 0.0,
+    "numbers_checked": 681,
+    "numbers_untraceable": 0,
+    "hallucination_gate": "pass",
+    "compile_accuracy": null,
+    "clarification_recall": null,
+    "clarification_precision": null,
+    "clarification_selfcheck": 1.0,
+    "clarification_selfcheck_fields": {
+      "required": 138,
+      "asked": 138
+    },
+    "outcome_distribution": {
+      "blocked_invalid_inputs": 3,
+      "blocked_unsupported_scope": 4,
+      "needs_clarification": 21,
+      "pass_pending_human_confirmation": 12
+    },
+    "clarification_inconsistent_cases": []
+  }
+}

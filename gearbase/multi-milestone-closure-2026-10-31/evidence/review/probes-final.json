@@ -1,0 +1,88 @@
+{
+  "whole_tokens": {
+    "−九百九十九": {
+      "actual": [
+        -999.0
+      ],
+      "expected": [
+        -999.0
+      ],
+      "passed": true
+    },
+    "负999": {
+      "actual": [
+        -999.0
+      ],
+      "expected": [
+        -999.0
+      ],
+      "passed": true
+    },
+    "1e3万": {
+      "actual": [
+        10000000.0
+      ],
+      "expected": [
+        10000000.0
+      ],
+      "passed": true
+    },
+    "零万": {
+      "actual": [
+        0.0
+      ],
+      "expected": [
+        0.0
+      ],
+      "passed": true
+    },
+    "1,000": {
+      "actual": [
+        1000.0
+      ],
+      "expected": [
+        1000.0
+      ],
+      "passed": true
+    },
+    "一万亿": {
+      "actual": [
+        1000000000000.0
+      ],
+      "expected": [
+        1000000000000.0
+      ],
+      "passed": true
+    },
+    "15万": {
+      "actual": [
+        150000.0
+      ],
+      "expected": [
+        150000.0
+      ],
+      "passed": true
+    }
+  },
+  "unsupported": {
+    "1,00": true,
+    "15五": true,
+    "999负": true,
+    "一百百": true,
+    "NaN": true,
+    "Infinity": true,
+    "-inf": true
+  },
+  "standards": [],
+  "thermal_boundary": {
+    "all_payloads_exact": true,
+    "old9": false,
+    "new9": false
+  },
+  "underflow_status": "blocked_invalid_inputs",
+  "family_list_status": "blocked_unsupported_scope",
+  "stored_reads": {
+    "gear_get_design": "ok",
+    "gear_rate": "pass"
+  }
+}

@@ -1,0 +1,670 @@
+{
+  "schema": "gearbase.model-bench-output/1",
+  "model": {
+    "name": "gpt-6.1-terra",
+    "version": "Codex collaboration preset; build identifier not exposed"
+  },
+  "run": {
+    "id": "m38-terra-actual-2026-10-31",
+    "kind": "actual_model_run",
+    "started_at": "2026-11-01T02:16:48+00:00",
+    "completed_at": "2026-11-01T02:16:59.266081+00:00",
+    "provider": "Codex collaboration agent",
+    "receipt": {
+      "path": "terra-receipt.json",
+      "sha256": "63bfec5547dc274e3340c42b334296a5824c9b1ed6c8c4bff6fcdb03f1881765"
+    }
+  },
+  "bench_sha256": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae",
+  "cases": [
+    {
+      "id": "GAB-001",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi渗碳淬火"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-002",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 7.5,
+          "speed_rpm": 960,
+          "ratio": 2.5,
+          "ratio_tol_percent": 3,
+          "max_b_over_d1": 1,
+          "min_S_H": 1.2,
+          "min_S_F": 1.5,
+          "life_h": 30000,
+          "material": "45钢调质",
+          "max_center_distance_mm": 180
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-003",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "speed_rpm": 1000,
+          "ratio": 3,
+          "ratio_tol_percent": 1,
+          "max_b_over_d1": 0.8,
+          "min_S_H": 1.1,
+          "min_S_F": 1.3,
+          "life_h": 10000,
+          "material": "40Cr调质",
+          "torque_Nm": 120
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-004",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "speed_rpm": 500,
+          "ratio": 4,
+          "ratio_tol_percent": 2.5,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.25,
+          "life_h": 50000,
+          "material": "17CrNiMo6渗碳淬火",
+          "torque_Nm": 300,
+          "max_face_width_mm": 60
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-005",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 0.75,
+          "speed_rpm": 1400,
+          "ratio": 2,
+          "ratio_tol_percent": 5,
+          "max_b_over_d1": 1.5,
+          "min_S_H": 1,
+          "min_S_F": 1.2,
+          "life_h": 8000,
+          "material": "45钢调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-006",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 90,
+          "speed_rpm": 750,
+          "ratio": 1.6,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1,
+          "min_S_H": 1.3,
+          "min_S_F": 1.6,
+          "life_h": 40000,
+          "material": "42CrMo调质",
+          "max_center_distance_mm": 320
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-007",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 11,
+          "speed_rpm": 1470,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 25000,
+          "material": "20CrMnTi渗碳淬火",
+          "torque_Nm": 71.5
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-008",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 4,
+          "speed_rpm": 2900,
+          "ratio": 1.2,
+          "ratio_tol_percent": 4,
+          "max_b_over_d1": 0.9,
+          "min_S_H": 1,
+          "min_S_F": 1.3,
+          "life_h": 15000,
+          "material": "40Cr调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-009",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 15
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-010",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "ratio": 3.5,
+          "life_h": 20000
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-011",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "speed_rpm": 1450,
+          "ratio": 1.8
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-012",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 22,
+          "speed_rpm": 1470,
+          "max_center_distance_mm": 200
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-013",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "直齿",
+          "torque_Nm": 200,
+          "speed_rpm": 600,
+          "ratio": 2.2,
+          "min_S_H": 1.2
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-014",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-015",
+      "output": {
+        "parsed_requirement": {
+          "power_kW": 5.5,
+          "speed_rpm": 1000,
+          "ratio": 2,
+          "material": "45钢调质",
+          "life_h": 12000
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-016",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "min_S_H": 1.1,
+          "min_S_F": 1.5
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-017",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 15
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-018",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-019",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 11,
+          "speed_rpm": 1470,
+          "ratio": 2
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-020",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "speed_rpm": 1450,
+          "ratio": 1.8
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-021",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-022",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "直齿"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-023",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 7.5,
+          "speed_rpm": 1440,
+          "ratio": 2,
+          "min_S_H": 1.2
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-024",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 12,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi渗碳淬火"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-025",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 2.37,
+          "ratio_tol_percent": 0,
+          "max_b_over_d1": 0.1,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi渗碳淬火"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-026",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 55,
+          "speed_rpm": 1480,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.5,
+          "min_S_F": 2,
+          "life_h": 60000,
+          "material": "45钢调质",
+          "max_center_distance_mm": 60
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-027",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 3,
+          "speed_rpm": 1450,
+          "ratio": 0.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 9000,
+          "material": "40Cr调质"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-028",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "speed_rpm": 900,
+          "ratio": 3,
+          "ratio_tol_percent": 80,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 9000,
+          "material": "40Cr调质",
+          "torque_Nm": 80
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-029",
+      "output": {
+        "parsed_requirement": {
+          "stages": 2,
+          "gear_type": "直齿",
+          "ratio": 16,
+          "power_kW": 30,
+          "speed_rpm": 1470
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-030",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "斜齿",
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 3
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-031",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "蜗杆",
+          "power_kW": 2.2,
+          "speed_rpm": 1440,
+          "ratio": 20
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-032",
+      "output": {
+        "parsed_requirement": {
+          "gear_type": "行星齿轮",
+          "power_kW": 45,
+          "speed_rpm": 1500,
+          "ratio": 5
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-033",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi渗碳淬火",
+          "torque_Nm": 200
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-034",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 5,
+          "speed_rpm": 1000,
+          "ratio": 2,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 9000,
+          "material": "45钢调质",
+          "torque_Nm": 50
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-035",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿"
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-036",
+      "output": {
+        "parsed_requirement": {
+          "power_kW": 15,
+          "speed_rpm": 1450
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-037",
+      "output": {
+        "parsed_requirement": {
+          "power_kW": 10000,
+          "speed_rpm": 10000
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-038",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 1.8
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-039",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "power_kW": 15,
+          "speed_rpm": 1450,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "20CrMnTi渗碳淬火"
+        },
+        "parser_derivations": [
+          {
+            "quantity": "power_kW",
+            "value": 15,
+            "unit": "kW",
+            "formula_id": "w_to_kw",
+            "expr": "P[kW] = P[W] / 1000",
+            "operands": {
+              "power_W": 15000
+            }
+          }
+        ],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    },
+    {
+      "id": "GAB-040",
+      "output": {
+        "parsed_requirement": {
+          "stages": 1,
+          "gear_type": "直齿",
+          "speed_rpm": 1450,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1,
+          "min_S_F": 1.4,
+          "life_h": 20000,
+          "material": "45钢调质",
+          "torque_Nm": 95
+        },
+        "parser_derivations": [],
+        "reply_text": "已提取明确参数；缺失或含糊的参数需确认。"
+      }
+    }
+  ]
+}

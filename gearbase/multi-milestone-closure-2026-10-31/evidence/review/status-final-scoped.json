@@ -1,0 +1,23 @@
+{
+  "report": "REVIEW-4.md",
+  "findings": {
+    "legacy_token": "closed_verified",
+    "certificate_acceptance": "closed_verified",
+    "source_reads": "closed_verified",
+    "numeric_tracer_demonstrated_cases": "closed_verified",
+    "w2w_thermal_boundary": "closed_verified",
+    "workflow_bad_family": "closed_verified",
+    "w2w_underflow": "closed_verified"
+  },
+  "fresh_tests": {
+    "tests": 90,
+    "failures": 0,
+    "errors": 0
+  },
+  "scope": "scoped code findings closed; full milestone and package/CI approval not implied",
+  "evidence": [
+    "round4-tests.txt",
+    "probes-final.json",
+    "scoring-final.json"
+  ]
+}

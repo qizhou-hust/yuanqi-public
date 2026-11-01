@@ -1,0 +1,203 @@
+{
+  "schema": "gearbase.m38-recorded-model-comparison/1",
+  "created_utc": "2026-11-01T02:46:39.282874+00:00",
+  "source_sha256": {
+    "gearmath/tools/bench_closure.py": "80916b42c76050fa9819fe6b054164e975b72cd90dafd138d54733f5dd7a9f15",
+    "gearmath/tools/bench.py": "49df51d67a4086b710e04e87724a10a15aa451fb1afa13687e49812b9af63171",
+    "gearmath/tools/intent.py": "01c25495f6dcc66d7d23b77c7f26549da07aee06b0562bc87f2d433eface8b5b",
+    "gearmath/tools/nlp_templates.py": "50514d3ebbd3d13df81e6a497529199b5553e129ca14186e67cf1c22df01975e",
+    "data/bench/v1/requirements.json": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae"
+  },
+  "immutable_inputs_sha256": {
+    "sol-output.json": "62a013215079698a30db4a6e729739629a80712a947ba12d79ba785a5dd143fb",
+    "sol-receipt.json": "5b2cb10a599e56c0938185916ac39a10d7698f2fc79f6b31332e2c8012b432a3",
+    "terra-output.json": "af78c2e84e4210e661d50943b1aa1cb25663fc3930a90c2e2ff69c064a02cffc",
+    "terra-receipt.json": "63bfec5547dc274e3340c42b334296a5824c9b1ed6c8c4bff6fcdb03f1881765"
+  },
+  "immutable_inputs_after_sha256": {
+    "sol-output.json": "62a013215079698a30db4a6e729739629a80712a947ba12d79ba785a5dd143fb",
+    "sol-receipt.json": "5b2cb10a599e56c0938185916ac39a10d7698f2fc79f6b31332e2c8012b432a3",
+    "terra-output.json": "af78c2e84e4210e661d50943b1aa1cb25663fc3930a90c2e2ff69c064a02cffc",
+    "terra-receipt.json": "63bfec5547dc274e3340c42b334296a5824c9b1ed6c8c4bff6fcdb03f1881765"
+  },
+  "immutable_inputs_unchanged": true,
+  "entries": {
+    "terra": {
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-m",
+        "gearmath.tools.bench_closure",
+        "--model-output",
+        "D:\\my_Works\\Gears\\milestones-multi-run\\m38-models\\terra-output.json",
+        "--out",
+        "D:\\my_Works\\Gears\\milestones-multi-run\\m38\\terra"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"hallucinated_number_rate\": 0.0, \"numbers_checked\": 681, \"numbers_untraceable\": 0, \"hallucination_gate\": \"pass\", \"compile_accuracy\": null, \"clarification_recall\": null, \"clarification_precision\": null, \"clarification_selfcheck\": 1.0, \"clarification_selfcheck_fields\": {\"required\": 138, \"asked\": 138}, \"outcome_distribution\": {\"blocked_invalid_inputs\": 3, \"blocked_unsupported_scope\": 4, \"needs_clarification\": 21, \"pass_pending_human_confirmation\": 12}, \"clarification_inconsistent_cases\": []}\n",
+      "stderr": "",
+      "metrics": {
+        "hallucinated_number_rate": 0.0,
+        "numbers_checked": 681,
+        "numbers_untraceable": 0,
+        "hallucination_gate": "pass",
+        "compile_accuracy": null,
+        "clarification_recall": null,
+        "clarification_precision": null,
+        "clarification_selfcheck": 1.0,
+        "clarification_selfcheck_fields": {
+          "required": 138,
+          "asked": 138
+        },
+        "outcome_distribution": {
+          "blocked_invalid_inputs": 3,
+          "blocked_unsupported_scope": 4,
+          "needs_clarification": 21,
+          "pass_pending_human_confirmation": 12
+        },
+        "clarification_inconsistent_cases": []
+      },
+      "case_count": 40,
+      "system": {
+        "kind": "actual_model_output_file",
+        "model": {
+          "name": "gpt-6.1-terra",
+          "version": "Codex collaboration preset; build identifier not exposed"
+        },
+        "run": {
+          "id": "m38-terra-actual-2026-10-31",
+          "kind": "actual_model_run",
+          "started_at": "2026-11-01T02:16:48+00:00",
+          "completed_at": "2026-11-01T02:16:59.266081+00:00",
+          "provider": "Codex collaboration agent",
+          "receipt": {
+            "path": "terra-receipt.json",
+            "sha256": "63bfec5547dc274e3340c42b334296a5824c9b1ed6c8c4bff6fcdb03f1881765"
+          }
+        },
+        "output_file": "D:\\my_Works\\Gears\\milestones-multi-run\\m38-models\\terra-output.json",
+        "output_file_sha256": "af78c2e84e4210e661d50943b1aa1cb25663fc3930a90c2e2ff69c064a02cffc",
+        "bench_file_sha256": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae",
+        "receipt_verification": "file integrity checked; model/provider identity is run-recorded, not provider-attested"
+      },
+      "report_sha256": "5997bf8790a4f23351cb5125b0a7043132ec769dc3fe692a49da532084c79089",
+      "outputs_sha256": "4c213c3333b34533ca7e03cd48fb062498669a2a101dd56c8f4925f273b38a80"
+    },
+    "sol": {
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-m",
+        "gearmath.tools.bench_closure",
+        "--model-output",
+        "D:\\my_Works\\Gears\\milestones-multi-run\\m38-models\\sol-output.json",
+        "--out",
+        "D:\\my_Works\\Gears\\milestones-multi-run\\m38\\sol"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"hallucinated_number_rate\": 0.0, \"numbers_checked\": 684, \"numbers_untraceable\": 0, \"hallucination_gate\": \"pass\", \"compile_accuracy\": null, \"clarification_recall\": null, \"clarification_precision\": null, \"clarification_selfcheck\": 1.0, \"clarification_selfcheck_fields\": {\"required\": 138, \"asked\": 138}, \"outcome_distribution\": {\"blocked_invalid_inputs\": 3, \"blocked_unsupported_scope\": 4, \"needs_clarification\": 21, \"pass_pending_human_confirmation\": 12}, \"clarification_inconsistent_cases\": []}\n",
+      "stderr": "",
+      "metrics": {
+        "hallucinated_number_rate": 0.0,
+        "numbers_checked": 684,
+        "numbers_untraceable": 0,
+        "hallucination_gate": "pass",
+        "compile_accuracy": null,
+        "clarification_recall": null,
+        "clarification_precision": null,
+        "clarification_selfcheck": 1.0,
+        "clarification_selfcheck_fields": {
+          "required": 138,
+          "asked": 138
+        },
+        "outcome_distribution": {
+          "blocked_invalid_inputs": 3,
+          "blocked_unsupported_scope": 4,
+          "needs_clarification": 21,
+          "pass_pending_human_confirmation": 12
+        },
+        "clarification_inconsistent_cases": []
+      },
+      "case_count": 40,
+      "system": {
+        "kind": "actual_model_output_file",
+        "model": {
+          "name": "gpt-6.1-sol",
+          "version": "Codex collaboration preset; build identifier not exposed"
+        },
+        "run": {
+          "id": "m38-sol-actual-2026-10-31",
+          "kind": "actual_model_run",
+          "started_at": "2026-11-01T02:17:54+00:00",
+          "completed_at": "2026-11-01T02:18:30.336477+00:00",
+          "provider": "Codex collaboration agent",
+          "receipt": {
+            "path": "sol-receipt.json",
+            "sha256": "5b2cb10a599e56c0938185916ac39a10d7698f2fc79f6b31332e2c8012b432a3"
+          }
+        },
+        "output_file": "D:\\my_Works\\Gears\\milestones-multi-run\\m38-models\\sol-output.json",
+        "output_file_sha256": "62a013215079698a30db4a6e729739629a80712a947ba12d79ba785a5dd143fb",
+        "bench_file_sha256": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae",
+        "receipt_verification": "file integrity checked; model/provider identity is run-recorded, not provider-attested"
+      },
+      "report_sha256": "63237e72561db7b88234370b0ae672bdb10396a6557d134139719964577d9c26",
+      "outputs_sha256": "3f37060d23ea5985d944513bf02bdb19cb402fc57a257d1c0cb40d35f34bce0e"
+    },
+    "rules": {
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-m",
+        "gearmath.tools.bench_closure",
+        "--out",
+        "D:\\my_Works\\Gears\\milestones-multi-run\\m38\\rules"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"hallucinated_number_rate\": 0.0, \"numbers_checked\": 721, \"numbers_untraceable\": 0, \"hallucination_gate\": \"pass\", \"compile_accuracy\": null, \"clarification_recall\": null, \"clarification_precision\": null, \"clarification_selfcheck\": 1.0, \"clarification_selfcheck_fields\": {\"required\": 140, \"asked\": 140}, \"outcome_distribution\": {\"blocked_invalid_inputs\": 3, \"blocked_unsupported_scope\": 4, \"needs_clarification\": 21, \"pass_pending_human_confirmation\": 12}, \"clarification_inconsistent_cases\": []}\n",
+      "stderr": "",
+      "metrics": {
+        "hallucinated_number_rate": 0.0,
+        "numbers_checked": 721,
+        "numbers_untraceable": 0,
+        "hallucination_gate": "pass",
+        "compile_accuracy": null,
+        "clarification_recall": null,
+        "clarification_precision": null,
+        "clarification_selfcheck": 1.0,
+        "clarification_selfcheck_fields": {
+          "required": 140,
+          "asked": 140
+        },
+        "outcome_distribution": {
+          "blocked_invalid_inputs": 3,
+          "blocked_unsupported_scope": 4,
+          "needs_clarification": 21,
+          "pass_pending_human_confirmation": 12
+        },
+        "clarification_inconsistent_cases": []
+      },
+      "case_count": 40,
+      "system": {
+        "kind": "deterministic_rule_baseline",
+        "model": null,
+        "bench_file_sha256": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae"
+      },
+      "report_sha256": "2af3aec0ad28b37d6683e3bf2048dc80271b0fdaa0a44a6c08a59af42d41a4f4",
+      "outputs_sha256": "bdb2086a466133f15ddd5f66357dc2656d887941482d0446cc11277f7baf6473"
+    }
+  },
+  "model_identity": "run-recorded, not provider-attested",
+  "blind": false,
+  "engineer_gold_available": false,
+  "semantic_accuracy": null,
+  "limitations": [
+    "Models were requested via collaboration.spawn_agent: gpt-6.1-terra and gpt-6.1-sol, both medium effort.",
+    "Provider-specific build identifiers are opaque. Identity is run-recorded, not provider-attested; matching receipt hashes establish file integrity only.",
+    "The comparison is not blind. The sol receipt discloses a read of intent.py including requirement_compile before output generation, without calling it; initial reads also exposed pending empty gold metadata.",
+    "The recorded sol start timestamp follows the initial source reads. The original immutable receipt retains this deviation.",
+    "Model extraction and reply are followed by the real deterministic compiler in this rerun; saved model outputs are reused rather than regenerated.",
+    "No engineer correctness gold exists. Compile semantic accuracy and clarification recall/precision are null; this cannot rank semantic model quality.",
+    "Zero untraceable numbers means numerical traceability to input, registered derivation or public constant. It does not prove semantic assignment, engineering correctness, extraction completeness or free-text question consistency.",
+    "Matching outcome counts and tool clarification self-consistency do not establish equal model semantic quality.",
+    "This report covers the benchmark and first recorded multi-model comparison only; it does not certify full M38, clean-machine timing, strength rating or system closure."
+  ],
+  "all_commands_exit_zero": true
+}

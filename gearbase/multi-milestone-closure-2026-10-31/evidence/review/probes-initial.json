@@ -1,0 +1,39 @@
+{
+  "certificate_probe": {
+    "mutation": "first evidence certificate.sha256 = 0 * 64",
+    "certificate_errors": [
+      {
+        "path": "$.evidence.Rz_H_1.certificate",
+        "code": "certificate_hash",
+        "message": "证书文件哈希不符：data/kisssoft/K01-spur.json"
+      }
+    ],
+    "frontier_status": "ok",
+    "point_status": "pass",
+    "is_current": true
+  },
+  "chinese_number_probe": {
+    "mutated_reply": "Recommended power: 九百九十九 kW.",
+    "metrics": {
+      "hallucinated_number_rate": 0.0,
+      "numbers_checked": 710,
+      "numbers_untraceable": 0,
+      "hallucination_gate": "pass",
+      "compile_accuracy": null,
+      "clarification_recall": null,
+      "clarification_precision": null,
+      "clarification_selfcheck": 1.0,
+      "clarification_selfcheck_fields": {
+        "required": 140,
+        "asked": 140
+      },
+      "outcome_distribution": {
+        "blocked_invalid_inputs": 3,
+        "blocked_unsupported_scope": 4,
+        "needs_clarification": 21,
+        "pass_pending_human_confirmation": 12
+      },
+      "clarification_inconsistent_cases": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "legacy": true,
+  "empty": true,
+  "stage0": true,
+  "unknown": false,
+  "mixed": false,
+  "geometry_valid": true,
+  "geometry_wrong_ratio": false
+}

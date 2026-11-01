@@ -1,0 +1,10 @@
+{
+  "requested_model": "gpt-6.1-terra",
+  "requested_effort": "medium",
+  "task_identity": "/root/m38_model_terra",
+  "started_at": "2026-11-01T02:16:48+00:00",
+  "completed_at": "2026-11-01T02:16:59.266081+00:00",
+  "raw_input_sha256": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae",
+  "route": "collaboration.spawn_agent",
+  "limitations": "preset requested, provider build opaque; extraction only; no correctness gold available"
+}

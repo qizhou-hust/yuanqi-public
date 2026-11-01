@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "command": [
+    "D:\\anaconda3\\python.exe",
+    "-X",
+    "utf8",
+    "-I",
+    "-c",
+    "import sys,unittest;sys.path.insert(0,'.');s=unittest.defaultTestLoader.discover('tests',top_level_dir='.');r=unittest.TextTestRunner(verbosity=2).run(s);sys.exit(not r.wasSuccessful())"
+  ],
+  "gate": "units",
+  "seconds": 136.515
+}

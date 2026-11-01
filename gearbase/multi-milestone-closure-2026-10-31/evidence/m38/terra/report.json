@@ -1,0 +1,4739 @@
+{
+  "schema": "gearbase.agent-bench-result/1",
+  "bench": "v1",
+  "cases": 40,
+  "labeled_cases": 0,
+  "pending_engineer_label": 40,
+  "metrics": {
+    "hallucinated_number_rate": 0.0,
+    "numbers_checked": 681,
+    "numbers_untraceable": 0,
+    "hallucination_gate": "pass",
+    "compile_accuracy": null,
+    "clarification_recall": null,
+    "clarification_precision": null,
+    "clarification_selfcheck": 1.0,
+    "clarification_selfcheck_fields": {
+      "required": 138,
+      "asked": 138
+    },
+    "outcome_distribution": {
+      "blocked_invalid_inputs": 3,
+      "blocked_unsupported_scope": 4,
+      "needs_clarification": 21,
+      "pass_pending_human_confirmation": 12
+    },
+    "clarification_inconsistent_cases": []
+  },
+  "scoring_note": "compile_accuracy / clarification_recall / clarification_precision 在无金标（pending_engineer_label）时为 null，不是 0；基线分数中只有凭空数字率、结果分布与追问自洽是有效数字。",
+  "per_case": [
+    {
+      "id": "GAB-001",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 31,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                2,
+                3
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                76,
+                79
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "input_text",
+              "span": [
+                14,
+                16
+              ],
+              "quote": "15"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                24,
+                28
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.8,
+          "sources": [
+            {
+              "value": 1.8,
+              "kind": "input_text",
+              "span": [
+                38,
+                41
+              ],
+              "quote": "1.8"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                49,
+                50
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                63,
+                66
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                2,
+                3
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                76,
+                79
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                89,
+                92
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 20000,
+          "sources": [
+            {
+              "value": 20000.0,
+              "kind": "input_text",
+              "span": [
+                95,
+                100
+              ],
+              "quote": "20000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-002",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 34,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                54,
+                57
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 7.5,
+          "sources": [
+            {
+              "value": 7.5,
+              "kind": "input_text",
+              "span": [
+                10,
+                13
+              ],
+              "quote": "7.5"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 960,
+          "sources": [
+            {
+              "value": 960.0,
+              "kind": "input_text",
+              "span": [
+                19,
+                22
+              ],
+              "quote": "960"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 2.5,
+          "sources": [
+            {
+              "value": 2.5,
+              "kind": "input_text",
+              "span": [
+                32,
+                35
+              ],
+              "quote": "2.5"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 3,
+          "sources": [
+            {
+              "value": 3.0,
+              "kind": "input_text",
+              "span": [
+                44,
+                45
+              ],
+              "quote": "3"
+            },
+            {
+              "value": 3.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.max_b_over_d1.hi"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                54,
+                57
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                66,
+                69
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.5,
+          "sources": [
+            {
+              "value": 1.5,
+              "kind": "input_text",
+              "span": [
+                78,
+                81
+              ],
+              "quote": "1.5"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 30000,
+          "sources": [
+            {
+              "value": 30000.0,
+              "kind": "input_text",
+              "span": [
+                84,
+                89
+              ],
+              "quote": "30000"
+            }
+          ]
+        },
+        {
+          "field": "max_center_distance_mm",
+          "value": 180,
+          "sources": [
+            {
+              "value": 180.0,
+              "kind": "input_text",
+              "span": [
+                104,
+                107
+              ],
+              "quote": "180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-003",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 28,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                46,
+                47
+              ],
+              "quote": "1"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1000,
+          "sources": [
+            {
+              "value": 1000.0,
+              "kind": "input_text",
+              "span": [
+                22,
+                26
+              ],
+              "quote": "1000"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 3,
+          "sources": [
+            {
+              "value": 3.0,
+              "kind": "input_text",
+              "span": [
+                36,
+                37
+              ],
+              "quote": "3"
+            },
+            {
+              "value": 3.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.max_b_over_d1.hi"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                46,
+                47
+              ],
+              "quote": "1"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 0.8,
+          "sources": [
+            {
+              "value": 0.8,
+              "kind": "input_text",
+              "span": [
+                56,
+                59
+              ],
+              "quote": "0.8"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1.1,
+          "sources": [
+            {
+              "value": 1.1,
+              "kind": "input_text",
+              "span": [
+                69,
+                72
+              ],
+              "quote": "1.1"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.3,
+          "sources": [
+            {
+              "value": 1.3,
+              "kind": "input_text",
+              "span": [
+                82,
+                85
+              ],
+              "quote": "1.3"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 10000,
+          "sources": [
+            {
+              "value": 10000.0,
+              "kind": "input_text",
+              "span": [
+                88,
+                93
+              ],
+              "quote": "10000"
+            }
+          ]
+        },
+        {
+          "field": "torque_Nm",
+          "value": 120,
+          "sources": [
+            {
+              "value": 120.0,
+              "kind": "input_text",
+              "span": [
+                12,
+                15
+              ],
+              "quote": "120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-004",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 31,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                72,
+                75
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 500,
+          "sources": [
+            {
+              "value": 500.0,
+              "kind": "input_text",
+              "span": [
+                21,
+                24
+              ],
+              "quote": "500"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 4,
+          "sources": [
+            {
+              "value": 4.0,
+              "kind": "input_text",
+              "span": [
+                34,
+                35
+              ],
+              "quote": "4"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2.5,
+          "sources": [
+            {
+              "value": 2.5,
+              "kind": "input_text",
+              "span": [
+                43,
+                46
+              ],
+              "quote": "2.5"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                59,
+                62
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                72,
+                75
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.25,
+          "sources": [
+            {
+              "value": 1.25,
+              "kind": "input_text",
+              "span": [
+                85,
+                89
+              ],
+              "quote": "1.25"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 50000,
+          "sources": [
+            {
+              "value": 50000.0,
+              "kind": "input_text",
+              "span": [
+                92,
+                97
+              ],
+              "quote": "50000"
+            }
+          ]
+        },
+        {
+          "field": "torque_Nm",
+          "value": 300,
+          "sources": [
+            {
+              "value": 300.0,
+              "kind": "input_text",
+              "span": [
+                11,
+                14
+              ],
+              "quote": "300"
+            }
+          ]
+        },
+        {
+          "field": "max_face_width_mm",
+          "value": 60,
+          "sources": [
+            {
+              "value": 60.0,
+              "kind": "input_text",
+              "span": [
+                119,
+                121
+              ],
+              "quote": "60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-005",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 31,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                69,
+                72
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 0.75,
+          "sources": [
+            {
+              "value": 0.75,
+              "kind": "input_text",
+              "span": [
+                12,
+                16
+              ],
+              "quote": "0.75"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1400,
+          "sources": [
+            {
+              "value": 1400.0,
+              "kind": "input_text",
+              "span": [
+                22,
+                26
+              ],
+              "quote": "1400"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                36,
+                37
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 5,
+          "sources": [
+            {
+              "value": 5.0,
+              "kind": "input_text",
+              "span": [
+                46,
+                47
+              ],
+              "quote": "5"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.5,
+          "sources": [
+            {
+              "value": 1.5,
+              "kind": "input_text",
+              "span": [
+                56,
+                59
+              ],
+              "quote": "1.5"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                69,
+                72
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                82,
+                85
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 8000,
+          "sources": [
+            {
+              "value": 8000.0,
+              "kind": "input_text",
+              "span": [
+                88,
+                92
+              ],
+              "quote": "8000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-006",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 34,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                52,
+                55
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 90,
+          "sources": [
+            {
+              "value": 90.0,
+              "kind": "input_text",
+              "span": [
+                9,
+                11
+              ],
+              "quote": "90"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 750,
+          "sources": [
+            {
+              "value": 750.0,
+              "kind": "input_text",
+              "span": [
+                17,
+                20
+              ],
+              "quote": "750"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.6,
+          "sources": [
+            {
+              "value": 1.6,
+              "kind": "input_text",
+              "span": [
+                30,
+                33
+              ],
+              "quote": "1.6"
+            },
+            {
+              "value": 1.6,
+              "kind": "input_text",
+              "span": [
+                78,
+                81
+              ],
+              "quote": "1.6"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                42,
+                43
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                52,
+                55
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1.3,
+          "sources": [
+            {
+              "value": 1.3,
+              "kind": "input_text",
+              "span": [
+                65,
+                68
+              ],
+              "quote": "1.3"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.6,
+          "sources": [
+            {
+              "value": 1.6,
+              "kind": "input_text",
+              "span": [
+                30,
+                33
+              ],
+              "quote": "1.6"
+            },
+            {
+              "value": 1.6,
+              "kind": "input_text",
+              "span": [
+                78,
+                81
+              ],
+              "quote": "1.6"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 40000,
+          "sources": [
+            {
+              "value": 40000.0,
+              "kind": "input_text",
+              "span": [
+                84,
+                89
+              ],
+              "quote": "40000"
+            }
+          ]
+        },
+        {
+          "field": "max_center_distance_mm",
+          "value": 320,
+          "sources": [
+            {
+              "value": 320.0,
+              "kind": "input_text",
+              "span": [
+                107,
+                110
+              ],
+              "quote": "320"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-007",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 30,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                84,
+                87
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 11,
+          "sources": [
+            {
+              "value": 11.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "11"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1470,
+          "sources": [
+            {
+              "value": 1470.0,
+              "kind": "input_text",
+              "span": [
+                18,
+                22
+              ],
+              "quote": "1470"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.8,
+          "sources": [
+            {
+              "value": 1.8,
+              "kind": "input_text",
+              "span": [
+                49,
+                52
+              ],
+              "quote": "1.8"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                61,
+                62
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                71,
+                74
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                84,
+                87
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                97,
+                100
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 25000,
+          "sources": [
+            {
+              "value": 25000.0,
+              "kind": "input_text",
+              "span": [
+                103,
+                108
+              ],
+              "quote": "25000"
+            }
+          ]
+        },
+        {
+          "field": "torque_Nm",
+          "value": 71.5,
+          "sources": [
+            {
+              "value": 71.5,
+              "kind": "input_text",
+              "span": [
+                37,
+                41
+              ],
+              "quote": "71.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-008",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 31,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                65,
+                68
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 4,
+          "sources": [
+            {
+              "value": 4.0,
+              "kind": "input_text",
+              "span": [
+                9,
+                10
+              ],
+              "quote": "4"
+            },
+            {
+              "value": 4.0,
+              "kind": "input_text",
+              "span": [
+                42,
+                43
+              ],
+              "quote": "4"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 2900,
+          "sources": [
+            {
+              "value": 2900.0,
+              "kind": "input_text",
+              "span": [
+                16,
+                20
+              ],
+              "quote": "2900"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                30,
+                33
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 4,
+          "sources": [
+            {
+              "value": 4.0,
+              "kind": "input_text",
+              "span": [
+                9,
+                10
+              ],
+              "quote": "4"
+            },
+            {
+              "value": 4.0,
+              "kind": "input_text",
+              "span": [
+                42,
+                43
+              ],
+              "quote": "4"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 0.9,
+          "sources": [
+            {
+              "value": 0.9,
+              "kind": "input_text",
+              "span": [
+                52,
+                55
+              ],
+              "quote": "0.9"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                65,
+                68
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.3,
+          "sources": [
+            {
+              "value": 1.3,
+              "kind": "input_text",
+              "span": [
+                78,
+                81
+              ],
+              "quote": "1.3"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 15000,
+          "sources": [
+            {
+              "value": 15000.0,
+              "kind": "input_text",
+              "span": [
+                84,
+                89
+              ],
+              "quote": "15000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-009",
+      "status": "needs_clarification",
+      "numbers": 6,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                4,
+                5
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                6,
+                7
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "input_text",
+              "span": [
+                16,
+                18
+              ],
+              "quote": "15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-010",
+      "status": "needs_clarification",
+      "numbers": 9,
+      "untraceable": [],
+      "asked_fields": [
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 3.5,
+          "sources": [
+            {
+              "value": 3.5,
+              "kind": "input_text",
+              "span": [
+                11,
+                14
+              ],
+              "quote": "3.5"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 20000,
+          "sources": [
+            {
+              "value": 20000.0,
+              "kind": "input_text",
+              "span": [
+                17,
+                22
+              ],
+              "quote": "20000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-011",
+      "status": "needs_clarification",
+      "numbers": 9,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent",
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent",
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                25,
+                26
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                4,
+                8
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.8,
+          "sources": [
+            {
+              "value": 1.8,
+              "kind": "input_text",
+              "span": [
+                18,
+                21
+              ],
+              "quote": "1.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-012",
+      "status": "needs_clarification",
+      "numbers": 12,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 22,
+          "sources": [
+            {
+              "value": 22.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "22"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1470,
+          "sources": [
+            {
+              "value": 1470.0,
+              "kind": "input_text",
+              "span": [
+                18,
+                22
+              ],
+              "quote": "1470"
+            }
+          ]
+        },
+        {
+          "field": "max_center_distance_mm",
+          "value": 200,
+          "sources": [
+            {
+              "value": 200.0,
+              "kind": "input_text",
+              "span": [
+                35,
+                38
+              ],
+              "quote": "200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-013",
+      "status": "needs_clarification",
+      "numbers": 12,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "ratio_tol_percent"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "ratio_tol_percent"
+      ],
+      "field_sources": [
+        {
+          "field": "torque_Nm",
+          "value": 200,
+          "sources": [
+            {
+              "value": 200.0,
+              "kind": "input_text",
+              "span": [
+                12,
+                15
+              ],
+              "quote": "200"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 600,
+          "sources": [
+            {
+              "value": 600.0,
+              "kind": "input_text",
+              "span": [
+                22,
+                25
+              ],
+              "quote": "600"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 2.2,
+          "sources": [
+            {
+              "value": 2.2,
+              "kind": "input_text",
+              "span": [
+                35,
+                38
+              ],
+              "quote": "2.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                48,
+                51
+              ],
+              "quote": "1.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-014",
+      "status": "needs_clarification",
+      "numbers": 3,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                4,
+                5
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-015",
+      "status": "needs_clarification",
+      "numbers": 12,
+      "untraceable": [],
+      "asked_fields": [
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent"
+      ],
+      "field_sources": [
+        {
+          "field": "power_kW",
+          "value": 5.5,
+          "sources": [
+            {
+              "value": 5.5,
+              "kind": "input_text",
+              "span": [
+                2,
+                5
+              ],
+              "quote": "5.5"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1000,
+          "sources": [
+            {
+              "value": 1000.0,
+              "kind": "input_text",
+              "span": [
+                11,
+                15
+              ],
+              "quote": "1000"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                25,
+                26
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 12000,
+          "sources": [
+            {
+              "value": 12000.0,
+              "kind": "input_text",
+              "span": [
+                37,
+                42
+              ],
+              "quote": "12000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-016",
+      "status": "needs_clarification",
+      "numbers": 9,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1.1,
+          "sources": [
+            {
+              "value": 1.1,
+              "kind": "input_text",
+              "span": [
+                32,
+                35
+              ],
+              "quote": "1.1"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.5,
+          "sources": [
+            {
+              "value": 1.5,
+              "kind": "input_text",
+              "span": [
+                19,
+                22
+              ],
+              "quote": "1.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-017",
+      "status": "needs_clarification",
+      "numbers": 6,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-018",
+      "status": "needs_clarification",
+      "numbers": 3,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-019",
+      "status": "needs_clarification",
+      "numbers": 12,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 11,
+          "sources": [
+            {
+              "value": 11.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "11"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1470,
+          "sources": [
+            {
+              "value": 1470.0,
+              "kind": "input_text",
+              "span": [
+                18,
+                22
+              ],
+              "quote": "1470"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                32,
+                33
+              ],
+              "quote": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-020",
+      "status": "needs_clarification",
+      "numbers": 9,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent",
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent",
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                17,
+                21
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.8,
+          "sources": [
+            {
+              "value": 1.8,
+              "kind": "input_text",
+              "span": [
+                31,
+                34
+              ],
+              "quote": "1.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-021",
+      "status": "needs_clarification",
+      "numbers": 3,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-022",
+      "status": "needs_clarification",
+      "numbers": 0,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "field_sources": []
+    },
+    {
+      "id": "GAB-023",
+      "status": "needs_clarification",
+      "numbers": 15,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "ratio_tol_percent"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "ratio_tol_percent"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 7.5,
+          "sources": [
+            {
+              "value": 7.5,
+              "kind": "input_text",
+              "span": [
+                9,
+                12
+              ],
+              "quote": "7.5"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1440,
+          "sources": [
+            {
+              "value": 1440.0,
+              "kind": "input_text",
+              "span": [
+                18,
+                22
+              ],
+              "quote": "1440"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                32,
+                33
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                43,
+                46
+              ],
+              "quote": "1.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-024",
+      "status": "blocked_invalid_inputs",
+      "numbers": 20,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": null,
+      "required_fields": null,
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                66,
+                69
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "15"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                18,
+                22
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 12,
+          "sources": [
+            {
+              "value": 12.0,
+              "kind": "input_text",
+              "span": [
+                32,
+                34
+              ],
+              "quote": "12"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                43,
+                44
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                53,
+                56
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                66,
+                69
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                79,
+                82
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 20000,
+          "sources": [
+            {
+              "value": 20000.0,
+              "kind": "input_text",
+              "span": [
+                85,
+                90
+              ],
+              "quote": "20000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-025",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 31,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                68,
+                71
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "15"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                18,
+                22
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 2.37,
+          "sources": [
+            {
+              "value": 2.37,
+              "kind": "input_text",
+              "span": [
+                32,
+                36
+              ],
+              "quote": "2.37"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 0,
+          "sources": [
+            {
+              "value": 0.0,
+              "kind": "input_text",
+              "span": [
+                45,
+                46
+              ],
+              "quote": "0"
+            },
+            {
+              "value": 0.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.ratio_tol.lo"
+            },
+            {
+              "value": 0.0,
+              "kind": "registered_derivation",
+              "formula_id": "percent_to_fraction",
+              "operands": {
+                "percent": 0
+              }
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 0.1,
+          "sources": [
+            {
+              "value": 0.1,
+              "kind": "input_text",
+              "span": [
+                55,
+                58
+              ],
+              "quote": "0.1"
+            },
+            {
+              "value": 0.1,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.max_b_over_d1.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                68,
+                71
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                81,
+                84
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 20000,
+          "sources": [
+            {
+              "value": 20000.0,
+              "kind": "input_text",
+              "span": [
+                87,
+                92
+              ],
+              "quote": "20000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-026",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 34,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 55,
+          "sources": [
+            {
+              "value": 55.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "55"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1480,
+          "sources": [
+            {
+              "value": 1480.0,
+              "kind": "input_text",
+              "span": [
+                18,
+                22
+              ],
+              "quote": "1480"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.8,
+          "sources": [
+            {
+              "value": 1.8,
+              "kind": "input_text",
+              "span": [
+                32,
+                35
+              ],
+              "quote": "1.8"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                44,
+                45
+              ],
+              "quote": "2"
+            },
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                80,
+                83
+              ],
+              "quote": "2.0"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                54,
+                57
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1.5,
+          "sources": [
+            {
+              "value": 1.5,
+              "kind": "input_text",
+              "span": [
+                67,
+                70
+              ],
+              "quote": "1.5"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                44,
+                45
+              ],
+              "quote": "2"
+            },
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                80,
+                83
+              ],
+              "quote": "2.0"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 60000,
+          "sources": [
+            {
+              "value": 60000.0,
+              "kind": "input_text",
+              "span": [
+                86,
+                91
+              ],
+              "quote": "60000"
+            }
+          ]
+        },
+        {
+          "field": "max_center_distance_mm",
+          "value": 60,
+          "sources": [
+            {
+              "value": 60.0,
+              "kind": "input_text",
+              "span": [
+                106,
+                108
+              ],
+              "quote": "60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-027",
+      "status": "blocked_invalid_inputs",
+      "numbers": 20,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": null,
+      "required_fields": null,
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                65,
+                68
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 3,
+          "sources": [
+            {
+              "value": 3.0,
+              "kind": "input_text",
+              "span": [
+                9,
+                10
+              ],
+              "quote": "3"
+            },
+            {
+              "value": 3.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.max_b_over_d1.hi"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                16,
+                20
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 0.8,
+          "sources": [
+            {
+              "value": 0.8,
+              "kind": "input_text",
+              "span": [
+                30,
+                33
+              ],
+              "quote": "0.8"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                42,
+                43
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                52,
+                55
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                65,
+                68
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                78,
+                81
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 9000,
+          "sources": [
+            {
+              "value": 9000.0,
+              "kind": "input_text",
+              "span": [
+                84,
+                88
+              ],
+              "quote": "9000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-028",
+      "status": "blocked_invalid_inputs",
+      "numbers": 20,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": null,
+      "required_fields": null,
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                66,
+                69
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 900,
+          "sources": [
+            {
+              "value": 900.0,
+              "kind": "input_text",
+              "span": [
+                19,
+                22
+              ],
+              "quote": "900"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 3,
+          "sources": [
+            {
+              "value": 3.0,
+              "kind": "input_text",
+              "span": [
+                32,
+                33
+              ],
+              "quote": "3"
+            },
+            {
+              "value": 3.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.max_b_over_d1.hi"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 80,
+          "sources": [
+            {
+              "value": 80.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "80"
+            },
+            {
+              "value": 80.0,
+              "kind": "input_text",
+              "span": [
+                42,
+                44
+              ],
+              "quote": "80"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                53,
+                56
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                66,
+                69
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                79,
+                82
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 9000,
+          "sources": [
+            {
+              "value": 9000.0,
+              "kind": "input_text",
+              "span": [
+                85,
+                89
+              ],
+              "quote": "9000"
+            }
+          ]
+        },
+        {
+          "field": "torque_Nm",
+          "value": 80,
+          "sources": [
+            {
+              "value": 80.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "80"
+            },
+            {
+              "value": 80.0,
+              "kind": "input_text",
+              "span": [
+                42,
+                44
+              ],
+              "quote": "80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-029",
+      "status": "blocked_unsupported_scope",
+      "numbers": 8,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": null,
+      "required_fields": null,
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                4,
+                5
+              ],
+              "quote": "二"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 16,
+          "sources": [
+            {
+              "value": 16.0,
+              "kind": "input_text",
+              "span": [
+                16,
+                18
+              ],
+              "quote": "16"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 30,
+          "sources": [
+            {
+              "value": 30.0,
+              "kind": "input_text",
+              "span": [
+                21,
+                23
+              ],
+              "quote": "30"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1470,
+          "sources": [
+            {
+              "value": 1470.0,
+              "kind": "input_text",
+              "span": [
+                29,
+                33
+              ],
+              "quote": "1470"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-030",
+      "status": "blocked_unsupported_scope",
+      "numbers": 8,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": null,
+      "required_fields": null,
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "input_text",
+              "span": [
+                14,
+                16
+              ],
+              "quote": "15"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                22,
+                26
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 3,
+          "sources": [
+            {
+              "value": 3.0,
+              "kind": "input_text",
+              "span": [
+                36,
+                37
+              ],
+              "quote": "3"
+            },
+            {
+              "value": 3.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.max_b_over_d1.hi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-031",
+      "status": "blocked_unsupported_scope",
+      "numbers": 6,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": null,
+      "required_fields": null,
+      "field_sources": [
+        {
+          "field": "power_kW",
+          "value": 2.2,
+          "sources": [
+            {
+              "value": 2.2,
+              "kind": "input_text",
+              "span": [
+                8,
+                11
+              ],
+              "quote": "2.2"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1440,
+          "sources": [
+            {
+              "value": 1440.0,
+              "kind": "input_text",
+              "span": [
+                17,
+                21
+              ],
+              "quote": "1440"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 20,
+          "sources": [
+            {
+              "value": 20.0,
+              "kind": "input_text",
+              "span": [
+                31,
+                33
+              ],
+              "quote": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-032",
+      "status": "blocked_unsupported_scope",
+      "numbers": 6,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": null,
+      "required_fields": null,
+      "field_sources": [
+        {
+          "field": "power_kW",
+          "value": 45,
+          "sources": [
+            {
+              "value": 45.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "45"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1500,
+          "sources": [
+            {
+              "value": 1500.0,
+              "kind": "input_text",
+              "span": [
+                18,
+                22
+              ],
+              "quote": "1500"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 5,
+          "sources": [
+            {
+              "value": 5.0,
+              "kind": "input_text",
+              "span": [
+                32,
+                33
+              ],
+              "quote": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-033",
+      "status": "needs_clarification",
+      "numbers": 36,
+      "untraceable": [],
+      "asked_fields": [
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                79,
+                82
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "input_text",
+              "span": [
+                10,
+                12
+              ],
+              "quote": "15"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                18,
+                22
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.8,
+          "sources": [
+            {
+              "value": 1.8,
+              "kind": "input_text",
+              "span": [
+                44,
+                47
+              ],
+              "quote": "1.8"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                56,
+                57
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                66,
+                69
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                79,
+                82
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                92,
+                95
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 20000,
+          "sources": [
+            {
+              "value": 20000.0,
+              "kind": "input_text",
+              "span": [
+                98,
+                103
+              ],
+              "quote": "20000"
+            }
+          ]
+        },
+        {
+          "field": "torque_Nm",
+          "value": 200,
+          "sources": [
+            {
+              "value": 200.0,
+              "kind": "input_text",
+              "span": [
+                33,
+                36
+              ],
+              "quote": "200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-034",
+      "status": "needs_clarification",
+      "numbers": 36,
+      "untraceable": [],
+      "asked_fields": [
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                72,
+                75
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 5,
+          "sources": [
+            {
+              "value": 5.0,
+              "kind": "input_text",
+              "span": [
+                9,
+                10
+              ],
+              "quote": "5"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1000,
+          "sources": [
+            {
+              "value": 1000.0,
+              "kind": "input_text",
+              "span": [
+                16,
+                20
+              ],
+              "quote": "1000"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                39,
+                40
+              ],
+              "quote": "2"
+            },
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                49,
+                50
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                39,
+                40
+              ],
+              "quote": "2"
+            },
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                49,
+                50
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                59,
+                62
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                72,
+                75
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                85,
+                88
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 9000,
+          "sources": [
+            {
+              "value": 9000.0,
+              "kind": "input_text",
+              "span": [
+                91,
+                95
+              ],
+              "quote": "9000"
+            }
+          ]
+        },
+        {
+          "field": "torque_Nm",
+          "value": 50,
+          "sources": [
+            {
+              "value": 50.0,
+              "kind": "input_text",
+              "span": [
+                29,
+                31
+              ],
+              "quote": "50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-035",
+      "status": "needs_clarification",
+      "numbers": 3,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent",
+        "speed_rpm",
+        "torque_Nm"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                14,
+                15
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-036",
+      "status": "needs_clarification",
+      "numbers": 6,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent"
+      ],
+      "field_sources": [
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "input_text",
+              "span": [
+                25,
+                27
+              ],
+              "quote": "15"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                33,
+                37
+              ],
+              "quote": "1450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-037",
+      "status": "needs_clarification",
+      "numbers": 6,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio",
+        "ratio_tol_percent"
+      ],
+      "field_sources": [
+        {
+          "field": "power_kW",
+          "value": 10000,
+          "sources": [
+            {
+              "value": 10000.0,
+              "kind": "input_text",
+              "span": [
+                5,
+                7
+              ],
+              "quote": "一万"
+            },
+            {
+              "value": 10000.0,
+              "kind": "input_text",
+              "span": [
+                12,
+                14
+              ],
+              "quote": "一万"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 10000,
+          "sources": [
+            {
+              "value": 10000.0,
+              "kind": "input_text",
+              "span": [
+                5,
+                7
+              ],
+              "quote": "一万"
+            },
+            {
+              "value": 10000.0,
+              "kind": "input_text",
+              "span": [
+                12,
+                14
+              ],
+              "quote": "一万"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-038",
+      "status": "needs_clarification",
+      "numbers": 12,
+      "untraceable": [],
+      "asked_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent"
+      ],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [
+        "life_h",
+        "material",
+        "max_b_over_d1",
+        "min_S_F",
+        "min_S_H",
+        "ratio_tol_percent"
+      ],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "input_text",
+              "span": [
+                12,
+                14
+              ],
+              "quote": "15"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                20,
+                24
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.8,
+          "sources": [
+            {
+              "value": 1.8,
+              "kind": "input_text",
+              "span": [
+                34,
+                37
+              ],
+              "quote": "1.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-039",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 31,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                78,
+                81
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "power_kW",
+          "value": 15,
+          "sources": [
+            {
+              "value": 15.0,
+              "kind": "registered_derivation",
+              "formula_id": "w_to_kw",
+              "operands": {
+                "power_W": 15000
+              }
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                24,
+                28
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.8,
+          "sources": [
+            {
+              "value": 1.8,
+              "kind": "input_text",
+              "span": [
+                37,
+                40
+              ],
+              "quote": "1.8"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                50,
+                51
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                63,
+                66
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                0,
+                1
+              ],
+              "quote": "一"
+            },
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                78,
+                81
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                93,
+                96
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 20000,
+          "sources": [
+            {
+              "value": 20000.0,
+              "kind": "input_text",
+              "span": [
+                100,
+                105
+              ],
+              "quote": "20000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GAB-040",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 28,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "pending_engineer_label",
+      "clarification_consistent": true,
+      "required_fields": [],
+      "field_sources": [
+        {
+          "field": "stages",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                72,
+                75
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "speed_rpm",
+          "value": 1450,
+          "sources": [
+            {
+              "value": 1450.0,
+              "kind": "input_text",
+              "span": [
+                20,
+                24
+              ],
+              "quote": "1450"
+            }
+          ]
+        },
+        {
+          "field": "ratio",
+          "value": 1.8,
+          "sources": [
+            {
+              "value": 1.8,
+              "kind": "input_text",
+              "span": [
+                33,
+                36
+              ],
+              "quote": "1.8"
+            }
+          ]
+        },
+        {
+          "field": "ratio_tol_percent",
+          "value": 2,
+          "sources": [
+            {
+              "value": 2.0,
+              "kind": "input_text",
+              "span": [
+                46,
+                47
+              ],
+              "quote": "2"
+            }
+          ]
+        },
+        {
+          "field": "max_b_over_d1",
+          "value": 1.2,
+          "sources": [
+            {
+              "value": 1.2,
+              "kind": "input_text",
+              "span": [
+                58,
+                61
+              ],
+              "quote": "1.2"
+            }
+          ]
+        },
+        {
+          "field": "min_S_H",
+          "value": 1,
+          "sources": [
+            {
+              "value": 1.0,
+              "kind": "input_text",
+              "span": [
+                72,
+                75
+              ],
+              "quote": "1.0"
+            },
+            {
+              "value": 1.0,
+              "kind": "published_constant",
+              "ref": "nlp_templates.stage_sizing.target_ratio.lo"
+            }
+          ]
+        },
+        {
+          "field": "min_S_F",
+          "value": 1.4,
+          "sources": [
+            {
+              "value": 1.4,
+              "kind": "input_text",
+              "span": [
+                86,
+                89
+              ],
+              "quote": "1.4"
+            }
+          ]
+        },
+        {
+          "field": "life_h",
+          "value": 20000,
+          "sources": [
+            {
+              "value": 20000.0,
+              "kind": "input_text",
+              "span": [
+                93,
+                98
+              ],
+              "quote": "20000"
+            }
+          ]
+        },
+        {
+          "field": "torque_Nm",
+          "value": 95,
+          "sources": [
+            {
+              "value": 95.0,
+              "kind": "input_text",
+              "span": [
+                11,
+                13
+              ],
+              "quote": "95"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evaluation_scope": "All benchmark cases contribute to number traceability, outcome distribution and tool clarification self-consistency. Accuracy and clarification precision/recall require engineer gold and remain null without labels. Model extraction/reply is followed by the real deterministic compiler; this does not assess engineering correctness or semantic completeness of extraction, nor whether free-text model questions match compiler questions.",
+  "system": {
+    "kind": "actual_model_output_file",
+    "model": {
+      "name": "gpt-6.1-terra",
+      "version": "Codex collaboration preset; build identifier not exposed"
+    },
+    "run": {
+      "id": "m38-terra-actual-2026-10-31",
+      "kind": "actual_model_run",
+      "started_at": "2026-11-01T02:16:48+00:00",
+      "completed_at": "2026-11-01T02:16:59.266081+00:00",
+      "provider": "Codex collaboration agent",
+      "receipt": {
+        "path": "terra-receipt.json",
+        "sha256": "63bfec5547dc274e3340c42b334296a5824c9b1ed6c8c4bff6fcdb03f1881765"
+      }
+    },
+    "output_file": "D:\\my_Works\\Gears\\milestones-multi-run\\m38-models\\terra-output.json",
+    "output_file_sha256": "af78c2e84e4210e661d50943b1aa1cb25663fc3930a90c2e2ff69c064a02cffc",
+    "bench_file_sha256": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae",
+    "receipt_verification": "file integrity checked; model/provider identity is run-recorded, not provider-attested"
+  }
+}

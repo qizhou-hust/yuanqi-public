@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "a1_mm": 100.0,
+    "a2_mm": 125.0,
+    "n1_rpm": 1440.0,
+    "target_ratio": 144.0,
+    "rho_v_deg": 5.0,
+    "t_out_nm": 800.0,
+    "z1_options": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ratio_band": 0.02,
+    "k_w_m2k": 12.0,
+    "area_m2": 1.669296396441226,
+    "t_oil_max_c": 90.0,
+    "t_amb_c": 30.0,
+    "max_candidates": 40
+  },
+  "index": 9,
+  "old_thermal_ok": false,
+  "new_thermal_ok": true,
+  "old_Areq": 1.6692963964412264,
+  "new_Areq": 1.669296396441226
+}

@@ -1,0 +1,15 @@
+{
+  "repository": "qizhou-hust/yuanqi-private",
+  "visibility": "private",
+  "branch": "codex/gearbase-multi-closure-2026-10-31",
+  "commit": "ffd95397c697dcbee5ea40bfc4847b5c557397db",
+  "tree": "9d2a54326dc3312d585e8effe25690a8306ff257",
+  "parent": "e9d3fc3913a7897e1e18766f10ec57b8b3e30e0e",
+  "snapshot_files": 2656,
+  "source_manifest_sha256": "2a92f1094f859c4b3c2f785f2bee9984710cc6895da2abfb45f530bc4f343024",
+  "main_unchanged": true,
+  "status": "PUSHED_WAITING_FOR_REAL_CI",
+  "workflow_path": ".github/workflows/gearbase-multi.yml",
+  "source_path": "engineering/gearbase-multi",
+  "source_bytes_preserved": true
+}

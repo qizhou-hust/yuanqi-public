@@ -1,0 +1,73 @@
+test_data_driven_model_equals_handwritten_one (tests.test_package.TestDataDrivenC001.test_data_driven_model_equals_handwritten_one) ... ok
+test_hardcoded_reference_equals_receipt_file (tests.test_package.TestDataDrivenC001.test_hardcoded_reference_equals_receipt_file) ... ok
+test_matches_receipt (tests.test_package.TestDataDrivenC001.test_matches_receipt) ... ok
+test_receipt_geometry_cross_check (tests.test_package.TestDataDrivenC001.test_receipt_geometry_cross_check) ... ok
+test_core_never_imports_legacy (tests.test_package.TestIsolation.test_core_never_imports_legacy) ... ok
+test_kernel_knows_no_gears (tests.test_package.TestIsolation.test_kernel_knows_no_gears) ... ok
+test_every_data_file_is_registered (tests.test_package.TestManifest.test_every_data_file_is_registered)
+data/ 下每个文件都登记在 MANIFEST（含来源 origin 与 sha256），新增数据文件不会漏过哈希校验。 ... ok
+test_every_file_matches_its_hash (tests.test_package.TestManifest.test_every_file_matches_its_hash) ... ok
+test_legacy_rows_have_a_migration_action (tests.test_package.TestManifest.test_legacy_rows_have_a_migration_action) ... ok
+test_package_contents_and_manifest_consistent (tests.test_package.TestPackageContents.test_package_contents_and_manifest_consistent)
+PACKAGE-CONTENTS.sha256 与 MANIFEST 同当前文件一致（不一致时运行 python3 -m gearmath.tools.package_hashes 重生成）； ... ok
+test_baseline_has_zero_hallucinated_numbers_and_is_reproducible (tests.test_m38_ai_native.TestBench.test_baseline_has_zero_hallucinated_numbers_and_is_reproducible) ... ok
+test_cli_check_matches_written_result (tests.test_m38_ai_native.TestBench.test_cli_check_matches_written_result) ... ok
+test_detector_catches_invented_numbers (tests.test_m38_ai_native.TestBench.test_detector_catches_invented_numbers) ... ok
+test_gold_scoring_logic_with_synthetic_labels (tests.test_m38_ai_native.TestBench.test_gold_scoring_logic_with_synthetic_labels)
+用测试内合成的"金标"验证打分逻辑（不写入数据文件，不代表任何工程判断）。 ... ok
+test_skeleton_has_40_pending_cases_and_no_invented_gold (tests.test_m38_ai_native.TestBench.test_skeleton_has_40_pending_cases_and_no_invented_gold) ... ok
+test_individual_checks (tests.test_m38_ai_native.TestDoctor.test_individual_checks) ... ok
+test_launcher_script_and_guide_exist (tests.test_m38_ai_native.TestDoctor.test_launcher_script_and_guide_exist) ... ok
+test_script_form_with_isolated_mode (tests.test_m38_ai_native.TestDoctor.test_script_form_with_isolated_mode) ... ok
+test_zero_dep_check_detects_third_party_import (tests.test_m38_ai_native.TestDoctor.test_zero_dep_check_detects_third_party_import) ... ok
+test_feasible_case_and_bad_args (tests.test_m38_ai_native.TestExplainInfeasible.test_feasible_case_and_bad_args) ... ok
+test_infeasible_diagnosis_with_least_violation (tests.test_m38_ai_native.TestExplainInfeasible.test_infeasible_diagnosis_with_least_violation) ... ok
+test_joint_relaxation_is_feasible_in_template_and_confirmed_by_nlp (tests.test_m38_ai_native.TestExplainInfeasible.test_joint_relaxation_is_feasible_in_template_and_confirmed_by_nlp) ... ok
+test_agent_proposed_blocks_plain_pass_downstream (tests.test_m38_ai_native.TestRequirementCompile.test_agent_proposed_blocks_plain_pass_downstream) ... ok
+test_complete_requirement_compiles_with_agent_proposed (tests.test_m38_ai_native.TestRequirementCompile.test_complete_requirement_compiles_with_agent_proposed) ... ok
+test_conflicting_torque_is_asked_not_resolved (tests.test_m38_ai_native.TestRequirementCompile.test_conflicting_torque_is_asked_not_resolved) ... ok
+test_empty_requirement_asks_everything_and_fills_nothing (tests.test_m38_ai_native.TestRequirementCompile.test_empty_requirement_asks_everything_and_fills_nothing) ... ok
+test_out_of_template_range_is_blocked_not_clamped (tests.test_m38_ai_native.TestRequirementCompile.test_out_of_template_range_is_blocked_not_clamped) ... ok
+test_schema_is_wellformed_and_tool_is_read_only (tests.test_m38_ai_native.TestRequirementCompile.test_schema_is_wellformed_and_tool_is_read_only) ... ok
+test_template_defaults_are_never_used (tests.test_m38_ai_native.TestRequirementCompile.test_template_defaults_are_never_used) ... ok
+test_unsupported_scope_and_bad_inputs (tests.test_m38_ai_native.TestRequirementCompile.test_unsupported_scope_and_bad_inputs) ... ok
+test_prompts_contain_no_digits_in_instructions_beyond_step_numbers (tests.test_m38_ai_native.TestResourcesPrompts.test_prompts_contain_no_digits_in_instructions_beyond_step_numbers)
+提示词只给工作流指令，不得夹带设计数值（步骤编号 "1." 之外不应有小数或大数）。 ... ok
+test_stdio_round_trip_resources_and_prompts (tests.test_m38_ai_native.TestResourcesPrompts.test_stdio_round_trip_resources_and_prompts) ... D:\anaconda3\Lib\subprocess.py:1127: ResourceWarning: subprocess 71968 is still running
+  _warn("subprocess %s is still running" % self.pid,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+D:\anaconda3\Lib\unittest\case.py:638: ResourceWarning: unclosed file <_io.TextIOWrapper name=3 encoding='utf-8'>
+  self.doCleanups()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+D:\anaconda3\Lib\unittest\case.py:638: ResourceWarning: unclosed file <_io.TextIOWrapper name=4 encoding='utf-8'>
+  self.doCleanups()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_collect_and_render (tests.test_sys_design_check.TestMilestones.test_collect_and_render) ... ok
+test_imported_source_edits_do_not_fall_back_to_baseline (tests.test_m34_closure.TestM34Closure.test_imported_source_edits_do_not_fall_back_to_baseline) ... ok
+test_pruning_matches_exhaustive_small_domain (tests.test_m34_closure.TestM34Closure.test_pruning_matches_exhaustive_small_domain) ... ok
+test_seed_domain_and_rank_match_old_solver (tests.test_m34_closure.TestM34Closure.test_seed_domain_and_rank_match_old_solver) ... ok
+test_source_only_change_invalidates_preview_token (tests.test_m34_closure.TestM34Closure.test_source_only_change_invalidates_preview_token) ... ok
+test_source_owned_chain_rejects_projection_only_write (tests.test_m34_closure.TestM34Closure.test_source_owned_chain_rejects_projection_only_write) ... ok
+test_store_checks_source_hash_before_mutation (tests.test_m34_closure.TestM34Closure.test_store_checks_source_hash_before_mutation) ... ok
+test_direct_caller_cannot_claim_trusted_provenance (tests.test_m34_source_reads.TestSourceOwnedReads.test_direct_caller_cannot_claim_trusted_provenance) ... ok
+test_file_stored_source_reads_after_restart (tests.test_m34_source_reads.TestSourceOwnedReads.test_file_stored_source_reads_after_restart) ... ok
+test_imported_source_all_read_paths (tests.test_m34_source_reads.TestSourceOwnedReads.test_imported_source_all_read_paths) ... ok
+test_reads_preserve_source_ownership_and_preview_token (tests.test_m34_source_reads.TestSourceOwnedReads.test_reads_preserve_source_ownership_and_preview_token) ... ok
+test_real_optimizer_written_source_all_read_paths (tests.test_m34_source_reads.TestSourceOwnedReads.test_real_optimizer_written_source_all_read_paths) ... ok
+test_missing_unknown_and_scope_fail_closed (tests.test_flagship_workflow.TestFlagshipWorkflow.test_missing_unknown_and_scope_fail_closed) ... ok
+test_three_original_structured_requirements_end_to_end (tests.test_flagship_workflow.TestFlagshipWorkflow.test_three_original_structured_requirements_end_to_end) ... ok
+test_front_exact_dominance_and_no_infeasible_leak (tests.test_m39_source_frontier.TestSourceFrontier.test_front_exact_dominance_and_no_infeasible_leak) ... ok
+test_full_finite_coverage_and_fresh_check (tests.test_m39_source_frontier.TestSourceFrontier.test_full_finite_coverage_and_fresh_check) ... ok
+test_invalid_registered_certificates_block_before_scoring_and_cannot_be_current (tests.test_m39_source_frontier.TestSourceFrontier.test_invalid_registered_certificates_block_before_scoring_and_cannot_be_current) ... ok
+test_malformed_specs_rejected_before_enumerating (tests.test_m39_source_frontier.TestSourceFrontier.test_malformed_specs_rejected_before_enumerating) ... ok
+test_missing_limits_not_replaced_and_bad_scenario_counted (tests.test_m39_source_frontier.TestSourceFrontier.test_missing_limits_not_replaced_and_bad_scenario_counted) ... ok
+test_parent_document_unchanged (tests.test_m39_source_frontier.TestSourceFrontier.test_parent_document_unchanged) ... ok
+test_source_spec_declaration_and_implementation_invalidation (tests.test_m39_source_frontier.TestSourceFrontier.test_source_spec_declaration_and_implementation_invalidation) ... ok
+test_tolerance_denominator_and_nominal_identity (tests.test_m39_source_frontier.TestSourceFrontier.test_tolerance_denominator_and_nominal_identity) ... ok
+test_valid_certificate_copy_preserves_holds_and_current_report (tests.test_m39_source_frontier.TestSourceFrontier.test_valid_certificate_copy_preserves_holds_and_current_report) ... ok
+
+----------------------------------------------------------------------
+Ran 55 tests in 20.487s
+
+OK

@@ -1,0 +1,1 @@
+Public source and milestone evidence. Read evidence/CLOSURE.md. Private data, original fixtures, frozen vector seeds, TR30 source tables and native commercial files are excluded. This public ZIP alone does not reproduce the full private 73-module gate. Actual Claude model tool call remains blocked by account quota; deterministic MCP clients are named explicitly.

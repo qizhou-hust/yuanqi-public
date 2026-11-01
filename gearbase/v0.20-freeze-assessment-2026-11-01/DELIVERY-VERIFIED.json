@@ -1,0 +1,60 @@
+{
+  "schema": "gearbase.assessment-delivery-verified/1",
+  "verified_utc": "2026-11-01T11:49:33.673285+00:00",
+  "passed": true,
+  "source_version": "0.20",
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "core_source_unchanged": true,
+  "frozen_python_files": 266,
+  "report_revision": 1,
+  "production_frozen": false,
+  "preliminary_freeze": "scoped engineering-trial mathematical baseline",
+  "fresh_tests": 62,
+  "fresh_architecture_modules": 146,
+  "capabilities": 26,
+  "challenge_cards": 6,
+  "candidate_system_blocked": 60,
+  "new_whole_milestone_closed": false,
+  "public_html_sha256": "6bbc3cc7001ff71656a81d44cb8521ea9743899bf9a2b0aa1e6c50c16d2b9ba7",
+  "private_html_sha256": "d8e5fcbc0fea8fc87ba66ee328e7e2d4748c5477fba73ff2a815be563470ff6a",
+  "public_derivative_review_sha256": "b413d88fd1466620b9d52c0f18d8d3a6b77470489f7b14c0f87ee385ff175cfd",
+  "desktop_and_mobile_headless_qa": true,
+  "public_remote_assets_anonymously_verified": true,
+  "packages": {
+    "full": {
+      "path": "D:\\my_Works\\Gears\\deliverables\\gearbase-v0.20-freeze-assessment.zip",
+      "bytes": 2618146,
+      "files": 96,
+      "sha256": "a31431180f29010a462b7f9e7bf6240fdf3e054a4eb74d98d1e2f231ef03a526"
+    },
+    "public": {
+      "path": "D:\\my_Works\\Gears\\deliverables\\gearbase-v0.20-freeze-assessment-public.zip",
+      "bytes": 2559711,
+      "files": 90,
+      "sha256": "14b6bc7e299e94a7ba80163cd6e8a64fcd9ab4246847741c609fcd30bcd1de7d"
+    },
+    "html": {
+      "path": "D:\\my_Works\\Gears\\deliverables\\gearbase-v0.20-system-assessment.html",
+      "sha256": "6bbc3cc7001ff71656a81d44cb8521ea9743899bf9a2b0aa1e6c50c16d2b9ba7",
+      "bytes": 222784,
+      "notice": "Self-contained report view; evidence links require public ZIP directory layout."
+    }
+  },
+  "public": {
+    "schema": "gearbase.assessment-publication/1",
+    "repository": "qizhou-hust/yuanqi-public",
+    "commit": "30b4da7865f72ff59b91c0a7c2ef244b22c5b11a",
+    "prefix": "gearbase/v0.20-freeze-assessment-2026-11-01",
+    "release_url": "https://github.com/qizhou-hust/yuanqi-public/releases/tag/gearbase-v020-assessment-2026-11-01",
+    "report_url": "https://github.com/qizhou-hust/yuanqi-public/blob/main/gearbase/v0.20-freeze-assessment-2026-11-01/index.html",
+    "readme_url": "https://github.com/qizhou-hust/yuanqi-public/blob/main/gearbase/v0.20-freeze-assessment-2026-11-01/README.md",
+    "html_download_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/gearbase-v020-assessment-2026-11-01/gearbase-v0.20-system-assessment.html",
+    "zip_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/gearbase-v020-assessment-2026-11-01/gearbase-v0.20-freeze-assessment-public.zip",
+    "public_zip_sha256": "14b6bc7e299e94a7ba80163cd6e8a64fcd9ab4246847741c609fcd30bcd1de7d",
+    "all_assets_anon_byte_verified": true,
+    "same_name_sha256_and_base64_verified": true,
+    "report_and_data_anon_byte_verified": true
+  },
+  "scope": "Assessment and case census only; no new FE/KISSsoft/model-client solve, no engineering gold authored, no physical-model thaw."
+}
+

@@ -1,0 +1,1 @@
+Public v0.19 core-source and acceptance evidence. Private standards scans/numerical corpus, original commercial native files, solver/CAD binaries and raw private RPC are excluded. This package alone does not reproduce full private regression. Read evidence/CLOSURE.md.

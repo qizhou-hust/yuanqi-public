@@ -1,0 +1,42 @@
+{
+  "schema": "gearbase.v019-commercial-run/1",
+  "version": "2026",
+  "file_version": "26.0.0.0",
+  "module": "Z012",
+  "headless": true,
+  "mouse_used": false,
+  "edits": [],
+  "calculate_return": true,
+  "reload_calculate_return": true,
+  "reload_differences": {},
+  "source_unchanged": true,
+  "source_sha256": "bbcf9500b5ad1344a3d9bfc2e751224fb3bbab0b461791bbb67534ff28dfd4d7",
+  "native_sha256": "c992b8d955345d7d4482063079d1f71217d904a31615b642c89e4e67c819d298",
+  "artifact_inventory": [
+    {
+      "path": "kisssoft/K02-unchanged-additional/K02-unchanged-additional.html",
+      "bytes": 749468,
+      "sha256": "db356f69723821723cd784e33872e1149fdabe7c1c80fe73595d1b6ab60ab1ad"
+    },
+    {
+      "path": "kisssoft/K02-unchanged-additional/K02-unchanged-additional.rtf",
+      "bytes": 109533,
+      "sha256": "6a8f9cb01f17419d849c441a272921fa3fc2a9ec891fdace687ccd5f37762ffd"
+    },
+    {
+      "path": "kisssoft/K02-unchanged-additional/K02-unchanged-additional.txt",
+      "bytes": 38788,
+      "sha256": "8a66a185d672b1287595192b56ecced1c401fab8d09c27a8d86310114ee94e09"
+    },
+    {
+      "path": "kisssoft/K02-unchanged-additional/K02-unchanged-additional.Z12",
+      "bytes": 388186,
+      "sha256": "c992b8d955345d7d4482063079d1f71217d904a31615b642c89e4e67c819d298"
+    },
+    {
+      "path": "kisssoft/K02-unchanged-additional/run.json",
+      "bytes": 73205,
+      "sha256": "bc9ccc436c40c436f8c026be155f3f0db3062f4e845f5d4f630bcf8b4b925b78"
+    }
+  ]
+}

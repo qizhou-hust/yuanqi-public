@@ -1,0 +1,77 @@
+{
+  "review": "Final frozen snapshot: previous scoped review plus final factor_recompute inspection",
+  "utc": "2026-11-01T09:24:39.939274+00:00",
+  "functional_ci_commit_reported_by_root": "d1b8f1ae7715a65bc83a8981a82adc4677513e5e",
+  "hosted_ci_verified": false,
+  "freeze_file": "D:\\my_Works\\Gears\\v018-next-run\\code-freeze.json",
+  "freeze_file_sha256": "a47411e94591fe2083f65f66692e93601c4f9e99bd13ae28f548dc47fffd38c5",
+  "freeze_entry_count": 256,
+  "freeze_mismatches": {},
+  "new_blocking_findings": [],
+  "factor_recompute_reinspection": {
+    "full_diff_reviewed_against": "728e5631a3d96610704b461b25bba060f9b56072",
+    "prior_review_sha256": "ea076968400979025b6180df10f6669743d867222e528ede484aeb2c548e7c3a",
+    "current_sha256": "203873c0fb7dbec57180dee2a552de1989bd1f6d5053d4e6dcd495c3fa499e28",
+    "current_converted_to_CRLF_sha256": "ea076968400979025b6180df10f6669743d867222e528ede484aeb2c548e7c3a",
+    "conclusion": "Only CRLF to LF normalization relative to previous reviewed bytes; no semantic source change",
+    "reviewed_logic": [
+      "No override returns existing KM model unchanged",
+      "Only explicit external-to-nitrided life/root override is allowed",
+      "Replaced outputs removed from specs and required evidence; replacement inputs declared, not populated with physical defaults",
+      "Both DIN designations required and generating-root A_sn_i consumption checked",
+      "Adapter specs deduplicated without changing existing values"
+    ]
+  },
+  "fresh_tests": {
+    "command": "python -X utf8 -I -S - [unittest runner]",
+    "modules": [
+      "tests.test_v019_k02_source_pipeline",
+      "tests.test_v019_nitrided",
+      "tests.test_v019_din_adapter",
+      "tests.test_v019_k02_composite",
+      "tests.test_v019_review_regressions"
+    ],
+    "run": 22,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "reviewed_file_sha256": {
+    "gearmath/gear/nitrided_factors.py": "e1b293f4695d9a9df79eafc872b6b78ff1c402a000ff5a60c80538bf08f1fcc9",
+    "gearmath/gear/din3967_adapter.py": "d296093af5c2e6b5e5582e89bada5e99d1918baccf95eccb7ecf3643d0858d20",
+    "gearmath/gear/backlash_din3967.py": "d0a4c966b6fe16d4d3cd8c3065973b34f0eaa40aabf3b718234e510b5e44353c",
+    "gearmath/gear/root_factors.py": "7d0436c9b869e8e38cf6789d108db73b47c687cb508de934102bba251c02bc7a",
+    "gearmath/gear/factor_recompute.py": "203873c0fb7dbec57180dee2a552de1989bd1f6d5053d4e6dcd495c3fa499e28",
+    "gearmath/gear/factor_methods.py": "97a85171bceff611fc9ff1b6490d5d2da7416506880fb9c8a3145ccd6ad7e30e",
+    "gearmath/gear/beam_face.py": "cae85dae0c9f2140cac29ca1bff922f58e36af3923482eec08ca520d54753bfb",
+    "gearmath/gear/flagship_kinematics.py": "35fb2d4c877be114ccdb55793f4fa6dab787253a728861bba2cf2bfe7142bbbb",
+    "gearmath/gear/flagship_reference.py": "076127c6dd4df5fba47c50af3d31ea5fea07b8cc55ea2433fd767df13c39a550",
+    "gearmath/product/flagship_system.py": "344721ca387966b64cfae3a735d442432b99b3a69a4f62e2f7ea73576e94343e",
+    "gearmath/product/system_optimize.py": "e1e0e3a35477f00100b53061c810a4194735ad98c6ea97d05514f84043dc85bd",
+    "gearmath/product/nearest_feasible_edit.py": "60483e6ab2c37bc47a19d1591b26d06fb3445017ae03e9777b4b1e90ca7a4167",
+    "gearmath/tools/nearest_feasible_edit_tool.py": "d3db1e3b9045b8213650a1cc50e8e860af340d7dbcc9c436da29982c7073f691",
+    "gearmath/tools/m36_identity.py": "ecddefc5de1f3b2761d15d164717941cc010be4fc5b987fbe95b9acb5629e825",
+    "gearmath/tools/system_closure.py": "c7bae05b93f069033cf52eb3631d27ff4bac0f312eadbd8e178649f7d6c81550",
+    "gearmath/tools/milestones.py": "bbb686a456b96944f8d7285d68bc6ee8c136b5b09d6417d48405e9256612f5d5",
+    "gearmath/tools/ai_tools.py": "72e4dff5bbe7a1add3d6e311bc933a78c2db0163d8d8582d312277026ba31c80",
+    "gearmath/tools/solver_allowance.py": "d9b125ad10ebb4f2348bfda808281bd704e100232e753025dd73f6457f0c97ae",
+    "tests/test_v019_review_regressions.py": "eeffd85d750f8852d6718847e413599674425a8fd1a17862aaaafa0566b8ea23",
+    "tests/test_v019_k02_source_pipeline.py": "f172c115ebc2e69951860b0cbae348a506329f8191b093bb299522a56acad927",
+    "tests/test_v019_nitrided.py": "0ef2890c8c4138cb96663237f03d9b187211d50482b7b5cb90938d8d3becbf84",
+    "tests/test_v019_din_adapter.py": "16557d76067a2767c5b2329d5097cea98621929324dab654cb9bb72d29a8c5b7",
+    "tests/test_v019_k02_composite.py": "42375f1e4ab3401fae09c53f6d81abec84a5382a9dcf6a68e5ecafc96c5f7cc9",
+    "tests/test_v019_m36_identity.py": "ee02bb4bc9494067838fe9e73d54304c707f085a210a40873371868708febcfc",
+    "tests/test_v019_nearest_feasible_edit.py": "0337a9aafca40f8996beeed70cc85aacd15583496297bad54ec9abc292525aef",
+    "tests/test_v019_solver_allowance.py": "012bfbcd387f8a53c3d860aaed2ecda5d434140d51c2ce1964b0c488a0e075c3",
+    "tests/test_beam_face.py": "a3233a7d3ae90fbd7926fe18de8f1f188c9b5c89fde616ddecf16bbd219be5c8",
+    "data/source/K02-helical.v019-diagnostic.math-source.json": "8c95c49f98281e733f94467ab9a70354e2c42cb304a4bee18ccb498c95de64d8",
+    "data/kisssoft_v019/K02-additional.json": "fd68981e7860f1b96432fe6ae9cf65f37d596a7844afda8eeb443a249eaadb1e",
+    "docs/v019-rating-source-audit.md": "287cad1ce3447bfd882eef84912a3a470d2964a4ea60eba118ec422cadd4878f",
+    "docs/beam_face_scope.md": "60fc6da537d68f0f8cb094ca7cf1eed09321a9b34aa6f97deff74a8b57dd4754"
+  },
+  "where_review_may_be_wrong": [
+    "Snapshot hashes establish reviewed bytes, not an audit of every frozen file; full hosted and legacy acceptance remains separate",
+    "K02 comparison remains bounded to supplied native evidence and explicit surface assumptions",
+    "Mixed-material per-wheel selectors and complete beam-to-f_sh/KHbeta are deliberately unsupported"
+  ]
+}

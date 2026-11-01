@@ -1,0 +1,16 @@
+{
+  "schema": "gearbase.v019-delivery-run/1",
+  "version": "0.19",
+  "headless": true,
+  "mouse_used": false,
+  "input_zip_sha256": "e4865149bd17de7795a5bdafd7ee3e39fc717372688da200699039186edfc27c",
+  "ci_commit": "d1b8f1ae7715a65bc83a8981a82adc4677513e5e",
+  "ci_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41292882007",
+  "new_whole_milestone_closed": false,
+  "A11": "closed_exact_hash_allowance",
+  "Claude_client": "deferred_by_user; deterministic protocol calls do not close model-client gate",
+  "new_KISSsoft_run": true,
+  "KISSsoft_version": "2026",
+  "solver_executed_during_origin_verification": false,
+  "FEA_numerical_acceptance": "not_granted"
+}

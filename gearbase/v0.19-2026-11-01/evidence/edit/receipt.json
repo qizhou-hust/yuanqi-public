@@ -1,0 +1,83 @@
+{
+  "schema": "gearbase.v019-nearest-edit-transport/1",
+  "passed": true,
+  "transport": "real MCP stdio tools/call",
+  "client": "deterministic Python protocol client; not a Claude model",
+  "read_only": true,
+  "rpc_sha256": "ee6430e6e0ce1dc52c064f136be8f27022e3683199dff7543c9e37d90123e70c",
+  "source_problem_file_sha256": "8dbf89d48f9dd2f20fcf229db47a8b714e119e9e4d75d4a48a7afc70ea784ec5",
+  "request": {
+    "target": {
+      "gear": "original",
+      "shaft": "weak",
+      "bearing": "low"
+    },
+    "metric": {
+      "kind": "weighted_hamming",
+      "weights": {
+        "gear": "1",
+        "shaft": "2",
+        "bearing": "0.1"
+      }
+    },
+    "constraints": {
+      "pass_scopes": [
+        "gear_rating",
+        "shaft",
+        "bearing",
+        "key"
+      ]
+    },
+    "source": "Authored finite regression example; explicit categorical change costs, no real engineering approval"
+  },
+  "problem_sha256": "0c32b27b0c2ccd6179e74f9d6cc7cea0a7e9446dd8b6b739f86587660dde70b0",
+  "target_feasible": false,
+  "nearest": {
+    "ids": [
+      "original",
+      "economy",
+      "original"
+    ],
+    "distance": "21/10"
+  },
+  "ties": [
+    {
+      "ids": [
+        "original",
+        "economy",
+        "original"
+      ],
+      "distance": "21/10"
+    },
+    {
+      "ids": [
+        "original",
+        "economy",
+        "tie"
+      ],
+      "distance": "21/10"
+    },
+    {
+      "ids": [
+        "original",
+        "strong",
+        "original"
+      ],
+      "distance": "21/10"
+    },
+    {
+      "ids": [
+        "original",
+        "strong",
+        "tie"
+      ],
+      "distance": "21/10"
+    }
+  ],
+  "feasible": 8,
+  "limits": [
+    "Finite categorical IDs only; distance is not physical displacement.",
+    "No continuous optimum, real C001 completion or system gate3 claim.",
+    "No changes are applied; this identity is not a commit token."
+  ]
+}

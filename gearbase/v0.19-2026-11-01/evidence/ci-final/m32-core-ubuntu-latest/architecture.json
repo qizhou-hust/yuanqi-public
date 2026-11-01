@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "command": [
+    "/opt/hostedtoolcache/Python/3.12.15/x64/bin/python",
+    "-X",
+    "utf8",
+    "-I",
+    "gearmath/tools/architecture_guard.py",
+    "--json"
+  ],
+  "report": {
+    "schema": "gearbase.architecture-gate/1",
+    "passed": true,
+    "files_checked": 142,
+    "l2_owners": [
+      "gear",
+      "system"
+    ],
+    "violations": []
+  },
+  "gate": "architecture",
+  "seconds": 1.55
+}

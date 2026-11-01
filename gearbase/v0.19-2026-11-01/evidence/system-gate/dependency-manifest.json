@@ -1,0 +1,192 @@
+{
+  "profile": "m36-static-transitive-v1",
+  "implementation_sha256": "6aafb45494988deca03c9162460df7faf57604aff281c3d0a16b87857fbd5d71",
+  "bound_files": {
+    "data/registry/formulas-v1.json": "29272f30666fd015aac763ba3205387a6b0a720d519750d10c28fa89dd36514e",
+    "data/schema/gears.design-check-result-1.schema.json": "75b1a9cc37aa48bb3c59097d5671c9f3366abde8de3c60988fe5a62b53b9a0d2",
+    "data/schema/gears.system-input-1.schema.json": "c069e2a59fc029b92a4bfc3ef7af9a3680963d1336d64442cea1aa5e6e7c23b6",
+    "data/source/gears.math-source-2.schema.json": "06785241ddca58dc30f70c6ef2551159ca3782efd12bae472099760f8841db91",
+    "gearmath/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/gear/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/gear/backlash_din3967.py": "d0a4c966b6fe16d4d3cd8c3065973b34f0eaa40aabf3b718234e510b5e44353c",
+    "gearmath/gear/contact_factors.py": "70877b3ae933c939041579999910bdf4542cad682f77ab0b556c358037636b57",
+    "gearmath/gear/din3967_adapter.py": "d296093af5c2e6b5e5582e89bada5e99d1918baccf95eccb7ecf3643d0858d20",
+    "gearmath/gear/dynamic.py": "704998c50839e6262aef94dc48c32377eaedcf8fd8612802950432fda942f696",
+    "gearmath/gear/factor_methods.py": "97a85171bceff611fc9ff1b6490d5d2da7416506880fb9c8a3145ccd6ad7e30e",
+    "gearmath/gear/factor_recompute.py": "203873c0fb7dbec57180dee2a552de1989bd1f6d5053d4e6dcd495c3fa499e28",
+    "gearmath/gear/formulas.py": "02727f963b025e4fc0f7d43f868888b897b1d62e814b3c99c514fddd9115411f",
+    "gearmath/gear/inputs.py": "be68579ad8095bd8e6037cf227a8cadd421f2db79e85183f08de15b4c458c444",
+    "gearmath/gear/iso1328.py": "3574aaa9c85480505d6f02986148e4d3e3ce530213f96cc180c6e40a25d19cb3",
+    "gearmath/gear/kisssoft_case.py": "07726b9848826db20a2dda9a5fe59c8ecdc7b5372ed636a1d8a572f22af4733c",
+    "gearmath/gear/kisssoft_multi.py": "9b9b00bd3525aa73569e985f1fc6280a57a08129be0e7387b50e6f879377e9e9",
+    "gearmath/gear/life_factors.py": "0f7a9622ad6828594fae43c55a4a51aefbf98935b21f52563f93ea9ca3870bb7",
+    "gearmath/gear/load_distribution.py": "f4ce040518e268f6157bbde637a78e0b5e23ad65c38ed14792a1aa905319f3bb",
+    "gearmath/gear/m31_case.py": "a5fc1d738327166e97dd4535c5d0a3b5327066a9d196f111084b6019393ee924",
+    "gearmath/gear/math_source.py": "a3824d7d48ddd8d9607afe41038fe901d5a07fa11924b26274c0d38bfbe56407",
+    "gearmath/gear/math_source_kisssoft.py": "5ac03d9f33e5bcad071579a775474948b49bb7342e086a26530c048ec615c950",
+    "gearmath/gear/micropitting.py": "f62c195ce4dcb51018994aa73e829cc8d42fae6596f820a357fc3bbf72551d45",
+    "gearmath/gear/nitrided_factors.py": "e1b293f4695d9a9df79eafc872b6b78ff1c402a000ff5a60c80538bf08f1fcc9",
+    "gearmath/gear/parameter_sheet.py": "6f3a6d38fb222c9f89b8f507e4b839ff740e13eeb182da929a6e89abe5bc9158",
+    "gearmath/gear/rating.py": "6dd14ce6d424a8900fda3c05e4bba7a90be7569b07be4d657f90b05344a6c52c",
+    "gearmath/gear/root_factors.py": "7d0436c9b869e8e38cf6789d108db73b47c687cb508de934102bba251c02bc7a",
+    "gearmath/gear/scuffing_integral.py": "4e5754574ffbf3d1a27ac525991bac5cd1cae05a5ec8de71ff1b1357f157440e",
+    "gearmath/gear/source_optimize.py": "92c57220ab0a2a5c9c0a813ae5e63e0eb9e35d74f3491b01280aa4f92be0654f",
+    "gearmath/gear/surface_factors.py": "ff244cdf7559f508ebb1e42378d1efda9bb705e503a325639cd451b02565e3c4",
+    "gearmath/gear/tooth_thickness.py": "49233e0660806ccdd9a30a10de02c6bcceb369b25aa4df27a11b47ddbd4da7e9",
+    "gearmath/gear/tribology_common.py": "9a97aad6cb849c05561fcecd96697d952a0fc307936c6c598e0ef23f73f07fce",
+    "gearmath/kernel/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/kernel/declared.py": "3e558623480c2f72ce465b6b0ec03a88f8120a2bd2c3f6834b8ed2d27613028f",
+    "gearmath/kernel/dual.py": "2601bacff54e80ef4c8442c4fa76d576120aa8df74c51906ecebe24bbfc4cd8c",
+    "gearmath/kernel/evidence.py": "dc04220e840ca640f3a9e64cee93b63b788c2e05e0667f110f19ed23e9ca67cc",
+    "gearmath/kernel/expr.py": "fd87656f072868317f3c83807b723933f7f97872d2e1e958cde0f9d201416446",
+    "gearmath/kernel/graph.py": "945b2f89ee95c73f86da18c452373b73b530ee6714cdc123898fecdaf4ba9703",
+    "gearmath/kernel/gridprune.py": "a820d5cd7228d54a7fe066dbe5c5f8317720f0a9fba13f70d481814f34dafd89",
+    "gearmath/kernel/interval.py": "579356c3cb5a66bdaabb8eafaabf18457ee178be7f975e305ae7930909eb69ba",
+    "gearmath/kernel/nlp.py": "3ba1beaf2a4812dca2141ab5962536c514c65a8bf681cc9f3f15c2f0e716110e",
+    "gearmath/kernel/optimize.py": "6839619d473e67e89461701e081cd81a9449719e0f479968da2448da543695a4",
+    "gearmath/kernel/registry.py": "10f4d90cc0c2f416793f97e435bcd7b4f409bc031069f4eb64310d89a27364b7",
+    "gearmath/kernel/select.py": "abeb49af994007f12b0b86f27e1eeed3166f115b945a5eedefad6df91086c64c",
+    "gearmath/kernel/source_doc.py": "5e6b9c192f343d33c69892ba9594105f81a1eca4b8da2b802f620e9610347f11",
+    "gearmath/kernel/units.py": "3177607494073d132e5eaa6c36af065d9dd2db2df211b027ac40a753430f7ff0",
+    "gearmath/product/__init__.py": "ee018ea077d5f4a1d647ff9d850a29f864f728b64ca1389c6d2de193afc00505",
+    "gearmath/product/design_check.py": "29bb05695dc9a6d2de525599c0d953733d8abb8f1892a38256b5341eb8ee97a1",
+    "gearmath/product/evidence.py": "5343682f4202d9c3efd418c46e8939a793b3131bb99e50b75af0f3174af6f0bc",
+    "gearmath/product/system_input.py": "8d12e090429a63ee7397673bd381db2c9310fd88dbbaac4de6e035178fd8d9b4",
+    "gearmath/product/system_optimize.py": "e1e0e3a35477f00100b53061c810a4194735ad98c6ea97d05514f84043dc85bd",
+    "gearmath/system/__init__.py": "d52dbc8c4d6da29624300d102559fc24185a42e200d2b467992079d88020c64e",
+    "gearmath/system/_base.py": "c3d9c4a2212223943cf14c19e4e3bfa259c5dcd3105ad6accc2e2bb1fed1ed00",
+    "gearmath/system/din6892.py": "45da69886d6992e467507dda691ece5275305ed5b69bd56fb6aa3694f07676bb",
+    "gearmath/system/din6892_b.py": "e3ac3f8f5b9de433f417b77c2b28001248196d2ffa1d32c84c7db4b7f6335805",
+    "gearmath/system/din7190.py": "a3cdead99eb171bd55dc516c8ffd74b7323bf089e35fd205b567725144a5ffb4",
+    "gearmath/system/din743.py": "6439e67646f213ec0812404ea64cbc9a136931e7e148a11912337138aaf2d081",
+    "gearmath/system/drivetrain_check.py": "50d0d979837e46060f753d7fce36d85cf4a6f1d6bbd85f173560f7c670555319",
+    "gearmath/system/iso281.py": "d8457d7e1f90979d9c4680b786f5120dfae972745986da8244691770a25a6722",
+    "gearmath/system/shaft_beam.py": "988f4cefcd03aaf6186a6cbfb73a904be19baae7610ad93f072775c0ca0cde32",
+    "gearmath/system/shaft_line.py": "f97a414deaf7c4bf59b844b224d6d9e0cb24e7001284cbafa410a129988b609c",
+    "gearmath/system/system_optimize.py": "b29be344ca370d2c1c3468fcd2042566aed437faa9346dca61704661b72a7273",
+    "gearmath/system/thermal_14179.py": "3a4063b2ceada251b7e27d9ff5ce01857ba711b9dfb1948e70e31764836bb47a",
+    "gearmath/system/thermal_balance.py": "b09ad2a661943ef9c648802079d708c1b145f84cdb30659813b63d0b5648ea60",
+    "gearmath/tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/tools/m36_identity.py": "ecddefc5de1f3b2761d15d164717941cc010be4fc5b987fbe95b9acb5629e825",
+    "gearmath/tools/system_closure.py": "c7bae05b93f069033cf52eb3631d27ff4bac0f312eadbd8e178649f7d6c81550"
+  },
+  "input_sha256": "8dbf89d48f9dd2f20fcf229db47a8b714e119e9e4d75d4a48a7afc70ea784ec5",
+  "certificate_files": [
+    {
+      "evidence": "E",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "K_Hbeta",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Rz_H_1",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "Rz_H_2",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "Y_B",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_DT",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_NT_1",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_NT_2",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_RrelT_1",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_RrelT_2",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_ST",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_X",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_drelT_1",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_drelT_2",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Z_NT_1",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Z_NT_2",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Z_W",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Z_X",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "nu",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "nu_40",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "rho_1",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "rho_2",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "sigma_Hlim_surface",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    }
+  ],
+  "limits": "Static imports plus explicit data profile; certificate bytes independently verified. Not an execution sandbox."
+}

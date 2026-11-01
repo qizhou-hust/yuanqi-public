@@ -1,0 +1,24 @@
+{
+  "repository": "qizhou-hust/yuanqi-private",
+  "visibility": "private",
+  "branch": "codex/gearbase-v019-next-2026-11-01",
+  "commit": "fba13dedbb66455620d875985e936347a1424054",
+  "tree": "e3de51c884bbf077be82f986974f4cb0977c15f0",
+  "parent": "d1b8f1ae7715a65bc83a8981a82adc4677513e5e",
+  "snapshot_files": 2729,
+  "source_manifest_sha256": "e52d1a14841090dade38ec1bcd0c2ee2d6e8409bffb62b347a0b5aea9fb137bd",
+  "main_unchanged": true,
+  "status": "DOCUMENTATION_CLOSEOUT_PUBLISHED_EXECUTABLE_UNCHANGED",
+  "workflow_path": ".github/workflows/gearbase-v019.yml",
+  "source_path": "engineering/gearbase-v019",
+  "source_bytes_preserved": true,
+  "functional_ci_commit": "d1b8f1ae7715a65bc83a8981a82adc4677513e5e",
+  "remote_changed_paths": [
+    "engineering/gearbase-v019-SNAPSHOT.json",
+    "engineering/gearbase-v019/PACKAGE-CONTENTS.sha256",
+    "engineering/gearbase-v019/docs/superpowers/plans/2026-11-01-v019.md",
+    "engineering/gearbase-v019/docs/v019-progress.md",
+    "engineering/gearbase-v019/output/milestones-v019-current.json",
+    "engineering/gearbase-v019/output/milestones-v019-current.md"
+  ]
+}

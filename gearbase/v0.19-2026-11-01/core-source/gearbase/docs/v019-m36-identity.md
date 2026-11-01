@@ -1,0 +1,5 @@
+# M36 controlled replay identity
+
+M36 gate 2 binds the static transitive package imports of system_closure, the identity implementation itself, and the validation schemas and formula registry used by the replay. The authored probe file has a separate byte hash; its embedded design source and certificate declarations are therefore bound. Each file certificate is verified against its declared SHA-256 at replay and again at milestone evaluation; missing or altered files block the gate. The independent reference still enumerates the full finite product and compares ordered feasible objectives.
+
+The static scan rejects star imports and direct calls named __import__ or import_module in the discovered graph. It is not a sandbox or proof against reflection, aliases, arbitrary executable code, or unlisted runtime file reads; such changes require a profile review. The profile does not identify Python runtime, installed packages, narrative documentation or VERSION. M39 retains its original whole-package identity. This gate describes the authored finite probe; gate 3 and real engineering completion remain partial.

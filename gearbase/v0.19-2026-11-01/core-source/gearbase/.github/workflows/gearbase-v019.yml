@@ -1,0 +1,112 @@
+name: GearBase v019 closure acceptance
+on:
+  push:
+    branches: ['codex/gearbase-v019-next-*']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  core:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: engineering/gearbase-v019
+    env:
+      PYTHONUTF8: '1'
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Core acceptance before dependency installation
+        run: python -X utf8 -I scripts/ci_m32.py --gate stdlib --out "${{ runner.temp }}/.m32ci/stdlib"
+      - name: Original three Stage0 requirements through real MCP transport
+        run: python -X utf8 -I scripts/ci_flagships.py --out "${{ runner.temp }}/.m32ci/stdlib/flagships"
+      - name: Joint system problem versus fresh full enumeration
+        run: python -X utf8 -m gearmath.tools.system_closure --inputs data/system-optimization/v017-capability-probe.json --out "${{ runner.temp }}/.m32ci/stdlib/system-opt"
+      - name: Preserve core gate evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: m32-core-${{ matrix.os }}
+          path: ${{ runner.temp }}/.m32ci/stdlib/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
+  legacy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: engineering/gearbase-v019
+        shell: bash
+    env:
+      PYTHONUTF8: '1'
+      PYTHONIOENCODING: utf-8
+      OPENBLAS_CORETYPE: HASWELL
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Create separate compatibility and native worker environments
+        run: |
+          python -X utf8 -I -m venv .m32-ci/compat
+          python -X utf8 -I -m venv .m32-ci/native
+          .m32-ci/compat/bin/python -X utf8 -I -m pip install --disable-pip-version-check pytest==8.3.5 build123d==0.13.0 npTDMS==1.10.0 numpy==2.3.5 scipy==1.17.0 scikit-learn==1.9.1 reportlab==4.4.4 shapely==2.1.2
+          .m32-ci/native/bin/python -X utf8 -I -m pip install --disable-pip-version-check cadquery==2.7.0 cadquery-ocp==7.8.1.1.post1 numpy==2.3.5 scipy==1.17.0 shapely==2.1.2
+      - name: Preserve resolved dependency inventories
+        run: |
+          mkdir -p "${{ runner.temp }}/.m32ci/legacy"
+          .m32-ci/compat/bin/python -X utf8 -I -m pip freeze --all > "${{ runner.temp }}/.m32ci/legacy/compat-freeze.txt"
+          .m32-ci/native/bin/python -X utf8 -I -m pip freeze --all > "${{ runner.temp }}/.m32ci/legacy/native-freeze.txt"
+          lscpu > "${{ runner.temp }}/.m32ci/legacy/cpu-info.txt"
+          .m32-ci/compat/bin/python -X utf8 -I -c "import numpy, scipy, platform, sys; print(sys.version); print(platform.platform()); print('numpy',numpy.__version__,'scipy',scipy.__version__); numpy.show_runtime()" > "${{ runner.temp }}/.m32ci/legacy/numerical-runtime.txt"
+      - name: Verify canonical NumPy norm compatibility API
+        run: .m32-ci/compat/bin/python -X utf8 -I tests/m31_numpy_profile_probe.py -v > "${{ runner.temp }}/.m32ci/legacy/numpy-norm-profile.log" 2>&1
+      - name: Complete unchanged M31 acceptance (73 modules, no skips)
+        run: |
+          export GEAR_NATIVE_PYTHON="$PWD/.m32-ci/native/bin/python"
+          .m32-ci/compat/bin/python -X utf8 -I scripts/ci_m32.py --gate adapter-regression --out "${{ runner.temp }}/.m32ci/legacy"
+      - name: Preserve legacy gate evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: m32-legacy-ubuntu
+          path: ${{ runner.temp }}/.m32ci/legacy/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
+  portable-fresh:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: engineering/gearbase-v019
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Require private repository for private evidence
+        if: github.event.repository.private != true
+        run: exit 1
+      - name: Build and verify fresh portable profile
+        run: python -I scripts/ci_portable_fresh.py --out "${{ runner.temp }}/gearbase-portable-evidence"
+      - name: Upload private receipt and logs
+        if: always() && github.event.repository.private == true
+        uses: actions/upload-artifact@v4
+        with:
+          name: gearbase-portable-fresh-private
+          path: |
+            ${{ runner.temp }}/gearbase-portable-evidence/receipt.json
+            ${{ runner.temp }}/gearbase-portable-evidence/*.log
+            ${{ runner.temp }}/gearbase-portable-evidence/*.jsonl
+          retention-days: 14
+          if-no-files-found: error

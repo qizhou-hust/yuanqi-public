@@ -1,0 +1,35 @@
+{
+  "source_document_sha256": "8c95c49f98281e733f94467ab9a70354e2c42cb304a4bee18ccb498c95de64d8",
+  "native_run_sha256": "bc9ccc436c40c436f8c026be155f3f0db3062f4e845f5d4f630bcf8b4b925b78",
+  "scope": [
+    "gear_rating"
+  ],
+  "comparisons": {
+    "S_H_1": {
+      "library": 1.1604280364899515,
+      "KISSsoft": 1.1603730156543814,
+      "relative_difference": 4.7416507302111555e-05
+    },
+    "S_H_2": {
+      "library": 0.9502423450088778,
+      "KISSsoft": 0.9501972899721397,
+      "relative_difference": 4.741650730188951e-05
+    },
+    "S_F_1": {
+      "library": 5.762067407588891,
+      "KISSsoft": 5.7612818620406445,
+      "relative_difference": 0.00013634909158355413
+    },
+    "S_F_2": {
+      "library": 4.581390296166393,
+      "KISSsoft": 4.580931662196087,
+      "relative_difference": 0.00010011805548004737
+    }
+  },
+  "actual_source_pipeline": true,
+  "limits": [
+    "Intact root surface is an explicit assumption, not independently verified.",
+    "SH2 commercial result 0.950197 is only slightly above the stated 0.95 limit; no robust optimization or engineering approval.",
+    "Remaining YF/YS model differences are reported; original 1e-4 whole-rating agreement is not claimed."
+  ]
+}

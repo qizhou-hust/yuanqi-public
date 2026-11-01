@@ -1,0 +1,16 @@
+{
+  "repository": "qizhou-hust/yuanqi-private",
+  "visibility": "private",
+  "branch": "codex/gearbase-v019-next-2026-11-01",
+  "commit": "d1b8f1ae7715a65bc83a8981a82adc4677513e5e",
+  "tree": "b5933e6f47b2746d88ef175e70528c9b63ca3927",
+  "parent": "da4d1c934d15c884e0c454f43ea481e38ea688f8",
+  "snapshot_files": 2726,
+  "source_manifest_sha256": "3fa80d5ac39f9317df494c87a95bfe4ce105e3a730eb24cdbfe84147d6157efa",
+  "main_unchanged": true,
+  "status": "WAITING_FOR_HOSTED_ACCEPTANCE",
+  "workflow_path": ".github/workflows/gearbase-v019.yml",
+  "source_path": "engineering/gearbase-v019",
+  "source_bytes_preserved": true,
+  "workflow_parent": "72b8391e93f4e5e7119c72d86141475c4f68fb76"
+}

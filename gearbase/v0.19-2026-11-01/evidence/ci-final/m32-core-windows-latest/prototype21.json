@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "command": [
+    "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+    "-X",
+    "utf8",
+    "-I",
+    "-c",
+    "import sys,unittest;sys.path.insert(0,'.');s=unittest.defaultTestLoader.loadTestsFromNames(['tests.test_gearmath']);r=unittest.TextTestRunner(verbosity=2).run(s);sys.exit(not r.wasSuccessful())"
+  ],
+  "gate": "prototype21",
+  "seconds": 2.875
+}

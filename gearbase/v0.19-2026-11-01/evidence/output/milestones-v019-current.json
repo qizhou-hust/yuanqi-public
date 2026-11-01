@@ -1,0 +1,412 @@
+{
+  "schema": "gearbase.milestones/1",
+  "basis": "docs/里程碑口径.md（验收门条目完成数；partial 不计入）",
+  "version": "0.19",
+  "state": {
+    "test_cases_discovered": 1345,
+    "compile_errors": [],
+    "formula_modules": {
+      "gear.formulas（CYLINDRICAL_PAIR，等级取 data/registry）": {
+        "count": 88,
+        "levels": {
+          "E2": 4,
+          "E5": 83,
+          "none": 1
+        }
+      },
+      "gear.scuffing_integral": {
+        "count": 36,
+        "levels": {
+          "E5": 27,
+          "none": 9
+        }
+      },
+      "gear.scuffing_flash": {
+        "count": 19,
+        "levels": {
+          "E5": 11,
+          "none": 8
+        }
+      },
+      "gear.micropitting": {
+        "count": 23,
+        "levels": {
+          "E5": 20,
+          "none": 3
+        }
+      },
+      "system.thermal_14179": {
+        "count": 25,
+        "levels": {
+          "none": 25
+        }
+      },
+      "system.din743": {
+        "count": 44,
+        "levels": {
+          "E5": 20,
+          "none": 24
+        }
+      },
+      "system.din6892": {
+        "count": 8,
+        "levels": {
+          "E4": 2,
+          "E5": 4,
+          "none": 2
+        }
+      },
+      "system.din6892_b": {
+        "count": 15,
+        "levels": {
+          "E4": 7,
+          "E5": 8
+        }
+      },
+      "system.din7190": {
+        "count": 13,
+        "levels": {
+          "E4": 4,
+          "E5": 6,
+          "none": 3
+        }
+      },
+      "system.iso281": {
+        "count": 15,
+        "levels": {
+          "E5": 2,
+          "none": 13
+        }
+      },
+      "system.shaft_line": {
+        "count": 3,
+        "levels": {
+          "none": 3
+        }
+      },
+      "system.shaft_beam": {
+        "count": 4,
+        "levels": {
+          "none": 4
+        }
+      }
+    },
+    "external_files": {
+      "data/kisssoft": 7,
+      "data/kisssoft_v014": 13,
+      "data/kisssoft_v015": 19
+    },
+    "pending_user_decisions": {
+      "handoff_latest_entries": 0,
+      "handoff_line": "> **需要用户：**见 `docs/KISSsoft运行请求-v0.16.md` 末节（K03–K05 油品数据、K04 Ca 口径、搜索域、C001/K01 系统层输入与最小安全系数）；前轮遗留：HB→HV、几何门 2/6 明细、L3 `*CONTACT FILE`、模块 B 原包。",
+      "system_input": {
+        "C001": 5,
+        "K01-spur": 2
+      }
+    },
+    "bench_pending": 42,
+    "handoff_estimates": {
+      "M32": "**关闭**",
+      "M33": "partial",
+      "M34": "partial",
+      "M35": "partial",
+      "M36": "open",
+      "M37": "open",
+      "M38": "partial",
+      "M39": "partial"
+    }
+  },
+  "milestones": [
+    {
+      "milestone": "M32",
+      "gate_items": 5,
+      "done": 5,
+      "partial": 0,
+      "open": 0,
+      "progress": 1.0,
+      "handoff_estimate": "**关闭**",
+      "items": [
+        {
+          "text": "原型 21 项测试全绿",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M32-验收报告.md：双系统真实 CI 原型 21 项通过"
+        },
+        {
+          "text": "M31 旧测试经适配器回归",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M32-验收报告.md：原 73 模块 678 项全过、零跳过；原 81 文件哈希与真实导入来源已验证"
+        },
+        {
+          "text": "守门在 CI 生效",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M32-验收报告.md：托管 CI 守门及真实破坏性反例通过，附源码提交与运行链接"
+        },
+        {
+          "text": "全库可编译",
+          "kind": "probe",
+          "status": "done",
+          "basis": "py_compile gearmath/**/*.py：0 个错误"
+        },
+        {
+          "text": "通过量纲校核",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M32-验收报告.md：双系统输入/内核/注册表与全量测试门通过"
+        }
+      ]
+    },
+    {
+      "milestone": "M33",
+      "gate_items": 4,
+      "done": 2,
+      "partial": 2,
+      "open": 0,
+      "progress": 0.5,
+      "handoff_estimate": "partial",
+      "items": [
+        {
+          "text": "22 个证据系数中 ≥20 个改为公式",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M33-closure-current.md；output/m33/closure.json 逐项映射20/22，KA为输入、YST为标准常数"
+        },
+        {
+          "text": "ISO/TR 6336-30 全部示例逐系数复现（E4）",
+          "kind": "manual",
+          "status": "partial",
+          "basis": "docs/M33-验收报告.md：例1–4 数值验收、例5–8 全链；例7 HB→HV 待用户"
+        },
+        {
+          "text": "主链误差 ≤1%",
+          "kind": "manual",
+          "status": "partial",
+          "basis": "docs/接力交接-2026-10-30.md：几何门 2/6 明细待用户"
+        },
+        {
+          "text": "C001 新链重算并逐项解释与 M31 差异",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M33-closure-current.md；18项旧链收据对照，九次迭代重建与当前收敛结果差异已解释"
+        }
+      ]
+    },
+    {
+      "milestone": "M34",
+      "gate_items": 4,
+      "done": 3,
+      "partial": 1,
+      "open": 0,
+      "progress": 0.75,
+      "handoff_estimate": "partial",
+      "items": [
+        {
+          "text": "一个设计只有一个可编辑文档",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M34-closure.md；真源所有权/CAS/元数据token及导入、优化真源读取回归"
+        },
+        {
+          "text": "梯度与中心差分一致到 1e-6",
+          "kind": "manual",
+          "status": "done",
+          "basis": "output/m34/closure/closure.json：120个AD/FD比较，最差1.22e-8"
+        },
+        {
+          "text": "H2 旗舰结果一致且评估次数下降",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M34-closure.md；原始Stage0同域同排序，378216→9948次，不另加未规定强度门"
+        },
+        {
+          "text": "Claude Desktop / Code 实连可用",
+          "kind": "manual",
+          "status": "partial",
+          "basis": "真实Claude Code已连接MCP发现工具，模型HTTP403额度不足，尚无真实tools/call，不能关闭"
+        }
+      ]
+    },
+    {
+      "milestone": "M35",
+      "gate_items": 2,
+      "done": 1,
+      "partial": 0,
+      "open": 1,
+      "progress": 0.5,
+      "handoff_estimate": "partial",
+      "items": [
+        {
+          "text": "独立对标 ≥5 例（E5），误差 ≤1% 且可解释",
+          "kind": "probe",
+          "status": "done",
+          "basis": "data/kisssoft 案例文件 5 个（K01-spur.json, K02-helical.json, K03-premachining.json, K04-EV-stage1.json, K05-EV-stage2.json）；误差 ≤1% 与可解释性见 docs/M33-对拍契约.md（人工）"
+        },
+        {
+          "text": "经外部工艺人员审阅的变位斜齿制造图",
+          "kind": "manual",
+          "status": "open",
+          "basis": "docs/接力交接-2026-10-30.md 第2节 M35 缺口：外部工艺审阅"
+        }
+      ]
+    },
+    {
+      "milestone": "M36",
+      "gate_items": 3,
+      "done": 1,
+      "partial": 2,
+      "open": 0,
+      "progress": 0.3333333333333333,
+      "handoff_estimate": "open",
+      "items": [
+        {
+          "text": "C001 全系统（齿轮、轴、轴承、键）由同一张图校核",
+          "kind": "probe",
+          "status": "partial",
+          "basis": "design_check(C001) 子检查状态 {'gear_rating': 'pass', 'shaft': 'blocked', 'bearing': 'blocked', 'key': 'blocked'}"
+        },
+        {
+          "text": "系统优化结果与小规模全枚举一致",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/v017-system-optimization.md；output/m36/closure.json；显式齿轮/轴/轴承27组合独立全枚举对照，来源与代码哈希绑定"
+        },
+        {
+          "text": "三个旗舰与编辑用例回归一致",
+          "kind": "probe",
+          "status": "partial",
+          "basis": "gearmath/product/flagship_system.gate_probe：H2 系统级 blocked（{'shaft': 'blocked', 'bearing': 'blocked', 'key': 'blocked', 'gear_rating.stage1': 'blocked', 'gear_rating.stage2': 'blocked'}，模板缺项 93，unsupported 0）；W2W 系统级 blocked（{'shaft': 'blocked', 'bearing': 'blocked', 'key': 'blocked', 'gear_rating.stage1': 'blocked', 'gear_rating.stage2': 'blocked'}，模板缺项 62，unsupported 5）；P2 系统级 blocked（{'shaft': 'blocked', 'bearing': 'blocked', 'key': 'blocked', 'gear_rating.stage1': 'blocked', 'gear_rating.stage2': 'blocked'}，模板缺项 61，unsupported 5）；编辑用例 6/6 通过；Stage0 共同部分逐位一致 True；系统级缺项未补齐前保持 partial（不编造参数），见 docs/v017-system-regression.md"
+        }
+      ]
+    },
+    {
+      "milestone": "M37",
+      "gate_items": 4,
+      "done": 0,
+      "partial": 0,
+      "open": 4,
+      "progress": 0.0,
+      "handoff_estimate": "open",
+      "items": [
+        {
+          "text": "斜齿副峰值落在 Hertz 估算 ±15%",
+          "kind": "manual",
+          "status": "open",
+          "basis": "docs/接力交接-2026-10-30.md：L2/L3 未完成（L1 仅二维 Hertz penalty 冒烟）"
+        },
+        {
+          "text": "YFS FE/ISO ∈ [0.90, 1.10]",
+          "kind": "manual",
+          "status": "open",
+          "basis": "模块 B 原包缺失"
+        },
+        {
+          "text": "σH0 ∈ [0.92, 1.08]",
+          "kind": "manual",
+          "status": "open",
+          "basis": "L3 *CONTACT FILE 待用户"
+        },
+        {
+          "text": "优化器内环 → 最终 FE 复核闭环，代理误差 <3%",
+          "kind": "manual",
+          "status": "open",
+          "basis": "未开工"
+        }
+      ]
+    },
+    {
+      "milestone": "M38",
+      "gate_items": 4,
+      "done": 3,
+      "partial": 1,
+      "open": 0,
+      "progress": 0.75,
+      "handoff_estimate": "partial",
+      "items": [
+        {
+          "text": "凭空数字率为 0（金标评测）",
+          "kind": "manual",
+          "status": "partial",
+          "basis": "docs/M38-bench-closure.md；数字可追溯已达成（规则721/Terra681/Sol684 不可追溯 0），但验收门原文要求金标评测：bench v1 仍有 42 处 pending_engineer_label，工程师标注完成前保持 partial（v0.17 O 复核）"
+        },
+        {
+          "text": "三个旗舰需求端到端跑通",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M38-closure.md；原H2/W2W/P2显式需求→真实MCP编译→求解→复查；保留Stage0范围及W2W热失败"
+        },
+        {
+          "text": "新机 10 分钟内接通",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M38-closure.md；私有GitHub托管全新Windows VM、嵌入Python、实际MCP工具调用，详见receipt"
+        },
+        {
+          "text": "首轮多模型评测报告",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M38-bench-closure.md；真实terra/sol输出与原始收据、完整限制，无人工金标"
+        }
+      ]
+    },
+    {
+      "milestone": "M39",
+      "gate_items": 3,
+      "done": 2,
+      "partial": 1,
+      "open": 0,
+      "progress": 0.6666666666666666,
+      "handoff_estimate": "partial",
+      "items": [
+        {
+          "text": "高速齿轮可完成全失效模式校核",
+          "kind": "probe",
+          "status": "partial",
+          "basis": "design_check(K01-spur，代高速例) 子检查状态 {'gear_rating': 'blocked', 'scuffing': 'blocked', 'micropitting': 'blocked', 'thermal': 'blocked'}"
+        },
+        {
+          "text": "体积—中心距—安全系数三目标前沿",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M39-source-frontier-closure.md；同源12点有限域前沿，非全局最优"
+        },
+        {
+          "text": "公差下可行率报告",
+          "kind": "manual",
+          "status": "done",
+          "basis": "docs/M39-source-frontier-closure.md；每点3个显式公差情景，明确分母与blocked，不作概率外推"
+        }
+      ]
+    },
+    {
+      "milestone": "M40",
+      "gate_items": 3,
+      "done": 0,
+      "partial": 0,
+      "open": 3,
+      "progress": 0.0,
+      "handoff_estimate": null,
+      "items": [
+        {
+          "text": "行星至少 1 题完整校核 + 1 例独立对标",
+          "kind": "probe",
+          "status": "open",
+          "basis": "gearmath/gear 族模块：无"
+        },
+        {
+          "text": "蜗杆至少 1 题完整校核 + 1 例独立对标",
+          "kind": "probe",
+          "status": "open",
+          "basis": "gearmath/gear 族模块：无"
+        },
+        {
+          "text": "锥齿轮单独立项评估",
+          "kind": "manual",
+          "status": "open",
+          "basis": "未立项"
+        }
+      ]
+    }
+  ]
+}

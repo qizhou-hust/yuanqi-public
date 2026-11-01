@@ -1,0 +1,41 @@
+{
+  "review": "v019 independent scoped second pass",
+  "new_blocking_findings": [],
+  "fixed_findings": [
+    "Shared force oracle: corrupt production force now fails independent edit check",
+    "Whitespace-only physical provenance now blocks nearest proposal"
+  ],
+  "verified": [
+    "18 focused tests passed under python -I -S: review regressions, nitrided, DIN adapter, K02 composite, beam face",
+    "5 actual source-pipeline tests passed under python -X utf8 -I -S",
+    "Source-owned K02 diagnostic FR.build_model: SH1=1.1604280364899515, SF1=5.762067407588891",
+    "design_check gear_rating pass using matching kisssoft_chain:K02-helical system reference",
+    "Missing DIN3967 or either ISO6336 edition blocks evaluation",
+    "Mutated root_mm/root_um/intact=2 rejected by SourceError; RzF=41um yields out_of_domain",
+    "factor_variants has no duplicate Formula IDs",
+    "Visual local-source check: ISO2 PDF31 and ISO3 PDF39/40/41/48/49/51 match long-life endpoints, notch coefficient, roughness constants and NT/NV size-factor group",
+    "DIN adapter uses current d_i/root_mm, converts micrometre allowance by 0.001, rejects interior bins at +/-1e-9mm; midpoint and neighboring-boundary tests passed",
+    "Beam component is explicitly Euler-Bernoulli center slope times width plus externally supplied projected torsion; no full f_sh or KHbeta claim"
+  ],
+  "limitations": [
+    "Both-wheel selectors do not implement mixed-material per-wheel selection; documented limitation",
+    "Beam result is partial, with user-supplied torsion and explicit omitted effects; test is closed-form beam check, not ISO whole-method qualification",
+    "Hosted CI, full legacy suite, packaging and binary execution not performed in this review",
+    "DIN table transcription not independently re-audited from original PDF in this second pass; existing direct table API was used as reference",
+    "No independent commercial solver run executed; compact K02 fixture read as supplied evidence"
+  ],
+  "where_review_may_be_wrong": [
+    "Files were concurrently edited; hashes below identify reviewed end snapshot",
+    "Tests plus page spot-checks do not establish applicability to all material/geometry regimes",
+    "Manual negative experiments used a reused K01 system template with corrected source/family for gear-only check; full K02 system engineering remains outside scope"
+  ],
+  "sha256": {
+    "gearmath/gear/nitrided_factors.py": "e1b293f4695d9a9df79eafc872b6b78ff1c402a000ff5a60c80538bf08f1fcc9",
+    "gearmath/gear/din3967_adapter.py": "d296093af5c2e6b5e5582e89bada5e99d1918baccf95eccb7ecf3643d0858d20",
+    "gearmath/gear/factor_recompute.py": "ea076968400979025b6180df10f6669743d867222e528ede484aeb2c548e7c3a",
+    "gearmath/gear/factor_methods.py": "97a85171bceff611fc9ff1b6490d5d2da7416506880fb9c8a3145ccd6ad7e30e",
+    "gearmath/gear/beam_face.py": "cae85dae0c9f2140cac29ca1bff922f58e36af3923482eec08ca520d54753bfb",
+    "gearmath/product/system_optimize.py": "e1e0e3a35477f00100b53061c810a4194735ad98c6ea97d05514f84043dc85bd",
+    "gearmath/gear/flagship_reference.py": "076127c6dd4df5fba47c50af3d31ea5fea07b8cc55ea2433fd767df13c39a550"
+  }
+}

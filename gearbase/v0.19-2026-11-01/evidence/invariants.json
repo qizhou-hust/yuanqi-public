@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "original_81_files_unchanged": true,
+  "original_file_count": 81,
+  "kernel_python_files_unchanged": 18,
+  "engineer_gold_labels_unchanged": true,
+  "input_package": {
+    "direct_sha256": "12591ca63dce84f3ca094ac83fb5e2048476464c4e037927e888d21d9fc4bdf5",
+    "decoded_sha256": "e4865149bd17de7795a5bdafd7ee3e39fc717372688da200699039186edfc27c",
+    "expected_sha256": "e4865149bd17de7795a5bdafd7ee3e39fc717372688da200699039186edfc27c",
+    "crc": "pass",
+    "decoded_bytes": 3546127
+  }
+}

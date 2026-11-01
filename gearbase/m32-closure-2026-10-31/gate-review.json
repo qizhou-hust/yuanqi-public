@@ -1,0 +1,214 @@
+{
+  "schema": "m32-independent-final-gate-review/1",
+  "functional_gate_decision": "accepted",
+  "ci_run_id": 41262897242,
+  "ci_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41262897242",
+  "validated_head_sha": "3e8e4469d149e7f54c0d66d2ccfb58860ecde6c6",
+  "run_status": "completed",
+  "run_conclusion": "success",
+  "jobs": [
+    {
+      "name": "legacy",
+      "conclusion": "success",
+      "head_sha": "3e8e4469d149e7f54c0d66d2ccfb58860ecde6c6"
+    },
+    {
+      "name": "core (windows-latest)",
+      "conclusion": "success",
+      "head_sha": "3e8e4469d149e7f54c0d66d2ccfb58860ecde6c6"
+    },
+    {
+      "name": "core (ubuntu-latest)",
+      "conclusion": "success",
+      "head_sha": "3e8e4469d149e7f54c0d66d2ccfb58860ecde6c6"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "m32-legacy-ubuntu",
+      "recorded_digest": "sha256:5733c940e92d49b5cdbcb187358dc0501000f91bc8ca02cef700fc51e317ebda",
+      "actual_digest": "sha256:5733c940e92d49b5cdbcb187358dc0501000f91bc8ca02cef700fc51e317ebda",
+      "digest_matches": true,
+      "extraction_mismatches": []
+    },
+    {
+      "name": "m32-core-ubuntu-latest",
+      "recorded_digest": "sha256:b9a06e117355d26137fc07a2383c476ea822909d55d6cf768b2d228ae5d55595",
+      "actual_digest": "sha256:b9a06e117355d26137fc07a2383c476ea822909d55d6cf768b2d228ae5d55595",
+      "digest_matches": true,
+      "extraction_mismatches": []
+    },
+    {
+      "name": "m32-core-windows-latest",
+      "recorded_digest": "sha256:ef344d5aee6e2e0a407cbabe098bc4b7d79b847b5e6c15b4777ec16e6cab5666",
+      "actual_digest": "sha256:ef344d5aee6e2e0a407cbabe098bc4b7d79b847b5e6c15b4777ec16e6cab5666",
+      "digest_matches": true,
+      "extraction_mismatches": []
+    }
+  ],
+  "legacy": {
+    "module_count": 73,
+    "counts": {
+      "collected": 678,
+      "passed": 678,
+      "skipped": 0,
+      "failed": 0,
+      "errors": 0
+    },
+    "original_source_files": 81,
+    "independent_contract_hash_mismatches": [],
+    "invalid_provenance": [],
+    "alias_process_count": 5,
+    "numeric_profile_events": [
+      {
+        "event": "numeric_profile",
+        "pid": 2327,
+        "profile_id": "binary64-ordered-fma-v1",
+        "backend": "stdlib.Fraction-single-rounding",
+        "kernel_file": "/tmp/m31-regression-r1iw236j/src/gearmath/kernel/floating.py",
+        "kernel_callable": "gearmath.kernel.floating.norm_fma",
+        "host_executable": "/home/runner/work/yuanqi-private/yuanqi-private/engineering/gearbase-m32/.m32-ci/compat/bin/python",
+        "numpy_version": "2.3.5",
+        "api_domain": "native float64 ndarray, 1D, axis=None, ord=None or 2"
+      }
+    ],
+    "mandatory_numpy_api_tests": 4
+  },
+  "cores": {
+    "m32-core-ubuntu-latest": {
+      "all_gates_passed": true,
+      "prototype_tests": 21,
+      "dimensional_tests": 71,
+      "core_tests_run": 1183,
+      "optional_core_tests_skipped": 17,
+      "compile_files": 862,
+      "compile_failures": [],
+      "architecture_report": {
+        "schema": "gearbase.architecture-gate/1",
+        "passed": true,
+        "files_checked": 116,
+        "l2_owners": [
+          "gear",
+          "system"
+        ],
+        "violations": []
+      },
+      "negative_controls": [
+        {
+          "case": "geometry",
+          "exit_code": 1,
+          "passed": true
+        },
+        {
+          "case": "strength",
+          "exit_code": 1,
+          "passed": true
+        },
+        {
+          "case": "optimizer",
+          "exit_code": 1,
+          "passed": true
+        },
+        {
+          "case": "generic",
+          "exit_code": 0,
+          "passed": true
+        }
+      ]
+    },
+    "m32-core-windows-latest": {
+      "all_gates_passed": true,
+      "prototype_tests": 21,
+      "dimensional_tests": 71,
+      "core_tests_run": 1183,
+      "optional_core_tests_skipped": 29,
+      "compile_files": 862,
+      "compile_failures": [],
+      "architecture_report": {
+        "schema": "gearbase.architecture-gate/1",
+        "passed": true,
+        "files_checked": 116,
+        "l2_owners": [
+          "gear",
+          "system"
+        ],
+        "violations": []
+      },
+      "negative_controls": [
+        {
+          "case": "geometry",
+          "exit_code": 1,
+          "passed": true
+        },
+        {
+          "case": "strength",
+          "exit_code": 1,
+          "passed": true
+        },
+        {
+          "case": "optimizer",
+          "exit_code": 1,
+          "passed": true
+        },
+        {
+          "case": "generic",
+          "exit_code": 0,
+          "passed": true
+        }
+      ]
+    }
+  },
+  "numerical_environment": {
+    "physical_cpu": "Intel Xeon Platinum 8573C",
+    "actual_NumPy_BLAS_core": "Haswell",
+    "OpenBLAS_version": "0.3.30",
+    "python": "3.12.15",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "glibc": "2.39",
+    "reviewer_ruling": "Forced actual Haswell reproduces the experimentally isolated failing numerical-dispatch factor and is accepted in lieu of physical AMD selection; original M32 gate has no CPU-vendor requirement. Do not claim a final full suite ran on physical AMD."
+  },
+  "blocking_findings": [],
+  "final_delivery_binding": "Satisfied: independent2618 functional-row scan plus2619 delivery snapshot scan and Git parent/path diff; only explicit closeout metadata changed.",
+  "limitations": [
+    "Core1183 includes optional skips:17 Linux,29 Windows; only the frozen73-module legacy gate is proven zero-skip.",
+    "No unrestricted cross-platform bit-reproducibility claim; numerical compatibility profile is explicit.",
+    "This review validates locally saved raw CI artifacts against recorded GitHub artifact digests and run/job metadata; no independent full rerun was performed."
+  ],
+  "delivery_closeout": {
+    "decision": "accepted",
+    "delivery_commit": "7b26819c559a332977e095c716d86b4ec006d6a7",
+    "parent_functional_commit": "3e8e4469d149e7f54c0d66d2ccfb58860ecde6c6",
+    "parent_verified_with_git": true,
+    "original_functional_rows_independently_rehashed": 2618,
+    "original_paths_missing": [],
+    "existing_product_paths_changed": [
+      "gearmath/tools/milestones.py",
+      "PACKAGE-CONTENTS.sha256"
+    ],
+    "added_product_paths": [
+      "docs/M32-验收报告.md"
+    ],
+    "final_product_files": 2619,
+    "delivery_snapshot_rows_independently_rehashed": 2619,
+    "delivery_snapshot_mismatches": [],
+    "extra_repository_metadata_change": "engineering/gearbase-m32-SNAPSHOT.json (updated source inventory outside product tree)",
+    "change_semantics": "M32 status/basis strings only; acceptance report; package checksum and publisher source inventory. No kernel/math/compat/runtime/test/fixture/workflow behavior changes.",
+    "closeout_compile": {
+      "passed": true,
+      "files_checked": 862,
+      "failures": [],
+      "gate": "compile",
+      "seconds": 1.656
+    },
+    "closeout_package_tests": {
+      "count": 10,
+      "result": "OK",
+      "seconds": 0.974
+    },
+    "milestone_report": "M32 done5/5 corroborated by accepted original functional gates",
+    "full_rerun_required": false,
+    "review_files_frozen_after_this_update": true
+  },
+  "milestone_closure_decision": "M32 accepted and closed for delivery7b26819c559a332977e095c716d86b4ec006d6a7 with functional CI evidence at parent3e8e4469d149e7f54c0d66d2ccfb58860ecde6c6."
+}

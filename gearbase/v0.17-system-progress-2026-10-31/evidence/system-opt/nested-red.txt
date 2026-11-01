@@ -1,0 +1,28 @@
+........................................................................ [ 67%]
+..............................F
+================================== FAILURES ===================================
+_____ test_bearing_nested_required_fields_block_even_under_pruning[rows] ______
+
+field = 'rows'
+
+    @pytest.mark.parametrize('field',['rows','alpha_deg','kappa','ec','C_u'])
+    def test_bearing_nested_required_fields_block_even_under_pruning(field):
+        from gearmath.product.system_optimize import optimize
+        d,s,p=probe();p['gear']=p['gear'][:1]
+        b=p['bearing'][0]['bearings']['B_S0_0']
+        if field in ('rows','alpha_deg'):
+            b['bearing_kind']=fixture.L('radial_roller','-')
+            b['xy']=fixture.L({'rows':1,'alpha_deg':0},'-');del b['xy']['value'][field]
+        else:
+            b['a_ISO_inputs']=fixture.L({'kappa':1,'ec':1,'C_u':100},'-');del b['a_ISO_inputs']['value'][field]
+        r=optimize(d,s,p)
+>       assert r['status']=='blocked' and field in r['errors'][0]['message']
+E       AssertionError: assert ('completed' == 'blocked'
+E         - blocked
+E         + completed)
+
+tests\test_v017_system_optimize.py:236: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_v017_system_optimize.py::test_bearing_nested_required_fields_block_even_under_pruning[rows]
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 102 passed in 3.13s

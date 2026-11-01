@@ -1,0 +1,37 @@
+{
+  "schema": "gearbase.m36-gate2/1",
+  "system_optimization_passed": true,
+  "implementation_sha256": "80df5da009b2a31ddda0a2cdbbbf829cdd025836e801b764aa6c5f2276504ca0",
+  "input_file": "data/system-optimization/v017-capability-probe.json",
+  "input_file_sha256": "8dbf89d48f9dd2f20fcf229db47a8b714e119e9e4d75d4a48a7afc70ea784ec5",
+  "full_report_sha256": "6608a0f2ef08dd6e6bac8ef0c2fd00ff0fbc9c84e413283dd9ce9281995c7d32",
+  "full_reference_combinations": 27,
+  "feasible_count": 8,
+  "stats": {
+    "cartesian_combinations": 27,
+    "visited_combinations": 12,
+    "pruned_combinations": 15,
+    "design_check_calls": 17,
+    "gear_evaluations": 3,
+    "shaft_key_evaluations": 6,
+    "bearing_evaluations": 8,
+    "objective_evaluations": 8,
+    "cache_hits": 4
+  },
+  "best": {
+    "ids": [
+      "original",
+      "economy",
+      "original"
+    ],
+    "objective": 206968.12401849555,
+    "objective_unit": "mm^3"
+  },
+  "gate1": "partial_real_C001_inputs_missing",
+  "gate3": "partial_Stage0_and_static_edits_only",
+  "limits": [
+    "Finite authored cylindrical demo only; real C001 source inputs remain incomplete.",
+    "Objective excludes bearing envelopes, keys, housings and feedback of shaft deflection into KHbeta.",
+    "Original Stage0 regressions are separate from full-system worm/planet ratings; M40 remains frozen."
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "scope": "M36 gate2 finite cylindrical capability probe only",
+  "status": "completed",
+  "complete_feasible_ranking_equal": true,
+  "first_optimum_equal": true,
+  "certificate_files": [
+    {
+      "evidence": "E",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "K_Hbeta",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Rz_H_1",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "Rz_H_2",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "Y_B",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_DT",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_NT_1",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_NT_2",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_RrelT_1",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_RrelT_2",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_ST",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_X",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_drelT_1",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Y_drelT_2",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Z_NT_1",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Z_NT_2",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Z_W",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "Z_X",
+      "ref": "data/m31/golden/C001/gear-rating.json",
+      "actual_sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+    },
+    {
+      "evidence": "nu",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "nu_40",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "rho_1",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "rho_2",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    },
+    {
+      "evidence": "sigma_Hlim_surface",
+      "ref": "data/m31/golden/C001/derived-candidate.json",
+      "actual_sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+    }
+  ],
+  "stats": {
+    "cartesian_combinations": 27,
+    "visited_combinations": 12,
+    "pruned_combinations": 15,
+    "design_check_calls": 17,
+    "gear_evaluations": 3,
+    "shaft_key_evaluations": 6,
+    "bearing_evaluations": 8,
+    "objective_evaluations": 8,
+    "cache_hits": 4
+  },
+  "feasible_count": 8,
+  "best": {
+    "ids": [
+      "original",
+      "economy",
+      "original"
+    ],
+    "objective": 206968.12401849555
+  },
+  "elapsed_staged_seconds": 0.24296030006371439,
+  "elapsed_reference_seconds": 0.35883700009435415,
+  "timing_note": "Observed single run; no speedup claim. Every reference tuple freshly invokes all four scopes; every staged bearing scope freshly resolves shaft loads. Exact cache local to one run.",
+  "source_sha256": {
+    "gearmath/product/system_optimize.py": "a1df426b4b60658a8f1e28599c42dc16d285d17773097ae43d6ad068a464917d",
+    "gearmath/system/system_optimize.py": "b29be344ca370d2c1c3468fcd2042566aed437faa9346dca61704661b72a7273",
+    "tests/test_v017_system_optimize.py": "50de33eb2bf409c8898db6e28adb03cfde8a279f626d972507710991ae891901",
+    "docs/v017-system-optimization.md": "b9f7bb406aceb54ab6726423e203d25395415776a8dcb0223982cbf13aab3b30",
+    "tests/test_sys_design_check.py": "5c9ab05a47b81f1d255ad38fb8b7d49e20fccca3f5adde1e574952d0123d20a7",
+    "data/source/C001.factors.math-source.json": "6b80381213ed61e49215d83c7d7ca328934d348ebb1dcc775ab08e0aba63cf2f",
+    "data/system/C001.system-input.json": "f3e864a786997f9effe86a79e50f9fd322d543c74fdf8f6822dd835ff1b045bc"
+  },
+  "focused_and_legacy_tests": "56 unittest methods passed dependency-free:17 optimizer methods/115 assertion cases plus39 original methods",
+  "limitations": [
+    "Authored finite cylindrical capability probe only; not real C001 A6 completion.",
+    "Held evidence is unchanged across geometry; no external evidence promotion.",
+    "Objective is gear blank + shaft volume; bearing envelope/cost excluded.",
+    "No worm/planetary full-system rating; M40 remains frozen."
+  ]
+}

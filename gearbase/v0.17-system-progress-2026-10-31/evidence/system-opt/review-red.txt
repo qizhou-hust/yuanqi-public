@@ -1,0 +1,26 @@
+..........F
+================================== FAILURES ===================================
+_____ test_omitted_requirements_cannot_hide_in_pruned_branch[bearing-C_r] _____
+
+component = 'bearing', field = 'C_r'
+
+    @pytest.mark.parametrize('component,field', [('bearing','C_r'),('bearing','required_life_h'),('shaft','x_A'),('static','sigma_bFK'),('key','Re_shaft')])
+    def test_omitted_requirements_cannot_hide_in_pruned_branch(component,field):
+        from gearmath.product.system_optimize import optimize
+        d,s,p=probe()
+        p['gear']=p['gear'][:1]  # known failed gear: all descendants would be pruned
+        if component=='bearing': del p['bearing'][0]['bearings']['B_S0_0'][field]
+        if component=='shaft': del p['shaft'][0]['shafts'][0][field]
+        if component=='static': del p['shaft'][0]['shafts'][0]['sections'][0]['static'][field]
+        if component=='key': del p['shaft'][0]['keys'][0][field]
+        r=optimize(d,s,p)
+>       assert r['status']=='blocked' and r['errors'] and r['best'] is None
+E       AssertionError: assert ('completed' == 'blocked'
+E         - blocked
+E         + completed)
+
+tests\test_v017_system_optimize.py:144: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_v017_system_optimize.py::test_omitted_requirements_cannot_hide_in_pruned_branch[bearing-C_r]
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 10 passed in 1.67s

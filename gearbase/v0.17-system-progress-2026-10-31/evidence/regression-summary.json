@@ -1,0 +1,7 @@
+{
+  "M36_gate2": "closed_current_finite_probe",
+  "M36_gate3": "partial_original_Stage0_and_static_edits_only",
+  "M38": "partial3of4",
+  "M39_full_modes": "partial_requires_actual_inputs",
+  "source_sha256": "80df5da009b2a31ddda0a2cdbbbf829cdd025836e801b764aa6c5f2276504ca0"
+}

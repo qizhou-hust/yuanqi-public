@@ -1,0 +1,23 @@
+...................F
+================================== FAILURES ===================================
+_ test_every_required_load_field_is_blocked_even_when_gear_pruned[mesh-F_tw] __
+
+kind = 'mesh', field = 'F_tw'
+
+    @pytest.mark.parametrize('kind,field',[(kind,key) for kind,row in LOAD_RECORDS.items() for key in row])
+    def test_every_required_load_field_is_blocked_even_when_gear_pruned(kind,field):
+        from gearmath.product.system_optimize import optimize
+        d,s,p=probe(); p['gear']=p['gear'][:1]
+        row=copy.deepcopy(LOAD_RECORDS[kind]);del row[field]
+        p['shaft'][0]['shafts'][0]['loads']=[row]
+        r=optimize(d,s,p)
+>       assert r['status']=='blocked' and r['errors']
+E       AssertionError: assert ('completed' == 'blocked'
+E         - blocked
+E         + completed)
+
+tests\test_v017_system_optimize.py:169: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_v017_system_optimize.py::test_every_required_load_field_is_blocked_even_when_gear_pruned[mesh-F_tw]
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 19 passed in 1.86s

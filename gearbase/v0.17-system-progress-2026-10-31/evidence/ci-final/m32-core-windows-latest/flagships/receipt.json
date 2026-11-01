@@ -1,0 +1,96 @@
+{
+  "schema": "gearbase.m38-flagship-mcp/1",
+  "started_at": "2026-11-01T06:12:06.589247+00:00",
+  "client": "deterministic stdio protocol client; not Claude",
+  "scope": "original Stage0 only",
+  "engineering_accepted": false,
+  "cases": [
+    {
+      "family": "H2",
+      "input_file_sha256": "86883650922342a117c90bae2f2a930a7cd09e7ed084f6de911220cf834fc355",
+      "requirement_sha256": "0ff54352c385800f77caf35b3ebe765edf34dfc409275aac2ca590ccfe40ff66",
+      "status": "completed_stage0",
+      "outcome": "candidate_pending_human_confirmation",
+      "verification": {
+        "ok": true,
+        "kind": "fresh_sampled_domain_membership",
+        "scope": "stage0_sampled_geometry_only"
+      },
+      "engineering_accepted": false
+    },
+    {
+      "family": "W2W",
+      "input_file_sha256": "f1e1b6e70dc9dad4d3f3b1b198bf28b470e1b3dddc39a20b6e6bd365721c0a78",
+      "requirement_sha256": "3b5ff6625650177194fe037cc81cf227cb7c239d2b582ca83e02936aeb81f4e8",
+      "status": "completed_stage0",
+      "outcome": "candidate_requires_changes",
+      "verification": {
+        "ok": true,
+        "scope": "stage0",
+        "unsupported_rating": [
+          "strength",
+          "wear",
+          "scuffing",
+          "bearing",
+          "shaft"
+        ]
+      },
+      "engineering_accepted": false
+    },
+    {
+      "family": "P2",
+      "input_file_sha256": "47e7011e0984e306a9ab8183fc242bd34b23d30e754697d8162d27063dacbc15",
+      "requirement_sha256": "5fbe107c6efd44174b33be65ea40a9ffc91f0bc81d3a1b241c09e5fe8faa8ebc",
+      "status": "completed_stage0",
+      "outcome": "candidate_pending_human_confirmation",
+      "verification": {
+        "ok": true,
+        "issues": [],
+        "scope": "stage0_integer_geometry_only",
+        "rank_verified": false,
+        "tie_multiplicity_verified": false,
+        "strength_status": "not_implemented"
+      },
+      "engineering_accepted": false
+    }
+  ],
+  "initialize": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "tools": {},
+      "resources": {},
+      "prompts": {}
+    },
+    "serverInfo": {
+      "name": "gearmath-prototype",
+      "version": "0.5",
+      "persistence": {
+        "mode": "in_memory",
+        "durable": false,
+        "note": "文件存储：重启后恢复；内存：进程结束即丢失"
+      }
+    }
+  },
+  "tool_names": [
+    "gear_list_formulas",
+    "gear_list_inputs",
+    "gear_rate",
+    "gear_explain",
+    "gear_sensitivity",
+    "gear_get_design",
+    "gear_preview_edit",
+    "gear_commit",
+    "registry_lookup",
+    "list_nlp_templates",
+    "optimize_nlp",
+    "requirement_compile",
+    "explain_infeasible",
+    "optimize_declared",
+    "design_check",
+    "flagship_workflow"
+  ],
+  "passed": true,
+  "completed_at": "2026-11-01T06:12:06.904815+00:00",
+  "elapsed_seconds": 0.3129999999999882,
+  "server_exit_code": 0
+}

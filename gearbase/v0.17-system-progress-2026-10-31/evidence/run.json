@@ -1,0 +1,15 @@
+{
+  "schema": "gearbase.v017-delivery-run/1",
+  "version": "0.17",
+  "headless": true,
+  "mouse_used": false,
+  "input_package_sha256": "04650fffa012c6e0a5a91038c960733352c9b4b5a118ddc6b0e14e7db28f7094",
+  "ci_commit": "f1eda618725c5e789569648d18e2ee6459d73784",
+  "ci_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41279541808",
+  "new_milestone_gate": "M36 gate2",
+  "new_whole_milestone_closed": false,
+  "M38": "partial3of4; independent engineer gold still required",
+  "Claude_client": "deferred_by_user; no new attempt",
+  "new_KISSsoft_run": false,
+  "FEA": "actual synthetic CPE6 patch only; no gear FEA verdict"
+}

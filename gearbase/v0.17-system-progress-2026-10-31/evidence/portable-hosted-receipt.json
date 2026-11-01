@@ -1,0 +1,38 @@
+{
+  "started_utc": "2026-11-01T06:07:58.427056+00:00",
+  "host": "win32",
+  "steps": [
+    {
+      "name": "download_verify",
+      "started_utc": "2026-11-01T06:07:58.427056+00:00",
+      "ended_utc": "2026-11-01T06:07:58.916152+00:00",
+      "elapsed_seconds": 0.485
+    },
+    {
+      "name": "build",
+      "started_utc": "2026-11-01T06:07:58.918172+00:00",
+      "ended_utc": "2026-11-01T06:07:59.960519+00:00",
+      "elapsed_seconds": 1.032
+    },
+    {
+      "name": "doctor",
+      "started_utc": "2026-11-01T06:07:59.962546+00:00",
+      "ended_utc": "2026-11-01T06:08:01.335052+00:00",
+      "elapsed_seconds": 1.375
+    },
+    {
+      "name": "mcp_stdio",
+      "started_utc": "2026-11-01T06:08:01.335052+00:00",
+      "ended_utc": "2026-11-01T06:08:01.490932+00:00",
+      "elapsed_seconds": 0.156
+    }
+  ],
+  "limit_seconds": 600,
+  "client": "MCP stdio test client, not Claude",
+  "source_url": "https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip",
+  "expected_sha256": "4acbed6dd1c744b0376e3b1cf57ce906f9dc9e95e68824584c8099a63025a3c3",
+  "ok": true,
+  "actual_sha256": "4acbed6dd1c744b0376e3b1cf57ce906f9dc9e95e68824584c8099a63025a3c3",
+  "ended_utc": "2026-11-01T06:08:01.490932+00:00",
+  "elapsed_seconds": 3.063
+}

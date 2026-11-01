@@ -1,0 +1,5 @@
+# v0.17 drivetrain backend
+
+The product shaft and bearing checks use the canonical `drivetrain_check` static compatibility entry points. These delegate to the existing two-support equilibrium solver, section checks and ISO 281 life calculation without inventing elastic properties. The product context caches each shaft model within one check call, including for bearing-only scope; a new call resolves inputs and solves afresh. Explicit bearing loads remain supported. The existing sourced system-input format and numerical results are unchanged.
+
+The separate `drivetrain_check.check(spec=...)` accepts the complete explicit beam/DIN 743 specification, including E and G. The authored demo in the tests exercises that route; its shaft geometry and materials are demonstration values and are not C001 real-world inputs. This richer route is not exposed through the product system-input schema in this change. Deflection, beam properties, and a full drivetrain rating must not be inferred from the compatibility route.

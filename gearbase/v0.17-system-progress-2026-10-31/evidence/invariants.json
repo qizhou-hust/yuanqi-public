@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "original_81_files_unchanged": true,
+  "kernel_python_files_unchanged": 18,
+  "input_package": {
+    "input": "base64 attachment decoded directly to binary; original direct ZIP hash mismatch preserved",
+    "expected_sha256": "04650fffa012c6e0a5a91038c960733352c9b4b5a118ddc6b0e14e7db28f7094",
+    "decoded_sha256": "04650fffa012c6e0a5a91038c960733352c9b4b5a118ddc6b0e14e7db28f7094",
+    "decoded_bytes": 13993580,
+    "crc": "pass",
+    "entries": 11
+  },
+  "gold_labels_unchanged": true
+}

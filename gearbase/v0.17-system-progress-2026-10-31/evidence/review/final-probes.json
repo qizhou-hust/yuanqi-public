@@ -1,0 +1,142 @@
+{
+  "time_utc": "2026-11-01T05:52:06.319602+00:00",
+  "checks": {
+    "H76": {
+      "actual": 0.3,
+      "expected": 0.3,
+      "pass": true
+    },
+    "H72": {
+      "actual": 0.7333333333333333,
+      "expected": 0.7333333333333333,
+      "pass": true
+    },
+    "H57": {
+      "actual": 1.0,
+      "expected": 1.0,
+      "pass": true
+    },
+    "missing_C_r": {
+      "status": "blocked",
+      "pass": true
+    },
+    "missing_F_tw": {
+      "status": "blocked",
+      "pass": true
+    },
+    "bad_expected_certificate_False": {
+      "status": "blocked",
+      "design_check_calls": 0,
+      "pass": true
+    },
+    "bad_expected_certificate_True": {
+      "status": "blocked",
+      "design_check_calls": 0,
+      "pass": true
+    },
+    "changed_actual_certificate_bytes": {
+      "status": "blocked",
+      "design_check_calls": 0,
+      "pass": true
+    },
+    "thermal_explicit_null_method": {
+      "status": "blocked",
+      "pass": true
+    },
+    "independent_full_enumeration": {
+      "pass": true,
+      "count": 27,
+      "feasible": [
+        {
+          "ids": [
+            "original",
+            "economy",
+            "original"
+          ],
+          "objective": 206968.12401849555
+        },
+        {
+          "ids": [
+            "original",
+            "economy",
+            "tie"
+          ],
+          "objective": 206968.12401849555
+        },
+        {
+          "ids": [
+            "original",
+            "strong",
+            "original"
+          ],
+          "objective": 296032.2757477662
+        },
+        {
+          "ids": [
+            "original",
+            "strong",
+            "tie"
+          ],
+          "objective": 296032.2757477662
+        },
+        {
+          "ids": [
+            "large",
+            "economy",
+            "original"
+          ],
+          "objective": 296880.50576423545
+        },
+        {
+          "ids": [
+            "large",
+            "economy",
+            "tie"
+          ],
+          "objective": 296880.50576423545
+        },
+        {
+          "ids": [
+            "large",
+            "strong",
+            "original"
+          ],
+          "objective": 385944.6574935061
+        },
+        {
+          "ids": [
+            "large",
+            "strong",
+            "tie"
+          ],
+          "objective": 385944.6574935061
+        }
+      ],
+      "counts": {
+        "pass": 8,
+        "fail": 19,
+        "blocked": 0
+      },
+      "search_stats": {
+        "cartesian_combinations": 27,
+        "visited_combinations": 12,
+        "pruned_combinations": 15,
+        "design_check_calls": 17,
+        "gear_evaluations": 3,
+        "shaft_key_evaluations": 6,
+        "bearing_evaluations": 8,
+        "objective_evaluations": 8,
+        "cache_hits": 4
+      },
+      "inputs_unchanged": true
+    }
+  },
+  "source_sha256": {
+    "gearmath/gear/micropitting_helical.py": "5ef99a591dc8e5e5bcde1fe36d69e874abec5df020e6b17fafbedb423981015f",
+    "gearmath/system/thermal_balance.py": "b09ad2a661943ef9c648802079d708c1b145f84cdb30659813b63d0b5648ea60",
+    "gearmath/system/drivetrain_check.py": "f99a1d795f2f1a98604028dded84f0bc055486886c5b568e5a503d51fd732bc0",
+    "gearmath/system/system_optimize.py": "b29be344ca370d2c1c3468fcd2042566aed437faa9346dca61704661b72a7273",
+    "gearmath/product/system_optimize.py": "a1df426b4b60658a8f1e28599c42dc16d285d17773097ae43d6ad068a464917d",
+    "gearmath/product/design_check.py": "75ef275aa3a1d90e542184e1ad6e3ba4ec3ab5d629e4a067b125ee2a86bf614a"
+  }
+}

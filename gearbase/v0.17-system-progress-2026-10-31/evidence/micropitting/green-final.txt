@@ -1,0 +1,9 @@
+test_buttressing_and_invalid_inputs (tests.test_v017_helical_xy.TestHelicalXY.test_buttressing_and_invalid_inputs) ... ok
+test_interpolation_and_profile_boundaries (tests.test_v017_helical_xy.TestHelicalXY.test_interpolation_and_profile_boundaries) ... ok
+test_k02_seven_points_and_unloaded_endpoints (tests.test_v017_helical_xy.TestHelicalXY.test_k02_seven_points_and_unloaded_endpoints) ... ok
+test_printed_one_end_high_overlap_coefficients_and_boundaries (tests.test_v017_helical_xy.TestHelicalXY.test_printed_one_end_high_overlap_coefficients_and_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK

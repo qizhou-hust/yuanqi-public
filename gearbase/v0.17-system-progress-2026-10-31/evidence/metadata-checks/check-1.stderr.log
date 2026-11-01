@@ -1,0 +1,30 @@
+test_data_driven_model_equals_handwritten_one (tests.test_package.TestDataDrivenC001.test_data_driven_model_equals_handwritten_one) ... ok
+test_hardcoded_reference_equals_receipt_file (tests.test_package.TestDataDrivenC001.test_hardcoded_reference_equals_receipt_file) ... ok
+test_matches_receipt (tests.test_package.TestDataDrivenC001.test_matches_receipt) ... ok
+test_receipt_geometry_cross_check (tests.test_package.TestDataDrivenC001.test_receipt_geometry_cross_check) ... ok
+test_core_never_imports_legacy (tests.test_package.TestIsolation.test_core_never_imports_legacy) ... ok
+test_kernel_knows_no_gears (tests.test_package.TestIsolation.test_kernel_knows_no_gears) ... ok
+test_every_data_file_is_registered (tests.test_package.TestManifest.test_every_data_file_is_registered)
+data/ 下每个文件都登记在 MANIFEST（含来源 origin 与 sha256），新增数据文件不会漏过哈希校验。 ... ok
+test_every_file_matches_its_hash (tests.test_package.TestManifest.test_every_file_matches_its_hash) ... ok
+test_legacy_rows_have_a_migration_action (tests.test_package.TestManifest.test_legacy_rows_have_a_migration_action) ... ok
+test_package_contents_and_manifest_consistent (tests.test_package.TestPackageContents.test_package_contents_and_manifest_consistent)
+PACKAGE-CONTENTS.sha256 与 MANIFEST 同当前文件一致（不一致时运行 python3 -m gearmath.tools.package_hashes 重生成）； ... ok
+test_individual_checks (tests.test_m38_ai_native.TestDoctor.test_individual_checks) ... ok
+test_launcher_script_and_guide_exist (tests.test_m38_ai_native.TestDoctor.test_launcher_script_and_guide_exist) ... ok
+test_script_form_with_isolated_mode (tests.test_m38_ai_native.TestDoctor.test_script_form_with_isolated_mode) ... ok
+test_zero_dep_check_detects_third_party_import (tests.test_m38_ai_native.TestDoctor.test_zero_dep_check_detects_third_party_import) ... ok
+test_collect_and_render (tests.test_sys_design_check.TestMilestones.test_collect_and_render) ... ok
+test_block_and_edited_input (tests.test_v017_fea_prepare.PrepareTests.test_block_and_edited_input) ... ok
+test_bundled_modules_preserve_zero_dependency_guard (tests.test_v017_fea_prepare.PrepareTests.test_bundled_modules_preserve_zero_dependency_guard) ... ok
+test_missing_face_and_unregistered_type (tests.test_v017_fea_prepare.PrepareTests.test_missing_face_and_unregistered_type) ... ok
+test_optin_identity_and_unknowns (tests.test_v017_fea_prepare.PrepareTests.test_optin_identity_and_unknowns) ... ok
+test_serialized_contact_manifest_roundtrip (tests.test_v017_fea_prepare.PrepareTests.test_serialized_contact_manifest_roundtrip) ... ok
+test_equilibrium_is_actual_temperature_check (tests.test_v017_thermal_integration.TestThermalProduct.test_equilibrium_is_actual_temperature_check) ... ok
+test_fail_closed_routes_units_and_missing_limits (tests.test_v017_thermal_integration.TestThermalProduct.test_fail_closed_routes_units_and_missing_limits) ... ok
+test_legacy_route_remains_unchanged (tests.test_v017_thermal_integration.TestThermalProduct.test_legacy_route_remains_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 4.342s
+
+OK

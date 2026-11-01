@@ -1,0 +1,14 @@
+test_printed_one_end_high_overlap_coefficients_and_boundaries (tests.test_v017_helical_xy.TestHelicalXY.test_printed_one_end_high_overlap_coefficients_and_boundaries) ... FAIL
+
+======================================================================
+FAIL: test_printed_one_end_high_overlap_coefficients_and_boundaries (tests.test_v017_helical_xy.TestHelicalXY.test_printed_one_end_high_overlap_coefficients_and_boundaries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\my_Works\Gears\gearbase-v017-work\tests\test_v017_helical_xy.py", line 30, in test_printed_one_end_high_overlap_coefficients_and_boundaries
+    self.assertAlmostEqual(H.X_Y_helical(g_Y=5.5,**{**p,'profile':'modified_pinion'}),weak*.5)
+AssertionError: 0.36666666666666664 != 0.3 within 7 places (0.06666666666666665 difference)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

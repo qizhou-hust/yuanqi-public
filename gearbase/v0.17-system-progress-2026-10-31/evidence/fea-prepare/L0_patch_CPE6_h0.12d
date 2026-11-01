@@ -1,0 +1,120 @@
+ ELEMENT            1 with label "CPE6    " and with nodes:
+          1          3         25          2         14         13
+  is expanded into a "C3D15 E " element with topology:
+         56         62        128         58         64        130         59         95         92         61
+         97         94         57         63        129
+
+ ELEMENT            2 with label "CPE6    " and with nodes:
+          1         25         23         13         24         12
+  is expanded into a "C3D15 E " element with topology:
+         56        128        122         58        130        124         92        125         89         94
+        127         91         57        129        123
+
+ ELEMENT            3 with label "CPE6    " and with nodes:
+          3          5         27          4         16         15
+  is expanded into a "C3D15 E " element with topology:
+         62         68        134         64         70        136         65        101         98         67
+        103        100         63         69        135
+
+ ELEMENT            4 with label "CPE6    " and with nodes:
+          3         27         25         15         26         14
+  is expanded into a "C3D15 E " element with topology:
+         62        134        128         64        136        130         98        131         95        100
+        133         97         63        135        129
+
+ ELEMENT            5 with label "CPE6    " and with nodes:
+          5          7         29          6         18         17
+  is expanded into a "C3D15 E " element with topology:
+         68         74        140         70         76        142         71        107        104         73
+        109        106         69         75        141
+
+ ELEMENT            6 with label "CPE6    " and with nodes:
+          5         29         27         17         28         16
+  is expanded into a "C3D15 E " element with topology:
+         68        140        134         70        142        136        104        137        101        106
+        139        103         69        141        135
+
+ ELEMENT            7 with label "CPE6    " and with nodes:
+          7          9         31          8         20         19
+  is expanded into a "C3D15 E " element with topology:
+         74         80        146         76         82        148         77        113        110         79
+        115        112         75         81        147
+
+ ELEMENT            8 with label "CPE6    " and with nodes:
+          7         31         29         19         30         18
+  is expanded into a "C3D15 E " element with topology:
+         74        146        140         76        148        142        110        143        107        112
+        145        109         75        147        141
+
+ ELEMENT            9 with label "CPE6    " and with nodes:
+          9         11         33         10         22         21
+  is expanded into a "C3D15 E " element with topology:
+         80         86        152         82         88        154         83        119        116         85
+        121        118         81         87        153
+
+ ELEMENT           10 with label "CPE6    " and with nodes:
+          9         33         31         21         32         20
+  is expanded into a "C3D15 E " element with topology:
+         80        152        146         82        154        148        116        149        113        118
+        151        115         81        153        147
+
+ ELEMENT           11 with label "CPE6    " and with nodes:
+         23         25         47         24         36         35
+  is expanded into a "C3D15 E " element with topology:
+        122        128        194        124        130        196        125        161        158        127
+        163        160        123        129        195
+
+ ELEMENT           12 with label "CPE6    " and with nodes:
+         23         47         45         35         46         34
+  is expanded into a "C3D15 E " element with topology:
+        122        194        188        124        196        190        158        191        155        160
+        193        157        123        195        189
+
+ ELEMENT           13 with label "CPE6    " and with nodes:
+         25         27         49         26         38         37
+  is expanded into a "C3D15 E " element with topology:
+        128        134        200        130        136        202        131        167        164        133
+        169        166        129        135        201
+
+ ELEMENT           14 with label "CPE6    " and with nodes:
+         25         49         47         37         48         36
+  is expanded into a "C3D15 E " element with topology:
+        128        200        194        130        202        196        164        197        161        166
+        199        163        129        201        195
+
+ ELEMENT           15 with label "CPE6    " and with nodes:
+         27         29         51         28         40         39
+  is expanded into a "C3D15 E " element with topology:
+        134        140        206        136        142        208        137        173        170        139
+        175        172        135        141        207
+
+ ELEMENT           16 with label "CPE6    " and with nodes:
+         27         51         49         39         50         38
+  is expanded into a "C3D15 E " element with topology:
+        134        206        200        136        208        202        170        203        167        172
+        205        169        135        207        201
+
+ ELEMENT           17 with label "CPE6    " and with nodes:
+         29         31         53         30         42         41
+  is expanded into a "C3D15 E " element with topology:
+        140        146        212        142        148        214        143        179        176        145
+        181        178        141        147        213
+
+ ELEMENT           18 with label "CPE6    " and with nodes:
+         29         53         51         41         52         40
+  is expanded into a "C3D15 E " element with topology:
+        140        212        206        142        214        208        176        209        173        178
+        211        175        141        213        207
+
+ ELEMENT           19 with label "CPE6    " and with nodes:
+         31         33         55         32         44         43
+  is expanded into a "C3D15 E " element with topology:
+        146        152        218        148        154        220        149        185        182        151
+        187        184        147        153        219
+
+ ELEMENT           20 with label "CPE6    " and with nodes:
+         31         55         53         43         54         42
+  is expanded into a "C3D15 E " element with topology:
+        146        218        212        148        220        214        182        215        179        184
+        217        181        147        219        213
+

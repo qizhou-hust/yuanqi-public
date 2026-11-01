@@ -1,0 +1,1384 @@
+test_chinese_reply_invention_is_detected (tests.test_bench_chinese_numbers.TestChineseNumberTrace.test_chinese_reply_invention_is_detected) ... ok
+test_compound_literal_is_traceable_without_fragment_invention (tests.test_bench_chinese_numbers.TestChineseNumberTrace.test_compound_literal_is_traceable_without_fragment_invention) ... ok
+test_numeric_token_boundaries_do_not_source_subfragments (tests.test_bench_chinese_numbers.TestChineseNumberTrace.test_numeric_token_boundaries_do_not_source_subfragments) ... ok
+test_sign_mixed_magnitude_and_standard_identifiers (tests.test_bench_chinese_numbers.TestChineseNumberTrace.test_sign_mixed_magnitude_and_standard_identifiers) ... ok
+test_source_spans_and_unsupported_numerals_fail_closed (tests.test_bench_chinese_numbers.TestChineseNumberTrace.test_source_spans_and_unsupported_numerals_fail_closed) ... ok
+test_enum_validation_rejects_free_text (tests.test_certificates.TestAssuranceSeparation.test_enum_validation_rejects_free_text) ... ok
+test_fields_are_separate_and_enumerated (tests.test_certificates.TestAssuranceSeparation.test_fields_are_separate_and_enumerated) ... ok
+test_no_merged_trust_flag_anywhere (tests.test_certificates.TestAssuranceSeparation.test_no_merged_trust_flag_anywhere) ... ok
+test_coordinate_refine_is_not_kkt (tests.test_certificates.TestKKT.test_coordinate_refine_is_not_kkt) ... ok
+test_not_checked_by_default_and_for_discrete_only (tests.test_certificates.TestKKT.test_not_checked_by_default_and_for_discrete_only) ... ok
+test_satisfied_analytic (tests.test_certificates.TestKKT.test_satisfied_analytic) ... ok
+test_satisfied_at_refined_point_fd (tests.test_certificates.TestKKT.test_satisfied_at_refined_point_fd) ... ok
+test_violated_interior_point (tests.test_certificates.TestKKT.test_violated_interior_point) ... ok
+test_violated_when_infeasible (tests.test_certificates.TestKKT.test_violated_when_infeasible) ... ok
+test_declared_constraint_must_be_returned (tests.test_certificates.TestProblemIR.test_declared_constraint_must_be_returned) ... ok
+test_invalid_ir_rejected (tests.test_certificates.TestProblemIR.test_invalid_ir_rejected) ... ok
+test_problem_from_ir_solves_with_max_sense (tests.test_certificates.TestProblemIR.test_problem_from_ir_solves_with_max_sense) ... ok
+test_roundtrip_and_sha_stable (tests.test_certificates.TestProblemIR.test_roundtrip_and_sha_stable) ... ok
+test_boundary_is_continuous_at_overlap_one (tests.test_contact_factors.TestContactFactorMethods.test_boundary_is_continuous_at_overlap_one) ... ok
+test_helical_full_overlap_explicit_methods (tests.test_contact_factors.TestContactFactorMethods.test_helical_full_overlap_explicit_methods) ... ok
+test_high_contact_ratio_and_wrong_spur_scope_rejected (tests.test_contact_factors.TestContactFactorMethods.test_high_contact_ratio_and_wrong_spur_scope_rejected) ... ok
+test_no_method_or_source_default (tests.test_contact_factors.TestContactFactorMethods.test_no_method_or_source_default) ... ok
+test_partial_overlap_interpolates_whole_contact_factor (tests.test_contact_factors.TestContactFactorMethods.test_partial_overlap_interpolates_whole_contact_factor) ... ok
+test_spur_uses_curvature_and_has_no_fZCa (tests.test_contact_factors.TestContactFactorMethods.test_spur_uses_curvature_and_has_no_fZCa) ... ok
+test_undercut_applicability_is_required (tests.test_contact_factors.TestContactFactorMethods.test_undercut_applicability_is_required) ... ok
+test_every_formula_has_checked_ref_and_null_evidence (tests.test_din743_1.TestContract.test_every_formula_has_checked_ref_and_null_evidence) ... ok
+test_isolated_from_gear_package_and_kernel (tests.test_din743_1.TestContract.test_isolated_from_gear_package_and_kernel) ... ok
+test_missing_input_blocks (tests.test_din743_1.TestContract.test_missing_input_blocks) ... ok
+test_no_implicit_defaults (tests.test_din743_1.TestContract.test_no_implicit_defaults)
+所有公开计算函数的参数均为仅限关键字且无默认值（缺输入阻断）。 ... ok
+test_no_long_verbatim_text (tests.test_din743_1.TestContract.test_no_long_verbatim_text)
+代码只写条款号/式号/页码：不含长英文/德文原句（> 12 个连续拉丁词视为原文段落）。 ... ok
+test_case1_bending_torsion (tests.test_din743_1.TestFatigueProofRewrite.test_case1_bending_torsion) ... ok
+test_missing_smin_blocks (tests.test_din743_1.TestFatigueProofRewrite.test_missing_smin_blocks) ... ok
+test_eq1_smin (tests.test_din743_1.TestSafety.test_eq1_smin) ... ok
+test_eq25_and_eq28 (tests.test_din743_1.TestSafety.test_eq25_and_eq28) ... ok
+test_eq2_against_rewrite (tests.test_din743_1.TestSafety.test_eq2_against_rewrite) ... ok
+test_case1_branches_and_continuity (tests.test_din743_1.TestStrength.test_case1_branches_and_continuity) ... ok
+test_case2_branches_and_continuity (tests.test_din743_1.TestStrength.test_case2_branches_and_continuity) ... ok
+test_influence_and_limits (tests.test_din743_1.TestStrength.test_influence_and_limits) ... ok
+test_mean_stress_branches (tests.test_din743_1.TestStrength.test_mean_stress_branches) ... ok
+test_section_and_stresses (tests.test_din743_1.TestStrength.test_section_and_stresses) ... ok
+test_torsion_rejects_table_a1_inputs (tests.test_din743_1.TestStrength.test_torsion_rejects_table_a1_inputs) ... ok
+test_yield_tables (tests.test_din743_1.TestStrength.test_yield_tables) ... ok
+test_alpha_eq9_rewrite_and_domain (tests.test_din743_2.TestNotchFactors.test_alpha_eq9_rewrite_and_domain) ... ok
+test_cross_hole (tests.test_din743_2.TestNotchFactors.test_cross_hole)
+图12（PDF23）横轴 2r/d = 0,3 处曲线读数 ≈ 2,7 / 1,9 / 1,42。 ... ok
+test_keyway_formula_matches_table1_row (tests.test_din743_2.TestNotchFactors.test_keyway_formula_matches_table1_row)
+表1（PDF7）平键 βσ 行 400…1200 的印刷值（0,1 精度）与近似式一致（±0,05）； ... ok
+test_press_fit_formula_matches_beta_sigma_row (tests.test_din743_2.TestNotchFactors.test_press_fit_formula_matches_beta_sigma_row)
+压配合近似式（原图左侧印 βτ）数值与同页 βσ 行一致 → 按 βσ 实现的依据。 ... ok
+test_rect_groove (tests.test_din743_2.TestNotchFactors.test_rect_groove) ... ok
+test_spline_rewrite (tests.test_din743_2.TestNotchFactors.test_spline_rewrite) ... ok
+test_stieler_and_gradient (tests.test_din743_2.TestNotchFactors.test_stieler_and_gradient) ... ok
+test_v_notch_rewrite (tests.test_din743_2.TestNotchFactors.test_v_notch_rewrite) ... ok
+test_K1_rewrite_and_tail_continuity (tests.test_din743_2.TestSizeAndSurface.test_K1_rewrite_and_tail_continuity) ... ok
+test_K2_K3 (tests.test_din743_2.TestSizeAndSurface.test_K2_K3) ... ok
+test_KF (tests.test_din743_2.TestSizeAndSurface.test_KF) ... ok
+test_unconfirmed_catalogue (tests.test_din743_2.TestSizeAndSurface.test_unconfirmed_catalogue) ... ok
+test_brinell (tests.test_din743_3_4.TestPart3.test_brinell) ... ok
+test_fatigue_limits (tests.test_din743_3_4.TestPart3.test_fatigue_limits) ... ok
+test_combined (tests.test_din743_3_4.TestPart4.test_combined) ... ok
+test_limited_life (tests.test_din743_3_4.TestPart4.test_limited_life) ... ok
+test_single_bin_gives_unit_factor (tests.test_din743_3_4.TestPart4.test_single_bin_gives_unit_factor) ... ok
+test_spectrum_fatigue_domain (tests.test_din743_3_4.TestPart4.test_spectrum_fatigue_domain) ... ok
+test_spectrum_input_blocks (tests.test_din743_3_4.TestPart4.test_spectrum_input_blocks) ... ok
+test_spectrum_limited_life_domain (tests.test_din743_3_4.TestPart4.test_spectrum_limited_life_domain) ... ok
+test_available_reports_version (tests.test_doctor_ccx.TestCcx.test_available_reports_version) ... ok
+test_empty_output_is_warn (tests.test_doctor_ccx.TestCcx.test_empty_output_is_warn) ... ok
+test_missing_is_warn_not_fail (tests.test_doctor_ccx.TestCcx.test_missing_is_warn_not_fail) ... ok
+test_oserror_is_warn (tests.test_doctor_ccx.TestCcx.test_oserror_is_warn) ... ok
+test_timeout_is_warn (tests.test_doctor_ccx.TestCcx.test_timeout_is_warn) ... ok
+test_absent_warns (tests.test_doctor_ccx.TestCcxStrict.test_absent_warns) ... ok
+test_present_passes (tests.test_doctor_ccx.TestCcxStrict.test_present_passes) ... ok
+test_rows_have_level_and_warn_keeps_exit_ok (tests.test_doctor_ccx.TestRunRows.test_rows_have_level_and_warn_keeps_exit_ok) ... ok
+test_c001_receipt_contract_is_unchanged (tests.test_factor_integration.TestFactorIntegration.test_c001_receipt_contract_is_unchanged) ... ok
+test_external_methods_retain_and_require_evidence (tests.test_factor_integration.TestFactorIntegration.test_external_methods_retain_and_require_evidence) ... ok
+test_factor_choices_enter_model_fingerprint (tests.test_factor_integration.TestFactorIntegration.test_factor_choices_enter_model_fingerprint) ... ok
+test_full_k01_comparison_preserves_original_tolerance (tests.test_factor_integration.TestFactorIntegration.test_full_k01_comparison_preserves_original_tolerance) ... ok
+test_full_k01_factors_are_independent_of_all_com_factor_fields (tests.test_factor_integration.TestFactorIntegration.test_full_k01_factors_are_independent_of_all_com_factor_fields) ... ok
+test_k01_new_chain_and_all_reference_rows_match (tests.test_factor_integration.TestFactorIntegration.test_k01_new_chain_and_all_reference_rows_match) ... ok
+test_life_is_derived_from_operating_inputs (tests.test_factor_integration.TestFactorIntegration.test_life_is_derived_from_operating_inputs) ... ok
+test_missing_factor_methods_block_instead_of_selecting_defaults (tests.test_factor_integration.TestFactorIntegration.test_missing_factor_methods_block_instead_of_selecting_defaults) ... ok
+test_missing_physical_inputs_block (tests.test_factor_integration.TestFactorIntegration.test_missing_physical_inputs_block) ... ok
+test_no_surface_integrity_evidence_is_invented (tests.test_factor_integration.TestFactorIntegration.test_no_surface_integrity_evidence_is_invented) ... ok
+test_reference_factor_fields_are_not_inputs_to_their_formulas (tests.test_factor_integration.TestFactorIntegration.test_reference_factor_fields_are_not_inputs_to_their_formulas) ... ok
+test_unknown_factor_method_rejected (tests.test_factor_integration.TestFactorIntegration.test_unknown_factor_method_rejected) ... ok
+test_baseline_N1_N1b (tests.test_fea_gates_ingest.TestContactRowCap.test_baseline_N1_N1b) ... ok
+test_dat_value_must_bind_extracted (tests.test_fea_gates_ingest.TestContactRowCap.test_dat_value_must_bind_extracted) ... ok
+test_ladder_capped_L1 (tests.test_fea_gates_ingest.TestContactRowCap.test_ladder_capped_L1) ... ok
+test_ladder_capped_L3_and_L0 (tests.test_fea_gates_ingest.TestContactRowCap.test_ladder_capped_L3_and_L0) ... ok
+test_no_independent_channel_is_not_verified (tests.test_fea_gates_ingest.TestContactRowCap.test_no_independent_channel_is_not_verified) ... ok
+test_N8b_downgrade_to_1_0_rejected (tests.test_fea_gates_ingest.TestDefaultReject.test_N8b_downgrade_to_1_0_rejected) ... ok
+test_contact_declaration_must_be_flagged (tests.test_fea_gates_ingest.TestDefaultReject.test_contact_declaration_must_be_flagged) ... ok
+test_identity_without_solver_entry_rejected (tests.test_fea_gates_ingest.TestDefaultReject.test_identity_without_solver_entry_rejected) ... ok
+test_legacy_1_0_fixture_rejected (tests.test_fea_gates_ingest.TestDefaultReject.test_legacy_1_0_fixture_rejected) ... ok
+test_protocol_version_checked (tests.test_fea_gates_ingest.TestDefaultReject.test_protocol_version_checked) ... ok
+test_record_defects_each_rejected (tests.test_fea_gates_ingest.TestDefaultReject.test_record_defects_each_rejected) ... ok
+test_v1_1_fixture_recorded (tests.test_fea_gates_ingest.TestDefaultReject.test_v1_1_fixture_recorded) ... ok
+test_repost_rereads_and_rejects_false_claims (tests.test_fea_gates_ingest.TestRepost.test_repost_rereads_and_rejects_false_claims) ... ok
+test_v1_1_fixture_claims_fail_repost (tests.test_fea_gates_ingest.TestRepost.test_v1_1_fixture_claims_fail_repost)
+升级夹具的严格读取记录是声明层合成（dat_sha256 改绑为 'FAKE <id>'），--repost 必然拒绝：声明层通过不等于重读通过。 ... ok
+test_ph10_like (tests.test_fea_gates_run_identity.TestLegacyConsistency.test_ph10_like) ... ok
+test_drift_record_keeps_outputs (tests.test_fea_gates_run_identity.TestRunCaseRecords.test_drift_record_keeps_outputs) ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_positive_record (tests.test_fea_gates_run_identity.TestRunCaseRecords.test_positive_record) ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_N6b_solver_swapped_before_launch_not_launched (tests.test_fea_gates_run_identity.TestRunIdentity.test_N6b_solver_swapped_before_launch_not_launched)
+V N6b：准备之后、启动之前替换求解器可执行文件（内容或符号链接目标）→ 启动前身份不符，不启动。 ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_changed_after_prepare_before_launch_not_launched (tests.test_fea_gates_run_identity.TestRunIdentity.test_changed_after_prepare_before_launch_not_launched) ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_identity_snapshot_covers_three_kinds (tests.test_fea_gates_run_identity.TestRunIdentity.test_identity_snapshot_covers_three_kinds) ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_include_rewritten_during_run (tests.test_fea_gates_run_identity.TestRunIdentity.test_include_rewritten_during_run) ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_inp_rewritten_during_run (tests.test_fea_gates_run_identity.TestRunIdentity.test_inp_rewritten_during_run) ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_metadata_rewritten_during_run (tests.test_fea_gates_run_identity.TestRunIdentity.test_metadata_rewritten_during_run) ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_positive_unchanged (tests.test_fea_gates_run_identity.TestRunIdentity.test_positive_unchanged) ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_solver_swapped_during_run (tests.test_fea_gates_run_identity.TestRunIdentity.test_solver_swapped_during_run)
+运行中替换求解器文件 → 结束后身份不符，记 solver_failed 并保留输出。 ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_strict_read_rejection_after_consistent_run (tests.test_fea_gates_run_identity.TestRunIdentity.test_strict_read_rejection_after_consistent_run)
+身份一致但输出缺声明节点 → post_failed（严格读取拒绝），不是 solved。 ... skipped '求解器替身依赖 shebang 可执行脚本'
+test_symlink_and_out_of_tree (tests.test_fea_gates_step_state.TestIncludeSafety.test_symlink_and_out_of_tree) ... skipped '需要符号链接'
+test_cross_step_inheritance_conflict (tests.test_fea_gates_step_state.TestPackDecksPositive.test_cross_step_inheritance_conflict)
+去掉第 2 步 OP=NEW：第 1 步 UTOP 位移驱动被继承，与第 2 步 UTOP 集中力冲突（载荷将被约束吞掉）。 ... ok
+test_duplicate_procedure (tests.test_fea_gates_step_state.TestPackDecksPositive.test_duplicate_procedure) ... ok
+test_empty_step (tests.test_fea_gates_step_state.TestPackDecksPositive.test_empty_step) ... ok
+test_generated_decks_pass_lint_and_state_machine (tests.test_fea_gates_step_state.TestPackDecksPositive.test_generated_decks_pass_lint_and_state_machine) ... ok
+test_history_before_procedure_b_style (tests.test_fea_gates_step_state.TestPackDecksPositive.test_history_before_procedure_b_style)
+B 审查同类变异：约束放到 *STEP 与 *STATIC 之间。 ... ok
+test_inheritance_without_op_new_is_computed (tests.test_fea_gates_step_state.TestPackDecksPositive.test_inheritance_without_op_new_is_computed)
+不写 OP=NEW 时上一步约束被继承（无冲突时合法）；写 OP=NEW 时不继承。 ... ok
+test_outputs_only_in_final_step (tests.test_fea_gates_step_state.TestPackDecksPositive.test_outputs_only_in_final_step) ... ok
+test_probe_static_moved_before_first_step (tests.test_fea_gates_step_state.TestPackDecksPositive.test_probe_static_moved_before_first_step) ... ok
+test_profile_outside_syntax (tests.test_fea_gates_step_state.TestPackDecksPositive.test_profile_outside_syntax) ... ok
+test_requests_refused_for_failed_deck (tests.test_fea_gates_step_state.TestPackDecksPositive.test_requests_refused_for_failed_deck) ... ok
+test_set_defined_inside_step_l2_pattern (tests.test_fea_gates_step_state.TestPackDecksPositive.test_set_defined_inside_step_l2_pattern)
+L2 生成器在步内新建 *ELSET ROOTT 并只用于输出：接受；步内改写已有集合：拒绝。 ... ok
+test_single_step_expectation_and_requests (tests.test_fea_gates_step_state.TestPackDecksPositive.test_single_step_expectation_and_requests) ... ok
+test_step_not_closed (tests.test_fea_gates_step_state.TestPackDecksPositive.test_step_not_closed) ... ok
+test_two_step_inheritance_and_op_new (tests.test_fea_gates_step_state.TestPackDecksPositive.test_two_step_inheritance_and_op_new) ... ok
+test_real_two_step_positive_and_probe_mutation (tests.test_fea_gates_step_state.TestRealPh10DeckOptional.test_real_two_step_positive_and_probe_mutation) ... skipped '真实 ph10 deck 不在本机'
+test_blocked (tests.test_fea_gates_step_state.TestRunM37BlocksBeforeSolve.test_blocked) ... ok
+test_inc5_missing_in_dat (tests.test_fea_gates_strict_read.TestD18A20TwoIncrementsTime2.test_inc5_missing_in_dat) ... ok
+test_selects_inc5_by_sta (tests.test_fea_gates_strict_read.TestD18A20TwoIncrementsTime2.test_selects_inc5_by_sta) ... ok
+test_sta_saying_inc4_rejects_inc5_blocks (tests.test_fea_gates_strict_read.TestD18A20TwoIncrementsTime2.test_sta_saying_inc4_rejects_inc5_blocks) ... ok
+test_missing_wbore_row_and_foreign_contact_element (tests.test_fea_gates_strict_read.TestPh10ShapedSynthetic.test_missing_wbore_row_and_foreign_contact_element) ... ok
+test_positive_final_state_from_sta (tests.test_fea_gates_strict_read.TestPh10ShapedSynthetic.test_positive_final_state_from_sta) ... ok
+test_pstep_cross_check (tests.test_fea_gates_strict_read.TestPh10ShapedSynthetic.test_pstep_cross_check) ... ok
+test_record_rebuild_round_trip (tests.test_fea_gates_strict_read.TestPh10ShapedSynthetic.test_record_rebuild_round_trip) ... ok
+test_review_append_as_later_increment_rejected (tests.test_fea_gates_strict_read.TestPh10ShapedSynthetic.test_review_append_as_later_increment_rejected)
+同样的翻倍块若带新增量标记（晚于 .sta 终态）也拒绝。 ... ok
+test_review_append_conflicting_duplicate_final (tests.test_fea_gates_strict_read.TestPh10ShapedSynthetic.test_review_append_conflicting_duplicate_final) ... ok
+test_review_append_wrong_time_15 (tests.test_fea_gates_strict_read.TestPh10ShapedSynthetic.test_review_append_wrong_time_15) ... ok
+test_sta_defects (tests.test_fea_gates_strict_read.TestPh10ShapedSynthetic.test_sta_defects) ... ok
+test_statistics_part_missing (tests.test_fea_gates_strict_read.TestPh10ShapedSynthetic.test_statistics_part_missing) ... ok
+test_contact_faces_and_frd (tests.test_fea_gates_strict_read.TestRealCcx221Optional.test_contact_faces_and_frd) ... skipped 'F2 真实输出不在本机'
+test_patch_ip_counts (tests.test_fea_gates_strict_read.TestRealCcx221Optional.test_patch_ip_counts) ... skipped 'F2 真实输出不在本机'
+test_real_ph10_accepted (tests.test_fea_gates_strict_read.TestRealPh10Optional.test_real_ph10_accepted) ... skipped '真实 ph10 原始文件不在本机'
+test_real_ph10_review_appends_rejected (tests.test_fea_gates_strict_read.TestRealPh10Optional.test_real_ph10_review_appends_rejected) ... skipped '真实 ph10 原始文件不在本机'
+test_component_header_changed (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_component_header_changed) ... ok
+test_duplicate_final_conflicting (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_duplicate_final_conflicting) ... ok
+test_duplicate_final_identical_also_rejected (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_duplicate_final_identical_also_rejected) ... ok
+test_duplicate_node (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_duplicate_node) ... ok
+test_good_tiny_raw_accepted (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_good_tiny_raw_accepted) ... ok
+test_identity_and_expectation_required (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_identity_and_expectation_required) ... ok
+test_legacy_reader_behaviour_unchanged (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_legacy_reader_behaviour_unchanged)
+旧 parser 并列保留：同一批反例照旧无异常返回（这是审查记录的缺陷行为，本轮不改）。 ... ok
+test_missing_node (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_missing_node) ... ok
+test_nonfinite_and_empty_coverage (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_nonfinite_and_empty_coverage) ... ok
+test_raw_without_state_markers_rejected (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_raw_without_state_markers_rejected) ... ok
+test_undeclared_extra_node_rejected (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_undeclared_extra_node_rejected) ... ok
+test_wrong_time_075 (tests.test_fea_gates_strict_read.TestReviewARawCounterexamples.test_wrong_time_075) ... ok
+test_N1_N1b_contact_rows_flagged_unverifiable (tests.test_fea_gates_strict_read.TestV_Rework.test_N1_N1b_contact_rows_flagged_unverifiable)
+N1（删峰压行）/N1b（冲突重复行）在 .dat 层面无法发现（活跃行覆盖不能预注册）：读取器接受但必须标 ... ok
+test_N2_ip_count_registered (tests.test_fea_gates_strict_read.TestV_Rework.test_N2_ip_count_registered) ... ok
+test_N5_frd_without_pstep_rejected (tests.test_fea_gates_strict_read.TestV_Rework.test_N5_frd_without_pstep_rejected) ... ok
+test_face_mapping_checked_against_deck (tests.test_fea_gates_strict_read.TestV_Rework.test_face_mapping_checked_against_deck) ... ok
+test_frd_contact_cpress_by_pstep (tests.test_fea_gates_strict_read.TestV_Rework.test_frd_contact_cpress_by_pstep) ... ok
+test_L1_failure_blocks_upper_levels (tests.test_fea_ingest.TestIngest.test_L1_failure_blocks_upper_levels) ... ok
+test_cli (tests.test_fea_ingest.TestIngest.test_cli) ... ok
+test_full_mode_requires_solver_identity (tests.test_fea_ingest.TestIngest.test_full_mode_requires_solver_identity) ... ok
+test_input_mismatch_and_version_warning (tests.test_fea_ingest.TestIngest.test_input_mismatch_and_version_warning) ... ok
+test_lint_errors_rejected_by_schema (tests.test_fea_ingest.TestIngest.test_lint_errors_rejected_by_schema) ... ok
+test_pass_case (tests.test_fea_ingest.TestIngest.test_pass_case) ... ok
+test_phase_not_converged (tests.test_fea_ingest.TestIngest.test_phase_not_converged) ... ok
+test_recomputes_instead_of_trusting_local_assessment (tests.test_fea_ingest.TestIngest.test_recomputes_instead_of_trusting_local_assessment) ... ok
+test_record_contract (tests.test_fea_ingest.TestIngest.test_record_contract) ... ok
+test_schema_rejection (tests.test_fea_ingest.TestIngest.test_schema_rejection) ... ok
+test_smoke_partial_is_incomplete (tests.test_fea_ingest.TestIngest.test_smoke_partial_is_incomplete) ... ok
+test_zip_attachments (tests.test_fea_ingest.TestIngest.test_zip_attachments) ... ok
+test_ingest_does_not_touch_formula_graph (tests.test_fea_ingest.TestNoGraphImport.test_ingest_does_not_touch_formula_graph) ... ok
+test_penalty_fit (tests.test_fea_ingest.TestNumerics.test_penalty_fit) ... ok
+test_richardson_oscillatory_uses_assumed_order (tests.test_fea_ingest.TestNumerics.test_richardson_oscillatory_uses_assumed_order) ... ok
+test_richardson_second_order (tests.test_fea_ingest.TestNumerics.test_richardson_second_order) ... ok
+test_basic_keywords (tests.test_fea_ingest.TestValidator.test_basic_keywords) ... ok
+test_bool_is_not_number (tests.test_fea_ingest.TestValidator.test_bool_is_not_number) ... ok
+test_empty_feasible (tests.test_flagship_p2.TestP2Stage0.test_empty_feasible) ... ok
+test_missing_unknown_invalid_fail_closed (tests.test_flagship_p2.TestP2Stage0.test_missing_unknown_invalid_fail_closed) ... ok
+test_original_flagship_candidates_front_and_counts (tests.test_flagship_p2.TestP2Stage0.test_original_flagship_candidates_front_and_counts) ... ok
+test_small_domain_full_enumeration (tests.test_flagship_p2.TestP2Stage0.test_small_domain_full_enumeration) ... ok
+test_strict_adjacency_boundary_zero_tolerance_and_pair_cap (tests.test_flagship_p2.TestP2Stage0.test_strict_adjacency_boundary_zero_tolerance_and_pair_cap) ... ok
+test_top_k_and_module_order (tests.test_flagship_p2.TestP2Stage0.test_top_k_and_module_order) ... ok
+test_verify_tampering_out_of_domain_phasing_adjacency (tests.test_flagship_p2.TestP2Stage0.test_verify_tampering_out_of_domain_phasing_adjacency) ... ok
+test_exact_thermal_boundary_and_underflow (tests.test_flagship_w2w.TestFlagshipW2W.test_exact_thermal_boundary_and_underflow) ... ok
+test_invalid (tests.test_flagship_w2w.TestFlagshipW2W.test_invalid) ... ok
+test_original_oracle (tests.test_flagship_w2w.TestFlagshipW2W.test_original_oracle) ... ok
+test_return_budget_reports_truncation (tests.test_flagship_w2w.TestFlagshipW2W.test_return_budget_reports_truncation) ... ok
+test_small_domain_against_original (tests.test_flagship_w2w.TestFlagshipW2W.test_small_domain_against_original) ... ok
+test_missing_unknown_and_scope_fail_closed (tests.test_flagship_workflow.TestFlagshipWorkflow.test_missing_unknown_and_scope_fail_closed) ... ok
+test_three_original_structured_requirements_end_to_end (tests.test_flagship_workflow.TestFlagshipWorkflow.test_three_original_structured_requirements_end_to_end) ... ok
+test_agent_values_never_report_plain_pass (tests.test_gearmath.TestAiTools.test_agent_values_never_report_plain_pass) ... ok
+test_explain_chain_has_refs (tests.test_gearmath.TestAiTools.test_explain_chain_has_refs) ... ok
+test_stdio_mcp_roundtrip (tests.test_gearmath.TestAiTools.test_stdio_mcp_roundtrip) ... ok
+test_tool_names_are_api_safe (tests.test_gearmath.TestAiTools.test_tool_names_are_api_safe) ... ok
+test_contact_chain_matches (tests.test_gearmath.TestIso6336AgainstM31.test_contact_chain_matches) ... ok
+test_profile_shift_moves_working_geometry (tests.test_gearmath.TestIso6336AgainstM31.test_profile_shift_moves_working_geometry) ... ok
+test_root_chain_matches (tests.test_gearmath.TestIso6336AgainstM31.test_root_chain_matches) ... ok
+test_status_pass (tests.test_gearmath.TestIso6336AgainstM31.test_status_pass) ... ok
+test_autodiff_matches_finite_difference (tests.test_gearmath.TestKernel.test_autodiff_matches_finite_difference) ... ok
+test_convergence_certificate (tests.test_gearmath.TestKernel.test_convergence_certificate) ... ok
+test_deg_and_rad_units (tests.test_gearmath.TestKernel.test_deg_and_rad_units) ... ok
+test_derived_cannot_be_locked (tests.test_gearmath.TestKernel.test_derived_cannot_be_locked) ... ok
+test_dimension_error_is_caught_at_compile_time (tests.test_gearmath.TestKernel.test_dimension_error_is_caught_at_compile_time) ... ok
+test_inv_inverse_and_its_derivative (tests.test_gearmath.TestKernel.test_inv_inverse_and_its_derivative) ... ok
+test_missing_inputs_block_instead_of_default (tests.test_gearmath.TestKernel.test_missing_inputs_block_instead_of_default) ... ok
+test_no_code_execution (tests.test_gearmath.TestKernel.test_no_code_execution) ... ok
+test_single_source_conflict_rejected (tests.test_gearmath.TestKernel.test_single_source_conflict_rejected) ... ok
+test_trig_requires_angle (tests.test_gearmath.TestKernel.test_trig_requires_angle) ... ok
+test_gear_sizing_front_is_feasible (tests.test_gearmath.TestOptimizerIsPureMath.test_gear_sizing_front_is_feasible) ... ok
+test_generic_problem (tests.test_gearmath.TestOptimizerIsPureMath.test_generic_problem) ... ok
+test_optimizer_imports_nothing_about_gears (tests.test_gearmath.TestOptimizerIsPureMath.test_optimizer_imports_nothing_about_gears) ... ok
+test_case_standard_string_parsed (tests.test_inputs_editions.TestEditions.test_case_standard_string_parsed) ... ok
+test_missing_profile_blocked_not_defaulted (tests.test_inputs_editions.TestEditions.test_missing_profile_blocked_not_defaulted) ... ok
+test_mixed_years_across_parts_allowed (tests.test_inputs_editions.TestEditions.test_mixed_years_across_parts_allowed) ... ok
+test_mixed_years_within_part_rejected (tests.test_inputs_editions.TestEditions.test_mixed_years_within_part_rejected) ... ok
+test_profile_disagreeing_with_library_blocked (tests.test_inputs_editions.TestEditions.test_profile_disagreeing_with_library_blocked) ... ok
+test_profile_recorded_in_output_and_sha (tests.test_inputs_editions.TestEditions.test_profile_recorded_in_output_and_sha) ... ok
+test_refs_parse_into_part_and_edition (tests.test_inputs_editions.TestEditions.test_refs_parse_into_part_and_edition) ... ok
+test_ai_rate_face_width_in_newton_is_blocked_not_pass (tests.test_inputs_editions.TestInputDimensions.test_ai_rate_face_width_in_newton_is_blocked_not_pass) ... ok
+test_declaration_table_consistent_with_formula_usage (tests.test_inputs_editions.TestInputDimensions.test_declaration_table_consistent_with_formula_usage) ... ok
+test_dimension_check_enforced_on_rate_path_without_spec (tests.test_inputs_editions.TestInputDimensions.test_dimension_check_enforced_on_rate_path_without_spec) ... ok
+test_face_width_in_newton_rejected_at_set (tests.test_inputs_editions.TestInputDimensions.test_face_width_in_newton_rejected_at_set) ... ok
+test_input_domain_rejected (tests.test_inputs_editions.TestInputDimensions.test_input_domain_rejected) ... ok
+test_same_dimension_other_unit_accepted (tests.test_inputs_editions.TestInputDimensions.test_same_dimension_other_unit_accepted) ... ok
+test_undeclared_free_variable_in_library_is_an_error (tests.test_inputs_editions.TestInputDimensions.test_undeclared_free_variable_in_library_is_an_error) ... ok
+test_undeclared_input_rejected (tests.test_inputs_editions.TestInputDimensions.test_undeclared_input_rejected) ... ok
+test_unused_input_reported_without_spec (tests.test_inputs_editions.TestInputDimensions.test_unused_input_reported_without_spec) ... ok
+test_ai_rate_missing_limit_blocks (tests.test_inputs_editions.TestMissingLimits.test_ai_rate_missing_limit_blocks) ... ok
+test_bad_inputs_never_raise_on_rate_path (tests.test_inputs_editions.TestMissingLimits.test_bad_inputs_never_raise_on_rate_path) ... ok
+test_mcp_returns_structured_block (tests.test_inputs_editions.TestMissingLimits.test_mcp_returns_structured_block) ... ok
+test_missing_limit_in_case_data_blocks (tests.test_inputs_editions.TestMissingLimits.test_missing_limit_in_case_data_blocks) ... ok
+test_missing_safety_limit_blocks_instead_of_keyerror (tests.test_inputs_editions.TestMissingLimits.test_missing_safety_limit_blocks_instead_of_keyerror) ... ok
+test_input_spec_is_kernel_generic (tests.test_inputs_editions.TestProvenanceStaysSeparate.test_input_spec_is_kernel_generic) ... ok
+test_provenance_categories_reported_separately (tests.test_inputs_editions.TestProvenanceStaysSeparate.test_provenance_categories_reported_separately) ... ok
+test_box_format_unit_required_and_order (tests.test_interval.TestChecks.test_box_format_unit_required_and_order) ... ok
+test_box_outside_input_domain (tests.test_interval.TestChecks.test_box_outside_input_domain) ... ok
+test_derived_and_undeclared_boxes_rejected (tests.test_interval.TestChecks.test_derived_and_undeclared_boxes_rejected) ... ok
+test_dimension_mismatch_of_box (tests.test_interval.TestChecks.test_dimension_mismatch_of_box) ... ok
+test_division_by_zero_box_is_blocked_not_guessed (tests.test_interval.TestChecks.test_division_by_zero_box_is_blocked_not_guessed) ... ok
+test_fixed_point_unsupported (tests.test_interval.TestChecks.test_fixed_point_unsupported) ... ok
+test_formula_dimension_error_is_blocked (tests.test_interval.TestChecks.test_formula_dimension_error_is_blocked) ... ok
+test_missing_input_blocks_without_default (tests.test_interval.TestChecks.test_missing_input_blocks_without_default) ... ok
+test_selectors_and_editions_block_like_point_evaluation (tests.test_interval.TestChecks.test_selectors_and_editions_block_like_point_evaluation) ... ok
+test_tan_pole_and_sqrt_negative (tests.test_interval.TestChecks.test_tan_pole_and_sqrt_negative) ... ok
+test_where_branch_undefined_inside_box_is_blocked (tests.test_interval.TestChecks.test_where_branch_undefined_inside_box_is_blocked) ... ok
+test_outward_rounding_is_strict (tests.test_interval.TestInclusion.test_outward_rounding_is_strict) ... ok
+test_powers_and_inv (tests.test_interval.TestInclusion.test_powers_and_inv) ... ok
+test_random_points_inside_intervals (tests.test_interval.TestInclusion.test_random_points_inside_intervals) ... ok
+test_random_unary_functions (tests.test_interval.TestInclusion.test_random_unary_functions) ... ok
+test_unit_conversion_of_box (tests.test_interval.TestInclusion.test_unit_conversion_of_box) ... ok
+test_where_decided_branch_is_tight (tests.test_interval.TestInclusion.test_where_decided_branch_is_tight) ... ok
+test_where_straddling_takes_union (tests.test_interval.TestInclusion.test_where_straddling_takes_union) ... ok
+test_new_kernel_files_have_no_domain_terms_or_third_party_imports (tests.test_interval.TestKernelPurity.test_new_kernel_files_have_no_domain_terms_or_third_party_imports) ... ok
+test_c001_geometry_boxes_contain_point_values (tests.test_interval.TestOnGearModel.test_c001_geometry_boxes_contain_point_values) ... ok
+test_fixed_point_target_is_blocked (tests.test_interval.TestOnGearModel.test_fixed_point_target_is_blocked) ... ok
+test_even_power_straddling_zero (tests.test_interval.TestTightness.test_even_power_straddling_zero) ... ok
+test_monotone_functions_are_tight (tests.test_interval.TestTightness.test_monotone_functions_are_tight) ... ok
+test_point_box_is_nearly_point (tests.test_interval.TestTightness.test_point_box_is_nearly_point) ... ok
+test_round_to_is_monotone_step (tests.test_interval.TestTightness.test_round_to_is_monotone_step) ... ok
+test_sin_peak_inside_box_is_exactly_one (tests.test_interval.TestTightness.test_sin_peak_inside_box_is_exactly_one) ... ok
+test_finish_generating_shift_reconstructs_signed_normal_tooth_thickness (tests.test_iso21771_conversions.TestIso21771Conversions.test_finish_generating_shift_reconstructs_signed_normal_tooth_thickness) ... ok
+test_generating_shift_requires_explicit_thickness_deviation (tests.test_iso21771_conversions.TestIso21771Conversions.test_generating_shift_requires_explicit_thickness_deviation) ... ok
+test_pitch_conversion_does_not_round_display_values (tests.test_iso21771_conversions.TestIso21771Conversions.test_pitch_conversion_does_not_round_display_values) ... ok
+test_source_review_does_not_change_declared_library_editions (tests.test_iso21771_conversions.TestIso21771Conversions.test_source_review_does_not_change_declared_library_editions) ... ok
+test_transverse_base_pitch_error_from_base_circle_angle (tests.test_iso21771_conversions.TestIso21771Conversions.test_transverse_base_pitch_error_from_base_circle_angle)
+A pitch-angle perturbation maps to base arc length rb*dtheta. ... ok
+test_divergence_has_replayable_failure (tests.test_kernel_coupled.TestCoupledKernel.test_divergence_has_replayable_failure) ... ok
+test_empty_assignments_preserve_inputs (tests.test_kernel_coupled.TestCoupledKernel.test_empty_assignments_preserve_inputs) ... ok
+test_legacy_unit_alias_has_canonical_time_dimension (tests.test_kernel_coupled.TestCoupledKernel.test_legacy_unit_alias_has_canonical_time_dimension) ... ok
+test_nonfinite_and_bad_budgets_rejected (tests.test_kernel_coupled.TestCoupledKernel.test_nonfinite_and_bad_budgets_rejected) ... ok
+test_ordered_coupling_and_no_input_mutation (tests.test_kernel_coupled.TestCoupledKernel.test_ordered_coupling_and_no_input_mutation) ... ok
+test_zero_tolerance_requires_exact_fixed_point (tests.test_kernel_coupled.TestCoupledKernel.test_zero_tolerance_requires_exact_fixed_point) ... ok
+test_atan2_derivatives_at_extreme_nonzero_scales (tests.test_kernel_coupled.TestExpressionCompatibility.test_atan2_derivatives_at_extreme_nonzero_scales) ... ok
+test_atan2_value_derivatives_and_dimensions (tests.test_kernel_coupled.TestExpressionCompatibility.test_atan2_value_derivatives_and_dimensions) ... ok
+test_dimensionless_dynamic_power_uses_dual_kernel (tests.test_kernel_coupled.TestExpressionCompatibility.test_dimensionless_dynamic_power_uses_dual_kernel) ... ok
+test_inverse_trig_endpoint_values_and_singular_derivatives (tests.test_kernel_coupled.TestExpressionCompatibility.test_inverse_trig_endpoint_values_and_singular_derivatives) ... ok
+test_supplied_numerical_gradient_does_not_become_analytic (tests.test_kernel_coupled.TestGradientProvenance.test_supplied_numerical_gradient_does_not_become_analytic) ... ok
+test_exactly_one_formula_per_output (tests.test_kernel_ext.TestSelectors.test_exactly_one_formula_per_output) ... ok
+test_external_requires_evidence_input (tests.test_kernel_ext.TestSelectors.test_external_requires_evidence_input) ... ok
+test_method_diff (tests.test_kernel_ext.TestSelectors.test_method_diff) ... ok
+test_no_match_and_ambiguity (tests.test_kernel_ext.TestSelectors.test_no_match_and_ambiguity) ... ok
+test_unselected_selector_lists_options (tests.test_kernel_ext.TestSelectors.test_unselected_selector_lists_options) ... ok
+test_degC_not_allowed_as_formula_unit (tests.test_kernel_ext.TestTemperature.test_degC_not_allowed_as_formula_unit) ... ok
+test_degC_offset_conversion (tests.test_kernel_ext.TestTemperature.test_degC_offset_conversion) ... ok
+test_temperature_plus_length_rejected (tests.test_kernel_ext.TestTemperature.test_temperature_plus_length_rejected) ... ok
+test_viscosity_and_heat_units (tests.test_kernel_ext.TestTemperature.test_viscosity_and_heat_units) ... ok
+test_boolop_condition (tests.test_kernel_ext.TestWhere.test_boolop_condition) ... ok
+test_branch_dimension_mismatch_rejected (tests.test_kernel_ext.TestWhere.test_branch_dimension_mismatch_rejected) ... ok
+test_comparison_dimension_checked (tests.test_kernel_ext.TestWhere.test_comparison_dimension_checked) ... ok
+test_cond_must_be_comparison (tests.test_kernel_ext.TestWhere.test_cond_must_be_comparison) ... ok
+test_kink_reporting (tests.test_kernel_ext.TestWhere.test_kink_reporting) ... ok
+test_min_max_with_duals_and_kinks (tests.test_kernel_ext.TestWhere.test_min_max_with_duals_and_kinks) ... ok
+test_unselected_branch_not_evaluated (tests.test_kernel_ext.TestWhere.test_unselected_branch_not_evaluated) ... ok
+test_value_and_derivative_follow_selected_branch (tests.test_kernel_ext.TestWhere.test_value_and_derivative_follow_selected_branch) ... ok
+test_cancellation_is_fused (tests.test_kernel_floating.TestFloatingProfile.test_cancellation_is_fused) ... ok
+test_finite_domain_and_mismatched_lengths (tests.test_kernel_floating.TestFloatingProfile.test_finite_domain_and_mismatched_lengths) ... ok
+test_independent_oracle_random_and_extremes (tests.test_kernel_floating.TestFloatingProfile.test_independent_oracle_random_and_extremes) ... ok
+test_order_and_arbitrary_vector_lengths (tests.test_kernel_floating.TestFloatingProfile.test_order_and_arbitrary_vector_lengths) ... ok
+test_signed_zero (tests.test_kernel_floating.TestFloatingProfile.test_signed_zero) ... ok
+test_each_non_contract_option_is_identifiable (tests.test_kisssoft_k01.TestAlternatives.test_each_non_contract_option_is_identifiable)
+m_red、f_pb、root_shift 的非契约选项都会产生分歧 → KISSsoft 数据能唯一确定契约口径（不是调参）。 ... ok
+test_library_has_no_case_formulas (tests.test_kisssoft_k01.TestAlternatives.test_library_has_no_case_formulas) ... ok
+test_contract_selectors_recorded_with_report_source (tests.test_kisssoft_k01.TestAssembly.test_contract_selectors_recorded_with_report_source) ... ok
+test_evidence_inputs_listed_as_not_verified (tests.test_kisssoft_k01.TestAssembly.test_evidence_inputs_listed_as_not_verified) ... ok
+test_evidence_path_still_available (tests.test_kisssoft_k01.TestAssembly.test_evidence_path_still_available) ... ok
+test_formula_path_derives_k_factors_and_root_shift (tests.test_kisssoft_k01.TestAssembly.test_formula_path_derives_k_factors_and_root_shift) ... ok
+test_inputs_have_sources (tests.test_kisssoft_k01.TestAssembly.test_inputs_have_sources) ... ok
+test_first_divergence (tests.test_kisssoft_k01.TestComparison.test_first_divergence) ... ok
+test_full_chain_formula_path (tests.test_kisssoft_k01.TestComparison.test_full_chain_formula_path)
+K01 全链（K_V、K_Hβ、K_Hα、K_Fα、齿根均由公式推出）对 KISSsoft COM 全精度值。 ... ok
+test_known_divergences_match_record (tests.test_kisssoft_k01.TestComparison.test_known_divergences_match_record) ... ok
+test_mandated_order (tests.test_kisssoft_k01.TestComparison.test_mandated_order) ... ok
+test_matched_quantities_frozen (tests.test_kisssoft_k01.TestComparison.test_matched_quantities_frozen) ... ok
+test_v03_divergences_resolved (tests.test_kisssoft_k01.TestComparison.test_v03_divergences_resolved)
+v0.3 记录的 23 项分歧：现在一致；能由某个标准口径复现的旧值逐项复现（量级与原因见记录）。 ... ok
+test_method_and_flags_guard (tests.test_kisssoft_k01.TestData.test_method_and_flags_guard) ... ok
+test_provenance_recorded (tests.test_kisssoft_k01.TestData.test_provenance_recorded) ... ok
+test_single_valued_inputs_must_agree (tests.test_kisssoft_k01.TestData.test_single_valued_inputs_must_agree) ... ok
+test_all_cases_reach_contact_stress_and_safety (tests.test_kisssoft_multi.TestMultiCaseContracts.test_all_cases_reach_contact_stress_and_safety) ... ok
+test_cli_exports_diagnostic_json_and_returns_two (tests.test_kisssoft_multi.TestMultiCaseContracts.test_cli_exports_diagnostic_json_and_returns_two) ... ok
+test_contact_adjustment_is_not_extrapolated_below_unit_overlap (tests.test_kisssoft_multi.TestMultiCaseContracts.test_contact_adjustment_is_not_extrapolated_below_unit_overlap) ... ok
+test_din_base_pitch_tolerance_is_direct_manufacturing_input (tests.test_kisssoft_multi.TestMultiCaseContracts.test_din_base_pitch_tolerance_is_direct_manufacturing_input) ... ok
+test_exact_stiffness_teeth_are_explicit (tests.test_kisssoft_multi.TestMultiCaseContracts.test_exact_stiffness_teeth_are_explicit) ... ok
+test_external_khbeta_is_never_marked_formula (tests.test_kisssoft_multi.TestMultiCaseContracts.test_external_khbeta_is_never_marked_formula) ... ok
+test_extra_contact_factor_remains_visible_evidence (tests.test_kisssoft_multi.TestMultiCaseContracts.test_extra_contact_factor_remains_visible_evidence) ... ok
+test_individual_root_width_and_minimum_contact_width (tests.test_kisssoft_multi.TestMultiCaseContracts.test_individual_root_width_and_minimum_contact_width) ... ok
+test_k02_all_declared_rows_match_at_original_tolerances (tests.test_kisssoft_multi.TestMultiCaseContracts.test_k02_all_declared_rows_match_at_original_tolerances) ... ok
+test_kxmn_is_dimensional_tip_alteration (tests.test_kisssoft_multi.TestMultiCaseContracts.test_kxmn_is_dimensional_tip_alteration) ... ok
+test_missing_width_or_tolerance_blocks (tests.test_kisssoft_multi.TestMultiCaseContracts.test_missing_width_or_tolerance_blocks) ... ok
+test_non_shaper_cases_compute_bending_end_to_end (tests.test_kisssoft_multi.TestMultiCaseContracts.test_non_shaper_cases_compute_bending_end_to_end) ... ok
+test_reference_output_values_do_not_drive_computed_outputs (tests.test_kisssoft_multi.TestMultiCaseContracts.test_reference_output_values_do_not_drive_computed_outputs) ... ok
+test_shaper_root_is_explicitly_unsupported (tests.test_kisssoft_multi.TestMultiCaseContracts.test_shaper_root_is_explicitly_unsupported) ... ok
+test_unit_checks_remain_active (tests.test_kisssoft_multi.TestMultiCaseContracts.test_unit_checks_remain_active) ... ok
+test_unknown_automatic_flag_not_silently_mapped (tests.test_kisssoft_multi.TestMultiCaseContracts.test_unknown_automatic_flag_not_silently_mapped) ... ok
+test_extras_are_mandatory_per_case (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_extras_are_mandatory_per_case) ... ok
+test_fixed_point_tolerance_changes_model_hash_only_when_non_default (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_fixed_point_tolerance_changes_model_hash_only_when_non_default) ... ok
+test_k02_commercial_factor_split_is_explicit (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_k02_commercial_factor_split_is_explicit) ... ok
+test_k04_k05_have_no_commercial_factor_evidence_left_but_khbeta_stays_external (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_k04_k05_have_no_commercial_factor_evidence_left_but_khbeta_stays_external) ... ok
+test_k04_k05_nE1_and_k05_qs1_residuals_are_closed (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_k04_k05_nE1_and_k05_qs1_residuals_are_closed) ... ok
+test_mass_rows_check_native_density_and_inner_diameter (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_mass_rows_check_native_density_and_inner_diameter) ... ok
+test_native_inner_diameter_and_density_replace_rounded_report_and_assumed_values (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_native_inner_diameter_and_density_replace_rounded_report_and_assumed_values) ... ok
+test_rim_thickness_uses_minimum_root_diameter_and_matches_commercial_yb (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_rim_thickness_uses_minimum_root_diameter_and_matches_commercial_yb) ... ok
+test_row_counts_are_pinned_and_k03_residual_is_still_listed (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_row_counts_are_pinned_and_k03_residual_is_still_listed) ... ok
+test_surface_inputs_use_softer_gear_and_per_gear_roughness (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_surface_inputs_use_softer_gear_and_per_gear_roughness) ... ok
+test_theta_iteration_stop_rule_reproduces_commercial_root_geometry_bitwise (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_theta_iteration_stop_rule_reproduces_commercial_root_geometry_bitwise) ... ok
+test_zv_selector_is_passed_only_when_library_declares_it (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_zv_selector_is_passed_only_when_library_declares_it) ... ok
+test_zv_uses_reference_circle_velocity_in_all_cases (tests.test_kisssoft_multi.TestP4ResidualsAndFactors.test_zv_uses_reference_circle_velocity_in_all_cases) ... ok
+test_e5_granted (tests.test_kisssoft_v015.GateM39RunIn0.test_e5_granted) ... ok
+test_mu_m_as_manufactured_Ra (tests.test_kisssoft_v015.GateM39RunIn0.test_mu_m_as_manufactured_Ra)
+RunIn=0：KISSsoft -20 μm = 本库式(23)–(26) 以报告原 Ra（0,6 µm，ZR[i].RAH）——逐位一致（原值路线）。 ... ok
+test_runin_factor_is_0_6_Ra (tests.test_kisssoft_v015.GateM39RunIn0.test_runin_factor_is_0_6_Ra)
+原"跑合 Ra×0,6"推断：RunIn 1/0 两运行 μm 之比 = 0,6^−0,25（式(26) XR ∝ Ra^0,25，其余因子不变）——逐位证实。 ... ok
+test_K02_K05_standard_route (tests.test_kisssoft_v015.GateM39XCa.test_K02_K05_standard_route) ... ok
+test_K05_SintS_follows (tests.test_kisssoft_v015.GateM39XCa.test_K05_SintS_follows) ... ok
+test_K04_basis_not_claimed (tests.test_kisssoft_v015.KnownDiffM39K04.test_K04_basis_not_claimed) ... ok
+test_difference_exists_and_is_input_definition (tests.test_kisssoft_v015.KnownDiffM39K04.test_difference_exists_and_is_input_definition) ... ok
+test_baseline_reproduces_v014_p3 (tests.test_kisssoft_v015.TestM39Evidence.test_baseline_reproduces_v014_p3)
+v0.15 基线（未改动）与 v0.14 P3 同字段一致：两轮证据可互相引用。 ... ok
+test_identity_and_edits (tests.test_kisssoft_v015.TestM39Evidence.test_identity_and_edits) ... ok
+test_A_pure_prediction_no_kisssoft_values (tests.test_kisssoft_v015.TestP5ClosedLoop.test_A_pure_prediction_no_kisssoft_values)
+A：写回文档本身的输入与 KISSsoft 记录逐字段一致（d_inner 只差 KISSsoft 两位小数显示），不代入任何 KISSsoft 值。 ... ok
+test_constraints_and_verdict (tests.test_kisssoft_v015.TestP5ClosedLoop.test_constraints_and_verdict) ... ok
+test_per_factor_and_safety_within_gates (tests.test_kisssoft_v015.TestP5ClosedLoop.test_per_factor_and_safety_within_gates) ... ok
+test_registered_predictions_reproduced (tests.test_kisssoft_v015.TestP5ClosedLoop.test_registered_predictions_reproduced)
+v0.15 运行请求登记的事前预测由当前代码复现（显示位数半格内）。 ... ok
+test_tip_alteration_prediction (tests.test_kisssoft_v015.TestP5ClosedLoop.test_tip_alteration_prediction)
+B 的 KISSsoft 自动 kXmn=−0,019 mm 与 ISO 21771 顶隙关系 −0,01909 mm 在其 0,001 mm 显示精度内一致。 ... ok
+test_extraction_reproducible (tests.test_kisssoft_v015.TestP5Evidence.test_extraction_reproducible) ... skipped '私有证据目录不在本机'
+test_provenance_and_run_checks (tests.test_kisssoft_v015.TestP5Evidence.test_provenance_and_run_checks) ... ok
+test_setup_A_vs_B (tests.test_kisssoft_v015.TestP5Evidence.test_setup_A_vs_B) ... ok
+test_gated_rows (tests.test_kisssoft_v015.TestP5FormulaLayer.test_gated_rows) ... ok
+test_inputs_aligned (tests.test_kisssoft_v015.TestP5FormulaLayer.test_inputs_aligned) ... ok
+test_known_differences_persist_same_magnitude (tests.test_kisssoft_v015.TestP5FormulaLayer.test_known_differences_persist_same_magnitude)
+P2 已知差异（Z_V +5,8e-6、Z_R +1,6e-6，未归因）在 P5 两运行中仍存在且量级不变（未变为一致，不改归因）。 ... ok
+test_explicit_helix_enters_pitch_diameter (tests.test_kv_method_b.TestHelixAngleExplicit.test_explicit_helix_enters_pitch_diameter)
+d=z·m/cosβ：d₀=12000 mm 在 ISO 1328 范围内，β=45° 时 d≈16970 mm 越界 → 证明螺旋角确实被采用。 ... ok
+test_non_spur_without_helix_is_blocked (tests.test_kv_method_b.TestHelixAngleExplicit.test_non_spur_without_helix_is_blocked) ... ok
+test_dkv_db (tests.test_kv_method_b.TestKvDerivatives.test_dkv_db) ... ok
+test_dkv_dn1 (tests.test_kv_method_b.TestKvDerivatives.test_dkv_dn1) ... ok
+test_dimensions (tests.test_kv_method_b.TestKvMethodBOnC001.test_dimensions) ... ok
+test_full_rating_unchanged (tests.test_kv_method_b.TestKvMethodBOnC001.test_full_rating_unchanged) ... ok
+test_intermediates_in_iso_units (tests.test_kv_method_b.TestKvMethodBOnC001.test_intermediates_in_iso_units) ... ok
+test_iso1328_tolerances (tests.test_kv_method_b.TestKvMethodBOnC001.test_iso1328_tolerances) ... ok
+test_kv_is_derived_not_evidence (tests.test_kv_method_b.TestKvMethodBOnC001.test_kv_is_derived_not_evidence) ... ok
+test_reproduces_receipt (tests.test_kv_method_b.TestKvMethodBOnC001.test_reproduces_receipt) ... ok
+test_boundaries (tests.test_kv_method_b.TestRegimes.test_boundaries) ... ok
+test_full_model_regime_by_speed (tests.test_kv_method_b.TestRegimes.test_full_model_regime_by_speed) ... ok
+test_intermediate_interpolation_is_continuous (tests.test_kv_method_b.TestRegimes.test_intermediate_interpolation_is_continuous) ... ok
+test_lazy_branch_and_dual (tests.test_kv_method_b.TestWhere.test_lazy_branch_and_dual) ... ok
+test_where_dimension_rules (tests.test_kv_method_b.TestWhere.test_where_dimension_rules) ... ok
+test_both_selections_give_receipt_k_v (tests.test_kv_unified.TestBothPathsOnC001.test_both_selections_give_receipt_k_v) ... ok
+test_compat_wrappers_equal_unified_model (tests.test_kv_unified.TestBothPathsOnC001.test_compat_wrappers_equal_unified_model) ... ok
+test_default_from_case_data_is_recorded_with_source (tests.test_kv_unified.TestBothPathsOnC001.test_default_from_case_data_is_recorded_with_source) ... ok
+test_selector_values_enter_sha_and_output (tests.test_kv_unified.TestBothPathsOnC001.test_selector_values_enter_sha_and_output) ... ok
+test_diff_reports_k_v_between_b_and_external (tests.test_kv_unified.TestMethodDiff.test_diff_reports_k_v_between_b_and_external) ... ok
+test_invalid_selector_rejected (tests.test_kv_unified.TestNoHiddenDefault.test_invalid_selector_rejected) ... ok
+test_pair_model_without_selector_blocks_with_options (tests.test_kv_unified.TestNoHiddenDefault.test_pair_model_without_selector_blocks_with_options) ... ok
+test_stage_model_case_data_cannot_decide (tests.test_kv_unified.TestNoHiddenDefault.test_stage_model_case_data_cannot_decide) ... ok
+test_stage_model_unchosen_when_caller_gives_empty_selection (tests.test_kv_unified.TestNoHiddenDefault.test_stage_model_unchosen_when_caller_gives_empty_selection) ... ok
+test_external_requires_evidence_provenance (tests.test_kv_unified.TestSelectorGuards.test_external_requires_evidence_provenance) ... ok
+test_method_b_inputs_only_declared_under_b (tests.test_kv_unified.TestSelectorGuards.test_method_b_inputs_only_declared_under_b) ... ok
+test_options_listed (tests.test_kv_unified.TestSelectorGuards.test_options_listed) ... ok
+test_cycle_gradient_is_independent_and_decreasing (tests.test_life_root_factors.TestLifeCurves.test_cycle_gradient_is_independent_and_decreasing) ... ok
+test_cycle_omission_blocks (tests.test_life_root_factors.TestLifeCurves.test_cycle_omission_blocks) ... ok
+test_cycles_from_hours_rpm_and_gear_ratio (tests.test_life_root_factors.TestLifeCurves.test_cycles_from_hours_rpm_and_gear_ratio) ... ok
+test_explicit_curve_endpoints (tests.test_life_root_factors.TestLifeCurves.test_explicit_curve_endpoints) ... ok
+test_k01_both_gears_match_independent_reference (tests.test_life_root_factors.TestLifeCurves.test_k01_both_gears_match_independent_reference) ... ok
+test_no_finite_life_or_above_domain_extrapolation (tests.test_life_root_factors.TestLifeCurves.test_no_finite_life_or_above_domain_extrapolation) ... ok
+test_external_rim_formula_and_backup_boundaries (tests.test_life_root_factors.TestRimAndDeepFactors.test_external_rim_formula_and_backup_boundaries) ... ok
+test_k01_yb_and_ydt_without_com_factor_inputs (tests.test_life_root_factors.TestRimAndDeepFactors.test_k01_yb_and_ydt_without_com_factor_inputs) ... ok
+test_non_boolean_modification_is_rejected (tests.test_life_root_factors.TestRimAndDeepFactors.test_non_boolean_modification_is_rejected) ... ok
+test_unequal_rim_factors_are_not_silently_shared (tests.test_life_root_factors.TestRimAndDeepFactors.test_unequal_rim_factors_are_not_silently_shared) ... ok
+test_y_dt_piecewise_endpoints_retain_standard_rounding (tests.test_life_root_factors.TestRimAndDeepFactors.test_y_dt_piecewise_endpoints_retain_standard_rounding) ... ok
+test_y_dt_uses_worse_tolerance_and_requires_modification (tests.test_life_root_factors.TestRimAndDeepFactors.test_y_dt_uses_worse_tolerance_and_requires_modification) ... ok
+test_invalid_unit_constants_and_roughness_rejected (tests.test_life_root_factors.TestRootFactors.test_invalid_unit_constants_and_roughness_rejected) ... ok
+test_k01_all_five_root_factors_without_reference_backfill (tests.test_life_root_factors.TestRootFactors.test_k01_all_five_root_factors_without_reference_backfill) ... ok
+test_missing_surface_integrity_blocks (tests.test_life_root_factors.TestRootFactors.test_missing_surface_integrity_blocks) ... ok
+test_notch_parameter_does_not_extrapolate_past_upper_limit (tests.test_life_root_factors.TestRootFactors.test_notch_parameter_does_not_extrapolate_past_upper_limit) ... ok
+test_notch_response_increases_with_qs (tests.test_life_root_factors.TestRootFactors.test_notch_response_increases_with_qs) ... ok
+test_reference_factors_do_not_silently_apply_to_finite_life (tests.test_life_root_factors.TestRootFactors.test_reference_factors_do_not_silently_apply_to_finite_life) ... ok
+test_reference_notch_parameter_returns_unity (tests.test_life_root_factors.TestRootFactors.test_reference_notch_parameter_returns_unity) ... ok
+test_roughness_range_and_units (tests.test_life_root_factors.TestRootFactors.test_roughness_range_and_units) ... ok
+test_size_curve_endpoints_and_plateaux (tests.test_life_root_factors.TestRootFactors.test_size_curve_endpoints_and_plateaux) ... ok
+test_khalpha_continuous_at_eps_gamma_2 (tests.test_load_distribution.TestBranchContinuity.test_khalpha_continuous_at_eps_gamma_2) ... ok
+test_khalpha_limits (tests.test_load_distribution.TestBranchContinuity.test_khalpha_limits) ... ok
+test_khbeta_continuous_at_q1 (tests.test_load_distribution.TestBranchContinuity.test_khbeta_continuous_at_q1) ... ok
+test_running_in_velocity_caps (tests.test_load_distribution.TestBranchContinuity.test_running_in_velocity_caps)
+式(46) 组 1：v≤5 无限幅；5<v≤10 上限 25600/σHlim；v>10 上限 12800/σHlim。 ... ok
+test_dkha (tests.test_load_distribution.TestDerivatives.test_dkha) ... ok
+test_dkhb (tests.test_load_distribution.TestDerivatives.test_dkhb) ... ok
+test_every_formula_cites_pdf_page (tests.test_load_distribution.TestDimensionsAndAssembly.test_every_formula_cites_pdf_page) ... ok
+test_full_pair_model_declares_all_inputs (tests.test_load_distribution.TestDimensionsAndAssembly.test_full_pair_model_declares_all_inputs) ... ok
+test_pair_model_ld_has_no_builtin_selector_defaults (tests.test_load_distribution.TestDimensionsAndAssembly.test_pair_model_ld_has_no_builtin_selector_defaults)
+不传选择器 → 三个方法选择器均缺失，模型求值阻断（不再内置 B/C/B）。 ... ok
+test_standalone_dimensions (tests.test_load_distribution.TestDimensionsAndAssembly.test_standalone_dimensions) ... ok
+test_branches_hit (tests.test_load_distribution.TestKisssoft.test_branches_hit) ... ok
+test_k01_k03 (tests.test_load_distribution.TestKisssoft.test_k01_k03) ... ok
+test_k04_k05_khalpha (tests.test_load_distribution.TestKisssoft.test_k04_k05_khalpha) ... ok
+test_blackbox_uses_kernel_search (tests.test_m32_adapters.M32AdapterTests.test_blackbox_uses_kernel_search) ... ok
+test_calculator_rejects_boolean_literal (tests.test_m32_adapters.M32AdapterTests.test_calculator_rejects_boolean_literal) ... ok
+test_calculator_rejects_comparison_expression (tests.test_m32_adapters.M32AdapterTests.test_calculator_rejects_comparison_expression) ... ok
+test_calculator_rejects_legacy_disallowed_powers (tests.test_m32_adapters.M32AdapterTests.test_calculator_rejects_legacy_disallowed_powers) ... ok
+test_calculator_rejects_nonlegacy_functions (tests.test_m32_adapters.M32AdapterTests.test_calculator_rejects_nonlegacy_functions) ... ok
+test_calculator_rejects_sqrt_odd_dimension (tests.test_m32_adapters.M32AdapterTests.test_calculator_rejects_sqrt_odd_dimension) ... ok
+test_calculator_reports_missing_name (tests.test_m32_adapters.M32AdapterTests.test_calculator_reports_missing_name) ... ok
+test_calculator_requires_explicit_degree_trig (tests.test_m32_adapters.M32AdapterTests.test_calculator_requires_explicit_degree_trig) ... ok
+test_continuous_gradient_declares_finite_difference (tests.test_m32_adapters.M32AdapterTests.test_continuous_gradient_declares_finite_difference) ... ok
+test_continuous_program_optimization (tests.test_m32_adapters.M32AdapterTests.test_continuous_program_optimization) ... ok
+test_divergent_graph_exposes_iteration_history (tests.test_m32_adapters.M32AdapterTests.test_divergent_graph_exposes_iteration_history) ... ok
+test_divergent_graph_updates_residual_from_final_values (tests.test_m32_adapters.M32AdapterTests.test_divergent_graph_updates_residual_from_final_values) ... ok
+test_formula_evaluation_delegates_to_kernel (tests.test_m32_adapters.M32AdapterTests.test_formula_evaluation_delegates_to_kernel) ... ok
+test_graph_atan2_returns_degrees (tests.test_m32_adapters.M32AdapterTests.test_graph_atan2_returns_degrees) ... ok
+test_graph_dag_reuses_unchanged_projection (tests.test_m32_adapters.M32AdapterTests.test_graph_dag_reuses_unchanged_projection) ... ok
+test_graph_degree_formula (tests.test_m32_adapters.M32AdapterTests.test_graph_degree_formula) ... ok
+test_graph_fixed_point (tests.test_m32_adapters.M32AdapterTests.test_graph_fixed_point) ... ok
+test_inverse_trig_graph_endpoints (tests.test_m32_adapters.M32AdapterTests.test_inverse_trig_graph_endpoints) ... ok
+test_kernel_dimensional_formula (tests.test_m32_adapters.M32AdapterTests.test_kernel_dimensional_formula) ... ok
+test_pareto_preserves_ties (tests.test_m32_adapters.M32AdapterTests.test_pareto_preserves_ties) ... ok
+test_program_optimization_recomputes_candidate (tests.test_m32_adapters.M32AdapterTests.test_program_optimization_recomputes_candidate) ... ok
+test_regression_gate_rejects_empty_or_skipped_collection (tests.test_m32_adapters.M32AdapterTests.test_regression_gate_rejects_empty_or_skipped_collection) ... ok
+test_runner_inventory_is_not_empty (tests.test_m32_adapters.M32AdapterTests.test_runner_inventory_is_not_empty) ... ok
+test_runner_reports_stage_failure_as_json_data (tests.test_m32_adapters.M32AdapterTests.test_runner_reports_stage_failure_as_json_data) ... ok
+test_both_documented_domain_formula_owners_pass (tests.test_m32_architecture_guard.TestArchitectureGuard.test_both_documented_domain_formula_owners_pass) ... ok
+test_cli_negative_proof_returns_failure_and_json (tests.test_m32_architecture_guard.TestArchitectureGuard.test_cli_negative_proof_returns_failure_and_json) ... ok
+test_dictionary_geometry_formula_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_dictionary_geometry_formula_fails) ... ok
+test_domain_output_formula_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_domain_output_formula_fails) ... ok
+test_dynamic_upward_import_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_dynamic_upward_import_fails) ... ok
+test_expression_constructor_outside_l2_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_expression_constructor_outside_l2_fails) ... ok
+test_formula_alias_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_formula_alias_fails) ... ok
+test_formula_string_outside_l2_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_formula_string_outside_l2_fails) ... ok
+test_generic_maths_comments_and_docs_pass (tests.test_m32_architecture_guard.TestArchitectureGuard.test_generic_maths_comments_and_docs_pass) ... ok
+test_geometry_formula_outside_l2_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_geometry_formula_outside_l2_fails) ... ok
+test_kernel_cannot_import_compatibility_adapter (tests.test_m32_architecture_guard.TestArchitectureGuard.test_kernel_cannot_import_compatibility_adapter) ... ok
+test_l2_cannot_import_product_or_tools (tests.test_m32_architecture_guard.TestArchitectureGuard.test_l2_cannot_import_product_or_tools) ... ok
+test_l3_quantity_reference_and_l4_comparison_pass (tests.test_m32_architecture_guard.TestArchitectureGuard.test_l3_quantity_reference_and_l4_comparison_pass) ... ok
+test_optimizer_domain_identifier_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_optimizer_domain_identifier_fails) ... ok
+test_optimizer_domain_runtime_string_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_optimizer_domain_runtime_string_fails) ... ok
+test_presentation_and_container_operations_pass (tests.test_m32_architecture_guard.TestArchitectureGuard.test_presentation_and_container_operations_pass) ... ok
+test_relative_and_absolute_upward_imports_fail (tests.test_m32_architecture_guard.TestArchitectureGuard.test_relative_and_absolute_upward_imports_fail) ... ok
+test_root_package_initializer_stays_checked_and_valid (tests.test_m32_architecture_guard.TestArchitectureGuard.test_root_package_initializer_stays_checked_and_valid) ... ok
+test_strength_formula_outside_l2_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_strength_formula_outside_l2_fails) ... ok
+test_unclassified_active_layer_fails (tests.test_m32_architecture_guard.TestArchitectureGuard.test_unclassified_active_layer_fails) ... ok
+test_unclassified_root_module_fails_closed (tests.test_m32_architecture_guard.TestArchitectureGuard.test_unclassified_root_module_fails_closed) ... ok
+test_adapter_json_must_include_full_zero_skip_acceptance (tests.test_m32_architecture_guard.TestCiReportContract.test_adapter_json_must_include_full_zero_skip_acceptance) ... ok
+test_adapter_numeric_profile_provenance_fails_closed (tests.test_m32_architecture_guard.TestCiReportContract.test_adapter_numeric_profile_provenance_fails_closed) ... ok
+test_architecture_json_must_be_complete_and_successful (tests.test_m32_architecture_guard.TestCiReportContract.test_architecture_json_must_be_complete_and_successful) ... ok
+test_runtime_and_git_noise_do_not_change_source_manifest (tests.test_m32_packaging.TestSourceManifestScope.test_runtime_and_git_noise_do_not_change_source_manifest) ... ok
+test_signed_outputs_and_similar_paths_remain_covered (tests.test_m32_packaging.TestSourceManifestScope.test_signed_outputs_and_similar_paths_remain_covered) ... ok
+test_frozen_full_precision_replaces_only_generated_tail (tests.test_m32_registry_portability.TestRegistryVectorSeeds.test_frozen_full_precision_replaces_only_generated_tail) ... ok
+test_material_generated_drift_and_invalid_numbers_fail_closed (tests.test_m32_registry_portability.TestRegistryVectorSeeds.test_material_generated_drift_and_invalid_numbers_fail_closed) ... ok
+test_missing_changed_formula_source_reference_or_tolerance_fail_closed (tests.test_m32_registry_portability.TestRegistryVectorSeeds.test_missing_changed_formula_source_reference_or_tolerance_fail_closed) ... ok
+test_runtime_startup_keeps_pure_math_process_free_of_cad (tests.test_m32_runtime.M31RuntimeTests.test_runtime_startup_keeps_pure_math_process_free_of_cad) ... ok
+test_unchanged_sources_and_aliases_survive_worker_path_reset (tests.test_m32_runtime.M31RuntimeTests.test_unchanged_sources_and_aliases_survive_worker_path_reset) ... ok
+test_c001_iteration_reproduces_legacy_receipt (tests.test_m33_closure.ClosureTest.test_c001_iteration_reproduces_legacy_receipt) ... ok
+test_corrupted_receipt_does_not_pass_iteration_diagnosis (tests.test_m33_closure.ClosureTest.test_corrupted_receipt_does_not_pass_iteration_diagnosis) ... ok
+test_missing_formula_blocks_gate (tests.test_m33_closure.ClosureTest.test_missing_formula_blocks_gate) ... ok
+test_original_22_inventory_and_formula_gate (tests.test_m33_closure.ClosureTest.test_original_22_inventory_and_formula_gate) ... ok
+test_d2_record_and_no_acceptance (tests.test_m33_d2_kisssoft_p1.TestD2KissSoftP1.test_d2_record_and_no_acceptance) ... ok
+test_evidence_has_sha256_and_open_flag (tests.test_m33_d2_kisssoft_p1.TestD2KissSoftP1.test_evidence_has_sha256_and_open_flag) ... ok
+test_fsh_and_downstream_independent_of_basis (tests.test_m33_d2_kisssoft_p1.TestD2KissSoftP1.test_fsh_and_downstream_independent_of_basis) ... ok
+test_fsh_difference_is_attributed_to_KV (tests.test_m33_d2_kisssoft_p1.TestD2KissSoftP1.test_fsh_difference_is_attributed_to_KV) ... ok
+test_ks_derived_normalisations_match_gearbase_fsh0_both_bases (tests.test_m33_d2_kisssoft_p1.TestD2KissSoftP1.test_ks_derived_normalisations_match_gearbase_fsh0_both_bases) ... ok
+test_physical_fsh_khbeta_agree_with_kisssoft (tests.test_m33_d2_kisssoft_p1.TestD2KissSoftP1.test_physical_fsh_khbeta_agree_with_kisssoft) ... ok
+test_contract_reproduces_receipt_and_why (tests.test_m33_fixes.TestC001Contract.test_contract_reproduces_receipt_and_why)
+M31 对拍契约（式(30)、fpb 以 fpt 代替）逐位复现 python-gearbox 收据 K_V。python-gearbox 的 fpb = max(fpt, ffα) ... ok
+test_kisssoft_style_options_on_c001 (tests.test_m33_fixes.TestC001Contract.test_kisssoft_style_options_on_c001)
+C001 改用 KISSsoft 口径（式(7)(8) + fpbT）：K_V 相对收据 −8.09e-4（记录于 docs/接续文档.md）。 ... ok
+test_k01_to_k05_kfbeta_from_khbeta (tests.test_m33_fixes.TestKFbetaExponent.test_k01_to_k05_kfbeta_from_khbeta)
+式(72)：b/h 取 min(b1/h1, b2/h2)（PDF 73 页）→ K01–K05 KFβ 与 KISSsoft COM 全精度一致。 ... ok
+test_library_uses_common_face_width (tests.test_m33_fixes.TestKFbetaExponent.test_library_uses_common_face_width)
+本库齿宽为单值 b（两轮同宽），bh_i = b/h_i；C001、K01 b1=b2，NF 不变。 ... ok
+test_min_ratio_and_floor_three (tests.test_m33_fixes.TestKFbetaExponent.test_min_ratio_and_floor_three) ... ok
+test_bk_eq17_with_cf_terms (tests.test_m33_fixes.TestKvFpbAndBk.test_bk_eq17_with_cf_terms)
+精度 1–5 级：Bk = |1 − c'·min(Ca1+Cf2, Ca2+Cf1)/(KA·Kγ·Ft/b)|，Ca 以跑合量 Cay 代入（PDF 41/42 页）。 ... ok
+test_kv_k01_to_k05_with_base_pitch (tests.test_m33_fixes.TestKvFpbAndBk.test_kv_k01_to_k05_with_base_pitch)
+fpb = max(fpbT1, fpbT2)（6.5.4，PDF 42），不以 ffα 代替 → K01–K05 KV 与 KISSsoft 相对差 ≤ 1.2e-5 ... ok
+test_eq30_is_exact_when_dm_ratio_equals_u (tests.test_m33_fixes.TestMred.test_eq30_is_exact_when_dm_ratio_equals_u)
+式(30) 是式(7)(8) 在 dm2/dm1 = db2/db1 = u 时的特例（PDF 37/45 页）。 ... ok
+test_generating_needs_tooth_thickness_allowance (tests.test_m33_fixes.TestRootShift.test_generating_needs_tooth_thickness_allowance)
+C001 无齿厚公差：选 generating → 缺输入阻断，不悄悄用名义变位。 ... ok
+test_xe_formula_and_zero_allowance (tests.test_m33_fixes.TestRootShift.test_xe_formula_and_zero_allowance)
+xE,min = x + Asn,i/(2·mn·tanαn)；Asn,i = 0 时 G、γe 与名义变位相同。 ... ok
+test_inapplicable_or_unsupported_combinations_rejected (tests.test_m33_fixes.TestSelectorRules.test_inapplicable_or_unsupported_combinations_rejected) ... ok
+test_kv_b_requires_m_red_and_f_pb_choice (tests.test_m33_fixes.TestSelectorRules.test_kv_b_requires_m_red_and_f_pb_choice) ... ok
+test_options_listed (tests.test_m33_fixes.TestSelectorRules.test_options_listed) ... ok
+test_gate_reasons_for_examples_1_to_4 (tests.test_m33_q1_closure.TestE4Gate.test_gate_reasons_for_examples_1_to_4) ... ok
+test_out_of_domain_table_row_blocks_coverage (tests.test_m33_q1_closure.TestE4Gate.test_out_of_domain_table_row_blocks_coverage) ... ok
+test_root_stress_divergence_analysis (tests.test_m33_q1_closure.TestExample8.test_root_stress_divergence_analysis) ... ok
+test_rz_source_is_an_explicit_selector_without_default (tests.test_m33_q1_closure.TestExample8.test_rz_source_is_an_explicit_selector_without_default) ... ok
+test_a6_scope_follows_input_declarations (tests.test_m33_q1_closure.TestFsh0AndAnnexA6.test_a6_scope_follows_input_declarations) ... ok
+test_a6_signed_sap_for_internal_pair (tests.test_m33_q1_closure.TestFsh0AndAnnexA6.test_a6_signed_sap_for_internal_pair) ... ok
+test_fsh0_definition_and_examples (tests.test_m33_q1_closure.TestFsh0AndAnnexA6.test_fsh0_definition_and_examples) ... ok
+test_5_2_3_bands (tests.test_m33_q1_closure.TestIso1328InGraph.test_5_2_3_bands) ... ok
+test_double_helical_uses_b_B_and_two_gear_max (tests.test_m33_q1_closure.TestIso1328InGraph.test_double_helical_uses_b_B_and_two_gear_max) ... ok
+test_graph_matches_reference_implementation_and_tables (tests.test_m33_q1_closure.TestIso1328InGraph.test_graph_matches_reference_implementation_and_tables) ... ok
+test_rounding_kills_derivative_and_is_reported (tests.test_m33_q1_closure.TestIso1328InGraph.test_rounding_kills_derivative_and_is_reported) ... ok
+test_scope_is_a_domain_not_an_extrapolation (tests.test_m33_q1_closure.TestIso1328InGraph.test_scope_is_a_domain_not_an_extrapolation) ... ok
+test_derivative_is_zero_and_node_is_nonsmooth (tests.test_m33_q1_closure.TestRoundTo.test_derivative_is_zero_and_node_is_nonsmooth) ... ok
+test_dimension_and_argument_checks (tests.test_m33_q1_closure.TestRoundTo.test_dimension_and_argument_checks) ... ok
+test_kernel_has_no_gear_vocabulary (tests.test_m33_q1_closure.TestRoundTo.test_kernel_has_no_gear_vocabulary) ... ok
+test_values_and_half_away_from_zero (tests.test_m33_q1_closure.TestRoundTo.test_values_and_half_away_from_zero) ... ok
+test_every_deviation_is_registered_and_classified (tests.test_m33_r1_closure.TestAcceptanceGate.test_every_deviation_is_registered_and_classified) ... ok
+test_examples_1_to_4_e4_still_blocked (tests.test_m33_r1_closure.TestAcceptanceGate.test_examples_1_to_4_e4_still_blocked) ... ok
+test_never_grants_and_keeps_four_things_separate (tests.test_m33_r1_closure.TestAcceptanceGate.test_never_grants_and_keeps_four_things_separate) ... ok
+test_no_default_and_both_bases_reported (tests.test_m33_r1_closure.TestFsh0DoubleHelicalSelector.test_no_default_and_both_bases_reported) ... ok
+test_single_helical_unaffected (tests.test_m33_r1_closure.TestFsh0DoubleHelicalSelector.test_single_helical_unaffected) ... ok
+test_contact_path_formula_or_explicit_fallback (tests.test_m33_r1_closure.TestPremiseAudit.test_contact_path_formula_or_explicit_fallback) ... ok
+test_example4_numeric_results_unchanged_by_fallback (tests.test_m33_r1_closure.TestPremiseAudit.test_example4_numeric_results_unchanged_by_fallback) ... ok
+test_remaining_premises_have_page_cited_basis_and_needed_evidence (tests.test_m33_r1_closure.TestPremiseAudit.test_remaining_premises_have_page_cited_basis_and_needed_evidence) ... ok
+test_example6_internal_shaper_dff2 (tests.test_m33_r1_closure.TestShaperRootForm.test_example6_internal_shaper_dff2) ... ok
+test_example8_protuberance_dff_stays_not_implemented (tests.test_m33_r1_closure.TestShaperRootForm.test_example8_protuberance_dff_stays_not_implemented) ... ok
+test_shaper_form_is_spur_only (tests.test_m33_r1_closure.TestShaperRootForm.test_shaper_form_is_spur_only) ... ok
+test_warning_only_near_the_contradictory_eps_alphan_2_boundary (tests.test_m33_tr30_acceptance.TestFEpsKink.test_warning_only_near_the_contradictory_eps_alphan_2_boundary) ... ok
+test_explicit_zbd_selector_replaces_implicit_unity_fzca_without_changing_spur (tests.test_m33_tr30_acceptance.TestPerGearYXAndExplicitZCa.test_explicit_zbd_selector_replaces_implicit_unity_fzca_without_changing_spur) ... ok
+test_k01_yx_and_c001_unchanged (tests.test_m33_tr30_acceptance.TestPerGearYXAndExplicitZCa.test_k01_yx_and_c001_unchanged) ... ok
+test_tr30_example5_mixed_materials_give_distinct_yx (tests.test_m33_tr30_acceptance.TestPerGearYXAndExplicitZCa.test_tr30_example5_mixed_materials_give_distinct_yx) ... ok
+test_annex_transcription_is_numeric_and_page_cited (tests.test_m33_tr30_acceptance.TestTR30Examples14Acceptance.test_annex_transcription_is_numeric_and_page_cited) ... ok
+test_example_one_annex_a_unrounded_values_pass_tier_a (tests.test_m33_tr30_acceptance.TestTR30Examples14Acceptance.test_example_one_annex_a_unrounded_values_pass_tier_a) ... ok
+test_examples_1_to_4_pass_mandated_rows_but_full_table_remains_open (tests.test_m33_tr30_acceptance.TestTR30Examples14Acceptance.test_examples_1_to_4_pass_mandated_rows_but_full_table_remains_open) ... ok
+test_missing_velocity_selector_blocks (tests.test_m33_tr30_acceptance.TestTR30Examples14Acceptance.test_missing_velocity_selector_blocks) ... ok
+test_old_strict_on_rounded_column_is_still_reported (tests.test_m33_tr30_acceptance.TestTR30Examples14Acceptance.test_old_strict_on_rounded_column_is_still_reported) ... ok
+test_tampered_annex_reference_changes_verdict_not_actual (tests.test_m33_tr30_acceptance.TestTR30Examples14Acceptance.test_tampered_annex_reference_changes_verdict_not_actual) ... ok
+test_velocity_basis_is_a_method_choice_not_absorbed_by_tolerance (tests.test_m33_tr30_acceptance.TestTR30Examples14Acceptance.test_velocity_basis_is_a_method_choice_not_absorbed_by_tolerance) ... ok
+test_display_quantum_parsing (tests.test_m33_tr30_acceptance.TestTieredRule.test_display_quantum_parsing) ... ok
+test_tier_a_is_the_literal_4_2_15_double_gate (tests.test_m33_tr30_acceptance.TestTieredRule.test_tier_a_is_the_literal_4_2_15_double_gate) ... ok
+test_tier_b_adds_only_the_printed_half_quantum (tests.test_m33_tr30_acceptance.TestTieredRule.test_tier_b_adds_only_the_printed_half_quantum) ... ok
+test_factor_path_requires_basis_with_formula_surface_factors (tests.test_m33_tr30_acceptance.TestZVVelocitySelector.test_factor_path_requires_basis_with_formula_surface_factors) ... ok
+test_formula_level_model_requires_explicit_basis (tests.test_m33_tr30_acceptance.TestZVVelocitySelector.test_formula_level_model_requires_explicit_basis) ... ok
+test_kisssoft_uses_reference_circle_velocity (tests.test_m33_tr30_acceptance.TestZVVelocitySelector.test_kisssoft_uses_reference_circle_velocity) ... ok
+test_contact_path_now_judged_in_graph (tests.test_m33_user_decisions_20261030.TestProtuberanceDffInGraph.test_contact_path_now_judged_in_graph) ... ok
+test_in_graph_value_equals_outside_graph_method (tests.test_m33_user_decisions_20261030.TestProtuberanceDffInGraph.test_in_graph_value_equals_outside_graph_method) ... ok
+test_missing_input_blocks (tests.test_m33_user_decisions_20261030.TestProtuberanceDffInGraph.test_missing_input_blocks) ... ok
+test_original_path_unchanged (tests.test_m33_user_decisions_20261030.TestProtuberanceDffInGraph.test_original_path_unchanged) ... ok
+test_other_rows_identical (tests.test_m33_user_decisions_20261030.TestProtuberanceDffInGraph.test_other_rows_identical) ... ok
+test_selector_has_no_default_and_is_checked (tests.test_m33_user_decisions_20261030.TestProtuberanceDffInGraph.test_selector_has_no_default_and_is_checked) ... ok
+test_decision_records (tests.test_m33_user_decisions_20261030.TestUserDecisionsInGate.test_decision_records) ... ok
+test_example6_composition_approved (tests.test_m33_user_decisions_20261030.TestUserDecisionsInGate.test_example6_composition_approved) ... ok
+test_example7_decided_view (tests.test_m33_user_decisions_20261030.TestUserDecisionsInGate.test_example7_decided_view) ... ok
+test_example8_decided_view_and_known_deviation (tests.test_m33_user_decisions_20261030.TestUserDecisionsInGate.test_example8_decided_view_and_known_deviation) ... ok
+test_never_accepted (tests.test_m33_user_decisions_20261030.TestUserDecisionsInGate.test_never_accepted) ... ok
+test_premises_conditional_but_still_assumptions (tests.test_m33_user_decisions_20261030.TestUserDecisionsInGate.test_premises_conditional_but_still_assumptions) ... ok
+test_remaining_blockers (tests.test_m33_user_decisions_20261030.TestUserDecisionsInGate.test_remaining_blockers) ... ok
+test_imported_source_edits_do_not_fall_back_to_baseline (tests.test_m34_closure.TestM34Closure.test_imported_source_edits_do_not_fall_back_to_baseline) ... ok
+test_pruning_matches_exhaustive_small_domain (tests.test_m34_closure.TestM34Closure.test_pruning_matches_exhaustive_small_domain) ... ok
+test_seed_domain_and_rank_match_old_solver (tests.test_m34_closure.TestM34Closure.test_seed_domain_and_rank_match_old_solver) ... ok
+test_source_only_change_invalidates_preview_token (tests.test_m34_closure.TestM34Closure.test_source_only_change_invalidates_preview_token) ... ok
+test_source_owned_chain_rejects_projection_only_write (tests.test_m34_closure.TestM34Closure.test_source_owned_chain_rejects_projection_only_write) ... ok
+test_store_checks_source_hash_before_mutation (tests.test_m34_closure.TestM34Closure.test_store_checks_source_hash_before_mutation) ... ok
+test_adapter_selector_blocks_unknown_value (tests.test_m34_factor_recompute.TestFactorDocuments.test_adapter_selector_blocks_unknown_value) ... ok
+test_c001_receipts_reproduced_at_original_geometry (tests.test_m34_factor_recompute.TestFactorDocuments.test_c001_receipts_reproduced_at_original_geometry) ... ok
+test_factors_follow_design_variables (tests.test_m34_factor_recompute.TestFactorDocuments.test_factors_follow_design_variables) ... ok
+test_hold_rationale_and_status (tests.test_m34_factor_recompute.TestFactorDocuments.test_hold_rationale_and_status) ... ok
+test_k01_parent_equivalence_at_original_geometry (tests.test_m34_factor_recompute.TestFactorDocuments.test_k01_parent_equivalence_at_original_geometry) ... ok
+test_old_declarations_unchanged_path (tests.test_m34_factor_recompute.TestFactorDocuments.test_old_declarations_unchanged_path)
+旧文档不含系数/适配选择器：装配路径不变。 ... ok
+test_old_optimum_violates_pitting_under_recompute (tests.test_m34_factor_recompute.TestFactorDocuments.test_old_optimum_violates_pitting_under_recompute)
+v0.14 OPT 写回的最优点：保持证据时 S_H1=1.00005；系数重算后 < 1（与 KISSsoft P2 方向一致）。 ... ok
+test_regenerated_bit_identical (tests.test_m34_factor_recompute.TestFactorDocuments.test_regenerated_bit_identical) ... ok
+test_extracted_json_provenance (tests.test_m34_factor_recompute.TestKisssoftP2.test_extracted_json_provenance) ... ok
+test_extraction_reproducible_from_private_evidence (tests.test_m34_factor_recompute.TestKisssoftP2.test_extraction_reproducible_from_private_evidence) ... skipped '私有 KISSsoft 证据目录不在本机'
+test_gated_rows (tests.test_m34_factor_recompute.TestKisssoftP2.test_gated_rows) ... ok
+test_inputs_aligned_field_by_field (tests.test_m34_factor_recompute.TestKisssoftP2.test_inputs_aligned_field_by_field) ... ok
+test_known_differences_stay_small (tests.test_m34_factor_recompute.TestKisssoftP2.test_known_differences_stay_small)
+已知差异不设门，但漂移需被发现：超过 TOL_FACTOR 即说明归因前提变化。 ... ok
+test_reconciliation_of_written_optimum (tests.test_m34_factor_recompute.TestKisssoftP2.test_reconciliation_of_written_optimum) ... ok
+test_stepwise_attribution_closes (tests.test_m34_factor_recompute.TestKisssoftP2.test_stepwise_attribution_closes) ... ok
+test_tip_thickness_with_tip_alteration (tests.test_m34_factor_recompute.TestKisssoftP2.test_tip_thickness_with_tip_alteration) ... ok
+test_blocked_and_describe (tests.test_m34_factor_recompute.TestOptimizeDeclaredTool.test_blocked_and_describe) ... ok
+test_k01_recompute_optimum_moves (tests.test_m34_factor_recompute.TestRecomputeRuns.test_k01_recompute_optimum_moves) ... ok
+test_runs_confirmed_and_report_held (tests.test_m34_factor_recompute.TestRecomputeRuns.test_runs_confirmed_and_report_held) ... ok
+test_c001_blocks (tests.test_m34_gridprune.TestBlockedWithoutExplicitInputs.test_c001_blocks) ... ok
+test_k01_needs_explicit_contact_ratio_limit (tests.test_m34_gridprune.TestBlockedWithoutExplicitInputs.test_k01_needs_explicit_contact_ratio_limit) ... ok
+test_assurance_separated_and_gradient_check (tests.test_m34_gridprune.TestC001Closure.test_assurance_separated_and_gradient_check) ... ok
+test_interval_conservative_on_formula_graph (tests.test_m34_gridprune.TestC001Closure.test_interval_conservative_on_formula_graph) ... ok
+test_lineage (tests.test_m34_gridprune.TestC001Closure.test_lineage) ... ok
+test_pruned_equals_exhaustive (tests.test_m34_gridprune.TestC001Closure.test_pruned_equals_exhaustive) ... ok
+test_written_and_independently_confirmed (tests.test_m34_gridprune.TestC001Closure.test_written_and_independently_confirmed) ... ok
+test_missing_limit_resolution_series (tests.test_m34_gridprune.TestDeclarationBlocks.test_missing_limit_resolution_series) ... ok
+test_golden_reproduced_with_far_fewer_evaluations (tests.test_m34_gridprune.TestH2Flagship.test_golden_reproduced_with_far_fewer_evaluations) ... ok
+test_interval_conservative (tests.test_m34_gridprune.TestH2Flagship.test_interval_conservative) ... ok
+test_small_domain_matches_exhaustive_and_audit (tests.test_m34_gridprune.TestH2Flagship.test_small_domain_matches_exhaustive_and_audit) ... ok
+test_new_kernel_files_have_no_domain_terms (tests.test_m34_gridprune.TestKernelPurityM34.test_new_kernel_files_have_no_domain_terms) ... ok
+test_mixed_problem_via_declaration (tests.test_m34_gridprune.TestPrunedEqualsExhaustive.test_mixed_problem_via_declaration) ... ok
+test_random_discrete_problems (tests.test_m34_gridprune.TestPrunedEqualsExhaustive.test_random_discrete_problems) ... ok
+test_snap_is_strictly_feasible (tests.test_m34_gridprune.TestPrunedEqualsExhaustive.test_snap_is_strictly_feasible) ... ok
+test_against_independent_implementation (tests.test_m34_gridprune.TestTipThickness.test_against_independent_implementation) ... ok
+test_broken_chain_head_is_other_document (tests.test_m34_opt3.TestDesignStoreChain.test_broken_chain_head_is_other_document) ... ok
+test_commit_and_history (tests.test_m34_opt3.TestDesignStoreChain.test_commit_and_history) ... ok
+test_demo_store_on_disk (tests.test_m34_opt3.TestDesignStoreChain.test_demo_store_on_disk) ... ok
+test_double_commit_rejected (tests.test_m34_opt3.TestDesignStoreChain.test_double_commit_rejected) ... ok
+test_forged_declaration (tests.test_m34_opt3.TestDesignStoreChain.test_forged_declaration) ... ok
+test_forged_parent_hash_in_document (tests.test_m34_opt3.TestDesignStoreChain.test_forged_parent_hash_in_document) ... ok
+test_forged_parent_hash_in_provenance (tests.test_m34_opt3.TestDesignStoreChain.test_forged_parent_hash_in_provenance) ... ok
+test_forged_solver_fingerprint (tests.test_m34_opt3.TestDesignStoreChain.test_forged_solver_fingerprint) ... ok
+test_historical_kernel_cannot_be_committed_as_current (tests.test_m34_opt3.TestDesignStoreChain.test_historical_kernel_cannot_be_committed_as_current) ... ok
+test_no_parent (tests.test_m34_opt3.TestDesignStoreChain.test_no_parent) ... ok
+test_on_disk_tamper_detected (tests.test_m34_opt3.TestDesignStoreChain.test_on_disk_tamper_detected) ... ok
+test_unexpected_changes (tests.test_m34_opt3.TestDesignStoreChain.test_unexpected_changes) ... ok
+test_declarations_and_validation (tests.test_m34_opt3.TestEpsilonKernel.test_declarations_and_validation) ... ok
+test_epsilon_constraint_checked_against_document_limit (tests.test_m34_opt3.TestEpsilonKernel.test_epsilon_constraint_checked_against_document_limit) ... ok
+test_nondominated (tests.test_m34_opt3.TestEpsilonKernel.test_nondominated) ... ok
+test_scan_blocking (tests.test_m34_opt3.TestEpsilonKernel.test_scan_blocking) ... ok
+test_sints_point (tests.test_m34_opt3.TestEpsilonKernel.test_sints_point) ... ok
+test_hold_list_declared (tests.test_m34_opt3.TestMultiFactorDocs.test_hold_list_declared) ... ok
+test_k04_parent_would_not_be_auto (tests.test_m34_opt3.TestMultiFactorDocs.test_k04_parent_would_not_be_auto)
+K04 原 KISSsoft kXmn=0，而自动等效式在原几何下 ≠ 0 → K04 选 none 有证据依据。 ... ok
+test_original_geometry_matches_parent (tests.test_m34_opt3.TestMultiFactorDocs.test_original_geometry_matches_parent) ... ok
+test_regenerated_bit_identical (tests.test_m34_opt3.TestMultiFactorDocs.test_regenerated_bit_identical) ... ok
+test_k01_local_reproduces_opt2 (tests.test_m34_opt3.TestMultiOptimizeStored.test_k01_local_reproduces_opt2) ... ok
+test_k02_k04_volume_reduced_or_repaired (tests.test_m34_opt3.TestMultiOptimizeStored.test_k02_k04_volume_reduced_or_repaired) ... ok
+test_stored_runs_confirmed (tests.test_m34_opt3.TestMultiOptimizeStored.test_stored_runs_confirmed) ... ok
+test_flow (tests.test_m34_opt3.TestOptimizeAndCommit.test_flow) ... ok
+test_registration (tests.test_m34_opt3.TestOptimizeAndCommit.test_registration) ... ok
+test_each_point_reverified_from_document (tests.test_m34_opt3.TestParetoStored.test_each_point_reverified_from_document) ... ok
+test_front (tests.test_m34_opt3.TestParetoStored.test_front) ... ok
+test_extracted_json_provenance (tests.test_m34_opt3.TestTipShortening.test_extracted_json_provenance) ... ok
+test_extraction_reproducible (tests.test_m34_opt3.TestTipShortening.test_extraction_reproducible) ... skipped '私有 KISSsoft v0.15 证据目录不在本机'
+test_kisssoft_p5_regression (tests.test_m34_opt3.TestTipShortening.test_kisssoft_p5_regression) ... ok
+test_no_default (tests.test_m34_opt3.TestTipShortening.test_no_default) ... ok
+test_none_is_old_path_bitwise (tests.test_m34_opt3.TestTipShortening.test_none_is_old_path_bitwise) ... ok
+test_p5b_rounded_kx_closes_eps (tests.test_m34_opt3.TestTipShortening.test_p5b_rounded_kx_closes_eps)
+KISSsoft 把 kXmn 圆整到 0.001 mm：用其圆整值 −0.019 mm 代入同一模型，ε_α 与 P5-B 逐位一致 → 余差全部归因于圆整。 ... ok
+test_k04_reports_at_bound_and_held_khb (tests.test_m34_opt3.TestUnifiedReport.test_k04_reports_at_bound_and_held_khb) ... ok
+test_report_sections (tests.test_m34_opt3.TestUnifiedReport.test_report_sections) ... ok
+test_direct_caller_cannot_claim_trusted_provenance (tests.test_m34_source_reads.TestSourceOwnedReads.test_direct_caller_cannot_claim_trusted_provenance) ... ok
+test_file_stored_source_reads_after_restart (tests.test_m34_source_reads.TestSourceOwnedReads.test_file_stored_source_reads_after_restart) ... ok
+test_imported_source_all_read_paths (tests.test_m34_source_reads.TestSourceOwnedReads.test_imported_source_all_read_paths) ... ok
+test_reads_preserve_source_ownership_and_preview_token (tests.test_m34_source_reads.TestSourceOwnedReads.test_reads_preserve_source_ownership_and_preview_token) ... ok
+test_real_optimizer_written_source_all_read_paths (tests.test_m34_source_reads.TestSourceOwnedReads.test_real_optimizer_written_source_all_read_paths) ... ok
+test_external_span_ball_chordal_match_independent (tests.test_m35_iso1328_sheet.TestParameterSheet.test_external_span_ball_chordal_match_independent) ... ok
+test_groups_and_tip_must_be_explicit (tests.test_m35_iso1328_sheet.TestParameterSheet.test_groups_and_tip_must_be_explicit) ... ok
+test_internal_gear_excludes_span_and_chordal (tests.test_m35_iso1328_sheet.TestParameterSheet.test_internal_gear_excludes_span_and_chordal) ... ok
+test_missing_input_blocks_without_values (tests.test_m35_iso1328_sheet.TestParameterSheet.test_missing_input_blocks_without_values) ... ok
+test_projection_is_read_only_and_deterministic (tests.test_m35_iso1328_sheet.TestParameterSheet.test_projection_is_read_only_and_deterministic) ... ok
+test_spur_chordal_classical (tests.test_m35_iso1328_sheet.TestParameterSheet.test_spur_chordal_classical) ... ok
+test_tolerance_rows_carry_unrounded_and_rounded (tests.test_m35_iso1328_sheet.TestParameterSheet.test_tolerance_rows_carry_unrounded_and_rounded) ... ok
+test_branch_author_notes_k01 (tests.test_m35_iso1328_sheet.TestTolerances.test_branch_author_notes_k01)
+分路 C 注释所称的 K01 值（fuT 小轮 15、Fpz/8T 大轮 27；z=76 时 k=9.5→10）由公式图复现。 ... ok
+test_grade_outside_1_to_11_is_out_of_domain (tests.test_m35_iso1328_sheet.TestTolerances.test_grade_outside_1_to_11_is_out_of_domain) ... ok
+test_independent_reimplementation_all_tolerances (tests.test_m35_iso1328_sheet.TestTolerances.test_independent_reimplementation_all_tolerances) ... ok
+test_kisssoft_report_values (tests.test_m35_iso1328_sheet.TestTolerances.test_kisssoft_report_values)
+E5 类参照：KISSsoft 同输入报告的 fpT、ffαT、fHβT（共 18 个）逐一相等（均为取整后值）。 ... ok
+test_missing_grade_blocks (tests.test_m35_iso1328_sheet.TestTolerances.test_missing_grade_blocks) ... ok
+test_contract (tests.test_m36_din6892.TestContract.test_contract) ... ok
+test_blocks (tests.test_m36_din6892.TestDIN6885Table1.test_blocks) ... ok
+test_rows (tests.test_m36_din6892.TestDIN6885Table1.test_rows) ... ok
+test_blocks (tests.test_m36_din6892.TestMethodC.test_blocks) ... ok
+test_brittle_hub_uses_Rm (tests.test_m36_din6892.TestMethodC.test_brittle_hub_uses_Rm) ... ok
+test_rewrite (tests.test_m36_din6892.TestMethodC.test_rewrite) ... ok
+test_example (tests.test_m36_din6892.TestStandardExampleD32.test_example) ... ok
+test_D1_full_flow (tests.test_m36_din6892_b.TestAnnexD_MethodB.test_D1_full_flow) ... ok
+test_D1_steps (tests.test_m36_din6892_b.TestAnnexD_MethodB.test_D1_steps)
+D.1 弹性销联轴器（PDF32–34）。 ... ok
+test_D2_full_flow_fails_shaft_eq (tests.test_m36_din6892_b.TestAnnexD_MethodB.test_D2_full_flow_fails_shaft_eq) ... ok
+test_D2_steps (tests.test_m36_din6892_b.TestAnnexD_MethodB.test_D2_steps)
+D.2 工业机器人伺服减速器输出轴（PDF37–39）：AB 型键、K_λe 1,32（图5）、过盈 M_tRmin 1 250 Nm、轴 eq 判据不满足。 ... ok
+test_contract (tests.test_m36_din6892_b.TestContract.test_contract) ... ok
+test_blocks (tests.test_m36_din6892_b.TestRewriteAndBlocks.test_blocks) ... ok
+test_fW_fL_rewrite (tests.test_m36_din6892_b.TestRewriteAndBlocks.test_fW_fL_rewrite) ... ok
+test_two_keys_and_kr_waiver (tests.test_m36_din6892_b.TestRewriteAndBlocks.test_two_keys_and_kr_waiver) ... ok
+test_A1_pressure_given_solid_equal (tests.test_m36_din7190.TestAnnexA.test_A1_pressure_given_solid_equal) ... ok
+test_A2_interference_given_solid_equal (tests.test_m36_din7190.TestAnnexA.test_A2_interference_given_solid_equal) ... ok
+test_A3_pressure_given_hollow (tests.test_m36_din7190.TestAnnexA.test_A3_pressure_given_hollow) ... ok
+test_A4_interference_given_hollow (tests.test_m36_din7190.TestAnnexA.test_A4_interference_given_hollow) ... ok
+test_contract (tests.test_m36_din7190.TestContract.test_contract) ... ok
+test_blocks (tests.test_m36_din7190.TestRewriteAndBlocks.test_blocks) ... ok
+test_eq18_general_equals_eq19_special (tests.test_m36_din7190.TestRewriteAndBlocks.test_eq18_general_equals_eq19_special) ... ok
+test_torque_and_axial_rewrite (tests.test_m36_din7190.TestRewriteAndBlocks.test_torque_and_axial_rewrite) ... ok
+test_deflection (tests.test_m36_drivetrain_check.TestC001Demo.test_deflection) ... ok
+test_evidence_and_unverified (tests.test_m36_drivetrain_check.TestC001Demo.test_evidence_and_unverified) ... ok
+test_json_serialisable_and_schema (tests.test_m36_drivetrain_check.TestC001Demo.test_json_serialisable_and_schema) ... ok
+test_key_fit_and_summary (tests.test_m36_drivetrain_check.TestC001Demo.test_key_fit_and_summary) ... ok
+test_same_as_shaft_line_pipeline (tests.test_m36_drivetrain_check.TestC001Demo.test_same_as_shaft_line_pipeline)
+与既有 shaft_line.run（静定 + 测试内手工系数）逐项一致：梁模型支反力、截面 S、L10h。 ... ok
+test_contract (tests.test_m36_drivetrain_check.TestContract.test_contract) ... ok
+test_blocks (tests.test_m36_drivetrain_check.TestVariantsAndBlocks.test_blocks) ... ok
+test_three_supports_uniform_and_limits (tests.test_m36_drivetrain_check.TestVariantsAndBlocks.test_three_supports_uniform_and_limits) ... ok
+test_bearing_life_flow (tests.test_m36_iso281.TestAiso.test_bearing_life_flow) ... ok
+test_continuity_and_limits (tests.test_m36_iso281.TestAiso.test_continuity_and_limits) ... ok
+test_rewrite_grid (tests.test_m36_iso281.TestAiso.test_rewrite_grid) ... ok
+test_contract (tests.test_m36_iso281.TestContract.test_contract) ... ok
+test_not_in_kernel (tests.test_m36_iso281.TestContract.test_not_in_kernel) ... ok
+test_registry_guard (tests.test_m36_iso281.TestContract.test_registry_guard) ... ok
+test_L10_rewrite (tests.test_m36_iso281.TestLife.test_L10_rewrite) ... ok
+test_a1_table12 (tests.test_m36_iso281.TestLife.test_a1_table12) ... ok
+test_load_restrictions (tests.test_m36_iso281.TestLife.test_load_restrictions) ... ok
+test_viscosity (tests.test_m36_iso281.TestLife.test_viscosity) ... ok
+test_blocks (tests.test_m36_iso281.TestXY.test_blocks) ... ok
+test_small_axial_and_zero_axial (tests.test_m36_iso281.TestXY.test_small_axial_and_zero_axial) ... ok
+test_table3_nodes_and_interpolation (tests.test_m36_iso281.TestXY.test_table3_nodes_and_interpolation) ... ok
+test_table8 (tests.test_m36_iso281.TestXY.test_table8) ... ok
+test_aiso_thrust_rewrite (tests.test_m36_iso281_thrust.TestTable11AndLife.test_aiso_thrust_rewrite)
+式(37)–(42) 独立重写（PDF36–37）。 ... ok
+test_flow (tests.test_m36_iso281_thrust.TestTable11AndLife.test_flow) ... ok
+test_life_rewrite (tests.test_m36_iso281_thrust.TestTable11AndLife.test_life_rewrite) ... ok
+test_table11 (tests.test_m36_iso281_thrust.TestTable11AndLife.test_table11) ... ok
+test_blocks (tests.test_m36_iso281_thrust.TestTable5.test_blocks) ... ok
+test_rows_interpolation_and_branches (tests.test_m36_iso281_thrust.TestTable5.test_rows_interpolation_and_branches) ... ok
+test_rows_vs_general_formula (tests.test_m36_iso281_thrust.TestTable5.test_rows_vs_general_formula)
+表5 列值 = 通式行的两位圆整（独立重写通式）；85° 的 X 原表印 4,8（一位），按 0,05 容差。 ... ok
+test_inputs_field_by_field (tests.test_m36_kisssoft_v014.TestFitInputs.test_inputs_field_by_field) ... ok
+test_A2_A4_effective_interference_and_pressure (tests.test_m36_kisssoft_v014.TestFitKISSsoft.test_A2_A4_effective_interference_and_pressure) ... ok
+test_external_evidence_registration (tests.test_m36_kisssoft_v014.TestFitKISSsoft.test_external_evidence_registration) ... ok
+test_annex_rounding_vs_kisssoft (tests.test_m36_kisssoft_v014.TestFitKnownDifferences.test_annex_rounding_vs_kisssoft)
+附录在式(7)/(12) 后把 U_w 圆整到 µm 再算（A.2：70,2→70；A.1：55,8→56；A.3：69,1→69），KISSsoft 不圆整。 ... ok
+test_safety_factor_stress_hypothesis (tests.test_m36_kisssoft_v014.TestFitKnownDifferences.test_safety_factor_stress_hypothesis)
+KISSsoft 屈服安全 = R_p/σV，σV = √(σR² + σT² − σR·σT)（报告第1页声明，σz = 0）在临界点精确求值； ... ok
+test_torque_outputs_unattributed (tests.test_m36_kisssoft_v014.TestFitKnownDifferences.test_torque_outputs_unattributed)
+KISSsoft 只给 'Max. torque to avoid micro sliding'（m01M.grenz，KISSsoft 专有），无 DIN 7190-1 式(1) 输出（T_nom = 0、S_r > 1000）。 ... ok
+test_round_trip (tests.test_m36_kisssoft_v014.TestFitRoundTrip.test_round_trip) ... ok
+test_input_identity_vs_annex_D1 (tests.test_m36_kisssoft_v014.TestKeyVendorExample.test_input_identity_vs_annex_D1) ... ok
+test_method_c_failure_recorded (tests.test_m36_kisssoft_v014.TestKeyVendorExample.test_method_c_failure_recorded) ... ok
+test_stored_bearing_depths (tests.test_m36_kisssoft_v014.TestKeyVendorExample.test_stored_bearing_depths)
+原生文件保存的 htW/htN（KISSsoft AG 保存的计算状态，非本次 COM 导出）与本库式(4)(5) 一致； ... ok
+test_minimal_json_with_hashes (tests.test_m36_kisssoft_v014.TestProvenance.test_minimal_json_with_hashes) ... ok
+test_deflection_and_rotation (tests.test_m36_kisssoft_v014.TestShaftKISSsoft.test_deflection_and_rotation)
+近似一致（不提升证据）：KISSsoft 报告齿轮'载荷作用长度 80 mm'、计剪切变形（α_s = 1,1）。 ... ok
+test_gear_force_definition (tests.test_m36_kisssoft_v014.TestShaftKISSsoft.test_gear_force_definition)
+一致项：F_t = 2T/d_w = 1250 N、F_r = F_t·tan α_wn（KISSsoft 原生 F= 行印 10 位有效数字 → 门 5e-8 N = 末位半个单位）。 ... ok
+test_input_identity (tests.test_m36_kisssoft_v014.TestShaftKISSsoft.test_input_identity) ... ok
+test_reactions_known_difference (tests.test_m36_kisssoft_v014.TestShaftKISSsoft.test_reactions_known_difference)
+已知差异：本库 227,481/625,000 N（精确平衡）vs KISSsoft 227,432/624,864（A）、227,430/624,857（B）。 ... ok
+test_D1_D2_270_not_effective (tests.test_m36_kisssoft_v015.TestDin6892BKISSsoft.test_D1_D2_270_not_effective)
+OPEN：'D.1 D2=270' 运行的 set_log 记 readback 270，但计算后 D2 = 200，全部输出与供应商例逐位相同 → 不是 D.1 复刻，不作参照。 ... ok
+test_fW_known_difference (tests.test_m36_kisssoft_v015.TestDin6892BKISSsoft.test_fW_known_difference) ... ok
+test_fields (tests.test_m36_kisssoft_v015.TestDin6892BKISSsoft.test_fields) ... ok
+test_registration (tests.test_m36_kisssoft_v015.TestDin6892BKISSsoft.test_registration) ... ok
+test_registration (tests.test_m36_kisssoft_v015.TestDin6892KISSsoft.test_registration) ... ok
+test_user_example (tests.test_m36_kisssoft_v015.TestDin6892KISSsoft.test_user_example) ... ok
+test_vendor_unidirectional (tests.test_m36_kisssoft_v015.TestDin6892KISSsoft.test_vendor_unidirectional) ... ok
+test_sr (tests.test_m36_kisssoft_v015.TestDin7190KISSsoft.test_sr) ... ok
+test_safety_differences_fully_attributed (tests.test_m36_kisssoft_v015.TestDin743Attribution.test_safety_differences_fully_attributed) ... ok
+test_section_resultants_from_kisssoft_reactions (tests.test_m36_kisssoft_v015.TestDin743Attribution.test_section_resultants_from_kisssoft_reactions)
+把 KISSsoft 原生支反力（约 10 位有效数字）代入本库截面隔离体 → Mb 与 KISSsoft 截面 Mb 一致至 2e-11（序列化精度）。 ... ok
+test_inputs_field_by_field (tests.test_m36_kisssoft_v015.TestDin743Inputs.test_inputs_field_by_field) ... ok
+test_coefficients (tests.test_m36_kisssoft_v015.TestDin743KISSsoft.test_coefficients) ... ok
+test_external_evidence_registration (tests.test_m36_kisssoft_v015.TestDin743KISSsoft.test_external_evidence_registration) ... ok
+test_stresses_and_safety_from_kisssoft_resultants (tests.test_m36_kisssoft_v015.TestDin743KISSsoft.test_stresses_and_safety_from_kisssoft_resultants) ... ok
+test_l10h (tests.test_m36_kisssoft_v015.TestIso281KISSsoft.test_l10h) ... ok
+test_registration (tests.test_m36_kisssoft_v015.TestIso281KISSsoft.test_registration) ... ok
+test_deflection_record (tests.test_m36_kisssoft_v015.TestL80.test_deflection_record) ... ok
+test_moments_and_safety (tests.test_m36_kisssoft_v015.TestL80.test_moments_and_safety) ... ok
+test_torque_distribution_input_difference (tests.test_m36_kisssoft_v015.TestL80.test_torque_distribution_input_difference)
+KISSsoft 把扭矩也按作用长度均布：S2（x=55）T = 25·45/80；联轴器 80 mm 作用于 x = 100–180，越过支承 B 并超出轴端 160 → ... ok
+test_minimal_json_with_hashes (tests.test_m36_kisssoft_v015.TestProvenance.test_minimal_json_with_hashes) ... ok
+test_residual_open_and_deflection (tests.test_m36_kisssoft_v015.TestR3Record.test_residual_open_and_deflection) ... ok
+test_simply_supported_point_load_EB_and_timoshenko (tests.test_m36_shaft_beam.TestClosedForm.test_simply_supported_point_load_EB_and_timoshenko) ... ok
+test_three_support_point_load (tests.test_m36_shaft_beam.TestClosedForm.test_three_support_point_load)
+两等跨连续梁，左跨中点集中力 P：R = 13P/32、11P/16、−3P/32（力法）。 ... ok
+test_three_support_uniform_line_load (tests.test_m36_shaft_beam.TestClosedForm.test_three_support_uniform_line_load)
+两等跨连续梁满跨均布 w：R = 3wL/8、5wL/4、3wL/8。 ... ok
+test_two_support_equals_statics (tests.test_m36_shaft_beam.TestClosedForm.test_two_support_equals_statics) ... ok
+test_contract (tests.test_m36_shaft_beam.TestContract.test_contract) ... ok
+test_line_load_internal_forces (tests.test_m36_shaft_beam.TestNumericRewrite.test_line_load_internal_forces) ... ok
+test_stepped_shaft_line_load_tip (tests.test_m36_shaft_beam.TestNumericRewrite.test_stepped_shaft_line_load_tip) ... ok
+test_stub_and_blocks (tests.test_m36_shaft_beam.TestTorsionAndStub.test_stub_and_blocks) ... ok
+test_three_support_section_and_bearings (tests.test_m36_shaft_beam.TestTorsionAndStub.test_three_support_section_and_bearings)
+超静定模型直接交给 shaft_line.section_check（DIN 743 静强度）与 bearing_checks。 ... ok
+test_torsion_angle (tests.test_m36_shaft_beam.TestTorsionAndStub.test_torsion_angle) ... ok
+test_contract (tests.test_m36_shaft_line.TestContract.test_contract) ... ok
+test_blocks_when_inputs_missing (tests.test_m36_shaft_line.TestEndToEnd.test_blocks_when_inputs_missing) ... ok
+test_gear_inputs_from_c001 (tests.test_m36_shaft_line.TestEndToEnd.test_gear_inputs_from_c001) ... ok
+test_reactions_and_bearing_life_rewrite (tests.test_m36_shaft_line.TestEndToEnd.test_reactions_and_bearing_life_rewrite) ... ok
+test_section_S2_rewrite (tests.test_m36_shaft_line.TestEndToEnd.test_section_S2_rewrite) ... ok
+test_section_S3_key_static_only (tests.test_m36_shaft_line.TestEndToEnd.test_section_S3_key_static_only) ... ok
+test_blocks (tests.test_m36_shaft_line.TestStatics.test_blocks) ... ok
+test_helical_offset_axial_force (tests.test_m36_shaft_line.TestStatics.test_helical_offset_axial_force) ... ok
+test_mesh_forces (tests.test_m36_shaft_line.TestStatics.test_mesh_forces) ... ok
+test_baseline_has_zero_hallucinated_numbers_and_is_reproducible (tests.test_m38_ai_native.TestBench.test_baseline_has_zero_hallucinated_numbers_and_is_reproducible) ... ok
+test_cli_check_matches_written_result (tests.test_m38_ai_native.TestBench.test_cli_check_matches_written_result) ... ok
+test_detector_catches_invented_numbers (tests.test_m38_ai_native.TestBench.test_detector_catches_invented_numbers) ... ok
+test_gold_scoring_logic_with_synthetic_labels (tests.test_m38_ai_native.TestBench.test_gold_scoring_logic_with_synthetic_labels)
+用测试内合成的"金标"验证打分逻辑（不写入数据文件，不代表任何工程判断）。 ... ok
+test_skeleton_has_40_pending_cases_and_no_invented_gold (tests.test_m38_ai_native.TestBench.test_skeleton_has_40_pending_cases_and_no_invented_gold) ... ok
+test_individual_checks (tests.test_m38_ai_native.TestDoctor.test_individual_checks) ... ok
+test_launcher_script_and_guide_exist (tests.test_m38_ai_native.TestDoctor.test_launcher_script_and_guide_exist) ... ok
+test_script_form_with_isolated_mode (tests.test_m38_ai_native.TestDoctor.test_script_form_with_isolated_mode) ... ok
+test_zero_dep_check_detects_third_party_import (tests.test_m38_ai_native.TestDoctor.test_zero_dep_check_detects_third_party_import) ... ok
+test_feasible_case_and_bad_args (tests.test_m38_ai_native.TestExplainInfeasible.test_feasible_case_and_bad_args) ... ok
+test_infeasible_diagnosis_with_least_violation (tests.test_m38_ai_native.TestExplainInfeasible.test_infeasible_diagnosis_with_least_violation) ... ok
+test_joint_relaxation_is_feasible_in_template_and_confirmed_by_nlp (tests.test_m38_ai_native.TestExplainInfeasible.test_joint_relaxation_is_feasible_in_template_and_confirmed_by_nlp) ... ok
+test_agent_proposed_blocks_plain_pass_downstream (tests.test_m38_ai_native.TestRequirementCompile.test_agent_proposed_blocks_plain_pass_downstream) ... ok
+test_complete_requirement_compiles_with_agent_proposed (tests.test_m38_ai_native.TestRequirementCompile.test_complete_requirement_compiles_with_agent_proposed) ... ok
+test_conflicting_torque_is_asked_not_resolved (tests.test_m38_ai_native.TestRequirementCompile.test_conflicting_torque_is_asked_not_resolved) ... ok
+test_empty_requirement_asks_everything_and_fills_nothing (tests.test_m38_ai_native.TestRequirementCompile.test_empty_requirement_asks_everything_and_fills_nothing) ... ok
+test_out_of_template_range_is_blocked_not_clamped (tests.test_m38_ai_native.TestRequirementCompile.test_out_of_template_range_is_blocked_not_clamped) ... ok
+test_schema_is_wellformed_and_tool_is_read_only (tests.test_m38_ai_native.TestRequirementCompile.test_schema_is_wellformed_and_tool_is_read_only) ... ok
+test_template_defaults_are_never_used (tests.test_m38_ai_native.TestRequirementCompile.test_template_defaults_are_never_used) ... ok
+test_unsupported_scope_and_bad_inputs (tests.test_m38_ai_native.TestRequirementCompile.test_unsupported_scope_and_bad_inputs) ... ok
+test_prompts_contain_no_digits_in_instructions_beyond_step_numbers (tests.test_m38_ai_native.TestResourcesPrompts.test_prompts_contain_no_digits_in_instructions_beyond_step_numbers)
+提示词只给工作流指令，不得夹带设计数值（步骤编号 "1." 之外不应有小数或大数）。 ... ok
+test_stdio_round_trip_resources_and_prompts (tests.test_m38_ai_native.TestResourcesPrompts.test_stdio_round_trip_resources_and_prompts) ... ok
+test_all_40_run_without_gold_or_mutation (tests.test_m38_bench_closure.TestUnlabelledClosure.test_all_40_run_without_gold_or_mutation) ... ok
+test_bad_model_metadata_coverage_and_bench_hash_rejected (tests.test_m38_bench_closure.TestUnlabelledClosure.test_bad_model_metadata_coverage_and_bench_hash_rejected) ... ok
+test_direct_and_registered_sources_have_provenance (tests.test_m38_bench_closure.TestUnlabelledClosure.test_direct_and_registered_sources_have_provenance) ... ok
+test_forged_tool_report_and_hidden_fields_rejected (tests.test_m38_bench_closure.TestUnlabelledClosure.test_forged_tool_report_and_hidden_fields_rejected) ... ok
+test_invented_model_reply_is_reported_as_failure (tests.test_m38_bench_closure.TestUnlabelledClosure.test_invented_model_reply_is_reported_as_failure) ... ok
+test_missing_case_not_scored_as_complete (tests.test_m38_bench_closure.TestUnlabelledClosure.test_missing_case_not_scored_as_complete) ... ok
+test_receipt_bound_adapter_contract_fixture (tests.test_m38_bench_closure.TestUnlabelledClosure.test_receipt_bound_adapter_contract_fixture) ... ok
+test_XL_wBt_and_line_of_action (tests.test_m39_kisssoft_v014.GateFlashK01.test_XL_wBt_and_line_of_action) ... ok
+test_X_Gamma_at_kisssoft_max_point (tests.test_m39_kisssoft_v014.GateFlashK01.test_X_Gamma_at_kisssoft_max_point) ... ok
+test_identities_with_kisssoft_intermediates (tests.test_m39_kisssoft_v014.GateFlashK01.test_identities_with_kisssoft_intermediates)
+式(20)(21) θMi = θoil + 0,47·XS·Xmp·θflm、式(2) θBmax、式(78) SB：以 KISSsoft 中间量代入逐位一致。 ... ok
+test_K01_LS14_with_kisssoft_implied_T1T (tests.test_m39_kisssoft_v014.GateIntegral.test_K01_LS14_with_kisssoft_implied_T1T)
+K01：油品 FZG LS14 不在图7（只到 LS12）。由 KISSsoft θintS 按式(47)–(49) 反解 T1T = 714,2 N·m（派生， ... ok
+test_eta_oil_from_iso22_chain (tests.test_m39_kisssoft_v014.GateIntegral.test_eta_oil_from_iso22_chain)
+ηoil：本库 -22 式(17)–(20)(16) + 数据表 ρ15 → KISSsoft FIT.etaOil 与 FBT.etaOil。 ... ok
+test_intermediates_K01_to_K05 (tests.test_m39_kisssoft_v014.GateIntegral.test_intermediates_K01_to_K05) ... ok
+test_theta_intS_and_SintS_figure7 (tests.test_m39_kisssoft_v014.GateIntegral.test_theta_intS_and_SintS_figure7)
+K02–K05：FZG A/8,3/90 LS12，T1T 取图7 标注 534,5 N·m → θintS、SintS、SSl 逐位一致。 ... ok
+test_K01_method_B_pdyn_and_XY (tests.test_m39_kisssoft_v014.GateMicropitting.test_K01_method_B_pdyn_and_XY)
+方法 B：gY 式(32)–(38)、XY 式(44)–(46)（A=7）、pH 式(25)(26)、pdyn 式(24) → KISSsoft 七点逐位一致， ... ok
+test_K01_seven_points_with_kisssoft_pdyn (tests.test_m39_kisssoft_v014.GateMicropitting.test_K01_seven_points_with_kisssoft_pdyn) ... ok
+test_K02_interior_points (tests.test_m39_kisssoft_v014.GateMicropitting.test_K02_interior_points)
+K02 斜齿：A、E 点 KISSsoft XY=0、pdyn=0（见已知差异），只比 AB、B、C、D、DE 五点； ... ok
+test_end_to_end_scalars (tests.test_m39_kisssoft_v014.KnownDiffFlash.test_end_to_end_scalars) ... ok
+test_helical_blocked (tests.test_m39_kisssoft_v014.KnownDiffFlash.test_helical_blocked) ... ok
+test_mu_m_running_in_roughness (tests.test_m39_kisssoft_v014.KnownDiffFlash.test_mu_m_running_in_roughness)
+μm 式(23)：报告 Ra=0,6 → +13,6 %；按式(26) 下注"充分跑合 Ra 约降至 60 %"（Ra=0,36）逐位一致。 ... ok
+test_theta_fl_at_kisssoft_point_unattributed (tests.test_m39_kisssoft_v014.KnownDiffFlash.test_theta_fl_at_kisssoft_point_unattributed)
+式(5) 以 KISSsoft 的 μm、XM、XΓ、wBt、XJ=1 在 KISSsoft Γmax 处：本库 24,55 K vs 26,17 K（−6,2 %，未归因）。 ... ok
+test_theta_fl_ratio_tracks_cos_alpha_wt (tests.test_m39_kisssoft_v014.KnownDiffFlash.test_theta_fl_ratio_tracks_cos_alpha_wt)
+部分归因：K01（α′t=20°）与 K03（α′t=22,6°，直齿）两例 KISSsoft/式(5) 比值 1,0659 与 1,0800， ... ok
+test_Ca_optimal_option (tests.test_m39_kisssoft_v014.KnownDiffIntegral.test_Ca_optimal_option)
+KISSsoft'Ca 按最优取'=1（K02/K04/K05）：式(33) 用 Ca = Ceff；按 -21 式(34)–(37) 用实际 Ca 则 XCa 不同。 ... ok
+test_K01_figure7_blocks_LS14 (tests.test_m39_kisssoft_v014.KnownDiffIntegral.test_K01_figure7_blocks_LS14) ... ok
+test_K03_mixed_tolerance (tests.test_m39_kisssoft_v014.KnownDiffIntegral.test_K03_mixed_tolerance)
+K03 精度 A6/A7：若取较差的 7 级，6.1.13 末段规定 XCa = 1；KISSsoft 仍按 1,247 计算（未取 1）。 ... ok
+test_T1T_eq50_vs_figure7 (tests.test_m39_kisssoft_v014.KnownDiffIntegral.test_T1T_eq50_vs_figure7)
+式(50) T1T = 3,726·LS² 为图7 近似：LS12 得 536,544 vs 图值 534,5；KISSsoft 用图值。 ... ok
+test_X_M_from_typical_lambda_cv (tests.test_m39_kisssoft_v014.KnownDiffIntegral.test_X_M_from_typical_lambda_cv)
+5.3 典型 λM=50、cv=3,8（BM=√190）vs KISSsoft BM=13,7796（BM²=189,88）：XM −3,3e-4。 ... ok
+test_eta_with_rho15_eq21 (tests.test_m39_kisssoft_v014.KnownDiffIntegral.test_eta_with_rho15_eq21)
+ρ15 用 -22 式(21) 矿物油近似而不用数据表：ηoil 偏差（K01 +2,0 %、K04 −0,05 %）。 ... ok
+test_theta_M_method_B_blocked (tests.test_m39_kisssoft_v014.KnownDiffIntegral.test_theta_M_method_B_blocked) ... ok
+test_K02_WW_nitrided (tests.test_m39_kisssoft_v014.KnownDiffMicropitting.test_K02_WW_nitrided)
+K02 两轮渗氮，KISSsoft 打印 WW = 1,000；表 A.1 气体渗氮（HV>850）为 1,5 → λGFP 与 Sλ 相差 1,5 倍（材料行选择差异）。 ... ok
+test_K02_helical_XY_not_implemented (tests.test_m39_kisssoft_v014.KnownDiffMicropitting.test_K02_helical_XY_not_implemented)
+K02 报告注明 XY 在 εβ=0,8 与 1,2 之间插值（11.9）且'Ca 按最优取'；本库斜齿 XY 未收录 → 阻断。 ... ok
+test_K02_zero_load_points (tests.test_m39_kisssoft_v014.KnownDiffMicropitting.test_K02_zero_load_points)
+K02 A/E：KISSsoft XY=0、pdyn=0，内部把 WY 钳为 1e-20 得 λ≈7,7/8,1（占位）；式(22)(4) 在 pdyn=0 无定义，本库阻断。 ... ok
+test_micropitting_validity_boundary (tests.test_m39_kisssoft_v014.TestEvidenceIdentity.test_micropitting_validity_boundary)
+-22 只有 K01/K02 有效；K03–K05 为缺油品试验数据的无效零占位，不得使用。 ... ok
+test_missing_fields_declared (tests.test_m39_kisssoft_v014.TestEvidenceIdentity.test_missing_fields_declared) ... ok
+test_sources_hashed_and_scope (tests.test_m39_kisssoft_v014.TestEvidenceIdentity.test_sources_hashed_and_scope) ... ok
+test_e5_set_equals_gated_set (tests.test_m39_kisssoft_v014.TestEvidenceRegistry.test_e5_set_equals_gated_set) ... ok
+test_known_difference_formulas_stay_null (tests.test_m39_kisssoft_v014.TestEvidenceRegistry.test_known_difference_formulas_stay_null) ... ok
+test_XY_spur_shapes (tests.test_m39_kisssoft_v014.TestNewFunctionEdges.test_XY_spur_shapes)
+式(44)–(46)：A=7 时 A 点 1/3、B 左极限 2/3、B..D 为 1、E 点 1/3；A=9 时 A 点 7/15。式(47)–(49)：A、E 点为 0。 ... ok
+test_X_M_from_B_M_equals_eq13_route (tests.test_m39_kisssoft_v014.TestNewFunctionEdges.test_X_M_from_B_M_equals_eq13_route) ... ok
+test_figure7_table (tests.test_m39_kisssoft_v014.TestNewFunctionEdges.test_figure7_table)
+图7（PDF25/印19）横轴标注：LS3..12；LS1/2 无数值、LS13/14 不在图内 → 阻断。 ... ok
+test_pdyn_B_blocks_eps_alpha_gt_2 (tests.test_m39_kisssoft_v014.TestNewFunctionEdges.test_pdyn_B_blocks_eps_alpha_gt_2) ... ok
+test_front_exact_dominance_and_no_infeasible_leak (tests.test_m39_source_frontier.TestSourceFrontier.test_front_exact_dominance_and_no_infeasible_leak) ... ok
+test_full_finite_coverage_and_fresh_check (tests.test_m39_source_frontier.TestSourceFrontier.test_full_finite_coverage_and_fresh_check) ... ok
+test_invalid_registered_certificates_block_before_scoring_and_cannot_be_current (tests.test_m39_source_frontier.TestSourceFrontier.test_invalid_registered_certificates_block_before_scoring_and_cannot_be_current) ... ok
+test_malformed_specs_rejected_before_enumerating (tests.test_m39_source_frontier.TestSourceFrontier.test_malformed_specs_rejected_before_enumerating) ... ok
+test_missing_limits_not_replaced_and_bad_scenario_counted (tests.test_m39_source_frontier.TestSourceFrontier.test_missing_limits_not_replaced_and_bad_scenario_counted) ... ok
+test_parent_document_unchanged (tests.test_m39_source_frontier.TestSourceFrontier.test_parent_document_unchanged) ... ok
+test_source_spec_declaration_and_implementation_invalidation (tests.test_m39_source_frontier.TestSourceFrontier.test_source_spec_declaration_and_implementation_invalidation) ... ok
+test_tolerance_denominator_and_nominal_identity (tests.test_m39_source_frontier.TestSourceFrontier.test_tolerance_denominator_and_nominal_identity) ... ok
+test_valid_certificate_copy_preserves_holds_and_current_report (tests.test_m39_source_frontier.TestSourceFrontier.test_valid_certificate_copy_preserves_holds_and_current_report) ... ok
+test_missing_input_blocks (tests.test_m39_tribology.TestContract.test_missing_input_blocks) ... ok
+test_no_implicit_defaults (tests.test_m39_tribology.TestContract.test_no_implicit_defaults) ... ok
+test_not_in_kernel_and_kernel_untouched (tests.test_m39_tribology.TestContract.test_not_in_kernel_and_kernel_untouched) ... ok
+test_refs_checked_and_evidence_null (tests.test_m39_tribology.TestContract.test_refs_checked_and_evidence_null) ... ok
+test_k01_report_cd25 (tests.test_m39_tribology.TestDin3967.test_k01_report_cd25)
+K01 报告 'DIN 3967 cd25'：A_sn_e/A_sn_i（mm）与表1/表2 一致（旁证，非外部对拍）。 ... ok
+test_standard_example_27cd (tests.test_m39_tribology.TestDin3967.test_standard_example_27cd)
+DIN 3967 3.4（PDF3/印3）：27cd、d=100 mm → Asne=−70 µm、Asni=−170 µm。 ... ok
+test_table_edges (tests.test_m39_tribology.TestDin3967.test_table_edges) ... ok
+test_blocks (tests.test_m39_tribology.TestFlash.test_blocks) ... ok
+test_pitch_point_zero_flash_and_load_sharing (tests.test_m39_tribology.TestFlash.test_pitch_point_zero_flash_and_load_sharing) ... ok
+test_rate_spur_and_independent_theta_at_A (tests.test_m39_tribology.TestFlash.test_rate_spur_and_independent_theta_at_A) ... ok
+test_K_Bgamma_and_X_Q_and_X_eps_branches (tests.test_m39_tribology.TestIntegral.test_K_Bgamma_and_X_Q_and_X_eps_branches) ... ok
+test_annex_A8_geometry_not_reproducible (tests.test_m39_tribology.TestIntegral.test_annex_A8_geometry_not_reproducible)
+表 A.8 印 da2 = 228,00 mm < d2 = 28·9 = 252 mm（< db2）：几何不自洽，不能作为几何对拍算例。 ... ok
+test_annex_A8_internal_consistency (tests.test_m39_tribology.TestIntegral.test_annex_A8_internal_consistency)
+表 A.8（PDF37/印31 原图已核）：θoil=100、XS=1,0、θM=158,3、θint=283,2、SintS=1,0、T1T=372、ν40=220、XWrelT=1。 ... ok
+test_fzg_load_stage_formula (tests.test_m39_tribology.TestIntegral.test_fzg_load_stage_formula) ... ok
+test_mu_limits (tests.test_m39_tribology.TestIntegral.test_mu_limits) ... ok
+test_rate_matches_independent_rewrite (tests.test_m39_tribology.TestIntegral.test_rate_matches_independent_rewrite) ... ok
+test_tolerance_class_and_blocks (tests.test_m39_tribology.TestIntegral.test_tolerance_class_and_blocks) ... ok
+test_typical_XM_is_50 (tests.test_m39_tribology.TestIntegral.test_typical_XM_is_50)
+5.3（PDF15/印9）：λM=50、cv=3,8、E=206000、ν=0,3 → XM = 50,0（条文同页给值）。 ... ok
+test_strict_lists_all_blockers (tests.test_m39_tribology.TestK01Demo.test_strict_lists_all_blockers) ... ok
+test_supplement_closes_and_reuses_geometry (tests.test_m39_tribology.TestK01Demo.test_supplement_closes_and_reuses_geometry) ... ok
+test_pitch_point_geometry (tests.test_m39_tribology.TestMicropitting.test_pitch_point_geometry)
+式(35) 定位的 C 点经式(39)(40) 回到节圆：dY1 = dw1、dY2 = dw2（独立几何关系）。 ... ok
+test_rate_and_independent_hY (tests.test_m39_tribology.TestMicropitting.test_rate_and_independent_hY) ... ok
+test_viscosity_density_chain (tests.test_m39_tribology.TestMicropitting.test_viscosity_density_chain) ... ok
+test_balance_and_misc (tests.test_m39_tribology.TestThermal.test_balance_and_misc) ... ok
+test_mesh_loss_chain_independent (tests.test_m39_tribology.TestThermal.test_mesh_loss_chain_independent) ... ok
+test_case_hardened_core30_branch_hardness60_without_conversion (tests.test_material_limits.TestMaterialLimits.test_case_hardened_core30_branch_hardness60_without_conversion) ... ok
+test_case_hv_endpoints_are_supported_without_hardness_clamping (tests.test_material_limits.TestMaterialLimits.test_case_hv_endpoints_are_supported_without_hardness_clamping) ... ok
+test_domain_rejects_unimplemented_hardness_and_core_branch (tests.test_material_limits.TestMaterialLimits.test_domain_rejects_unimplemented_hardness_and_core_branch) ... ok
+test_missing_hardness_core_and_edition_block (tests.test_material_limits.TestMaterialLimits.test_missing_hardness_core_and_edition_block) ... ok
+test_missing_or_unsupported_class_is_never_defaulted (tests.test_material_limits.TestMaterialLimits.test_missing_or_unsupported_class_is_never_defaulted) ... ok
+test_through_hardened_table_formula_and_exact_hardness_gradient (tests.test_material_limits.TestMaterialLimits.test_through_hardened_table_formula_and_exact_hardness_gradient) ... ok
+test_commit_record_carries_validated_source (tests.test_math_source.TestDesignStoreCommitUnit.test_commit_record_carries_validated_source) ... ok
+test_file_store_persists_and_verifies_source (tests.test_math_source.TestDesignStoreCommitUnit.test_file_store_persists_and_verifies_source) ... ok
+test_make_record_rejects_invalid_source (tests.test_math_source.TestDesignStoreCommitUnit.test_make_record_rejects_invalid_source) ... ok
+test_old_records_without_source_still_load (tests.test_math_source.TestDesignStoreCommitUnit.test_old_records_without_source_still_load) ... ok
+test_source_changes_with_each_commit_and_chain_stays_valid (tests.test_math_source.TestDesignStoreCommitUnit.test_source_changes_with_each_commit_and_chain_stays_valid) ... ok
+test_source_has_no_derived_quantities (tests.test_math_source.TestDesignStoreCommitUnit.test_source_has_no_derived_quantities) ... ok
+test_source_rebuilds_the_committed_model (tests.test_math_source.TestDesignStoreCommitUnit.test_source_rebuilds_the_committed_model) ... ok
+test_compare_detects_one_ulp (tests.test_math_source.TestDualWrite.test_compare_detects_one_ulp) ... ok
+test_receipt_matches_m31_golden_receipt (tests.test_math_source.TestDualWrite.test_receipt_matches_m31_golden_receipt) ... ok
+test_receipts_are_bit_identical (tests.test_math_source.TestDualWrite.test_receipts_are_bit_identical) ... ok
+test_source_roundtrip_through_model_is_identity (tests.test_math_source.TestDualWrite.test_source_roundtrip_through_model_is_identity) ... ok
+test_c001_source_is_valid_and_has_only_authored_sections (tests.test_math_source.TestFormat.test_c001_source_is_valid_and_has_only_authored_sections) ... ok
+test_data_file_is_reproducible_from_m31_case (tests.test_math_source.TestFormat.test_data_file_is_reproducible_from_m31_case) ... ok
+test_file_certificates_match_repository_files (tests.test_math_source.TestFormat.test_file_certificates_match_repository_files) ... ok
+test_no_derived_quantity_is_stored (tests.test_math_source.TestFormat.test_no_derived_quantity_is_stored) ... ok
+test_values_roundtrip_in_author_units (tests.test_math_source.TestFormat.test_values_roundtrip_in_author_units) ... ok
+test_editing_source_changes_projection_not_vice_versa (tests.test_math_source.TestProjectionsAreReadOnly.test_editing_source_changes_projection_not_vice_versa) ... ok
+test_parameter_table_marks_derived_rows_non_writable (tests.test_math_source.TestProjectionsAreReadOnly.test_parameter_table_marks_derived_rows_non_writable) ... ok
+test_projection_does_not_touch_source (tests.test_math_source.TestProjectionsAreReadOnly.test_projection_does_not_touch_source) ... ok
+test_bad_selector_value_rejected (tests.test_math_source.TestRejection.test_bad_selector_value_rejected) ... ok
+test_formula_outputs_are_refused_as_inputs (tests.test_math_source.TestRejection.test_formula_outputs_are_refused_as_inputs) ... ok
+test_missing_input_or_selector_blocks_without_default (tests.test_math_source.TestRejection.test_missing_input_or_selector_blocks_without_default) ... ok
+test_model_with_derived_provenance_cannot_become_source (tests.test_math_source.TestRejection.test_model_with_derived_provenance_cannot_become_source) ... ok
+test_schema_rejects_extra_top_level_and_nested_keys (tests.test_math_source.TestRejection.test_schema_rejects_extra_top_level_and_nested_keys) ... ok
+test_semantic_rules (tests.test_math_source.TestRejection.test_semantic_rules) ... ok
+test_undeclared_wrong_unit_and_domain_are_collected_together (tests.test_math_source.TestRejection.test_undeclared_wrong_unit_and_domain_are_collected_together) ... ok
+test_engine_subset (tests.test_math_source.TestSchemaEngine.test_engine_subset) ... ok
+test_design_id_is_sha256_of_canonical_json (tests.test_mcp_p0.TestIds.test_design_id_is_sha256_of_canonical_json) ... ok
+test_ids_stable_across_processes_and_hash_seeds (tests.test_mcp_p0.TestIds.test_ids_stable_across_processes_and_hash_seeds) ... ok
+test_nan_request_has_no_fake_id (tests.test_mcp_p0.TestIds.test_nan_request_has_no_fake_id) ... ok
+test_no_builtin_hash_in_tool_layer (tests.test_mcp_p0.TestIds.test_no_builtin_hash_in_tool_layer) ... ok
+test_baseline_none_requires_selector_choice (tests.test_mcp_p0.TestParametersNeverDropped.test_baseline_none_requires_selector_choice) ... ok
+test_blocked_results_keep_parameters_too (tests.test_mcp_p0.TestParametersNeverDropped.test_blocked_results_keep_parameters_too) ... ok
+test_echo_in_original_unit (tests.test_mcp_p0.TestParametersNeverDropped.test_echo_in_original_unit) ... ok
+test_every_model_tool_echoes_all_parameters (tests.test_mcp_p0.TestParametersNeverDropped.test_every_model_tool_echoes_all_parameters) ... ok
+test_preview_commit_and_stale_over_stdio (tests.test_mcp_p0.TestStdioRoundtrip.test_preview_commit_and_stale_over_stdio) ... ok
+test_commit_applies_and_changes_base (tests.test_mcp_p0.TestTwoPhaseWrite.test_commit_applies_and_changes_base) ... ok
+test_commit_without_valid_token_rejected (tests.test_mcp_p0.TestTwoPhaseWrite.test_commit_without_valid_token_rejected) ... ok
+test_design_arg_conflicts_with_overrides (tests.test_mcp_p0.TestTwoPhaseWrite.test_design_arg_conflicts_with_overrides) ... ok
+test_designs_are_independent_and_delete_override (tests.test_mcp_p0.TestTwoPhaseWrite.test_designs_are_independent_and_delete_override) ... ok
+test_invalid_edit_gets_no_token_and_cannot_commit (tests.test_mcp_p0.TestTwoPhaseWrite.test_invalid_edit_gets_no_token_and_cannot_commit) ... ok
+test_preview_is_read_only_and_token_is_sha256 (tests.test_mcp_p0.TestTwoPhaseWrite.test_preview_is_read_only_and_token_is_sha256) ... ok
+test_stale_token_rejected_and_state_unchanged (tests.test_mcp_p0.TestTwoPhaseWrite.test_stale_token_rejected_and_state_unchanged) ... ok
+test_tool_names_valid (tests.test_mcp_p0.TestTwoPhaseWrite.test_tool_names_valid) ... ok
+test_agent_proposed_input_caps_at_E0 (tests.test_mcp_p1.TestExplainEvidence.test_agent_proposed_input_caps_at_E0) ... ok
+test_explain_has_evidence_field (tests.test_mcp_p1.TestExplainEvidence.test_explain_has_evidence_field) ... ok
+test_input_quantity_evidence_is_null (tests.test_mcp_p1.TestExplainEvidence.test_input_quantity_evidence_is_null) ... ok
+test_expected_version_mismatch_rejected (tests.test_mcp_p1.TestOptimisticLock.test_expected_version_mismatch_rejected) ... ok
+test_invalid_expected_version (tests.test_mcp_p1.TestOptimisticLock.test_invalid_expected_version) ... ok
+test_same_content_aba_is_caught_by_version (tests.test_mcp_p1.TestOptimisticLock.test_same_content_aba_is_caught_by_version)
+内容回到同一 sha 时仅靠 sha 比较会放行；版本号能识别。 ... ok
+test_store_level_conflict_on_occupied_version (tests.test_mcp_p1.TestOptimisticLock.test_store_level_conflict_on_occupied_version) ... ok
+test_threads_racing_one_version_only_one_wins (tests.test_mcp_p1.TestOptimisticLock.test_threads_racing_one_version_only_one_wins) ... ok
+test_defaults_without_ai_values_are_not_pending (tests.test_mcp_p1.TestOptimizeNLP.test_defaults_without_ai_values_are_not_pending) ... ok
+test_injection_and_bad_inputs_rejected (tests.test_mcp_p1.TestOptimizeNLP.test_injection_and_bad_inputs_rejected) ... ok
+test_optimize_does_not_touch_design_state (tests.test_mcp_p1.TestOptimizeNLP.test_optimize_does_not_touch_design_state) ... ok
+test_result_has_four_separate_assurance_items (tests.test_mcp_p1.TestOptimizeNLP.test_result_has_four_separate_assurance_items) ... ok
+test_template_listing (tests.test_mcp_p1.TestOptimizeNLP.test_template_listing) ... ok
+test_commit_writes_immutable_chain_with_parent_and_model_sha (tests.test_mcp_p1.TestPersistence.test_commit_writes_immutable_chain_with_parent_and_model_sha) ... ok
+test_design_names_cannot_escape_directory (tests.test_mcp_p1.TestPersistence.test_design_names_cannot_escape_directory) ... ok
+test_designs_have_separate_chains (tests.test_mcp_p1.TestPersistence.test_designs_have_separate_chains) ... ok
+test_in_memory_mode_declared_and_writes_nothing (tests.test_mcp_p1.TestPersistence.test_in_memory_mode_declared_and_writes_nothing) ... ok
+test_restart_recovers_state (tests.test_mcp_p1.TestPersistence.test_restart_recovers_state) ... ok
+test_tampered_or_gapped_chain_is_detected (tests.test_mcp_p1.TestPersistence.test_tampered_or_gapped_chain_is_detected) ... ok
+test_by_id_and_output (tests.test_mcp_p1.TestRegistryLookup.test_by_id_and_output) ... ok
+test_external_slot_and_not_found_and_bad_args (tests.test_mcp_p1.TestRegistryLookup.test_external_slot_and_not_found_and_bad_args) ... ok
+test_lookup_is_a_copy (tests.test_mcp_p1.TestRegistryLookup.test_lookup_is_a_copy) ... ok
+test_memory_mode_is_declared (tests.test_mcp_p1.TestStdioPersistence.test_memory_mode_is_declared) ... ok
+test_optimize_nlp_over_stdio (tests.test_mcp_p1.TestStdioPersistence.test_optimize_nlp_over_stdio) ... ok
+test_restart_over_stdio_recovers_design (tests.test_mcp_p1.TestStdioPersistence.test_restart_over_stdio_recovers_design) ... ok
+test_every_tool_is_dispatchable (tests.test_mcp_p1.TestToolListing.test_every_tool_is_dispatchable) ... ok
+test_every_tool_schema_is_wellformed (tests.test_mcp_p1.TestToolListing.test_every_tool_schema_is_wellformed) ... ok
+test_discrete_value_set_sos_branching (tests.test_nlp.TestBranchAndBound.test_discrete_value_set_sos_branching) ... ok
+test_node_limit_reports_gap (tests.test_nlp.TestBranchAndBound.test_node_limit_reports_gap) ... ok
+test_problem_relaxed_integer_and_ordered_choice (tests.test_nlp.TestBranchAndBound.test_problem_relaxed_integer_and_ordered_choice) ... ok
+test_rounding_relaxation_would_be_wrong (tests.test_nlp.TestBranchAndBound.test_rounding_relaxation_would_be_wrong) ... ok
+test_single_integer_known_optimum (tests.test_nlp.TestBranchAndBound.test_single_integer_known_optimum) ... ok
+test_contradictory_bounds_via_constraints (tests.test_nlp.TestInfeasible.test_contradictory_bounds_via_constraints) ... ok
+test_problem_level_outcome (tests.test_nlp.TestInfeasible.test_problem_level_outcome) ... ok
+test_reports_local_infeasibility_not_fake_convergence (tests.test_nlp.TestInfeasible.test_reports_local_infeasibility_not_fake_convergence) ... ok
+test_all_four_reported_separately (tests.test_nlp.TestKKTResiduals.test_all_four_reported_separately) ... ok
+test_each_violation_shows_in_its_own_residual (tests.test_nlp.TestKKTResiduals.test_each_violation_shows_in_its_own_residual) ... ok
+test_estimate_multipliers_nonnegative (tests.test_nlp.TestKKTResiduals.test_estimate_multipliers_nonnegative) ... ok
+test_active_inequality_positive (tests.test_nlp.TestMultiplierSign.test_active_inequality_positive) ... ok
+test_equality_multiplier_sign (tests.test_nlp.TestMultiplierSign.test_equality_multiplier_sign) ... ok
+test_ge_constraint_rewritten_keeps_positive_multiplier (tests.test_nlp.TestMultiplierSign.test_ge_constraint_rewritten_keeps_positive_multiplier) ... ok
+test_inactive_inequality_zero (tests.test_nlp.TestMultiplierSign.test_inactive_inequality_zero) ... ok
+test_lower_bound_multiplier_positive (tests.test_nlp.TestMultiplierSign.test_lower_bound_multiplier_positive) ... ok
+test_maximize_through_problem (tests.test_nlp.TestMultiplierSign.test_maximize_through_problem) ... ok
+test_problem_multiplier_names_and_sign (tests.test_nlp.TestMultiplierSign.test_problem_multiplier_names_and_sign) ... ok
+test_upper_bound_multiplier_positive (tests.test_nlp.TestMultiplierSign.test_upper_bound_multiplier_positive) ... ok
+test_analytic_gradient_path (tests.test_nlp.TestProblemIntegration.test_analytic_gradient_path) ... ok
+test_assurance_four_parts_and_local_scope (tests.test_nlp.TestProblemIntegration.test_assurance_four_parts_and_local_scope) ... ok
+test_existing_solve_unchanged (tests.test_nlp.TestProblemIntegration.test_existing_solve_unchanged) ... ok
+test_gradient_self_check_catches_lost_derivatives (tests.test_nlp.TestProblemIntegration.test_gradient_self_check_catches_lost_derivatives) ... ok
+test_not_worse_than_grid_and_coordinate_refine (tests.test_nlp.TestProblemIntegration.test_not_worse_than_grid_and_coordinate_refine) ... ok
+test_too_many_discrete_combinations_refused (tests.test_nlp.TestProblemIntegration.test_too_many_discrete_combinations_refused) ... ok
+test_validation_rejects_global_scope_and_free_text_termination (tests.test_nlp.TestProblemIntegration.test_validation_rejects_global_scope_and_free_text_termination) ... ok
+test_core_is_stdlib_only (tests.test_nlp.TestPurity.test_core_is_stdlib_only) ... ok
+test_no_domain_terms_or_imports (tests.test_nlp.TestPurity.test_no_domain_terms_or_imports) ... ok
+test_agrees_with_builtin (tests.test_nlp.TestScipyAdapterLive.test_agrees_with_builtin) ... skipped '可选依赖 SciPy 未安装（适配器为可选，不属于核心测试）'
+test_adapter_plumbing_with_stub_backend (tests.test_nlp.TestScipyAdapterSigns.test_adapter_plumbing_with_stub_backend)
+用桩替代 scipy.optimize：检查适配器传给后端的约束号向，并用我们自己的残差/乘子复核返回点。 ... ok
+test_inequality_sign_flipped (tests.test_nlp.TestScipyAdapterSigns.test_inequality_sign_flipped) ... ok
+test_missing_scipy_raises_clear_error (tests.test_nlp.TestScipyAdapterSigns.test_missing_scipy_raises_clear_error) ... ok
+test_hs071_multipliers_match_reference (tests.test_nlp.TestTestSuite.test_hs071_multipliers_match_reference) ... ok
+test_known_optima_and_kkt (tests.test_nlp.TestTestSuite.test_known_optima_and_kkt) ... ok
+test_rosen_suzuki_multipliers (tests.test_nlp.TestTestSuite.test_rosen_suzuki_multipliers) ... ok
+test_branch_and_bound_matches_enumeration_small_domain (tests.test_nlp_gear.TestRelaxableCompile.test_branch_and_bound_matches_enumeration_small_domain)
+缩小域（z1 ∈ 27..29，m = 1.5）上：松弛 + 分支定界 与 原编译逐组合枚举 + NLP 结果一致。 ... ok
+test_integer_points_identical_to_original (tests.test_nlp_gear.TestRelaxableCompile.test_integer_points_identical_to_original) ... ok
+test_ir_declares_integers_and_step_handling (tests.test_nlp_gear.TestRelaxableCompile.test_ir_declares_integers_and_step_handling) ... ok
+test_relaxed_point_gradient_matches_difference (tests.test_nlp_gear.TestRelaxableCompile.test_relaxed_point_gradient_matches_difference) ... ok
+test_rounding_constraints_select_round_exactly (tests.test_nlp_gear.TestRelaxableCompile.test_rounding_constraints_select_round_exactly) ... ok
+test_active_set_and_multiplier_signs (tests.test_nlp_gear.TestStageSizingNLP.test_active_set_and_multiplier_signs) ... ok
+test_kkt_residuals_meet_tolerance (tests.test_nlp_gear.TestStageSizingNLP.test_kkt_residuals_meet_tolerance) ... ok
+test_not_worse_than_grid_refine (tests.test_nlp_gear.TestStageSizingNLP.test_not_worse_than_grid_refine) ... ok
+test_jacobi_known_spectrum (tests.test_nlp_r3.TestEigenAndNullSpace.test_jacobi_known_spectrum) ... ok
+test_null_basis_orthonormal_complement (tests.test_nlp_r3.TestEigenAndNullSpace.test_null_basis_orthonormal_complement) ... ok
+test_new_adapter_has_no_domain_terms (tests.test_nlp_r3.TestPurityR3.test_new_adapter_has_no_domain_terms) ... ok
+test_constraint_sign_agrees_with_pymoo (tests.test_nlp_r3.TestPymooLive.test_constraint_sign_agrees_with_pymoo)
+用 pymoo 自己的 Evaluator（算法内部同一路径）判可行性，与我们的 g ≤ 0 一致。 ... skipped '可选依赖 pymoo 未安装（适配器为可选，不属于核心测试）'
+test_kkt_review_each_point (tests.test_nlp_r3.TestPymooLive.test_kkt_review_each_point) ... skipped '可选依赖 pymoo 未安装（适配器为可选，不属于核心测试）'
+test_max_sense_mapped_back (tests.test_nlp_r3.TestPymooLive.test_max_sense_mapped_back) ... skipped '可选依赖 pymoo 未安装（适配器为可选，不属于核心测试）'
+test_pareto_points_feasible_and_nondominated (tests.test_nlp_r3.TestPymooLive.test_pareto_points_feasible_and_nondominated) ... skipped '可选依赖 pymoo 未安装（适配器为可选，不属于核心测试）'
+test_reproducible_with_seed (tests.test_nlp_r3.TestPymooLive.test_reproducible_with_seed) ... skipped '可选依赖 pymoo 未安装（适配器为可选，不属于核心测试）'
+test_kkt_review_is_pure_python (tests.test_nlp_r3.TestPymooSigns.test_kkt_review_is_pure_python) ... ok
+test_missing_pymoo_raises_clear_error (tests.test_nlp_r3.TestPymooSigns.test_missing_pymoo_raises_clear_error) ... ok
+test_out_signs_without_pymoo (tests.test_nlp_r3.TestPymooSigns.test_out_signs_without_pymoo) ... ok
+test_hs071_reference_multipliers_all_backends (tests.test_nlp_r3.TestScipyLiveSuite.test_hs071_reference_multipliers_all_backends) ... skipped '可选依赖 SciPy 未安装（适配器为可选，不属于核心测试）'
+test_slsqp (tests.test_nlp_r3.TestScipyLiveSuite.test_slsqp) ... skipped '可选依赖 SciPy 未安装（适配器为可选，不属于核心测试）'
+test_trust_constr (tests.test_nlp_r3.TestScipyLiveSuite.test_trust_constr) ... skipped '可选依赖 SciPy 未安装（适配器为可选，不属于核心测试）'
+test_missing_scipy_trust_constr (tests.test_nlp_r3.TestScipyMultiplierConversion.test_missing_scipy_trust_constr) ... ok
+test_slsqp_order_and_sign (tests.test_nlp_r3.TestScipyMultiplierConversion.test_slsqp_order_and_sign) ... ok
+test_trust_constr_order_and_sign (tests.test_nlp_r3.TestScipyMultiplierConversion.test_trust_constr_order_and_sign) ... ok
+test_constraint_removes_negative_direction (tests.test_nlp_r3.TestSecondOrder.test_constraint_removes_negative_direction) ... ok
+test_equality_constraint_curvature_sign (tests.test_nlp_r3.TestSecondOrder.test_equality_constraint_curvature_sign) ... ok
+test_fd_never_leaves_bounds (tests.test_nlp_r3.TestSecondOrder.test_fd_never_leaves_bounds) ... ok
+test_flat_curvature_inconclusive (tests.test_nlp_r3.TestSecondOrder.test_flat_curvature_inconclusive) ... ok
+test_hs071_reduced_hessian_value (tests.test_nlp_r3.TestSecondOrder.test_hs071_reduced_hessian_value) ... ok
+test_hs_suite_sosc (tests.test_nlp_r3.TestSecondOrder.test_hs_suite_sosc) ... ok
+test_unconstrained_saddle_detected (tests.test_nlp_r3.TestSecondOrder.test_unconstrained_saddle_detected) ... ok
+test_weakly_active_reported (tests.test_nlp_r3.TestSecondOrder.test_weakly_active_reported) ... ok
+test_can_be_disabled (tests.test_nlp_r3.TestSecondOrderInAssurance.test_can_be_disabled) ... ok
+test_piecewise_regime_log (tests.test_nlp_r3.TestSecondOrderInAssurance.test_piecewise_regime_log)
+求值 info 给出分支签名时，报告跨越过的分段节点（不平滑、只记录）。 ... ok
+test_saddle_through_problem (tests.test_nlp_r3.TestSecondOrderInAssurance.test_saddle_through_problem) ... ok
+test_separate_field_not_merged (tests.test_nlp_r3.TestSecondOrderInAssurance.test_separate_field_not_merged) ... ok
+test_data_driven_model_equals_handwritten_one (tests.test_package.TestDataDrivenC001.test_data_driven_model_equals_handwritten_one) ... ok
+test_hardcoded_reference_equals_receipt_file (tests.test_package.TestDataDrivenC001.test_hardcoded_reference_equals_receipt_file) ... ok
+test_matches_receipt (tests.test_package.TestDataDrivenC001.test_matches_receipt) ... ok
+test_receipt_geometry_cross_check (tests.test_package.TestDataDrivenC001.test_receipt_geometry_cross_check) ... ok
+test_core_never_imports_legacy (tests.test_package.TestIsolation.test_core_never_imports_legacy) ... ok
+test_kernel_knows_no_gears (tests.test_package.TestIsolation.test_kernel_knows_no_gears) ... ok
+test_every_data_file_is_registered (tests.test_package.TestManifest.test_every_data_file_is_registered)
+data/ 下每个文件都登记在 MANIFEST（含来源 origin 与 sha256），新增数据文件不会漏过哈希校验。 ... ok
+test_every_file_matches_its_hash (tests.test_package.TestManifest.test_every_file_matches_its_hash) ... ok
+test_legacy_rows_have_a_migration_action (tests.test_package.TestManifest.test_legacy_rows_have_a_migration_action) ... ok
+test_package_contents_and_manifest_consistent (tests.test_package.TestPackageContents.test_package_contents_and_manifest_consistent)
+PACKAGE-CONTENTS.sha256 与 MANIFEST 同当前文件一致（不一致时运行 python3 -m gearmath.tools.package_hashes 重生成）； ... ok
+test_bats (tests.test_packaging_windows.TestPortable.test_bats) ... ok
+test_full_copy_verifies_manifest_and_tampering (tests.test_packaging_windows.TestPortable.test_full_copy_verifies_manifest_and_tampering) ... ok
+test_hash_checks (tests.test_packaging_windows.TestPortable.test_hash_checks) ... ok
+test_private_excluded (tests.test_packaging_windows.TestPortable.test_private_excluded) ... ok
+test_case_formulas_do_not_inherit_library_level (tests.test_registry.TestAssessments.test_case_formulas_do_not_inherit_library_level)
+案例适配器改写的同 id 公式在该案例里不继承库级等级。 ... ok
+test_consistency_checker_catches_drift (tests.test_registry.TestAssessments.test_consistency_checker_catches_drift) ... ok
+test_cross_file_consistency (tests.test_registry.TestAssessments.test_cross_file_consistency) ... ok
+test_every_vector_replays_from_its_record (tests.test_registry.TestAssessments.test_every_vector_replays_from_its_record)
+每条测试向量只凭记录里的公式（expr/unit/domain/版次）即可复现期望值，库级与案例级都核对。 ... ok
+test_files_match_code_and_rules (tests.test_registry.TestAssessments.test_files_match_code_and_rules)
+防漂移：评定、案例级注册表、库级注册表都由代码/规则重新生成并逐字节核对 ... ok
+test_levels_follow_the_benchmark_rules (tests.test_registry.TestAssessments.test_levels_follow_the_benchmark_rules) ... ok
+test_source_check_rule (tests.test_registry.TestAssessments.test_source_check_rule) ... ok
+test_c001 (tests.test_registry.TestEvidenceOnRealModels.test_c001) ... ok
+test_tr30_example1 (tests.test_registry.TestEvidenceOnRealModels.test_tr30_example1) ... ok
+test_every_library_formula_is_registered (tests.test_registry.TestExport.test_every_library_formula_is_registered)
+pair_model 特化出的每条公式（C001 基线，及显式系数方法组）都在注册表里且内容相同。 ... ok
+test_evidence_levels_from_registry (tests.test_registry.TestExport.test_evidence_levels_from_registry) ... ok
+test_export_is_deterministic_and_valid (tests.test_registry.TestExport.test_export_is_deterministic_and_valid) ... ok
+test_fields_not_invented (tests.test_registry.TestExport.test_fields_not_invented)
+评定数据是规则产物：没有通过的对拍行用到的公式等级为 null；source_check 只来自公式文本里的明确措辞； ... ok
+test_file_matches_code (tests.test_registry.TestExport.test_file_matches_code)
+防漂移：data/registry/formulas-v1.json 必须与代码里的公式对象一致（改公式后运行 ... ok
+test_all_strong_has_no_weakeners (tests.test_registry.TestPropagation.test_all_strong_has_no_weakeners) ... ok
+test_bad_level_rejected (tests.test_registry.TestPropagation.test_bad_level_rejected) ... ok
+test_blocked_has_no_evidence (tests.test_registry.TestPropagation.test_blocked_has_no_evidence) ... ok
+test_does_not_change_numbers_or_status (tests.test_registry.TestPropagation.test_does_not_change_numbers_or_status) ... ok
+test_fixed_point_formula (tests.test_registry.TestPropagation.test_fixed_point_formula) ... ok
+test_input_provenance_caps (tests.test_registry.TestPropagation.test_input_provenance_caps) ... ok
+test_ties_list_every_binding_link (tests.test_registry.TestPropagation.test_ties_list_every_binding_link) ... ok
+test_unassessed_is_weaker_than_e0 (tests.test_registry.TestPropagation.test_unassessed_is_weaker_than_e0) ... ok
+test_weakest_link (tests.test_registry.TestPropagation.test_weakest_link) ... ok
+test_c001_chain (tests.test_registry.TestRealModel.test_c001_chain) ... ok
+test_explain_tool_carries_evidence (tests.test_registry.TestRealModel.test_explain_tool_carries_evidence) ... ok
+test_registry_level_rules (tests.test_registry.TestSchema.test_registry_level_rules) ... ok
+test_rejections (tests.test_registry.TestSchema.test_rejections) ... ok
+test_valid_entry (tests.test_registry.TestSchema.test_valid_entry) ... ok
+test_e3_plus_needs_sourced_vector (tests.test_registry.TestVectorSchema.test_e3_plus_needs_sourced_vector)
+E3 及以上必须有带 source 的测试向量；E2 及以下不要求。 ... ok
+test_extended_vector_fields (tests.test_registry.TestVectorSchema.test_extended_vector_fields) ... ok
+test_replay_detects_wrong_vector (tests.test_registry.TestVectorSchema.test_replay_detects_wrong_vector) ... ok
+test_full_overlap_uses_virtual_contact_ratio (tests.test_root_load_distribution.TestRootLoadDistribution.test_full_overlap_uses_virtual_contact_ratio) ... ok
+test_helical_partial_overlap_branches (tests.test_root_load_distribution.TestRootLoadDistribution.test_helical_partial_overlap_branches) ... ok
+test_outside_the_declared_domain_is_not_ok (tests.test_root_load_distribution.TestRootLoadDistribution.test_outside_the_declared_domain_is_not_ok) ... ok
+test_spur_and_high_contact_ratio_branches (tests.test_root_load_distribution.TestRootLoadDistribution.test_spur_and_high_contact_ratio_branches) ... ok
+test_all_evaluated_values_bitwise_equal_k_chain (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_all_evaluated_values_bitwise_equal_k_chain) ... ok
+test_certificate_locators_resolve_to_document_values (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_certificate_locators_resolve_to_document_values)
+file 证书的定位处取到的值，经单位换算后须与文档值逐位相等（min/多键情形已在生成时落到具体键）。 ... ok
+test_documents_are_valid_and_file_is_reproducible (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_documents_are_valid_and_file_is_reproducible) ... ok
+test_editions_and_selectors_equal_k_chain (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_editions_and_selectors_equal_k_chain) ... ok
+test_end_to_end_outputs_equal_k_chain_compare (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_end_to_end_outputs_equal_k_chain_compare)
+K 链 compare() 比较行里 gearmath 一侧的值，与由文档求出的值逐位相等。K03 的壳体轮齿根量按 K 链既定口径不求（unsupported）。 ... ok
+test_five_cases_are_declared (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_five_cases_are_declared) ... ok
+test_inputs_bitwise_equal_k_chain (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_inputs_bitwise_equal_k_chain) ... ok
+test_no_derived_quantity_is_stored (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_no_derived_quantity_is_stored) ... ok
+test_t1_is_evidence_with_recomputable_certificate (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_t1_is_evidence_with_recomputable_certificate)
+T_1 = P/(2π n_1)：证书指向 data/kisssoft/<case>.json（含其 sha256），从该文件取 P、用文档 n_1 重算，须与 T_1 逐位相等。 ... ok
+test_t1_negative_changing_only_n1_fails_the_guard (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_t1_negative_changing_only_n1_fails_the_guard)
+负例：只改 n_1、不改 T_1，重算比较必须失败（功率定值不得静默变成扭矩定值）。 ... ok
+test_tampered_document_changes_result_and_derived_is_rejected (tests.test_source_v2_kisssoft.TestK01toK05SourceV2.test_tampered_document_changes_result_and_derived_is_rejected)
+对照：改一个文档输入，求值立即不同（说明比较确实经过文档）；把派生量写进文档被拒绝。 ... ok
+test_neutral_k01_is_formula_and_material_declaration (tests.test_surface_factors.TestContactAuxiliaries.test_neutral_k01_is_formula_and_material_declaration) ... ok
+test_nontrivial_work_hardening_rejects_finite_life (tests.test_surface_factors.TestContactAuxiliaries.test_nontrivial_work_hardening_rejects_finite_life) ... ok
+test_roughness_is_before_running_in_and_clamped (tests.test_surface_factors.TestContactAuxiliaries.test_roughness_is_before_running_in_and_clamped) ... ok
+test_through_hardened_ratio_and_gear_ratio_limits (tests.test_surface_factors.TestContactAuxiliaries.test_through_hardened_ratio_and_gear_ratio_limits) ... ok
+test_work_hardening_material_mismatch_is_out_of_domain (tests.test_surface_factors.TestContactAuxiliaries.test_work_hardening_material_mismatch_is_out_of_domain) ... ok
+test_work_hardening_never_benefits_pinion (tests.test_surface_factors.TestContactAuxiliaries.test_work_hardening_never_benefits_pinion) ... ok
+test_work_hardening_requires_explicit_supported_method (tests.test_surface_factors.TestContactAuxiliaries.test_work_hardening_requires_explicit_supported_method) ... ok
+test_endpoint_formulas_share_base_expressions (tests.test_surface_factors.TestEndpointSingleSource.test_endpoint_formulas_share_base_expressions)
+端点变体与基础公式逐字同一表达式/量纲/出处；只允许 id、Z_*→Z_*_ref 输出名、寿命门域不同。 ... ok
+test_per_gear_static_reference_and_finite_factor_endpoints (tests.test_surface_factors.TestFiniteContactLife.test_per_gear_static_reference_and_finite_factor_endpoints) ... ok
+test_whole_stress_equation_has_distinct_lives_and_published_rounding (tests.test_surface_factors.TestFiniteContactLife.test_whole_stress_equation_has_distinct_lives_and_published_rounding) ... ok
+test_whole_stress_missing_endpoints_and_unknown_material_block (tests.test_surface_factors.TestFiniteContactLife.test_whole_stress_missing_endpoints_and_unknown_material_block) ... ok
+test_dynamic_viscosity_rejected (tests.test_surface_factors.TestSurfaceFactors.test_dynamic_viscosity_rejected) ... ok
+test_finite_life_is_out_of_domain (tests.test_surface_factors.TestSurfaceFactors.test_finite_life_is_out_of_domain) ... ok
+test_helper_never_reads_reference_factors (tests.test_surface_factors.TestSurfaceFactors.test_helper_never_reads_reference_factors) ... ok
+test_inputs_change_results_and_derivatives (tests.test_surface_factors.TestSurfaceFactors.test_inputs_change_results_and_derivatives) ... ok
+test_iso_page_audit_is_specific_and_pinned (tests.test_surface_factors.TestSurfaceFactors.test_iso_page_audit_is_specific_and_pinned) ... ok
+test_k01_independent_comparison (tests.test_surface_factors.TestSurfaceFactors.test_k01_independent_comparison) ... ok
+test_material_constants_follow_published_rounded_eq43 (tests.test_surface_factors.TestSurfaceFactors.test_material_constants_follow_published_rounded_eq43) ... ok
+test_missing_viscosity_blocks (tests.test_surface_factors.TestSurfaceFactors.test_missing_viscosity_blocks) ... ok
+test_non_mineral_oil_rejected (tests.test_surface_factors.TestSurfaceFactors.test_non_mineral_oil_rejected) ... ok
+test_reference_life_is_selected_explicitly (tests.test_surface_factors.TestSurfaceFactors.test_reference_life_is_selected_explicitly) ... ok
+test_supported_velocity_and_viscosity_bounds (tests.test_surface_factors.TestSurfaceFactors.test_supported_velocity_and_viscosity_bounds) ... ok
+test_unit_constants_cannot_be_tuned_to_reference_outputs (tests.test_surface_factors.TestSurfaceFactors.test_unit_constants_cannot_be_tuned_to_reference_outputs) ... ok
+test_units_equivalent (tests.test_surface_factors.TestSurfaceFactors.test_units_equivalent) ... ok
+test_velocity_uses_working_pitch_circle_for_shifted_pair (tests.test_surface_factors.TestSurfaceFactors.test_velocity_uses_working_pitch_circle_for_shifted_pair) ... ok
+test_vi95_approximation_is_an_explicit_case_assumption (tests.test_surface_factors.TestSurfaceFactors.test_vi95_approximation_is_an_explicit_case_assumption) ... ok
+test_blocked_lists_are_specific (tests.test_sys_design_check.TestC001.test_blocked_lists_are_specific) ... ok
+test_external_refs_are_method_only (tests.test_sys_design_check.TestC001.test_external_refs_are_method_only) ... ok
+test_gear_rating_equals_direct_rate (tests.test_sys_design_check.TestC001.test_gear_rating_equals_direct_rate) ... ok
+test_statuses (tests.test_sys_design_check.TestC001.test_statuses) ... ok
+test_design_mismatch_blocks_requested (tests.test_sys_design_check.TestIsolationAndNoDefaults.test_design_mismatch_blocks_requested) ... ok
+test_missing_model_family_blocks_gear_checks (tests.test_sys_design_check.TestIsolationAndNoDefaults.test_missing_model_family_blocks_gear_checks) ... ok
+test_null_leaf_blocks_only_its_check (tests.test_sys_design_check.TestIsolationAndNoDefaults.test_null_leaf_blocks_only_its_check) ... ok
+test_scope_subset_and_isolation (tests.test_sys_design_check.TestIsolationAndNoDefaults.test_scope_subset_and_isolation) ... ok
+test_gear_rating_partial_without_contact_ratio_limit (tests.test_sys_design_check.TestK01.test_gear_rating_partial_without_contact_ratio_limit) ... ok
+test_manufacturing_computed (tests.test_sys_design_check.TestK01.test_manufacturing_computed) ... ok
+test_micropitting_and_system_blocked (tests.test_sys_design_check.TestK01.test_micropitting_and_system_blocked) ... ok
+test_review_requests_and_unverified (tests.test_sys_design_check.TestK01.test_review_requests_and_unverified) ... ok
+test_scuffing_pipeline (tests.test_sys_design_check.TestK01.test_scuffing_pipeline) ... ok
+test_call (tests.test_sys_design_check.TestMcpTool.test_call) ... ok
+test_registered_read_only (tests.test_sys_design_check.TestMcpTool.test_registered_read_only) ... ok
+test_rejects_unlisted_inputs (tests.test_sys_design_check.TestMcpTool.test_rejects_unlisted_inputs) ... ok
+test_collect_and_render (tests.test_sys_design_check.TestMilestones.test_collect_and_render) ... ok
+test_markdown_sections (tests.test_sys_design_check.TestReport.test_markdown_sections) ... ok
+test_leaf_rules (tests.test_sys_design_check.TestSchemas.test_leaf_rules) ... ok
+test_results_validate_against_json_schema (tests.test_sys_design_check.TestSchemas.test_results_validate_against_json_schema) ... ok
+test_schema_rejects_bad_result (tests.test_sys_design_check.TestSchemas.test_schema_rejects_bad_result) ... ok
+test_system_inputs_validate (tests.test_sys_design_check.TestSchemas.test_system_inputs_validate) ... ok
+test_key_fit_thermal_equal_direct_calls (tests.test_sys_design_check.TestSystemPaths.test_key_fit_thermal_equal_direct_calls) ... ok
+test_shaft_and_bearing_equal_direct_calls (tests.test_sys_design_check.TestSystemPaths.test_shaft_and_bearing_equal_direct_calls) ... ok
+test_validates (tests.test_sys_design_check.TestSystemPaths.test_validates) ... ok
+test_case_can_differ_only_in_derivative_semantics (tests.test_theta_iteration_derivative.TestThetaIterationDerivative.test_case_can_differ_only_in_derivative_semantics) ... ok
+test_default_implicit_semantics_remain (tests.test_theta_iteration_derivative.TestThetaIterationDerivative.test_default_implicit_semantics_remain) ... ok
+test_explicit_implicit_does_not_create_meaningful_case (tests.test_theta_iteration_derivative.TestThetaIterationDerivative.test_explicit_implicit_does_not_create_meaningful_case) ... ok
+test_finite_iteration_semantics_and_nonconvergence (tests.test_theta_iteration_derivative.TestThetaIterationDerivative.test_finite_iteration_semantics_and_nonconvergence) ... ok
+test_k02_k04_start_solution_and_written_points (tests.test_theta_iteration_derivative.TestThetaIterationDerivative.test_k02_k04_start_solution_and_written_points) ... ok
+test_registry_roundtrip_preserves_finite_iteration_derivative (tests.test_theta_iteration_derivative.TestThetaIterationDerivative.test_registry_roundtrip_preserves_finite_iteration_derivative) ... ok
+test_strategy_affects_model_identity (tests.test_theta_iteration_derivative.TestThetaIterationDerivative.test_strategy_affects_model_identity) ... ok
+test_duplicate_and_unordered_references_rejected (tests.test_tr30_contract.TestTR30ComparisonGuards.test_duplicate_and_unordered_references_rejected) ... ok
+test_empty_factor_selector_mapping_remains_blocked (tests.test_tr30_contract.TestTR30ComparisonGuards.test_empty_factor_selector_mapping_remains_blocked) ... ok
+test_evidence_input_match_does_not_count_as_formula_validation (tests.test_tr30_contract.TestTR30ComparisonGuards.test_evidence_input_match_does_not_count_as_formula_validation) ... ok
+test_external_factor_selector_citations_and_limits_preserved (tests.test_tr30_contract.TestTR30ComparisonGuards.test_external_factor_selector_citations_and_limits_preserved) ... ok
+test_hash_mismatch_blocks (tests.test_tr30_contract.TestTR30ComparisonGuards.test_hash_mismatch_blocks) ... ok
+test_input_source_and_no_assumption_rule (tests.test_tr30_contract.TestTR30ComparisonGuards.test_input_source_and_no_assumption_rule) ... ok
+test_missing_model_input_remains_blocked (tests.test_tr30_contract.TestTR30ComparisonGuards.test_missing_model_input_remains_blocked) ... ok
+test_missing_source_bytes_blocks (tests.test_tr30_contract.TestTR30ComparisonGuards.test_missing_source_bytes_blocks) ... ok
+test_overriding_derived_output_with_reference_rejected (tests.test_tr30_contract.TestTR30ComparisonGuards.test_overriding_derived_output_with_reference_rejected) ... ok
+test_real_formula_executes_but_partial_geometry_cannot_accept_tr30 (tests.test_tr30_contract.TestTR30ComparisonGuards.test_real_formula_executes_but_partial_geometry_cannot_accept_tr30) ... ok
+test_reference_is_never_used_to_set_the_model (tests.test_tr30_contract.TestTR30ComparisonGuards.test_reference_is_never_used_to_set_the_model) ... ok
+test_reference_page_beyond_source_blocks (tests.test_tr30_contract.TestTR30ComparisonGuards.test_reference_page_beyond_source_blocks) ... ok
+test_source_edition_and_method_citations_are_required (tests.test_tr30_contract.TestTR30ComparisonGuards.test_source_edition_and_method_citations_are_required) ... ok
+test_tolerance_has_no_default_and_rejects_negative_nonfinite (tests.test_tr30_contract.TestTR30ComparisonGuards.test_tolerance_has_no_default_and_rejects_negative_nonfinite) ... ok
+test_wrong_units_reject_for_input_and_reference (tests.test_tr30_contract.TestTR30ComparisonGuards.test_wrong_units_reject_for_input_and_reference) ... ok
+test_all_eight_slots_block_individually (tests.test_tr30_contract.TestTR30SourceAudit.test_all_eight_slots_block_individually) ... ok
+test_cli_persists_reproducible_blocked_report_and_fails_closed (tests.test_tr30_contract.TestTR30SourceAudit.test_cli_persists_reproducible_blocked_report_and_fails_closed) ... ok
+test_missing_and_duplicate_suite_slots_cannot_earn_acceptance (tests.test_tr30_contract.TestTR30SourceAudit.test_missing_and_duplicate_suite_slots_cannot_earn_acceptance) ... ok
+test_original_transcriptions_replace_empty_slots_with_traceable_data (tests.test_tr30_contract.TestTR30SourceAudit.test_original_transcriptions_replace_empty_slots_with_traceable_data) ... ok
+test_unknown_slot_rejected (tests.test_tr30_contract.TestTR30SourceAudit.test_unknown_slot_rejected) ... ok
+test_all_four_real_reference_base_diameters_run_through_same_formula_graph (tests.test_tr30_examples14.TestTR30Examples14Geometry.test_all_four_real_reference_base_diameters_run_through_same_formula_graph) ... ok
+test_generating_shift_can_be_reconstructed_from_independent_span_input (tests.test_tr30_examples14.TestTR30Examples14Geometry.test_generating_shift_can_be_reconstructed_from_independent_span_input)
+Independent spot check of measured span against printed xE; no xE input. ... ok
+test_tampering_with_expected_diameter_cannot_change_the_computed_diameter (tests.test_tr30_examples14.TestTR30Examples14Geometry.test_tampering_with_expected_diameter_cannot_change_the_computed_diameter) ... ok
+test_all_k_factors_stresses_and_both_safety_factors_are_present (tests.test_tr30_examples14.TestTR30Examples14Transcription.test_all_k_factors_stresses_and_both_safety_factors_are_present) ... ok
+test_material_and_gear_type_are_kept_per_example (tests.test_tr30_examples14.TestTR30Examples14Transcription.test_material_and_gear_type_are_kept_per_example) ... ok
+test_official_example_numbers_tables_and_image_review (tests.test_tr30_examples14.TestTR30Examples14Transcription.test_official_example_numbers_tables_and_image_review) ... ok
+test_original_safety_results_include_understrength_cases_without_relaxation (tests.test_tr30_examples14.TestTR30Examples14Transcription.test_original_safety_results_include_understrength_cases_without_relaxation) ... ok
+test_output_factors_and_effective_life_values_remain_independent_reference_data (tests.test_tr30_examples14.TestTR30Examples14Transcription.test_output_factors_and_effective_life_values_remain_independent_reference_data) ... ok
+test_parenthesized_nominal_shifts_are_not_assembly_inputs (tests.test_tr30_examples14.TestTR30Examples14Transcription.test_parenthesized_nominal_shifts_are_not_assembly_inputs) ... ok
+test_scan_spacing_and_asymmetric_tool_geometry_not_normalized_away (tests.test_tr30_examples14.TestTR30Examples14Transcription.test_scan_spacing_and_asymmetric_tool_geometry_not_normalized_away) ... ok
+test_all_four_original_examples_are_transcribed_with_sources (tests.test_tr30_examples58.TestTr30Examples58.test_all_four_original_examples_are_transcribed_with_sources) ... ok
+test_double_helical_overlap_uses_one_helix (tests.test_tr30_examples58.TestTr30Examples58.test_double_helical_overlap_uses_one_helix) ... ok
+test_independent_span_changes_generated_shift (tests.test_tr30_examples58.TestTr30Examples58.test_independent_span_changes_generated_shift) ... ok
+test_negative_signs_and_material_differences_are_retained (tests.test_tr30_examples58.TestTr30Examples58.test_negative_signs_and_material_differences_are_retained) ... ok
+test_outputs_are_not_used_to_build_the_probe (tests.test_tr30_examples58.TestTr30Examples58.test_outputs_are_not_used_to_build_the_probe) ... ok
+test_parenthesized_nominal_shift_never_drives_geometry (tests.test_tr30_examples58.TestTr30Examples58.test_parenthesized_nominal_shift_never_drives_geometry) ... ok
+test_prefinishing_geometry_keeps_two_generated_profiles (tests.test_tr30_examples58.TestTr30Examples58.test_prefinishing_geometry_keeps_two_generated_profiles) ... ok
+test_probe_accepts_examples_one_through_four_raw_schema (tests.test_tr30_examples58.TestTr30Examples58.test_probe_accepts_examples_one_through_four_raw_schema) ... ok
+test_reference_tampering_changes_verdict_only (tests.test_tr30_examples58.TestTr30Examples58.test_reference_tampering_changes_verdict_only) ... ok
+test_signed_internal_geometry_is_partial_without_invented_ring_root (tests.test_tr30_examples58.TestTr30Examples58.test_signed_internal_geometry_is_partial_without_invented_ring_root) ... ok
+test_source_hash_mismatch_blocks_comparison (tests.test_tr30_examples58.TestTr30Examples58.test_source_hash_mismatch_blocks_comparison) ... ok
+test_strict_tolerance_and_display_rounding_are_separate (tests.test_tr30_examples58.TestTr30Examples58.test_strict_tolerance_and_display_rounding_are_separate) ... ok
+test_working_velocity_is_not_reference_velocity (tests.test_tr30_examples58.TestTr30Examples58.test_working_velocity_is_not_reference_velocity) ... ok
+test_ex7_hardness_conversions (tests.test_tr30_full58.TestIso18265AndIso1328.test_ex7_hardness_conversions) ... ok
+test_fhbeta5_iso1328_formula10 (tests.test_tr30_full58.TestIso18265AndIso1328.test_fhbeta5_iso1328_formula10) ... ok
+test_table_a1_rows_and_interpolation (tests.test_tr30_full58.TestIso18265AndIso1328.test_table_a1_rows_and_interpolation) ... ok
+test_display_quantum_rule (tests.test_tr30_full58.TestTr30Full58.test_display_quantum_rule) ... ok
+test_double_helical_rules (tests.test_tr30_full58.TestTr30Full58.test_double_helical_rules) ... ok
+test_first_divergences_have_identified_quantities (tests.test_tr30_full58.TestTr30Full58.test_first_divergences_have_identified_quantities) ... ok
+test_hb_scale_requires_explicit_conversion (tests.test_tr30_full58.TestTr30Full58.test_hb_scale_requires_explicit_conversion) ... ok
+test_internal_gear_branch (tests.test_tr30_full58.TestTr30Full58.test_internal_gear_branch) ... ok
+test_material_branch_scale_domains (tests.test_tr30_full58.TestTr30Full58.test_material_branch_scale_domains) ... ok
+test_mixed_materials_per_gear_limits_and_size_factor (tests.test_tr30_full58.TestTr30Full58.test_mixed_materials_per_gear_limits_and_size_factor) ... ok
+test_never_accepts_and_counts_are_explicit (tests.test_tr30_full58.TestTr30Full58.test_never_accepts_and_counts_are_explicit) ... ok
+test_outputs_do_not_drive_the_model (tests.test_tr30_full58.TestTr30Full58.test_outputs_do_not_drive_the_model) ... ok
+test_protuberance_rack_reduces_to_library_without_spr (tests.test_tr30_full58.TestTr30Full58.test_protuberance_rack_reduces_to_library_without_spr) ... ok
+test_zv_velocity_selector_has_no_default (tests.test_tr30_full58.TestTr30Full58.test_zv_velocity_selector_has_no_default) ... ok
+test_missing_span_is_blocked (tests.test_tr30_geometry.TestTr30Geometry.test_missing_span_is_blocked) ... ok
+test_nominal_mass_and_height_stay_fixed_when_generating_shift_changes (tests.test_tr30_geometry.TestTr30Geometry.test_nominal_mass_and_height_stay_fixed_when_generating_shift_changes) ... ok
+test_patch_keeps_nominal_stiffness_inputs_and_unique_outputs (tests.test_tr30_geometry.TestTr30Geometry.test_patch_keeps_nominal_stiffness_inputs_and_unique_outputs) ... ok
+test_patch_refuses_implicit_or_incompatible_choices (tests.test_tr30_geometry.TestTr30Geometry.test_patch_refuses_implicit_or_incompatible_choices) ... ok
+test_span_recovers_normal_thickness_shift_for_nonzero_helix (tests.test_tr30_geometry.TestTr30Geometry.test_span_recovers_normal_thickness_shift_for_nonzero_helix) ... ok
+test_tr30_stiffness_uses_exact_virtual_teeth_for_helical_gears (tests.test_tr30_geometry.TestTr30Geometry.test_tr30_stiffness_uses_exact_virtual_teeth_for_helical_gears) ... ok
+test_gate_counts_and_existing_natures_kept (tests.test_tr30_kisssoft78.TestAcceptanceGateWithKisssoft.test_gate_counts_and_existing_natures_kept) ... ok
+test_gate_stays_closed (tests.test_tr30_kisssoft78.TestAcceptanceGateWithKisssoft.test_gate_stays_closed) ... ok
+test_files_are_byte_identical_to_upload (tests.test_tr30_kisssoft78.TestEvidenceFiles.test_files_are_byte_identical_to_upload) ... ok
+test_hv_readback_is_evidence_with_source (tests.test_tr30_kisssoft78.TestEvidenceFiles.test_hv_readback_is_evidence_with_source) ... ok
+test_tampered_hash_is_rejected (tests.test_tr30_kisssoft78.TestEvidenceFiles.test_tampered_hash_is_rejected) ... ok
+test_external_hv_all_rows_strict (tests.test_tr30_kisssoft78.TestExample7.test_external_hv_all_rows_strict) ... ok
+test_external_variant_blocks_without_evidence (tests.test_tr30_kisssoft78.TestExample7.test_external_variant_blocks_without_evidence) ... ok
+test_formal_counts_locked (tests.test_tr30_kisssoft78.TestExample7.test_formal_counts_locked) ... ok
+test_material_differences_come_from_hv_only (tests.test_tr30_kisssoft78.TestExample7.test_material_differences_come_from_hv_only) ... ok
+test_never_accepts (tests.test_tr30_kisssoft78.TestExample7.test_never_accepts) ... ok
+test_selector_is_explicit_and_formal_default_unchanged (tests.test_tr30_kisssoft78.TestExample7.test_selector_is_explicit_and_formal_default_unchanged) ... ok
+test_counts_locked (tests.test_tr30_kisssoft78.TestExample8.test_counts_locked) ... ok
+test_natures (tests.test_tr30_kisssoft78.TestExample8.test_natures) ... ok
+test_protuberance_dff_matches_kisssoft_and_print (tests.test_tr30_kisssoft78.TestExample8.test_protuberance_dff_matches_kisssoft_and_print) ... ok
+test_protuberance_inputs_explicit_and_domain (tests.test_tr30_kisssoft78.TestExample8.test_protuberance_inputs_explicit_and_domain) ... ok
+test_rz_selector_required (tests.test_tr30_kisssoft78.TestExample8.test_rz_selector_required) ... ok
+test_sigma_F0_1_two_implementations_agree_above_print (tests.test_tr30_kisssoft78.TestExample8.test_sigma_F0_1_two_implementations_agree_above_print) ... ok
+test_without_dff_the_two_rows_have_no_gearbase_value (tests.test_tr30_kisssoft78.TestExample8.test_without_dff_the_two_rows_have_no_gearbase_value) ... ok
+test_input_audit_counts (tests.test_tr30_kisssoft78.TestReliefLength.test_input_audit_counts) ... ok
+test_two_point_sensitivity_unchanged_but_not_closed (tests.test_tr30_kisssoft78.TestReliefLength.test_two_point_sensitivity_unchanged_but_not_closed) ... ok
+test_different_materials_are_kept_per_gear (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_different_materials_are_kept_per_gear) ... ok
+test_examples_1_to_4_life_roughness_size_compare (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_examples_1_to_4_life_roughness_size_compare) ... ok
+test_finite_life_contact_does_not_enable_finite_life_root (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_finite_life_contact_does_not_enable_finite_life_root) ... ok
+test_long_life_endpoint_is_an_input_decision (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_long_life_endpoint_is_an_input_decision) ... ok
+test_material_notch_reference_is_unity (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_material_notch_reference_is_unity) ... ok
+test_no_guess_for_limited_pitting_or_missing_yield (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_no_guess_for_limited_pitting_or_missing_yield) ... ok
+test_no_pitting_contact_curve_endpoints_and_transition (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_no_pitting_contact_curve_endpoints_and_transition) ... ok
+test_parenthesized_roughness_cross_check (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_parenthesized_roughness_cross_check) ... ok
+test_v_and_eh_selected_from_material_inputs (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_v_and_eh_selected_from_material_inputs) ... ok
+test_v_yield_interpolation_stays_inside_material_table (tests.test_tr30_material_factors.TestTR30MaterialFactors.test_v_yield_interpolation_stays_inside_material_table) ... ok
+test_actual_relief_replaces_absent_relief_default (tests.test_tr30_rating.TestTR30FullRating.test_actual_relief_replaces_absent_relief_default) ... ok
+test_all_four_reach_both_strength_and_safety_outputs (tests.test_tr30_rating.TestTR30FullRating.test_all_four_reach_both_strength_and_safety_outputs) ... ok
+test_applicability_assumptions_are_not_reported_as_evidence (tests.test_tr30_rating.TestTR30FullRating.test_applicability_assumptions_are_not_reported_as_evidence) ... ok
+test_build_does_not_read_any_reference_output (tests.test_tr30_rating.TestTR30FullRating.test_build_does_not_read_any_reference_output) ... ok
+test_material_limits_are_derived_from_hardness_not_reference_limits (tests.test_tr30_rating.TestTR30FullRating.test_material_limits_are_derived_from_hardness_not_reference_limits) ... ok
+test_missing_density_blocks_kv_not_geometry (tests.test_tr30_rating.TestTR30FullRating.test_missing_density_blocks_kv_not_geometry) ... ok
+test_numeric_fsh_fma_are_actual_table_inputs_in_example_two (tests.test_tr30_rating.TestTR30FullRating.test_numeric_fsh_fma_are_actual_table_inputs_in_example_two) ... ok
+test_parenthesized_nominal_shift_is_not_an_independent_input (tests.test_tr30_rating.TestTR30FullRating.test_parenthesized_nominal_shift_is_not_an_independent_input) ... ok
+test_span_changes_generated_shift_without_changing_nominal_shift (tests.test_tr30_rating.TestTR30FullRating.test_span_changes_generated_shift_without_changing_nominal_shift) ... ok
+test_strict_and_printed_rounding_remain_separate (tests.test_tr30_rating.TestTR30FullRating.test_strict_and_printed_rounding_remain_separate) ... ok
+test_surface_roughness_is_derived_and_parenthesis_is_only_check (tests.test_tr30_rating.TestTR30FullRating.test_surface_roughness_is_derived_and_parenthesis_is_only_check) ... ok
+test_unknown_material_or_internal_geometry_blocks (tests.test_tr30_rating.TestTR30FullRating.test_unknown_material_or_internal_geometry_blocks) ... ok
+test_whole_contact_life_path_drives_safety (tests.test_tr30_rating.TestTR30FullRating.test_whole_contact_life_path_drives_safety) ... ok
+test_block_and_edited_input (tests.test_v017_fea_prepare.PrepareTests.test_block_and_edited_input) ... ok
+test_bundled_modules_preserve_zero_dependency_guard (tests.test_v017_fea_prepare.PrepareTests.test_bundled_modules_preserve_zero_dependency_guard) ... ok
+test_missing_face_and_unregistered_type (tests.test_v017_fea_prepare.PrepareTests.test_missing_face_and_unregistered_type) ... ok
+test_optin_identity_and_unknowns (tests.test_v017_fea_prepare.PrepareTests.test_optin_identity_and_unknowns) ... ok
+test_serialized_contact_manifest_roundtrip (tests.test_v017_fea_prepare.PrepareTests.test_serialized_contact_manifest_roundtrip) ... ok
+test_buttressing_and_invalid_inputs (tests.test_v017_helical_xy.TestHelicalXY.test_buttressing_and_invalid_inputs) ... ok
+test_interpolation_and_profile_boundaries (tests.test_v017_helical_xy.TestHelicalXY.test_interpolation_and_profile_boundaries) ... ok
+test_k02_seven_points_and_unloaded_endpoints (tests.test_v017_helical_xy.TestHelicalXY.test_k02_seven_points_and_unloaded_endpoints) ... ok
+test_printed_one_end_high_overlap_coefficients_and_boundaries (tests.test_v017_helical_xy.TestHelicalXY.test_printed_one_end_high_overlap_coefficients_and_boundaries) ... ok
+test_all_infeasible_has_no_false_optimum (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_all_infeasible_has_no_false_optimum) ... ok
+test_bearing_nested_required_fields_block_even_under_pruning (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_bearing_nested_required_fields_block_even_under_pruning) ... ok
+test_certificate_fault_blocks_before_pruning (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_certificate_fault_blocks_before_pruning) ... ok
+test_complete_line_load_requires_endpoints_without_point_x (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_complete_line_load_requires_endpoints_without_point_x) ... ok
+test_component_required_field_deletion_matrix (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_component_required_field_deletion_matrix) ... ok
+test_every_fatigue_requirement_is_blocked_when_gear_pruned (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_every_fatigue_requirement_is_blocked_when_gear_pruned) ... ok
+test_every_required_load_field_is_blocked_even_when_gear_pruned (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_every_required_load_field_is_blocked_even_when_gear_pruned) ... ok
+test_every_static_requirement_is_blocked_when_gear_pruned (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_every_static_requirement_is_blocked_when_gear_pruned) ... ok
+test_external_certificate_edit_during_search_discards_partial_optimum (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_external_certificate_edit_during_search_discards_partial_optimum) ... ok
+test_finite_joint_search_matches_fresh_cartesian_and_preserves_inputs (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_finite_joint_search_matches_fresh_cartesian_and_preserves_inputs) ... ok
+test_invalid_or_unknown_is_blocked (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_invalid_or_unknown_is_blocked) ... ok
+test_omitted_requirements_cannot_hide_in_pruned_branch (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_omitted_requirements_cannot_hide_in_pruned_branch) ... ok
+test_source_edits_invalidate_identity_and_recompute (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_source_edits_invalidate_identity_and_recompute) ... ok
+test_unknown_design_reference_cannot_hide_in_pruned_branch (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_unknown_design_reference_cannot_hide_in_pruned_branch) ... ok
+test_upstream_edit_changes_all_downstream_physical_checks (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_upstream_edit_changes_all_downstream_physical_checks) ... ok
+test_valid_certificate_copy_is_verified_and_bound (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_valid_certificate_copy_is_verified_and_bound) ... ok
+test_volume_objective_known_annular_cylinder_and_overlap_rejection (tests.test_v017_system_optimize.TestFiniteSystemOptimize.test_volume_objective_known_annular_cylinder_and_overlap_rejection) ... ok
+test_dependent_independent_root (tests.test_v017_thermal_balance.ThermalBalanceTests.test_dependent_independent_root) ... ok
+test_failures (tests.test_v017_thermal_balance.ThermalBalanceTests.test_failures) ... ok
+test_fixed_closed_form (tests.test_v017_thermal_balance.ThermalBalanceTests.test_fixed_closed_form) ... ok
+test_equilibrium_is_actual_temperature_check (tests.test_v017_thermal_integration.TestThermalProduct.test_equilibrium_is_actual_temperature_check) ... ok
+test_fail_closed_routes_units_and_missing_limits (tests.test_v017_thermal_integration.TestThermalProduct.test_fail_closed_routes_units_and_missing_limits) ... ok
+test_legacy_route_remains_unchanged (tests.test_v017_thermal_integration.TestThermalProduct.test_legacy_route_remains_unchanged) ... ok
+test_bench_cli_check_outputs_utf8_on_cp1252 (tests.test_windows_utf8_stdio.TestWindowsUtf8Stdio.test_bench_cli_check_outputs_utf8_on_cp1252) ... ok
+test_default_server_reads_and_writes_utf8_wire_on_cp1252 (tests.test_windows_utf8_stdio.TestWindowsUtf8Stdio.test_default_server_reads_and_writes_utf8_wire_on_cp1252) ... ok
+test_doctor_cli_json_outputs_utf8_on_cp1252 (tests.test_windows_utf8_stdio.TestWindowsUtf8Stdio.test_doctor_cli_json_outputs_utf8_on_cp1252) ... ok
+test_explicit_string_streams_remain_caller_owned (tests.test_windows_utf8_stdio.TestWindowsUtf8Stdio.test_explicit_string_streams_remain_caller_owned) ... ok
+
+----------------------------------------------------------------------
+Ran 1266 tests in 225.994s
+
+OK (skipped=29)

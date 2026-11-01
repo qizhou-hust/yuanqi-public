@@ -1,0 +1,38 @@
+{
+  "solver_version": "2.23",
+  "solver_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+  "input_sha256": "cbc2e56fcda1db254e0ea159e8185152506856af5da20a9aa24f925da7e13d53",
+  "dat_sha256": "4c8112b394bca0cac239da0c87a4b14f4ff4eca4564b41d0b9fd59dc17584c6b",
+  "sta_sha256": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+  "observed": {
+    "stresses (elem, integ.pnt.": {
+      "elements": 20,
+      "ip_keys_per_element": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "global coordinates (elem, integ.pnt.": {
+      "elements": 20,
+      "ip_keys_per_element": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  "scope": "synthetic linear elastic CPE6 stress and COORD only; no gear-contact validation"
+}

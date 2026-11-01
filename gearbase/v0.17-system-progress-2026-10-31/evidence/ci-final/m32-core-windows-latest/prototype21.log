@@ -1,0 +1,26 @@
+test_agent_values_never_report_plain_pass (tests.test_gearmath.TestAiTools.test_agent_values_never_report_plain_pass) ... ok
+test_explain_chain_has_refs (tests.test_gearmath.TestAiTools.test_explain_chain_has_refs) ... ok
+test_stdio_mcp_roundtrip (tests.test_gearmath.TestAiTools.test_stdio_mcp_roundtrip) ... ok
+test_tool_names_are_api_safe (tests.test_gearmath.TestAiTools.test_tool_names_are_api_safe) ... ok
+test_contact_chain_matches (tests.test_gearmath.TestIso6336AgainstM31.test_contact_chain_matches) ... ok
+test_profile_shift_moves_working_geometry (tests.test_gearmath.TestIso6336AgainstM31.test_profile_shift_moves_working_geometry) ... ok
+test_root_chain_matches (tests.test_gearmath.TestIso6336AgainstM31.test_root_chain_matches) ... ok
+test_status_pass (tests.test_gearmath.TestIso6336AgainstM31.test_status_pass) ... ok
+test_autodiff_matches_finite_difference (tests.test_gearmath.TestKernel.test_autodiff_matches_finite_difference) ... ok
+test_convergence_certificate (tests.test_gearmath.TestKernel.test_convergence_certificate) ... ok
+test_deg_and_rad_units (tests.test_gearmath.TestKernel.test_deg_and_rad_units) ... ok
+test_derived_cannot_be_locked (tests.test_gearmath.TestKernel.test_derived_cannot_be_locked) ... ok
+test_dimension_error_is_caught_at_compile_time (tests.test_gearmath.TestKernel.test_dimension_error_is_caught_at_compile_time) ... ok
+test_inv_inverse_and_its_derivative (tests.test_gearmath.TestKernel.test_inv_inverse_and_its_derivative) ... ok
+test_missing_inputs_block_instead_of_default (tests.test_gearmath.TestKernel.test_missing_inputs_block_instead_of_default) ... ok
+test_no_code_execution (tests.test_gearmath.TestKernel.test_no_code_execution) ... ok
+test_single_source_conflict_rejected (tests.test_gearmath.TestKernel.test_single_source_conflict_rejected) ... ok
+test_trig_requires_angle (tests.test_gearmath.TestKernel.test_trig_requires_angle) ... ok
+test_gear_sizing_front_is_feasible (tests.test_gearmath.TestOptimizerIsPureMath.test_gear_sizing_front_is_feasible) ... ok
+test_generic_problem (tests.test_gearmath.TestOptimizerIsPureMath.test_generic_problem) ... ok
+test_optimizer_imports_nothing_about_gears (tests.test_gearmath.TestOptimizerIsPureMath.test_optimizer_imports_nothing_about_gears) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 4.018s
+
+OK

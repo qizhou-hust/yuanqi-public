@@ -1,0 +1,70 @@
+{
+  "full_design_check_calls": 27,
+  "feasible": [
+    {
+      "ids": [
+        "original",
+        "economy",
+        "original"
+      ],
+      "objective": 206968.12401849555
+    },
+    {
+      "ids": [
+        "original",
+        "economy",
+        "tie"
+      ],
+      "objective": 206968.12401849555
+    },
+    {
+      "ids": [
+        "original",
+        "strong",
+        "original"
+      ],
+      "objective": 296032.2757477662
+    },
+    {
+      "ids": [
+        "original",
+        "strong",
+        "tie"
+      ],
+      "objective": 296032.2757477662
+    },
+    {
+      "ids": [
+        "large",
+        "economy",
+        "original"
+      ],
+      "objective": 296880.50576423545
+    },
+    {
+      "ids": [
+        "large",
+        "economy",
+        "tie"
+      ],
+      "objective": 296880.50576423545
+    },
+    {
+      "ids": [
+        "large",
+        "strong",
+        "original"
+      ],
+      "objective": 385944.6574935061
+    },
+    {
+      "ids": [
+        "large",
+        "strong",
+        "tie"
+      ],
+      "objective": 385944.6574935061
+    }
+  ],
+  "elapsed_seconds": 0.35883700009435415
+}

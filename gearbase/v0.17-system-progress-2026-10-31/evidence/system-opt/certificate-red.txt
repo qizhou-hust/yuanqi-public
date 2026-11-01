@@ -1,0 +1,30 @@
+........................................................................ [ 63%]
+...................................F
+================================== FAILURES ===================================
+______ test_certificate_fault_blocks_before_pruning[False-expected_hash] ______
+
+tmp_path = WindowsPath('C:/Users/AAA/AppData/Local/Temp/pytest-of-AAA/pytest-1945/test_certificate_fault_blocks_0')
+fault = 'expected_hash', pruned_only = False
+
+    @pytest.mark.parametrize('fault',['expected_hash','missing_file','changed_bytes'])
+    @pytest.mark.parametrize('pruned_only',[False,True])
+    def test_certificate_fault_blocks_before_pruning(tmp_path,fault,pruned_only):
+        from gearmath.product.system_optimize import optimize
+        d,s,p=probe()
+        if pruned_only:p['gear']=p['gear'][:1]
+        cert=next(v['certificate'] for v in d['evidence'].values() if v['certificate']['kind']=='file')
+        local=tmp_path/'certificate.json';local.write_bytes((ROOT/cert['ref']).read_bytes());cert['ref']=str(local)
+        if fault=='expected_hash':cert['sha256']='0'*64
+        if fault=='missing_file':local.unlink()
+        if fault=='changed_bytes':local.write_bytes(local.read_bytes()+b'\nchanged\n')
+        r=optimize(d,s,p)
+>       assert r['status']=='blocked' and r['best'] is None and r['errors']
+E       AssertionError: assert ('completed' == 'blocked'
+E         - blocked
+E         + completed)
+
+tests\test_v017_system_optimize.py:251: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_v017_system_optimize.py::test_certificate_fault_blocks_before_pruning[False-expected_hash]
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 107 passed in 4.74s

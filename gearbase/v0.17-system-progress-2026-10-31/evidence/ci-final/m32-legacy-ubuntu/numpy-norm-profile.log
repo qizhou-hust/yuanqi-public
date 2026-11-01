@@ -1,0 +1,11 @@
+test_all_vector_lengths_and_keepdims_follow_declared_kernel (__main__.NumpyNormProfileTests.test_all_vector_lengths_and_keepdims_follow_declared_kernel) ... ok
+test_kernel_programming_errors_are_not_hidden_by_numpy_fallback (__main__.NumpyNormProfileTests.test_kernel_programming_errors_are_not_hidden_by_numpy_fallback) ... ok
+test_noncontiguous_vectors_are_generic_and_audited_on_actual_use (__main__.NumpyNormProfileTests.test_noncontiguous_vectors_are_generic_and_audited_on_actual_use) ... ok
+test_unsupported_api_types_axes_and_nonfinite_preserve_numpy (__main__.NumpyNormProfileTests.test_unsupported_api_types_axes_and_nonfinite_preserve_numpy) ... /home/runner/work/yuanqi-private/yuanqi-private/engineering/gearbase-v017/tests/m31_numpy_profile_probe.py:42: PendingDeprecationWarning: the matrix subclass is not the recommended way to represent matrices or deal with linear algebra (see https://docs.scipy.org/doc/numpy/user/numpy-for-matlab-users.html). Please adjust your code to use regular ndarray.
+  np.matrix([[1.,2.]]), np.asarray([[1.,2.]]),
+ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.009s
+
+OK

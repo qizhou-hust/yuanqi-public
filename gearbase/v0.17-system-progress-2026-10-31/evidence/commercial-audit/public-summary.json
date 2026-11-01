@@ -1,0 +1,18 @@
+{
+  "audit_utc": "2026-11-01T06:12:34.063672+00:00",
+  "audit_mode": "read_only_existing_local_evidence_no_COM_no_rerun",
+  "manifest_sha256": "9219ffabfe837429487220f4d2736e17f678d38dd1725952bf9d7971f6410bf1",
+  "manifest_entries_checked": 176,
+  "manifest_mismatches": [],
+  "limitations": [
+    "No new evidence grades or milestone promotion. Commercial native/reports remain private; publish summary only.",
+    "Exact K01 T1T/theta_MT/theta_fla,int,T remain unexposed; XWrelT=1 directly available.",
+    "R4 fw numerical graph-interpolation match is inferential, not vendor source-code identification."
+  ],
+  "case_summary": {
+    "K04_rounded_request_SH_SF_eps_comparison": "all five within1e-4",
+    "K01_rounded_request_SH_SF_eps_comparison": "all five within1e-4; auto kXmn-.020mm versus predicted-.01984mm differs beyond1e-4; potential stopping/rounding semantics not quantitatively isolated in this audit",
+    "K02_SH_SF_comparison": "outside1e-4; partial attribution only",
+    "whole_milestone": "not assessed/closed"
+  }
+}

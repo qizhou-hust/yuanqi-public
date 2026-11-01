@@ -1,0 +1,18 @@
+test_block_and_edited_input (tests.test_v017_fea_prepare.PrepareTests.test_block_and_edited_input) ... ok
+test_bundled_modules_preserve_zero_dependency_guard (tests.test_v017_fea_prepare.PrepareTests.test_bundled_modules_preserve_zero_dependency_guard) ... ERROR
+test_missing_face_and_unregistered_type (tests.test_v017_fea_prepare.PrepareTests.test_missing_face_and_unregistered_type) ... ok
+test_optin_identity_and_unknowns (tests.test_v017_fea_prepare.PrepareTests.test_optin_identity_and_unknowns) ... ok
+
+======================================================================
+ERROR: test_bundled_modules_preserve_zero_dependency_guard (tests.test_v017_fea_prepare.PrepareTests.test_bundled_modules_preserve_zero_dependency_guard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\my_Works\Gears\gearbase-v017-work\tests\test_v017_fea_prepare.py", line 11, in test_bundled_modules_preserve_zero_dependency_guard
+    self.assertTrue(doctor.check_stdlib()[0])
+                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gearmath.tools.doctor' has no attribute 'check_stdlib'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.083s
+
+FAILED (errors=1)

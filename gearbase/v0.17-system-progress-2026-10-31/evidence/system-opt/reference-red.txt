@@ -1,0 +1,19 @@
+...............F                                                         [100%]
+================================== FAILURES ===================================
+_________ test_unknown_design_reference_cannot_hide_in_pruned_branch __________
+
+    def test_unknown_design_reference_cannot_hide_in_pruned_branch():
+        from gearmath.product.system_optimize import optimize
+        d,s,p=probe(); p['gear']=p['gear'][:1]
+        p['bearing'][0]['bearings']['B_S0_0']['n']['from_design']='missing_quantity'
+        r=optimize(d,s,p)
+>       assert r['status']=='blocked' and r['errors']
+E       AssertionError: assert ('completed' == 'blocked'
+E         - blocked
+E         + completed)
+
+tests\test_v017_system_optimize.py:152: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_v017_system_optimize.py::test_unknown_design_reference_cannot_hide_in_pruned_branch
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 15 passed in 1.69s

@@ -1,0 +1,5 @@
+Initial RED: python -m pytest tests/test_v017_system_optimize.py -x -q
+1 failed: ModuleNotFoundError: No module named gearmath.product.system_optimize
+Observed before either production module was created. Later review-red.txt and reference-red.txt capture the separate omitted-field and unknown-reference failures before correction.
+
+Full-suite attempt: python -m pytest -q was interrupted by root instruction at approximately40%, to avoid concurrent integration/manifest races. Four F markers appeared before interruption, without a final failure report; no global success is claimed. Root owns final full-suite validation on frozen integration. Focused + original system/H2/W2W/P2/edit regressions:56 unittest methods passed dependency-free (17 optimizer methods containing115 assertion cases plus39 original methods), see focused-and-legacy-tests.txt.

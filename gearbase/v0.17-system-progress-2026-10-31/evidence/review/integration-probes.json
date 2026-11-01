@@ -1,0 +1,80 @@
+{
+  "strict_status": "accepted",
+  "zero_deps": true,
+  "binary_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+  "probe_hashes": {
+    "L0_patch_CPE6_h0.inp": "cbc2e56fcda1db254e0ea159e8185152506856af5da20a9aa24f925da7e13d53",
+    "L0_patch_CPE6_h0.dat": "4c8112b394bca0cac239da0c87a4b14f4ff4eca4564b41d0b9fd59dc17584c6b",
+    "L0_patch_CPE6_h0.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d"
+  },
+  "raw_fields": {
+    "stresses (elem, integ.pnt.": {
+      "elements": 20,
+      "rows": 180
+    },
+    "global coordinates (elem, integ.pnt.": {
+      "elements": 20,
+      "rows": 180
+    }
+  },
+  "optimizer_methods": 17,
+  "optimizer_subtest_events": 109,
+  "optimizer_success": true,
+  "source_sha256": {
+    "gearmath/tools/fea_prepare.py": "1cd7c05d5d6082b831e3e7e01536a8d5008ba7d9833ea9319fe85f62d330ee71",
+    "data/m37_fea_pack/scripts/ccx_strict.py": "8539d189288d1b4c426135cf358892906243284cc7c648645f34a3324fd63e24",
+    "tests/test_v017_system_optimize.py": "50de33eb2bf409c8898db6e28adb03cfde8a279f626d972507710991ae891901",
+    "tests/test_v017_fea_prepare.py": "5ca1f0469798356db0beab239a65c3c52856e554dbc6362e82b6cb6b65e874a4"
+  },
+  "profile_jobs": [
+    {
+      "name": "L2_P01_d12.inp",
+      "stored_json_verify": true,
+      "registration": "ready"
+    },
+    {
+      "name": "L2_P01_d18.inp",
+      "stored_json_verify": true,
+      "registration": "ready"
+    },
+    {
+      "name": "L2_P01_d8.inp",
+      "stored_json_verify": true,
+      "registration": "ready"
+    },
+    {
+      "name": "L3_C001_G1_C_d12_a10.inp",
+      "stored_json_verify": true,
+      "registration": "ready"
+    },
+    {
+      "name": "L3_C001_G1_C_d18_a10.inp",
+      "stored_json_verify": true,
+      "registration": "ready"
+    },
+    {
+      "name": "L3_C001_G1_C_d18_a5.inp",
+      "stored_json_verify": true,
+      "registration": "ready"
+    },
+    {
+      "name": "L3_C001_G1_C_d8_a10.inp",
+      "stored_json_verify": true,
+      "registration": "ready"
+    },
+    {
+      "name": "L3_C001_G1_ph10_d12.inp",
+      "stored_json_verify": true,
+      "registration": "ready"
+    }
+  ],
+  "canonical_reader_matches_HEAD": true,
+  "optimizer_leaf_cases": 115,
+  "optimizer_leaf_cases_count_basis": "109 subTest events - 3 nested outer wrappers + 9 nonparameterized methods = 115",
+  "fea_unittest_methods": 5,
+  "roundtrip_issue": "fixed_verified",
+  "data_pyc_files": [],
+  "prior_production_hashes_unchanged": false,
+  "design_check_docstring_only_verified": true,
+  "design_check_current_sha256": "4f2f776d05bca8c4ba9e2effaf7fcd5659eb198bdc415f31d4c728b57de5e81d"
+}

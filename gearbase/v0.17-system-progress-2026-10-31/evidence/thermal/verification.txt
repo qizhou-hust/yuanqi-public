@@ -1,0 +1,4 @@
+RED: python -m unittest tests.test_v017_thermal_balance failed with missing thermal_balance module.
+GREEN: python -m unittest discover -s tests -p test_v017_thermal_balance.py: 3 passed; independent closed-form 70 C and independent mesh-temperature bisection.
+REGRESSION: python -m unittest discover -s tests -p test_m39_tribology.py: 25 passed.
+Evidence is synthetic numerical verification, not external validation or E5 promotion.

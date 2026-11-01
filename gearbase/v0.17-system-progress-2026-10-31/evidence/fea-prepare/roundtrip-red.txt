@@ -1,0 +1,17 @@
+test_serialized_contact_manifest_roundtrip (tests.test_v017_fea_prepare.PrepareTests.test_serialized_contact_manifest_roundtrip) ... ERROR
+
+======================================================================
+ERROR: test_serialized_contact_manifest_roundtrip (tests.test_v017_fea_prepare.PrepareTests.test_serialized_contact_manifest_roundtrip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\my_Works\Gears\gearbase-v017-work\tests\test_v017_fea_prepare.py", line 14, in test_serialized_contact_manifest_roundtrip
+    self.assertTrue(P.verify(inp,manifest))
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_Works\Gears\gearbase-v017-work\gearmath\tools\fea_prepare.py", line 95, in verify
+    raise ValueError('declaration or tool identity changed')
+ValueError: declaration or tool identity changed
+
+----------------------------------------------------------------------
+Ran 1 test in 0.011s
+
+FAILED (errors=1)

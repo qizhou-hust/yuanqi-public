@@ -1,0 +1,1 @@
+Public core source and evidence. Private standards scans/datasets, original M31 fixtures and solver/CAD binaries excluded. This package alone does not reproduce full private legacy acceptance. M38 remains3/4; actual Claude call deferred. Read evidence/CLOSURE.md.

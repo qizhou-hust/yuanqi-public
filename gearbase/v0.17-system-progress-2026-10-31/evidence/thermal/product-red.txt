@@ -1,0 +1,20 @@
+test_equilibrium_is_actual_temperature_check (tests.test_v017_thermal_integration.TestThermalProduct.test_equilibrium_is_actual_temperature_check) ... FAIL
+test_fail_closed_routes_units_and_missing_limits (tests.test_v017_thermal_integration.TestThermalProduct.test_fail_closed_routes_units_and_missing_limits) ... ok
+test_legacy_route_remains_unchanged (tests.test_v017_thermal_integration.TestThermalProduct.test_legacy_route_remains_unchanged) ... ok
+
+======================================================================
+FAIL: test_equilibrium_is_actual_temperature_check (tests.test_v017_thermal_integration.TestThermalProduct.test_equilibrium_is_actual_temperature_check)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\my_Works\Gears\gearbase-v017-work\tests\test_v017_thermal_integration.py", line 16, in test_equilibrium_is_actual_temperature_check
+    r=self.run_case(thermal());self.assertEqual(r['status'],'pass')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'blocked' != 'pass'
+- blocked
++ pass
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.055s
+
+FAILED (failures=1)

@@ -1,0 +1,46 @@
+{
+  "schema": "gearbase.metadata-closeout/1",
+  "passed": true,
+  "functional_source_commit": "f1eda618725c5e789569648d18e2ee6459d73784",
+  "functional_source_manifest_sha256": "8b285e58ff82444ecb66134d6fc3f034ba74af37ab12e08f7f1a26aa072c7515",
+  "changed_source_files_after_hosted_ci": [
+    "PACKAGE-CONTENTS.sha256",
+    "docs/v017-commercial-evidence.md",
+    "docs/v017-current-delivery.md",
+    "docs/v017-thermal-balance.md",
+    "output/milestones-v017-current.json",
+    "output/milestones-v017-current.md"
+  ],
+  "executable_sources_unchanged": true,
+  "only_docs_outputs_checksums_changed": true,
+  "frontier_identity_current": true,
+  "checks": [
+    {
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "gearmath.tools.package_hashes",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "tests.test_package",
+        "tests.test_m38_ai_native.TestDoctor",
+        "tests.test_sys_design_check.TestMilestones",
+        "tests.test_v017_fea_prepare",
+        "tests.test_v017_thermal_integration",
+        "-v"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

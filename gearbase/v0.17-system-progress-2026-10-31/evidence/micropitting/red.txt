@@ -1,0 +1,19 @@
+test_v017_helical_xy (unittest.loader._FailedTest.test_v017_helical_xy) ... ERROR
+
+======================================================================
+ERROR: test_v017_helical_xy (unittest.loader._FailedTest.test_v017_helical_xy)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v017_helical_xy
+Traceback (most recent call last):
+  File "D:\anaconda3\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_Works\Gears\gearbase-v017-work\tests\test_v017_helical_xy.py", line 2, in <module>
+    from gearmath.gear import micropitting_helical as H, micropitting as M, m39_demo as D
+ImportError: cannot import name 'micropitting_helical' from 'gearmath.gear' (D:\my_Works\Gears\gearbase-v017-work\gearmath\gear\__init__.py)
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

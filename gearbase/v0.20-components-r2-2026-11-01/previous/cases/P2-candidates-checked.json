@@ -1,0 +1,317 @@
+[
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 54,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 1,
+    "candidate_sha256": "c07ac13ae76260a6367ae6a02b8010835f62a7474697d6935abaa0027b233b17",
+    "candidate_identity": [
+      [
+        19,
+        41,
+        101,
+        3
+      ],
+      [
+        18,
+        39,
+        96,
+        3
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 54,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 2,
+    "candidate_sha256": "7cb5fe00e4861108d8b8e1b2f284e431df29e15c9f7be3eabfe9c8ec39f20f13",
+    "candidate_identity": [
+      [
+        19,
+        41,
+        101,
+        3
+      ],
+      [
+        19,
+        41,
+        101,
+        3
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 54,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 3,
+    "candidate_sha256": "4a12a4ae412a0dafacc61374fd124ef10e85d487edab3ece7db26bbb7bb46ddc",
+    "candidate_identity": [
+      [
+        20,
+        43,
+        106,
+        3
+      ],
+      [
+        20,
+        43,
+        106,
+        3
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 54,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 4,
+    "candidate_sha256": "ebe409b1e8c54db93d5276e3ba4fde8f42bb5270415b65cf7a48cad9fc38af78",
+    "candidate_identity": [
+      [
+        21,
+        45,
+        111,
+        3
+      ],
+      [
+        21,
+        45,
+        111,
+        3
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 54,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 5,
+    "candidate_sha256": "94587e5378cc5cacfa920e9911265c154c49dfee1a45bfecd94dd0e2f595d33d",
+    "candidate_identity": [
+      [
+        22,
+        47,
+        116,
+        3
+      ],
+      [
+        22,
+        47,
+        116,
+        3
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  }
+]

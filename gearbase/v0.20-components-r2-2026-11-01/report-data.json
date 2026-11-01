@@ -1,0 +1,3782 @@
+{
+  "schema": "gearbase.component-architecture-report/2",
+  "report_revision": 2,
+  "date_local": "2026-11-01",
+  "timezone": "America/Los_Angeles",
+  "source_version": "0.20",
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "classification": "top_level_architecture_and_analysis_not_product_plugin_release",
+  "core_modified": false,
+  "alphabet": [
+    "P",
+    "H",
+    "B",
+    "W"
+  ],
+  "topologies": [
+    {
+      "id": "T-03faaa49ceef0b38",
+      "sequence": [
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-afe0a54ce3c8c7a3",
+      "sequence": [
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a0c3b497fe066cbd",
+      "sequence": [
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-0585d4d774eb1caf",
+      "sequence": [
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c019505a12852cf8",
+      "sequence": [
+        "B",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-46a24d83acdd174f",
+      "sequence": [
+        "B",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-35fd5d4f3cbe1387",
+      "sequence": [
+        "B",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7affd20034684796",
+      "sequence": [
+        "B",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-527b2e1181490f49",
+      "sequence": [
+        "H",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-aa3b6e78b509dace",
+      "sequence": [
+        "H",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-ceb6d7c904408ec8",
+      "sequence": [
+        "H",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-50989a749532755e",
+      "sequence": [
+        "H",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-84bd7c0946cafc67",
+      "sequence": [
+        "P",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-88068e8e6d95b98b",
+      "sequence": [
+        "P",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5e7e1948dba581a7",
+      "sequence": [
+        "P",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7d98b642a2cf17fe",
+      "sequence": [
+        "P",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-49cb67ab2fddc9aa",
+      "sequence": [
+        "W",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-02e0557217c55023",
+      "sequence": [
+        "W",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3301621523747354",
+      "sequence": [
+        "W",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-de80649d157e11b2",
+      "sequence": [
+        "W",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6c4a08e02ea76935",
+      "sequence": [
+        "B",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b277e8d13136e78c",
+      "sequence": [
+        "B",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8089b33ba2692325",
+      "sequence": [
+        "B",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-04811a309ac3742d",
+      "sequence": [
+        "B",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b5699e89dcddb974",
+      "sequence": [
+        "B",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a3e0c7b470111f28",
+      "sequence": [
+        "B",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f184bee6742502bd",
+      "sequence": [
+        "B",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c97d87c12b64c75d",
+      "sequence": [
+        "B",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-666bc3dd4ca3c64d",
+      "sequence": [
+        "B",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c5b16a5dc50d569e",
+      "sequence": [
+        "B",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-aaa47a52b6d022f9",
+      "sequence": [
+        "B",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-085bc05a05547b1d",
+      "sequence": [
+        "B",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-2118363c088080ca",
+      "sequence": [
+        "B",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-381c1c1a335f646d",
+      "sequence": [
+        "B",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-cb8979078b8d3d8e",
+      "sequence": [
+        "B",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-56fc07e307fe855b",
+      "sequence": [
+        "B",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-42cf591b71a092b0",
+      "sequence": [
+        "H",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1b75195a0c6d4ad8",
+      "sequence": [
+        "H",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1b98aa4cd0d3e344",
+      "sequence": [
+        "H",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-23a3febec419515e",
+      "sequence": [
+        "H",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-245172c25941573f",
+      "sequence": [
+        "H",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-67e43a94f18a6a99",
+      "sequence": [
+        "H",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-eaea9bed73c06790",
+      "sequence": [
+        "H",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8b1e324b466c995d",
+      "sequence": [
+        "H",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3547474f0c6eb20b",
+      "sequence": [
+        "H",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-59436300a957fa2c",
+      "sequence": [
+        "H",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-ba97f1422c31af9e",
+      "sequence": [
+        "H",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-afb8265f7f5a4bcb",
+      "sequence": [
+        "H",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-68dc3f669a490bc2",
+      "sequence": [
+        "H",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5dc7cec497df31ce",
+      "sequence": [
+        "H",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b583995b1258925f",
+      "sequence": [
+        "H",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-71a0d6054ef40c44",
+      "sequence": [
+        "H",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-125f004427a36ce8",
+      "sequence": [
+        "P",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-395f8fef118670f3",
+      "sequence": [
+        "P",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-9eac247303ff4222",
+      "sequence": [
+        "P",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5c7dc7f1317eba92",
+      "sequence": [
+        "P",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-cc02e1785641c564",
+      "sequence": [
+        "P",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-45ab7337fcd6d1b8",
+      "sequence": [
+        "P",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3fbfbfc2552e9450",
+      "sequence": [
+        "P",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8dee5cc18d071a01",
+      "sequence": [
+        "P",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3755d1d9b2b88c71",
+      "sequence": [
+        "P",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-31392475b4edd110",
+      "sequence": [
+        "P",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-ef785fcc3bd8a114",
+      "sequence": [
+        "P",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-e41d101f29834c7e",
+      "sequence": [
+        "P",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-ecee5b895a8fd088",
+      "sequence": [
+        "P",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3d261ccd5de12113",
+      "sequence": [
+        "P",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-2d473459622f1154",
+      "sequence": [
+        "P",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-392ac4d81927a5cd",
+      "sequence": [
+        "P",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c663493ce7a6a39c",
+      "sequence": [
+        "W",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-30a2fa446182a114",
+      "sequence": [
+        "W",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a887f0e37892e8a7",
+      "sequence": [
+        "W",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-9e6418e67f29c233",
+      "sequence": [
+        "W",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-cf771a7a2f7be177",
+      "sequence": [
+        "W",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-27d9ca258e00a58b",
+      "sequence": [
+        "W",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-11a3a471a354a74d",
+      "sequence": [
+        "W",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-0a69836731ea387d",
+      "sequence": [
+        "W",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-aae430aa9eca5bc9",
+      "sequence": [
+        "W",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f5f798d25aca9da7",
+      "sequence": [
+        "W",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-269a38d69156bc74",
+      "sequence": [
+        "W",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-06576f20ae95fbfa",
+      "sequence": [
+        "W",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c6febc8b8515670c",
+      "sequence": [
+        "W",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b7d522e37db4b8e4",
+      "sequence": [
+        "W",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-25dc11c968a8d312",
+      "sequence": [
+        "W",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6dfcd8ddc5475105",
+      "sequence": [
+        "W",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-246dc8d7bf32d6e2",
+      "sequence": [
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f2b26e83ec65c073",
+      "sequence": [
+        "B",
+        "B",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-db97bed9e7693851",
+      "sequence": [
+        "B",
+        "B",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-85a19e7c5b51f4e1",
+      "sequence": [
+        "B",
+        "B",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-bf473d35495edfad",
+      "sequence": [
+        "B",
+        "B",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5f6791e3da9d4f9b",
+      "sequence": [
+        "B",
+        "B",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-12c35e3e9b166638",
+      "sequence": [
+        "B",
+        "B",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-d93f237455a78456",
+      "sequence": [
+        "B",
+        "B",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-afd2cfadb200b6e7",
+      "sequence": [
+        "B",
+        "B",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6bc010c300dda67e",
+      "sequence": [
+        "B",
+        "B",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-14cc66318b15df0f",
+      "sequence": [
+        "B",
+        "B",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7b665c8f8cb94f14",
+      "sequence": [
+        "B",
+        "B",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-366e03af4d3b3671",
+      "sequence": [
+        "B",
+        "B",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-42da8af955b3e869",
+      "sequence": [
+        "B",
+        "B",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-4e5d5cf2b6b2549b",
+      "sequence": [
+        "B",
+        "B",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-4fa9acc67380b20d",
+      "sequence": [
+        "B",
+        "B",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-26f0467beee6738c",
+      "sequence": [
+        "B",
+        "H",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-95801735e6190fba",
+      "sequence": [
+        "B",
+        "H",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-35162702cdbc62db",
+      "sequence": [
+        "B",
+        "H",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5dc2b292bda0fe7d",
+      "sequence": [
+        "B",
+        "H",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-590f48d614b710f9",
+      "sequence": [
+        "B",
+        "H",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-2ae3b0d58a710d1a",
+      "sequence": [
+        "B",
+        "H",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-dfe4de29fbef9fc5",
+      "sequence": [
+        "B",
+        "H",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c62e33b54ed14892",
+      "sequence": [
+        "B",
+        "H",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-55c63cea29910be6",
+      "sequence": [
+        "B",
+        "H",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-cc679c24b60a365d",
+      "sequence": [
+        "B",
+        "H",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-34b73401d230be8f",
+      "sequence": [
+        "B",
+        "H",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-569eb87b33dca5c1",
+      "sequence": [
+        "B",
+        "H",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-606d7eeb492946ba",
+      "sequence": [
+        "B",
+        "H",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8f9c43b65c166338",
+      "sequence": [
+        "B",
+        "H",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-73ff1e8f4609aa74",
+      "sequence": [
+        "B",
+        "H",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-28f66329d6bed05a",
+      "sequence": [
+        "B",
+        "H",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b7ea7b7e19f43e83",
+      "sequence": [
+        "B",
+        "P",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-e719d405f99ab71d",
+      "sequence": [
+        "B",
+        "P",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-115b985da1296c28",
+      "sequence": [
+        "B",
+        "P",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1a197405267cd0aa",
+      "sequence": [
+        "B",
+        "P",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-fd1fd347009a7aae",
+      "sequence": [
+        "B",
+        "P",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-e594414f465e466e",
+      "sequence": [
+        "B",
+        "P",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-537803d0f3829491",
+      "sequence": [
+        "B",
+        "P",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6bc1b83dad4d2517",
+      "sequence": [
+        "B",
+        "P",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-e581734b5dc1ea6b",
+      "sequence": [
+        "B",
+        "P",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3196b5d4a7d69579",
+      "sequence": [
+        "B",
+        "P",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b0c04e020353756c",
+      "sequence": [
+        "B",
+        "P",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-67e6f810ad663fca",
+      "sequence": [
+        "B",
+        "P",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-2a8ae588fd34adfc",
+      "sequence": [
+        "B",
+        "P",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6c9ff572b614187b",
+      "sequence": [
+        "B",
+        "P",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-faa1e9fe2e8b3631",
+      "sequence": [
+        "B",
+        "P",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a1abc1b1b85c54ef",
+      "sequence": [
+        "B",
+        "P",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1aa70afd138c1178",
+      "sequence": [
+        "B",
+        "W",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-d3a99c4a2a5b81ef",
+      "sequence": [
+        "B",
+        "W",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-4d3007e09cddb37e",
+      "sequence": [
+        "B",
+        "W",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c1e351917279dadb",
+      "sequence": [
+        "B",
+        "W",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-e2c73a6abeb336b3",
+      "sequence": [
+        "B",
+        "W",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7645db7e312f54c4",
+      "sequence": [
+        "B",
+        "W",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-d9e90c8c084bfcfe",
+      "sequence": [
+        "B",
+        "W",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b41b76efd09aa91b",
+      "sequence": [
+        "B",
+        "W",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-108bd93fec4d0dc9",
+      "sequence": [
+        "B",
+        "W",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5158e6404e3a2700",
+      "sequence": [
+        "B",
+        "W",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-24966d99ca620e7f",
+      "sequence": [
+        "B",
+        "W",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-22b9354929817eea",
+      "sequence": [
+        "B",
+        "W",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-804f55e13536d905",
+      "sequence": [
+        "B",
+        "W",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-097658440814e7a4",
+      "sequence": [
+        "B",
+        "W",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b8659001a455c769",
+      "sequence": [
+        "B",
+        "W",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-258bbd325021fa5f",
+      "sequence": [
+        "B",
+        "W",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6a5d3ed8e1e38ac6",
+      "sequence": [
+        "H",
+        "B",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-38024a6293aff085",
+      "sequence": [
+        "H",
+        "B",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a05a60d091ffc338",
+      "sequence": [
+        "H",
+        "B",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-e84947d471642a4c",
+      "sequence": [
+        "H",
+        "B",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-588a5dc05d18b218",
+      "sequence": [
+        "H",
+        "B",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-adc3962e4df7c428",
+      "sequence": [
+        "H",
+        "B",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b1826bd6702612d4",
+      "sequence": [
+        "H",
+        "B",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-db69ab63ac022c74",
+      "sequence": [
+        "H",
+        "B",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b77897e667fdfc6f",
+      "sequence": [
+        "H",
+        "B",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3936be471b1b2b1a",
+      "sequence": [
+        "H",
+        "B",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1907eeb8dcedaefa",
+      "sequence": [
+        "H",
+        "B",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-feb2fec810f75f65",
+      "sequence": [
+        "H",
+        "B",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-94d7aee95f155afc",
+      "sequence": [
+        "H",
+        "B",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-cf604920aa31d7c6",
+      "sequence": [
+        "H",
+        "B",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a3910c1a6c905893",
+      "sequence": [
+        "H",
+        "B",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-4cd3e958c06cce83",
+      "sequence": [
+        "H",
+        "B",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f99c714b3937b449",
+      "sequence": [
+        "H",
+        "H",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f200d1f694dd347e",
+      "sequence": [
+        "H",
+        "H",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f1ac3acb465eb4d3",
+      "sequence": [
+        "H",
+        "H",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-505d6e594a2fbf9f",
+      "sequence": [
+        "H",
+        "H",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-013b90d1c831e791",
+      "sequence": [
+        "H",
+        "H",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b311925ecc0ca2ff",
+      "sequence": [
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-64c60f76d962d210",
+      "sequence": [
+        "H",
+        "H",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7747269af7d7eb80",
+      "sequence": [
+        "H",
+        "H",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-79f062d5efb81ce3",
+      "sequence": [
+        "H",
+        "H",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-bae52c72e90bc54a",
+      "sequence": [
+        "H",
+        "H",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7fb83d65d596492e",
+      "sequence": [
+        "H",
+        "H",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5436559ca89cf669",
+      "sequence": [
+        "H",
+        "H",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5e4e5159d4e3ba03",
+      "sequence": [
+        "H",
+        "H",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-e585f5bb5b9cbc83",
+      "sequence": [
+        "H",
+        "H",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-fa7665df27dd3cb4",
+      "sequence": [
+        "H",
+        "H",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-9bcd776648b79e7d",
+      "sequence": [
+        "H",
+        "H",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-cef1911e03c0e761",
+      "sequence": [
+        "H",
+        "P",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8ca1029cd4408f43",
+      "sequence": [
+        "H",
+        "P",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7b9dfdf3f95968ec",
+      "sequence": [
+        "H",
+        "P",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-155f40c3d5424ef1",
+      "sequence": [
+        "H",
+        "P",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8abe1ba94c611cdc",
+      "sequence": [
+        "H",
+        "P",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6c4ad2dfd680bd47",
+      "sequence": [
+        "H",
+        "P",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-e852482d1d926d89",
+      "sequence": [
+        "H",
+        "P",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-64158a0b2f104685",
+      "sequence": [
+        "H",
+        "P",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-49db112ea404614e",
+      "sequence": [
+        "H",
+        "P",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c38e590452f7c6d5",
+      "sequence": [
+        "H",
+        "P",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1eb08fefd12a9d66",
+      "sequence": [
+        "H",
+        "P",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-9463ed78dee7c718",
+      "sequence": [
+        "H",
+        "P",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-d461e5f1fea5cbf8",
+      "sequence": [
+        "H",
+        "P",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-dd27ec6b90e335b0",
+      "sequence": [
+        "H",
+        "P",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-dba3b927aa849169",
+      "sequence": [
+        "H",
+        "P",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-9bcb727d40cb2fb0",
+      "sequence": [
+        "H",
+        "P",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-4a1ff8ece24af7bf",
+      "sequence": [
+        "H",
+        "W",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-2ddd3d992970dbee",
+      "sequence": [
+        "H",
+        "W",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-60bfeb7f875ca731",
+      "sequence": [
+        "H",
+        "W",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-bab6b14fa6858a22",
+      "sequence": [
+        "H",
+        "W",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5c8ce5d90c3f453f",
+      "sequence": [
+        "H",
+        "W",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-0f5134ce3ef32843",
+      "sequence": [
+        "H",
+        "W",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-565eee26f8044ecf",
+      "sequence": [
+        "H",
+        "W",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-4140baebe4fd4387",
+      "sequence": [
+        "H",
+        "W",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-039779c4212b2eb3",
+      "sequence": [
+        "H",
+        "W",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-9a7b57d46139d8e1",
+      "sequence": [
+        "H",
+        "W",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-57516e45383b730a",
+      "sequence": [
+        "H",
+        "W",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-173d35af08796c72",
+      "sequence": [
+        "H",
+        "W",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b9221424646ece5e",
+      "sequence": [
+        "H",
+        "W",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-956d470048e5cc1c",
+      "sequence": [
+        "H",
+        "W",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c8e97cb1690fcd82",
+      "sequence": [
+        "H",
+        "W",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1206903a838f9da5",
+      "sequence": [
+        "H",
+        "W",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-88846fe715762720",
+      "sequence": [
+        "P",
+        "B",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-825c94f346cb81a6",
+      "sequence": [
+        "P",
+        "B",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-2da98f6a2d933b21",
+      "sequence": [
+        "P",
+        "B",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-716985b5ddc9b2bd",
+      "sequence": [
+        "P",
+        "B",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7ce5fb96ab774e94",
+      "sequence": [
+        "P",
+        "B",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7f6b7691d729cddc",
+      "sequence": [
+        "P",
+        "B",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-516ca6a310e765da",
+      "sequence": [
+        "P",
+        "B",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-adefb9c48759c57f",
+      "sequence": [
+        "P",
+        "B",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-4619db467c59d0f0",
+      "sequence": [
+        "P",
+        "B",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8d43e68cddaa9aea",
+      "sequence": [
+        "P",
+        "B",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3aa0415d43fc9f51",
+      "sequence": [
+        "P",
+        "B",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-62a519d8493518aa",
+      "sequence": [
+        "P",
+        "B",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f7b1113787b73775",
+      "sequence": [
+        "P",
+        "B",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6dbcd71e05441691",
+      "sequence": [
+        "P",
+        "B",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-66ab6f6085c6e5e8",
+      "sequence": [
+        "P",
+        "B",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6394c64d95fd443a",
+      "sequence": [
+        "P",
+        "B",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b5ae2547f8ea8898",
+      "sequence": [
+        "P",
+        "H",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-34f88f9dd5fb4368",
+      "sequence": [
+        "P",
+        "H",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-09d5157738affb4f",
+      "sequence": [
+        "P",
+        "H",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1f343ddd806399c7",
+      "sequence": [
+        "P",
+        "H",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-35731d18a3caa054",
+      "sequence": [
+        "P",
+        "H",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-88c3c85fe288e91e",
+      "sequence": [
+        "P",
+        "H",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-7376fa1d5b8d1a08",
+      "sequence": [
+        "P",
+        "H",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5fc019442f358bb7",
+      "sequence": [
+        "P",
+        "H",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-71aad008c3815c26",
+      "sequence": [
+        "P",
+        "H",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-74e8f9c02f3402cd",
+      "sequence": [
+        "P",
+        "H",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6215c550dc2d6bf2",
+      "sequence": [
+        "P",
+        "H",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-0cbf1a990dbc50d8",
+      "sequence": [
+        "P",
+        "H",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-ceca9a118c30164b",
+      "sequence": [
+        "P",
+        "H",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-306152425ed89fee",
+      "sequence": [
+        "P",
+        "H",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-be0851aa3c2513de",
+      "sequence": [
+        "P",
+        "H",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-33bab031745987d2",
+      "sequence": [
+        "P",
+        "H",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-41e44baff34ef187",
+      "sequence": [
+        "P",
+        "P",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-fc2af3afcb160f2f",
+      "sequence": [
+        "P",
+        "P",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b35b9388115f06bb",
+      "sequence": [
+        "P",
+        "P",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f21cdf6c9beaeabc",
+      "sequence": [
+        "P",
+        "P",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-170d9bba1b970f55",
+      "sequence": [
+        "P",
+        "P",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-ce19b86eb14ed32c",
+      "sequence": [
+        "P",
+        "P",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f2d25fdc43ec6cbd",
+      "sequence": [
+        "P",
+        "P",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-abff1dace500ff43",
+      "sequence": [
+        "P",
+        "P",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-11531f01cbd3d0ee",
+      "sequence": [
+        "P",
+        "P",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1a764964e081a6e8",
+      "sequence": [
+        "P",
+        "P",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f7fddc0f7e9bc109",
+      "sequence": [
+        "P",
+        "P",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a0c35fffdeaccc40",
+      "sequence": [
+        "P",
+        "P",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-2e48dddf6ee9ebe2",
+      "sequence": [
+        "P",
+        "P",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f5dfb1469fdb143f",
+      "sequence": [
+        "P",
+        "P",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-90d7ca1f2651140f",
+      "sequence": [
+        "P",
+        "P",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-2d77b01a809c1981",
+      "sequence": [
+        "P",
+        "P",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a4194f42358e00ad",
+      "sequence": [
+        "P",
+        "W",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-2693fd8c43452351",
+      "sequence": [
+        "P",
+        "W",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-35dc603e72db1e77",
+      "sequence": [
+        "P",
+        "W",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-17ccc703f4e43bc4",
+      "sequence": [
+        "P",
+        "W",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a40445d770532a6e",
+      "sequence": [
+        "P",
+        "W",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-092ecb85f116bcaa",
+      "sequence": [
+        "P",
+        "W",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-16cfecfa7a4f4098",
+      "sequence": [
+        "P",
+        "W",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3c2d70ac8790dead",
+      "sequence": [
+        "P",
+        "W",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-bc83fdfa8d79fe77",
+      "sequence": [
+        "P",
+        "W",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-cef9f371bc57e83e",
+      "sequence": [
+        "P",
+        "W",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-27c0ad1284315220",
+      "sequence": [
+        "P",
+        "W",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5a64b030324de833",
+      "sequence": [
+        "P",
+        "W",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-24481ba5000629fc",
+      "sequence": [
+        "P",
+        "W",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-dc43a216076198fe",
+      "sequence": [
+        "P",
+        "W",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-856fbf4790b95579",
+      "sequence": [
+        "P",
+        "W",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-9ad0197d0f2592c1",
+      "sequence": [
+        "P",
+        "W",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c7d3d4b310486ae1",
+      "sequence": [
+        "W",
+        "B",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8a39fbf1d6bf9c15",
+      "sequence": [
+        "W",
+        "B",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-becc3e2a815d36f3",
+      "sequence": [
+        "W",
+        "B",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-235fb564af18f86f",
+      "sequence": [
+        "W",
+        "B",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-331d152605b5ab41",
+      "sequence": [
+        "W",
+        "B",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-4e4f5e82b06efceb",
+      "sequence": [
+        "W",
+        "B",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-22d3bd1001d16f36",
+      "sequence": [
+        "W",
+        "B",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-20541ab4017f15c9",
+      "sequence": [
+        "W",
+        "B",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-92f9f2d0055c4ea4",
+      "sequence": [
+        "W",
+        "B",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-9c9e737aca9d72e6",
+      "sequence": [
+        "W",
+        "B",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a1c4f99f51c33b10",
+      "sequence": [
+        "W",
+        "B",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-49af726b8ad984c3",
+      "sequence": [
+        "W",
+        "B",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-e8adfd56e6895eec",
+      "sequence": [
+        "W",
+        "B",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-0db6cf57b5b02531",
+      "sequence": [
+        "W",
+        "B",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8d5e679635b2ff47",
+      "sequence": [
+        "W",
+        "B",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-06cce814c098d8df",
+      "sequence": [
+        "W",
+        "B",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-22eac483675191cc",
+      "sequence": [
+        "W",
+        "H",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-0e601aab598c5d9f",
+      "sequence": [
+        "W",
+        "H",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6766c27789c7e519",
+      "sequence": [
+        "W",
+        "H",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-41fe45976216fa31",
+      "sequence": [
+        "W",
+        "H",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-09a7a6b8adf3d933",
+      "sequence": [
+        "W",
+        "H",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-fc76a39f8730d410",
+      "sequence": [
+        "W",
+        "H",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b1c8e168eabd618b",
+      "sequence": [
+        "W",
+        "H",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-0ec2a3c7c283e63a",
+      "sequence": [
+        "W",
+        "H",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-dced4ef25886f13c",
+      "sequence": [
+        "W",
+        "H",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5eea282acc767bc3",
+      "sequence": [
+        "W",
+        "H",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-6567e1e41ccf6b54",
+      "sequence": [
+        "W",
+        "H",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-85d2409386a9c10a",
+      "sequence": [
+        "W",
+        "H",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-5c3212de7e079c66",
+      "sequence": [
+        "W",
+        "H",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c10feac709f71626",
+      "sequence": [
+        "W",
+        "H",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-ea239159886d5dd1",
+      "sequence": [
+        "W",
+        "H",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-8539aaeb0ae19bb6",
+      "sequence": [
+        "W",
+        "H",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-9796e00f7faf223d",
+      "sequence": [
+        "W",
+        "P",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-84f5c4ec6d909e6a",
+      "sequence": [
+        "W",
+        "P",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c25a7fffa0fce3c3",
+      "sequence": [
+        "W",
+        "P",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b78c56877403817a",
+      "sequence": [
+        "W",
+        "P",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a861b9906e5c9f4f",
+      "sequence": [
+        "W",
+        "P",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c04e7051a0cc23f6",
+      "sequence": [
+        "W",
+        "P",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-96b14a17a650a941",
+      "sequence": [
+        "W",
+        "P",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-64a7902f6210431b",
+      "sequence": [
+        "W",
+        "P",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-70290144c9d18d01",
+      "sequence": [
+        "W",
+        "P",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-22833100060e1f37",
+      "sequence": [
+        "W",
+        "P",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-0275772b54de59e9",
+      "sequence": [
+        "W",
+        "P",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-71385f37c8094735",
+      "sequence": [
+        "W",
+        "P",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-bb342650522c4f4a",
+      "sequence": [
+        "W",
+        "P",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c3a237cc1c2475dc",
+      "sequence": [
+        "W",
+        "P",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-3fffbdff10ca9272",
+      "sequence": [
+        "W",
+        "P",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a66e5a38ab31ca7d",
+      "sequence": [
+        "W",
+        "P",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b688e51f3a51a442",
+      "sequence": [
+        "W",
+        "W",
+        "B",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-ffa039314cbdbfb0",
+      "sequence": [
+        "W",
+        "W",
+        "B",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-ad2e88097cba2010",
+      "sequence": [
+        "W",
+        "W",
+        "B",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-45207d1a843da2b5",
+      "sequence": [
+        "W",
+        "W",
+        "B",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-b2b3796c8271b300",
+      "sequence": [
+        "W",
+        "W",
+        "H",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-63d3d172916cf9f1",
+      "sequence": [
+        "W",
+        "W",
+        "H",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-a939644e5917d61c",
+      "sequence": [
+        "W",
+        "W",
+        "H",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-1155c06c26dd44d7",
+      "sequence": [
+        "W",
+        "W",
+        "H",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-06c45dcbd065f52f",
+      "sequence": [
+        "W",
+        "W",
+        "P",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-129dc04f376e3349",
+      "sequence": [
+        "W",
+        "W",
+        "P",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-d801816894a52f63",
+      "sequence": [
+        "W",
+        "W",
+        "P",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-f2f42eb295c4a766",
+      "sequence": [
+        "W",
+        "W",
+        "P",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-81d3eb93d404dfb6",
+      "sequence": [
+        "W",
+        "W",
+        "W",
+        "B"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-868a46124e4843f1",
+      "sequence": [
+        "W",
+        "W",
+        "W",
+        "H"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-c5a8f9d117cf2e9c",
+      "sequence": [
+        "W",
+        "W",
+        "W",
+        "P"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+      "precise_industrial_precedent_verified": false
+    },
+    {
+      "id": "T-13a947b172b27490",
+      "sequence": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1",
+      "precise_industrial_precedent_verified": false
+    }
+  ],
+  "units": [
+    {
+      "id": "H",
+      "short": "圆柱副",
+      "title": "H · 平行轴外啮合圆柱齿轮副",
+      "symbol": "单个齿轮副 / atomic stage",
+      "input": "旋转输入 φ、ω、τ",
+      "output": "旋转输出 φ、ω、τ",
+      "mount": "安装/反力为装配投影义务；不能由两个动力端口推定三维支承已闭合。",
+      "core_math": "i_abs=z₂/z₁；方向、相位与损耗由具名方法给出",
+      "parameters": "齿数、法向模数、压力角、螺旋角、变位、齿宽、刀具、材料/工况、方法与来源。",
+      "outputs": "工作几何、传动关系、损耗/载荷、已支持的SH/SF等；各输出绑定公式与域。",
+      "budget": "展开齿轮级1；直齿/斜齿在更具体的配方与参数层继续区分。",
+      "current": "现有圆柱数学可复用，类型插件拟新增",
+      "limits": "复用现有L2/math-source，不以C001默认工况替代新需求。三维载荷/轴承/箱体需显式装配与数据。"
+    },
+    {
+      "id": "W",
+      "short": "蜗杆副",
+      "title": "W · 蜗杆输入、蜗轮输出的单元",
+      "symbol": "方向与工况敏感的原子单元",
+      "input": "旋转输入 / worm",
+      "output": "旋转输出 / wheel",
+      "mount": "蜗杆/蜗轮支承、反力与热连接另有义务；当前draft不是完整wrench-to-housing接口。",
+      "core_math": "ω₂=σ·ω₁/i；正驱损耗、反驱与静摩擦分开",
+      "parameters": "齿数/头数、模数/导程角、轴关系、材料副、摩擦/润滑/温度、载荷、正反驱方法。",
+      "outputs": "运动关系、可评价工况的功率/热与载荷；详细承载/磨损/胶合须有独立模型。",
+      "budget": "展开齿轮级1；W→W保持允许，不能用末级蜗杆偏好删去所有双蜗杆。",
+      "current": "已有W2W简化初筛，完整工程模型未齐",
+      "limits": "η不是固定默认值；自锁域不可用负效率或正效率倒数反算。详细三维反力与工程资格仍开放。"
+    },
+    {
+      "id": "P",
+      "short": "单行星排",
+      "title": "P · 固定环、太阳输入、行星架输出",
+      "symbol": "原始三端口 + 显式固定边界",
+      "input": "太阳轮 S",
+      "output": "行星架 C",
+      "mount": "齿圈R固定：ωR=0，但τR通常非零；必须保留反力投影和安装绑定义务。",
+      "core_math": "zS(ωS−ωC)+zR(ωR−ωC)=0",
+      "parameters": "齿数、角色/固定构件、几何与共工作中心约束、行星数、均载/支承、材料与方法。",
+      "outputs": "运动与力矩关系、环上反力、已有几何；销轴/架/环柔度和均载评级独立补齐。",
+      "budget": "一个行星排计1齿轮级；内部多个啮合和行星数另记，不能把啮合种数当级数。",
+      "current": "Stage0与理想数学样例；详细系统仍受限",
+      "limits": "其他固定/输入/输出配置使用不同semantic ID；未固定环时自由度不同，不可只填一个ratio。"
+    },
+    {
+      "id": "P2",
+      "short": "双级行星宏",
+      "title": "P2 · 两个固定角色P顺序插接",
+      "symbol": "P₁ → P₂，局部展开",
+      "input": "P₁太阳输入",
+      "output": "P₂行星架输出",
+      "mount": "两个固定圈的反力保留为边界/投影义务；schema尚不等于完整typed mount/wrench力学连接。",
+      "core_math": "由子P方程组合；总比i=i₁·i₂是派生量",
+      "parameters": "两个子P的作者输入、内部连接、同轴/安装关系、固定环边界与依赖版本。",
+      "outputs": "展开图、逐级状态、总比与两个反力；子模型能力共同限制复合能力。",
+      "budget": "UI节点1、齿轮级2；P2→H→W共4齿轮级；再接丝杆则另记终端转换。",
+      "current": "本轮复合manifest草案，不是已安装插件",
+      "limits": "仅当展开图、角色和约束相同，才与平铺P→P去重。共同齿圈/复合行星等不能偷偷并为同一宏。"
+    },
+    {
+      "id": "SC",
+      "short": "丝杆螺母",
+      "title": "SC · 旋转—直线转换单元",
+      "symbol": "转动端 / 平动端 / 约束反力",
+      "input": "旋转端 φ、ω、τ",
+      "output": "平动端 x、v、F",
+      "mount": "须表达推力支承、螺母防转与反力路径；旋转丝杆和旋转螺母是不同角色配置。",
+      "core_math": "v=lead·ω/(2π rad)；正反驱与摩擦域独立",
+      "parameters": "导程/头数、根径/有效径、材料、摩擦/润滑、支承与全行程、载荷谱；滑动与滚珠不同模型。",
+      "outputs": "推力/速度/驱动扭矩与损耗、屈曲/转速/寿命等各项能力状态。",
+      "budget": "本轮齿轮级0、终端转换1；limit_basis必须明确是齿轮级还是总串联级。",
+      "current": "本轮理想四端口数学样例，主链未实现",
+      "limits": "理想功率关系不证明自锁、PV/磨损或滚珠疲劳寿命；无来源时返回blocked。"
+    },
+    {
+      "id": "SUP",
+      "short": "轴与支承",
+      "title": "SUP · 轴、轴承、连接与箱体附属组件",
+      "symbol": "结构 / 安装 / 热的装配关系",
+      "input": "轴载荷 / 安装接口",
+      "output": "反力 / 挠度 / 校核",
+      "mount": "形成完整负载路径；不出现在H/P/W/B字母序列里不代表可以省略。",
+      "core_math": "平衡、变形与各已支持方法；一维与三维范围分开",
+      "parameters": "轴段、支承位置/定位、真实材料、目录C/C0、配合、连接、刚度与热边界。",
+      "outputs": "支反力、挠度/转角、轴/轴承/键/过盈检查，进一步反馈齿向与布局。",
+      "budget": "齿轮级0；零件、支承、轴与装配复杂度单独统计。",
+      "current": "已有有限系统核算；完整自动装配未闭合",
+      "limits": "当前draft的reaction_obligations是接口义务，完整结构安装/三维载荷恢复与箱体资格仍需实现。"
+    }
+  ],
+  "counts": {
+    "four_atom": {
+      "by_stage": {
+        "1": 4,
+        "2": 16,
+        "3": 64,
+        "4": 256
+      },
+      "ordered": 340,
+      "macro_raw": 398,
+      "macro_unique": 340
+    },
+    "six_atom": {
+      "by_stage": {
+        "1": 6,
+        "2": 36,
+        "3": 216,
+        "4": 1296
+      },
+      "ordered": 1554,
+      "macro_raw": 1676,
+      "macro_unique": 1554
+    }
+  },
+  "math_checks_passed": 39,
+  "math_checks_failed": 0,
+  "industrial_product_families": 5,
+  "precise_topology_industrial_matches_recorded": 0,
+  "evidence_sha256": {
+    "library/enum-counts.json": "3c60ffc0ed69657e6cdc0a1e907775a818de0fc38f1b42231415044a9373e469",
+    "library/topology-library.json": "c549f81355d00b893ba04b62972393cea134adbc2606d05aa8ccf50bcdf27a91",
+    "library/verification-log.json": "8414afab05cc5a15ba0f6dd9e36f1a8babbc893714d93f0f07534a2a7ffd5c40",
+    "math/component-contract.json": "41ee0740962b51cad93575938620474ca279ed9954d8786cea9addd8ab61d996",
+    "math/math-examples.json": "32dd45bb9b83d305b46964a622996a60c51aaf3058586bc9f6513cc900e027fa",
+    "math/math-example-results.json": "5cd1daac00354e564dda880e5eabfdbe48ecb98cf664686aeb3003412c16f414",
+    "math/MATH-DESIGN.md": "856fc7627ae05dbbdfb48dbb1c832e4b4d9a4431d28d8cebf2fabf941a1e7504",
+    "research/sources.json": "669bcbd6a63574083edcd989cbf1c37c6139247a7517898cb1d71258389a6211",
+    "research/industrial-precedents.json": "b6ef6dd64122d7267514320aa042c5c2aad4c98f2994097548fcd9a3a92407eb",
+    "research/METHODS-COMPARISON.md": "4949b65bbffcbedce42483a64ca1fbace32bc7e4048716b2c1c8d21668937713"
+  }
+}

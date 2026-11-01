@@ -1,0 +1,781 @@
+﻿physical_stages,family_order_signature,distinct_atomic_semantic_topologies,grouping_is_not_dedup
+1,bevel,1,True
+1,cylindrical_crossed,1,True
+1,cylindrical_parallel,2,True
+1,planetary_simple,1,True
+1,worm,1,True
+2,bevel > bevel,1,True
+2,bevel > cylindrical_crossed,1,True
+2,bevel > cylindrical_parallel,2,True
+2,bevel > planetary_simple,1,True
+2,bevel > worm,1,True
+2,cylindrical_crossed > bevel,1,True
+2,cylindrical_crossed > cylindrical_crossed,1,True
+2,cylindrical_crossed > cylindrical_parallel,2,True
+2,cylindrical_crossed > planetary_simple,1,True
+2,cylindrical_crossed > worm,1,True
+2,cylindrical_parallel > bevel,2,True
+2,cylindrical_parallel > cylindrical_crossed,2,True
+2,cylindrical_parallel > cylindrical_parallel,4,True
+2,cylindrical_parallel > planetary_simple,2,True
+2,cylindrical_parallel > worm,2,True
+2,planetary_simple > bevel,1,True
+2,planetary_simple > cylindrical_crossed,1,True
+2,planetary_simple > cylindrical_parallel,2,True
+2,planetary_simple > planetary_simple,1,True
+2,planetary_simple > worm,1,True
+2,worm > bevel,1,True
+2,worm > cylindrical_crossed,1,True
+2,worm > cylindrical_parallel,2,True
+2,worm > planetary_simple,1,True
+2,worm > worm,1,True
+3,bevel > bevel > bevel,1,True
+3,bevel > bevel > cylindrical_crossed,1,True
+3,bevel > bevel > cylindrical_parallel,2,True
+3,bevel > bevel > planetary_simple,1,True
+3,bevel > bevel > worm,1,True
+3,bevel > cylindrical_crossed > bevel,1,True
+3,bevel > cylindrical_crossed > cylindrical_crossed,1,True
+3,bevel > cylindrical_crossed > cylindrical_parallel,2,True
+3,bevel > cylindrical_crossed > planetary_simple,1,True
+3,bevel > cylindrical_crossed > worm,1,True
+3,bevel > cylindrical_parallel > bevel,2,True
+3,bevel > cylindrical_parallel > cylindrical_crossed,2,True
+3,bevel > cylindrical_parallel > cylindrical_parallel,4,True
+3,bevel > cylindrical_parallel > planetary_simple,2,True
+3,bevel > cylindrical_parallel > worm,2,True
+3,bevel > planetary_simple > bevel,1,True
+3,bevel > planetary_simple > cylindrical_crossed,1,True
+3,bevel > planetary_simple > cylindrical_parallel,2,True
+3,bevel > planetary_simple > planetary_simple,1,True
+3,bevel > planetary_simple > worm,1,True
+3,bevel > worm > bevel,1,True
+3,bevel > worm > cylindrical_crossed,1,True
+3,bevel > worm > cylindrical_parallel,2,True
+3,bevel > worm > planetary_simple,1,True
+3,bevel > worm > worm,1,True
+3,cylindrical_crossed > bevel > bevel,1,True
+3,cylindrical_crossed > bevel > cylindrical_crossed,1,True
+3,cylindrical_crossed > bevel > cylindrical_parallel,2,True
+3,cylindrical_crossed > bevel > planetary_simple,1,True
+3,cylindrical_crossed > bevel > worm,1,True
+3,cylindrical_crossed > cylindrical_crossed > bevel,1,True
+3,cylindrical_crossed > cylindrical_crossed > cylindrical_crossed,1,True
+3,cylindrical_crossed > cylindrical_crossed > cylindrical_parallel,2,True
+3,cylindrical_crossed > cylindrical_crossed > planetary_simple,1,True
+3,cylindrical_crossed > cylindrical_crossed > worm,1,True
+3,cylindrical_crossed > cylindrical_parallel > bevel,2,True
+3,cylindrical_crossed > cylindrical_parallel > cylindrical_crossed,2,True
+3,cylindrical_crossed > cylindrical_parallel > cylindrical_parallel,4,True
+3,cylindrical_crossed > cylindrical_parallel > planetary_simple,2,True
+3,cylindrical_crossed > cylindrical_parallel > worm,2,True
+3,cylindrical_crossed > planetary_simple > bevel,1,True
+3,cylindrical_crossed > planetary_simple > cylindrical_crossed,1,True
+3,cylindrical_crossed > planetary_simple > cylindrical_parallel,2,True
+3,cylindrical_crossed > planetary_simple > planetary_simple,1,True
+3,cylindrical_crossed > planetary_simple > worm,1,True
+3,cylindrical_crossed > worm > bevel,1,True
+3,cylindrical_crossed > worm > cylindrical_crossed,1,True
+3,cylindrical_crossed > worm > cylindrical_parallel,2,True
+3,cylindrical_crossed > worm > planetary_simple,1,True
+3,cylindrical_crossed > worm > worm,1,True
+3,cylindrical_parallel > bevel > bevel,2,True
+3,cylindrical_parallel > bevel > cylindrical_crossed,2,True
+3,cylindrical_parallel > bevel > cylindrical_parallel,4,True
+3,cylindrical_parallel > bevel > planetary_simple,2,True
+3,cylindrical_parallel > bevel > worm,2,True
+3,cylindrical_parallel > cylindrical_crossed > bevel,2,True
+3,cylindrical_parallel > cylindrical_crossed > cylindrical_crossed,2,True
+3,cylindrical_parallel > cylindrical_crossed > cylindrical_parallel,4,True
+3,cylindrical_parallel > cylindrical_crossed > planetary_simple,2,True
+3,cylindrical_parallel > cylindrical_crossed > worm,2,True
+3,cylindrical_parallel > cylindrical_parallel > bevel,4,True
+3,cylindrical_parallel > cylindrical_parallel > cylindrical_crossed,4,True
+3,cylindrical_parallel > cylindrical_parallel > cylindrical_parallel,8,True
+3,cylindrical_parallel > cylindrical_parallel > planetary_simple,4,True
+3,cylindrical_parallel > cylindrical_parallel > worm,4,True
+3,cylindrical_parallel > planetary_simple > bevel,2,True
+3,cylindrical_parallel > planetary_simple > cylindrical_crossed,2,True
+3,cylindrical_parallel > planetary_simple > cylindrical_parallel,4,True
+3,cylindrical_parallel > planetary_simple > planetary_simple,2,True
+3,cylindrical_parallel > planetary_simple > worm,2,True
+3,cylindrical_parallel > worm > bevel,2,True
+3,cylindrical_parallel > worm > cylindrical_crossed,2,True
+3,cylindrical_parallel > worm > cylindrical_parallel,4,True
+3,cylindrical_parallel > worm > planetary_simple,2,True
+3,cylindrical_parallel > worm > worm,2,True
+3,planetary_simple > bevel > bevel,1,True
+3,planetary_simple > bevel > cylindrical_crossed,1,True
+3,planetary_simple > bevel > cylindrical_parallel,2,True
+3,planetary_simple > bevel > planetary_simple,1,True
+3,planetary_simple > bevel > worm,1,True
+3,planetary_simple > cylindrical_crossed > bevel,1,True
+3,planetary_simple > cylindrical_crossed > cylindrical_crossed,1,True
+3,planetary_simple > cylindrical_crossed > cylindrical_parallel,2,True
+3,planetary_simple > cylindrical_crossed > planetary_simple,1,True
+3,planetary_simple > cylindrical_crossed > worm,1,True
+3,planetary_simple > cylindrical_parallel > bevel,2,True
+3,planetary_simple > cylindrical_parallel > cylindrical_crossed,2,True
+3,planetary_simple > cylindrical_parallel > cylindrical_parallel,4,True
+3,planetary_simple > cylindrical_parallel > planetary_simple,2,True
+3,planetary_simple > cylindrical_parallel > worm,2,True
+3,planetary_simple > planetary_simple > bevel,1,True
+3,planetary_simple > planetary_simple > cylindrical_crossed,1,True
+3,planetary_simple > planetary_simple > cylindrical_parallel,2,True
+3,planetary_simple > planetary_simple > planetary_simple,1,True
+3,planetary_simple > planetary_simple > worm,1,True
+3,planetary_simple > worm > bevel,1,True
+3,planetary_simple > worm > cylindrical_crossed,1,True
+3,planetary_simple > worm > cylindrical_parallel,2,True
+3,planetary_simple > worm > planetary_simple,1,True
+3,planetary_simple > worm > worm,1,True
+3,worm > bevel > bevel,1,True
+3,worm > bevel > cylindrical_crossed,1,True
+3,worm > bevel > cylindrical_parallel,2,True
+3,worm > bevel > planetary_simple,1,True
+3,worm > bevel > worm,1,True
+3,worm > cylindrical_crossed > bevel,1,True
+3,worm > cylindrical_crossed > cylindrical_crossed,1,True
+3,worm > cylindrical_crossed > cylindrical_parallel,2,True
+3,worm > cylindrical_crossed > planetary_simple,1,True
+3,worm > cylindrical_crossed > worm,1,True
+3,worm > cylindrical_parallel > bevel,2,True
+3,worm > cylindrical_parallel > cylindrical_crossed,2,True
+3,worm > cylindrical_parallel > cylindrical_parallel,4,True
+3,worm > cylindrical_parallel > planetary_simple,2,True
+3,worm > cylindrical_parallel > worm,2,True
+3,worm > planetary_simple > bevel,1,True
+3,worm > planetary_simple > cylindrical_crossed,1,True
+3,worm > planetary_simple > cylindrical_parallel,2,True
+3,worm > planetary_simple > planetary_simple,1,True
+3,worm > planetary_simple > worm,1,True
+3,worm > worm > bevel,1,True
+3,worm > worm > cylindrical_crossed,1,True
+3,worm > worm > cylindrical_parallel,2,True
+3,worm > worm > planetary_simple,1,True
+3,worm > worm > worm,1,True
+4,bevel > bevel > bevel > bevel,1,True
+4,bevel > bevel > bevel > cylindrical_crossed,1,True
+4,bevel > bevel > bevel > cylindrical_parallel,2,True
+4,bevel > bevel > bevel > planetary_simple,1,True
+4,bevel > bevel > bevel > worm,1,True
+4,bevel > bevel > cylindrical_crossed > bevel,1,True
+4,bevel > bevel > cylindrical_crossed > cylindrical_crossed,1,True
+4,bevel > bevel > cylindrical_crossed > cylindrical_parallel,2,True
+4,bevel > bevel > cylindrical_crossed > planetary_simple,1,True
+4,bevel > bevel > cylindrical_crossed > worm,1,True
+4,bevel > bevel > cylindrical_parallel > bevel,2,True
+4,bevel > bevel > cylindrical_parallel > cylindrical_crossed,2,True
+4,bevel > bevel > cylindrical_parallel > cylindrical_parallel,4,True
+4,bevel > bevel > cylindrical_parallel > planetary_simple,2,True
+4,bevel > bevel > cylindrical_parallel > worm,2,True
+4,bevel > bevel > planetary_simple > bevel,1,True
+4,bevel > bevel > planetary_simple > cylindrical_crossed,1,True
+4,bevel > bevel > planetary_simple > cylindrical_parallel,2,True
+4,bevel > bevel > planetary_simple > planetary_simple,1,True
+4,bevel > bevel > planetary_simple > worm,1,True
+4,bevel > bevel > worm > bevel,1,True
+4,bevel > bevel > worm > cylindrical_crossed,1,True
+4,bevel > bevel > worm > cylindrical_parallel,2,True
+4,bevel > bevel > worm > planetary_simple,1,True
+4,bevel > bevel > worm > worm,1,True
+4,bevel > cylindrical_crossed > bevel > bevel,1,True
+4,bevel > cylindrical_crossed > bevel > cylindrical_crossed,1,True
+4,bevel > cylindrical_crossed > bevel > cylindrical_parallel,2,True
+4,bevel > cylindrical_crossed > bevel > planetary_simple,1,True
+4,bevel > cylindrical_crossed > bevel > worm,1,True
+4,bevel > cylindrical_crossed > cylindrical_crossed > bevel,1,True
+4,bevel > cylindrical_crossed > cylindrical_crossed > cylindrical_crossed,1,True
+4,bevel > cylindrical_crossed > cylindrical_crossed > cylindrical_parallel,2,True
+4,bevel > cylindrical_crossed > cylindrical_crossed > planetary_simple,1,True
+4,bevel > cylindrical_crossed > cylindrical_crossed > worm,1,True
+4,bevel > cylindrical_crossed > cylindrical_parallel > bevel,2,True
+4,bevel > cylindrical_crossed > cylindrical_parallel > cylindrical_crossed,2,True
+4,bevel > cylindrical_crossed > cylindrical_parallel > cylindrical_parallel,4,True
+4,bevel > cylindrical_crossed > cylindrical_parallel > planetary_simple,2,True
+4,bevel > cylindrical_crossed > cylindrical_parallel > worm,2,True
+4,bevel > cylindrical_crossed > planetary_simple > bevel,1,True
+4,bevel > cylindrical_crossed > planetary_simple > cylindrical_crossed,1,True
+4,bevel > cylindrical_crossed > planetary_simple > cylindrical_parallel,2,True
+4,bevel > cylindrical_crossed > planetary_simple > planetary_simple,1,True
+4,bevel > cylindrical_crossed > planetary_simple > worm,1,True
+4,bevel > cylindrical_crossed > worm > bevel,1,True
+4,bevel > cylindrical_crossed > worm > cylindrical_crossed,1,True
+4,bevel > cylindrical_crossed > worm > cylindrical_parallel,2,True
+4,bevel > cylindrical_crossed > worm > planetary_simple,1,True
+4,bevel > cylindrical_crossed > worm > worm,1,True
+4,bevel > cylindrical_parallel > bevel > bevel,2,True
+4,bevel > cylindrical_parallel > bevel > cylindrical_crossed,2,True
+4,bevel > cylindrical_parallel > bevel > cylindrical_parallel,4,True
+4,bevel > cylindrical_parallel > bevel > planetary_simple,2,True
+4,bevel > cylindrical_parallel > bevel > worm,2,True
+4,bevel > cylindrical_parallel > cylindrical_crossed > bevel,2,True
+4,bevel > cylindrical_parallel > cylindrical_crossed > cylindrical_crossed,2,True
+4,bevel > cylindrical_parallel > cylindrical_crossed > cylindrical_parallel,4,True
+4,bevel > cylindrical_parallel > cylindrical_crossed > planetary_simple,2,True
+4,bevel > cylindrical_parallel > cylindrical_crossed > worm,2,True
+4,bevel > cylindrical_parallel > cylindrical_parallel > bevel,4,True
+4,bevel > cylindrical_parallel > cylindrical_parallel > cylindrical_crossed,4,True
+4,bevel > cylindrical_parallel > cylindrical_parallel > cylindrical_parallel,8,True
+4,bevel > cylindrical_parallel > cylindrical_parallel > planetary_simple,4,True
+4,bevel > cylindrical_parallel > cylindrical_parallel > worm,4,True
+4,bevel > cylindrical_parallel > planetary_simple > bevel,2,True
+4,bevel > cylindrical_parallel > planetary_simple > cylindrical_crossed,2,True
+4,bevel > cylindrical_parallel > planetary_simple > cylindrical_parallel,4,True
+4,bevel > cylindrical_parallel > planetary_simple > planetary_simple,2,True
+4,bevel > cylindrical_parallel > planetary_simple > worm,2,True
+4,bevel > cylindrical_parallel > worm > bevel,2,True
+4,bevel > cylindrical_parallel > worm > cylindrical_crossed,2,True
+4,bevel > cylindrical_parallel > worm > cylindrical_parallel,4,True
+4,bevel > cylindrical_parallel > worm > planetary_simple,2,True
+4,bevel > cylindrical_parallel > worm > worm,2,True
+4,bevel > planetary_simple > bevel > bevel,1,True
+4,bevel > planetary_simple > bevel > cylindrical_crossed,1,True
+4,bevel > planetary_simple > bevel > cylindrical_parallel,2,True
+4,bevel > planetary_simple > bevel > planetary_simple,1,True
+4,bevel > planetary_simple > bevel > worm,1,True
+4,bevel > planetary_simple > cylindrical_crossed > bevel,1,True
+4,bevel > planetary_simple > cylindrical_crossed > cylindrical_crossed,1,True
+4,bevel > planetary_simple > cylindrical_crossed > cylindrical_parallel,2,True
+4,bevel > planetary_simple > cylindrical_crossed > planetary_simple,1,True
+4,bevel > planetary_simple > cylindrical_crossed > worm,1,True
+4,bevel > planetary_simple > cylindrical_parallel > bevel,2,True
+4,bevel > planetary_simple > cylindrical_parallel > cylindrical_crossed,2,True
+4,bevel > planetary_simple > cylindrical_parallel > cylindrical_parallel,4,True
+4,bevel > planetary_simple > cylindrical_parallel > planetary_simple,2,True
+4,bevel > planetary_simple > cylindrical_parallel > worm,2,True
+4,bevel > planetary_simple > planetary_simple > bevel,1,True
+4,bevel > planetary_simple > planetary_simple > cylindrical_crossed,1,True
+4,bevel > planetary_simple > planetary_simple > cylindrical_parallel,2,True
+4,bevel > planetary_simple > planetary_simple > planetary_simple,1,True
+4,bevel > planetary_simple > planetary_simple > worm,1,True
+4,bevel > planetary_simple > worm > bevel,1,True
+4,bevel > planetary_simple > worm > cylindrical_crossed,1,True
+4,bevel > planetary_simple > worm > cylindrical_parallel,2,True
+4,bevel > planetary_simple > worm > planetary_simple,1,True
+4,bevel > planetary_simple > worm > worm,1,True
+4,bevel > worm > bevel > bevel,1,True
+4,bevel > worm > bevel > cylindrical_crossed,1,True
+4,bevel > worm > bevel > cylindrical_parallel,2,True
+4,bevel > worm > bevel > planetary_simple,1,True
+4,bevel > worm > bevel > worm,1,True
+4,bevel > worm > cylindrical_crossed > bevel,1,True
+4,bevel > worm > cylindrical_crossed > cylindrical_crossed,1,True
+4,bevel > worm > cylindrical_crossed > cylindrical_parallel,2,True
+4,bevel > worm > cylindrical_crossed > planetary_simple,1,True
+4,bevel > worm > cylindrical_crossed > worm,1,True
+4,bevel > worm > cylindrical_parallel > bevel,2,True
+4,bevel > worm > cylindrical_parallel > cylindrical_crossed,2,True
+4,bevel > worm > cylindrical_parallel > cylindrical_parallel,4,True
+4,bevel > worm > cylindrical_parallel > planetary_simple,2,True
+4,bevel > worm > cylindrical_parallel > worm,2,True
+4,bevel > worm > planetary_simple > bevel,1,True
+4,bevel > worm > planetary_simple > cylindrical_crossed,1,True
+4,bevel > worm > planetary_simple > cylindrical_parallel,2,True
+4,bevel > worm > planetary_simple > planetary_simple,1,True
+4,bevel > worm > planetary_simple > worm,1,True
+4,bevel > worm > worm > bevel,1,True
+4,bevel > worm > worm > cylindrical_crossed,1,True
+4,bevel > worm > worm > cylindrical_parallel,2,True
+4,bevel > worm > worm > planetary_simple,1,True
+4,bevel > worm > worm > worm,1,True
+4,cylindrical_crossed > bevel > bevel > bevel,1,True
+4,cylindrical_crossed > bevel > bevel > cylindrical_crossed,1,True
+4,cylindrical_crossed > bevel > bevel > cylindrical_parallel,2,True
+4,cylindrical_crossed > bevel > bevel > planetary_simple,1,True
+4,cylindrical_crossed > bevel > bevel > worm,1,True
+4,cylindrical_crossed > bevel > cylindrical_crossed > bevel,1,True
+4,cylindrical_crossed > bevel > cylindrical_crossed > cylindrical_crossed,1,True
+4,cylindrical_crossed > bevel > cylindrical_crossed > cylindrical_parallel,2,True
+4,cylindrical_crossed > bevel > cylindrical_crossed > planetary_simple,1,True
+4,cylindrical_crossed > bevel > cylindrical_crossed > worm,1,True
+4,cylindrical_crossed > bevel > cylindrical_parallel > bevel,2,True
+4,cylindrical_crossed > bevel > cylindrical_parallel > cylindrical_crossed,2,True
+4,cylindrical_crossed > bevel > cylindrical_parallel > cylindrical_parallel,4,True
+4,cylindrical_crossed > bevel > cylindrical_parallel > planetary_simple,2,True
+4,cylindrical_crossed > bevel > cylindrical_parallel > worm,2,True
+4,cylindrical_crossed > bevel > planetary_simple > bevel,1,True
+4,cylindrical_crossed > bevel > planetary_simple > cylindrical_crossed,1,True
+4,cylindrical_crossed > bevel > planetary_simple > cylindrical_parallel,2,True
+4,cylindrical_crossed > bevel > planetary_simple > planetary_simple,1,True
+4,cylindrical_crossed > bevel > planetary_simple > worm,1,True
+4,cylindrical_crossed > bevel > worm > bevel,1,True
+4,cylindrical_crossed > bevel > worm > cylindrical_crossed,1,True
+4,cylindrical_crossed > bevel > worm > cylindrical_parallel,2,True
+4,cylindrical_crossed > bevel > worm > planetary_simple,1,True
+4,cylindrical_crossed > bevel > worm > worm,1,True
+4,cylindrical_crossed > cylindrical_crossed > bevel > bevel,1,True
+4,cylindrical_crossed > cylindrical_crossed > bevel > cylindrical_crossed,1,True
+4,cylindrical_crossed > cylindrical_crossed > bevel > cylindrical_parallel,2,True
+4,cylindrical_crossed > cylindrical_crossed > bevel > planetary_simple,1,True
+4,cylindrical_crossed > cylindrical_crossed > bevel > worm,1,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_crossed > bevel,1,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_crossed > cylindrical_crossed,1,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_crossed > cylindrical_parallel,2,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_crossed > planetary_simple,1,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_crossed > worm,1,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_parallel > bevel,2,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_parallel > cylindrical_crossed,2,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_parallel > cylindrical_parallel,4,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_parallel > planetary_simple,2,True
+4,cylindrical_crossed > cylindrical_crossed > cylindrical_parallel > worm,2,True
+4,cylindrical_crossed > cylindrical_crossed > planetary_simple > bevel,1,True
+4,cylindrical_crossed > cylindrical_crossed > planetary_simple > cylindrical_crossed,1,True
+4,cylindrical_crossed > cylindrical_crossed > planetary_simple > cylindrical_parallel,2,True
+4,cylindrical_crossed > cylindrical_crossed > planetary_simple > planetary_simple,1,True
+4,cylindrical_crossed > cylindrical_crossed > planetary_simple > worm,1,True
+4,cylindrical_crossed > cylindrical_crossed > worm > bevel,1,True
+4,cylindrical_crossed > cylindrical_crossed > worm > cylindrical_crossed,1,True
+4,cylindrical_crossed > cylindrical_crossed > worm > cylindrical_parallel,2,True
+4,cylindrical_crossed > cylindrical_crossed > worm > planetary_simple,1,True
+4,cylindrical_crossed > cylindrical_crossed > worm > worm,1,True
+4,cylindrical_crossed > cylindrical_parallel > bevel > bevel,2,True
+4,cylindrical_crossed > cylindrical_parallel > bevel > cylindrical_crossed,2,True
+4,cylindrical_crossed > cylindrical_parallel > bevel > cylindrical_parallel,4,True
+4,cylindrical_crossed > cylindrical_parallel > bevel > planetary_simple,2,True
+4,cylindrical_crossed > cylindrical_parallel > bevel > worm,2,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_crossed > bevel,2,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_crossed > cylindrical_crossed,2,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_crossed > cylindrical_parallel,4,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_crossed > planetary_simple,2,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_crossed > worm,2,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_parallel > bevel,4,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_parallel > cylindrical_crossed,4,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_parallel > cylindrical_parallel,8,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_parallel > planetary_simple,4,True
+4,cylindrical_crossed > cylindrical_parallel > cylindrical_parallel > worm,4,True
+4,cylindrical_crossed > cylindrical_parallel > planetary_simple > bevel,2,True
+4,cylindrical_crossed > cylindrical_parallel > planetary_simple > cylindrical_crossed,2,True
+4,cylindrical_crossed > cylindrical_parallel > planetary_simple > cylindrical_parallel,4,True
+4,cylindrical_crossed > cylindrical_parallel > planetary_simple > planetary_simple,2,True
+4,cylindrical_crossed > cylindrical_parallel > planetary_simple > worm,2,True
+4,cylindrical_crossed > cylindrical_parallel > worm > bevel,2,True
+4,cylindrical_crossed > cylindrical_parallel > worm > cylindrical_crossed,2,True
+4,cylindrical_crossed > cylindrical_parallel > worm > cylindrical_parallel,4,True
+4,cylindrical_crossed > cylindrical_parallel > worm > planetary_simple,2,True
+4,cylindrical_crossed > cylindrical_parallel > worm > worm,2,True
+4,cylindrical_crossed > planetary_simple > bevel > bevel,1,True
+4,cylindrical_crossed > planetary_simple > bevel > cylindrical_crossed,1,True
+4,cylindrical_crossed > planetary_simple > bevel > cylindrical_parallel,2,True
+4,cylindrical_crossed > planetary_simple > bevel > planetary_simple,1,True
+4,cylindrical_crossed > planetary_simple > bevel > worm,1,True
+4,cylindrical_crossed > planetary_simple > cylindrical_crossed > bevel,1,True
+4,cylindrical_crossed > planetary_simple > cylindrical_crossed > cylindrical_crossed,1,True
+4,cylindrical_crossed > planetary_simple > cylindrical_crossed > cylindrical_parallel,2,True
+4,cylindrical_crossed > planetary_simple > cylindrical_crossed > planetary_simple,1,True
+4,cylindrical_crossed > planetary_simple > cylindrical_crossed > worm,1,True
+4,cylindrical_crossed > planetary_simple > cylindrical_parallel > bevel,2,True
+4,cylindrical_crossed > planetary_simple > cylindrical_parallel > cylindrical_crossed,2,True
+4,cylindrical_crossed > planetary_simple > cylindrical_parallel > cylindrical_parallel,4,True
+4,cylindrical_crossed > planetary_simple > cylindrical_parallel > planetary_simple,2,True
+4,cylindrical_crossed > planetary_simple > cylindrical_parallel > worm,2,True
+4,cylindrical_crossed > planetary_simple > planetary_simple > bevel,1,True
+4,cylindrical_crossed > planetary_simple > planetary_simple > cylindrical_crossed,1,True
+4,cylindrical_crossed > planetary_simple > planetary_simple > cylindrical_parallel,2,True
+4,cylindrical_crossed > planetary_simple > planetary_simple > planetary_simple,1,True
+4,cylindrical_crossed > planetary_simple > planetary_simple > worm,1,True
+4,cylindrical_crossed > planetary_simple > worm > bevel,1,True
+4,cylindrical_crossed > planetary_simple > worm > cylindrical_crossed,1,True
+4,cylindrical_crossed > planetary_simple > worm > cylindrical_parallel,2,True
+4,cylindrical_crossed > planetary_simple > worm > planetary_simple,1,True
+4,cylindrical_crossed > planetary_simple > worm > worm,1,True
+4,cylindrical_crossed > worm > bevel > bevel,1,True
+4,cylindrical_crossed > worm > bevel > cylindrical_crossed,1,True
+4,cylindrical_crossed > worm > bevel > cylindrical_parallel,2,True
+4,cylindrical_crossed > worm > bevel > planetary_simple,1,True
+4,cylindrical_crossed > worm > bevel > worm,1,True
+4,cylindrical_crossed > worm > cylindrical_crossed > bevel,1,True
+4,cylindrical_crossed > worm > cylindrical_crossed > cylindrical_crossed,1,True
+4,cylindrical_crossed > worm > cylindrical_crossed > cylindrical_parallel,2,True
+4,cylindrical_crossed > worm > cylindrical_crossed > planetary_simple,1,True
+4,cylindrical_crossed > worm > cylindrical_crossed > worm,1,True
+4,cylindrical_crossed > worm > cylindrical_parallel > bevel,2,True
+4,cylindrical_crossed > worm > cylindrical_parallel > cylindrical_crossed,2,True
+4,cylindrical_crossed > worm > cylindrical_parallel > cylindrical_parallel,4,True
+4,cylindrical_crossed > worm > cylindrical_parallel > planetary_simple,2,True
+4,cylindrical_crossed > worm > cylindrical_parallel > worm,2,True
+4,cylindrical_crossed > worm > planetary_simple > bevel,1,True
+4,cylindrical_crossed > worm > planetary_simple > cylindrical_crossed,1,True
+4,cylindrical_crossed > worm > planetary_simple > cylindrical_parallel,2,True
+4,cylindrical_crossed > worm > planetary_simple > planetary_simple,1,True
+4,cylindrical_crossed > worm > planetary_simple > worm,1,True
+4,cylindrical_crossed > worm > worm > bevel,1,True
+4,cylindrical_crossed > worm > worm > cylindrical_crossed,1,True
+4,cylindrical_crossed > worm > worm > cylindrical_parallel,2,True
+4,cylindrical_crossed > worm > worm > planetary_simple,1,True
+4,cylindrical_crossed > worm > worm > worm,1,True
+4,cylindrical_parallel > bevel > bevel > bevel,2,True
+4,cylindrical_parallel > bevel > bevel > cylindrical_crossed,2,True
+4,cylindrical_parallel > bevel > bevel > cylindrical_parallel,4,True
+4,cylindrical_parallel > bevel > bevel > planetary_simple,2,True
+4,cylindrical_parallel > bevel > bevel > worm,2,True
+4,cylindrical_parallel > bevel > cylindrical_crossed > bevel,2,True
+4,cylindrical_parallel > bevel > cylindrical_crossed > cylindrical_crossed,2,True
+4,cylindrical_parallel > bevel > cylindrical_crossed > cylindrical_parallel,4,True
+4,cylindrical_parallel > bevel > cylindrical_crossed > planetary_simple,2,True
+4,cylindrical_parallel > bevel > cylindrical_crossed > worm,2,True
+4,cylindrical_parallel > bevel > cylindrical_parallel > bevel,4,True
+4,cylindrical_parallel > bevel > cylindrical_parallel > cylindrical_crossed,4,True
+4,cylindrical_parallel > bevel > cylindrical_parallel > cylindrical_parallel,8,True
+4,cylindrical_parallel > bevel > cylindrical_parallel > planetary_simple,4,True
+4,cylindrical_parallel > bevel > cylindrical_parallel > worm,4,True
+4,cylindrical_parallel > bevel > planetary_simple > bevel,2,True
+4,cylindrical_parallel > bevel > planetary_simple > cylindrical_crossed,2,True
+4,cylindrical_parallel > bevel > planetary_simple > cylindrical_parallel,4,True
+4,cylindrical_parallel > bevel > planetary_simple > planetary_simple,2,True
+4,cylindrical_parallel > bevel > planetary_simple > worm,2,True
+4,cylindrical_parallel > bevel > worm > bevel,2,True
+4,cylindrical_parallel > bevel > worm > cylindrical_crossed,2,True
+4,cylindrical_parallel > bevel > worm > cylindrical_parallel,4,True
+4,cylindrical_parallel > bevel > worm > planetary_simple,2,True
+4,cylindrical_parallel > bevel > worm > worm,2,True
+4,cylindrical_parallel > cylindrical_crossed > bevel > bevel,2,True
+4,cylindrical_parallel > cylindrical_crossed > bevel > cylindrical_crossed,2,True
+4,cylindrical_parallel > cylindrical_crossed > bevel > cylindrical_parallel,4,True
+4,cylindrical_parallel > cylindrical_crossed > bevel > planetary_simple,2,True
+4,cylindrical_parallel > cylindrical_crossed > bevel > worm,2,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_crossed > bevel,2,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_crossed > cylindrical_crossed,2,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_crossed > cylindrical_parallel,4,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_crossed > planetary_simple,2,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_crossed > worm,2,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_parallel > bevel,4,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_parallel > cylindrical_crossed,4,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_parallel > cylindrical_parallel,8,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_parallel > planetary_simple,4,True
+4,cylindrical_parallel > cylindrical_crossed > cylindrical_parallel > worm,4,True
+4,cylindrical_parallel > cylindrical_crossed > planetary_simple > bevel,2,True
+4,cylindrical_parallel > cylindrical_crossed > planetary_simple > cylindrical_crossed,2,True
+4,cylindrical_parallel > cylindrical_crossed > planetary_simple > cylindrical_parallel,4,True
+4,cylindrical_parallel > cylindrical_crossed > planetary_simple > planetary_simple,2,True
+4,cylindrical_parallel > cylindrical_crossed > planetary_simple > worm,2,True
+4,cylindrical_parallel > cylindrical_crossed > worm > bevel,2,True
+4,cylindrical_parallel > cylindrical_crossed > worm > cylindrical_crossed,2,True
+4,cylindrical_parallel > cylindrical_crossed > worm > cylindrical_parallel,4,True
+4,cylindrical_parallel > cylindrical_crossed > worm > planetary_simple,2,True
+4,cylindrical_parallel > cylindrical_crossed > worm > worm,2,True
+4,cylindrical_parallel > cylindrical_parallel > bevel > bevel,4,True
+4,cylindrical_parallel > cylindrical_parallel > bevel > cylindrical_crossed,4,True
+4,cylindrical_parallel > cylindrical_parallel > bevel > cylindrical_parallel,8,True
+4,cylindrical_parallel > cylindrical_parallel > bevel > planetary_simple,4,True
+4,cylindrical_parallel > cylindrical_parallel > bevel > worm,4,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_crossed > bevel,4,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_crossed > cylindrical_crossed,4,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_crossed > cylindrical_parallel,8,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_crossed > planetary_simple,4,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_crossed > worm,4,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_parallel > bevel,8,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_parallel > cylindrical_crossed,8,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_parallel > cylindrical_parallel,16,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_parallel > planetary_simple,8,True
+4,cylindrical_parallel > cylindrical_parallel > cylindrical_parallel > worm,8,True
+4,cylindrical_parallel > cylindrical_parallel > planetary_simple > bevel,4,True
+4,cylindrical_parallel > cylindrical_parallel > planetary_simple > cylindrical_crossed,4,True
+4,cylindrical_parallel > cylindrical_parallel > planetary_simple > cylindrical_parallel,8,True
+4,cylindrical_parallel > cylindrical_parallel > planetary_simple > planetary_simple,4,True
+4,cylindrical_parallel > cylindrical_parallel > planetary_simple > worm,4,True
+4,cylindrical_parallel > cylindrical_parallel > worm > bevel,4,True
+4,cylindrical_parallel > cylindrical_parallel > worm > cylindrical_crossed,4,True
+4,cylindrical_parallel > cylindrical_parallel > worm > cylindrical_parallel,8,True
+4,cylindrical_parallel > cylindrical_parallel > worm > planetary_simple,4,True
+4,cylindrical_parallel > cylindrical_parallel > worm > worm,4,True
+4,cylindrical_parallel > planetary_simple > bevel > bevel,2,True
+4,cylindrical_parallel > planetary_simple > bevel > cylindrical_crossed,2,True
+4,cylindrical_parallel > planetary_simple > bevel > cylindrical_parallel,4,True
+4,cylindrical_parallel > planetary_simple > bevel > planetary_simple,2,True
+4,cylindrical_parallel > planetary_simple > bevel > worm,2,True
+4,cylindrical_parallel > planetary_simple > cylindrical_crossed > bevel,2,True
+4,cylindrical_parallel > planetary_simple > cylindrical_crossed > cylindrical_crossed,2,True
+4,cylindrical_parallel > planetary_simple > cylindrical_crossed > cylindrical_parallel,4,True
+4,cylindrical_parallel > planetary_simple > cylindrical_crossed > planetary_simple,2,True
+4,cylindrical_parallel > planetary_simple > cylindrical_crossed > worm,2,True
+4,cylindrical_parallel > planetary_simple > cylindrical_parallel > bevel,4,True
+4,cylindrical_parallel > planetary_simple > cylindrical_parallel > cylindrical_crossed,4,True
+4,cylindrical_parallel > planetary_simple > cylindrical_parallel > cylindrical_parallel,8,True
+4,cylindrical_parallel > planetary_simple > cylindrical_parallel > planetary_simple,4,True
+4,cylindrical_parallel > planetary_simple > cylindrical_parallel > worm,4,True
+4,cylindrical_parallel > planetary_simple > planetary_simple > bevel,2,True
+4,cylindrical_parallel > planetary_simple > planetary_simple > cylindrical_crossed,2,True
+4,cylindrical_parallel > planetary_simple > planetary_simple > cylindrical_parallel,4,True
+4,cylindrical_parallel > planetary_simple > planetary_simple > planetary_simple,2,True
+4,cylindrical_parallel > planetary_simple > planetary_simple > worm,2,True
+4,cylindrical_parallel > planetary_simple > worm > bevel,2,True
+4,cylindrical_parallel > planetary_simple > worm > cylindrical_crossed,2,True
+4,cylindrical_parallel > planetary_simple > worm > cylindrical_parallel,4,True
+4,cylindrical_parallel > planetary_simple > worm > planetary_simple,2,True
+4,cylindrical_parallel > planetary_simple > worm > worm,2,True
+4,cylindrical_parallel > worm > bevel > bevel,2,True
+4,cylindrical_parallel > worm > bevel > cylindrical_crossed,2,True
+4,cylindrical_parallel > worm > bevel > cylindrical_parallel,4,True
+4,cylindrical_parallel > worm > bevel > planetary_simple,2,True
+4,cylindrical_parallel > worm > bevel > worm,2,True
+4,cylindrical_parallel > worm > cylindrical_crossed > bevel,2,True
+4,cylindrical_parallel > worm > cylindrical_crossed > cylindrical_crossed,2,True
+4,cylindrical_parallel > worm > cylindrical_crossed > cylindrical_parallel,4,True
+4,cylindrical_parallel > worm > cylindrical_crossed > planetary_simple,2,True
+4,cylindrical_parallel > worm > cylindrical_crossed > worm,2,True
+4,cylindrical_parallel > worm > cylindrical_parallel > bevel,4,True
+4,cylindrical_parallel > worm > cylindrical_parallel > cylindrical_crossed,4,True
+4,cylindrical_parallel > worm > cylindrical_parallel > cylindrical_parallel,8,True
+4,cylindrical_parallel > worm > cylindrical_parallel > planetary_simple,4,True
+4,cylindrical_parallel > worm > cylindrical_parallel > worm,4,True
+4,cylindrical_parallel > worm > planetary_simple > bevel,2,True
+4,cylindrical_parallel > worm > planetary_simple > cylindrical_crossed,2,True
+4,cylindrical_parallel > worm > planetary_simple > cylindrical_parallel,4,True
+4,cylindrical_parallel > worm > planetary_simple > planetary_simple,2,True
+4,cylindrical_parallel > worm > planetary_simple > worm,2,True
+4,cylindrical_parallel > worm > worm > bevel,2,True
+4,cylindrical_parallel > worm > worm > cylindrical_crossed,2,True
+4,cylindrical_parallel > worm > worm > cylindrical_parallel,4,True
+4,cylindrical_parallel > worm > worm > planetary_simple,2,True
+4,cylindrical_parallel > worm > worm > worm,2,True
+4,planetary_simple > bevel > bevel > bevel,1,True
+4,planetary_simple > bevel > bevel > cylindrical_crossed,1,True
+4,planetary_simple > bevel > bevel > cylindrical_parallel,2,True
+4,planetary_simple > bevel > bevel > planetary_simple,1,True
+4,planetary_simple > bevel > bevel > worm,1,True
+4,planetary_simple > bevel > cylindrical_crossed > bevel,1,True
+4,planetary_simple > bevel > cylindrical_crossed > cylindrical_crossed,1,True
+4,planetary_simple > bevel > cylindrical_crossed > cylindrical_parallel,2,True
+4,planetary_simple > bevel > cylindrical_crossed > planetary_simple,1,True
+4,planetary_simple > bevel > cylindrical_crossed > worm,1,True
+4,planetary_simple > bevel > cylindrical_parallel > bevel,2,True
+4,planetary_simple > bevel > cylindrical_parallel > cylindrical_crossed,2,True
+4,planetary_simple > bevel > cylindrical_parallel > cylindrical_parallel,4,True
+4,planetary_simple > bevel > cylindrical_parallel > planetary_simple,2,True
+4,planetary_simple > bevel > cylindrical_parallel > worm,2,True
+4,planetary_simple > bevel > planetary_simple > bevel,1,True
+4,planetary_simple > bevel > planetary_simple > cylindrical_crossed,1,True
+4,planetary_simple > bevel > planetary_simple > cylindrical_parallel,2,True
+4,planetary_simple > bevel > planetary_simple > planetary_simple,1,True
+4,planetary_simple > bevel > planetary_simple > worm,1,True
+4,planetary_simple > bevel > worm > bevel,1,True
+4,planetary_simple > bevel > worm > cylindrical_crossed,1,True
+4,planetary_simple > bevel > worm > cylindrical_parallel,2,True
+4,planetary_simple > bevel > worm > planetary_simple,1,True
+4,planetary_simple > bevel > worm > worm,1,True
+4,planetary_simple > cylindrical_crossed > bevel > bevel,1,True
+4,planetary_simple > cylindrical_crossed > bevel > cylindrical_crossed,1,True
+4,planetary_simple > cylindrical_crossed > bevel > cylindrical_parallel,2,True
+4,planetary_simple > cylindrical_crossed > bevel > planetary_simple,1,True
+4,planetary_simple > cylindrical_crossed > bevel > worm,1,True
+4,planetary_simple > cylindrical_crossed > cylindrical_crossed > bevel,1,True
+4,planetary_simple > cylindrical_crossed > cylindrical_crossed > cylindrical_crossed,1,True
+4,planetary_simple > cylindrical_crossed > cylindrical_crossed > cylindrical_parallel,2,True
+4,planetary_simple > cylindrical_crossed > cylindrical_crossed > planetary_simple,1,True
+4,planetary_simple > cylindrical_crossed > cylindrical_crossed > worm,1,True
+4,planetary_simple > cylindrical_crossed > cylindrical_parallel > bevel,2,True
+4,planetary_simple > cylindrical_crossed > cylindrical_parallel > cylindrical_crossed,2,True
+4,planetary_simple > cylindrical_crossed > cylindrical_parallel > cylindrical_parallel,4,True
+4,planetary_simple > cylindrical_crossed > cylindrical_parallel > planetary_simple,2,True
+4,planetary_simple > cylindrical_crossed > cylindrical_parallel > worm,2,True
+4,planetary_simple > cylindrical_crossed > planetary_simple > bevel,1,True
+4,planetary_simple > cylindrical_crossed > planetary_simple > cylindrical_crossed,1,True
+4,planetary_simple > cylindrical_crossed > planetary_simple > cylindrical_parallel,2,True
+4,planetary_simple > cylindrical_crossed > planetary_simple > planetary_simple,1,True
+4,planetary_simple > cylindrical_crossed > planetary_simple > worm,1,True
+4,planetary_simple > cylindrical_crossed > worm > bevel,1,True
+4,planetary_simple > cylindrical_crossed > worm > cylindrical_crossed,1,True
+4,planetary_simple > cylindrical_crossed > worm > cylindrical_parallel,2,True
+4,planetary_simple > cylindrical_crossed > worm > planetary_simple,1,True
+4,planetary_simple > cylindrical_crossed > worm > worm,1,True
+4,planetary_simple > cylindrical_parallel > bevel > bevel,2,True
+4,planetary_simple > cylindrical_parallel > bevel > cylindrical_crossed,2,True
+4,planetary_simple > cylindrical_parallel > bevel > cylindrical_parallel,4,True
+4,planetary_simple > cylindrical_parallel > bevel > planetary_simple,2,True
+4,planetary_simple > cylindrical_parallel > bevel > worm,2,True
+4,planetary_simple > cylindrical_parallel > cylindrical_crossed > bevel,2,True
+4,planetary_simple > cylindrical_parallel > cylindrical_crossed > cylindrical_crossed,2,True
+4,planetary_simple > cylindrical_parallel > cylindrical_crossed > cylindrical_parallel,4,True
+4,planetary_simple > cylindrical_parallel > cylindrical_crossed > planetary_simple,2,True
+4,planetary_simple > cylindrical_parallel > cylindrical_crossed > worm,2,True
+4,planetary_simple > cylindrical_parallel > cylindrical_parallel > bevel,4,True
+4,planetary_simple > cylindrical_parallel > cylindrical_parallel > cylindrical_crossed,4,True
+4,planetary_simple > cylindrical_parallel > cylindrical_parallel > cylindrical_parallel,8,True
+4,planetary_simple > cylindrical_parallel > cylindrical_parallel > planetary_simple,4,True
+4,planetary_simple > cylindrical_parallel > cylindrical_parallel > worm,4,True
+4,planetary_simple > cylindrical_parallel > planetary_simple > bevel,2,True
+4,planetary_simple > cylindrical_parallel > planetary_simple > cylindrical_crossed,2,True
+4,planetary_simple > cylindrical_parallel > planetary_simple > cylindrical_parallel,4,True
+4,planetary_simple > cylindrical_parallel > planetary_simple > planetary_simple,2,True
+4,planetary_simple > cylindrical_parallel > planetary_simple > worm,2,True
+4,planetary_simple > cylindrical_parallel > worm > bevel,2,True
+4,planetary_simple > cylindrical_parallel > worm > cylindrical_crossed,2,True
+4,planetary_simple > cylindrical_parallel > worm > cylindrical_parallel,4,True
+4,planetary_simple > cylindrical_parallel > worm > planetary_simple,2,True
+4,planetary_simple > cylindrical_parallel > worm > worm,2,True
+4,planetary_simple > planetary_simple > bevel > bevel,1,True
+4,planetary_simple > planetary_simple > bevel > cylindrical_crossed,1,True
+4,planetary_simple > planetary_simple > bevel > cylindrical_parallel,2,True
+4,planetary_simple > planetary_simple > bevel > planetary_simple,1,True
+4,planetary_simple > planetary_simple > bevel > worm,1,True
+4,planetary_simple > planetary_simple > cylindrical_crossed > bevel,1,True
+4,planetary_simple > planetary_simple > cylindrical_crossed > cylindrical_crossed,1,True
+4,planetary_simple > planetary_simple > cylindrical_crossed > cylindrical_parallel,2,True
+4,planetary_simple > planetary_simple > cylindrical_crossed > planetary_simple,1,True
+4,planetary_simple > planetary_simple > cylindrical_crossed > worm,1,True
+4,planetary_simple > planetary_simple > cylindrical_parallel > bevel,2,True
+4,planetary_simple > planetary_simple > cylindrical_parallel > cylindrical_crossed,2,True
+4,planetary_simple > planetary_simple > cylindrical_parallel > cylindrical_parallel,4,True
+4,planetary_simple > planetary_simple > cylindrical_parallel > planetary_simple,2,True
+4,planetary_simple > planetary_simple > cylindrical_parallel > worm,2,True
+4,planetary_simple > planetary_simple > planetary_simple > bevel,1,True
+4,planetary_simple > planetary_simple > planetary_simple > cylindrical_crossed,1,True
+4,planetary_simple > planetary_simple > planetary_simple > cylindrical_parallel,2,True
+4,planetary_simple > planetary_simple > planetary_simple > planetary_simple,1,True
+4,planetary_simple > planetary_simple > planetary_simple > worm,1,True
+4,planetary_simple > planetary_simple > worm > bevel,1,True
+4,planetary_simple > planetary_simple > worm > cylindrical_crossed,1,True
+4,planetary_simple > planetary_simple > worm > cylindrical_parallel,2,True
+4,planetary_simple > planetary_simple > worm > planetary_simple,1,True
+4,planetary_simple > planetary_simple > worm > worm,1,True
+4,planetary_simple > worm > bevel > bevel,1,True
+4,planetary_simple > worm > bevel > cylindrical_crossed,1,True
+4,planetary_simple > worm > bevel > cylindrical_parallel,2,True
+4,planetary_simple > worm > bevel > planetary_simple,1,True
+4,planetary_simple > worm > bevel > worm,1,True
+4,planetary_simple > worm > cylindrical_crossed > bevel,1,True
+4,planetary_simple > worm > cylindrical_crossed > cylindrical_crossed,1,True
+4,planetary_simple > worm > cylindrical_crossed > cylindrical_parallel,2,True
+4,planetary_simple > worm > cylindrical_crossed > planetary_simple,1,True
+4,planetary_simple > worm > cylindrical_crossed > worm,1,True
+4,planetary_simple > worm > cylindrical_parallel > bevel,2,True
+4,planetary_simple > worm > cylindrical_parallel > cylindrical_crossed,2,True
+4,planetary_simple > worm > cylindrical_parallel > cylindrical_parallel,4,True
+4,planetary_simple > worm > cylindrical_parallel > planetary_simple,2,True
+4,planetary_simple > worm > cylindrical_parallel > worm,2,True
+4,planetary_simple > worm > planetary_simple > bevel,1,True
+4,planetary_simple > worm > planetary_simple > cylindrical_crossed,1,True
+4,planetary_simple > worm > planetary_simple > cylindrical_parallel,2,True
+4,planetary_simple > worm > planetary_simple > planetary_simple,1,True
+4,planetary_simple > worm > planetary_simple > worm,1,True
+4,planetary_simple > worm > worm > bevel,1,True
+4,planetary_simple > worm > worm > cylindrical_crossed,1,True
+4,planetary_simple > worm > worm > cylindrical_parallel,2,True
+4,planetary_simple > worm > worm > planetary_simple,1,True
+4,planetary_simple > worm > worm > worm,1,True
+4,worm > bevel > bevel > bevel,1,True
+4,worm > bevel > bevel > cylindrical_crossed,1,True
+4,worm > bevel > bevel > cylindrical_parallel,2,True
+4,worm > bevel > bevel > planetary_simple,1,True
+4,worm > bevel > bevel > worm,1,True
+4,worm > bevel > cylindrical_crossed > bevel,1,True
+4,worm > bevel > cylindrical_crossed > cylindrical_crossed,1,True
+4,worm > bevel > cylindrical_crossed > cylindrical_parallel,2,True
+4,worm > bevel > cylindrical_crossed > planetary_simple,1,True
+4,worm > bevel > cylindrical_crossed > worm,1,True
+4,worm > bevel > cylindrical_parallel > bevel,2,True
+4,worm > bevel > cylindrical_parallel > cylindrical_crossed,2,True
+4,worm > bevel > cylindrical_parallel > cylindrical_parallel,4,True
+4,worm > bevel > cylindrical_parallel > planetary_simple,2,True
+4,worm > bevel > cylindrical_parallel > worm,2,True
+4,worm > bevel > planetary_simple > bevel,1,True
+4,worm > bevel > planetary_simple > cylindrical_crossed,1,True
+4,worm > bevel > planetary_simple > cylindrical_parallel,2,True
+4,worm > bevel > planetary_simple > planetary_simple,1,True
+4,worm > bevel > planetary_simple > worm,1,True
+4,worm > bevel > worm > bevel,1,True
+4,worm > bevel > worm > cylindrical_crossed,1,True
+4,worm > bevel > worm > cylindrical_parallel,2,True
+4,worm > bevel > worm > planetary_simple,1,True
+4,worm > bevel > worm > worm,1,True
+4,worm > cylindrical_crossed > bevel > bevel,1,True
+4,worm > cylindrical_crossed > bevel > cylindrical_crossed,1,True
+4,worm > cylindrical_crossed > bevel > cylindrical_parallel,2,True
+4,worm > cylindrical_crossed > bevel > planetary_simple,1,True
+4,worm > cylindrical_crossed > bevel > worm,1,True
+4,worm > cylindrical_crossed > cylindrical_crossed > bevel,1,True
+4,worm > cylindrical_crossed > cylindrical_crossed > cylindrical_crossed,1,True
+4,worm > cylindrical_crossed > cylindrical_crossed > cylindrical_parallel,2,True
+4,worm > cylindrical_crossed > cylindrical_crossed > planetary_simple,1,True
+4,worm > cylindrical_crossed > cylindrical_crossed > worm,1,True
+4,worm > cylindrical_crossed > cylindrical_parallel > bevel,2,True
+4,worm > cylindrical_crossed > cylindrical_parallel > cylindrical_crossed,2,True
+4,worm > cylindrical_crossed > cylindrical_parallel > cylindrical_parallel,4,True
+4,worm > cylindrical_crossed > cylindrical_parallel > planetary_simple,2,True
+4,worm > cylindrical_crossed > cylindrical_parallel > worm,2,True
+4,worm > cylindrical_crossed > planetary_simple > bevel,1,True
+4,worm > cylindrical_crossed > planetary_simple > cylindrical_crossed,1,True
+4,worm > cylindrical_crossed > planetary_simple > cylindrical_parallel,2,True
+4,worm > cylindrical_crossed > planetary_simple > planetary_simple,1,True
+4,worm > cylindrical_crossed > planetary_simple > worm,1,True
+4,worm > cylindrical_crossed > worm > bevel,1,True
+4,worm > cylindrical_crossed > worm > cylindrical_crossed,1,True
+4,worm > cylindrical_crossed > worm > cylindrical_parallel,2,True
+4,worm > cylindrical_crossed > worm > planetary_simple,1,True
+4,worm > cylindrical_crossed > worm > worm,1,True
+4,worm > cylindrical_parallel > bevel > bevel,2,True
+4,worm > cylindrical_parallel > bevel > cylindrical_crossed,2,True
+4,worm > cylindrical_parallel > bevel > cylindrical_parallel,4,True
+4,worm > cylindrical_parallel > bevel > planetary_simple,2,True
+4,worm > cylindrical_parallel > bevel > worm,2,True
+4,worm > cylindrical_parallel > cylindrical_crossed > bevel,2,True
+4,worm > cylindrical_parallel > cylindrical_crossed > cylindrical_crossed,2,True
+4,worm > cylindrical_parallel > cylindrical_crossed > cylindrical_parallel,4,True
+4,worm > cylindrical_parallel > cylindrical_crossed > planetary_simple,2,True
+4,worm > cylindrical_parallel > cylindrical_crossed > worm,2,True
+4,worm > cylindrical_parallel > cylindrical_parallel > bevel,4,True
+4,worm > cylindrical_parallel > cylindrical_parallel > cylindrical_crossed,4,True
+4,worm > cylindrical_parallel > cylindrical_parallel > cylindrical_parallel,8,True
+4,worm > cylindrical_parallel > cylindrical_parallel > planetary_simple,4,True
+4,worm > cylindrical_parallel > cylindrical_parallel > worm,4,True
+4,worm > cylindrical_parallel > planetary_simple > bevel,2,True
+4,worm > cylindrical_parallel > planetary_simple > cylindrical_crossed,2,True
+4,worm > cylindrical_parallel > planetary_simple > cylindrical_parallel,4,True
+4,worm > cylindrical_parallel > planetary_simple > planetary_simple,2,True
+4,worm > cylindrical_parallel > planetary_simple > worm,2,True
+4,worm > cylindrical_parallel > worm > bevel,2,True
+4,worm > cylindrical_parallel > worm > cylindrical_crossed,2,True
+4,worm > cylindrical_parallel > worm > cylindrical_parallel,4,True
+4,worm > cylindrical_parallel > worm > planetary_simple,2,True
+4,worm > cylindrical_parallel > worm > worm,2,True
+4,worm > planetary_simple > bevel > bevel,1,True
+4,worm > planetary_simple > bevel > cylindrical_crossed,1,True
+4,worm > planetary_simple > bevel > cylindrical_parallel,2,True
+4,worm > planetary_simple > bevel > planetary_simple,1,True
+4,worm > planetary_simple > bevel > worm,1,True
+4,worm > planetary_simple > cylindrical_crossed > bevel,1,True
+4,worm > planetary_simple > cylindrical_crossed > cylindrical_crossed,1,True
+4,worm > planetary_simple > cylindrical_crossed > cylindrical_parallel,2,True
+4,worm > planetary_simple > cylindrical_crossed > planetary_simple,1,True
+4,worm > planetary_simple > cylindrical_crossed > worm,1,True
+4,worm > planetary_simple > cylindrical_parallel > bevel,2,True
+4,worm > planetary_simple > cylindrical_parallel > cylindrical_crossed,2,True
+4,worm > planetary_simple > cylindrical_parallel > cylindrical_parallel,4,True
+4,worm > planetary_simple > cylindrical_parallel > planetary_simple,2,True
+4,worm > planetary_simple > cylindrical_parallel > worm,2,True
+4,worm > planetary_simple > planetary_simple > bevel,1,True
+4,worm > planetary_simple > planetary_simple > cylindrical_crossed,1,True
+4,worm > planetary_simple > planetary_simple > cylindrical_parallel,2,True
+4,worm > planetary_simple > planetary_simple > planetary_simple,1,True
+4,worm > planetary_simple > planetary_simple > worm,1,True
+4,worm > planetary_simple > worm > bevel,1,True
+4,worm > planetary_simple > worm > cylindrical_crossed,1,True
+4,worm > planetary_simple > worm > cylindrical_parallel,2,True
+4,worm > planetary_simple > worm > planetary_simple,1,True
+4,worm > planetary_simple > worm > worm,1,True
+4,worm > worm > bevel > bevel,1,True
+4,worm > worm > bevel > cylindrical_crossed,1,True
+4,worm > worm > bevel > cylindrical_parallel,2,True
+4,worm > worm > bevel > planetary_simple,1,True
+4,worm > worm > bevel > worm,1,True
+4,worm > worm > cylindrical_crossed > bevel,1,True
+4,worm > worm > cylindrical_crossed > cylindrical_crossed,1,True
+4,worm > worm > cylindrical_crossed > cylindrical_parallel,2,True
+4,worm > worm > cylindrical_crossed > planetary_simple,1,True
+4,worm > worm > cylindrical_crossed > worm,1,True
+4,worm > worm > cylindrical_parallel > bevel,2,True
+4,worm > worm > cylindrical_parallel > cylindrical_crossed,2,True
+4,worm > worm > cylindrical_parallel > cylindrical_parallel,4,True
+4,worm > worm > cylindrical_parallel > planetary_simple,2,True
+4,worm > worm > cylindrical_parallel > worm,2,True
+4,worm > worm > planetary_simple > bevel,1,True
+4,worm > worm > planetary_simple > cylindrical_crossed,1,True
+4,worm > worm > planetary_simple > cylindrical_parallel,2,True
+4,worm > worm > planetary_simple > planetary_simple,1,True
+4,worm > worm > planetary_simple > worm,1,True
+4,worm > worm > worm > bevel,1,True
+4,worm > worm > worm > cylindrical_crossed,1,True
+4,worm > worm > worm > cylindrical_parallel,2,True
+4,worm > worm > worm > planetary_simple,1,True
+4,worm > worm > worm > worm,1,True

@@ -1,0 +1,1336 @@
+{
+  "template": {
+    "schema": "gearbase.flagship-system-template/1",
+    "family": "H2",
+    "id": "H2-system",
+    "source_sha256": "953e795fa80ab1d826b2dbcd83b4823d7807d22ab6ca4e0392be9067dbe96955",
+    "requirement_sha256": "0ff54352c385800f77caf35b3ebe765edf34dfc409275aac2ca590ccfe40ff66",
+    "status": "template_compiled",
+    "stage0": {
+      "status": "completed_stage0",
+      "outcome": "candidate_pending_human_confirmation",
+      "candidate_rank": 1,
+      "candidate": {
+        "i_total": 10.0,
+        "ratio_error_rel": 0.0,
+        "sum_stage_errors": 0.0,
+        "volume_proxy_mm2": 16400.0,
+        "stage1": {
+          "mn_mm": 2.0,
+          "teeth_sum": 70,
+          "z1": 20,
+          "z2": 50,
+          "ratio": 2.5,
+          "ratio_error_rel": 0.0,
+          "seed_ratio": 2.5,
+          "beta_deg": 28.95502437185985,
+          "a_mm": 80.0
+        },
+        "stage2": {
+          "mn_mm": 2.0,
+          "teeth_sum": 90,
+          "z1": 18,
+          "z2": 72,
+          "ratio": 4.0,
+          "ratio_error_rel": 0.0,
+          "seed_ratio": 4.0,
+          "beta_deg": 25.841932763167126,
+          "a_mm": 100.0
+        }
+      },
+      "verification": {
+        "ok": true,
+        "kind": "fresh_sampled_domain_membership",
+        "scope": "stage0_sampled_geometry_only"
+      }
+    },
+    "operating": {
+      "T_out": {
+        "value": 600000.0,
+        "unit": "N*mm",
+        "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）"
+      },
+      "n_out": {
+        "value": 150.0,
+        "unit": "rpm",
+        "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）"
+      }
+    },
+    "gear_pairs": {
+      "stage1": {
+        "kind": "cylindrical_helical_external",
+        "inputs": {
+          "z_1": {
+            "value": 20,
+            "unit": "1",
+            "source": "Stage0 候选 #1 stage1.z1"
+          },
+          "z_2": {
+            "value": 50,
+            "unit": "1",
+            "source": "Stage0 候选 #1 stage1.z2"
+          },
+          "m_n": {
+            "value": 2.0,
+            "unit": "mm",
+            "source": "Stage0 候选 #1 stage1.mn_mm"
+          },
+          "beta": {
+            "value": 28.95502437185985,
+            "unit": "deg",
+            "source": "Stage0 候选 #1 stage1.beta_deg"
+          },
+          "alpha_n": {
+            "value": null,
+            "unit": "deg",
+            "source": "未在旗舰原始数据或源文档显式声明中给出（stage1 法向压力角；Stage0 几何不含 α_n）"
+          },
+          "n_1": {
+            "value": 1500.0,
+            "unit": "rpm",
+            "source": "派生：n_in = n_mid·u1"
+          },
+          "T_1": {
+            "value": null,
+            "unit": "N*m",
+            "source": "派生不可得（缺输入）：T_1 = 小轮扭矩（派生不可得（缺输入）：T_in = T_mid/u1；缺：派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率）；缺：派生不可得（缺输入）：T_in = T_mid/u1；缺：派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率"
+          }
+        },
+        "geometry": {
+          "d_1": {
+            "value": 45.714285714285715,
+            "unit": "mm",
+            "source": "派生：d1 = m_n·z1/cos β（Stage0 候选 #1 stage1）"
+          },
+          "d_2": {
+            "value": 114.28571428571429,
+            "unit": "mm",
+            "source": "派生：d2 = m_n·z2/cos β（Stage0 候选 #1 stage1）"
+          },
+          "u": {
+            "value": 2.5,
+            "unit": "1",
+            "source": "派生：u = z2/z1（Stage0 候选 #1 stage1）"
+          },
+          "alpha_wt": {
+            "value": null,
+            "unit": "deg",
+            "source": "派生不可得（缺输入）：α_wt = α_t = atan(tan α_n/cos β)（x1+x2 = 0，Stage0 候选 #1 stage1）；缺：未在旗舰原始数据或源文档显式声明中给出（stage1 法向压力角；Stage0 几何不含 α_n）"
+          }
+        }
+      },
+      "stage2": {
+        "kind": "cylindrical_helical_external",
+        "inputs": {
+          "z_1": {
+            "value": 18,
+            "unit": "1",
+            "source": "Stage0 候选 #1 stage2.z1"
+          },
+          "z_2": {
+            "value": 72,
+            "unit": "1",
+            "source": "Stage0 候选 #1 stage2.z2"
+          },
+          "m_n": {
+            "value": 2.0,
+            "unit": "mm",
+            "source": "Stage0 候选 #1 stage2.mn_mm"
+          },
+          "beta": {
+            "value": 25.841932763167126,
+            "unit": "deg",
+            "source": "Stage0 候选 #1 stage2.beta_deg"
+          },
+          "alpha_n": {
+            "value": null,
+            "unit": "deg",
+            "source": "未在旗舰原始数据或源文档显式声明中给出（stage2 法向压力角；Stage0 几何不含 α_n）"
+          },
+          "n_1": {
+            "value": 600.0,
+            "unit": "rpm",
+            "source": "派生：n_mid = n_out·u2"
+          },
+          "T_1": {
+            "value": null,
+            "unit": "N*m",
+            "source": "派生不可得（缺输入）：T_1 = 小轮扭矩（派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率）；缺：派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率"
+          }
+        },
+        "geometry": {
+          "d_1": {
+            "value": 40.0,
+            "unit": "mm",
+            "source": "派生：d1 = m_n·z1/cos β（Stage0 候选 #1 stage2）"
+          },
+          "d_2": {
+            "value": 160.0,
+            "unit": "mm",
+            "source": "派生：d2 = m_n·z2/cos β（Stage0 候选 #1 stage2）"
+          },
+          "u": {
+            "value": 4.0,
+            "unit": "1",
+            "source": "派生：u = z2/z1（Stage0 候选 #1 stage2）"
+          },
+          "alpha_wt": {
+            "value": null,
+            "unit": "deg",
+            "source": "派生不可得（缺输入）：α_wt = α_t = atan(tan α_n/cos β)（x1+x2 = 0，Stage0 候选 #1 stage2）；缺：未在旗舰原始数据或源文档显式声明中给出（stage2 法向压力角；Stage0 几何不含 α_n）"
+          }
+        }
+      }
+    },
+    "shafts": [
+      {
+        "id": "S1",
+        "note": "H2 输入轴（一级小轮）",
+        "x_A": {
+          "value": null,
+          "unit": "mm",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "x_B": {
+          "value": null,
+          "unit": "mm",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "axial_support": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "segments": null,
+        "sections": null,
+        "loads": [
+          {
+            "kind": "mesh",
+            "name": "stage1",
+            "F_tw": {
+              "value": null,
+              "unit": "N",
+              "source": "派生不可得（缺输入）：F_t1 = 2·T_mid/d2(stage1)；缺：派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率"
+            },
+            "d_w": {
+              "value": 45.714285714285715,
+              "unit": "mm",
+              "source": "派生：d1 = m_n·z1/cos β（Stage0 候选 #1 stage1）"
+            },
+            "alpha_wt_deg": {
+              "value": null,
+              "unit": "deg",
+              "source": "派生不可得（缺输入）：α_wt = α_t = atan(tan α_n/cos β)（x1+x2 = 0，Stage0 候选 #1 stage1）；缺：未在旗舰原始数据或源文档显式声明中给出（stage1 法向压力角；Stage0 几何不含 α_n）"
+            },
+            "beta_w_deg": {
+              "value": 28.95502437185985,
+              "unit": "deg",
+              "source": "Stage0 候选 #1 stage1.beta_deg"
+            },
+            "x": {
+              "value": null,
+              "unit": "mm",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage1 的 x）"
+            },
+            "theta_deg": {
+              "value": null,
+              "unit": "deg",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage1 的 theta_deg）"
+            },
+            "tangential_sign": {
+              "value": null,
+              "unit": "1",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage1 的 tangential_sign）"
+            },
+            "axial_sign": {
+              "value": null,
+              "unit": "1",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage1 的 axial_sign）"
+            }
+          },
+          {
+            "kind": "torque",
+            "name": "输入扭矩",
+            "x": {
+              "value": null,
+              "unit": "mm",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（输入扭矩 联轴器/输出端轴向位置）"
+            },
+            "T": {
+              "value": null,
+              "unit": "N*mm",
+              "source": "派生不可得（缺输入）：T = torque_sign·|T|（派生不可得（缺输入）：|T_in|；缺：派生不可得（缺输入）：T_in = T_mid/u1；缺：派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率）；缺：未在旗舰原始数据或源文档显式声明中给出（输入扭矩 扭矩符号取决于转向与啮合方位）、派生不可得（缺输入）：|T_in|；缺：派生不可得（缺输入）：T_in = T_mid/u1；缺：派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率"
+            }
+          }
+        ],
+        "bearings": {
+          "A": "S1.A",
+          "B": "S1.B"
+        },
+        "speed": {
+          "value": 1500.0,
+          "unit": "rpm",
+          "source": "派生：n_in = n_mid·u1"
+        }
+      },
+      {
+        "id": "S2",
+        "note": "H2 中间轴（一级大轮 + 二级小轮）",
+        "x_A": {
+          "value": null,
+          "unit": "mm",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "x_B": {
+          "value": null,
+          "unit": "mm",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "axial_support": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "segments": null,
+        "sections": null,
+        "loads": [
+          {
+            "kind": "mesh",
+            "name": "stage1",
+            "F_tw": {
+              "value": null,
+              "unit": "N",
+              "source": "派生不可得（缺输入）：F_t1 = 2·T_mid/d2(stage1)；缺：派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率"
+            },
+            "d_w": {
+              "value": 114.28571428571429,
+              "unit": "mm",
+              "source": "派生：d2 = m_n·z2/cos β（Stage0 候选 #1 stage1）"
+            },
+            "alpha_wt_deg": {
+              "value": null,
+              "unit": "deg",
+              "source": "派生不可得（缺输入）：α_wt = α_t = atan(tan α_n/cos β)（x1+x2 = 0，Stage0 候选 #1 stage1）；缺：未在旗舰原始数据或源文档显式声明中给出（stage1 法向压力角；Stage0 几何不含 α_n）"
+            },
+            "beta_w_deg": {
+              "value": 28.95502437185985,
+              "unit": "deg",
+              "source": "Stage0 候选 #1 stage1.beta_deg"
+            },
+            "x": {
+              "value": null,
+              "unit": "mm",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage1 的 x）"
+            },
+            "theta_deg": {
+              "value": null,
+              "unit": "deg",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage1 的 theta_deg）"
+            },
+            "tangential_sign": {
+              "value": null,
+              "unit": "1",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage1 的 tangential_sign）"
+            },
+            "axial_sign": {
+              "value": null,
+              "unit": "1",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage1 的 axial_sign）"
+            }
+          },
+          {
+            "kind": "mesh",
+            "name": "stage2",
+            "F_tw": {
+              "value": 7500.0,
+              "unit": "N",
+              "source": "派生：F_t2 = 2·T_out/d2(stage2)（T_out 作用于二级大轮）"
+            },
+            "d_w": {
+              "value": 40.0,
+              "unit": "mm",
+              "source": "派生：d1 = m_n·z1/cos β（Stage0 候选 #1 stage2）"
+            },
+            "alpha_wt_deg": {
+              "value": null,
+              "unit": "deg",
+              "source": "派生不可得（缺输入）：α_wt = α_t = atan(tan α_n/cos β)（x1+x2 = 0，Stage0 候选 #1 stage2）；缺：未在旗舰原始数据或源文档显式声明中给出（stage2 法向压力角；Stage0 几何不含 α_n）"
+            },
+            "beta_w_deg": {
+              "value": 25.841932763167126,
+              "unit": "deg",
+              "source": "Stage0 候选 #1 stage2.beta_deg"
+            },
+            "x": {
+              "value": null,
+              "unit": "mm",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage2 的 x）"
+            },
+            "theta_deg": {
+              "value": null,
+              "unit": "deg",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage2 的 theta_deg）"
+            },
+            "tangential_sign": {
+              "value": null,
+              "unit": "1",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage2 的 tangential_sign）"
+            },
+            "axial_sign": {
+              "value": null,
+              "unit": "1",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage2 的 axial_sign）"
+            }
+          }
+        ],
+        "bearings": {
+          "A": "S2.A",
+          "B": "S2.B"
+        },
+        "speed": {
+          "value": 600.0,
+          "unit": "rpm",
+          "source": "派生：n_mid = n_out·u2"
+        }
+      },
+      {
+        "id": "S3",
+        "note": "H2 输出轴（二级大轮）",
+        "x_A": {
+          "value": null,
+          "unit": "mm",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "x_B": {
+          "value": null,
+          "unit": "mm",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "axial_support": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "segments": null,
+        "sections": null,
+        "loads": [
+          {
+            "kind": "mesh",
+            "name": "stage2",
+            "F_tw": {
+              "value": 7500.0,
+              "unit": "N",
+              "source": "派生：F_t2 = 2·T_out/d2(stage2)（T_out 作用于二级大轮）"
+            },
+            "d_w": {
+              "value": 160.0,
+              "unit": "mm",
+              "source": "派生：d2 = m_n·z2/cos β（Stage0 候选 #1 stage2）"
+            },
+            "alpha_wt_deg": {
+              "value": null,
+              "unit": "deg",
+              "source": "派生不可得（缺输入）：α_wt = α_t = atan(tan α_n/cos β)（x1+x2 = 0，Stage0 候选 #1 stage2）；缺：未在旗舰原始数据或源文档显式声明中给出（stage2 法向压力角；Stage0 几何不含 α_n）"
+            },
+            "beta_w_deg": {
+              "value": 25.841932763167126,
+              "unit": "deg",
+              "source": "Stage0 候选 #1 stage2.beta_deg"
+            },
+            "x": {
+              "value": null,
+              "unit": "mm",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage2 的 x）"
+            },
+            "theta_deg": {
+              "value": null,
+              "unit": "deg",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage2 的 theta_deg）"
+            },
+            "tangential_sign": {
+              "value": null,
+              "unit": "1",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage2 的 tangential_sign）"
+            },
+            "axial_sign": {
+              "value": null,
+              "unit": "1",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（啮合 stage2 的 axial_sign）"
+            }
+          },
+          {
+            "kind": "torque",
+            "name": "输出扭矩",
+            "x": {
+              "value": null,
+              "unit": "mm",
+              "source": "未在旗舰原始数据或源文档显式声明中给出（输出扭矩 联轴器/输出端轴向位置）"
+            },
+            "T": {
+              "value": null,
+              "unit": "N*mm",
+              "source": "派生不可得（缺输入）：T = torque_sign·|T|（派生：|T_out|）；缺：未在旗舰原始数据或源文档显式声明中给出（输出扭矩 扭矩符号取决于转向与啮合方位）"
+            }
+          }
+        ],
+        "bearings": {
+          "A": "S3.A",
+          "B": "S3.B"
+        },
+        "speed": {
+          "value": 150.0,
+          "unit": "rpm",
+          "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）"
+        }
+      }
+    ],
+    "bearings": {
+      "S1.A": {
+        "bearing_kind": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_0r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "xy": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "reliability_percent": {
+          "value": null,
+          "unit": "%",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "a_ISO_inputs": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "required_life_h": {
+          "value": null,
+          "unit": "h",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "n": {
+          "value": 1500.0,
+          "unit": "rpm",
+          "source": "派生：n_in = n_mid·u1（轴 S1 转速）"
+        }
+      },
+      "S1.B": {
+        "bearing_kind": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_0r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "xy": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "reliability_percent": {
+          "value": null,
+          "unit": "%",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "a_ISO_inputs": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "required_life_h": {
+          "value": null,
+          "unit": "h",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "n": {
+          "value": 1500.0,
+          "unit": "rpm",
+          "source": "派生：n_in = n_mid·u1（轴 S1 转速）"
+        }
+      },
+      "S2.A": {
+        "bearing_kind": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_0r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "xy": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "reliability_percent": {
+          "value": null,
+          "unit": "%",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "a_ISO_inputs": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "required_life_h": {
+          "value": null,
+          "unit": "h",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "n": {
+          "value": 600.0,
+          "unit": "rpm",
+          "source": "派生：n_mid = n_out·u2（轴 S2 转速）"
+        }
+      },
+      "S2.B": {
+        "bearing_kind": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_0r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "xy": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "reliability_percent": {
+          "value": null,
+          "unit": "%",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "a_ISO_inputs": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "required_life_h": {
+          "value": null,
+          "unit": "h",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "n": {
+          "value": 600.0,
+          "unit": "rpm",
+          "source": "派生：n_mid = n_out·u2（轴 S2 转速）"
+        }
+      },
+      "S3.A": {
+        "bearing_kind": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_0r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "xy": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "reliability_percent": {
+          "value": null,
+          "unit": "%",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "a_ISO_inputs": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "required_life_h": {
+          "value": null,
+          "unit": "h",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "n": {
+          "value": 150.0,
+          "unit": "rpm",
+          "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）（轴 S3 转速）"
+        }
+      },
+      "S3.B": {
+        "bearing_kind": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "C_0r": {
+          "value": null,
+          "unit": "N",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "xy": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "reliability_percent": {
+          "value": null,
+          "unit": "%",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "a_ISO_inputs": {
+          "value": null,
+          "unit": "-",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "required_life_h": {
+          "value": null,
+          "unit": "h",
+          "source": "未在旗舰原始数据或源文档显式声明中给出"
+        },
+        "n": {
+          "value": 150.0,
+          "unit": "rpm",
+          "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）（轴 S3 转速）"
+        }
+      }
+    },
+    "keys": null,
+    "derived": {
+      "n_mid": {
+        "value": 600.0,
+        "unit": "rpm",
+        "source": "派生：n_mid = n_out·u2"
+      },
+      "n_in": {
+        "value": 1500.0,
+        "unit": "rpm",
+        "source": "派生：n_in = n_mid·u1"
+      },
+      "stage2.F_t": {
+        "value": 7500.0,
+        "unit": "N",
+        "source": "派生：F_t2 = 2·T_out/d2(stage2)（T_out 作用于二级大轮）"
+      },
+      "T_mid": {
+        "value": null,
+        "unit": "N*mm",
+        "source": "派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率"
+      },
+      "T_in": {
+        "value": null,
+        "unit": "N*mm",
+        "source": "派生不可得（缺输入）：T_in = T_mid/u1；缺：派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率"
+      },
+      "stage1.F_t": {
+        "value": null,
+        "unit": "N",
+        "source": "派生不可得（缺输入）：F_t1 = 2·T_mid/d2(stage1)；缺：派生不可得：T_mid = T_out/u2 需源文档显式声明 load_transfer（名义无损口径）或给定级效率；H2 原始数据未给效率"
+      }
+    },
+    "unsupported": [],
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "missing": [
+      "$.bearings.S1.A.C_0r",
+      "$.bearings.S1.A.C_r",
+      "$.bearings.S1.A.a_ISO_inputs",
+      "$.bearings.S1.A.bearing_kind",
+      "$.bearings.S1.A.reliability_percent",
+      "$.bearings.S1.A.required_life_h",
+      "$.bearings.S1.A.xy",
+      "$.bearings.S1.B.C_0r",
+      "$.bearings.S1.B.C_r",
+      "$.bearings.S1.B.a_ISO_inputs",
+      "$.bearings.S1.B.bearing_kind",
+      "$.bearings.S1.B.reliability_percent",
+      "$.bearings.S1.B.required_life_h",
+      "$.bearings.S1.B.xy",
+      "$.bearings.S2.A.C_0r",
+      "$.bearings.S2.A.C_r",
+      "$.bearings.S2.A.a_ISO_inputs",
+      "$.bearings.S2.A.bearing_kind",
+      "$.bearings.S2.A.reliability_percent",
+      "$.bearings.S2.A.required_life_h",
+      "$.bearings.S2.A.xy",
+      "$.bearings.S2.B.C_0r",
+      "$.bearings.S2.B.C_r",
+      "$.bearings.S2.B.a_ISO_inputs",
+      "$.bearings.S2.B.bearing_kind",
+      "$.bearings.S2.B.reliability_percent",
+      "$.bearings.S2.B.required_life_h",
+      "$.bearings.S2.B.xy",
+      "$.bearings.S3.A.C_0r",
+      "$.bearings.S3.A.C_r",
+      "$.bearings.S3.A.a_ISO_inputs",
+      "$.bearings.S3.A.bearing_kind",
+      "$.bearings.S3.A.reliability_percent",
+      "$.bearings.S3.A.required_life_h",
+      "$.bearings.S3.A.xy",
+      "$.bearings.S3.B.C_0r",
+      "$.bearings.S3.B.C_r",
+      "$.bearings.S3.B.a_ISO_inputs",
+      "$.bearings.S3.B.bearing_kind",
+      "$.bearings.S3.B.reliability_percent",
+      "$.bearings.S3.B.required_life_h",
+      "$.bearings.S3.B.xy",
+      "$.derived.T_in",
+      "$.derived.T_mid",
+      "$.derived.stage1.F_t",
+      "$.gear_pairs.stage1.geometry.alpha_wt",
+      "$.gear_pairs.stage1.inputs.T_1",
+      "$.gear_pairs.stage1.inputs.alpha_n",
+      "$.gear_pairs.stage2.geometry.alpha_wt",
+      "$.gear_pairs.stage2.inputs.T_1",
+      "$.gear_pairs.stage2.inputs.alpha_n",
+      "$.shafts[0].axial_support",
+      "$.shafts[0].loads[0].F_tw",
+      "$.shafts[0].loads[0].alpha_wt_deg",
+      "$.shafts[0].loads[0].axial_sign",
+      "$.shafts[0].loads[0].tangential_sign",
+      "$.shafts[0].loads[0].theta_deg",
+      "$.shafts[0].loads[0].x",
+      "$.shafts[0].loads[1].T",
+      "$.shafts[0].loads[1].x",
+      "$.shafts[0].x_A",
+      "$.shafts[0].x_B",
+      "$.shafts[1].axial_support",
+      "$.shafts[1].loads[0].F_tw",
+      "$.shafts[1].loads[0].alpha_wt_deg",
+      "$.shafts[1].loads[0].axial_sign",
+      "$.shafts[1].loads[0].tangential_sign",
+      "$.shafts[1].loads[0].theta_deg",
+      "$.shafts[1].loads[0].x",
+      "$.shafts[1].loads[1].alpha_wt_deg",
+      "$.shafts[1].loads[1].axial_sign",
+      "$.shafts[1].loads[1].tangential_sign",
+      "$.shafts[1].loads[1].theta_deg",
+      "$.shafts[1].loads[1].x",
+      "$.shafts[1].x_A",
+      "$.shafts[1].x_B",
+      "$.shafts[2].axial_support",
+      "$.shafts[2].loads[0].alpha_wt_deg",
+      "$.shafts[2].loads[0].axial_sign",
+      "$.shafts[2].loads[0].tangential_sign",
+      "$.shafts[2].loads[0].theta_deg",
+      "$.shafts[2].loads[0].x",
+      "$.shafts[2].loads[1].T",
+      "$.shafts[2].loads[1].x",
+      "$.shafts[2].x_A",
+      "$.shafts[2].x_B"
+    ]
+  },
+  "checks": {
+    "shaft": {
+      "status": "blocked",
+      "missing": [
+        "$.shafts[0].axial_support",
+        "$.shafts[0].loads[0].F_tw",
+        "$.shafts[0].loads[0].alpha_wt_deg",
+        "$.shafts[0].loads[0].axial_sign",
+        "$.shafts[0].loads[0].tangential_sign",
+        "$.shafts[0].loads[0].theta_deg",
+        "$.shafts[0].loads[0].x",
+        "$.shafts[0].loads[1].T",
+        "$.shafts[0].loads[1].x",
+        "$.shafts[0].sections",
+        "$.shafts[0].segments",
+        "$.shafts[0].x_A",
+        "$.shafts[0].x_B",
+        "$.shafts[1].axial_support",
+        "$.shafts[1].loads[0].F_tw",
+        "$.shafts[1].loads[0].alpha_wt_deg",
+        "$.shafts[1].loads[0].axial_sign",
+        "$.shafts[1].loads[0].tangential_sign",
+        "$.shafts[1].loads[0].theta_deg",
+        "$.shafts[1].loads[0].x",
+        "$.shafts[1].loads[1].alpha_wt_deg",
+        "$.shafts[1].loads[1].axial_sign",
+        "$.shafts[1].loads[1].tangential_sign",
+        "$.shafts[1].loads[1].theta_deg",
+        "$.shafts[1].loads[1].x",
+        "$.shafts[1].sections",
+        "$.shafts[1].segments",
+        "$.shafts[1].x_A",
+        "$.shafts[1].x_B",
+        "$.shafts[2].axial_support",
+        "$.shafts[2].loads[0].alpha_wt_deg",
+        "$.shafts[2].loads[0].axial_sign",
+        "$.shafts[2].loads[0].tangential_sign",
+        "$.shafts[2].loads[0].theta_deg",
+        "$.shafts[2].loads[0].x",
+        "$.shafts[2].loads[1].T",
+        "$.shafts[2].loads[1].x",
+        "$.shafts[2].sections",
+        "$.shafts[2].segments",
+        "$.shafts[2].x_A",
+        "$.shafts[2].x_B"
+      ],
+      "errors": [],
+      "items": []
+    },
+    "bearing": {
+      "status": "blocked",
+      "missing": [
+        "$.bearings.S1.A.C_0r",
+        "$.bearings.S1.A.C_r",
+        "$.bearings.S1.A.a_ISO_inputs",
+        "$.bearings.S1.A.bearing_kind",
+        "$.bearings.S1.A.reliability_percent",
+        "$.bearings.S1.A.required_life_h",
+        "$.bearings.S1.A.xy",
+        "$.bearings.S1.B.C_0r",
+        "$.bearings.S1.B.C_r",
+        "$.bearings.S1.B.a_ISO_inputs",
+        "$.bearings.S1.B.bearing_kind",
+        "$.bearings.S1.B.reliability_percent",
+        "$.bearings.S1.B.required_life_h",
+        "$.bearings.S1.B.xy",
+        "$.bearings.S2.A.C_0r",
+        "$.bearings.S2.A.C_r",
+        "$.bearings.S2.A.a_ISO_inputs",
+        "$.bearings.S2.A.bearing_kind",
+        "$.bearings.S2.A.reliability_percent",
+        "$.bearings.S2.A.required_life_h",
+        "$.bearings.S2.A.xy",
+        "$.bearings.S2.B.C_0r",
+        "$.bearings.S2.B.C_r",
+        "$.bearings.S2.B.a_ISO_inputs",
+        "$.bearings.S2.B.bearing_kind",
+        "$.bearings.S2.B.reliability_percent",
+        "$.bearings.S2.B.required_life_h",
+        "$.bearings.S2.B.xy",
+        "$.bearings.S3.A.C_0r",
+        "$.bearings.S3.A.C_r",
+        "$.bearings.S3.A.a_ISO_inputs",
+        "$.bearings.S3.A.bearing_kind",
+        "$.bearings.S3.A.reliability_percent",
+        "$.bearings.S3.A.required_life_h",
+        "$.bearings.S3.A.xy",
+        "$.bearings.S3.B.C_0r",
+        "$.bearings.S3.B.C_r",
+        "$.bearings.S3.B.a_ISO_inputs",
+        "$.bearings.S3.B.bearing_kind",
+        "$.bearings.S3.B.reliability_percent",
+        "$.bearings.S3.B.required_life_h",
+        "$.bearings.S3.B.xy",
+        "S1.A：轴 S1 未求解（支反力不可得，见 shaft 子检查缺项）",
+        "S1.B：轴 S1 未求解（支反力不可得，见 shaft 子检查缺项）",
+        "S2.A：轴 S2 未求解（支反力不可得，见 shaft 子检查缺项）",
+        "S2.B：轴 S2 未求解（支反力不可得，见 shaft 子检查缺项）",
+        "S3.A：轴 S3 未求解（支反力不可得，见 shaft 子检查缺项）",
+        "S3.B：轴 S3 未求解（支反力不可得，见 shaft 子检查缺项）"
+      ],
+      "errors": [],
+      "items": [
+        [
+          "bearing.S1.A.L10h",
+          null,
+          "blocked"
+        ],
+        [
+          "bearing.S1.B.L10h",
+          null,
+          "blocked"
+        ],
+        [
+          "bearing.S2.A.L10h",
+          null,
+          "blocked"
+        ],
+        [
+          "bearing.S2.B.L10h",
+          null,
+          "blocked"
+        ],
+        [
+          "bearing.S3.A.L10h",
+          null,
+          "blocked"
+        ],
+        [
+          "bearing.S3.B.L10h",
+          null,
+          "blocked"
+        ]
+      ]
+    },
+    "key": {
+      "status": "blocked",
+      "missing": [
+        "$.keys"
+      ],
+      "errors": [],
+      "items": []
+    }
+  },
+  "gear_rating": {
+    "stage1": {
+      "status": "blocked",
+      "missing": [
+        "input:E",
+        "input:K_A",
+        "input:K_Falpha",
+        "input:K_Halpha",
+        "input:K_Hbeta",
+        "input:K_V",
+        "input:S_Fmin",
+        "input:S_Hmin",
+        "input:T_1",
+        "input:Y_B",
+        "input:Y_DT",
+        "input:Y_NT_1",
+        "input:Y_NT_2",
+        "input:Y_RrelT_1",
+        "input:Y_RrelT_2",
+        "input:Y_ST",
+        "input:Y_X",
+        "input:Y_drelT_1",
+        "input:Y_drelT_2",
+        "input:Z_L",
+        "input:Z_NT_1",
+        "input:Z_NT_2",
+        "input:Z_R",
+        "input:Z_V",
+        "input:Z_W",
+        "input:Z_X",
+        "input:alpha_n",
+        "input:b",
+        "input:eps_alpha_min",
+        "input:haP",
+        "input:hfP",
+        "input:nu",
+        "input:rhofP",
+        "input:sigma_Flim_1",
+        "input:sigma_Flim_2",
+        "input:sigma_Hlim_1",
+        "input:sigma_Hlim_2",
+        "input:x_1",
+        "input:x_2",
+        "selector:method.K_V",
+        "selector:method.K_Hbeta",
+        "selector:method.K_Halpha",
+        "selector:method.root_shift",
+        "edition:ISO 21771",
+        "edition:ISO 6336-1",
+        "edition:ISO 6336-2",
+        "edition:ISO 6336-3"
+      ],
+      "errors": [
+        "method.K_V",
+        "method.K_Hbeta",
+        "method.K_Halpha",
+        "method.root_shift"
+      ],
+      "items": []
+    },
+    "stage2": {
+      "status": "blocked",
+      "missing": [
+        "input:E",
+        "input:K_A",
+        "input:K_Falpha",
+        "input:K_Halpha",
+        "input:K_Hbeta",
+        "input:K_V",
+        "input:S_Fmin",
+        "input:S_Hmin",
+        "input:T_1",
+        "input:Y_B",
+        "input:Y_DT",
+        "input:Y_NT_1",
+        "input:Y_NT_2",
+        "input:Y_RrelT_1",
+        "input:Y_RrelT_2",
+        "input:Y_ST",
+        "input:Y_X",
+        "input:Y_drelT_1",
+        "input:Y_drelT_2",
+        "input:Z_L",
+        "input:Z_NT_1",
+        "input:Z_NT_2",
+        "input:Z_R",
+        "input:Z_V",
+        "input:Z_W",
+        "input:Z_X",
+        "input:alpha_n",
+        "input:b",
+        "input:eps_alpha_min",
+        "input:haP",
+        "input:hfP",
+        "input:nu",
+        "input:rhofP",
+        "input:sigma_Flim_1",
+        "input:sigma_Flim_2",
+        "input:sigma_Hlim_1",
+        "input:sigma_Hlim_2",
+        "input:x_1",
+        "input:x_2",
+        "selector:method.K_V",
+        "selector:method.K_Hbeta",
+        "selector:method.K_Halpha",
+        "selector:method.root_shift",
+        "edition:ISO 21771",
+        "edition:ISO 6336-1",
+        "edition:ISO 6336-2",
+        "edition:ISO 6336-3"
+      ],
+      "errors": [
+        "method.K_V",
+        "method.K_Hbeta",
+        "method.K_Halpha",
+        "method.root_shift"
+      ],
+      "items": []
+    }
+  },
+  "missing_by_scope": {
+    "shaft": [
+      "$.shafts[0].axial_support",
+      "$.shafts[0].loads[0].F_tw",
+      "$.shafts[0].loads[0].alpha_wt_deg",
+      "$.shafts[0].loads[0].axial_sign",
+      "$.shafts[0].loads[0].tangential_sign",
+      "$.shafts[0].loads[0].theta_deg",
+      "$.shafts[0].loads[0].x",
+      "$.shafts[0].loads[1].T",
+      "$.shafts[0].loads[1].x",
+      "$.shafts[0].sections",
+      "$.shafts[0].segments",
+      "$.shafts[0].x_A",
+      "$.shafts[0].x_B",
+      "$.shafts[1].axial_support",
+      "$.shafts[1].loads[0].F_tw",
+      "$.shafts[1].loads[0].alpha_wt_deg",
+      "$.shafts[1].loads[0].axial_sign",
+      "$.shafts[1].loads[0].tangential_sign",
+      "$.shafts[1].loads[0].theta_deg",
+      "$.shafts[1].loads[0].x",
+      "$.shafts[1].loads[1].alpha_wt_deg",
+      "$.shafts[1].loads[1].axial_sign",
+      "$.shafts[1].loads[1].tangential_sign",
+      "$.shafts[1].loads[1].theta_deg",
+      "$.shafts[1].loads[1].x",
+      "$.shafts[1].sections",
+      "$.shafts[1].segments",
+      "$.shafts[1].x_A",
+      "$.shafts[1].x_B",
+      "$.shafts[2].axial_support",
+      "$.shafts[2].loads[0].alpha_wt_deg",
+      "$.shafts[2].loads[0].axial_sign",
+      "$.shafts[2].loads[0].tangential_sign",
+      "$.shafts[2].loads[0].theta_deg",
+      "$.shafts[2].loads[0].x",
+      "$.shafts[2].loads[1].T",
+      "$.shafts[2].loads[1].x",
+      "$.shafts[2].sections",
+      "$.shafts[2].segments",
+      "$.shafts[2].x_A",
+      "$.shafts[2].x_B"
+    ],
+    "bearing": [
+      "$.bearings.S1.A.C_0r",
+      "$.bearings.S1.A.C_r",
+      "$.bearings.S1.A.a_ISO_inputs",
+      "$.bearings.S1.A.bearing_kind",
+      "$.bearings.S1.A.reliability_percent",
+      "$.bearings.S1.A.required_life_h",
+      "$.bearings.S1.A.xy",
+      "$.bearings.S1.B.C_0r",
+      "$.bearings.S1.B.C_r",
+      "$.bearings.S1.B.a_ISO_inputs",
+      "$.bearings.S1.B.bearing_kind",
+      "$.bearings.S1.B.reliability_percent",
+      "$.bearings.S1.B.required_life_h",
+      "$.bearings.S1.B.xy",
+      "$.bearings.S2.A.C_0r",
+      "$.bearings.S2.A.C_r",
+      "$.bearings.S2.A.a_ISO_inputs",
+      "$.bearings.S2.A.bearing_kind",
+      "$.bearings.S2.A.reliability_percent",
+      "$.bearings.S2.A.required_life_h",
+      "$.bearings.S2.A.xy",
+      "$.bearings.S2.B.C_0r",
+      "$.bearings.S2.B.C_r",
+      "$.bearings.S2.B.a_ISO_inputs",
+      "$.bearings.S2.B.bearing_kind",
+      "$.bearings.S2.B.reliability_percent",
+      "$.bearings.S2.B.required_life_h",
+      "$.bearings.S2.B.xy",
+      "$.bearings.S3.A.C_0r",
+      "$.bearings.S3.A.C_r",
+      "$.bearings.S3.A.a_ISO_inputs",
+      "$.bearings.S3.A.bearing_kind",
+      "$.bearings.S3.A.reliability_percent",
+      "$.bearings.S3.A.required_life_h",
+      "$.bearings.S3.A.xy",
+      "$.bearings.S3.B.C_0r",
+      "$.bearings.S3.B.C_r",
+      "$.bearings.S3.B.a_ISO_inputs",
+      "$.bearings.S3.B.bearing_kind",
+      "$.bearings.S3.B.reliability_percent",
+      "$.bearings.S3.B.required_life_h",
+      "$.bearings.S3.B.xy",
+      "S1.A：轴 S1 未求解（支反力不可得，见 shaft 子检查缺项）",
+      "S1.B：轴 S1 未求解（支反力不可得，见 shaft 子检查缺项）",
+      "S2.A：轴 S2 未求解（支反力不可得，见 shaft 子检查缺项）",
+      "S2.B：轴 S2 未求解（支反力不可得，见 shaft 子检查缺项）",
+      "S3.A：轴 S3 未求解（支反力不可得，见 shaft 子检查缺项）",
+      "S3.B：轴 S3 未求解（支反力不可得，见 shaft 子检查缺项）"
+    ],
+    "key": [
+      "$.keys"
+    ],
+    "gear_rating": {
+      "stage1": [
+        "input:E",
+        "input:K_A",
+        "input:K_Falpha",
+        "input:K_Halpha",
+        "input:K_Hbeta",
+        "input:K_V",
+        "input:S_Fmin",
+        "input:S_Hmin",
+        "input:T_1",
+        "input:Y_B",
+        "input:Y_DT",
+        "input:Y_NT_1",
+        "input:Y_NT_2",
+        "input:Y_RrelT_1",
+        "input:Y_RrelT_2",
+        "input:Y_ST",
+        "input:Y_X",
+        "input:Y_drelT_1",
+        "input:Y_drelT_2",
+        "input:Z_L",
+        "input:Z_NT_1",
+        "input:Z_NT_2",
+        "input:Z_R",
+        "input:Z_V",
+        "input:Z_W",
+        "input:Z_X",
+        "input:alpha_n",
+        "input:b",
+        "input:eps_alpha_min",
+        "input:haP",
+        "input:hfP",
+        "input:nu",
+        "input:rhofP",
+        "input:sigma_Flim_1",
+        "input:sigma_Flim_2",
+        "input:sigma_Hlim_1",
+        "input:sigma_Hlim_2",
+        "input:x_1",
+        "input:x_2",
+        "selector:method.K_V",
+        "selector:method.K_Hbeta",
+        "selector:method.K_Halpha",
+        "selector:method.root_shift",
+        "edition:ISO 21771",
+        "edition:ISO 6336-1",
+        "edition:ISO 6336-2",
+        "edition:ISO 6336-3"
+      ],
+      "stage2": [
+        "input:E",
+        "input:K_A",
+        "input:K_Falpha",
+        "input:K_Halpha",
+        "input:K_Hbeta",
+        "input:K_V",
+        "input:S_Fmin",
+        "input:S_Hmin",
+        "input:T_1",
+        "input:Y_B",
+        "input:Y_DT",
+        "input:Y_NT_1",
+        "input:Y_NT_2",
+        "input:Y_RrelT_1",
+        "input:Y_RrelT_2",
+        "input:Y_ST",
+        "input:Y_X",
+        "input:Y_drelT_1",
+        "input:Y_drelT_2",
+        "input:Z_L",
+        "input:Z_NT_1",
+        "input:Z_NT_2",
+        "input:Z_R",
+        "input:Z_V",
+        "input:Z_W",
+        "input:Z_X",
+        "input:alpha_n",
+        "input:b",
+        "input:eps_alpha_min",
+        "input:haP",
+        "input:hfP",
+        "input:nu",
+        "input:rhofP",
+        "input:sigma_Flim_1",
+        "input:sigma_Flim_2",
+        "input:sigma_Hlim_1",
+        "input:sigma_Hlim_2",
+        "input:x_1",
+        "input:x_2",
+        "selector:method.K_V",
+        "selector:method.K_Hbeta",
+        "selector:method.K_Halpha",
+        "selector:method.root_shift",
+        "edition:ISO 21771",
+        "edition:ISO 6336-1",
+        "edition:ISO 6336-2",
+        "edition:ISO 6336-3"
+      ]
+    }
+  },
+  "system_status": "blocked"
+}

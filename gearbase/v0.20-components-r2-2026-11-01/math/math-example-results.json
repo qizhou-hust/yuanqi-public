@@ -1,0 +1,377 @@
+{
+  "schema": "gearbase.component-math-example-results/0.1-draft",
+  "classification": "mathematical_examples_only",
+  "engineering_acceptance": false,
+  "product_modules_imported": false,
+  "product_gates_run": false,
+  "baseline_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "file_sha256": {
+    "component-contract.json": "41ee0740962b51cad93575938620474ca279ed9954d8786cea9addd8ab61d996",
+    "math-examples.json": "32dd45bb9b83d305b46964a622996a60c51aaf3058586bc9f6513cc900e027fa",
+    "MATH-DESIGN.md": "856fc7627ae05dbbdfb48dbb1c832e4b4d9a4431d28d8cebf2fabf941a1e7504",
+    "validate_math_examples.py": "ccb21eb0bfd2a8e810522ad493cebc0113a3c8ec5ffd2c72bc6e15da61484ded"
+  },
+  "checks": [
+    {
+      "id": "schema_is_valid_draft2020_12",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "shape:gear.helical_pair.ideal",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "shape:gear.planetary_simple.ideal",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "shape:gear.worm_pair.screen",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "shape:gear.power_screw.ideal_four_port",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "shape:gear.planetary_two_fixed_ring.ideal_macro",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "shape:network_source_example",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "shape:compiled_ir_example",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "shape:projection_example",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "manifest_symbol_and_reference_consistency",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "ir_provenance_reference_consistency",
+      "status": "passed",
+      "observed": {
+        "registered_ids": 15,
+        "checked_ir_references": 13
+      }
+    },
+    {
+      "id": "reject_unbound_macro_parameter_domain",
+      "status": "passed",
+      "observed": {
+        "rejected_predicate": "z_r > z_s",
+        "reason": "gear.planetary_two_fixed_ring.ideal_macro.parameters.first_z_r.domain[0]: undeclared_domain_symbols:z_r,z_s"
+      }
+    },
+    {
+      "id": "reject_parameter_domain_prefix_collision",
+      "status": "passed",
+      "observed": {
+        "rejected_predicate": "first_z_s_unbound > 0",
+        "reason": "gear.planetary_two_fixed_ring.ideal_macro.parameters.first_z_r.domain[0]: undeclared_domain_symbols:first_z_s_unbound"
+      }
+    },
+    {
+      "id": "reject_natural_language_in_parameter_domain",
+      "status": "passed",
+      "observed": {
+        "rejected_predicate": "positive ring teeth required",
+        "reason": "gear.planetary_two_fixed_ring.ideal_macro.parameters.first_z_r.domain[0]: unsupported_domain_syntax"
+      }
+    },
+    {
+      "id": "reject_undeclared_fixed_ring_provenance_aliases",
+      "status": "passed",
+      "observed": [
+        {
+          "rejected_reference": "P2.p1.ring_fixed",
+          "reason": "assignments[0].source_equation_refs: undeclared_provenance_reference:P2.p1.ring_fixed"
+        },
+        {
+          "rejected_reference": "P2.p2.ring_fixed",
+          "reason": "assignments[1].source_equation_refs: undeclared_provenance_reference:P2.p2.ring_fixed"
+        }
+      ]
+    },
+    {
+      "id": "versioned_projection_hash_links_and_changed_source",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "reject_rpm_substituted_for_angular_velocity",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "reject_macro_local_stage_double_count",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "reject_results_in_source_envelope",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "reject_missing_stage_count_basis",
+      "status": "passed",
+      "observed": null
+    },
+    {
+      "id": "math:signed_external_gear",
+      "status": "passed",
+      "observed": {
+        "omega_b": -25.0,
+        "tau_b": 20,
+        "power_residual_W": 0.0
+      }
+    },
+    {
+      "id": "math:zero_speed_power_insufficient",
+      "status": "passed",
+      "observed": {
+        "power_residual_W": 0,
+        "effort_residual_Nm": 120,
+        "decision": "reject_ideal_effort"
+      }
+    },
+    {
+      "id": "math:planetary_fixed_ring",
+      "status": "passed",
+      "observed": {
+        "omega_c": 25.0,
+        "tau_r": 15.0,
+        "tau_c": -20.0,
+        "power_residual_W": 0.0,
+        "torque_residual_Nm": 0.0
+      }
+    },
+    {
+      "id": "math:planetary_free_ring_underdetermined",
+      "status": "passed",
+      "observed": {
+        "possible_omega_c": [
+          25.0,
+          32.5
+        ],
+        "decision": "blocked_missing_ring_boundary"
+      }
+    },
+    {
+      "id": "math:planetary_overconstrained_rates",
+      "status": "passed",
+      "observed": {
+        "willis_residual_s_inv": -20,
+        "decision": "reject_conflicting_boundaries"
+      }
+    },
+    {
+      "id": "math:two_stage_planetary_macro",
+      "status": "passed",
+      "observed": {
+        "i_total": 20,
+        "omega_mid": 25.0,
+        "omega_output": 5.0,
+        "tau_second_sun": 20,
+        "tau_output": -100,
+        "ring_reactions_into_gear": [
+          15,
+          80
+        ],
+        "power_residual_W": 0.0,
+        "gear_reduction_stages": 2,
+        "mesh_interfaces": 12
+      }
+    },
+    {
+      "id": "math:worm_negative_inverse_domain",
+      "status": "passed",
+      "observed": {
+        "eta_forward": 0.39657465727905705,
+        "raw_eta_back": -0.4993902699290522,
+        "raw_eta_back_negative": true,
+        "static_lock_screen": true,
+        "decision": "blocked_static_mode"
+      }
+    },
+    {
+      "id": "math:worm_positive_inverse_domain",
+      "status": "passed",
+      "observed": {
+        "eta_forward": 0.7462495695365111,
+        "raw_eta_back": 0.6850230578493568,
+        "raw_eta_back_negative": false,
+        "static_lock_screen": false,
+        "decision": "backdrive_sliding_model_available"
+      }
+    },
+    {
+      "id": "math:rotating_nut_four_port",
+      "status": "passed",
+      "observed": {
+        "v_screw_m_s": 0.012732395447351628,
+        "tau_nut_into_Nm": 1.2732395447351628,
+        "tau_screw_into_Nm": -1.2732395447351628,
+        "force_nut_into_N": 1000,
+        "power_residual_W": 0.0,
+        "velocity_residual_m_s": 0.0
+      }
+    },
+    {
+      "id": "math:trapezoidal_screw_forward_friction",
+      "status": "passed",
+      "observed": {
+        "lead_angle_deg": 6.056610594230225,
+        "friction_angle_deg": 7.081750491935746,
+        "torque_ideal_Nm": 0.6366197723675814,
+        "torque_raise_Nm": 1.4004791015788975,
+        "eta": 0.4545728469991858,
+        "torque_raise_greater_than_ideal": true,
+        "reverse_sliding_unavailable": true
+      }
+    },
+    {
+      "id": "math:stage_order_absolute_loss",
+      "status": "passed",
+      "observed": {
+        "i_total": 50.0,
+        "output_power_W": 200.0,
+        "loss_A_then_B_W": 34.4,
+        "loss_B_then_A_W": 31.2,
+        "motor_torque_A_then_B_Nm": 2.3440000000000003,
+        "motor_torque_B_then_A_Nm": 2.3120000000000003,
+        "stages_A_then_B": [
+          {
+            "input_speed_s_inv": 100,
+            "input_torque_Nm": 2.3440000000000003,
+            "delivered_torque_Nm": 10.22,
+            "loss_W": 30.0
+          },
+          {
+            "input_speed_s_inv": 20.0,
+            "input_torque_Nm": 10.22,
+            "delivered_torque_Nm": 100,
+            "loss_W": 4.4
+          }
+        ],
+        "stages_B_then_A": [
+          {
+            "input_speed_s_inv": 100,
+            "input_torque_Nm": 2.3120000000000003,
+            "delivered_torque_Nm": 20.12,
+            "loss_W": 30.0
+          },
+          {
+            "input_speed_s_inv": 10.0,
+            "input_torque_Nm": 20.12,
+            "delivered_torque_Nm": 100,
+            "loss_W": 1.2
+          }
+        ],
+        "decision": "preserve_order"
+      }
+    },
+    {
+      "id": "math:stage_count_macro_and_screw",
+      "status": "passed",
+      "observed": {
+        "gear_reduction_stages": 4,
+        "top_level_plugin_nodes": 4,
+        "expanded_leaf_plugin_nodes": 5,
+        "assembly_accessories": 0,
+        "mesh_interfaces": 14,
+        "mesh_families": 6,
+        "terminal_conversions": 1,
+        "passes_gear_basis": true,
+        "passes_gear_plus_terminal_basis": false
+      }
+    },
+    {
+      "id": "math:rotational_wire_to_translation",
+      "status": "passed",
+      "observed": {
+        "decision": "reject_port_domain_mismatch"
+      }
+    },
+    {
+      "id": "math:reflection_is_not_pose_rotation",
+      "status": "passed",
+      "observed": {
+        "det": -1,
+        "orthogonal": true,
+        "decision": "reject_not_SO3"
+      }
+    },
+    {
+      "id": "math:parallel_offset_is_not_shaft_connection",
+      "status": "passed",
+      "observed": {
+        "shaft_angle_deg": 0.0,
+        "axis_distance_m": 0.04,
+        "decision": "reject_direct_shaft_connection"
+      }
+    },
+    {
+      "id": "math:thermal_port_power",
+      "status": "passed",
+      "observed": {
+        "total_energy_residual_W": 0,
+        "thermal_power_into_W": -10,
+        "decision": "do_not_multiply_temperature_by_heat_flow"
+      }
+    },
+    {
+      "id": "math:rpm_to_angular_velocity_power",
+      "status": "passed",
+      "observed": {
+        "omega_rad_s": 314.1592653589793,
+        "power_W": 314.1592653589793,
+        "wrong_power_if_rev_s_is_rad_s_W": 50.0,
+        "error_factor": 6.283185307179586
+      }
+    },
+    {
+      "id": "math:negative_rotation_can_still_be_a_driving",
+      "status": "passed",
+      "observed": {
+        "power_a_W": 200,
+        "power_b_W": -200,
+        "drive_port": "a",
+        "decision": "select_by_power_not_speed_sign"
+      }
+    },
+    {
+      "id": "math:zero_speed_static_friction_domain",
+      "status": "passed",
+      "observed": {
+        "required_friction_Nm": -5.0,
+        "feasible": false,
+        "decision": "holding_not_established"
+      }
+    }
+  ],
+  "passed": 39,
+  "failed": 0,
+  "limitations": [
+    "finite point examples and draft artifact shape only",
+    "no implemented network compiler, DAE solver or engineering rating tested",
+    "fixed-ring reaction names are preserved but typed mount/wrench binding remains OPEN",
+    "positive results do not certify strength, life, thermal, backdrive safety, geometry or release readiness"
+  ]
+}

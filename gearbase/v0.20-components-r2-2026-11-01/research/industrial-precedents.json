@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "retrieved_on": "2026-11-01",
+  "purpose": "Evidence that selected architecture families have manufacturer product precedents; not an industrial-coverage census or a benchmark/reference-solution set.",
+  "scope_boundary": {
+    "maximum_four_stages": "A proposed library boundary; not an industry-wide maximum. The SEW P family explicitly also contains five-stage products.",
+    "hundreds_of_combinations": "A design target or hypothesis requiring a declared component alphabet, connection rules, canonicalization, feasibility filters, and a counted generated inventory.",
+    "all_have_industrial_applications": "Not established. Family-level evidence cannot prove that every enumerated ordering, connection, or parameter range has an installed industrial example.",
+    "stage_count_policy": "Must be defined by the architecture owner before counting. A planetary stage must not automatically be counted as two serial stages because it contains two mesh types. Transmission stage count is not the number of selectable automotive gear ratios."
+  },
+  "entries": [
+    {
+      "id": "precedent-sew-s",
+      "manufacturer": "SEW-EURODRIVE",
+      "product_family": "S series helical-worm reducers",
+      "evidence_level": "manufacturer_product_family",
+      "source_ids": ["SEW-S-CURRENT", "SEW-S-TECHNOTE-2003"],
+      "source_urls": [
+        "https://www.seweurodrive.com/products/gear-units/standard-gear-units/helical-worm-gear-units-s/helical-worm-gear-units-s.html",
+        "https://blog.seweurodrive.com/hubfs/Online%20Support/Technical%20Notes/S%20-%20Helical%20Worm/S-001-04.pdf?hsLang=en"
+      ],
+      "verified_family_precedent": "A helical-and-worm compound family is currently offered; a manufacturer technical note documents the base path as helical first, worm second.",
+      "documented_stage_counts": [2],
+      "stage_count_qualification": "Two-stage path is explicitly documented in the July 2003 technical note. It is not a statement that every current S compound variant has only two stages.",
+      "verified_input_to_output_order": "helical -> worm (the documented base reducer)",
+      "proposed_library_use": "Precedent for a directed helical-to-worm chain, with direction-specific loss/backdrive and thermal models still to be established for a candidate.",
+      "application_area_evidence": "The current product page lists machine/plant uses including adjustment drives, presses, and rotary tables; these are application categories.",
+      "named_commissioned_oem_case": false,
+      "load_case": null,
+      "reference_solution": null,
+      "unknowns": ["Current variant-specific internal geometry", "Installed duty cycle", "Reversed stage-order equivalence", "Stage count of an added primary reducer"]
+    },
+    {
+      "id": "precedent-sew-p",
+      "manufacturer": "SEW-EURODRIVE",
+      "product_family": "P series planetary units with primary helical/bevel-helical gearmotors",
+      "evidence_level": "manufacturer_product_family",
+      "source_ids": ["SEW-P"],
+      "source_urls": ["https://www.sew-eurodrive.de/products/industrial-gear-units/planetary-gear-units/p/p.html"],
+      "verified_family_precedent": "The manufacturer combines an upstream helical or bevel-helical gearmotor with planetary units.",
+      "documented_stage_counts": [4, 5],
+      "stage_count_qualification": "P.RF is listed as four/five stage, P.KF as five stage. A four-stage library may admit only explicitly qualified four-stage variants.",
+      "verified_input_to_output_order": "primary helical or bevel-helical gearmotor -> planetary unit; individual internal stage sequence is not specified by the family page",
+      "proposed_library_use": "Family-level precedent for serial mixed gearing and direct counterevidence to a universal four-stage industrial limit.",
+      "application_area_evidence": "The page discusses slow process equipment such as mixers and rotary filters, without identifying a named customer installation.",
+      "named_commissioned_oem_case": false,
+      "load_case": null,
+      "reference_solution": null,
+      "unknowns": ["Exact stage decomposition per selected variant", "Per-stage fixed members and connections", "Installed customer duty cycle", "Detailed reference geometry and results"]
+    },
+    {
+      "id": "precedent-sew-pxe",
+      "manufacturer": "SEW-EURODRIVE",
+      "product_family": "P-X.e planetary units with primary X.e bevel-helical units",
+      "evidence_level": "manufacturer_product_family",
+      "source_ids": ["SEW-PXE"],
+      "source_urls": ["https://www.sew-eurodrive.de/products/industrial-gear-units/planetary-gear-units/p-xe/p-xe.html"],
+      "verified_family_precedent": "A standardized mixed family combines a primary X.e bevel-helical unit with a P/P2.e planetary unit.",
+      "documented_stage_counts": [3, 4],
+      "stage_count_qualification": "Counts are stated in the product-family table, not reconstructed from a complete internal drawing.",
+      "verified_input_to_output_order": "primary X.e bevel-helical unit -> P/P2.e planetary unit; exact stage-level decomposition remains variant-specific",
+      "proposed_library_use": "Precedent for a mixed right-angle and planetary architecture within a three-/four-stage subset.",
+      "application_area_evidence": "The manufacturer lists conveyors, shredders, presses, mixers and other application categories.",
+      "named_commissioned_oem_case": false,
+      "load_case": null,
+      "reference_solution": null,
+      "unknowns": ["Customer-specific installation", "Full internal topology", "Selected-variant load spectrum", "Library reference calculations"]
+    },
+    {
+      "id": "precedent-nord-maxxdrive",
+      "manufacturer": "NORD DRIVESYSTEMS",
+      "product_family": "MAXXDRIVE XC / XD parallel helical industrial gear units",
+      "evidence_level": "manufacturer_product_family",
+      "source_ids": ["NORD-MAXXDRIVE"],
+      "source_urls": ["https://www.nord.com/us/products/maxxdrive/maxxdrive-parallel-gear-units/maxxdrive-parallel-gear-units.jsp"],
+      "verified_family_precedent": "Parallel helical products include XC two-/three-stage and XD three-/four-stage configurations.",
+      "documented_stage_counts": [2, 3, 4],
+      "stage_count_qualification": "Stage options belong to the identified XC or XD subfamily; they are not interchangeable configuration guarantees.",
+      "verified_input_to_output_order": "multi-stage parallel helical family; individual internal shaft connections are not specified here",
+      "proposed_library_use": "Precedent for two- through four-stage parallel-axis chains; detailed candidate geometry still requires its own evidence.",
+      "application_area_evidence": "The page includes lifting uses and an unnamed Moroccan phosphate-mine conveyor example. The latter is a vendor-reported anonymous installation, not a fully identified OEM case.",
+      "named_commissioned_oem_case": false,
+      "load_case": null,
+      "reference_solution": null,
+      "unknowns": ["Mine/customer identity", "Stage count of the reported mine drive", "Actual conveyor load, distinct from catalog maximum", "Detailed model and reference results"]
+    },
+    {
+      "id": "precedent-neugart-ple",
+      "manufacturer": "Neugart GmbH",
+      "product_family": "PLE economy coaxial planetary gearboxes",
+      "evidence_level": "manufacturer_product_family",
+      "source_ids": ["NEUGART-PLE"],
+      "source_urls": ["https://www.neugart.com/en/gearboxes/economy-gearboxes/ple"],
+      "verified_family_precedent": "The planetary-family ratio table offers one-, two-, and three-stage configurations, with availability depending on frame size.",
+      "documented_stage_counts": [1, 2, 3],
+      "stage_count_qualification": "The source confirms multi-stage planetary options, including two-stage, rather than proving a particular differential or compound-planetary construction.",
+      "verified_input_to_output_order": "coaxial multi-stage planetary family; exact per-stage member connections require a drawing or manual",
+      "proposed_library_use": "Precedent for repeated planetary stages. It cannot validate every ring-fixed, sun-driven, carrier-output library arrangement without further documents.",
+      "application_area_evidence": "The page refers to demanding production cycles, without a named customer installation.",
+      "named_commissioned_oem_case": false,
+      "load_case": null,
+      "reference_solution": null,
+      "unknowns": ["Exact member connections and tooth counts", "Differential/compound status", "Installed duty cycle", "Selected-frame and ratio availability", "Reference calculation"]
+    }
+  ],
+  "coverage_claims_allowed": [
+    "Selected multi-stage parallel-axis, mixed helical/worm, mixed primary-gearing/planetary, and repeated-planetary product families have manufacturer precedents.",
+    "The evidence is sufficient to justify treating these as engineering-relevant families for a proposed library."
+  ],
+  "coverage_claims_not_allowed": [
+    "Every generated combination has an industrial installation.",
+    "Industry generally stops at four stages.",
+    "Hundreds of canonical feasible topologies have already been demonstrated or counted.",
+    "Catalog maximum torque is an installed load case.",
+    "A manufacturer family page is a validated numerical reference solution.",
+    "Stage count equals automotive gear/shift count."
+  ]
+}

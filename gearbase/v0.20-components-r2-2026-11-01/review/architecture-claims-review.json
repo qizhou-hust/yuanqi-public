@@ -1,0 +1,409 @@
+{
+  "schema": "gearbase.architecture-claims-review/1",
+  "reviewed_at_utc": "2026-11-01T12:37:59.281741+00:00",
+  "review_mode": "subagent_artifact_review; no cross-model claim",
+  "passed": true,
+  "open_findings": [],
+  "html_sha256": "9b8bb64f94d3af2bda488f812be309cec126df4823820d6f4ea945489ba32919",
+  "bound_input_sha256": {
+    "index.html": "9b8bb64f94d3af2bda488f812be309cec126df4823820d6f4ea945489ba32919",
+    "report-data.json": "2b66bd893d71bfd9bf27ded7670f6b88d16227fd36817815e3a75ddbcfe51546",
+    "README.md": "16cca815409ad0adc6faac06ecf729913a239c87bc6aeeab8e35171c72286354",
+    "STATUS.json": "e058fe613026acfb13f1d538da80b5b07007a43133783c84ace1077295f60771",
+    "build-receipt.json": "b94c2f839fedf67200b3ad2e8c4909c3504f4c3e810ec2a6f3a56a5bbfce5556",
+    "source-preservation.json": "e747ef7a5de0958b0c0d268391d9c66f312532573129ee1f60e66f7f7fb56cb3",
+    "math/component-contract.json": "41ee0740962b51cad93575938620474ca279ed9954d8786cea9addd8ab61d996",
+    "math/math-examples.json": "32dd45bb9b83d305b46964a622996a60c51aaf3058586bc9f6513cc900e027fa",
+    "math/math-example-results.json": "5cd1daac00354e564dda880e5eabfdbe48ecb98cf664686aeb3003412c16f414",
+    "math/MATH-DESIGN.md": "856fc7627ae05dbbdfb48dbb1c832e4b4d9a4431d28d8cebf2fabf941a1e7504",
+    "math/validate_math_examples.py": "ccb21eb0bfd2a8e810522ad493cebc0113a3c8ec5ffd2c72bc6e15da61484ded",
+    "library/LIBRARY-DESIGN.md": "0d88d3e77ecca90e6c37468fb01fcf6e53167d3dfc4b952c87ef9ab2936348c9",
+    "library/enum-counts.json": "3c60ffc0ed69657e6cdc0a1e907775a818de0fc38f1b42231415044a9373e469",
+    "library/topology-library.json": "c549f81355d00b893ba04b62972393cea134adbc2606d05aa8ccf50bcdf27a91",
+    "library/topology-library-summary.csv": "b8ec8b9328c94a7ded37a1ed833db71109050dbc6a7e770099c04889b9e13778",
+    "library/topology-group-summary.csv": "babb37cdee4ae76e39cc58b8d712c5d2daa3fb8fa1bf6c34bc4f15fcd087322e",
+    "library/rejection-ledger.csv": "766c7c3f7d834fc40af17b33363bbb63517d1172dae263abcb2fdc7c7fe2f591",
+    "library/negative-probes.json": "f58a46873da312b4d7acf189323c292529334dc73dffe197d80e860496d8e546",
+    "library/verification-log.json": "8414afab05cc5a15ba0f6dd9e36f1a8babbc893714d93f0f07534a2a7ffd5c40",
+    "library/run_enumeration.py": "0f4a41877110c794dca25159b7d983833d9b024b91a2ac8d2d0d1d032352166d",
+    "library/test_enumeration.py": "21b5d1c65934899b56e200cb1dc51e5cfd804d51b24ae0cfb44d10abbd4b8a87",
+    "research/sources.json": "669bcbd6a63574083edcd989cbf1c37c6139247a7517898cb1d71258389a6211",
+    "research/industrial-precedents.json": "b6ef6dd64122d7267514320aa042c5c2aad4c98f2994097548fcd9a3a92407eb",
+    "research/METHODS-COMPARISON.md": "4949b65bbffcbedce42483a64ca1fbace32bc7e4048716b2c1c8d21668937713",
+    "previous/index.html": "6bbc3cc7001ff71656a81d44cb8521ea9743899bf9a2b0aa1e6c50c16d2b9ba7",
+    "previous/report-data.json": "9598eb049ab70db34b4f82c422383690144be09f1b11ec50c9c58c9825f88973",
+    "previous/README.md": "f15799f5989f0ac61ac8beaa2293013643f4d98c0537a631d90258ba08b7d0f5"
+  },
+  "initial_review_html_sha256": "7ce65b327803d5852a7615d116f0cf4d23fe4c374600ab404b143da28ea4552f",
+  "review_object": "D:\\my_Works\\Gears\\v020-component-architecture-2026-11-01",
+  "external_standard": [
+    "用户指定路线（父任务提供）：数学先行；传动副为原子、双级行星等为可展开复合元件；多属性端口插接；预建有限组合库再筛选。",
+    "本项目按展开后的齿轮级数不超过4级；几百种与逐组合工业应用均为待证范围命题。",
+    "本轮只交付顶层设计与数学/枚举分析；冻结v0.20核心80117283778cf8732b5557fa15c2e41f626f92fc，不要求实现产品插件、DAE、mount/wrench或新工程评级。",
+    "承接修订1，不把历史检查记成本轮新运行，不升级FE、真实金标、工艺及旗舰系统资格。"
+  ],
+  "conclusion": {
+    "classification": "verified_for_scoped_design_report_claims_only",
+    "summary": "最终绑定稿未发现开放P0/P1；首轮发现的两处P2示例引用错误已修复并以旧错误反向核查。",
+    "engineering_release_or_plugin_runtime_acceptance": false,
+    "priority_counts_open": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 0
+    }
+  },
+  "resolved_findings": [
+    {
+      "id": "ACR-001",
+      "priority": "P2",
+      "status": "resolved",
+      "title": "P2宏参数域仍引用重命名前的局部符号",
+      "fact": "首轮six domain字符串引用z_s/z_r/n_planets，而宏只声明first_/second_参数；当时的manifest引用检查未扫描parameter.domain。",
+      "original_evidence": [
+        {
+          "file": "math/math-examples.json",
+          "start_line": 1164,
+          "end_line": 1208
+        },
+        {
+          "file": "math/validate_math_examples.py",
+          "start_line": 152,
+          "end_line": 183,
+          "revision": "first_review_snapshot"
+        }
+      ],
+      "inference": "严格按宏作用域解析时域谓词无法绑定；34/0不能证明这些域引用完整。该缺陷局限于设计附件示例，不推定产品运行故障。",
+      "recommendation": "同步重命名域内符号，并只对机器谓词AST做声明引用检查；不扫描说明文本。",
+      "closure_evidence": [
+        {
+          "file": "math/math-examples.json",
+          "start_line": 1164,
+          "end_line": 1208
+        },
+        {
+          "file": "math/validate_math_examples.py",
+          "start_line": 193,
+          "end_line": 221
+        },
+        {
+          "file": "math/validate_math_examples.py",
+          "start_line": 280,
+          "end_line": 291
+        },
+        {
+          "file": "math/MATH-DESIGN.md",
+          "start_line": 216,
+          "end_line": 216
+        }
+      ],
+      "reviewer_observed": "当前manifest引用检查通过；在内存恢复z_s > 0后得到DomainContractError；未写回数学附件。"
+    },
+    {
+      "id": "ACR-002",
+      "priority": "P2",
+      "status": "resolved",
+      "title": "示例IR把固定环边界追溯到不存在的别名",
+      "fact": "首轮IR引用P2.p1.ring_fixed / P2.p2.ring_fixed，宏实际boundary IDs为ring1_fixed / ring2_fixed，没有声明所引用别名。",
+      "original_evidence": [
+        {
+          "file": "math/math-examples.json",
+          "start_line": 1363,
+          "end_line": 1375
+        },
+        {
+          "file": "math/math-examples.json",
+          "start_line": 1649,
+          "end_line": 1658,
+          "revision": "first_review_snapshot"
+        }
+      ],
+      "inference": "示例产物的来源追溯无法按登记ID解析；数值正确不修复证据引用。",
+      "recommendation": "按所属实例限定真实boundary IDs，并校核IR方程/边界/连接来源引用。",
+      "closure_evidence": [
+        {
+          "file": "math/math-examples.json",
+          "start_line": 1649,
+          "end_line": 1658
+        },
+        {
+          "file": "math/validate_math_examples.py",
+          "start_line": 228,
+          "end_line": 255
+        },
+        {
+          "file": "math/validate_math_examples.py",
+          "start_line": 293,
+          "end_line": 306
+        },
+        {
+          "file": "math/MATH-DESIGN.md",
+          "start_line": 218,
+          "end_line": 218
+        }
+      ],
+      "reviewer_observed": "当前15个已登记ID中的13条IR引用均可解析；逐个恢复两条旧别名后均得到ProvenanceReferenceError。"
+    }
+  ],
+  "verified_facts": [
+    {
+      "claim": "数学记号与理想元件示例在声明假设下自洽。",
+      "evidence": [
+        {
+          "file": "math/MATH-DESIGN.md",
+          "start_line": 50,
+          "end_line": 89
+        },
+        {
+          "file": "math/MATH-DESIGN.md",
+          "start_line": 93,
+          "end_line": 173
+        }
+      ],
+      "observed": "核对进入元件的外力约定、有符号比、theta=phi/rad、P=tau*omega/rad、Willis与virtual-work effort、四端口丝杆；零速功率为0但effort残差120 N*m的反例成立。行星k=3的5/15/-20 N*m，以及P2的15/80 N*m环入矩与端口功率/力矩平衡一致。"
+    },
+    {
+      "claim": "末级/宏/啮合计数和级序没有互相替代。",
+      "evidence": [
+        {
+          "file": "math/MATH-DESIGN.md",
+          "start_line": 194,
+          "end_line": 210
+        },
+        {
+          "file": "index.html",
+          "start_line": 142,
+          "end_line": 155
+        }
+      ],
+      "observed": "P2展开计2级；P2+H+W为4齿轮级，另接丝杆另记1转换。H>W与W>H在库中是不同有序词；人为绝对损耗反例34.4/31.2 W成立。0级直连明确不在340分母。"
+    },
+    {
+      "claim": "库计数与实际序列化条目一致，去重绑定有序语义。",
+      "evidence": [
+        {
+          "file": "library/LIBRARY-DESIGN.md",
+          "start_line": 24,
+          "end_line": 107
+        },
+        {
+          "file": "library/LIBRARY-DESIGN.md",
+          "start_line": 192,
+          "end_line": 203
+        }
+      ],
+      "observed": {
+        "six_atom_entries": 1554,
+        "six_atom_cartesian_set_exact": true,
+        "four_atom_subset": 340,
+        "macro_representations": 1676,
+        "macro_expansion_mismatches": 0,
+        "starter_le2": 42,
+        "parent_family_groups": 780,
+        "json_and_summary_csv_entries": 1554,
+        "rejection_ledger_rows": 2304,
+        "all_rejections_have_reasons": true,
+        "physical_impossibility_claimed": false
+      }
+    },
+    {
+      "claim": "语义准入未被升级为空间、承载或工业全覆盖。",
+      "evidence": [
+        {
+          "file": "library/LIBRARY-DESIGN.md",
+          "start_line": 20,
+          "end_line": 20
+        },
+        {
+          "file": "library/LIBRARY-DESIGN.md",
+          "start_line": 142,
+          "end_line": 166
+        },
+        {
+          "file": "index.html",
+          "start_line": 155,
+          "end_line": 156
+        },
+        {
+          "file": "index.html",
+          "start_line": 187,
+          "end_line": 195
+        }
+      ],
+      "observed": "1554条均为abstract_candidate；空间/载荷路径/评级/热均OPEN，工业source_refs全空。工业资料登记5产品族；精确结构先例0表示未映射，未断言工业不存在。可选末级W规则未启用为基础grammar。"
+    },
+    {
+      "claim": "JSON形状、数学点例和实际插件运行被明确分开。",
+      "evidence": [
+        {
+          "file": "math/validate_math_examples.py",
+          "start_line": 1,
+          "end_line": 6
+        },
+        {
+          "file": "math/MATH-DESIGN.md",
+          "start_line": 214,
+          "end_line": 218
+        },
+        {
+          "file": "README.md",
+          "start_line": 9,
+          "end_line": 15
+        },
+        {
+          "file": "index.html",
+          "start_line": 165,
+          "end_line": 165
+        }
+      ],
+      "observed": "本审阅只读重算19个案例、验证5manifest及network/IR/projection形状、核对39/0回执和输入hash。未调用main写回、未导入产品代码；点例通过不等同运行manifest表达式、网络编译器或DAE。"
+    },
+    {
+      "claim": "typed mount/wrench仍OPEN，固定环反矩未被当成零或完整空间力系。",
+      "evidence": [
+        {
+          "file": "math/MATH-DESIGN.md",
+          "start_line": 126,
+          "end_line": 136
+        },
+        {
+          "file": "math/MATH-DESIGN.md",
+          "start_line": 175,
+          "end_line": 190
+        },
+        {
+          "file": "report-data.json",
+          "locator": "units P2/SUP mount and limits"
+        }
+      ],
+      "observed": "反矩分别保留为数学输出与投影义务；报告明确没有完整安装/三维载荷恢复接口。未把该已披露的未来缺口作为本轮产品失败。"
+    },
+    {
+      "claim": "修订1的历史阻断与资格没有被失实升级。",
+      "evidence": [
+        {
+          "file": "index.html",
+          "start_line": 207,
+          "end_line": 208
+        },
+        {
+          "file": "previous/README.md",
+          "start_line": 9,
+          "end_line": 16
+        },
+        {
+          "file": "previous/report-data.json",
+          "locator": "fresh_targeted_tests, capabilities, cases H2/W2W/P2, milestones M37/M40"
+        }
+      ],
+      "observed": "旧数据仍为62项定向测试、26项能力、40+15+5=60候选系统blocked；M37=0/4、M40=0/3保留。修订2明确不把它们记成本轮新运行。"
+    },
+    {
+      "claim": "冻结核心与旧HTML保持记录可匹配。",
+      "evidence": [
+        {
+          "file": "source-preservation.json",
+          "locator": "frozen_python_sha256 and prior_public_html_sha256"
+        }
+      ],
+      "observed": "当前git HEAD=80117283778cf8732b5557fa15c2e41f626f92fc，porcelain为空；保持记录登记的266个Python文件当前bytes hash全部匹配；previous/index.html匹配旧公开HTML hash。该结论不覆盖全部被Git忽略文件。"
+    },
+    {
+      "claim": "最终报告数据和证据引用哈希一致。",
+      "evidence": [
+        {
+          "file": "build-receipt.json",
+          "locator": "html_sha256/data_sha256/evidence_sha256"
+        },
+        {
+          "file": "report-data.json",
+          "locator": "evidence_sha256"
+        }
+      ],
+      "observed": "最终HTML内嵌JSON等于report-data.json；build-receipt的HTML/data/证据hash与实际文件相符，39/0回执输入hash相符。"
+    }
+  ],
+  "official_source_spot_checks": [
+    {
+      "title": "KISSsoft System Module Modeling",
+      "url": "https://www.kisssoft.com/en/products/products/kisssoft-system-module/modeling/modeling",
+      "verified_document_fact": "官方说明元件拓扑、预定义装配、变体与系统数据传播；未据此断言软件API或精度已实测。"
+    },
+    {
+      "title": "KISSsoft Streamlined Parametric Study Using SKRIPT",
+      "url": "https://www.kisssoft.com/en/news-and-events/newsroom/streamlined-parametric-study-using-skript",
+      "verified_document_fact": "官方说明SKRIPT/COM参数分析，支持报告对商业自动化能力的谨慎表述。"
+    },
+    {
+      "title": "Romax Software Suite Product Brief",
+      "url": "https://www.cadence.com/en_US/home/resources/product-briefs/romax-software-suite-product-brief.html",
+      "verified_document_fact": "官方列出系统参数化、多属性优化与流程自动化；报告没有把商业工具降格为纯手工。"
+    },
+    {
+      "title": "Romax 2026.1",
+      "url": "https://community.cadence.com/cadence_blogs_8/b/pss/posts/romax-2026-1-a-new-foundation-for-drivetrain-simulation",
+      "verified_document_fact": "官方有参数研究与Batch Running结果/报告动作说明；本审阅未运行它。"
+    },
+    {
+      "title": "MSL v4.0.0 IdealPlanetary source",
+      "url": "https://raw.githubusercontent.com/modelica/ModelicaStandardLibrary/v4.0.0/Modelica/Mechanics/Rotational/Components/IdealPlanetary.mo",
+      "verified_document_fact": "三端口运动关系与ring/carrier力矩方程支持本稿理想公式；该组件忽略行星轮惯量等效应。"
+    },
+    {
+      "title": "MSL v4.1.0 Fixed source",
+      "url": "https://raw.githubusercontent.com/modelica/ModelicaStandardLibrary/v4.1.0/Modelica/Mechanics/Rotational/Components/Fixed.mo",
+      "verified_document_fact": "Fixed只约束角度；由零速不推出反矩为零。"
+    },
+    {
+      "title": "SEW P series",
+      "url": "https://www.sew-eurodrive.de/products/industrial-gear-units/planetary-gear-units/p/p.html",
+      "verified_document_fact": "产品表列P.RF四/五级和P.KF五级，支持四级仅为本项目范围。"
+    },
+    {
+      "title": "SEW P-X.e series",
+      "url": "https://www.sew-eurodrive.de/products/industrial-gear-units/planetary-gear-units/p-xe/p-xe.html",
+      "verified_document_fact": "官方列锥斜齿前级加行星组合及三/四级族选项；不能据此填充1554个精确库实例的工业证据。"
+    }
+  ],
+  "author_claims_or_not_reverified": [
+    {
+      "claim": "完整枚举runner及12个unittest新鲜重跑、两次数据哈希一致。",
+      "classification": "recorded_evidence_inspected; not rerun by this reviewer",
+      "evidence": "library/verification-log.json；本审阅另以独立笛卡尔集合及实际JSON/CSV交叉检查计数，不改写生成物。"
+    },
+    {
+      "claim": "最终桌面/移动排版和交互通过。",
+      "classification": "parent_reported; not rerun by this reviewer",
+      "evidence": "父任务报告最终同一HTML hash双端通过；本复核聚焦数学/架构主张。"
+    },
+    {
+      "claim": "所有来源登记中的全部网页事实。",
+      "classification": "not exhaustively re-browsed",
+      "evidence": "本审阅重新打开8个关键官方来源；其余来源仅检查文件中主张边界与限制，不作全量重检背书。"
+    }
+  ],
+  "limitations": [
+    "passed仅表示当前顶层设计/数学与计数报告未发现开放P0/P1；不是产品、插件ABI、工程可行性或生产释放批准。",
+    "39项回执包括形状、静态引用和有限数值/反例；domain检查不验证量纲、真假或可满足性，案例函数也不执行manifest表达式。",
+    "未测通用网络编译、全局DAE、事件/静摩擦互补求解、动态积分、真实损耗/保持安全、支承/3D布置、承载/寿命、FE、商业软件联算或真实金标。",
+    "数学意见适用于固定参考系、理想/指定简化摩擦及明确边界；不能从C1传矩推广为完整三维载荷路径或箱体强度。",
+    "340/1554是声明语法与角色下的抽象有序链数；参数/布局实例、其它传动族、其它行星角色、分流与换挡不在基础分母，工业全覆盖未证。",
+    "未改报告、数学、库、研究或冻结核心；唯一写入为此独立review JSON。"
+  ],
+  "Where This Review May Be Wrong": [
+    {
+      "assumption": "本轮验收对象是设计与分析，非已运行产品。",
+      "gap": "审阅需求由父任务转述，未把尚未实现能力视为失败。",
+      "how_to_check": "若原始用户验收包含实际插件执行，应另立运行/集成验收；当前passed不覆盖该范围。"
+    },
+    {
+      "assumption": "示例与手工代数足以发现本轮主要数学错误。",
+      "gap": "有限点例及静态引用不能证明全部参数域、模式边界或编译降低正确。",
+      "how_to_check": "未来实现时用实际manifest执行、量纲/秩/分支与独立参考模型对拍，保持本报告未完成标签。"
+    },
+    {
+      "assumption": "重新打开的8个官方页面代表报告主要商业比较与数学依据。",
+      "gap": "并未重新浏览sources.json的所有登记项，网页可能更新。",
+      "how_to_check": "正式适配或导入精确工业型号前绑定版本、原图/手册和逐项工况证据；不要把此抽查当全资料认证。"
+    }
+  ]
+}

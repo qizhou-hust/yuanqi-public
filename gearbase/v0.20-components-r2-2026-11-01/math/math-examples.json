@@ -1,0 +1,2084 @@
+{
+  "schema": "gearbase.component-math-examples/0.1-draft",
+  "classification": "mathematical_examples_only",
+  "baseline_repository": "D:/my_Works/Gears/gearbase-v020-work",
+  "baseline_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "scope_notice": "Synthetic SI-valued point examples, structural counterexamples and draft contract instances. No product module is imported; no engineering or release acceptance claim.",
+  "numerical_conventions": {
+    "angles": "radian numerical values unless key explicitly ends in _deg",
+    "angular_rate": "omega numerically radians/second; power uses normalized rate omega/(1 rad)",
+    "torque": "N*m",
+    "length": "m",
+    "force": "N",
+    "power": "W",
+    "absolute_temperature": "K",
+    "efforts": "external actions into component"
+  },
+  "plugin_contract_file": "component-contract.json",
+  "plugin_manifests": [
+    {
+      "schema": "gearbase.component-plugin/0.1-draft",
+      "id": "gear.helical_pair.ideal",
+      "version": "0.1.0-draft",
+      "status": "design_only",
+      "owner_layer": "gear",
+      "role": "gear_transfer",
+      "parameters": {
+        "z_a": {
+          "unit": "1",
+          "semantic_type": "positive_integer_teeth",
+          "domain": [
+            "z_a > 0"
+          ],
+          "source": "author tooth count"
+        },
+        "z_b": {
+          "unit": "1",
+          "semantic_type": "positive_integer_teeth",
+          "domain": [
+            "z_b > 0"
+          ],
+          "source": "author tooth count"
+        },
+        "sigma": {
+          "unit": "1",
+          "semantic_type": "coordinate_mapping_sign",
+          "domain": [
+            "sigma == -1 or sigma == 1"
+          ],
+          "source": "derived from external/internal mesh and adopted axes"
+        }
+      },
+      "ports": [
+        {
+          "id": "a",
+          "domain": "mechanical.rotational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "a__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "a__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "a__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "a__tau*a__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "a.axis"
+        },
+        {
+          "id": "b",
+          "domain": "mechanical.rotational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "b__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "b__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "b__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "b__tau*b__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "b.axis"
+        }
+      ],
+      "local_symbols": [],
+      "equations": [
+        {
+          "id": "helical.velocity",
+          "kind": "equality_zero",
+          "expr": "a__omega-sigma*z_b*b__omega/z_a",
+          "unit": "rad/s",
+          "variables": [
+            "a__omega",
+            "b__omega",
+            "sigma",
+            "z_a",
+            "z_b"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_kinematics"
+        },
+        {
+          "id": "helical.effort",
+          "kind": "equality_zero",
+          "expr": "b__tau+sigma*z_b*a__tau/z_a",
+          "unit": "N*m",
+          "variables": [
+            "a__tau",
+            "b__tau",
+            "sigma",
+            "z_a",
+            "z_b"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_effort"
+        },
+        {
+          "id": "helical.power",
+          "kind": "audit_identity",
+          "expr": "a__tau*a__omega/rad+b__tau*b__omega/rad",
+          "unit": "W",
+          "variables": [
+            "a__tau",
+            "a__omega",
+            "b__tau",
+            "b__omega"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "energy_audit"
+        }
+      ],
+      "modes": [
+        {
+          "id": "ideal_fixed_housing",
+          "guards": [
+            "z_a > 0",
+            "z_b > 0"
+          ],
+          "equation_refs": [
+            "helical.velocity",
+            "helical.effort"
+          ],
+          "causal_inputs": [
+            "a__omega",
+            "b__tau",
+            "z_a",
+            "z_b",
+            "sigma"
+          ],
+          "causal_outputs": [
+            "b__omega",
+            "a__tau"
+          ],
+          "local_solver": "analytic_elimination",
+          "unsupported_outcome": "blocked_domain"
+        }
+      ],
+      "capabilities": [
+        {
+          "name": "kinematics_velocity_qs",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "fixed rigid housing and declared axes",
+          "evidence_refs": [],
+          "limitations": []
+        },
+        {
+          "name": "ideal_effort_qs",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "massless and lossless only",
+          "evidence_refs": [],
+          "limitations": []
+        },
+        {
+          "name": "layout_3d",
+          "implementation_status": "not_supported",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "requires separate placement and geometry evidence",
+          "evidence_refs": [],
+          "limitations": [
+            "not provided by this ideal mathematical plugin"
+          ]
+        }
+      ],
+      "stage_accounting": {
+        "policy": "leaf_contribution",
+        "local_gear_reduction_stages": 1,
+        "local_terminal_conversions": 0,
+        "local_mesh_interfaces_expr": "1",
+        "local_mesh_families": 1
+      },
+      "assembly_requirements": [
+        "parallel-axis geometry method selected separately",
+        "axis locations, helix hands and working center distance are required for layout/rating"
+      ],
+      "reaction_obligations": [
+        "1D torque mapping does not close full spatial bearing/housing wrenches"
+      ]
+    },
+    {
+      "schema": "gearbase.component-plugin/0.1-draft",
+      "id": "gear.planetary_simple.ideal",
+      "version": "0.1.0-draft",
+      "status": "design_only",
+      "owner_layer": "gear",
+      "role": "gear_transfer",
+      "parameters": {
+        "z_s": {
+          "unit": "1",
+          "semantic_type": "positive_integer_teeth",
+          "domain": [
+            "z_s > 0"
+          ],
+          "source": "author sun teeth"
+        },
+        "z_r": {
+          "unit": "1",
+          "semantic_type": "positive_integer_teeth",
+          "domain": [
+            "z_r > z_s"
+          ],
+          "source": "author ring teeth"
+        },
+        "n_planets": {
+          "unit": "1",
+          "semantic_type": "positive_integer_planet_count",
+          "domain": [
+            "n_planets > 0"
+          ],
+          "source": "author planet count; layout and assembly checks are separate"
+        }
+      },
+      "ports": [
+        {
+          "id": "sun",
+          "domain": "mechanical.rotational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "sun__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "sun__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "sun__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "sun__tau*sun__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "sun.axis"
+        },
+        {
+          "id": "ring",
+          "domain": "mechanical.rotational1d",
+          "role": "support",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "ring__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "ring__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "ring__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "ring__tau*ring__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "ring.axis"
+        },
+        {
+          "id": "carrier",
+          "domain": "mechanical.rotational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "carrier__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "carrier__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "carrier__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "carrier__tau*carrier__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "carrier.axis"
+        }
+      ],
+      "local_symbols": [],
+      "equations": [
+        {
+          "id": "planetary.willis",
+          "kind": "equality_zero",
+          "expr": "z_s*(sun__omega-carrier__omega)+z_r*(ring__omega-carrier__omega)",
+          "unit": "rad/s",
+          "variables": [
+            "z_s",
+            "z_r",
+            "sun__omega",
+            "ring__omega",
+            "carrier__omega"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_kinematics"
+        },
+        {
+          "id": "planetary.ring_effort",
+          "kind": "equality_zero",
+          "expr": "ring__tau-(z_r/z_s)*sun__tau",
+          "unit": "N*m",
+          "variables": [
+            "ring__tau",
+            "sun__tau",
+            "z_r",
+            "z_s"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_effort"
+        },
+        {
+          "id": "planetary.carrier_effort",
+          "kind": "equality_zero",
+          "expr": "carrier__tau+(1+z_r/z_s)*sun__tau",
+          "unit": "N*m",
+          "variables": [
+            "carrier__tau",
+            "sun__tau",
+            "z_r",
+            "z_s"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_effort"
+        },
+        {
+          "id": "planetary.torque_audit",
+          "kind": "audit_identity",
+          "expr": "sun__tau+ring__tau+carrier__tau",
+          "unit": "N*m",
+          "variables": [
+            "sun__tau",
+            "ring__tau",
+            "carrier__tau"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_effort"
+        },
+        {
+          "id": "planetary.power",
+          "kind": "audit_identity",
+          "expr": "sun__tau*sun__omega/rad+ring__tau*ring__omega/rad+carrier__tau*carrier__omega/rad",
+          "unit": "W",
+          "variables": [
+            "sun__tau",
+            "sun__omega",
+            "ring__tau",
+            "ring__omega",
+            "carrier__tau",
+            "carrier__omega"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "energy_audit"
+        }
+      ],
+      "modes": [
+        {
+          "id": "fixed_ring_sun_drive",
+          "guards": [
+            "ring__omega == 0",
+            "z_s > 0"
+          ],
+          "equation_refs": [
+            "planetary.willis",
+            "planetary.ring_effort",
+            "planetary.carrier_effort"
+          ],
+          "causal_inputs": [
+            "sun__omega",
+            "carrier__tau",
+            "ring__omega",
+            "z_s",
+            "z_r"
+          ],
+          "causal_outputs": [
+            "carrier__omega",
+            "sun__tau",
+            "ring__tau"
+          ],
+          "local_solver": "analytic_elimination",
+          "unsupported_outcome": "blocked_domain"
+        }
+      ],
+      "capabilities": [
+        {
+          "name": "kinematics_velocity_qs",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "simple planetary with explicit fixed-ring boundary",
+          "evidence_refs": [],
+          "limitations": []
+        },
+        {
+          "name": "ideal_effort_qs",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "three coaxial shafts, common positive axis, no inertia/loss",
+          "evidence_refs": [],
+          "limitations": []
+        },
+        {
+          "name": "strength_rating",
+          "implementation_status": "not_supported",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "requires separate planetary rating method",
+          "evidence_refs": [],
+          "limitations": [
+            "no planetary rating is implemented by this manifest"
+          ]
+        },
+        {
+          "name": "dynamics",
+          "implementation_status": "not_supported",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "requires planet orbital/spin inertias and a new solver",
+          "evidence_refs": [],
+          "limitations": [
+            "no time integration or DAE support"
+          ]
+        }
+      ],
+      "stage_accounting": {
+        "policy": "leaf_contribution",
+        "local_gear_reduction_stages": 1,
+        "local_terminal_conversions": 0,
+        "local_mesh_interfaces_expr": "2*n_planets",
+        "local_mesh_families": 2
+      },
+      "assembly_requirements": [
+        "ring ground boundary must preserve reaction output",
+        "tooth geometry/profile shift and planet spacing/assembly are separate capabilities"
+      ],
+      "reaction_obligations": [
+        "ring__tau is housing-on-gear torque; gear-on-housing torque is its negative"
+      ]
+    },
+    {
+      "schema": "gearbase.component-plugin/0.1-draft",
+      "id": "gear.worm_pair.screen",
+      "version": "0.1.0-draft",
+      "status": "design_only",
+      "owner_layer": "gear",
+      "role": "gear_transfer",
+      "parameters": {
+        "i_signed": {
+          "unit": "1",
+          "semantic_type": "signed_kinematic_ratio",
+          "domain": [
+            "i_signed != 0"
+          ],
+          "source": "wheel teeth/starts with explicit coordinate sign"
+        },
+        "gamma": {
+          "unit": "rad",
+          "semantic_type": "lead_angle",
+          "domain": [
+            "gamma > 0",
+            "gamma < pi*rad/2"
+          ],
+          "source": "worm geometry"
+        },
+        "rho_k": {
+          "unit": "rad",
+          "semantic_type": "equivalent_kinetic_friction_angle",
+          "domain": [
+            "rho_k >= 0",
+            "gamma+rho_k < pi*rad/2"
+          ],
+          "source": "load/speed/temperature-dependent friction model; values assumed in examples"
+        },
+        "rho_s": {
+          "unit": "rad",
+          "semantic_type": "equivalent_static_friction_angle",
+          "domain": [
+            "rho_s >= 0"
+          ],
+          "source": "separate static friction evidence required"
+        }
+      },
+      "ports": [
+        {
+          "id": "worm",
+          "domain": "mechanical.rotational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "worm__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "worm__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "worm__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "worm__tau*worm__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "worm.axis"
+        },
+        {
+          "id": "wheel",
+          "domain": "mechanical.rotational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "wheel__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "wheel__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "wheel__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "wheel__tau*wheel__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "wheel.axis"
+        },
+        {
+          "id": "heat",
+          "domain": "thermal.heat",
+          "role": "heat",
+          "reference_frame_ref": "housing",
+          "positive_direction": "heat flow from environment into component",
+          "variables": {
+            "across": {
+              "name": "heat__T",
+              "unit": "K",
+              "semantic_type": "absolute_temperature"
+            },
+            "through": {
+              "name": "heat__Q",
+              "unit": "W",
+              "semantic_type": "heat_flow_into_component"
+            }
+          },
+          "power_into_expr": "heat__Q",
+          "power_law": "heat_flow_is_power"
+        }
+      ],
+      "local_symbols": [
+        {
+          "name": "eta_forward",
+          "unit": "1",
+          "semantic_type": "efficiency",
+          "role": "derived"
+        },
+        {
+          "name": "eta_back",
+          "unit": "1",
+          "semantic_type": "efficiency",
+          "role": "derived"
+        },
+        {
+          "name": "loss",
+          "unit": "W",
+          "semantic_type": "dissipated_power",
+          "role": "loss"
+        }
+      ],
+      "equations": [
+        {
+          "id": "worm.velocity",
+          "kind": "equality_zero",
+          "expr": "worm__omega-i_signed*wheel__omega",
+          "unit": "rad/s",
+          "variables": [
+            "worm__omega",
+            "wheel__omega",
+            "i_signed"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_kinematics"
+        },
+        {
+          "id": "worm.eta_forward",
+          "kind": "equality_zero",
+          "expr": "eta_forward-tan(gamma)/tan(gamma+rho_k)",
+          "unit": "1",
+          "variables": [
+            "eta_forward",
+            "gamma",
+            "rho_k"
+          ],
+          "reference": "MATH-DESIGN.md: equivalent-friction screening model only",
+          "scope": "lossy_effort",
+          "mode_refs": [
+            "worm_driving"
+          ]
+        },
+        {
+          "id": "worm.forward_effort",
+          "kind": "equality_zero",
+          "expr": "wheel__tau+i_signed*eta_forward*worm__tau",
+          "unit": "N*m",
+          "variables": [
+            "wheel__tau",
+            "worm__tau",
+            "i_signed",
+            "eta_forward"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "lossy_effort",
+          "mode_refs": [
+            "worm_driving"
+          ]
+        },
+        {
+          "id": "worm.eta_back",
+          "kind": "equality_zero",
+          "expr": "eta_back-tan(gamma-rho_k)/tan(gamma)",
+          "unit": "1",
+          "variables": [
+            "eta_back",
+            "gamma",
+            "rho_k"
+          ],
+          "reference": "MATH-DESIGN.md: valid only when gamma > rho_k",
+          "scope": "lossy_effort",
+          "mode_refs": [
+            "wheel_backdriving"
+          ]
+        },
+        {
+          "id": "worm.back_effort",
+          "kind": "equality_zero",
+          "expr": "worm__tau+eta_back*wheel__tau/i_signed",
+          "unit": "N*m",
+          "variables": [
+            "worm__tau",
+            "wheel__tau",
+            "eta_back",
+            "i_signed"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "lossy_effort",
+          "mode_refs": [
+            "wheel_backdriving"
+          ]
+        },
+        {
+          "id": "worm.loss",
+          "kind": "equality_zero",
+          "expr": "worm__tau*worm__omega/rad+wheel__tau*wheel__omega/rad-loss",
+          "unit": "W",
+          "variables": [
+            "worm__tau",
+            "worm__omega",
+            "wheel__tau",
+            "wheel__omega",
+            "loss"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "energy_audit"
+        },
+        {
+          "id": "worm.heat",
+          "kind": "equality_zero",
+          "expr": "heat__Q+loss",
+          "unit": "W",
+          "variables": [
+            "heat__Q",
+            "loss"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "energy_audit"
+        },
+        {
+          "id": "worm.nonnegative_loss",
+          "kind": "inequality_le_zero",
+          "expr": "-loss",
+          "unit": "W",
+          "variables": [
+            "loss"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "energy_audit"
+        }
+      ],
+      "modes": [
+        {
+          "id": "worm_driving",
+          "guards": [
+            "worm__tau*worm__omega/rad > 0",
+            "gamma+rho_k < pi*rad/2"
+          ],
+          "equation_refs": [
+            "worm.velocity",
+            "worm.eta_forward",
+            "worm.forward_effort",
+            "worm.loss",
+            "worm.heat",
+            "worm.nonnegative_loss"
+          ],
+          "causal_inputs": [
+            "worm__omega",
+            "wheel__tau",
+            "i_signed",
+            "gamma",
+            "rho_k"
+          ],
+          "causal_outputs": [
+            "wheel__omega",
+            "worm__tau",
+            "eta_forward",
+            "loss",
+            "heat__Q"
+          ],
+          "local_solver": "analytic_elimination",
+          "unsupported_outcome": "blocked_domain"
+        },
+        {
+          "id": "wheel_backdriving",
+          "guards": [
+            "wheel__tau*wheel__omega/rad > 0",
+            "gamma > rho_k"
+          ],
+          "equation_refs": [
+            "worm.velocity",
+            "worm.eta_back",
+            "worm.back_effort",
+            "worm.loss",
+            "worm.heat",
+            "worm.nonnegative_loss"
+          ],
+          "causal_inputs": [
+            "wheel__omega",
+            "worm__tau",
+            "i_signed",
+            "gamma",
+            "rho_k"
+          ],
+          "causal_outputs": [
+            "worm__omega",
+            "wheel__tau",
+            "eta_back",
+            "loss",
+            "heat__Q"
+          ],
+          "local_solver": "analytic_elimination",
+          "unsupported_outcome": "blocked_static_mode"
+        }
+      ],
+      "capabilities": [
+        {
+          "name": "kinematics_velocity_qs",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "signed worm/wheel ratio with fixed housing",
+          "evidence_refs": [],
+          "limitations": []
+        },
+        {
+          "name": "losses_steady_screen",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "equivalent friction model, nonzero motion and specified power direction",
+          "evidence_refs": [],
+          "limitations": [
+            "no bearing/seal losses unless assigned separately",
+            "not ISO/TS 14521 or DIN 3996 release rating"
+          ]
+        },
+        {
+          "name": "static_holding",
+          "implementation_status": "not_supported",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "requires load-dependent static friction feasibility model and breakaway data",
+          "evidence_refs": [],
+          "limitations": [
+            "rho_s alone is screening evidence only"
+          ]
+        }
+      ],
+      "stage_accounting": {
+        "policy": "leaf_contribution",
+        "local_gear_reduction_stages": 1,
+        "local_terminal_conversions": 0,
+        "local_mesh_interfaces_expr": "1",
+        "local_mesh_families": 1
+      },
+      "assembly_requirements": [
+        "shaft angle, shortest axis distance, hands and datums are explicit layout data",
+        "axial thrust bearing load path required"
+      ],
+      "reaction_obligations": [
+        "full bearing/housing wrenches require family contact-force model and 3D placement"
+      ]
+    },
+    {
+      "schema": "gearbase.component-plugin/0.1-draft",
+      "id": "gear.power_screw.ideal_four_port",
+      "version": "0.1.0-draft",
+      "status": "design_only",
+      "owner_layer": "gear",
+      "role": "terminal_conversion",
+      "parameters": {
+        "lead": {
+          "unit": "m",
+          "semantic_type": "lead_per_relative_revolution",
+          "domain": [
+            "lead > 0"
+          ],
+          "source": "author lead, not pitch unless one-start"
+        },
+        "h": {
+          "unit": "1",
+          "semantic_type": "signed_hand_and_axis_mapping",
+          "domain": [
+            "h == -1 or h == 1"
+          ],
+          "source": "derive from handedness and adopted local axes"
+        }
+      },
+      "ports": [
+        {
+          "id": "screw_r",
+          "domain": "mechanical.rotational1d",
+          "role": "support",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "screw_r__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "screw_r__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "screw_r__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "screw_r__tau*screw_r__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "screw_r.axis"
+        },
+        {
+          "id": "nut_r",
+          "domain": "mechanical.rotational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "nut_r__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "nut_r__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "nut_r__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "nut_r__tau*nut_r__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "nut_r.axis"
+        },
+        {
+          "id": "screw_t",
+          "domain": "mechanical.translational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "translation along declared local +z axis; force acts into this component",
+          "variables": {
+            "q": {
+              "name": "screw_t__x",
+              "unit": "m",
+              "semantic_type": "displacement"
+            },
+            "flow": {
+              "name": "screw_t__v",
+              "unit": "m/s",
+              "semantic_type": "linear_velocity"
+            },
+            "effort": {
+              "name": "screw_t__F",
+              "unit": "N",
+              "semantic_type": "force_into_component"
+            }
+          },
+          "power_into_expr": "screw_t__F*screw_t__v",
+          "power_law": "effort_times_rate",
+          "axis_ref": "screw_t.axis"
+        },
+        {
+          "id": "nut_t",
+          "domain": "mechanical.translational1d",
+          "role": "support",
+          "reference_frame_ref": "housing",
+          "positive_direction": "translation along declared local +z axis; force acts into this component",
+          "variables": {
+            "q": {
+              "name": "nut_t__x",
+              "unit": "m",
+              "semantic_type": "displacement"
+            },
+            "flow": {
+              "name": "nut_t__v",
+              "unit": "m/s",
+              "semantic_type": "linear_velocity"
+            },
+            "effort": {
+              "name": "nut_t__F",
+              "unit": "N",
+              "semantic_type": "force_into_component"
+            }
+          },
+          "power_into_expr": "nut_t__F*nut_t__v",
+          "power_law": "effort_times_rate",
+          "axis_ref": "nut_t.axis"
+        }
+      ],
+      "local_symbols": [],
+      "equations": [
+        {
+          "id": "screw.velocity",
+          "kind": "equality_zero",
+          "expr": "screw_t__v-nut_t__v-h*lead*(screw_r__omega-nut_r__omega)/(2*pi*rad)",
+          "unit": "m/s",
+          "variables": [
+            "screw_t__v",
+            "nut_t__v",
+            "h",
+            "lead",
+            "screw_r__omega",
+            "nut_r__omega"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_kinematics"
+        },
+        {
+          "id": "screw.screw_torque",
+          "kind": "equality_zero",
+          "expr": "screw_r__tau+h*lead*screw_t__F/(2*pi)",
+          "unit": "N*m",
+          "variables": [
+            "screw_r__tau",
+            "h",
+            "lead",
+            "screw_t__F"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_effort"
+        },
+        {
+          "id": "screw.nut_torque",
+          "kind": "equality_zero",
+          "expr": "nut_r__tau-h*lead*screw_t__F/(2*pi)",
+          "unit": "N*m",
+          "variables": [
+            "nut_r__tau",
+            "h",
+            "lead",
+            "screw_t__F"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_effort"
+        },
+        {
+          "id": "screw.axial_reaction",
+          "kind": "equality_zero",
+          "expr": "nut_t__F+screw_t__F",
+          "unit": "N",
+          "variables": [
+            "nut_t__F",
+            "screw_t__F"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "ideal_effort"
+        },
+        {
+          "id": "screw.power",
+          "kind": "audit_identity",
+          "expr": "screw_r__tau*screw_r__omega/rad+nut_r__tau*nut_r__omega/rad+screw_t__F*screw_t__v+nut_t__F*nut_t__v",
+          "unit": "W",
+          "variables": [
+            "screw_r__tau",
+            "screw_r__omega",
+            "nut_r__tau",
+            "nut_r__omega",
+            "screw_t__F",
+            "screw_t__v",
+            "nut_t__F",
+            "nut_t__v"
+          ],
+          "reference": "MATH-DESIGN.md: explicit ideal derivation",
+          "scope": "energy_audit"
+        }
+      ],
+      "modes": [
+        {
+          "id": "rotating_nut_translating_screw",
+          "guards": [
+            "screw_r__omega == 0",
+            "nut_t__v == 0"
+          ],
+          "equation_refs": [
+            "screw.velocity",
+            "screw.screw_torque",
+            "screw.nut_torque",
+            "screw.axial_reaction"
+          ],
+          "causal_inputs": [
+            "nut_r__omega",
+            "screw_t__F",
+            "screw_r__omega",
+            "nut_t__v",
+            "lead",
+            "h"
+          ],
+          "causal_outputs": [
+            "screw_t__v",
+            "nut_r__tau",
+            "screw_r__tau",
+            "nut_t__F"
+          ],
+          "local_solver": "analytic_elimination",
+          "unsupported_outcome": "blocked_domain"
+        }
+      ],
+      "capabilities": [
+        {
+          "name": "kinematics_velocity_qs",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "four-port ideal thread with explicit antirotation/thrust boundaries",
+          "evidence_refs": [],
+          "limitations": []
+        },
+        {
+          "name": "ideal_effort_qs",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "massless ideal lead conversion only",
+          "evidence_refs": [],
+          "limitations": [
+            "no friction, buckling, critical speed, PV or life rating"
+          ]
+        }
+      ],
+      "stage_accounting": {
+        "policy": "leaf_contribution",
+        "local_gear_reduction_stages": 0,
+        "local_terminal_conversions": 1,
+        "local_mesh_interfaces_expr": "0",
+        "local_mesh_families": 0
+      },
+      "assembly_requirements": [
+        "anti-rotation guide closes screw_r support",
+        "nut thrust support closes nut_t support",
+        "thread handedness and axis sign must be checked geometrically"
+      ],
+      "reaction_obligations": [
+        "retain screw_r torque and nut_t axial reaction at zero support speeds"
+      ]
+    },
+    {
+      "schema": "gearbase.component-plugin/0.1-draft",
+      "id": "gear.planetary_two_fixed_ring.ideal_macro",
+      "version": "0.1.0-draft",
+      "status": "design_only",
+      "owner_layer": "gear",
+      "role": "composite",
+      "parameters": {
+        "first_z_s": {
+          "unit": "1",
+          "semantic_type": "positive_integer_teeth",
+          "domain": [
+            "first_z_s > 0"
+          ],
+          "source": "author sun teeth"
+        },
+        "first_z_r": {
+          "unit": "1",
+          "semantic_type": "positive_integer_teeth",
+          "domain": [
+            "first_z_r > first_z_s"
+          ],
+          "source": "author ring teeth"
+        },
+        "first_n_planets": {
+          "unit": "1",
+          "semantic_type": "positive_integer_planet_count",
+          "domain": [
+            "first_n_planets > 0"
+          ],
+          "source": "author planet count; layout and assembly checks are separate"
+        },
+        "second_z_s": {
+          "unit": "1",
+          "semantic_type": "positive_integer_teeth",
+          "domain": [
+            "second_z_s > 0"
+          ],
+          "source": "author sun teeth"
+        },
+        "second_z_r": {
+          "unit": "1",
+          "semantic_type": "positive_integer_teeth",
+          "domain": [
+            "second_z_r > second_z_s"
+          ],
+          "source": "author ring teeth"
+        },
+        "second_n_planets": {
+          "unit": "1",
+          "semantic_type": "positive_integer_planet_count",
+          "domain": [
+            "second_n_planets > 0"
+          ],
+          "source": "author planet count; layout and assembly checks are separate"
+        }
+      },
+      "ports": [
+        {
+          "id": "input",
+          "domain": "mechanical.rotational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "input__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "input__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "input__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "input__tau*input__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "input.axis"
+        },
+        {
+          "id": "output",
+          "domain": "mechanical.rotational1d",
+          "role": "transfer",
+          "reference_frame_ref": "housing",
+          "positive_direction": "right-hand rotation about declared local +z axis; effort acts into this component",
+          "variables": {
+            "q": {
+              "name": "output__phi",
+              "unit": "rad",
+              "semantic_type": "angle"
+            },
+            "flow": {
+              "name": "output__omega",
+              "unit": "rad/s",
+              "semantic_type": "angular_velocity"
+            },
+            "effort": {
+              "name": "output__tau",
+              "unit": "N*m",
+              "semantic_type": "torque_into_component"
+            }
+          },
+          "power_into_expr": "output__tau*output__omega/rad",
+          "power_law": "effort_times_angle_normalized_rate",
+          "axis_ref": "output.axis"
+        }
+      ],
+      "local_symbols": [],
+      "equations": [],
+      "modes": [],
+      "capabilities": [
+        {
+          "name": "kinematics_velocity_qs",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "intersection of expanded child capabilities; both rings fixed",
+          "evidence_refs": [],
+          "limitations": []
+        },
+        {
+          "name": "ideal_effort_qs",
+          "implementation_status": "proposed",
+          "evidence_state": "OPEN",
+          "evidence_scope": "none",
+          "validity": "expanded three-port child models and reaction projection",
+          "evidence_refs": [],
+          "limitations": []
+        }
+      ],
+      "stage_accounting": {
+        "policy": "expand_children",
+        "local_gear_reduction_stages": 0,
+        "local_terminal_conversions": 0,
+        "local_mesh_interfaces_expr": "0",
+        "local_mesh_families": 0
+      },
+      "assembly_requirements": [
+        "carrier1 to sun2 share the declared coaxial rigid connection",
+        "both ring support datums are retained"
+      ],
+      "reaction_obligations": [
+        "project p1.ring and p2.ring reactions; macro input/output do not replace support outputs"
+      ],
+      "decomposition": {
+        "children": [
+          {
+            "id": "p1",
+            "plugin_ref": "gear.planetary_simple.ideal",
+            "plugin_version": "0.1.0-draft",
+            "parameters": {
+              "z_s": {
+                "from_parameter": "first_z_s"
+              },
+              "z_r": {
+                "from_parameter": "first_z_r"
+              },
+              "n_planets": {
+                "from_parameter": "first_n_planets"
+              }
+            }
+          },
+          {
+            "id": "p2",
+            "plugin_ref": "gear.planetary_simple.ideal",
+            "plugin_version": "0.1.0-draft",
+            "parameters": {
+              "z_s": {
+                "from_parameter": "second_z_s"
+              },
+              "z_r": {
+                "from_parameter": "second_z_r"
+              },
+              "n_planets": {
+                "from_parameter": "second_n_planets"
+              }
+            }
+          }
+        ],
+        "exposed_ports": {
+          "input": "p1.sun",
+          "output": "p2.carrier"
+        },
+        "internal_connections": [
+          {
+            "id": "carrier1_to_sun2",
+            "domain": "mechanical.rotational1d",
+            "members": [
+              {
+                "port_ref": "p1.carrier",
+                "coordinate_sign": 1
+              },
+              {
+                "port_ref": "p2.sun",
+                "coordinate_sign": 1
+              }
+            ]
+          }
+        ],
+        "internal_boundaries": [
+          {
+            "id": "ring1_fixed",
+            "kind": "fixed_coordinate",
+            "port_ref": "p1.ring",
+            "binding": {
+              "value": 0,
+              "unit": "rad",
+              "provenance": "assumption",
+              "source": "mathematical example fixed ring"
+            },
+            "reaction_output_ref": "p1.ring.reaction"
+          },
+          {
+            "id": "ring2_fixed",
+            "kind": "fixed_coordinate",
+            "port_ref": "p2.ring",
+            "binding": {
+              "value": 0,
+              "unit": "rad",
+              "provenance": "assumption",
+              "source": "mathematical example fixed ring"
+            },
+            "reaction_output_ref": "p2.ring.reaction"
+          }
+        ]
+      },
+      "notes": [
+        "Ring reaction_output_ref values preserve 1D mathematical reactions. Typed mount/wrench-to-housing binding is OPEN; ground is not a verified physical mounting model."
+      ]
+    }
+  ],
+  "plugin_lock_example": {
+    "plugin_versions": [
+      {
+        "id": "gear.helical_pair.ideal",
+        "version": "0.1.0-draft",
+        "content_sha256": "807334089cf07f39d367fab0441c073aa1680308f9a6888d2ad70f1e28684fa8"
+      },
+      {
+        "id": "gear.planetary_simple.ideal",
+        "version": "0.1.0-draft",
+        "content_sha256": "d0bbbab75c3d677cb3c30395c0639866dc416290181d611523aa69d191f7d995"
+      },
+      {
+        "id": "gear.worm_pair.screen",
+        "version": "0.1.0-draft",
+        "content_sha256": "3091431d4ab0f561093bd737afb46b8cfa8cd02feabce36bc422f4393b5ed93e"
+      },
+      {
+        "id": "gear.power_screw.ideal_four_port",
+        "version": "0.1.0-draft",
+        "content_sha256": "d09481fd89bf8788579705bcc2eeb1eeed34bdca525283dc731301304f1c80b4"
+      },
+      {
+        "id": "gear.planetary_two_fixed_ring.ideal_macro",
+        "version": "0.1.0-draft",
+        "content_sha256": "06f3eb548dae3c3c1d0cac2088552d9a267841aaef28cf55423ed5922b499e2d"
+      }
+    ]
+  },
+  "unit_catalog_example": {
+    "status": "proposed_design_example",
+    "angle_dimension": "A",
+    "rotational_power": "tau*omega/rad",
+    "units": [
+      "rad",
+      "rad/s",
+      "N*m",
+      "m",
+      "m/s",
+      "N",
+      "K",
+      "W",
+      "1"
+    ],
+    "not_current_kernel_catalog": true
+  },
+  "network_source_example": {
+    "schema": "gearbase.component-network-source/0.1-draft",
+    "id": "example.two_planetary",
+    "revision": "math-example-1",
+    "parent_source_sha256": null,
+    "plugin_lock_sha256": "dc0af5d89fb3684388ec53b1c39d25edc53a7127ae3271f842ea5d11668979fa",
+    "authoring_refs": [],
+    "nodes": [
+      {
+        "id": "P2",
+        "plugin_ref": "gear.planetary_two_fixed_ring.ideal_macro",
+        "plugin_version": "0.1.0-draft",
+        "parameters": {
+          "first_z_s": {
+            "value": 24,
+            "unit": "1",
+            "provenance": "assumption",
+            "source": "synthetic mathematical example, not an engineering selection"
+          },
+          "first_z_r": {
+            "value": 72,
+            "unit": "1",
+            "provenance": "assumption",
+            "source": "synthetic mathematical example, not an engineering selection"
+          },
+          "first_n_planets": {
+            "value": 3,
+            "unit": "1",
+            "provenance": "assumption",
+            "source": "synthetic mathematical example, not an engineering selection"
+          },
+          "second_z_s": {
+            "value": 24,
+            "unit": "1",
+            "provenance": "assumption",
+            "source": "synthetic mathematical example, not an engineering selection"
+          },
+          "second_z_r": {
+            "value": 96,
+            "unit": "1",
+            "provenance": "assumption",
+            "source": "synthetic mathematical example, not an engineering selection"
+          },
+          "second_n_planets": {
+            "value": 3,
+            "unit": "1",
+            "provenance": "assumption",
+            "source": "synthetic mathematical example, not an engineering selection"
+          }
+        },
+        "placement_ref": "housing"
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "id": "speed",
+        "kind": "imposed_rate",
+        "port_ref": "P2.input",
+        "binding": {
+          "value": 100,
+          "unit": "rad/s",
+          "provenance": "assumption",
+          "source": "synthetic example commanded rate"
+        }
+      },
+      {
+        "id": "load",
+        "kind": "imposed_effort",
+        "port_ref": "P2.output",
+        "binding": {
+          "value": -100,
+          "unit": "N*m",
+          "provenance": "assumption",
+          "source": "synthetic example resisting torque"
+        }
+      }
+    ],
+    "frames": [
+      {
+        "id": "housing",
+        "parent_ref": null,
+        "translation_m": [
+          0,
+          0,
+          0
+        ],
+        "rotation_parent_from_local": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "source": "fixed reference for mathematical example"
+      }
+    ],
+    "query": {
+      "stage_limit": 4,
+      "limit_basis": "gear_reduction_stages",
+      "required_capabilities": [
+        "kinematics_velocity_qs",
+        "ideal_effort_qs"
+      ],
+      "loadcase_refs": [
+        "constant_speed_resisting_load"
+      ]
+    },
+    "axes": [
+      {
+        "id": "input_axis",
+        "frame_ref": "housing",
+        "origin_local_m": [
+          0,
+          0,
+          0
+        ],
+        "direction_local": [
+          0,
+          0,
+          1
+        ],
+        "datum_ref": "input_shaft_center",
+        "source": "synthetic mathematical layout datum, not a rated design"
+      },
+      {
+        "id": "output_axis",
+        "frame_ref": "housing",
+        "origin_local_m": [
+          0,
+          0,
+          0.06
+        ],
+        "direction_local": [
+          0,
+          0,
+          1
+        ],
+        "datum_ref": "output_shaft_center",
+        "source": "synthetic mathematical layout datum, not a rated design"
+      }
+    ],
+    "port_axis_bindings": {
+      "P2.input": "input_axis",
+      "P2.output": "output_axis"
+    },
+    "layout_constraints": [
+      {
+        "id": "macro_coaxial_ports",
+        "axis_refs": [
+          "input_axis",
+          "output_axis"
+        ],
+        "relation": "coaxial",
+        "source": "ideal macro requirement; full internal placements and clearances remain OPEN"
+      }
+    ]
+  },
+  "compiled_ir_example": {
+    "schema": "gearbase.component-network-ir/0.1-draft",
+    "status": "design_example_only",
+    "source_sha256": "63d2c9d69b40f595ef9fbd3e5fccd05fd27aa14299386de7763a7e8f4052741b",
+    "plugin_lock_sha256": "dc0af5d89fb3684388ec53b1c39d25edc53a7127ae3271f842ea5d11668979fa",
+    "unit_catalog_sha256": "dbeb2d09a5a56118589e50b302376722f1f6161828254f79ae3e1dc74d5baede",
+    "compiler_version": "not-implemented-design-example",
+    "loadcase_ref": "constant_speed_resisting_load",
+    "selected_modes": {
+      "P2.p1": "fixed_ring_sun_drive",
+      "P2.p2": "fixed_ring_sun_drive"
+    },
+    "expansion_map": {
+      "P2": [
+        "P2.p1",
+        "P2.p2"
+      ]
+    },
+    "counts": {
+      "gear_reduction_stages": 2,
+      "top_level_plugin_nodes": 1,
+      "expanded_leaf_plugin_nodes": 2,
+      "assembly_accessories": 0,
+      "mesh_interfaces": 12,
+      "mesh_families": 4,
+      "terminal_conversions": 0
+    },
+    "residual_refs": [
+      "P2.p1.planetary.willis",
+      "P2.p1.planetary.ring_effort",
+      "P2.p1.planetary.carrier_effort",
+      "P2.p2.planetary.willis",
+      "P2.p2.planetary.ring_effort",
+      "P2.p2.planetary.carrier_effort"
+    ],
+    "assignments": [
+      {
+        "output": "p1_carrier_omega",
+        "unit": "rad/s",
+        "expr": "input_omega/(1+first_z_r/first_z_s)",
+        "source_equation_refs": [
+          "P2.p1.planetary.willis",
+          "P2.ring1_fixed"
+        ]
+      },
+      {
+        "output": "output_omega",
+        "unit": "rad/s",
+        "expr": "p1_carrier_omega/(1+second_z_r/second_z_s)",
+        "source_equation_refs": [
+          "P2.p2.planetary.willis",
+          "P2.ring2_fixed"
+        ]
+      },
+      {
+        "output": "p2_sun_tau",
+        "unit": "N*m",
+        "expr": "-output_tau/(1+second_z_r/second_z_s)",
+        "source_equation_refs": [
+          "P2.p2.planetary.carrier_effort"
+        ]
+      },
+      {
+        "output": "input_tau",
+        "unit": "N*m",
+        "expr": "p2_sun_tau/(1+first_z_r/first_z_s)",
+        "source_equation_refs": [
+          "P2.p1.planetary.carrier_effort",
+          "P2.carrier1_to_sun2"
+        ]
+      }
+    ],
+    "required_open_evidence": [
+      "network compiler not implemented",
+      "new unit catalog/adapter not implemented",
+      "no losses/thermal/rating/layout/life/dynamic evidence",
+      "fixed-ring reaction to physical mount/wrench binding remains OPEN"
+    ],
+    "solver_claim": "causalized quasi-static assignments; no general DAE solver"
+  },
+  "projection_example": {
+    "schema": "gearbase.component-projection/0.1-draft",
+    "kind": "power_path",
+    "readonly": true,
+    "source_sha256": "63d2c9d69b40f595ef9fbd3e5fccd05fd27aa14299386de7763a7e8f4052741b",
+    "compiled_ir_sha256": "166004e430b390b20960d84297a2d291ddbe46d576afe60e1634b7082c6cadd8",
+    "projection_version": "math-example-1",
+    "projection_inputs_sha256": "403a3886c28e1ba7001f81c4dcb8391c4fd8c67edbaad79102abf2e7d558f5b3",
+    "claim_scope": "mathematical_example_only",
+    "payload": {
+      "output_omega_rad_s": 5,
+      "input_tau_Nm": 5,
+      "output_tau_Nm": -100,
+      "counts": {
+        "gear_reduction_stages": 2,
+        "top_level_plugin_nodes": 1,
+        "expanded_leaf_plugin_nodes": 2,
+        "assembly_accessories": 0,
+        "mesh_interfaces": 12,
+        "mesh_families": 4,
+        "terminal_conversions": 0
+      },
+      "engineering_validation": false,
+      "reaction_projection_example": {
+        "p1_ring_reaction_into_gear_Nm": 15,
+        "p2_ring_reaction_into_gear_Nm": 80,
+        "mount_binding_status": "OPEN",
+        "full_spatial_wrench_available": false
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "signed_external_gear",
+      "kind": "signed_gear",
+      "inputs": {
+        "i": -4,
+        "omega_a": 100,
+        "tau_a": 5
+      },
+      "expected": {
+        "omega_b": -25,
+        "tau_b": 20,
+        "power_residual_W": 0
+      }
+    },
+    {
+      "id": "zero_speed_power_insufficient",
+      "kind": "power_not_effort",
+      "inputs": {
+        "i": 4,
+        "omega_a": 0,
+        "omega_b": 0,
+        "tau_a": 5,
+        "tau_b": 100
+      },
+      "expected": {
+        "power_residual_W": 0,
+        "effort_residual_Nm": 120,
+        "decision": "reject_ideal_effort"
+      }
+    },
+    {
+      "id": "planetary_fixed_ring",
+      "kind": "planetary",
+      "inputs": {
+        "z_s": 24,
+        "z_r": 72,
+        "n_planets": 3,
+        "omega_s": 100,
+        "omega_r": 0,
+        "tau_s": 5
+      },
+      "expected": {
+        "omega_c": 25,
+        "tau_r": 15,
+        "tau_c": -20,
+        "power_residual_W": 0,
+        "torque_residual_Nm": 0
+      }
+    },
+    {
+      "id": "planetary_free_ring_underdetermined",
+      "kind": "free_ring",
+      "inputs": {
+        "k": 3,
+        "omega_s": 100,
+        "possible_omega_r": [
+          0,
+          10
+        ]
+      },
+      "expected": {
+        "possible_omega_c": [
+          25,
+          32.5
+        ],
+        "decision": "blocked_missing_ring_boundary"
+      }
+    },
+    {
+      "id": "planetary_overconstrained_rates",
+      "kind": "planetary_bad_rates",
+      "inputs": {
+        "k": 3,
+        "omega_s": 100,
+        "omega_r": 0,
+        "omega_c": 30
+      },
+      "expected": {
+        "willis_residual_s_inv": -20,
+        "decision": "reject_conflicting_boundaries"
+      }
+    },
+    {
+      "id": "two_stage_planetary_macro",
+      "kind": "planetary_macro",
+      "inputs": {
+        "k1": 3,
+        "k2": 4,
+        "omega_input": 100,
+        "tau_input": 5,
+        "n_planets1": 3,
+        "n_planets2": 3
+      },
+      "expected": {
+        "i_total": 20,
+        "omega_mid": 25,
+        "omega_output": 5,
+        "tau_second_sun": 20,
+        "tau_output": -100,
+        "ring_reactions_into_gear": [
+          15,
+          80
+        ],
+        "power_residual_W": 0,
+        "gear_reduction_stages": 2,
+        "mesh_interfaces": 12
+      }
+    },
+    {
+      "id": "worm_negative_inverse_domain",
+      "kind": "worm_domain",
+      "inputs": {
+        "gamma_deg": 4,
+        "rho_k_deg": 6,
+        "rho_s_deg": 8
+      },
+      "expected": {
+        "eta_forward_between": [
+          0,
+          1
+        ],
+        "raw_eta_back_negative": true,
+        "static_lock_screen": true,
+        "decision": "blocked_static_mode"
+      }
+    },
+    {
+      "id": "worm_positive_inverse_domain",
+      "kind": "worm_domain",
+      "inputs": {
+        "gamma_deg": 20,
+        "rho_k_deg": 6,
+        "rho_s_deg": 8
+      },
+      "expected": {
+        "eta_forward_between": [
+          0,
+          1
+        ],
+        "raw_eta_back_negative": false,
+        "static_lock_screen": false,
+        "decision": "backdrive_sliding_model_available"
+      }
+    },
+    {
+      "id": "rotating_nut_four_port",
+      "kind": "screw_four_port",
+      "inputs": {
+        "lead_m": 0.008,
+        "h": -1,
+        "omega_screw": 0,
+        "omega_nut": 10,
+        "v_nut": 0,
+        "force_screw_into": -1000
+      },
+      "expected": {
+        "v_screw_m_s": 0.012732395447351628,
+        "tau_nut_into_Nm": 1.2732395447351628,
+        "tau_screw_into_Nm": -1.2732395447351628,
+        "force_nut_into_N": 1000,
+        "power_residual_W": 0,
+        "velocity_residual_m_s": 0
+      }
+    },
+    {
+      "id": "trapezoidal_screw_forward_friction",
+      "kind": "screw_friction",
+      "inputs": {
+        "lead_m": 0.004,
+        "d_m": 0.012,
+        "normal_half_angle_deg": 15,
+        "mu_kinetic": 0.12,
+        "axial_force_N": 1000
+      },
+      "expected": {
+        "eta_between": [
+          0,
+          1
+        ],
+        "torque_raise_greater_than_ideal": true,
+        "reverse_sliding_unavailable": true
+      }
+    },
+    {
+      "id": "stage_order_absolute_loss",
+      "kind": "ordered_losses",
+      "inputs": {
+        "omega_input": 100,
+        "tau_output": 100,
+        "stage_A": {
+          "ratio": 5,
+          "Tc": 0.1,
+          "b": 0.002
+        },
+        "stage_B": {
+          "ratio": 10,
+          "Tc": 0.2,
+          "b": 0.001
+        }
+      },
+      "expected": {
+        "i_total": 50,
+        "output_power_W": 200,
+        "loss_A_then_B_W": 34.4,
+        "loss_B_then_A_W": 31.2,
+        "motor_torque_A_then_B_Nm": 2.344,
+        "motor_torque_B_then_A_Nm": 2.312,
+        "decision": "preserve_order"
+      }
+    },
+    {
+      "id": "stage_count_macro_and_screw",
+      "kind": "counts",
+      "inputs": {
+        "two_stage_planetary_planets": [
+          3,
+          3
+        ],
+        "extra_gear_pairs": 2,
+        "terminal_conversions": 1,
+        "stage_limit": 4
+      },
+      "expected": {
+        "gear_reduction_stages": 4,
+        "top_level_plugin_nodes": 4,
+        "expanded_leaf_plugin_nodes": 5,
+        "assembly_accessories": 0,
+        "mesh_interfaces": 14,
+        "mesh_families": 6,
+        "terminal_conversions": 1,
+        "passes_gear_basis": true,
+        "passes_gear_plus_terminal_basis": false
+      }
+    },
+    {
+      "id": "rotational_wire_to_translation",
+      "kind": "port_type",
+      "inputs": {
+        "left_domain": "mechanical.rotational1d",
+        "right_domain": "mechanical.translational1d"
+      },
+      "expected": {
+        "decision": "reject_port_domain_mismatch"
+      }
+    },
+    {
+      "id": "reflection_is_not_pose_rotation",
+      "kind": "rotation_matrix",
+      "inputs": {
+        "R": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ]
+      },
+      "expected": {
+        "det": -1,
+        "orthogonal": true,
+        "decision": "reject_not_SO3"
+      }
+    },
+    {
+      "id": "parallel_offset_is_not_shaft_connection",
+      "kind": "axis_layout",
+      "inputs": {
+        "origin_a": [
+          0,
+          0,
+          0
+        ],
+        "origin_b": [
+          0.04,
+          0,
+          0
+        ],
+        "direction_a": [
+          0,
+          0,
+          1
+        ],
+        "direction_b": [
+          0,
+          0,
+          1
+        ]
+      },
+      "expected": {
+        "shaft_angle_deg": 0,
+        "axis_distance_m": 0.04,
+        "decision": "reject_direct_shaft_connection"
+      }
+    },
+    {
+      "id": "thermal_port_power",
+      "kind": "thermal",
+      "inputs": {
+        "dissipation_W": 10,
+        "temperature_K": 300,
+        "heat_into_W": -10
+      },
+      "expected": {
+        "total_energy_residual_W": 0,
+        "thermal_power_into_W": -10,
+        "decision": "do_not_multiply_temperature_by_heat_flow"
+      }
+    },
+    {
+      "id": "rpm_to_angular_velocity_power",
+      "kind": "rpm_bridge",
+      "inputs": {
+        "n_rpm": 3000,
+        "tau_Nm": 1
+      },
+      "expected": {
+        "omega_rad_s": 314.1592653589793,
+        "power_W": 314.1592653589793,
+        "wrong_power_if_rev_s_is_rad_s_W": 50,
+        "error_factor": 6.283185307179586
+      }
+    },
+    {
+      "id": "negative_rotation_can_still_be_a_driving",
+      "kind": "power_direction",
+      "inputs": {
+        "i": 4,
+        "omega_a": -100,
+        "omega_b": -25,
+        "tau_a": -2,
+        "tau_b": 8
+      },
+      "expected": {
+        "power_a_W": 200,
+        "power_b_W": -200,
+        "drive_port": "a",
+        "decision": "select_by_power_not_speed_sign"
+      }
+    },
+    {
+      "id": "zero_speed_static_friction_domain",
+      "kind": "static_friction",
+      "inputs": {
+        "i": 4,
+        "tau_a": 0,
+        "tau_b": -20,
+        "static_threshold_input_Nm": 3
+      },
+      "expected": {
+        "required_friction_Nm": -5,
+        "feasible": false,
+        "decision": "holding_not_established"
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "gearbase.public-assessment-derivation/1",
+  "producer_sha256": "b962d3895c03f8edf7e430fcd52b3020edf2f77cba97d0d87f36f5a65f9be3f1",
+  "private_html_sha256": "d8e5fcbc0fea8fc87ba66ee328e7e2d4748c5477fba73ff2a815be563470ff6a",
+  "public_html_sha256": "6bbc3cc7001ff71656a81d44cb8521ea9743899bf9a2b0aa1e6c50c16d2b9ba7",
+  "private_report_data_sha256": "8e76cfcab37f8c56b751dc45d9d45834e8f967756368805b728331ab347e6abe",
+  "public_report_data_sha256": "9598eb049ab70db34b4f82c422383690144be09f1b11ec50c9c58c9825f88973",
+  "public_inputs": [
+    {
+      "private_source": "cases/case-catalog.json",
+      "private_source_sha256": "63fb028bf03ba225a783447bd372afd8137c1a41cf5dad0d9d7b31f3de65d9c4",
+      "public_derivative": "cases/public-case-catalog.json",
+      "public_derivative_sha256": "649363bbd6f1132127f34cdbf56a080755d41a8f40f101edd2589c1a7f69d336"
+    },
+    {
+      "private_source": "cases/challenge-results.json",
+      "private_source_sha256": "8eaa700a39e9ef68d2fec2ac08fa9e48901b0c93f25a9eebd40940e91df1ecc1",
+      "public_derivative": "cases/public-challenge-results.json",
+      "public_derivative_sha256": "f26c471ca75910f81d86e61b65ffd785ebf31e89737f01a2b8c403afee15222a"
+    },
+    {
+      "private_source": "cases/inventory.json",
+      "private_source_sha256": "9cb209288be514fe4143bb1789463c42b18f478f848d7967600ef92a21e96f92",
+      "public_derivative": "cases/public-inventory.json",
+      "public_derivative_sha256": "1ecb5e382eb4088785030a3d01fd2bdd833393c1fef7c522e7a37aaad949d96e"
+    },
+    {
+      "private_source": "architecture/evidence/system.stdout.json",
+      "private_source_sha256": "14893b36c9f6449be9ba2067f16334c0a554549a004b66dcfa2c8526bfeb67c0",
+      "public_derivative": "architecture/evidence/system.stdout.json",
+      "public_derivative_sha256": "17e06b475398218cb2a73b3ec97e674ef0184a26c79bbee91ab7407e29fd74f4"
+    }
+  ],
+  "excluded_private_files": [
+    "intake-private/",
+    "cases/K01-spur-fixed-pair-raw.json",
+    "cases/case-catalog.json",
+    "cases/challenge-results.json",
+    "cases/inventory.json"
+  ],
+  "preserved": [
+    "all26capability statuses and limits",
+    "6challenge conclusions and counts",
+    "original milestone statuses",
+    "core freeze identity",
+    "counterexample numeric results",
+    "all failures and unknowns"
+  ],
+  "source_reviews": "Original source-bound review receipts describe private HTML/data. This transform changes links/distribution metadata only; new public browser checks bind exact public HTML."
+}

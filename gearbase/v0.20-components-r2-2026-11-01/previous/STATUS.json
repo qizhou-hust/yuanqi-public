@@ -1,0 +1,36 @@
+{
+  "schema": "gearbase.assessment-status/1",
+  "source_version": "0.20",
+  "report_revision": 1,
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "core_unchanged": true,
+  "production_frozen": false,
+  "preliminary_freeze_scope": "explicit engineering-trial mathematical and evidence baseline",
+  "fresh_checks": {
+    "architecture_modules": 146,
+    "targeted_tests": 62,
+    "core_package_hash_check": "pass"
+  },
+  "fresh_case_challenges": {
+    "H2": 40,
+    "W2W": 15,
+    "P2": 5,
+    "full_system_blocked": 60,
+    "W2W_thermal_failed": 15,
+    "cross_family_same_demand": "unsupported",
+    "benchmark50": "synthetic; ideal kinematics50/50; not complete engineering cases"
+  },
+  "open_bottlenecks": [
+    "new requirements not fully consumed by stage_sizing",
+    "general topology planner",
+    "full system SSOT and artifact invalidation",
+    "real engineering data and independent gold",
+    "CAD assembly/manufacturing and FE qualification"
+  ],
+  "new_whole_milestone_closed": false,
+  "new_KISSsoft_or_FE_solve": false,
+  "M40": "unchanged frozen",
+  "Claude_model_client": "deferred_by_user",
+  "report": "index.html",
+  "public_derivative": "redacted standard/commercial source contracts; findings and counts preserved"
+}

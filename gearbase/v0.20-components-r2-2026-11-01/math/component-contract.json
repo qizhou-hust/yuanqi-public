@@ -1,0 +1,293 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gearbase:component-contract:0.1-draft",
+  "title": "Component mathematical plugin contract — design draft, not an implemented product API",
+  "description": "The root validates a plugin manifest. Definitions also describe source-network, compiled-IR and projection envelopes. JSON Schema validates shape only; compile-time semantic checks in MATH-DESIGN.md are mandatory. Physical equations belong to gear/system domain plugins; the generic kernel must not dispatch on a gear family.",
+  "$ref": "#/$defs/pluginManifest",
+  "$defs": {
+    "identifier": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_.:-]*$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "symbol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "unit", "semantic_type"],
+      "properties": {
+        "name": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_]*$"},
+        "unit": {"type": "string", "minLength": 1},
+        "semantic_type": {"type": "string", "minLength": 1},
+        "role": {"enum": ["coordinate", "rate", "effort", "algebraic_unknown", "derived", "state", "multiplier", "loss"]},
+        "rate_of": {"type": "string"}
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unit", "semantic_type", "domain", "source"],
+      "properties": {
+        "unit": {"type": "string", "minLength": 1},
+        "semantic_type": {"type": "string", "minLength": 1},
+        "domain": {"type": "array", "items": {"type": "string"}, "description": "Machine-readable numeric predicates only: comparisons joined by and/or, arithmetic, declared parameter identifiers, and pi/rad constants. The example checker parses AST identifiers; it rejects natural language, calls, attributes, containers and string literals. Put explanatory prose in source/notes. Reference checking is not dimension or satisfiability verification."},
+        "source": {"type": "string", "minLength": 1}
+      }
+    },
+    "port": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "domain", "role", "reference_frame_ref", "positive_direction", "variables", "power_into_expr", "power_law"],
+      "properties": {
+        "id": {"$ref": "#/$defs/identifier"},
+        "domain": {"enum": ["mechanical.rotational1d", "mechanical.translational1d", "thermal.heat"]},
+        "role": {"enum": ["transfer", "support", "heat"]},
+        "reference_frame_ref": {"type": "string", "minLength": 1},
+        "axis_ref": {"type": "string", "minLength": 1},
+        "positive_direction": {"type": "string", "minLength": 1},
+        "variables": {"type": "object", "additionalProperties": {"$ref": "#/$defs/symbol"}},
+        "power_into_expr": {"type": "string", "minLength": 1},
+        "power_law": {"enum": ["effort_times_angle_normalized_rate", "effort_times_rate", "heat_flow_is_power"]}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"domain": {"const": "mechanical.rotational1d"}}},
+          "then": {
+            "required": ["axis_ref"],
+            "properties": {
+              "power_law": {"const": "effort_times_angle_normalized_rate"},
+              "variables": {
+                "required": ["q", "flow", "effort"],
+                "properties": {
+                  "q": {"properties": {"unit": {"const": "rad"}, "semantic_type": {"const": "angle"}}},
+                  "flow": {"properties": {"unit": {"const": "rad/s"}, "semantic_type": {"const": "angular_velocity"}}},
+                  "effort": {"properties": {"unit": {"const": "N*m"}, "semantic_type": {"const": "torque_into_component"}}}
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {"properties": {"domain": {"const": "mechanical.translational1d"}}},
+          "then": {
+            "required": ["axis_ref"],
+            "properties": {
+              "power_law": {"const": "effort_times_rate"},
+              "variables": {
+                "required": ["q", "flow", "effort"],
+                "properties": {
+                  "q": {"properties": {"unit": {"const": "m"}, "semantic_type": {"const": "displacement"}}},
+                  "flow": {"properties": {"unit": {"const": "m/s"}, "semantic_type": {"const": "linear_velocity"}}},
+                  "effort": {"properties": {"unit": {"const": "N"}, "semantic_type": {"const": "force_into_component"}}}
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {"properties": {"domain": {"const": "thermal.heat"}}},
+          "then": {
+            "properties": {
+              "power_law": {"const": "heat_flow_is_power"},
+              "variables": {
+                "required": ["across", "through"],
+                "properties": {
+                  "across": {"properties": {"unit": {"const": "K"}, "semantic_type": {"const": "absolute_temperature"}}},
+                  "through": {"properties": {"unit": {"const": "W"}, "semantic_type": {"const": "heat_flow_into_component"}}}
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "equation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "expr", "unit", "variables", "reference", "scope"],
+      "properties": {
+        "id": {"$ref": "#/$defs/identifier"},
+        "kind": {"enum": ["equality_zero", "inequality_le_zero", "set_inclusion", "audit_identity"]},
+        "expr": {"type": "string", "minLength": 1},
+        "unit": {"type": "string", "minLength": 1},
+        "variables": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "reference": {"type": "string", "minLength": 1},
+        "scope": {"enum": ["ideal_kinematics", "ideal_effort", "lossy_effort", "static_friction", "energy_audit", "dynamic_future"]},
+        "set_ref": {"type": "string"},
+        "mode_refs": {"type": "array", "items": {"type": "string"}}
+      },
+      "allOf": [{"if": {"properties": {"kind": {"const": "set_inclusion"}}}, "then": {"required": ["set_ref"]}}]
+    },
+    "mode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "guards", "equation_refs", "causal_inputs", "causal_outputs", "local_solver", "unsupported_outcome"],
+      "properties": {
+        "id": {"$ref": "#/$defs/identifier"},
+        "guards": {"type": "array", "items": {"type": "string"}},
+        "equation_refs": {"type": "array", "items": {"type": "string"}},
+        "causal_inputs": {"type": "array", "items": {"type": "string"}},
+        "causal_outputs": {"type": "array", "items": {"type": "string"}},
+        "local_solver": {"enum": ["analytic_elimination", "declared_scalar_bracket", "not_executable"]},
+        "unsupported_outcome": {"enum": ["blocked_missing_inputs", "blocked_domain", "blocked_static_mode", "blocked_unsupported_solver", "blocked_unsupported_capability"]}
+      }
+    },
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "implementation_status", "evidence_state", "evidence_scope", "validity", "evidence_refs", "limitations"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "implementation_status": {"enum": ["proposed", "existing_adapter_target", "implemented", "not_supported"]},
+        "evidence_state": {"enum": ["VERIFIED", "ASSUMED", "OPEN"]},
+        "evidence_scope": {"enum": ["none", "artifact_inspection", "mathematical_examples", "integration_run", "independent_method", "measurement"]},
+        "validity": {"type": "string", "minLength": 1},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}},
+        "limitations": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "stageAccounting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["policy", "local_gear_reduction_stages", "local_terminal_conversions", "local_mesh_interfaces_expr", "local_mesh_families"],
+      "properties": {
+        "policy": {"enum": ["leaf_contribution", "expand_children"]},
+        "local_gear_reduction_stages": {"type": "integer", "minimum": 0},
+        "local_terminal_conversions": {"type": "integer", "minimum": 0},
+        "local_mesh_interfaces_expr": {"type": "string", "minLength": 1},
+        "local_mesh_families": {"type": "integer", "minimum": 0}
+      },
+      "allOf": [{"if": {"properties": {"policy": {"const": "expand_children"}}}, "then": {"properties": {"local_gear_reduction_stages": {"const": 0}, "local_terminal_conversions": {"const": 0}, "local_mesh_interfaces_expr": {"const": "0"}, "local_mesh_families": {"const": 0}}}}]
+    },
+    "binding": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["value", "unit", "provenance", "source"], "properties": {"value": {"type": ["number", "string", "boolean"]}, "unit": {"type": "string"}, "provenance": {"enum": ["user", "assumption", "standard_constant", "evidence", "agent_proposed", "optimizer"]}, "source": {"type": "string", "minLength": 1}, "certificate_ref": {"type": "string"}}},
+        {"type": "object", "additionalProperties": false, "required": ["quantity_ref", "unit", "source"], "properties": {"quantity_ref": {"type": "string", "minLength": 1}, "unit": {"type": "string"}, "source": {"type": "string", "minLength": 1}}},
+        {"type": "object", "additionalProperties": false, "required": ["from_parameter"], "properties": {"from_parameter": {"type": "string"}}}
+      ]
+    },
+    "node": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "plugin_ref", "plugin_version", "parameters"],
+      "properties": {"id": {"$ref": "#/$defs/identifier"}, "plugin_ref": {"type": "string"}, "plugin_version": {"type": "string"}, "parameters": {"type": "object", "additionalProperties": {"$ref": "#/$defs/binding"}}, "placement_ref": {"type": "string"}}
+    },
+    "connection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "domain", "members"],
+      "properties": {"id": {"$ref": "#/$defs/identifier"}, "domain": {"enum": ["mechanical.rotational1d", "mechanical.translational1d", "thermal.heat"]}, "members": {"type": "array", "minItems": 2, "items": {"type": "object", "additionalProperties": false, "required": ["port_ref", "coordinate_sign"], "properties": {"port_ref": {"type": "string"}, "coordinate_sign": {"enum": [-1, 1]}, "coordinate_offset": {"type": "number"}}}}}
+    },
+    "boundary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "kind", "port_ref", "binding"],
+      "properties": {"id": {"$ref": "#/$defs/identifier"}, "kind": {"enum": ["fixed_coordinate", "imposed_rate", "imposed_effort", "imposed_temperature", "imposed_heat_flow"]}, "port_ref": {"type": "string"}, "binding": {"$ref": "#/$defs/binding"}, "reaction_output_ref": {"type": "string"}}
+    },
+    "frame": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "parent_ref", "translation_m", "rotation_parent_from_local", "source"],
+      "properties": {"id": {"$ref": "#/$defs/identifier"}, "parent_ref": {"type": ["string", "null"]}, "translation_m": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3}, "rotation_parent_from_local": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}}}, "source": {"type": "string", "minLength": 1}}
+    },
+    "decomposition": {
+      "type": "object", "additionalProperties": false,
+      "required": ["children", "exposed_ports", "internal_connections", "internal_boundaries"],
+      "properties": {"children": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/node"}}, "exposed_ports": {"type": "object", "additionalProperties": {"type": "string"}}, "internal_connections": {"type": "array", "items": {"$ref": "#/$defs/connection"}}, "internal_boundaries": {"type": "array", "items": {"$ref": "#/$defs/boundary"}}}
+    },
+    "axis": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "frame_ref", "origin_local_m", "direction_local", "datum_ref", "source"],
+      "properties": {
+        "id": {"$ref": "#/$defs/identifier"}, "frame_ref": {"type": "string"},
+        "origin_local_m": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+        "direction_local": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+        "datum_ref": {"type": "string", "minLength": 1}, "source": {"type": "string", "minLength": 1}
+      }
+    },
+    "layoutConstraint": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "axis_refs", "relation", "source"],
+      "properties": {
+        "id": {"$ref": "#/$defs/identifier"},
+        "axis_refs": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "string"}},
+        "relation": {"enum": ["coaxial", "parallel_distinct", "intersecting", "skew"]},
+        "target_distance": {"$ref": "#/$defs/binding"}, "target_angle": {"$ref": "#/$defs/binding"},
+        "source": {"type": "string", "minLength": 1}
+      }
+    },
+    "pluginManifest": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "id", "version", "status", "owner_layer", "role", "parameters", "ports", "local_symbols", "equations", "modes", "capabilities", "stage_accounting", "assembly_requirements", "reaction_obligations"],
+      "properties": {
+        "schema": {"const": "gearbase.component-plugin/0.1-draft"},
+        "id": {"$ref": "#/$defs/identifier"},
+        "version": {"type": "string", "minLength": 1},
+        "status": {"const": "design_only"},
+        "owner_layer": {"enum": ["gear", "system"]},
+        "role": {"enum": ["gear_transfer", "terminal_conversion", "assembly_accessory", "boundary", "composite"]},
+        "parameters": {"type": "object", "additionalProperties": {"$ref": "#/$defs/parameter"}},
+        "ports": {"type": "array", "items": {"$ref": "#/$defs/port"}},
+        "local_symbols": {"type": "array", "items": {"$ref": "#/$defs/symbol"}},
+        "equations": {"type": "array", "items": {"$ref": "#/$defs/equation"}},
+        "modes": {"type": "array", "items": {"$ref": "#/$defs/mode"}},
+        "capabilities": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/capability"}},
+        "stage_accounting": {"$ref": "#/$defs/stageAccounting"},
+        "assembly_requirements": {"type": "array", "items": {"type": "string"}},
+        "reaction_obligations": {"type": "array", "items": {"type": "string"}},
+        "decomposition": {"$ref": "#/$defs/decomposition"},
+        "notes": {"type": "array", "items": {"type": "string"}}
+      },
+      "allOf": [{"if": {"properties": {"role": {"const": "composite"}}}, "then": {"required": ["decomposition"], "properties": {"stage_accounting": {"properties": {"policy": {"const": "expand_children"}}}}}}]
+    },
+    "stageQuery": {
+      "type": "object", "additionalProperties": false,
+      "required": ["stage_limit", "limit_basis", "required_capabilities", "loadcase_refs"],
+      "properties": {"stage_limit": {"const": 4}, "limit_basis": {"enum": ["gear_reduction_stages", "gear_stages_plus_terminal_conversions"]}, "required_capabilities": {"type": "array", "items": {"type": "string"}}, "loadcase_refs": {"type": "array", "items": {"type": "string"}}}
+    },
+    "networkSource": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "id", "revision", "parent_source_sha256", "plugin_lock_sha256", "authoring_refs", "nodes", "connections", "boundaries", "frames", "axes", "port_axis_bindings", "layout_constraints", "query"],
+      "properties": {
+        "schema": {"const": "gearbase.component-network-source/0.1-draft"},
+        "id": {"$ref": "#/$defs/identifier"}, "revision": {"type": "string"},
+        "parent_source_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+        "plugin_lock_sha256": {"$ref": "#/$defs/sha256"},
+        "authoring_refs": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "schema", "source_sha256", "immutable_ref"], "properties": {"id": {"type": "string"}, "schema": {"type": "string"}, "source_sha256": {"$ref": "#/$defs/sha256"}, "immutable_ref": {"type": "string"}}}},
+        "nodes": {"type": "array", "items": {"$ref": "#/$defs/node"}},
+        "connections": {"type": "array", "items": {"$ref": "#/$defs/connection"}},
+        "boundaries": {"type": "array", "items": {"$ref": "#/$defs/boundary"}},
+        "frames": {"type": "array", "items": {"$ref": "#/$defs/frame"}},
+        "axes": {"type": "array", "items": {"$ref": "#/$defs/axis"}},
+        "port_axis_bindings": {"type": "object", "additionalProperties": {"type": "string"}},
+        "layout_constraints": {"type": "array", "items": {"$ref": "#/$defs/layoutConstraint"}},
+        "query": {"$ref": "#/$defs/stageQuery"}
+      }
+    },
+    "counts": {
+      "type": "object", "additionalProperties": false,
+      "required": ["gear_reduction_stages", "top_level_plugin_nodes", "expanded_leaf_plugin_nodes", "assembly_accessories", "mesh_interfaces", "mesh_families", "terminal_conversions"],
+      "properties": {
+        "gear_reduction_stages": {"type": "integer", "minimum": 0},
+        "top_level_plugin_nodes": {"type": "integer", "minimum": 0},
+        "expanded_leaf_plugin_nodes": {"type": "integer", "minimum": 0},
+        "assembly_accessories": {"type": "integer", "minimum": 0},
+        "mesh_interfaces": {"type": "integer", "minimum": 0},
+        "mesh_families": {"type": "integer", "minimum": 0},
+        "terminal_conversions": {"type": "integer", "minimum": 0}
+      }
+    },
+    "compiledIR": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "status", "source_sha256", "plugin_lock_sha256", "unit_catalog_sha256", "compiler_version", "loadcase_ref", "selected_modes", "expansion_map", "counts", "residual_refs", "assignments", "required_open_evidence", "solver_claim"],
+      "properties": {
+        "schema": {"const": "gearbase.component-network-ir/0.1-draft"}, "status": {"enum": ["design_example_only", "compiled", "blocked"]},
+        "source_sha256": {"$ref": "#/$defs/sha256"}, "plugin_lock_sha256": {"$ref": "#/$defs/sha256"}, "unit_catalog_sha256": {"$ref": "#/$defs/sha256"},
+        "compiler_version": {"type": "string"}, "loadcase_ref": {"type": "string"},
+        "selected_modes": {"type": "object", "additionalProperties": {"type": "string"}},
+        "expansion_map": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+        "counts": {"$ref": "#/$defs/counts"}, "residual_refs": {"type": "array", "items": {"type": "string"}},
+        "assignments": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["output", "unit", "expr", "source_equation_refs"], "properties": {"output": {"type": "string"}, "unit": {"type": "string"}, "expr": {"type": "string"}, "source_equation_refs": {"type": "array", "items": {"type": "string"}, "description": "Each reference must resolve to an actual equation, boundary or connection ID. Local IDs are prefixed by the owning instance ID; source-level IDs by the network source ID. No implicit aliases. This is static artifact provenance, not proof that compilation or elimination is valid."}}}},
+        "required_open_evidence": {"type": "array", "items": {"type": "string"}},
+        "solver_claim": {"const": "causalized quasi-static assignments; no general DAE solver"}
+      }
+    },
+    "projection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "kind", "readonly", "source_sha256", "compiled_ir_sha256", "projection_version", "projection_inputs_sha256", "claim_scope", "payload"],
+      "properties": {"schema": {"const": "gearbase.component-projection/0.1-draft"}, "kind": {"enum": ["parameter_table", "power_path", "layout_request", "cad_request", "solver_export", "report"]}, "readonly": {"const": true}, "source_sha256": {"$ref": "#/$defs/sha256"}, "compiled_ir_sha256": {"$ref": "#/$defs/sha256"}, "projection_version": {"type": "string"}, "projection_inputs_sha256": {"$ref": "#/$defs/sha256"}, "claim_scope": {"type": "string"}, "payload": {"type": "object"}}
+    }
+  }
+}

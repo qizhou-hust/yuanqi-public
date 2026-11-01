@@ -1,0 +1,307 @@
+{
+  "grammar_id": "serial-reducer-abstract-v1.0.0",
+  "passed": 10,
+  "failed": 0,
+  "probes": [
+    {
+      "id": "duplicate_macro_cannot_create_new_topology",
+      "passed": true,
+      "observed": [
+        {
+          "expression": [
+            "P",
+            "P"
+          ],
+          "expanded_atom_word": [
+            "P",
+            "P"
+          ],
+          "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+          "family_order_signature": "planetary_simple > planetary_simple",
+          "physical_stage_count": 2,
+          "port_admission": "admitted",
+          "decision": "abstract_candidate",
+          "spatial_embeddability": "OPEN",
+          "reasons": []
+        },
+        {
+          "expression": [
+            "M"
+          ],
+          "expanded_atom_word": [
+            "P",
+            "P"
+          ],
+          "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+          "family_order_signature": "planetary_simple > planetary_simple",
+          "physical_stage_count": 2,
+          "port_admission": "admitted",
+          "decision": "abstract_candidate",
+          "spatial_embeddability": "OPEN",
+          "reasons": []
+        },
+        {
+          "expression": [
+            "M_ALIAS"
+          ],
+          "expanded_atom_word": [
+            "P",
+            "P"
+          ],
+          "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+          "family_order_signature": "planetary_simple > planetary_simple",
+          "physical_stage_count": 2,
+          "port_admission": "admitted",
+          "decision": "abstract_candidate",
+          "spatial_embeddability": "OPEN",
+          "reasons": []
+        }
+      ],
+      "alias_classification": "DUPLICATE_CANONICAL_SIGNATURE"
+    },
+    {
+      "id": "macro_boundaries_cannot_create_new_topology",
+      "passed": true,
+      "observed": [
+        {
+          "expression": [
+            "M",
+            "P"
+          ],
+          "expanded_atom_word": [
+            "P",
+            "P",
+            "P"
+          ],
+          "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+          "family_order_signature": "planetary_simple > planetary_simple > planetary_simple",
+          "physical_stage_count": 3,
+          "port_admission": "admitted",
+          "decision": "abstract_candidate",
+          "spatial_embeddability": "OPEN",
+          "reasons": []
+        },
+        {
+          "expression": [
+            "P",
+            "M"
+          ],
+          "expanded_atom_word": [
+            "P",
+            "P",
+            "P"
+          ],
+          "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+          "family_order_signature": "planetary_simple > planetary_simple > planetary_simple",
+          "physical_stage_count": 3,
+          "port_admission": "admitted",
+          "decision": "abstract_candidate",
+          "spatial_embeddability": "OPEN",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": "reverse_order_cannot_collapse",
+      "passed": true,
+      "observed": [
+        {
+          "expression": [
+            "H",
+            "W"
+          ],
+          "expanded_atom_word": [
+            "H",
+            "W"
+          ],
+          "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1",
+          "family_order_signature": "cylindrical_parallel > worm",
+          "physical_stage_count": 2,
+          "port_admission": "admitted",
+          "decision": "abstract_candidate",
+          "spatial_embeddability": "OPEN",
+          "reasons": []
+        },
+        {
+          "expression": [
+            "W",
+            "H"
+          ],
+          "expanded_atom_word": [
+            "W",
+            "H"
+          ],
+          "semantic_signature": "worm.in_worm.out_wheel.v1 > cylindrical.parallel.external_pair.v1",
+          "family_order_signature": "worm > cylindrical_parallel",
+          "physical_stage_count": 2,
+          "port_admission": "admitted",
+          "decision": "abstract_candidate",
+          "spatial_embeddability": "OPEN",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": "two_macros_fit_exactly_four_physical_stages",
+      "passed": true,
+      "observed": {
+        "expression": [
+          "M",
+          "M"
+        ],
+        "expanded_atom_word": [
+          "P",
+          "P",
+          "P",
+          "P"
+        ],
+        "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+        "family_order_signature": "planetary_simple > planetary_simple > planetary_simple > planetary_simple",
+        "physical_stage_count": 4,
+        "port_admission": "admitted",
+        "decision": "abstract_candidate",
+        "spatial_embeddability": "OPEN",
+        "reasons": []
+      }
+    },
+    {
+      "id": "three_modules_can_exceed_four_physical_stages",
+      "passed": true,
+      "observed": {
+        "expression": [
+          "M",
+          "M",
+          "P"
+        ],
+        "expanded_atom_word": [
+          "P",
+          "P",
+          "P",
+          "P",
+          "P"
+        ],
+        "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+        "family_order_signature": "planetary_simple > planetary_simple > planetary_simple > planetary_simple > planetary_simple",
+        "physical_stage_count": 5,
+        "port_admission": "admitted",
+        "decision": "rejected_by_declared_rules",
+        "spatial_embeddability": "OPEN",
+        "reasons": [
+          "PHYSICAL_STAGE_BUDGET_EXCEEDED"
+        ]
+      }
+    },
+    {
+      "id": "four_macros_are_eight_not_four_physical_stages",
+      "passed": true,
+      "observed": {
+        "expression": [
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "expanded_atom_word": [
+          "P",
+          "P",
+          "P",
+          "P",
+          "P",
+          "P",
+          "P",
+          "P"
+        ],
+        "semantic_signature": "planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+        "family_order_signature": "planetary_simple > planetary_simple > planetary_simple > planetary_simple > planetary_simple > planetary_simple > planetary_simple > planetary_simple",
+        "physical_stage_count": 8,
+        "port_admission": "admitted",
+        "decision": "rejected_by_declared_rules",
+        "spatial_embeddability": "OPEN",
+        "reasons": [
+          "PHYSICAL_STAGE_BUDGET_EXCEEDED"
+        ]
+      }
+    },
+    {
+      "id": "all_rejection_reasons_retained",
+      "passed": true,
+      "observed": {
+        "expression": [
+          "W",
+          "W",
+          "P",
+          "M"
+        ],
+        "expanded_atom_word": [
+          "W",
+          "W",
+          "P",
+          "P",
+          "P"
+        ],
+        "semantic_signature": "worm.in_worm.out_wheel.v1 > worm.in_worm.out_wheel.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1 > planetary.simple.fixed_R.in_S.out_C.v1",
+        "family_order_signature": "worm > worm > planetary_simple > planetary_simple > planetary_simple",
+        "physical_stage_count": 5,
+        "port_admission": "admitted",
+        "decision": "rejected_by_declared_rules",
+        "spatial_embeddability": "OPEN",
+        "reasons": [
+          "PHYSICAL_STAGE_BUDGET_EXCEEDED",
+          "WORM_MULTIPLICITY_LIMIT",
+          "WORM_NOT_TERMINAL"
+        ]
+      }
+    },
+    {
+      "id": "type_mismatch_is_rejected",
+      "passed": true,
+      "observed": [
+        "PORT_TYPE_MISMATCH:1->2"
+      ]
+    },
+    {
+      "id": "abstract_admission_cannot_claim_spatial_assembly",
+      "passed": true,
+      "observed": {
+        "expression": [
+          "H",
+          "W",
+          "B",
+          "X"
+        ],
+        "expanded_atom_word": [
+          "H",
+          "W",
+          "B",
+          "X"
+        ],
+        "semantic_signature": "cylindrical.parallel.external_pair.v1 > worm.in_worm.out_wheel.v1 > bevel.intersecting_pair.v1 > cylindrical.crossed_helical_pair.v1",
+        "family_order_signature": "cylindrical_parallel > worm > bevel > cylindrical_crossed",
+        "physical_stage_count": 4,
+        "port_admission": "admitted",
+        "decision": "abstract_candidate",
+        "spatial_embeddability": "OPEN",
+        "reasons": []
+      }
+    },
+    {
+      "id": "unknown_token_rejected",
+      "passed": true,
+      "observed": {
+        "expression": [
+          "UNKNOWN"
+        ],
+        "expanded_atom_word": [],
+        "semantic_signature": null,
+        "family_order_signature": null,
+        "physical_stage_count": null,
+        "port_admission": "not_admitted",
+        "decision": "rejected_by_declared_rules",
+        "spatial_embeddability": "OPEN",
+        "reasons": [
+          "UNKNOWN_TOKEN:UNKNOWN"
+        ]
+      }
+    }
+  ]
+}

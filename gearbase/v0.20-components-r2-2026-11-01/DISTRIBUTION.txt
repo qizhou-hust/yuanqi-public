@@ -1,0 +1,1 @@
+Public architecture report revision2 and mathematical/counting analysis; original core remains v0.20. No installed new plugin or engineering release. Prior assessment is a previously redacted public copy. Read index.html and README.md.

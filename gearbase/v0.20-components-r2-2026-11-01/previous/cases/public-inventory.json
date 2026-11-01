@@ -1,0 +1,882 @@
+{
+  "schema": "gearbase.freeze-case-inventory/1",
+  "provenance": {
+    "baseline_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+    "version": "0.20",
+    "source_root": "D:/my_Works/Gears/gearbase-v020-work",
+    "runner": {
+      "path": "D:/my_Works/Gears/v020-freeze-assessment-2026-11-01/cases/run_challenges.py",
+      "source_sha256": "0aff757eb3545a239264ab471d0f252a902ddec9c7d4475e5fcb115b36e116ff"
+    },
+    "python": {
+      "executable": "D:\\anaconda3\\python.exe",
+      "version": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    "command_argv": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\cases\\run_challenges.py",
+      "--source",
+      "D:\\my_Works\\Gears\\gearbase-v020-work"
+    ],
+    "input_gold_mutated": false,
+    "source_git_status_before": "",
+    "source_git_status_after": "",
+    "executed_at_utc": "2026-11-01T11:34:04.005509+00:00",
+    "command_sha256": "4668fc03f366e8e4726200ad986140884c8154eb74aac25af4e7b94932d27452"
+  },
+  "scan_boundary": "Named current repository data roots, all gearmath Python code, original flagship spec/tests, archived 50-case bridge/report, four named sibling directories and explicit indices.",
+  "distribution_boundary": "LOCAL_PRIVATE: no source scans or commercial native files copied, but catalog/source-field details can contain private numeric transcriptions. Absence of PDF/native files does not make this directory publicly redistributable.",
+  "catalog_binding": {
+    "path": "D:/my_Works/Gears/v020-freeze-assessment-2026-11-01/cases/case-catalog.json",
+    "source_sha256": "63fb028bf03ba225a783447bd372afd8137c1a41cf5dad0d9d7b31f3de65d9c4"
+  },
+  "challenge_binding": {
+    "path": "D:/my_Works/Gears/v020-freeze-assessment-2026-11-01/cases/challenge-results.json",
+    "source_sha256": "8eaa700a39e9ef68d2fec2ac08fa9e48901b0c93f25a9eebd40940e91df1ecc1"
+  },
+  "workspace_survey": {
+    "directories": [
+      {
+        "path": "D:/my_Works/Gears/gear-compiler",
+        "scope": "first-level listing and explicitly named indices only",
+        "exists": true,
+        "first_level": [
+          {
+            "name": "Gear-AI-System-Blueprint-V4.zh-CN.html",
+            "kind": "file",
+            "bytes": 134240
+          },
+          {
+            "name": "gear-compiler-MILESTONE-1.zip",
+            "kind": "file",
+            "bytes": 7496230
+          },
+          {
+            "name": "outputs",
+            "kind": "directory"
+          },
+          {
+            "name": "stage0",
+            "kind": "directory"
+          }
+        ],
+        "explicit_case_index": {
+          "binding": {
+            "path": "D:/my_Works/Gears/gear-compiler/stage0/reports/benchcad-local-plan.json",
+            "source_sha256": "47a14a84a22a25bdee7cead60c6b65c7299f95feda92b02054c789371f7db518"
+          },
+          "parse_status": "invalid_json",
+          "error": "Expecting ',' delimiter: line 119 column 7 (char 3574)",
+          "assessment": "Historical plan is not machine-readable; visible task text and SPEC name H2/W2W/P2. No new case admitted from this malformed index."
+        },
+        "spec_binding": {
+          "path": "D:/my_Works/Gears/gear-compiler/stage0/SPEC.md",
+          "source_sha256": "f78611cc22dc380f49062a8ababe0c2ae978efba768c308a14f438df21593352"
+        }
+      },
+      {
+        "path": "D:/my_Works/Gears/fea-case-library",
+        "scope": "first-level listing and explicitly named indices only",
+        "exists": true,
+        "first_level": [
+          {
+            "name": "caselab",
+            "kind": "directory"
+          },
+          {
+            "name": "cases",
+            "kind": "directory"
+          },
+          {
+            "name": "CATALOG.json",
+            "kind": "file",
+            "bytes": 8219
+          },
+          {
+            "name": "DISTRIBUTION.md",
+            "kind": "file",
+            "bytes": 1556
+          },
+          {
+            "name": "docs",
+            "kind": "directory"
+          },
+          {
+            "name": "evidence",
+            "kind": "directory"
+          },
+          {
+            "name": "inventory",
+            "kind": "directory"
+          },
+          {
+            "name": "legacy",
+            "kind": "directory"
+          },
+          {
+            "name": "PACKAGE-ORIGIN.json",
+            "kind": "file",
+            "bytes": 1129
+          },
+          {
+            "name": "PLAN.md",
+            "kind": "file",
+            "bytes": 1834
+          },
+          {
+            "name": "research",
+            "kind": "directory"
+          },
+          {
+            "name": "results",
+            "kind": "directory"
+          },
+          {
+            "name": "runtime.example.json",
+            "kind": "file",
+            "bytes": 556
+          },
+          {
+            "name": "runtime.local.json",
+            "kind": "file",
+            "bytes": 1281
+          },
+          {
+            "name": "START-HERE.md",
+            "kind": "file",
+            "bytes": 4955
+          },
+          {
+            "name": "STATUS.json",
+            "kind": "file",
+            "bytes": 866
+          },
+          {
+            "name": "tests",
+            "kind": "directory"
+          },
+          {
+            "name": "tools",
+            "kind": "directory"
+          }
+        ],
+        "explicit_case_index": {
+          "binding": {
+            "path": "D:/my_Works/Gears/fea-case-library/CATALOG.json",
+            "source_sha256": "97720139c300aa11a30ee6286971320c8520fe6139399d365a7292f96b76502d"
+          },
+          "declared_physical_case_count": 25,
+          "entries": [
+            {
+              "id": "M37-L0-tension",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L0-contact",
+              "class": "historical",
+              "status": "NUMERICAL_PASS_PENALTY; MORTAR_FAILED"
+            },
+            {
+              "id": "M37-L1",
+              "class": "historical",
+              "status": "NUMERICAL_PASS_PENALTY; MORTAR_FAILED"
+            },
+            {
+              "id": "M37-L2-P01",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L2-P02",
+              "class": "historical",
+              "status": "NUMERICAL_FAIL"
+            },
+            {
+              "id": "M37-L2-P03",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L2-P04",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L2-P05",
+              "class": "historical",
+              "status": "NUMERICAL_FAIL"
+            },
+            {
+              "id": "M37-L2-P06",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L2-P07",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L2-P08",
+              "class": "historical",
+              "status": "NUMERICAL_FAIL"
+            },
+            {
+              "id": "M37-L2-P09",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L2-P10",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L2-P11",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L2-P12",
+              "class": "historical",
+              "status": "NUMERICAL_FAIL"
+            },
+            {
+              "id": "M37-L2-P13",
+              "class": "historical",
+              "status": "NUMERICAL_PASS"
+            },
+            {
+              "id": "M37-L2-P14",
+              "class": "historical",
+              "status": "NUMERICAL_FAIL"
+            },
+            {
+              "id": "M37-L3",
+              "class": "historical",
+              "status": "NOT_ACCEPTED; process repeat does not close numerical gates"
+            },
+            {
+              "id": "M33-TR30-7",
+              "class": "historical",
+              "status": "NOT_ACCEPTED"
+            },
+            {
+              "id": "M33-TR30-8",
+              "class": "historical",
+              "status": "NOT_ACCEPTED"
+            },
+            {
+              "id": "COMET-CANTILEVER-PLANE-STRESS",
+              "class": "runnable_public_benchmark",
+              "status": "DISPLACEMENT_COMPARED_OVERALL_INCOMPLETE"
+            },
+            {
+              "id": "COMET-HOLLOW-SPHERE-EXTERNAL-PRESSURE",
+              "class": "runnable_public_benchmark",
+              "status": "DISPLACEMENT_COMPARED_OVERALL_INCOMPLETE"
+            },
+            {
+              "id": "ASTER-SSNV104B-HERTZ-SPHERES",
+              "class": "source_only_analytic_check_available",
+              "status": "FE_NOT_RUN"
+            },
+            {
+              "id": "CCX-COOK-US3-128",
+              "class": "source_only_adapter_unsupported",
+              "status": "FE_NOT_RUN"
+            },
+            {
+              "id": "CCX-BEAM8F-MODAL",
+              "class": "source_only_adapter_unsupported",
+              "status": "FE_NOT_RUN"
+            }
+          ],
+          "assessment": "25 FE problem contracts, mostly historical gear/numerical probes plus 5 public numerical references; not 25 independent transmission requirements; no FE rerun"
+        }
+      },
+      {
+        "path": "D:/my_Works/Gears/gears_doc",
+        "scope": "first-level listing and explicitly named indices only",
+        "exists": true,
+        "first_level": [
+          {
+            "name": "gaer.pdf",
+            "kind": "file",
+            "bytes": 1486954
+          },
+          {
+            "name": "gaer.zip",
+            "kind": "file",
+            "bytes": 42983073
+          },
+          {
+            "name": "gear tooth-2.py",
+            "kind": "file",
+            "bytes": 6630
+          },
+          {
+            "name": "gear tooth-3.py",
+            "kind": "file",
+            "bytes": 8483
+          },
+          {
+            "name": "gear tooth-3_motion.py",
+            "kind": "file",
+            "bytes": 10687
+          },
+          {
+            "name": "gear tooth.py",
+            "kind": "file",
+            "bytes": 4963
+          },
+          {
+            "name": "gear_animation.gif",
+            "kind": "file",
+            "bytes": 1469269
+          },
+          {
+            "name": "gear_profile.dxf",
+            "kind": "file",
+            "bytes": 133273
+          },
+          {
+            "name": "~$齿轮.pptx",
+            "kind": "file",
+            "bytes": 165
+          },
+          {
+            "name": "三级行星齿轮减速器参数优化设计.pdf",
+            "kind": "file",
+            "bytes": 471028
+          },
+          {
+            "name": "交错轴斜齿轮的设计及参数化建模分析 - 道客巴巴.pdf",
+            "kind": "file",
+            "bytes": 2988472
+          },
+          {
+            "name": "变位系数对齿轮噪声的影响.pdf",
+            "kind": "file",
+            "bytes": 3040796
+          },
+          {
+            "name": "变位系数理论计算与图表查看.pdf",
+            "kind": "file",
+            "bytes": 2083174
+          },
+          {
+            "name": "变位系数选择的相关原则.pdf",
+            "kind": "file",
+            "bytes": 2943543
+          },
+          {
+            "name": "变位齿轮的齿根过渡曲线精确计算及在CATIA中工程图的快速实现（PDF） - 豆丁网.pdf",
+            "kind": "file",
+            "bytes": 6786915
+          },
+          {
+            "name": "基于ROMAX的斜齿轮优化设计.pdf",
+            "kind": "file",
+            "bytes": 1398286
+          },
+          {
+            "name": "基于中心距约束条件下啮合齿轮变位系数的选取.pdf.pdf",
+            "kind": "file",
+            "bytes": 2927308
+          },
+          {
+            "name": "基于正变位的啮合齿轮副中心距优化设计.pdf",
+            "kind": "file",
+            "bytes": 2469327
+          },
+          {
+            "name": "基于齿顶厚约束条件下的直齿圆柱齿轮变位系数研究.pdf",
+            "kind": "file",
+            "bytes": 3418520
+          },
+          {
+            "name": "外啮合齿轮变位系数的选择.pdf",
+            "kind": "file",
+            "bytes": 2222330
+          },
+          {
+            "name": "多级传动误差影响下齿轮结构优化设计方法.pdf",
+            "kind": "file",
+            "bytes": 1603873
+          },
+          {
+            "name": "斜齿轮螺旋角和变位系数的精确确定 - 道客巴巴.pdf",
+            "kind": "file",
+            "bytes": 2558717
+          },
+          {
+            "name": "标准直齿轮啮合有限元仿真分析.pdf",
+            "kind": "file",
+            "bytes": 5023034
+          },
+          {
+            "name": "浅谈变位系数的选取.pdf",
+            "kind": "file",
+            "bytes": 1848636
+          },
+          {
+            "name": "渐开线齿轮参数设计.pdf",
+            "kind": "file",
+            "bytes": 1006020
+          },
+          {
+            "name": "直齿圆柱齿轮变位系数的优化选择.pdf",
+            "kind": "file",
+            "bytes": 2608398
+          },
+          {
+            "name": "附件传动点啮合齿轮齿面方程构建及三维建模方法研究.pdf",
+            "kind": "file",
+            "bytes": 879355
+          },
+          {
+            "name": "高变位系数计算和根切校核 doc.pdf",
+            "kind": "file",
+            "bytes": 1362363
+          },
+          {
+            "name": "齿根过渡曲线优化方法研究 - 道客巴巴.pdf",
+            "kind": "file",
+            "bytes": 2292875
+          },
+          {
+            "name": "齿轮 [自动保存的].pptx",
+            "kind": "file",
+            "bytes": 1397010
+          },
+          {
+            "name": "齿轮.pptx",
+            "kind": "file",
+            "bytes": 1262501
+          },
+          {
+            "name": "齿轮的 变位系数 的选择.pdf",
+            "kind": "file",
+            "bytes": 1870567
+          },
+          {
+            "name": "齿轮的基本参数及其设计说明.pdf",
+            "kind": "file",
+            "bytes": 616235
+          },
+          {
+            "name": "齿轮齿根部最佳过渡圆角的计算.pdf",
+            "kind": "file",
+            "bytes": 1595614
+          }
+        ],
+        "assessment": "Literature PDFs, profile scripts and archives exist. Contents not parsed; may contain additional engineering demands. No claim that all local real cases are absent."
+      },
+      {
+        "path": "D:/my_Works/Gears/gearbase-v0.8-work",
+        "scope": "first-level listing and explicitly named indices only",
+        "exists": true,
+        "first_level": [
+          {
+            "name": "gearbase",
+            "kind": "directory"
+          },
+          {
+            "name": "gearbase-v0.8.1-core-local.zip",
+            "kind": "file",
+            "bytes": 1387085
+          },
+          {
+            "name": "gearbase-v0.8.1-local.patch",
+            "kind": "file",
+            "bytes": 3859
+          }
+        ],
+        "duplicate_comparison": {
+          "data/m31/cases": [
+            {
+              "name": "C001.json",
+              "old_source_sha256": "8b25fddbf51acc08682d660c5b49a607636fe0fb4ebd66a80fa707db20968c2f",
+              "current_source_sha256": "8b25fddbf51acc08682d660c5b49a607636fe0fb4ebd66a80fa707db20968c2f",
+              "bytes_equal": true
+            },
+            {
+              "name": "C002.json",
+              "old_source_sha256": "55518f14ced59623dfbb9be706db781415fedfc9421a19f4b1cc502f0195b9c0",
+              "current_source_sha256": "55518f14ced59623dfbb9be706db781415fedfc9421a19f4b1cc502f0195b9c0",
+              "bytes_equal": true
+            },
+            {
+              "name": "C003.json",
+              "old_source_sha256": "59e6232ce317a748802bd8250a31a8fb06ab73b11b251f12df9b4564a02017cd",
+              "current_source_sha256": "59e6232ce317a748802bd8250a31a8fb06ab73b11b251f12df9b4564a02017cd",
+              "bytes_equal": true
+            },
+            {
+              "name": "C004.json",
+              "old_source_sha256": "ea4c754a4aa8c22c6671b6745146529e0172c4d43844a75187a715ec2062d0b4",
+              "current_source_sha256": "ea4c754a4aa8c22c6671b6745146529e0172c4d43844a75187a715ec2062d0b4",
+              "bytes_equal": true
+            },
+            {
+              "name": "C005.json",
+              "old_source_sha256": "219016c170c88e4e0eaeff3e6275f29d0ace073d914cd455d9cb1ae4c022c3b5",
+              "current_source_sha256": "219016c170c88e4e0eaeff3e6275f29d0ace073d914cd455d9cb1ae4c022c3b5",
+              "bytes_equal": true
+            },
+            {
+              "name": "C006.json",
+              "old_source_sha256": "be264e77d47edade46ad2d122fbddc25b4d24c12bb5e50caa81ef6fd3fc71608",
+              "current_source_sha256": "be264e77d47edade46ad2d122fbddc25b4d24c12bb5e50caa81ef6fd3fc71608",
+              "bytes_equal": true
+            },
+            {
+              "name": "C007.json",
+              "old_source_sha256": "332f29a5b55247c798803872db73470c10a70f9bf3050667b6e2679594adaaef",
+              "current_source_sha256": "332f29a5b55247c798803872db73470c10a70f9bf3050667b6e2679594adaaef",
+              "bytes_equal": true
+            },
+            {
+              "name": "C008.json",
+              "old_source_sha256": "f0eeafd1530243abfa93653808d2e4ee607e651d2f8959f7fefcc265b8b63658",
+              "current_source_sha256": "f0eeafd1530243abfa93653808d2e4ee607e651d2f8959f7fefcc265b8b63658",
+              "bytes_equal": true
+            },
+            {
+              "name": "C009.json",
+              "old_source_sha256": "b6d8708793f9d172692222f45abac5bb2cc05f998bb081104c7bae075b42a015",
+              "current_source_sha256": "b6d8708793f9d172692222f45abac5bb2cc05f998bb081104c7bae075b42a015",
+              "bytes_equal": true
+            },
+            {
+              "name": "C010.json",
+              "old_source_sha256": "daba9b38aeede18bcd739af861c1c1b9be78f1e23d1f060fd179dd8da2a30e88",
+              "current_source_sha256": "daba9b38aeede18bcd739af861c1c1b9be78f1e23d1f060fd179dd8da2a30e88",
+              "bytes_equal": true
+            },
+            {
+              "name": "C011.json",
+              "old_source_sha256": "dd8f0dc9d6ff3a0d612ddb84727c1739c53b8964dc03c4c7dc842157261577b6",
+              "current_source_sha256": "dd8f0dc9d6ff3a0d612ddb84727c1739c53b8964dc03c4c7dc842157261577b6",
+              "bytes_equal": true
+            },
+            {
+              "name": "C012.json",
+              "old_source_sha256": "b72609eac220ea38879778488a3afb353c582288549be2342055937546ea3ad3",
+              "current_source_sha256": "b72609eac220ea38879778488a3afb353c582288549be2342055937546ea3ad3",
+              "bytes_equal": true
+            },
+            {
+              "name": "C013.json",
+              "old_source_sha256": "a2611c53e22c534185e24668b370de7890f5b1353dc97538e5188b5e952a7cf4",
+              "current_source_sha256": "a2611c53e22c534185e24668b370de7890f5b1353dc97538e5188b5e952a7cf4",
+              "bytes_equal": true
+            },
+            {
+              "name": "C014.json",
+              "old_source_sha256": "7499feb8a63621353889fb0e769bfb9d5c04b51c17a48b4e9b55bb16b6216e77",
+              "current_source_sha256": "7499feb8a63621353889fb0e769bfb9d5c04b51c17a48b4e9b55bb16b6216e77",
+              "bytes_equal": true
+            },
+            {
+              "name": "C015.json",
+              "old_source_sha256": "85954147224b0fe136981237886cb5d1ac80f6dcad0644ea4a36db42e0bfbf66",
+              "current_source_sha256": "85954147224b0fe136981237886cb5d1ac80f6dcad0644ea4a36db42e0bfbf66",
+              "bytes_equal": true
+            },
+            {
+              "name": "C016.json",
+              "old_source_sha256": "2e6a265f03333c240db1a876006e818edbc1514de827b91e2689b2e479aa6342",
+              "current_source_sha256": "2e6a265f03333c240db1a876006e818edbc1514de827b91e2689b2e479aa6342",
+              "bytes_equal": true
+            },
+            {
+              "name": "C017.json",
+              "old_source_sha256": "2a5aab460a77bb8c1301cc02caabbcb9702cf7b04ae296cadf8f355c96cf6991",
+              "current_source_sha256": "2a5aab460a77bb8c1301cc02caabbcb9702cf7b04ae296cadf8f355c96cf6991",
+              "bytes_equal": true
+            },
+            {
+              "name": "C018.json",
+              "old_source_sha256": "5a41ea3209540a0d7bde83b88d430eb027cc05a88cbbb9774dacae096a906727",
+              "current_source_sha256": "5a41ea3209540a0d7bde83b88d430eb027cc05a88cbbb9774dacae096a906727",
+              "bytes_equal": true
+            },
+            {
+              "name": "C019.json",
+              "old_source_sha256": "03c4585274cde4c9c5582e927a31bb997a9e485a9d7e5425fe1e3744122fdc26",
+              "current_source_sha256": "03c4585274cde4c9c5582e927a31bb997a9e485a9d7e5425fe1e3744122fdc26",
+              "bytes_equal": true
+            },
+            {
+              "name": "C020.json",
+              "old_source_sha256": "d3b1026c9405d53d9a4f217f6ffa6bc78c1b53b1236031fb73772c9e795a5c12",
+              "current_source_sha256": "d3b1026c9405d53d9a4f217f6ffa6bc78c1b53b1236031fb73772c9e795a5c12",
+              "bytes_equal": true
+            },
+            {
+              "name": "C021.json",
+              "old_source_sha256": "408d6c469c6ff599864d4e4d120476a342ef609948001c60c48a96fb0ffda24d",
+              "current_source_sha256": "408d6c469c6ff599864d4e4d120476a342ef609948001c60c48a96fb0ffda24d",
+              "bytes_equal": true
+            },
+            {
+              "name": "C022.json",
+              "old_source_sha256": "4acdb491f07b478b87c9ef99e6241328711a94dd234d10b2d7c588eaa3ab8d82",
+              "current_source_sha256": "4acdb491f07b478b87c9ef99e6241328711a94dd234d10b2d7c588eaa3ab8d82",
+              "bytes_equal": true
+            },
+            {
+              "name": "C023.json",
+              "old_source_sha256": "7a4af4eab73fd0d8d4d1da3e3fb9ac1757f14e4136d090b0d678549432ad8f85",
+              "current_source_sha256": "7a4af4eab73fd0d8d4d1da3e3fb9ac1757f14e4136d090b0d678549432ad8f85",
+              "bytes_equal": true
+            },
+            {
+              "name": "C024.json",
+              "old_source_sha256": "d55d1408a7ea8642dddc26eaa4d23e03683a1b9d1cd719c82ebc954cfd5d3b89",
+              "current_source_sha256": "d55d1408a7ea8642dddc26eaa4d23e03683a1b9d1cd719c82ebc954cfd5d3b89",
+              "bytes_equal": true
+            },
+            {
+              "name": "C025.json",
+              "old_source_sha256": "efec6eba252b426adcb70d53e79da9f5b41ca224bfd99c94ecefbbafc1308355",
+              "current_source_sha256": "efec6eba252b426adcb70d53e79da9f5b41ca224bfd99c94ecefbbafc1308355",
+              "bytes_equal": true
+            },
+            {
+              "name": "C026.json",
+              "old_source_sha256": "fb898819f7ce02c5d5a5263481de11caebd2524eddb9cdbbe67ccd3eb5f00457",
+              "current_source_sha256": "fb898819f7ce02c5d5a5263481de11caebd2524eddb9cdbbe67ccd3eb5f00457",
+              "bytes_equal": true
+            },
+            {
+              "name": "C027.json",
+              "old_source_sha256": "d02fb19304288d0d1aca669d57b427ee533506a518d68898c836b6b60b8dfaef",
+              "current_source_sha256": "d02fb19304288d0d1aca669d57b427ee533506a518d68898c836b6b60b8dfaef",
+              "bytes_equal": true
+            },
+            {
+              "name": "C028.json",
+              "old_source_sha256": "835e13a559dfe7841212ee2966aad912c391604edba8e583e9bb4229e290b939",
+              "current_source_sha256": "835e13a559dfe7841212ee2966aad912c391604edba8e583e9bb4229e290b939",
+              "bytes_equal": true
+            },
+            {
+              "name": "C029.json",
+              "old_source_sha256": "9acc6ec71ee6d2b567843a3b8961837bcd105de7553125eac3f947d86e7e3a64",
+              "current_source_sha256": "9acc6ec71ee6d2b567843a3b8961837bcd105de7553125eac3f947d86e7e3a64",
+              "bytes_equal": true
+            },
+            {
+              "name": "C030.json",
+              "old_source_sha256": "f399ce18b3f28130f364d41e2bf9c03475e5c25aab80ffb3e212cddf344d2097",
+              "current_source_sha256": "f399ce18b3f28130f364d41e2bf9c03475e5c25aab80ffb3e212cddf344d2097",
+              "bytes_equal": true
+            },
+            {
+              "name": "C031.json",
+              "old_source_sha256": "9d3f8fa7f7a0edf9eb615e0e8619cde34e4e71f6353d6789b9ffa4eac0d608a1",
+              "current_source_sha256": "9d3f8fa7f7a0edf9eb615e0e8619cde34e4e71f6353d6789b9ffa4eac0d608a1",
+              "bytes_equal": true
+            },
+            {
+              "name": "C032.json",
+              "old_source_sha256": "aee0cba9715bf54962f7da9f1f95e54b6b0c6904d2f65434c7702e536e21599c",
+              "current_source_sha256": "aee0cba9715bf54962f7da9f1f95e54b6b0c6904d2f65434c7702e536e21599c",
+              "bytes_equal": true
+            },
+            {
+              "name": "C033.json",
+              "old_source_sha256": "0c27694313bda24aa121b941a435ddde433e381910bec6d1477b348e05d24ecd",
+              "current_source_sha256": "0c27694313bda24aa121b941a435ddde433e381910bec6d1477b348e05d24ecd",
+              "bytes_equal": true
+            },
+            {
+              "name": "C034.json",
+              "old_source_sha256": "1a5519d9f26fb8b61e1e1605d9a9598a20b72639b4dd834f5d599e79c9eae091",
+              "current_source_sha256": "1a5519d9f26fb8b61e1e1605d9a9598a20b72639b4dd834f5d599e79c9eae091",
+              "bytes_equal": true
+            },
+            {
+              "name": "C035.json",
+              "old_source_sha256": "9cec123e1ffaf3922d2e5e5780a8a79b372a2f25bcbb3c1dbf1e4aef5351879b",
+              "current_source_sha256": "9cec123e1ffaf3922d2e5e5780a8a79b372a2f25bcbb3c1dbf1e4aef5351879b",
+              "bytes_equal": true
+            },
+            {
+              "name": "C036.json",
+              "old_source_sha256": "b85769bfcb5cd8b0d9e9275500356214b4da5026890c12608ce1aab23a67846b",
+              "current_source_sha256": "b85769bfcb5cd8b0d9e9275500356214b4da5026890c12608ce1aab23a67846b",
+              "bytes_equal": true
+            },
+            {
+              "name": "C037.json",
+              "old_source_sha256": "6f39d32a15f7c2bdd58ef69ef0a7ccd2db499932a84b4856da72d90c2167ea5a",
+              "current_source_sha256": "6f39d32a15f7c2bdd58ef69ef0a7ccd2db499932a84b4856da72d90c2167ea5a",
+              "bytes_equal": true
+            },
+            {
+              "name": "C038.json",
+              "old_source_sha256": "66ad1635a5217c948b71df2b39c3a31b95d48cd9533aa8c40886bca2f3851bbe",
+              "current_source_sha256": "66ad1635a5217c948b71df2b39c3a31b95d48cd9533aa8c40886bca2f3851bbe",
+              "bytes_equal": true
+            },
+            {
+              "name": "C039.json",
+              "old_source_sha256": "2c0874832f8f6015e276f11d9360c504e7c9a9656b491f5f96f4b43471f42386",
+              "current_source_sha256": "2c0874832f8f6015e276f11d9360c504e7c9a9656b491f5f96f4b43471f42386",
+              "bytes_equal": true
+            },
+            {
+              "name": "C040.json",
+              "old_source_sha256": "206e7a46d91bf7941f32ca8b0e62f54bcf6728327fe7bfd9e524352a175c750e",
+              "current_source_sha256": "206e7a46d91bf7941f32ca8b0e62f54bcf6728327fe7bfd9e524352a175c750e",
+              "bytes_equal": true
+            },
+            {
+              "name": "C041.json",
+              "old_source_sha256": "85ab37126f074afa6ec16f1b5282ae3278e7f3c3118fe38a83394c5de35ba515",
+              "current_source_sha256": "85ab37126f074afa6ec16f1b5282ae3278e7f3c3118fe38a83394c5de35ba515",
+              "bytes_equal": true
+            },
+            {
+              "name": "C042.json",
+              "old_source_sha256": "9f7c53d1891435bdd8d69c19e14328f7c6557d751d87aa4531473aabf3131a1f",
+              "current_source_sha256": "9f7c53d1891435bdd8d69c19e14328f7c6557d751d87aa4531473aabf3131a1f",
+              "bytes_equal": true
+            },
+            {
+              "name": "C043.json",
+              "old_source_sha256": "d12a90d4e2fed04f53f482db328a81629c151be6a60fb64da3b8052331ecbb20",
+              "current_source_sha256": "d12a90d4e2fed04f53f482db328a81629c151be6a60fb64da3b8052331ecbb20",
+              "bytes_equal": true
+            },
+            {
+              "name": "C044.json",
+              "old_source_sha256": "449e6e4d59d4230434028ad4a6985611dbbfef358e1137fa178a4aa248e27996",
+              "current_source_sha256": "449e6e4d59d4230434028ad4a6985611dbbfef358e1137fa178a4aa248e27996",
+              "bytes_equal": true
+            },
+            {
+              "name": "C045.json",
+              "old_source_sha256": "37e8ecaef540074d4d9805ed10b671747e04218de51a955349322ecf46db683f",
+              "current_source_sha256": "37e8ecaef540074d4d9805ed10b671747e04218de51a955349322ecf46db683f",
+              "bytes_equal": true
+            },
+            {
+              "name": "C046.json",
+              "old_source_sha256": "d96b4cfacd5b75c6ba5ec28bc397bfd19d8ba6872056344f5d911ddba1a87b4c",
+              "current_source_sha256": "d96b4cfacd5b75c6ba5ec28bc397bfd19d8ba6872056344f5d911ddba1a87b4c",
+              "bytes_equal": true
+            },
+            {
+              "name": "C047.json",
+              "old_source_sha256": "c1144981dba958a1dedd39906f36b1dba043d98cfbad9c4a063717964b4d4681",
+              "current_source_sha256": "c1144981dba958a1dedd39906f36b1dba043d98cfbad9c4a063717964b4d4681",
+              "bytes_equal": true
+            },
+            {
+              "name": "C048.json",
+              "old_source_sha256": "11c0593ae991eda0fe353c3883eea62ad2e9b39a5215eabb25e20a372f45ba6a",
+              "current_source_sha256": "11c0593ae991eda0fe353c3883eea62ad2e9b39a5215eabb25e20a372f45ba6a",
+              "bytes_equal": true
+            },
+            {
+              "name": "C049.json",
+              "old_source_sha256": "3a01a25bb2ba08535e4023497b7004ee7c5f80abf953a9d64b52dea2f805ed5a",
+              "current_source_sha256": "3a01a25bb2ba08535e4023497b7004ee7c5f80abf953a9d64b52dea2f805ed5a",
+              "bytes_equal": true
+            },
+            {
+              "name": "C050.json",
+              "old_source_sha256": "5d2a3775e9fa58f913347902fce45cd07d19856c12ed2ca7590304edec4f980f",
+              "current_source_sha256": "5d2a3775e9fa58f913347902fce45cd07d19856c12ed2ca7590304edec4f980f",
+              "bytes_equal": true
+            }
+          ],
+          "data/m31/external_references": [
+            {
+              "name": "crap-cycloidal.json",
+              "old_source_sha256": "6a49dd839c8dc5b8aabc9054cbc268f5f6ad492eefc392466ae708ebb5a28e6f",
+              "current_source_sha256": "6a49dd839c8dc5b8aabc9054cbc268f5f6ad492eefc392466ae708ebb5a28e6f",
+              "bytes_equal": true
+            },
+            {
+              "name": "fusion-planetary.json",
+              "old_source_sha256": "7ea80f85cf8a3b451ae533af54ac5d9724700f3b31719706092bbab2c499282b",
+              "current_source_sha256": "7ea80f85cf8a3b451ae533af54ac5d9724700f3b31719706092bbab2c499282b",
+              "bytes_equal": true
+            },
+            {
+              "name": "highway-gearbox.json",
+              "old_source_sha256": "a2d7ea7a26c8c5b60076693c9eb5d34ae22c452169677c52f4f0bf73ddefce55",
+              "current_source_sha256": "a2d7ea7a26c8c5b60076693c9eb5d34ae22c452169677c52f4f0bf73ddefce55",
+              "bytes_equal": true
+            },
+            {
+              "name": "nrel-grc-gb2.json",
+              "old_source_sha256": "e314b4a9bb3c2dda822a7c314e66530fa675ba6f4e05e6d07bf5c1924851b0bd",
+              "current_source_sha256": "e314b4a9bb3c2dda822a7c314e66530fa675ba6f4e05e6d07bf5c1924851b0bd",
+              "bytes_equal": true
+            },
+            {
+              "name": "published-physical-cycloidal.json",
+              "old_source_sha256": "585d19deb0eb851208f4f0119a81b9d7e10c6bb2865a638fb8daa057f398c3d4",
+              "current_source_sha256": "585d19deb0eb851208f4f0119a81b9d7e10c6bb2865a638fb8daa057f398c3d4",
+              "bytes_equal": true
+            },
+            {
+              "name": "python-gearbox-contact-example.json",
+              "old_source_sha256": "ca6553ff569ffc2c117d18717278709fb9f4f4b9ced43b8faae6f4a7f970231d",
+              "current_source_sha256": "ca6553ff569ffc2c117d18717278709fb9f4f4b9ced43b8faae6f4a7f970231d",
+              "bytes_equal": true
+            },
+            {
+              "name": "utkarsh-two-stage.json",
+              "old_source_sha256": "35c89af780bf52cee65205507ff81fb870e0605ed710b7c284ad45a1e699cdb0",
+              "current_source_sha256": "35c89af780bf52cee65205507ff81fb870e0605ed710b7c284ad45a1e699cdb0",
+              "bytes_equal": true
+            }
+          ]
+        }
+      }
+    ],
+    "unparsed_intake_candidates": [
+      {
+        "path": "D:/my_Works/Gears/POD需求确认.xlsx",
+        "source_sha256": "2ea96c0b47da75a3c7c1ee7f4d68415992ce8d49da9ec78592a58891f3c02baf",
+        "status": "unparsed; not admitted or counted as an engineering demand"
+      },
+      {
+        "path": "D:/my_Works/Gears/蜗杆、斜齿轮设计.docx",
+        "source_sha256": "75de84d554b701c6f8bb614898884ae2b9b35b8e2f4873e0d77e7c6f5e155fd9",
+        "status": "unparsed; not admitted or counted as an engineering demand"
+      },
+      {
+        "path": "D:/my_Works/Gears/蜗杆传动设计计算说明书.docx",
+        "source_sha256": "6aded317fa3f10e15f8ce05cf5ce259fe74528a62dd1dabc7c4b2d46feb2a6da",
+        "status": "unparsed; not admitted or counted as an engineering demand"
+      },
+      {
+        "path": "D:/my_Works/Gears/蜗杆斜齿计算.xlsx",
+        "source_sha256": "04de0061f79b382a8c6969415b495b15af21a17f8437563c5f652005d6ba04fb",
+        "status": "unparsed; not admitted or counted as an engineering demand"
+      },
+      {
+        "path": "D:/my_Works/Gears/蜗杆斜齿计算.xlsm",
+        "source_sha256": "7f229235d4a3dab5f00f176f655d30053183bac7854d40c868164ed3ccef0488",
+        "status": "unparsed; not admitted or counted as an engineering demand"
+      }
+    ],
+    "boundary": "No recursive drive scan. No zip/PDF/native CAD/standard scan contents copied or uploaded. Workspace literature and user workbooks not semantically inventoried."
+  },
+  "source_file_inventory_count": 333,
+  "distribution": "PUBLIC_REDACTED_DERIVATIVE",
+  "private_origin_sha256": "9cb209288be514fe4143bb1789463c42b18f478f848d7967600ef92a21e96f92",
+  "redaction_notice": "Full per-source inventory remains private; source counts, provenance, scan boundary and workspace-survey assessment retained."
+}

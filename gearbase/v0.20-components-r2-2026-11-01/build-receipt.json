@@ -1,0 +1,21 @@
+{
+  "schema": "gearbase.component-report-build/1",
+  "passed": true,
+  "producer_sha256": "22cac3fe05978a0daba40c5e614e1390930ca8b4c8dc333bd5fd1fd322b88f63",
+  "template_sha256": "c6aa21fc5b8392bfdf0c16f02330f58231132199e53463fbb36583e2d52ec4fa",
+  "html_sha256": "9b8bb64f94d3af2bda488f812be309cec126df4823820d6f4ea945489ba32919",
+  "data_sha256": "2b66bd893d71bfd9bf27ded7670f6b88d16227fd36817815e3a75ddbcfe51546",
+  "evidence_sha256": {
+    "library/enum-counts.json": "3c60ffc0ed69657e6cdc0a1e907775a818de0fc38f1b42231415044a9373e469",
+    "library/topology-library.json": "c549f81355d00b893ba04b62972393cea134adbc2606d05aa8ccf50bcdf27a91",
+    "library/verification-log.json": "8414afab05cc5a15ba0f6dd9e36f1a8babbc893714d93f0f07534a2a7ffd5c40",
+    "math/component-contract.json": "41ee0740962b51cad93575938620474ca279ed9954d8786cea9addd8ab61d996",
+    "math/math-examples.json": "32dd45bb9b83d305b46964a622996a60c51aaf3058586bc9f6513cc900e027fa",
+    "math/math-example-results.json": "5cd1daac00354e564dda880e5eabfdbe48ecb98cf664686aeb3003412c16f414",
+    "math/MATH-DESIGN.md": "856fc7627ae05dbbdfb48dbb1c832e4b4d9a4431d28d8cebf2fabf941a1e7504",
+    "research/sources.json": "669bcbd6a63574083edcd989cbf1c37c6139247a7517898cb1d71258389a6211",
+    "research/industrial-precedents.json": "b6ef6dd64122d7267514320aa042c5c2aad4c98f2994097548fcd9a3a92407eb",
+    "research/METHODS-COMPARISON.md": "4949b65bbffcbedce42483a64ca1fbace32bc7e4048716b2c1c8d21668937713"
+  },
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc"
+}

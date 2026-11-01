@@ -1,0 +1,85 @@
+{
+  "git_status_before": "",
+  "git_status_after": "",
+  "git_status_unchanged": true,
+  "smokes": [
+    {
+      "case": "mcp",
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\smoke_readonly.py",
+        "mcp"
+      ],
+      "cwd": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "started_utc": "2026-11-01T11:27:35.113756+00:00",
+      "elapsed_s": 0.375,
+      "returncode": 0,
+      "stdout": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\mcp.stdout.json",
+      "stderr": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\mcp.stderr.txt",
+      "stdout_sha256": "393b799e4313a02b4e2f891742f30ad2d0908892f448d0acafda41c81e4cdbe6",
+      "stdout_text_utf8_sha256": "8a569f42e43469f01bde7b966db8fe008efc3c799555cc800c29d66d5383a40e"
+    },
+    {
+      "case": "requirements",
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\smoke_readonly.py",
+        "requirements"
+      ],
+      "cwd": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "started_utc": "2026-11-01T11:27:35.484740+00:00",
+      "elapsed_s": 1.547000000020489,
+      "returncode": 0,
+      "stdout": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\requirements.stdout.json",
+      "stderr": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\requirements.stderr.txt",
+      "stdout_sha256": "33b400d71fafaa3f55a46a3ae6b2fac9f4f8d501590123cc2233cb7dd128c603",
+      "stdout_text_utf8_sha256": "ced0b224fbc95bfd426da398fd1b1d66dc24621d1087d8e1b20c19a84be6f5cb"
+    },
+    {
+      "case": "flagships",
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\smoke_readonly.py",
+        "flagships"
+      ],
+      "cwd": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "started_utc": "2026-11-01T11:27:37.034213+00:00",
+      "elapsed_s": 0.4529999999795109,
+      "returncode": 0,
+      "stdout": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\flagships.stdout.json",
+      "stderr": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\flagships.stderr.txt",
+      "stdout_sha256": "0abc115a4d2a07f3a01105a74c5cbcd814787e06a70c57186f2567ca2db18a20",
+      "stdout_text_utf8_sha256": "c1d1c0a2e2a6f8e4405904bfafd86023c541af012518a3779c814a9e63e3476a"
+    },
+    {
+      "case": "system",
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\smoke_readonly.py",
+        "system"
+      ],
+      "cwd": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "started_utc": "2026-11-01T11:27:37.482929+00:00",
+      "elapsed_s": 1.3599999998696148,
+      "returncode": 0,
+      "stdout": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\system.stdout.json",
+      "stderr": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\system.stderr.txt",
+      "stdout_sha256": "14893b36c9f6449be9ba2067f16334c0a554549a004b66dcfa2c8526bfeb67c0",
+      "stdout_text_utf8_sha256": "9bae03d59b6e538e87280f633d3034c6edea80b9734b49bf16cf34306eef4acc"
+    }
+  ],
+  "all_exit_zero": true,
+  "capture_hash_note": "File SHA and normalized stdout text SHA are separate because Windows write_text uses CRLF; no command response or product file changed."
+}

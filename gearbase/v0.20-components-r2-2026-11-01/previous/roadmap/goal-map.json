@@ -1,0 +1,249 @@
+{
+  "schema": "gearbase.goal-map/1",
+  "audit_date": "2026-11-01",
+  "source_root": "D:/my_Works/Gears/gearbase-v020-work",
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "status": "read_only_assessment_and_proposed_roadmap",
+  "product_changes": false,
+  "existing_acceptance_gates_changed": false,
+  "thaw_authorized": false,
+  "authorization_note": "本轮选择只读评估不撤销用户既有自主推进和本地FE授权；路线不增加逐项研发审批。M40遵守原冻结/解冻决定，工程数据与方法选择仍需真实来源和责任确认。",
+  "evidence_receipt": "boundary-probes.json",
+  "target": {
+    "basis": "用户终局需求，由父任务原文转交；不是对当前产品已实现范围的描述",
+    "input": "输出转速/转矩或线性推力/速度/行程、载荷谱、空间、轴线关系、材料制造与寿命目标",
+    "behavior": "自动提出多级平行轴、双蜗杆、蜗杆+斜齿、行星+蜗杆等有序简单组合，保留多方案供选择；同一需求下比较参数、校核、裕量、制造、成本和证据成熟度",
+    "full_chain": ["需求", "有序拓扑与端口", "功率及载荷流", "齿轮/丝杆", "轴/轴承/连接", "布置/箱体", "FE与CAD投影", "多目标与鲁棒优化", "自然语言修订", "依赖失效与自动再生", "工程签署与release"],
+    "oracle": "真实已有工程案例、独立数值参考、失败案例与编辑挑战组成受控挑战库；旧合成基准和新真实参考分开保留"
+  },
+  "core_conclusion": {
+    "classification": "verified_boundary_plus_inference",
+    "statement": "当前可冻结为范围明确的可重放数学/证据工具底座；未形成从输出需求到通用有序传动系统的自动设计器。首要缺口是系统真源、类型化拓扑端口、逐工况功率/载荷流及跨投影失效契约，不能用里程碑完成项数量表达终局成熟度。",
+    "evidence": ["E01", "E02", "E03", "E04", "E05", "E06", "E07"],
+    "not_claimed": ["全系统工程冻结", "任意拓扑全评级", "全局最优", "概率鲁棒可靠性", "全装配CAD与制造放行", "FE资格已通过", "真实金标已完成"]
+  },
+  "requirements": [
+    {
+      "id": "REQ-01",
+      "requirement": "从输出性能、空间和轴线关系生成不同有序简单组合",
+      "status": "failed_against_terminal_goal",
+      "verified": "当前普通编译器只接受单级直齿；Stage0显式选择H2/W2W/P2之一。四项输出/空间/轴线终局字段被判unknown_argument，混合planetary_worm家族被拒绝。",
+      "gap": "需要类型化rotary/linear/frame端口、固定/旋转构件、ordered_stages与连接边、阶段数量边界、轴向关系、对称去重及拒绝理由；不能只存总传动比。",
+      "evidence": ["E01", "E02", "E03"],
+      "slices": ["R1", "R3"]
+    },
+    {
+      "id": "REQ-02",
+      "requirement": "负载谱、双向功率流、损失、可逆与保持策略贯通全链",
+      "status": "partially_verified",
+      "verified": "现有W2W做正向常摩擦效率及热筛选；P2明确没有效率/热模型；存在DIN743谱公式原语，但轴系输入到载荷谱的衔接仍TODO。",
+      "gap": "统一工况轴：正反驱动、回驱、加减速、峰值/持续/堵转/冲击/机械止挡各自时程和外部旁路；逐级有符号n/T/P、损失、轴向力及寿命计数；独立功率反算与转矩传播对账。",
+      "evidence": ["E04", "E08", "E09"],
+      "slices": ["R2", "R4", "R8"]
+    },
+    {
+      "id": "REQ-03",
+      "requirement": "所有组合按适用物理和标准完成齿轮/轴/轴承/连接校核",
+      "status": "failed_against_terminal_goal",
+      "verified": "已有九类统一检查和静定/刚性点支承梁路径；蜗杆、行星强度与三向载荷/均载在旗舰系统层明确unsupported。",
+      "gap": "逐族模型资格：圆柱多级贯通；蜗杆承载/热/磨损；固定环行星多啮合/均载/销轴/行星架；交错轴独立点/椭圆接触与滑动模型，禁止平行轴ISO6336接触结果直接放行。",
+      "evidence": ["E03", "E04", "E09", "E18"],
+      "slices": ["R2", "R3", "R8"]
+    },
+    {
+      "id": "REQ-04",
+      "requirement": "系统多目标优化、真实鲁棒裕量和多方案选择",
+      "status": "partially_verified",
+      "verified": "现有联合搜索是作者给出的有限圆柱组合，目标是齿坯+轴体积；现有三目标前沿是单副齿轮显式有限域，三个公差情景无概率含义。",
+      "gap": "统一输出合同后比较整机体积/质量/能量/热/成本/裕量；按各自限值归一化裕量，硬约束分项保留；目录离散化后重算不确定性角点，保留稳健备选；采样覆盖与概率可靠性分开。",
+      "evidence": ["E05", "E06"],
+      "slices": ["R3", "R6"]
+    },
+    {
+      "id": "REQ-05",
+      "requirement": "真实支承、传扭、箱体与空间/全行程可装配性",
+      "status": "not_verified_at_terminal_scope",
+      "verified": "现有C001系统源直接记录支承/KHβ几何冲突、输入转矩作用位置和真实材料缺口；梁接口只产生部分挠度/转角，未将完整支承/箱体柔度回馈评级。",
+      "gap": "坐标系与轴线姿态、有效支承与定位、传扭接口、螺母止转、装配次序、箱体/紧固件/密封/出线；不能以中心距或零件圆包络代替全装配空间。",
+      "evidence": ["E09", "E10", "E11"],
+      "slices": ["R2", "R4", "R5"]
+    },
+    {
+      "id": "REQ-06",
+      "requirement": "制造约束与真实成本进入候选比较",
+      "status": "partially_verified",
+      "verified": "已有制造参数表与K02圆包络审阅准备包；该包明确不具备制造放行，非零变位工作齿面与产形齿根、旋向/孔毂/键槽/配合等仍缺。联合搜索明确排除轴承包络和成本。",
+      "gap": "标准模数/刀具、变位/修缘/热处理/质量、标准件供应、工艺可达性、BOM/加工与装配路径、带日期/批量/币种/来源的成本模型。没有报价/成本域时返回open，不由体积猜价格。",
+      "evidence": ["E05", "E10"],
+      "slices": ["R3", "R5", "R6", "R8"]
+    },
+    {
+      "id": "REQ-07",
+      "requirement": "全系统唯一数学真源，任何修改自动使相关结果失效并重建",
+      "status": "partially_verified",
+      "verified": "圆柱副source拒绝派生字段，提供只读回执/参数表，存储有来源所有权、父链与CAS；现有真源不接受拓扑键，系统输入仍为独立文档，旗舰系统编译输出显式叶子。",
+      "gap": "一个系统修订拥有需求、拓扑、组件输入、证据及选择；旧副级/系统文件转为受控子文档或投影。按依赖签名失效计算/CAD/网格/FE/优化/报告；文件hash不等于依赖完备证明。",
+      "evidence": ["E01", "E03", "E07", "E11", "E14"],
+      "slices": ["R1", "R2", "R5", "R7"]
+    },
+    {
+      "id": "REQ-08",
+      "requirement": "CAD拓扑身份在修订、拆分、重建、STEP与FE边界之间保持可核查映射",
+      "status": "not_verified_in_active_system",
+      "verified": "归档存在命名历史及特定回转体重绑定，不是零基础；其中明确names_in_step=false、拆分候选没有稳定子ID。活跃gearmath当前制造包仅为圆包络投影。",
+      "gap": "component/feature/semantic-face身份与拓扑事件版本化；split/merge/delete/suppress必须明确映射或ambiguous阻断，不能依赖边面序号。重导入后的命名/组件/实体数量与FE面组身份逐项验收。",
+      "evidence": ["E10", "E12"],
+      "slices": ["R5", "R7", "R8"]
+    },
+    {
+      "id": "REQ-09",
+      "requirement": "自然语言创建/修改且代理权限与工程签署分离",
+      "status": "partially_verified",
+      "verified": "已有确定性结构化意图映射、读/预览/提交和受控优化写回；真实MCP流程存在。相同数值的agent_proposed来源给pending，调用方自报user给pass；优化开关控制工具列举，不控制直接分派。",
+      "gap": "自然语言先生成带原话定位的需求/补丁草案；系统读取/提案/运行/草稿提交/来源确认/放行权限分离。token/CAS证明内容和版本一致，不证明人类工程师身份；外部凭证不得由模型自标为user/evidence即升级。",
+      "evidence": ["E01", "E13", "E14", "E15"],
+      "slices": ["R1", "R7", "R8"]
+    },
+    {
+      "id": "REQ-10",
+      "requirement": "丝杆螺母统一端口、运动/能量/强度/屈曲/转速/寿命完整检查",
+      "status": "not_implemented_in_active_gearmath_by_scoped_search",
+      "verified": "活跃代码的check scope没有丝杆螺母；螺纹搜索命中的rundnut是DIN743槽口名称，不能算丝杆模块。原顶层设计也没有具体丝杆接口合同。",
+      "gap": "先交付明确适用域的转动→直线适配器，再分别接滑动梯形和滚珠模型；所有效率、摩擦、边界系数、许用值及寿命参数需来源和域，缺项阻断。",
+      "evidence": ["E09", "E18"],
+      "slices": ["R1", "R2", "R4", "R8"],
+      "detailed_contract": "ROADMAP.md#丝杆螺母独立接口与首个适用范围"
+    },
+    {
+      "id": "REQ-11",
+      "requirement": "真实挑战库、FE资格和工程release均有独立可复核证据",
+      "status": "failed_against_terminal_release_goal",
+      "verified": "实际40题均待工程师标签。C001案例标明项目筛选假设/派生基准，其部分材料与连接数据是synthetic；不能以文件名golden视作生产真实金标。现有报告保留M37失败矩阵，M40仍冻结。",
+      "gap": "真实案例的载荷/布局/供应商/工艺来源、独立可接受答案及已知失败；原始输入与独立参考不得由实现自己刷新；软件一致性与工程外部签署分别验收。",
+      "evidence": ["E01", "E10", "E11", "E16", "E17", "E18"],
+      "slices": ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8"]
+    }
+  ],
+  "slice_priority": ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8"],
+  "slices": [
+    {
+      "id": "R1", "name": "统一系统合同、依赖和真实挑战入口",
+      "value": "先能无歧义表达终局问题并保住当前证据，避免每新增一个族再造一套输入",
+      "input": ["固定v020基线与既有开放项", "输出性能/空间/轴线/工况要求", "现有pair/system/flagship源", "已有工程案例的原始资料"],
+      "output": ["加版本的SystemDesign契约与旧格式无损导入", "rotary/linear/frame端口、稳定组件ID和ordered_stages语法", "依赖/失效图和只读投影清单", "案例manifest及独立参考/空缺标签"],
+      "acceptance_gate": ["旧案例回执与字节锁定不变，迁移差异逐项解释", "未知/无连通/单位不匹配/重复驱动/自由度未约束/未支持分流均拒绝", "级序改变必改变依赖签名，所有消费者显示stale或重算", "至少把已有C001/H2资料入库并如实保留synthetic/open，真实工程原件另设身份，缺参考不算金标"],
+      "dependencies": ["后续独立实现切片，保留原冻结决定与工程输入边界；本轮未实施"],
+      "software_independent": ["schema、导入适配、语义校验、哈希、失效、空缺状态和挑战回放器"],
+      "external_engineering": ["真实输出/工况/布局解释及案例归属与工程标签签署"],
+      "thaw_boundary": "只建议新增合同试验；保持M40物理族门冻结"
+    },
+    {
+      "id": "R2", "name": "现有圆柱多级线的功率、载荷和支承闭环",
+      "value": "用可验证的现有族先打通从需求到整条链，建立以后混合族共用的物理接口",
+      "input": ["R1系统合同", "选定输入电机工作点或显式驱动边界", "逐工况有符号载荷/运动谱", "C001/H2真实材料、支承、连接、油品和热边界"],
+      "output": ["逐级n/T/P/损失/三向力与寿命计数表", "圆柱多级校核与轴/轴承/连接同源投影", "正反运行及回驱的域/缺项报告", "真实单案例的计算级可行或失败结果"],
+      "acceptance_gate": ["同工况下独立功率反算与转矩传播在预声明量纲/舍入容差内一致", "插入空转惰轮、交换级序、反转/峰值持续时间编辑都触发正确下游变化", "真实支承位置冲突解决后再出载荷结果；梁的有限刚度范围和未闭合柔度影响可见", "谱原语到齿轮/轴/轴承寿命的计数口径逐项验证；无法评价的模式blocked而非pass", "小有限域整条链全枚举参考与分层搜索全排序一致"],
+      "dependencies": ["R1", "真实案例输入补齐；不得用合成材料替补关闭原门"],
+      "software_independent": ["工况调度、有符号功率流、现有L2装配、数值对账、缺项/适用域和缓存验证"],
+      "external_engineering": ["输入驱动热/低压曲线、实际支承/材料/目录C/C0及应用因子、油品与负载谱"],
+      "thaw_boundary": "不扩展M40族；先完成受限圆柱系统用途"
+    },
+    {
+      "id": "R3", "name": "受限拓扑枚举与逐族资格解锁",
+      "value": "使用户同一输出合同得到可比较多方案，并且看清每个候选通过到哪一层",
+      "input": ["R1/R2端口和传播接口", "显式族/级数/离散件目录边界", "空间/制造/保持策略限制", "逐族已批准的模型和独立参考"],
+      "output": ["多级平行、双蜗杆、蜗杆→斜齿、行星→蜗杆及允许的反向级序候选", "拓扑/级数/啮合数/零件清单与拒绝原因", "每候选stage_A_screened/component_rated/packaged/evidence_ready状态矩阵"],
+      "acceptance_gate": ["完整枚举可控小语法域并与独立参考逐项对比，数量上限/去重/截断明确", "同总比不同级序的中间转速/转矩/热/力路径正确变化", "未解锁物理族只能输出运动/能量筛选候选，不能成为全系统可行最优", "蜗杆与行星逐族完整算例和独立对标按原M40门审查；交错轴另有点接触/滑动/热的域门", "保留失败候选与原因；不只展示最高排名或主动约束边界点"],
+      "dependencies": ["R1", "R2", "用户对每个M40族的受控解冻决定；未批准族继续blocked"],
+      "software_independent": ["语法搜索、候选身份、可比性、分层状态和拒绝原因；可在纯运动域独立验收"],
+      "external_engineering": ["标准授权/版次和方法决定、材料/摩擦/磨损数据、逐族独立对标；不以Stage0旧值替代"],
+      "thaw_boundary": "建议一次只解锁一个明确用途/参数域；绝非整体M40放开"
+    },
+    {
+      "id": "R4", "name": "丝杆螺母接口与一个受限线性输出分支",
+      "value": "让旋转传动候选能连接真实执行器输出，不把丝杆当固定效率的末级传动比",
+      "input": ["R1/R2合同", "推力-位置-速度-时间谱和行程", "一项指定供应商丝杆/螺母与安装配置", "几何/摩擦或扭矩映射/支承/材料与许用证据"],
+      "output": ["统一rotary→linear端口和两类模型插件位置", "首个旋转丝杆+止转螺母、导向承横载的准静态滑动梯形筛选", "分项运动、力/损失、芯部/螺纹、屈曲、转速和寿命状态表"],
+      "acceptance_gate": ["导程≠螺距时多头关系及旋向/符号测试，Fv与Tω/损失独立对账", "全行程承压自由长度和支承条件变化进入屈曲/临界转速检查；无通用边界系数", "效率/保持/磨损寿命无来源则blocked，不用滚珠寿命替代滑动螺纹磨损", "旋转螺母、侧载、冲击、高速/热/蠕变等越出首个域时拒绝或明确未评价", "选择正式滚珠或正式梯形模型后各用独立供应商案例验证，再允许component_rated"],
+      "dependencies": ["R1", "R2", "明确首个线性输出适用域和输入证据；本轮未实施，不借此关闭M40"],
+      "software_independent": ["接口、运动/符号/单位、谱与失效、模型分派及缺项阻断"],
+      "external_engineering": ["实际线程与材料/润滑数据、供应商限值与寿命/磨损曲线、保持/回驱及耐久试验"],
+      "thaw_boundary": "第一个交付只称kinematic_and_static_screen；寿命未闭合不会升为工程release"
+    },
+    {
+      "id": "R5", "name": "可制造的布局/CAD投影与支承箱体全装配",
+      "value": "将候选的空间结论和后续FE边界绑定到同一真实结构",
+      "input": ["R1身份与依赖", "R2或R4冻结候选", "齿面/刀具、标准件、传扭/止转/支承与箱体制造边界"],
+      "output": ["参数化零件/组件/自由度manifest", "语义特征与面组映射", "齿面/轴/轴承/连接/箱体/紧固密封全装配CAD与STEP", "全运动干涉和制造缺口表"],
+      "acceptance_gate": ["独立几何对拍包含变位工作齿面和产形齿根，不能以圆包络替代", "split/merge/suppress/删面及齿数编辑产生有效新映射或ambiguous阻断；FE载荷不静默绑错面", "每次STEP重导入核组件名/逻辑零件和实体数量/关键尺寸；不依赖边面序号", "全行程端点/中间/最近接近/连续扫掠全组件精确布尔，含公差/热预算；齿轮相位检查范围单列", "G0→G1→G2→G3→G4逐级保留证据；工艺签署前制造release=false"],
+      "dependencies": ["R1", "R2或R4", "用于混合族时还需R3对应模型", "既有归档CAD代码逐项再资格，不直接导入为生产路径"],
+      "software_independent": ["参数映射、语义命名、版本化拓扑映射、重导入、运动包络及自动失效"],
+      "external_engineering": ["真实配合/预紧/润滑/公差、装配可达性和加工工艺审阅、供应商零件放行"],
+      "thaw_boundary": "仅建议投影适配和明确几何域扩展；不升级已有M35准备包声明"
+    },
+    {
+      "id": "R6", "name": "系统多目标与稳健离散短名单",
+      "value": "把已可计算和可布置的候选转成用户可以取舍的选择集合",
+      "input": ["R2闭合的既有族与可选R3/R4/R5分支", "相同需求/必选检查", "显式目录、制造分辨率、成本来源与不确定域"],
+      "output": ["每候选全部硬约束和归一化裕量", "体积/质量/能量/热/成本等可计算目标的Pareto集", "离散后最差角点/情景复核及稳健备选", "搜索覆盖和未评价成本/不确定性说明"],
+      "acceptance_gate": ["小问题全枚举oracle和优化结果的全部可行点/排序或非支配集合一致", "min(SF,SH)只作原始指标；按各自限值计算裕量并逐项守门，blocked不能进入全系统可行集", "连续建议回到可购/可加工离散件后全链重算", "无概率分布证据只报告情景或区间覆盖，不将3个场景通过率解释成可靠度", "用真实BOM/工艺/批量/日期/币种证据算成本；缺时保留open并不参与有误导性的综合排序", "至少保留一个离活跃约束有已声明余量的备选；不存在则明确报告无稳健备选"],
+      "dependencies": ["R1", "R2", "被优化的每个族/线性分支需R3/R4资格；空间目标需R5"],
+      "software_independent": ["通用数学内核/问题编译、有限oracle、目标和约束归一化、情景/区间验证及证据报表"],
+      "external_engineering": ["公差/摩擦/材料/电机温度域、生产分布、成本报价、可制造离散集合"],
+      "thaw_boundary": "不以更复杂优化器代替缺失物理；保持内核与领域解耦"
+    },
+    {
+      "id": "R7", "name": "自然语言全系统草案和可审查修订权限",
+      "value": "让人以需求和修改意图驱动已闭合系统，同时保留工程责任和可重放状态",
+      "input": ["R1系统源/依赖", "已资格模型工具目录", "原文需求与当前head", "调用身份与角色/允许操作策略"],
+      "output": ["原文定位的结构化需求与追问", "候选/补丁预览、被改输入与下游影响", "绑定head/补丁/候选/方法/证据的草稿提交", "来源确认和工程放行的独立角色记录"],
+      "acceptance_gate": ["模型不能以user/evidence自标、confirm布尔或自算token获得来源升级或release权", "禁用写权限时工具不列出且直接call也拒绝；读/提案/运行/草稿提交/签署分项验证", "换级序、改需求、替换目录件等补丁触发全部计算/CAD/FE/优化/报告失效；旧token/并发head变更拒绝", "数值只来自工具并可展开公式/证据；未应用需求不能悄悄丢弃", "先完成真实工程师标签的固定题集，再加全系统创建/编辑/负例/拒绝执行挑战；AI不能填写自己的真实答案"],
+      "dependencies": ["R1", "相应用途的R2至R6后端", "真实工程标签与调用身份策略"],
+      "software_independent": ["协议、草案编译、权限拒绝、CAS/预览绑定、状态/来源传染与回放"],
+      "external_engineering": ["工程师独立性与身份、来源确认、设计意图歧义和正式签署"],
+      "thaw_boundary": "先只读/草案；自动工程放行始终不作为模型权限"
+    },
+    {
+      "id": "R8", "name": "按用途资格的FE证据与工程release包",
+      "value": "把软件可复核结果转成可供工程决策签署的具体设计，而非把计算完成当生产冻结",
+      "input": ["适用的R1至R7结果", "原FE验收阶梯和全失败账本", "已选用途/参数域/供应商/工艺/样机试验记录"],
+      "output": ["concept/prototype/production分开的release dossier", "绑定源/模型/运行环境/求解器/原始场/资格域的证据", "独立工程审阅与未关闭项", "真实challenge holdout重放与重验触发清单"],
+      "acceptance_gate": ["原M33/M35/M36/M37/M38/M39开放门不以本路线换名关闭，M40仍按原门另行解冻", "FE记录收录、数值收敛、物理验证和用途资格分开；固定失败矩阵不得删点或按结果改oracle", "FE代理仅在合格域使用，越域blocked/回到已授权基础模型；最终候选独立FE/商业对标按指定用途执行", "真实供应商、制造图/配合/支承、耐久/效率/热/NVH证据逐项有签署且未过期", "对外包源码/运行环境/私有依赖边界与适用能力可独立重放；含open项时不得production_frozen"],
+      "dependencies": ["所申报用途对应的R1至R7", "保留用户既有自主推进/本地FE授权及工程输入边界；本轮选择只读，没有新运行"],
+      "software_independent": ["证据身份/入库与资格隔离、release完整性、范围声明和重放检查"],
+      "external_engineering": ["独立计算/商业对标、FE物理资格、供应商/工艺签署、样机和生产条件试验"],
+      "thaw_boundary": "仅建议；软件release和工程production release分别签署"
+    }
+  ],
+  "evidence": [
+    {"id":"E01","kind":"current_session_runtime_probe","path":"boundary-probes.json","finding":"source不接受topology；终局输出字段/多级/混合族编译被拒；真实标签0；调用方provenance改变pending状态；产品工作树为空"},
+    {"id":"E02","kind":"verified_source","path":"gearmath/tools/intent.py","lines":[22,48,121,161,195,225],"finding":"普通需求字段、单级直齿scope、agent_proposed及未应用寿命/材料"},
+    {"id":"E03","kind":"verified_source","path":"gearmath/tools/flagship_workflow.py","lines":[4,9,33,45,53],"finding":"H2/W2W/P2显式stage0、拒绝全评级；engineering_accepted=false"},
+    {"id":"E04","kind":"verified_source","path":"gearmath/product/flagship_system.py","lines":[16,224,277,280,343,347,383,417],"finding":"蜗杆/行星unsupported；固定builder；系统投影显式叶子；系统blocked判定"},
+    {"id":"E05","kind":"verified_source_and_stored_receipt","path":"gearmath/product/system_optimize.py","lines":[20,21,129,147,152,194,249,260],"related":"output/m36/closure.json","finding":"有限圆柱系统搜索；仅齿坯+轴体积，轴承包络/成本/箱体/柔度反馈排除；旧回执27组合/8可行是能力演示"},
+    {"id":"E06","kind":"verified_source_and_stored_receipt","path":"gearmath/gear/source_frontier.py","lines":[1,5,22,88,104,120,147],"related":"output/m39/closure.json","finding":"有限单副前沿，原始min安全系数不是归一化裕量；显式无权情景不是概率"},
+    {"id":"E07","kind":"verified_source","path":"gearmath/gear/math_source.py","lines":[1,10,63,74,98,124,176,188],"related":"data/source/gears.math-source-2.schema.json:7","finding":"副级真源/只读投影，构建pair_model；文件证书核验函数不等同全系统依赖失效"},
+    {"id":"E08","kind":"verified_source","path":"gearmath/gear/flagship_w2w.py","lines":[15,19,49,56],"related":"gearmath/gear/flagship_p2.py:3;gearmath/gear/flagship_p2.py:138","finding":"W2W常摩擦正向筛选与不支持范围；P2没有效率/热"},
+    {"id":"E09","kind":"verified_source","path":"gearmath/system/shaft_line.py","lines":[305,322],"related":"gearmath/system/din743.py:735;gearmath/product/design_check.py:45;docs/beam_face_scope.md:5","finding":"存在梁和谱原语但系统谱/临界转速/轴承刚度等未贯通；九scope没有丝杆；梁到KHβ仅接口桩"},
+    {"id":"E10","kind":"verified_document_scope","path":"docs/v020-M35-review-preparation.md","lines":[3,13,23],"related":"archive/m31/src/cadbench/tooth_authority.py","finding":"圆包络不是完整齿面/齿根制造图；制造release=false；真实工艺签署未完成"},
+    {"id":"E11","kind":"verified_source_data","path":"data/system/C001.system-input.json","lines":[5,32,469,548,553],"related":"data/m31/cases/C001.json:19;data/m31/cases/C001.json:115;data/m31/golden/C001/derived-candidate.json:256","finding":"布局冲突、输入载荷位置/真实材料缺口、项目假设/synthetic；目录引用不自动补足应用参数"},
+    {"id":"E12","kind":"verified_archived_source_not_active_qualification","path":"archive/m31/src/cadbench/command_naming.py","lines":[22,29,34,47],"related":"archive/m31/src/cadbench/design_rebinding.py:148;gearmath/tools/architecture_guard.py:84","finding":"存在可复用命名/重绑定；无STEP名转移、拆分无稳定子ID；新活跃路径禁止直接legacy import"},
+    {"id":"E13","kind":"verified_source","path":"gearmath/tools/ai_tools.py","lines":[54,232,241,374,455,536,547,573,575,634,636],"finding":"调用方来源标签、预览+CAS、受控优化直接分派、agent_proposed状态封顶；不是独立工程身份认证"},
+    {"id":"E14","kind":"verified_source","path":"gearmath/tools/design_store.py","lines":[79,101,154,169,304,355],"related":"docs/系统层输入-schema.md:3;gearmath/kernel/graph.py:204","finding":"副级真源所有权、磁盘校验和父链；系统仍独立输入"},
+    {"id":"E15","kind":"verified_source","path":"gearmath/tools/optimize_commit.py","lines":[1,11,48,51,117,138],"finding":"confirm守门写回；环境开关只控制列举；不能把它当权限隔离"},
+    {"id":"E16","kind":"verified_source_data_and_stored_receipt","path":"data/bench/v1/requirements.json","lines":[4,5,28,34],"related":"docs/v020-engineer-gold.md:3;gearmath/tools/bench_gold.py:64;output/m38/closure.json","finding":"40题真实标签为空；签署接收可验证声明结构，不能验证自然人身份/资质"},
+    {"id":"E17","kind":"stored_author_report_not_new_fe_qualification","path":"docs/v020-progress.md","lines":[17,27,29,37,41,45,51,60],"related":"docs/v020-m37-verified-profile.md:3;docs/v020-m37-verified-profile.md:15","finding":"报告保留真实L2失败矩阵、下级资格阻断与M40冻结；本分工未新跑或独立重验FE"},
+    {"id":"E18","kind":"external_standard_user_requirement","path":"docs/顶层设计.html","lines":[165,176,273,291,295,301,375,524,535,546,556,563,566],"finding":"一量一义、拓扑/载荷谱作者输入、CAD为投影、原始系统/FE/AI/多目标/M40门；未作为终局完成度百分比分母"}
+  ],
+  "external_primary_sources": [
+    {"id":"WEB-01","retrieved_on":"2026-11-01","title":"ISO 3408-5:2006 官方摘要","url":"https://www.iso.org/standard/34618.html","supports":"滚珠丝杆静/动轴向额定载荷与运行寿命的标准范围；不支持滑动梯形螺纹磨损寿命"},
+    {"id":"WEB-02","retrieved_on":"2026-11-01","title":"THK Method for Mounting the Ball Screw Shaft","url":"https://www.thk.com/us/en/products/ball_screw/selection/0005/","supports":"允许轴向载荷、屈曲与临界转速随安装方式和跨距变化；本路线不抽取通用边界系数"},
+    {"id":"WEB-03","retrieved_on":"2026-11-01","title":"THK Permissible Rotational Speed","url":"https://www.thk.com/us/en/products/ball_screw/selection/0007/","supports":"滚珠丝杆需分别核临界转速与具体型号DN/循环件限制，取适用低值；没有全型号通用转速阈值"},
+    {"id":"WEB-04","retrieved_on":"2026-11-01","title":"igus Lead screw technology FAQ","url":"https://www.igus.co.uk/threaded-rod/wiki","supports":"滑动丝杆自锁与导程/摩擦有关；材料、p-v、温度与磨损资料需指定产品域，不能用滚珠疲劳额定寿命替代"}
+  ],
+  "where_this_review_may_be_wrong": [
+    {"assumption":"活跃gearmath入口代表当前产品支持范围","gap":"archive/legacy里可能有可复用完整几何/命名/装配能力，本审计只读了相关边界，没有给全部归档再资格","check":"按R5逐模块建立活跃导入、版本、同源投影和编辑/STEP/面组回放证明；不能将本结论读作从未存在这些算法"},
+    {"assumption":"当前本地快照含用户愿意提供的全部真实案例/供应商资料","gap":"用户可能在其他目录已有真实布局、材料、载荷谱和已签署金标；未读取的外部资料不能算不存在","check":"由资料所有者提供带身份的原始记录，独立签署并入挑战manifest；保持旧合成/空缺答案字节不变"},
+    {"assumption":"规划目标含一般自动设计和工程release","gap":"用户若只需固定家族概念筛选，部分缺口可不阻断该较小用途；本轮也没有新FE、商业工具或全CAD重放","check":"逐用途声明最低模型/工程证据成熟度，再用对应原门与新goal gate合取验证；父审计的完整复核结果可收紧本冻结建议"}
+  ]
+}

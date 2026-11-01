@@ -1,0 +1,190 @@
+{
+  "schema": "abstract-transmission-enumeration-counts/1",
+  "grammar_id": "serial-reducer-abstract-v1.0.0",
+  "physical_stage_budget": 4,
+  "zero_stage_identity_included": false,
+  "provenance": {
+    "expected_frozen_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+    "source_before": {
+      "root": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "head": "80117283778cf8732b5557fa15c2e41f626f92fc",
+      "porcelain": ""
+    },
+    "source_after": {
+      "root": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "head": "80117283778cf8732b5557fa15c2e41f626f92fc",
+      "porcelain": ""
+    },
+    "source_state_unchanged": true,
+    "runner_source_sha256": "0f4a41877110c794dca25159b7d983833d9b024b91a2ac8d2d0d1d032352166d",
+    "grammar_evidence": "ASSUMED: explicitly controlled vocabulary",
+    "count_evidence": "VERIFIED: enumeration, closed forms, and negative probes",
+    "technical_references": [
+      {
+        "id": "mathworks-planetary-gear",
+        "url": "https://www.mathworks.com/help/sdl/ref/planetarygear.html",
+        "accessed_date": "2026-11-01",
+        "supports": "C/R/S rotational ports; (1+q)*omega_C=omega_S+q*omega_R; q>1",
+        "does_not_support": "Existence or viability of any enumerated industrial assembly"
+      },
+      {
+        "id": "cmu-mechanisms-ch7",
+        "url": "https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt7.html",
+        "accessed_date": "2026-11-01",
+        "supports": "Gear classification by parallel, intersecting, and neither-parallel-nor-intersecting axes",
+        "does_not_support": "Spatial assembly, strength or industrial precedent of any generated chain"
+      },
+      {
+        "id": "khk-gear-types",
+        "url": "https://khkgears.net/korea/types-of-gears.html",
+        "accessed_date": "2026-11-01",
+        "supports": "Physical distinction of external/internal mesh and examples of gear categories",
+        "does_not_support": "This report's six-atom vocabulary being exhaustive"
+      }
+    ],
+    "industrial_precedent": "OPEN: no vendor, patent or product examples asserted"
+  },
+  "domains": {
+    "four_atom": {
+      "alphabet": [
+        "P",
+        "H",
+        "B",
+        "W"
+      ],
+      "semantic_atom_count": 4,
+      "plugin_family_count": 4,
+      "plain_by_physical_stages": {
+        "1": 4,
+        "2": 16,
+        "3": 64,
+        "4": 256
+      },
+      "plain_ordered_sequences": 340,
+      "geometric_closed_form": "(4^5-4)/(4-1)",
+      "geometric_closed_form_result": 340,
+      "macro_expression_domain_before_budget": 780,
+      "weighted_macro_expressions_by_physical_stages": {
+        "1": 4,
+        "2": 17,
+        "3": 72,
+        "4": 305
+      },
+      "weighted_macro_expressions_admitted": 398,
+      "stage_budget_rejected_expressions": 382,
+      "expanded_unique_semantic_topologies": 340,
+      "macro_alias_expressions_beyond_canonical": 58,
+      "family_order_groups_not_semantic_dedup": 340,
+      "first_release_at_most_two_physical_stages": 20,
+      "at_most_three_physical_stages": 84,
+      "worm_terminal_policy": {
+        "active_in_base_grammar": false,
+        "evidence_state": "ASSUMED",
+        "meaning": "Hypothetical application contract: at most one W and W only at the final expanded physical stage.",
+        "admitted": 160,
+        "rejected": 180,
+        "reason_occurrences_overlap": {
+          "WORM_MULTIPLICITY_LIMIT": 78,
+          "WORM_NOT_TERMINAL": 180
+        }
+      }
+    },
+    "six_atom": {
+      "alphabet": [
+        "P",
+        "H",
+        "B",
+        "W",
+        "I",
+        "X"
+      ],
+      "semantic_atom_count": 6,
+      "plugin_family_count": 5,
+      "plain_by_physical_stages": {
+        "1": 6,
+        "2": 36,
+        "3": 216,
+        "4": 1296
+      },
+      "plain_ordered_sequences": 1554,
+      "geometric_closed_form": "(6^5-6)/(6-1)",
+      "geometric_closed_form_result": 1554,
+      "macro_expression_domain_before_budget": 2800,
+      "weighted_macro_expressions_by_physical_stages": {
+        "1": 6,
+        "2": 37,
+        "3": 228,
+        "4": 1405
+      },
+      "weighted_macro_expressions_admitted": 1676,
+      "stage_budget_rejected_expressions": 1124,
+      "expanded_unique_semantic_topologies": 1554,
+      "macro_alias_expressions_beyond_canonical": 122,
+      "family_order_groups_not_semantic_dedup": 780,
+      "first_release_at_most_two_physical_stages": 42,
+      "at_most_three_physical_stages": 258,
+      "worm_terminal_policy": {
+        "active_in_base_grammar": false,
+        "evidence_state": "ASSUMED",
+        "meaning": "Hypothetical application contract: at most one W and W only at the final expanded physical stage.",
+        "admitted": 936,
+        "rejected": 618,
+        "reason_occurrences_overlap": {
+          "WORM_MULTIPLICITY_LIMIT": 188,
+          "WORM_NOT_TERMINAL": 618
+        }
+      }
+    }
+  },
+  "planetary_role_extension": {
+    "four_atom_with_all_six_planetary_roles": {
+      "semantic_atom_count": 9,
+      "ordered_sequences_le_4": 7380,
+      "grammar_extension_id": "serial-ratio-chain-six-planetary-roles-v1.0.0",
+      "materialization": "count_only_not_in_the_1554_entry_library",
+      "reducer_only": false
+    },
+    "six_atom_with_all_six_planetary_roles": {
+      "semantic_atom_count": 11,
+      "ordered_sequences_le_4": 16104,
+      "grammar_extension_id": "serial-ratio-chain-six-planetary-roles-v1.0.0",
+      "materialization": "count_only_not_in_the_1554_entry_library",
+      "reducer_only": false
+    },
+    "four_atom_with_only_three_reducing_planetary_roles": {
+      "semantic_atom_count": 6,
+      "ordered_sequences_le_4": 1554,
+      "grammar_extension_id": "serial-reducer-three-planetary-roles-v1.0.0",
+      "materialization": "count_only_not_in_the_1554_entry_library",
+      "reducer_only": true
+    },
+    "six_atom_with_only_three_reducing_planetary_roles": {
+      "semantic_atom_count": 8,
+      "ordered_sequences_le_4": 4680,
+      "grammar_extension_id": "serial-reducer-three-planetary-roles-v1.0.0",
+      "materialization": "count_only_not_in_the_1554_entry_library",
+      "reducer_only": true
+    }
+  },
+  "geometry_subfamily_assignment_metric": {
+    "four_atom_H_spur_or_helical_assignment_count": 780,
+    "six_atom_H_and_I_spur_or_helical_assignment_count": 4680,
+    "adds_canonical_topologies": 0,
+    "assignment_domain_evidence": "ASSUMED",
+    "note": "Two labels per cylindrical parallel stage, without binding beta or proving manufacturability."
+  },
+  "duplicate_macro_definition_probe": {
+    "4": {
+      "two_weight_two_alias_definitions_raw_admitted": 458,
+      "expanded_unique_unchanged": 340,
+      "verification": "full_enumeration_equals_weighted_closed_form"
+    },
+    "6": {
+      "two_weight_two_alias_definitions_raw_admitted": 1800,
+      "expanded_unique_unchanged": 1554,
+      "verification": "full_enumeration_equals_weighted_closed_form"
+    }
+  },
+  "negative_probes_passed": 10,
+  "universe_claim": "Finite only inside this declared grammar; not an exhaustive census of industrial transmissions."
+}

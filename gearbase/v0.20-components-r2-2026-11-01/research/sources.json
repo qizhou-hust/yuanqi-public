@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0",
+  "research_scope": "Official-source fact check for the proposed gearbase mathematical transmission-unit plugins and a bounded prebuilt topology library; no product implementation or solver validation.",
+  "retrieved_on": "2026-11-01",
+  "verification_meaning": "Verified means the stated capability or definition was directly found in the opened primary source. It is not an independent verification of vendor accuracy, runtime, completeness, license availability, or this repository's implementation.",
+  "quotation_policy": "Statements are concise paraphrases. No long verbatim extracts are reproduced.",
+  "sources": [
+    {
+      "id": "KISS-2024-SUCCESSION",
+      "category": "vendor_history",
+      "title": "New KISSsoft Release, New KISSdesign, Available in April",
+      "publisher": "Gleason Corporation",
+      "url": "https://www.gleason.com/en/facts-and-news/news-room/new-kisssoft-release-new-kissdesign-available-in-april",
+      "published_on": "2024-04-01",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official Gleason site; KISSsoft's own navigation identifies Gleason Corporation.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "KISSsoft 2024 introduced the new KISSdesign system module to replace the previous KISSsys software.",
+        "The release announcement includes system calculation and an SKRIPT development environment."
+      ],
+      "evidence_locator": "Article dated Apr 1, 2024, opening two paragraphs.",
+      "what_it_does_not_prove": [
+        "It does not establish that KISSdesign is merely a name change with identical internal architecture.",
+        "It does not establish file, API, license, or module compatibility between historical KISSsys and current System Module releases."
+      ]
+    },
+    {
+      "id": "KISS-SYSTEM-MODELING",
+      "category": "vendor_capability",
+      "title": "KISSsoft System Module — Modeling",
+      "publisher": "KISSsoft / Gleason",
+      "url": "https://www.kisssoft.com/en/products/products/kisssoft-system-module/modeling/modeling",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official kisssoft.com product documentation.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "The System Module provides shaft-based gearbox topology modeling with gears, bearings, connections, meshes, and couplings.",
+        "It supports visual and parametric modeling of special planetary stages, power splits, and CVT paths.",
+        "A modeling assistant supplies predefined assemblies and initial sizing; a variants table manages multiple configurations sharing the same kinematics."
+      ],
+      "evidence_locator": "Explore the Modeling Functions; Sketcher; Modeling Assistant; Variants; Kinematics; Elements.",
+      "what_it_does_not_prove": [
+        "The assistant does not prove unrestricted, exhaustive, or globally optimal topology synthesis.",
+        "The page does not give a maximum stage count, topology count, external plugin contract, or complete API specification.",
+        "It does not justify describing the software as manual-only."
+      ]
+    },
+    {
+      "id": "KISS-SYSTEM-CALCULATION",
+      "category": "vendor_capability",
+      "title": "KISSsoft System Module — Calculation",
+      "publisher": "KISSsoft / Gleason",
+      "url": "https://www.kisssoft.com/en/products/products/kisssoft-system-module/calculation/calculation",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official kisssoft.com product documentation.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "System calculations link gears, shafts, bearings, and shaft-hub connections and reuse KISSsoft component strength and life routines.",
+        "The page documents system load spectra, efficiency and loss accounting with torque iteration, and thermal rating.",
+        "It also documents modal, characteristic-frequency, and forced-response functions and imported housing stiffness."
+      ],
+      "evidence_locator": "Components Strength; Load Spectrum; Efficiency; Thermal Rating; opening calculation overview.",
+      "what_it_does_not_prove": [
+        "Published capability descriptions are not independently reproduced accuracy or certification evidence.",
+        "These vendor capabilities do not establish dynamic simulation, standards conformance, or equivalent fidelity in gearbase."
+      ]
+    },
+    {
+      "id": "KISS-SKRIPT-COM",
+      "category": "vendor_automation",
+      "title": "Streamlined Parametric Study Using SKRIPT",
+      "publisher": "KISSsoft / Gleason",
+      "url": "https://www.kisssoft.com/en/news-and-events/newsroom/streamlined-parametric-study-using-skript",
+      "published_on": "2025-08-28",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official KISSsoft newsroom article.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "KISSsoft supports parameter studies through SKRIPT and a COM interface usable with Python and Visual Basic.",
+        "The documented SetElementData function changes shaft geometry, forces, and bearings; the example varies bearing position, clearance, or preload and exports results."
+      ],
+      "evidence_locator": "Article dated Aug 28, 2025, three technical paragraphs.",
+      "what_it_does_not_prove": [
+        "The article is not a complete programming reference or proof that all topology creation and model fields are exposed through COM.",
+        "Actual installed version, licensing, unattended execution, error handling, and integration compatibility were not tested."
+      ]
+    },
+    {
+      "id": "KISS-SYSTEM-SCRIPTING",
+      "category": "vendor_automation",
+      "title": "KISSsoft System Module — Results",
+      "publisher": "KISSsoft / Gleason",
+      "url": "https://www.kisssoft.com/en/products/products/kisssoft-system-module/results/results",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official kisssoft.com product documentation.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "System-module SKRIPT accesses calculation parameters and functions and automates workflows.",
+        "Scripts can run directly or in response to events such as pre-calculation and after file loading.",
+        "System and component reports and result tables are documented."
+      ],
+      "evidence_locator": "Scripting; Reports; Tables.",
+      "what_it_does_not_prove": [
+        "The page does not specify a plugin ABI, a public package schema, or a complete dependency and equation compiler.",
+        "It does not establish any performance comparison with gearbase."
+      ]
+    },
+    {
+      "id": "ROMAX-CURRENT-OVERVIEW",
+      "category": "vendor_capability",
+      "title": "Romax — Electromechanical Drivetrain Design",
+      "publisher": "Cadence",
+      "url": "https://www.cadence.com/en_US/home/tools/msc-software/romax.html",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Current official Cadence Romax product page.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "Romax provides drivetrain modeling, structural simulation, component rating, and optimization across products.",
+        "Concept provides parametric system models; Spin supplies detailed bearings within full-drive models; Enduro addresses structural durability, Energy efficiency, and Spectrum NVH."
+      ],
+      "evidence_locator": "Overview; feature table; Romax Enduro, Spectrum, Spin, Concept, Energy sections.",
+      "what_it_does_not_prove": [
+        "The suite-wide list is not the capability or license list of any one Romax product.",
+        "The page does not specify all supported component models or the model equations.",
+        "No advertised accuracy, runtime, customer result, or software installation was independently checked."
+      ]
+    },
+    {
+      "id": "ROMAX-PARAMETRIC-AUTOMATION",
+      "category": "vendor_automation",
+      "title": "Romax Software Suite — Product Overview",
+      "publisher": "Cadence",
+      "url": "https://www.cadence.com/en_US/home/resources/product-briefs/romax-software-suite-product-brief.html",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official Cadence product brief.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "The official brief documents parametric full-system definition using analytical, empirical, and finite-element methods.",
+        "It documents multi-attribute optimization and process automation."
+      ],
+      "evidence_locator": "Capabilities: Trusted and validated; CAE-led design; Process improvement.",
+      "what_it_does_not_prove": [
+        "It does not prove a particular optimization algorithm, exhaustive topology enumeration, or a complete public component-plugin interface.",
+        "It contradicts a manual-only characterization, but does not support claims that every user workflow is automatic."
+      ]
+    },
+    {
+      "id": "ROMAX-BATCH-2021",
+      "category": "vendor_automation",
+      "title": "Evaluate bearing performance according to supplier data with SKF calculations embedded in Romax products",
+      "publisher": "Romax technical team / Hexagon Nexus",
+      "url": "https://nexus.hexagon.com/community/public/romax/b/technical-blog/posts/evaluate-bearing-performance-according-to-supplier-data-with-skf-calculations-embedded-in-romax-products",
+      "published_on": "2021-10-28",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official Hexagon Romax technical blog; author identified as Romax product manager.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "Romax already exposed parameter studies and Batch Running from a command line or third-party program in this 2021 description.",
+        "Bearing results can be targets/results in studies and batch jobs; the documented result hierarchy includes shaft assemblies, bearings, duty cycles, and load cases."
+      ],
+      "evidence_locator": "Using SKF bearing results in batch running and parametric study.",
+      "what_it_does_not_prove": [
+        "The article is not a complete desktop API specification and does not give all commands or license conditions.",
+        "The source's specific SKF connectivity and calculations require additional account/version checks for actual use."
+      ]
+    },
+    {
+      "id": "ROMAX-BATCH-2026",
+      "category": "vendor_automation",
+      "title": "Romax 2026.1: A New Foundation for Drivetrain Simulation",
+      "publisher": "Cadence Community — Physical Systems Simulation",
+      "url": "https://community.cadence.com/cadence_blogs_8/b/pss/posts/romax-2026-1-a-new-foundation-for-drivetrain-simulation",
+      "published_on": "2026-08-18",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official Cadence release blog linked to the Cadence Romax product and support pages.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "The 2026.1 release documents report generation, contact-stress data export, bearing load targets/results, and gear scuffing variables in parameter studies and Batch Running.",
+        "The page separately labels its second-generation static analysis engine as a preview in 2026.1."
+      ],
+      "evidence_locator": "Sections 1 and 7–10.",
+      "what_it_does_not_prove": [
+        "The page is not proof of independently benchmarked performance or availability of every feature in every product.",
+        "Its 2026.1 preview status must not be conflated with the status of later releases."
+      ]
+    },
+    {
+      "id": "ROMAX-2026-2",
+      "category": "vendor_capability",
+      "title": "Romax 2026.2: A First Look at the Next Chapter in Drivetrain Simulation",
+      "publisher": "Cadence Community — Physical Systems Simulation",
+      "url": "https://community.cadence.com/cadence_blogs_8/b/pss/posts/romax-2026-2-a-first-look-at-the-next-chapter-in-drivetrain-simulation",
+      "published_on": "2026-10-27",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official Cadence Romax release announcement.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "The 2026.2 announcement describes a new static-analysis engine, a second-generation vibration postprocessor, and ODYSSEE machine-learning integration for parameter studies."
+      ],
+      "evidence_locator": "A Completely New Static Analysis Engine; A Fresh Take on NVH Insight; Machine Learning, Built Into Your Design Exploration.",
+      "what_it_does_not_prove": [
+        "The announcement does not specify the machine-learning algorithm, validation data, complete integration interface, or measured global optimization quality.",
+        "It precludes an unsupported claim that gearbase is the first to combine learning or automated exploration with drivetrain tools."
+      ]
+    },
+    {
+      "id": "ROMAX-API-LANDING",
+      "category": "vendor_api_boundary",
+      "title": "Romax Nexus API Services",
+      "publisher": "Romax Technology / Hexagon",
+      "url": "https://api.romaxtech.com/",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official Romax-branded API landing page with Romax Technology legal identity and Hexagon copyright.",
+      "access_status": "opened_landing_page_only",
+      "verified_statement": [
+        "An official endpoint identifies itself as Romax Nexus API Services."
+      ],
+      "evidence_locator": "Page title, service connection message, and legal footer.",
+      "what_it_does_not_prove": [
+        "A landing page does not establish the desktop automation API, complete model read/write coverage, public access, authentication, stability, license, or calling signatures.",
+        "No API request beyond reading this landing page was made."
+      ]
+    },
+    {
+      "id": "MODELICA-CONNECTION-SEMANTICS",
+      "category": "physical_connector_standard",
+      "title": "Modelica Language Specification 3.6 — Chapter 9: Connectors and Connections",
+      "publisher": "Modelica Association",
+      "url": "https://specification.modelica.org/maint/3.6/connectors-and-connections.html",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official version-pinned Modelica language specification.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "Connections generate equation sets with equal non-flow potentials and signed zero-sum flow variables.",
+        "Inside/outside connection orientation determines signs; connections require matching primitive connector types.",
+        "The graphical representation is optional; physical connection semantics are mathematical."
+      ],
+      "evidence_locator": "Chapter opening; sections 9.1, 9.2, and 9.3.",
+      "what_it_does_not_prove": [
+        "Using similar connector semantics does not make a new application a Modelica implementation or prove a correct compiler.",
+        "Equation generation alone does not provide dynamics, initialization, event handling, numerical solvability, or validation.",
+        "Version 3.6 is used as an explicit stable reference, without claiming it is the latest specification."
+      ]
+    },
+    {
+      "id": "MODELICA-ROTATIONAL-FLANGE",
+      "category": "physical_connector_definition",
+      "title": "Modelica.Mechanics.Rotational.UsersGuide.FlangeConnectors",
+      "publisher": "Modelica Standard Library documentation hosted by OpenModelica",
+      "url": "https://build.openmodelica.org/Documentation/Modelica.Mechanics.Rotational.UsersGuide.FlangeConnectors.html",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official OpenModelica-generated documentation of the Modelica Standard Library.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "Rotational flanges contain angle phi and flow-prefixed cut torque tau; angular velocity is the time derivative of phi.",
+        "Flange_a and Flange_b have identical variable definitions; their icons differ."
+      ],
+      "evidence_locator": "Information section: connector variables and derivative relations.",
+      "what_it_does_not_prove": [
+        "Modelica's flow keyword is not the bond-graph velocity-flow variable.",
+        "The 1D connector does not contain a spatial axis, radial/axial bearing loads, or the full housing reaction wrench."
+      ]
+    },
+    {
+      "id": "MODELICA-TRANSLATIONAL-FLANGE",
+      "category": "physical_connector_definition",
+      "title": "Modelica Standard Library v4.1.0 — Translational.Interfaces.Flange source",
+      "publisher": "Modelica Association / ModelicaStandardLibrary",
+      "url": "https://raw.githubusercontent.com/modelica/ModelicaStandardLibrary/v4.1.0/Modelica/Mechanics/Translational/Interfaces/Flange.mo",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Version-pinned source file in the official modelica/ModelicaStandardLibrary repository.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "The translational connector declares absolute position s and flow-prefixed cut force f."
+      ],
+      "evidence_locator": "Connector declarations, source lines 3–4 (zero-based web extraction).",
+      "what_it_does_not_prove": [
+        "This connector alone does not model a screw, guide, friction, backlash, elasticity, or dynamic state.",
+        "The scalar force requires an explicitly defined translational axis."
+      ]
+    },
+    {
+      "id": "MODELICA-FIXED-REACTION",
+      "category": "physical_boundary_condition",
+      "title": "Modelica Standard Library v4.1.0 — Rotational.Components.Fixed source",
+      "publisher": "Modelica Association / ModelicaStandardLibrary",
+      "url": "https://raw.githubusercontent.com/modelica/ModelicaStandardLibrary/v4.1.0/Modelica/Mechanics/Rotational/Components/Fixed.mo",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Version-pinned source file in the official modelica/ModelicaStandardLibrary repository.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "Fixed constrains flange angle to phi0; its equation section does not set flange torque to zero."
+      ],
+      "evidence_locator": "Equation section: flange.phi = phi0.",
+      "what_it_does_not_prove": [
+        "Grounding does not mean zero reaction torque; the connected system determines reaction.",
+        "This ideal kinematic boundary does not determine real support flexibility, bearing selection, or housing stress."
+      ]
+    },
+    {
+      "id": "MODELICA-SUPPORT-REACTION",
+      "category": "physical_boundary_condition",
+      "title": "Modelica Standard Library v4.1.0 — PartialElementaryTwoFlangesAndSupport2 source",
+      "publisher": "Modelica Association / ModelicaStandardLibrary",
+      "url": "https://raw.githubusercontent.com/modelica/ModelicaStandardLibrary/v4.1.0/Modelica/Mechanics/Rotational/Interfaces/PartialElementaryTwoFlangesAndSupport2.mo",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Version-pinned source file in the official modelica/ModelicaStandardLibrary repository.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "The two-shaft-flange base model includes an optional support whose torque balances the two flange torques.",
+        "When useSupport is false, the support is implicit and its angle is fixed internally; enabling it requires a connection."
+      ],
+      "evidence_locator": "Support declaration and equation section, source lines 13–22 (zero-based web extraction).",
+      "what_it_does_not_prove": [
+        "The scalar 1D balance is not a complete vector housing-reaction or bearing-load model for crossed axes.",
+        "An application must preserve its own port-orientation conventions and local-axis transforms."
+      ]
+    },
+    {
+      "id": "SEW-S-CURRENT",
+      "category": "industrial_product_family",
+      "title": "S series helical-worm gear units",
+      "publisher": "SEW-EURODRIVE",
+      "url": "https://www.seweurodrive.com/products/gear-units/standard-gear-units/helical-worm-gear-units-s/helical-worm-gear-units-s.html",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official SEW-EURODRIVE US product page.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "SEW currently markets an S-series helical-worm family combining a helical stage with worm gearing.",
+        "The page lists machine/plant applications and compound gear-unit variants."
+      ],
+      "evidence_locator": "S series overview; features; application list.",
+      "what_it_does_not_prove": [
+        "The listed applications are not named commissioned OEM cases.",
+        "Current catalog capacities are not a duty cycle or a validated reference solution for this library.",
+        "The page does not establish the stage count of every compound variant."
+      ]
+    },
+    {
+      "id": "SEW-S-TECHNOTE-2003",
+      "category": "industrial_product_family_technical_note",
+      "title": "S-001-04 — S-Series Gear Reducers Technical Note",
+      "publisher": "SEW-EURODRIVE",
+      "url": "https://blog.seweurodrive.com/hubfs/Online%20Support/Technical%20Notes/S%20-%20Helical%20Worm/S-001-04.pdf?hsLang=en",
+      "published_on": "2003-07",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Manufacturer technical PDF on an official SEW-EURODRIVE subdomain; document identifies SEW and its own revision.",
+      "access_status": "opened_pdf_text",
+      "verified_statement": [
+        "The documented base S-series reducer has two stages in order: helical first, worm second."
+      ],
+      "evidence_locator": "Page 1 opening; page 3 Design.",
+      "what_it_does_not_prove": [
+        "This is a 2003 technical note, not confirmation of all 2026 variants or ratings.",
+        "It does not prove that reversing the stage order is equivalent, or that every additional primary-reducer option remains within four stages.",
+        "No actual user duty cycle or reference geometry is supplied here."
+      ]
+    },
+    {
+      "id": "SEW-P",
+      "category": "industrial_product_family",
+      "title": "Planetary gear units — P series",
+      "publisher": "SEW-EURODRIVE",
+      "url": "https://www.sew-eurodrive.de/products/industrial-gear-units/planetary-gear-units/p/p.html",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official SEW-EURODRIVE product page.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "The P family combines planetary units with upstream helical or bevel-helical gearmotors.",
+        "Its P.RF table lists four- and five-stage configurations; P.KF is listed as five-stage."
+      ],
+      "evidence_locator": "Primary gearmotor; feature list; gear unit type/stages table.",
+      "what_it_does_not_prove": [
+        "The family is not evidence for a universal four-stage industrial limit; its five-stage options are counterexamples.",
+        "It does not identify every internal stage connection or a named commissioned OEM installation.",
+        "Catalog torque/ratio ranges are not library load cases or reference solutions."
+      ]
+    },
+    {
+      "id": "SEW-PXE",
+      "category": "industrial_product_family",
+      "title": "P-X.e planetary gear units with primary bevel-helical gear units",
+      "publisher": "SEW-EURODRIVE",
+      "url": "https://www.sew-eurodrive.de/products/industrial-gear-units/planetary-gear-units/p-xe/p-xe.html",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official SEW-EURODRIVE product page.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "The P-X.e family combines a primary X.e bevel-helical unit with a P/P2.e planetary unit.",
+        "The product table includes three- and four-stage configurations."
+      ],
+      "evidence_locator": "Family description; In detail; gear unit type/stages table.",
+      "what_it_does_not_prove": [
+        "An application-area list does not identify a commissioned OEM installation.",
+        "The table does not establish the precise internal topology of every library candidate or its operating loads."
+      ]
+    },
+    {
+      "id": "NORD-MAXXDRIVE",
+      "category": "industrial_product_family",
+      "title": "MAXXDRIVE Parallel Helical Industrial Gear Units",
+      "publisher": "NORD DRIVESYSTEMS",
+      "url": "https://www.nord.com/us/products/maxxdrive/maxxdrive-parallel-gear-units/maxxdrive-parallel-gear-units.jsp",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official NORD manufacturer product page.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "MAXXDRIVE XC parallel helical units are listed as two-/three-stage; XD units offer three-/four-stage lifting configurations.",
+        "The page reports conveyor use at an unnamed Moroccan phosphate mine."
+      ],
+      "evidence_locator": "XC and XD product subsections; Moroccan phosphate-mine paragraph.",
+      "what_it_does_not_prove": [
+        "The anonymous mine description is not a reproducible named OEM case, and its stage count is not stated.",
+        "Maximum family capacities must not be treated as the actual conveyor load.",
+        "Neither a detailed reference model nor a solver result is provided."
+      ]
+    },
+    {
+      "id": "NEUGART-PLE",
+      "category": "industrial_product_family",
+      "title": "PLE — Economy Planetary Gearbox",
+      "publisher": "Neugart GmbH",
+      "url": "https://www.neugart.com/en/gearboxes/economy-gearboxes/ple",
+      "retrieved_on": "2026-11-01",
+      "primary_source_basis": "Official Neugart product page and technical-data table.",
+      "access_status": "opened_full_text",
+      "verified_statement": [
+        "PLE is a coaxial, spur-tooth planetary family; the technical-data table has one-, two-, and three-stage options."
+      ],
+      "evidence_locator": "Features; Gearbox characteristics ratio table and Stage column.",
+      "what_it_does_not_prove": [
+        "The table establishes multi-stage planetary product options, not a differential or compound-planetary topology.",
+        "Exact per-stage connections, tooth counts, fixed members, duty cycles, and real installation data are not established by this page.",
+        "Size-dependent unavailable cells must be respected; the table is not a universal configuration guarantee."
+      ]
+    }
+  ],
+  "excluded_or_limited_retrievals": [
+    {
+      "url": "https://simcompanion.hexagon.com/customers/s/article/Romax-Concept",
+      "observation": "Opening returned a loading/CSS-error shell. Indexed snippets were not used as full-text evidence; accessible official Cadence and Nexus pages were substituted."
+    },
+    {
+      "url": "https://simcompanion.hexagon.com/customers/s/article/What-s-new-in-Romax-Evolve-2024-1",
+      "observation": "Opening returned a loading/CSS-error shell; excluded from the source facts."
+    },
+    {
+      "url": "https://mscsoftware.my.site.com/customers/s/article/Romax-Spin",
+      "observation": "Opening returned a loading/CSS-error shell; excluded from the source facts."
+    },
+    {
+      "url": "https://mscsoftware.my.site.com/customers/s/article/Romax-Enduro",
+      "observation": "Opening returned a loading/CSS-error shell; excluded from the source facts."
+    },
+    {
+      "url": "https://nexus.hexagon.com/home/product/romax-enduro/",
+      "observation": "Direct opening timed out; no statement relies on its search snippet."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "gearbase.architecture-r2-status/1",
+  "source_version": "0.20",
+  "report_revision": 2,
+  "core_unchanged": true,
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "product_plugin_api_implemented": false,
+  "production_frozen": false,
+  "prebuilt_library": "analysis-only abstract candidates; not mature engineering solutions",
+  "four_type_structures": 340,
+  "six_type_structures": 1554,
+  "two_stage_macro_counts_as": 2,
+  "math_checks_passed": 39,
+  "enumeration_unit_tests": 12,
+  "enumeration_negative_probes": 10,
+  "new_whole_milestone_closed": false,
+  "prior_report_conclusions_unchanged": true,
+  "M40": "existing frozen physical qualification scope unchanged",
+  "next_slice": "A0 mathematical contract then A1 reuse existing H calculations, before online multi-topology design"
+}

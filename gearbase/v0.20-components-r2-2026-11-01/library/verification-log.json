@@ -1,0 +1,92 @@
+{
+  "verified_at_utc": "2026-11-01T12:21:38.635983+00:00",
+  "runner_command": [
+    "D:\\anaconda3\\python.exe",
+    "D:\\my_Works\\Gears\\v020-component-architecture-2026-11-01\\library\\run_enumeration.py"
+  ],
+  "runner_runs": 2,
+  "runner_exit_codes": [
+    0,
+    0
+  ],
+  "runner_stdout": "{\n  \"grammar_id\": \"serial-reducer-abstract-v1.0.0\",\n  \"output_dir\": \"D:\\\\my_Works\\\\Gears\\\\v020-component-architecture-2026-11-01\\\\library\",\n  \"four_atom_topologies\": 340,\n  \"six_atom_topologies\": 1554,\n  \"six_atom_macro_representations\": 1676,\n  \"negative_probes_passed\": 10,\n  \"rejection_ledger_rows\": 2304,\n  \"source_state_unchanged\": true\n}\n",
+  "test_command": [
+    "D:\\anaconda3\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "D:\\my_Works\\Gears\\v020-component-architecture-2026-11-01\\library",
+    "-p",
+    "test_enumeration.py",
+    "-v"
+  ],
+  "test_exit_code": 0,
+  "test_output": "test_all_reasons_survive_no_first_failure_short_circuit (test_enumeration.EnumerationAcceptance.test_all_reasons_survive_no_first_failure_short_circuit) ... ok\ntest_budget_counts_expanded_physical_stages (test_enumeration.EnumerationAcceptance.test_budget_counts_expanded_physical_stages) ... ok\ntest_domain_audit_conserves_all_raw_expressions (test_enumeration.EnumerationAcceptance.test_domain_audit_conserves_all_raw_expressions) ... ok\ntest_duplicate_macro_is_an_alias (test_enumeration.EnumerationAcceptance.test_duplicate_macro_is_an_alias) ... ok\ntest_geometric_count_four_and_six_letters (test_enumeration.EnumerationAcceptance.test_geometric_count_four_and_six_letters) ... ok\ntest_optional_policy_is_disclosed_and_not_a_base_rule (test_enumeration.EnumerationAcceptance.test_optional_policy_is_disclosed_and_not_a_base_rule) ... ok\ntest_planetary_roles_are_distinct_semantics (test_enumeration.EnumerationAcceptance.test_planetary_roles_are_distinct_semantics) ... ok\ntest_port_admission_is_not_spatial_assembly (test_enumeration.EnumerationAcceptance.test_port_admission_is_not_spatial_assembly) ... ok\ntest_reverse_order_must_not_collapse (test_enumeration.EnumerationAcceptance.test_reverse_order_must_not_collapse) ... ok\ntest_spur_and_helical_share_topology_parent (test_enumeration.EnumerationAcceptance.test_spur_and_helical_share_topology_parent) ... ok\ntest_unknown_token_is_rejected (test_enumeration.EnumerationAcceptance.test_unknown_token_is_rejected) ... ok\ntest_weight_two_macro_coefficients (test_enumeration.EnumerationAcceptance.test_weight_two_macro_coefficients) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.049s\n\nOK\n",
+  "independent_serialization_checks": {
+    "library_and_csv_entries_1554": true,
+    "starter_le_2_entries_42": true,
+    "entries_ordered_by_fewest_physical_stages_first": true,
+    "base_four_entries_340": true,
+    "semantic_signatures_unique": true,
+    "hash_ids_unique": true,
+    "macro_representations_1676": true,
+    "all_admitted_are_abstract": true,
+    "all_industrial_precedent_open_and_unclaimed": true,
+    "family_groups_780_cover_1554": true,
+    "rejection_ledger_2304_no_missing_reasons": true,
+    "deterministic_artifact_hashes": true
+  },
+  "artifact_sha256": {
+    "enum-counts.json": "3c60ffc0ed69657e6cdc0a1e907775a818de0fc38f1b42231415044a9373e469",
+    "topology-library.json": "c549f81355d00b893ba04b62972393cea134adbc2606d05aa8ccf50bcdf27a91",
+    "negative-probes.json": "f58a46873da312b4d7acf189323c292529334dc73dffe197d80e860496d8e546",
+    "topology-library-summary.csv": "b8ec8b9328c94a7ded37a1ed833db71109050dbc6a7e770099c04889b9e13778",
+    "topology-group-summary.csv": "babb37cdee4ae76e39cc58b8d712c5d2daa3fb8fa1bf6c34bc4f15fcd087322e",
+    "rejection-ledger.csv": "766c7c3f7d834fc40af17b33363bbb63517d1172dae263abcb2fdc7c7fe2f591"
+  },
+  "review_document_sha256": "0d88d3e77ecca90e6c37468fb01fcf6e53167d3dfc4b952c87ef9ab2936348c9",
+  "test_source_sha256": "21b5d1c65934899b56e200cb1dc51e5cfd804d51b24ae0cfb44d10abbd4b8a87",
+  "source_provenance": {
+    "expected_frozen_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+    "source_before": {
+      "root": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "head": "80117283778cf8732b5557fa15c2e41f626f92fc",
+      "porcelain": ""
+    },
+    "source_after": {
+      "root": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "head": "80117283778cf8732b5557fa15c2e41f626f92fc",
+      "porcelain": ""
+    },
+    "source_state_unchanged": true,
+    "runner_source_sha256": "0f4a41877110c794dca25159b7d983833d9b024b91a2ac8d2d0d1d032352166d",
+    "grammar_evidence": "ASSUMED: explicitly controlled vocabulary",
+    "count_evidence": "VERIFIED: enumeration, closed forms, and negative probes",
+    "technical_references": [
+      {
+        "id": "mathworks-planetary-gear",
+        "url": "https://www.mathworks.com/help/sdl/ref/planetarygear.html",
+        "accessed_date": "2026-11-01",
+        "supports": "C/R/S rotational ports; (1+q)*omega_C=omega_S+q*omega_R; q>1",
+        "does_not_support": "Existence or viability of any enumerated industrial assembly"
+      },
+      {
+        "id": "cmu-mechanisms-ch7",
+        "url": "https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt7.html",
+        "accessed_date": "2026-11-01",
+        "supports": "Gear classification by parallel, intersecting, and neither-parallel-nor-intersecting axes",
+        "does_not_support": "Spatial assembly, strength or industrial precedent of any generated chain"
+      },
+      {
+        "id": "khk-gear-types",
+        "url": "https://khkgears.net/korea/types-of-gears.html",
+        "accessed_date": "2026-11-01",
+        "supports": "Physical distinction of external/internal mesh and examples of gear categories",
+        "does_not_support": "This report's six-atom vocabulary being exhaustive"
+      }
+    ],
+    "industrial_precedent": "OPEN: no vendor, patent or product examples asserted"
+  },
+  "scope_limit": "Counts, normalization, explicit policy and evidence labels only. No physical engineering validation."
+}

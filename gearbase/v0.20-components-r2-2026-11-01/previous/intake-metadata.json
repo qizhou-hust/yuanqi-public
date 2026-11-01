@@ -1,0 +1,14 @@
+{
+  "schema": "gearbase.intake-metadata/1",
+  "source_filename": "POD需求确认.xlsx",
+  "source_sha256": "2ea96c0b47da75a3c7c1ee7f4d68415992ce8d49da9ec78592a58891f3c02baf",
+  "read_only": true,
+  "source_unchanged": true,
+  "sheet": "Sheet1",
+  "field_label_rows": 19,
+  "requirement_range": "C2:C20",
+  "populated_requirement_cells": 0,
+  "status": "blank_requirement_template_not_a_validated_engineering_case",
+  "formal_case_added": false,
+  "method": "Stored OOXML values checked; no workbook edited or recalculated. Private cell extract not included in the public package."
+}

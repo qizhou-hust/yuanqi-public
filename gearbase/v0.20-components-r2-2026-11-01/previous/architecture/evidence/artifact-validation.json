@@ -1,0 +1,9 @@
+{
+  "runtime_pointers_validated": 31,
+  "markdown_local_links_validated": 53,
+  "errors": [],
+  "git_status": "",
+  "product_tree_clean": true,
+  "source_change_numeric_count": 29,
+  "capture_normalization": "stdout_text_utf8_sha256 hashes normalized subprocess text; stdout_sha256 hashes saved file bytes, which may contain CRLF on Windows."
+}

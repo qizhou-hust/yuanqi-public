@@ -1,0 +1,84 @@
+{
+  "schema": "gearbase.freeze-assessment-baseline/1",
+  "date_local": "2026-11-01",
+  "timezone": "America/Los_Angeles",
+  "generated_utc": "2026-11-01T11:24:50.583461+00:00",
+  "version": "0.20",
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "passed": true,
+  "source_unchanged": true,
+  "frozen_python_files": 266,
+  "commands": [
+    {
+      "name": "architecture",
+      "argv": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "gearmath.tools.architecture_guard",
+        "--json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1588892000727355,
+      "stdout_sha256": "af1eabedf01414b0b081d7395fd393b67a5f01d030667384197be663dc78fe57",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "package-integrity",
+      "argv": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "gearmath.tools.package_hashes",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3421991001814604,
+      "stdout_sha256": "a8b262001f0b9221e945008fe055e93b6daad7bf41e8aefe5fe419785d8613d5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "milestones",
+      "argv": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-I",
+        "gearmath/tools/milestones.py",
+        "--json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.9042307999916375,
+      "stdout_sha256": "1786240162b398e9bca34639c843e65187c117fd7d5cf1097db8dd7248db42bf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "targeted-tests",
+      "argv": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-I",
+        "-S",
+        "-c",
+        "import sys,unittest;sys.path.insert(0,'.');s=unittest.defaultTestLoader.loadTestsFromNames(['tests.test_m32_architecture_guard','tests.test_v020_geometry_gate','tests.test_v020_m35_packet','tests.test_v020_bench_gold','tests.test_fea_readonly_import','tests.test_m38_ai_native']);r=unittest.TextTestRunner(verbosity=2).run(s);sys.exit(not r.wasSuccessful())"
+      ],
+      "exit_code": 0,
+      "seconds": 17.972881100140512,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "8b76d7f2c806d27356f8d015292d2b5f5a2fb60c2b5d3e5930c26c616059bae8"
+    }
+  ],
+  "historical_hosted_CI": {
+    "source": "D:\\my_Works\\Gears\\v020-closure-run\\HOSTED-ACCEPTANCE.json",
+    "sha256": "e43b8f2ea8ac225b9750f19348cbd9ce9fbd0f2a0792a45a17c0858802471362",
+    "rerun_this_round": false
+  },
+  "scope": "Read-only baseline checks and focused tests. No new FE solve, KISSsoft solve, Claude model invocation, real gold labels or production release."
+}

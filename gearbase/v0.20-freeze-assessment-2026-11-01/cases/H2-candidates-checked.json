@@ -1,0 +1,1682 @@
+[
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 1,
+    "candidate_sha256": "1feba710520b3562cd45deca4d17d6480f5618f549e3eeff6e46b7b54d01a3c4",
+    "candidate_identity": [
+      [
+        2.0,
+        20,
+        50,
+        28.95502437185985
+      ],
+      [
+        2.0,
+        18,
+        72,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 2,
+    "candidate_sha256": "4575c4a296655e59d1d0e0da756f5002f0be29989744557c71a30877a3aea5e2",
+    "candidate_identity": [
+      [
+        2.0,
+        14,
+        56,
+        28.95502437185985
+      ],
+      [
+        2.0,
+        26,
+        65,
+        24.494648471419676
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 3,
+    "candidate_sha256": "3ff5d527f94e6fb09acd5bb80cf9aa122c3ee4c5dc023796dc3ca360a726dfa7",
+    "candidate_identity": [
+      [
+        2.0,
+        20,
+        50,
+        28.95502437185985
+      ],
+      [
+        2.0,
+        19,
+        76,
+        18.194872338766785
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 4,
+    "candidate_sha256": "5ba77c87c4f7ef90b04d17a7d0aeb7b815696ebd49311d38c8d709b595952eb9",
+    "candidate_identity": [
+      [
+        2.0,
+        14,
+        56,
+        28.95502437185985
+      ],
+      [
+        2.0,
+        28,
+        70,
+        11.478340954533579
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 5,
+    "candidate_sha256": "0e2d5b5d5135cd1cbda0f572ea214439de6c24e48393ee5416e999155c51a306",
+    "candidate_identity": [
+      [
+        2.0,
+        12,
+        60,
+        25.841932763167126
+      ],
+      [
+        2.0,
+        29,
+        58,
+        29.541360500142794
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 6,
+    "candidate_sha256": "58811e8ff28eff555a4ded7e84e88b780da60d59d4ea6cf74dba1be0c954ba1c",
+    "candidate_identity": [
+      [
+        2.0,
+        12,
+        60,
+        25.841932763167126
+      ],
+      [
+        2.0,
+        30,
+        60,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 7,
+    "candidate_sha256": "8d5f0cf84cc1780bdb66ac5dd3f7187c49128fa271465d553d026c7521912b2e",
+    "candidate_identity": [
+      [
+        2.0,
+        24,
+        48,
+        25.841932763167126
+      ],
+      [
+        2.0,
+        15,
+        75,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 8,
+    "candidate_sha256": "76b0622d6fa46c400f2c786dae270e35c9778e3ae95351cf557514d070beb676",
+    "candidate_identity": [
+      [
+        2.0,
+        32,
+        40,
+        25.841932763167126
+      ],
+      [
+        2.0,
+        10,
+        80,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 9,
+    "candidate_sha256": "4dde64e457eb03764801f1302779f172b777a0fb315ed2912b5415e1b29062bb",
+    "candidate_identity": [
+      [
+        2.0,
+        12,
+        60,
+        25.841932763167126
+      ],
+      [
+        2.0,
+        31,
+        62,
+        21.56518501524267
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 10,
+    "candidate_sha256": "ed5d1841db01aecd74c97d5386c11f1747b2e7a8335345a177f84c6444f15f12",
+    "candidate_identity": [
+      [
+        2.0,
+        12,
+        60,
+        25.841932763167126
+      ],
+      [
+        2.0,
+        32,
+        64,
+        16.260204708311967
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 11,
+    "candidate_sha256": "744e0329bf02e40ab62f65767dd9595f04ed0680aa09a1ea54a841347aa459dd",
+    "candidate_identity": [
+      [
+        2.0,
+        24,
+        48,
+        25.841932763167126
+      ],
+      [
+        2.0,
+        16,
+        80,
+        16.260204708311967
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 12,
+    "candidate_sha256": "33bf6f638ad34bafd24ac246939ccfc1ffdb4295b80d68c00b031827fdf096a9",
+    "candidate_identity": [
+      [
+        2.0,
+        12,
+        60,
+        25.841932763167126
+      ],
+      [
+        2.0,
+        33,
+        66,
+        8.109614455994183
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 13,
+    "candidate_sha256": "28940eda72fef5f5ddafbe0779ffd06c15990d3f3495c1fff3c2584c3606cb69",
+    "candidate_identity": [
+      [
+        2.0,
+        32,
+        40,
+        25.841932763167126
+      ],
+      [
+        2.0,
+        11,
+        88,
+        8.109614455994183
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 14,
+    "candidate_sha256": "5c521acf25392ed8a354191a7164c079d47846308e1b0d57eb846a7923a6173c",
+    "candidate_identity": [
+      [
+        2.0,
+        25,
+        50,
+        20.364134806317807
+      ],
+      [
+        2.0,
+        15,
+        75,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 15,
+    "candidate_sha256": "b65377b944a98f55dbc26eca2ae31ed8db562a34e7836f9f5df901c385ea5b12",
+    "candidate_identity": [
+      [
+        2.0,
+        15,
+        60,
+        20.364134806317807
+      ],
+      [
+        2.0,
+        26,
+        65,
+        24.494648471419676
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 16,
+    "candidate_sha256": "e3e086eb8236767988e56070715f3f3475f0d185252b9ef7a3bb5f4fbbe7d10c",
+    "candidate_identity": [
+      [
+        2.0,
+        25,
+        50,
+        20.364134806317807
+      ],
+      [
+        2.0,
+        16,
+        80,
+        16.260204708311967
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 17,
+    "candidate_sha256": "07ca8022a0d536821af52d2e3e5bc63b877b4d9605838d3d5114e8d31057d48c",
+    "candidate_identity": [
+      [
+        2.0,
+        15,
+        60,
+        20.364134806317807
+      ],
+      [
+        2.0,
+        28,
+        70,
+        11.478340954533579
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 18,
+    "candidate_sha256": "f70fa3fa21d6594f0edef257f24e06b776ba733a56e0c363b63f147d7728319a",
+    "candidate_identity": [
+      [
+        2.0,
+        22,
+        55,
+        15.740548525168737
+      ],
+      [
+        2.0,
+        18,
+        72,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 19,
+    "candidate_sha256": "c1fa535f01901794881c1ed6ef78d9cc6754b04d590805eab043eb5640ce68ad",
+    "candidate_identity": [
+      [
+        2.0,
+        22,
+        55,
+        15.740548525168737
+      ],
+      [
+        2.0,
+        19,
+        76,
+        18.194872338766785
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 20,
+    "candidate_sha256": "92ffbd773569b9ffd5af4f1ffbdf63f835cace0d64b9df61353e0b8737060f1b",
+    "candidate_identity": [
+      [
+        2.0,
+        13,
+        65,
+        12.838568140984059
+      ],
+      [
+        2.0,
+        29,
+        58,
+        29.541360500142794
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 21,
+    "candidate_sha256": "92b6572896ed19b2dc15b8ad1331738c6f41e3678cd4990c1397527f7ee9c47f",
+    "candidate_identity": [
+      [
+        2.0,
+        30,
+        48,
+        12.838568140984059
+      ],
+      [
+        2.0,
+        12,
+        75,
+        29.541360500142794
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 22,
+    "candidate_sha256": "812993a85152aa79df525d2e12ac349a4a769a9e7239822bbfad569830604588",
+    "candidate_identity": [
+      [
+        2.0,
+        13,
+        65,
+        12.838568140984059
+      ],
+      [
+        2.0,
+        30,
+        60,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 23,
+    "candidate_sha256": "0e559002f5e3a3fc6fe1141469bf2feb22e67026e1816b2174b3880dc3613795",
+    "candidate_identity": [
+      [
+        2.0,
+        26,
+        52,
+        12.838568140984059
+      ],
+      [
+        2.0,
+        15,
+        75,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 24,
+    "candidate_sha256": "37e94bb99552de0130d52fb1dc9fc50e72193c72b39092999fd9ca7aec165f7e",
+    "candidate_identity": [
+      [
+        2.0,
+        13,
+        65,
+        12.838568140984059
+      ],
+      [
+        2.0,
+        31,
+        62,
+        21.56518501524267
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 25,
+    "candidate_sha256": "212a2ad771285e6eb2fc3e0c3594c920e53cf8683d93e07698abb42a8d2f203a",
+    "candidate_identity": [
+      [
+        2.0,
+        13,
+        65,
+        12.838568140984059
+      ],
+      [
+        2.0,
+        32,
+        64,
+        16.260204708311967
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 26,
+    "candidate_sha256": "9c5df20a4c7479b820057c03345f132a10930114e5e9a24893e34863e1b9660c",
+    "candidate_identity": [
+      [
+        2.0,
+        26,
+        52,
+        12.838568140984059
+      ],
+      [
+        2.0,
+        16,
+        80,
+        16.260204708311967
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 27,
+    "candidate_sha256": "72c9221be78132727e84efe7bfa5329b4d1d871cba7af971d4a9de3d04523baf",
+    "candidate_identity": [
+      [
+        2.0,
+        13,
+        65,
+        12.838568140984059
+      ],
+      [
+        2.0,
+        33,
+        66,
+        8.109614455994183
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 28,
+    "candidate_sha256": "5ac3352a948d9568ac23a94c268a920196d61c5cf85666b5870c2195039211ba",
+    "candidate_identity": [
+      [
+        2.0,
+        14,
+        56,
+        28.95502437185985
+      ],
+      [
+        2.5,
+        20,
+        50,
+        28.95502437185985
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 29,
+    "candidate_sha256": "2b598d5392622860ca7eabaee382fe3d1c7e724e97bb012b608d3661e3020d58",
+    "candidate_identity": [
+      [
+        2.0,
+        20,
+        50,
+        28.95502437185985
+      ],
+      [
+        2.5,
+        14,
+        56,
+        28.95502437185985
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 30,
+    "candidate_sha256": "66c37af5079cb9b06d5aca41f9102db96cada78412df8eed4504bed1c2f21a66",
+    "candidate_identity": [
+      [
+        2.0,
+        20,
+        50,
+        28.95502437185985
+      ],
+      [
+        2.5,
+        15,
+        60,
+        20.364134806317807
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 31,
+    "candidate_sha256": "8d7b05857f02a1dabcaef90c3efc2af4bc722239eff4eb853499cf7fe44268a1",
+    "candidate_identity": [
+      [
+        2.0,
+        14,
+        56,
+        28.95502437185985
+      ],
+      [
+        2.5,
+        22,
+        55,
+        15.740548525168737
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 32,
+    "candidate_sha256": "930ac8d6586735477f6bb4e2a2a1180ca9e1c4eb24d045a5569cf82212b1a8f0",
+    "candidate_identity": [
+      [
+        2.0,
+        12,
+        60,
+        25.841932763167126
+      ],
+      [
+        2.5,
+        24,
+        48,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 33,
+    "candidate_sha256": "c9a125ec6b2f1de65241588abf956d203bc431c2892fff92ba2c153d4f435f7d",
+    "candidate_identity": [
+      [
+        2.0,
+        24,
+        48,
+        25.841932763167126
+      ],
+      [
+        2.5,
+        12,
+        60,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 34,
+    "candidate_sha256": "0ee4b1c865389b9721a2fc048e0ac1444e144cd2a2dc81ecfafb524590ef7019",
+    "candidate_identity": [
+      [
+        2.0,
+        12,
+        60,
+        25.841932763167126
+      ],
+      [
+        2.5,
+        25,
+        50,
+        20.364134806317807
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 35,
+    "candidate_sha256": "0796c54bcbc7222e9981199fab2b788e04d427dc7f50018c26653b22b75e8359",
+    "candidate_identity": [
+      [
+        2.0,
+        12,
+        60,
+        25.841932763167126
+      ],
+      [
+        2.5,
+        26,
+        52,
+        12.838568140984059
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 36,
+    "candidate_sha256": "ba0afd1d047895baab5260efc015ce03f6af9a8d07369baf969712d0f69f106f",
+    "candidate_identity": [
+      [
+        2.0,
+        24,
+        48,
+        25.841932763167126
+      ],
+      [
+        2.5,
+        13,
+        65,
+        12.838568140984059
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 37,
+    "candidate_sha256": "74e1e4375caf0c7fdd3d7fd23654808c22c0a8cec5351550fb519d829a19ad27",
+    "candidate_identity": [
+      [
+        2.0,
+        15,
+        60,
+        20.364134806317807
+      ],
+      [
+        2.5,
+        20,
+        50,
+        28.95502437185985
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 38,
+    "candidate_sha256": "06db7dbc9a38c297ff91c155af63856b31308f7b5a9423169d12e268bfa75966",
+    "candidate_identity": [
+      [
+        2.0,
+        25,
+        50,
+        20.364134806317807
+      ],
+      [
+        2.5,
+        12,
+        60,
+        25.841932763167126
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 39,
+    "candidate_sha256": "a29006a3b6b73df67ed556e2f425b960ccee1ed489329a553df0285e62ead7ab",
+    "candidate_identity": [
+      [
+        2.0,
+        15,
+        60,
+        20.364134806317807
+      ],
+      [
+        2.5,
+        22,
+        55,
+        15.740548525168737
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 86,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [],
+    "full_system_pass": false,
+    "rank": 40,
+    "candidate_sha256": "cc196beb1c3eecd2dbccc6141150c7bbb3566fc2fa7a87dbd2572fb04e232e4a",
+    "candidate_identity": [
+      [
+        2.0,
+        25,
+        50,
+        20.364134806317807
+      ],
+      [
+        2.5,
+        13,
+        65,
+        12.838568140984059
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  }
+]

@@ -1,0 +1,883 @@
+{
+  "schema": "gearbase.freeze-case-challenges/1",
+  "provenance": {
+    "baseline_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+    "version": "0.20",
+    "source_root": "D:/my_Works/Gears/gearbase-v020-work",
+    "runner": {
+      "path": "D:/my_Works/Gears/v020-freeze-assessment-2026-11-01/cases/run_challenges.py",
+      "source_sha256": "0aff757eb3545a239264ab471d0f252a902ddec9c7d4475e5fcb115b36e116ff"
+    },
+    "python": {
+      "executable": "D:\\anaconda3\\python.exe",
+      "version": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    "command_argv": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\cases\\run_challenges.py",
+      "--source",
+      "D:\\my_Works\\Gears\\gearbase-v020-work"
+    ],
+    "input_gold_mutated": false,
+    "source_git_status_before": "",
+    "source_git_status_after": "",
+    "executed_at_utc": "2026-11-01T11:34:04.005509+00:00",
+    "command_sha256": "4668fc03f366e8e4726200ad986140884c8154eb74aac25af4e7b94932d27452"
+  },
+  "challenges": [
+    {
+      "id": "H2",
+      "title": "H2 original Stage0 structured requirement",
+      "challenge_kind": "within_fixed_family_stage0_enumeration",
+      "calculation_mode": "fresh_deterministic_replay",
+      "equivalence_group_id": "H2-original-demand",
+      "source_ids": [
+        "H2-stage0",
+        "H2-system"
+      ],
+      "source_sha256": "86883650922342a117c90bae2f2a930a7cd09e7ed084f6de911220cf834fc355",
+      "requirement_sha256": "0ff54352c385800f77caf35b3ebe765edf34dfc409275aac2ca590ccfe40ff66",
+      "requirement": {
+        "family": "H2",
+        "scope": "stage0",
+        "parameters": {
+          "a1_mm": 80.0,
+          "a2_mm": 100.0,
+          "total_ratio": 10.0,
+          "mn_series": [
+            2.0,
+            2.5,
+            3.0
+          ],
+          "ratio_splits": null,
+          "beta_range": [
+            8.0,
+            30.0
+          ],
+          "tol": 0.03,
+          "max_candidates": 40
+        },
+        "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+      },
+      "requirement_summary": "H→H; a1=80 mm,a2=100 mm,i=10±3%; original sampled zero-shift geometry",
+      "candidate_count": 40,
+      "raw_candidate_count": 9948,
+      "raw_pair_domain_count": 378216,
+      "unique_topology_count": 1,
+      "topology_identity": "H→H_parallel_external",
+      "unique_parameter_variant_count_in_returned": 40,
+      "stage_A_count": 9948,
+      "stage_A_definition": "solver accepted in-band Stage0 pair rows before reporting cap/frontier; no strength qualification",
+      "kinematic_pass_count_checked": 40,
+      "kinematic_checked_population": "all returned candidates",
+      "geometry_pass_count_checked": 40,
+      "geometry_checked_population": "all returned candidates, Stage0 predicates only",
+      "geometry_scope": "nominal analytic Stage0 geometry; tooth contact, full-motion clearance and housed spatial fit not checked",
+      "strength_system_checked_count": 40,
+      "full_system_pass_count": 0,
+      "full_system_pass_population": "returned candidates only; remaining accepted pair rows not system-rated",
+      "blocked_count": 40,
+      "failed_system_count": 0,
+      "thermal_pass_count": null,
+      "thermal_fail_count": null,
+      "space_verified": false,
+      "space_status": "not_run; no CAD/GUI/FE replay authorized",
+      "engineering_accepted": false,
+      "search": {
+        "stage_domain_counts": [
+          459,
+          824
+        ],
+        "pair_domain": 378216,
+        "pair_evaluations": 9948,
+        "pair_boxes_rejected": 368268,
+        "seed_count": 136,
+        "accepted_before_output_cap": 9948
+      },
+      "outcome": "candidate_pending_human_confirmation",
+      "workflow_verification": {
+        "ok": true,
+        "kind": "fresh_sampled_domain_membership",
+        "scope": "stage0_sampled_geometry_only"
+      },
+      "elapsed_seconds": 0.029043099842965603,
+      "blocked_reasons": [
+        "Original source lacks strength/tool/material/life/efficiency/load path, shaft, bearing and key inputs; see first-system raw evidence"
+      ],
+      "reporting_limitations": [
+        "Each family is a different demand. H2/W2W/P2 must not be shown as three implementations of one demand.",
+        "H2 max_candidates=40 is an output cap; P2 returns Pareto representatives and groups module choices. Counts use different declared units.",
+        "system_status=solved means evaluable, including fail; this assessment requires all requested checks pass."
+      ]
+    },
+    {
+      "id": "W2W",
+      "title": "W2W original Stage0 structured requirement",
+      "challenge_kind": "within_fixed_family_stage0_enumeration",
+      "calculation_mode": "fresh_deterministic_replay",
+      "equivalence_group_id": "W2W-original-demand",
+      "source_ids": [
+        "W2W-stage0",
+        "W2W-system"
+      ],
+      "source_sha256": "f1e1b6e70dc9dad4d3f3b1b198bf28b470e1b3dddc39a20b6e6bd365721c0a78",
+      "requirement_sha256": "3b5ff6625650177194fe037cc81cf227cb7c239d2b582ca83e02936aeb81f4e8",
+      "requirement": {
+        "family": "W2W",
+        "scope": "stage0",
+        "parameters": {
+          "a1_mm": 100.0,
+          "a2_mm": 125.0,
+          "n1_rpm": 1440.0,
+          "target_ratio": 144.0,
+          "rho_v_deg": 5.0,
+          "t_out_nm": 800.0,
+          "z1_options": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "ratio_band": 0.02,
+          "k_w_m2k": 12.0,
+          "area_m2": 0.5,
+          "t_oil_max_c": 90.0,
+          "t_amb_c": 30.0,
+          "max_candidates": 40
+        },
+        "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+      },
+      "requirement_summary": "W→W; a1=100 mm,a2=125 mm,nin=1440 rpm,i=144±2%,Tout=800 Nm; K=12,A=.5 m²,30→90°C",
+      "candidate_count": 15,
+      "raw_candidate_count": 15,
+      "raw_pair_domain_count": 980,
+      "unique_topology_count": 1,
+      "topology_identity": "W→W",
+      "unique_parameter_variant_count_in_returned": 15,
+      "stage_A_count": 15,
+      "stage_A_definition": "solver accepted in-band Stage0 pair rows before reporting cap/frontier; no strength qualification",
+      "kinematic_pass_count_checked": 15,
+      "kinematic_checked_population": "all returned candidates",
+      "geometry_pass_count_checked": 15,
+      "geometry_checked_population": "all returned candidates, Stage0 predicates only",
+      "geometry_scope": "nominal analytic Stage0 geometry; tooth contact, full-motion clearance and housed spatial fit not checked",
+      "strength_system_checked_count": 15,
+      "full_system_pass_count": 0,
+      "full_system_pass_population": "returned candidates only; remaining accepted pair rows not system-rated",
+      "blocked_count": 15,
+      "failed_system_count": 0,
+      "thermal_pass_count": 0,
+      "thermal_fail_count": 15,
+      "space_verified": false,
+      "space_status": "not_run; no CAD/GUI/FE replay authorized",
+      "engineering_accepted": false,
+      "search": {
+        "enumerated": 1029,
+        "feasible": 15,
+        "pairs_examined": 980,
+        "stage1_designs": 49,
+        "stage2_designs": 20,
+        "truncated": false,
+        "pair_cap_hit": false
+      },
+      "outcome": "candidate_requires_changes",
+      "workflow_verification": {
+        "ok": true,
+        "scope": "stage0",
+        "unsupported_rating": [
+          "strength",
+          "wear",
+          "scuffing",
+          "bearing",
+          "shaft"
+        ]
+      },
+      "elapsed_seconds": 0.024054199922829866,
+      "blocked_reasons": [
+        "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译",
+        "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      ],
+      "reporting_limitations": [
+        "Each family is a different demand. H2/W2W/P2 must not be shown as three implementations of one demand.",
+        "H2 max_candidates=40 is an output cap; P2 returns Pareto representatives and groups module choices. Counts use different declared units.",
+        "system_status=solved means evaluable, including fail; this assessment requires all requested checks pass."
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "P2 original Stage0 structured requirement",
+      "challenge_kind": "within_fixed_family_stage0_enumeration",
+      "calculation_mode": "fresh_deterministic_replay",
+      "equivalence_group_id": "P2-original-demand",
+      "source_ids": [
+        "P2-stage0",
+        "P2-system"
+      ],
+      "source_sha256": "47e7011e0984e306a9ab8183fc242bd34b23d30e754697d8162d27063dacbc15",
+      "requirement_sha256": "5fbe107c6efd44174b33be65ea40a9ffc91f0bc81d3a1b241c09e5fe8faa8ebc",
+      "requirement": {
+        "family": "P2",
+        "scope": "stage0",
+        "parameters": {
+          "n1_rpm": 1440.0,
+          "target_total_ratio": 40.0,
+          "np_options": [
+            3,
+            4
+          ],
+          "zs_range": [
+            14,
+            30
+          ],
+          "zp_range": [
+            18,
+            60
+          ],
+          "m_series": [
+            2.0,
+            2.5,
+            3.0
+          ],
+          "i_tol": 0.02,
+          "top_k": 5
+        },
+        "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+      },
+      "requirement_summary": "P→P; nin=1440 rpm,i=40±2%; fixed rings,sun input/carrier output; original integer domain",
+      "candidate_count": 5,
+      "raw_candidate_count": 2311,
+      "raw_pair_domain_count": 117855,
+      "unique_topology_count": 1,
+      "topology_identity": "P→P_fixed_ring_NGW",
+      "unique_parameter_variant_count_in_returned": 5,
+      "stage_A_count": 2311,
+      "stage_A_definition": "solver accepted in-band Stage0 pair rows before reporting cap/frontier; no strength qualification",
+      "kinematic_pass_count_checked": 5,
+      "kinematic_checked_population": "all returned candidates",
+      "geometry_pass_count_checked": 5,
+      "geometry_checked_population": "all returned candidates, Stage0 predicates only",
+      "geometry_scope": "nominal analytic Stage0 geometry; tooth contact, full-motion clearance and housed spatial fit not checked",
+      "strength_system_checked_count": 5,
+      "full_system_pass_count": 0,
+      "full_system_pass_population": "returned candidates only; remaining accepted pair rows not system-rated",
+      "blocked_count": 5,
+      "failed_system_count": 0,
+      "thermal_pass_count": null,
+      "thermal_fail_count": null,
+      "space_verified": false,
+      "space_status": "not_run; no CAD/GUI/FE replay authorized",
+      "engineering_accepted": false,
+      "search": {
+        "enumerated": 4386,
+        "feasible": 485,
+        "pairs_examined": 117855,
+        "in_tolerance_pairs": 2311,
+        "pareto_points": 5,
+        "complete": true,
+        "top_k_truncated": false,
+        "stage_space_partial": false,
+        "pair_scan_partial": false,
+        "caps": {
+          "stage_checks": 200000,
+          "stage_pairs": 6000000
+        }
+      },
+      "outcome": "candidate_pending_human_confirmation",
+      "workflow_verification": {
+        "ok": true,
+        "issues": [],
+        "scope": "stage0_integer_geometry_only",
+        "rank_verified": false,
+        "tie_multiplicity_verified": false,
+        "strength_status": "not_implemented"
+      },
+      "elapsed_seconds": 0.05796190002001822,
+      "blocked_reasons": [
+        "行星排多啮合点均载/浮动构件载荷模型在 shaft_line 中未收录 → 轴载荷不可编译",
+        "行星排载荷分配/强度评级未收录（M40 冻结），design_check 无行星族",
+        "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)"
+      ],
+      "reporting_limitations": [
+        "Each family is a different demand. H2/W2W/P2 must not be shown as three implementations of one demand.",
+        "H2 max_candidates=40 is an output cap; P2 returns Pareto representatives and groups module choices. Counts use different declared units.",
+        "system_status=solved means evaluable, including fail; this assessment requires all requested checks pass."
+      ],
+      "assembly_clearance_status": "not qualified: the original zero-shift geometry warns of zero theoretical backlash at both meshes"
+    },
+    {
+      "id": "C001-fixed-pair",
+      "title": "M31 C001 平行轴双级直齿减速器 第一级（K_V 方法B）",
+      "challenge_kind": "supplied_fixed_pair_check_only",
+      "calculation_mode": "fresh_deterministic_check_using_declared_evidence_inputs",
+      "equivalence_group_id": "C001-fixed-pair-input",
+      "source_ids": [
+        "C001",
+        "C001-system"
+      ],
+      "requirement_summary": "Existing fixed G1 mesh",
+      "source_sha256": "d648284d291298b0891482759bd9f5709ad36cdecc95ecb0eca2ce83760ac98e",
+      "candidate_count": 1,
+      "auto_generated_candidate_count": 0,
+      "raw_candidate_count": null,
+      "unique_topology_count": null,
+      "stage_A_count": null,
+      "count_reason": "The caller already supplied one geometry. No topology generation was requested or performed.",
+      "full_system_pass_count": 0,
+      "blocked_count": 1,
+      "failed_system_count": 0,
+      "computation": {
+        "status": "blocked",
+        "counts": {
+          "pass": 1,
+          "fail": 0,
+          "blocked": 7,
+          "not_in_scope": 1
+        },
+        "note": "计算结果：pass/fail 只就所给输入与所列标准公式而言；blocked = 缺输入或条文未确认"
+      },
+      "scope_status": {
+        "gear_rating": "pass",
+        "manufacturing": "blocked",
+        "scuffing": "blocked",
+        "micropitting": "blocked",
+        "shaft": "blocked",
+        "bearing": "blocked",
+        "key": "blocked",
+        "fit": "not_in_scope",
+        "thermal": "blocked"
+      },
+      "computed_values": {
+        "u": {
+          "value": 1.8,
+          "unit": "1"
+        },
+        "eps_alpha": {
+          "value": 1.6246424030581257,
+          "unit": "1"
+        },
+        "d_1": {
+          "value": 40.0,
+          "unit": "mm"
+        },
+        "d_2": {
+          "value": 72.0,
+          "unit": "mm"
+        },
+        "S_H_1": {
+          "value": 1.1908148314637381,
+          "unit": "1"
+        },
+        "S_H_2": {
+          "value": 1.2731583124598411,
+          "unit": "1"
+        },
+        "S_F_1": {
+          "value": 4.506426701957094,
+          "unit": "1"
+        },
+        "S_F_2": {
+          "value": 4.878200791412783,
+          "unit": "1"
+        }
+      },
+      "model_sha256": "201a2ecf425aa754475d398ab3a2ad22e08b293aa0c5c34b244456515fa0cb8c",
+      "space_verified": false,
+      "space_status": "not_run",
+      "engineering_accepted": false,
+      "blocked_reasons": {
+        "manufacturing": [
+          "$.manufacturing.inputs.A_sn_e_1",
+          "$.manufacturing.inputs.A_sn_e_2",
+          "$.manufacturing.inputs.A_sn_i_1",
+          "$.manufacturing.inputs.A_sn_i_2"
+        ],
+        "scuffing": [
+          "$.oil.eta_oil_route（'explicit' 或 'iso_ts_6336_22_rho15'）",
+          "$.oil.lubricant",
+          "$.oil.lubrication",
+          "$.oil.theta_oil",
+          "$.scuffing.C_a1",
+          "$.scuffing.C_a2",
+          "$.scuffing.Ra1",
+          "$.scuffing.Ra2",
+          "$.scuffing.c_v",
+          "$.scuffing.lambda_M",
+          "$.scuffing.material_XW",
+          "$.scuffing.phi_E",
+          "$.scuffing.same_material",
+          "$.scuffing.scuffing_test",
+          "eta_oil（系统层输入未给出）"
+        ],
+        "micropitting": [
+          "$.micropitting.Ra1",
+          "$.micropitting.Ra2",
+          "$.micropitting.alpha_38_source",
+          "$.micropitting.density",
+          "$.micropitting.g_alpha",
+          "$.micropitting.lambda_GFP_source",
+          "$.micropitting.local",
+          "$.micropitting.oil_type",
+          "$.micropitting.p_et",
+          "$.micropitting.theta_M",
+          "$.oil.nu_100",
+          "lambda_GFT（系统层输入未给出）",
+          "material_WW（系统层输入未给出）"
+        ],
+        "shaft": [
+          "$.shafts[0].loads[1].x",
+          "$.shafts[0].sections[0].static.S_min",
+          "$.shafts[0].sections[0].static.sigma_bFK",
+          "$.shafts[0].sections[0].static.sigma_zdFK",
+          "$.shafts[0].sections[0].static.tau_tFK"
+        ],
+        "bearing": [
+          "B_S0_0：轴 S0 未求解（支反力不可得，见 shaft 子检查缺项）",
+          "B_S0_1：轴 S0 未求解（支反力不可得，见 shaft 子检查缺项）"
+        ],
+        "key": [
+          "$.keys[0].Re_hub",
+          "$.keys[0].Re_key",
+          "$.keys[0].Re_shaft",
+          "$.keys[0].Rm_hub",
+          "$.keys[0].hub_brittle",
+          "$.keys[0].l_tr",
+          "$.keys[0].torque_reversal"
+        ],
+        "thermal": [
+          "$.thermal.P_A",
+          "$.thermal.P_L",
+          "$.thermal.P_N",
+          "$.thermal.P_Q（或 A_c、k、delta_T）"
+        ]
+      },
+      "field_conflicts_or_pending": [
+        {
+          "id": "C001-SYS-1",
+          "text": "M31 engineering.stages.G1.pinion（bearing_span 60、offset 15，KHβ 用）与 system_boundary.supports.S0（-5/45，齿轮 20 → 跨距 50、居中）不一致：系统层与 KHβ 取哪一套"
+        },
+        {
+          "id": "C001-SYS-2",
+          "text": "S0 输入扭矩（联轴器）轴向位置 M31 未给：轴系求解需要"
+        },
+        {
+          "id": "C001-SYS-3",
+          "text": "轴/毂/键材料与许用值：M31 为 synthetic test，需真实材料（DIN 743 截面系数、DIN 6892 Re）"
+        },
+        {
+          "id": "C001-SYS-4",
+          "text": "油品：矿物油、ν100、ρ15、θoil、FZG 载荷级、Ra（M31 3,67 为 Rz？）——与接力交接 v0.15『需要用户③』同一项"
+        },
+        {
+          "id": "C001-SYS-5",
+          "text": "胶合/微点蚀/热功率的最小安全系数与传递功率口径"
+        }
+      ],
+      "evidence_boundary": "Fresh formula output still depends on declared report-derived coefficients; no KISSsoft rerun and no external evidence promotion."
+    },
+    {
+      "id": "K01-spur-fixed-pair",
+      "title": "KISSsoft 商业工具案例 K01-spur（强度分册 ISO 6336:2019 对拍输入）",
+      "challenge_kind": "supplied_fixed_pair_check_only",
+      "calculation_mode": "fresh_deterministic_check_using_declared_evidence_inputs",
+      "equivalence_group_id": "K01-spur-fixed-pair-input",
+      "source_ids": [
+        "K01-spur",
+        "K01-spur-system"
+      ],
+      "requirement_summary": "Existing KISSsoft fixed spur-pair inputs",
+      "source_sha256": "7ddae112e6349455758d7b820636a6c67f015bbdff0e0797d137bde3ea98df41",
+      "candidate_count": 1,
+      "auto_generated_candidate_count": 0,
+      "raw_candidate_count": null,
+      "unique_topology_count": null,
+      "stage_A_count": null,
+      "count_reason": "The caller already supplied one geometry. No topology generation was requested or performed.",
+      "full_system_pass_count": 0,
+      "blocked_count": 1,
+      "failed_system_count": 0,
+      "computation": {
+        "status": "blocked",
+        "counts": {
+          "pass": 1,
+          "fail": 0,
+          "blocked": 8,
+          "not_in_scope": 0
+        },
+        "note": "计算结果：pass/fail 只就所给输入与所列标准公式而言；blocked = 缺输入或条文未确认"
+      },
+      "scope_status": {
+        "gear_rating": "blocked",
+        "manufacturing": "pass",
+        "scuffing": "blocked",
+        "micropitting": "blocked",
+        "shaft": "blocked",
+        "bearing": "blocked",
+        "key": "blocked",
+        "fit": "blocked",
+        "thermal": "blocked"
+      },
+      "computed_values": {
+        "u": {
+          "value": 3.04,
+          "unit": "1"
+        },
+        "eps_alpha": {
+          "value": 1.6685926415535082,
+          "unit": "1"
+        },
+        "d_1": {
+          "value": 150.0,
+          "unit": "mm"
+        },
+        "d_2": {
+          "value": 456.0,
+          "unit": "mm"
+        },
+        "S_H_1": {
+          "value": 1.332842203383735,
+          "unit": "1"
+        },
+        "S_H_2": {
+          "value": 1.3881880074778616,
+          "unit": "1"
+        },
+        "S_F_1": {
+          "value": 2.521161224724118,
+          "unit": "1"
+        },
+        "S_F_2": {
+          "value": 2.4298045330729554,
+          "unit": "1"
+        }
+      },
+      "model_sha256": "43c5e1e345a80b944244a9dd4aca260a5285983354ef0bb76cc93771633c8887",
+      "space_verified": false,
+      "space_status": "not_run",
+      "engineering_accepted": false,
+      "blocked_reasons": {
+        "gear_rating": [
+          "$.gear_rating.limits.eps_alpha_min"
+        ],
+        "scuffing": [
+          "$.scuffing.S_Smin"
+        ],
+        "micropitting": [
+          "$.micropitting.lambda_GFT",
+          "$.micropitting.local",
+          "$.micropitting.material_WW",
+          "$.micropitting.theta_M"
+        ],
+        "shaft": [
+          "$.shafts"
+        ],
+        "bearing": [
+          "$.bearings"
+        ],
+        "key": [
+          "$.keys"
+        ],
+        "fit": [
+          "$.fits"
+        ],
+        "thermal": [
+          "$.thermal"
+        ]
+      },
+      "field_conflicts_or_pending": [
+        {
+          "id": "K01-SYS-1",
+          "text": "端面重合度下限 εα,min（decl 中 1,2 为 agent_proposed，待用户确认）"
+        },
+        {
+          "id": "K01-SYS-2",
+          "text": "胶合/微点蚀最小安全系数 S_Smin、S_λ,min"
+        }
+      ],
+      "evidence_boundary": "Fresh formula output still depends on declared report-derived coefficients; no KISSsoft rerun and no external evidence promotion."
+    },
+    {
+      "id": "SAME-H2-DEMAND",
+      "title": "同一H2既有需求不指定family的跨族入口探针",
+      "equivalence_group_id": "H2-original-demand",
+      "challenge_kind": "family_free_same_demand_capability_probe",
+      "calculation_mode": "fresh_actual_compiler_response",
+      "source_ids": [
+        "H2-stage0",
+        "H2-system"
+      ],
+      "requirement_summary": "Keep original H2 parameters; retain original source operating 600 Nm@150 rpm in the contract; remove family only.",
+      "original_parameters": {
+        "a1_mm": 80.0,
+        "a2_mm": 100.0,
+        "total_ratio": 10.0,
+        "mn_series": [
+          2.0,
+          2.5,
+          3.0
+        ],
+        "ratio_splits": null,
+        "beta_range": [
+          8.0,
+          30.0
+        ],
+        "tol": 0.03,
+        "max_candidates": 40
+      },
+      "original_operating_source": {
+        "T_out": {
+          "value": 600000.0,
+          "unit": "N*mm",
+          "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）"
+        },
+        "n_out": {
+          "value": 150.0,
+          "unit": "rpm",
+          "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）"
+        }
+      },
+      "contract": {
+        "ratio": {
+          "value": 10,
+          "source_pointer": "data/flagships-stage0/H2.json#/requirement/parameters/total_ratio"
+        },
+        "output_operating": {
+          "T_out": {
+            "value": 600000.0,
+            "unit": "N*mm",
+            "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）"
+          },
+          "n_out": {
+            "value": 150.0,
+            "unit": "rpm",
+            "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）"
+          }
+        },
+        "space_constraints": {
+          "a1_mm": 80,
+          "a2_mm": 100,
+          "source": "original center distances, not a housing envelope"
+        },
+        "axis_relationship": {
+          "value": "parallel axes in original H→H family",
+          "source": "gearmath/gear/h2_flagship.py docstring"
+        },
+        "efficiency": null,
+        "input_torque": null,
+        "housing_envelope": null,
+        "cross_family_axis_permissions": null
+      },
+      "actual_call": {
+        "tool": "requirement_compile",
+        "arguments": {
+          "requirement": {
+            "scope": "stage0",
+            "parameters": {
+              "a1_mm": 80.0,
+              "a2_mm": 100.0,
+              "total_ratio": 10.0,
+              "mn_series": [
+                2.0,
+                2.5,
+                3.0
+              ],
+              "ratio_splits": null,
+              "beta_range": [
+                8.0,
+                30.0
+              ],
+              "tol": 0.03,
+              "max_candidates": 40
+            },
+            "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+          }
+        }
+      },
+      "compile_result": {
+        "status": "blocked_unsupported_scope",
+        "errors": [
+          {
+            "code": "blocked_unsupported_scope",
+            "message": "Unsupported original flagship"
+          }
+        ],
+        "engineering_accepted": false
+      },
+      "direct_workflow_result": {
+        "status": "blocked_unsupported_scope",
+        "errors": [
+          {
+            "code": "blocked_unsupported_scope",
+            "message": "Unsupported original flagship"
+          }
+        ],
+        "engineering_accepted": false
+      },
+      "full_contract_call": {
+        "tool": "requirement_compile",
+        "arguments": {
+          "requirement": {
+            "scope": "stage0",
+            "parameters": {
+              "a1_mm": 80.0,
+              "a2_mm": 100.0,
+              "total_ratio": 10.0,
+              "mn_series": [
+                2.0,
+                2.5,
+                3.0
+              ],
+              "ratio_splits": null,
+              "beta_range": [
+                8.0,
+                30.0
+              ],
+              "tol": 0.03,
+              "max_candidates": 40
+            },
+            "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults",
+            "operating": {
+              "T_out": {
+                "value": 600000.0,
+                "unit": "N*mm",
+                "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）"
+              },
+              "n_out": {
+                "value": 150.0,
+                "unit": "rpm",
+                "source": "archive/m31/SPEC.md §3 金标准 旗舰② H2：'600N·m@150rpm'（sha256 ae68589746abae92f52b4729a54481241b76263fc553f86ff077d85a26703ba2）"
+              }
+            },
+            "axis_relationship": {
+              "value": "parallel axes in original H2",
+              "source": "gearmath/gear/h2_flagship.py docstring"
+            }
+          }
+        }
+      },
+      "full_contract_compile_result": {
+        "status": "blocked_invalid_inputs",
+        "errors": [
+          {
+            "code": "blocked_invalid_inputs",
+            "message": "Only explicit Stage0 requirement fields are accepted"
+          }
+        ],
+        "engineering_accepted": false
+      },
+      "unapplied_to_stage0_adapter": [
+        "original H2 operating T_out/n_out",
+        "explicit common axis relationship"
+      ],
+      "adapter_boundary": "Minimal family-free call cannot carry the whole engineering contract. A second real call preserves the existing operating leaves and original parallel-axis meaning; the strict Stage0 schema rejects those fields.",
+      "candidate_count": null,
+      "unique_topology_count": null,
+      "stage_A_count": null,
+      "full_system_pass_count": null,
+      "count_reason": "Unsupported request returns no search/count object; null is not measured zero feasible designs.",
+      "blocked_reasons": [
+        {
+          "code": "blocked_unsupported_scope",
+          "message": "Unsupported original flagship"
+        }
+      ],
+      "space_verified": false,
+      "not_comparable": {
+        "W2W-original-demand": [
+          "ratio144 rather than10",
+          "centers100/125 rather than80/100",
+          "nin1440/Tout800 rather than H2 nout150/Tout600",
+          "worm axis relationships differ; no permitted axis transformation",
+          "W2W constant-friction efficiency .54084 is not an H2 efficiency"
+        ],
+        "P2-original-demand": [
+          "ratio40 rather than10",
+          "nin1440; original P2 has no torque/power",
+          "fixed-ring coaxial NGW architecture; no common axis contract with H2",
+          "P2 efficiency and thermal model absent"
+        ]
+      },
+      "clarification_required_for_cross_family_comparison": [
+        "Can center-distance constraints be replaced by one common envelope and input/output shaft pose?",
+        "Which efficiency or torque/power boundary and duty/life/material/thermal limits apply?",
+        "Which shaft directions, offsets, ground members and transmission families are permitted?"
+      ],
+      "engineering_accepted": false
+    }
+  ],
+  "benchmark50_support": {
+    "denominator": 50,
+    "denominator_definition": "unique C001..C050 authored instances",
+    "synthetic_derived_provenance_count": 50,
+    "fresh_typed_ideal_kinematics_pass": 50,
+    "with_engineering_assumptions": [
+      "C001"
+    ],
+    "all_stages_spur_or_helical": [
+      "C001",
+      "C002",
+      "C003",
+      "C004",
+      "C006",
+      "C008"
+    ],
+    "stage_kind_occurrences": {
+      "spur": 35,
+      "helical": 29,
+      "herringbone": 6,
+      "planetary": 28,
+      "worm": 17,
+      "bevel": 12,
+      "rack": 9
+    },
+    "authored_stage_kind_sequences": 50,
+    "topology_generation_interpretation": "50 distinct authored kind sequences; no claim these were generated from one common demand",
+    "full_machine_verified_current_run": 0,
+    "spatial_validation_current_run": "not_run",
+    "historical_matrix_binding": {
+      "path": "D:/my_Works/Gears/gearbase-v020-work/archive/m31/benchmark50/CASE-MATRIX-M23.csv",
+      "source_sha256": "f2db8f0be12793b6fd26a6eaaab298482d4ac264ba8d9e5b50bf35a0ec485e35"
+    },
+    "historical_report_derived_only": {
+      "math_kernel": {
+        "pass_ideal_kinematics": 25,
+        "unsupported_or_rejected": 25
+      },
+      "typed_math": {
+        "pass_ideal_and_nominal_unloaded": 50
+      },
+      "m12_stage_step": {
+        "pass_per_stage": 4,
+        "not_run": 46
+      },
+      "strict_projection": {
+        "strict_accept": 6,
+        "strict_reject": 44
+      },
+      "global_gear_train": {
+        "partial_single_step_readback": 1,
+        "not_run": 48,
+        "rejected_before_geometry": 1
+      },
+      "full_machine": {
+        "not_run": 50
+      },
+      "contact_strength": {
+        "not_run": 50
+      }
+    }
+  },
+  "counting_contract": {
+    "candidate_count": "returned actual rows, except fixed-pair=1 supplied check and unsupported=null",
+    "raw_candidate_count": "solver accepted in-band pair rows before cap/frontier; not raw cartesian search size",
+    "unique_topology_count": "distinct architecture families, not tooth/module parameter variants",
+    "full_system_pass_count": "all system checks pass among actually checked returned rows only",
+    "null": "unavailable/not defined; never silently interpreted as zero"
+  },
+  "distribution": "PUBLIC_REDACTED_DERIVATIVE",
+  "private_origin_sha256": "8eaa700a39e9ef68d2fec2ac08fa9e48901b0c93f25a9eebd40940e91df1ecc1",
+  "redaction_notice": "Fixed-pair source_fields omitted. Current calculated values/statuses, fixed-family demands and limits retained. No commercial native/report or standard transcription copied."
+}

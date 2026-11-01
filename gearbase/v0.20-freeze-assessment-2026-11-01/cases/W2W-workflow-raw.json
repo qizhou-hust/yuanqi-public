@@ -1,0 +1,1236 @@
+{
+  "compile": {
+    "status": "compiled_stage0",
+    "requirement": {
+      "family": "W2W",
+      "scope": "stage0",
+      "parameters": {
+        "a1_mm": 100.0,
+        "a2_mm": 125.0,
+        "n1_rpm": 1440.0,
+        "target_ratio": 144.0,
+        "rho_v_deg": 5.0,
+        "t_out_nm": 800.0,
+        "z1_options": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "ratio_band": 0.02,
+        "k_w_m2k": 12.0,
+        "area_m2": 0.5,
+        "t_oil_max_c": 90.0,
+        "t_amb_c": 30.0,
+        "max_candidates": 40
+      },
+      "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+    },
+    "requirement_sha256": "3b5ff6625650177194fe037cc81cf227cb7c239d2b582ca83e02936aeb81f4e8",
+    "workflow_call": {
+      "action": "run",
+      "requirement": {
+        "family": "W2W",
+        "scope": "stage0",
+        "parameters": {
+          "a1_mm": 100.0,
+          "a2_mm": 125.0,
+          "n1_rpm": 1440.0,
+          "target_ratio": 144.0,
+          "rho_v_deg": 5.0,
+          "t_out_nm": 800.0,
+          "z1_options": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "ratio_band": 0.02,
+          "k_w_m2k": 12.0,
+          "area_m2": 0.5,
+          "t_oil_max_c": 90.0,
+          "t_amb_c": 30.0,
+          "max_candidates": 40
+        },
+        "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+      }
+    },
+    "provenance": "caller_supplied_pending_confirmation",
+    "engineering_accepted": false,
+    "scope": "original_stage0_only"
+  },
+  "workflow": {
+    "status": "completed_stage0",
+    "outcome": "candidate_requires_changes",
+    "scope": "original_stage0_only",
+    "requirement": {
+      "family": "W2W",
+      "scope": "stage0",
+      "parameters": {
+        "a1_mm": 100.0,
+        "a2_mm": 125.0,
+        "n1_rpm": 1440.0,
+        "target_ratio": 144.0,
+        "rho_v_deg": 5.0,
+        "t_out_nm": 800.0,
+        "z1_options": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "ratio_band": 0.02,
+        "k_w_m2k": 12.0,
+        "area_m2": 0.5,
+        "t_oil_max_c": 90.0,
+        "t_amb_c": 30.0,
+        "max_candidates": 40
+      },
+      "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+    },
+    "requirement_sha256": "3b5ff6625650177194fe037cc81cf227cb7c239d2b582ca83e02936aeb81f4e8",
+    "result": {
+      "status": "ok",
+      "scope": "stage0",
+      "inputs": {
+        "a1_mm": 100.0,
+        "a2_mm": 125.0,
+        "n1_rpm": 1440.0,
+        "target_ratio": 144.0,
+        "rho_v_deg": 5.0,
+        "t_out_nm": 800.0,
+        "z1_options": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "ratio_band": 0.02,
+        "k_w_m2k": 12.0,
+        "area_m2": 0.5,
+        "t_oil_max_c": 90.0,
+        "t_amb_c": 30.0,
+        "max_candidates": 40
+      },
+      "inputs_sha256": "ff386f1d23304f24fa9f2ea538e0a56817927327d89b952e909c202de71fe667",
+      "candidates": [
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.5408407222531019,
+          "n_mid_rpm": 90.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 1548.9921643977566,
+          "q_loss_w": 711.2341234404784,
+          "thermal_ok": false,
+          "area_required_m2": 0.9878251714451088,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 118.53902057341305,
+          "t_oil_est_c": 148.53902057341304,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.5408407222531019,
+            "q_loss_w": 711.2341234404784,
+            "area_required_m2": 0.9878251714451088,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 118.53902057341305,
+            "t_oil_est_c": 148.53902057341304,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.474 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.474 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 2.0,
+            "q": 20.0,
+            "z1": 5,
+            "z2": 80,
+            "ratio": 16,
+            "gamma_deg": 14.036243467926479,
+            "eta": 0.7245634741471729,
+            "self_locking": false,
+            "d1_mm": 40.0,
+            "d2_mm": 160.0,
+            "d2_over_a": 1.6,
+            "sliding_speed_m_s": 3.1087484024196455,
+            "warnings": [],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 0.9878251714451088
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 4,
+            "z2": 36,
+            "ratio": 9,
+            "gamma_deg": 15.945395900922854,
+            "eta": 0.7464366360582602,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.3430670961823512,
+            "warnings": [],
+            "n_in_rpm": 90.0
+          },
+          "self_locking_stages": [],
+          "warnings": []
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.5408407222531019,
+          "n_mid_rpm": 90.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 1548.9921643977566,
+          "q_loss_w": 711.2341234404784,
+          "thermal_ok": false,
+          "area_required_m2": 0.9878251714451088,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 118.53902057341305,
+          "t_oil_est_c": 148.53902057341304,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.5408407222531019,
+            "q_loss_w": 711.2341234404784,
+            "area_required_m2": 0.9878251714451088,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 118.53902057341305,
+            "t_oil_est_c": 148.53902057341304,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.474 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.474 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 2.5,
+            "q": 16.0,
+            "z1": 4,
+            "z2": 64,
+            "ratio": 16,
+            "gamma_deg": 14.036243467926479,
+            "eta": 0.7245634741471729,
+            "self_locking": false,
+            "d1_mm": 40.0,
+            "d2_mm": 160.0,
+            "d2_over_a": 1.6,
+            "sliding_speed_m_s": 3.1087484024196455,
+            "warnings": [],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 0.9878251714451088
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 4,
+            "z2": 36,
+            "ratio": 9,
+            "gamma_deg": 15.945395900922854,
+            "eta": 0.7464366360582602,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.3430670961823512,
+            "warnings": [],
+            "n_in_rpm": 90.0
+          },
+          "self_locking_stages": [],
+          "warnings": []
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.5408407222531019,
+          "n_mid_rpm": 160.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 1548.9921643977566,
+          "q_loss_w": 711.2341234404784,
+          "thermal_ok": false,
+          "area_required_m2": 0.9878251714451088,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 118.53902057341305,
+          "t_oil_est_c": 148.53902057341304,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.5408407222531019,
+            "q_loss_w": 711.2341234404784,
+            "area_required_m2": 0.9878251714451088,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 118.53902057341305,
+            "t_oil_est_c": 148.53902057341304,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.474 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.474 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 4.0,
+            "q": 14.0,
+            "z1": 4,
+            "z2": 36,
+            "ratio": 9,
+            "gamma_deg": 15.945395900922854,
+            "eta": 0.7464366360582602,
+            "self_locking": false,
+            "d1_mm": 56.0,
+            "d2_mm": 144.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 4.391258831134095,
+            "warnings": [],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 0.9878251714451088
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 2.5,
+            "q": 20.0,
+            "z1": 5,
+            "z2": 80,
+            "ratio": 16,
+            "gamma_deg": 14.036243467926479,
+            "eta": 0.7245634741471729,
+            "self_locking": false,
+            "d1_mm": 50.0,
+            "d2_mm": 200.0,
+            "d2_over_a": 1.6,
+            "sliding_speed_m_s": 0.43177061144717305,
+            "warnings": [],
+            "n_in_rpm": 160.0
+          },
+          "self_locking_stages": [],
+          "warnings": []
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.5408407222531019,
+          "n_mid_rpm": 90.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 1548.9921643977566,
+          "q_loss_w": 711.2341234404784,
+          "thermal_ok": false,
+          "area_required_m2": 0.9878251714451088,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 118.53902057341305,
+          "t_oil_est_c": 148.53902057341304,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.5408407222531019,
+            "q_loss_w": 711.2341234404784,
+            "area_required_m2": 0.9878251714451088,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 118.53902057341305,
+            "t_oil_est_c": 148.53902057341304,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.474 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.474 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 5.0,
+            "q": 8.0,
+            "z1": 2,
+            "z2": 32,
+            "ratio": 16,
+            "gamma_deg": 14.036243467926479,
+            "eta": 0.7245634741471729,
+            "self_locking": false,
+            "d1_mm": 40.0,
+            "d2_mm": 160.0,
+            "d2_over_a": 1.6,
+            "sliding_speed_m_s": 3.1087484024196455,
+            "warnings": [],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 0.9878251714451088
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 4,
+            "z2": 36,
+            "ratio": 9,
+            "gamma_deg": 15.945395900922854,
+            "eta": 0.7464366360582602,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.3430670961823512,
+            "warnings": [],
+            "n_in_rpm": 90.0
+          },
+          "self_locking_stages": [],
+          "warnings": []
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.5048565996588595,
+          "n_mid_rpm": 120.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 1659.3980182161945,
+          "q_loss_w": 821.6399772589162,
+          "thermal_ok": false,
+          "area_required_m2": 1.1411666350818281,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 136.93999620981938,
+          "t_oil_est_c": 166.93999620981938,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.5048565996588595,
+            "q_loss_w": 821.6399772589162,
+            "area_required_m2": 1.1411666350818281,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 136.93999620981938,
+            "t_oil_est_c": 166.93999620981938,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.548 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.548 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 2.5,
+            "q": 20.0,
+            "z1": 5,
+            "z2": 60,
+            "ratio": 12,
+            "gamma_deg": 14.036243467926479,
+            "eta": 0.7245634741471729,
+            "self_locking": false,
+            "d1_mm": 50.0,
+            "d2_mm": 150.0,
+            "d2_over_a": 1.5,
+            "sliding_speed_m_s": 3.885935503024557,
+            "warnings": [],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 1.1411666350818281
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 3,
+            "z2": 36,
+            "ratio": 12,
+            "gamma_deg": 12.094757077012101,
+            "eta": 0.6967734610871557,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.4498076146780219,
+            "warnings": [],
+            "n_in_rpm": 120.0
+          },
+          "self_locking_stages": [],
+          "warnings": []
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.49842980314073415,
+          "n_mid_rpm": 180.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 1680.7944382104556,
+          "q_loss_w": 843.0363972531774,
+          "thermal_ok": false,
+          "area_required_m2": 1.1708838850738574,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 140.5060662088629,
+          "t_oil_est_c": 170.5060662088629,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.4984298031407341,
+            "q_loss_w": 843.0363972531774,
+            "area_required_m2": 1.1708838850738574,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 140.5060662088629,
+            "t_oil_est_c": 170.5060662088629,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.562 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.562 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 4.0,
+            "q": 10.0,
+            "z1": 5,
+            "z2": 40,
+            "ratio": 8,
+            "gamma_deg": 26.56505117707799,
+            "eta": 0.8138503154238663,
+            "self_locking": false,
+            "d1_mm": 40.0,
+            "d2_mm": 160.0,
+            "d2_over_a": 1.6,
+            "sliding_speed_m_s": 3.3719110708995483,
+            "warnings": [],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 1.1708838850738574
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 2,
+            "z2": 36,
+            "ratio": 18,
+            "gamma_deg": 8.130102354155978,
+            "eta": 0.6124342445958799,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.666432440723755,
+            "warnings": [],
+            "n_in_rpm": 180.0
+          },
+          "self_locking_stages": [],
+          "warnings": []
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.49842980314073415,
+          "n_mid_rpm": 80.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 1680.7944382104556,
+          "q_loss_w": 843.0363972531774,
+          "thermal_ok": false,
+          "area_required_m2": 1.1708838850738574,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 140.5060662088629,
+          "t_oil_est_c": 170.5060662088629,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.4984298031407341,
+            "q_loss_w": 843.0363972531774,
+            "area_required_m2": 1.1708838850738574,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 140.5060662088629,
+            "t_oil_est_c": 170.5060662088629,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.562 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.562 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 4.0,
+            "q": 14.0,
+            "z1": 2,
+            "z2": 36,
+            "ratio": 18,
+            "gamma_deg": 8.130102354155978,
+            "eta": 0.6124342445958799,
+            "self_locking": false,
+            "d1_mm": 56.0,
+            "d2_mm": 144.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 4.265167620632032,
+            "warnings": [],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 1.1708838850738574
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 10.0,
+            "z1": 5,
+            "z2": 40,
+            "ratio": 8,
+            "gamma_deg": 26.56505117707799,
+            "eta": 0.8138503154238663,
+            "self_locking": false,
+            "d1_mm": 50.0,
+            "d2_mm": 200.0,
+            "d2_over_a": 1.6,
+            "sliding_speed_m_s": 0.2341604910346909,
+            "warnings": [
+              "v_s<0.3 m/s: boundary lubrication — real ρv higher than input"
+            ],
+            "n_in_rpm": 80.0
+          },
+          "self_locking_stages": [],
+          "warnings": [
+            "v_s<0.3 m/s: boundary lubrication — real ρv higher than input"
+          ]
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.49842980314073415,
+          "n_mid_rpm": 180.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 1680.7944382104556,
+          "q_loss_w": 843.0363972531774,
+          "thermal_ok": false,
+          "area_required_m2": 1.1708838850738574,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 140.5060662088629,
+          "t_oil_est_c": 170.5060662088629,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.4984298031407341,
+            "q_loss_w": 843.0363972531774,
+            "area_required_m2": 1.1708838850738574,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 140.5060662088629,
+            "t_oil_est_c": 170.5060662088629,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.562 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.562 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 5.0,
+            "q": 8.0,
+            "z1": 4,
+            "z2": 32,
+            "ratio": 8,
+            "gamma_deg": 26.56505117707799,
+            "eta": 0.8138503154238663,
+            "self_locking": false,
+            "d1_mm": 40.0,
+            "d2_mm": 160.0,
+            "d2_over_a": 1.6,
+            "sliding_speed_m_s": 3.3719110708995483,
+            "warnings": [],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 1.1708838850738574
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 2,
+            "z2": 36,
+            "ratio": 18,
+            "gamma_deg": 8.130102354155978,
+            "eta": 0.6124342445958799,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.666432440723755,
+            "warnings": [],
+            "n_in_rpm": 180.0
+          },
+          "self_locking_stages": [],
+          "warnings": []
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.485493256075374,
+          "n_mid_rpm": 120.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 1725.581211425137,
+          "q_loss_w": 887.8231704678589,
+          "thermal_ok": false,
+          "area_required_m2": 1.2330877367609152,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 147.97052841130983,
+          "t_oil_est_c": 177.97052841130983,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.485493256075374,
+            "q_loss_w": 887.823170467859,
+            "area_required_m2": 1.2330877367609152,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 147.97052841130983,
+            "t_oil_est_c": 177.97052841130983,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.592 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.592 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 4.0,
+            "q": 14.0,
+            "z1": 3,
+            "z2": 36,
+            "ratio": 12,
+            "gamma_deg": 12.094757077012101,
+            "eta": 0.6967734610871557,
+            "self_locking": false,
+            "d1_mm": 56.0,
+            "d2_mm": 144.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 4.318153100909011,
+            "warnings": [],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 1.233087736760915
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 3,
+            "z2": 36,
+            "ratio": 12,
+            "gamma_deg": 12.094757077012101,
+            "eta": 0.6967734610871557,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.4498076146780219,
+            "warnings": [],
+            "n_in_rpm": 120.0
+          },
+          "self_locking_stages": [],
+          "warnings": []
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.4107358845247785,
+          "n_mid_rpm": 180.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 2039.6514463949613,
+          "q_loss_w": 1201.8934054376832,
+          "thermal_ok": false,
+          "area_required_m2": 1.6692963964412264,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 200.31556757294717,
+          "t_oil_est_c": 230.31556757294717,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.41073588452477855,
+            "q_loss_w": 1201.893405437683,
+            "area_required_m2": 1.6692963964412264,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 200.31556757294717,
+            "t_oil_est_c": 230.31556757294717,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.801 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.801 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 5.0,
+            "q": 16.0,
+            "z1": 3,
+            "z2": 24,
+            "ratio": 8,
+            "gamma_deg": 10.619655276155134,
+            "eta": 0.6706611985680294,
+            "self_locking": false,
+            "d1_mm": 80.0,
+            "d2_mm": 120.0,
+            "d2_over_a": 1.2,
+            "sliding_speed_m_s": 6.136970783257566,
+            "warnings": [
+              "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+            ],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 1.6692963964412266
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 2,
+            "z2": 36,
+            "ratio": 18,
+            "gamma_deg": 8.130102354155978,
+            "eta": 0.6124342445958799,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.666432440723755,
+            "warnings": [],
+            "n_in_rpm": 180.0
+          },
+          "self_locking_stages": [],
+          "warnings": [
+            "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+          ]
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.4054060327797921,
+          "n_mid_rpm": 120.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 2066.466636455631,
+          "q_loss_w": 1228.7085954983527,
+          "thermal_ok": false,
+          "area_required_m2": 1.7065397159699343,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 204.7847659163921,
+          "t_oil_est_c": 234.7847659163921,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.4054060327797921,
+            "q_loss_w": 1228.7085954983527,
+            "area_required_m2": 1.7065397159699343,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 204.7847659163921,
+            "t_oil_est_c": 234.7847659163921,
+            "levers": [
+              "forced cooling K≈25 → A_req≈0.819 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈0.819 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 5.0,
+            "q": 16.0,
+            "z1": 2,
+            "z2": 24,
+            "ratio": 12,
+            "gamma_deg": 7.125016348901798,
+            "eta": 0.581833343863655,
+            "self_locking": false,
+            "d1_mm": 80.0,
+            "d2_mm": 120.0,
+            "d2_over_a": 1.2,
+            "sliding_speed_m_s": 6.078799131216506,
+            "warnings": [
+              "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+            ],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 1.7065397159699343
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 3,
+            "z2": 36,
+            "ratio": 12,
+            "gamma_deg": 12.094757077012101,
+            "eta": 0.6967734610871557,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.4498076146780219,
+            "warnings": [],
+            "n_in_rpm": 120.0
+          },
+          "self_locking_stages": [],
+          "warnings": [
+            "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+          ]
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.3502847414365998,
+          "n_mid_rpm": 360.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 2391.6486842145514,
+          "q_loss_w": 1553.890643257273,
+          "thermal_ok": false,
+          "area_required_m2": 2.1581814489684343,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 258.9817738762121,
+          "t_oil_est_c": 288.9817738762121,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.3502847414365999,
+            "q_loss_w": 1553.8906432572728,
+            "area_required_m2": 2.1581814489684343,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 258.9817738762121,
+            "t_oil_est_c": 288.9817738762121,
+            "levers": [
+              "forced cooling K≈25 → A_req≈1.036 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈1.036 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 5.0,
+            "q": 16.0,
+            "z1": 6,
+            "z2": 24,
+            "ratio": 4,
+            "gamma_deg": 20.556045219583464,
+            "eta": 0.7842287504444669,
+            "self_locking": false,
+            "d1_mm": 80.0,
+            "d2_mm": 120.0,
+            "d2_over_a": 1.2,
+            "sliding_speed_m_s": 6.4420270556479755,
+            "warnings": [
+              "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+            ],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 2.158181448968435
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 1,
+            "z2": 36,
+            "ratio": 36,
+            "gamma_deg": 4.085616779974877,
+            "eta": 0.44666143805372294,
+            "self_locking": true,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 1.3228306241968937,
+            "warnings": [],
+            "n_in_rpm": 360.0
+          },
+          "self_locking_stages": [
+            "stage2"
+          ],
+          "warnings": [
+            "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+          ]
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.33125786232385934,
+          "n_mid_rpm": 60.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 2529.0208512492036,
+          "q_loss_w": 1691.2628102919252,
+          "thermal_ok": false,
+          "area_required_m2": 2.348976125405452,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 281.8771350486542,
+          "t_oil_est_c": 311.8771350486542,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.33125786232385934,
+            "q_loss_w": 1691.2628102919255,
+            "area_required_m2": 2.348976125405452,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 281.8771350486542,
+            "t_oil_est_c": 311.8771350486542,
+            "levers": [
+              "forced cooling K≈25 → A_req≈1.128 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈1.128 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 5.0,
+            "q": 16.0,
+            "z1": 1,
+            "z2": 24,
+            "ratio": 24,
+            "gamma_deg": 3.576334374997351,
+            "eta": 0.4144196364371127,
+            "self_locking": true,
+            "d1_mm": 80.0,
+            "d2_mm": 120.0,
+            "d2_over_a": 1.2,
+            "sliding_speed_m_s": 6.043627384903167,
+            "warnings": [
+              "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+            ],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 2.3489761254054518
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 6,
+            "z2": 36,
+            "ratio": 6,
+            "gamma_deg": 23.198590513648185,
+            "eta": 0.7993295519772674,
+            "self_locking": false,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 0.23925656840788775,
+            "warnings": [
+              "v_s<0.3 m/s: boundary lubrication — real ρv higher than input"
+            ],
+            "n_in_rpm": 60.0
+          },
+          "self_locking_stages": [
+            "stage1"
+          ],
+          "warnings": [
+            "v_s<0.3 m/s: boundary lubrication — real ρv higher than input",
+            "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+          ]
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.32363456332377777,
+          "n_mid_rpm": 360.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 2588.5926161698294,
+          "q_loss_w": 1750.834575212551,
+          "thermal_ok": false,
+          "area_required_m2": 2.4317146877952096,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 291.8057625354252,
+          "t_oil_est_c": 321.8057625354252,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.3236345633237778,
+            "q_loss_w": 1750.834575212551,
+            "area_required_m2": 2.4317146877952096,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 291.8057625354252,
+            "t_oil_est_c": 321.8057625354252,
+            "levers": [
+              "forced cooling K≈25 → A_req≈1.167 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈1.167 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 5.0,
+            "q": 20.0,
+            "z1": 5,
+            "z2": 20,
+            "ratio": 4,
+            "gamma_deg": 14.036243467926479,
+            "eta": 0.7245634741471729,
+            "self_locking": false,
+            "d1_mm": 100.0,
+            "d2_mm": 100.0,
+            "d2_over_a": 1.0,
+            "sliding_speed_m_s": 7.771871006049114,
+            "warnings": [
+              "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+            ],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 2.4317146877952096
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 14.0,
+            "z1": 1,
+            "z2": 36,
+            "ratio": 36,
+            "gamma_deg": 4.085616779974877,
+            "eta": 0.44666143805372294,
+            "self_locking": true,
+            "d1_mm": 70.0,
+            "d2_mm": 180.0,
+            "d2_over_a": 1.44,
+            "sliding_speed_m_s": 1.3228306241968937,
+            "warnings": [],
+            "n_in_rpm": 360.0
+          },
+          "self_locking_stages": [
+            "stage2"
+          ],
+          "warnings": [
+            "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+          ]
+        },
+        {
+          "i_total": 144,
+          "ratio_error_rel": 0.0,
+          "eta_total": 0.30027333153168273,
+          "n_mid_rpm": 60.0,
+          "n_out_rpm": 10.0,
+          "p_out_w": 837.7580409572782,
+          "p_in_w": 2789.984833764313,
+          "q_loss_w": 1952.2267928070346,
+          "thermal_ok": false,
+          "area_required_m2": 2.7114261011208813,
+          "area_provided_m2": 0.5,
+          "dt_actual_k": 325.3711321345058,
+          "t_oil_est_c": 355.3711321345058,
+          "thermal": {
+            "ok": false,
+            "eta_total": 0.30027333153168273,
+            "q_loss_w": 1952.2267928070346,
+            "area_required_m2": 2.7114261011208813,
+            "area_provided_m2": 0.5,
+            "dt_actual_k": 325.3711321345058,
+            "t_oil_est_c": 355.3711321345058,
+            "levers": [
+              "forced cooling K≈25 → A_req≈1.301 m²"
+            ]
+          },
+          "cooling_levers": [
+            "forced cooling K≈25 → A_req≈1.301 m²"
+          ],
+          "stage1": {
+            "ok": true,
+            "a_mm": 100.0,
+            "m_mm": 5.0,
+            "q": 16.0,
+            "z1": 1,
+            "z2": 24,
+            "ratio": 24,
+            "gamma_deg": 3.576334374997351,
+            "eta": 0.4144196364371127,
+            "self_locking": true,
+            "d1_mm": 80.0,
+            "d2_mm": 120.0,
+            "d2_over_a": 1.2,
+            "sliding_speed_m_s": 6.043627384903167,
+            "warnings": [
+              "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+            ],
+            "n_in_rpm": 1440.0,
+            "area_required_natconv_m2": 2.7114261011208813
+          },
+          "stage2": {
+            "ok": true,
+            "a_mm": 125.0,
+            "m_mm": 5.0,
+            "q": 20.0,
+            "z1": 5,
+            "z2": 30,
+            "ratio": 6,
+            "gamma_deg": 14.036243467926479,
+            "eta": 0.7245634741471729,
+            "self_locking": false,
+            "d1_mm": 100.0,
+            "d2_mm": 150.0,
+            "d2_over_a": 1.2,
+            "sliding_speed_m_s": 0.32382795858537977,
+            "warnings": [],
+            "n_in_rpm": 60.0
+          },
+          "self_locking_stages": [
+            "stage1"
+          ],
+          "warnings": [
+            "v_s>4.5 m/s: high sliding — scuffing/wear domain check required"
+          ]
+        }
+      ],
+      "search": {
+        "enumerated": 1029,
+        "feasible": 15,
+        "pairs_examined": 980,
+        "stage1_designs": 49,
+        "stage2_designs": 20,
+        "truncated": false,
+        "pair_cap_hit": false
+      },
+      "assumptions": [
+        "M31 SPEC §2-D constant friction efficiency; §2-C convection; sliding warnings advisory"
+      ],
+      "unsupported_rating": [
+        "strength",
+        "wear",
+        "scuffing",
+        "bearing",
+        "shaft"
+      ],
+      "reason": null
+    },
+    "verification": {
+      "ok": true,
+      "scope": "stage0",
+      "unsupported_rating": [
+        "strength",
+        "wear",
+        "scuffing",
+        "bearing",
+        "shaft"
+      ]
+    },
+    "verified_selected_candidates": 1,
+    "engineering_accepted": false,
+    "persisted": false
+  }
+}

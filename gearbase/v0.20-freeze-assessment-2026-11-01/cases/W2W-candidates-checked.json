@@ -1,0 +1,947 @@
+[
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 1,
+    "candidate_sha256": "e46b55eded64fe21f0aa7953f84ea2bd12d2459fa1cbe16dad9dd9554980a90d",
+    "candidate_identity": [
+      [
+        2.0,
+        20.0,
+        5,
+        80
+      ],
+      [
+        5.0,
+        14.0,
+        4,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 2,
+    "candidate_sha256": "27c37f2534a9e5e2555f63a4d72348b47106cf508149adff9b2ca2cee3af422c",
+    "candidate_identity": [
+      [
+        2.5,
+        16.0,
+        4,
+        64
+      ],
+      [
+        5.0,
+        14.0,
+        4,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 3,
+    "candidate_sha256": "4089add4c1a8e6a2912592413a77be4343d2443391b0d51e86975199a2aae9a7",
+    "candidate_identity": [
+      [
+        4.0,
+        14.0,
+        4,
+        36
+      ],
+      [
+        2.5,
+        20.0,
+        5,
+        80
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 4,
+    "candidate_sha256": "ceea48177fd9a41371183d06d77874c1ebdffae013f0892e7681f6c1f9f19719",
+    "candidate_identity": [
+      [
+        5.0,
+        8.0,
+        2,
+        32
+      ],
+      [
+        5.0,
+        14.0,
+        4,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 5,
+    "candidate_sha256": "8332c7f9b1fa403edf606663b5045622121464658ec834f568115ad52196dbf4",
+    "candidate_identity": [
+      [
+        2.5,
+        20.0,
+        5,
+        60
+      ],
+      [
+        5.0,
+        14.0,
+        3,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 6,
+    "candidate_sha256": "b4e9bbb71d87ff7ea1be5f7fcf596feb28ac524988dbde224fb3043cb9e406ef",
+    "candidate_identity": [
+      [
+        4.0,
+        10.0,
+        5,
+        40
+      ],
+      [
+        5.0,
+        14.0,
+        2,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 7,
+    "candidate_sha256": "cc063cb325d439967b91c0f39ddbaf5caeacb7370cbf19690a50f28ecb520340",
+    "candidate_identity": [
+      [
+        4.0,
+        14.0,
+        2,
+        36
+      ],
+      [
+        5.0,
+        10.0,
+        5,
+        40
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 8,
+    "candidate_sha256": "001de17996dd1ed1f84bb0139c15d9e45a3d317a2d1d6f6b1aa5073fdd04159e",
+    "candidate_identity": [
+      [
+        5.0,
+        8.0,
+        4,
+        32
+      ],
+      [
+        5.0,
+        14.0,
+        2,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 9,
+    "candidate_sha256": "ddd3b95cab6088855964001bd75ba4da70b13ddf4884edf984b8b162c1ee035f",
+    "candidate_identity": [
+      [
+        4.0,
+        14.0,
+        3,
+        36
+      ],
+      [
+        5.0,
+        14.0,
+        3,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 10,
+    "candidate_sha256": "9e980f677606f8daa362f79ffacdbfefc141111a33978f807a580759588fa4f6",
+    "candidate_identity": [
+      [
+        5.0,
+        16.0,
+        3,
+        24
+      ],
+      [
+        5.0,
+        14.0,
+        2,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 11,
+    "candidate_sha256": "05aab108d8a128ae8a40b3252df46aef33e81ab53839765fa9269adbaf26a8c4",
+    "candidate_identity": [
+      [
+        5.0,
+        16.0,
+        2,
+        24
+      ],
+      [
+        5.0,
+        14.0,
+        3,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 12,
+    "candidate_sha256": "028c4db2a8005fc14f55ebe2270de79eb99938f3286825d5cb41e5f325d4e9e8",
+    "candidate_identity": [
+      [
+        5.0,
+        16.0,
+        6,
+        24
+      ],
+      [
+        5.0,
+        14.0,
+        1,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 13,
+    "candidate_sha256": "4a073a1d85f4cc50a7aadfc09b279f22c0d3fcbd303a1dab4fe9169bc2b07796",
+    "candidate_identity": [
+      [
+        5.0,
+        16.0,
+        1,
+        24
+      ],
+      [
+        5.0,
+        14.0,
+        6,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 14,
+    "candidate_sha256": "062d7e3d6a7f75cdcca25240b4d66be6ac78d8f2c0b73ebb71b872f8796811f6",
+    "candidate_identity": [
+      [
+        5.0,
+        20.0,
+        5,
+        20
+      ],
+      [
+        5.0,
+        14.0,
+        1,
+        36
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  },
+  {
+    "system_status": "blocked",
+    "scope_status": {
+      "shaft": "blocked",
+      "bearing": "blocked",
+      "key": "blocked"
+    },
+    "gear_rating_status": {
+      "stage1": "blocked",
+      "stage2": "blocked"
+    },
+    "missing_count": 55,
+    "missing_structural": [
+      "$.shafts[S1].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S1].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S2].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].segments（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.shafts[S3].sections（未在旗舰原始数据或源文档显式声明中给出）",
+      "$.keys（轴毂连接方式与键参数：未在旗舰原始数据或源文档显式声明中给出）"
+    ],
+    "unsupported": [
+      {
+        "component": "gear_pairs.stage1",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "gear_pairs.stage2",
+        "reason": "蜗杆副强度/磨损/胶合评级未收录（M40 冻结），design_check 无蜗杆族"
+      },
+      {
+        "component": "shafts.S1.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S2.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      },
+      {
+        "component": "shafts.S3.loads",
+        "reason": "蜗杆副啮合力（含摩擦角的三向分力）在 shaft_line 中未收录（M40 冻结）→ 轴载荷不可编译"
+      }
+    ],
+    "full_system_pass": false,
+    "rank": 15,
+    "candidate_sha256": "101e7d648a3ec439defe71e1984bcd5760632641192feb2f318e5cb29cc1e47e",
+    "candidate_identity": [
+      [
+        5.0,
+        16.0,
+        1,
+        24
+      ],
+      [
+        5.0,
+        20.0,
+        5,
+        30
+      ]
+    ],
+    "kinematics_pass": true,
+    "stage0_geometry_pass": true
+  }
+]

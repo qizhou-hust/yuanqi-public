@@ -1,0 +1,41 @@
+{
+  "commands": [
+    {
+      "case": "single-pair-cli",
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-c",
+        "import json; from gearmath.tools.ai_tools import call; print(json.dumps(call('gear_rate',{}),ensure_ascii=False,indent=2))"
+      ],
+      "cwd": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "returncode": 0,
+      "stdout": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\single-pair-cli.stdout.json",
+      "stderr": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\single-pair-cli.stderr.txt",
+      "purpose": "Exact CLI spelling for the already-smoked mcp/system capability; not an additional capability or FE/CAD run"
+    },
+    {
+      "case": "joint-system-cli",
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "gearmath.tools.system_closure",
+        "--inputs",
+        "data/system-optimization/v017-capability-probe.json",
+        "--out",
+        "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\joint-cli"
+      ],
+      "cwd": "D:\\my_Works\\Gears\\gearbase-v020-work",
+      "returncode": 0,
+      "stdout": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\joint-system-cli.stdout.json",
+      "stderr": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\joint-system-cli.stderr.txt",
+      "purpose": "Exact CLI spelling for the already-smoked mcp/system capability; not an additional capability or FE/CAD run"
+    }
+  ],
+  "recorded_utc": "2026-11-01T11:31:22.720373+00:00"
+}

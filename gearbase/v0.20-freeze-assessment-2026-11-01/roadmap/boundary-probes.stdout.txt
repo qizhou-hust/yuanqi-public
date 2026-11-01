@@ -1,0 +1,141 @@
+{
+  "schema": "gearbase.goal-boundary-probes/1",
+  "audit_date": "2026-11-01",
+  "source_root": "D:\\my_Works\\Gears\\gearbase-v020-work",
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "scope": "Only source-schema, requirement compiler and metadata; not a whole-system rating or engineering release test.",
+  "new_fe_runs": 0,
+  "new_commercial_tool_runs": 0,
+  "source_contract": {
+    "schema_properties": [
+      "constraints",
+      "editions",
+      "evidence",
+      "id",
+      "inputs",
+      "note",
+      "schema",
+      "selectors",
+      "title"
+    ],
+    "baseline_errors": [],
+    "added_topology_errors": [
+      {
+        "path": "$.topology",
+        "code": "additionalProperties",
+        "message": "不允许的键 topology（源文档只接受作者输入、证据、约束、选择器、版次；派生量与结果一律不存）"
+      }
+    ]
+  },
+  "generic_output_requirement": {
+    "input": {
+      "output_speed_rpm": 30,
+      "output_torque_Nm": 20,
+      "envelope_mm": [
+        100,
+        100,
+        100
+      ],
+      "shaft_relation": "coaxial"
+    },
+    "result": {
+      "status": "blocked_invalid_inputs",
+      "errors": [
+        {
+          "name": "output_speed_rpm",
+          "code": "unknown_argument",
+          "message": "未知需求字段 'output_speed_rpm'（可用 ['life_h', 'max_b_over_d1', 'max_center_distance_mm', 'max_face_width_mm', 'min_S_F', 'min_S_H', 'power_kW', 'ratio', 'ratio_tol_percent', 'speed_rpm', 'torque_Nm', 'material', 'stages', 'gear_type']）"
+        },
+        {
+          "name": "output_torque_Nm",
+          "code": "unknown_argument",
+          "message": "未知需求字段 'output_torque_Nm'（可用 ['life_h', 'max_b_over_d1', 'max_center_distance_mm', 'max_face_width_mm', 'min_S_F', 'min_S_H', 'power_kW', 'ratio', 'ratio_tol_percent', 'speed_rpm', 'torque_Nm', 'material', 'stages', 'gear_type']）"
+        },
+        {
+          "name": "envelope_mm",
+          "code": "unknown_argument",
+          "message": "未知需求字段 'envelope_mm'（可用 ['life_h', 'max_b_over_d1', 'max_center_distance_mm', 'max_face_width_mm', 'min_S_F', 'min_S_H', 'power_kW', 'ratio', 'ratio_tol_percent', 'speed_rpm', 'torque_Nm', 'material', 'stages', 'gear_type']）"
+        },
+        {
+          "name": "shaft_relation",
+          "code": "unknown_argument",
+          "message": "未知需求字段 'shaft_relation'（可用 ['life_h', 'max_b_over_d1', 'max_center_distance_mm', 'max_face_width_mm', 'min_S_F', 'min_S_H', 'power_kW', 'ratio', 'ratio_tol_percent', 'speed_rpm', 'torque_Nm', 'material', 'stages', 'gear_type']）"
+        }
+      ],
+      "requirement": {
+        "output_speed_rpm": 30,
+        "output_torque_Nm": 20,
+        "envelope_mm": [
+          100,
+          100,
+          100
+        ],
+        "shaft_relation": "coaxial"
+      }
+    }
+  },
+  "multi_stage_requirement": {
+    "status": "blocked_unsupported_scope",
+    "errors": [
+      {
+        "name": "stages",
+        "code": "unsupported_scope",
+        "message": "模板 stage_sizing 只覆盖单级传动"
+      }
+    ],
+    "requirement": {
+      "gear_type": "spur",
+      "stages": 2
+    },
+    "available_templates": [
+      "stage_sizing"
+    ]
+  },
+  "flagship_families": [
+    "H2",
+    "P2",
+    "W2W"
+  ],
+  "flagship_without_scope": {
+    "status": "blocked_unsupported_scope",
+    "errors": [
+      {
+        "code": "blocked_unsupported_scope",
+        "message": "Explicit Stage0 scope required; full family rating is unavailable"
+      }
+    ],
+    "engineering_accepted": false
+  },
+  "unknown_mixed_family": {
+    "status": "blocked_unsupported_scope",
+    "errors": [
+      {
+        "code": "blocked_unsupported_scope",
+        "message": "Unsupported original flagship"
+      }
+    ],
+    "engineering_accepted": false
+  },
+  "bench": {
+    "status": "skeleton_pending_engineer_label",
+    "case_count": 40,
+    "labeled_cases": 0,
+    "pending_engineer_label": 40
+  },
+  "caller_provenance": {
+    "agent_proposed": {
+      "status": "pass_pending_human_confirmation",
+      "agent_proposed_inputs": [
+        "T_1"
+      ],
+      "errors": null
+    },
+    "user": {
+      "status": "pass",
+      "agent_proposed_inputs": [],
+      "errors": null
+    },
+    "interpretation": "The local API accepts caller-supplied provenance. A preview/CAS token and a provenance string do not attest an independent engineer or a release decision."
+  },
+  "product_git_status_after": []
+}

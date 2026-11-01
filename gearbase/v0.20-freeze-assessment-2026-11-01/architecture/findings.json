@@ -1,0 +1,394 @@
+{
+  "schema": "gearbase.freeze-architecture-assessment/1",
+  "review_date": "2026-11-01",
+  "source_root": "D:\\my_Works\\Gears\\gearbase-v020-work",
+  "git_head": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "package_version": "0.20",
+  "review_mode": "delegated local evidence audit; not an independent model certification",
+  "external_standard": "用户目标：速度/扭矩/空间/轴关系 → 自动类型/级数/传动比分配 → 方案选择 → 齿轮/轴承/轴/箱体/丝杆螺母 → 优化/FE/CAD/图纸；自然语言编辑；数学真源全链更新",
+  "scope": "只读代码取证及4组当前会话安全入口 smoke；未执行 GUI、鼠标、FE 求解、原 M31 全套回归或外部客户端模型请求",
+  "source_mutation": false,
+  "evidence_policy": "verified 仅对明确限定能力成立；partial 可包含已运行的子能力及未完成集成；missing 指当前 gearmath 主链未找到目标能力，不等于归档/供应商库完全无相关代码",
+  "commands": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\commands.json",
+  "environment_inventory": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\environment-inventory.json",
+  "findings": [
+    {
+      "id": "ARC-01",
+      "priority": "P1",
+      "classification": "verified_product_gap_with_explicit_disclosure",
+      "title": "需求编译产生两条不相连的载荷与优化路径，feasible 不代表新需求通过",
+      "standard": "优化模型必须接收同一份用户载荷、寿命、材料、安全阈值和空间限制；未应用项不可算作需求验收。",
+      "observed": "40→400 N·m、1000→3000 rpm、10000→30000 h、材料说明与空间上限一起改变，template_call、Problem IR、完整 optimize_nlp 结果均相同；单独 rating_edit 的校核数值改变。模板由 c001_g1 固定工况生成，生命周期/材料未应用，空间限制在 post_checks。",
+      "witness": {
+        "optimized_b_mm": 21.30069604155817,
+        "optimized_center_distance_mm": 57.120694849135454,
+        "second_requirement_max_b_mm": 5.0,
+        "second_requirement_max_a_mm": 20.0,
+        "template_feasible": true,
+        "rating_SH1_before": 0.9414217847337382,
+        "rating_SH1_after": 0.29770370786593453,
+        "problem_ir_sha256": "63e34ba3bf2f582ed080d294c4047d2cdf62b39a663b95875f70f84359053e52"
+      },
+      "impact": "直接把 compiler 的 template_call 接给优化器，候选即使 feasible 仍会违反实际载荷/空间需求。返回已用 unapplied/post_checks/applicability 明示界限，不能称为静默丢参或数学优化器错误。",
+      "code_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\intent.py",
+          "line": 186,
+          "end_line": 229
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\nlp_templates.py",
+          "line": 14,
+          "end_line": 20
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\problem.py",
+          "line": 11,
+          "end_line": 65
+        }
+      ],
+      "runtime_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\requirements.stdout.json",
+          "json_pointer": "/results"
+        }
+      ],
+      "recommendation": "下一产品切片优先级 P0：建立 full_requirement→source-owned sizing 的单一路径，实际载荷/限值进入问题声明；寿命与材料若无可用数值证据即阻断；用本反例验证 T/n/空间变化能改变模型或可行性。保留当前模板为明确命名的 C001 演示。",
+      "current_disposition": "冻结基线不修改；记录为目标交付阻断"
+    },
+    {
+      "id": "ARC-02",
+      "priority": "P1",
+      "classification": "verified_interface_scope_and_static_gap",
+      "title": "多候选来自预选固定拓扑的参数搜索，尚非自动传动拓扑规划",
+      "standard": "由轴关系/输入输出约束自动选择类型、级数与级比分配，并比较多种拓扑。",
+      "observed": "通用编译只收单级 spur；stages=2/helical 被 blocked_unsupported_scope，axis_relation 被 unknown_argument 拒绝。旗舰 schema 要求调用者先选择 H2/W2W/P2，H2 输入先指定两个中心距，P2/W2W 固定两级类型。joint optimizer 只遍历调用者编写的 gear×shaft×bearing 有限轴。",
+      "impact": "已有候选列表可辅助固定问题选型；不能从任意空间与轴关系自动产生平行轴、交错轴、行星、蜗杆和混合级的方案架构。",
+      "code_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\intent.py",
+          "line": 21,
+          "end_line": 49
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\intent.py",
+          "line": 153,
+          "end_line": 161
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\flagship_workflow.py",
+          "line": 3,
+          "end_line": 26
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\flagship_h2.py",
+          "line": 1,
+          "end_line": 28
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\system_optimize.py",
+          "line": 129,
+          "end_line": 194
+        }
+      ],
+      "runtime_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\requirements.stdout.json",
+          "json_pointer": "/results/unsupported_multistage_helical"
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\requirements.stdout.json",
+          "json_pointer": "/results/unknown_axis_relation"
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\flagships.stdout.json",
+          "json_pointer": "/results"
+        }
+      ],
+      "recommendation": "在已闭合的单副产品切片后补独立 topology IR 与类型/级数规划器；把固定拓扑的尺寸搜索和跨拓扑规划分开验收。",
+      "current_disposition": "目标能力缺失；不是现有 Stage0 合同违约"
+    },
+    {
+      "id": "ARC-03",
+      "priority": "P1",
+      "classification": "verified_runtime_completion_gap",
+      "title": "原始旗舰与真实示例的系统级校核仍因缺数据或不支持分支阻断",
+      "standard": "选中方案后有可复现的齿轮、轴、轴承与连接件系统校核。",
+      "observed": "当前运行 H2/W2W/P2 分别返回40/15/5个 Stage0 候选，三者 system_status 都 blocked，模板缺项计数93/62/61；W2W/P2明确缺全族强度与啮合力/均载模型。C001仅 gear_rating pass，manufacturing/scuffing/micropitting/shaft/bearing/key/thermal blocked；K01制造参数pass，其余请求检查blocked。",
+      "impact": "Stage0 可生成几何/运动学初选，不能以有候选或工作流 completed_stage0 作为系统通过；缺项列表是工程数据补齐边界。",
+      "code_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\flagship_system.py",
+          "line": 1,
+          "end_line": 17
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\flagship_system.py",
+          "line": 581,
+          "end_line": 607
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\design_check.py",
+          "line": 875,
+          "end_line": 962
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\design_check_tool.py",
+          "line": 9,
+          "end_line": 28
+        }
+      ],
+      "runtime_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\flagships.stdout.json",
+          "json_pointer": "/results"
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\system.stdout.json",
+          "json_pointer": "/results/summary/design_check_statuses"
+        }
+      ],
+      "recommendation": "先把一个有真实支承/轴承/材料/限值来源的圆柱系统示例补齐为完整可试用切片；W2W/P2保持强度与载荷模型阻断，不用测试演示数据替代真实输入。",
+      "current_disposition": "目标交付阻断；当前 blocked 行为符合不补默认值约定"
+    },
+    {
+      "id": "ARC-04",
+      "priority": "P1",
+      "classification": "verified_ssot_subset_and_static_integration_gap",
+      "title": "数学真源与DAG内重算已成立，但未贯通FE/CAD/供应商全链",
+      "standard": "作者输入只有一个权威文档，编辑后所有下游数值、几何、FE与证据身份一致更新。",
+      "observed": "C001 math-source 副本中 b=30→33 后，source/model hash及29个数值变更，原文档与 evidence 分区保持不变；投影派生行不可写。FE ingest 明确 graph_admission.admitted=false；CAD 位于独立 archived math-source/unified_document/STEP 路径，新 gearmath math-source 仅生成数值回执/参数表。轴梁至KHβ仍只是机制接口桩/有限贡献，非完整自动反馈。",
+      "impact": "不能把唯一输出公式、哈希和数值图重算解释成 CAD 特征、FE 网格/求解结果、厂商证据及制造输出都自动更新且重新合格。",
+      "code_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\kernel\\graph.py",
+          "line": 132,
+          "end_line": 168
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\math_source.py",
+          "line": 88,
+          "end_line": 122
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\fea_ingest.py",
+          "line": 1,
+          "end_line": 16
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\architecture_guard.py",
+          "line": 1,
+          "end_line": 6
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\system\\shaft_beam.py",
+          "line": 16,
+          "end_line": 18
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\beam_face.py",
+          "line": 7,
+          "end_line": 36
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\cadbench\\unified_document.py",
+          "line": 194,
+          "end_line": 205
+        }
+      ],
+      "runtime_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\system.stdout.json",
+          "json_pointer": "/results/summary/source_changed_values"
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\system.stdout.json",
+          "json_pointer": "/results/summary/external_evidence_held_unchanged"
+        }
+      ],
+      "recommendation": "定义同一 source revision 驱动下游投影的身份、失效与重建协议；分别验收数学计算、CAD读回、FE入图资格和供应商证据，不以哈希存在替代各域资格。",
+      "current_disposition": "数值SSOT可用；全链集成未完成"
+    },
+    {
+      "id": "ARC-05",
+      "priority": "P1",
+      "classification": "verified_static_cad_release_gap_not_current_runtime_test",
+      "title": "原生齿轮STEP资产可恢复，但完整装配与制造图纸尚未交付",
+      "standard": "选定传动方案能输出含轴、轴承、箱体及必要支架/载体的装配和可制造图纸。",
+      "observed": "archived realize_revision 明示 native_assembly=partial，缺 shafts/bearings/housing/carrier，assembly_drawing=blocked、零件图仅检查SVG；四族headless workflow只声明 source→job→STEP。v0.20 M35 packet仅K02直径包络/宽度审查准备，manufacturing_release=false；受审 tooth_authority 拒非零变位，斜齿只给工作渐开线面而非完整滚切齿根。",
+      "impact": "能读取源码/旧几何证据不等于当前新架构已有一键整箱体CAD或制造放行；需要按具体族与变位范围恢复并读回验证。",
+      "code_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\gears\\realize.py",
+          "line": 147,
+          "end_line": 187
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\gears\\integration\\family_workflow.py",
+          "line": 1,
+          "end_line": 27
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\cadbench\\tooth_authority.py",
+          "line": 1,
+          "end_line": 25
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\cadbench\\gear_native_wp.py",
+          "line": 1,
+          "end_line": 6
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\m35_packet.py",
+          "line": 1,
+          "end_line": 31
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\m35_packet.py",
+          "line": 97,
+          "end_line": 101
+        }
+      ],
+      "runtime_refs": [],
+      "recommendation": "按单副可制造几何→轴/轴承/箱体装配→图纸逐层补齐合同；不把 diameter envelope 图纸称为真实齿面/齿根或制造图。",
+      "current_disposition": "本审计未启动CAD运行或GUI；以代码声明与调用链定位缺口"
+    },
+    {
+      "id": "ARC-06",
+      "priority": "P2",
+      "classification": "verified_protocol_only_external_client_unverified",
+      "title": "MCP服务器当前可用，真实模型自然语言闭环仍未在本轮验证",
+      "standard": "用户可用自然语言创建/修改设计并完成工具调用与可复核结果。",
+      "observed": "当前 stdio initialize/list/resources/prompts/tools-call 成功，17个默认列出工具；gear_rate、preview、explain与错误阻断正常。requirement_compile接受结构化object，不是自由文本解析器；自然语言解释依赖外部模型。保存文档曾记录Claude Code连接后模型HTTP403且无模型发起tools/call；本轮未连接任何外部客户端。",
+      "impact": "协议往返证明服务器，不证明真实用户端配置、账户模型调用或自然语言任务完成。",
+      "code_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\ai_tools.py",
+          "line": 604,
+          "end_line": 660
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\intent.py",
+          "line": 39,
+          "end_line": 49
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\docs\\M38-closure.md",
+          "line": 19,
+          "end_line": 43
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\docs\\M34-closure.md",
+          "line": 33,
+          "end_line": 38
+        }
+      ],
+      "runtime_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\mcp.stdout.json",
+          "json_pointer": "/results/summary"
+        }
+      ],
+      "recommendation": "单独记录真实客户端的发现、实际模型tools/call、数值来源与预览/写回结果；本轮不据历史403断言当前账户仍失败。",
+      "current_disposition": "服务器verified；外部模型自然语言端到端not_verified"
+    },
+    {
+      "id": "ARC-07",
+      "priority": "P2",
+      "classification": "verified_usability_and_identity_mismatch",
+      "title": "入口文档与运行身份过时，易误判当前能力和运行方法",
+      "standard": "冻结包的版本与试用入口应可准确识别当前实现。",
+      "observed": "VERSION=0.20且HEAD已核；README仍自称v0.11/665 tests并把legacy概括为不可运行；实际存在 archive/m31 分段恢复及m31_regression适配入口。MCP initialize实际自报gearmath-prototype version=0.5；接入指南仍列13个工具和未实连状态，与当前17工具及另文档记录不一致。",
+      "impact": "用户难以找到当前入口或判断看到的是旧演示/新主链/原M31恢复路线；错误版本号也削弱日志定位。legacy目录本身并未因此被证明可直接运行，新入口实际针对archive staged tree。",
+      "code_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\VERSION",
+          "line": 1,
+          "end_line": 1
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\README.md",
+          "line": 1,
+          "end_line": 10
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\README.md",
+          "line": 44,
+          "end_line": 48
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\m31_runtime.py",
+          "line": 243,
+          "end_line": 283
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\m31_regression.py",
+          "line": 72,
+          "end_line": 81
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\ai_tools.py",
+          "line": 628,
+          "end_line": 635
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\docs\\接入指南-ClaudeDesktop与Code.md",
+          "line": 88,
+          "end_line": 93
+        }
+      ],
+      "runtime_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\mcp.stdout.json",
+          "json_pointer": "/results/summary/server_info"
+        }
+      ],
+      "recommendation": "下一包生成一个随VERSION与工具注册表一致的当前入口页，按新主链、固定演示、归档恢复三类说明真实可执行命令与能力限制；本审计不改根README。",
+      "current_disposition": "冻结可用性finding；报告附当前试用命令"
+    },
+    {
+      "id": "ARC-08",
+      "priority": "P2",
+      "classification": "verified_authority_boundary_not_exploit_claim",
+      "title": "CAS/token和caller provenance是状态/来源声明，不是身份审批",
+      "standard": "自然语言/代理写入边界应明确区分一致性、用户身份与工程审批。",
+      "observed": "gear_commit核对基线sha、版本、token与edit后即可提交；用户身份/人工批准未作为认证对象。provenance允许调用者填写user/evidence/assumption/agent_proposed，不能由标签本身证明谁输入或证据真实。optimize_and_commit的列出开关只控制discovery，call分发不受该开关影响，confirm=true来自调用参数。",
+      "impact": "这些机制能防陈旧写入、重复权威源和不一致参数，不能自动证明已获真人批准或认证的证据来源；不能据此声称远程越权漏洞，部署权限由宿主MCP客户端与外层策略承担。",
+      "code_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\ai_tools.py",
+          "line": 54,
+          "end_line": 54
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\ai_tools.py",
+          "line": 405,
+          "end_line": 455
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\ai_tools.py",
+          "line": 536,
+          "end_line": 547
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\optimize_commit.py",
+          "line": 1,
+          "end_line": 11
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\optimize_commit.py",
+          "line": 29,
+          "end_line": 37
+        }
+      ],
+      "runtime_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\architecture\\evidence\\mcp.stdout.json",
+          "json_pointer": "/results/summary/preview_status"
+        }
+      ],
+      "recommendation": "产品文案把CAS写成并发一致性；若需身份/工程审批，以外部可核验的批准记录绑定source revision，不能把provenance字符串或confirm参数当身份凭据。无需为本finding扩展攻击实验。",
+      "current_disposition": "仅界限澄清；未执行任何commit或攻击实验"
+    }
+  ]
+}

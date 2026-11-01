@@ -1,0 +1,1801 @@
+{
+  "source_root": "D:\\my_Works\\Gears\\gearbase-v020-work",
+  "head": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "VERSION": "0.20",
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "D:\\anaconda3\\python.exe",
+  "safety": {
+    "write_product": false,
+    "invoke_gui": false,
+    "invoke_fe_solver": false,
+    "persist_design": false,
+    "dont_write_bytecode": true
+  },
+  "case": "requirements",
+  "results": {
+    "requirements": [
+      {
+        "torque_Nm": 40.0,
+        "speed_rpm": 1000.0,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2.0,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.1,
+        "min_S_F": 1.4,
+        "life_h": 10000.0,
+        "material": "Authored audit material A; no property values supplied",
+        "stages": 1,
+        "gear_type": "spur",
+        "max_center_distance_mm": 100.0,
+        "max_face_width_mm": 40.0
+      },
+      {
+        "torque_Nm": 400.0,
+        "speed_rpm": 3000.0,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2.0,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.1,
+        "min_S_F": 1.4,
+        "life_h": 30000.0,
+        "material": "Authored audit material B; different heat treatment, no property values supplied",
+        "stages": 1,
+        "gear_type": "spur",
+        "max_center_distance_mm": 20.0,
+        "max_face_width_mm": 5.0
+      }
+    ],
+    "compiler_responses": [
+      {
+        "status": "pass_pending_human_confirmation",
+        "requirement": {
+          "torque_Nm": 40.0,
+          "speed_rpm": 1000.0,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2.0,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.1,
+          "min_S_F": 1.4,
+          "life_h": 10000.0,
+          "material": "Authored audit material A; no property values supplied",
+          "stages": 1,
+          "gear_type": "spur",
+          "max_center_distance_mm": 100.0,
+          "max_face_width_mm": 40.0
+        },
+        "agent_proposed_inputs": [
+          "S_Fmin",
+          "S_Hmin",
+          "T_1",
+          "max_b_over_d1",
+          "n_1",
+          "ratio_tol",
+          "target_ratio"
+        ],
+        "template_call": {
+          "tool": "optimize_nlp",
+          "arguments": {
+            "template": "stage_sizing",
+            "template_params": {
+              "target_ratio": 1.8,
+              "ratio_tol": 0.02,
+              "max_b_over_d1": 1.2
+            }
+          }
+        },
+        "rating_edit": {
+          "tool": "gear_preview_edit",
+          "arguments": {
+            "edit": {
+              "params": {
+                "T_1": {
+                  "value": 40.0,
+                  "unit": "N*m",
+                  "provenance": "agent_proposed"
+                },
+                "n_1": {
+                  "value": 1000.0,
+                  "unit": "rpm",
+                  "provenance": "agent_proposed"
+                },
+                "S_Hmin": {
+                  "value": 1.1,
+                  "unit": "1",
+                  "provenance": "agent_proposed"
+                },
+                "S_Fmin": {
+                  "value": 1.4,
+                  "unit": "1",
+                  "provenance": "agent_proposed"
+                }
+              }
+            }
+          }
+        },
+        "derivations": [
+          {
+            "quantity": "ratio_tol",
+            "value": 0.02,
+            "unit": "1",
+            "formula_id": "percent_to_fraction",
+            "expr": "x = p / 100",
+            "operands": {
+              "percent": 2.0
+            }
+          }
+        ],
+        "post_checks": [
+          {
+            "field": "max_center_distance_mm",
+            "limit": 100.0,
+            "check_quantity": "a_w",
+            "sense": "<=",
+            "how": "优化后用 gear_explain(a_w) 取值与该上限比较；模板 stage_sizing 的约束集不含此项"
+          },
+          {
+            "field": "max_face_width_mm",
+            "limit": 40.0,
+            "check_quantity": "b",
+            "sense": "<=",
+            "how": "优化后用 gear_explain(b) 取值与该上限比较；模板 stage_sizing 的约束集不含此项"
+          }
+        ],
+        "unapplied": [
+          {
+            "field": "life_h",
+            "value": 10000.0,
+            "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+          },
+          {
+            "field": "material",
+            "value": "Authored audit material A; no property values supplied",
+            "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+          }
+        ],
+        "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+        "scope_assumptions": [
+          "转速 speed_rpm 按小轮（输入轴）转速理解",
+          "模板 stage_sizing 覆盖单级直齿"
+        ],
+        "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+      },
+      {
+        "status": "pass_pending_human_confirmation",
+        "requirement": {
+          "torque_Nm": 400.0,
+          "speed_rpm": 3000.0,
+          "ratio": 1.8,
+          "ratio_tol_percent": 2.0,
+          "max_b_over_d1": 1.2,
+          "min_S_H": 1.1,
+          "min_S_F": 1.4,
+          "life_h": 30000.0,
+          "material": "Authored audit material B; different heat treatment, no property values supplied",
+          "stages": 1,
+          "gear_type": "spur",
+          "max_center_distance_mm": 20.0,
+          "max_face_width_mm": 5.0
+        },
+        "agent_proposed_inputs": [
+          "S_Fmin",
+          "S_Hmin",
+          "T_1",
+          "max_b_over_d1",
+          "n_1",
+          "ratio_tol",
+          "target_ratio"
+        ],
+        "template_call": {
+          "tool": "optimize_nlp",
+          "arguments": {
+            "template": "stage_sizing",
+            "template_params": {
+              "target_ratio": 1.8,
+              "ratio_tol": 0.02,
+              "max_b_over_d1": 1.2
+            }
+          }
+        },
+        "rating_edit": {
+          "tool": "gear_preview_edit",
+          "arguments": {
+            "edit": {
+              "params": {
+                "T_1": {
+                  "value": 400.0,
+                  "unit": "N*m",
+                  "provenance": "agent_proposed"
+                },
+                "n_1": {
+                  "value": 3000.0,
+                  "unit": "rpm",
+                  "provenance": "agent_proposed"
+                },
+                "S_Hmin": {
+                  "value": 1.1,
+                  "unit": "1",
+                  "provenance": "agent_proposed"
+                },
+                "S_Fmin": {
+                  "value": 1.4,
+                  "unit": "1",
+                  "provenance": "agent_proposed"
+                }
+              }
+            }
+          }
+        },
+        "derivations": [
+          {
+            "quantity": "ratio_tol",
+            "value": 0.02,
+            "unit": "1",
+            "formula_id": "percent_to_fraction",
+            "expr": "x = p / 100",
+            "operands": {
+              "percent": 2.0
+            }
+          }
+        ],
+        "post_checks": [
+          {
+            "field": "max_center_distance_mm",
+            "limit": 20.0,
+            "check_quantity": "a_w",
+            "sense": "<=",
+            "how": "优化后用 gear_explain(a_w) 取值与该上限比较；模板 stage_sizing 的约束集不含此项"
+          },
+          {
+            "field": "max_face_width_mm",
+            "limit": 5.0,
+            "check_quantity": "b",
+            "sense": "<=",
+            "how": "优化后用 gear_explain(b) 取值与该上限比较；模板 stage_sizing 的约束集不含此项"
+          }
+        ],
+        "unapplied": [
+          {
+            "field": "life_h",
+            "value": 30000.0,
+            "reason": "寿命经 Z_NT/Y_NT 进入模型，这两个系数是证据输入，本工具不推算；请按 ISO 6336-2/3 的寿命曲线给出证据值后用 gear_preview_edit 写入"
+          },
+          {
+            "field": "material",
+            "value": "Authored audit material B; different heat treatment, no property values supplied",
+            "reason": "材料极限 σHlim/σFlim 是证据输入，本工具不把材料名映射成数值；基线保留 C001 的值（assumption）"
+          }
+        ],
+        "applicability": "optimize_nlp 的 stage_sizing 模板内部固定 C001 G1 载荷工况，只接收 template_params；rating_edit 中的转矩/转速/安全系数下限只作用于 gear_rate 等模型类工具，不进入该模板的求解。",
+        "scope_assumptions": [
+          "转速 speed_rpm 按小轮（输入轴）转速理解",
+          "模板 stage_sizing 覆盖单级直齿"
+        ],
+        "message": "以上均为 agent_proposed 数值，须由人工确认后才能作为设计依据；本工具未做任何校核计算。"
+      }
+    ],
+    "optimization_calls": [
+      {
+        "template": "stage_sizing",
+        "template_params": {
+          "target_ratio": 1.8,
+          "ratio_tol": 0.02,
+          "max_b_over_d1": 1.2
+        },
+        "discrete_assignments": [
+          {
+            "z1": 20,
+            "m_n": 2.0
+          }
+        ]
+      },
+      {
+        "template": "stage_sizing",
+        "template_params": {
+          "target_ratio": 1.8,
+          "ratio_tol": 0.02,
+          "max_b_over_d1": 1.2
+        },
+        "discrete_assignments": [
+          {
+            "z1": 20,
+            "m_n": 2.0
+          }
+        ]
+      }
+    ],
+    "optimization_responses": [
+      {
+        "status": "pass_pending_human_confirmation",
+        "template": "stage_sizing",
+        "template_params": {
+          "target_ratio": 1.8,
+          "ratio_tol": 0.02,
+          "max_b_over_d1": 1.2
+        },
+        "ai_proposed_inputs": [
+          "discrete_assignments"
+        ],
+        "solution": {
+          "x": {
+            "z1": 20,
+            "m_n": 2.0,
+            "b": 21.30069604155817,
+            "x1": 0.6
+          },
+          "objectives": {
+            "volume_mm3": 113493.11490006212,
+            "center_distance_mm": 57.120694849135454
+          },
+          "constraints": {
+            "pitting.pinion": 7.46813721974604e-11,
+            "pitting.wheel": -0.02012749201594133,
+            "bending.pinion": -2.3752670861639116,
+            "bending.wheel": -2.108586895141733,
+            "geometry.contact_ratio": -0.27252778395484123,
+            "ratio_error": -0.02,
+            "b_over_d1": -0.6674825989610458,
+            "domain": -1.0
+          },
+          "feasible": true,
+          "feasibility_tol": 1e-08,
+          "info": {
+            "z2": 36,
+            "S_H_1": 1.0999999999253187,
+            "S_F_1": 3.5752670861639118,
+            "eps_alpha": 1.4725277839548412,
+            "model_sha256": "d7f58aaacfdc35422de17f927ae972ea77fba57ccb9eb17a53ccc72d3a0feb1d"
+          }
+        },
+        "scalarized_objective": 113550.23559491125,
+        "claim": "连续变量由局部 NLP（增广拉格朗日 + 带界拟牛顿，精确导数）求解，只在指定离散组合上求解；给出点至多是一阶 KKT 局部候选。二阶条件只作独立数值检查（见 optimality[].second_order_check），不并入一阶结论，不声称全局最优。",
+        "problem_ir_sha256": "63e34ba3bf2f582ed080d294c4047d2cdf62b39a663b95875f70f84359053e52",
+        "evaluations": 90,
+        "feasible_count": 1,
+        "assurance": {
+          "schema": "gearmath.assurance/v1",
+          "search_claim": {
+            "coverage": "selected_discrete_with_local_nlp",
+            "refinement": "nlp_local_solve",
+            "outcome": "feasible_found",
+            "claim_scope": "local",
+            "grid_points_per_continuous_variable": null,
+            "seed": null,
+            "discrete_assignments_solved": 1,
+            "branch_and_bound": null,
+            "nonsmooth_regimes": null,
+            "statement": "连续变量由局部 NLP（增广拉格朗日 + 带界拟牛顿，精确导数）求解，只在指定离散组合上求解；给出点至多是一阶 KKT 局部候选。二阶条件只作独立数值检查（见 optimality[].second_order_check），不并入一阶结论，不声称全局最优。",
+            "not_claimed": [
+              "global_optimality",
+              "second_order_local_optimality",
+              "proven_infeasibility"
+            ]
+          },
+          "optimality": [
+            {
+              "point": 0,
+              "property": "kkt_first_order",
+              "status": "kkt_satisfied",
+              "gradient_source": "analytic",
+              "multipliers": {
+                "b_over_d1": 0.0,
+                "bending.pinion": 0.0,
+                "bending.wheel": 0.0,
+                "domain": 0.0,
+                "geometry.contact_ratio": 0.0,
+                "pitting.pinion": 206351.11801414212,
+                "pitting.wheel": 0.0,
+                "ratio_error": 0.0,
+                "b.lower_bound": 0.0,
+                "b.upper_bound": 0.0,
+                "x1.lower_bound": 0.0,
+                "x1.upper_bound": 27424.488616709084
+              },
+              "multiplier_convention": "L = f + Σλ_i·g_i + Σμ_j·h_j + Σν^U_k·(x_k − u_k) + Σν^L_k·(l_k − x_k)；g ≤ 0 ⇒ λ ≥ 0，ν^L, ν^U ≥ 0，μ 无号向限制",
+              "residuals": {
+                "stationarity": 9.524861113997913e-14,
+                "stationarity_abs": 5.07498043589294e-10,
+                "primal_feasibility": 7.46813721974604e-11,
+                "dual_feasibility": 0.0,
+                "complementarity": 2.8923003804595055e-09,
+                "complementarity_abs": 1.5410584647776223e-05,
+                "normalization": 5328.141140488289
+              },
+              "tolerances": {
+                "tol_stationarity": 1e-07,
+                "tol_feasibility": 1e-08,
+                "tol_complementarity": 1e-07
+              },
+              "fixed_variables": {
+                "z1": 20,
+                "m_n": 2.0
+              },
+              "scalarization": {
+                "volume_mm3": 1.0,
+                "center_distance_mm": 1.0
+              },
+              "gradient_self_check": {
+                "method": "central_difference_vs_exact",
+                "max_rel_diff": 2.1000339754768744e-06,
+                "rel_tol": 0.0001,
+                "status": "consistent",
+                "meaning": "仅自检导数实现；差分值不参与求解"
+              },
+              "meaning": "一阶必要条件残差（原始量纲复算）；不检查约束规范与二阶条件，不证明局部或全局最优",
+              "independent_check": {
+                "method": "kkt_first_order（积极集 NNLS 重估乘子）",
+                "status": "kkt_satisfied",
+                "gradient_source": "analytic",
+                "residuals": {
+                  "stationarity": 4.608803764837699e-15,
+                  "stationarity_abs": 2.4556356947869062e-11,
+                  "primal_feasibility": 7.46813721974604e-11,
+                  "complementarity": 2.8923003804592177e-09,
+                  "complementarity_abs": 1.5410584647774688e-05,
+                  "normalization": 5328.141140488289,
+                  "dual_feasibility": 0.0
+                },
+                "multipliers": {
+                  "pitting.pinion": 206351.11801412154,
+                  "x1.upper_bound": 27424.488616706352
+                }
+              },
+              "second_order_check": {
+                "property": "second_order",
+                "status": "sosc_satisfied",
+                "hessian_source": "finite_difference_of_exact_gradient",
+                "fd_rel_step": 1e-05,
+                "fd_kinds": [
+                  "central",
+                  "backward"
+                ],
+                "hessian_asymmetry_abs": 0.0017389020163136593,
+                "hessian_max_abs": 14811.972468009224,
+                "eigen_tolerance": 0.014811972468009223,
+                "tangent_dim_strong": 0,
+                "tangent_dim_all_active": 0,
+                "eigenvalues_strong": [],
+                "eigenvalues_all_active": [],
+                "active_counts": {
+                  "eq": 0,
+                  "ineq_strong": 1,
+                  "ineq_weak": 0,
+                  "bound_strong": 1,
+                  "bound_weak": 0,
+                  "fixed": 0
+                },
+                "licq_holds": true,
+                "strict_complementarity": true,
+                "gradient_evaluations": 4,
+                "meaning": "二阶条件的数值检查（约化 Hessian 特征值，有限差分）：独立字段，不并入一阶 KKT 结论，不是证明；sonc_violated 的结论依赖 LICQ（见 licq_holds）",
+                "variables": [
+                  "b",
+                  "x1"
+                ],
+                "applies_to": "最终点"
+              }
+            }
+          ],
+          "solver_convergence": {
+            "kind": "optimizer_termination",
+            "status": "converged",
+            "termination": "kkt_tolerances_met",
+            "criterion": "原始量纲 KKT 残差：stationarity、primal、dual、complementarity 均 ≤ 容差",
+            "outer_iterations": 9,
+            "inner_iterations": 36,
+            "per_assignment": [
+              {
+                "assignment": {
+                  "z1": 20,
+                  "m_n": 2.0
+                },
+                "termination": "kkt_tolerances_met",
+                "scalarized_objective": 113550.23559491125,
+                "outer_iterations": 9,
+                "evaluations": 83
+              }
+            ],
+            "meaning": "只说明数值过程为何停止；KKT 达标不表示结果正确，也不表示全局最优"
+          },
+          "evidence_level": {
+            "value": "not_assessed",
+            "source": "formula_registry",
+            "scale": "E0–E6",
+            "note": "证据等级由公式注册表按依赖链给出，优化器不计算、不提升它"
+          }
+        },
+        "note": "优化器给出的点只是一阶 KKT 局部候选，不是最终设计；assurance 四项（search_claim、optimality、solver_convergence、evidence_level）分别给出，不合并为单一可信度。"
+      },
+      {
+        "status": "pass_pending_human_confirmation",
+        "template": "stage_sizing",
+        "template_params": {
+          "target_ratio": 1.8,
+          "ratio_tol": 0.02,
+          "max_b_over_d1": 1.2
+        },
+        "ai_proposed_inputs": [
+          "discrete_assignments"
+        ],
+        "solution": {
+          "x": {
+            "z1": 20,
+            "m_n": 2.0,
+            "b": 21.30069604155817,
+            "x1": 0.6
+          },
+          "objectives": {
+            "volume_mm3": 113493.11490006212,
+            "center_distance_mm": 57.120694849135454
+          },
+          "constraints": {
+            "pitting.pinion": 7.46813721974604e-11,
+            "pitting.wheel": -0.02012749201594133,
+            "bending.pinion": -2.3752670861639116,
+            "bending.wheel": -2.108586895141733,
+            "geometry.contact_ratio": -0.27252778395484123,
+            "ratio_error": -0.02,
+            "b_over_d1": -0.6674825989610458,
+            "domain": -1.0
+          },
+          "feasible": true,
+          "feasibility_tol": 1e-08,
+          "info": {
+            "z2": 36,
+            "S_H_1": 1.0999999999253187,
+            "S_F_1": 3.5752670861639118,
+            "eps_alpha": 1.4725277839548412,
+            "model_sha256": "d7f58aaacfdc35422de17f927ae972ea77fba57ccb9eb17a53ccc72d3a0feb1d"
+          }
+        },
+        "scalarized_objective": 113550.23559491125,
+        "claim": "连续变量由局部 NLP（增广拉格朗日 + 带界拟牛顿，精确导数）求解，只在指定离散组合上求解；给出点至多是一阶 KKT 局部候选。二阶条件只作独立数值检查（见 optimality[].second_order_check），不并入一阶结论，不声称全局最优。",
+        "problem_ir_sha256": "63e34ba3bf2f582ed080d294c4047d2cdf62b39a663b95875f70f84359053e52",
+        "evaluations": 90,
+        "feasible_count": 1,
+        "assurance": {
+          "schema": "gearmath.assurance/v1",
+          "search_claim": {
+            "coverage": "selected_discrete_with_local_nlp",
+            "refinement": "nlp_local_solve",
+            "outcome": "feasible_found",
+            "claim_scope": "local",
+            "grid_points_per_continuous_variable": null,
+            "seed": null,
+            "discrete_assignments_solved": 1,
+            "branch_and_bound": null,
+            "nonsmooth_regimes": null,
+            "statement": "连续变量由局部 NLP（增广拉格朗日 + 带界拟牛顿，精确导数）求解，只在指定离散组合上求解；给出点至多是一阶 KKT 局部候选。二阶条件只作独立数值检查（见 optimality[].second_order_check），不并入一阶结论，不声称全局最优。",
+            "not_claimed": [
+              "global_optimality",
+              "second_order_local_optimality",
+              "proven_infeasibility"
+            ]
+          },
+          "optimality": [
+            {
+              "point": 0,
+              "property": "kkt_first_order",
+              "status": "kkt_satisfied",
+              "gradient_source": "analytic",
+              "multipliers": {
+                "b_over_d1": 0.0,
+                "bending.pinion": 0.0,
+                "bending.wheel": 0.0,
+                "domain": 0.0,
+                "geometry.contact_ratio": 0.0,
+                "pitting.pinion": 206351.11801414212,
+                "pitting.wheel": 0.0,
+                "ratio_error": 0.0,
+                "b.lower_bound": 0.0,
+                "b.upper_bound": 0.0,
+                "x1.lower_bound": 0.0,
+                "x1.upper_bound": 27424.488616709084
+              },
+              "multiplier_convention": "L = f + Σλ_i·g_i + Σμ_j·h_j + Σν^U_k·(x_k − u_k) + Σν^L_k·(l_k − x_k)；g ≤ 0 ⇒ λ ≥ 0，ν^L, ν^U ≥ 0，μ 无号向限制",
+              "residuals": {
+                "stationarity": 9.524861113997913e-14,
+                "stationarity_abs": 5.07498043589294e-10,
+                "primal_feasibility": 7.46813721974604e-11,
+                "dual_feasibility": 0.0,
+                "complementarity": 2.8923003804595055e-09,
+                "complementarity_abs": 1.5410584647776223e-05,
+                "normalization": 5328.141140488289
+              },
+              "tolerances": {
+                "tol_stationarity": 1e-07,
+                "tol_feasibility": 1e-08,
+                "tol_complementarity": 1e-07
+              },
+              "fixed_variables": {
+                "z1": 20,
+                "m_n": 2.0
+              },
+              "scalarization": {
+                "volume_mm3": 1.0,
+                "center_distance_mm": 1.0
+              },
+              "gradient_self_check": {
+                "method": "central_difference_vs_exact",
+                "max_rel_diff": 2.1000339754768744e-06,
+                "rel_tol": 0.0001,
+                "status": "consistent",
+                "meaning": "仅自检导数实现；差分值不参与求解"
+              },
+              "meaning": "一阶必要条件残差（原始量纲复算）；不检查约束规范与二阶条件，不证明局部或全局最优",
+              "independent_check": {
+                "method": "kkt_first_order（积极集 NNLS 重估乘子）",
+                "status": "kkt_satisfied",
+                "gradient_source": "analytic",
+                "residuals": {
+                  "stationarity": 4.608803764837699e-15,
+                  "stationarity_abs": 2.4556356947869062e-11,
+                  "primal_feasibility": 7.46813721974604e-11,
+                  "complementarity": 2.8923003804592177e-09,
+                  "complementarity_abs": 1.5410584647774688e-05,
+                  "normalization": 5328.141140488289,
+                  "dual_feasibility": 0.0
+                },
+                "multipliers": {
+                  "pitting.pinion": 206351.11801412154,
+                  "x1.upper_bound": 27424.488616706352
+                }
+              },
+              "second_order_check": {
+                "property": "second_order",
+                "status": "sosc_satisfied",
+                "hessian_source": "finite_difference_of_exact_gradient",
+                "fd_rel_step": 1e-05,
+                "fd_kinds": [
+                  "central",
+                  "backward"
+                ],
+                "hessian_asymmetry_abs": 0.0017389020163136593,
+                "hessian_max_abs": 14811.972468009224,
+                "eigen_tolerance": 0.014811972468009223,
+                "tangent_dim_strong": 0,
+                "tangent_dim_all_active": 0,
+                "eigenvalues_strong": [],
+                "eigenvalues_all_active": [],
+                "active_counts": {
+                  "eq": 0,
+                  "ineq_strong": 1,
+                  "ineq_weak": 0,
+                  "bound_strong": 1,
+                  "bound_weak": 0,
+                  "fixed": 0
+                },
+                "licq_holds": true,
+                "strict_complementarity": true,
+                "gradient_evaluations": 4,
+                "meaning": "二阶条件的数值检查（约化 Hessian 特征值，有限差分）：独立字段，不并入一阶 KKT 结论，不是证明；sonc_violated 的结论依赖 LICQ（见 licq_holds）",
+                "variables": [
+                  "b",
+                  "x1"
+                ],
+                "applies_to": "最终点"
+              }
+            }
+          ],
+          "solver_convergence": {
+            "kind": "optimizer_termination",
+            "status": "converged",
+            "termination": "kkt_tolerances_met",
+            "criterion": "原始量纲 KKT 残差：stationarity、primal、dual、complementarity 均 ≤ 容差",
+            "outer_iterations": 9,
+            "inner_iterations": 36,
+            "per_assignment": [
+              {
+                "assignment": {
+                  "z1": 20,
+                  "m_n": 2.0
+                },
+                "termination": "kkt_tolerances_met",
+                "scalarized_objective": 113550.23559491125,
+                "outer_iterations": 9,
+                "evaluations": 83
+              }
+            ],
+            "meaning": "只说明数值过程为何停止；KKT 达标不表示结果正确，也不表示全局最优"
+          },
+          "evidence_level": {
+            "value": "not_assessed",
+            "source": "formula_registry",
+            "scale": "E0–E6",
+            "note": "证据等级由公式注册表按依赖链给出，优化器不计算、不提升它"
+          }
+        },
+        "note": "优化器给出的点只是一阶 KKT 局部候选，不是最终设计；assurance 四项（search_claim、optimality、solver_convergence、evidence_level）分别给出，不合并为单一可信度。"
+      }
+    ],
+    "rating_responses": [
+      {
+        "status": "fail",
+        "checks": [
+          {
+            "id": "pitting.pinion",
+            "quantity": "S_H_1",
+            "value": 0.9414217847337382,
+            "limit": 1.1,
+            "sense": ">=",
+            "margin_ratio": 0.8558379861215801,
+            "pass": false,
+            "ref": "ISO 6336-2:2019",
+            "standard": "ISO 6336-2",
+            "edition": "2019"
+          },
+          {
+            "id": "pitting.wheel",
+            "quantity": "S_H_2",
+            "value": 1.006520022337357,
+            "limit": 1.1,
+            "sense": ">=",
+            "margin_ratio": 0.9150182021248698,
+            "pass": false,
+            "ref": "ISO 6336-2:2019",
+            "standard": "ISO 6336-2",
+            "edition": "2019"
+          },
+          {
+            "id": "bending.pinion",
+            "quantity": "S_F_1",
+            "value": 2.816516688723182,
+            "limit": 1.4,
+            "sense": ">=",
+            "margin_ratio": 2.011797634802273,
+            "pass": true,
+            "ref": "ISO 6336-3:2019",
+            "standard": "ISO 6336-3",
+            "edition": "2019"
+          },
+          {
+            "id": "bending.wheel",
+            "quantity": "S_F_2",
+            "value": 3.048875494632988,
+            "limit": 1.4,
+            "sense": ">=",
+            "margin_ratio": 2.1777682104521343,
+            "pass": true,
+            "ref": "ISO 6336-3:2019",
+            "standard": "ISO 6336-3",
+            "edition": "2019"
+          },
+          {
+            "id": "geometry.contact_ratio",
+            "quantity": "eps_alpha",
+            "value": 1.6246424030581257,
+            "limit": 1.2,
+            "sense": ">=",
+            "margin_ratio": 1.3538686692151047,
+            "pass": true,
+            "ref": "ISO 21771:2007",
+            "standard": "ISO 21771",
+            "edition": "2007"
+          }
+        ],
+        "model_sha256": "ba84f4c244b18cc84be98928e451b2e5d38fdcc0bb4f116706a3d0ea884430ef",
+        "editions": {
+          "ISO 21771": "2007",
+          "ISO 6336-1": "2019",
+          "ISO 6336-2": "2019",
+          "ISO 6336-3": "2019"
+        },
+        "edition_sources": {
+          "ISO 21771": "M31 C001 engineering.standard = ISO6336-1/-2/-3:2019；ISO 21771 版次随本公式库",
+          "ISO 6336-1": "M31 C001 engineering.standard = ISO6336-1/-2/-3:2019；ISO 21771 版次随本公式库",
+          "ISO 6336-2": "M31 C001 engineering.standard = ISO6336-1/-2/-3:2019；ISO 21771 版次随本公式库",
+          "ISO 6336-3": "M31 C001 engineering.standard = ISO6336-1/-2/-3:2019；ISO 21771 版次随本公式库"
+        },
+        "inputs_by_provenance": {
+          "evidence": [
+            "E",
+            "K_A",
+            "K_Falpha",
+            "K_Halpha",
+            "K_Hbeta",
+            "K_V",
+            "Y_B",
+            "Y_DT",
+            "Y_NT_1",
+            "Y_NT_2",
+            "Y_RrelT_1",
+            "Y_RrelT_2",
+            "Y_ST",
+            "Y_X",
+            "Y_drelT_1",
+            "Y_drelT_2",
+            "Z_L",
+            "Z_NT_1",
+            "Z_NT_2",
+            "Z_R",
+            "Z_V",
+            "Z_W",
+            "Z_X",
+            "nu"
+          ],
+          "agent_proposed": [
+            "S_Fmin",
+            "S_Hmin",
+            "T_1",
+            "n_1"
+          ],
+          "user": [
+            "alpha_n",
+            "b",
+            "beta",
+            "eps_alpha_min",
+            "haP",
+            "hfP",
+            "m_n",
+            "rhofP",
+            "x_1",
+            "x_2",
+            "z_1",
+            "z_2"
+          ],
+          "assumption": [
+            "sigma_Flim_1",
+            "sigma_Flim_2",
+            "sigma_Hlim_1",
+            "sigma_Hlim_2"
+          ]
+        },
+        "selectors": {
+          "method.K_V": "external",
+          "method.K_Hbeta": "external",
+          "method.K_Halpha": "external",
+          "method.root_shift": "nominal"
+        },
+        "selector_sources": {
+          "method.K_V": "baseline C001_G1 约定：c001_g1 回放 M31 收据：K_V 取自 gear-rating.json（evidence）",
+          "method.K_Hbeta": "baseline C001_G1 约定：c001_g1 回放 M31 收据：K_Hβ 取自 gear-rating.json（evidence；M31 案例无方法C 所需轴系输入）",
+          "method.K_Halpha": "baseline C001_G1 约定：c001_g1 回放 M31 收据：K_Hα/K_Fα 取自 gear-rating.json（evidence）",
+          "method.root_shift": "baseline C001_G1 约定：c001_g1：M31 案例无齿厚公差，按 python-gearbox 口径用名义变位"
+        },
+        "domain_violations": [],
+        "agent_proposed_inputs": [
+          "T_1",
+          "n_1",
+          "S_Hmin",
+          "S_Fmin"
+        ],
+        "design_id": "3545613624e526f7186355ebff4ce57e3da28a5e5882db10ed1e3cd2beeab6d4",
+        "parameters": {
+          "E": {
+            "value": 206000.0,
+            "unit": "MPa",
+            "provenance": "evidence",
+            "source": "M31 材料假设",
+            "canonical_value": 206000.0
+          },
+          "K_A": {
+            "value": 1.25,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.25
+          },
+          "K_Falpha": {
+            "value": 1.0180576156848296,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0180576156848296
+          },
+          "K_Halpha": {
+            "value": 1.0180576156848296,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0180576156848296
+          },
+          "K_Hbeta": {
+            "value": 2.5744814242724336,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 2.5744814242724336
+          },
+          "K_V": {
+            "value": 1.0391660518198986,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0391660518198986
+          },
+          "S_Fmin": {
+            "value": 1.4,
+            "unit": "1",
+            "provenance": "agent_proposed",
+            "source": "AI 工具调用",
+            "canonical_value": 1.4
+          },
+          "S_Hmin": {
+            "value": 1.1,
+            "unit": "1",
+            "provenance": "agent_proposed",
+            "source": "AI 工具调用",
+            "canonical_value": 1.1
+          },
+          "T_1": {
+            "value": 40.0,
+            "unit": "N*m",
+            "provenance": "agent_proposed",
+            "source": "AI 工具调用",
+            "canonical_value": 40000.0
+          },
+          "Y_B": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "Y_DT": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "Y_NT_1": {
+            "value": 0.9011881827603812,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9011881827603812
+          },
+          "Y_NT_2": {
+            "value": 0.9118636156617996,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9118636156617996
+          },
+          "Y_RrelT_1": {
+            "value": 1.014789805373408,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.014789805373408
+          },
+          "Y_RrelT_2": {
+            "value": 1.014789805373408,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.014789805373408
+          },
+          "Y_ST": {
+            "value": 2.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 2.0
+          },
+          "Y_X": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "Y_drelT_1": {
+            "value": 0.9628281561600809,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9628281561600809
+          },
+          "Y_drelT_2": {
+            "value": 0.9758190332859351,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9758190332859351
+          },
+          "Z_L": {
+            "value": 0.9967176032217998,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9967176032217998
+          },
+          "Z_NT_1": {
+            "value": 0.8986828885438193,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.8986828885438193
+          },
+          "Z_NT_2": {
+            "value": 0.9088190004202857,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9088190004202857
+          },
+          "Z_R": {
+            "value": 0.9626793277278641,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9626793277278641
+          },
+          "Z_V": {
+            "value": 0.9632050832991362,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9632050832991362
+          },
+          "Z_W": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "Z_X": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "alpha_n": {
+            "value": 20.0,
+            "unit": "deg",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 0.3490658503988659
+          },
+          "b": {
+            "value": 30.0,
+            "unit": "mm",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 30.0
+          },
+          "beta": {
+            "value": 0.0,
+            "unit": "deg",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 0.0
+          },
+          "eps_alpha_min": {
+            "value": 1.2,
+            "unit": "1",
+            "provenance": "user",
+            "source": "设计规则（示例）",
+            "canonical_value": 1.2
+          },
+          "haP": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 刀具 addendum_coefficient",
+            "canonical_value": 1.0
+          },
+          "hfP": {
+            "value": 1.25,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 刀具 dedendum_coefficient",
+            "canonical_value": 1.25
+          },
+          "m_n": {
+            "value": 2.0,
+            "unit": "mm",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 2.0
+          },
+          "n_1": {
+            "value": 1000.0000000000001,
+            "unit": "rpm",
+            "provenance": "agent_proposed",
+            "source": "AI 工具调用",
+            "canonical_value": 16.666666666666668
+          },
+          "nu": {
+            "value": 0.3,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 材料假设",
+            "canonical_value": 0.3
+          },
+          "rhofP": {
+            "value": 0.38,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 刀具 root_fillet_radius_coefficient",
+            "canonical_value": 0.38
+          },
+          "sigma_Flim_1": {
+            "value": 460.0,
+            "unit": "MPa",
+            "provenance": "assumption",
+            "source": "M31 材料假设 bending_stress_limit",
+            "canonical_value": 460.0
+          },
+          "sigma_Flim_2": {
+            "value": 460.0,
+            "unit": "MPa",
+            "provenance": "assumption",
+            "source": "同上",
+            "canonical_value": 460.0
+          },
+          "sigma_Hlim_1": {
+            "value": 1500.0,
+            "unit": "MPa",
+            "provenance": "assumption",
+            "source": "M31 材料假设 contact_stress_limit",
+            "canonical_value": 1500.0
+          },
+          "sigma_Hlim_2": {
+            "value": 1500.0,
+            "unit": "MPa",
+            "provenance": "assumption",
+            "source": "同上",
+            "canonical_value": 1500.0
+          },
+          "x_1": {
+            "value": 0.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 0.0
+          },
+          "x_2": {
+            "value": 0.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 0.0
+          },
+          "z_1": {
+            "value": 20.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 20.0
+          },
+          "z_2": {
+            "value": 36.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 36.0
+          }
+        },
+        "requested_overrides": {
+          "T_1": {
+            "value": 40.0,
+            "unit": "N*m",
+            "provenance": "agent_proposed"
+          },
+          "n_1": {
+            "value": 1000.0,
+            "unit": "rpm",
+            "provenance": "agent_proposed"
+          },
+          "S_Hmin": {
+            "value": 1.1,
+            "unit": "1",
+            "provenance": "agent_proposed"
+          },
+          "S_Fmin": {
+            "value": 1.4,
+            "unit": "1",
+            "provenance": "agent_proposed"
+          }
+        }
+      },
+      {
+        "status": "fail",
+        "checks": [
+          {
+            "id": "pitting.pinion",
+            "quantity": "S_H_1",
+            "value": 0.29770370786593453,
+            "limit": 1.1,
+            "sense": ">=",
+            "margin_ratio": 0.2706397344235768,
+            "pass": false,
+            "ref": "ISO 6336-2:2019",
+            "standard": "ISO 6336-2",
+            "edition": "2019"
+          },
+          {
+            "id": "pitting.wheel",
+            "quantity": "S_H_2",
+            "value": 0.3182895781149603,
+            "limit": 1.1,
+            "sense": ">=",
+            "margin_ratio": 0.28935416192269114,
+            "pass": false,
+            "ref": "ISO 6336-2:2019",
+            "standard": "ISO 6336-2",
+            "edition": "2019"
+          },
+          {
+            "id": "bending.pinion",
+            "quantity": "S_F_1",
+            "value": 0.28165166887231835,
+            "limit": 1.4,
+            "sense": ">=",
+            "margin_ratio": 0.2011797634802274,
+            "pass": false,
+            "ref": "ISO 6336-3:2019",
+            "standard": "ISO 6336-3",
+            "edition": "2019"
+          },
+          {
+            "id": "bending.wheel",
+            "quantity": "S_F_2",
+            "value": 0.30488754946329893,
+            "limit": 1.4,
+            "sense": ">=",
+            "margin_ratio": 0.21777682104521354,
+            "pass": false,
+            "ref": "ISO 6336-3:2019",
+            "standard": "ISO 6336-3",
+            "edition": "2019"
+          },
+          {
+            "id": "geometry.contact_ratio",
+            "quantity": "eps_alpha",
+            "value": 1.6246424030581257,
+            "limit": 1.2,
+            "sense": ">=",
+            "margin_ratio": 1.3538686692151047,
+            "pass": true,
+            "ref": "ISO 21771:2007",
+            "standard": "ISO 21771",
+            "edition": "2007"
+          }
+        ],
+        "model_sha256": "ffd9c43e0fe0ff9fbebebda65fe165df8b59261b3cde673b09d1d07559e4d8fe",
+        "editions": {
+          "ISO 21771": "2007",
+          "ISO 6336-1": "2019",
+          "ISO 6336-2": "2019",
+          "ISO 6336-3": "2019"
+        },
+        "edition_sources": {
+          "ISO 21771": "M31 C001 engineering.standard = ISO6336-1/-2/-3:2019；ISO 21771 版次随本公式库",
+          "ISO 6336-1": "M31 C001 engineering.standard = ISO6336-1/-2/-3:2019；ISO 21771 版次随本公式库",
+          "ISO 6336-2": "M31 C001 engineering.standard = ISO6336-1/-2/-3:2019；ISO 21771 版次随本公式库",
+          "ISO 6336-3": "M31 C001 engineering.standard = ISO6336-1/-2/-3:2019；ISO 21771 版次随本公式库"
+        },
+        "inputs_by_provenance": {
+          "evidence": [
+            "E",
+            "K_A",
+            "K_Falpha",
+            "K_Halpha",
+            "K_Hbeta",
+            "K_V",
+            "Y_B",
+            "Y_DT",
+            "Y_NT_1",
+            "Y_NT_2",
+            "Y_RrelT_1",
+            "Y_RrelT_2",
+            "Y_ST",
+            "Y_X",
+            "Y_drelT_1",
+            "Y_drelT_2",
+            "Z_L",
+            "Z_NT_1",
+            "Z_NT_2",
+            "Z_R",
+            "Z_V",
+            "Z_W",
+            "Z_X",
+            "nu"
+          ],
+          "agent_proposed": [
+            "S_Fmin",
+            "S_Hmin",
+            "T_1",
+            "n_1"
+          ],
+          "user": [
+            "alpha_n",
+            "b",
+            "beta",
+            "eps_alpha_min",
+            "haP",
+            "hfP",
+            "m_n",
+            "rhofP",
+            "x_1",
+            "x_2",
+            "z_1",
+            "z_2"
+          ],
+          "assumption": [
+            "sigma_Flim_1",
+            "sigma_Flim_2",
+            "sigma_Hlim_1",
+            "sigma_Hlim_2"
+          ]
+        },
+        "selectors": {
+          "method.K_V": "external",
+          "method.K_Hbeta": "external",
+          "method.K_Halpha": "external",
+          "method.root_shift": "nominal"
+        },
+        "selector_sources": {
+          "method.K_V": "baseline C001_G1 约定：c001_g1 回放 M31 收据：K_V 取自 gear-rating.json（evidence）",
+          "method.K_Hbeta": "baseline C001_G1 约定：c001_g1 回放 M31 收据：K_Hβ 取自 gear-rating.json（evidence；M31 案例无方法C 所需轴系输入）",
+          "method.K_Halpha": "baseline C001_G1 约定：c001_g1 回放 M31 收据：K_Hα/K_Fα 取自 gear-rating.json（evidence）",
+          "method.root_shift": "baseline C001_G1 约定：c001_g1：M31 案例无齿厚公差，按 python-gearbox 口径用名义变位"
+        },
+        "domain_violations": [],
+        "agent_proposed_inputs": [
+          "T_1",
+          "n_1",
+          "S_Hmin",
+          "S_Fmin"
+        ],
+        "design_id": "d5e919f14d24490e013b14d195dee8623e25613bd8ea30264235ef956f0d2c1b",
+        "parameters": {
+          "E": {
+            "value": 206000.0,
+            "unit": "MPa",
+            "provenance": "evidence",
+            "source": "M31 材料假设",
+            "canonical_value": 206000.0
+          },
+          "K_A": {
+            "value": 1.25,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.25
+          },
+          "K_Falpha": {
+            "value": 1.0180576156848296,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0180576156848296
+          },
+          "K_Halpha": {
+            "value": 1.0180576156848296,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0180576156848296
+          },
+          "K_Hbeta": {
+            "value": 2.5744814242724336,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 2.5744814242724336
+          },
+          "K_V": {
+            "value": 1.0391660518198986,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0391660518198986
+          },
+          "S_Fmin": {
+            "value": 1.4,
+            "unit": "1",
+            "provenance": "agent_proposed",
+            "source": "AI 工具调用",
+            "canonical_value": 1.4
+          },
+          "S_Hmin": {
+            "value": 1.1,
+            "unit": "1",
+            "provenance": "agent_proposed",
+            "source": "AI 工具调用",
+            "canonical_value": 1.1
+          },
+          "T_1": {
+            "value": 400.0,
+            "unit": "N*m",
+            "provenance": "agent_proposed",
+            "source": "AI 工具调用",
+            "canonical_value": 400000.0
+          },
+          "Y_B": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "Y_DT": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "Y_NT_1": {
+            "value": 0.9011881827603812,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9011881827603812
+          },
+          "Y_NT_2": {
+            "value": 0.9118636156617996,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9118636156617996
+          },
+          "Y_RrelT_1": {
+            "value": 1.014789805373408,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.014789805373408
+          },
+          "Y_RrelT_2": {
+            "value": 1.014789805373408,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.014789805373408
+          },
+          "Y_ST": {
+            "value": 2.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 2.0
+          },
+          "Y_X": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "Y_drelT_1": {
+            "value": 0.9628281561600809,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9628281561600809
+          },
+          "Y_drelT_2": {
+            "value": 0.9758190332859351,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9758190332859351
+          },
+          "Z_L": {
+            "value": 0.9967176032217998,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9967176032217998
+          },
+          "Z_NT_1": {
+            "value": 0.8986828885438193,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.8986828885438193
+          },
+          "Z_NT_2": {
+            "value": 0.9088190004202857,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9088190004202857
+          },
+          "Z_R": {
+            "value": 0.9626793277278641,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9626793277278641
+          },
+          "Z_V": {
+            "value": 0.9632050832991362,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 0.9632050832991362
+          },
+          "Z_W": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "Z_X": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 gear-rating.json（python-gearbox）",
+            "canonical_value": 1.0
+          },
+          "alpha_n": {
+            "value": 20.0,
+            "unit": "deg",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 0.3490658503988659
+          },
+          "b": {
+            "value": 30.0,
+            "unit": "mm",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 30.0
+          },
+          "beta": {
+            "value": 0.0,
+            "unit": "deg",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 0.0
+          },
+          "eps_alpha_min": {
+            "value": 1.2,
+            "unit": "1",
+            "provenance": "user",
+            "source": "设计规则（示例）",
+            "canonical_value": 1.2
+          },
+          "haP": {
+            "value": 1.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 刀具 addendum_coefficient",
+            "canonical_value": 1.0
+          },
+          "hfP": {
+            "value": 1.25,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 刀具 dedendum_coefficient",
+            "canonical_value": 1.25
+          },
+          "m_n": {
+            "value": 2.0,
+            "unit": "mm",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 2.0
+          },
+          "n_1": {
+            "value": 3000.0,
+            "unit": "rpm",
+            "provenance": "agent_proposed",
+            "source": "AI 工具调用",
+            "canonical_value": 50.0
+          },
+          "nu": {
+            "value": 0.3,
+            "unit": "1",
+            "provenance": "evidence",
+            "source": "M31 材料假设",
+            "canonical_value": 0.3
+          },
+          "rhofP": {
+            "value": 0.38,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 刀具 root_fillet_radius_coefficient",
+            "canonical_value": 0.38
+          },
+          "sigma_Flim_1": {
+            "value": 460.0,
+            "unit": "MPa",
+            "provenance": "assumption",
+            "source": "M31 材料假设 bending_stress_limit",
+            "canonical_value": 460.0
+          },
+          "sigma_Flim_2": {
+            "value": 460.0,
+            "unit": "MPa",
+            "provenance": "assumption",
+            "source": "同上",
+            "canonical_value": 460.0
+          },
+          "sigma_Hlim_1": {
+            "value": 1500.0,
+            "unit": "MPa",
+            "provenance": "assumption",
+            "source": "M31 材料假设 contact_stress_limit",
+            "canonical_value": 1500.0
+          },
+          "sigma_Hlim_2": {
+            "value": 1500.0,
+            "unit": "MPa",
+            "provenance": "assumption",
+            "source": "同上",
+            "canonical_value": 1500.0
+          },
+          "x_1": {
+            "value": 0.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 0.0
+          },
+          "x_2": {
+            "value": 0.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 0.0
+          },
+          "z_1": {
+            "value": 20.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 20.0
+          },
+          "z_2": {
+            "value": 36.0,
+            "unit": "1",
+            "provenance": "user",
+            "source": "M31 C001 案例 benchmark50/results/m31/workflow/derived-candidate.json",
+            "canonical_value": 36.0
+          }
+        },
+        "requested_overrides": {
+          "T_1": {
+            "value": 400.0,
+            "unit": "N*m",
+            "provenance": "agent_proposed"
+          },
+          "n_1": {
+            "value": 3000.0,
+            "unit": "rpm",
+            "provenance": "agent_proposed"
+          },
+          "S_Hmin": {
+            "value": 1.1,
+            "unit": "1",
+            "provenance": "agent_proposed"
+          },
+          "S_Fmin": {
+            "value": 1.4,
+            "unit": "1",
+            "provenance": "agent_proposed"
+          }
+        }
+      }
+    ],
+    "witness_x": {
+      "z1": 20,
+      "m_n": 2.0,
+      "b": 30.0,
+      "x1": 0.2
+    },
+    "template_evaluations": [
+      {
+        "objectives": {
+          "volume_mm3": 159844.23421464866,
+          "center_distance_mm": 56.389990364569826
+        },
+        "constraints": {
+          "pitting.pinion": -0.13429558922675344,
+          "pitting.wheel": -0.19309442096834073,
+          "bending.pinion": -3.4467802002122276,
+          "bending.wheel": -3.4850663694086554,
+          "geometry.contact_ratio": -0.36363764880377936,
+          "ratio_error": -0.02,
+          "b_over_d1": -0.44999999999999996,
+          "domain": -1.0
+        },
+        "info": {
+          "z2": 36,
+          "S_H_1": 1.2342955892267535,
+          "S_F_1": 4.646780200212228,
+          "eps_alpha": 1.5636376488037793,
+          "model_sha256": "e94ac82413fa2c85542fc7be9b92fa49a60d636e0c84abaf20dfe0a30a747bf7"
+        }
+      },
+      {
+        "objectives": {
+          "volume_mm3": 159844.23421464866,
+          "center_distance_mm": 56.389990364569826
+        },
+        "constraints": {
+          "pitting.pinion": -0.13429558922675344,
+          "pitting.wheel": -0.19309442096834073,
+          "bending.pinion": -3.4467802002122276,
+          "bending.wheel": -3.4850663694086554,
+          "geometry.contact_ratio": -0.36363764880377936,
+          "ratio_error": -0.02,
+          "b_over_d1": -0.44999999999999996,
+          "domain": -1.0
+        },
+        "info": {
+          "z2": 36,
+          "S_H_1": 1.2342955892267535,
+          "S_F_1": 4.646780200212228,
+          "eps_alpha": 1.5636376488037793,
+          "model_sha256": "e94ac82413fa2c85542fc7be9b92fa49a60d636e0c84abaf20dfe0a30a747bf7"
+        }
+      }
+    ],
+    "unsupported_multistage_helical": {
+      "status": "blocked_unsupported_scope",
+      "errors": [
+        {
+          "name": "stages",
+          "code": "unsupported_scope",
+          "message": "模板 stage_sizing 只覆盖单级传动"
+        },
+        {
+          "name": "gear_type",
+          "code": "unsupported_scope",
+          "message": "模板 stage_sizing 只覆盖直齿（spur / 直齿）"
+        }
+      ],
+      "requirement": {
+        "torque_Nm": 40.0,
+        "speed_rpm": 1000.0,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2.0,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.1,
+        "min_S_F": 1.4,
+        "life_h": 10000.0,
+        "material": "Authored audit material A; no property values supplied",
+        "stages": 2,
+        "gear_type": "helical",
+        "max_center_distance_mm": 100.0,
+        "max_face_width_mm": 40.0
+      },
+      "available_templates": [
+        "stage_sizing"
+      ]
+    },
+    "unknown_axis_relation": {
+      "status": "blocked_invalid_inputs",
+      "errors": [
+        {
+          "name": "axis_relation",
+          "code": "unknown_argument",
+          "message": "未知需求字段 'axis_relation'（可用 ['life_h', 'max_b_over_d1', 'max_center_distance_mm', 'max_face_width_mm', 'min_S_F', 'min_S_H', 'power_kW', 'ratio', 'ratio_tol_percent', 'speed_rpm', 'torque_Nm', 'material', 'stages', 'gear_type']）"
+        }
+      ],
+      "requirement": {
+        "torque_Nm": 40.0,
+        "speed_rpm": 1000.0,
+        "ratio": 1.8,
+        "ratio_tol_percent": 2.0,
+        "max_b_over_d1": 1.2,
+        "min_S_H": 1.1,
+        "min_S_F": 1.4,
+        "life_h": 10000.0,
+        "material": "Authored audit material A; no property values supplied",
+        "stages": 1,
+        "gear_type": "spur",
+        "max_center_distance_mm": 100.0,
+        "max_face_width_mm": 40.0,
+        "axis_relation": "coaxial"
+      }
+    },
+    "summary": {
+      "template_calls_equal": true,
+      "optimized_responses_equal": true,
+      "template_point_equal": true,
+      "rating_checks_changed": true,
+      "compiler_explicitly_discloses_limits": true
+    }
+  }
+}

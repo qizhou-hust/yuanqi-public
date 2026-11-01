@@ -1,0 +1,164 @@
+{
+  "schema": "gearbase.goal-boundary-probes/1",
+  "audit_date": "2026-11-01",
+  "source_root": "D:\\my_Works\\Gears\\gearbase-v020-work",
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "scope": "Only source-schema, requirement compiler and metadata; not a whole-system rating or engineering release test.",
+  "new_fe_runs": 0,
+  "new_commercial_tool_runs": 0,
+  "source_contract": {
+    "schema_properties": [
+      "constraints",
+      "editions",
+      "evidence",
+      "id",
+      "inputs",
+      "note",
+      "schema",
+      "selectors",
+      "title"
+    ],
+    "baseline_errors": [],
+    "added_topology_errors": [
+      {
+        "path": "$.topology",
+        "code": "additionalProperties",
+        "message": "不允许的键 topology（源文档只接受作者输入、证据、约束、选择器、版次；派生量与结果一律不存）"
+      }
+    ]
+  },
+  "generic_output_requirement": {
+    "input": {
+      "output_speed_rpm": 30,
+      "output_torque_Nm": 20,
+      "envelope_mm": [
+        100,
+        100,
+        100
+      ],
+      "shaft_relation": "coaxial"
+    },
+    "result": {
+      "status": "blocked_invalid_inputs",
+      "errors": [
+        {
+          "name": "output_speed_rpm",
+          "code": "unknown_argument",
+          "message": "未知需求字段 'output_speed_rpm'（可用 ['life_h', 'max_b_over_d1', 'max_center_distance_mm', 'max_face_width_mm', 'min_S_F', 'min_S_H', 'power_kW', 'ratio', 'ratio_tol_percent', 'speed_rpm', 'torque_Nm', 'material', 'stages', 'gear_type']）"
+        },
+        {
+          "name": "output_torque_Nm",
+          "code": "unknown_argument",
+          "message": "未知需求字段 'output_torque_Nm'（可用 ['life_h', 'max_b_over_d1', 'max_center_distance_mm', 'max_face_width_mm', 'min_S_F', 'min_S_H', 'power_kW', 'ratio', 'ratio_tol_percent', 'speed_rpm', 'torque_Nm', 'material', 'stages', 'gear_type']）"
+        },
+        {
+          "name": "envelope_mm",
+          "code": "unknown_argument",
+          "message": "未知需求字段 'envelope_mm'（可用 ['life_h', 'max_b_over_d1', 'max_center_distance_mm', 'max_face_width_mm', 'min_S_F', 'min_S_H', 'power_kW', 'ratio', 'ratio_tol_percent', 'speed_rpm', 'torque_Nm', 'material', 'stages', 'gear_type']）"
+        },
+        {
+          "name": "shaft_relation",
+          "code": "unknown_argument",
+          "message": "未知需求字段 'shaft_relation'（可用 ['life_h', 'max_b_over_d1', 'max_center_distance_mm', 'max_face_width_mm', 'min_S_F', 'min_S_H', 'power_kW', 'ratio', 'ratio_tol_percent', 'speed_rpm', 'torque_Nm', 'material', 'stages', 'gear_type']）"
+        }
+      ],
+      "requirement": {
+        "output_speed_rpm": 30,
+        "output_torque_Nm": 20,
+        "envelope_mm": [
+          100,
+          100,
+          100
+        ],
+        "shaft_relation": "coaxial"
+      }
+    }
+  },
+  "multi_stage_requirement": {
+    "status": "blocked_unsupported_scope",
+    "errors": [
+      {
+        "name": "stages",
+        "code": "unsupported_scope",
+        "message": "模板 stage_sizing 只覆盖单级传动"
+      }
+    ],
+    "requirement": {
+      "gear_type": "spur",
+      "stages": 2
+    },
+    "available_templates": [
+      "stage_sizing"
+    ]
+  },
+  "flagship_families": [
+    "H2",
+    "P2",
+    "W2W"
+  ],
+  "flagship_without_scope": {
+    "status": "blocked_unsupported_scope",
+    "errors": [
+      {
+        "code": "blocked_unsupported_scope",
+        "message": "Explicit Stage0 scope required; full family rating is unavailable"
+      }
+    ],
+    "engineering_accepted": false
+  },
+  "unknown_mixed_family": {
+    "status": "blocked_unsupported_scope",
+    "errors": [
+      {
+        "code": "blocked_unsupported_scope",
+        "message": "Unsupported original flagship"
+      }
+    ],
+    "engineering_accepted": false
+  },
+  "bench": {
+    "status": "skeleton_pending_engineer_label",
+    "case_count": 40,
+    "labeled_cases": 0,
+    "pending_engineer_label": 40
+  },
+  "caller_provenance": {
+    "agent_proposed": {
+      "status": "pass_pending_human_confirmation",
+      "agent_proposed_inputs": [
+        "T_1"
+      ],
+      "errors": null
+    },
+    "user": {
+      "status": "pass",
+      "agent_proposed_inputs": [],
+      "errors": null
+    },
+    "interpretation": "The local API accepts caller-supplied provenance. A preview/CAS token and a provenance string do not attest an independent engineer or a release decision."
+  },
+  "source_files_sha256": {
+    "docs/顶层设计.html": "18a3760d2c02fe9ee2974a04489f49611b8e969c3d25e40ef153f4b6ec73dcce",
+    "docs/真源格式-v2.md": "04c3f3bc3bbb3008aa84b59f2d69c4fd1a09c645346ad131523d437fa1861142",
+    "docs/系统层输入-schema.md": "18f8bbb78979055b8ca55164116d2dd956c7d28d3cadae9bdbdb9fa0507c85f3",
+    "gearmath/tools/ai_tools.py": "72e4dff5bbe7a1add3d6e311bc933a78c2db0163d8d8582d312277026ba31c80",
+    "gearmath/tools/optimize_commit.py": "c8c5d9822707a2c8e0f4229a5f52e76b66fef2aa6fef4d9d22838bfa5b3ff0dd",
+    "gearmath/tools/flagship_workflow.py": "0c4fbce6af6ac6806a567137a42b951cc3a134180d4efc692c92d582c626b5f7",
+    "gearmath/product/flagship_system.py": "344721ca387966b64cfae3a735d442432b99b3a69a4f62e2f7ea73576e94343e",
+    "gearmath/product/system_optimize.py": "e1e0e3a35477f00100b53061c810a4194735ad98c6ea97d05514f84043dc85bd",
+    "gearmath/gear/source_frontier.py": "20f5969b1edcaf2d259e16df417adad9e326b431cb1cdd1274a315fbcfe0f05e",
+    "gearmath/tools/milestones.py": "b8bbca3e21575fab384dc78a5e97c57668fa84440d6ac1a1f953bd9a290801fc",
+    "gearmath/gear/m33_acceptance.py": "7dec05725fe742bf63d9e70b99946fd0c7dc4c927bedf47d6e9e9c96e2cd1b50",
+    "gearmath/tools/fea_ingest.py": "89499e55de8490684604bfb70fb7f1eaaa4e67c7759c0c87284fcfaacebabad3",
+    "data/source/gears.math-source-2.schema.json": "06785241ddca58dc30f70c6ef2551159ca3782efd12bae472099760f8841db91",
+    "data/bench/v1/requirements.json": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae",
+    "output/m36/closure.json": "e11f5f288988c917538eaf338d7801650f492f8a3519309b2d07c98b03cb54d2",
+    "output/m39/closure.json": "7cc9077b3f21de63eb0d2558c5e9425a1fc798855bc1e645aedc8e317eda5a8b",
+    "output/m38/closure.json": "e9b6abbc49d6671d25986a5cae07886fa03cf957358ef1593958574dc0fcbeca",
+    "docs/v020-progress.md": "1680dd9f7f7a3a3a31ce84ff15013d8530c10150b42c69223322ba32374cc71f",
+    "docs/v020-M35-review-preparation.md": "b966f84cc9ba3a519f830c5222f755dd4d2fe3bda930e23d7dbba6655e68ff7b",
+    "archive/m31/src/cadbench/command_naming.py": "af626926588b8263aa8bcae9813f8cf22c66cbf52db349ed324db3989377668b",
+    "archive/m31/src/cadbench/design_rebinding.py": "3a37e656361d9f27d3004e9e0953040596e41b77d19c2ccf8c7808b69b1d7d50"
+  },
+  "product_git_status_after": []
+}

@@ -1,0 +1,851 @@
+{
+  "schema": "gearbase.system-assessment-report/1",
+  "date_local": "2026-11-01",
+  "timezone": "America/Los_Angeles",
+  "baseline_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "source_version": "0.20",
+  "report_revision": 1,
+  "core_modified": false,
+  "new_whole_milestone_closed": false,
+  "fresh_targeted_tests": 62,
+  "fresh_architecture_modules": 146,
+  "capabilities": [
+    {
+      "id": "CAP-01",
+      "name": "通用DAG、唯一公式输出、单位/取值域/标准版次/方法选择校验",
+      "status": "verified",
+      "current": "单位/域/唯一公式输出校验；实际求值、单位错误与派生输入拒绝已运行。",
+      "limits": "已验证正常求值、派生输入拒绝及错单位拒绝；本轮没有穷举全部公式/循环/版次负例。units的唯一性是该kernel契约，归档/CAD及系统标量接口未统一成一个跨域量对象。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\kernel\\graph.py",
+          "line": 132,
+          "end_line": 168
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\kernel\\graph.py",
+          "line": 200,
+          "end_line": 228
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\kernel\\graph.py",
+          "line": 246,
+          "end_line": 358
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\kernel\\units.py",
+          "line": 1,
+          "end_line": 11
+        }
+      ]
+    },
+    {
+      "id": "CAP-02",
+      "name": "数学源文档、不可写派生投影与编辑后数值重算",
+      "status": "verified",
+      "current": "源文档与只读投影；本轮副本改宽度后重新求值，原源未变。",
+      "limits": "当前math-source副本编辑b可重算29个值，旧文档未改；未证明全部下游工件都受同一真源驱动。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\math_source.py",
+          "line": 63,
+          "end_line": 122
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\design_store.py",
+          "line": 1,
+          "end_line": 11
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\design_store.py",
+          "line": 79,
+          "end_line": 101
+        }
+      ]
+    },
+    {
+      "id": "CAP-03",
+      "name": "解释链与自动微分/灵敏度",
+      "status": "partial",
+      "current": "公式链可展开；有自动微分及灵敏度实现。",
+      "limits": "S_H1 explain当前实跑；本轮未单独执行灵敏度或AD/FD全回归，固定点导数策略亦未做全域复核。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\kernel\\graph.py",
+          "line": 330,
+          "end_line": 357
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\kernel\\graph.py",
+          "line": 365,
+          "end_line": 385
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\ai_tools.py",
+          "line": 579,
+          "end_line": 601
+        }
+      ]
+    },
+    {
+      "id": "CAP-04",
+      "name": "预览、设计修订、CAS与可选持久化",
+      "status": "partial",
+      "current": "预览、CAS/修订链及显式文件存储实现；本轮仅运行只读预览。",
+      "limits": "preview不保存已验证；commit与文件状态恢复本轮按只读约束未执行。默认纯内存；token非身份审批。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\ai_tools.py",
+          "line": 374,
+          "end_line": 455
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\design_store.py",
+          "line": 129,
+          "end_line": 206
+        }
+      ]
+    },
+    {
+      "id": "CAP-05",
+      "name": "结构化需求编译与缺项追问",
+      "status": "partial",
+      "current": "接受结构化单级直齿需求；缺项追问与未应用项回显。",
+      "limits": "仅单级直齿模板；实际载荷只进入rating_edit，寿命/材料unapplied、空间post_checks；不能独立完成用户全需求。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\intent.py",
+          "line": 86,
+          "end_line": 229
+        }
+      ]
+    },
+    {
+      "id": "CAP-06",
+      "name": "自由自然语言创建/修改及真实AI客户端闭环",
+      "status": "partial",
+      "current": "本地MCP协议工具可调用，外部模型负责自然语言解释。",
+      "limits": "本地MCP可用；自由文本由外部模型解释，真实模型发起tools/call本轮未验证；历史403只作历史记录。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\intent.py",
+          "line": 39,
+          "end_line": 49
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\ai_tools.py",
+          "line": 604,
+          "end_line": 660
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\docs\\M38-closure.md",
+          "line": 19,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "CAP-07",
+      "name": "由转速/扭矩/空间/轴关系自动规划类型和级数",
+      "status": "blocked",
+      "current": "当前由用户先指定H2/W2W/P2，或已知单副模型。",
+      "limits": "未找到gearmath跨类型/级数/轴关系规划器；已有H2/W2W/P2先指定拓扑，不能等同自动规划。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\intent.py",
+          "line": 21,
+          "end_line": 49
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\intent.py",
+          "line": 153,
+          "end_line": 161
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\flagship_workflow.py",
+          "line": 3,
+          "end_line": 26
+        }
+      ]
+    },
+    {
+      "id": "CAP-08",
+      "name": "单级尺寸优化模板",
+      "status": "verified",
+      "current": "固定C001工况的单副局部连续优化可复跑。",
+      "limits": "verified仅指固定C001载荷、单个声明离散组合的局部连续求解；非用户新需求验收或全局最优。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\nlp_templates.py",
+          "line": 14,
+          "end_line": 20
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\problem.py",
+          "line": 11,
+          "end_line": 65
+        }
+      ]
+    },
+    {
+      "id": "CAP-09",
+      "name": "作者源文档驱动的声明优化与重算写回",
+      "status": "partial",
+      "current": "已有source-owned声明域优化、证据保持与独立重建验证路径。",
+      "limits": "存在比stage_sizing更完整的source-owned路径与独立重建验证；白名单/已声明文档/hold_evidence，不能直接接任意新需求；本轮未重跑其完整优化。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\source_optimize.py",
+          "line": 103,
+          "end_line": 112
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\source_optimize.py",
+          "line": 259,
+          "end_line": 322
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\source_optimize.py",
+          "line": 329,
+          "end_line": 395
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\declared_tool.py",
+          "line": 12,
+          "end_line": 21
+        }
+      ]
+    },
+    {
+      "id": "CAP-10",
+      "name": "固定圆柱系统 gear×shaft×bearing 联合搜索",
+      "status": "verified",
+      "current": "本轮27组合、8可行，与重新全枚举一致。",
+      "limits": "27个作者测试组合、8可行、17次design_check，与fresh枚举一致；优化齿坯+轴体积，排除轴承包络/价格/箱体/反馈，非真实C001交付。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\system_optimize.py",
+          "line": 129,
+          "end_line": 267
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\system_closure.py",
+          "line": 12,
+          "end_line": 44
+        }
+      ]
+    },
+    {
+      "id": "CAP-11",
+      "name": "外啮合直齿/斜齿副几何与ISO 6336强度",
+      "status": "partial",
+      "current": "圆柱副几何与所收录强度分支；本轮C001派生单副校核可运行。",
+      "limits": "C001副当前pass；K系列/显式系数装配包含helical路径。本轮没有重跑每族所有对标或证明任意几何可用；公开gear_rate以C001_G1/none圆柱模型为入口。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\formulas.py",
+          "line": 22,
+          "end_line": 30
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\rating.py",
+          "line": 30,
+          "end_line": 52
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\source_optimize.py",
+          "line": 103,
+          "end_line": 112
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\kisssoft_multi.py",
+          "line": 1,
+          "end_line": 18
+        }
+      ]
+    },
+    {
+      "id": "CAP-12",
+      "name": "内齿与双斜齿特殊公式分支",
+      "status": "partial",
+      "current": "TR30特定路径已有内齿/双斜齿分支。",
+      "limits": "TR30特定构造路径确有分支，不能因P2全系统未实现就说内齿强度公式完全没有；尚非通用行星均载/制造模型。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\internal_gear.py",
+          "line": 1,
+          "end_line": 18
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\double_helical.py",
+          "line": 1,
+          "end_line": 29
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\tr30_full58.py",
+          "line": 234,
+          "end_line": 281
+        }
+      ]
+    },
+    {
+      "id": "CAP-13",
+      "name": "H2两级斜齿Stage0候选与复查",
+      "status": "verified",
+      "current": "本轮返回40个采样几何候选、原样复查。",
+      "limits": "40个有界采样几何候选，首选复算；无全强度/轴/轴承/热评级，system仍blocked且93缺项。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\flagship_h2.py",
+          "line": 1,
+          "end_line": 28
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\flagship_workflow.py",
+          "line": 35,
+          "end_line": 49
+        }
+      ]
+    },
+    {
+      "id": "CAP-14",
+      "name": "W2W两级蜗杆Stage0候选/效率/热初筛",
+      "status": "partial",
+      "current": "本轮15个双蜗杆候选；恒摩擦效率与给定散热模型热初筛。",
+      "limits": "15候选，首选candidate_requires_changes；恒摩擦效率/给定对流模型；强度、磨损、胶合、啮合力与完整系统评级未收录。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\flagship_w2w.py",
+          "line": 39,
+          "end_line": 82
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\flagship_system.py",
+          "line": 14,
+          "end_line": 17
+        }
+      ]
+    },
+    {
+      "id": "CAP-15",
+      "name": "P2两级行星整数几何/Pareto",
+      "status": "partial",
+      "current": "本轮5个双行星Pareto代表，整数运动学与结构限制。",
+      "limits": "5候选，结构约束与运动学可算；未实现行星载荷分配/浮动构件载荷/全系统强度，system blocked。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\flagship_p2.py",
+          "line": 87,
+          "end_line": 139
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\flagship_system.py",
+          "line": 14,
+          "end_line": 17
+        }
+      ]
+    },
+    {
+      "id": "CAP-16",
+      "name": "锥齿/齿条/交错轴斜齿/准双曲面通用主链",
+      "status": "blocked",
+      "current": "归档/vendor中存在部分齿形和方法代码，待逐项迁入与资格验证。",
+      "limits": "missing指gearmath用户需求→优化→rating/CAD全链。archive/vendor含rack/bevel/crossed-helical局部代码，不能以文件存在当已集成，也不能声称全仓库无代码。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\flagship_workflow.py",
+          "line": 3,
+          "end_line": 12
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\design_check.py",
+          "line": 141,
+          "end_line": 164
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\gears\\benchmark\\spine.py",
+          "line": 16,
+          "end_line": 16
+        }
+      ]
+    },
+    {
+      "id": "CAP-17",
+      "name": "齿轮载荷→轴截面DIN743/轴承ISO281/键DIN6892/过盈DIN7190",
+      "status": "partial",
+      "current": "显式载荷/材料/限值下，可调用轴、轴承、键、过盈检查。",
+      "limits": "有限显式测试数据贯通；真实C001/K01和三旗舰缺真实输入阻断，不是自动完成轴与轴承设计/选型。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\design_check.py",
+          "line": 1,
+          "end_line": 14
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\system\\drivetrain_check.py",
+          "line": 242,
+          "end_line": 410
+        }
+      ]
+    },
+    {
+      "id": "CAP-18",
+      "name": "多支承轴梁、挠度、转角与扭转",
+      "status": "partial",
+      "current": "有限刚性点支承的直梁模型、挠度、转角与扭转。",
+      "limits": "Euler-Bernoulli/Timoshenko直梁、刚性点支承、点/均布载荷；无轴承/箱体弹性、临界转速；本轮未执行梁专门回归。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\system\\shaft_beam.py",
+          "line": 1,
+          "end_line": 18
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\design_check.py",
+          "line": 476,
+          "end_line": 562
+        }
+      ]
+    },
+    {
+      "id": "CAP-19",
+      "name": "轴/轴承/箱体变形自动反馈KHβ再优化",
+      "status": "partial",
+      "current": "已有梁→齿向贡献接口与KHβ公式片段。",
+      "limits": "已有轴弯曲+外部扭转贡献函数和KHβ标准公式，但beam_face明确非完整f_sh/KHβ；联合优化排除该自动反馈。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\beam_face.py",
+          "line": 7,
+          "end_line": 36
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\system\\drivetrain_check.py",
+          "line": 417,
+          "end_line": 420
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\system_closure.py",
+          "line": 33,
+          "end_line": 36
+        }
+      ]
+    },
+    {
+      "id": "CAP-20",
+      "name": "轴承目录自动筛选与供应商数据闭环",
+      "status": "partial",
+      "current": "显式供应商参数及作者给定的有限轴承候选可核算。",
+      "limits": "支持显式C/C0/XY等数据及用户列出的有限候选；本轮未找到从任意需求自动筛厂商完整目录并认证属性的主链。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\flagship_system.py",
+          "line": 41,
+          "end_line": 45
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\system\\iso281.py",
+          "line": 199,
+          "end_line": 244
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\system_optimize.py",
+          "line": 132,
+          "end_line": 136
+        }
+      ]
+    },
+    {
+      "id": "CAP-21",
+      "name": "热平衡与系统损耗",
+      "status": "partial",
+      "current": "显式损耗/热边界下的平衡与温度求根。",
+      "limits": "有显式loss model/温度括区求根；不推测缺失箱体散热/密封搅油项，未自动生成完整热模型。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\design_check.py",
+          "line": 775,
+          "end_line": 845
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\system\\thermal_balance.py",
+          "line": 1,
+          "end_line": 27
+        }
+      ]
+    },
+    {
+      "id": "CAP-22",
+      "name": "FE准备、严格回读与结果证据归档",
+      "status": "partial",
+      "current": "严格读取、身份绑定、提取量重贴；历史L2实际42作业，9/14通过。",
+      "limits": "有限M37读回/身份/覆盖等门存在，graph_admission=false；本轮不重跑FE、不升格任何门状态。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\fea_prepare.py",
+          "line": 33,
+          "end_line": 87
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\fea_ingest.py",
+          "line": 1,
+          "end_line": 16
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\fea_ingest.py",
+          "line": 71,
+          "end_line": 84
+        }
+      ]
+    },
+    {
+      "id": "CAP-23",
+      "name": "归档CAD四族headless生成、STEP与读回",
+      "status": "partial",
+      "current": "归档有四族headless CAD、STEP与重读路线；主链尚未整体接入。",
+      "limits": "可恢复原M31有限四族路线；有依赖/几何适用域/齿数预算。当前审计未生成或读回新CAD，不把旧回归计数当生产主链证据。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\m31_runtime.py",
+          "line": 243,
+          "end_line": 283
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\gears\\integration\\family_workflow.py",
+          "line": 1,
+          "end_line": 27
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\cadbench\\gear_native.py",
+          "line": 144,
+          "end_line": 184
+        }
+      ]
+    },
+    {
+      "id": "CAP-24",
+      "name": "完整齿轮箱装配、箱体设计与制造图纸",
+      "status": "blocked",
+      "current": "制造参数投影、齿轮包络图与部分BOM已有。",
+      "limits": "有齿轮部件几何、BOM子集、包络图与制造参数投影，但整套轴承轴箱体装配、完整零件/装配制造图未交付。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\gears\\realize.py",
+          "line": 170,
+          "end_line": 187
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\m35_packet.py",
+          "line": 23,
+          "end_line": 31
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\m35_packet.py",
+          "line": 97,
+          "end_line": 101
+        }
+      ]
+    },
+    {
+      "id": "CAP-25",
+      "name": "丝杆/螺母及齿轮到直线执行器全链",
+      "status": "blocked",
+      "current": "当前未找到主链计算入口；本报告给出建议接口。",
+      "limits": "gearmath主链未发现power-screw/nut/效率自锁/屈曲等执行器模型入口；本结论非全硬盘或其它项目搜索。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\design_check.py",
+          "line": 45,
+          "end_line": 52
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\intent.py",
+          "line": 21,
+          "end_line": 49
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\flagship_workflow.py",
+          "line": 3,
+          "end_line": 12
+        }
+      ]
+    },
+    {
+      "id": "CAP-26",
+      "name": "一份数学真源驱动FE/CAD/供应商/图纸全链更新",
+      "status": "blocked",
+      "current": "DAG内更新、局部source/CAS与独立CAD/FE工件管理分别存在。",
+      "limits": "DAG内重算与独立归档CAD文档可分别存在；未发现统一revision消费者/失效/再资格链。跨域模型适用性也不是哈希能自动保证。",
+      "source_refs": [
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\math_source.py",
+          "line": 88,
+          "end_line": 122
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\fea_ingest.py",
+          "line": 1,
+          "end_line": 16
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\architecture_guard.py",
+          "line": 1,
+          "end_line": 6
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\archive\\m31\\src\\cadbench\\math_source.py",
+          "line": 137,
+          "end_line": 163
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "H2",
+      "short_title": "两级平行斜齿",
+      "title": "两级平行斜齿：原始H2需求",
+      "requirement_summary": "H→H; a1=80 mm,a2=100 mm,i=10±3%; original sampled zero-shift geometry",
+      "candidate_count": 40,
+      "unique_topology_count": 1,
+      "full_system_pass_count": 0,
+      "count_label": "实际返回候选",
+      "evidence_class": "本轮确定性复跑；不代表真实工程签署",
+      "status_class": "blocked",
+      "status_label": "系统被阻断",
+      "equivalence_group_id": "H2-original-demand",
+      "observation": "固定H→H家族，459×824采样级组合中有9948条通过Stage0的比值/几何谓词，输出上限截取40条；40条均接入系统模板而blocked。",
+      "limits": "只验证零变位、名义采样几何；真实材料、刀具、载荷、支承、轴承、键与热数据不全，空间总成未验证。",
+      "comparability": "本题有独立需求合同；与另两旗舰不可当作同一需求备选。",
+      "card_summary": "40候选 / 1固定架构 / 全系统blocked",
+      "evidence_ref": "cases/public-challenge-results.json#H2"
+    },
+    {
+      "id": "W2W",
+      "short_title": "两级蜗杆",
+      "title": "两级蜗杆：原始W2W需求",
+      "requirement_summary": "W→W; a1=100 mm,a2=125 mm,nin=1440 rpm,i=144±2%,Tout=800 Nm; K=12,A=.5 m²,30→90°C",
+      "candidate_count": 15,
+      "unique_topology_count": 1,
+      "full_system_pass_count": 0,
+      "count_label": "实际返回候选",
+      "evidence_class": "本轮确定性复跑；不代表真实工程签署",
+      "status_class": "failed",
+      "status_label": "热筛选失败 + 系统阻断",
+      "equivalence_group_id": "W2W-original-demand",
+      "observation": "980对声明域组合返回15条候选；15/15热筛选失败。首选η≈0.54084、估计油温148.54°C，高于给定90°C上限；其系统评级另因模型/输入缺失blocked。",
+      "limits": "效率/热使用该题明示的常摩擦与散热参数，不是详细蜗杆强度/磨损/胶合模型。15个热失败保留，不能当可交付方案。",
+      "comparability": "本题有独立需求合同；与另两旗舰不可当作同一需求备选。",
+      "card_summary": "15候选 / 1固定架构 / 全系统blocked",
+      "evidence_ref": "cases/public-challenge-results.json#W2W"
+    },
+    {
+      "id": "P2",
+      "short_title": "两级行星",
+      "title": "两级行星：原始P2需求",
+      "requirement_summary": "P→P; nin=1440 rpm,i=40±2%; fixed rings,sun input/carrier output; original integer domain",
+      "candidate_count": 5,
+      "unique_topology_count": 1,
+      "full_system_pass_count": 0,
+      "count_label": "实际返回候选",
+      "evidence_class": "本轮确定性复跑；不代表真实工程签署",
+      "status_class": "blocked",
+      "status_label": "系统被阻断",
+      "equivalence_group_id": "P2-original-demand",
+      "observation": "485个级身份、117855对组合，2311条通过已有Stage0谓词，返回5个Pareto代表；5条系统均blocked。",
+      "limits": "原模型提示同轴双啮合零变位导致理论零侧隙，装配需处理变位；未闭合均载、行星销/架、支承与强度。",
+      "comparability": "本题有独立需求合同；与另两旗舰不可当作同一需求备选。",
+      "card_summary": "5候选 / 1固定架构 / 全系统blocked",
+      "evidence_ref": "cases/public-challenge-results.json#P2"
+    },
+    {
+      "id": "C001-fixed-pair",
+      "short_title": "给定圆柱副",
+      "title": "C001派生G1：固定齿轮对校核",
+      "requirement_summary": "Existing fixed G1 mesh",
+      "candidate_count": 1,
+      "unique_topology_count": null,
+      "full_system_pass_count": 0,
+      "count_label": "给定固定副（非生成）",
+      "evidence_class": "本轮确定性复跑；不代表真实工程签署",
+      "status_class": "blocked",
+      "status_label": "系统被阻断",
+      "equivalence_group_id": "C001-fixed-pair-input",
+      "observation": "这是源文档中b=30mm的派生G1，不是原50题C001中b=10mm的原G1。固定副gear_rating通过，其余系统/油品/制造等缺项阻断；未执行架构生成。",
+      "limits": "同一案例的派生变体不新增工程案例；单副通过不等于C001双级整系统通过；布局/材料/载荷位置等仍需真实来源。",
+      "comparability": "固定输入/派生版本的数值校核；不是从同一外部需求自动规划。",
+      "card_summary": "1个给定副；系统阻断",
+      "evidence_ref": "cases/public-challenge-results.json#C001-fixed-pair"
+    },
+    {
+      "id": "K01-spur-fixed-pair",
+      "short_title": "给定K01直齿副",
+      "title": "K01：固定商业对拍输入",
+      "requirement_summary": "Existing KISSsoft fixed spur-pair inputs",
+      "candidate_count": 1,
+      "unique_topology_count": null,
+      "full_system_pass_count": 0,
+      "count_label": "给定固定副（非生成）",
+      "evidence_class": "本轮确定性复跑；不代表真实工程签署",
+      "status_class": "blocked",
+      "status_label": "系统被阻断",
+      "equivalence_group_id": "K01-spur-fixed-pair-input",
+      "observation": "固定输入计算出四个SH/SF达到给定限值；gear_rating整体仍因eps_alpha_min缺失而blocked，其他系统边界亦不完整。未执行架构生成。",
+      "limits": "缺少实际系统轴、轴承、键、过盈与热边界；不能用四个安全系数替代全部需求验收。",
+      "comparability": "固定输入/派生版本的数值校核；不是从同一外部需求自动规划。",
+      "card_summary": "1个给定副；系统阻断",
+      "evidence_ref": "cases/public-challenge-results.json#K01-spur-fixed-pair"
+    },
+    {
+      "id": "SAME-H2-DEMAND",
+      "short_title": "同需求跨族挑战",
+      "title": "同一H2需求：去掉预选family后能否规划？",
+      "requirement_summary": "Keep original H2 parameters; retain original source operating 600 Nm@150 rpm in the contract; remove family only.",
+      "candidate_count": null,
+      "unique_topology_count": null,
+      "full_system_pass_count": null,
+      "count_label": "实际返回候选",
+      "evidence_class": "本轮确定性复跑；不代表真实工程签署",
+      "status_class": "blocked",
+      "status_label": "接口不支持",
+      "equivalence_group_id": "H2-original-demand",
+      "observation": "保留H2参数及来源里的600N·m@150rpm，移除family，实际调用返回blocked_unsupported_scope；完整输出/轴关系合同还被Stage0输入模式拒绝。未形成跨族候选集。",
+      "limits": "没有为其他族猜摩擦、效率或轴线布局。计数是null，不是证明物理上无备选。其他旗舰使用不同需求合同，不能拿来凑三个答案。",
+      "comparability": "保持该来源合同，只检验去family后的跨族入口；没有与W2W/P2混用条件。",
+      "card_summary": "移除family后接口阻断，数量未定义",
+      "evidence_ref": "cases/public-challenge-results.json#SAME-H2-DEMAND"
+    }
+  ],
+  "case_counting_rule": "Do not sum different demands, derivatives or FE/language/reference units as real engineering cases.",
+  "benchmark50": {
+    "count": 50,
+    "provenance": "synthetic_derived_benchmark",
+    "ideal_kinematics_passed": 50,
+    "solver_path": "typed kernel with explicitly disclosed archived mathematical bridge",
+    "full_system_verified": false
+  },
+  "POD_intake": {
+    "schema": "gearbase.intake-metadata/1",
+    "source_filename": "POD需求确认.xlsx",
+    "source_sha256": "2ea96c0b47da75a3c7c1ee7f4d68415992ce8d49da9ec78592a58891f3c02baf",
+    "read_only": true,
+    "source_unchanged": true,
+    "sheet": "Sheet1",
+    "field_label_rows": 19,
+    "requirement_range": "C2:C20",
+    "populated_requirement_cells": 0,
+    "status": "blank_requirement_template_not_a_validated_engineering_case",
+    "formal_case_added": false,
+    "method": "Stored OOXML values checked; no workbook edited or recalculated. Private cell extract not included in the public package."
+  },
+  "milestones": [
+    {
+      "id": "M32",
+      "done": 5,
+      "total": 5,
+      "note": "数学内核和原契约关闭；不是整机产品验收"
+    },
+    {
+      "id": "M33",
+      "done": 3,
+      "total": 4,
+      "note": "例7/8指认的几何数值范围计完成；完整E4仍开放"
+    },
+    {
+      "id": "M34",
+      "done": 3,
+      "total": 4,
+      "note": "来源与优化部分可用；真实模型客户端调用按决定暂缓"
+    },
+    {
+      "id": "M35",
+      "done": 1,
+      "total": 2,
+      "note": "制造准备产物可用；完整图纸与真实工艺审阅尚缺"
+    },
+    {
+      "id": "M36",
+      "done": 1,
+      "total": 3,
+      "note": "有限联合优化门通过；真实C001与旗舰系统仍缺输入/模型"
+    },
+    {
+      "id": "M37",
+      "done": 0,
+      "total": 4,
+      "note": "严格记录已落实；L2失败、用途资格未授予"
+    },
+    {
+      "id": "M38",
+      "done": 3,
+      "total": 4,
+      "note": "数字追溯/部分评测可运行；独立金标40题仍空"
+    },
+    {
+      "id": "M39",
+      "done": 2,
+      "total": 3,
+      "note": "部分失效/热/前沿能力；完整高速代表例仍缺边界"
+    },
+    {
+      "id": "M40",
+      "done": 0,
+      "total": 3,
+      "note": "详细新传动族仍冻结；本轮未改变"
+    }
+  ],
+  "external_primary_sources": [
+    {
+      "id": "WEB-01",
+      "retrieved_on": "2026-11-01",
+      "title": "ISO 3408-5:2006 官方摘要",
+      "url": "https://www.iso.org/standard/34618.html",
+      "supports": "滚珠丝杆静/动轴向额定载荷与运行寿命的标准范围；不支持滑动梯形螺纹磨损寿命"
+    },
+    {
+      "id": "WEB-02",
+      "retrieved_on": "2026-11-01",
+      "title": "THK Method for Mounting the Ball Screw Shaft",
+      "url": "https://www.thk.com/us/en/products/ball_screw/selection/0005/",
+      "supports": "允许轴向载荷、屈曲与临界转速随安装方式和跨距变化；本路线不抽取通用边界系数"
+    },
+    {
+      "id": "WEB-03",
+      "retrieved_on": "2026-11-01",
+      "title": "THK Permissible Rotational Speed",
+      "url": "https://www.thk.com/us/en/products/ball_screw/selection/0007/",
+      "supports": "滚珠丝杆需分别核临界转速与具体型号DN/循环件限制，取适用低值；没有全型号通用转速阈值"
+    },
+    {
+      "id": "WEB-04",
+      "retrieved_on": "2026-11-01",
+      "title": "igus Lead screw technology FAQ",
+      "url": "https://www.igus.co.uk/threaded-rod/wiki",
+      "supports": "滑动丝杆自锁与导程/摩擦有关；材料、p-v、温度与磨损资料需指定产品域，不能用滚珠疲劳额定寿命替代"
+    }
+  ],
+  "roadmap_status": "proposed_not_implemented",
+  "distribution": "public_redacted_derivative",
+  "original_local_source_file_sha256": {
+    "baseline/receipt.json": "fadb209272921a6058a4dd290118bfe5656603d30577a7f98d0d3b1cb8219c32",
+    "architecture/capability-matrix.json": "a3361a2c062cd7cd3a1dc0df32062e0f9cae850270c99e4e2c5e7e565b249f54",
+    "architecture/findings.json": "53c1e12b1973ee3f602b1b9955efd0903387455b77d4a8cd4d6176201e126b44",
+    "cases/challenge-results.json": "8eaa700a39e9ef68d2fec2ac08fa9e48901b0c93f25a9eebd40940e91df1ecc1",
+    "cases/inventory.json": "9cb209288be514fe4143bb1789463c42b18f478f848d7967600ef92a21e96f92",
+    "roadmap/goal-map.json": "1c38344fed43db8c74bed1211b1f5f0ab122888af42185e90b8d9af9ea771538",
+    "roadmap/boundary-probes.json": "0f4d547bced105c93c242577b8d6266a06be2c3bd48bda4fa6ddebaa430b3dd4",
+    "intake-metadata.json": "d49f5a90a12d6084895d495ee563cafeef37ead4fc95bcf08e30ac9da0ce26db",
+    "historical/DELIVERY-VERIFIED.json": "be17b0be8a92af2800763fc2e68d916f79a8f18f98e394b02abf28e47c3cb3ff"
+  },
+  "distributed_evidence_sha256": {
+    "baseline/receipt.json": "fadb209272921a6058a4dd290118bfe5656603d30577a7f98d0d3b1cb8219c32",
+    "architecture/capability-matrix.json": "a3361a2c062cd7cd3a1dc0df32062e0f9cae850270c99e4e2c5e7e565b249f54",
+    "architecture/findings.json": "53c1e12b1973ee3f602b1b9955efd0903387455b77d4a8cd4d6176201e126b44",
+    "cases/public-challenge-results.json": "f26c471ca75910f81d86e61b65ffd785ebf31e89737f01a2b8c403afee15222a",
+    "cases/public-inventory.json": "1ecb5e382eb4088785030a3d01fd2bdd833393c1fef7c522e7a37aaad949d96e",
+    "roadmap/goal-map.json": "1c38344fed43db8c74bed1211b1f5f0ab122888af42185e90b8d9af9ea771538",
+    "roadmap/boundary-probes.json": "0f4d547bced105c93c242577b8d6266a06be2c3bd48bda4fa6ddebaa430b3dd4",
+    "intake-metadata.json": "d49f5a90a12d6084895d495ee563cafeef37ead4fc95bcf08e30ac9da0ce26db",
+    "historical/DELIVERY-VERIFIED.json": "be17b0be8a92af2800763fc2e68d916f79a8f18f98e394b02abf28e47c3cb3ff"
+  }
+}

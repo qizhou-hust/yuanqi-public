@@ -1,0 +1,39 @@
+{
+  "schema": "gearbase.freeze-case-verification/1",
+  "verified_at_utc": "2026-11-01T11:34:17.195087+00:00",
+  "source_binding_count_verified": 333,
+  "source_binding_mismatches": [],
+  "case_catalog_unique_ids": 114,
+  "source_git_status": "",
+  "runner_sha256": "0aff757eb3545a239264ab471d0f252a902ddec9c7d4475e5fcb115b36e116ff",
+  "command_sha256": "4668fc03f366e8e4726200ad986140884c8154eb74aac25af4e7b94932d27452",
+  "checks": [
+    {
+      "id": "H2",
+      "original_requirement_unchanged": true,
+      "returned_candidate_identities_bound": true,
+      "returned_candidates": 40,
+      "full_system_pass": 0,
+      "blocked": 40
+    },
+    {
+      "id": "W2W",
+      "original_requirement_unchanged": true,
+      "returned_candidate_identities_bound": true,
+      "returned_candidates": 15,
+      "full_system_pass": 0,
+      "blocked": 15
+    },
+    {
+      "id": "P2",
+      "original_requirement_unchanged": true,
+      "returned_candidate_identities_bound": true,
+      "returned_candidates": 5,
+      "full_system_pass": 0,
+      "blocked": 5
+    }
+  ],
+  "same_demand_probe_statuses_verified": true,
+  "local_private_boundary_verified": true,
+  "scope": "file integrity, original input equality, candidate-to-check identity and honest count/unit contracts; no physical or standard truth upgrade"
+}

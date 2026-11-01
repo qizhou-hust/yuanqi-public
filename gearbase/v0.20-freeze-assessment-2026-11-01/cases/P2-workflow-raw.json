@@ -1,0 +1,602 @@
+{
+  "compile": {
+    "status": "compiled_stage0",
+    "requirement": {
+      "family": "P2",
+      "scope": "stage0",
+      "parameters": {
+        "n1_rpm": 1440.0,
+        "target_total_ratio": 40.0,
+        "np_options": [
+          3,
+          4
+        ],
+        "zs_range": [
+          14,
+          30
+        ],
+        "zp_range": [
+          18,
+          60
+        ],
+        "m_series": [
+          2.0,
+          2.5,
+          3.0
+        ],
+        "i_tol": 0.02,
+        "top_k": 5
+      },
+      "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+    },
+    "requirement_sha256": "5fbe107c6efd44174b33be65ea40a9ffc91f0bc81d3a1b241c09e5fe8faa8ebc",
+    "workflow_call": {
+      "action": "run",
+      "requirement": {
+        "family": "P2",
+        "scope": "stage0",
+        "parameters": {
+          "n1_rpm": 1440.0,
+          "target_total_ratio": 40.0,
+          "np_options": [
+            3,
+            4
+          ],
+          "zs_range": [
+            14,
+            30
+          ],
+          "zp_range": [
+            18,
+            60
+          ],
+          "m_series": [
+            2.0,
+            2.5,
+            3.0
+          ],
+          "i_tol": 0.02,
+          "top_k": 5
+        },
+        "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+      }
+    },
+    "provenance": "caller_supplied_pending_confirmation",
+    "engineering_accepted": false,
+    "scope": "original_stage0_only"
+  },
+  "workflow": {
+    "status": "completed_stage0",
+    "outcome": "candidate_pending_human_confirmation",
+    "scope": "original_stage0_only",
+    "requirement": {
+      "family": "P2",
+      "scope": "stage0",
+      "parameters": {
+        "n1_rpm": 1440.0,
+        "target_total_ratio": 40.0,
+        "np_options": [
+          3,
+          4
+        ],
+        "zs_range": [
+          14,
+          30
+        ],
+        "zp_range": [
+          18,
+          60
+        ],
+        "m_series": [
+          2.0,
+          2.5,
+          3.0
+        ],
+        "i_tol": 0.02,
+        "top_k": 5
+      },
+      "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+    },
+    "requirement_sha256": "5fbe107c6efd44174b33be65ea40a9ffc91f0bc81d3a1b241c09e5fe8faa8ebc",
+    "result": {
+      "ok": true,
+      "family": "P→P",
+      "scope": "stage0_integer_geometry_only",
+      "inputs": {
+        "n1_rpm": 1440.0,
+        "target_total_ratio": 40.0,
+        "np_options": [
+          3,
+          4
+        ],
+        "zs_range": [
+          14,
+          30
+        ],
+        "zp_range": [
+          18,
+          60
+        ],
+        "m_series": [
+          2.0,
+          2.5,
+          3.0
+        ],
+        "i_tol": 0.02,
+        "top_k": 5
+      },
+      "candidates": [
+        {
+          "i_total": 40.0,
+          "ratio_error_rel": 0.0,
+          "max_stage_ratio": 6.333333333333333,
+          "min_stage_ratio": 6.315789473684211,
+          "identical_stages": false,
+          "ties": 1,
+          "n_mid_rpm": 228.0,
+          "n_out_rpm": 36.0,
+          "stage1": {
+            "zs": 19,
+            "zp": 41,
+            "zr": 101,
+            "n_p": 3,
+            "ratio": 6.315789473684211,
+            "chord_mm": 103.92304845413263,
+            "needed_mm": 86.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 18,
+            "zp": 39,
+            "zr": 96,
+            "n_p": 3,
+            "ratio": 6.333333333333333,
+            "chord_mm": 98.726896031426,
+            "needed_mm": 82.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        },
+        {
+          "i_total": 39.88919667590028,
+          "ratio_error_rel": 0.002770083102493004,
+          "max_stage_ratio": 6.315789473684211,
+          "min_stage_ratio": 6.315789473684211,
+          "identical_stages": true,
+          "ties": 1,
+          "n_mid_rpm": 228.0,
+          "n_out_rpm": 36.1,
+          "stage1": {
+            "zs": 19,
+            "zp": 41,
+            "zr": 101,
+            "n_p": 3,
+            "ratio": 6.315789473684211,
+            "chord_mm": 103.92304845413263,
+            "needed_mm": 86.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 19,
+            "zp": 41,
+            "zr": 101,
+            "n_p": 3,
+            "ratio": 6.315789473684211,
+            "chord_mm": 103.92304845413263,
+            "needed_mm": 86.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        },
+        {
+          "i_total": 39.69,
+          "ratio_error_rel": 0.007750000000000057,
+          "max_stage_ratio": 6.3,
+          "min_stage_ratio": 6.3,
+          "identical_stages": true,
+          "ties": 1,
+          "n_mid_rpm": 228.57142857142858,
+          "n_out_rpm": 36.281179138321995,
+          "stage1": {
+            "zs": 20,
+            "zp": 43,
+            "zr": 106,
+            "n_p": 3,
+            "ratio": 6.3,
+            "chord_mm": 109.11920087683926,
+            "needed_mm": 90.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 20,
+            "zp": 43,
+            "zr": 106,
+            "n_p": 3,
+            "ratio": 6.3,
+            "chord_mm": 109.11920087683926,
+            "needed_mm": 90.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        },
+        {
+          "i_total": 39.51020408163265,
+          "ratio_error_rel": 0.012244897959183732,
+          "max_stage_ratio": 6.285714285714286,
+          "min_stage_ratio": 6.285714285714286,
+          "identical_stages": true,
+          "ties": 3,
+          "n_mid_rpm": 229.0909090909091,
+          "n_out_rpm": 36.44628099173554,
+          "stage1": {
+            "zs": 21,
+            "zp": 45,
+            "zr": 111,
+            "n_p": 3,
+            "ratio": 6.285714285714286,
+            "chord_mm": 114.31535329954589,
+            "needed_mm": 94.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 21,
+            "zp": 45,
+            "zr": 111,
+            "n_p": 3,
+            "ratio": 6.285714285714286,
+            "chord_mm": 114.31535329954589,
+            "needed_mm": 94.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        },
+        {
+          "i_total": 39.34710743801653,
+          "ratio_error_rel": 0.016322314049586773,
+          "max_stage_ratio": 6.2727272727272725,
+          "min_stage_ratio": 6.2727272727272725,
+          "identical_stages": true,
+          "ties": 1,
+          "n_mid_rpm": 229.56521739130434,
+          "n_out_rpm": 36.59735349716446,
+          "stage1": {
+            "zs": 22,
+            "zp": 47,
+            "zr": 116,
+            "n_p": 3,
+            "ratio": 6.2727272727272725,
+            "chord_mm": 119.51150572225252,
+            "needed_mm": 98.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 22,
+            "zp": 47,
+            "zr": 116,
+            "n_p": 3,
+            "ratio": 6.2727272727272725,
+            "chord_mm": 119.51150572225252,
+            "needed_mm": 98.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        }
+      ],
+      "frontier": [
+        {
+          "i_total": 40.0,
+          "ratio_error_rel": 0.0,
+          "max_stage_ratio": 6.333333333333333,
+          "min_stage_ratio": 6.315789473684211,
+          "identical_stages": false,
+          "ties": 1,
+          "n_mid_rpm": 228.0,
+          "n_out_rpm": 36.0,
+          "stage1": {
+            "zs": 19,
+            "zp": 41,
+            "zr": 101,
+            "n_p": 3,
+            "ratio": 6.315789473684211,
+            "chord_mm": 103.92304845413263,
+            "needed_mm": 86.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 18,
+            "zp": 39,
+            "zr": 96,
+            "n_p": 3,
+            "ratio": 6.333333333333333,
+            "chord_mm": 98.726896031426,
+            "needed_mm": 82.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        },
+        {
+          "i_total": 39.88919667590028,
+          "ratio_error_rel": 0.002770083102493004,
+          "max_stage_ratio": 6.315789473684211,
+          "min_stage_ratio": 6.315789473684211,
+          "identical_stages": true,
+          "ties": 1,
+          "n_mid_rpm": 228.0,
+          "n_out_rpm": 36.1,
+          "stage1": {
+            "zs": 19,
+            "zp": 41,
+            "zr": 101,
+            "n_p": 3,
+            "ratio": 6.315789473684211,
+            "chord_mm": 103.92304845413263,
+            "needed_mm": 86.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 19,
+            "zp": 41,
+            "zr": 101,
+            "n_p": 3,
+            "ratio": 6.315789473684211,
+            "chord_mm": 103.92304845413263,
+            "needed_mm": 86.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        },
+        {
+          "i_total": 39.69,
+          "ratio_error_rel": 0.007750000000000057,
+          "max_stage_ratio": 6.3,
+          "min_stage_ratio": 6.3,
+          "identical_stages": true,
+          "ties": 1,
+          "n_mid_rpm": 228.57142857142858,
+          "n_out_rpm": 36.281179138321995,
+          "stage1": {
+            "zs": 20,
+            "zp": 43,
+            "zr": 106,
+            "n_p": 3,
+            "ratio": 6.3,
+            "chord_mm": 109.11920087683926,
+            "needed_mm": 90.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 20,
+            "zp": 43,
+            "zr": 106,
+            "n_p": 3,
+            "ratio": 6.3,
+            "chord_mm": 109.11920087683926,
+            "needed_mm": 90.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        },
+        {
+          "i_total": 39.51020408163265,
+          "ratio_error_rel": 0.012244897959183732,
+          "max_stage_ratio": 6.285714285714286,
+          "min_stage_ratio": 6.285714285714286,
+          "identical_stages": true,
+          "ties": 3,
+          "n_mid_rpm": 229.0909090909091,
+          "n_out_rpm": 36.44628099173554,
+          "stage1": {
+            "zs": 21,
+            "zp": 45,
+            "zr": 111,
+            "n_p": 3,
+            "ratio": 6.285714285714286,
+            "chord_mm": 114.31535329954589,
+            "needed_mm": 94.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 21,
+            "zp": 45,
+            "zr": 111,
+            "n_p": 3,
+            "ratio": 6.285714285714286,
+            "chord_mm": 114.31535329954589,
+            "needed_mm": 94.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        },
+        {
+          "i_total": 39.34710743801653,
+          "ratio_error_rel": 0.016322314049586773,
+          "max_stage_ratio": 6.2727272727272725,
+          "min_stage_ratio": 6.2727272727272725,
+          "identical_stages": true,
+          "ties": 1,
+          "n_mid_rpm": 229.56521739130434,
+          "n_out_rpm": 36.59735349716446,
+          "stage1": {
+            "zs": 22,
+            "zp": 47,
+            "zr": 116,
+            "n_p": 3,
+            "ratio": 6.2727272727272725,
+            "chord_mm": 119.51150572225252,
+            "needed_mm": 98.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          },
+          "stage2": {
+            "zs": 22,
+            "zp": 47,
+            "zr": 116,
+            "n_p": 3,
+            "ratio": 6.2727272727272725,
+            "chord_mm": 119.51150572225252,
+            "needed_mm": 98.0,
+            "radial_clearance_mm": 0.5,
+            "backlash_note": "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)",
+            "m_options": [
+              2.0,
+              2.5,
+              3.0
+            ]
+          }
+        }
+      ],
+      "search": {
+        "enumerated": 4386,
+        "feasible": 485,
+        "pairs_examined": 117855,
+        "in_tolerance_pairs": 2311,
+        "pareto_points": 5,
+        "complete": true,
+        "top_k_truncated": false,
+        "stage_space_partial": false,
+        "pair_scan_partial": false,
+        "caps": {
+          "stage_checks": 200000,
+          "stage_pairs": 6000000
+        }
+      },
+      "reason": null,
+      "assumptions": [
+        "sun input / carrier output / ring fixed; i = 1 + zr/zs",
+        "exact concentricity + full zero shift ⇒ theoretical backlash 0 at BOTH meshes; profile shift is mandatory for an assemblable design (SPEC §2-B, V4 correction C2)"
+      ],
+      "spec_constants": {
+        "ha_planet": 1.0,
+        "hf_ring": 1.25,
+        "minimum_radial_clearance_factor": 0.2,
+        "pareto_epsilon": 1e-12,
+        "tie_round_digits": 9
+      },
+      "strength": {
+        "status": "not_implemented",
+        "hold": "No planetary ISO 6336 rating or manufacturing release at Stage0"
+      },
+      "efficiency": {
+        "status": "not_implemented"
+      },
+      "thermal": {
+        "status": "not_implemented"
+      }
+    },
+    "verification": {
+      "ok": true,
+      "issues": [],
+      "scope": "stage0_integer_geometry_only",
+      "rank_verified": false,
+      "tie_multiplicity_verified": false,
+      "strength_status": "not_implemented"
+    },
+    "verified_selected_candidates": 1,
+    "engineering_accepted": false,
+    "persisted": false
+  }
+}

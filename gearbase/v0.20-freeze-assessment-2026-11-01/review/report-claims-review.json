@@ -1,0 +1,479 @@
+{
+  "schema": "gearbase.report-claims-review/1",
+  "reviewed_utc": "2026-11-01T11:42:49.486517+00:00",
+  "review_mode": "Same-agent adversarial facts-and-scope audit using source and its own fresh smoke evidence, not external engineering certification",
+  "external_standard": "用户终局目标：由输入输出速度/扭矩、空间/轴关系规划多种传动方案；齿轮、轴承、轴、箱体、丝杆螺母；自然语言创建修改；数学SSOT全链更新",
+  "source_root": "D:\\my_Works\\Gears\\gearbase-v020-work",
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "reviewed_files": [
+    {
+      "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\index.html",
+      "sha256": "d8e5fcbc0fea8fc87ba66ee328e7e2d4748c5477fba73ff2a815be563470ff6a",
+      "bytes": 221482
+    },
+    {
+      "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\report-data.json",
+      "sha256": "8e76cfcab37f8c56b751dc45d9d45834e8f967756368805b728331ab347e6abe",
+      "bytes": 35408
+    },
+    {
+      "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\freeze-manifest.json",
+      "sha256": "71cc96fefa8ac3e6e4076238882c0ff3433f0d230ff2ee9dc446c20f76158f51",
+      "bytes": 32776
+    }
+  ],
+  "initial_snapshot": {
+    "index_html_sha256": "d492d30d398b763d0c9b6f3ba70c26e44eef23e16d10101862092d1bd27a180a",
+    "report_data_sha256": "f9e31bcef97ee7ea801f12e26896b893477a7e53bd338432b38468810c85a89f"
+  },
+  "verdict": "No open P0/P1/P2 fact, numeric, scope, source-link or evidence-identity finding in these hash-bound files; suitable to publish as a scoped engineering-trial assessment, not engineering or production release.",
+  "priority_counts": {
+    "open_P0": 0,
+    "open_P1": 0,
+    "open_P2": 0,
+    "resolved_P1": 2,
+    "resolved_P2": 2
+  },
+  "findings": [
+    {
+      "id": "RPT-01",
+      "priority": "P1",
+      "status": "resolved_before_this_bound_snapshot",
+      "title": "根报告证据身份曾引用过期goal-map哈希",
+      "original_observation": "初读report-data.json和freeze-manifest.json声明5ce1a975…，但roadmap/goal-map.json实际1c38344f…。并行修订后已同步。",
+      "original_index_sha256": "d492d30d398b763d0c9b6f3ba70c26e44eef23e16d10101862092d1bd27a180a",
+      "evidence": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\report-data.json",
+          "json_pointer": "/source_evidence_files/roadmap~1goal-map.json"
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\freeze-manifest.json",
+          "json_pointer": "/goal_map_sha256"
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\roadmap\\goal-map.json",
+          "sha256": "1c38344fed43db8c74bed1211b1f5f0ab122888af42185e90b8d9af9ea771538",
+          "bytes": 30456
+        }
+      ],
+      "current_verification": "当前9个声明source_evidence_files全部SHA匹配；goal_map_sha256亦匹配实际文件。",
+      "recommendation": "最终打包后再按字节生成证据哈希，后续改动必须更新所有嵌入副本。"
+    },
+    {
+      "id": "RPT-02",
+      "priority": "P1",
+      "status": "resolved_before_this_bound_snapshot",
+      "title": "终局架构图曾把全链自动变更传播写成已实现",
+      "original_observation": "旧index:38受控编辑已实现配合自然语言变更后失效/重算/重建，以及:39每次修改旧证据自动失效，容易被读成CAD/FE全链当前可用。",
+      "evidence": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\index.html",
+          "line": 39
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\index.html",
+          "line": 40
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\tools\\fea_ingest.py",
+          "line": 1
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\gear\\math_source.py",
+          "line": 88
+        }
+      ],
+      "current_verification": "当前标签明确当前仅数值DAG与局部CAS，说明全文明确终局目标/目标反馈且当前未跨CAD/FE/制造统一传播。与第07节及CAP-26一致。",
+      "recommendation": "保持当前限定措辞；不得再由数值源更新泛化成工件自动重新合格。"
+    },
+    {
+      "id": "RPT-03",
+      "priority": "P2",
+      "status": "resolved_before_final_receipt",
+      "title": "离线附件说明链接当前缺README.md",
+      "evidence": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\index.html",
+          "line": 189
+        }
+      ],
+      "current_missing_local_links": [],
+      "impact": "用户点附件说明时无法获得入口/目录说明；不改变数学结论。",
+      "recommendation": "发布前补齐该文件或将链接指向已存在的试用/附件说明，并在最终包验证相对链接。",
+      "original_observation": "HTML页末附件与复跑说明链接href=README.md；当前报告目录未找到该文件。",
+      "current_verification": "README.md已创建，所有HTML相对文件链接当前均存在。"
+    },
+    {
+      "id": "RPT-04",
+      "priority": "P2",
+      "status": "resolved_before_final_receipt",
+      "title": "功率流/载荷谱目标卡的当前状态标签仍偏宽",
+      "evidence": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\index.html",
+          "line": 34
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\product\\flagship_system.py",
+          "line": 11
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\gearbase-v020-work\\gearmath\\system\\drivetrain_check.py",
+          "line": 417
+        }
+      ],
+      "impact": "终局章节整体语境已限制，因此不是重大当前能力误报，但单独阅读状态卡可能高估现有载荷谱范围。",
+      "recommendation": "标签或正文改为当前仅部分速度/转矩及简化热；正反驱/载荷谱/冲击寿命为目标。",
+      "original_observation": "目标卡把功率流与载荷谱标为固定模型可派生，描述同时列正反驱、冲击与寿命工况。当前主链只有选定H2/W2W/P2等模型的部分n/T/简化效率热与载荷派生，完整有符号工况谱/正反驱传播是后续R2。",
+      "current_verification": "功率流卡现明确当前仅固定模型部分派生，并把全工况正反驱/三向力/冲击/谱寿命标为目标；未扩张现有模型适用范围。"
+    }
+  ],
+  "claim_checks": [
+    {
+      "id": "CHK-01",
+      "claim": "原源码/266个冻结Python未改",
+      "status": "verified",
+      "result": {
+        "files": 266,
+        "mismatches": [],
+        "git_status": ""
+      }
+    },
+    {
+      "id": "CHK-02",
+      "claim": "62本轮定向测试与146架构扫描模块",
+      "status": "verified_from_current_saved_command_outputs",
+      "evidence": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\baseline\\targeted-tests.stderr.log"
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\baseline\\architecture.json"
+        }
+      ],
+      "scope": "复核当前会话原始日志，不重新运行测试；零违规只是AST规则。"
+    },
+    {
+      "id": "CHK-03",
+      "claim": "里程碑done/total与partial不算完成",
+      "status": "verified",
+      "result": "9项表格与当前baseline/milestones.json逐项一致，完整E4/M40仍开放。"
+    },
+    {
+      "id": "CHK-04",
+      "claim": "H2/W2W/P2 40/15/5候选，不是同需求三个答案",
+      "status": "verified",
+      "result": "root challenge、自己的本轮smoke及报告6行case计数一致；三种独立合同/固定拓扑；full_system=0只限返回候选，不证明物理无解。"
+    },
+    {
+      "id": "CHK-05",
+      "claim": "H2 459×824/378216/9948；P2 485/117855/2311",
+      "status": "verified_from_current_challenge_outputs_and_solver",
+      "result": "根challenge search和原有求解器字段支持；数量不等于独立拓扑或工程通过。"
+    },
+    {
+      "id": "CHK-06",
+      "claim": "W2W 15/15热失败，首选约0.54084/148.54°C",
+      "status": "verified",
+      "result": {
+        "thermal_fail": 15,
+        "first_eta": 0.5408407222531019,
+        "first_oil_C": 148.53902057341304
+      },
+      "scope": "既有恒摩擦/明示对流筛选模型；不认定详细蜗杆热或生产合格。"
+    },
+    {
+      "id": "CHK-07",
+      "claim": "40→400N·m反例与模板feasible边界",
+      "status": "verified",
+      "result": {
+        "template_calls_equal": true,
+        "responses_equal": true,
+        "optimized_b_mm": 21.30069604155817,
+        "optimized_a_mm": 57.120694849135454
+      },
+      "scope": "仅当前stage_sizing/一个声明离散组合，不是所有source-owned优化路径失效。根报告保留unapplied/post_checks和固定C001限制，未作泛化。"
+    },
+    {
+      "id": "CHK-08",
+      "claim": "27组合/8可行与29数值更新",
+      "status": "verified",
+      "result": {
+        "domain": 27,
+        "feasible": 8,
+        "changed_numeric_values": 29
+      },
+      "scope": "作者capability fixture；fresh枚举仍共用检查物理公式；29含输入b，不表示全链CAD/FE更新。"
+    },
+    {
+      "id": "CHK-09",
+      "claim": "单文件HTML内嵌数据与外部report-data一致",
+      "status": "verified",
+      "result": true
+    },
+    {
+      "id": "CHK-10",
+      "claim": "报告证据SHA/源码行号/本地锚点",
+      "status": "verified",
+      "result": {
+        "evidence_records": 9,
+        "evidence_mismatches": [],
+        "missing_page_anchors": [],
+        "missing_relative_links": []
+      }
+    },
+    {
+      "id": "CHK-11",
+      "claim": "46个源码链接/29份远程源码可定位当前基线",
+      "status": "verified_at_review_time",
+      "method": "本轮只读GET raw.githubusercontent.com；每份与本地SHA逐字节比较；所有46个锚点在其行数内。",
+      "source_link_count": 46,
+      "source_file_count": 29,
+      "files": [
+        {
+          "file": "gearmath/gear/beam_face.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "cae85dae0c9f2140cac29ca1bff922f58e36af3923482eec08ca520d54753bfb"
+        },
+        {
+          "file": "gearmath/gear/double_helical.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "98f899fbc5a4a1f13f82e0c70c4d3284883b8bb29f63c732d3cb6c9389eeaef2"
+        },
+        {
+          "file": "gearmath/gear/flagship_h2.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "80055f2e5d6257ba49991a6bc3acbae04d8798f0c067265cc62f6280a8a4f08c"
+        },
+        {
+          "file": "gearmath/gear/flagship_p2.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "3e627468476c70ec2d1890d0d337705708c567f4037047a92a6b086e843015ed"
+        },
+        {
+          "file": "gearmath/gear/flagship_w2w.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "edb1652ddd00f5168f2439d53c65756d46621115154f304cc48f883c5c942bcc"
+        },
+        {
+          "file": "gearmath/gear/formulas.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "02727f963b025e4fc0f7d43f868888b897b1d62e814b3c99c514fddd9115411f"
+        },
+        {
+          "file": "gearmath/gear/internal_gear.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "d07296cf77cef497ebfc84a4aba5403205e397e10f3764f4cbc82574689ecc50"
+        },
+        {
+          "file": "gearmath/gear/math_source.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "a3824d7d48ddd8d9607afe41038fe901d5a07fa11924b26274c0d38bfbe56407"
+        },
+        {
+          "file": "gearmath/gear/problem.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "efe82626dd3b72916ef1c053ad0fec307c4a6f8a548bdea54aa1ce17ccd84667"
+        },
+        {
+          "file": "gearmath/gear/rating.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "6dd14ce6d424a8900fda3c05e4bba7a90be7569b07be4d657f90b05344a6c52c"
+        },
+        {
+          "file": "gearmath/gear/source_optimize.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "92c57220ab0a2a5c9c0a813ae5e63e0eb9e35d74f3491b01280aa4f92be0654f"
+        },
+        {
+          "file": "gearmath/kernel/graph.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "945b2f89ee95c73f86da18c452373b73b530ee6714cdc123898fecdaf4ba9703"
+        },
+        {
+          "file": "gearmath/product/design_check.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "29bb05695dc9a6d2de525599c0d953733d8abb8f1892a38256b5341eb8ee97a1"
+        },
+        {
+          "file": "gearmath/product/flagship_system.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "344721ca387966b64cfae3a735d442432b99b3a69a4f62e2f7ea73576e94343e"
+        },
+        {
+          "file": "gearmath/product/system_optimize.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "e1e0e3a35477f00100b53061c810a4194735ad98c6ea97d05514f84043dc85bd"
+        },
+        {
+          "file": "gearmath/system/drivetrain_check.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "50d0d979837e46060f753d7fce36d85cf4a6f1d6bbd85f173560f7c670555319"
+        },
+        {
+          "file": "gearmath/system/iso281.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "d8457d7e1f90979d9c4680b786f5120dfae972745986da8244691770a25a6722"
+        },
+        {
+          "file": "gearmath/system/shaft_beam.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "988f4cefcd03aaf6186a6cbfb73a904be19baae7610ad93f072775c0ca0cde32"
+        },
+        {
+          "file": "gearmath/system/thermal_balance.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "b09ad2a661943ef9c648802079d708c1b145f84cdb30659813b63d0b5648ea60"
+        },
+        {
+          "file": "gearmath/tools/ai_tools.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "72e4dff5bbe7a1add3d6e311bc933a78c2db0163d8d8582d312277026ba31c80"
+        },
+        {
+          "file": "gearmath/tools/design_store.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "28514b4db2679654bb92b240246b4962545408a5ca5f3c8599868dda83f977c1"
+        },
+        {
+          "file": "gearmath/tools/fea_ingest.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "89499e55de8490684604bfb70fb7f1eaaa4e67c7759c0c87284fcfaacebabad3"
+        },
+        {
+          "file": "gearmath/tools/fea_prepare.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "1cd7c05d5d6082b831e3e7e01536a8d5008ba7d9833ea9319fe85f62d330ee71"
+        },
+        {
+          "file": "gearmath/tools/flagship_workflow.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "0c4fbce6af6ac6806a567137a42b951cc3a134180d4efc692c92d582c626b5f7"
+        },
+        {
+          "file": "gearmath/tools/intent.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "01c25495f6dcc66d7d23b77c7f26549da07aee06b0562bc87f2d433eface8b5b"
+        },
+        {
+          "file": "gearmath/tools/m31_runtime.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "781c9165917f3bbd5ef8c5953709b422582ecf2394d4dfd88482639aa9532dc2"
+        },
+        {
+          "file": "gearmath/tools/m35_packet.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "ca66e440593ef50914510b8f5395b185790064b4a361feff4645149047f7a9bf"
+        },
+        {
+          "file": "gearmath/tools/nlp_templates.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "50514d3ebbd3d13df81e6a497529199b5553e129ca14186e67cf1c22df01975e"
+        },
+        {
+          "file": "gearmath/tools/system_closure.py",
+          "observed_remote_equals_local_bytes": true,
+          "sha256": "c7bae05b93f069033cf52eb3631d27ff4bac0f312eadbd8e178649f7d6c81550"
+        }
+      ],
+      "limitation": "链接使用main分支，未来可能变化；本review及freeze manifest绑定当前本地字节。"
+    },
+    {
+      "id": "CHK-12",
+      "claim": "FE 42历史作业、9/14、整级失败",
+      "status": "verified_as_historical_claim",
+      "evidence": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\historical\\DELIVERY-VERIFIED.json",
+          "json_pointer": "/M37"
+        }
+      ],
+      "scope": "没有重新求解/重抽全部原始场；报告明确历史凭据、recorded不等于qualified。"
+    },
+    {
+      "id": "CHK-13",
+      "claim": "丝杆与自然语言SSOT路线标为建议，非已实现",
+      "status": "verified_for_scope",
+      "evidence": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\report-data.json",
+          "json_pointer": "/roadmap_status"
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\index.html",
+          "line": 139
+        }
+      ],
+      "scope": "当前主链未有丝杆整链，报告保留该缺口；ISO3408-5及THK速度页已重新打开，仅支持方法范围，不认证拟议模型全部公式。"
+    },
+    {
+      "id": "CHK-14",
+      "claim": "初步冻结不是生产冻结/工程放行/新增整里程碑完成",
+      "status": "verified_for_scope",
+      "result": {
+        "classification": "engineering_trial_baseline_with_explicit_scope",
+        "production_frozen": false,
+        "new_whole_milestone_closed": false,
+        "source_modified": false
+      },
+      "scope": "接口和证据基线的范围明确；不能据此批准任意工程设计。"
+    },
+    {
+      "id": "CHK-15",
+      "claim": "普通ZIP数值CLI与依赖固定Git身份的审计案例复跑已明确区分",
+      "status": "verified_incrementally",
+      "evidence": [
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\index.html",
+          "line": 180
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\README.md",
+          "line": 37
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\cases\\run_challenges.py",
+          "line": 65
+        },
+        {
+          "path": "D:\\my_Works\\Gears\\v020-freeze-assessment-2026-11-01\\cases\\run_challenges.py",
+          "line": 485
+        }
+      ],
+      "result": "单副校核/有限联合CLI仍以完整核心为前提；案例审计复跑另需指定提交Git检出及历史资料。脚本git()的check=True和rev-parse/status调用支持这一限制。未新跑案例或修改输入。"
+    }
+  ],
+  "report_files_modified_by_reviewer": false,
+  "new_core_edit": false,
+  "new_FE": false,
+  "where_this_review_may_be_wrong": [
+    {
+      "assumption": "被评文件在交付时仍与此review绑定的SHA一致",
+      "gap": "根报告在浏览器排版验证中可能继续修改",
+      "how_to_check": "最终包完成后核对reviewed_files；任何内容/哈希变化需重新检查本报告或生成新的review revision。"
+    },
+    {
+      "assumption": "当前main上的远程源码仍指向本次已读字节",
+      "gap": "GitHub链接未固定为commit permalink，未来可变化",
+      "how_to_check": "当前29份已逐字节匹配；后续发布可使用固定commit或保留可重算文件SHA清单。"
+    },
+    {
+      "assumption": "既有smoke/定向日志覆盖本报告声称的限定软件行为",
+      "gap": "本轮review没有重跑全回归、CAD、FE、真实AI客户端或全部供应商/标准公式；部分历史与外部来源仅复核摘要/身份",
+      "how_to_check": "需要提升工程用途时，按指定模型/参数域补外部独立对拍、原生读回和工程签署；不能以本review替代。"
+    }
+  ],
+  "review_revision": 3,
+  "incremental_amendments": [
+    {
+      "reviewed_utc": "2026-11-01T11:42:49.486517+00:00",
+      "previous_index_sha256": "3d8a258378a18324ad16bb45351a4d140a0e64703a9467fc24f3c4f134d95212",
+      "new_index_sha256": "d8e5fcbc0fea8fc87ba66ee328e7e2d4748c5477fba73ff2a815be563470ff6a",
+      "change_scope": "仅增量核查usage中的Git检出/历史资料前提及README一致说明；report-data/freeze字节保持不变。",
+      "expanded_review": false,
+      "core_edits": false,
+      "new_FE": false
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "gearbase.report-browser-qa/1",
+  "headless": true,
+  "mouse_used": false,
+  "html_sha256": "6bbc3cc7001ff71656a81d44cb8521ea9743899bf9a2b0aa1e6c50c16d2b9ba7",
+  "producer_sha256": "cdd0d20148110d06d733442e309ba0a09213f6d1cef7924ce00450c0d33a6c67",
+  "missing_local_links": [],
+  "passed": true,
+  "records": [
+    {
+      "name": "desktop",
+      "schema": "gearbase.report-browser-qa/1",
+      "width": 1600,
+      "height": 1100,
+      "checks": {
+        "no_unreplaced_tokens": true,
+        "case_button_count": true,
+        "capability_count": true,
+        "internal_anchors": true,
+        "case_switch": true,
+        "blocked_filter": true,
+        "search": true,
+        "no_horizontal_overflow": true,
+        "no_js_errors": true
+      },
+      "errors": [],
+      "passed": true,
+      "playwright_page_errors": [],
+      "browser_version": "156.0.8078.73",
+      "local_resources_only": true
+    },
+    {
+      "name": "mobile",
+      "schema": "gearbase.report-browser-qa/1",
+      "width": 430,
+      "height": 960,
+      "checks": {
+        "no_unreplaced_tokens": true,
+        "case_button_count": true,
+        "capability_count": true,
+        "internal_anchors": true,
+        "case_switch": true,
+        "blocked_filter": true,
+        "search": true,
+        "no_horizontal_overflow": true,
+        "no_js_errors": true
+      },
+      "errors": [],
+      "passed": true,
+      "playwright_page_errors": [],
+      "browser_version": "156.0.8078.73",
+      "local_resources_only": true
+    }
+  ]
+}

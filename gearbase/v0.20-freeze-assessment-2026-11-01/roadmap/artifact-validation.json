@@ -1,0 +1,23 @@
+{
+  "schema": "gearbase.goal-artifact-validation/1",
+  "passed": true,
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "scope": "Audit artifact consistency and original-byte bindings only; not a full product, CAD, FE or engineering-release validation.",
+  "checks": [
+    "Three JSON documents parse with no duplicate keys and bind to the same baseline/date.",
+    "Eight ordered slices all contain inputs, outputs, gates, dependencies, software and external-engineering scope.",
+    "All requirement/evidence/slice references resolve; every cited source line exists.",
+    "All 52 local Markdown links resolve; eight gates and counter-review are present; no maturity percentage is invented.",
+    "Freeze categories are complete, M40/gates remain unchanged, and existing user authorization is preserved.",
+    "Stored read-only boundary observations match every runtime conclusion reported here.",
+    "All bound source/data/gate/report bytes still match; product HEAD is unchanged and worktree is clean."
+  ],
+  "product_git_status": [],
+  "artifacts_sha256": {
+    "goal-map.json": "1c38344fed43db8c74bed1211b1f5f0ab122888af42185e90b8d9af9ea771538",
+    "freeze-contract.json": "2b93c6e24a73211a74c09c2059d519fb181f89dc8f9a1c49e6d22a15153f861a",
+    "ROADMAP.md": "0d9426fd6b4f647bba26fa0e57042a507a00b850e8324efa37e5e85db27eb8db",
+    "boundary-probes.json": "0f4d547bced105c93c242577b8d6266a06be2c3bd48bda4fa6ddebaa430b3dd4",
+    "probe_boundaries.py": "1a03e4e32ab6d2aabdae52f0c4113c452d0ad3dd6bfc956c87e1438af0ef42aa"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "gearbase.assessment-build/1",
+  "passed": true,
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "producer_sha256": "28e2913ec23c49f3d05ec5df6235b6552bcc8f2ebf396830447adfd23ef36b89",
+  "template_sha256": "b2b08bb03495a362fe03eb85ca92d36632163283f72e554be67a1e71a6bf6d32",
+  "html_sha256": "6bbc3cc7001ff71656a81d44cb8521ea9743899bf9a2b0aa1e6c50c16d2b9ba7",
+  "data_sha256": "9598eb049ab70db34b4f82c422383690144be09f1b11ec50c9c58c9825f88973",
+  "capabilities": 26,
+  "challenge_cards": 6,
+  "candidate_system_blocked": 60,
+  "core_unchanged": true,
+  "distribution": "public_redacted_derivative",
+  "private_build_receipt_sha256": "0ddcc107d4233b6fb931d8e6e6804ed17c35b6290014ff4fdf1d898812aa51e5",
+  "public_transform_producer_sha256": "b962d3895c03f8edf7e430fcd52b3020edf2f77cba97d0d87f36f5a65f9be3f1"
+}

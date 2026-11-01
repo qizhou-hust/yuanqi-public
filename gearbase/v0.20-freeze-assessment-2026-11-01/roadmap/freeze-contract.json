@@ -1,0 +1,125 @@
+{
+  "schema": "gearbase.freeze-contract-proposal/1",
+  "audit_date": "2026-11-01",
+  "source_root": "D:/my_Works/Gears/gearbase-v020-work",
+  "source_commit": "80117283778cf8732b5557fa15c2e41f626f92fc",
+  "nature": "审计建议，不是已执行冻结、解冻或工程放行",
+  "effective_as_new_product_policy": false,
+  "enforced_by_current_code": false,
+  "thaw_authorized": false,
+  "authorization_note": "用户既有自主推进和本地FE授权不因本轮只读选择而撤销。本合同不增加逐项研发审批；M40原冻结/解冻决定、工程数据和方法拍板边界仍保留。",
+  "product_changes_by_this_audit": false,
+  "baseline_identity": {
+    "git_worktree_clean_in_scoped_probe": true,
+    "probe_file": "boundary-probes.json",
+    "byte_hashes_json_pointer": "/source_files_sha256",
+    "guarded_original_gate_files": ["docs/顶层设计.html", "gearmath/tools/milestones.py", "gearmath/gear/m33_acceptance.py", "gearmath/tools/fea_ingest.py"],
+    "preserve": ["原M32至M40门的身份、阈值和开放状态", "原81文件与既有内核的上级冻结约束", "原M31黄金收据与金标答案", "真实FE全部失败与尝试记录", "商业参考和标准资料的私有边界"],
+    "note": "本分工只验证目标边界和元数据探针；完整冻结还须合取父审计的当前会话验收证据，不以本合同替代。"
+  },
+  "freeze_object": {
+    "can_archive_now": "固定身份的v020源码、输入、历史报告和失败账本",
+    "can_declare_only_after_scoped_checks": "范围明确、可重放、缺项阻断的数学/证据工具底座",
+    "cannot_declare": "从任意输出需求自动完成所有简单组合并达到制造/生产冻结的通用系统设计器",
+    "release_dimensions": ["软件重放与API一致性", "解析物理模型适用性", "数值工具用途资格", "CAD/空间与制造成熟度", "外部工程证据与签署"],
+    "aggregation_rule": "逐维度报告；任一所需检查open/blocked/out_of_domain/unconfirmed时，该用途不能engineering_released。数值fail是已算出的不合格，和缺输入未算不同。"
+  },
+  "can_freeze": [
+    {
+      "id": "F01", "capability": "领域无关数学内核与层级边界的固定接口",
+      "scope": "已实现单位、白名单表达式、计算图、导数与显式适用域；以每项现有测试覆盖为界",
+      "conditions": ["当前完整回归/架构门由父审计确认", "算法/数值后端和依赖身份随回执保存", "不把句法AST守门称任意代码语义安全证明"],
+      "evidence": ["gearmath/tools/architecture_guard.py:3", "gearmath/tools/architecture_guard.py:6", "docs/顶层设计.html:165"]
+    },
+    {
+      "id": "F02", "capability": "圆柱副级source、只读投影与修订所有权",
+      "scope": "gears.math-source/2当前圆柱副适用域；存储父链/CAS与投影一致性",
+      "conditions": ["源输入/证据/约束/方法/版次齐全", "派生不落源、旧记录不可变", "不外推成全系统拓扑/支持/CAD已统一真源"],
+      "evidence": ["gearmath/gear/math_source.py:3", "gearmath/gear/math_source.py:63", "gearmath/tools/design_store.py:79", "boundary-probes.json:/source_contract"]
+    },
+    {
+      "id": "F03", "capability": "适用范围内的圆柱与系统分项校核",
+      "scope": "design_check九scope和已实现L2路径；每个结果带自己的来源、缺项、适用域和证据等级",
+      "conditions": ["缺材料/工况/限值/证据即阻断相应项", "C001真实布局和材料缺口保持开放", "目录包络和完整供应商选型、刚性支承梁和实际轴承/箱体柔度分开声明"],
+      "evidence": ["gearmath/product/design_check.py:45", "data/system/C001.system-input.json:5", "docs/beam_face_scope.md:5"]
+    },
+    {
+      "id": "F04", "capability": "原H2/W2W/P2 Stage0筛选和固定有限搜索",
+      "scope": "显式家族、显式域，按现有输入集合运行；M36有限联合搜索与M39有限前沿另列",
+      "conditions": ["结果保持original_stage0_only和engineering_accepted=false", "W2W实际热失败保留", "明确截断/穷举域/固定证据/未支持校核，不称全局最优或整机全可行"],
+      "evidence": ["gearmath/tools/flagship_workflow.py:47", "gearmath/product/system_optimize.py:144", "output/m39/closure.json"]
+    },
+    {
+      "id": "F05", "capability": "原始证据入库、来源身份与失败账本的机制",
+      "scope": "明确准入配置内的证据收录和身份重贴；不等同数值/物理资格通过",
+      "conditions": ["recorded与validated/qualified分开", "固定FE矩阵所有失败点及尝试不可删除", "任何低层资格未通过，后续工具用途不得越级解锁"],
+      "evidence": ["docs/v020-m37-verified-profile.md:3", "docs/v020-m37-verified-profile.md:15", "docs/v020-progress.md:27"]
+    },
+    {
+      "id": "F06", "capability": "MCP本地草案工作流和数字可追溯",
+      "scope": "结构化需求、解释、预览/提交与已覆盖工具；来源标签按当前调用约定处理",
+      "conditions": ["提交仅代表草案修订，不代表人类签署或工程放行", "不把可追溯数字率解释成语义正确率", "来源字符串、confirm布尔和预览token不作为独立身份鉴别"],
+      "evidence": ["gearmath/tools/ai_tools.py:374", "gearmath/tools/ai_tools.py:405", "gearmath/tools/optimize_commit.py:10", "output/m38/closure.json"]
+    },
+    {
+      "id": "F07", "capability": "制造参数表与未签署审阅准备包",
+      "scope": "现有K02同源尺寸/圆包络和manifest核验",
+      "conditions": ["manufacturing_release=false", "external_review_completed=false", "圆包络不冒充完整齿面、产形齿根或制造图"],
+      "evidence": ["docs/v020-M35-review-preparation.md:3", "docs/v020-M35-review-preparation.md:7", "docs/v020-M35-review-preparation.md:23"]
+    }
+  ],
+  "experimental_only": [
+    {"id":"X01","scope":"R1系统合同、端口/有序拓扑和跨投影依赖试验","entry":"后续独立实现切片，写明试验边界；旧源/门/黄金字节保持","exit":"无损迁移+语义负例+失效矩阵通过","not_enabled_by_this_audit":true},
+    {"id":"X02","scope":"R2现有圆柱多级闭环和真实案例补源","entry":"需求/载荷/布局来源齐全","exit":"功率/转矩对账及小有限域独立全枚举","not_enabled_by_this_audit":true},
+    {"id":"X03","scope":"R3蜗杆、行星及混合组合","entry":"逐族/逐用途受控解冻，原M40门保留","exit":"原完整校核/独立对标门与新系统合同门合取；未通过仅stage_A_screened","not_enabled_by_this_audit":true},
+    {"id":"X04","scope":"R4受限丝杆螺母分支","entry":"旋转丝杆+止转螺母的准静态同轴域及指定供应商参数","exit":"运动/损失/强度/支承限值分项检查；寿命缺项持续blocked","not_enabled_by_this_audit":true},
+    {"id":"X05","scope":"R5变位齿面/产形齿根、稳定CAD映射和全装配","entry":"独立几何参考、零件manifest和拓扑事件合同","exit":"语义ID/STEP重导入/全运动干涉/制造检查按G级别逐门通过","not_enabled_by_this_audit":true},
+    {"id":"X06","scope":"R6系统Pareto、显式情景和区间鲁棒候选","entry":"所需物理/布置域已资格，目录和不确定性边界有来源","exit":"有限oracle、一致限值与离散后重验；无分布不报概率","not_enabled_by_this_audit":true},
+    {"id":"X07","scope":"FE代理/LTCA/完整反馈耦合","entry":"原FE阶梯和目标用途资格通过、域与误差合同批准","exit":"独立物理对标+数值收敛+域外处理+最终候选复核","not_enabled_by_this_audit":true}
+  ],
+  "disabled_for_engineering_release": [
+    {"id":"D01","action":"把未支持蜗杆/行星/交错轴完整评级、丝杆寿命或任意混合系统输出标pass/工程可行","reason":"当前没有对应全链资格；M40冻结"},
+    {"id":"D02","action":"由Stage0筛选或已枚举点数量推出整机强度、空间、热、寿命和生产冻结","reason":"分层筛选与工程资格不同"},
+    {"id":"D03","action":"把有限前沿/三个情景或原始最小安全系数解释成全局最优/可靠度/归一化鲁棒裕量","reason":"当前声明域和统计意义不支持"},
+    {"id":"D04","action":"将recorded FE、收敛结果、单齿压力或未通过下级矩阵的结果作完整FE用途资格","reason":"原阶梯未完成，原有失败保留"},
+    {"id":"D05","action":"旧源/方法/几何/载荷变化后沿用未重验CAD、网格、FE、优化或报告，或以边面序号静默重绑","reason":"需来源依赖和拓扑事件重验"},
+    {"id":"D06","action":"代理自行升来源等级、伪填工程师金标/签字、凭preview_token或confirm给production release","reason":"当前工具的内容一致性机制不是独立工程身份认证"},
+    {"id":"D07","action":"为过线修改原门、删失败点、刷新旧黄金/期望答案或将合成材料当真实工程数据","reason":"破坏问题身份与独立参考"},
+    {"id":"D08","action":"用固定默认效率/摩擦/许用值/屈曲或转速边界系数、滚珠寿命公式替代滑动螺纹磨损，或默认承诺自锁","reason":"参数取决于结构、产品、材料、安装、温度、润滑和工况"},
+    {"id":"D09","action":"把现有圆包络审阅SVG、零件已打开或STEP可读称完整支持箱体/制造/生产装配","reason":"缺齿面/齿根/接口/支承/制造与运动证据"},
+    {"id":"D10","action":"外发私有标准数值、扫描件或商业原生文件而未按当前包权限边界处理","reason":"当前README与MANIFEST显式私有边界；此审计未改变授权"}
+  ],
+  "requires_human_signoff": [
+    {"id":"H01","decision":"需求/负载谱/寿命/保持及机械止挡旁路","reviewable_artifact":"完整需求ledger，名义/峰值/堵转/冲击/方向/持续时间/循环计数与未知项","independently_verified_by_software":false},
+    {"id":"H02","decision":"逐族受控解冻和适用范围","reviewable_artifact":"族、参数域、标准版次/方法、原M40门、新检查与退出/回退条件","independently_verified_by_software":false},
+    {"id":"H03","decision":"真实源与供应商数据替代假设","reviewable_artifact":"布局/材料/热处理/油品/电机曲线/轴承或丝杆目录原件、来源和适用域","independently_verified_by_software":false},
+    {"id":"H04","decision":"工程师真实金标和新增工程挑战oracle","reviewable_artifact":"40题逐题签署、身份与独立性核实；新真实case的原始输入/独立答案/容差/已知失败；模型不得代填","independently_verified_by_software":false},
+    {"id":"H05","decision":"工艺/装配/公差与制造放行","reviewable_artifact":"完整变位齿面与产形齿根、孔毂/键槽/配合/旋向/材料热处理/检验要求、独立工艺审阅与关闭账本","independently_verified_by_software":false},
+    {"id":"H06","decision":"FE物理模型/标准口径/资格与代理域","reviewable_artifact":"冻结输入、边界和场量定义、全失败矩阵、数值收敛与独立物理对比、准予用途及参数域","independently_verified_by_software":false},
+    {"id":"H07","decision":"来源确认和工程release角色授权","reviewable_artifact":"调用身份、权限矩阵、未确认原文定位、实际diff、失效结果、被采纳候选和签署记录","independently_verified_by_software":false},
+    {"id":"H08","decision":"生产冻结","reviewable_artifact":"供应商件、制造/装配/公差、样机效率/温升/耐久/保持与NVH结果、所有用途必要门和开放项处置","independently_verified_by_software":false}
+  ],
+  "revalidation_triggers": [
+    {"id":"T01","change":"增删/重排级、替换族、输入输出端口或固定构件","invalidate":["运动/功率/损失/力/寿命", "组件检查", "候选与优化", "布置/CAD/FE/报告"],"revalidate":"R1连接/自由度语义；R2独立功率与转矩对账；原族资格+R3混合合同；全部实际消费者"},
+    {"id":"T02","change":"输出需求、负载谱、方向、峰值持续时间/次数、行程、止挡或堵转路径","invalidate":["逐级工况", "电机/齿轮/轴/轴承/丝杆寿命与热", "FE载荷/结果", "鲁棒排序"],"revalidate":"每一类工况有独立身份与计数；能量/损失符号；传动内外旁路；适用域与所有受影响寿命检查"},
+    {"id":"T03","change":"齿数/模数/变位/齿宽/旋向/刀具/修形/间隙","invalidate":["几何/强度因子", "制造尺寸", "CAD拓扑映射/STEP/网格", "接触/FE/优化"],"revalidate":"同一L2公式求值；独立几何/产形齿根检查；split/merge面组映射；原FE/对标参考适用性"},
+    {"id":"T04","change":"轴/轴承/键/配合/螺母导向/箱体/紧固件/密封/线口/安装姿态","invalidate":["支承反力/挠度/刚度/寿命", "传扭/止转/保持", "全装配间隙矩阵", "热与FE边界"],"revalidate":"全载荷路径；组件/自由度manifest；各运动状态全组件布尔及连续扫掠；公差/热/装配预算；受影响评级反馈"},
+    {"id":"T05","change":"丝杆导程/螺距/头数/直径/根径/啮合长、旋转丝杆↔旋转螺母、支承/预拉伸","invalidate":["速度/扭矩/推力/效率", "螺纹接触/芯部应力", "全行程屈曲/临界转速", "摩擦/热/寿命/保持"],"revalidate":"R4模型域与结构分派；来源摩擦/扭矩映射；实际承压/弯曲长度和边界；旋转构件适用限制；所有线性分支结果"},
+    {"id":"T06","change":"材料/热处理/油品/摩擦/供应商件/额定C/C0/Ca/C0a/环境温度","invalidate":["许用值/磨损/疲劳/寿命/热/自锁或回驱", "组件选型与优化"],"revalidate":"原件身份和所选型号应用因子；产品/材料域；角点与耐久/保持证据；不能只替换文本来源"},
+    {"id":"T07","change":"标准版次/方法/选择器/量名定义或适用域","invalidate":["对应公式链和证据等级", "oracle可比性", "优化声明/报告", "商业/FE对比口径"],"revalidate":"逐量定义与独立参考对账；旧新方法并列，禁止用新口径偷偷改旧答案/阈值"},
+    {"id":"T08","change":"源码/内核数值后端/Python或依赖/CAD内核/求解器/读取器/网格器身份","invalidate":["所依赖的重放结果", "几何与数值工具资格", "优化缓存及发布回执"],"revalidate":"使用既有身份profile和依赖图；边界未证明时保守stale；重跑对应数值/几何/入库负例与必要原门，不以文档更新触发无关昂贵FE"},
+    {"id":"T09","change":"成本报价/批量/币种/日期/加工路线或采购可得性","invalidate":["成本目标", "可制造离散域", "Pareto与推荐短名单"],"revalidate":"新BOM/工艺与来源、域和有效期；不必自动重跑未受影响物理模型，但入选点仍需全部必要检查当前"},
+    {"id":"T10","change":"不确定性范围/情景/分布/相关性或置信声明","invalidate":["最差角点/情景覆盖/概率解释", "稳健候选与裕量排序"],"revalidate":"声明新域和分母，覆盖blocked与失败；有独立分布证据才允许概率声明；保留旧结果范围"},
+    {"id":"T11","change":"来源标签/审批角色/权限配置/需求语义或未应用字段","invalidate":["确认状态", "提交token", "release签署", "智能体语义评分"],"revalidate":"身份与角色独立于模型payload；直接call拒绝、CAS/补丁绑定；真实金标语义/追问/越权负例"},
+    {"id":"T12","change":"原始证据/案例/金标/oracle/测量量或容差身份","invalidate":["该证据派生结论", "证据等级", "回归及模型比较", "相关release"],"revalidate":"先审查来源变更原因和独立性，再建立新版本；不自动刷新黄金。旧版本及失败保留，新旧分开重放"}
+  ],
+  "revalidation_rule": "失效以可审查依赖为准；能够证明不受影响的工件可复用，否则标stale并在再次使用前重算。输入字节hash、规范参数hash、公式/模型hash和执行环境身份分别保存，不混用。",
+  "controlled_thaw_proposal": {
+    "now": "仅冻结可重放快照和边界；本分工不改核心、不签署任何已有门、不执行FE/商业软件/GUI",
+    "first_reviewable_unit": "R1合同/导入/失效与挑战manifest的只读原型",
+    "later": "R2现有圆柱线后，按用户价值推进R4线性分支或R3已获准族。M40族遵守原冻结/解冻决定；每个实现切片列用途、参数域、独立参考、门、冻结回归和退出条件，沿用既有推进授权，不新增研发审批。",
+    "original_gates_are_binding": true,
+    "roadmap_gates_are_additive_not_substitutes": true,
+    "approval_question_issued_in_this_audit": false
+  }
+}

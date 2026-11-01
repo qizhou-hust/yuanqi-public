@@ -1,0 +1,920 @@
+{
+  "schema": "gears.design-check-result/1",
+  "package_version": "0.20",
+  "design_id": "C001",
+  "design_sha256": "351ac66d784d53ee5e1cfe78fa7b3d17a9afe45fd56be3e05b4da1b88217c442",
+  "system_input_id": "C001",
+  "system_input_sha256": "38fc422d1c7d2b4954439e5016ded7e7458a4689ac79b94d28542f2ff52e9580",
+  "scope_requested": [
+    "gear_rating",
+    "manufacturing",
+    "scuffing",
+    "micropitting",
+    "shaft",
+    "bearing",
+    "key",
+    "fit",
+    "thermal"
+  ],
+  "disclaimer": "本结果是按所列标准公式与所给输入得到的计算结果，不等于工程验收：输入来源、方法选择、证据等级与未验证项须由工程师逐项复核；blocked 项表示缺输入或条文未确认，不是通过。",
+  "input_errors": [],
+  "computation": {
+    "status": "blocked",
+    "counts": {
+      "pass": 1,
+      "fail": 0,
+      "blocked": 7,
+      "not_in_scope": 1
+    },
+    "note": "计算结果：pass/fail 只就所给输入与所列标准公式而言；blocked = 缺输入或条文未确认"
+  },
+  "evidence_qualification": {
+    "item_level_distribution": {
+      "none": 5
+    },
+    "module_registry_distribution": {
+      "scuffing": {
+        "E5": 27,
+        "none": 9
+      },
+      "micropitting": {
+        "E5": 20,
+        "none": 3
+      },
+      "shaft": {
+        "E5": 20,
+        "none": 27
+      },
+      "bearing": {
+        "E5": 2,
+        "none": 13
+      },
+      "key": {
+        "E4": 2,
+        "E5": 4,
+        "none": 2
+      },
+      "fit": {
+        "E4": 4,
+        "E5": 6,
+        "none": 3
+      },
+      "thermal": {
+        "none": 25
+      }
+    },
+    "external_refs": [
+      {
+        "file": "data/kisssoft_v014/P1-TR30-ex7.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "gear_rating"
+      },
+      {
+        "file": "data/kisssoft_v014/P2-K01-opt.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "gear_rating"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K01-spur.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "gear_rating"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K02-helical.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "gear_rating"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K03-premachining.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "gear_rating"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K04-EV-stage1.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "gear_rating"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K05-EV-stage2.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "gear_rating"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K01-spur.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "scuffing"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K02-helical.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "scuffing"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K03-premachining.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "scuffing"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K04-EV-stage1.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "scuffing"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K05-EV-stage2.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "scuffing"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K01-spur.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "micropitting"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K02-helical.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "micropitting"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K03-premachining.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "micropitting"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K04-EV-stage1.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "micropitting"
+      },
+      {
+        "file": "data/kisssoft_v014/P3-K05-EV-stage2.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "micropitting"
+      },
+      {
+        "file": "data/kisssoft_v014/P4-shaft-static.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "shaft"
+      },
+      {
+        "file": "data/kisssoft_v014/P4-shaft-static.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "bearing"
+      },
+      {
+        "file": "data/kisssoft_v014/P4-key-vendor-example1.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "key"
+      },
+      {
+        "file": "data/kisssoft_v014/P4-fit-A1.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "fit"
+      },
+      {
+        "file": "data/kisssoft_v014/P4-fit-A2.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "fit"
+      },
+      {
+        "file": "data/kisssoft_v014/P4-fit-A3.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "fit"
+      },
+      {
+        "file": "data/kisssoft_v014/P4-fit-A4.json",
+        "relation": "method_only",
+        "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍",
+        "scope": "fit"
+      }
+    ],
+    "external_ref_files": [
+      "data/kisssoft_v014/P1-TR30-ex7.json",
+      "data/kisssoft_v014/P2-K01-opt.json",
+      "data/kisssoft_v014/P3-K01-spur.json",
+      "data/kisssoft_v014/P3-K02-helical.json",
+      "data/kisssoft_v014/P3-K03-premachining.json",
+      "data/kisssoft_v014/P3-K04-EV-stage1.json",
+      "data/kisssoft_v014/P3-K05-EV-stage2.json",
+      "data/kisssoft_v014/P4-fit-A1.json",
+      "data/kisssoft_v014/P4-fit-A2.json",
+      "data/kisssoft_v014/P4-fit-A3.json",
+      "data/kisssoft_v014/P4-fit-A4.json",
+      "data/kisssoft_v014/P4-key-vendor-example1.json",
+      "data/kisssoft_v014/P4-shaft-static.json"
+    ],
+    "unverified_items": [
+      {
+        "scope": "gear_rating",
+        "id": "gear_rating.pitting.pinion",
+        "status": "pass",
+        "evidence_level": "none"
+      },
+      {
+        "scope": "gear_rating",
+        "id": "gear_rating.pitting.wheel",
+        "status": "pass",
+        "evidence_level": "none"
+      },
+      {
+        "scope": "gear_rating",
+        "id": "gear_rating.bending.pinion",
+        "status": "pass",
+        "evidence_level": "none"
+      },
+      {
+        "scope": "gear_rating",
+        "id": "gear_rating.bending.wheel",
+        "status": "pass",
+        "evidence_level": "none"
+      },
+      {
+        "scope": "gear_rating",
+        "id": "gear_rating.geometry.contact_ratio",
+        "status": "pass",
+        "evidence_level": "none"
+      },
+      {
+        "scope": "shaft",
+        "id": "shaft.S0.齿轮安装处",
+        "status": "blocked",
+        "evidence_level": "none"
+      },
+      {
+        "scope": "bearing",
+        "id": "bearing.B_S0_0.L10h",
+        "status": "blocked",
+        "evidence_level": "none"
+      },
+      {
+        "scope": "bearing",
+        "id": "bearing.B_S0_1.L10h",
+        "status": "blocked",
+        "evidence_level": "none"
+      },
+      {
+        "scope": "key",
+        "id": "key.G1.pinion",
+        "status": "blocked",
+        "evidence_level": "none"
+      }
+    ],
+    "note": "证据资格与计算结果分开：等级只读各模块已有元数据（E5 = KISSsoft 同输入逐字段一致；none = 无外部算例/未评估），正式等级以 data/registry 评定为准；证据资格高也不等于工程验收"
+  },
+  "external_review_requests": [
+    {
+      "scope": "gear_rating",
+      "kisssoft_module": "KISSsoft 圆柱齿轮副 ISO 6336:2019（Z12）",
+      "items": [
+        "gear_rating.pitting.pinion",
+        "gear_rating.pitting.wheel",
+        "gear_rating.bending.pinion",
+        "gear_rating.bending.wheel",
+        "gear_rating.geometry.contact_ratio"
+      ],
+      "existing_same_design_refs": [],
+      "purpose": "本设计同输入外部复核（逐字段对齐输入后比较输出）；未经复核的条目证据等级不提升"
+    }
+  ],
+  "assumptions": [
+    {
+      "scope": "system_input",
+      "text": "fits: [] —— C001 无过盈连接",
+      "source": "data/m31/golden/C001/derived-candidate.json system_boundary.component_data.connections 仅 parallel_key；mounts 配合间隙 0（非过盈）"
+    },
+    {
+      "scope": "system_input",
+      "text": "轴 S0 支承与齿轮位置取 M31 system_boundary（project_assumption，非实测）",
+      "source": "data/m31/golden/C001/derived-candidate.json system_boundary.supports.S0、mounts.G1.pinion、machine_geometry.shaft_sections.S0；provenance.maturity=project_assumption"
+    },
+    {
+      "scope": "gear_rating",
+      "text": "方法选择器来自设计文档 selectors：{\"method.K_Halpha\": \"external\", \"method.K_Hbeta\": \"external\", \"method.K_V\": \"B\", \"method.f_pb\": \"fpt\", \"method.m_red\": \"eq30\", \"method.root_shift\": \"nominal\"}",
+      "source": "design_check 装配"
+    },
+    {
+      "scope": "shaft",
+      "text": "轴系后端：drivetrain_check.legacy_static（静定兼容路径）",
+      "source": "design_check 装配"
+    }
+  ],
+  "checks": {
+    "gear_rating": {
+      "scope": "gear_rating",
+      "status": "pass",
+      "module": "gearmath.gear.rating",
+      "items": [
+        {
+          "id": "gear_rating.pitting.pinion",
+          "quantity": "S_H_1",
+          "value": 1.1908148314637381,
+          "unit": "1",
+          "limit": 1.1,
+          "sense": ">=",
+          "margin": 1.0825589376943072,
+          "status": "pass",
+          "formula_ids": [
+            "pit.S_H.1"
+          ],
+          "evidence_level": "none",
+          "evidence_basis": "公式图依赖链最弱一环（data/registry 评估；unassessed 记为 none）",
+          "standard": "ISO 6336-2:2019",
+          "note": ""
+        },
+        {
+          "id": "gear_rating.pitting.wheel",
+          "quantity": "S_H_2",
+          "value": 1.2731583124598411,
+          "unit": "1",
+          "limit": 1.1,
+          "sense": ">=",
+          "margin": 1.1574166476907646,
+          "status": "pass",
+          "formula_ids": [
+            "pit.S_H.2"
+          ],
+          "evidence_level": "none",
+          "evidence_basis": "公式图依赖链最弱一环（data/registry 评估；unassessed 记为 none）",
+          "standard": "ISO 6336-2:2019",
+          "note": ""
+        },
+        {
+          "id": "gear_rating.bending.pinion",
+          "quantity": "S_F_1",
+          "value": 4.506426701957094,
+          "unit": "1",
+          "limit": 1.2,
+          "sense": ">=",
+          "margin": 3.755355584964245,
+          "status": "pass",
+          "formula_ids": [
+            "root.S_F.1"
+          ],
+          "evidence_level": "none",
+          "evidence_basis": "公式图依赖链最弱一环（data/registry 评估；unassessed 记为 none）",
+          "standard": "ISO 6336-3:2019",
+          "note": ""
+        },
+        {
+          "id": "gear_rating.bending.wheel",
+          "quantity": "S_F_2",
+          "value": 4.878200791412783,
+          "unit": "1",
+          "limit": 1.2,
+          "sense": ">=",
+          "margin": 4.06516732617732,
+          "status": "pass",
+          "formula_ids": [
+            "root.S_F.2"
+          ],
+          "evidence_level": "none",
+          "evidence_basis": "公式图依赖链最弱一环（data/registry 评估；unassessed 记为 none）",
+          "standard": "ISO 6336-3:2019",
+          "note": ""
+        },
+        {
+          "id": "gear_rating.geometry.contact_ratio",
+          "quantity": "eps_alpha",
+          "value": 1.6246424030581257,
+          "unit": "1",
+          "limit": 1.2,
+          "sense": ">=",
+          "margin": 1.3538686692151047,
+          "status": "pass",
+          "formula_ids": [
+            "geo.eps_alpha"
+          ],
+          "evidence_level": "none",
+          "evidence_basis": "公式图依赖链最弱一环（data/registry 评估；unassessed 记为 none）",
+          "standard": "ISO 21771:2007",
+          "note": ""
+        }
+      ],
+      "missing": [],
+      "unconfirmed": [],
+      "errors": [],
+      "assumptions": [
+        "方法选择器来自设计文档 selectors：{\"method.K_Halpha\": \"external\", \"method.K_Hbeta\": \"external\", \"method.K_V\": \"B\", \"method.f_pb\": \"fpt\", \"method.m_red\": \"eq30\", \"method.root_shift\": \"nominal\"}"
+      ],
+      "inputs_sources": {},
+      "external_refs": [
+        {
+          "file": "data/kisssoft_v014/P1-TR30-ex7.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P2-K01-opt.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K01-spur.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K02-helical.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K03-premachining.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K04-EV-stage1.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K05-EV-stage2.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        }
+      ],
+      "module_evidence_distribution": null,
+      "reason": ""
+    },
+    "manufacturing": {
+      "scope": "manufacturing",
+      "status": "blocked",
+      "module": "gearmath.gear.parameter_sheet",
+      "items": [],
+      "missing": [
+        "$.manufacturing.inputs.A_sn_e_1",
+        "$.manufacturing.inputs.A_sn_e_2",
+        "$.manufacturing.inputs.A_sn_i_1",
+        "$.manufacturing.inputs.A_sn_i_2"
+      ],
+      "unconfirmed": [],
+      "errors": [],
+      "assumptions": [],
+      "inputs_sources": {
+        "$.manufacturing.gears.1": "data/m31/golden/C001/derived-candidate.json stages[0].kind=spur（外啮合）",
+        "$.manufacturing.gears.2": "data/m31/golden/C001/derived-candidate.json stages[0].kind=spur（外啮合）",
+        "$.manufacturing.tip_diameter": "M31 案例无齿顶圆直径输入：按基本齿条齿顶高（design 文档 haP）",
+        "$.manufacturing.groups": "本轮只出 ISO 1328-1:2013 公差栏",
+        "$.manufacturing.inputs.A1328_1": "设计模型 Q_grade → 1；设计文档 Q_grade（data/m31/golden/C001/derived-candidate.json engineering.stages.G1.pinion.quality_grade=6；factor_recompute 注：即 ISO 1328-1:2013 口径）",
+        "$.manufacturing.inputs.A1328_2": "设计模型 Q_grade → 1；设计文档 Q_grade（data/m31/golden/C001/derived-candidate.json engineering.stages.G1.wheel.quality_grade=6）",
+        "$.manufacturing.inputs.b_1": "设计模型 b → mm；设计文档 b（data/m31/golden/C001/derived-candidate.json stages[0].face_width_mm，两轮同宽）",
+        "$.manufacturing.inputs.b_2": "设计模型 b → mm；设计文档 b（data/m31/golden/C001/derived-candidate.json stages[0].face_width_mm，两轮同宽）",
+        "$.manufacturing.inputs.haP_1": "设计模型 haP → 1；设计文档 haP（两轮同一刀具）",
+        "$.manufacturing.inputs.haP_2": "设计模型 haP → 1；设计文档 haP（两轮同一刀具）",
+        "$.manufacturing.inputs.hfP_1": "设计模型 hfP → 1；设计文档 hfP",
+        "$.manufacturing.inputs.hfP_2": "设计模型 hfP → 1；设计文档 hfP",
+        "$.manufacturing.inputs.rhofP_1": "设计模型 rhofP → 1；设计文档 rhofP",
+        "$.manufacturing.inputs.rhofP_2": "设计模型 rhofP → 1；设计文档 rhofP"
+      },
+      "external_refs": [],
+      "module_evidence_distribution": null,
+      "reason": ""
+    },
+    "scuffing": {
+      "scope": "scuffing",
+      "status": "blocked",
+      "module": "gearmath.gear.scuffing_integral",
+      "items": [],
+      "missing": [
+        "$.oil.eta_oil_route（'explicit' 或 'iso_ts_6336_22_rho15'）",
+        "$.oil.lubricant",
+        "$.oil.lubrication",
+        "$.oil.theta_oil",
+        "$.scuffing.C_a1",
+        "$.scuffing.C_a2",
+        "$.scuffing.Ra1",
+        "$.scuffing.Ra2",
+        "$.scuffing.c_v",
+        "$.scuffing.lambda_M",
+        "$.scuffing.material_XW",
+        "$.scuffing.phi_E",
+        "$.scuffing.same_material",
+        "$.scuffing.scuffing_test",
+        "eta_oil（系统层输入未给出）"
+      ],
+      "unconfirmed": [],
+      "errors": [],
+      "assumptions": [],
+      "inputs_sources": {
+        "$.scuffing.mesh_stiffness": "设计模型 c_s → N/(mm*um)；直齿取单对齿刚度 c′（-21 式(38)），设计模型 c_s",
+        "$.scuffing.tolerance_class": "设计模型 Q_grade → 1；设计文档 Q_grade（ISO 1328-1:2013 精度等级 6）",
+        "$.scuffing.driver": "data/m31/golden/C001/derived-candidate.json input_port S0 = G1.pinion 所在轴（driver_teeth 20）",
+        "$.scuffing.E": "设计模型 E → MPa；设计文档证据 E（M31 engineering.material）",
+        "$.scuffing.nu": "设计模型 nu → 1；设计文档证据 ν",
+        "$.scuffing.n_p": "data/m31/golden/C001/derived-candidate.json stages[0]：G1 小轮只与一个齿轮啮合",
+        "$.scuffing.X_alphabeta_method": "方法选择：-21 式(14) 方法 A（与 K01 外部对拍同口径）",
+        "$.scuffing.theta_M_method": "方法选择：-21 6.1.6.4 方法 C（与 K01 外部对拍同口径）",
+        "$.oil.nu_40": "data/m31/golden/C001/derived-candidate.json engineering.operating.lubricant_viscosity_40c_cSt（开放算例假设，非 C001 实测）",
+        "model:z1": "设计模型 z_1（1）",
+        "model:z2": "设计模型 z_2（1）",
+        "model:a": "设计模型 a_w（mm）",
+        "model:alpha_n": "设计模型 alpha_n（rad）",
+        "model:alpha_t": "设计模型 alpha_t（rad）",
+        "model:alpha_wt": "设计模型 alpha_wt（rad）",
+        "model:beta": "设计模型 beta（rad）",
+        "model:beta_b": "设计模型 beta_b（rad）",
+        "model:d_a1": "设计模型 da_1（mm）",
+        "model:d_a2": "设计模型 da_2（mm）",
+        "model:d_b1": "设计模型 db_1（mm）",
+        "model:d_b2": "设计模型 db_2（mm）",
+        "model:eps_beta": "设计模型 eps_beta（1）",
+        "model:b": "设计模型 b（mm）",
+        "model:F_t": "设计模型 F_t（N）",
+        "model:v": "设计模型 v（m/s）",
+        "model:K_A": "设计模型 K_A（1）",
+        "model:K_v": "设计模型 K_V（1）",
+        "model:K_Hbeta": "设计模型 K_Hbeta（1）",
+        "model:K_Halpha": "设计模型 K_Halpha（1）"
+      },
+      "external_refs": [
+        {
+          "file": "data/kisssoft_v014/P3-K01-spur.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K02-helical.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K03-premachining.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K04-EV-stage1.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K05-EV-stage2.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        }
+      ],
+      "module_evidence_distribution": {
+        "E5": 27,
+        "none": 9
+      },
+      "reason": ""
+    },
+    "micropitting": {
+      "scope": "micropitting",
+      "status": "blocked",
+      "module": "gearmath.gear.micropitting",
+      "items": [],
+      "missing": [
+        "$.micropitting.Ra1",
+        "$.micropitting.Ra2",
+        "$.micropitting.alpha_38_source",
+        "$.micropitting.density",
+        "$.micropitting.g_alpha",
+        "$.micropitting.lambda_GFP_source",
+        "$.micropitting.local",
+        "$.micropitting.oil_type",
+        "$.micropitting.p_et",
+        "$.micropitting.theta_M",
+        "$.oil.nu_100",
+        "lambda_GFT（系统层输入未给出）",
+        "material_WW（系统层输入未给出）"
+      ],
+      "unconfirmed": [],
+      "errors": [],
+      "assumptions": [],
+      "inputs_sources": {
+        "$.micropitting.d_w1": "设计模型 d_1 → mm；x1 + x2 = 0（设计文档）→ 工作节圆 = 分度圆",
+        "$.micropitting.d_w2": "设计模型 d_2 → mm；x1 + x2 = 0 → d_w2 = d_2",
+        "$.micropitting.E1": "设计模型 E → MPa；设计文档证据 E",
+        "$.micropitting.E2": "设计模型 E → MPa；设计文档证据 E",
+        "$.micropitting.nu1": "设计模型 nu → 1；设计文档证据 ν",
+        "$.micropitting.nu2": "设计模型 nu → 1；设计文档证据 ν",
+        "$.oil.nu_40": "data/m31/golden/C001/derived-candidate.json engineering.operating.lubricant_viscosity_40c_cSt（开放算例假设，非 C001 实测）",
+        "model:u": "设计模型 u（1）",
+        "model:d_a1": "设计模型 da_1（mm）",
+        "model:d_a2": "设计模型 da_2（mm）",
+        "model:d_b1": "设计模型 db_1（mm）",
+        "model:d_b2": "设计模型 db_2（mm）",
+        "model:alpha_wt": "设计模型 alpha_wt（rad）",
+        "model:beta_b": "设计模型 beta_b（rad）",
+        "model:n1": "设计模型 n_1（rpm）"
+      },
+      "external_refs": [
+        {
+          "file": "data/kisssoft_v014/P3-K01-spur.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K02-helical.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K03-premachining.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K04-EV-stage1.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P3-K05-EV-stage2.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        }
+      ],
+      "module_evidence_distribution": {
+        "E5": 20,
+        "none": 3
+      },
+      "reason": ""
+    },
+    "shaft": {
+      "scope": "shaft",
+      "status": "blocked",
+      "module": "gearmath.system.drivetrain_check",
+      "items": [
+        {
+          "id": "shaft.S0.齿轮安装处",
+          "quantity": "S",
+          "value": null,
+          "unit": "1",
+          "limit": null,
+          "sense": ">=",
+          "margin": null,
+          "status": "blocked",
+          "formula_ids": [],
+          "evidence_level": "none",
+          "evidence_basis": "",
+          "standard": "DIN 743:2012",
+          "note": "截面输入缺项或轴系未求解"
+        }
+      ],
+      "missing": [
+        "$.shafts[0].loads[1].x",
+        "$.shafts[0].sections[0].static.S_min",
+        "$.shafts[0].sections[0].static.sigma_bFK",
+        "$.shafts[0].sections[0].static.sigma_zdFK",
+        "$.shafts[0].sections[0].static.tau_tFK"
+      ],
+      "unconfirmed": [],
+      "errors": [],
+      "assumptions": [
+        "轴系后端：drivetrain_check.legacy_static（静定兼容路径）"
+      ],
+      "inputs_sources": {
+        "$.shafts[0].x_A": "data/m31/golden/C001/derived-candidate.json system_boundary.supports.S0[0].axial_mm（B_S0_0，locating）",
+        "$.shafts[0].x_B": "data/m31/golden/C001/derived-candidate.json system_boundary.supports.S0[1].axial_mm（B_S0_1，floating）",
+        "$.shafts[0].axial_support": "data/m31/golden/C001/derived-candidate.json supports.S0[0].axial_role=locating",
+        "$.shafts[0].segments[0].x0": "data/m31/golden/C001/derived-candidate.json machine_geometry.shaft_sections.S0[0].z_min_mm",
+        "$.shafts[0].segments[0].x1": "data/m31/golden/C001/derived-candidate.json machine_geometry.shaft_sections.S0[0].z_max_mm",
+        "$.shafts[0].segments[0].d": "data/m31/golden/C001/derived-candidate.json machine_geometry.shaft_sections.S0[0].diameter_mm",
+        "$.shafts[0].segments[0].d_i": "M31 shaft_sections 只有 diameter_mm 字段（实心轴）",
+        "$.shafts[0].loads[0].x": "data/m31/golden/C001/derived-candidate.json mounts.G1.pinion.axial_center_mm",
+        "$.shafts[0].loads[0].F_tw": "设计模型 F_t → N；x1 + x2 = 0 → 工作节圆 = 分度圆，F_tw = F_t（设计模型 load.F_t）",
+        "$.shafts[0].loads[0].d_w": "设计模型 d_1 → mm；x1 + x2 = 0 → d_w1 = d_1",
+        "$.shafts[0].loads[0].alpha_wt_deg": "设计模型 alpha_wt → deg；设计模型 α_wt",
+        "$.shafts[0].loads[0].beta_w_deg": "设计模型 beta → deg；直齿 β = 0",
+        "$.shafts[0].loads[0].theta_deg": "data/m31/golden/C001/derived-candidate.json mesh_force_frames.G1 radial=[1,0,0]；轴承径向合力与合成弯矩与该方位无关",
+        "$.shafts[0].loads[0].tangential_sign": "小轮主动（与 tests/test_m36_shaft_line.py 同号约定）",
+        "$.shafts[0].loads[0].axial_sign": "直齿无轴向力，符号不影响结果",
+        "$.shafts[0].loads[1].T": "设计模型 T_1 → N*mm；设计模型 T_1（M31 input.torque_Nm=25）",
+        "$.shafts[0].sections[0].x": "data/m31/golden/C001/derived-candidate.json mounts.G1.pinion.axial_center_mm",
+        "$.shafts[0].sections[0].stress_state": "旋转轴、载荷方向固定（shaft_line 唯一已接入应力状态）",
+        "$.shafts[0].sections[0].checks": "材料疲劳数据缺失：仅请求静强度",
+        "$.shafts[0].sections[0].fatigue": "显式声明 not_requested：未请求疲劳",
+        "$.shafts[0].sections[0].static.load_factor": "设计模型 K_A → 1；峰值/名义 = K_A（M31 operating.application_factor 1,25）"
+      },
+      "external_refs": [
+        {
+          "file": "data/kisssoft_v014/P4-shaft-static.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        }
+      ],
+      "module_evidence_distribution": {
+        "E5": 20,
+        "none": 27
+      },
+      "reason": ""
+    },
+    "bearing": {
+      "scope": "bearing",
+      "status": "blocked",
+      "module": "gearmath.system.drivetrain_check",
+      "items": [
+        {
+          "id": "bearing.B_S0_0.L10h",
+          "quantity": "L10h",
+          "value": null,
+          "unit": "h",
+          "limit": null,
+          "sense": ">=",
+          "margin": null,
+          "status": "blocked",
+          "formula_ids": [],
+          "evidence_level": "none",
+          "evidence_basis": "",
+          "standard": "ISO 281:2007",
+          "note": ""
+        },
+        {
+          "id": "bearing.B_S0_1.L10h",
+          "quantity": "L10h",
+          "value": null,
+          "unit": "h",
+          "limit": null,
+          "sense": ">=",
+          "margin": null,
+          "status": "blocked",
+          "formula_ids": [],
+          "evidence_level": "none",
+          "evidence_basis": "",
+          "standard": "ISO 281:2007",
+          "note": ""
+        }
+      ],
+      "missing": [
+        "B_S0_0：轴 S0 未求解（支反力不可得，见 shaft 子检查缺项）",
+        "B_S0_1：轴 S0 未求解（支反力不可得，见 shaft 子检查缺项）"
+      ],
+      "unconfirmed": [],
+      "errors": [],
+      "assumptions": [],
+      "inputs_sources": {
+        "$.bearings.B_S0_0.bearing_kind": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）",
+        "$.bearings.B_S0_0.C_r": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.dynamic_rating_N（SKF 产品页人工转录）",
+        "$.bearings.B_S0_0.C_0r": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）",
+        "$.bearings.B_S0_0.xy": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷",
+        "$.bearings.B_S0_0.n": "设计模型 n_1 → rpm；设计模型 n_1（M31 input.speed_rpm 900）",
+        "$.bearings.B_S0_0.reliability_percent": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）",
+        "$.bearings.B_S0_0.a_ISO_inputs": "显式声明 not_requested：M31 只做 basic L10；κ、ec、Cu 未给",
+        "$.bearings.B_S0_0.required_life_h": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h",
+        "$.bearings.B_S0_1.bearing_kind": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）",
+        "$.bearings.B_S0_1.C_r": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.dynamic_rating_N（SKF 产品页人工转录）",
+        "$.bearings.B_S0_1.C_0r": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）",
+        "$.bearings.B_S0_1.xy": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷",
+        "$.bearings.B_S0_1.n": "设计模型 n_1 → rpm；设计模型 n_1（M31 input.speed_rpm 900）",
+        "$.bearings.B_S0_1.reliability_percent": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）",
+        "$.bearings.B_S0_1.a_ISO_inputs": "显式声明 not_requested：M31 只做 basic L10；κ、ec、Cu 未给",
+        "$.bearings.B_S0_1.required_life_h": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h"
+      },
+      "external_refs": [
+        {
+          "file": "data/kisssoft_v014/P4-shaft-static.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        }
+      ],
+      "module_evidence_distribution": {
+        "E5": 2,
+        "none": 13
+      },
+      "reason": ""
+    },
+    "key": {
+      "scope": "key",
+      "status": "blocked",
+      "module": "gearmath.system.din6892",
+      "items": [
+        {
+          "id": "key.G1.pinion",
+          "quantity": "",
+          "value": null,
+          "unit": "",
+          "limit": null,
+          "sense": null,
+          "margin": null,
+          "status": "blocked",
+          "formula_ids": [],
+          "evidence_level": "none",
+          "evidence_basis": "",
+          "standard": "",
+          "note": "输入缺项"
+        }
+      ],
+      "missing": [
+        "$.keys[0].Re_hub",
+        "$.keys[0].Re_key",
+        "$.keys[0].Re_shaft",
+        "$.keys[0].Rm_hub",
+        "$.keys[0].hub_brittle",
+        "$.keys[0].l_tr",
+        "$.keys[0].torque_reversal"
+      ],
+      "unconfirmed": [],
+      "errors": [],
+      "assumptions": [],
+      "inputs_sources": {
+        "$.keys[0].method": "DIN 6892 方法 C（本库已接入）",
+        "$.keys[0].d": "data/m31/golden/C001/derived-candidate.json mounts.G1.pinion.bore_diameter_mm",
+        "$.keys[0].h": "DIN 6885-1 表1 按 d 查（M31 键 6×6 为 synthetic，不采用）",
+        "$.keys[0].t1": "DIN 6885-1 表1 按 d 查",
+        "$.keys[0].i": "data/m31/golden/C001/derived-candidate.json connections.G1.pinion 单键",
+        "$.keys[0].K_A": "设计模型 K_A → 1；设计模型 K_A（M31 application_factor 1,25）",
+        "$.keys[0].M_tnenn": "设计模型 T_1 → N*mm；设计模型 T_1",
+        "$.keys[0].M_tmax": "显式声明 not_requested：峰值扭矩未给",
+        "$.keys[0].f_L": "显式声明 not_requested：不做峰值核算",
+        "$.keys[0].M_tRmin": "显式声明 not_requested：不做峰值核算"
+      },
+      "external_refs": [
+        {
+          "file": "data/kisssoft_v014/P4-key-vendor-example1.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        }
+      ],
+      "module_evidence_distribution": {
+        "E4": 2,
+        "E5": 4,
+        "none": 2
+      },
+      "reason": ""
+    },
+    "fit": {
+      "scope": "fit",
+      "status": "not_in_scope",
+      "module": "gearmath.system.din7190",
+      "items": [],
+      "missing": [],
+      "unconfirmed": [],
+      "errors": [],
+      "assumptions": [],
+      "inputs_sources": {},
+      "external_refs": [
+        {
+          "file": "data/kisssoft_v014/P4-fit-A1.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P4-fit-A2.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P4-fit-A3.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        },
+        {
+          "file": "data/kisssoft_v014/P4-fit-A4.json",
+          "relation": "method_only",
+          "note": "同方法的其它算例：只说明方法级外部一致，不构成本设计的对拍"
+        }
+      ],
+      "module_evidence_distribution": {
+        "E4": 4,
+        "E5": 6,
+        "none": 3
+      },
+      "reason": "系统层输入显式声明本设计无此类部件（fits: []）"
+    },
+    "thermal": {
+      "scope": "thermal",
+      "status": "blocked",
+      "module": "gearmath.system.thermal_14179",
+      "items": [],
+      "missing": [
+        "$.thermal.P_A",
+        "$.thermal.P_L",
+        "$.thermal.P_N",
+        "$.thermal.P_Q（或 A_c、k、delta_T）"
+      ],
+      "unconfirmed": [],
+      "errors": [],
+      "assumptions": [],
+      "inputs_sources": {},
+      "external_refs": [],
+      "module_evidence_distribution": {
+        "none": 25
+      },
+      "reason": ""
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "gearbase.v020-delivery-verified/1",
+  "verified_utc": "2026-11-01T10:53:35.753755+00:00",
+  "passed": true,
+  "functional_ci_commit": "3b27cdfd6c371616384258a5fcd09eeac4de90bc",
+  "ci_run_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41298492209",
+  "hosted_jobs_passed": 4,
+  "source_publication_commit": "3346168e2c30e8d8c8dbfccedfc72fe6d95e0838",
+  "anonymous_zip_same_name_sha256_and_base64_verified": true,
+  "source_files_anonymous_byte_check": [
+    "fea_ingest.py",
+    "m33_geometry_replay.py",
+    "m35_packet.py",
+    "bench_gold.py"
+  ],
+  "packages": {
+    "full": {
+      "filename": "gearbase-v0.20.zip",
+      "sha256": "e5272ec371b0a4811c9efef9767326ddfaba7ba8458c99fadf74ea98357081ae",
+      "bytes": 164946051,
+      "manifest_files": 3494
+    },
+    "public": {
+      "filename": "gearbase-v0.20-public-evidence.zip",
+      "sha256": "4b479568bfca70b4cd79f7f2f99d2f68446e34ad8bfaebe602d15536d7a1b107",
+      "bytes": 97213627,
+      "manifest_files": 874
+    }
+  },
+  "release_url": "https://github.com/qizhou-hust/yuanqi-public/releases/tag/gearbase-v020-2026-11-01",
+  "public_zip_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/gearbase-v020-2026-11-01/gearbase-v0.20-public-evidence.zip",
+  "original_81_files_unchanged": true,
+  "original_kernel_python_files_unchanged": 18,
+  "executable_freeze_files_unchanged": 266,
+  "post_CI_only_docs_outputs_checksums_changed": true,
+  "local_git_clean": true,
+  "private_main_unchanged": true,
+  "M33": {
+    "done": 3,
+    "total": 4,
+    "new_closure_scope": "user-identified example7/8 geometry numerical rows8/8 <=1%",
+    "full_E4": false,
+    "original_2of6_reconstructed": false
+  },
+  "M37": {
+    "done": 0,
+    "total": 4,
+    "canonical_L2_jobs": 42,
+    "L2_points_passed": 9,
+    "L2_points_total": 14,
+    "L2_own_result": "failed",
+    "qualification_granted": false,
+    "L3": "derived_spur_three_mesh_only"
+  },
+  "new_whole_milestone_closed": false,
+  "new_KISSsoft_run": false,
+  "Claude_client": "deferred_by_user",
+  "M40": "frozen",
+  "public_private_split": "Public includes actual FE raw ZIP plus current code/evidence; excludes standards scans/private numerical corpus/native commercial files/binaries. Full local ZIP includes historical commercial reference originals. No complete private regression reproduction is claimed for the public subset."
+}

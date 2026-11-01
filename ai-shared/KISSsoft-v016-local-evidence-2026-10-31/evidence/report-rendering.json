@@ -1,0 +1,136 @@
+[
+  {
+    "case": "OPT3-1-K04",
+    "pages": 13,
+    "chars": 30991,
+    "pdf_sha256": "2af97acf00964f2810a86dfee80ff80c326e1a7d453ab0226b652d0e572b46ee",
+    "source": "OPT3-1-K04.rtf",
+    "source_sha256": "bad70e789f21e01129f99c1d4cae96e5df3f611de2758f2bac2c444f26469ec4",
+    "rendering_copy_sha256": "0bf06ac74656722840ea2a7cda46314015a0329f875441212ef946ce2b983487",
+    "removed_literal_HTML_cell_tokens": 10,
+    "operation": "Only remove leaked <TD CENTER> tokens in rendering copy; original RTF and numeric content unchanged",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "OPT3-2-K01",
+    "pages": 14,
+    "chars": 34207,
+    "pdf_sha256": "773cc87f3478422a23c0d93dc7ba4c9e56ce03568c771df739a09ea8edbe1b67",
+    "source": "OPT3-2-K01.rtf",
+    "source_sha256": "1ede78633967f450ecde76d5e56db2deb713bcf37e5323255b7377f916c95b11",
+    "rendering_copy_sha256": "8551a3af89eb3a76e3af551d1461a998d0f9eb66534bb2c0a26689eeeb282422",
+    "removed_literal_HTML_cell_tokens": 10,
+    "operation": "Only remove leaked <TD CENTER> tokens in rendering copy; original RTF and numeric content unchanged",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "OPT3-3-K02",
+    "pages": 14,
+    "chars": 32992,
+    "pdf_sha256": "3ae6a582a871cdf9eabf4c67e3c0f6448603cf3e2a5fa202ea97fbfb54e85cbb",
+    "source": "OPT3-3-K02.rtf",
+    "source_sha256": "de77d95fda437dfc53137066626167723134512cdcf282cc638c2dc1b7048f42",
+    "rendering_copy_sha256": "b2ad11569b6b556f7ae267980c0b898cdf9a931b0712b5d70a0d6107b7d9945a",
+    "removed_literal_HTML_cell_tokens": 10,
+    "operation": "Only remove leaked <TD CENTER> tokens in rendering copy; original RTF and numeric content unchanged",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "R4-D1-D2-270-stepped-hub",
+    "pages": 3,
+    "chars": 4987,
+    "pdf_sha256": "67cfbdb9a892d2da8549f9b94b6abb25089564160fe2444baf5077c9595c8ee7",
+    "source": "R4-D1-D2-270-stepped-hub.rtf",
+    "source_sha256": "8d5773162577f8a4c902252e973ef708d4ff6f76a94c62cb2b0b757fde954755",
+    "rendering_copy_sha256": "8d5773162577f8a4c902252e973ef708d4ff6f76a94c62cb2b0b757fde954755",
+    "removed_literal_HTML_cell_tokens": 0,
+    "operation": "Only remove leaked <TD CENTER> tokens in rendering copy; original RTF and numeric content unchanged",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "M39-K04-Cf0-profile-amplitude",
+    "pages": 13,
+    "chars": 30624,
+    "pdf_sha256": "af04cbe189faea5446205071aed82ed8793ba099c8d11f7a63932246096f5d8f",
+    "source": "M39-K04-Cf0-profile-amplitude.rtf",
+    "source_sha256": "5d231e441ea51d575eb0db855b55a98e80e05966580a450fd4fca430606a13f3",
+    "rendering_copy_sha256": "50f0756b7a5b15f36a1bf295ca6f8bad3d162f8014720a329c4dde7aeb30ef34",
+    "removed_literal_HTML_cell_tokens": 7,
+    "operation": "Only remove leaked <TD CENTER> tokens in rendering copy; original RTF and numeric content unchanged",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "M39-K01-reference-query",
+    "pages": 14,
+    "chars": 34087,
+    "pdf_sha256": "118347967a24f18206a4e780673e51f5370388f6a6598866223cbb94b9f9fb63",
+    "source": "M39-K01-reference-query.rtf",
+    "source_sha256": "f150b0831df448b8f878d33d9f51ee82d3f43603e0b51978ab02c6e225383e98",
+    "rendering_copy_sha256": "b2b385a1787e6b4d77eca3fa1e01b3e5290fabb7db39c076c41d84ebd1b53fc1",
+    "removed_literal_HTML_cell_tokens": 7,
+    "operation": "Only remove leaked <TD CENTER> tokens in rendering copy; original RTF and numeric content unchanged",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "R6-keyway-S3-DIN6885",
+    "pages": 4,
+    "chars": 12030,
+    "pdf_sha256": "e92e0614c5431e00df9abb9b9f0bc83635c2563371f87e39e0a70a6ec504dcb3",
+    "source": "R6-keyway-S3-DIN6885.pprpt",
+    "source_sha256": "8359cd4117365c2aebfebe0085563786dc9d5886cd0bfc060e584e6b38990d5d",
+    "format": "Readable text rendering of unchanged native PPRPT; embedded graphics omitted",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "R6-loadcase2-S2",
+    "pages": 4,
+    "chars": 11477,
+    "pdf_sha256": "0879e82e6a7779c928064954d6c5e5504af6f50186ade46c1aa86470e5c4966c",
+    "source": "R6-loadcase2-S2.pprpt",
+    "source_sha256": "6cebff007957a2650d59101adfbac64e499a0fa5c7295ff302771182fd71089f",
+    "format": "Readable text rendering of unchanged native PPRPT; embedded graphics omitted",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "R6-hollow10-S2-enabled",
+    "pages": 4,
+    "chars": 11482,
+    "pdf_sha256": "47d1c512522f00fb9db52390e8806563df01340c28651f2c304eb5f57b87cca1",
+    "source": "R6-hollow10-S2-enabled.pprpt",
+    "source_sha256": "30619eb90cef4911fc90bab61a11774678ee00acb7042cb7089ca0d810b952f9",
+    "format": "Readable text rendering of unchanged native PPRPT; embedded graphics omitted",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "R7-bearing-Fa300",
+    "pages": 2,
+    "chars": 3245,
+    "pdf_sha256": "9ba918473fe7f763fbcbe2b6944234191a66515cd39440ab1233df88fbfd5b88",
+    "source": "R7-bearing-Fa300.pprpt",
+    "source_sha256": "d1129c50fc7d7440815f2da0a0fae97c8252d1904d13809f643db09720cdf62e",
+    "format": "Readable text rendering of unchanged native PPRPT; embedded graphics omitted",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "R1prime-gear80-coupling1",
+    "pages": 4,
+    "chars": 11486,
+    "pdf_sha256": "7735def7885b2f7fb1852d2097fa8f4912c5d23257765510257ad46da7ae7aa4",
+    "source": "R1prime-gear80-coupling1.pprpt",
+    "source_sha256": "6444824cbef57a8cff75d6a53fa21a9bae71318eb8c2702014af5cd1810d1455",
+    "format": "Readable text rendering of unchanged native PPRPT; embedded graphics omitted",
+    "is_vendor_native_pdf": false
+  },
+  {
+    "case": "OPT3-1-K04-KHb-method-C-sensitivity",
+    "pages": 13,
+    "chars": 31823,
+    "pdf_sha256": "08ab993bf3b69e331ae86644cdbd5402fcfd397f0f0daa3b019ebd8c5f18d8a1",
+    "source": "OPT3-1-K04-KHb-method-C-sensitivity.rtf",
+    "source_sha256": "b331c0db0e38062b53b91f3c639dc34f3fad8e58dfd8be1ec917935efe6b3755",
+    "rendering_copy_sha256": "d7f186a2a248c461c23aa19e2bedcf67022aefca373b56036ee5f6bda3a48644",
+    "removed_literal_HTML_cell_tokens": 7,
+    "operation": "Only remove leaked <TD CENTER> tokens in rendering copy; original RTF and numeric content unchanged",
+    "is_vendor_native_pdf": false
+  }
+]

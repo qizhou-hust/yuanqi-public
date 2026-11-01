@@ -1,0 +1,10 @@
+{
+  "client": "Claude Code 2.1.304",
+  "real_MCP_connection": "verified connected",
+  "business_tool_use_count": 0,
+  "business_tool_result_count": 0,
+  "model_response_status": 403,
+  "reason": "account quota unavailable",
+  "milestone_gate": "not closed; model calls required for the three business-tool checks did not occur",
+  "private_client_trace": "Retained in the local complete delivery; not published"
+}

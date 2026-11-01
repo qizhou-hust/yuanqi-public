@@ -1,0 +1,23 @@
+{
+  "canonical": [
+    "OPT3-1-K04",
+    "OPT3-2-K01",
+    "OPT3-3-K02",
+    "R4-D1-D2-270-stepped-hub",
+    "M39-K04-Cf0-profile-amplitude",
+    "M39-K01-reference-query",
+    "R6-keyway-S3-DIN6885",
+    "R6-loadcase2-S2",
+    "R6-hollow10-S2-enabled",
+    "R7-bearing-Fa300",
+    "R1prime-gear80-coupling1"
+  ],
+  "conditional_sensitivity": [
+    "OPT3-1-K04-KHb-method-C-sensitivity"
+  ],
+  "excluded_diagnostics": [
+    "M39-K04-Cf-zero",
+    "M39-K04-Cf0-native-profile",
+    "R6-hollow10-S2-section"
+  ]
+}

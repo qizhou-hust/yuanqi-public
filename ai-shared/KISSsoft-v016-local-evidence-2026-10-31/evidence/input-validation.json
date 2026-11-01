@@ -1,0 +1,9 @@
+{
+  "expected_sha256": "0ba35fc5d8db4d09a9d804af1b073e12bb7bda1c157caa2589142a0ccc0f764a",
+  "direct_zip_sha256": "db891470225e857a551b0b214ebd0785b499db92a1ee98c6eaa51d9d87940523",
+  "selected": "base64_decoded",
+  "zip_crc_ok": true,
+  "sha256_match": true,
+  "entries": 17,
+  "root": "D:\\my_Works\\Gears\\received-stage-packages-2026-10-31\\v016"
+}

@@ -1,0 +1,43 @@
+test_case_formulas_do_not_inherit_library_level (test_registry.TestAssessments.test_case_formulas_do_not_inherit_library_level)
+案例适配器改写的同 id 公式在该案例里不继承库级等级。 ... ok
+test_consistency_checker_catches_drift (test_registry.TestAssessments.test_consistency_checker_catches_drift) ... ok
+test_cross_file_consistency (test_registry.TestAssessments.test_cross_file_consistency) ... ok
+test_every_vector_replays_from_its_record (test_registry.TestAssessments.test_every_vector_replays_from_its_record)
+每条测试向量只凭记录里的公式（expr/unit/domain/版次）即可复现期望值，库级与案例级都核对。 ... ok
+test_files_match_code_and_rules (test_registry.TestAssessments.test_files_match_code_and_rules)
+防漂移：评定、案例级注册表、库级注册表都由代码/规则重新生成并逐字节核对 ... ok
+test_levels_follow_the_benchmark_rules (test_registry.TestAssessments.test_levels_follow_the_benchmark_rules) ... ok
+test_source_check_rule (test_registry.TestAssessments.test_source_check_rule) ... ok
+test_c001 (test_registry.TestEvidenceOnRealModels.test_c001) ... ok
+test_tr30_example1 (test_registry.TestEvidenceOnRealModels.test_tr30_example1) ... ok
+test_every_library_formula_is_registered (test_registry.TestExport.test_every_library_formula_is_registered)
+pair_model 特化出的每条公式（C001 基线，及显式系数方法组）都在注册表里且内容相同。 ... ok
+test_evidence_levels_from_registry (test_registry.TestExport.test_evidence_levels_from_registry) ... ok
+test_export_is_deterministic_and_valid (test_registry.TestExport.test_export_is_deterministic_and_valid) ... ok
+test_fields_not_invented (test_registry.TestExport.test_fields_not_invented)
+评定数据是规则产物：没有通过的对拍行用到的公式等级为 null；source_check 只来自公式文本里的明确措辞； ... ok
+test_file_matches_code (test_registry.TestExport.test_file_matches_code)
+防漂移：data/registry/formulas-v1.json 必须与代码里的公式对象一致（改公式后运行 ... ok
+test_all_strong_has_no_weakeners (test_registry.TestPropagation.test_all_strong_has_no_weakeners) ... ok
+test_bad_level_rejected (test_registry.TestPropagation.test_bad_level_rejected) ... ok
+test_blocked_has_no_evidence (test_registry.TestPropagation.test_blocked_has_no_evidence) ... ok
+test_does_not_change_numbers_or_status (test_registry.TestPropagation.test_does_not_change_numbers_or_status) ... ok
+test_fixed_point_formula (test_registry.TestPropagation.test_fixed_point_formula) ... ok
+test_input_provenance_caps (test_registry.TestPropagation.test_input_provenance_caps) ... ok
+test_ties_list_every_binding_link (test_registry.TestPropagation.test_ties_list_every_binding_link) ... ok
+test_unassessed_is_weaker_than_e0 (test_registry.TestPropagation.test_unassessed_is_weaker_than_e0) ... ok
+test_weakest_link (test_registry.TestPropagation.test_weakest_link) ... ok
+test_c001_chain (test_registry.TestRealModel.test_c001_chain) ... ok
+test_explain_tool_carries_evidence (test_registry.TestRealModel.test_explain_tool_carries_evidence) ... ok
+test_registry_level_rules (test_registry.TestSchema.test_registry_level_rules) ... ok
+test_rejections (test_registry.TestSchema.test_rejections) ... ok
+test_valid_entry (test_registry.TestSchema.test_valid_entry) ... ok
+test_e3_plus_needs_sourced_vector (test_registry.TestVectorSchema.test_e3_plus_needs_sourced_vector)
+E3 及以上必须有带 source 的测试向量；E2 及以下不要求。 ... ok
+test_extended_vector_fields (test_registry.TestVectorSchema.test_extended_vector_fields) ... ok
+test_replay_detects_wrong_vector (test_registry.TestVectorSchema.test_replay_detects_wrong_vector) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 6.160s
+
+OK

@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-31",
+  "version": "KISSsoft Release 2026 / executable 26.0.0.0",
+  "execution": "Headless COM; no mouse or keyboard operations",
+  "overall": "All requested calculation branches attempted; missing K01 direct reference fields remain open; no whole milestone declared closed",
+  "OPT3": {
+    "OPT3-1-K04": {
+      "ZPP[0].Flanke.SH": "1.0014034180008197783",
+      "ZPP[1].Flanke.SH": "1.0270421108470026983",
+      "ZPP[0].Fuss.SFnorm": "1.8021953662288379139",
+      "ZPP[1].Fuss.SFnorm": "1.4042358204527227716",
+      "ZP[0].Eps.a": "2.0014612087720422551",
+      "ZR[0].kXmn": "0",
+      "ZR[1].kXmn": "0",
+      "ZR[1].di": "138.10099999999999909",
+      "ZP[0].KHb": "1.2874948181504524136",
+      "Zst.KHbVariant": "1",
+      "ZP[0].KV.KV": "1.0731466960638600394"
+    },
+    "OPT3-2-K01": {
+      "ZPP[0].Flanke.SH": "1.0005715349929460434",
+      "ZPP[1].Flanke.SH": "1.0344005316039850406",
+      "ZPP[0].Fuss.SFnorm": "1.511914727784082535",
+      "ZPP[1].Fuss.SFnorm": "1.4016852903715295575",
+      "ZP[0].Eps.a": "1.577545714804131638",
+      "ZR[0].kXmn": "-0.020000000000000000416",
+      "ZR[1].kXmn": "-0.020000000000000000416",
+      "ZR[1].di": "329.4959999999999809",
+      "ZP[0].KHb": "1.0328633561500988325",
+      "Zst.KHbVariant": "0",
+      "ZP[0].KV.KV": "1.0187097783332037526"
+    },
+    "OPT3-3-K02": {
+      "ZPP[0].Flanke.SH": "1.1603730156543814456",
+      "ZPP[1].Flanke.SH": "0.95019728997213970256",
+      "ZPP[0].Fuss.SFnorm": "5.7612818620406445191",
+      "ZPP[1].Fuss.SFnorm": "4.5809316621960869398",
+      "ZP[0].Eps.a": "1.569173901216683209",
+      "ZR[0].kXmn": "-0.014999999999999999445",
+      "ZR[1].kXmn": "-0.014999999999999999445",
+      "ZR[1].di": "182.93899999999999295",
+      "ZP[0].KHb": "1.4576167781016147185",
+      "Zst.KHbVariant": "0",
+      "ZP[0].KV.KV": "1.1310136390624792035"
+    }
+  },
+  "K04_Cf0": {
+    "ZR[0].Cf": "0",
+    "ZR[1].Cf": "0",
+    "ZPP[0].Ceq": "13.499999999964984454",
+    "ZPP[1].Ceq": "14.700000000004820322",
+    "ZP[0].Ceff": "19.048088771065341263",
+    "ZP[0].FIT.XCa": "1.775594183068890386"
+  },
+  "R7": {
+    "f0_catalogue": 14,
+    "catalogue_ID": 13167,
+    "source": "KISSsoft 2026 W000/W05WNORM10 FAKT_F0=14; prior byte-preserved catalogue-records.json",
+    "Fa_over_C0_derived": 0.026785714285714284,
+    "f0_Fa_over_C0_derived": 0.375,
+    "direct_native_values": {
+      "Lag[0].e": "0.27124999999999999112",
+      "Lag[0].X": "0.56000000000000005329",
+      "Lag[0].Y": "1.9250000000000000444",
+      "Lag[0].P": "949.85341979330974027",
+      "Lag[0].Lh_basic": "180769.26071225357009",
+      "Lag[0].Fa": "300",
+      "Lag[0].Fr": "664.91682105948166281"
+    },
+    "semantic_note": "Native Lag[0].f0=2 is a distinct friction-related variable, not catalogue FAKT_F0=14. It is not substituted for the requested bearing f0.",
+    "table_reconstruction": {
+      "e": 0.27125,
+      "X": 0.56,
+      "Y": 1.925,
+      "P_N": 949.8534197933097
+    }
+  },
+  "R1prime": {
+    "version": "2026",
+    "source": "R1prime-gear80-coupling1/run.json fresh_values shafts.size()",
+    "requested_load_lengths_mm": {
+      "Cylindrical gear": 80,
+      "Coupling / Motor": 1
+    },
+    "external_forces": {
+      "P4 Support A": {
+        "raw_components_N": [
+          "-227.4320413",
+          "-0",
+          "-624.8643979"
+        ],
+        "magnitude_N_derived": 664.9668030607351
+      },
+      "Cylindrical gear": {
+        "raw_components_N": [
+          "454.9627928",
+          "0",
+          "1250"
+        ],
+        "magnitude_N_derived": 1330.222215583688
+      },
+      "P4 Support B": {
+        "raw_components_N": [
+          "-227.4295066",
+          "0",
+          "-624.8574339"
+        ],
+        "magnitude_N_derived": 664.9593921228667
+      },
+      "Coupling / Motor": {
+        "raw_components_N": [
+          "0",
+          "0",
+          "0"
+        ],
+        "magnitude_N_derived": 0.0
+      }
+    },
+    "residual_components_N": [
+      0.10124489999998332,
+      0.0,
+      0.2781681999999819
+    ],
+    "residual_norm_N_derived": 0.296020400086272,
+    "maximum_deflection_mm_raw": "0.0029989409580556550608",
+    "precision": "Serialized force components retained exactly (approximately 10 significant digits); derived magnitude/residual does not add source precision."
+  },
+  "full_tests": {
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-X",
+      "utf8",
+      "-I",
+      "run_tests.py"
+    ],
+    "cwd": "D:\\my_Works\\Gears\\gearbase-v016-milestone-work",
+    "returncode": 0,
+    "elapsed_s": 117.0,
+    "summary": "............................................................................................ssssssssssss..............s.............ssss..........................................................................................................................................................................................s.......................................................................................................................................................s......................................................s..........................................................................................................................................................................................................................................................................................................................s..............sssss........................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 1112 tests in 115.761s\n\nOK (skipped=26)",
+    "log": "D:\\my_Works\\Gears\\kisssoft-v016-run\\release-full-tests.log"
+  },
+  "code_patch_files": 21,
+  "milestone_closure": "No whole M32-M40 closure. M34 value/gradient semantics and tested serialization/acceptance chain repaired; H2, K02 calibration, client business calls remain. M32 legacy adapters and live CI remain.",
+  "pending_external_inputs": [
+    "K03-K05 named-oil micropitting SKS+temperature or lambdaGFP",
+    "K04 engineering choice: raw Ca per -21 vs paired-root-equivalent Ceq compatibility branch",
+    "Explicit optimizer search-domain approval after calibration; do not silently expand",
+    "C001 physical shaft layout/torque application/material/lubrication and safety thresholds; K01 epsalpha/scuffing/micropitting limits",
+    "K01 direct T1T/thetaMT/thetaflaintT still not exposed; XWrelT=1 directly read"
+  ],
+  "raw_predictions_preserved": true,
+  "accepted_flags_or_evidence_levels_promoted": false
+}

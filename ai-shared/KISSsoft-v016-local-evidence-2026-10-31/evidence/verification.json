@@ -1,0 +1,103 @@
+{
+  "status": "PASS_LISTED_CASE_AND_PHYSICAL_INPUT_CHECKS",
+  "scope": "Not a blanket milestone or engineering acceptance",
+  "mouse_or_keyboard_used": false,
+  "cases": [
+    {
+      "case": "OPT3-1-K04",
+      "module": "Z012",
+      "native_sha256": "f04183d66c5f68052b261e5bdfc88076485dfcec3221ad55be9097424ea25b1c",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 13,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "OPT3-2-K01",
+      "module": "Z012",
+      "native_sha256": "85e6a7ff72671c511d10bed287c68ad8971db6f46eec141a7cc350f771bdb4c0",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 14,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "OPT3-3-K02",
+      "module": "Z012",
+      "native_sha256": "bbcf9500b5ad1344a3d9bfc2e751224fb3bbab0b461791bbb67534ff28dfd4d7",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 14,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "R4-D1-D2-270-stepped-hub",
+      "module": "M02A",
+      "native_sha256": "6804036942f885d6657159c45d13e94161b110216f17c87b90d0e5bdb629b940",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 3,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "M39-K04-Cf0-profile-amplitude",
+      "module": "Z012",
+      "native_sha256": "bf37e2fdf41a2fabc8b4e340c6f6fe79883dee797c783b39fe2d921d986e0c7e",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 13,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "M39-K01-reference-query",
+      "module": "Z012",
+      "native_sha256": "081a97e00717afec34a11429208ffbf14ef58848b5a8593a34eeba366f4d9d70",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 14,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "R6-keyway-S3-DIN6885",
+      "module": "W010",
+      "native_sha256": "9d47f14ed82429408bd11f7f1509bac9e20451c5a90ad2c5332de2a768a0b7d2",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 4,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "R6-loadcase2-S2",
+      "module": "W010",
+      "native_sha256": "a0f48c3416d4a26cb104740447b9a9bf8d47e7a39832c3fae6a368e3db65a844",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 4,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "R6-hollow10-S2-enabled",
+      "module": "W010",
+      "native_sha256": "3cd7f6aa359505ca68080b7677fda05bedd031b208e65bdee975f1beaf3e0a68",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 4,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "R7-bearing-Fa300",
+      "module": "W050",
+      "native_sha256": "17d8ac2a140d8de6c79f1fbc9900e9ef437c3b67b58bc4ea9d903508cbde5df1",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 2,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "R1prime-gear80-coupling1",
+      "module": "W010",
+      "native_sha256": "b4e3fb3bd84cd9083f3364bfbd04ef4d67bad97142243342e57fd2f78956b61f",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 4,
+      "classification": "see per-item acceptance and open evidence gaps"
+    },
+    {
+      "case": "OPT3-1-K04-KHb-method-C-sensitivity",
+      "module": "Z012",
+      "native_sha256": "cdfe1b86edd8075f5f6794fedf5ee939d6fab982f9f946104a770bc0f349c9d3",
+      "saved_and_fresh_headless_verified": true,
+      "pdf_pages": 13,
+      "classification": "conditional sensitivity only"
+    }
+  ]
+}

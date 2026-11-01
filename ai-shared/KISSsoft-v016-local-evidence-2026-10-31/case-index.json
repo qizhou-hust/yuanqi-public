@@ -1,0 +1,86 @@
+[
+  {
+    "id": "OPT3-1-K04",
+    "classification": "canonical",
+    "folder": "cases/OPT3-1-K04",
+    "version": "2026",
+    "record": "cases/OPT3-1-K04/run.json"
+  },
+  {
+    "id": "OPT3-2-K01",
+    "classification": "canonical",
+    "folder": "cases/OPT3-2-K01",
+    "version": "2026",
+    "record": "cases/OPT3-2-K01/run.json"
+  },
+  {
+    "id": "OPT3-3-K02",
+    "classification": "canonical",
+    "folder": "cases/OPT3-3-K02",
+    "version": "2026",
+    "record": "cases/OPT3-3-K02/run.json"
+  },
+  {
+    "id": "R4-D1-D2-270-stepped-hub",
+    "classification": "canonical",
+    "folder": "cases/R4-D1-D2-270-stepped-hub",
+    "version": "2026",
+    "record": "cases/R4-D1-D2-270-stepped-hub/run.json"
+  },
+  {
+    "id": "M39-K04-Cf0-profile-amplitude",
+    "classification": "canonical",
+    "folder": "cases/M39-K04-Cf0-profile-amplitude",
+    "version": "2026",
+    "record": "cases/M39-K04-Cf0-profile-amplitude/run.json"
+  },
+  {
+    "id": "M39-K01-reference-query",
+    "classification": "canonical",
+    "folder": "cases/M39-K01-reference-query",
+    "version": "2026",
+    "record": "cases/M39-K01-reference-query/run.json"
+  },
+  {
+    "id": "R6-keyway-S3-DIN6885",
+    "classification": "canonical",
+    "folder": "cases/R6-keyway-S3-DIN6885",
+    "version": "2026",
+    "record": "cases/R6-keyway-S3-DIN6885/run.json"
+  },
+  {
+    "id": "R6-loadcase2-S2",
+    "classification": "canonical",
+    "folder": "cases/R6-loadcase2-S2",
+    "version": "2026",
+    "record": "cases/R6-loadcase2-S2/run.json"
+  },
+  {
+    "id": "R6-hollow10-S2-enabled",
+    "classification": "canonical",
+    "folder": "cases/R6-hollow10-S2-enabled",
+    "version": "2026",
+    "record": "cases/R6-hollow10-S2-enabled/run.json"
+  },
+  {
+    "id": "R7-bearing-Fa300",
+    "classification": "canonical",
+    "folder": "cases/R7-bearing-Fa300",
+    "version": "2026",
+    "record": "cases/R7-bearing-Fa300/run.json"
+  },
+  {
+    "id": "R1prime-gear80-coupling1",
+    "classification": "canonical",
+    "folder": "cases/R1prime-gear80-coupling1",
+    "version": "2026",
+    "record": "cases/R1prime-gear80-coupling1/run.json"
+  },
+  {
+    "id": "OPT3-1-K04-KHb-method-C-sensitivity",
+    "classification": "conditional_sensitivity",
+    "folder": "sensitivity/OPT3-1-K04-KHb-method-C-sensitivity",
+    "version": "2026",
+    "record": "sensitivity/OPT3-1-K04-KHb-method-C-sensitivity/run.json"
+  }
+]

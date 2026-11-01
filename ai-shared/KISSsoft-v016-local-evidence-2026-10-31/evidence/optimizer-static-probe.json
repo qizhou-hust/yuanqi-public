@@ -1,0 +1,535 @@
+{
+  "schema": "static-optimizer-probe/1",
+  "method": "Read-only SourceEvaluator at original/written points, process-local derivative diagnostic only; no solver invocation",
+  "cases": [
+    {
+      "id": "OPT3-1-K04",
+      "parent_id": "K04-EV-stage1.factors",
+      "parent_sha256": "dc430d66fc556cad28371cd1c7ac60847b7076bcdbd740c5a04c17e9ebe9b71a",
+      "baseline_x": {
+        "z_1": 26.0,
+        "z_2": 61.0,
+        "m_n": 2.15,
+        "b_2": 29.0,
+        "x_1": 0.381
+      },
+      "baseline_values": {
+        "V_blank": 605177.4641796092,
+        "u": 2.3461538461538463,
+        "s_an_rel_1": 0.3655383988274824,
+        "s_an_rel_2": 0.35731802883822017,
+        "eps_beta": 2.0815214680818044,
+        "eps_alpha": 2.0257236381740547,
+        "S_H_1": 1.1153170740936773,
+        "S_H_2": 1.1448762594419526,
+        "S_F_1": 2.0462924167467436,
+        "S_F_2": 1.6574149162854306
+      },
+      "baseline_violations": [],
+      "baseline_applicability_violated": false,
+      "written_x": {
+        "b_2": 18.8,
+        "m_n": 2.5,
+        "x_1": 0.423,
+        "z_1": 25,
+        "z_2": 57
+      },
+      "written_objective": 467357.10223959247,
+      "relative_reduction_vs_original_point": 0.22773544967813497,
+      "stored_gradient_self_check": {
+        "max_rel_diff": 0.0002472580642574884,
+        "meaning": "仅自检导数实现；差分值不参与求解",
+        "method": "central_difference_vs_exact",
+        "rel_tol": 0.0001,
+        "status": "inconsistent"
+      },
+      "written_point_original_derivative": {
+        "max_error": 0.00013910938792738303,
+        "worst": [
+          {
+            "quantity": "S_F_1",
+            "variable": "x_1",
+            "ad": 0.09037975645939478,
+            "fd": 0.09051886584732216,
+            "error": 0.00013910938792738303
+          },
+          {
+            "quantity": "s_an_rel_1",
+            "variable": "x_1",
+            "ad": -0.3995973342299249,
+            "fd": -0.39959733380556806,
+            "error": 4.243568274553411e-10
+          },
+          {
+            "quantity": "S_F_2",
+            "variable": "x_1",
+            "ad": -0.2806911540193639,
+            "fd": -0.2806911536534784,
+            "error": 3.658854885735252e-10
+          },
+          {
+            "quantity": "eps_alpha",
+            "variable": "x_1",
+            "ad": -0.1955614199716642,
+            "fd": -0.1955614199466993,
+            "error": 2.496491902093112e-11
+          },
+          {
+            "quantity": "V_blank",
+            "variable": "b_2",
+            "ad": 24859.420331893216,
+            "fd": 24859.420331306457,
+            "error": 2.360307199547301e-11
+          }
+        ],
+        "values": {
+          "V_blank": 467357.10223959247,
+          "u": 2.28,
+          "s_an_rel_1": 0.33814043600385885,
+          "s_an_rel_2": 0.34693855768900234,
+          "eps_beta": 1.16048410675678,
+          "eps_alpha": 2.001461210494144,
+          "S_H_1": 1.0014093218721296,
+          "S_H_2": 1.0270481658737212,
+          "S_F_1": 1.8021953227676564,
+          "S_F_2": 1.404246193513394
+        }
+      },
+      "written_point_finite_iteration_derivative": {
+        "max_error": 2.170706697723901e-09,
+        "worst": [
+          {
+            "quantity": "S_F_1",
+            "variable": "x_1",
+            "ad": 0.09051886801802886,
+            "fd": 0.09051886584732216,
+            "error": 2.170706697723901e-09
+          },
+          {
+            "quantity": "s_an_rel_1",
+            "variable": "x_1",
+            "ad": -0.3995973342299249,
+            "fd": -0.39959733380556806,
+            "error": 4.243568274553411e-10
+          },
+          {
+            "quantity": "S_F_2",
+            "variable": "x_1",
+            "ad": -0.2806911540193639,
+            "fd": -0.2806911536534784,
+            "error": 3.658854885735252e-10
+          },
+          {
+            "quantity": "eps_alpha",
+            "variable": "x_1",
+            "ad": -0.1955614199716642,
+            "fd": -0.1955614199466993,
+            "error": 2.496491902093112e-11
+          },
+          {
+            "quantity": "V_blank",
+            "variable": "b_2",
+            "ad": 24859.420331893216,
+            "fd": 24859.420331306457,
+            "error": 2.360307199547301e-11
+          }
+        ],
+        "values": {
+          "V_blank": 467357.10223959247,
+          "u": 2.28,
+          "s_an_rel_1": 0.33814043600385885,
+          "s_an_rel_2": 0.34693855768900234,
+          "eps_beta": 1.16048410675678,
+          "eps_alpha": 2.001461210494144,
+          "S_H_1": 1.0014093218721296,
+          "S_H_2": 1.0270481658737212,
+          "S_F_1": 1.8021953227676564,
+          "S_F_2": 1.404246193513394
+        }
+      },
+      "evaluator_calls": {
+        "interval": 15322,
+        "point": 44177
+      },
+      "solver": {
+        "files": [
+          "declared.py",
+          "dual.py",
+          "gridprune.py",
+          "interval.py",
+          "nlp.py",
+          "optimize.py"
+        ],
+        "kernel_sources_sha256": "62a4bc2beedb669c268c03572cc8cceb54c96fef2b56f384a714d532491b5c4b",
+        "solver": "gearmath.kernel.gridprune/v1"
+      },
+      "search": {
+        "claim_scope": "local",
+        "coverage": "interval_pruned_lattice_with_local_nlp",
+        "lattice": {
+          "points_pruned": 233,
+          "points_solved": 67,
+          "points_total": 300
+        },
+        "statement": "离散格上区间分支定界：被剪格点经保守区间证明不可行，或其目标下界严格劣于已知可行解；剩余格点上连续变量由局部 NLP（精确导数）求解，结果与逐格点同一 NLP 求解后取最优一致；叶子 NLP 是局部的，不声称全局最优。",
+        "wall_time_s": 252.92348578899964
+      }
+    },
+    {
+      "id": "OPT3-2-K01",
+      "parent_id": "K01-spur.factors",
+      "parent_sha256": "9c60a75255b3297f7bb29418bf9361f70a33292bec65c72fa9a7d6d802a6f74f",
+      "baseline_x": {
+        "z_1": 25.0,
+        "z_2": 76.0,
+        "m_n": 6.0,
+        "b": 44.0,
+        "x_1": 0.2485
+      },
+      "baseline_values": {
+        "V_blank": 7963296.491948793,
+        "u": 3.04,
+        "s_an_rel_1": 0.6373692636441574,
+        "s_an_rel_2": 0.820485227421659,
+        "eps_alpha": 1.6685926415535082,
+        "S_H_1": 1.3328476352550276,
+        "S_H_2": 1.388193664905701,
+        "S_F_1": 2.5211606423993893,
+        "S_F_2": 2.4298042676725498
+      },
+      "baseline_violations": [],
+      "baseline_applicability_violated": false,
+      "written_x": {
+        "b": 28.6,
+        "m_n": 6.0,
+        "x_1": 0.453,
+        "z_1": 23,
+        "z_2": 68
+      },
+      "written_objective": 4166952.575372268,
+      "relative_reduction_vs_original_point": 0.4767301984064989,
+      "stored_gradient_self_check": {
+        "max_rel_diff": 4.670667029022272e-09,
+        "meaning": "仅自检导数实现；差分值不参与求解",
+        "method": "central_difference_vs_exact",
+        "rel_tol": 0.0001,
+        "status": "consistent"
+      },
+      "written_point_original_derivative": {
+        "max_error": 5.578222495028484e-09,
+        "worst": [
+          {
+            "quantity": "s_an_rel_1",
+            "variable": "x_1",
+            "ad": -0.41883723753068497,
+            "fd": -0.4188372319524625,
+            "error": 5.578222495028484e-09
+          },
+          {
+            "quantity": "eps_alpha",
+            "variable": "x_1",
+            "ad": -0.3606981072269397,
+            "fd": -0.36069811137906527,
+            "error": 4.152125587797428e-09
+          },
+          {
+            "quantity": "S_F_1",
+            "variable": "x_1",
+            "ad": -0.07374632827877822,
+            "fd": -0.07374633026469013,
+            "error": 1.9859119071430342e-09
+          },
+          {
+            "quantity": "S_F_2",
+            "variable": "x_1",
+            "ad": -0.2869878715879497,
+            "fd": -0.2869878705791251,
+            "error": 1.0088245794293016e-09
+          },
+          {
+            "quantity": "S_H_1",
+            "variable": "x_1",
+            "ad": 0.014345651387148606,
+            "fd": 0.014345650556357725,
+            "error": 8.307908805349484e-10
+          }
+        ],
+        "values": {
+          "V_blank": 4166952.575372268,
+          "u": 2.9565217391304346,
+          "s_an_rel_1": 0.5392334973910595,
+          "s_an_rel_2": 0.8208106622791086,
+          "eps_alpha": 1.5775847316662677,
+          "S_H_1": 1.0005835960844702,
+          "S_H_2": 1.0344130004770722,
+          "S_F_1": 1.5119368710416436,
+          "S_F_2": 1.40167835688776
+        }
+      },
+      "written_point_finite_iteration_derivative": {
+        "max_error": 5.578222495028484e-09,
+        "worst": [
+          {
+            "quantity": "s_an_rel_1",
+            "variable": "x_1",
+            "ad": -0.41883723753068497,
+            "fd": -0.4188372319524625,
+            "error": 5.578222495028484e-09
+          },
+          {
+            "quantity": "eps_alpha",
+            "variable": "x_1",
+            "ad": -0.3606981072269397,
+            "fd": -0.36069811137906527,
+            "error": 4.152125587797428e-09
+          },
+          {
+            "quantity": "S_F_1",
+            "variable": "x_1",
+            "ad": -0.07374632827877822,
+            "fd": -0.07374633026469013,
+            "error": 1.9859119071430342e-09
+          },
+          {
+            "quantity": "S_F_2",
+            "variable": "x_1",
+            "ad": -0.2869878715879497,
+            "fd": -0.2869878705791251,
+            "error": 1.0088245794293016e-09
+          },
+          {
+            "quantity": "S_H_1",
+            "variable": "x_1",
+            "ad": 0.014345651387148606,
+            "fd": 0.014345650556357725,
+            "error": 8.307908805349484e-10
+          }
+        ],
+        "values": {
+          "V_blank": 4166952.575372268,
+          "u": 2.9565217391304346,
+          "s_an_rel_1": 0.5392334973910595,
+          "s_an_rel_2": 0.8208106622791086,
+          "eps_alpha": 1.5775847316662677,
+          "S_H_1": 1.0005835960844702,
+          "S_H_2": 1.0344130004770722,
+          "S_F_1": 1.5119368710416436,
+          "S_F_2": 1.40167835688776
+        }
+      },
+      "evaluator_calls": {
+        "interval": 1987,
+        "point": 3839
+      },
+      "solver": {
+        "files": [
+          "declared.py",
+          "dual.py",
+          "gridprune.py",
+          "interval.py",
+          "nlp.py",
+          "optimize.py"
+        ],
+        "kernel_sources_sha256": "62a4bc2beedb669c268c03572cc8cceb54c96fef2b56f384a714d532491b5c4b",
+        "solver": "gearmath.kernel.gridprune/v1"
+      },
+      "search": {
+        "claim_scope": "local",
+        "coverage": "interval_pruned_lattice_with_local_nlp",
+        "lattice": {
+          "points_pruned": 11,
+          "points_solved": 10,
+          "points_total": 21
+        },
+        "statement": "离散格上区间分支定界：被剪格点经保守区间证明不可行，或其目标下界严格劣于已知可行解；剩余格点上连续变量由局部 NLP（精确导数）求解，结果与逐格点同一 NLP 求解后取最优一致；叶子 NLP 是局部的，不声称全局最优。",
+        "wall_time_s": 28.505576620000284
+      }
+    },
+    {
+      "id": "OPT3-3-K02",
+      "parent_id": "K02-helical.factors",
+      "parent_sha256": "2b48cfaa42465696f9ab3e37bd18ed68048c9e251d64d42fb2586ec7cff288ce",
+      "baseline_x": {
+        "z_1": 27.0,
+        "z_2": 104.0,
+        "m_n": 1.5,
+        "b_2": 20.0,
+        "x_1": 0.3255
+      },
+      "baseline_values": {
+        "V_blank": 433399.19006405387,
+        "u": 3.8518518518518516,
+        "s_an_rel_1": 0.6485906332040785,
+        "s_an_rel_2": 0.8119896386571251,
+        "eps_beta": 1.026748414049295,
+        "eps_alpha": 1.570837996340322,
+        "S_H_1": 0.8693109976787087,
+        "S_H_2": 0.7121492579292542,
+        "S_F_1": 3.2200851357162015,
+        "S_F_2": 2.4728316465439075
+      },
+      "baseline_violations": [
+        {
+          "id": "pitting.pinion",
+          "value": 0.8693109976787087,
+          "limit": 0.95,
+          "sense": ">="
+        },
+        {
+          "id": "pitting.wheel",
+          "value": 0.7121492579292542,
+          "limit": 0.95,
+          "sense": ">="
+        }
+      ],
+      "baseline_applicability_violated": false,
+      "written_x": {
+        "b_2": 26.0,
+        "m_n": 2.0,
+        "x_1": 0.3,
+        "z_1": 26,
+        "z_2": 98
+      },
+      "written_objective": 891883.4359872602,
+      "relative_reduction_vs_original_point": -1.0578797940426354,
+      "stored_gradient_self_check": {
+        "max_rel_diff": 0.00032772243900380804,
+        "meaning": "仅自检导数实现；差分值不参与求解",
+        "method": "central_difference_vs_exact",
+        "rel_tol": 0.0001,
+        "status": "inconsistent"
+      },
+      "written_point_original_derivative": {
+        "max_error": 0.0003475590504762316,
+        "worst": [
+          {
+            "quantity": "S_F_1",
+            "variable": "x_1",
+            "ad": -0.7743702384188169,
+            "fd": -0.7747177974692931,
+            "error": 0.0003475590504762316
+          },
+          {
+            "quantity": "S_F_2",
+            "variable": "x_1",
+            "ad": -1.2615589303123518,
+            "fd": -1.261558916443306,
+            "error": 1.0993577356105029e-08
+          },
+          {
+            "quantity": "s_an_rel_1",
+            "variable": "x_1",
+            "ad": -0.2978480693881906,
+            "fd": -0.2978480740378764,
+            "error": 4.649685803048698e-09
+          },
+          {
+            "quantity": "eps_alpha",
+            "variable": "x_1",
+            "ad": -0.29080516348536856,
+            "fd": -0.290805160396701,
+            "error": 3.0886675439489863e-09
+          },
+          {
+            "quantity": "S_H_1",
+            "variable": "x_1",
+            "ad": -0.04107025768549771,
+            "fd": -0.041070256751041256,
+            "error": 9.344564566582392e-10
+          }
+        ],
+        "values": {
+          "V_blank": 891883.4359872602,
+          "u": 3.769230769230769,
+          "s_an_rel_1": 0.6502455149478161,
+          "s_an_rel_2": 0.8093982827944941,
+          "eps_beta": 1.0010797036980628,
+          "eps_alpha": 1.569419095255872,
+          "S_H_1": 1.172888424587273,
+          "S_H_2": 0.9608432694789732,
+          "S_F_1": 5.930546176515575,
+          "S_F_2": 4.659496727508333
+        }
+      },
+      "written_point_finite_iteration_derivative": {
+        "max_error": 1.0993577356105029e-08,
+        "worst": [
+          {
+            "quantity": "S_F_2",
+            "variable": "x_1",
+            "ad": -1.2615589303123518,
+            "fd": -1.261558916443306,
+            "error": 1.0993577356105029e-08
+          },
+          {
+            "quantity": "S_F_1",
+            "variable": "x_1",
+            "ad": -0.7747178032861647,
+            "fd": -0.7747177974692931,
+            "error": 5.816871539998658e-09
+          },
+          {
+            "quantity": "s_an_rel_1",
+            "variable": "x_1",
+            "ad": -0.2978480693881906,
+            "fd": -0.2978480740378764,
+            "error": 4.649685803048698e-09
+          },
+          {
+            "quantity": "eps_alpha",
+            "variable": "x_1",
+            "ad": -0.29080516348536856,
+            "fd": -0.290805160396701,
+            "error": 3.0886675439489863e-09
+          },
+          {
+            "quantity": "S_H_1",
+            "variable": "x_1",
+            "ad": -0.04107025768549771,
+            "fd": -0.041070256751041256,
+            "error": 9.344564566582392e-10
+          }
+        ],
+        "values": {
+          "V_blank": 891883.4359872602,
+          "u": 3.769230769230769,
+          "s_an_rel_1": 0.6502455149478161,
+          "s_an_rel_2": 0.8093982827944941,
+          "eps_beta": 1.0010797036980628,
+          "eps_alpha": 1.569419095255872,
+          "S_H_1": 1.172888424587273,
+          "S_H_2": 0.9608432694789732,
+          "S_F_1": 5.930546176515575,
+          "S_F_2": 4.659496727508333
+        }
+      },
+      "evaluator_calls": {
+        "interval": 7408,
+        "point": 64610
+      },
+      "solver": {
+        "files": [
+          "declared.py",
+          "dual.py",
+          "gridprune.py",
+          "interval.py",
+          "nlp.py",
+          "optimize.py"
+        ],
+        "kernel_sources_sha256": "62a4bc2beedb669c268c03572cc8cceb54c96fef2b56f384a714d532491b5c4b",
+        "solver": "gearmath.kernel.gridprune/v1"
+      },
+      "search": {
+        "claim_scope": "local",
+        "coverage": "interval_pruned_lattice_with_local_nlp",
+        "lattice": {
+          "points_pruned": 51,
+          "points_solved": 39,
+          "points_total": 90
+        },
+        "statement": "离散格上区间分支定界：被剪格点经保守区间证明不可行，或其目标下界严格劣于已知可行解；剩余格点上连续变量由局部 NLP（精确导数）求解，结果与逐格点同一 NLP 求解后取最优一致；叶子 NLP 是局部的，不声称全局最优。",
+        "wall_time_s": 353.7278231770006
+      }
+    }
+  ]
+}

@@ -1,0 +1,1178 @@
+{
+  "schema": "static-opt3-preflight/1",
+  "source": "Unmodified v0.16 stage4 reports; no external validation asserted",
+  "cases": [
+    {
+      "id": "OPT3-1-K04",
+      "source_report": "D:\\my_Works\\Gears\\received-stage-packages-2026-10-31\\v016\\gearbase-v0.16-stage4\\extracted\\gearbase\\output\\m34\\opt3\\K04-EV-stage1-min-volume-recompute.report.json",
+      "request": {
+        "applicable": true,
+        "case": "K04-EV-stage1",
+        "inputs": [
+          {
+            "field": "ZR[0].z",
+            "gearbase": "z_1",
+            "unit": "1",
+            "value": 25.0
+          },
+          {
+            "field": "ZR[1].z",
+            "gearbase": "z_2",
+            "unit": "1",
+            "value": 57.0
+          },
+          {
+            "field": "ZS.Geo.mn",
+            "gearbase": "m_n",
+            "unit": "mm",
+            "value": 2.5
+          },
+          {
+            "field": "ZR[0].b",
+            "gearbase": "b_1",
+            "unit": "mm",
+            "value": 20.8
+          },
+          {
+            "field": "ZR[1].b",
+            "gearbase": "b_2",
+            "unit": "mm",
+            "value": 18.8
+          },
+          {
+            "field": "ZR[0].x.nul",
+            "gearbase": "x_1",
+            "unit": "1",
+            "value": 0.423
+          },
+          {
+            "field": "ZR[1].x.nul",
+            "gearbase": "x_2",
+            "unit": "1",
+            "value": 0.13304388135892797
+          },
+          {
+            "field": "ZP[0].a",
+            "gearbase": "a_w",
+            "unit": "mm",
+            "value": 118.53067415190249
+          },
+          {
+            "field": "ZR[0].kFaktorFlag",
+            "gearbase": "tip_shortening=none",
+            "unit": "",
+            "value": "true"
+          },
+          {
+            "field": "ZR[1].kFaktorFlag",
+            "gearbase": "tip_shortening=none",
+            "unit": "",
+            "value": "true"
+          },
+          {
+            "field": "ZR[0].kXmn",
+            "gearbase": "tip_shortening=none",
+            "unit": "mm",
+            "value": 0.0
+          },
+          {
+            "field": "ZR[1].kXmn",
+            "gearbase": "tip_shortening=none",
+            "unit": "mm",
+            "value": 0.0
+          }
+        ],
+        "outputs": [
+          {
+            "field": "ZPP[0].Flanke.SH",
+            "gearbase": "S_H_1",
+            "predicted": 1.0014093218721296,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[1].Flanke.SH",
+            "gearbase": "S_H_2",
+            "predicted": 1.0270481658737212,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[0].Fuss.SFnorm",
+            "gearbase": "S_F_1",
+            "predicted": 1.8021953227676564,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[1].Fuss.SFnorm",
+            "gearbase": "S_F_2",
+            "predicted": 1.404246193513394,
+            "unit": "1"
+          },
+          {
+            "field": "ZP[0].Eps.a",
+            "gearbase": "eps_alpha",
+            "predicted": 2.001461210494144,
+            "unit": "1"
+          },
+          {
+            "field": "ZR[0].kXmn",
+            "gearbase": "k_X_1",
+            "predicted": 0.0,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[1].kXmn",
+            "gearbase": "k_X_2",
+            "predicted": 0.0,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[0].da.nul",
+            "gearbase": "da_1",
+            "predicted": 80.33412924293985,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[1].da.nul",
+            "gearbase": "da_2",
+            "predicted": 171.6596740806975,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[0].di",
+            "gearbase": "d_inner_1",
+            "predicted": 25.0,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[1].di",
+            "gearbase": "d_inner_2",
+            "predicted": 138.10090996786937,
+            "unit": "mm"
+          },
+          {
+            "field": "ZP[0].KV.KV",
+            "gearbase": "K_V",
+            "predicted": 1.073146723495596,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[0].Flanke.ZV",
+            "gearbase": "Z_V",
+            "predicted": 1.0284603159156247,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[0].Flanke.ZR",
+            "gearbase": "Z_R",
+            "predicted": 0.9615970952662553,
+            "unit": "1"
+          }
+        ],
+        "text": "### KISSsoft 运行请求：K04-EV-stage1.factors.opt-a77653c3\n- 模块/计算：KISSsoft 圆柱齿轮副 Z012，ISO 6336:2019 方法 B（RechenMethID 10029，与原 K04-EV-stage1.Z12 相同）；以原始 K04-EV-stage1.Z12 为底，只改下列输入，其余不动。\n- 齿顶缩短口径：tip_shortening = none。\n- 输入（单位）：\n  - `ZR[0].z` = 25 1（本库 z_1）\n  - `ZR[1].z` = 57 1（本库 z_2）\n  - `ZS.Geo.mn` = 2.5 mm（本库 m_n）\n  - `ZR[0].b` = 20.8 mm（本库 b_1）\n  - `ZR[1].b` = 18.8 mm（本库 b_2）\n  - `ZR[0].x.nul` = 0.423 1（本库 x_1）\n  - `ZR[1].x.nul` = 0.1330438814 1（本库 x_2）\n  - `ZP[0].a` = 118.5306742 mm（本库 a_w）\n  - `ZR[0].kFaktorFlag` = true （本库 tip_shortening=none）\n  - `ZR[1].kFaktorFlag` = true （本库 tip_shortening=none）\n  - `ZR[0].kXmn` = 0 mm（本库 tip_shortening=none）\n  - `ZR[1].kXmn` = 0 mm（本库 tip_shortening=none）\n- 读取输出（报告位置：GetVar 字段；PDF 第 3 节几何、第 4–6 节强度、第 13 节公差），本库预测值：\n  - `ZPP[0].Flanke.SH`（S_H_1）预测 1.001409322 1\n  - `ZPP[1].Flanke.SH`（S_H_2）预测 1.027048166 1\n  - `ZPP[0].Fuss.SFnorm`（S_F_1）预测 1.802195323 1\n  - `ZPP[1].Fuss.SFnorm`（S_F_2）预测 1.404246194 1\n  - `ZP[0].Eps.a`（eps_alpha）预测 2.00146121 1\n  - `ZR[0].kXmn`（k_X_1）预测 0 mm\n  - `ZR[1].kXmn`（k_X_2）预测 0 mm\n  - `ZR[0].da.nul`（da_1）预测 80.33412924 mm\n  - `ZR[1].da.nul`（da_2）预测 171.6596741 mm\n  - `ZR[0].di`（d_inner_1）预测 25 mm\n  - `ZR[1].di`（d_inner_2）预测 138.10091 mm\n  - `ZP[0].KV.KV`（K_V）预测 1.073146723 1\n  - `ZPP[0].Flanke.ZV`（Z_V）预测 1.028460316 1\n  - `ZPP[0].Flanke.ZR`（Z_R）预测 0.9615970953 1\n- 用途：外部复核优化写回设计（声明 K04-EV-stage1-min-volume-recompute，sha256 a77653c3f7e3165f…）；差异逐项归因（先对齐输入）；held 清单中的量若 KISSsoft 自动重算，请一并读出。"
+      },
+      "coefficient_status": [
+        {
+          "formula": "dyn.K_V",
+          "name": "K_V",
+          "status": "recomputed"
+        },
+        {
+          "name": "K_Hbeta",
+          "provenance": "evidence",
+          "reason": "【几何相关，未重算——主要限制】K04 契约 method.K_Hbeta=external（KISSsoft 值 1.2875）；方法C 输入契约（轴、修形）未建立。齿宽/模数变化时本应重算，结论受此限制，见 KISSsoft 复核请求",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 1.2874948181504524
+        },
+        {
+          "formula": "load.K_Fbeta",
+          "name": "K_Fbeta",
+          "status": "recomputed"
+        },
+        {
+          "formula": "ld.K_Halpha",
+          "name": "K_Halpha",
+          "status": "recomputed"
+        },
+        {
+          "formula": "ld.K_Falpha",
+          "name": "K_Falpha",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.Z_NT.1",
+          "name": "Z_NT_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.Z_NT.2",
+          "name": "Z_NT_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.Y_NT.1",
+          "name": "Y_NT_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.Y_NT.2",
+          "name": "Y_NT_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_L",
+          "name": "Z_L",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_V",
+          "name": "Z_V",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_R",
+          "name": "Z_R",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_W.neutral",
+          "name": "Z_W",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_X",
+          "name": "Z_X",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_X.common",
+          "name": "Y_X",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_drelT.1",
+          "name": "Y_drelT_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_drelT.2",
+          "name": "Y_drelT_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_RrelT.1",
+          "name": "Y_RrelT_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_RrelT.2",
+          "name": "Y_RrelT_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_B.common",
+          "name": "Y_B",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_DT",
+          "name": "Y_DT",
+          "status": "recomputed"
+        },
+        {
+          "name": "Y_ST",
+          "provenance": "user",
+          "reason": "标准值 2.0（ISO 6336-3 参考试验齿轮），与几何无关",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 2.0
+        },
+        {
+          "formula": "opt.f_pt.1",
+          "name": "f_pt_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.f_pt.2",
+          "name": "f_pt_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.f_falpha.1",
+          "name": "f_falpha_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.f_falpha.2",
+          "name": "f_falpha_2",
+          "status": "recomputed"
+        },
+        {
+          "name": "d_inner_1",
+          "provenance": "evidence",
+          "reason": "小轮内径按作者输入保持（K02 轴齿轮 0 mm / K04 轴孔 25 mm：由轴决定，不随齿轮几何变化）；大轮由 adapter.blank_bore 重算",
+          "status": "held",
+          "unit": "mm",
+          "value_canonical": 25.0
+        },
+        {
+          "formula": "opt.d_inner.wheel",
+          "name": "d_inner_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "kc.q.1",
+          "name": "q_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "kc.q.2",
+          "name": "q_2",
+          "status": "recomputed"
+        },
+        {
+          "name": "C_R",
+          "provenance": "evidence",
+          "reason": "【几何相关，未重算】轮坯系数：K04 报告无 bs/b（C_R 为证据 1.0，实心轮坯），按原值保持",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 1.0
+        },
+        {
+          "formula": "life.N_L.1",
+          "name": "N_L_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.N_L.2",
+          "name": "N_L_2",
+          "status": "recomputed"
+        }
+      ],
+      "expected_held_caveat": "Raw external result must be retained before any alignment. Never overwrite K_Hbeta or other outputs with predictions."
+    },
+    {
+      "id": "OPT3-2-K01",
+      "source_report": "D:\\my_Works\\Gears\\received-stage-packages-2026-10-31\\v016\\gearbase-v0.16-stage4\\extracted\\gearbase\\output\\m34\\opt3\\K01-spur-recompute-local-kxauto.report.json",
+      "request": {
+        "applicable": true,
+        "case": "K01-spur",
+        "inputs": [
+          {
+            "field": "ZR[0].z",
+            "gearbase": "z_1",
+            "unit": "1",
+            "value": 23.0
+          },
+          {
+            "field": "ZR[1].z",
+            "gearbase": "z_2",
+            "unit": "1",
+            "value": 68.0
+          },
+          {
+            "field": "ZS.Geo.mn",
+            "gearbase": "m_n",
+            "unit": "mm",
+            "value": 6.0
+          },
+          {
+            "field": "ZR[0].b",
+            "gearbase": "b_1",
+            "unit": "mm",
+            "value": 28.6
+          },
+          {
+            "field": "ZR[1].b",
+            "gearbase": "b_2",
+            "unit": "mm",
+            "value": 28.6
+          },
+          {
+            "field": "ZR[0].x.nul",
+            "gearbase": "x_1",
+            "unit": "1",
+            "value": 0.453
+          },
+          {
+            "field": "ZR[1].x.nul",
+            "gearbase": "x_2",
+            "unit": "1",
+            "value": -0.2485
+          },
+          {
+            "field": "ZP[0].a",
+            "gearbase": "a_w",
+            "unit": "mm",
+            "value": 274.20715857370914
+          },
+          {
+            "field": "ZR[0].kFaktorFlag",
+            "gearbase": "tip_shortening=kisssoft_auto_equivalent",
+            "unit": "",
+            "value": "false（自动）"
+          },
+          {
+            "field": "ZR[1].kFaktorFlag",
+            "gearbase": "tip_shortening=kisssoft_auto_equivalent",
+            "unit": "",
+            "value": "false（自动）"
+          },
+          {
+            "field": "Zst.lsdFlag",
+            "gearbase": "小轮轴按文档显式输入（不随齿宽自动缩放）",
+            "unit": "",
+            "value": "true"
+          },
+          {
+            "field": "ZP[0].KHdat.l",
+            "gearbase": "l_sh",
+            "unit": "mm",
+            "value": 88.0
+          },
+          {
+            "field": "ZP[0].KHdat.S",
+            "gearbase": "s_sh",
+            "unit": "mm",
+            "value": 8.8
+          },
+          {
+            "field": "ZP[0].KHdat.dsh",
+            "gearbase": "d_sh",
+            "unit": "mm",
+            "value": 44.0
+          }
+        ],
+        "outputs": [
+          {
+            "field": "ZPP[0].Flanke.SH",
+            "gearbase": "S_H_1",
+            "predicted": 1.0005835960844702,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[1].Flanke.SH",
+            "gearbase": "S_H_2",
+            "predicted": 1.0344130004770722,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[0].Fuss.SFnorm",
+            "gearbase": "S_F_1",
+            "predicted": 1.5119368710416436,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[1].Fuss.SFnorm",
+            "gearbase": "S_F_2",
+            "predicted": 1.40167835688776,
+            "unit": "1"
+          },
+          {
+            "field": "ZP[0].Eps.a",
+            "gearbase": "eps_alpha",
+            "predicted": 1.5775847316662677,
+            "unit": "1"
+          },
+          {
+            "field": "ZR[0].kXmn",
+            "gearbase": "k_X_1",
+            "predicted": -0.019841426290863273,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[1].kXmn",
+            "gearbase": "k_X_2",
+            "predicted": -0.019841426290863273,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[0].da.nul",
+            "gearbase": "da_1",
+            "predicted": 155.39631714741827,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[1].da.nul",
+            "gearbase": "da_2",
+            "predicted": 416.9783171474183,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[0].di",
+            "gearbase": "d_inner_1",
+            "predicted": 68.03761577417907,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[1].di",
+            "gearbase": "d_inner_2",
+            "predicted": 329.49597929030364,
+            "unit": "mm"
+          },
+          {
+            "field": "ZP[0].KV.KV",
+            "gearbase": "K_V",
+            "predicted": 1.018709634980708,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[0].Flanke.ZV",
+            "gearbase": "Z_V",
+            "predicted": 0.9725085081930704,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[0].Flanke.ZR",
+            "gearbase": "Z_R",
+            "predicted": 0.9787305376374238,
+            "unit": "1"
+          }
+        ],
+        "text": "### KISSsoft 运行请求：K01-spur.factors.opt-d10310d4\n- 模块/计算：KISSsoft 圆柱齿轮副 Z012，ISO 6336:2019 方法 B（RechenMethID 10029，与原 K01-spur.Z12 相同）；以原始 K01-spur.Z12 为底，只改下列输入，其余不动。\n- 齿顶缩短口径：tip_shortening = kisssoft_auto_equivalent。\n- 输入（单位）：\n  - `ZR[0].z` = 23 1（本库 z_1）\n  - `ZR[1].z` = 68 1（本库 z_2）\n  - `ZS.Geo.mn` = 6 mm（本库 m_n）\n  - `ZR[0].b` = 28.6 mm（本库 b_1）\n  - `ZR[1].b` = 28.6 mm（本库 b_2）\n  - `ZR[0].x.nul` = 0.453 1（本库 x_1）\n  - `ZR[1].x.nul` = -0.2485 1（本库 x_2）\n  - `ZP[0].a` = 274.2071586 mm（本库 a_w）\n  - `ZR[0].kFaktorFlag` = false（自动） （本库 tip_shortening=kisssoft_auto_equivalent）\n  - `ZR[1].kFaktorFlag` = false（自动） （本库 tip_shortening=kisssoft_auto_equivalent）\n  - `Zst.lsdFlag` = true （本库 小轮轴按文档显式输入（不随齿宽自动缩放））\n  - `ZP[0].KHdat.l` = 88 mm（本库 l_sh）\n  - `ZP[0].KHdat.S` = 8.8 mm（本库 s_sh）\n  - `ZP[0].KHdat.dsh` = 44 mm（本库 d_sh）\n- 读取输出（报告位置：GetVar 字段；PDF 第 3 节几何、第 4–6 节强度、第 13 节公差），本库预测值：\n  - `ZPP[0].Flanke.SH`（S_H_1）预测 1.000583596 1\n  - `ZPP[1].Flanke.SH`（S_H_2）预测 1.034413 1\n  - `ZPP[0].Fuss.SFnorm`（S_F_1）预测 1.511936871 1\n  - `ZPP[1].Fuss.SFnorm`（S_F_2）预测 1.401678357 1\n  - `ZP[0].Eps.a`（eps_alpha）预测 1.577584732 1\n  - `ZR[0].kXmn`（k_X_1）预测 -0.01984142629 mm\n  - `ZR[1].kXmn`（k_X_2）预测 -0.01984142629 mm\n  - `ZR[0].da.nul`（da_1）预测 155.3963171 mm\n  - `ZR[1].da.nul`（da_2）预测 416.9783171 mm\n  - `ZR[0].di`（d_inner_1）预测 68.03761577 mm\n  - `ZR[1].di`（d_inner_2）预测 329.4959793 mm\n  - `ZP[0].KV.KV`（K_V）预测 1.018709635 1\n  - `ZPP[0].Flanke.ZV`（Z_V）预测 0.9725085082 1\n  - `ZPP[0].Flanke.ZR`（Z_R）预测 0.9787305376 1\n- 用途：外部复核优化写回设计（声明 K01-spur-recompute-local-kxauto，sha256 d10310d493b273e4…）；差异逐项归因（先对齐输入）；held 清单中的量若 KISSsoft 自动重算，请一并读出。"
+      },
+      "coefficient_status": [
+        {
+          "formula": "dyn.K_V",
+          "name": "K_V",
+          "status": "recomputed"
+        },
+        {
+          "formula": "ld.K_Hbeta",
+          "name": "K_Hbeta",
+          "status": "recomputed"
+        },
+        {
+          "formula": "load.K_Fbeta",
+          "name": "K_Fbeta",
+          "status": "recomputed"
+        },
+        {
+          "formula": "ld.K_Halpha",
+          "name": "K_Halpha",
+          "status": "recomputed"
+        },
+        {
+          "formula": "ld.K_Falpha",
+          "name": "K_Falpha",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.Z_NT.1",
+          "name": "Z_NT_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.Z_NT.2",
+          "name": "Z_NT_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.Y_NT.1",
+          "name": "Y_NT_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.Y_NT.2",
+          "name": "Y_NT_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_L",
+          "name": "Z_L",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_V",
+          "name": "Z_V",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_R",
+          "name": "Z_R",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_W.neutral",
+          "name": "Z_W",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_X",
+          "name": "Z_X",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_X.common",
+          "name": "Y_X",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_drelT.1",
+          "name": "Y_drelT_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_drelT.2",
+          "name": "Y_drelT_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_RrelT.1",
+          "name": "Y_RrelT_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_RrelT.2",
+          "name": "Y_RrelT_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_B.common",
+          "name": "Y_B",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_DT",
+          "name": "Y_DT",
+          "status": "recomputed"
+        },
+        {
+          "name": "Y_ST",
+          "provenance": "user",
+          "reason": "标准值 2.0（ISO 6336-3 参考试验齿轮应力修正系数），与几何无关",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 2.0
+        },
+        {
+          "formula": "opt.f_pt.1",
+          "name": "f_pt_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.f_pt.2",
+          "name": "f_pt_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.f_falpha.1",
+          "name": "f_falpha_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.f_falpha.2",
+          "name": "f_falpha_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.f_Hbeta.1",
+          "name": "f_Hbeta_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.f_Hbeta.2",
+          "name": "f_Hbeta_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "iso1328.fHbeta5.pair",
+          "name": "f_Hbeta5",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.d_inner.1",
+          "name": "d_inner_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "opt.d_inner.2",
+          "name": "d_inner_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "kc.q.1",
+          "name": "q_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "kc.q.2",
+          "name": "q_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "kc.C_R",
+          "name": "C_R",
+          "status": "recomputed"
+        },
+        {
+          "name": "l_sh",
+          "provenance": "user",
+          "reason": "小轮轴承跨距（作者输入 88 mm）按实体轴保持；KISSsoft P2 按 l=2b 自动缩放为 56.6 mm。K01 两种取法下 F_βx 均落在下限式(58) 0.005·Fm/b，K_Hβ 不受影响（对账表）；KISSsoft 复核请求要求显式输入 88 mm",
+          "status": "held",
+          "unit": "mm",
+          "value_canonical": 88.0
+        },
+        {
+          "name": "s_sh",
+          "provenance": "user",
+          "reason": "小轮偏置（作者输入 8.8 mm）按实体轴保持；KISSsoft P2 自动 0.2b=5.66 mm；理由同 l_sh",
+          "status": "held",
+          "unit": "mm",
+          "value_canonical": 8.8
+        },
+        {
+          "name": "d_sh",
+          "provenance": "user",
+          "reason": "小轮轴径（作者输入 44 mm）按实体轴保持；KISSsoft P2 自动 d_sh=b=28.3 mm（传递 1625 N·m 时扭转切应力约 365 MPa，不作为实体轴采用）；理由同 l_sh",
+          "status": "held",
+          "unit": "mm",
+          "value_canonical": 44.0
+        },
+        {
+          "formula": "life.N_L.1",
+          "name": "N_L_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.N_L.2",
+          "name": "N_L_2",
+          "status": "recomputed"
+        }
+      ],
+      "expected_held_caveat": "Raw external result must be retained before any alignment. Never overwrite K_Hbeta or other outputs with predictions."
+    },
+    {
+      "id": "OPT3-3-K02",
+      "source_report": "D:\\my_Works\\Gears\\received-stage-packages-2026-10-31\\v016\\gearbase-v0.16-stage4\\extracted\\gearbase\\output\\m34\\opt3\\K02-helical-min-volume-recompute.report.json",
+      "request": {
+        "applicable": true,
+        "case": "K02-helical",
+        "inputs": [
+          {
+            "field": "ZR[0].z",
+            "gearbase": "z_1",
+            "unit": "1",
+            "value": 26.0
+          },
+          {
+            "field": "ZR[1].z",
+            "gearbase": "z_2",
+            "unit": "1",
+            "value": 98.0
+          },
+          {
+            "field": "ZS.Geo.mn",
+            "gearbase": "m_n",
+            "unit": "mm",
+            "value": 2.0
+          },
+          {
+            "field": "ZR[0].b",
+            "gearbase": "b_1",
+            "unit": "mm",
+            "value": 27.0
+          },
+          {
+            "field": "ZR[1].b",
+            "gearbase": "b_2",
+            "unit": "mm",
+            "value": 26.0
+          },
+          {
+            "field": "ZR[0].x.nul",
+            "gearbase": "x_1",
+            "unit": "1",
+            "value": 0.3
+          },
+          {
+            "field": "ZR[1].x.nul",
+            "gearbase": "x_2",
+            "unit": "1",
+            "value": 0.07388831907841498
+          },
+          {
+            "field": "ZP[0].a",
+            "gearbase": "a_w",
+            "unit": "mm",
+            "value": 128.52920244652248
+          },
+          {
+            "field": "ZR[0].kFaktorFlag",
+            "gearbase": "tip_shortening=kisssoft_auto_equivalent",
+            "unit": "",
+            "value": "false（自动）"
+          },
+          {
+            "field": "ZR[1].kFaktorFlag",
+            "gearbase": "tip_shortening=kisssoft_auto_equivalent",
+            "unit": "",
+            "value": "false（自动）"
+          },
+          {
+            "field": "Zst.lsdFlag",
+            "gearbase": "小轮轴按文档显式输入（不随齿宽自动缩放）",
+            "unit": "",
+            "value": "true"
+          },
+          {
+            "field": "ZP[0].KHdat.l",
+            "gearbase": "l_sh",
+            "unit": "mm",
+            "value": 42.0
+          },
+          {
+            "field": "ZP[0].KHdat.S",
+            "gearbase": "s_sh",
+            "unit": "mm",
+            "value": 4.2
+          },
+          {
+            "field": "ZP[0].KHdat.dsh",
+            "gearbase": "d_sh",
+            "unit": "mm",
+            "value": 21.0
+          }
+        ],
+        "outputs": [
+          {
+            "field": "ZPP[0].Flanke.SH",
+            "gearbase": "S_H_1",
+            "predicted": 1.1728884245872764,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[1].Flanke.SH",
+            "gearbase": "S_H_2",
+            "predicted": 0.9608432694789758,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[0].Fuss.SFnorm",
+            "gearbase": "S_F_1",
+            "predicted": 5.930546176515618,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[1].Fuss.SFnorm",
+            "gearbase": "S_F_2",
+            "predicted": 4.659496727508381,
+            "unit": "1"
+          },
+          {
+            "field": "ZP[0].Eps.a",
+            "gearbase": "eps_alpha",
+            "predicted": 1.5694190952558846,
+            "unit": "1"
+          },
+          {
+            "field": "ZR[0].kXmn",
+            "gearbase": "k_X_1",
+            "predicted": -0.014664231021734309,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[1].kXmn",
+            "gearbase": "k_X_2",
+            "predicted": -0.014664231021734309,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[0].da.nul",
+            "gearbase": "da_1",
+            "predicted": 58.76258026415124,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[1].da.nul",
+            "gearbase": "da_2",
+            "predicted": 206.26649616685023,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[0].di",
+            "gearbase": "d_inner_1",
+            "predicted": 0.0,
+            "unit": "mm"
+          },
+          {
+            "field": "ZR[1].di",
+            "gearbase": "d_inner_2",
+            "predicted": 182.93865256436462,
+            "unit": "mm"
+          },
+          {
+            "field": "ZP[0].KV.KV",
+            "gearbase": "K_V",
+            "predicted": 1.1309983764502922,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[0].Flanke.ZV",
+            "gearbase": "Z_V",
+            "predicted": 0.9913922960032562,
+            "unit": "1"
+          },
+          {
+            "field": "ZPP[0].Flanke.ZR",
+            "gearbase": "Z_R",
+            "predicted": 0.7878061261311765,
+            "unit": "1"
+          }
+        ],
+        "text": "### KISSsoft 运行请求：K02-helical.factors.opt-4ee0a4da\n- 模块/计算：KISSsoft 圆柱齿轮副 Z012，ISO 6336:2019 方法 B（RechenMethID 10029，与原 K02-helical.Z12 相同）；以原始 K02-helical.Z12 为底，只改下列输入，其余不动。\n- 齿顶缩短口径：tip_shortening = kisssoft_auto_equivalent。\n- 输入（单位）：\n  - `ZR[0].z` = 26 1（本库 z_1）\n  - `ZR[1].z` = 98 1（本库 z_2）\n  - `ZS.Geo.mn` = 2 mm（本库 m_n）\n  - `ZR[0].b` = 27 mm（本库 b_1）\n  - `ZR[1].b` = 26 mm（本库 b_2）\n  - `ZR[0].x.nul` = 0.3 1（本库 x_1）\n  - `ZR[1].x.nul` = 0.07388831908 1（本库 x_2）\n  - `ZP[0].a` = 128.5292024 mm（本库 a_w）\n  - `ZR[0].kFaktorFlag` = false（自动） （本库 tip_shortening=kisssoft_auto_equivalent）\n  - `ZR[1].kFaktorFlag` = false（自动） （本库 tip_shortening=kisssoft_auto_equivalent）\n  - `Zst.lsdFlag` = true （本库 小轮轴按文档显式输入（不随齿宽自动缩放））\n  - `ZP[0].KHdat.l` = 42 mm（本库 l_sh）\n  - `ZP[0].KHdat.S` = 4.2 mm（本库 s_sh）\n  - `ZP[0].KHdat.dsh` = 21 mm（本库 d_sh）\n- 读取输出（报告位置：GetVar 字段；PDF 第 3 节几何、第 4–6 节强度、第 13 节公差），本库预测值：\n  - `ZPP[0].Flanke.SH`（S_H_1）预测 1.172888425 1\n  - `ZPP[1].Flanke.SH`（S_H_2）预测 0.9608432695 1\n  - `ZPP[0].Fuss.SFnorm`（S_F_1）预测 5.930546177 1\n  - `ZPP[1].Fuss.SFnorm`（S_F_2）预测 4.659496728 1\n  - `ZP[0].Eps.a`（eps_alpha）预测 1.569419095 1\n  - `ZR[0].kXmn`（k_X_1）预测 -0.01466423102 mm\n  - `ZR[1].kXmn`（k_X_2）预测 -0.01466423102 mm\n  - `ZR[0].da.nul`（da_1）预测 58.76258026 mm\n  - `ZR[1].da.nul`（da_2）预测 206.2664962 mm\n  - `ZR[0].di`（d_inner_1）预测 0 mm\n  - `ZR[1].di`（d_inner_2）预测 182.9386526 mm\n  - `ZP[0].KV.KV`（K_V）预测 1.130998376 1\n  - `ZPP[0].Flanke.ZV`（Z_V）预测 0.991392296 1\n  - `ZPP[0].Flanke.ZR`（Z_R）预测 0.7878061261 1\n- 用途：外部复核优化写回设计（声明 K02-helical-min-volume-recompute，sha256 4ee0a4daf3a403fe…）；差异逐项归因（先对齐输入）；held 清单中的量若 KISSsoft 自动重算，请一并读出。"
+      },
+      "coefficient_status": [
+        {
+          "formula": "dyn.K_V",
+          "name": "K_V",
+          "status": "recomputed"
+        },
+        {
+          "formula": "ld.K_Hbeta",
+          "name": "K_Hbeta",
+          "status": "recomputed"
+        },
+        {
+          "formula": "load.K_Fbeta",
+          "name": "K_Fbeta",
+          "status": "recomputed"
+        },
+        {
+          "formula": "ld.K_Halpha",
+          "name": "K_Halpha",
+          "status": "recomputed"
+        },
+        {
+          "formula": "ld.K_Falpha",
+          "name": "K_Falpha",
+          "status": "recomputed"
+        },
+        {
+          "name": "Z_NT_1",
+          "provenance": "evidence",
+          "reason": "【几何相关性弱，未重算】寿命系数只依赖 N_L 与材料；K02 契约 method.life=external（KISSsoft 值）；N_L 不随几何变化（转速、寿命不变）",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 0.8670108248078495
+        },
+        {
+          "name": "Z_NT_2",
+          "provenance": "evidence",
+          "reason": "同 Z_NT_1（大轮；N_L_2 随 u 变化，传动比带 ±3% 内影响小）",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 0.8896103841152267
+        },
+        {
+          "name": "Y_NT_1",
+          "provenance": "evidence",
+          "reason": "同 Z_NT_1（弯曲）",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 0.8678699891821016
+        },
+        {
+          "name": "Y_NT_2",
+          "provenance": "evidence",
+          "reason": "同 Z_NT_2（弯曲）",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 0.8916380507057606
+        },
+        {
+          "formula": "surface.Z_L",
+          "name": "Z_L",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_V",
+          "name": "Z_V",
+          "status": "recomputed"
+        },
+        {
+          "formula": "surface.Z_R",
+          "name": "Z_R",
+          "status": "recomputed"
+        },
+        {
+          "name": "Z_W",
+          "provenance": "evidence",
+          "reason": "齿面硬化配对系数（两轮同硬度时 1），与几何无关",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 1.0
+        },
+        {
+          "name": "Z_X",
+          "provenance": "evidence",
+          "reason": "接触尺寸系数（m_n ≤ 10 mm 时 1），与几何无关",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 1.0
+        },
+        {
+          "name": "Y_X",
+          "provenance": "evidence",
+          "reason": "【几何相关，未重算】尺寸系数依赖 m_n；K02 渗氮钢 m_n ≤ 5 mm 时 Y_X = 1（ISO 6336-3 表5），本搜索域 m_n ≤ 2.5 mm 内不变",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 1.0
+        },
+        {
+          "name": "Y_drelT_1",
+          "provenance": "evidence",
+          "reason": "【几何相关，未重算】相对缺口敏感系数依赖 q_s（齿根形状）；K02 契约 method.root_factors=external（渗氮钢分支未实现）",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 0.9913796719943322
+        },
+        {
+          "name": "Y_drelT_2",
+          "provenance": "evidence",
+          "reason": "同 Y_drelT_1",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 0.9965311417306245
+        },
+        {
+          "name": "Y_RrelT_1",
+          "provenance": "evidence",
+          "reason": "【几何无关】齿根表面系数只依赖 Rz 与材料；K02 契约 method.root_factors=external",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 0.9900099828919311
+        },
+        {
+          "name": "Y_RrelT_2",
+          "provenance": "evidence",
+          "reason": "同 Y_RrelT_1",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 0.9900099828919311
+        },
+        {
+          "formula": "rf.Y_B.common",
+          "name": "Y_B",
+          "status": "recomputed"
+        },
+        {
+          "formula": "rf.Y_DT",
+          "name": "Y_DT",
+          "status": "recomputed"
+        },
+        {
+          "name": "Y_ST",
+          "provenance": "user",
+          "reason": "标准值 2.0（ISO 6336-3 参考试验齿轮），与几何无关",
+          "status": "held",
+          "unit": "1",
+          "value_canonical": 2.0
+        },
+        {
+          "name": "f_falpha_1",
+          "provenance": "user",
+          "reason": "【几何相关，未重算】精度 DIN 3961:1978（本库未实现），齿廓形状偏差按报告值保持",
+          "status": "held",
+          "unit": "um",
+          "value_canonical": 0.006
+        },
+        {
+          "name": "f_falpha_2",
+          "provenance": "user",
+          "reason": "同 f_falpha_1",
+          "status": "held",
+          "unit": "um",
+          "value_canonical": 0.006
+        },
+        {
+          "name": "f_Hbeta_1",
+          "provenance": "user",
+          "reason": "【几何相关，未重算】同上（DIN 3961:1978）",
+          "status": "held",
+          "unit": "um",
+          "value_canonical": 0.009000000000000001
+        },
+        {
+          "name": "f_Hbeta_2",
+          "provenance": "user",
+          "reason": "同 f_Hbeta_1",
+          "status": "held",
+          "unit": "um",
+          "value_canonical": 0.008
+        },
+        {
+          "name": "f_Hbeta5",
+          "provenance": "user",
+          "reason": "【几何相关，未重算】同上",
+          "status": "held",
+          "unit": "um",
+          "value_canonical": 0.006
+        },
+        {
+          "name": "d_inner_1",
+          "provenance": "evidence",
+          "reason": "小轮内径按作者输入保持（K02 轴齿轮 0 mm / K04 轴孔 25 mm：由轴决定，不随齿轮几何变化）；大轮由 adapter.blank_bore 重算",
+          "status": "held",
+          "unit": "mm",
+          "value_canonical": 0.0
+        },
+        {
+          "formula": "opt.d_inner.wheel",
+          "name": "d_inner_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "kc.q.1",
+          "name": "q_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "kc.q.2",
+          "name": "q_2",
+          "status": "recomputed"
+        },
+        {
+          "formula": "kc.C_R",
+          "name": "C_R",
+          "status": "recomputed"
+        },
+        {
+          "name": "l_sh",
+          "provenance": "user",
+          "reason": "小轮轴承跨距（作者输入 42 mm）按实体轴保持（KISSsoft 自动缩放口径见 P2/P5-B）",
+          "status": "held",
+          "unit": "mm",
+          "value_canonical": 42.0
+        },
+        {
+          "name": "s_sh",
+          "provenance": "user",
+          "reason": "小轮偏置（作者输入 4.2 mm）按实体轴保持",
+          "status": "held",
+          "unit": "mm",
+          "value_canonical": 4.2
+        },
+        {
+          "name": "d_sh",
+          "provenance": "user",
+          "reason": "小轮轴径（作者输入 21 mm）按实体轴保持",
+          "status": "held",
+          "unit": "mm",
+          "value_canonical": 21.0
+        },
+        {
+          "formula": "life.N_L.1",
+          "name": "N_L_1",
+          "status": "recomputed"
+        },
+        {
+          "formula": "life.N_L.2",
+          "name": "N_L_2",
+          "status": "recomputed"
+        }
+      ],
+      "expected_held_caveat": "Raw external result must be retained before any alignment. Never overwrite K_Hbeta or other outputs with predictions."
+    }
+  ]
+}

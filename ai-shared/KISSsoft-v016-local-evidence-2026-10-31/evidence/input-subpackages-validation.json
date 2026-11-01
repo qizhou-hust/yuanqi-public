@@ -1,0 +1,32 @@
+[
+  {
+    "name": "pkg/gearbase-v0.16-1-核心.zip",
+    "sha256": "82a0cb5e78f995666bc104fc05c9e3db732fd5f6e855f34f0e65127b38ab22aa",
+    "entries": 675,
+    "hash_and_crc_pass": true
+  },
+  {
+    "name": "pkg/gearbase-v0.16-2-题库.zip",
+    "sha256": "7b7f31839a7a9c8201fd471dc471bc326d7c28ff96a2b6bedbd30854da6b112b",
+    "entries": 261,
+    "hash_and_crc_pass": true
+  },
+  {
+    "name": "pkg/gearbase-v0.16-3-FEA求解器.zip",
+    "sha256": "1447dad9b05eb95410b8237272fd23799504fea129532c38556575b0444c5112",
+    "entries": 15,
+    "hash_and_crc_pass": true
+  },
+  {
+    "name": "pkg/gearbase-v0.16-4-CAD依赖.zip",
+    "sha256": "a8a3b20118da043b41f8cc00fd9fe849793cb24f9224ab5471f2b24b30815e0d",
+    "entries": 95,
+    "hash_and_crc_pass": true
+  },
+  {
+    "name": "pkg/gearbase-v0.16-5-M31源码存档.zip",
+    "sha256": "c6a45f6175c2e84e3473ba8b88a6291ab18c3f2df6dde67eccffa6e59cdf3fcd",
+    "entries": 579,
+    "hash_and_crc_pass": true
+  }
+]

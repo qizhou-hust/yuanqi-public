@@ -1,0 +1,23 @@
+{
+  "f0_catalogue": 14,
+  "catalogue_ID": 13167,
+  "source": "KISSsoft 2026 W000/W05WNORM10 FAKT_F0=14; prior byte-preserved catalogue-records.json",
+  "Fa_over_C0_derived": 0.026785714285714284,
+  "f0_Fa_over_C0_derived": 0.375,
+  "direct_native_values": {
+    "Lag[0].e": "0.27124999999999999112",
+    "Lag[0].X": "0.56000000000000005329",
+    "Lag[0].Y": "1.9250000000000000444",
+    "Lag[0].P": "949.85341979330974027",
+    "Lag[0].Lh_basic": "180769.26071225357009",
+    "Lag[0].Fa": "300",
+    "Lag[0].Fr": "664.91682105948166281"
+  },
+  "semantic_note": "Native Lag[0].f0=2 is a distinct friction-related variable, not catalogue FAKT_F0=14. It is not substituted for the requested bearing f0.",
+  "table_reconstruction": {
+    "e": 0.27125,
+    "X": 0.56,
+    "Y": 1.925,
+    "P_N": 949.8534197933097
+  }
+}

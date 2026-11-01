@@ -1,0 +1,50 @@
+{
+  "version": "2026",
+  "source": "R1prime-gear80-coupling1/run.json fresh_values shafts.size()",
+  "requested_load_lengths_mm": {
+    "Cylindrical gear": 80,
+    "Coupling / Motor": 1
+  },
+  "external_forces": {
+    "P4 Support A": {
+      "raw_components_N": [
+        "-227.4320413",
+        "-0",
+        "-624.8643979"
+      ],
+      "magnitude_N_derived": 664.9668030607351
+    },
+    "Cylindrical gear": {
+      "raw_components_N": [
+        "454.9627928",
+        "0",
+        "1250"
+      ],
+      "magnitude_N_derived": 1330.222215583688
+    },
+    "P4 Support B": {
+      "raw_components_N": [
+        "-227.4295066",
+        "0",
+        "-624.8574339"
+      ],
+      "magnitude_N_derived": 664.9593921228667
+    },
+    "Coupling / Motor": {
+      "raw_components_N": [
+        "0",
+        "0",
+        "0"
+      ],
+      "magnitude_N_derived": 0.0
+    }
+  },
+  "residual_components_N": [
+    0.10124489999998332,
+    0.0,
+    0.2781681999999819
+  ],
+  "residual_norm_N_derived": 0.296020400086272,
+  "maximum_deflection_mm_raw": "0.0029989409580556550608",
+  "precision": "Serialized force components retained exactly (approximately 10 significant digits); derived magnitude/residual does not add source precision."
+}

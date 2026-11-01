@@ -1,0 +1,42 @@
+{
+  "D:\\my_Works\\Gears\\M33-evidence-2026-10-28\\reports\\K04-EV-stage1\\K04-EV-stage1.Z12": {
+    "path": "sources/0728f6abb246-K04-EV-stage1.Z12",
+    "sha256": "0728f6abb246131eda023d06a1ef89d2b6afbed466dc0f078c47345f585f4d69"
+  },
+  "D:\\my_Works\\Gears\\M33-evidence-2026-10-28\\reports\\K01-spur\\K01-spur.Z12": {
+    "path": "sources/822c50af875e-K01-spur.Z12",
+    "sha256": "822c50af875e6c654a626587e3f8e42b0f6d74d21d537b3980163f8b3c24d531"
+  },
+  "D:\\my_Works\\Gears\\M33-evidence-2026-10-28\\reports\\K02-helical\\K02-helical.Z12": {
+    "path": "sources/be4c252ff9a0-K02-helical.Z12",
+    "sha256": "be4c252ff9a0a6b3d1da8e1a5b3895c603744caaa4ae575b11e34dbf75f095dc"
+  },
+  "D:\\Program Files\\KISSsoft AG\\KISSsoft 2026\\example\\08 Keys (DIN 6892 Example 1).M2A": {
+    "path": "sources/4e5288719a94-08 Keys (DIN 6892 Example 1).M2A",
+    "sha256": "4e5288719a94043ca148f2dbe7881ca067294811030437e604ddf5a222900b8c"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\M39-K04-EV-stage1-Ca-not-optimal\\M39-K04-EV-stage1-Ca-not-optimal.Z12": {
+    "path": "sources/ec5bc523b089-M39-K04-EV-stage1-Ca-not-optimal.Z12",
+    "sha256": "ec5bc523b08958fd0a19c3eea0d9959c4e9583ff672ba24c0ae8d407ebd3336b"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\M39-baseline-K01-spur\\M39-baseline-K01-spur.Z12": {
+    "path": "sources/0b616c0d6851-M39-baseline-K01-spur.Z12",
+    "sha256": "0b616c0d6851947aada9eea4adf55442696c1ba33342b737c605e1a897d74536"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\shaftprep\\R1-L1-S3a-run.W10": {
+    "path": "sources/6fe5aeed95ea-R1-L1-S3a-run.W10",
+    "sha256": "6fe5aeed95ea0169414cf7303a96dba29128f4155bf3dcca9bd908cacf97f91e"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\shaftprep\\R1-L1-S2-run.W10": {
+    "path": "sources/3308205a9c54-R1-L1-S2-run.W10",
+    "sha256": "3308205a9c54ccc3296563da307e6b2f62c8df361f02bc40ba8b06d6b2279ebd"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v015-run\\shaftprep\\R2-6206-RZ-run.W50": {
+    "path": "sources/eb004fe163bc-R2-6206-RZ-run.W50",
+    "sha256": "eb004fe163bc209f9f8a41c252493734a7a53acd956ab7328381f0f4bf7c123f"
+  },
+  "D:\\my_Works\\Gears\\kisssoft-v016-run\\OPT3-1-K04\\OPT3-1-K04.Z12": {
+    "path": "sources/f04183d66c5f-OPT3-1-K04.Z12",
+    "sha256": "f04183d66c5f68052b261e5bdfc88076485dfcec3221ad55be9097424ea25b1c"
+  }
+}

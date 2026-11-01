@@ -1,0 +1,20 @@
+{
+  "NW": 250000,
+  "standard_equation23": 0.5770799623628854,
+  "figure7_endpoints": [
+    [
+      1000,
+      1
+    ],
+    [
+      10000000000,
+      0.2
+    ]
+  ],
+  "double_log_interpolation": 0.5761808731627712,
+  "native_fw": 0.5761808731627712,
+  "native_minus_eq23": -0.000899089200114167,
+  "relative_difference": -0.0015579976064890033,
+  "native_minus_interpolation": 0.0,
+  "note": "Independent transparent arithmetic only. This branch did not run KISSsoft. Figure endpoints verified visually on DIN6892 2012-08 printed page17."
+}

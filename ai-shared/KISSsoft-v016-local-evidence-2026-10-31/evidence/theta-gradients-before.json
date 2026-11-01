@@ -1,0 +1,38 @@
+[
+  {
+    "case": "K02-helical",
+    "point": "start",
+    "max_error": 0.00042601227805971753,
+    "forward_exact": true
+  },
+  {
+    "case": "K02-helical",
+    "point": "solution",
+    "max_error": 0.00034754156449900986,
+    "forward_exact": true
+  },
+  {
+    "case": "K02-helical",
+    "point": "written",
+    "max_error": 0.0003475590504762316,
+    "forward_exact": true
+  },
+  {
+    "case": "K04-EV-stage1",
+    "point": "start",
+    "max_error": 0.00034615795170184205,
+    "forward_exact": true
+  },
+  {
+    "case": "K04-EV-stage1",
+    "point": "solution",
+    "max_error": 0.00013820653235999125,
+    "forward_exact": true
+  },
+  {
+    "case": "K04-EV-stage1",
+    "point": "written",
+    "max_error": 0.00013910938792738303,
+    "forward_exact": true
+  }
+]

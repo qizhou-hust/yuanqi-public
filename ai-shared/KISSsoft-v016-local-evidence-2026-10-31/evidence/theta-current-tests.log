@@ -1,0 +1,12 @@
+test_case_can_differ_only_in_derivative_semantics (test_theta_iteration_derivative.TestThetaIterationDerivative.test_case_can_differ_only_in_derivative_semantics) ... ok
+test_default_implicit_semantics_remain (test_theta_iteration_derivative.TestThetaIterationDerivative.test_default_implicit_semantics_remain) ... ok
+test_explicit_implicit_does_not_create_meaningful_case (test_theta_iteration_derivative.TestThetaIterationDerivative.test_explicit_implicit_does_not_create_meaningful_case) ... ok
+test_finite_iteration_semantics_and_nonconvergence (test_theta_iteration_derivative.TestThetaIterationDerivative.test_finite_iteration_semantics_and_nonconvergence) ... ok
+test_k02_k04_start_solution_and_written_points (test_theta_iteration_derivative.TestThetaIterationDerivative.test_k02_k04_start_solution_and_written_points) ... ok
+test_registry_roundtrip_preserves_finite_iteration_derivative (test_theta_iteration_derivative.TestThetaIterationDerivative.test_registry_roundtrip_preserves_finite_iteration_derivative) ... ok
+test_strategy_affects_model_identity (test_theta_iteration_derivative.TestThetaIterationDerivative.test_strategy_affects_model_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.339s
+
+OK

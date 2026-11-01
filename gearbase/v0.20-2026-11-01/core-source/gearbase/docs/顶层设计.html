@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数学齿轮基座顶层设计</title>
+<style>
+:root{
+  --bg:#f7f6f2; --panel:#ffffff; --ink:#1f2328; --muted:#5d636b; --line:#e2dfd6;
+  --accent:#1f5f8b; --accent-soft:#e6f0f7;
+  --ok:#1e7a46; --ok-soft:#e3f3e9; --mid:#9a6a00; --mid-soft:#fbf1d9; --no:#a8322d; --no-soft:#f9e4e2;
+  --code:#f1efe8;
+  --l0:#22415e; --l1:#2a5a80; --l2:#2f6f8f; --l3:#2e7d6b; --l4:#3f7d3a; --l5:#7a6a1e; --l6:#8a4f1d; --l7:#7a3f8f;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16181b; --panel:#1e2125; --ink:#e7e7e4; --muted:#a3a8ae; --line:#33373d;
+    --accent:#6fb0de; --accent-soft:#1d2d3a;
+    --ok:#5cc58a; --ok-soft:#1a2e22; --mid:#e0b552; --mid-soft:#332a14; --no:#ec7a73; --no-soft:#3a1f1d;
+    --code:#25292e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16181b; --panel:#1e2125; --ink:#e7e7e4; --muted:#a3a8ae; --line:#33373d;
+  --accent:#6fb0de; --accent-soft:#1d2d3a;
+  --ok:#5cc58a; --ok-soft:#1a2e22; --mid:#e0b552; --mid-soft:#332a14; --no:#ec7a73; --no-soft:#3a1f1d;
+  --code:#25292e;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 16px 80px}
+header.hero{padding:28px 0 12px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.kicker{color:var(--accent);font-weight:600;letter-spacing:.04em;font-size:13px}
+h1{font-size:30px;line-height:1.3;margin:6px 0 8px}
+h2{font-size:22px;margin:44px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:24px 0 8px}
+p{margin:8px 0}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:.88em;word-break:break-all}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:13px;line-height:1.55}
+nav.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:18px 0}
+nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+nav.toc a{color:var(--accent);text-decoration:none}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+.callout{border-left:4px solid var(--accent);background:var(--accent-soft);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.callout.warn{border-color:var(--no);background:var(--no-soft)}
+.callout.ok{border-color:var(--ok);background:var(--ok-soft)}
+.grid{display:grid;gap:12px}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:760px){.g4,.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.g2{grid-template-columns:1fr} nav.toc ol{columns:1} h1{font-size:24px}}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.stat .v{font-size:24px;font-weight:700;line-height:1.2}
+.stat .l{font-size:13px;color:var(--muted)}
+.tbl{overflow-x:auto;margin:10px 0;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--code);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+.tag{display:inline-block;padding:0 8px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.ok{background:var(--ok-soft);color:var(--ok)}
+.mid{background:var(--mid-soft);color:var(--mid)}
+.no{background:var(--no-soft);color:var(--no)}
+/* 冰山分层图 */
+.berg{margin:16px 0;display:grid;gap:6px}
+.berg .waterline{border-top:2px dashed var(--accent);margin:6px 0 2px;font-size:12px;color:var(--accent);padding-top:2px}
+.layer{display:grid;grid-template-columns:110px 1fr 120px;gap:10px;align-items:center;color:#fff;border-radius:8px;padding:10px 12px}
+.layer b{font-size:15px}
+.layer .d{font-size:13px;opacity:.95}
+.layer .k{font-size:12px;text-align:right;opacity:.95}
+@media (max-width:640px){.layer{grid-template-columns:1fr}.layer .k{text-align:left}}
+.L7{background:var(--l7)}.L6{background:var(--l6)}.L5{background:var(--l5)}.L4{background:var(--l4)}
+.L3{background:var(--l3)}.L2{background:var(--l2)}.L1{background:var(--l1)}.L0{background:var(--l0)}
+.w1{margin:0 18%}.w2{margin:0 12%}.w3{margin:0 6%}.w4{margin:0 3%}
+@media (max-width:640px){.w1,.w2,.w3,.w4{margin:0}}
+.ms{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.ms h3{margin:0 0 4px}
+.ms .meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+.ms ul{margin:6px 0;padding-left:20px}
+.gate{border-top:1px dashed var(--line);margin-top:8px;padding-top:8px;font-size:14px}
+.gate b{color:var(--ok)}
+.timeline{display:grid;grid-template-columns:110px repeat(12,minmax(0,1fr));gap:2px;font-size:12px;min-width:760px}
+.timeline .h{color:var(--muted);text-align:center}
+.timeline .lane{font-weight:600;padding-right:6px;align-self:center}
+.timeline .seg{border-radius:4px;padding:3px 6px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:12px}
+@media print{body{background:#fff}.panel,.ms,.stat,.tbl,.layer{break-inside:avoid}nav.toc{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">M31 齿轮系统 · 顶层设计 · 数学基座</div>
+  <h1>数学齿轮基座：唯一真源、统一校核、纯数学优化、FEA 工具化与 AI 接入</h1>
+  <p class="muted">2026-10-29 · 依据：M31 完整包只读审计 + 4 路并行设计（代码映射 / 公式库 / FEA 工具化 / 优化器与 AI）+ 已跑通的 gearmath 原型（21 项测试全过）</p>
+</header>
+
+<nav class="toc" aria-label="目录">
+<ol>
+  <li><a href="#s1">一页结论</a></li>
+  <li><a href="#s2">冰山架构：八层分工</a></li>
+  <li><a href="#s3">十二条不变量</a></li>
+  <li><a href="#s4">原型已经验证了什么（范围有限）</a></li>
+  <li><a href="#s5">L0–L1 数学内核与计算图</a></li>
+  <li><a href="#s6">L2 公式库（冰山基座）</a></li>
+  <li><a href="#s7">L3 唯一真源</a></li>
+  <li><a href="#s8">L4 统一校核计算器</a></li>
+  <li><a href="#s9">L5 纯数学优化器</a></li>
+  <li><a href="#s10">L6 FEA/BEM/LTCA 作为工具</a></li>
+  <li><a href="#s11">L7 AI 原生接口</a></li>
+  <li><a href="#s12">M31 现状：信息孤岛实证</a></li>
+  <li><a href="#s13">迁移路径</a></li>
+  <li><a href="#s14">特色与相对优势</a></li>
+  <li><a href="#s15">修订后的里程碑 M32–M40</a></li>
+  <li><a href="#s16">需要你拍板的事项</a></li>
+</ol>
+</nav>
+
+<!-- 1 -->
+<h2 id="s1">1. 一页结论</h2>
+<div class="callout">
+<p><b>核心思路：</b>把齿轮系统的全部知识压成一张<b>带量纲、可微、可溯源的数学计算图</b>。几何、强度、轴承、热、效率都是图上的公式（数据，不是代码）；所有校核只从这张图取数；优化器只看到"变量、目标、约束"，不知道齿轮；FEA 只作为给图提供"带数值收敛记录的证据"的工具；AI 通过同一张图读公式链和精确导数，但永远不能自己产生数值。</p>
+</div>
+<div class="grid g4">
+  <div class="stat"><div class="v">8 层</div><div class="l">L0 量纲内核 → L7 AI 接口，只有 L2 以上知道"齿轮"</div></div>
+  <div class="stat"><div class="v">1e-9</div><div class="l">原型重算 C001 接触链，与 M31 结果的相对偏差</div></div>
+  <div class="stat"><div class="v">≈1,150</div><div class="l">完整基座需要的公式行（28 个模块，原型已有 84）</div></div>
+  <div class="stat"><div class="v">≈200</div><div class="l">人周（去重后），4–5 人约 12 个月到 P1 全覆盖</div></div>
+</div>
+<h3>为什么必须这样做</h3>
+<p>M31 的问题不是缺功能，而是<b>同一个物理量被很多地方各自计算</b>：渐开线函数散在 9 个文件，中心距至少 12 处，端面压力角 8 处，表达式引擎 5 套，单位表 5 份（度与弧度口径互相冲突），ISO 6336 评级路径 4 条，"唯一真源"文档 9 类。每处都可能各自出错，结果之间也无法互证，这正是你说的"信息孤岛"。数学基座的作用是让每个量<b>全系统只有一个定义</b>，所有模块都通过它连通。</p>
+<h3>三件最重要的事</h3>
+<ol>
+<li><b>先统一内核与公式库：</b>以原型为唯一内核，把 M31 的 22 个手填系数（KV、KHβ、ZNT 等）全部改为公式，实现"圆柱齿轮校核零手填系数"。这是相对 M31 最大的单点跃迁，约 3 个月。</li>
+<li><b>优化器只做数学：</b>建立公开的 Problem IR（v1 已落地）；结果分项报告搜索覆盖声明、KKT 一阶残差、数值收敛，不合并成一个"可信"标签；齿轮知识只存在于"问题编译器"中。原型已有测试强制优化器不能 import 齿轮模块。</li>
+<li><b>FEA 改为证据供应商：</b>先修加载方式（M31 斜齿 FE 峰压 11 GPa 的主因是转角加载，等效线载约 1.7 kN/mm），再按 7 级验证阶梯逐级解锁"复核、标定、直接评估"三种用途。</li>
+</ol>
+
+<!-- 2 -->
+<h2 id="s2">2. 冰山架构：八层分工</h2>
+<p>水面以上是用户和 AI 看到的功能；水面以下是数学基座。越往下越稳定、越不知道"齿轮"。</p>
+<div class="berg">
+  <div class="layer L7 w1"><b>L7 AI 接口</b><span class="d">统一 MCP 工具、公式链解释、精确灵敏度、两段式提交、agent_proposed 闸门、智能体评测</span><span class="k">知道齿轮（只读）</span></div>
+  <div class="layer L6 w2"><b>L6 数值工具</b><span class="d">FEA / BEM / LTCA：输入是模型投影，输出是带数值收敛记录的证据；代理模型供优化器使用</span><span class="k">不知道（工具契约）</span></div>
+  <div class="layer L5 w2"><b>L5 纯数学优化器</b><span class="d">Problem IR、算法组合（穷举 / 剪枝 / NLP / MINLP / NSGA / 鲁棒）、固定声明枚举、系统分解协调</span><span class="k">不知道</span></div>
+  <div class="layer L4 w3"><b>L4 统一校核</b><span class="d">所有校核 = 图中某个量 + 限值 + 方向；输出格式唯一；覆盖矩阵由注册表自动生成</span><span class="k">知道（来自 L2）</span></div>
+  <div class="berg waterline">——— 水面：以下是数学基座 ———</div>
+  <div class="layer L3 w3"><b>L3 唯一真源</b><span class="d">数学齿轮模型：只持久化作者输入、证据、约束、选择决策；其余一律是投影</span><span class="k">知道（数据模型）</span></div>
+  <div class="layer L2 w4"><b>L2 公式库</b><span class="d">ISO 21771 / 6336 / 1328 / 14179 / DIN 743 / ISO 281 …，公式即数据，带条款号、版次、适用域、测试向量、证据等级</span><span class="k">知道（仅数据）</span></div>
+  <div class="layer L1"><b>L1 计算图</b><span class="d">一个输出一条公式、方法选择器、缺输入即阻断、适用域、来源传染、公式链、灵敏度</span><span class="k">不知道</span></div>
+  <div class="layer L0"><b>L0 数学内核</b><span class="d">唯一单位目录与量纲（角度单列）、白名单表达式、前向自动微分、隐函数求导、精确与区间后端</span><span class="k">不知道</span></div>
+</div>
+<p class="small muted">"不知道齿轮"指这一层的代码里不出现任何齿轮概念，由 CI 守门检查；齿轮知识只以数据形式（L2 公式、L3 模型、问题编译器模板）进入。</p>
+
+<!-- 3 -->
+<h2 id="s3">3. 十二条不变量（全系统必须遵守）</h2>
+<div class="tbl"><table>
+<thead><tr><th>#</th><th>不变量</th><th>含义</th><th>原型状态（"原型已实现"＝机制已编码并有测试；仅外啮合圆柱齿轮副，数值只与 C001 一例对拍）</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>一量一义</td><td>同一物理量全系统只有一个 L2 定义；L2 之外出现几何或强度公式即 CI 失败</td><td><span class="tag ok">原型已实现</span>（重复定义报"唯一真源冲突"）</td></tr>
+<tr><td>2</td><td>公式即数据</td><td>白名单表达式，不能任意调用、不能 import、不能访问属性</td><td><span class="tag ok">原型已实现</span></td></tr>
+<tr><td>3</td><td>编译期量纲校核</td><td>加载公式时推断量纲；角度单独成量纲，度/弧度只在边界换算</td><td><span class="tag mid">部分</span>（公式内部量纲推断已实现；输入边界单位校验有缺口：齿宽误填为 N 仍可能"通过"，修复中；温度量纲待补）</td></tr>
+<tr><td>4</td><td>缺输入即阻断</td><td>不猜默认值，不默认为 1，不默认为钢；标准常数也要显式声明来源</td><td><span class="tag mid">部分</span>（缺公式输入时返回 blocked_missing_inputs；缺安全系数限值时抛异常而非明确阻断，修复中）</td></tr>
+<tr><td>5</td><td>派生不落源</td><td>派生量不能被锁定、不能写回源文档；优化结果被采纳时生成新修订</td><td><span class="tag ok">原型已实现</span>（锁定派生量即报错）</td></tr>
+<tr><td>6</td><td>适用域是公式的一部分</td><td>越域输出 out_of_domain，不外推</td><td><span class="tag ok">原型已实现</span></td></tr>
+<tr><td>7</td><td>版次与方法显式</td><td>每条公式带条款、版次、方法；版次按分册配置（ISO 6336-1 / -2 / -3 等可各自不同，不要求同一年份），同一分册内禁止混用；方法用选择器特化</td><td><span class="tag mid">部分</span>（有条款；分册版次档案与选择器待做）</td></tr>
+<tr><td>8</td><td>处处可溯源</td><td>任何数都能展开成公式链：公式、条款、数值、单位、来源</td><td><span class="tag ok">原型已实现</span></td></tr>
+<tr><td>9</td><td>处处可微</td><td>前向自动微分给出精确偏导；分段与取整标记非光滑点</td><td><span class="tag ok">原型已实现</span>（非光滑标记待做）</td></tr>
+<tr><td>10</td><td>来源传染</td><td>结果的来源等级取依赖中最弱的一级；含 agent_proposed 或 assumption 的结论不能标"通过"</td><td><span class="tag ok">原型已实现</span>（AI 工具层）</td></tr>
+<tr><td>11</td><td>工具不是裁判</td><td>FEA 等只提供带数值收敛记录的证据，判定永远由公式完成；数值收敛不等于模型正确</td><td><span class="tag ok">原型接口已实现</span>（未接入真实 FE）</td></tr>
+<tr><td>12</td><td>可逐位重放</td><td>每份回执记录源 SHA、公式注册表 SHA、内核版本、求值后端</td><td><span class="tag mid">部分</span>（有模型 SHA）</td></tr>
+</tbody></table></div>
+
+<!-- 4 -->
+<h2 id="s4">4. 原型已经验证了什么（范围有限）</h2>
+<p>原型 <code>gearmath</code>（纯 Python、零依赖，约 1,000 行）在项目文件 <code>m31-analysis/gearmath-原型/</code> 中，可直接运行。</p>
+<div class="tbl"><table>
+<thead><tr><th>对拍项（M31 C001 第一级，z=20/36，m=2，b=30）</th><th>原型</th><th>M31 收据</th><th>相对偏差</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>Z_H 节点区域系数</td><td>2.494573171</td><td>2.494573171</td><td>3e-16</td><td>原型独立计算</td></tr>
+<tr><td>Z_ε 重合度系数（εα = 1.6246）</td><td>0.889823503</td><td>0.889823503</td><td>7e-16</td><td>原型独立计算</td></tr>
+<tr><td>Z_B 单对齿啮合系数</td><td>1.057224574</td><td>1.057224574</td><td>2e-16</td><td>原型独立计算</td></tr>
+<tr><td>σ_H 小轮接触应力（MPa）</td><td>1046.227273</td><td>1046.227273</td><td>7e-16</td><td>K 系数取自收据</td></tr>
+<tr><td>S_H 小轮接触安全系数</td><td>1.190814831</td><td>1.190814831</td><td>5e-16</td><td></td></tr>
+<tr><td>K_Fβ = K_Hβ^NF</td><td>2.240105407</td><td>2.240105407</td><td>0</td><td>原型独立计算</td></tr>
+<tr><td>Y_F 齿形系数（小轮）</td><td>1.608860004</td><td>1.608861635</td><td>1.0e-6</td><td>原型按 ISO 6336-3 方法 B 独立迭代</td></tr>
+<tr><td>Y_S 应力修正系数（小轮）</td><td>1.810435633</td><td>1.810434945</td><td>3.8e-7</td><td>同上</td></tr>
+<tr><td>S_F 小轮弯曲安全系数</td><td>4.506426702</td><td>4.506423847</td><td>6.3e-7</td><td></td></tr>
+</tbody></table></div>
+<div class="grid g3">
+<div class="panel"><h3 style="margin-top:0">公式链</h3><p>任一结果可展开到条款号。例如 S_H_1 → σ_HG_1 与 σ_H_1 → Z_B → M_1 → α_wt（由变位无侧隙啮合方程反求）→ α_t → α_n、β……每步带数值、单位、来源。</p></div>
+<div class="panel"><h3 style="margin-top:0">精确灵敏度</h3><p>对 S_F_1 的弹性（参数变 1% 时 S 变化 %）：模数 +2.13，齿数 +1.26，齿宽 +0.87，KHβ −0.85，扭矩 −1.00。自动微分与有限差分一致到 7 位。</p></div>
+<div class="panel"><h3 style="margin-top:0">纯数学优化</h3><p>优化器对 z1、模数系列、齿宽、变位做网格穷举 + 坐标搜索细化，1625 次评估给出已评估点中的非支配解；只给搜索覆盖声明，不证明全局或局部最优。优化器源码不含任何齿轮概念（有测试强制）。</p></div>
+</div>
+<p class="small muted">局限：KV、KHβ、ZNT 等 20 个系数仍取自 M31 收据，尚未写成公式；优化演示中它们保持不变，因此优化数值只用于展示架构。只覆盖外啮合圆柱齿轮副。</p>
+
+<!-- 5 -->
+<h2 id="s5">5. L0–L1 数学内核与计算图</h2>
+<div class="grid g2">
+<div class="panel">
+<h3 style="margin-top:0">L0 数学内核</h3>
+<ul>
+<li><b>唯一单位目录：</b>规范单位 mm、N、s、rad；量纲 (L, F, T, A)，待补温度 Θ。取代 M31 的 5 份单位表。</li>
+<li><b>白名单表达式：</b>编译期量纲推断，三角函数只接受角度。</li>
+<li><b>前向自动微分：</b>对偶数；<code>inv</code> / <code>inv_inverse</code>；不动点与隐式方程用隐函数定理求导。</li>
+<li><b>双后端：</b>float + 对偶数用于设计和优化；精确有理数 / 区间算术用于严格界和重放（吸收 M31 的 parameter_graph、interval、Krawczyk，三套区间合一）。</li>
+</ul>
+</div>
+<div class="panel">
+<h3 style="margin-top:0">L1 计算图</h3>
+<ul>
+<li><b>公式行</b>：输出、单位、表达式、条款、版次、方法、适用域、类型（显式 / 不动点 / 隐式 / 表查 / 积分）。</li>
+<li><b>方法选择器：</b>同一输出允许多条变体（如 KV 方法 B / C），编译时按选择器恰好命中一条，否则拒绝；<code>external</code> 表示改由带数值收敛记录或来源记录的证据提供。</li>
+<li><b>方法差分：</b>两个实例（例如 KV-B 与 KV-C）逐中间量对比并归因。</li>
+<li><b>作用域：</b>全限定名，如 <code>st1.m2.w:sigma_H</code>（第 1 级、第 2 啮合、大轮）。</li>
+<li><b>投影缓存：</b>以"依赖输入子集 + 注册表版本 + 内核版本"的哈希为键，吸收 M31 的 ArtifactDAG。</li>
+</ul>
+</div>
+</div>
+<h3>内核还需补的 12 项扩展</h3>
+<div class="tbl"><table>
+<thead><tr><th>优先级</th><th>扩展</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td><span class="tag no">P0</span></td><td>分段函数、方法选择器、温度量纲、离散取整与标准系列、只读表与插值、作用域、非光滑标记</td><td>KV 共振区、KHβ 分段、ZNT 拐点、模数系列、ISO 1328 公差表、多级系统命名</td></tr>
+<tr><td><span class="tag mid">P1</span></td><td>区间求根与多维隐式求解、沿啮合线积分、曲线对象（S-N、粘温）、椭圆积分等特殊函数、外部工具节点</td><td>Σx 反求、M_dK、胶合积分温度、Miner、Hertz 椭圆接触、FEA 证据入口</td></tr>
+</tbody></table></div>
+
+<!-- 6 -->
+<h2 id="s6">6. L2 公式库：冰山基座</h2>
+<div class="grid g4">
+  <div class="stat"><div class="v">28</div><div class="l">个模块</div></div>
+  <div class="stat"><div class="v">≈1,150</div><div class="l">条公式行</div></div>
+  <div class="stat"><div class="v">≈60</div><div class="l">张数据表 / 曲线（放用户私有数据包）</div></div>
+  <div class="stat"><div class="v">≈120</div><div class="l">人周（P0 32 / P1 42 / P2 46）</div></div>
+</div>
+<div class="tbl"><table>
+<thead><tr><th>族</th><th>模块</th><th>优先级</th></tr></thead>
+<tbody>
+<tr><td>几何与精度</td><td>ISO 21771 完整几何（外/内啮合、齿条、变位、齿厚、Wk、M_dK、弦齿厚、根切）；ISO 1328-1/-2；DIN 3967 侧隙链；修形参数</td><td><span class="tag no">P0</span> / P1</td></tr>
+<tr><td>圆柱齿轮强度</td><td>ISO 6336-1（KV B/C、KHβ C、KHα、Kγ、c′/cγ）、-2、-3（含凸台、Yβ 2019）、-5（数据包接口）、-6（Miner）</td><td><span class="tag no">P0</span></td></tr>
+<tr><td>失效模式</td><td>ISO/TS 6336-20/-21 胶合、-22 微点蚀、-4 齿面断裂；润滑与 EHL；Hertz 基础</td><td><span class="tag mid">P1</span> / P2</td></tr>
+<tr><td>效率、热、系统</td><td>齿轮力与轴系静力、运动学；ISO/TR 14179 效率与热平衡；行星（装配、均载、Willis）</td><td>P0 / <span class="tag mid">P1</span></td></tr>
+<tr><td>轴、轴承、连接</td><td>DIN 743；ISO 281（修正寿命）、ISO/TS 16281；DIN 6892 键；DIN 5480 花键；DIN 7190 过盈 + ISO 286</td><td><span class="tag mid">P1</span> / P2</td></tr>
+<tr><td>其它齿轮类型</td><td>蜗杆（ISO 10828 几何、ISO/TS 14521 承载）；锥齿轮（ISO 23509 + ISO 10300）；VDI 2736 塑料；AGMA 变体</td><td>P2</td></tr>
+<tr><td>工具证据接口</td><td>FEA / LTCA 输出契约（与 L6 对接）</td><td>P1</td></tr>
+</tbody></table></div>
+<h3>证据等级 E0–E6（由测试自动推导，不手填）</h3>
+<div class="tbl"><table>
+<thead><tr><th>级</th><th>含义</th><th>例子</th></tr></thead>
+<tbody>
+<tr><td>E0</td><td>未验证草稿</td><td>刚录入</td></tr>
+<tr><td>E1</td><td>自洽：量纲、极限情形、对称、恒等式</td><td>β→0、x→0、交换 1/2</td></tr>
+<tr><td>E2</td><td>独立实现交叉</td><td>原型与 M31 C001 对拍（当前级别）</td></tr>
+<tr><td>E3</td><td>公开出版算例复现</td><td>Niemann、Roloff/Matek 等教材例题</td></tr>
+<tr><td>E4</td><td>标准配套算例复现</td><td>ISO/TR 6336-30</td></tr>
+<tr><td>E5</td><td>商业软件同输入逐字段一致</td><td>用户提供的 KISSsoft 报告</td></tr>
+<tr><td>E6</td><td>实测或台架</td><td>FZG、企业试验</td></tr>
+</tbody></table></div>
+<p>发布门槛：公式 <code>verified</code> 需 ≥E3；主链输出（S_H、S_F、KV、KHβ、YF、YS 等）需 ≥E4 或 E5，否则报告加"未独立验证"水印。</p>
+<div class="callout warn"><p><b>许可红线：</b>公式只写成我们自己的表达式并引用条款号，绝不复制标准原文；成体系的表格数据（ISO 6336-5 材料线、DIN 3967/743/6885/5480 表、ISO 281 系数、轴承样本、油品数据）只放用户私有数据包，公开仓库只留哈希。"公式与数值常数属于事实"这一编码依据需法务确认（尤其欧盟数据库权利）。</p></div>
+
+<!-- 7 -->
+<h2 id="s7">7. L3 唯一真源：数学齿轮模型</h2>
+<div class="grid g2">
+<div class="panel">
+<h3 style="margin-top:0"><span class="tag ok">允许持久化</span></h3>
+<ol>
+<li><b>作者输入：</b>拓扑（级、端口、轴）、每级独立设计变量（z、mn、αn、β、x、b、刀具、材料引用、工况、载荷谱、公差带），每个值带单位、来源、出处。</li>
+<li><b>证据记录：</b>外部系数、材料许用值、目录条目、试验记录或 FE 数值收敛记录，不可变，按哈希引用。</li>
+<li><b>约束与意图：</b>锁定、目标、限值、成熟度要求、优化问题声明（引用 L2 量名，不存数值）。</li>
+<li><b>选择决策：</b>分支选择、离散跳变确认、版次与方法选择。</li>
+<li><b>修订元数据：</b>修订号、父 SHA、CAS 头指针。</li>
+</ol>
+</div>
+<div class="panel">
+<h3 style="margin-top:0"><span class="tag no">必须是投影（只读、可重算）</span></h3>
+<ol>
+<li>所有 L2 派生量：d、db、da、αw、εα、各系数、σ、S。</li>
+<li>校核结论、约束绑定情况、灵敏度。</li>
+<li>优化候选与 Pareto 集（被采纳时生成新修订）。</li>
+<li>CAD、STEP、网格、图纸、报告、MCP 返回。</li>
+<li>数值方法结果（只有通过数值收敛检查的标量以证据形式进图）。</li>
+</ol>
+</div>
+</div>
+<p>落地：以 M31 的 <code>gears.benchmark.case/1</code> 为基础定义 <code>gears.math-source/2</code>，并入 DesignRevision 2.0 的约束、锁定、成熟度和 math_source 的不可变回执；SQLite CAS 日志作为唯一存储；其余 6 类文档改为投影视图。需关闭 M31 <code>edit.py:228-241</code> 把派生值写回源文档的做法。迁移期新旧回执双写。</p>
+
+<!-- 8 -->
+<h2 id="s8">8. L4 统一校核计算器</h2>
+<p>所有校核都是同一种结构：<b>图中的一个量 + 一个限值 + 方向</b>。齿面接触、齿根弯曲、胶合、微点蚀、轴疲劳、轴承寿命、键挤压、过盈、热平衡、重合度、根切……全部从 L2 注册表生成，由同一个 <code>rate()</code> 求值，输出同一格式：</p>
+<pre>{ id, quantity, value, limit, sense, margin_ratio, pass, ref, edition, method,
+  provenance_floor, evidence_class, domain_violations, model_sha256 }</pre>
+<ul>
+<li><b>状态只有五种：</b>pass、fail、blocked_missing_inputs、out_of_domain、pass_pending_human_confirmation（含 AI 提出的值）。</li>
+<li><b>覆盖矩阵自动生成：</b>"支持哪些校核"由注册表推出，不再手写能力表。</li>
+<li><b>退役：</b>M31 的 4 条评级路径合一；python-gearbox 降级为外部对照（E2），不再是生产路径。</li>
+<li><b>杠杆分析：</b>每项校核附带对设计变量的精确灵敏度，直接回答"改哪个参数最有效"。</li>
+</ul>
+
+<!-- 9 -->
+<h2 id="s9">9. L5 纯数学优化器</h2>
+<pre>设计意图（中文需求 / AI 工具调用）
+      │  问题编译器（齿轮知识唯一入口：stage_sizing / helical_two_stage / worm_two_stage / planetary_ngw / system_joint / edit_nearest）
+      ▼
+Problem IR（变量：整数 / 有序类别 / 无序类别 / 连续 / 耦合；目标；约束 g ≤ 0；参数）
+      │  纯数学求解（不知道齿轮）
+      ▼
+候选 + 分项声明（搜索覆盖 / KKT 残差 / 数值收敛）+ 求解轨迹  ──▶  L4 统一校核独立重算  ──▶  被采纳时生成 L3 新修订</pre>
+<div class="tbl"><table>
+<thead><tr><th>求解器</th><th>适用</th><th>搜索或最优性声明（规划；原型只有前两类网格 / 抽样 + 坐标细化）</th></tr></thead>
+<tbody>
+<tr><td>精确格穷举</td><td>纯离散、组合数在预算内</td><td>exhaustive_over_declared_domain</td></tr>
+<tr><td>剪枝格搜索</td><td>离散 + 白盒；用单调界与区间算术严格剪枝</td><td>同上（剪枝依据须是可复核的严格界）</td></tr>
+<tr><td>局部 NLP</td><td>固定离散后连续细化；自动微分提供梯度</td><td>KKT 一阶残差（kkt_satisfied / kkt_violated，含残差、乘子、积极集；只是必要条件，不证明最优）</td></tr>
+<tr><td>MINLP 分支定界</td><td>离散 + 连续</td><td>bnb_gap（仅凸松弛时），否则标注启发式</td></tr>
+<tr><td>NSGA-II / III</td><td>多目标</td><td>sampled（种子、超体积）</td></tr>
+<tr><td>鲁棒优化</td><td>公差、工况散布</td><td>robust_sampled / robust_linearized</td></tr>
+<tr><td>代理模型</td><td>昂贵的 FEA 评估</td><td>sampled_surrogate，必须复核</td></tr>
+</tbody></table></div>
+<ul>
+<li><b>声明只用固定枚举</b>，不允许用自由文本冒充。原型已实现的搜索声明：coverage ∈ {exhaustive_over_declared_domain, exhaustive_over_declared_grid, sampled}，refinement ∈ {none, local_refined}，outcome ∈ {feasible_found, no_feasible_found}（未找到可行点 ≠ 已证明不可行）。bnb_gap、infeasible_proven 等为规划项。选择哪个算法按确定性规则，并写进求解轨迹。</li>
+<li><b>系统级优化：</b>比分配 → 每级尺寸 → 轴与轴承选型，三层分解，用目标级联或块坐标协调；协调器只认共享变量名，仍不知道齿轮；系统级声明逐层列出，不合成单一标签。</li>
+<li><b>编辑模式 = 另一个问题：</b>min Σ w·d(x, x0)，类别量按系列秩算距离；离散跳变需确认的规则保留。M31 三套手写推导合并为一个模板。</li>
+<li><b>不可行时：</b>给出最小冲突约束集与可由用户授权的放宽项，需求绝不静默修改。</li>
+</ul>
+<h3>结果的三类性质分开报告（不合并成"可信"）</h3>
+<div class="tbl"><table>
+<thead><tr><th>性质</th><th>回答的问题</th><th>谁给出</th><th>取值</th><th>不表示</th></tr></thead>
+<tbody>
+<tr><td>证据等级 evidence_level</td><td>公式与输入的来源有多可靠</td><td>L2 公式注册表（按依赖链取最弱）</td><td>E0–E6；优化器与数值方法只填 not_assessed</td><td>不表示求解做得好</td></tr>
+<tr><td>KKT 一阶条件 optimality</td><td>返回的连续点是否满足一阶必要条件</td><td>优化器可选检查（离散变量固定；解析梯度或标注为中心差分）</td><td>not_checked / kkt_satisfied / kkt_violated，附驻点、原始可行、互补残差与积极集</td><td>不证明局部或全局最优；不检查约束规范与二阶条件；非光滑处无意义</td></tr>
+<tr><td>数值收敛 solver_convergence</td><td>数值过程是否稳定停止或逐级加密收敛</td><td>数值方法（Richardson 外推、最后两级相对变化）或优化器停止判据</td><td>converged / not_converged / stopped_by_step_tolerance / not_applicable</td><td>不表示模型正确，不提升证据等级</td></tr>
+</tbody></table></div>
+<p class="small muted">另有 search_claim 只描述搜索覆盖。四项各自独立出现在结果的 assurance 记录中；测试保证结果里没有 trusted / verified 一类合并标签。</p>
+
+<!-- 10 -->
+<h2 id="s10">10. L6 FEA / BEM / LTCA 作为工具</h2>
+<div class="callout"><p><b>定位：</b>数值方法是公式图的<b>证据供应商</b>，不是另一套校核。输入只能是数学模型的投影（几何来自唯一齿面权威，载荷与支承来自公式图），输出是"值或场摘要 + 单位 + 数值收敛记录 + 来源类别"。未通过数值收敛检查的数不能进图；通过也只说明离散误差可控，不说明模型正确。</p></div>
+<div class="grid g3">
+<div class="panel"><h3 style="margin-top:0">复核</h3><p>与公式结果对比，偏差进报告（fe_verified）。</p></div>
+<div class="panel"><h3 style="margin-top:0">标定</h3><p>标定 YF/YS、单齿刚度 c′、啮合刚度 cγ、KHβ 载荷分布、行星 Kγ（fe_calibrated）。</p></div>
+<div class="panel"><h3 style="margin-top:0">直接评估</h3><p>没有适用标准公式时（薄轮缘、内齿圈等），在报告中与 ISO 并列显示（fe_direct）。</p></div>
+</div>
+<h3>7 级验证阶梯（过级才解锁对应用途）</h3>
+<div class="tbl"><table>
+<thead><tr><th>级</th><th>测例</th><th>验收线</th><th>现状</th></tr></thead>
+<tbody>
+<tr><td>L0</td><td>Patch 测试</td><td>位移误差 &lt;1e-6</td><td><span class="tag ok">已过</span>（5e-8）</td></tr>
+<tr><td>L1</td><td>Hertz 圆柱</td><td>网格三级变化 &lt;2%；罚刚度外推后峰值误差 &lt;3%</td><td><span class="tag mid">部分</span>：网格收敛，罚刚度未饱和</td></tr>
+<tr><td>L2</td><td>单齿根弯曲 vs ISO 6336-3</td><td>≥12 个点 FE/ISO ∈ [0.90, 1.10]</td><td><span class="tag mid">有工具无结果</span></td></tr>
+<tr><td>L3</td><td>直齿副接触 vs ISO 6336-2</td><td>σH0 ∈ [0.92, 1.08]；c′ ∈ [0.8, 1.2]；相位收敛 &lt;3%</td><td><span class="tag no">未达标</span>（M30 仅 5 个接触节点）</td></tr>
+<tr><td>L4</td><td>斜齿副</td><td>载荷分布 FE 对 LTCA 偏差 &lt;8%；TE 峰峰值 &lt;10%</td><td><span class="tag no">未达标</span></td></tr>
+<tr><td>L5</td><td>行星级 Kγ</td><td>对称性 Kγ=1±0.01；与解析均载偏差 &lt;5%</td><td><span class="tag no">未做</span></td></tr>
+<tr><td>L6</td><td>直接评估</td><td>两种独立模型一致 &lt;10%</td><td><span class="tag no">未做</span></td></tr>
+</tbody></table></div>
+<h3>修复当前 FE 问题的顺序</h3>
+<ol>
+<li><b>改为扭矩控制：</b>M31 斜齿算例用 0.02 rad 转角加载，孔扭矩约 93 N·m，作用在 m=2、齿宽 4 mm 的齿上，Hertz 手算峰值已约 7 GPa；网格又比 Hertz 半宽粗约 10 倍，叠加罚刚度主导，才到 11 GPa（手算量级，推测）。</li>
+<li><b>映射六面体网格：</b>gmsh transfinite 齿分区拉伸为二次六面体，接触带单元 ≤ 接触半宽 / 8。</li>
+<li><b>接触格式：</b>实测 CalculiX 的 mortar 接触（推测可用）；不可用则做罚刚度外推。长期路线是"FE 算体柔度 + 现有 BEM 核算接触面"。</li>
+</ol>
+<h3>优化器怎么用 FEA：三环结构</h3>
+<div class="tbl"><table>
+<thead><tr><th>环</th><th>耗时</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>内环</td><td>毫秒级</td><td>公式 + 代理修正因子，如 YFS = YFS_ISO × φ(ξ)，带有效域、可微；越域自动回退到标准值</td></tr>
+<tr><td>中环</td><td>秒级</td><td>LTCA：FE 影响系数柔度 + BEM 局部接触，输出传动误差、KHα、KHβ</td></tr>
+<tr><td>外环</td><td>分钟至小时</td><td>FE 标定与最终复核，异步批量；最优点必须做一次真实 FE 复核</td></tr>
+</tbody></table></div>
+<p class="small muted">缓存键：几何投影、修形、载荷、材料、求解器 SHA 的哈希。M31 模块处置：重构 gear_plane_fea、root_convergence、gear_contact、surface_contact；冻结 spatial_pair_fea；退役 helical_coupled_fea、elastic_contact/feedback。</p>
+
+<!-- 11 -->
+<h2 id="s11">11. L7 AI 原生接口</h2>
+<div class="tbl"><table>
+<thead><tr><th>组</th><th>工具（全部下划线命名）</th><th>是否改状态</th></tr></thead>
+<tbody>
+<tr><td>发现</td><td><code>gear_capabilities</code></td><td>否</td></tr>
+<tr><td>数学</td><td><code>gear_list_formulas</code>、<code>gear_explain</code>、<code>gear_sensitivity</code></td><td>否</td></tr>
+<tr><td>校核</td><td><code>gear_rate</code>（所有校核唯一入口）</td><td>否</td></tr>
+<tr><td>意图</td><td><code>gear_compile_requirement</code>、<code>gear_answer_questions</code></td><td>否</td></tr>
+<tr><td>优化</td><td><code>gear_build_problem</code>、<code>gear_optimize</code>、<code>gear_explain_infeasible</code></td><td>否</td></tr>
+<tr><td>编辑</td><td><code>gear_preview_edit</code>、<code>gear_commit</code>（凭预览令牌 + CAS）</td><td><b>gear_commit 是</b></td></tr>
+<tr><td>设计与交付</td><td><code>gear_inspect</code>、<code>gear_export_report</code></td><td>否</td></tr>
+<tr><td>作业</td><td><code>gear_fea_submit</code>、<code>gear_job_status</code>、<code>gear_job_cancel</code></td><td>提交与取消是</td></tr>
+</tbody></table></div>
+<ul>
+<li><b>AI 不产生数值：</b>模型提出的数只能标为 agent_proposed，依赖它的校核最高到"待人工确认"。原型已实现这一闸门。</li>
+<li><b>可推理的材料：</b>公式链与精确灵敏度作为一等工具，模型能讲清"为什么不过、改哪个参数最有效"。</li>
+<li><b>Resources 与 Prompts：</b>公开公式注册表、schema、示例；内置"需求 → L1 报告""优化""解释失败"等标准工作流。</li>
+<li><b>评测基准 gear-agent-bench：</b>40 条中文需求，凭空数字率必须为 0，并量化追问正确率、任务成功率、CAS 冲突处理。</li>
+<li><b>接入：</b>Windows / Claude Desktop / Claude Code 配置样例，自检命令，新机 10 分钟内接通。</li>
+</ul>
+
+<!-- 12 -->
+<h2 id="s12">12. M31 现状：信息孤岛实证</h2>
+<div class="tbl"><table>
+<thead><tr><th>同一个量 / 能力</th><th>M31 中独立实现的处数</th><th>目标</th></tr></thead>
+<tbody>
+<tr><td>渐开线函数 inv(α)</td><td>9 个文件</td><td>1（L0）</td></tr>
+<tr><td>中心距（参考 / 工作 / 行星 / 蜗杆）</td><td>≥12 处，只有 1 处是真正的工作中心距</td><td>1（L2）</td></tr>
+<tr><td>端面压力角 αt / 端面模数 mt</td><td>8 / 7 处</td><td>1</td></tr>
+<tr><td>端面重合度 εα</td><td>5 处解析实现</td><td>1</td></tr>
+<tr><td>ZE / 综合弹性模量</td><td>6 处（1 处写死为钢）</td><td>1</td></tr>
+<tr><td>切向力 Ft / 功率 / 转速链</td><td>6 / 5 / ≥9 处</td><td>1</td></tr>
+<tr><td>蜗杆导程角 γ</td><td>7 处</td><td>1</td></tr>
+<tr><td>热平衡 / 演示常数</td><td>4 处 / 4 份</td><td>1 / 0</td></tr>
+<tr><td>表达式与计算图引擎</td><td>5 套</td><td>1</td></tr>
+<tr><td>单位表</td><td>5 份（度与弧度口径冲突）</td><td>1</td></tr>
+<tr><td>区间算术</td><td>3 套</td><td>1</td></tr>
+<tr><td>ISO 6336 评级路径</td><td>4 条</td><td>1</td></tr>
+<tr><td>优化与搜索入口</td><td>≈12 个，只有 3 个与领域无关</td><td>1 个优化器 + N 个问题编译模板</td></tr>
+<tr><td>"唯一真源"文档 / schema</td><td>9 类</td><td>1 + 投影</td></tr>
+</tbody></table></div>
+<h3>已发现并需要统一口径的冲突</h3>
+<ul>
+<li><b>当量齿数：</b>M31 三处用近似式 z/cos³β；ISO 式为 z/(cos²βb·cosβ)。<span class="tag ok">原型已用 ISO 式</span></li>
+<li><b>Yβ 版次：</b>M31 用 ISO 6336-3:2019（含 1/cos³β），原型原先是 2006 式。<span class="tag ok">已按 2019 修正，测试全过</span></li>
+<li><b>根切判据：</b>两套口径（zv ≥ 2/sin²α 与写死的 zv ≥ 17）。建议以公式为准，阈值作为显式假设输入。</li>
+<li><b>变位：</b>多处拒绝变位，另有两处支持。L2 以变位通式为准，零变位只是特例。</li>
+<li><b>隐性默认：</b>E=210000、ν=0.3、热平衡 K=12 等写死在代码中。一律改为显式输入，缺失即阻断。</li>
+</ul>
+
+<!-- 13 -->
+<h2 id="s13">13. 迁移路径（S0–S7，约 26 人周，与公式库扩充并行）</h2>
+<div class="tbl"><table>
+<thead><tr><th>阶段</th><th>内容</th><th>退出标准</th><th>风险</th><th>人周</th></tr></thead>
+<tbody>
+<tr><td>S0</td><td>冻结金标准（C001 收据、JGMA 例、热平衡、50 例运动学）；CI 守门：L2 之外出现几何 / 强度公式即失败</td><td>金标准可离线重放；守门生效</td><td>低</td><td>1</td></tr>
+<tr><td>S1</td><td>原型定为唯一内核；math_calculator、gears/graph 改为适配器；精确与区间后端挂入</td><td>旧测试经适配器全绿；度 / 弧度只在边界</td><td>中</td><td>3–4</td></tr>
+<tr><td>S2</td><td>公式库扩容：几何通式 → 载荷与传动链 → 接触 → 行星 / 蜗杆 / 热 → 零件 / 疲劳 / 公差</td><td>孤岛表每行只剩 1 个定义；金标准误差 ≤1e-9（几何）/ 1e-6（评级）</td><td>中</td><td>6–8</td></tr>
+<tr><td>S3</td><td>统一校核：证据记录转为 evidence 输入；4 条评级路径合一；零件校核改为批量 Check</td><td>所有通过 / 不通过出自同一个 rate()</td><td>中</td><td>3–4</td></tr>
+<tr><td>S4</td><td>纯数学优化器：合并 math_optimizer；solver 与 system_search 改写为问题编译器；编辑改为最近可行问题</td><td>H2 / W2W / P2 旗舰结果一致或更优，全部复检通过</td><td>中</td><td>3–4</td></tr>
+<tr><td>S5</td><td>唯一真源收拢：math-source/2，SQLite CAS 唯一存储，其余文档改投影，剥离派生字段</td><td>一个设计只有一个可编辑文档</td><td><span class="tag no">高</span>：回执 SHA 大面积失效，需双写期</td><td>4–6</td></tr>
+<tr><td>S6</td><td>数值方法纳管：FE / LTCA / BEM / 弹性轴封装为带数值收敛记录的工具</td><td>未通过收敛检查的结果无法写入模型</td><td>中</td><td>3–4</td></tr>
+<tr><td>S7</td><td>AI 接口合一：两套 MCP 合并，工具清单由注册表生成</td><td>AI 端到端：需求 → 源 → 评级 → 优化 → 复检</td><td>低</td><td>1–2</td></tr>
+</tbody></table></div>
+
+<!-- 14 -->
+<h2 id="s14">14. 特色与相对优势</h2>
+<div class="grid g2">
+<div class="panel"><h3 style="margin-top:0">全链白盒且可微</h3><p>每个安全系数都能展开到条款号，并给出对任一输入的精确偏导。商业软件通常只给数值，不给解析灵敏度（推测）。这让优化器直接拿到梯度，也让 AI 能回答"为什么、改哪里"。</p></div>
+<div class="panel"><h3 style="margin-top:0">方法差分</h3><p>同一设计一键比较 KV 方法 B 与 C、2006 与 2019 版、胶合闪温法与积分温度法，逐中间量归因。这是工程评审中有价值、通常要手工做的事。</p></div>
+<div class="panel"><h3 style="margin-top:0">分项可审计的优化</h3><p>每次优化分项给出固定枚举的声明：搜索覆盖（穷举 / 网格 / 抽样 / 局部细化）、KKT 一阶残差（若检查）、数值收敛；规划中再加分支定界间隙、已证明不可行。三者不合并成"可信"标签，用户和审核人知道"数学上做到了哪一步、没做到哪一步"。优化器不证明全局最优。</p></div>
+<div class="panel"><h3 style="margin-top:0">证据分级与可重放</h3><p>每个公式有 E0–E6 证据等级，每份结果可逐位重放（规划）；FEA 结果必须带数值收敛记录，收敛不提升证据等级。适合质量体系严格的行业。</p></div>
+<div class="panel"><h3 style="margin-top:0">AI 原生而非加聊天框</h3><p>数值全部来自公式图并带哈希；问题本身是公开数据结构，模型可以构造和修改；状态变更要两段式确认；有评测基准。任何 MCP 客户端、任何模型都能接入。</p></div>
+<div class="panel"><h3 style="margin-top:0">开放与可嵌入</h3><p>零依赖内核、开放的公式与问题格式，可私有化、离线、嵌入客户 PLM；方法与数据分离，客户可带自己的材料与试验数据。</p></div>
+</div>
+<div class="callout warn"><p><b>客观边界：</b>KISSsoft 在标准覆盖面、材料库、行业认可上远超我们。我们的相对优势必须集中在"数学唯一真源 + 分项可审计的优化 + AI 可审计接入"这条线上，并通过 ISO/TR 6336-30 和 KISSsoft 报告逐字段对标来验证计算结果（对标通过也只提高证据等级，不是证明）。</p></div>
+
+<!-- 15 -->
+<h2 id="s15">15. 修订后的里程碑 M32–M40</h2>
+<p>在 10 月 28 日诊断蓝图的基础上，以数学基座为主线重排。按 4–5 人团队估算：1 名内核与架构，1–2 名齿轮标准工程师，1 名 FEA，1 名优化与 AI。人周为量级估计。</p>
+
+<div class="tbl" style="padding:10px">
+<div class="timeline">
+  <div></div><div class="h">1月</div><div class="h">2月</div><div class="h">3月</div><div class="h">4月</div><div class="h">5月</div><div class="h">6月</div><div class="h">7月</div><div class="h">8月</div><div class="h">9月</div><div class="h">10月</div><div class="h">11月</div><div class="h">12月</div>
+  <div class="lane">内核与真源</div><div class="seg" style="background:var(--l0);grid-column:span 1">M32 内核统一</div><div style="grid-column:span 1"></div><div class="seg" style="background:var(--l3);grid-column:span 2">M34 唯一真源</div><div style="grid-column:span 8"></div>
+  <div class="lane">公式库与校核</div><div></div><div class="seg" style="background:var(--l2);grid-column:span 2">M33 零手填系数</div><div class="seg" style="background:var(--l4);grid-column:span 2">M35 对标与制造几何</div><div class="seg" style="background:var(--l4);grid-column:span 3">M36 系统层校核</div><div class="seg" style="background:var(--l2);grid-column:span 3">M39 失效模式与热</div><div></div>
+  <div class="lane">优化器</div><div class="seg" style="background:var(--l5);grid-column:span 1">IR v1</div><div style="grid-column:span 1"></div><div class="seg" style="background:var(--l5);grid-column:span 2">M34 白盒优化</div><div class="seg" style="background:var(--l5);grid-column:span 3">M36 系统分解</div><div class="seg" style="background:var(--l5);grid-column:span 2">M39 多目标/鲁棒</div><div class="seg" style="background:var(--l5);grid-column:span 3">M40 MINLP</div>
+  <div class="lane">FEA 工具</div><div style="grid-column:span 2"></div><div class="seg" style="background:var(--l6);grid-column:span 2">F0–F2 契约/加载/网格</div><div class="seg" style="background:var(--l6);grid-column:span 5">M37 阶梯 L2–L4 + LTCA + 代理</div><div class="seg" style="background:var(--l6);grid-column:span 3">M40 行星 Kγ</div>
+  <div class="lane">AI 接口</div><div class="seg" style="background:var(--l7);grid-column:span 1">P0 修复</div><div class="seg" style="background:var(--l7);grid-column:span 2">数学工具</div><div class="seg" style="background:var(--l7);grid-column:span 4">M38 意图/优化/评测</div><div style="grid-column:span 5"></div>
+  <div class="lane">族扩展</div><div style="grid-column:span 9"></div><div class="seg" style="background:var(--l1);grid-column:span 3">M40 蜗杆 / 锥齿</div>
+</div>
+</div>
+
+<div class="ms">
+<h3>M32 · 内核统一与守门（第 1 个月）</h3>
+<div class="meta">约 14 人周 · 对应 S0、S1、K1/K3/K9/K11、注册表 schema v1、O1、MCP P0 修复</div>
+<ul>
+<li>冻结金标准；CI 守门：L2 之外出现几何 / 强度公式、优化器出现齿轮术语即失败</li>
+<li>原型定为唯一内核；补分段函数、方法选择器、温度量纲、非光滑标记；M31 两套引擎改为适配器</li>
+<li>注册表 schema v1：加载器、唯一性与量纲 lint、测试向量运行器、证据等级自动推导、数据包校验</li>
+<li>Problem IR v1 与声明枚举（原型已落地 v1 与 KKT 残差检查）；修复 MCP 三个 P0 缺陷（参数被剥离、design_id 不可复现、自动提交）</li>
+</ul>
+<div class="gate"><b>验收门：</b>原型 21 项测试与 M31 旧测试（经适配器）全绿；守门在 CI 生效；全库可编译并通过量纲校核。</div>
+</div>
+
+<div class="ms">
+<h3>M33 · 圆柱齿轮"零手填系数"（第 2–3 个月）</h3>
+<div class="meta">约 30 人周 · 对应 L2-P0：G1 完整几何、X1/X2、R1–R5、R4 数据包接口；S2、S3</div>
+<ul>
+<li>ISO 21771 完整几何（含内齿、变位、齿厚、Wk、M_dK、根切）</li>
+<li>ISO 6336-1：c′/cγ、KV 方法 B/C、KHβ 方法 C、KHα/KFα、Kγ 接口</li>
+<li>ISO 6336-2/-3 全系数（ZNT、ZL、ZV、ZR、ZW、ZX、YNT、YδrelT、YRrelT、YX、YB、YDT、Yβ 2019）；ISO 6336-6 Miner</li>
+<li>M31 四条评级路径合一，统一由 rate() 输出</li>
+</ul>
+<div class="gate"><b>验收门：</b>原型中 22 个证据系数有 20 个改为公式；ISO/TR 6336-30 全部示例逐系数复现（E4），主链误差 ≤1%；C001 用新链重算，与 M31 的差异逐项解释。</div>
+</div>
+
+<div class="ms">
+<h3>M34 · 唯一真源收拢与白盒优化（第 3–4 个月）</h3>
+<div class="meta">约 18 人周 · 对应 S5、O2、O3、A1、A2</div>
+<ul>
+<li><code>gears.math-source/2</code> 唯一可编辑文档；其余改投影；派生字段剥离；新旧回执双写</li>
+<li>公式图直接作为优化器求值器；自动微分梯度；区间算术 v0；剪枝格搜索；NLP + KKT 一阶残差报告</li>
+<li>统一 MCP 服务器框架；数学工具（列公式、解释、灵敏度、校核）上线</li>
+</ul>
+<div class="gate"><b>验收门：</b>一个设计只有一个可编辑文档；梯度与中心差分一致到 1e-6；H2 旗舰结果一致且评估次数下降；Claude Desktop / Code 实连可用。</div>
+</div>
+
+<div class="ms">
+<h3>M35 · 外部对标与制造几何（第 4–5 个月）</h3>
+<div class="meta">约 12 人周 · 对应 G3 ISO 1328-1、E5 对标、齿轮参数表</div>
+<ul>
+<li>ISO 1328-1:2013 公差公式；齿轮参数表（m、z、α、β、x、精度等级、Wk/k、M_dK、齿厚偏差）自动上图</li>
+<li>用户提供的 ≥3–5 份 KISSsoft 报告逐字段对标（直齿、斜齿、变位、内齿）</li>
+</ul>
+<div class="gate"><b>验收门：</b>独立对标从 0 例变为 ≥5 例（E5），误差 ≤1% 且可解释；输出一张经外部工艺人员审阅的变位斜齿制造图。</div>
+</div>
+
+<div class="ms">
+<h3>M36 · 系统层：轴、轴承、连接与系统优化（第 5–7 个月）</h3>
+<div class="meta">约 26 人周 · 对应 X1 轴系静力、S1 DIN 743、S2a ISO 281、S3 键、S5 过盈、P1 行星；O4、O6</div>
+<ul>
+<li>轴系内力与刚度、DIN 743 疲劳、ISO 281 修正寿命、平键、过盈配合，全部进统一校核</li>
+<li>H2 / W2W / P2 改写为问题编译模板；编辑模式改为最近可行问题</li>
+<li>系统三层分解协调（比分配 → 每级尺寸 → 轴承选型），子问题缓存</li>
+</ul>
+<div class="gate"><b>验收门：</b>C001 全系统（齿轮、轴、轴承、键）由同一张图校核；系统优化结果与小规模全枚举一致；三个旗舰与编辑用例回归一致。</div>
+</div>
+
+<div class="ms">
+<h3>M37 · FEA 工具化（第 3–9 个月，与上并行）</h3>
+<div class="meta">约 30 人周 · 对应 F0–F6</div>
+<ul>
+<li>工具契约与数值收敛记录；改扭矩控制；映射六面体网格；罚刚度外推或 mortar 接触</li>
+<li>阶梯 L2 单齿 YFS（≥12 点）→ L3 直齿副 σH0 / c′ / cγ → FE 驱动 LTCA（影响系数 + BEM）→ L4 斜齿</li>
+<li>代理修正因子（多项式 / 高斯过程）+ 三环结构 + 最优点真实复核</li>
+</ul>
+<div class="gate"><b>验收门：</b>斜齿副峰值落在 Hertz 估算 ±15% 内；YFS FE/ISO ∈ [0.90, 1.10]；σH0 ∈ [0.92, 1.08]；优化器跑通"内环 → 最终 FE 复核"闭环，代理误差 &lt;3%。</div>
+</div>
+
+<div class="ms">
+<h3>M38 · AI 原生产品化（第 2–8 个月，与上并行）</h3>
+<div class="meta">约 10 人周 · 对应 A3–A7</div>
+<ul>
+<li>意图与优化工具（需求编译、追问、构建问题、优化、解释不可行）；两段式编辑提交</li>
+<li>Resources 与 Prompts；Windows 便携包与自检命令</li>
+<li>gear-agent-bench v1：40 条中文需求 + 金标 + 自动评测器 + 规则基线</li>
+</ul>
+<div class="gate"><b>验收门：</b>凭空数字率为 0；三个旗舰需求端到端跑通；新机 10 分钟内接通；首轮多模型评测报告。</div>
+</div>
+
+<div class="ms">
+<h3>M39 · 失效模式、热与多目标（第 8–11 个月）</h3>
+<div class="meta">约 30 人周 · 对应 L2-P1 剩余：润滑与 EHL、胶合、微点蚀、效率与热平衡、侧隙链、修形参数；O5、O7</div>
+<ul>
+<li>ISO/TS 6336-20/-21 胶合、-22 微点蚀；ISO/TR 14179 效率与热平衡；DIN 3967 侧隙链</li>
+<li>NSGA-II/III 多目标；公差下的鲁棒优化与灵敏度降维</li>
+</ul>
+<div class="gate"><b>验收门：</b>高速齿轮可完成全失效模式校核；体积—中心距—安全系数三目标前沿；公差下可行率报告。</div>
+</div>
+
+<div class="ms">
+<h3>M40 · 族扩展与高阶能力（第 10–12 个月起）</h3>
+<div class="meta">约 50 人周以上 · 对应 L2-P2、F7、O8、A8</div>
+<ul>
+<li>蜗杆 ISO/TS 14521 承载、锥齿轮 ISO 23509 + ISO 10300、ISO/TS 16281、花键、齿面断裂、VDI 2736、AGMA 变体</li>
+<li>FEA 阶梯 L5 行星 Kγ 与 L6 直接评估；MINLP 分支定界与 FEA 代理优化；FEA 作业工具</li>
+</ul>
+<div class="gate"><b>验收门：</b>行星、蜗杆各至少 1 题完整校核 + 1 例独立对标；锥齿轮单独立项评估。</div>
+</div>
+
+<div class="tbl"><table>
+<thead><tr><th>来源</th><th>人周</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>公式库（含内核扩展、注册表工具链）</td><td>≈120</td><td>P0 32 / P1 42 / P2 46</td></tr>
+<tr><td>优化器 + AI 接口</td><td>≈37.5</td><td>优化器 24 + AI 13.5</td></tr>
+<tr><td>FEA 工具化</td><td>≈30.5</td><td>F0–F8</td></tr>
+<tr><td>迁移中不与上面重叠的部分</td><td>≈13</td><td>S0、S1、S3、S5</td></tr>
+<tr><td><b>合计（去重后）</b></td><td><b>≈200</b></td><td>4–5 人约 12 个月完成到 P1 全覆盖；P2 继续推进</td></tr>
+</tbody></table></div>
+<p class="small muted">与 10 月 28 日蓝图的关系：本计划替换其中的计算评级、优化与 AI 主线；制造图纸、装配闭合、测量闭环等仍按原蓝图推进。</p>
+
+<!-- 16 -->
+<h2 id="s16">16. 需要你拍板的事项</h2>
+<div class="tbl"><table>
+<thead><tr><th>#</th><th>决策</th><th>建议</th><th>为什么重要</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>以 gearmath 原型作为唯一内核，M31 的 5 套引擎全部改为适配器后退役</td><td>同意</td><td>决定后续所有工作的地基</td></tr>
+<tr><td>2</td><td>采购 ISO/TR 6336-30 与 ISO 6336 系列正文；准备 ≥3–5 份 KISSsoft 报告（含方法设置页）</td><td>尽快</td><td>没有它们，主链只能停在 E2，M33 无法验收</td></tr>
+<tr><td>3</td><td>NLP 后端：先用 scipy（AD 提供梯度），长期可换 IPOPT 或自研 SQP</td><td>先用 scipy</td><td>M31 已锁定 scipy，引入成本低；声明与残差格式与后端无关</td></tr>
+<tr><td>4</td><td>多目标进化：自研 NSGA 还是用 pymoo</td><td>先用 pymoo，保留自研选项</td><td>节省约 2 人周；需许可审查</td></tr>
+<tr><td>5</td><td>约束号向统一为 g ≤ 0（M31 是余量 ≥ 0，在编译器层转换）</td><td>同意，一次定死</td><td>避免全系统号向混乱</td></tr>
+<tr><td>6</td><td>标准版次按分册配置（版次档案）：ISO 6336-1 / -2 / -3 / -5 / -6 各自指定版次，不要求同一年份；默认档的具体年份待核实后确定</td><td>同意</td><td>同一分册内禁止混用版次；跨分册组合必须显式记录在回执中</td></tr>
+<tr><td>7</td><td>表格类标准数据只放用户私有数据包；"公式和常数属于事实"的编码依据请法务确认</td><td>同意，并启动法务确认</td><td>开源或商业发布前必须明确</td></tr>
+</tbody></table></div>
+
+<footer>
+数学齿轮基座顶层设计 · 2026-10-29 · 附件：gearmath 原型（m31-analysis/gearmath-原型/）、4 份分路设计报告（m31-analysis/顶层设计分路报告/）。估算为量级参考，标注"推测"的内容未经原文或联网核实。单文件 HTML，可离线打开、打印或另存为 PDF。
+</footer>
+
+</div>
+</body>
+</html>

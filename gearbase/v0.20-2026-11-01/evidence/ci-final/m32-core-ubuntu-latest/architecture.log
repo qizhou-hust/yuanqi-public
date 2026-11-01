@@ -1,0 +1,10 @@
+{
+  "schema": "gearbase.architecture-gate/1",
+  "passed": true,
+  "files_checked": 146,
+  "l2_owners": [
+    "gear",
+    "system"
+  ],
+  "violations": []
+}

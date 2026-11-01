@@ -1,0 +1,24 @@
+{
+  "repository": "qizhou-hust/yuanqi-private",
+  "visibility": "private",
+  "branch": "codex/gearbase-v020-closure-2026-11-01",
+  "commit": "a1fcab5716eeb7e81af08f7e9acc6b3f7cca4fb6",
+  "tree": "0029ecdc3130114b80fde6b0cd67c0768820c2e2",
+  "parent": "3b27cdfd6c371616384258a5fcd09eeac4de90bc",
+  "snapshot_files": 2761,
+  "source_manifest_sha256": "77e5f65cec58d2e57c1262c881e013ca011f3ce33d10d0f91c6261bf52b45c8a",
+  "main_unchanged": true,
+  "status": "DOCUMENTATION_CLOSEOUT_PUBLISHED_EXECUTABLE_UNCHANGED",
+  "workflow_path": ".github/workflows/gearbase-v020.yml",
+  "source_path": "engineering/gearbase-v020",
+  "source_bytes_preserved": true,
+  "functional_ci_commit": "3b27cdfd6c371616384258a5fcd09eeac4de90bc",
+  "verified_changed_paths": [
+    "engineering/gearbase-v020-SNAPSHOT.json",
+    "engineering/gearbase-v020/PACKAGE-CONTENTS.sha256",
+    "engineering/gearbase-v020/docs/v020-progress.md",
+    "engineering/gearbase-v020/output/milestones-v020-current.json",
+    "engineering/gearbase-v020/output/milestones-v020-current.md"
+  ],
+  "private_main_verified": "da4d1c934d15c884e0c454f43ea481e38ea688f8"
+}

@@ -1,0 +1,50 @@
+{
+ "id": "L3_C001_G1",
+ "title": "直齿副接触：C001 第一级 z=20/36、m=2、b=30",
+ "material": {
+  "E_MPa": 206000.0,
+  "nu": 0.3
+ },
+ "source": "gearbase data/m31/golden/C001/derived-candidate.json stages[0]（G1）；T1=25 N·m",
+ "pair": {
+  "z1": 20,
+  "z2": 36,
+  "m_mm": 2.0,
+  "alpha_deg": 20.0,
+  "x1": 0.0,
+  "x2": 0.0,
+  "haP": 1.0,
+  "hfP": 1.25,
+  "rhofP": 0.38,
+  "b_mm": 30.0,
+  "T1_Nm": 25.0,
+  "thickness_allowance_Asn_in_m": -0.02,
+  "bore_diameter_ratio": 0.4
+ },
+ "mesh": {
+  "contact_divisions": [
+   8,
+   12,
+   18
+  ],
+  "element": "CPE6",
+  "h_flank_in_m": 0.08,
+  "h_max_in_m": 0.5,
+  "refine_radius_in_a": 3.0,
+  "grade_length_in_m": 1.5
+ },
+ "penalty": {
+  "alpha_mesh_study": 10.0,
+  "alpha_penalty_study": [
+   5.0,
+   10.0,
+   20.0
+  ]
+ },
+ "phases": {
+  "count": 16,
+  "division": 12,
+  "definition": "参考齿对位于啮合线 s = s_A + (j+0.5)·pb/16，j=0..15；8 相位 = 偶数 j"
+ },
+ "mortar_variant": true
+}

@@ -1,0 +1,837 @@
+{
+  "results": [
+    {
+      "point": "P08",
+      "extracted": {
+        "sigma1_ip_max_MPa": 107.85758814940193,
+        "extrapolation": [
+          "linear/3pts"
+        ],
+        "sigma1_surface_peak_MPa": 109.84219514162598,
+        "peak_point_mm": [
+          2.423507617725789,
+          29.21955992290597
+        ],
+        "sigma_root_MPa": 109.84219514162598,
+        "sigma_root_method": "gauss_point_polynomial_extrapolation_to_fillet_surface_no_nodal_smoothing",
+        "peak_offset_from_30deg_point_mm": 0.15661222244945436,
+        "peak_radius_mm": 29.319892074519434,
+        "YFS_FE": 2.1968439028325197,
+        "force_balance_rel": 1.581162543707073e-08
+      },
+      "original_extracted": {
+        "sigma1_ip_max_MPa": 106.59570992946536,
+        "extrapolation": [
+          "linear/3pts"
+        ],
+        "sigma1_surface_peak_MPa": 108.57172583228768,
+        "peak_point_mm": [
+          2.423507617725789,
+          29.21955992290597
+        ],
+        "sigma_root_MPa": 108.57172583228768,
+        "sigma_root_method": "gauss_point_polynomial_extrapolation_to_fillet_surface_no_nodal_smoothing",
+        "peak_offset_from_30deg_point_mm": 0.15661222244945436,
+        "peak_radius_mm": 29.319892074519434,
+        "YFS_FE": 2.171434516645754,
+        "force_balance_rel": 1.7434964765262443e-08
+      },
+      "stress_change_percent": 1.1701658968752193,
+      "reaction_moment_Nmm": -3000.0000106178836,
+      "moment_equilibrium_residual_Nmm": -1.0617884072416928e-05,
+      "permission": {
+        "schema": "gearbase.solver-permission-check/1",
+        "allowed": true,
+        "solver_id": "calculix-ccx-2.23-linux-x86_64",
+        "executable_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "archive_sha256": "35d426fed5eb164fbbaaafa20819d13d22e30bc2b9bc9c6c4ed957e9468355dd",
+        "archive_rechecked": false,
+        "scope": "explicit-local-verification",
+        "origin_proof_sha256": "67d963779e7632f344193d68ba440c4ee7509c3e40a11e833ddd4a8ceca12a74",
+        "solver_executed": false,
+        "numerical_gear_qualification": "not_granted"
+      },
+      "strict_read": {
+        "reader_version": "m37.ccx-strict-dat/1.1",
+        "status": "accepted",
+        "reasons": [],
+        "identity": {
+          "run_id": "P08_d18_moment",
+          "input_sha256": "214c2f2f96f765272d562830336478bfe70e6fc151a21fa16e254a22083b9dca",
+          "dat_sha256": "9cd257fba7074b36269689718dc79e41b10f604a88e4ed566e7efed4f2bcb1ef",
+          "sta_sha256": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d"
+        },
+        "expected": {
+          "final_step": 1,
+          "total_time": 1.0
+        },
+        "final_state": {
+          "step": 1,
+          "increment": 1,
+          "total_time": 1.0,
+          "step_time": 1.0,
+          "sta_line": 3,
+          "sta_converged_rows": 1
+        },
+        "pstep": null,
+        "coverage_declaration": [
+          {
+            "id": "RF@FIXED",
+            "kind": "field",
+            "field": "forces",
+            "region": "FIXED",
+            "location": "node",
+            "components": [
+              "fx",
+              "fy",
+              "fz"
+            ],
+            "mode": "exact_keys",
+            "keys_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                860,
+                861
+              ],
+              [
+                863,
+                863
+              ],
+              [
+                865,
+                899
+              ],
+              [
+                1303,
+                1407
+              ]
+            ],
+            "declared_count": 145,
+            "declared_sha256": "1d1204d54bee930fb0d32fa681ae7d33d440566906701afc8791ab93be67bb53"
+          },
+          {
+            "id": "S@ROOTT",
+            "kind": "field",
+            "field": "stresses",
+            "region": "ROOTT",
+            "location": "element_ip",
+            "components": [
+              "elem",
+              "integ.pnt.",
+              "sxx",
+              "syy",
+              "szz",
+              "sxy",
+              "sxz",
+              "syz"
+            ],
+            "mode": "elements_ip_registered",
+            "element_groups_ranges": {
+              "CPE6": [
+                [
+                  2062,
+                  2062
+                ],
+                [
+                  2064,
+                  2064
+                ],
+                [
+                  2477,
+                  2477
+                ],
+                [
+                  2631,
+                  2631
+                ],
+                [
+                  2633,
+                  2634
+                ],
+                [
+                  2636,
+                  2637
+                ],
+                [
+                  3805,
+                  3819
+                ]
+              ]
+            },
+            "ip_per_element_registered": {
+              "CPE6": 9
+            },
+            "declared_count": 207,
+            "declared_sha256": "178434cbe2489f915a34380e4dc778796917083775d116d21cf18068d995b34d"
+          },
+          {
+            "id": "COORD@ROOTT",
+            "kind": "field",
+            "field": "global coordinates",
+            "region": "ROOTT",
+            "location": "element_ip",
+            "components": [
+              "elem",
+              "integ.pnt.",
+              "x",
+              "y",
+              "z"
+            ],
+            "mode": "elements_ip_registered",
+            "element_groups_ranges": {
+              "CPE6": [
+                [
+                  2062,
+                  2062
+                ],
+                [
+                  2064,
+                  2064
+                ],
+                [
+                  2477,
+                  2477
+                ],
+                [
+                  2631,
+                  2631
+                ],
+                [
+                  2633,
+                  2634
+                ],
+                [
+                  2636,
+                  2637
+                ],
+                [
+                  3805,
+                  3819
+                ]
+              ]
+            },
+            "ip_per_element_registered": {
+              "CPE6": 9
+            },
+            "declared_count": 207,
+            "declared_sha256": "178434cbe2489f915a34380e4dc778796917083775d116d21cf18068d995b34d"
+          }
+        ],
+        "fields": [
+          {
+            "id": "RF@FIXED",
+            "run_id": "P08_d18_moment",
+            "input_sha256": "214c2f2f96f765272d562830336478bfe70e6fc151a21fa16e254a22083b9dca",
+            "step": 1,
+            "increment": 1,
+            "time": 1.0,
+            "field": "forces",
+            "region": "FIXED",
+            "location": "node",
+            "components": [
+              "fx",
+              "fy",
+              "fz"
+            ],
+            "header_line": 8,
+            "header": "forces (fx,fy,fz) for set FIXED and time  0.1000000E+01",
+            "coverage_mode": "exact_keys",
+            "coverage_observed": {
+              "keys": 145
+            },
+            "values_sha256": "fc66c3f3b1db263257c4ee3d91ed1761f0988e8f9686a5ec8a48a946274e1be2"
+          },
+          {
+            "id": "S@ROOTT",
+            "run_id": "P08_d18_moment",
+            "input_sha256": "214c2f2f96f765272d562830336478bfe70e6fc151a21fa16e254a22083b9dca",
+            "step": 1,
+            "increment": 1,
+            "time": 1.0,
+            "field": "stresses",
+            "region": "ROOTT",
+            "location": "element_ip",
+            "components": [
+              "elem",
+              "integ.pnt.",
+              "sxx",
+              "syy",
+              "szz",
+              "sxy",
+              "sxz",
+              "syz"
+            ],
+            "header_line": 156,
+            "header": "stresses (elem, integ.pnt.,sxx,syy,szz,sxy,sxz,syz) for set ROOTT and time  0.1000000E+01",
+            "coverage_mode": "elements_ip_registered",
+            "coverage_observed": {
+              "keys": 207,
+              "ip_per_element_registered": {
+                "CPE6": 9
+              },
+              "ip_count_source": "IP_REGISTRY"
+            },
+            "values_sha256": "851704b0f04eb719e1941176eec9e40ee0b45c0f917ed5ab133c85c809af8614"
+          },
+          {
+            "id": "COORD@ROOTT",
+            "run_id": "P08_d18_moment",
+            "input_sha256": "214c2f2f96f765272d562830336478bfe70e6fc151a21fa16e254a22083b9dca",
+            "step": 1,
+            "increment": 1,
+            "time": 1.0,
+            "field": "global coordinates",
+            "region": "ROOTT",
+            "location": "element_ip",
+            "components": [
+              "elem",
+              "integ.pnt.",
+              "x",
+              "y",
+              "z"
+            ],
+            "header_line": 366,
+            "header": "global coordinates (elem, integ.pnt.,x,y,z) for set ROOTT and time  0.1000000E+01",
+            "coverage_mode": "elements_ip_registered",
+            "coverage_observed": {
+              "keys": 207,
+              "ip_per_element_registered": {
+                "CPE6": 9
+              },
+              "ip_count_source": "IP_REGISTRY"
+            },
+            "values_sha256": "abae4f230c4c6765489150192be4c618fc4f137d55dc306c0c03a8f9ea18dc15"
+          }
+        ],
+        "unrecognised_headers": [],
+        "orphan_rows": 0,
+        "time_rel_tol": 5.5e-06,
+        "solver_version": "2.23",
+        "registry_evidence": {
+          "ip": "lanes/F2/REPORT.md \u00a73\uff08ccx 2.21 \u5b9e\u6d4b\uff09",
+          "face": "lanes/F2/REPORT.md \u00a73\uff08ccx 2.21\uff1aS1\u21923\u3001S3\u21925\uff09\uff1bF3/\u5ba1\u67e5 G-02 ph10\uff08ccx 2.23\uff1aS3\u21925\uff0c4038 \u884c\uff09",
+          "nature": "\u5b9e\u6d4b\u767b\u8bb0\uff0c\u975e\u624b\u518c\u6761\u6587",
+          "ip_v017": {
+            "solver_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+            "probe_sha256": {
+              "L0_patch_CPE6_h0.inp": "cbc2e56fcda1db254e0ea159e8185152506856af5da20a9aa24f925da7e13d53",
+              "L0_patch_CPE6_h0.dat": "4c8112b394bca0cac239da0c87a4b14f4ff4eca4564b41d0b9fd59dc17584c6b",
+              "L0_patch_CPE6_h0.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d"
+            }
+          }
+        }
+      },
+      "preflight": {
+        "version": "m37.step-state/1.0",
+        "profile": "m37-restricted-2d-static/1.0",
+        "pass": true,
+        "errors": [],
+        "error_count": 0,
+        "steps": [
+          {
+            "index": 1,
+            "line": 22789,
+            "procedure": "STATIC",
+            "period": 1.0,
+            "period_source": "ccx_default",
+            "bc_op_new": false,
+            "cload_op_new": false,
+            "bc_count": 290,
+            "cload_count": 10,
+            "bc_inherited_count": 290,
+            "outputs": [
+              "*NODE PRINT {'NSET': 'FIXED'} ['RF']",
+              "*EL PRINT {'ELSET': 'ROOTT'} ['S']",
+              "*EL PRINT {'ELSET': 'ROOTT'} ['COORD']"
+            ]
+          }
+        ],
+        "total_time": 1.0,
+        "includes": [],
+        "input_sha256": "214c2f2f96f765272d562830336478bfe70e6fc151a21fa16e254a22083b9dca"
+      },
+      "command": "cd /mnt/d/my_Works/Gears/v020-closure-run/m37/physics_controls && export LD_LIBRARY_PATH=/mnt/d/my_Works/Gears/gearbase-v0.8-work/gearbase/vendor/fea/vendor/CalculiX/runtime/usr/lib/x86_64-linux-gnu:/mnt/d/my_Works/Gears/parallel-v09-2026-10-29/m37/runtime-ccx/root/usr/lib/x86_64-linux-gnu && sha256sum /mnt/d/my_Works/Gears/gearbase-v0.8-work/gearbase/vendor/fea/vendor/CalculiX/ccx_2.23/src/ccx_2.23 | grep -q ^31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862 && OMP_NUM_THREADS=1 timeout 120s /mnt/d/my_Works/Gears/gearbase-v0.8-work/gearbase/vendor/fea/vendor/CalculiX/ccx_2.23/src/ccx_2.23 P08_d18_moment",
+      "elapsed_seconds": 3.0325348377227783,
+      "warnings": [],
+      "identity_sha256": {
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P08_d18_moment.inp": "214c2f2f96f765272d562830336478bfe70e6fc151a21fa16e254a22083b9dca",
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P08_d18_moment.meta.json": "dc4111794e42caafd5dd6be9188a72305c545355cf7c8c467e874feb12933399",
+        "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862"
+      },
+      "raw_sha256": {
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P08_d18_moment.dat": "9cd257fba7074b36269689718dc79e41b10f604a88e4ed566e7efed4f2bcb1ef",
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P08_d18_moment.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P08_d18_moment.log": "4dccdde5f283611de00a37071fdf5797f50bfda96e7dbc8c9d4ec73d7b138de3"
+      }
+    },
+    {
+      "point": "P03",
+      "extracted": {
+        "sigma1_ip_max_MPa": 138.9338743574467,
+        "extrapolation": [
+          "linear/3pts"
+        ],
+        "sigma1_surface_peak_MPa": 142.0425122515304,
+        "peak_point_mm": [
+          2.012807026889452,
+          17.680201152419937
+        ],
+        "sigma_root_MPa": 142.0425122515304,
+        "sigma_root_method": "gauss_point_polynomial_extrapolation_to_fillet_surface_no_nodal_smoothing",
+        "peak_offset_from_30deg_point_mm": 0.1243062072311842,
+        "peak_radius_mm": 17.794406562668136,
+        "YFS_FE": 2.8408502450306083,
+        "force_balance_rel": 1.3590816258400042e-08
+      },
+      "original_extracted": {
+        "sigma1_ip_max_MPa": 139.79556583086955,
+        "extrapolation": [
+          "linear/3pts"
+        ],
+        "sigma1_surface_peak_MPa": 142.93167875412468,
+        "peak_point_mm": [
+          2.012807026889452,
+          17.680201152419937
+        ],
+        "sigma_root_MPa": 142.93167875412468,
+        "sigma_root_method": "gauss_point_polynomial_extrapolation_to_fillet_surface_no_nodal_smoothing",
+        "peak_offset_from_30deg_point_mm": 0.1243062072311842,
+        "peak_radius_mm": 17.794406562668136,
+        "YFS_FE": 2.8586335750824934,
+        "force_balance_rel": 1.9129985655700773e-08
+      },
+      "stress_change_percent": -0.6220919745327014,
+      "reaction_moment_Nmm": -2000.000013698071,
+      "moment_equilibrium_residual_Nmm": -1.3698071370527032e-05,
+      "permission": {
+        "schema": "gearbase.solver-permission-check/1",
+        "allowed": true,
+        "solver_id": "calculix-ccx-2.23-linux-x86_64",
+        "executable_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "archive_sha256": "35d426fed5eb164fbbaaafa20819d13d22e30bc2b9bc9c6c4ed957e9468355dd",
+        "archive_rechecked": false,
+        "scope": "explicit-local-verification",
+        "origin_proof_sha256": "67d963779e7632f344193d68ba440c4ee7509c3e40a11e833ddd4a8ceca12a74",
+        "solver_executed": false,
+        "numerical_gear_qualification": "not_granted"
+      },
+      "strict_read": {
+        "reader_version": "m37.ccx-strict-dat/1.1",
+        "status": "accepted",
+        "reasons": [],
+        "identity": {
+          "run_id": "P03_d18_moment",
+          "input_sha256": "28cd3d713c075a237caba33c4286635795e3a4bd4a861aa02acc7fbffdad1a87",
+          "dat_sha256": "edde60598e5621570dbdce69b6111f943016e737311f4d43fc77899e2b0b1071",
+          "sta_sha256": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d"
+        },
+        "expected": {
+          "final_step": 1,
+          "total_time": 1.0
+        },
+        "final_state": {
+          "step": 1,
+          "increment": 1,
+          "total_time": 1.0,
+          "step_time": 1.0,
+          "sta_line": 3,
+          "sta_converged_rows": 1
+        },
+        "pstep": null,
+        "coverage_declaration": [
+          {
+            "id": "RF@FIXED",
+            "kind": "field",
+            "field": "forces",
+            "region": "FIXED",
+            "location": "node",
+            "components": [
+              "fx",
+              "fy",
+              "fz"
+            ],
+            "mode": "exact_keys",
+            "keys_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                860,
+                861
+              ],
+              [
+                863,
+                863
+              ],
+              [
+                865,
+                899
+              ],
+              [
+                1269,
+                1353
+              ]
+            ],
+            "declared_count": 125,
+            "declared_sha256": "ede385dcec0e6b5e282d9b2e4d8bf89e279dd6c4540264ca90224f10e1b7e592"
+          },
+          {
+            "id": "S@ROOTT",
+            "kind": "field",
+            "field": "stresses",
+            "region": "ROOTT",
+            "location": "element_ip",
+            "components": [
+              "elem",
+              "integ.pnt.",
+              "sxx",
+              "syy",
+              "szz",
+              "sxy",
+              "sxz",
+              "syz"
+            ],
+            "mode": "elements_ip_registered",
+            "element_groups_ranges": {
+              "CPE6": [
+                [
+                  199,
+                  199
+                ],
+                [
+                  2138,
+                  2138
+                ],
+                [
+                  3143,
+                  3145
+                ],
+                [
+                  3147,
+                  3149
+                ],
+                [
+                  3151,
+                  3151
+                ],
+                [
+                  3153,
+                  3154
+                ],
+                [
+                  3156,
+                  3162
+                ],
+                [
+                  3164,
+                  3165
+                ],
+                [
+                  3383,
+                  3383
+                ],
+                [
+                  3424,
+                  3424
+                ],
+                [
+                  3940,
+                  3940
+                ],
+                [
+                  4399,
+                  4399
+                ],
+                [
+                  5074,
+                  5074
+                ],
+                [
+                  5539,
+                  5539
+                ],
+                [
+                  5569,
+                  5569
+                ],
+                [
+                  5636,
+                  5636
+                ],
+                [
+                  5926,
+                  5926
+                ],
+                [
+                  5956,
+                  5956
+                ]
+              ]
+            },
+            "ip_per_element_registered": {
+              "CPE6": 9
+            },
+            "declared_count": 270,
+            "declared_sha256": "fe3a778e959390c74b8a6199597d179c78c44185b90c6295829dea6f6b77ee51"
+          },
+          {
+            "id": "COORD@ROOTT",
+            "kind": "field",
+            "field": "global coordinates",
+            "region": "ROOTT",
+            "location": "element_ip",
+            "components": [
+              "elem",
+              "integ.pnt.",
+              "x",
+              "y",
+              "z"
+            ],
+            "mode": "elements_ip_registered",
+            "element_groups_ranges": {
+              "CPE6": [
+                [
+                  199,
+                  199
+                ],
+                [
+                  2138,
+                  2138
+                ],
+                [
+                  3143,
+                  3145
+                ],
+                [
+                  3147,
+                  3149
+                ],
+                [
+                  3151,
+                  3151
+                ],
+                [
+                  3153,
+                  3154
+                ],
+                [
+                  3156,
+                  3162
+                ],
+                [
+                  3164,
+                  3165
+                ],
+                [
+                  3383,
+                  3383
+                ],
+                [
+                  3424,
+                  3424
+                ],
+                [
+                  3940,
+                  3940
+                ],
+                [
+                  4399,
+                  4399
+                ],
+                [
+                  5074,
+                  5074
+                ],
+                [
+                  5539,
+                  5539
+                ],
+                [
+                  5569,
+                  5569
+                ],
+                [
+                  5636,
+                  5636
+                ],
+                [
+                  5926,
+                  5926
+                ],
+                [
+                  5956,
+                  5956
+                ]
+              ]
+            },
+            "ip_per_element_registered": {
+              "CPE6": 9
+            },
+            "declared_count": 270,
+            "declared_sha256": "fe3a778e959390c74b8a6199597d179c78c44185b90c6295829dea6f6b77ee51"
+          }
+        ],
+        "fields": [
+          {
+            "id": "RF@FIXED",
+            "run_id": "P03_d18_moment",
+            "input_sha256": "28cd3d713c075a237caba33c4286635795e3a4bd4a861aa02acc7fbffdad1a87",
+            "step": 1,
+            "increment": 1,
+            "time": 1.0,
+            "field": "forces",
+            "region": "FIXED",
+            "location": "node",
+            "components": [
+              "fx",
+              "fy",
+              "fz"
+            ],
+            "header_line": 8,
+            "header": "forces (fx,fy,fz) for set FIXED and time  0.1000000E+01",
+            "coverage_mode": "exact_keys",
+            "coverage_observed": {
+              "keys": 125
+            },
+            "values_sha256": "127fb4e2e223e23d4d54f72ecbef7b5615d67653ebb3d1680c5a56ab541788b3"
+          },
+          {
+            "id": "S@ROOTT",
+            "run_id": "P03_d18_moment",
+            "input_sha256": "28cd3d713c075a237caba33c4286635795e3a4bd4a861aa02acc7fbffdad1a87",
+            "step": 1,
+            "increment": 1,
+            "time": 1.0,
+            "field": "stresses",
+            "region": "ROOTT",
+            "location": "element_ip",
+            "components": [
+              "elem",
+              "integ.pnt.",
+              "sxx",
+              "syy",
+              "szz",
+              "sxy",
+              "sxz",
+              "syz"
+            ],
+            "header_line": 136,
+            "header": "stresses (elem, integ.pnt.,sxx,syy,szz,sxy,sxz,syz) for set ROOTT and time  0.1000000E+01",
+            "coverage_mode": "elements_ip_registered",
+            "coverage_observed": {
+              "keys": 270,
+              "ip_per_element_registered": {
+                "CPE6": 9
+              },
+              "ip_count_source": "IP_REGISTRY"
+            },
+            "values_sha256": "f9e77ddc0ea3c7b5289957b6a78d2f1cbbc54984ec153b69d0c454dc61742556"
+          },
+          {
+            "id": "COORD@ROOTT",
+            "run_id": "P03_d18_moment",
+            "input_sha256": "28cd3d713c075a237caba33c4286635795e3a4bd4a861aa02acc7fbffdad1a87",
+            "step": 1,
+            "increment": 1,
+            "time": 1.0,
+            "field": "global coordinates",
+            "region": "ROOTT",
+            "location": "element_ip",
+            "components": [
+              "elem",
+              "integ.pnt.",
+              "x",
+              "y",
+              "z"
+            ],
+            "header_line": 409,
+            "header": "global coordinates (elem, integ.pnt.,x,y,z) for set ROOTT and time  0.1000000E+01",
+            "coverage_mode": "elements_ip_registered",
+            "coverage_observed": {
+              "keys": 270,
+              "ip_per_element_registered": {
+                "CPE6": 9
+              },
+              "ip_count_source": "IP_REGISTRY"
+            },
+            "values_sha256": "bb35e862bf277518fdff1fbf3e556584c2614abed056651250633f8888dde0a9"
+          }
+        ],
+        "unrecognised_headers": [],
+        "orphan_rows": 0,
+        "time_rel_tol": 5.5e-06,
+        "solver_version": "2.23",
+        "registry_evidence": {
+          "ip": "lanes/F2/REPORT.md \u00a73\uff08ccx 2.21 \u5b9e\u6d4b\uff09",
+          "face": "lanes/F2/REPORT.md \u00a73\uff08ccx 2.21\uff1aS1\u21923\u3001S3\u21925\uff09\uff1bF3/\u5ba1\u67e5 G-02 ph10\uff08ccx 2.23\uff1aS3\u21925\uff0c4038 \u884c\uff09",
+          "nature": "\u5b9e\u6d4b\u767b\u8bb0\uff0c\u975e\u624b\u518c\u6761\u6587",
+          "ip_v017": {
+            "solver_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+            "probe_sha256": {
+              "L0_patch_CPE6_h0.inp": "cbc2e56fcda1db254e0ea159e8185152506856af5da20a9aa24f925da7e13d53",
+              "L0_patch_CPE6_h0.dat": "4c8112b394bca0cac239da0c87a4b14f4ff4eca4564b41d0b9fd59dc17584c6b",
+              "L0_patch_CPE6_h0.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d"
+            }
+          }
+        }
+      },
+      "preflight": {
+        "version": "m37.step-state/1.0",
+        "profile": "m37-restricted-2d-static/1.0",
+        "pass": true,
+        "errors": [],
+        "error_count": 0,
+        "steps": [
+          {
+            "index": 1,
+            "line": 18892,
+            "procedure": "STATIC",
+            "period": 1.0,
+            "period_source": "ccx_default",
+            "bc_op_new": false,
+            "cload_op_new": false,
+            "bc_count": 250,
+            "cload_count": 10,
+            "bc_inherited_count": 250,
+            "outputs": [
+              "*NODE PRINT {'NSET': 'FIXED'} ['RF']",
+              "*EL PRINT {'ELSET': 'ROOTT'} ['S']",
+              "*EL PRINT {'ELSET': 'ROOTT'} ['COORD']"
+            ]
+          }
+        ],
+        "total_time": 1.0,
+        "includes": [],
+        "input_sha256": "28cd3d713c075a237caba33c4286635795e3a4bd4a861aa02acc7fbffdad1a87"
+      },
+      "command": "cd /mnt/d/my_Works/Gears/v020-closure-run/m37/physics_controls && export LD_LIBRARY_PATH=/mnt/d/my_Works/Gears/gearbase-v0.8-work/gearbase/vendor/fea/vendor/CalculiX/runtime/usr/lib/x86_64-linux-gnu:/mnt/d/my_Works/Gears/parallel-v09-2026-10-29/m37/runtime-ccx/root/usr/lib/x86_64-linux-gnu && sha256sum /mnt/d/my_Works/Gears/gearbase-v0.8-work/gearbase/vendor/fea/vendor/CalculiX/ccx_2.23/src/ccx_2.23 | grep -q ^31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862 && OMP_NUM_THREADS=1 timeout 120s /mnt/d/my_Works/Gears/gearbase-v0.8-work/gearbase/vendor/fea/vendor/CalculiX/ccx_2.23/src/ccx_2.23 P03_d18_moment",
+      "elapsed_seconds": 2.6286821365356445,
+      "warnings": [],
+      "identity_sha256": {
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P03_d18_moment.inp": "28cd3d713c075a237caba33c4286635795e3a4bd4a861aa02acc7fbffdad1a87",
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P03_d18_moment.meta.json": "8a04d1d6355954736b985f4fe886a28b2701aeea5016da22f8edfd5476dc60b4",
+        "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862"
+      },
+      "raw_sha256": {
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P03_d18_moment.dat": "edde60598e5621570dbdce69b6111f943016e737311f4d43fc77899e2b0b1071",
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P03_d18_moment.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+        "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P03_d18_moment.log": "2da69c56a5e45ccfb0b03aca1d139a2aa3aedaa869a419e28c25d3d11982aa28"
+      }
+    }
+  ],
+  "canonical_integrity": {
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.inp": true,
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.meta.json": true,
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.dat": true,
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.record.json": true,
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.inp": true,
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.meta.json": true,
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.dat": true,
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.record.json": true
+  },
+  "script_sha256": "c2888df4bd58fc17bdb28a3b5b2720215716ea96175950ea0e11492645c9df07"
+}

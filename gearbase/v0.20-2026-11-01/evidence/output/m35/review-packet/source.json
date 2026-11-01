@@ -1,0 +1,871 @@
+{
+ "schema": "gearbase.kisssoft.case/2",
+ "id": "K02-helical",
+ "scope": "Commercial reference and conditional end-to-end diagnostics, not a standard example or product release",
+ "sources": {
+  "package": "M33-evidence-2026-10-28",
+  "case_json": {
+   "path": "reports/K02-helical/K02-helical.json",
+   "sha256": "e0df5715eecc955b3e01f359fb8780252e6c7fdd62c0df83f4eb76382290a189"
+  },
+  "report": {
+   "path": "reports/K02-helical/K02-helical.extracted.txt",
+   "sha256": "d56787d808c3a185f85d7d6db1c166080c422751d080752120b47ab64455f2bd",
+   "pdf": "reports/K02-helical/K02-helical.pdf",
+   "pdf_sha256": "1abb2ebf80ec52d6edae6ffdd1e169510222bd4c77a65ffc9b7feea399af37de"
+  },
+  "reload_differences": {},
+  "calculate_return": true
+ },
+ "com": {
+  "RechSt.RechenMethID": 10029.0,
+  "RechSt.RechenMeth": 0.0,
+  "RechSt.GeometrieMeth": 1.0,
+  "ZS.Geo.mn": 1.5,
+  "ZS.Geo.alfn": 0.3490658503988659,
+  "ZS.Geo.beta": 0.24434609527920614,
+  "ZS.KA": 1.25,
+  "ZS.H": 20000.0,
+  "ZS.Pnominal": 12.5,
+  "Zst.KVFlag": "false",
+  "Zst.KHaFlag": "false",
+  "Zst.KHbVariant": 0.0,
+  "Zst.KwbVariant": 0.0,
+  "ZP[0].a": 101.845,
+  "ZP[0].alfwt": 0.3739380405496538,
+  "ZP[0].Ft": 1938.8243703423163,
+  "ZP[0].Eps.a": 1.5707122468685835,
+  "ZP[0].Eps.b": 1.026748414049295,
+  "ZP[0].Eps.G": 2.5974606609178785,
+  "ZP[0].KV.KV": 1.0703742227818593,
+  "ZP[0].KHa": 1.0899936489760766,
+  "ZP[0].KFa": 1.0899936489760766,
+  "ZP[0].KHb": 1.2960256785209232,
+  "ZP[0].KFb": 1.2420101121245999,
+  "ZP[0].Flanke.ZH": 2.379449229079951,
+  "ZP[0].Flanke.Zeps": 0.7979059158210936,
+  "ZP[0].Flanke.Zbet": 1.0151914249785103,
+  "ZP[0].Flanke.sigH0": 625.7441688157242,
+  "ZP[0].Flanke.sigH": 860.2772249008278,
+  "ZP[0].Fuss.Ybet": 0.9669683596558989,
+  "ZP[0].Fuss.YDT": 1.0,
+  "ZS.Yst": 2.0,
+  "ZR[0].z": 27.0,
+  "ZR[0].x.nul": 0.3255,
+  "ZR[0].b": 21.0,
+  "ZR[0].d": 41.73985198867087,
+  "ZR[0].da.nul": 45.69235198867087,
+  "ZR[0].df.nul": 38.96635198867087,
+  "ZR[0].nnominal": 2950.0,
+  "ZR[0].Tnominal": 40.46312112505814,
+  "ZR[0].Qpre": 8.0,
+  "ZR[0].kFlag": "false",
+  "ZR[0].kFaktorFlag": "false",
+  "ZR[0].kXmn": -0.012,
+  "ZR[0].Ca": 5.0,
+  "ZR[0].Cf": 0.0,
+  "ZR[0].crowning": 0.0,
+  "ZR[0].mat.E": 206000.0,
+  "ZR[0].mat.ny": 0.3,
+  "ZR[0].mat.limh": 1250.0,
+  "ZR[0].mat.limf": 420.0,
+  "ZR[0].Tool.type": 2.0,
+  "ZR[0].Tool.RefProfile.DBID": 10010.0,
+  "ZR[0].Tool.RefProfile.haP": 1.0,
+  "ZR[0].Tool.RefProfile.hfP": 1.25,
+  "ZR[0].Tool.RefProfile.rhofP": 0.38,
+  "ZR[0].Fuss.YB": 1.0,
+  "ZR[0].Fuss.YNT": 0.8678699891821016,
+  "ZR[0].Fuss.Kwb": 1.0,
+  "ZR[0].Fuss.YR": 0.9900099828919311,
+  "ZR[0].Fuss.YX": 1.0,
+  "ZR[0].Flanke.ZNT": 0.8670108248078495,
+  "ZR[0].Flanke.ZX": 1.0,
+  "ZR[1].z": 104.0,
+  "ZR[1].x.nul": 0.07388831907841498,
+  "ZR[1].b": 20.0,
+  "ZR[1].d": 160.7757261785841,
+  "ZR[1].da.nul": 163.97339113581936,
+  "ZR[1].df.nul": 157.24739113581936,
+  "ZR[1].nnominal": 765.8653846153846,
+  "ZR[1].Tnominal": 155.85794803726097,
+  "ZR[1].Qpre": 8.0,
+  "ZR[1].kFlag": "false",
+  "ZR[1].kFaktorFlag": "false",
+  "ZR[1].kXmn": -0.012,
+  "ZR[1].Ca": 5.0,
+  "ZR[1].Cf": 0.0,
+  "ZR[1].crowning": 0.0,
+  "ZR[1].mat.E": 206000.0,
+  "ZR[1].mat.ny": 0.3,
+  "ZR[1].mat.limh": 998.0,
+  "ZR[1].mat.limf": 363.0,
+  "ZR[1].Tool.type": 2.0,
+  "ZR[1].Tool.RefProfile.DBID": 10010.0,
+  "ZR[1].Tool.RefProfile.haP": 1.0,
+  "ZR[1].Tool.RefProfile.hfP": 1.25,
+  "ZR[1].Tool.RefProfile.rhofP": 0.38,
+  "ZR[1].Fuss.YB": 1.0,
+  "ZR[1].Fuss.YNT": 0.8916380507057606,
+  "ZR[1].Fuss.Kwb": 1.0,
+  "ZR[1].Fuss.YR": 0.9900099828919311,
+  "ZR[1].Fuss.YX": 1.0,
+  "ZR[1].Flanke.ZNT": 0.8896103841152267,
+  "ZR[1].Flanke.ZX": 1.0,
+  "ZPP[0].Fuss.YF": 0.9526676777775567,
+  "ZPP[0].Fuss.YS": 2.163727101458946,
+  "ZPP[0].Fuss.hF": 1.4555880071458178,
+  "ZPP[0].Fuss.sFn": 3.2548118460178292,
+  "ZPP[0].Fuss.roF": 0.7067391349794216,
+  "ZPP[0].Fuss.Ydrel": 0.9913796719943322,
+  "ZPP[0].Fuss.sigF0": 122.68291752284019,
+  "ZPP[0].Fuss.sigF": 222.2178028814136,
+  "ZPP[0].Fuss.sigFP": 715.5064288882014,
+  "ZPP[0].Fuss.SFnorm": 3.2198429631222254,
+  "ZPP[0].Flanke.ZBD": 1.0954451150103321,
+  "ZPP[0].Flanke.ZL": 0.988126775934115,
+  "ZPP[0].Flanke.ZV": 0.9806072318747399,
+  "ZPP[0].Flanke.ZR": 0.7801004206703215,
+  "ZPP[0].Flanke.ZW": 1.0,
+  "ZPP[0].Flanke.sigHBD": 942.3864835722567,
+  "ZPP[0].Flanke.sigHP": 819.205396390861,
+  "ZPP[0].Flanke.SH": 0.8692881431040274,
+  "ZPP[0].Flanke.SHw": 0.9522574498997093,
+  "ZPP[1].Fuss.YF": 1.1008573951570897,
+  "ZPP[1].Fuss.YS": 2.072668741081458,
+  "ZPP[1].Fuss.hF": 1.8146200927715306,
+  "ZPP[1].Fuss.sFn": 3.392083046547194,
+  "ZPP[1].Fuss.roF": 0.7009022740380324,
+  "ZPP[1].Fuss.Ydrel": 0.9965311417306245,
+  "ZPP[1].Fuss.sigF0": 142.59045040209512,
+  "ZPP[1].Fuss.sigF": 258.2766797531178,
+  "ZPP[1].Fuss.sigFP": 638.6393339642824,
+  "ZPP[1].Fuss.SFnorm": 2.472694532757455,
+  "ZPP[1].Flanke.ZBD": 1.0954451150103321,
+  "ZPP[1].Flanke.ZL": 0.988126775934115,
+  "ZPP[1].Flanke.ZV": 0.9806072318747399,
+  "ZPP[1].Flanke.ZR": 0.7801004206703215,
+  "ZPP[1].Flanke.ZW": 1.0,
+  "ZPP[1].Flanke.sigHBD": 942.3864835722567,
+  "ZPP[1].Flanke.sigHP": 671.1021909181133,
+  "ZPP[1].Flanke.SH": 0.7121305352069569,
+  "ZPP[1].Flanke.SHw": 0.7800999160421542
+ },
+ "report": {
+  "P": {
+   "value": 12.5,
+   "unit": "kW",
+   "decimals": 3,
+   "label": "[P]",
+   "line": 37
+  },
+  "n_1": {
+   "value": 2950.0,
+   "unit": "rpm",
+   "decimals": 1,
+   "label": "[n]",
+   "line": 40
+  },
+  "n_2": {
+   "value": 765.9,
+   "unit": "rpm",
+   "decimals": 1,
+   "label": "[n]",
+   "line": 40
+  },
+  "N_L_1": {
+   "value": 3540000000.0,
+   "unit": "1",
+   "decimals": -3,
+   "label": "[NL]",
+   "line": 45,
+   "note": "Report displays millions of load cycles; value and last-place precision converted to cycles"
+  },
+  "N_L_2": {
+   "value": 919038000.0,
+   "unit": "1",
+   "decimals": -3,
+   "label": "[NL]",
+   "line": 45,
+   "note": "Report displays millions of load cycles; value and last-place precision converted to cycles"
+  },
+  "H": {
+   "value": 20000.0,
+   "unit": "h",
+   "decimals": 2,
+   "label": "[H]",
+   "line": 57
+  },
+  "d_inner_1": {
+   "value": 0.0,
+   "unit": "mm",
+   "decimals": 2,
+   "label": "[di]",
+   "line": 115
+  },
+  "d_inner_2": {
+   "value": 146.39,
+   "unit": "mm",
+   "decimals": 2,
+   "label": "[di]",
+   "line": 115
+  },
+  "sigma_B": {
+   "value": 1100.0,
+   "unit": "MPa",
+   "decimals": 2,
+   "label": "[σB]",
+   "line": 168
+  },
+  "sigma_S": {
+   "value": 900.0,
+   "unit": "MPa",
+   "decimals": 2,
+   "label": "[σS]",
+   "line": 172
+  },
+  "Ra_H": {
+   "value": 3.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[RAH]",
+   "line": 181
+  },
+  "Ra_F": {
+   "value": 3.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[RAF]",
+   "line": 185
+  },
+  "Rz_H": {
+   "value": 20.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[RZH]",
+   "line": 189
+  },
+  "Rz_F": {
+   "value": 20.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[RZF]",
+   "line": 193
+  },
+  "nu_40": {
+   "value": 150.0,
+   "unit": "mm^2/s",
+   "decimals": 2,
+   "label": "[ν40]",
+   "line": 209
+  },
+  "nu_100": {
+   "value": 14.7,
+   "unit": "mm^2/s",
+   "decimals": 2,
+   "label": "[ν100]",
+   "line": 212
+  },
+  "T_oil": {
+   "value": 75.0,
+   "unit": "degC",
+   "decimals": 3,
+   "label": "[TS]",
+   "line": 218
+  },
+  "Ca_1": {
+   "value": 5.0,
+   "unit": "um",
+   "decimals": 1,
+   "label": "[Ca L/R]",
+   "line": 352
+  },
+  "m_t": {
+   "value": 1.5459,
+   "unit": "mm",
+   "decimals": 4,
+   "label": "[mt]",
+   "line": 85
+  },
+  "u": {
+   "value": 3.852,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[u]",
+   "line": 364
+  },
+  "alpha_t": {
+   "value": 20.562,
+   "unit": "deg",
+   "decimals": 3,
+   "label": "[αt]",
+   "line": 370
+  },
+  "zn_1": {
+   "value": 29.343,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[zn]",
+   "line": 406
+  },
+  "zn_2": {
+   "value": 113.025,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[zn]",
+   "line": 406
+  },
+  "db_1": {
+   "value": 39.081,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[db]",
+   "line": 423
+  },
+  "db_2": {
+   "value": 150.533,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[db]",
+   "line": 423
+  },
+  "h_1": {
+   "value": 3.363,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[h]",
+   "line": 560
+  },
+  "h_2": {
+   "value": 3.363,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[h]",
+   "line": 560
+  },
+  "xE_i_1": {
+   "value": 0.2669,
+   "unit": "1",
+   "decimals": 4,
+   "label": "[xE.i]",
+   "line": 1010
+  },
+  "xE_i_2": {
+   "value": -0.0452,
+   "unit": "1",
+   "decimals": 4,
+   "label": "[xE.i]",
+   "line": 1010
+  },
+  "v": {
+   "value": 6.45,
+   "unit": "m/s",
+   "decimals": 2,
+   "label": "[v]",
+   "line": 846
+  },
+  "y_p": {
+   "value": 0.6,
+   "unit": "um",
+   "decimals": 1,
+   "label": "[yp]",
+   "line": 855
+  },
+  "y_f": {
+   "value": 0.4,
+   "unit": "um",
+   "decimals": 1,
+   "label": "[yf]",
+   "line": 858
+  },
+  "C_M": {
+   "value": 0.8,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[CM]",
+   "line": 862
+  },
+  "C_B": {
+   "value": 0.975,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[CB]",
+   "line": 869
+  },
+  "c_s": {
+   "value": 13.625,
+   "unit": "N/(mm*um)",
+   "decimals": 3,
+   "label": "[c']",
+   "line": 875
+  },
+  "c_th": {
+   "value": 19.334,
+   "unit": "N/(mm*um)",
+   "decimals": 3,
+   "label": "[c'th]",
+   "line": 878
+  },
+  "c_gamma_alpha": {
+   "value": 19.458,
+   "unit": "N/(mm*um)",
+   "decimals": 3,
+   "label": "[cγα]",
+   "line": 881
+  },
+  "c_gamma_beta": {
+   "value": 16.539,
+   "unit": "N/(mm*um)",
+   "decimals": 3,
+   "label": "[cγβ]",
+   "line": 884
+  },
+  "m_red": {
+   "value": 0.00525,
+   "unit": "kg/mm",
+   "decimals": 5,
+   "label": "[mRed]",
+   "line": 887
+  },
+  "n_E1": {
+   "value": 21531.0,
+   "unit": "rpm",
+   "decimals": 0,
+   "label": "[nE1]",
+   "line": 890
+  },
+  "N_res": {
+   "value": 0.137,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[N]",
+   "line": 893
+  },
+  "K_gamma": {
+   "value": 1.0,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[Kγ]",
+   "line": 1001
+  },
+  "Z_E": {
+   "value": 189.812,
+   "unit": "sqrt(MPa)",
+   "decimals": 3,
+   "label": "[ZE]",
+   "line": 1170
+  },
+  "alpha_Fen_1": {
+   "value": 21.301,
+   "unit": "deg",
+   "decimals": 3,
+   "label": "[αFen]",
+   "line": 1022
+  },
+  "alpha_Fen_2": {
+   "value": 20.285,
+   "unit": "deg",
+   "decimals": 3,
+   "label": "[αFen]",
+   "line": 1022
+  },
+  "den_1": {
+   "value": 45.301,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[den]",
+   "line": 1029
+  },
+  "den_2": {
+   "value": 170.573,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[den]",
+   "line": 1029
+  },
+  "qs_1": {
+   "value": 2.303,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[qs]",
+   "line": 1078
+  },
+  "qs_2": {
+   "value": 2.42,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[qs]",
+   "line": 1078
+  },
+  "sigma_FP_1": {
+   "value": 550.39,
+   "unit": "MPa",
+   "decimals": 2,
+   "label": "[σFP]",
+   "line": 1138
+  },
+  "sigma_FP_2": {
+   "value": 491.26,
+   "unit": "MPa",
+   "decimals": 2,
+   "label": "[σFP]",
+   "line": 1138
+  },
+  "sigma_FG_1": {
+   "value": 715.51,
+   "unit": "MPa",
+   "decimals": 2,
+   "label": "[σFG]",
+   "line": 1142
+  },
+  "sigma_FG_2": {
+   "value": 638.64,
+   "unit": "MPa",
+   "decimals": 2,
+   "label": "[σFG]",
+   "line": 1142
+  },
+  "S_Fmin": {
+   "value": 1.3,
+   "unit": "1",
+   "decimals": 2,
+   "label": "[SFmin]",
+   "line": 1151
+  },
+  "S_Hmin": {
+   "value": 0.95,
+   "unit": "1",
+   "decimals": 2,
+   "label": "[SHmin]",
+   "line": 1248
+  },
+  "mass_1": {
+   "value": 0.231,
+   "unit": "kg",
+   "decimals": 3,
+   "label": "[m]",
+   "line": 1913
+  },
+  "mass_2": {
+   "value": 0.537,
+   "unit": "kg",
+   "decimals": 3,
+   "label": "[m]",
+   "line": 1913
+  },
+  "y_alpha": {
+   "value": 0.3,
+   "unit": "um",
+   "decimals": 1,
+   "label": "[yα]",
+   "line": 900
+  },
+  "l_sh": {
+   "value": 42.0,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[l]",
+   "line": 903
+  },
+  "s_sh": {
+   "value": 4.2,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[s]",
+   "line": 906
+  },
+  "d_sh": {
+   "value": 21.0,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[dsh]",
+   "line": 909
+  },
+  "K_prime": {
+   "value": -1.0,
+   "unit": "1",
+   "decimals": 2,
+   "label": "[K']",
+   "line": 916
+  },
+  "F_by": {
+   "value": 4.64,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[Fβy]",
+   "line": 920
+  },
+  "f_sh": {
+   "value": 0.81,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[fsh]",
+   "line": 927
+  },
+  "f_Hbeta5": {
+   "value": 6.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[fHβ5]",
+   "line": 935
+  },
+  "f_ma": {
+   "value": 6.02,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[fmα*B2]",
+   "line": 942
+  },
+  "F_bx": {
+   "value": 5.46,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[Fβx]",
+   "line": 946
+  },
+  "y_beta": {
+   "value": 0.82,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[yβ]",
+   "line": 949
+  },
+  "A_sn_e_1": {
+   "value": -0.044,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[Asn.e/i]",
+   "line": 1555
+  },
+  "A_sn_i_1": {
+   "value": -0.064,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[Asn.e/i]",
+   "line": 1555
+  },
+  "A_sn_e_2": {
+   "value": -0.08,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[Asn.e/i]",
+   "line": 1555
+  },
+  "A_sn_i_2": {
+   "value": -0.13,
+   "unit": "mm",
+   "decimals": 3,
+   "label": "[Asn.e/i]",
+   "line": 1555
+  },
+  "hfP_final_1": {
+   "value": 1.25,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[hfP*]",
+   "line": 321
+  },
+  "hfP_final_2": {
+   "value": 1.25,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[hfP*]",
+   "line": 321
+  },
+  "rhofP_final_1": {
+   "value": 0.38,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[ρfP*]",
+   "line": 325
+  },
+  "rhofP_final_2": {
+   "value": 0.38,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[ρfP*]",
+   "line": 325
+  },
+  "haP_final_1": {
+   "value": 1.0,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[haP*]",
+   "line": 329
+  },
+  "haP_final_2": {
+   "value": 1.0,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[haP*]",
+   "line": 329
+  },
+  "f_pt_1": {
+   "value": 7.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[fp]",
+   "line": 1738
+  },
+  "f_pt_2": {
+   "value": 8.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[fp]",
+   "line": 1738
+  },
+  "f_pbT_1": {
+   "value": 7.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[fpe]",
+   "line": 1742
+  },
+  "f_pbT_2": {
+   "value": 8.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[fpe]",
+   "line": 1742
+  },
+  "f_falpha_1": {
+   "value": 6.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[ff]",
+   "line": 1758
+  },
+  "f_falpha_2": {
+   "value": 6.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[ff]",
+   "line": 1758
+  },
+  "f_Hbeta_1": {
+   "value": 9.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[fHβ]",
+   "line": 1774
+  },
+  "f_Hbeta_2": {
+   "value": 8.0,
+   "unit": "um",
+   "decimals": 2,
+   "label": "[fHβ]",
+   "line": 1774
+  },
+  "Q_grade_1": {
+   "value": 6.0,
+   "unit": "1",
+   "decimals": 0,
+   "label": "[Q-DIN 3961:1978]",
+   "line": 111
+  },
+  "Q_grade_2": {
+   "value": 6.0,
+   "unit": "1",
+   "decimals": 0,
+   "label": "[Q-DIN 3961:1978]",
+   "line": 111
+  },
+  "C_R": {
+   "value": 0.931,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[CR, bs/b, sr/mn]",
+   "line": 865
+  },
+  "bs_b": {
+   "value": 0.5,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[CR, bs/b, sr/mn]",
+   "line": 865
+  },
+  "sR_mn": {
+   "value": 3.5,
+   "unit": "1",
+   "decimals": 3,
+   "label": "[CR, bs/b, sr/mn]",
+   "line": 865
+  },
+  "pinion_arrangement": {
+   "value": 5.0,
+   "unit": "1",
+   "decimals": 0,
+   "label": "[-]",
+   "line": 912
+  },
+  "f_ZCa": {
+   "value": 1.2,
+   "unit": "1",
+   "decimals": 2,
+   "label": "[fZCa]",
+   "line": 1193,
+   "note": "(Helical gear sets without flank modifications)"
+  }
+ },
+ "report_text": {
+  "profile_modification": {
+   "text": "Type of profile modification: for high load capacity gearboxes",
+   "line": 349
+  },
+  "pinion_stiffening": {
+   "text": "Without stiffening Effective flank line deviation (µm)",
+   "line": 918
+  },
+  "flank_modification": {
+   "text": "Flank line: crowned [Cβ = 0.5·(fmα+fsh)]",
+   "line": 937
+  },
+  "material_treatment": {
+   "text": "Material treatment according to ISO 6336:2006 Normal, Life factors ZNT and YNT ≥ 0.85 Infinite life strength for tooth root stress (N/mm²)",
+   "line": 150
+  },
+  "methods": {
+   "text": "cγ according to Method B ",
+   "line": 2160
+  }
+ },
+ "selectors": {
+  "method.K_V": "B",
+  "method.m_red": "exact",
+  "method.f_pb": "fpbT",
+  "method.K_Hbeta": "C",
+  "method.K_Halpha": "B",
+  "method.root_shift": "generating"
+ },
+ "limitations": [
+  "Existing material/life coefficients remain explicit commercial evidence inputs in this diagnostic contract.",
+  "Solid-blank C_R=1 is evidence input where no blank dimensions were supplied.",
+  "fZCa is imported explicitly from the commercial report; ISO-only Z_B/Z_D remain separate intermediates."
+ ],
+ "adapter_selectors": {
+  "geometry.widths": "individual_root_min_contact",
+  "geometry.tip": "additive_kXmn_mm",
+  "geometry.root": "individual_rack",
+  "stiffness_teeth": "exact_geometry",
+  "contact_stress_adjustment": "report_fZCa"
+ },
+ "adapter_selector_sources": {
+  "geometry.widths": "Report root beff is per-gear; contact beff is the narrower width",
+  "geometry.tip": "COM kXmn is dimensional tip alteration, millimetres",
+  "geometry.root": "COM tool type and final reference profile; shaper unsupported when declared",
+  "stiffness_teeth": "Explicit exact geometry convention: TR30 4.2.3 / ISO 6336-3:2019 equation (16); KISSsoft c_th rows numerically support this choice",
+  "contact_stress_adjustment": "KISSsoft report fZCa is an explicit additional stress correction; not an inferred ZBD target"
+ },
+ "editions": {
+  "ISO 21771": "2007",
+  "ISO 6336-1": "2019",
+  "ISO 6336-2": "2019",
+  "ISO 6336-3": "2019"
+ },
+ "edition_sources": {
+  "ISO 21771": "Report extracted.txt line 71: ISO 21771:2007 (withdrawn); COM method IDs 1/10029",
+  "ISO 6336-1": "Report extracted.txt line 27: ISO 6336:2019; COM method IDs 1/10029",
+  "ISO 6336-2": "Report extracted.txt line 27: ISO 6336:2019; COM method IDs 1/10029",
+  "ISO 6336-3": "Report extracted.txt line 27: ISO 6336:2019; COM method IDs 1/10029"
+ }
+}

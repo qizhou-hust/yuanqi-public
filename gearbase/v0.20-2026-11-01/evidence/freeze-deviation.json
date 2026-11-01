@@ -1,0 +1,6 @@
+{
+  "utc": "2026-11-01T10:32:13.086685+00:00",
+  "reason": "Actual FE repost wrote Python bytecode into read-only registered data pack; source fixes and new freeze required before CI",
+  "initial_source_snapshot_is_not_final_acceptance": true,
+  "user_gates_unchanged": true
+}

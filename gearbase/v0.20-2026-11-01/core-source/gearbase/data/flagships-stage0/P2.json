@@ -1,0 +1,37 @@
+{
+  "title": "P2 original Stage0 structured requirement",
+  "text_zh": "按原始P2旗舰的显式参数完成有限域Stage0求解，并保留不支持的工程评级与失败项。",
+  "origin": {
+    "path": "archive/m31/tests/test_solver.py",
+    "sha256": "5c6cc0881f557c0724ea70677d7e6245fab725210dd5fa6ab6f78d872838a4d2",
+    "expanded_algorithm_signature": "archive/m31/src/gears/solver.py; historical model options and explicit output budget"
+  },
+  "requirement": {
+    "family": "P2",
+    "scope": "stage0",
+    "parameters": {
+      "n1_rpm": 1440.0,
+      "target_total_ratio": 40.0,
+      "np_options": [
+        3,
+        4
+      ],
+      "zs_range": [
+        14,
+        30
+      ],
+      "zp_range": [
+        18,
+        60
+      ],
+      "m_series": [
+        2.0,
+        2.5,
+        3.0
+      ],
+      "i_tol": 0.02,
+      "top_k": 5
+    },
+    "source": "M31 SPEC / frozen original solver flagship; all options expanded, not engineering defaults"
+  }
+}

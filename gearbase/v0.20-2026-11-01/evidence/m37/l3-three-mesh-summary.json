@@ -1,0 +1,78 @@
+{
+  "scope": "L3 spur output-only derived probe, three meshes at one penalty; not a complete L3 gate",
+  "reference_hertz_MPa": 602.7349481549439,
+  "reference_sigma_H0_MPa": 536.3277226619417,
+  "Z_eps": 0.8898235025258051,
+  "rows": [
+    {
+      "level": 8,
+      "h": 0.005854188524896888,
+      "dat_pressure_MPa": 604.8201,
+      "frd_pressure_MPa": 602.988,
+      "strict_status": "accepted",
+      "identity_drift": [],
+      "output_only_exact_reversal": true,
+      "force_balance_rel": 2.6149319040312442e-05,
+      "torque_balance_rel": 5.39897552189359e-05,
+      "input_sha256": "6a6925e526329bf8ce5a65ea5ca8c54c47e2a437ebbe790f563502d2551f314e",
+      "source_sha256": "51f4054d38dcab339b7f7779f9d2ca4eeac039ac251e40d38f6750350565b7c3"
+    },
+    {
+      "level": 12,
+      "h": 0.0039027923499312584,
+      "dat_pressure_MPa": 604.7065,
+      "frd_pressure_MPa": 604.503,
+      "strict_status": "accepted",
+      "identity_drift": [],
+      "output_only_exact_reversal": true,
+      "force_balance_rel": 2.66003714982726e-05,
+      "torque_balance_rel": 5.378108662762315e-05,
+      "input_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+      "source_sha256": "2d1299e4548bb8b282e6c5df1b22d95c2a88a3314ad45574b9e4ecdd7b848383"
+    },
+    {
+      "level": 18,
+      "h": 0.0026018615666208392,
+      "dat_pressure_MPa": 604.9156,
+      "frd_pressure_MPa": 604.876,
+      "strict_status": "accepted",
+      "identity_drift": [],
+      "output_only_exact_reversal": true,
+      "force_balance_rel": 2.66003714982726e-05,
+      "torque_balance_rel": 5.369597618467499e-05,
+      "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+      "source_sha256": "1a1a82abc6f15f312c793348c3ab3ee71768e36111bc4d576bf471c38a93e7ac"
+    }
+  ],
+  "richardson": {
+    "levels_h": [
+      0.005854188524896888,
+      0.0039027923499312584,
+      0.0026018615666208392
+    ],
+    "values": [
+      604.8201,
+      604.7065,
+      604.9156
+    ],
+    "relative_changes": [
+      0.0001878597302989458,
+      0.00034566805683311014
+    ],
+    "observed_order": null,
+    "order_used": 2.0,
+    "extrapolated": 605.08288,
+    "monotone": false,
+    "gci_fine": 0.00034566805683311025,
+    "status": "assumed_order",
+    "assumption_reason": "oscillatory"
+  },
+  "extrapolated_over_hertz": 1.0038954632583417,
+  "last_mesh_change": 0.0003457875845556124,
+  "limitations": [
+    "Canonical L2 ladder failed; L3 remains blocked",
+    "Penalty and phase studies missing",
+    "Hertz comparison uses sigma_H0 / Z_eps; helical data not assessed"
+  ],
+  "ingest_method_sha256": "89499e55de8490684604bfb70fb7f1eaaa4e67c7759c0c87284fcfaacebabad3"
+}

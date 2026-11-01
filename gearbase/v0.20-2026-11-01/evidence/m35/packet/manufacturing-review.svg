@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white" stroke="none" stroke-width="0" />
+<text x="8" y="9" font-family="Arial, sans-serif" font-size="5" fill="#111" stroke="none" stroke-width="0">K02 SHIFTED HELICAL - MANUFACTURING REVIEW PREPARATION</text>
+<text x="8" y="16" fill="#b00" font-family="Arial, sans-serif" font-size="3" stroke="none" stroke-width="0">HOLD: DIAMETER ENVELOPES ONLY. SHIFTED TOOTH PROFILE / ROOT NOT GENERATED. NOT FOR MANUFACTURE.</text>
+<text x="8" y="22" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">Source SHA256: 3e9571540e9ac2d680067cbdd1a03c17ca782b38b3f9711b42c80a8335d542aa</text>
+<text x="8" y="28" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">Model units mm; transverse +X right, +Y up; axial +Z right. Views separated, not assembly. Scale 1:1 at A3.</text>
+<text x="22.153824005664564" y="57.15382400566456" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">GEAR 1 | z=27 | x=0.3255 | beta abs=14 deg; hand TBD</text>
+<circle class="dim " cx="45" cy="85" r="22.846175994" fill="none" stroke="#444" stroke-width=".25" />
+<circle class="dim pitch" cx="45" cy="85" r="20.869925994" fill="none" stroke="#198" stroke-width=".25" stroke-dasharray="3,1" />
+<circle class="dim base" cx="45" cy="85" r="19.540396637" fill="none" stroke="#148" stroke-width=".25" stroke-dasharray="1,1" />
+<circle class="dim root" cx="45" cy="85" r="19.483175994" fill="none" stroke="#b60" stroke-width=".25" stroke-dasharray="1,1" />
+<path class="dim" d="M 19.153824005664564 85 H 70.84617599433544 M 45 59.15382400566456 V 110.84617599433544" fill="none" stroke="#444" stroke-width=".25" />
+<path class="dim" d="M 22.153824005664564 107.84617599433544 V 119.84617599433544 M 67.84617599433544 107.84617599433544 V 119.84617599433544 M 22.153824005664564 117.84617599433544 H 67.84617599433544" fill="none" stroke="#444" stroke-width=".25" />
+<text x="22.153824005664564" y="116.84617599433544" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">tip DIA 45.692352 mm (source shortened tip)</text>
+<text x="22.153824005664564" y="124.84617599433544" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">d DIA 41.739852 mm</text>
+<text x="22.153824005664564" y="129.84617599433545" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">db DIA 39.080793 mm</text>
+<text x="22.153824005664564" y="134.84617599433545" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">df DIA 38.966352 mm</text>
+<rect class="dim" x="85" y="65" width="21.0" height="45.69235198867087" fill="none" stroke="#444" stroke-width=".25" />
+<path class="dim" d="M 85 110.69235198867088 V 119.69235198867088 M 106.0 110.69235198867088 V 119.69235198867088 M 85 117.69235198867088 h 21.0" fill="none" stroke="#444" stroke-width=".25" />
+<text x="85" y="123.69235198867088" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">Z width b=21 mm</text>
+<text x="153.0133044320903" y="38.01330443209032" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">GEAR 2 | z=104 | x=0.073888319 | beta abs=14 deg; hand TBD</text>
+<circle class="dim " cx="235" cy="125" r="81.986695568" fill="none" stroke="#444" stroke-width=".25" />
+<circle class="dim pitch" cx="235" cy="125" r="80.387863089" fill="none" stroke="#198" stroke-width=".25" stroke-dasharray="3,1" />
+<circle class="dim base" cx="235" cy="125" r="75.266712972" fill="none" stroke="#148" stroke-width=".25" stroke-dasharray="1,1" />
+<circle class="dim root" cx="235" cy="125" r="78.623695568" fill="none" stroke="#b60" stroke-width=".25" stroke-dasharray="1,1" />
+<path class="dim" d="M 150.0133044320903 125 H 319.9866955679097 M 235 40.01330443209032 V 209.9866955679097" fill="none" stroke="#444" stroke-width=".25" />
+<path class="dim" d="M 153.0133044320903 206.9866955679097 V 218.9866955679097 M 316.9866955679097 206.9866955679097 V 218.9866955679097 M 153.0133044320903 216.9866955679097 H 316.9866955679097" fill="none" stroke="#444" stroke-width=".25" />
+<text x="153.0133044320903" y="215.9866955679097" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">tip DIA 163.973391 mm (source shortened tip)</text>
+<text x="153.0133044320903" y="223.9866955679097" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">d DIA 160.775726 mm</text>
+<text x="153.0133044320903" y="228.9866955679097" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">db DIA 150.533426 mm</text>
+<text x="153.0133044320903" y="233.9866955679097" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">df DIA 157.247391 mm</text>
+<rect class="dim" x="350" y="43" width="20.0" height="163.97339113581936" fill="none" stroke="#444" stroke-width=".25" />
+<path class="dim" d="M 350 206.97339113581936 V 215.97339113581936 M 370.0 206.97339113581936 V 215.97339113581936 M 350 213.97339113581936 h 20.0" fill="none" stroke="#444" stroke-width=".25" />
+<text x="350" y="219.97339113581936" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">Z width b=20 mm</text>
+<text x="8" y="250" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">G1: audited tooth_authority rejects nonzero shift; shifted helical flank/root/cutter envelope absent</text>
+<text x="8" y="255" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">G2: DIN 3961:1978 grade 6 retained; ISO 1328 grade/requirements not authorized</text>
+<text x="8" y="260" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">G3: bore/hub/keyway, datum scheme, fits, dimensional tolerances and surface finish unspecified</text>
+<text x="8" y="265" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">G4: material/heat-treatment manufacturing specification and inspection acceptance need approval</text>
+<text x="8" y="270" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">G5: helix hand and coordinate convention not explicit in source; no hand inferred from absolute beta</text>
+<text x="8" y="275" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">G6: measurement span k and ball diameter not evidenced; Wk/MdK inspection plan pending</text>
+<text x="8" y="280" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">G7: external process reviewer, issues closure and signature absent</text>
+<text x="8" y="290" font-family="Arial, sans-serif" font-size="3" fill="#111" stroke="none" stroke-width="0">DIN 3961:1978 grade 6; no ISO 1328 equivalence asserted. Reviewer: __________________ Date: __________</text></svg>

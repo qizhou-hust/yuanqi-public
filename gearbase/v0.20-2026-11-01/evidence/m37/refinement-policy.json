@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-11-01T10:01:40.110406+00:00",
+  "original_case_sha256": "4daa76b03f55ffacd8ec177a64ade5b97a80f22f8ad86346ae2cd1fe08d2b4be",
+  "fixed_points": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14"
+  ],
+  "canonical_divisions": [
+    8,
+    12,
+    18
+  ],
+  "refinement_divisions": [
+    27,
+    40
+  ],
+  "selection": "For each point failing canonical final relative change < 0.02, build both additional levels; retain and report all canonical levels. Compare three finest levels as an explicitly separate derived study; never alter canonical verdict.",
+  "model_changes": "Only root_divisions and level tags; all case physical parameters and acceptance criteria remain unchanged.",
+  "limitations": "Derived study is not a canonical source-pack ingest; must remain separately identified."
+}

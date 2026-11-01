@@ -1,0 +1,106 @@
+{
+  "status": "BLOCKED_ORIGINAL_GATE_IDENTITY",
+  "original_user_gate_identified": false,
+  "original_six": [],
+  "diagnostic_rows": [
+    {
+      "case": 7,
+      "variant": "ex7-base-native",
+      "row": "sFn_1",
+      "model": 3.8685976304246106,
+      "reference": 3.8685865249586686,
+      "unit": "mm",
+      "error": 2.870677925985275e-06,
+      "source": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m33-return\\variants\\ex7-base-native\\v09-original-table.csv",
+      "sha256": "c6a02e9b60bbfe8e9c9be396eb19cbe0a8b3f5b34e6c99cc7001d20c2876cf18",
+      "template_row": "111"
+    },
+    {
+      "case": 7,
+      "variant": "ex7-base-native",
+      "row": "sFn_2",
+      "model": 3.9583864834706004,
+      "reference": 3.9583912596086614,
+      "unit": "mm",
+      "error": 1.2065856424508405e-06,
+      "source": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m33-return\\variants\\ex7-base-native\\v09-original-table.csv",
+      "sha256": "c6a02e9b60bbfe8e9c9be396eb19cbe0a8b3f5b34e6c99cc7001d20c2876cf18",
+      "template_row": "112"
+    },
+    {
+      "case": 8,
+      "variant": "ex8-Rz2.3",
+      "row": "hFe_1",
+      "model": 5.482261407969135,
+      "reference": 5.482521885648291,
+      "unit": "mm",
+      "error": 4.7510558934123103e-05,
+      "source": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m33-return\\variants\\ex8-Rz2.3\\v09-original-table.csv",
+      "sha256": "88f39653b77a50b2c4ad317d5ccf954844eeaa645e25a4fa42ccadca6ce5c0db",
+      "template_row": "111"
+    },
+    {
+      "case": 8,
+      "variant": "ex8-Rz2.3",
+      "row": "hFe_2",
+      "model": 6.374358152566664,
+      "reference": 6.374614297133288,
+      "unit": "mm",
+      "error": 4.0181970968660374e-05,
+      "source": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m33-return\\variants\\ex8-Rz2.3\\v09-original-table.csv",
+      "sha256": "88f39653b77a50b2c4ad317d5ccf954844eeaa645e25a4fa42ccadca6ce5c0db",
+      "template_row": "112"
+    },
+    {
+      "case": 8,
+      "variant": "ex8-Rz2.3",
+      "row": "sFn_1",
+      "model": 9.69062414933776,
+      "reference": 9.690705284198927,
+      "unit": "mm",
+      "error": 8.372441302041856e-06,
+      "source": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m33-return\\variants\\ex8-Rz2.3\\v09-original-table.csv",
+      "sha256": "88f39653b77a50b2c4ad317d5ccf954844eeaa645e25a4fa42ccadca6ce5c0db",
+      "template_row": "113"
+    },
+    {
+      "case": 8,
+      "variant": "ex8-Rz2.3",
+      "row": "sFn_2",
+      "model": 10.503269420243385,
+      "reference": 10.503366597218875,
+      "unit": "mm",
+      "error": 9.251983598880499e-06,
+      "source": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m33-return\\variants\\ex8-Rz2.3\\v09-original-table.csv",
+      "sha256": "88f39653b77a50b2c4ad317d5ccf954844eeaa645e25a4fa42ccadca6ce5c0db",
+      "template_row": "114"
+    },
+    {
+      "case": 8,
+      "variant": "ex8-Rz2.3",
+      "row": "rhoF_1",
+      "model": 2.142440626033262,
+      "reference": 2.1425089896880785,
+      "unit": "mm",
+      "error": 3.190822309063634e-05,
+      "source": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m33-return\\variants\\ex8-Rz2.3\\v09-original-table.csv",
+      "sha256": "88f39653b77a50b2c4ad317d5ccf954844eeaa645e25a4fa42ccadca6ce5c0db",
+      "template_row": "115"
+    },
+    {
+      "case": 8,
+      "variant": "ex8-Rz2.3",
+      "row": "rhoF_2",
+      "model": 2.0335858863279173,
+      "reference": 2.033629950569008,
+      "unit": "mm",
+      "error": 2.1667777403786325e-05,
+      "source": "D:\\my_Works\\Gears\\parallel-v09-2026-10-29\\m33-return\\variants\\ex8-Rz2.3\\v09-original-table.csv",
+      "sha256": "88f39653b77a50b2c4ad317d5ccf954844eeaa645e25a4fa42ccadca6ce5c0db",
+      "template_row": "116"
+    }
+  ],
+  "reason": "No source establishes that these diagnostic rows are the six from the user independent gate; counts differ.",
+  "strict_diagnostic_limit": 1e-06,
+  "milestone_limit": 0.01
+}

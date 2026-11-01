@@ -1,0 +1,118 @@
+{
+  "id": "L3_C001_G1_C_d18_a10",
+  "source_sha256": "1a1a82abc6f15f312c793348c3ab3ee71768e36111bc4d576bf471c38a93e7ac",
+  "derived_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+  "output_only_exact_reversal": true,
+  "returncode": 124,
+  "wall_seconds": 180.67199999978766,
+  "prepared": {
+    "files": {
+      "inp": {
+        "path": "L3_C001_G1_C_d18_a10.inp",
+        "sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "missing": false
+      },
+      "metadata": {
+        "path": "L3_C001_G1_C_d18_a10.meta.json",
+        "sha256": "79b8721fb69401ee44173c68ee278982294fd306ee4bef44f9528895ced01f95",
+        "missing": false
+      },
+      "includes": [],
+      "solver": {
+        "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+        "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "missing": false
+      }
+    },
+    "digest": "30a8782db8f0a0753022bed66af2715cc98b292e853941c5c2d4a262fdf2da55",
+    "utc": "2026-11-01T10:10:36.398542Z"
+  },
+  "prelaunch": {
+    "files": {
+      "inp": {
+        "path": "L3_C001_G1_C_d18_a10.inp",
+        "sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "missing": false
+      },
+      "metadata": {
+        "path": "L3_C001_G1_C_d18_a10.meta.json",
+        "sha256": "79b8721fb69401ee44173c68ee278982294fd306ee4bef44f9528895ced01f95",
+        "missing": false
+      },
+      "includes": [],
+      "solver": {
+        "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+        "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "missing": false
+      }
+    },
+    "digest": "30a8782db8f0a0753022bed66af2715cc98b292e853941c5c2d4a262fdf2da55",
+    "utc": "2026-11-01T10:10:37.019246Z"
+  },
+  "post": {
+    "files": {
+      "inp": {
+        "path": "L3_C001_G1_C_d18_a10.inp",
+        "sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "missing": false
+      },
+      "metadata": {
+        "path": "L3_C001_G1_C_d18_a10.meta.json",
+        "sha256": "79b8721fb69401ee44173c68ee278982294fd306ee4bef44f9528895ced01f95",
+        "missing": false
+      },
+      "includes": [],
+      "solver": {
+        "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+        "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "missing": false
+      }
+    },
+    "digest": "30a8782db8f0a0753022bed66af2715cc98b292e853941c5c2d4a262fdf2da55",
+    "utc": "2026-11-01T10:13:37.783172Z"
+  },
+  "identity_drift": [],
+  "deck_check": {
+    "version": "m37.step-state/1.0",
+    "profile": "m37-restricted-2d-static/1.0",
+    "pass": true,
+    "errors": [],
+    "error_count": 0,
+    "steps": [
+      {
+        "index": 1,
+        "line": 121367,
+        "procedure": "STATIC",
+        "period": 1.0,
+        "period_source": "data",
+        "bc_op_new": false,
+        "cload_op_new": false,
+        "bc_count": 373,
+        "cload_count": 0,
+        "bc_inherited_count": 372,
+        "outputs": []
+      },
+      {
+        "index": 2,
+        "line": 121373,
+        "procedure": "STATIC",
+        "period": 1.0,
+        "period_source": "data",
+        "bc_op_new": true,
+        "cload_op_new": false,
+        "bc_count": 372,
+        "cload_count": 1,
+        "bc_inherited_count": 0,
+        "outputs": [
+          "*NODE PRINT {'NSET': 'PMASTER'} ['U']",
+          "*NODE PRINT {'NSET': 'WBORE'} ['RF']",
+          "*CONTACT PRINT {'SLAVE': 'PFL', 'MASTER': 'WFL'} ['CDIS', 'CSTR', 'CF']",
+          "*CONTACT FILE {} ['CSTR']"
+        ]
+      }
+    ],
+    "total_time": 2.0,
+    "includes": [],
+    "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03"
+  }
+}

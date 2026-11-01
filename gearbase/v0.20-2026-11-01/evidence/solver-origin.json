@@ -1,0 +1,26 @@
+{
+  "schema": "gearbase.solver-origin-verification/1",
+  "verified_utc": "2026-11-01T08:55:51.513421+00:00",
+  "source_page": "https://www.dhondt.de/",
+  "requested_url": "https://www.dhondt.de/ccx_2.23.tar.bz2",
+  "final_url": "https://www.dhondt.de/ccx_2.23.tar.bz2",
+  "archive_sha256": "35d426fed5eb164fbbaaafa20819d13d22e30bc2b9bc9c6c4ed957e9468355dd",
+  "archive_expected": "35d426fed5eb164fbbaaafa20819d13d22e30bc2b9bc9c6c4ed957e9468355dd",
+  "member": "./CalculiX/ccx_2.23/src/ccx_2.23",
+  "executable_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+  "vendored_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+  "headers": {
+    "Date": "Sun, 01 Nov 2026 08:55:48 GMT",
+    "Server": "Apache/2.4.69 (Unix)",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 02 Nov 2025 17:37:40 GMT",
+    "ETag": "\"263084-642a00e2b38a3\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "2502788",
+    "Content-Type": "application/x-bzip2"
+  },
+  "passed": true,
+  "allowed_scope": "exact Linux x86_64 binary only; no numerical gear FEA qualification",
+  "executed_during_origin_verification": false
+}

@@ -1,0 +1,32 @@
+test_L1_failure_blocks_upper_levels (test_fea_ingest.TestIngest.test_L1_failure_blocks_upper_levels) ... ok
+test_cli (test_fea_ingest.TestIngest.test_cli) ... ok
+test_full_mode_requires_solver_identity (test_fea_ingest.TestIngest.test_full_mode_requires_solver_identity) ... ok
+test_input_mismatch_and_version_warning (test_fea_ingest.TestIngest.test_input_mismatch_and_version_warning) ... ok
+test_lint_errors_rejected_by_schema (test_fea_ingest.TestIngest.test_lint_errors_rejected_by_schema) ... ok
+test_pass_case (test_fea_ingest.TestIngest.test_pass_case) ... ok
+test_phase_not_converged (test_fea_ingest.TestIngest.test_phase_not_converged) ... ok
+test_recomputes_instead_of_trusting_local_assessment (test_fea_ingest.TestIngest.test_recomputes_instead_of_trusting_local_assessment) ... ok
+test_record_contract (test_fea_ingest.TestIngest.test_record_contract) ... ok
+test_schema_rejection (test_fea_ingest.TestIngest.test_schema_rejection) ... ok
+test_smoke_partial_is_incomplete (test_fea_ingest.TestIngest.test_smoke_partial_is_incomplete) ... ok
+test_zip_attachments (test_fea_ingest.TestIngest.test_zip_attachments) ... ok
+test_ingest_does_not_touch_formula_graph (test_fea_ingest.TestNoGraphImport.test_ingest_does_not_touch_formula_graph) ... ok
+test_penalty_fit (test_fea_ingest.TestNumerics.test_penalty_fit) ... ok
+test_richardson_oscillatory_uses_assumed_order (test_fea_ingest.TestNumerics.test_richardson_oscillatory_uses_assumed_order) ... ok
+test_richardson_second_order (test_fea_ingest.TestNumerics.test_richardson_second_order) ... ok
+test_basic_keywords (test_fea_ingest.TestValidator.test_basic_keywords) ... ok
+test_bool_is_not_number (test_fea_ingest.TestValidator.test_bool_is_not_number) ... ok
+test_unequal_mesh_ratios_preserve_signed_order (test_fea_verified_profile.SignedRichardsonTest.test_unequal_mesh_ratios_preserve_signed_order) ... ok
+test_case_and_metadata_mismatch_fail (test_fea_verified_profile.VerifiedProfileTest.test_case_and_metadata_mismatch_fail) ... ok
+test_changed_probe_fails_closed (test_fea_verified_profile.VerifiedProfileTest.test_changed_probe_fails_closed) ... ok
+test_rejects_changed_raw_bytes (test_fea_verified_profile.VerifiedProfileTest.test_rejects_changed_raw_bytes) ... ok
+test_rejects_omitted_force_balance (test_fea_verified_profile.VerifiedProfileTest.test_rejects_omitted_force_balance) ... ok
+test_requires_raw_repost (test_fea_verified_profile.VerifiedProfileTest.test_requires_raw_repost) ... ok
+test_unapproved_solver_fails_closed (test_fea_verified_profile.VerifiedProfileTest.test_unapproved_solver_fails_closed) ... ok
+test_version_or_solver_identity_fails (test_fea_verified_profile.VerifiedProfileTest.test_version_or_solver_identity_fails) ... ok
+test_fresh_process_import_and_failure_restore_state (test_fea_readonly_import.ReadOnlyPackImportTest.test_fresh_process_import_and_failure_restore_state) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.796s
+
+OK

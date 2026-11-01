@@ -1,0 +1,10 @@
+{
+  "source": "D:\\my_Works\\Gears\\v017-system-run\\fea-prepare\\jobs_utf8\\runs\\L3\\L3_C001_G1_C_d8_a10.inp",
+  "source_sha256": "51f4054d38dcab339b7f7779f9d2ca4eeac039ac251e40d38f6750350565b7c3",
+  "derived_sha256": "6a6925e526329bf8ce5a65ea5ca8c54c47e2a437ebbe790f563502d2551f314e",
+  "change": "insert *CONTACT FILE / CSTR before final *END STEP",
+  "output_only_exact_reversal": true,
+  "deck_state_pass": true,
+  "deck_errors": [],
+  "frd_requested": true
+}

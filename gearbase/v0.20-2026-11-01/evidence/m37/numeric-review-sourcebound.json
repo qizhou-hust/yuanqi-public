@@ -1,0 +1,623 @@
+{
+  "kind": "independent_readonly_numeric_review",
+  "files_sha256": {
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d8.meta.json": "1aeecf739b0fa7e9625a2e37f13e7c5597c22a12d07d315561bbc78e89fd973d",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d8.dat": "9f65a9d1562d948e64eec58ae0c6eaa455a305c5bf68edb7a9a13543e04cec84",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d8.inp": "a4e44585a9ebb1409f0e7ab9bd31c6acc2a698ba7017432c84a9c126fd4d3b7a",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d8.record.json": "3928c799c1e54fc601c661afa0e5fa54e1e1951113db2308043d436d2b34a6e9",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d12.meta.json": "df41e808b3c3d5decd672966a15d295f3cc94a82bf15ed1c109d704ab18b67c3",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d12.dat": "cafe858d14eceb05ae83c1033658068b805f1c511b7b99272954844c27c383b2",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d12.inp": "ad256da6507d5e2abeced5d0d4867da345e8838018dd0ea35496bab7eeb369b5",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d12.record.json": "57f3ead1318c5cb7115f6b8ccadba7a25b95aecd3ee8866b5b58a1f561017220",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.meta.json": "1411998165cfa52fceec73c1c2709f504839dbc41942c838692bb78dd528bff0",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.dat": "216a40a7b35eeaa715df1c1d588d52d8e477ea8ce8933e4be3fb5c857f1856cb",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.inp": "a8b16b3f79a594d3c23d646ad7984abc159a099aa23ba1e1c8a6e0735c150f7c",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.record.json": "b78a11d33b1f56b4268874b6ba542bbb204f901ae126389ad65f010ceb3f02cb",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d8.meta.json": "73f1688ff83ee03f0f9f83b74590849d8535d46c233b8278b666c59805c4a8f7",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d8.dat": "984812b2107ffa8091bc9682f175b6296a92fad148a4ce3f45592e988c3b2179",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d8.inp": "3beea5ced36205cd50ae1c884bc5b343f6e7226f1154c85d50aaa4b149806283",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d8.record.json": "2f2e1a4c4080f749a0239cc6ea9ebe3e4f80c16f61e0edf76c19d3f630f5164d",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d12.meta.json": "5e76b91cf0a4e1d0d6efcd16c6115dce8444f4dd21ed6b4c5d4fe6e717cf5912",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d12.dat": "11717c67c8cb162068daf476b29c908e327f66376e4ad442b5dce7976db57e0e",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d12.inp": "b391c8f8b958d2039cdb586e47d8cbc9d353756b30ee5a1e61528abb6d1a0221",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d12.record.json": "f96f25c8d877889fcbd35f9829be19943fa1113861a0ea8e6f4f0ee2b0da8876",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d18.meta.json": "a6bfcfeca6dcf7f4f717d663de681d9e01059c11cde04eb32b7b554e96df56e8",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d18.dat": "91f7658dcf83f03e6009312d3d77d18f2826c1a43801f197458c136abf9a3105",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d18.inp": "33ce61f3555531f4155c5e73c8711caf79137a287fe5191cfdae26ff0ac5d8e7",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P05_d18.record.json": "456d25cf2a1a88e08845929bf3c9101b8a1ff77e133d4fd6dc478afc285ce317",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d8.meta.json": "223645ca7175a6722e0cac2a8bfe50be84abcd800b01977e22ca45d0deebd88a",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d8.dat": "0a22f4ec1d3285f85569dfff8b66166e3328144919de46bed2daaa0e7a31bba3",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d8.inp": "8d16f9c64931b3e5ebcb663ce6af348f639f8523e427114413bc11d72fb6b5a0",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d8.record.json": "fcea8953067bdddf47c8095e8c70111749074dec4b63ade8849557b5025675ce",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d12.meta.json": "da87f86dcdce5535620f23f75bb262fd0f603df71bfeca34c62b2ae2a9b6f96a",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d12.dat": "15d2c4be890470322ae4972cf18a5b965f95e5d3121c9d608518f03e7ec44f4b",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d12.inp": "930fed552622471ab7ce74e8b57b3eff98488ad1eba4a5ebda033cff172cb4bb",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d12.record.json": "30e6bb1cf4e32e5002fe45c3d13efdcac4d56cf51bfe0aa6c9bba491ea057e00",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.meta.json": "5f56b4e0551350769df2beb6ede93b5160c17c1fcc13e4ad15bafd5c554c11cc",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.dat": "bd7bc53904951047bfd263677ec4bd9671c15e2e212e8d2f5d87ff527cae2e58",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.inp": "1ec34bbbba85bd00f43c1a12b25abebbb21e67790de6633a728c18b5f928fca6",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.record.json": "ab341308c93249710d88129218ac21ff4cbe922c1433af739b93cb31cebc0557",
+    "D:/my_Works/Gears/gearbase-v020-work/gearmath/tools/fea_ingest.py": "4c5d152a673194439d043a1986116c862e7d55c18d7ca9994de580fa12c36c42"
+  },
+  "points": {
+    "P03": {
+      "levels": [
+        {
+          "div": 8,
+          "surface_sigma_MPa": 145.23297532969775,
+          "ip_max_MPa": 137.20624639011982,
+          "delta_vs_post_MPa": -4.547473508864641e-13,
+          "peakxy": [
+            2.030029436215784,
+            17.657551487940516
+          ],
+          "YFS": 2.904659506593955,
+          "fine_ratio": 1.0168852797116543,
+          "actual_load_N": [
+            -101.37563242165,
+            -32.36857218692
+          ],
+          "load_moment_Nmm": 2003.1649091465233,
+          "point_load_moment_Nmm": 1999.999999999457,
+          "moment_delta_relative": 0.0015824545735335707,
+          "force_balance": 1.8739219275707186e-08,
+          "hFe_actual": 1.9443861380013574,
+          "hFe_ISO": 1.9443861367603494,
+          "angle_actual_deg": 17.707940437717088,
+          "angle_ISO_deg": 17.70794043771708,
+          "direct_compression_nominal_MPa": 8.322045603453926,
+          "ISO_sigma_MPa": 142.82139610761175,
+          "root_bending_moment_nominal_Nmm": 197.11337441177724,
+          "load_patch_root_moment_delta_relative": 0.016056288197140133
+        },
+        {
+          "div": 12,
+          "surface_sigma_MPa": 142.89895141261246,
+          "ip_max_MPa": 138.2099710883889,
+          "delta_vs_post_MPa": 1.1368683772161603e-12,
+          "peakxy": [
+            2.0128070155444258,
+            17.68020116775929
+          ],
+          "YFS": 2.8579790282522493,
+          "fine_ratio": 1.0005430230141588,
+          "actual_load_N": [
+            -101.37563242165001,
+            -32.36857218691
+          ],
+          "load_moment_Nmm": 2000.92014448232,
+          "point_load_moment_Nmm": 1999.9999999994718,
+          "moment_delta_relative": 0.00046007224142420784,
+          "force_balance": 1.6872746376058303e-08,
+          "hFe_actual": 1.9443861380013574,
+          "hFe_ISO": 1.9443861367603494,
+          "angle_actual_deg": 17.707940437717088,
+          "angle_ISO_deg": 17.70794043771708,
+          "direct_compression_nominal_MPa": 8.322045603451356,
+          "ISO_sigma_MPa": 142.82139610761175,
+          "root_bending_moment_nominal_Nmm": 197.11337441177727,
+          "load_patch_root_moment_delta_relative": 0.004668097665082614
+        },
+        {
+          "div": 18,
+          "surface_sigma_MPa": 142.9316787541045,
+          "ip_max_MPa": 139.79556583086958,
+          "delta_vs_post_MPa": -2.0179413695586845e-11,
+          "peakxy": [
+            2.012807026889452,
+            17.680201152419937
+          ],
+          "YFS": 2.8586335750820897,
+          "fine_ratio": 1.0007721717438587,
+          "actual_load_N": [
+            -101.37563242164,
+            -32.36857218702
+          ],
+          "load_moment_Nmm": 2002.030971804788,
+          "point_load_moment_Nmm": 1999.999999999106,
+          "moment_delta_relative": 0.0010154859028414186,
+          "force_balance": 1.9130358444718322e-08,
+          "hFe_actual": 1.9443861380013574,
+          "hFe_ISO": 1.9443861367603494,
+          "angle_actual_deg": 17.707940437717088,
+          "angle_ISO_deg": 17.70794043771708,
+          "direct_compression_nominal_MPa": 8.322045603479637,
+          "ISO_sigma_MPa": 142.82139610761175,
+          "root_bending_moment_nominal_Nmm": 197.1133744117578,
+          "load_patch_root_moment_delta_relative": 0.010303571798427807
+        }
+      ],
+      "observed_p": null,
+      "extrapolated_ratio": 1.0009554907276184
+    },
+    "P05": {
+      "levels": [
+        {
+          "div": 8,
+          "surface_sigma_MPa": 131.97782231944726,
+          "ip_max_MPa": 126.3718222332192,
+          "delta_vs_post_MPa": -6.792788553866558e-12,
+          "peakxy": [
+            2.252141943824514,
+            18.55544515447847
+          ],
+          "YFS": 2.639556446388945,
+          "fine_ratio": 0.8915277731077876,
+          "actual_load_N": [
+            -96.62739595381001,
+            -44.58575630742
+          ],
+          "load_moment_Nmm": 1999.1707478352223,
+          "point_load_moment_Nmm": 1999.999999999527,
+          "moment_delta_relative": -0.0004146260821524791,
+          "force_balance": 5.622216613860422e-08,
+          "hFe_actual": 2.064868207243978,
+          "hFe_ISO": 2.064868207238015,
+          "angle_actual_deg": 24.76951715920905,
+          "angle_ISO_deg": 24.769517159209045,
+          "direct_compression_nominal_MPa": 10.132300952188116,
+          "ISO_sigma_MPa": 148.0355702878264,
+          "root_bending_moment_nominal_Nmm": 199.5228378537977,
+          "load_patch_root_moment_delta_relative": -0.0041561766724288705
+        },
+        {
+          "div": 12,
+          "surface_sigma_MPa": 131.41719670508598,
+          "ip_max_MPa": 127.49077100134164,
+          "delta_vs_post_MPa": -1.63140612130519e-11,
+          "peakxy": [
+            2.2706669915626256,
+            18.53241328682212
+          ],
+          "YFS": 2.6283439341017196,
+          "fine_ratio": 0.8877406723909043,
+          "actual_load_N": [
+            -96.62739595381,
+            -44.58575630732
+          ],
+          "load_moment_Nmm": 1998.8721892137105,
+          "point_load_moment_Nmm": 1999.9999999996674,
+          "moment_delta_relative": -0.0005639053929785206,
+          "force_balance": 2.0460120075595832e-08,
+          "hFe_actual": 2.064868207243978,
+          "hFe_ISO": 2.064868207238015,
+          "angle_actual_deg": 24.76951715920905,
+          "angle_ISO_deg": 24.769517159209045,
+          "direct_compression_nominal_MPa": 10.13230095216539,
+          "ISO_sigma_MPa": 148.0355702878264,
+          "root_bending_moment_nominal_Nmm": 199.52283785379768,
+          "load_patch_root_moment_delta_relative": -0.005652539819944161
+        },
+        {
+          "div": 18,
+          "surface_sigma_MPa": 130.99120980330082,
+          "ip_max_MPa": 128.42436784850784,
+          "delta_vs_post_MPa": -6.139089236967266e-12,
+          "peakxy": [
+            2.264631440427347,
+            18.5396965241755
+          ],
+          "YFS": 2.6198241960660162,
+          "fine_ratio": 0.8848630741153214,
+          "actual_load_N": [
+            -96.62739595391,
+            -44.58575630732
+          ],
+          "load_moment_Nmm": 1998.7289165212069,
+          "point_load_moment_Nmm": 2000.000000001802,
+          "moment_delta_relative": -0.0006355417402969537,
+          "force_balance": 3.883433220991235e-08,
+          "hFe_actual": 2.064868207243978,
+          "hFe_ISO": 2.064868207238015,
+          "angle_actual_deg": 24.76951715920905,
+          "angle_ISO_deg": 24.769517159209045,
+          "direct_compression_nominal_MPa": 10.13230095216539,
+          "ISO_sigma_MPa": 148.0355702878264,
+          "root_bending_moment_nominal_Nmm": 199.52283785400417,
+          "load_patch_root_moment_delta_relative": -0.006370616488149272
+        }
+      ],
+      "observed_p": 0.6773572481515552,
+      "extrapolated_ratio": 0.8757585665740378
+    },
+    "P08": {
+      "levels": [
+        {
+          "div": 8,
+          "surface_sigma_MPa": 110.38919527559732,
+          "ip_max_MPa": 105.56356369380597,
+          "delta_vs_post_MPa": 2.0605739337042905e-12,
+          "peakxy": [
+            2.429193238108003,
+            29.213138448615716
+          ],
+          "YFS": 2.2077839055119464,
+          "fine_ratio": 0.8676454831467205,
+          "actual_load_N": [
+            -95.86789414982,
+            -46.19621397452
+          ],
+          "load_moment_Nmm": 2999.177940061071,
+          "point_load_moment_Nmm": 2999.9999999974584,
+          "moment_delta_relative": -0.0002740199787961094,
+          "force_balance": 2.2632028187665294e-08,
+          "hFe_actual": 1.946174169964396,
+          "hFe_ISO": 1.9461741700203992,
+          "angle_actual_deg": 25.72819281955665,
+          "angle_ISO_deg": 25.728192819556643,
+          "direct_compression_nominal_MPa": 9.903482488608756,
+          "ISO_sigma_MPa": 127.22845611463904,
+          "root_bending_moment_nominal_Nmm": 186.57561932326053,
+          "load_patch_root_moment_delta_relative": -0.004406041579116146
+        },
+        {
+          "div": 12,
+          "surface_sigma_MPa": 109.8929794247363,
+          "ip_max_MPa": 107.57456283082954,
+          "delta_vs_post_MPa": -3.694822225952521e-11,
+          "peakxy": [
+            2.429193241522025,
+            29.213138444800574
+          ],
+          "YFS": 2.197859588494726,
+          "fine_ratio": 0.8637452876557534,
+          "actual_load_N": [
+            -95.86789414992,
+            -46.19621397452
+          ],
+          "load_moment_Nmm": 2999.1237936333214,
+          "point_load_moment_Nmm": 3000.0000000006535,
+          "moment_delta_relative": -0.0002920687891106324,
+          "force_balance": 3.857487317955414e-08,
+          "hFe_actual": 1.946174169964396,
+          "hFe_ISO": 1.9461741700203992,
+          "angle_actual_deg": 25.72819281955665,
+          "angle_ISO_deg": 25.728192819556643,
+          "direct_compression_nominal_MPa": 9.903482488608756,
+          "ISO_sigma_MPa": 127.22845611463904,
+          "root_bending_moment_nominal_Nmm": 186.57561932345513,
+          "load_patch_root_moment_delta_relative": -0.004696253296702507
+        },
+        {
+          "div": 18,
+          "surface_sigma_MPa": 108.57172583228663,
+          "ip_max_MPa": 106.59570992946536,
+          "delta_vs_post_MPa": -1.0516032489249483e-12,
+          "peakxy": [
+            2.423507617725789,
+            29.21955992290597
+          ],
+          "YFS": 2.1714345166457325,
+          "fine_ratio": 0.8533603970990437,
+          "actual_load_N": [
+            -95.86789414982,
+            -46.19621397462
+          ],
+          "load_moment_Nmm": 2995.99839240626,
+          "point_load_moment_Nmm": 2999.9999999973215,
+          "moment_delta_relative": -0.001333869197021743,
+          "force_balance": 1.743395639865377e-08,
+          "hFe_actual": 1.946174169964396,
+          "hFe_ISO": 1.9461741700203992,
+          "angle_actual_deg": 25.72819281955665,
+          "angle_ISO_deg": 25.728192819556643,
+          "direct_compression_nominal_MPa": 9.903482488630193,
+          "ISO_sigma_MPa": 127.22845611463904,
+          "root_bending_moment_nominal_Nmm": 186.57561932326053,
+          "load_patch_root_moment_delta_relative": -0.021447644689998213
+        }
+      ],
+      "observed_p": -2.415313232451507,
+      "extrapolated_ratio": 0.8450524846536759
+    }
+  },
+  "interpretation": "Independent extraction agrees at every mesh. Nominal HPSTC angle and hFe agree with ISO. Finite load-patch actual moment differs: P08 d18 root moment -2.144%; too small alone to explain ~15% mismatch, but it contaminates convergence. P08 signed observed p is negative, hidden by abs iteration. No identified extraction, normalization or nominal-geometry bug explains all systematic x dependence. Load decomposition and boundary sensitivity remain unverified hypotheses.",
+  "geometry_interpolation_checks": {
+    "P03": {
+      "root_nodes_max_distance_from_analytic_mm": 3.910247759874839e-06,
+      "peak_adjacent_quadratic_edge_curvature": [
+        {
+          "mesh_rho_mm": 1.0459709555557437,
+          "analytical_rho_mm": 1.0607167926111263,
+          "relative_delta": -0.013901766388635495
+        },
+        {
+          "mesh_rho_mm": 1.0788840866294243,
+          "analytical_rho_mm": 1.0607167926111263,
+          "relative_delta": 0.017127374757192504
+        }
+      ]
+    },
+    "P05": {
+      "root_nodes_max_distance_from_analytic_mm": 5.544257146766622e-06,
+      "peak_adjacent_quadratic_edge_curvature": [
+        {
+          "mesh_rho_mm": 0.678931251539961,
+          "analytical_rho_mm": 0.6845706664400011,
+          "relative_delta": -0.008237885694645564
+        },
+        {
+          "mesh_rho_mm": 0.6906800485676056,
+          "analytical_rho_mm": 0.6845706664400011,
+          "relative_delta": 0.0089243995209074
+        }
+      ]
+    },
+    "P08": {
+      "root_nodes_max_distance_from_analytic_mm": 1.8439783980663317e-05,
+      "peak_adjacent_quadratic_edge_curvature": [
+        {
+          "mesh_rho_mm": 0.8023185987117475,
+          "analytical_rho_mm": 0.800838557932012,
+          "relative_delta": 0.001848113786575567
+        },
+        {
+          "mesh_rho_mm": 0.8008376956067564,
+          "analytical_rho_mm": 0.800838557932012,
+          "relative_delta": -1.0767778936271455e-06
+        }
+      ]
+    }
+  },
+  "richardson_issue": {
+    "P08_signed_observed_order": -2.415313232451507,
+    "current_implementation": "abs in fixed-point iteration changes signed negative p to positive; diagnostic issue, both policies fail ratio band",
+    "documented_p2_fallback_ratio": 0.8450524846536759,
+    "current_ingest_ratio": 0.8471144436799509
+  },
+  "recommended_bounded_experiments": [
+    "For P08 and passing P03 controls, preserve target HPSTC force AND moment across same three meshes (documented derived study) to isolate load-patch centroid drift; retain canonical outcomes.",
+    "If residual persists, on fixed P08 d18 mesh split existing CLOAD into X-only and Y-only solves, compare component stress tensors at the same root points, and confirm superposition before principal eigenvalues; this isolates compressive/direct-load influence without changing geometry or reference.",
+    "Only if still unexplained: separate one-factor root-support sensitivity by widening 3-tooth sector and then deepening fixed rim, retaining same load/resultant and mesh near root."
+  ],
+  "negative_order_and_nonuniform_probes": [
+    {
+      "hs": [
+        0.125,
+        0.08333333333333333,
+        0.05555555555555555
+      ],
+      "known_order": -2.0,
+      "f_inf": 50,
+      "current_result": {
+        "levels_h": [
+          0.125,
+          0.08333333333333333,
+          0.05555555555555555
+        ],
+        "values": [
+          242.0,
+          482.0000000000001,
+          1022.0000000000002
+        ],
+        "relative_changes": [
+          0.4979253112033196,
+          0.5283757338551859
+        ],
+        "observed_order": 1.9999999999999991,
+        "order_used": 1.9999999999999991,
+        "extrapolated": 1454.0000000000007,
+        "monotone": true,
+        "gci_fine": 0.5283757338551862,
+        "status": "observed_order"
+      }
+    },
+    {
+      "hs": [
+        0.125,
+        0.08333333333333333,
+        0.05555555555555555
+      ],
+      "known_order": 1.0,
+      "f_inf": 50,
+      "current_result": {
+        "levels_h": [
+          0.125,
+          0.08333333333333333,
+          0.05555555555555555
+        ],
+        "values": [
+          50.375,
+          50.25,
+          50.166666666666664
+        ],
+        "relative_changes": [
+          0.0024875621890547263,
+          0.0016611295681063596
+        ],
+        "observed_order": 0.99999999999993,
+        "order_used": 0.99999999999993,
+        "extrapolated": 49.99999999999998,
+        "monotone": true,
+        "gci_fine": 0.004152823920266253,
+        "status": "observed_order"
+      }
+    },
+    {
+      "hs": [
+        0.125,
+        0.08333333333333333,
+        0.05555555555555555
+      ],
+      "known_order": 2.0,
+      "f_inf": 50,
+      "current_result": {
+        "levels_h": [
+          0.125,
+          0.08333333333333333,
+          0.05555555555555555
+        ],
+        "values": [
+          50.046875,
+          50.020833333333336,
+          50.00925925925926
+        ],
+        "relative_changes": [
+          0.0005206164098291904,
+          0.00023143862247736112
+        ],
+        "observed_order": 1.9999999999993272,
+        "order_used": 1.9999999999993272,
+        "extrapolated": 49.99999999999999,
+        "monotone": true,
+        "gci_fine": 0.00023143862247747475,
+        "status": "observed_order"
+      }
+    },
+    {
+      "hs": [
+        0.125,
+        0.08333333333333333,
+        0.05555555555555555
+      ],
+      "known_order": 4.0,
+      "f_inf": 50,
+      "current_result": {
+        "levels_h": [
+          0.125,
+          0.08333333333333333,
+          0.05555555555555555
+        ],
+        "values": [
+          50.000732421875,
+          50.000144675925924,
+          50.00002857796068
+        ],
+        "relative_changes": [
+          1.1754884968546249e-05,
+          2.3219579777996964e-06
+        ],
+        "observed_order": 4.000000000059632,
+        "order_used": 4.000000000059632,
+        "extrapolated": 50.0,
+        "monotone": true,
+        "gci_fine": 7.144486085322261e-07,
+        "status": "observed_order"
+      }
+    },
+    {
+      "hs": [
+        0.05555555555555555,
+        0.037037037037037035,
+        0.025
+      ],
+      "known_order": -2.0,
+      "f_inf": 50,
+      "current_result": {
+        "levels_h": [
+          0.05555555555555555,
+          0.037037037037037035,
+          0.025
+        ],
+        "values": [
+          1022.0000000000002,
+          2237.0000000000005,
+          4849.999999999999
+        ],
+        "relative_changes": [
+          0.543138131426017,
+          0.5387628865979379
+        ],
+        "observed_order": 1.7813445899868374,
+        "order_used": 1.7813445899868374,
+        "extrapolated": 7426.813070102881,
+        "monotone": true,
+        "gci_fine": 0.6641270799234233,
+        "status": "observed_order"
+      }
+    },
+    {
+      "hs": [
+        0.05555555555555555,
+        0.037037037037037035,
+        0.025
+      ],
+      "known_order": 1.0,
+      "f_inf": 50,
+      "current_result": {
+        "levels_h": [
+          0.05555555555555555,
+          0.037037037037037035,
+          0.025
+        ],
+        "values": [
+          50.166666666666664,
+          50.111111111111114,
+          50.075
+        ],
+        "relative_changes": [
+          0.0011086474501107544,
+          0.000721140511455046
+        ],
+        "observed_order": 1.1582914400368522,
+        "order_used": 1.1582914400368522,
+        "extrapolated": 50.012370150060555,
+        "monotone": true,
+        "gci_fine": 0.0015634011467660174,
+        "status": "observed_order"
+      }
+    },
+    {
+      "hs": [
+        0.05555555555555555,
+        0.037037037037037035,
+        0.025
+      ],
+      "known_order": 2.0,
+      "f_inf": 50,
+      "current_result": {
+        "levels_h": [
+          0.05555555555555555,
+          0.037037037037037035,
+          0.025
+        ],
+        "values": [
+          50.00925925925926,
+          50.00411522633745,
+          50.001875
+        ],
+        "relative_changes": [
+          0.00010287219158920412,
+          4.480284664222698e-05
+        ],
+        "observed_order": 2.1647643514204815,
+        "order_used": 2.1647643514204815,
+        "extrapolated": 50.00020521262582,
+        "monotone": true,
+        "gci_fine": 4.1743118987498846e-05,
+        "status": "observed_order"
+      }
+    },
+    {
+      "hs": [
+        0.05555555555555555,
+        0.037037037037037035,
+        0.025
+      ],
+      "known_order": 4.0,
+      "f_inf": 50,
+      "current_result": {
+        "levels_h": [
+          0.05555555555555555,
+          0.037037037037037035,
+          0.025
+        ],
+        "values": [
+          50.00002857796068,
+          50.00000564502927,
+          50.000001171875
+        ],
+        "relative_changes": [
+          4.586585763790348e-07,
+          8.946308330523962e-08
+        ],
+        "observed_order": 4.189146785813786,
+        "order_used": 4.189146785813786,
+        "extrapolated": 50.00000010400465,
+        "monotone": true,
+        "gci_fine": 2.669675813850602e-08,
+        "status": "observed_order"
+      }
+    }
+  ]
+}

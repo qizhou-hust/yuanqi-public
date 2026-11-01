@@ -1,0 +1,63 @@
+{
+  "case": "P02",
+  "derived_study": true,
+  "fixed_levels": [
+    18,
+    27,
+    40
+  ],
+  "all_levels_preserved": [
+    8,
+    12,
+    18,
+    27,
+    40
+  ],
+  "richardson": {
+    "levels_h": [
+      0.029524652206041016,
+      0.01968310147069401,
+      0.013286093492718457
+    ],
+    "values": [
+      2.7022889955715126,
+      2.6906217100481644,
+      2.6978329935862013
+    ],
+    "relative_changes": [
+      0.00433627866740855,
+      0.0026729910840222254
+    ],
+    "observed_order": null,
+    "order_used": 2.0,
+    "extrapolated": 2.7038686143660278,
+    "monotone": false,
+    "gci_fine": 0.0027965133470898434,
+    "status": "assumed_order"
+  },
+  "reference": 2.8184747463288375,
+  "ratio": 0.9593375345611707,
+  "canonical_verdict_unchanged": true,
+  "identity_and_strict_status": [
+    {
+      "id": "L2_P02_d18",
+      "consistent": true,
+      "strict": "accepted",
+      "inp_sha256": "80a174f914055bb51ca2257109d86fc76b208b40bb2c1cbba7d57fb91b17ed4e"
+    },
+    {
+      "id": "L2_P02_d27",
+      "consistent": true,
+      "strict": "accepted",
+      "inp_sha256": "1d9446aaeb925521ea43a5bd9726a2cbd41bb36ce5b459e94be5d1548c210e94"
+    },
+    {
+      "id": "L2_P02_d40",
+      "consistent": true,
+      "strict": "accepted",
+      "inp_sha256": "8b04c9594380493cce1feb07e7f6c325363cb515fe42c94ececae14112bc480e"
+    }
+  ],
+  "policy_sha256": "f6b9a317b169831979ae81847f8f1dc4311ba5623dfcb51d7ff7f411c1f68701",
+  "derived_case_sha256": "9cc49ade349a7ffd2141459515905d6069528393274532d58b4472a442892253"
+}

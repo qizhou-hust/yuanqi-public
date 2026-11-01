@@ -1,0 +1,448 @@
+{
+  "tests": {
+    "patterns": [
+      "test_fea_ingest.py",
+      "test_fea_verified_profile.py",
+      "test_m33_geometry_replay.py",
+      "test_v020_geometry_gate.py",
+      "test_v020_bench_gold.py",
+      "test_v020_m35_packet.py",
+      "test_m38_bench_closure.py",
+      "test_bench_chinese_numbers.py"
+    ],
+    "run": 61,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": true
+  },
+  "M33_gate": {
+    "passed": true,
+    "scope": "example7/8_geometry_user_identified",
+    "full_E4": false,
+    "original_2_of_6_reconstructed": false,
+    "basis": "v0.20 用户指认例7/8八条几何差异；历史2/6身份未复原，不替代完整E4或全部齿轮族；当前模型8/8相对误差≤1%且重放/来源哈希有效，最大0.00475106%；硬度、fsh0、原表输入身份仍属E4开放项",
+    "max_relative_error": 4.7510558934123103e-05
+  },
+  "M33_native_current": true,
+  "M33_native_unique": {
+    "formula": 50,
+    "input": 4,
+    "numerical_method": 2
+  },
+  "M37_ladder": {
+    "L0": {
+      "status": "not_run",
+      "own_result": "not_run",
+      "unlocks_if_passed": null
+    },
+    "L1": {
+      "status": "not_run",
+      "own_result": "not_run",
+      "unlocks_if_passed": "复核（verification，配合对应几何级）"
+    },
+    "L2": {
+      "status": "blocked_by_lower_level",
+      "own_result": "failed",
+      "n_pass": 9,
+      "n_points": 14,
+      "rows": [
+        {
+          "point": "P01",
+          "pass": true,
+          "ratio": 0.9143866424301861,
+          "converged": true
+        },
+        {
+          "point": "P02",
+          "pass": false,
+          "ratio": 0.8510413300732456,
+          "converged": false
+        },
+        {
+          "point": "P03",
+          "pass": true,
+          "ratio": 1.000955490727879,
+          "converged": true
+        },
+        {
+          "point": "P04",
+          "pass": true,
+          "ratio": 0.988753859582894,
+          "converged": true
+        },
+        {
+          "point": "P05",
+          "pass": false,
+          "ratio": 0.875758566572313,
+          "converged": true
+        },
+        {
+          "point": "P06",
+          "pass": true,
+          "ratio": 1.0097984825912145,
+          "converged": true
+        },
+        {
+          "point": "P07",
+          "pass": true,
+          "ratio": 0.9807814818903748,
+          "converged": true
+        },
+        {
+          "point": "P08",
+          "pass": false,
+          "ratio": 0.8450524846534586,
+          "converged": true
+        },
+        {
+          "point": "P09",
+          "pass": true,
+          "ratio": 1.0422264300553081,
+          "converged": true
+        },
+        {
+          "point": "P10",
+          "pass": true,
+          "ratio": 0.9411812204677132,
+          "converged": true
+        },
+        {
+          "point": "P11",
+          "pass": true,
+          "ratio": 1.0173567733367894,
+          "converged": true
+        },
+        {
+          "point": "P12",
+          "pass": false,
+          "ratio": 0.877173093367695,
+          "converged": true
+        },
+        {
+          "point": "P13",
+          "pass": true,
+          "ratio": 1.0296089689937906,
+          "converged": true
+        },
+        {
+          "point": "P14",
+          "pass": false,
+          "ratio": 0.8765658569190092,
+          "converged": true
+        }
+      ],
+      "trend": {
+        "corr_ratio_vs_z": 0.0543480757440197,
+        "corr_ratio_vs_x": -0.975241422556708,
+        "corr_ratio_vs_rhofP": -0.058353511542683346
+      },
+      "unlocks_if_passed": "标定 YF·YS（fe_calibrated: YFS）"
+    },
+    "L3": {
+      "status": "not_run",
+      "own_result": "not_run",
+      "unlocks_if_passed": "标定 c′、cγ（fe_calibrated: c_prime, c_gamma）"
+    }
+  },
+  "original_gold_statuses": [
+    "pending_engineer_label"
+  ],
+  "source_sha256": {
+    "gearmath/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/compat/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/compat/m31/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/compat/m31/calculator.py": "9219e25a3c077535dc752702c5fd117b5836bb1ef7c3405d263db810c34bafb7",
+    "gearmath/compat/m31/graph.py": "1956f26c1613b8f2ccb03b3337e09519011dfc725ae1e79fd7ea0e9edc256844",
+    "gearmath/compat/m31/optimizer.py": "593c3f4b736858607d1fc9cdac629d400d833e43069cb185fcaa5834f435b4d2",
+    "gearmath/gear/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/gear/backlash_din3967.py": "d0a4c966b6fe16d4d3cd8c3065973b34f0eaa40aabf3b718234e510b5e44353c",
+    "gearmath/gear/beam_face.py": "cae85dae0c9f2140cac29ca1bff922f58e36af3923482eec08ca520d54753bfb",
+    "gearmath/gear/contact_factors.py": "70877b3ae933c939041579999910bdf4542cad682f77ab0b556c358037636b57",
+    "gearmath/gear/din3967_adapter.py": "d296093af5c2e6b5e5582e89bada5e99d1918baccf95eccb7ecf3643d0858d20",
+    "gearmath/gear/double_helical.py": "98f899fbc5a4a1f13f82e0c70c4d3284883b8bb29f63c732d3cb6c9389eeaef2",
+    "gearmath/gear/dynamic.py": "704998c50839e6262aef94dc48c32377eaedcf8fd8612802950432fda942f696",
+    "gearmath/gear/factor_methods.py": "97a85171bceff611fc9ff1b6490d5d2da7416506880fb9c8a3145ccd6ad7e30e",
+    "gearmath/gear/factor_recompute.py": "203873c0fb7dbec57180dee2a552de1989bd1f6d5053d4e6dcd495c3fa499e28",
+    "gearmath/gear/flagship_h2.py": "80055f2e5d6257ba49991a6bc3acbae04d8798f0c067265cc62f6280a8a4f08c",
+    "gearmath/gear/flagship_kinematics.py": "35fb2d4c877be114ccdb55793f4fa6dab787253a728861bba2cf2bfe7142bbbb",
+    "gearmath/gear/flagship_p2.py": "3e627468476c70ec2d1890d0d337705708c567f4037047a92a6b086e843015ed",
+    "gearmath/gear/flagship_reference.py": "076127c6dd4df5fba47c50af3d31ea5fea07b8cc55ea2433fd767df13c39a550",
+    "gearmath/gear/flagship_w2w.py": "edb1652ddd00f5168f2439d53c65756d46621115154f304cc48f883c5c942bcc",
+    "gearmath/gear/formulas.py": "02727f963b025e4fc0f7d43f868888b897b1d62e814b3c99c514fddd9115411f",
+    "gearmath/gear/h2_flagship.py": "a984ad895a5d6c7fab6334278fe8b35f51af28602c1498186f6099d8c3f31ba3",
+    "gearmath/gear/inputs.py": "be68579ad8095bd8e6037cf227a8cadd421f2db79e85183f08de15b4c458c444",
+    "gearmath/gear/internal_gear.py": "d07296cf77cef497ebfc84a4aba5403205e397e10f3764f4cbc82574689ecc50",
+    "gearmath/gear/iso1328.py": "3574aaa9c85480505d6f02986148e4d3e3ce530213f96cc180c6e40a25d19cb3",
+    "gearmath/gear/kisssoft_case.py": "07726b9848826db20a2dda9a5fe59c8ecdc7b5372ed636a1d8a572f22af4733c",
+    "gearmath/gear/kisssoft_multi.py": "9b9b00bd3525aa73569e985f1fc6280a57a08129be0e7387b50e6f879377e9e9",
+    "gearmath/gear/kisssoft_v014.py": "5550cecd3dcafbc96ee08637d9ee0e5ad921cce919298b7d78159bd33f545217",
+    "gearmath/gear/kisssoft_v015.py": "29f90e83bd701b69b72214ddd0e0c050d9d8f3cd3b8bd778451ae1d4506a26b5",
+    "gearmath/gear/kisssoft_v017.py": "b12ccbff4a2854cfeffe84e048fb54ac622e4f25c6db3e05b8cf9fb3ed0cda10",
+    "gearmath/gear/life_factors.py": "0f7a9622ad6828594fae43c55a4a51aefbf98935b21f52563f93ea9ca3870bb7",
+    "gearmath/gear/load_distribution.py": "f4ce040518e268f6157bbde637a78e0b5e23ad65c38ed14792a1aa905319f3bb",
+    "gearmath/gear/m31_case.py": "a5fc1d738327166e97dd4535c5d0a3b5327066a9d196f111084b6019393ee924",
+    "gearmath/gear/m33_acceptance.py": "7dec05725fe742bf63d9e70b99946fd0c7dc4c927bedf47d6e9e9c96e2cd1b50",
+    "gearmath/gear/m39_demo.py": "e37625fac28f4beb61f6826375cb1f16c354348635150b4e784bf667ac1deed3",
+    "gearmath/gear/material_branches.py": "9a5b973a601a46607b4826f0da7429463e5af776257a45468cc22ae2f1d65ce3",
+    "gearmath/gear/material_limits.py": "d2b316f8790cbca0d370c3d506c021cc1be79a15856a1e74d34dd1635fe1c9f1",
+    "gearmath/gear/math_source.py": "a3824d7d48ddd8d9607afe41038fe901d5a07fa11924b26274c0d38bfbe56407",
+    "gearmath/gear/math_source_kisssoft.py": "5ac03d9f33e5bcad071579a775474948b49bb7342e086a26530c048ec615c950",
+    "gearmath/gear/micropitting.py": "f62c195ce4dcb51018994aa73e829cc8d42fae6596f820a357fc3bbf72551d45",
+    "gearmath/gear/micropitting_helical.py": "5ef99a591dc8e5e5bcde1fe36d69e874abec5df020e6b17fafbedb423981015f",
+    "gearmath/gear/multi_factor_docs.py": "f1d4204d53d97982cedc416ed8981ce0c17a5419a72f139d1a8ccb339c3cc988",
+    "gearmath/gear/nitrided_factors.py": "e1b293f4695d9a9df79eafc872b6b78ff1c402a000ff5a60c80538bf08f1fcc9",
+    "gearmath/gear/opt_report.py": "4c1e3d23f0a3bfac3e31dae1de605f1288a22deae42eb39095ec078014542dba",
+    "gearmath/gear/parameter_sheet.py": "6f3a6d38fb222c9f89b8f507e4b839ff740e13eeb182da929a6e89abe5bc9158",
+    "gearmath/gear/problem.py": "efe82626dd3b72916ef1c053ad0fec307c4a6f8a548bdea54aa1ce17ccd84667",
+    "gearmath/gear/protuberance.py": "9d9cc78f39819c5bf6d567c9cdc9127617a914aa98f9e2cdc60e080f16511868",
+    "gearmath/gear/rating.py": "6dd14ce6d424a8900fda3c05e4bba7a90be7569b07be4d657f90b05344a6c52c",
+    "gearmath/gear/root_factors.py": "7d0436c9b869e8e38cf6789d108db73b47c687cb508de934102bba251c02bc7a",
+    "gearmath/gear/scuffing_flash.py": "fc532601c8da689d2b66ab11cfa45672ae3629976480eeb5c16c0ac0bbd0ee0d",
+    "gearmath/gear/scuffing_integral.py": "4e5754574ffbf3d1a27ac525991bac5cd1cae05a5ec8de71ff1b1357f157440e",
+    "gearmath/gear/source_frontier.py": "20f5969b1edcaf2d259e16df417adad9e326b431cb1cdd1274a315fbcfe0f05e",
+    "gearmath/gear/source_multiobj.py": "f4952ae7c5a6d34105f44d54534f92237a1aee05e7503d2d99d97ed1453da77c",
+    "gearmath/gear/source_optimize.py": "92c57220ab0a2a5c9c0a813ae5e63e0eb9e35d74f3491b01280aa4f92be0654f",
+    "gearmath/gear/surface_factors.py": "ff244cdf7559f508ebb1e42378d1efda9bb705e503a325639cd451b02565e3c4",
+    "gearmath/gear/tip_shortening_p5.py": "b28068d09ff8dcb6f9c6eb0d66199b9172c83cd48d859048aa5d0a731880b5ba",
+    "gearmath/gear/tooth_thickness.py": "49233e0660806ccdd9a30a10de02c6bcceb369b25aa4df27a11b47ddbd4da7e9",
+    "gearmath/gear/tr30_case.py": "018ecdf44ffbea450196bd6a58102e621f545ee60003da97169264fe4a61d5df",
+    "gearmath/gear/tr30_examples58.py": "2c9a0425062bfc6c9a58dd7d900126c699267c0058b57634f266a5fb6bb0c346",
+    "gearmath/gear/tr30_full58.py": "e382ba8c53b39fb1aae12c6c0fc59a3ee6d9e4082e9afbe84d4a60ee85caf4e5",
+    "gearmath/gear/tr30_geometry.py": "f2d03f39477ea6fa454254c36de685857a9bf21c1813e7c974d8bb00379d6a14",
+    "gearmath/gear/tr30_kisssoft78.py": "a9d49a48d3d0b76dc531370372d6512fff6caa716efb15c1928da2b6bfcee802",
+    "gearmath/gear/tr30_material_factors.py": "9e8421a60e60885efbdabb7b026ce1915bc3b539ddd35b59149043e366b83b9b",
+    "gearmath/gear/tr30_rating.py": "91e79fe55b317880ea82998a03b2be54da5395e7814258ceec5228108dc94066",
+    "gearmath/gear/tr30_shared.py": "7ad153e751b6a5534a6b324d6833b1bc5f8a868f28b82fcee5c7256e70160236",
+    "gearmath/gear/tribology_common.py": "9a97aad6cb849c05561fcecd96697d952a0fc307936c6c598e0ef23f73f07fce",
+    "gearmath/kernel/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/kernel/adapters/__init__.py": "44933cc83538315184b19acc5aaa6628256ac71084b84a8736aacab44c6fde60",
+    "gearmath/kernel/adapters/pymoo_moo.py": "7bbad8b13165ac7f93a6a41a33f7edbe44e933f83bf1592342d860b473247657",
+    "gearmath/kernel/adapters/scipy_nlp.py": "d2eca54b11cf5fffc93e63479e34413decf30f1c5694702a6c47db8a339f663c",
+    "gearmath/kernel/coupled.py": "7d743f745773711e1352def33e0a554559bc7d6313b28ef2bf1bab8d5ac73fe7",
+    "gearmath/kernel/declared.py": "3e558623480c2f72ce465b6b0ec03a88f8120a2bd2c3f6834b8ed2d27613028f",
+    "gearmath/kernel/dual.py": "2601bacff54e80ef4c8442c4fa76d576120aa8df74c51906ecebe24bbfc4cd8c",
+    "gearmath/kernel/epsilon.py": "581f3d57e4af6edbb74a5b9987a468de3081c6fe05d62274e23ebc1ce4cdb6e9",
+    "gearmath/kernel/evidence.py": "dc04220e840ca640f3a9e64cee93b63b788c2e05e0667f110f19ed23e9ca67cc",
+    "gearmath/kernel/expr.py": "fd87656f072868317f3c83807b723933f7f97872d2e1e958cde0f9d201416446",
+    "gearmath/kernel/floating.py": "53e9e7655f1a5aab3848aa0c23b9c194663b869a1752439de8e13481011747a7",
+    "gearmath/kernel/graph.py": "945b2f89ee95c73f86da18c452373b73b530ee6714cdc123898fecdaf4ba9703",
+    "gearmath/kernel/gridprune.py": "a820d5cd7228d54a7fe066dbe5c5f8317720f0a9fba13f70d481814f34dafd89",
+    "gearmath/kernel/interval.py": "579356c3cb5a66bdaabb8eafaabf18457ee178be7f975e305ae7930909eb69ba",
+    "gearmath/kernel/methods.py": "b326bb6ec32e9087040bb5c822592edac2e62a074103ae02329b373623e6ee03",
+    "gearmath/kernel/nlp.py": "3ba1beaf2a4812dca2141ab5962536c514c65a8bf681cc9f3f15c2f0e716110e",
+    "gearmath/kernel/optimize.py": "6839619d473e67e89461701e081cd81a9449719e0f479968da2448da543695a4",
+    "gearmath/kernel/registry.py": "10f4d90cc0c2f416793f97e435bcd7b4f409bc031069f4eb64310d89a27364b7",
+    "gearmath/kernel/select.py": "abeb49af994007f12b0b86f27e1eeed3166f115b945a5eedefad6df91086c64c",
+    "gearmath/kernel/source_doc.py": "5e6b9c192f343d33c69892ba9594105f81a1eca4b8da2b802f620e9610347f11",
+    "gearmath/kernel/units.py": "3177607494073d132e5eaa6c36af065d9dd2db2df211b027ac40a753430f7ff0",
+    "gearmath/product/__init__.py": "ee018ea077d5f4a1d647ff9d850a29f864f728b64ca1389c6d2de193afc00505",
+    "gearmath/product/design_check.py": "29bb05695dc9a6d2de525599c0d953733d8abb8f1892a38256b5341eb8ee97a1",
+    "gearmath/product/evidence.py": "5343682f4202d9c3efd418c46e8939a793b3131bb99e50b75af0f3174af6f0bc",
+    "gearmath/product/flagship_system.py": "344721ca387966b64cfae3a735d442432b99b3a69a4f62e2f7ea73576e94343e",
+    "gearmath/product/nearest_feasible_edit.py": "60483e6ab2c37bc47a19d1591b26d06fb3445017ae03e9777b4b1e90ca7a4167",
+    "gearmath/product/report.py": "4a6906e5f49daf2dfc72b2b13a4054d960cf048da14eba17dab8d0bbc418c3f4",
+    "gearmath/product/system_input.py": "8d12e090429a63ee7397673bd381db2c9310fd88dbbaac4de6e035178fd8d9b4",
+    "gearmath/product/system_optimize.py": "e1e0e3a35477f00100b53061c810a4194735ad98c6ea97d05514f84043dc85bd",
+    "gearmath/system/__init__.py": "d52dbc8c4d6da29624300d102559fc24185a42e200d2b467992079d88020c64e",
+    "gearmath/system/_base.py": "c3d9c4a2212223943cf14c19e4e3bfa259c5dcd3105ad6accc2e2bb1fed1ed00",
+    "gearmath/system/din6892.py": "45da69886d6992e467507dda691ece5275305ed5b69bd56fb6aa3694f07676bb",
+    "gearmath/system/din6892_b.py": "e3ac3f8f5b9de433f417b77c2b28001248196d2ffa1d32c84c7db4b7f6335805",
+    "gearmath/system/din7190.py": "a3cdead99eb171bd55dc516c8ffd74b7323bf089e35fd205b567725144a5ffb4",
+    "gearmath/system/din743.py": "6439e67646f213ec0812404ea64cbc9a136931e7e148a11912337138aaf2d081",
+    "gearmath/system/drivetrain_check.py": "50d0d979837e46060f753d7fce36d85cf4a6f1d6bbd85f173560f7c670555319",
+    "gearmath/system/iso281.py": "d8457d7e1f90979d9c4680b786f5120dfae972745986da8244691770a25a6722",
+    "gearmath/system/shaft_beam.py": "988f4cefcd03aaf6186a6cbfb73a904be19baae7610ad93f072775c0ca0cde32",
+    "gearmath/system/shaft_line.py": "f97a414deaf7c4bf59b844b224d6d9e0cb24e7001284cbafa410a129988b609c",
+    "gearmath/system/system_optimize.py": "b29be344ca370d2c1c3468fcd2042566aed437faa9346dca61704661b72a7273",
+    "gearmath/system/thermal_14179.py": "3a4063b2ceada251b7e27d9ff5ce01857ba711b9dfb1948e70e31764836bb47a",
+    "gearmath/system/thermal_balance.py": "b09ad2a661943ef9c648802079d708c1b145f84cdb30659813b63d0b5648ea60",
+    "gearmath/tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gearmath/tools/ai_tools.py": "72e4dff5bbe7a1add3d6e311bc933a78c2db0163d8d8582d312277026ba31c80",
+    "gearmath/tools/architecture_guard.py": "91523e9874e4d43a18ab5c919895e972d5468a86d55532a04b528fe501e91299",
+    "gearmath/tools/assess_registry.py": "5a6655dc3cb133c5ebf69dfcb9deef83556d7e9ccc9d0e153d6190d576149927",
+    "gearmath/tools/bench.py": "d514d07fca231edb5acfb72cee40c9edef1b46d60550a707b28dcb037f55dfe6",
+    "gearmath/tools/bench_closure.py": "80916b42c76050fa9819fe6b054164e975b72cd90dafd138d54733f5dd7a9f15",
+    "gearmath/tools/bench_gold.py": "dc8ec4e43f0e1283246e590be3441037af401fecab2049d83f772e650fcaba8b",
+    "gearmath/tools/benchmarks.py": "6ec841a617b5bcc1eddf79f76ec4578c185cecee76094424fc53b9586e687ef7",
+    "gearmath/tools/declared_tool.py": "f8d10141ca530bb2a0b4c01b6cac9e443f48b72470b48eaeee20b5d399bf4008",
+    "gearmath/tools/design_check_tool.py": "e3db89e67e7fb086f74688d784b31649669773e7e109eb45d97258b27336d457",
+    "gearmath/tools/design_store.py": "28514b4db2679654bb92b240246b4962545408a5ca5f3c8599868dda83f977c1",
+    "gearmath/tools/doctor.py": "69a2b608aec36d5876b8458d42c291bc72a856e5d1c428a53402ad3861827291",
+    "gearmath/tools/export_registry.py": "607963d58ab9c55cbeb2e992c61e76a4a7527b91c4336363fcaf56faf1edfb96",
+    "gearmath/tools/extract_kisssoft_v014_p3.py": "8ec1641d55f22e3e341531d8254e47f4d06858296fe9ad1a69f4ef1c22c6eaa9",
+    "gearmath/tools/fea_ingest.py": "7a4a71e1b6afdc752aa0efafebe0270d5a7c7d2b607e9debc970e2d48321f843",
+    "gearmath/tools/fea_prepare.py": "1cd7c05d5d6082b831e3e7e01536a8d5008ba7d9833ea9319fe85f62d330ee71",
+    "gearmath/tools/flagship_workflow.py": "0c4fbce6af6ac6806a567137a42b951cc3a134180d4efc692c92d582c626b5f7",
+    "gearmath/tools/intent.py": "01c25495f6dcc66d7d23b77c7f26549da07aee06b0562bc87f2d433eface8b5b",
+    "gearmath/tools/m31_regression.py": "75e49167b93fd797b7b47d6aeeb75b1c989eac44441ae619ad179e2adc19a7b1",
+    "gearmath/tools/m31_runtime.py": "781c9165917f3bbd5ef8c5953709b422582ecf2394d4dfd88482639aa9532dc2",
+    "gearmath/tools/m33_closure.py": "7aab29447afdd0b970ae81a068cc0270fb1cc6cd795f6706d4fe80d58c7fa20d",
+    "gearmath/tools/m33_geometry_replay.py": "485812984a3551e02c313176e0dd1a878230dab7db4e9f0b3dc56d3f13cbad97",
+    "gearmath/tools/m33_native_geometry.py": "2529e4e2607e624621b167cc44ddbfeeb8930134e70d90e46c4d58d69872d852",
+    "gearmath/tools/m34_closure.py": "0497dea0b03290276a0decb04bf79f0e695cc346b162495380f3c60fc99b1d0c",
+    "gearmath/tools/m34_demo.py": "1012cda4c15febaddde03175fae924c29badcd0dfbaab6fe4742d4c086366887",
+    "gearmath/tools/m35_packet.py": "ca66e440593ef50914510b8f5395b185790064b4a361feff4645149047f7a9bf",
+    "gearmath/tools/m36_identity.py": "ecddefc5de1f3b2761d15d164717941cc010be4fc5b987fbe95b9acb5629e825",
+    "gearmath/tools/m39_frontier.py": "3b3e5cc28a02ff83df545e2b886de0377756349206aa1f379fac941f63f808f5",
+    "gearmath/tools/mcp_extras.py": "43a291b3068802a50cfc845d0cf22cd6f065374345bf83b8b0d6c67545828e00",
+    "gearmath/tools/milestones.py": "b8bbca3e21575fab384dc78a5e97c57668fa84440d6ac1a1f953bd9a290801fc",
+    "gearmath/tools/nearest_feasible_edit_tool.py": "d3db1e3b9045b8213650a1cc50e8e860af340d7dbcc9c436da29982c7073f691",
+    "gearmath/tools/nlp_templates.py": "50514d3ebbd3d13df81e6a497529199b5553e129ca14186e67cf1c22df01975e",
+    "gearmath/tools/opt3_demo.py": "6eb8b78a61994ae341c50c722394b8437563b0626f0cec5dde3c60cc6af62847",
+    "gearmath/tools/optimize_commit.py": "c8c5d9822707a2c8e0f4229a5f52e76b66fef2aa6fef4d9d22838bfa5b3ff0dd",
+    "gearmath/tools/package_hashes.py": "6a4c66de35d6d64a747fac4ce5484b515b8a941b8401108e6626744fd2f6d8b1",
+    "gearmath/tools/solver_allowance.py": "d9b125ad10ebb4f2348bfda808281bd704e100232e753025dd73f6457f0c97ae",
+    "gearmath/tools/system_closure.py": "c7bae05b93f069033cf52eb3631d27ff4bac0f312eadbd8e178649f7d6c81550",
+    "gearmath/tools/vector_seeds.py": "a4b693b4cbfc217bf0735d3cd9fe8c97888420586e251b2aaa8e005d659f7662"
+  },
+  "receipt_sha256": {
+    "output/m33/geometry-closure.json": "597d778b7bb034d5fa5d9addd19f2cacc30c00bae5f409ef70186b5fb4b6662f",
+    "output/m33/native-geometry-diagnostic.json": "b89e150a2fa0bab4351608c647e08c12eda9d5e56f337f2e13408508285622ea",
+    "D:/my_Works/Gears/v020-closure-run/m37/ingest-matrix.json": "f51aa8ee422d7b731f65b0193695d7c7f4c2bfcd47f8bbf208c6a378a4ee4781",
+    "D:/my_Works/Gears/v020-closure-run/m37/l3-three-mesh-summary.json": "6ff76a5b9e492ac4718b6bf0f891f518639a46d21d7f89d43319d63b7d8e0923",
+    "output/m35/review-packet/parameters.json": "b13affc7de35ce0abf18dc12331dc833d87f5ec38e9e01eefaaa9fc3da4d2a8d",
+    "output/m35/review-packet/external-review-unsigned.json": "5400229112e07a6dbf617a9edaa558f0a085daf9aa0b64b77b670d3f55e6c876"
+  },
+  "L3_derived_summary": {
+    "scope": "L3 spur output-only derived probe, three meshes at one penalty; not a complete L3 gate",
+    "reference_hertz_MPa": 602.7349481549439,
+    "reference_sigma_H0_MPa": 536.3277226619417,
+    "Z_eps": 0.8898235025258051,
+    "rows": [
+      {
+        "level": 8,
+        "h": 0.005854188524896888,
+        "dat_pressure_MPa": 604.8201,
+        "frd_pressure_MPa": 602.988,
+        "strict_status": "accepted",
+        "identity_drift": [],
+        "output_only_exact_reversal": true,
+        "force_balance_rel": 2.6149319040312442e-05,
+        "torque_balance_rel": 5.39897552189359e-05,
+        "input_sha256": "6a6925e526329bf8ce5a65ea5ca8c54c47e2a437ebbe790f563502d2551f314e",
+        "source_sha256": "51f4054d38dcab339b7f7779f9d2ca4eeac039ac251e40d38f6750350565b7c3"
+      },
+      {
+        "level": 12,
+        "h": 0.0039027923499312584,
+        "dat_pressure_MPa": 604.7065,
+        "frd_pressure_MPa": 604.503,
+        "strict_status": "accepted",
+        "identity_drift": [],
+        "output_only_exact_reversal": true,
+        "force_balance_rel": 2.66003714982726e-05,
+        "torque_balance_rel": 5.378108662762315e-05,
+        "input_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+        "source_sha256": "2d1299e4548bb8b282e6c5df1b22d95c2a88a3314ad45574b9e4ecdd7b848383"
+      },
+      {
+        "level": 18,
+        "h": 0.0026018615666208392,
+        "dat_pressure_MPa": 604.9156,
+        "frd_pressure_MPa": 604.876,
+        "strict_status": "accepted",
+        "identity_drift": [],
+        "output_only_exact_reversal": true,
+        "force_balance_rel": 2.66003714982726e-05,
+        "torque_balance_rel": 5.369597618467499e-05,
+        "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "source_sha256": "1a1a82abc6f15f312c793348c3ab3ee71768e36111bc4d576bf471c38a93e7ac"
+      }
+    ],
+    "richardson": {
+      "levels_h": [
+        0.005854188524896888,
+        0.0039027923499312584,
+        0.0026018615666208392
+      ],
+      "values": [
+        604.8201,
+        604.7065,
+        604.9156
+      ],
+      "relative_changes": [
+        0.0001878597302989458,
+        0.00034566805683311014
+      ],
+      "observed_order": null,
+      "order_used": 2.0,
+      "extrapolated": 605.08288,
+      "monotone": false,
+      "gci_fine": 0.00034566805683311025,
+      "status": "assumed_order",
+      "assumption_reason": "oscillatory"
+    },
+    "extrapolated_over_hertz": 1.0038954632583417,
+    "last_mesh_change": 0.0003457875845556124,
+    "limitations": [
+      "Canonical L2 ladder failed; L3 remains blocked",
+      "Penalty and phase studies missing",
+      "Hertz comparison uses sigma_H0 / Z_eps; helical data not assessed"
+    ],
+    "ingest_method_sha256": "7a4a71e1b6afdc752aa0efafebe0270d5a7c7d2b607e9debc970e2d48321f843"
+  },
+  "M35_scope": {
+    "status": "review_preparation_incomplete",
+    "manufacturing_release": false,
+    "external_review_completed": false,
+    "geometry_scope": "diameter envelopes only; no tooth profile"
+  },
+  "M35_external_review": {
+    "conclusion": null,
+    "independent_of_author": null,
+    "issues": [
+      {
+        "closure_evidence": null,
+        "disposition": null,
+        "id": "G1",
+        "issue": "G1: audited tooth_authority rejects nonzero shift; shifted helical flank/root/cutter envelope absent"
+      },
+      {
+        "closure_evidence": null,
+        "disposition": null,
+        "id": "G2",
+        "issue": "G2: DIN 3961:1978 grade 6 retained; ISO 1328 grade/requirements not authorized"
+      },
+      {
+        "closure_evidence": null,
+        "disposition": null,
+        "id": "G3",
+        "issue": "G3: bore/hub/keyway, datum scheme, fits, dimensional tolerances and surface finish unspecified"
+      },
+      {
+        "closure_evidence": null,
+        "disposition": null,
+        "id": "G4",
+        "issue": "G4: material/heat-treatment manufacturing specification and inspection acceptance need approval"
+      },
+      {
+        "closure_evidence": null,
+        "disposition": null,
+        "id": "G5",
+        "issue": "G5: helix hand and coordinate convention not explicit in source; no hand inferred from absolute beta"
+      },
+      {
+        "closure_evidence": null,
+        "disposition": null,
+        "id": "G6",
+        "issue": "G6: measurement span k and ball diameter not evidenced; Wk/MdK inspection plan pending"
+      },
+      {
+        "closure_evidence": null,
+        "disposition": null,
+        "id": "G7",
+        "issue": "G7: external process reviewer, issues closure and signature absent"
+      }
+    ],
+    "organization": null,
+    "review_date": null,
+    "reviewer_name": null,
+    "schema": "gearbase.external-process-review-form/1",
+    "signature": null,
+    "source_id": "K02-helical",
+    "source_sha256": "3e9571540e9ac2d680067cbdd1a03c17ca782b38b3f9711b42c80a8335d542aa",
+    "status": "unsigned_template"
+  },
+  "review_conclusion": "No P1 blocker found in scoped changed code. M33 gate3 completes only user identified8 geometry numeric scope; E4 remains partial. M37L2 fails9/14, L3 derived three-mesh one-penalty result remains partial/unqualified. M35 unsigned incomplete, all40real gold pending. Original81/kernel18 and real CI remain parent verification scope."
+}

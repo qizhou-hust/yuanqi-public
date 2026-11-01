@@ -1,0 +1,501 @@
+{
+  "prototype22": {
+    "source": "gearmath.gear.m31_case.RECEIPT_EVIDENCE plus K_A; docs/分路设计报告/L2-formula-library.md table",
+    "rows": [
+      {
+        "quantity": "K_A",
+        "baseline": "case input",
+        "status": "input_exception",
+        "formula_id": null,
+        "reference": null,
+        "evaluated_value": null
+      },
+      {
+        "quantity": "K_V",
+        "baseline": [
+          "contact",
+          "dynamic_factor"
+        ],
+        "status": "formula",
+        "formula_id": "dyn.K_V",
+        "reference": "ISO 6336-1:2019 6.2/6.3 K_V 不小于 1；共振区外不大于 2",
+        "evaluated_value": 1.0245577966565589
+      },
+      {
+        "quantity": "K_Hbeta",
+        "baseline": [
+          "contact",
+          "face_load_factor"
+        ],
+        "status": "formula",
+        "formula_id": "ld.K_Hbeta",
+        "reference": "ISO 6336-1:2019 7.5.1 式(41)（≥1 时 √(2Fβy cγβ/(Fm/b))）/ 式(43)（<1 时 1+Fβy cγβ/(2Fm/b)）；q=1 处连续（PDF 58/59 页）",
+        "evaluated_value": 1.0539719516336228
+      },
+      {
+        "quantity": "K_Halpha",
+        "baseline": [
+          "contact",
+          "transverse_load_factor"
+        ],
+        "status": "formula",
+        "formula_id": "ld.K_Halpha",
+        "reference": "ISO 6336-1:2019 8.3.4 超上限取上限、小于 1 取 1（PDF 75 页）",
+        "evaluated_value": 1.0
+      },
+      {
+        "quantity": "K_Falpha",
+        "baseline": [
+          "root",
+          "transverse_load_factor"
+        ],
+        "status": "formula",
+        "formula_id": "ld.K_Falpha",
+        "reference": "ISO 6336-1:2019 8.3.5 超上限取上限、小于 1 取 1（PDF 75 页）",
+        "evaluated_value": 1.0
+      },
+      {
+        "quantity": "Z_L",
+        "baseline": [
+          "contact",
+          "lubricant_factor"
+        ],
+        "status": "formula",
+        "formula_id": "surface.Z_L",
+        "reference": "ISO 6336-2:2019 12.3.2.1.3 式(42) 矿物油润滑剂系数（PDF34/印刷26）",
+        "evaluated_value": 1.0199972222923663
+      },
+      {
+        "quantity": "Z_V",
+        "baseline": [
+          "contact",
+          "velocity_factor"
+        ],
+        "status": "formula",
+        "formula_id": "surface.Z_V",
+        "reference": "ISO 6336-2:2019 12.3.2.2.3 式(47) 速度系数（PDF35/印刷27）；式中速度口径由 method.Z_V_velocity 显式选择",
+        "evaluated_value": 0.9741767483906335
+      },
+      {
+        "quantity": "Z_R",
+        "baseline": [
+          "contact",
+          "roughness_factor"
+        ],
+        "status": "formula",
+        "formula_id": "surface.Z_R",
+        "reference": "ISO 6336-2:2019 12.3.2.3.3 式(53) 齿面粗糙度系数（PDF37/印刷29）",
+        "evaluated_value": 0.9801364473354708
+      },
+      {
+        "quantity": "Z_W",
+        "baseline": [
+          "contact",
+          "work_hardening_factor_pinion"
+        ],
+        "status": "formula",
+        "formula_id": "surface.Z_W.neutral",
+        "reference": "ISO 6336-2:2019 13.1/13.3 工作硬化增强只针对软轮；两轮均渗碳钢排除该增强（PDF38–43/印刷30–35）",
+        "evaluated_value": 1.0
+      },
+      {
+        "quantity": "Z_X",
+        "baseline": [
+          "contact",
+          "size_factor"
+        ],
+        "status": "formula",
+        "formula_id": "surface.Z_X",
+        "reference": "ISO 6336-2:2019 14 尺寸系数明确取1（PDF44/印刷36）",
+        "evaluated_value": 1.0
+      },
+      {
+        "quantity": "Z_NT_1",
+        "baseline": [
+          "contact",
+          "life_factor_pinion"
+        ],
+        "status": "formula",
+        "formula_id": "life.Z_NT.1",
+        "reference": "ISO 6336-2:2019 11.3 Figure 6 curve 2, Table 5 footnote a; PDF31/printed23 image checked",
+        "evaluated_value": 0.9301998270622773
+      },
+      {
+        "quantity": "Z_NT_2",
+        "baseline": [
+          "contact",
+          "life_factor_wheel"
+        ],
+        "status": "formula",
+        "formula_id": "life.Z_NT.2",
+        "reference": "ISO 6336-2:2019 11.3 Figure 6 curve 2, Table 5 footnote a; PDF31/printed23 image checked",
+        "evaluated_value": 0.9624712547252343
+      },
+      {
+        "quantity": "Y_ST",
+        "baseline": [
+          "root",
+          "stress_correction_factor_reference"
+        ],
+        "status": "input_exception",
+        "formula_id": null,
+        "reference": null,
+        "evaluated_value": null
+      },
+      {
+        "quantity": "Y_NT_1",
+        "baseline": [
+          "root",
+          "life_factor_pinion"
+        ],
+        "status": "formula",
+        "formula_id": "life.Y_NT.1",
+        "reference": "ISO 6336-3:2019 12.3.3 Figure 11 curve 2, Table 3 footnote a; PDF39/printed31 image checked",
+        "evaluated_value": 0.9015612172465877
+      },
+      {
+        "quantity": "Y_NT_2",
+        "baseline": [
+          "root",
+          "life_factor_wheel"
+        ],
+        "status": "formula",
+        "formula_id": "life.Y_NT.2",
+        "reference": "ISO 6336-3:2019 12.3.3 Figure 11 curve 2, Table 3 footnote a; PDF39/printed31 image checked",
+        "evaluated_value": 0.9218698696002628
+      },
+      {
+        "quantity": "Y_drelT_1",
+        "baseline": [
+          "root",
+          "relative_notch_sensitivity_pinion"
+        ],
+        "status": "formula",
+        "formula_id": "rf.Y_drelT.1",
+        "reference": "ISO 6336-3:2019 13.3.2.1 (75)-(77), Table 4 item 10; PDF41/printed33 image checked",
+        "evaluated_value": 0.9966286114660069
+      },
+      {
+        "quantity": "Y_drelT_2",
+        "baseline": [
+          "root",
+          "relative_notch_sensitivity_wheel"
+        ],
+        "status": "formula",
+        "formula_id": "rf.Y_drelT.2",
+        "reference": "ISO 6336-3:2019 13.3.2.1 (75)-(77), Table 4 item 10; PDF41/printed33 image checked",
+        "evaluated_value": 0.9945578158370568
+      },
+      {
+        "quantity": "Y_RrelT_1",
+        "baseline": [
+          "root",
+          "relative_surface_factor_pinion"
+        ],
+        "status": "formula",
+        "formula_id": "rf.Y_RrelT.1",
+        "reference": "ISO 6336-3:2019 14.3.2.1 (84)(87); PDF48-49/printed40-41 images checked",
+        "evaluated_value": 0.956738365558955
+      },
+      {
+        "quantity": "Y_RrelT_2",
+        "baseline": [
+          "root",
+          "relative_surface_factor_wheel"
+        ],
+        "status": "formula",
+        "formula_id": "rf.Y_RrelT.2",
+        "reference": "ISO 6336-3:2019 14.3.2.1 (84)(87); PDF48-49/printed40-41 images checked",
+        "evaluated_value": 0.956738365558955
+      },
+      {
+        "quantity": "Y_X",
+        "baseline": [
+          "root",
+          "size_factor_pinion"
+        ],
+        "status": "formula",
+        "formula_id": "rf.Y_X.common",
+        "reference": "ISO 6336-3:2019 15.1; common-factor API only when both per-gear values agree",
+        "evaluated_value": 0.99
+      },
+      {
+        "quantity": "Y_B",
+        "baseline": [
+          "root",
+          "rim_thickness_factor_pinion"
+        ],
+        "status": "formula",
+        "formula_id": "rf.Y_B.common",
+        "reference": "ISO 6336-3:2019 9.3.1; common-factor API only when both per-gear values agree",
+        "evaluated_value": 1.0
+      },
+      {
+        "quantity": "Y_DT",
+        "baseline": [
+          "root",
+          "deep_tooth_factor"
+        ],
+        "status": "formula",
+        "formula_id": "rf.Y_DT",
+        "reference": "ISO 6336-3:2019 10.1/10.3 (72)-(74); PDF36-37/printed28-29 images checked",
+        "evaluated_value": 1.0
+      }
+    ],
+    "exceptions": [
+      "K_A",
+      "Y_ST"
+    ],
+    "formula_count": 20,
+    "missing": [],
+    "evaluation_status": "ok",
+    "passed": true
+  },
+  "c001": {
+    "status": "ok",
+    "model_sha256": "ac1bd7c5c2eed48b16312aa75752700e6ba3d8730c11a4bf91ed56d77f3152c4",
+    "theta": [
+      {
+        "member": 1,
+        "G": -0.87,
+        "zn": 20.0,
+        "H": -0.8965535691216086,
+        "current": 0.8059093623835982,
+        "vendor_nine": 0.8059094116373722
+      },
+      {
+        "member": 2,
+        "G": -0.87,
+        "zn": 36.0,
+        "H": -0.963506450043826,
+        "current": 0.902309119491716,
+        "vendor_nine": 0.9023091216646064
+      }
+    ],
+    "intermediates": {
+      "G_1": {
+        "new": -0.87,
+        "nine_iteration": -0.87
+      },
+      "zn_1": {
+        "new": 20.0,
+        "nine_iteration": 20.0
+      },
+      "H_1": {
+        "new": -0.8965535691216086,
+        "nine_iteration": -0.8965535691216086
+      },
+      "theta_1": {
+        "new": 0.8059093623835982,
+        "nine_iteration": 0.8059094116373722
+      },
+      "sFn_1": {
+        "new": 3.8894970935374307,
+        "nine_iteration": 3.889494957113733
+      },
+      "rhoF_1": {
+        "new": 1.145905459864498,
+        "nine_iteration": 1.145905513192229
+      },
+      "hFe_1": {
+        "new": 2.0070983676445193,
+        "nine_iteration": 2.007098196731582
+      },
+      "G_2": {
+        "new": -0.87,
+        "nine_iteration": -0.87
+      },
+      "zn_2": {
+        "new": 36.0,
+        "nine_iteration": 36.0
+      },
+      "H_2": {
+        "new": -0.963506450043826,
+        "nine_iteration": -0.963506450043826
+      },
+      "theta_2": {
+        "new": 0.902309119491716,
+        "nine_iteration": 0.9023091216646064
+      },
+      "sFn_2": {
+        "new": 4.216658527905123,
+        "nine_iteration": 4.216658359718547
+      },
+      "rhoF_2": {
+        "new": 1.0737429234191747,
+        "nine_iteration": 1.0737429258157598
+      },
+      "hFe_2": {
+        "new": 2.0964540562191227,
+        "nine_iteration": 2.096454048786791
+      }
+    },
+    "rows": [
+      {
+        "quantity": "Z_H",
+        "m31": 2.4945731713945865,
+        "new": 2.4945731713945873,
+        "delta": 8.881784197001252e-16,
+        "nine_iteration": 2.4945731713945873,
+        "nine_minus_m31": 8.881784197001252e-16,
+        "cause": "same chain; floating point evaluation order"
+      },
+      {
+        "quantity": "Z_E",
+        "m31": 189.81170043756651,
+        "new": 189.8117004375665,
+        "delta": -2.842170943040401e-14,
+        "nine_iteration": 189.8117004375665,
+        "nine_minus_m31": -2.842170943040401e-14,
+        "cause": "same chain; floating point evaluation order"
+      },
+      {
+        "quantity": "Z_eps",
+        "m31": 0.8898235025258057,
+        "new": 0.8898235025258051,
+        "delta": -5.551115123125783e-16,
+        "nine_iteration": 0.8898235025258051,
+        "nine_minus_m31": -5.551115123125783e-16,
+        "cause": "same chain; floating point evaluation order"
+      },
+      {
+        "quantity": "Z_B",
+        "m31": 1.0572245738784969,
+        "new": 1.0572245738784967,
+        "delta": -2.220446049250313e-16,
+        "nine_iteration": 1.0572245738784967,
+        "nine_minus_m31": -2.220446049250313e-16,
+        "cause": "same chain; floating point evaluation order"
+      },
+      {
+        "quantity": "sigma_H_1",
+        "m31": 1046.2272727570967,
+        "new": 1046.2272727570971,
+        "delta": 4.547473508864641e-13,
+        "nine_iteration": 1046.2272727570971,
+        "nine_minus_m31": 4.547473508864641e-13,
+        "cause": "same chain; floating point evaluation order"
+      },
+      {
+        "quantity": "sigma_H_2",
+        "m31": 989.5979516621942,
+        "new": 989.597951662195,
+        "delta": 7.958078640513122e-13,
+        "nine_iteration": 989.597951662195,
+        "nine_minus_m31": 7.958078640513122e-13,
+        "cause": "same chain; floating point evaluation order"
+      },
+      {
+        "quantity": "S_H_1",
+        "m31": 1.1908148314637375,
+        "new": 1.1908148314637368,
+        "delta": -6.661338147750939e-16,
+        "nine_iteration": 1.1908148314637368,
+        "nine_minus_m31": -6.661338147750939e-16,
+        "cause": "same chain; floating point evaluation order"
+      },
+      {
+        "quantity": "S_H_2",
+        "m31": 1.2731583124598405,
+        "new": 1.2731583124598393,
+        "delta": -1.1102230246251565e-15,
+        "nine_iteration": 1.2731583124598393,
+        "nine_minus_m31": -1.1102230246251565e-15,
+        "cause": "same chain; floating point evaluation order"
+      },
+      {
+        "quantity": "K_Fbeta",
+        "m31": 2.240105406607907,
+        "new": 2.240105406607907,
+        "delta": 0.0,
+        "nine_iteration": 2.240105406607907,
+        "nine_minus_m31": 0.0,
+        "cause": "same chain; floating point evaluation order"
+      },
+      {
+        "quantity": "Y_F_1",
+        "m31": 1.6088616345729148,
+        "new": 1.6088600041430023,
+        "delta": -1.630429912413689e-06,
+        "nine_iteration": 1.6088616345729096,
+        "nine_minus_m31": -5.10702591327572e-15,
+        "cause": "root theta iteration: vendor nine steps vs converged fixed point"
+      },
+      {
+        "quantity": "Y_F_2",
+        "m31": 1.4174500426347454,
+        "new": 1.4174499345864227,
+        "delta": -1.0804832273336729e-07,
+        "nine_iteration": 1.417450042634741,
+        "nine_minus_m31": -4.440892098500626e-15,
+        "cause": "root theta iteration: vendor nine steps vs converged fixed point"
+      },
+      {
+        "quantity": "Y_S_1",
+        "m31": 1.810434945301229,
+        "new": 1.8104356329575608,
+        "delta": 6.876563318769513e-07,
+        "nine_iteration": 1.8104349453012307,
+        "nine_minus_m31": 1.7763568394002505e-15,
+        "cause": "root theta iteration: vendor nine steps vs converged fixed point"
+      },
+      {
+        "quantity": "Y_S_2",
+        "m31": 1.9467094819579247,
+        "new": 1.9467095393077471,
+        "delta": 5.7349822446539633e-08,
+        "nine_iteration": 1.946709481957927,
+        "nine_minus_m31": 2.220446049250313e-15,
+        "cause": "root theta iteration: vendor nine steps vs converged fixed point"
+      },
+      {
+        "quantity": "sigma_F_1",
+        "m31": 179.76128201912303,
+        "new": 179.76116812651728,
+        "delta": -0.00011389260575356275,
+        "nine_iteration": 179.7612820191231,
+        "nine_minus_m31": 5.684341886080802e-14,
+        "cause": "root theta iteration: vendor nine steps vs converged fixed point"
+      },
+      {
+        "quantity": "sigma_F_2",
+        "m31": 170.295606230293,
+        "new": 170.29559826601445,
+        "delta": -7.96427855220827e-06,
+        "nine_iteration": 170.2956062302931,
+        "nine_minus_m31": 8.526512829121202e-14,
+        "cause": "root theta iteration: vendor nine steps vs converged fixed point"
+      },
+      {
+        "quantity": "S_F_1",
+        "m31": 4.506423846788973,
+        "new": 4.506426701957082,
+        "delta": 2.85516810905051e-06,
+        "nine_iteration": 4.506423846788971,
+        "nine_minus_m31": -1.7763568394002505e-15,
+        "cause": "root theta iteration: vendor nine steps vs converged fixed point"
+      },
+      {
+        "quantity": "S_F_2",
+        "m31": 4.878200563272124,
+        "new": 4.878200791412771,
+        "delta": 2.281406477067094e-07,
+        "nine_iteration": 4.878200563272121,
+        "nine_minus_m31": -2.6645352591003757e-15,
+        "cause": "root theta iteration: vendor nine steps vs converged fixed point"
+      },
+      {
+        "quantity": "K_V",
+        "m31": 1.0391660518198986,
+        "new": 1.0391660518198986,
+        "delta": 0.0,
+        "nine_iteration": 1.0391660518198986,
+        "nine_minus_m31": 0.0,
+        "cause": "same chain; floating point evaluation order"
+      }
+    ],
+    "iteration_reproduction_passed": true,
+    "vendor_source": "vendor/cad/vendor/python_gearbox_py/src/gearbox/standards/iso6336/bending.py::_tooth_root_geometry",
+    "limits": "C001.factors retains explicitly declared evidence factors and physical assumptions; no TR30 acceptance implied."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "gearbase.agent-bench-result/1",
+  "bench": "synthetic-only",
+  "cases": 1,
+  "labeled_cases": 1,
+  "pending_engineer_label": 0,
+  "metrics": {
+    "hallucinated_number_rate": 0.0,
+    "numbers_checked": 1,
+    "numbers_untraceable": 0,
+    "hallucination_gate": "pass",
+    "compile_accuracy": 0.0,
+    "clarification_recall": null,
+    "clarification_precision": null,
+    "clarification_selfcheck": null,
+    "clarification_selfcheck_fields": {
+      "required": 0,
+      "asked": 0
+    },
+    "outcome_distribution": {
+      "pass_pending_human_confirmation": 1
+    }
+  },
+  "scoring_note": "compile_accuracy / clarification_recall / clarification_precision 在无金标（pending_engineer_label）时为 null，不是 0；基线分数中只有凭空数字率、结果分布与追问自洽是有效数字。",
+  "per_case": [
+    {
+      "id": "TEST",
+      "status": "pass_pending_human_confirmation",
+      "numbers": 1,
+      "untraceable": [],
+      "asked_fields": [],
+      "gold": "labeled",
+      "compile_correct": false
+    }
+  ]
+}

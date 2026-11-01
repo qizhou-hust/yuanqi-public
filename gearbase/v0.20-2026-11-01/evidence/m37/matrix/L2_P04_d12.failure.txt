@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "D:\my_Works\Gears\v020-closure-run\m37\run_matrix.py", line 11, in <module>
+    inp,meta=sp['build'](); inp=Path(inp); mp=inp.with_suffix('.meta.json'); state,check,prepared=run_m37.preflight(inp,mp,solver); pre=run_m37.input_identity(inp,mp,solver)
+             ^^^^^^^^^^^^^
+  File "D:\my_Works\Gears\gearbase-v020-work\data\m37_fea_pack\scripts\study.py", line 73, in <lambda>
+    out.append(job(f"L2_{pt['id']}_d{d}", lambda p=pt, l=lv: C.build_L2(case, p, l, wd, coord["coord"]), C.post_L2,
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_Works\Gears\gearbase-v020-work\data\m37_fea_pack\scripts\cases.py", line 420, in build_L2
+    return finish(job_dir, f"L2_{pt['id']}_d{div}", deck, meta, mesh)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_Works\Gears\gearbase-v020-work\data\m37_fea_pack\scripts\cases.py", line 62, in finish
+    (job_dir / f"{job_id}.meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1))
+  File "D:\anaconda3\Lib\pathlib.py", line 1048, in write_text
+    return f.write(data)
+           ^^^^^^^^^^^^^
+  File "D:\anaconda3\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 13720-13737: character maps to <undefined>

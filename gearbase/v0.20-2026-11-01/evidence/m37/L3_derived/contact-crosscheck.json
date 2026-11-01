@@ -1,0 +1,18 @@
+{
+  "version": "m37.contact-crosscheck/1.0",
+  "entries": [
+    {
+      "quantity": "p_max_MPa",
+      "dat_value": 604.8201,
+      "dat_source": "strict CSTR@PFL",
+      "independent_source": "frd_cpress_final_pstep",
+      "independent_value": 602.988,
+      "frd_nodes": 43029,
+      "frd_sha256": "1c9732a7ce4341aa43941b8d3752003571c907d7e59bdac30e8fcc346fa08706",
+      "state": [
+        2,
+        4
+      ]
+    }
+  ]
+}

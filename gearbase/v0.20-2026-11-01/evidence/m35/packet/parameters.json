@@ -1,0 +1,316 @@
+{
+  "external_review_completed": false,
+  "gaps": [
+    "G1: audited tooth_authority rejects nonzero shift; shifted helical flank/root/cutter envelope absent",
+    "G2: DIN 3961:1978 grade 6 retained; ISO 1328 grade/requirements not authorized",
+    "G3: bore/hub/keyway, datum scheme, fits, dimensional tolerances and surface finish unspecified",
+    "G4: material/heat-treatment manufacturing specification and inspection acceptance need approval",
+    "G5: helix hand and coordinate convention not explicit in source; no hand inferred from absolute beta",
+    "G6: measurement span k and ball diameter not evidenced; Wk/MdK inspection plan pending",
+    "G7: external process reviewer, issues closure and signature absent"
+  ],
+  "geometry_scope": "diameter envelopes only; no tooth profile",
+  "manufacturing_release": false,
+  "model_sha256": "df40c5a703bd2d90248f3c0650a0ce39cb3885b746f96c2ec26766072447e686",
+  "parameters": {
+    "A_sn_e_1": {
+      "locator": "report.A_sn_e_1 (line 1555)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "mm",
+      "value": -0.044
+    },
+    "A_sn_e_2": {
+      "locator": "report.A_sn_e_2 (line 1555)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "mm",
+      "value": -0.08
+    },
+    "A_sn_i_1": {
+      "locator": "report.A_sn_i_1 (line 1555)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "mm",
+      "value": -0.064
+    },
+    "A_sn_i_2": {
+      "locator": "report.A_sn_i_2 (line 1555)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "mm",
+      "value": -0.13
+    },
+    "DIN3961_grade_1": {
+      "locator": "report.Q_grade_1 (line 111)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 6.0
+    },
+    "DIN3961_grade_2": {
+      "locator": "report.Q_grade_2 (line 111)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 6.0
+    },
+    "alpha_n": {
+      "locator": "com['ZS.Geo.alfn']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "rad",
+      "value": 0.3490658503988659
+    },
+    "alpha_t": {
+      "formula_id": "geo.alpha_t",
+      "ref": "ISO 21771:2007 端面压力角",
+      "source_check": "not_in_evidence",
+      "unit": "deg",
+      "value": 20.561705348777153
+    },
+    "b_1": {
+      "locator": "com['ZR[0].b']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "mm",
+      "value": 21.0
+    },
+    "b_2": {
+      "locator": "com['ZR[1].b']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "mm",
+      "value": 20.0
+    },
+    "beta": {
+      "locator": "com['ZS.Geo.beta']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "rad",
+      "value": 0.24434609527920614
+    },
+    "beta_b": {
+      "formula_id": "geo.beta_b",
+      "ref": "ISO 21771:2007 基圆螺旋角",
+      "source_check": "not_in_evidence",
+      "unit": "deg",
+      "value": 13.140059098376824
+    },
+    "d_1": {
+      "formula_id": "geo.d.1",
+      "ref": "ISO 21771:2007 分度圆直径",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 41.73985198867087
+    },
+    "d_2": {
+      "formula_id": "geo.d.2",
+      "ref": "ISO 21771:2007 分度圆直径",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 160.7757261785841
+    },
+    "da_1": {
+      "locator": "com['ZR[0].da.nul']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "mm",
+      "value": 45.69235198867087
+    },
+    "da_2": {
+      "locator": "com['ZR[1].da.nul']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "mm",
+      "value": 163.97339113581936
+    },
+    "db_1": {
+      "formula_id": "geo.db.1",
+      "ref": "ISO 21771:2007 基圆直径",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 39.080793274140525
+    },
+    "db_2": {
+      "formula_id": "geo.db.2",
+      "ref": "ISO 21771:2007 基圆直径",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 150.53342594483757
+    },
+    "df_1": {
+      "formula_id": "mfg.df.1",
+      "ref": "ISO 21771:2007 齿根圆直径（按轮基本齿条 hfP_i、名义变位；内齿带符号同式）；ISO 21771 原文不在证据包，按经典渐开线几何推导",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 38.96635198867087
+    },
+    "df_2": {
+      "formula_id": "mfg.df.2",
+      "ref": "ISO 21771:2007 齿根圆直径（按轮基本齿条 hfP_i、名义变位；内齿带符号同式）；ISO 21771 原文不在证据包，按经典渐开线几何推导",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 157.24739113581936
+    },
+    "haP_1": {
+      "locator": "com['ZR[0].Tool.RefProfile.haP']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 1.0
+    },
+    "haP_2": {
+      "locator": "com['ZR[1].Tool.RefProfile.haP']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 1.0
+    },
+    "hfP_1": {
+      "locator": "com['ZR[0].Tool.RefProfile.hfP']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 1.25
+    },
+    "hfP_2": {
+      "locator": "com['ZR[1].Tool.RefProfile.hfP']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 1.25
+    },
+    "m_n": {
+      "locator": "com['ZS.Geo.mn']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "mm",
+      "value": 1.5
+    },
+    "reported_f_Hbeta_1": {
+      "locator": "report.f_Hbeta_1 (line 1774; DIN source, not ISO conversion)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "um",
+      "value": 9.0
+    },
+    "reported_f_Hbeta_2": {
+      "locator": "report.f_Hbeta_2 (line 1774; DIN source, not ISO conversion)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "um",
+      "value": 8.0
+    },
+    "reported_f_falpha_1": {
+      "locator": "report.f_falpha_1 (line 1758; DIN source, not ISO conversion)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "um",
+      "value": 6.0
+    },
+    "reported_f_falpha_2": {
+      "locator": "report.f_falpha_2 (line 1758; DIN source, not ISO conversion)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "um",
+      "value": 6.0
+    },
+    "reported_f_pbT_1": {
+      "locator": "report.f_pbT_1 (line 1742; DIN source, not ISO conversion)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "um",
+      "value": 7.0
+    },
+    "reported_f_pbT_2": {
+      "locator": "report.f_pbT_2 (line 1742; DIN source, not ISO conversion)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "um",
+      "value": 8.0
+    },
+    "reported_f_pt_1": {
+      "locator": "report.f_pt_1 (line 1738; DIN source, not ISO conversion)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "um",
+      "value": 7.0
+    },
+    "reported_f_pt_2": {
+      "locator": "report.f_pt_2 (line 1738; DIN source, not ISO conversion)",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "um",
+      "value": 8.0
+    },
+    "rhofP_1": {
+      "locator": "com['ZR[0].Tool.RefProfile.rhofP']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 0.38
+    },
+    "rhofP_2": {
+      "locator": "com['ZR[1].Tool.RefProfile.rhofP']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 0.38
+    },
+    "s_n_1": {
+      "formula_id": "mfg.sn.1",
+      "ref": "ISO 21771:2007 法向分度圆弧齿厚 sn（无侧隙名义值）；ISO 21771 原文不在证据包，按经典渐开线几何推导",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 2.7116114239532916
+    },
+    "s_n_2": {
+      "formula_id": "mfg.sn.2",
+      "ref": "ISO 21771:2007 法向分度圆弧齿厚 sn（无侧隙名义值）；ISO 21771 原文不在证据包，按经典渐开线几何推导",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 2.4368739366058643
+    },
+    "s_ne_1": {
+      "formula_id": "mfg.sn.e.1",
+      "ref": "ISO 21771:2007 含齿厚上偏差的法向弧齿厚 sn + Asn,e；ISO 21771 原文不在证据包，按经典渐开线几何推导",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 2.6676114239532915
+    },
+    "s_ne_2": {
+      "formula_id": "mfg.sn.e.2",
+      "ref": "ISO 21771:2007 含齿厚上偏差的法向弧齿厚 sn + Asn,e；ISO 21771 原文不在证据包，按经典渐开线几何推导",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 2.356873936605864
+    },
+    "s_ni_1": {
+      "formula_id": "mfg.sn.i.1",
+      "ref": "ISO 21771:2007 含齿厚下偏差的法向弧齿厚 sn + Asn,i；ISO 21771 原文不在证据包，按经典渐开线几何推导",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 2.6476114239532915
+    },
+    "s_ni_2": {
+      "formula_id": "mfg.sn.i.2",
+      "ref": "ISO 21771:2007 含齿厚下偏差的法向弧齿厚 sn + Asn,i；ISO 21771 原文不在证据包，按经典渐开线几何推导",
+      "source_check": "not_in_evidence",
+      "unit": "mm",
+      "value": 2.3068739366058644
+    },
+    "x_1": {
+      "locator": "com['ZR[0].x.nul']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 0.3255
+    },
+    "x_2": {
+      "locator": "com['ZR[1].x.nul']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 0.07388831907841498
+    },
+    "z_1": {
+      "locator": "com['ZR[0].z']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 27.0
+    },
+    "z_2": {
+      "locator": "com['ZR[1].z']",
+      "source": "data/kisssoft/K02-helical.json",
+      "unit": "1",
+      "value": 104.0
+    }
+  },
+  "schema": "gearbase.m35-review-preparation/1",
+  "source_id": "K02-helical",
+  "source_path": "data/kisssoft/K02-helical.json",
+  "source_report": {
+    "path": "reports/K02-helical/K02-helical.extracted.txt",
+    "pdf": "reports/K02-helical/K02-helical.pdf",
+    "pdf_sha256": "1abb2ebf80ec52d6edae6ffdd1e169510222bd4c77a65ffc9b7feea399af37de",
+    "sha256": "d56787d808c3a185f85d7d6db1c166080c422751d080752120b47ab64455f2bd"
+  },
+  "source_sha256": "3e9571540e9ac2d680067cbdd1a03c17ca782b38b3f9711b42c80a8335d542aa",
+  "status": "review_preparation_incomplete",
+  "units": {
+    "angle": "explicit per row",
+    "length": "mm"
+  }
+}

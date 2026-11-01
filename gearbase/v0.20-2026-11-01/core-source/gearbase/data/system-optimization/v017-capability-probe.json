@@ -1,0 +1,2681 @@
+{
+  "design_doc": {
+    "constraints": {
+      "S_Fmin": {
+        "provenance": "user",
+        "source": "M31 engineering.operating",
+        "unit": "1",
+        "value": 1.2
+      },
+      "S_Hmin": {
+        "provenance": "user",
+        "source": "M31 engineering.operating",
+        "unit": "1",
+        "value": 1.1
+      },
+      "eps_alpha_min": {
+        "provenance": "user",
+        "source": "设计规则（示例）",
+        "unit": "1",
+        "value": 1.2
+      }
+    },
+    "editions": {
+      "ISO 1328-1": {
+        "edition": "2013",
+        "source": "M31 C001 f_pt/f_falpha 证书：ISO 1328-1:2013 式(5)/(8)+5.2.3；iso1328.py 实现 ISO 1328-1:2013"
+      },
+      "ISO 21771": {
+        "edition": "2007",
+        "source": "装配补充：M31 案例未声明该分册版次，按本公式库版次"
+      },
+      "ISO 6336-1": {
+        "edition": "2019",
+        "source": "M31 engineering.standard"
+      },
+      "ISO 6336-2": {
+        "edition": "2019",
+        "source": "M31 engineering.standard"
+      },
+      "ISO 6336-3": {
+        "edition": "2019",
+        "source": "M31 engineering.standard"
+      }
+    },
+    "evidence": {
+      "E": {
+        "certificate": {
+          "kind": "file",
+          "locator": "engineering.material.elastic_modulus_MPa",
+          "ref": "data/m31/golden/C001/derived-candidate.json",
+          "sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+        },
+        "provenance": "evidence",
+        "source": "M31 engineering.material",
+        "unit": "MPa",
+        "value": 206000.0
+      },
+      "K_Hbeta": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].contact.face_load_factor",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].contact.face_load_factor（python-gearbox）",
+        "unit": "1",
+        "value": 2.5744814242724336
+      },
+      "Rz_H_1": {
+        "certificate": {
+          "kind": "file",
+          "locator": "engineering.stages.G1.pinion.surface_roughness_um",
+          "ref": "data/m31/golden/C001/derived-candidate.json",
+          "sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+        },
+        "provenance": "evidence",
+        "source": "M31 C001 surface_roughness_um 按 Rz 解释（案例未写 Ra/Rz；收据 Z_R=0.962679 以 Rz 解释复现，见测试；待用户确认）",
+        "unit": "um",
+        "value": 3.67
+      },
+      "Rz_H_2": {
+        "certificate": {
+          "kind": "file",
+          "locator": "engineering.stages.G1.wheel.surface_roughness_um",
+          "ref": "data/m31/golden/C001/derived-candidate.json",
+          "sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+        },
+        "provenance": "evidence",
+        "source": "同上（大轮）",
+        "unit": "um",
+        "value": 3.67
+      },
+      "Y_B": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.rim_thickness_factor_pinion",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.rim_thickness_factor_pinion（python-gearbox）",
+        "unit": "1",
+        "value": 1.0
+      },
+      "Y_DT": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.deep_tooth_factor",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.deep_tooth_factor（python-gearbox）",
+        "unit": "1",
+        "value": 1.0
+      },
+      "Y_NT_1": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.life_factor_pinion",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.life_factor_pinion（python-gearbox）",
+        "unit": "1",
+        "value": 0.9011881827603812
+      },
+      "Y_NT_2": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.life_factor_wheel",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.life_factor_wheel（python-gearbox）",
+        "unit": "1",
+        "value": 0.9118636156617996
+      },
+      "Y_RrelT_1": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.relative_surface_factor_pinion",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.relative_surface_factor_pinion（python-gearbox）",
+        "unit": "1",
+        "value": 1.014789805373408
+      },
+      "Y_RrelT_2": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.relative_surface_factor_wheel",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.relative_surface_factor_wheel（python-gearbox）",
+        "unit": "1",
+        "value": 1.014789805373408
+      },
+      "Y_ST": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.stress_correction_factor_reference",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.stress_correction_factor_reference（python-gearbox）",
+        "unit": "1",
+        "value": 2.0
+      },
+      "Y_X": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.size_factor_pinion",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.size_factor_pinion（python-gearbox）",
+        "unit": "1",
+        "value": 1.0
+      },
+      "Y_drelT_1": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.relative_notch_sensitivity_pinion",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.relative_notch_sensitivity_pinion（python-gearbox）",
+        "unit": "1",
+        "value": 0.9628281561600809
+      },
+      "Y_drelT_2": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].root.relative_notch_sensitivity_wheel",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].root.relative_notch_sensitivity_wheel（python-gearbox）",
+        "unit": "1",
+        "value": 0.9758190332859351
+      },
+      "Z_NT_1": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].contact.life_factor_pinion",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].contact.life_factor_pinion（python-gearbox）",
+        "unit": "1",
+        "value": 0.8986828885438193
+      },
+      "Z_NT_2": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].contact.life_factor_wheel",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].contact.life_factor_wheel（python-gearbox）",
+        "unit": "1",
+        "value": 0.9088190004202857
+      },
+      "Z_W": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].contact.work_hardening_factor_pinion",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].contact.work_hardening_factor_pinion（python-gearbox）",
+        "unit": "1",
+        "value": 1.0
+      },
+      "Z_X": {
+        "certificate": {
+          "kind": "file",
+          "locator": "stages[0].contact.size_factor",
+          "ref": "data/m31/golden/C001/gear-rating.json",
+          "sha256": "3987ed8f3327ba9e75453bddcc4eb977383cbd2bd62a1380bb24c2a4666b2717"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/gear-rating.json stages[0].contact.size_factor（python-gearbox）",
+        "unit": "1",
+        "value": 1.0
+      },
+      "nu": {
+        "certificate": {
+          "kind": "file",
+          "locator": "engineering.material.poissons_ratio",
+          "ref": "data/m31/golden/C001/derived-candidate.json",
+          "sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+        },
+        "provenance": "evidence",
+        "source": "M31 engineering.material",
+        "unit": "1",
+        "value": 0.3
+      },
+      "nu_40": {
+        "certificate": {
+          "kind": "file",
+          "locator": "engineering.operating.lubricant_viscosity_40c_cSt",
+          "ref": "data/m31/golden/C001/derived-candidate.json",
+          "sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+        },
+        "provenance": "evidence",
+        "source": "M31 C001 lubricant_viscosity_40c_cSt",
+        "unit": "mm^2/s",
+        "value": 160.0
+      },
+      "rho_1": {
+        "certificate": {
+          "kind": "file",
+          "locator": "engineering.material.density_kg_per_mm3",
+          "ref": "data/m31/golden/C001/derived-candidate.json",
+          "sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/derived-candidate.json engineering.material.density_kg_per_mm3",
+        "unit": "kg/mm^3",
+        "value": 7.83e-06
+      },
+      "rho_2": {
+        "certificate": {
+          "kind": "file",
+          "locator": "engineering.material.density_kg_per_mm3",
+          "ref": "data/m31/golden/C001/derived-candidate.json",
+          "sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+        },
+        "provenance": "evidence",
+        "source": "M31 golden/C001/derived-candidate.json engineering.material.density_kg_per_mm3",
+        "unit": "kg/mm^3",
+        "value": 7.83e-06
+      },
+      "sigma_Hlim_surface": {
+        "certificate": {
+          "kind": "file",
+          "locator": "engineering.material.contact_stress_limit_MPa",
+          "ref": "data/m31/golden/C001/derived-candidate.json",
+          "sha256": "4202133d3871844c80d35b85b7b8bf1accc8639f84f247349729319977effb38"
+        },
+        "provenance": "evidence",
+        "source": "M31 C001 材料假设 contact_stress_limit（两轮相同）作为 Z_L/Z_V/Z_R 的参考材料 σHlim",
+        "unit": "MPa",
+        "value": 1500.0
+      }
+    },
+    "id": "C001.factors",
+    "inputs": {
+      "A1328_1": {
+        "provenance": "user",
+        "source": "M31 C001 engineering.stages.G1.pinion.quality_grade",
+        "unit": "1",
+        "value": 6.0
+      },
+      "A1328_2": {
+        "provenance": "user",
+        "source": "M31 C001 engineering.stages.G1.wheel.quality_grade",
+        "unit": "1",
+        "value": 6.0
+      },
+      "C_R": {
+        "provenance": "assumption",
+        "source": "实心齿坯 C_R=1（同上：rim_thickness=None，web_thickness=b）",
+        "unit": "1",
+        "value": 1.0
+      },
+      "C_f_1": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json engineering.operating.flank_modification = NONE（无齿根修缘，式(17) Cf=0）",
+        "unit": "um",
+        "value": 0.0
+      },
+      "C_f_2": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json engineering.operating.flank_modification = NONE（无齿根修缘，式(17) Cf=0）",
+        "unit": "um",
+        "value": 0.0
+      },
+      "Cay_s": {
+        "provenance": "standard_constant",
+        "source": "ISO 6336-1:2019 6.5 表注 Cay 经验式中 σHlim 的除数",
+        "unit": "MPa",
+        "value": 97.0
+      },
+      "Cay_u": {
+        "provenance": "standard_constant",
+        "source": "ISO 6336-1:2019 6.5 表注 Cay 经验式结果单位",
+        "unit": "um",
+        "value": 1.0
+      },
+      "E_St": {
+        "provenance": "standard_constant",
+        "source": "ISO 6336-1:2019 9.3 式(90) 参考钢弹性模量",
+        "unit": "MPa",
+        "value": 206000.0
+      },
+      "K_A": {
+        "provenance": "user",
+        "source": "M31 engineering.operating",
+        "unit": "1",
+        "value": 1.25
+      },
+      "K_gamma": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json engineering.operating.mesh_load_factor",
+        "unit": "1",
+        "value": 1.0
+      },
+      "MPa_unit": {
+        "provenance": "standard_constant",
+        "source": "ISO 6336-1:2019 7.5.3.2/8.3.6.2 跑合量经验式中 σHlim 以 N/mm² 计",
+        "unit": "MPa",
+        "value": 1.0
+      },
+      "N_Href_1": {
+        "provenance": "assumption",
+        "source": "Z_L/Z_V/Z_R 适用域检查用参考循环数：取 5e7（≥ 渗氮碳共渗候选 2e6，取较严者）；C001 N_L ≥ 3e8，数值不受影响",
+        "unit": "1",
+        "value": 50000000.0
+      },
+      "N_Href_2": {
+        "provenance": "assumption",
+        "source": "Z_L/Z_V/Z_R 适用域检查用参考循环数：取 5e7（≥ 渗氮碳共渗候选 2e6，取较严者）；C001 N_L ≥ 3e8，数值不受影响",
+        "unit": "1",
+        "value": 50000000.0
+      },
+      "Q_grade": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json engineering.stages.G1.pinion.quality_grade",
+        "unit": "1",
+        "value": 6.0
+      },
+      "T_1": {
+        "provenance": "user",
+        "source": "M31 input",
+        "unit": "N*m",
+        "value": 25.0
+      },
+      "alpha_n": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json stages[0]",
+        "unit": "deg",
+        "value": 20.0
+      },
+      "b": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json stages[0]",
+        "unit": "mm",
+        "value": 30.0
+      },
+      "beta": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json stages[0]（直齿）",
+        "unit": "deg",
+        "value": 0.0
+      },
+      "c_unit": {
+        "provenance": "standard_constant",
+        "source": "ISO 6336-1:2019 9.3 q' 多项式的单位约定 mm·µm/N",
+        "unit": "N/(mm*um)",
+        "value": 1.0
+      },
+      "cycles_per_rev_1": {
+        "provenance": "assumption",
+        "source": "单向单啮合，每转受载一次（显式工况假设）",
+        "unit": "1",
+        "value": 1.0
+      },
+      "cycles_per_rev_2": {
+        "provenance": "assumption",
+        "source": "单向单啮合，每转受载一次（显式工况假设）",
+        "unit": "1",
+        "value": 1.0
+      },
+      "haP": {
+        "provenance": "user",
+        "source": "M31 engineering.tool",
+        "unit": "1",
+        "value": 1.0
+      },
+      "hfP": {
+        "provenance": "user",
+        "source": "M31 engineering.tool",
+        "unit": "1",
+        "value": 1.25
+      },
+      "k_pb": {
+        "provenance": "user",
+        "source": "M31 C001 engineering.operating.flank_modification=NONE → 无补偿性齿廓修形，f_pb 不折减（8.3.2）",
+        "unit": "1",
+        "value": 1.0
+      },
+      "life_duration": {
+        "provenance": "user",
+        "source": "M31 C001 engineering.operating.design_life_h=10000 h，换算为秒",
+        "unit": "s",
+        "value": 36000000.0
+      },
+      "m_n": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json stages[0]",
+        "unit": "mm",
+        "value": 2.0
+      },
+      "mat_group_1": {
+        "provenance": "assumption",
+        "source": "跑合材料组 3（表面硬化/渗氮类钢，ISO 6336-1:2019 8.3.6.2 式(79)，与文档 y_alpha_max=3 µm 同组）；NV 归组需对原图复核（O/D 登记）",
+        "unit": "1",
+        "value": 3.0
+      },
+      "mat_group_2": {
+        "provenance": "assumption",
+        "source": "跑合材料组 3（表面硬化/渗氮类钢，ISO 6336-1:2019 8.3.6.2 式(79)，与文档 y_alpha_max=3 µm 同组）；NV 归组需对原图复核（O/D 登记）",
+        "unit": "1",
+        "value": 3.0
+      },
+      "n_1": {
+        "provenance": "user",
+        "source": "M31 input",
+        "unit": "rpm",
+        "value": 900.0
+      },
+      "q_1": {
+        "provenance": "assumption",
+        "source": "实心齿坯（legacy/m31/L4/gears/benchmark/rating_adapter.py 传 rim_thickness=None）",
+        "unit": "1",
+        "value": 0.0
+      },
+      "q_2": {
+        "provenance": "assumption",
+        "source": "实心齿坯（legacy/m31/L4/gears/benchmark/rating_adapter.py 传 rim_thickness=None）",
+        "unit": "1",
+        "value": 0.0
+      },
+      "rhofP": {
+        "provenance": "user",
+        "source": "M31 engineering.tool",
+        "unit": "1",
+        "value": 0.38
+      },
+      "root_mm": {
+        "provenance": "standard_constant",
+        "source": "Definition of metric length unit",
+        "unit": "mm",
+        "value": 1.0
+      },
+      "root_um": {
+        "provenance": "standard_constant",
+        "source": "Definition of metric length unit",
+        "unit": "um",
+        "value": 1.0
+      },
+      "sf_length_unit": {
+        "provenance": "standard_constant",
+        "source": "单位尺度 1 mm",
+        "unit": "mm",
+        "value": 1.0
+      },
+      "sf_roughness_unit": {
+        "provenance": "standard_constant",
+        "source": "单位尺度 1 µm",
+        "unit": "um",
+        "value": 1.0
+      },
+      "sf_stress_unit": {
+        "provenance": "standard_constant",
+        "source": "单位尺度 1 MPa",
+        "unit": "MPa",
+        "value": 1.0
+      },
+      "sf_velocity_unit": {
+        "provenance": "standard_constant",
+        "source": "单位尺度 1 m/s",
+        "unit": "m/s",
+        "value": 1.0
+      },
+      "sf_viscosity_unit": {
+        "provenance": "standard_constant",
+        "source": "单位尺度 1 mm²/s",
+        "unit": "mm^2/s",
+        "value": 1.0
+      },
+      "sigma_Flim_1": {
+        "provenance": "assumption",
+        "source": "M31 engineering.material（假设材料）",
+        "unit": "MPa",
+        "value": 460.0
+      },
+      "sigma_Flim_2": {
+        "provenance": "assumption",
+        "source": "M31 engineering.material（假设材料）",
+        "unit": "MPa",
+        "value": 460.0
+      },
+      "sigma_Hlim_1": {
+        "provenance": "assumption",
+        "source": "M31 engineering.material（假设材料）",
+        "unit": "MPa",
+        "value": 1500.0
+      },
+      "sigma_Hlim_2": {
+        "provenance": "assumption",
+        "source": "M31 engineering.material（假设材料）",
+        "unit": "MPa",
+        "value": 1500.0
+      },
+      "surface_nu40_vi95": {
+        "provenance": "assumption",
+        "source": "C001 未给 VI；按 ISO 6336-2:2019 12.3.2.1.1 ν40/VI95 基准显式接受近似",
+        "unit": "1",
+        "value": 1.0
+      },
+      "surface_oil_mineral": {
+        "provenance": "assumption",
+        "source": "M31 C001 未写油基；收据 Z_L=0.996718 与矿物油式(42) 复现（见测试）；待用户确认",
+        "unit": "1",
+        "value": 1.0
+      },
+      "v_unit": {
+        "provenance": "standard_constant",
+        "source": "ISO 6336-1:2019 7.5.3.2/8.3.6.2 速度分界以 m/s 计",
+        "unit": "m/s",
+        "value": 1.0
+      },
+      "w_ref": {
+        "provenance": "standard_constant",
+        "source": "ISO 6336-1:2019 9.3 式(92)/6.5 式(11)(12) 参考单位齿宽载荷",
+        "unit": "N/mm",
+        "value": 100.0
+      },
+      "x_1": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json stages[0]",
+        "unit": "1",
+        "value": 0.0
+      },
+      "x_2": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json stages[0]",
+        "unit": "1",
+        "value": 0.0
+      },
+      "y_alpha_max": {
+        "provenance": "standard_constant",
+        "source": "ISO 6336-1:2019 8.3 表面硬化/渗氮类钢跑合量上限",
+        "unit": "um",
+        "value": 3.0
+      },
+      "y_unit": {
+        "provenance": "standard_constant",
+        "source": "ISO 6336-1:2019 7.5.3.2/8.3.6.2 跑合量上限以 µm 计",
+        "unit": "um",
+        "value": 1.0
+      },
+      "z_1": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json stages[0]",
+        "unit": "1",
+        "value": 20.0
+      },
+      "z_2": {
+        "provenance": "user",
+        "source": "M31 golden/C001/derived-candidate.json stages[0]",
+        "unit": "1",
+        "value": 36.0
+      }
+    },
+    "note": "由 C001（sha256=351ac66d784d53ee5e1cfe78fa7b3d17a9afe45fd56be3e05b4da1b88217c442）派生：显式选择系数方法组与适配层，使随几何变化的系数在优化中由公式重算（gear/factor_recompute.py）。下列条目改由公式给出，已从文档移除：K_Falpha=1.0180576156848296 1（evidence）；K_Halpha=1.0180576156848296 1（evidence）；Z_L=0.9967176032217998 1（evidence）；Z_R=0.9626793277278641 1（evidence）；Z_V=0.9632050832991362 1（evidence）；f_falpha_1=8.5 um（evidence）；f_falpha_2=8.5 um（evidence）；f_pt_1=8.5 um（evidence）；f_pt_2=8.5 um（evidence）。K_Hβ、Z_NT/Y_NT、Y_δrelT/Y_RrelT、Y_X、Y_B、Y_DT、Z_W、Z_X 仍为 M31 收据证据（理由见优化声明 hold_rationale）。派生量不存。",
+    "schema": "gears.math-source/2",
+    "selectors": {
+      "adapter.tolerances": {
+        "source": "M31 C001 quality_grade=6；原证据 f_pt/f_falpha 即 ISO 1328-1:2013 式(5)/(8)+5.2.3 在原几何下的值",
+        "value": "iso1328_grade"
+      },
+      "method.K_Halpha": {
+        "source": "ISO 6336-1:2019 8.3 方法B（本库 load_distribution.py，原图已核）；替代 M31 收据值",
+        "value": "B"
+      },
+      "method.K_Hbeta": {
+        "source": "M31 对拍契约：K_Hβ 取收据值（案例无方法C 所需轴系输入）",
+        "value": "external"
+      },
+      "method.K_V": {
+        "source": "M31 案例 engineering.operating.dynamic_factor_method = METHOD_B（案例数据）",
+        "value": "B"
+      },
+      "method.Z_LVR": {
+        "source": "ISO 6336-2:2019 12.3.2 式(42)(47)(53) reference 子集（原图已核）；M31 收据 Z_L/Z_V/Z_R 由同式、ν40=160、Rz=3.67 复现（见 tests/test_m34_factor_recompute.py）",
+        "value": "B_reference"
+      },
+      "method.Z_V_velocity": {
+        "source": "M31 收据 Z_V=0.963205 与分度圆 v 复算一致（python-gearbox 口径，同 K01 契约 v_ref）",
+        "value": "v_ref"
+      },
+      "method.f_pb": {
+        "source": "M31 对拍契约：表2 以 fpt 代替 fpb（python-gearbox 取 max(fpt, ffα)，C001 两者相等，见接续文档）",
+        "value": "fpt"
+      },
+      "method.life": {
+        "source": "C001 材料 NITROCARBURIZED_STEEL：本库只有渗碳钢 0.85 曲线，渗氮碳共渗分支未实现 → 收据值保持",
+        "value": "external"
+      },
+      "method.m_red": {
+        "source": "M31 对拍契约：python-gearbox 用 ISO 6336-1:2019 式(30)",
+        "value": "eq30"
+      },
+      "method.root_factors": {
+        "source": "渗氮碳共渗 Y_δrelT/Y_RrelT 分支未实现 → 收据值保持（Y_X：m_n≤5 时表5 恒为 1）",
+        "value": "external"
+      },
+      "method.root_shift": {
+        "source": "M31 对拍契约：案例无齿厚公差，python-gearbox 用名义变位",
+        "value": "nominal"
+      }
+    },
+    "title": "M31 C001 第一级 —— 系数重算修订（Z_L/Z_V/Z_R、f_pt/f_falpha、K_Hα/K_Fα 随几何由公式给出）"
+  },
+  "system_input": {
+    "schema": "gears.system-input/1",
+    "id": "C001",
+    "title": "C001 G1 系统层输入（演示）",
+    "note": "数值均标来源；无来源留空（value=null）→ 对应子检查 blocked。M31 system_boundary 的支承/轴段为 project_assumption（非实测）；M31 component_data 中轴材料、键与许用值为 synthetic test（example.invalid），不作为来源。",
+    "design_ref": {
+      "source_id": "C001.factors",
+      "model_family": "pair_model",
+      "source": "data/source/C001.math-source.json（math_source.build_model）"
+    },
+    "assumptions": [
+      {
+        "text": "fits: [] —— C001 无过盈连接",
+        "source": "data/m31/golden/C001/derived-candidate.json system_boundary.component_data.connections 仅 parallel_key；mounts 配合间隙 0（非过盈）"
+      },
+      {
+        "text": "轴 S0 支承与齿轮位置取 M31 system_boundary（project_assumption，非实测）",
+        "source": "data/m31/golden/C001/derived-candidate.json system_boundary.supports.S0、mounts.G1.pinion、machine_geometry.shaft_sections.S0；provenance.maturity=project_assumption"
+      }
+    ],
+    "user_decisions_pending": [
+      {
+        "id": "C001-SYS-1",
+        "text": "M31 engineering.stages.G1.pinion（bearing_span 60、offset 15，KHβ 用）与 system_boundary.supports.S0（-5/45，齿轮 20 → 跨距 50、居中）不一致：系统层与 KHβ 取哪一套"
+      },
+      {
+        "id": "C001-SYS-2",
+        "text": "S0 输入扭矩（联轴器）轴向位置 M31 未给：轴系求解需要"
+      },
+      {
+        "id": "C001-SYS-3",
+        "text": "轴/毂/键材料与许用值：M31 为 synthetic test，需真实材料（DIN 743 截面系数、DIN 6892 Re）"
+      },
+      {
+        "id": "C001-SYS-4",
+        "text": "油品：矿物油、ν100、ρ15、θoil、FZG 载荷级、Ra（M31 3,67 为 Rz？）——与接力交接 v0.15『需要用户③』同一项"
+      },
+      {
+        "id": "C001-SYS-5",
+        "text": "胶合/微点蚀/热功率的最小安全系数与传递功率口径"
+      }
+    ],
+    "gear_rating": {
+      "limits": {}
+    },
+    "manufacturing": {
+      "gears": {
+        "1": {
+          "value": "external",
+          "unit": "-",
+          "source": "data/m31/golden/C001/derived-candidate.json stages[0].kind=spur（外啮合）"
+        },
+        "2": {
+          "value": "external",
+          "unit": "-",
+          "source": "data/m31/golden/C001/derived-candidate.json stages[0].kind=spur（外啮合）"
+        }
+      },
+      "tip_diameter": {
+        "value": "basic_rack",
+        "unit": "-",
+        "source": "M31 案例无齿顶圆直径输入：按基本齿条齿顶高（design 文档 haP）"
+      },
+      "groups": {
+        "value": [
+          "tolerances"
+        ],
+        "unit": "-",
+        "source": "本轮只出 ISO 1328-1:2013 公差栏"
+      },
+      "inputs": {
+        "A1328_1": {
+          "from_design": "Q_grade",
+          "unit": "1",
+          "source": "设计文档 Q_grade（data/m31/golden/C001/derived-candidate.json engineering.stages.G1.pinion.quality_grade=6；factor_recompute 注：即 ISO 1328-1:2013 口径）"
+        },
+        "A1328_2": {
+          "from_design": "Q_grade",
+          "unit": "1",
+          "source": "设计文档 Q_grade（data/m31/golden/C001/derived-candidate.json engineering.stages.G1.wheel.quality_grade=6）"
+        },
+        "b_1": {
+          "from_design": "b",
+          "unit": "mm",
+          "source": "设计文档 b（data/m31/golden/C001/derived-candidate.json stages[0].face_width_mm，两轮同宽）"
+        },
+        "b_2": {
+          "from_design": "b",
+          "unit": "mm",
+          "source": "设计文档 b（data/m31/golden/C001/derived-candidate.json stages[0].face_width_mm，两轮同宽）"
+        },
+        "haP_1": {
+          "from_design": "haP",
+          "unit": "1",
+          "source": "设计文档 haP（两轮同一刀具）"
+        },
+        "haP_2": {
+          "from_design": "haP",
+          "unit": "1",
+          "source": "设计文档 haP（两轮同一刀具）"
+        },
+        "hfP_1": {
+          "from_design": "hfP",
+          "unit": "1",
+          "source": "设计文档 hfP"
+        },
+        "hfP_2": {
+          "from_design": "hfP",
+          "unit": "1",
+          "source": "设计文档 hfP"
+        },
+        "rhofP_1": {
+          "from_design": "rhofP",
+          "unit": "1",
+          "source": "设计文档 rhofP"
+        },
+        "rhofP_2": {
+          "from_design": "rhofP",
+          "unit": "1",
+          "source": "设计文档 rhofP"
+        },
+        "A_sn_e_1": {
+          "value": null,
+          "unit": "mm",
+          "source": "M31 案例无齿厚公差（gear/rating.py C001_G1_SELECTOR_SOURCES 注）"
+        },
+        "A_sn_e_2": {
+          "value": null,
+          "unit": "mm",
+          "source": "M31 案例无齿厚公差"
+        },
+        "A_sn_i_1": {
+          "value": null,
+          "unit": "mm",
+          "source": "M31 案例无齿厚公差"
+        },
+        "A_sn_i_2": {
+          "value": null,
+          "unit": "mm",
+          "source": "M31 案例无齿厚公差"
+        }
+      }
+    },
+    "oil": {
+      "lubricant": {
+        "value": null,
+        "unit": "-",
+        "source": "待用户确认（接力交接 v0.15 需要用户③：矿物油）"
+      },
+      "nu_40": {
+        "value": 160.0,
+        "unit": "mm^2/s",
+        "source": "data/m31/golden/C001/derived-candidate.json engineering.operating.lubricant_viscosity_40c_cSt（开放算例假设，非 C001 实测）"
+      },
+      "nu_100": {
+        "value": null,
+        "unit": "mm^2/s",
+        "source": "M31 未给"
+      },
+      "rho_15": {
+        "value": null,
+        "unit": "kg/m^3",
+        "source": "M31 未给"
+      },
+      "theta_oil": {
+        "value": null,
+        "unit": "degC",
+        "source": "M31 未给（operating.temperature_factor 不是油温）"
+      },
+      "lubrication": {
+        "value": null,
+        "unit": "-",
+        "source": "M31 未给润滑方式"
+      },
+      "eta_oil_route": {
+        "value": null,
+        "unit": "-",
+        "source": "油品数据不全，未选择 ηoil 求法"
+      }
+    },
+    "scuffing": {
+      "mesh_stiffness": {
+        "from_design": "c_s",
+        "unit": "N/(mm*um)",
+        "source": "直齿取单对齿刚度 c′（-21 式(38)），设计模型 c_s"
+      },
+      "C_a1": {
+        "value": null,
+        "unit": "um",
+        "source": "M31 flank_modification=NONE；跑合修缘量未给"
+      },
+      "C_a2": {
+        "value": null,
+        "unit": "um",
+        "source": "同左"
+      },
+      "tolerance_class": {
+        "from_design": "Q_grade",
+        "unit": "1",
+        "source": "设计文档 Q_grade（ISO 1328-1:2013 精度等级 6）"
+      },
+      "driver": {
+        "value": "pinion",
+        "unit": "-",
+        "source": "data/m31/golden/C001/derived-candidate.json input_port S0 = G1.pinion 所在轴（driver_teeth 20）"
+      },
+      "same_material": {
+        "value": null,
+        "unit": "-",
+        "source": "M31 材料为开放算例假设，两轮材料牌号未给"
+      },
+      "E": {
+        "from_design": "E",
+        "unit": "MPa",
+        "source": "设计文档证据 E（M31 engineering.material）"
+      },
+      "nu": {
+        "from_design": "nu",
+        "unit": "1",
+        "source": "设计文档证据 ν"
+      },
+      "lambda_M": {
+        "value": null,
+        "unit": "N/(s*K)",
+        "source": "M31 未给热物性"
+      },
+      "c_v": {
+        "value": null,
+        "unit": "N/(mm^2*K)",
+        "source": "M31 未给热物性"
+      },
+      "material_XW": {
+        "value": null,
+        "unit": "-",
+        "source": "M31 未给热处理/残余奥氏体"
+      },
+      "Ra1": {
+        "value": null,
+        "unit": "um",
+        "source": "M31 surface_roughness_um=3,67 是 Ra 还是 Rz 待用户确认（需要用户③）"
+      },
+      "Ra2": {
+        "value": null,
+        "unit": "um",
+        "source": "同左"
+      },
+      "phi_E": {
+        "value": null,
+        "unit": "1",
+        "source": "M31 未给跑合状态"
+      },
+      "n_p": {
+        "value": 1,
+        "unit": "1",
+        "source": "data/m31/golden/C001/derived-candidate.json stages[0]：G1 小轮只与一个齿轮啮合"
+      },
+      "X_alphabeta_method": {
+        "value": "A",
+        "unit": "-",
+        "source": "方法选择：-21 式(14) 方法 A（与 K01 外部对拍同口径）"
+      },
+      "theta_M_method": {
+        "value": "C",
+        "unit": "-",
+        "source": "方法选择：-21 6.1.6.4 方法 C（与 K01 外部对拍同口径）"
+      },
+      "scuffing_test": {
+        "value": null,
+        "unit": "-",
+        "source": "油品胶合试验未给"
+      },
+      "T1T_or_load_stage": {
+        "value": null,
+        "unit": "-",
+        "source": "FZG 载荷级未给"
+      },
+      "X_WT": {
+        "value": null,
+        "unit": "1",
+        "source": "无试验方法 → 不适用"
+      },
+      "S_Smin": {
+        "value": null,
+        "unit": "1",
+        "source": "C001 未给胶合最小安全系数"
+      }
+    },
+    "micropitting": {
+      "d_w1": {
+        "from_design": "d_1",
+        "unit": "mm",
+        "source": "x1 + x2 = 0（设计文档）→ 工作节圆 = 分度圆"
+      },
+      "d_w2": {
+        "from_design": "d_2",
+        "unit": "mm",
+        "source": "x1 + x2 = 0 → d_w2 = d_2"
+      },
+      "g_alpha": {
+        "value": null,
+        "unit": "mm",
+        "source": "设计模型未输出啮合线长度 g_α（TODO：从 ISO 21771 几何链引出）"
+      },
+      "p_et": {
+        "value": null,
+        "unit": "mm",
+        "source": "设计模型未输出端面基节 p_et（TODO）"
+      },
+      "E1": {
+        "from_design": "E",
+        "unit": "MPa",
+        "source": "设计文档证据 E"
+      },
+      "E2": {
+        "from_design": "E",
+        "unit": "MPa",
+        "source": "设计文档证据 E"
+      },
+      "nu1": {
+        "from_design": "nu",
+        "unit": "1",
+        "source": "设计文档证据 ν"
+      },
+      "nu2": {
+        "from_design": "nu",
+        "unit": "1",
+        "source": "设计文档证据 ν"
+      },
+      "oil_type": {
+        "value": null,
+        "unit": "-",
+        "source": "待用户确认（矿物油？）"
+      },
+      "density": {
+        "value": null,
+        "unit": "-",
+        "source": "ρ15 未给"
+      },
+      "theta_M": {
+        "value": null,
+        "unit": "degC",
+        "source": "未给"
+      },
+      "Ra1": {
+        "value": null,
+        "unit": "um",
+        "source": "待用户确认 Ra/Rz"
+      },
+      "Ra2": {
+        "value": null,
+        "unit": "um",
+        "source": "同左"
+      },
+      "alpha_38_source": {
+        "value": null,
+        "unit": "-",
+        "source": "未选择"
+      },
+      "local": {
+        "value": null,
+        "unit": "-",
+        "source": "七点 p_dyn,Y 与 θfl,Y：-20 沿啮合线分布未实现"
+      },
+      "lambda_GFP_source": {
+        "value": null,
+        "unit": "-",
+        "source": "油品微点蚀试验数据未给"
+      },
+      "S_lambda_min": {
+        "value": null,
+        "unit": "1",
+        "source": "未给"
+      }
+    },
+    "shafts": [
+      {
+        "id": "S0",
+        "note": "C001 G1 小轮轴（M31 S0）",
+        "x_A": {
+          "value": 0.0,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "x_B": {
+          "value": 100.0,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "axial_support": {
+          "value": "A",
+          "unit": "-",
+          "source": "data/m31/golden/C001/derived-candidate.json supports.S0[0].axial_role=locating"
+        },
+        "segments": [
+          {
+            "x0": {
+              "value": 0.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "x1": {
+              "value": 150.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "d": {
+              "value": 34.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "d_i": {
+              "value": 0.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            }
+          }
+        ],
+        "loads": [
+          {
+            "kind": "mesh",
+            "name": "G1 啮合",
+            "x": {
+              "value": 50.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "F_tw": {
+              "from_design": "F_t",
+              "unit": "N",
+              "source": "x1 + x2 = 0 → 工作节圆 = 分度圆，F_tw = F_t（设计模型 load.F_t）"
+            },
+            "d_w": {
+              "from_design": "d_1",
+              "unit": "mm",
+              "source": "x1 + x2 = 0 → d_w1 = d_1"
+            },
+            "alpha_wt_deg": {
+              "from_design": "alpha_wt",
+              "unit": "deg",
+              "source": "设计模型 α_wt"
+            },
+            "beta_w_deg": {
+              "from_design": "beta",
+              "unit": "deg",
+              "source": "直齿 β = 0"
+            },
+            "theta_deg": {
+              "value": 0.0,
+              "unit": "deg",
+              "source": "data/m31/golden/C001/derived-candidate.json mesh_force_frames.G1 radial=[1,0,0]；轴承径向合力与合成弯矩与该方位无关"
+            },
+            "tangential_sign": {
+              "value": -1,
+              "unit": "1",
+              "source": "小轮主动（与 tests/test_m36_shaft_line.py 同号约定）"
+            },
+            "axial_sign": {
+              "value": 1,
+              "unit": "1",
+              "source": "直齿无轴向力，符号不影响结果"
+            }
+          },
+          {
+            "kind": "torque",
+            "name": "S0 输入扭矩",
+            "x": {
+              "value": 140.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "T": {
+              "from_design": "T_1",
+              "unit": "N*mm",
+              "source": "设计模型 T_1（M31 input.torque_Nm=25）"
+            }
+          }
+        ],
+        "sections": [
+          {
+            "name": "S2",
+            "x": {
+              "value": 55.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "stress_state": {
+              "value": "rotating_shaft_stationary_loads",
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "checks": {
+              "value": [
+                "static"
+              ],
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "fatigue": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "static": {
+              "load_factor": {
+                "value": 2.0,
+                "unit": "1",
+                "source": "测试演示输入"
+              },
+              "S_min": {
+                "value": 1.2,
+                "unit": "1",
+                "source": "测试演示输入"
+              },
+              "sigma_zdFK": {
+                "value": 700.0,
+                "unit": "MPa",
+                "source": "测试演示输入"
+              },
+              "sigma_bFK": {
+                "value": 800.0,
+                "unit": "MPa",
+                "source": "测试演示输入"
+              },
+              "tau_tFK": {
+                "value": 400.0,
+                "unit": "MPa",
+                "source": "测试演示输入"
+              }
+            }
+          }
+        ],
+        "bearings": {
+          "A": "B_S0_0",
+          "B": "B_S0_1"
+        }
+      }
+    ],
+    "bearings": {
+      "B_S0_0": {
+        "bearing_kind": {
+          "value": "radial_ball",
+          "unit": "-",
+          "source": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）"
+        },
+        "C_r": {
+          "value": 20300.0,
+          "unit": "N",
+          "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.dynamic_rating_N（SKF 产品页人工转录）"
+        },
+        "C_0r": {
+          "value": 11200.0,
+          "unit": "N",
+          "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）"
+        },
+        "xy": {
+          "value": {
+            "relative_axial_load": null
+          },
+          "unit": "-",
+          "source": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷"
+        },
+        "n": {
+          "from_design": "n_1",
+          "unit": "rpm",
+          "source": "设计模型 n_1（M31 input.speed_rpm 900）"
+        },
+        "reliability_percent": {
+          "value": 90.0,
+          "unit": "%",
+          "source": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）"
+        },
+        "a_ISO_inputs": {
+          "value": "not_requested",
+          "unit": "-",
+          "source": "M31 只做 basic L10；κ、ec、Cu 未给"
+        },
+        "required_life_h": {
+          "value": 10000.0,
+          "unit": "h",
+          "source": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h"
+        }
+      },
+      "B_S0_1": {
+        "bearing_kind": {
+          "value": "radial_ball",
+          "unit": "-",
+          "source": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）"
+        },
+        "C_r": {
+          "value": 20300.0,
+          "unit": "N",
+          "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.dynamic_rating_N（SKF 产品页人工转录）"
+        },
+        "C_0r": {
+          "value": 11200.0,
+          "unit": "N",
+          "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）"
+        },
+        "xy": {
+          "value": {
+            "relative_axial_load": null
+          },
+          "unit": "-",
+          "source": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷"
+        },
+        "n": {
+          "from_design": "n_1",
+          "unit": "rpm",
+          "source": "设计模型 n_1（M31 input.speed_rpm 900）"
+        },
+        "reliability_percent": {
+          "value": 90.0,
+          "unit": "%",
+          "source": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）"
+        },
+        "a_ISO_inputs": {
+          "value": "not_requested",
+          "unit": "-",
+          "source": "M31 只做 basic L10；κ、ec、Cu 未给"
+        },
+        "required_life_h": {
+          "value": 10000.0,
+          "unit": "h",
+          "source": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h"
+        }
+      }
+    },
+    "keys": [
+      {
+        "id": "G1.pinion",
+        "method": {
+          "value": "C",
+          "unit": "-",
+          "source": "DIN 6892 方法 C（本库已接入）"
+        },
+        "d": {
+          "value": 25.0,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "h": {
+          "value": "din6885_1_table",
+          "unit": "-",
+          "source": "DIN 6885-1 表1 按 d 查（M31 键 6×6 为 synthetic，不采用）"
+        },
+        "t1": {
+          "value": "din6885_1_table",
+          "unit": "-",
+          "source": "DIN 6885-1 表1 按 d 查"
+        },
+        "l_tr": {
+          "value": 24.0,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "i": {
+          "value": 1,
+          "unit": "1",
+          "source": "data/m31/golden/C001/derived-candidate.json connections.G1.pinion 单键"
+        },
+        "torque_reversal": {
+          "value": false,
+          "unit": "-",
+          "source": "测试演示输入"
+        },
+        "Re_shaft": {
+          "value": 800.0,
+          "unit": "MPa",
+          "source": "测试演示输入"
+        },
+        "Re_hub": {
+          "value": 355.0,
+          "unit": "MPa",
+          "source": "测试演示输入"
+        },
+        "Re_key": {
+          "value": 350.0,
+          "unit": "MPa",
+          "source": "测试演示输入"
+        },
+        "hub_brittle": {
+          "value": false,
+          "unit": "-",
+          "source": "测试演示输入"
+        },
+        "Rm_hub": {
+          "value": "not_applicable",
+          "unit": "-",
+          "source": "测试演示输入"
+        },
+        "K_A": {
+          "from_design": "K_A",
+          "unit": "1",
+          "source": "设计模型 K_A（M31 application_factor 1,25）"
+        },
+        "M_tnenn": {
+          "from_design": "T_1",
+          "unit": "N*mm",
+          "source": "设计模型 T_1"
+        },
+        "M_tmax": {
+          "value": "not_requested",
+          "unit": "-",
+          "source": "峰值扭矩未给"
+        },
+        "f_L": {
+          "value": "not_requested",
+          "unit": "-",
+          "source": "不做峰值核算"
+        },
+        "M_tRmin": {
+          "value": "not_requested",
+          "unit": "-",
+          "source": "不做峰值核算"
+        }
+      }
+    ],
+    "fits": [
+      {
+        "id": "F1",
+        "method": {
+          "value": "elastic_interference",
+          "unit": "-",
+          "source": "测试演示输入"
+        },
+        "U": {
+          "value": 0.065,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "D_F": {
+          "value": 50.0,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "D_aA": {
+          "value": 125.0,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "D_iI": {
+          "value": 10.0,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "l_F": {
+          "value": 40.0,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "E_A": {
+          "value": 70000.0,
+          "unit": "MPa",
+          "source": "测试演示输入"
+        },
+        "E_I": {
+          "value": 215000.0,
+          "unit": "MPa",
+          "source": "测试演示输入"
+        },
+        "mu_A": {
+          "value": 0.3,
+          "unit": "1",
+          "source": "测试演示输入"
+        },
+        "mu_I": {
+          "value": 0.3,
+          "unit": "1",
+          "source": "测试演示输入"
+        },
+        "R_eLA": {
+          "value": 150.0,
+          "unit": "MPa",
+          "source": "测试演示输入"
+        },
+        "R_eLI": {
+          "value": 300.0,
+          "unit": "MPa",
+          "source": "测试演示输入"
+        },
+        "S_PA": {
+          "value": 1.2,
+          "unit": "1",
+          "source": "测试演示输入"
+        },
+        "S_PI": {
+          "value": 1.2,
+          "unit": "1",
+          "source": "测试演示输入"
+        },
+        "Rz_A": {
+          "value": 0.006,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "Rz_I": {
+          "value": 0.006,
+          "unit": "mm",
+          "source": "测试演示输入"
+        },
+        "g_F": {
+          "value": 0.4,
+          "unit": "1",
+          "source": "测试演示输入"
+        },
+        "nu_ru": {
+          "value": 0.1,
+          "unit": "1",
+          "source": "测试演示输入"
+        },
+        "S_r": {
+          "value": 1.5,
+          "unit": "1",
+          "source": "测试演示输入"
+        },
+        "T_required": {
+          "value": 100000.0,
+          "unit": "N*mm",
+          "source": "测试演示输入"
+        }
+      }
+    ],
+    "thermal": {
+      "P_A": {
+        "value": 2.0,
+        "unit": "kW",
+        "source": "测试演示输入"
+      },
+      "P_L": {
+        "value": 0.05,
+        "unit": "kW",
+        "source": "测试演示输入"
+      },
+      "P_N": {
+        "value": 0.03,
+        "unit": "kW",
+        "source": "测试演示输入"
+      },
+      "P_Q": {
+        "value": 0.05,
+        "unit": "kW",
+        "source": "测试演示输入"
+      }
+    }
+  },
+  "problem": {
+    "objective": "gear_blank_plus_shaft_volume_mm3",
+    "max_combinations": 100,
+    "hold_evidence": {
+      "E": "Capability probe: retain original sourced evidence; no new qualification",
+      "K_Hbeta": "Capability probe: retain original sourced evidence; no new qualification",
+      "Rz_H_1": "Capability probe: retain original sourced evidence; no new qualification",
+      "Rz_H_2": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_B": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_DT": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_NT_1": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_NT_2": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_RrelT_1": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_RrelT_2": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_ST": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_X": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_drelT_1": "Capability probe: retain original sourced evidence; no new qualification",
+      "Y_drelT_2": "Capability probe: retain original sourced evidence; no new qualification",
+      "Z_NT_1": "Capability probe: retain original sourced evidence; no new qualification",
+      "Z_NT_2": "Capability probe: retain original sourced evidence; no new qualification",
+      "Z_W": "Capability probe: retain original sourced evidence; no new qualification",
+      "Z_X": "Capability probe: retain original sourced evidence; no new qualification",
+      "nu": "Capability probe: retain original sourced evidence; no new qualification",
+      "nu_40": "Capability probe: retain original sourced evidence; no new qualification",
+      "rho_1": "Capability probe: retain original sourced evidence; no new qualification",
+      "rho_2": "Capability probe: retain original sourced evidence; no new qualification",
+      "sigma_Hlim_surface": "Capability probe: retain original sourced evidence; no new qualification"
+    },
+    "gear": [
+      {
+        "id": "thin",
+        "source": "Capability probe from C001.factors",
+        "inputs": {
+          "m_n": {
+            "provenance": "assumption",
+            "source": "Authored capability probe geometry",
+            "unit": "mm",
+            "value": 2
+          },
+          "b": {
+            "provenance": "assumption",
+            "source": "Authored capability probe geometry",
+            "unit": "mm",
+            "value": 4
+          }
+        }
+      },
+      {
+        "id": "original",
+        "source": "Capability probe from C001.factors",
+        "inputs": {
+          "m_n": {
+            "provenance": "assumption",
+            "source": "Authored capability probe geometry",
+            "unit": "mm",
+            "value": 2
+          },
+          "b": {
+            "provenance": "assumption",
+            "source": "Authored capability probe geometry",
+            "unit": "mm",
+            "value": 30
+          }
+        }
+      },
+      {
+        "id": "large",
+        "source": "Capability probe from C001.factors",
+        "inputs": {
+          "m_n": {
+            "provenance": "assumption",
+            "source": "Authored capability probe geometry",
+            "unit": "mm",
+            "value": 2.5
+          },
+          "b": {
+            "provenance": "assumption",
+            "source": "Authored capability probe geometry",
+            "unit": "mm",
+            "value": 30
+          }
+        }
+      }
+    ],
+    "shaft": [
+      {
+        "id": "weak",
+        "source": "test_sys_design_check._demo_system_input (authored probe)",
+        "shafts": [
+          {
+            "id": "S0",
+            "note": "C001 G1 小轮轴（M31 S0）",
+            "x_A": {
+              "value": 0.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "x_B": {
+              "value": 100.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "axial_support": {
+              "value": "A",
+              "unit": "-",
+              "source": "data/m31/golden/C001/derived-candidate.json supports.S0[0].axial_role=locating"
+            },
+            "segments": [
+              {
+                "x0": {
+                  "value": 0.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "x1": {
+                  "value": 150.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "d": {
+                  "value": 8,
+                  "unit": "mm",
+                  "source": "Authored finite shaft diameter probe"
+                },
+                "d_i": {
+                  "value": 0.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                }
+              }
+            ],
+            "loads": [
+              {
+                "kind": "mesh",
+                "name": "G1 啮合",
+                "x": {
+                  "value": 50.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "F_tw": {
+                  "from_design": "F_t",
+                  "unit": "N",
+                  "source": "x1 + x2 = 0 → 工作节圆 = 分度圆，F_tw = F_t（设计模型 load.F_t）"
+                },
+                "d_w": {
+                  "from_design": "d_1",
+                  "unit": "mm",
+                  "source": "x1 + x2 = 0 → d_w1 = d_1"
+                },
+                "alpha_wt_deg": {
+                  "from_design": "alpha_wt",
+                  "unit": "deg",
+                  "source": "设计模型 α_wt"
+                },
+                "beta_w_deg": {
+                  "from_design": "beta",
+                  "unit": "deg",
+                  "source": "直齿 β = 0"
+                },
+                "theta_deg": {
+                  "value": 0.0,
+                  "unit": "deg",
+                  "source": "data/m31/golden/C001/derived-candidate.json mesh_force_frames.G1 radial=[1,0,0]；轴承径向合力与合成弯矩与该方位无关"
+                },
+                "tangential_sign": {
+                  "value": -1,
+                  "unit": "1",
+                  "source": "小轮主动（与 tests/test_m36_shaft_line.py 同号约定）"
+                },
+                "axial_sign": {
+                  "value": 1,
+                  "unit": "1",
+                  "source": "直齿无轴向力，符号不影响结果"
+                }
+              },
+              {
+                "kind": "torque",
+                "name": "S0 输入扭矩",
+                "x": {
+                  "value": 140.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "T": {
+                  "from_design": "T_1",
+                  "unit": "N*mm",
+                  "source": "设计模型 T_1（M31 input.torque_Nm=25）"
+                }
+              }
+            ],
+            "sections": [
+              {
+                "name": "S2",
+                "x": {
+                  "value": 55.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "stress_state": {
+                  "value": "rotating_shaft_stationary_loads",
+                  "unit": "-",
+                  "source": "测试演示输入"
+                },
+                "checks": {
+                  "value": [
+                    "static"
+                  ],
+                  "unit": "-",
+                  "source": "测试演示输入"
+                },
+                "fatigue": {
+                  "value": "not_requested",
+                  "unit": "-",
+                  "source": "测试演示输入"
+                },
+                "static": {
+                  "load_factor": {
+                    "value": 2.0,
+                    "unit": "1",
+                    "source": "测试演示输入"
+                  },
+                  "S_min": {
+                    "value": 1.2,
+                    "unit": "1",
+                    "source": "测试演示输入"
+                  },
+                  "sigma_zdFK": {
+                    "value": 700.0,
+                    "unit": "MPa",
+                    "source": "测试演示输入"
+                  },
+                  "sigma_bFK": {
+                    "value": 800.0,
+                    "unit": "MPa",
+                    "source": "测试演示输入"
+                  },
+                  "tau_tFK": {
+                    "value": 400.0,
+                    "unit": "MPa",
+                    "source": "测试演示输入"
+                  }
+                }
+              }
+            ],
+            "bearings": {
+              "A": "B_S0_0",
+              "B": "B_S0_1"
+            }
+          }
+        ],
+        "keys": [
+          {
+            "id": "G1.pinion",
+            "method": {
+              "value": "C",
+              "unit": "-",
+              "source": "DIN 6892 方法 C（本库已接入）"
+            },
+            "d": {
+              "value": 8,
+              "unit": "mm",
+              "source": "Same authored shaft/key diameter"
+            },
+            "h": {
+              "value": "din6885_1_table",
+              "unit": "-",
+              "source": "DIN 6885-1 表1 按 d 查（M31 键 6×6 为 synthetic，不采用）"
+            },
+            "t1": {
+              "value": "din6885_1_table",
+              "unit": "-",
+              "source": "DIN 6885-1 表1 按 d 查"
+            },
+            "l_tr": {
+              "value": 8,
+              "unit": "mm",
+              "source": "Authored weak shaft/key probe within method domain"
+            },
+            "i": {
+              "value": 1,
+              "unit": "1",
+              "source": "data/m31/golden/C001/derived-candidate.json connections.G1.pinion 单键"
+            },
+            "torque_reversal": {
+              "value": false,
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "Re_shaft": {
+              "value": 800.0,
+              "unit": "MPa",
+              "source": "测试演示输入"
+            },
+            "Re_hub": {
+              "value": 355.0,
+              "unit": "MPa",
+              "source": "测试演示输入"
+            },
+            "Re_key": {
+              "value": 350.0,
+              "unit": "MPa",
+              "source": "测试演示输入"
+            },
+            "hub_brittle": {
+              "value": false,
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "Rm_hub": {
+              "value": "not_applicable",
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "K_A": {
+              "from_design": "K_A",
+              "unit": "1",
+              "source": "设计模型 K_A（M31 application_factor 1,25）"
+            },
+            "M_tnenn": {
+              "from_design": "T_1",
+              "unit": "N*mm",
+              "source": "设计模型 T_1"
+            },
+            "M_tmax": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "峰值扭矩未给"
+            },
+            "f_L": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "不做峰值核算"
+            },
+            "M_tRmin": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "不做峰值核算"
+            }
+          }
+        ]
+      },
+      {
+        "id": "economy",
+        "source": "test_sys_design_check._demo_system_input (authored probe)",
+        "shafts": [
+          {
+            "id": "S0",
+            "note": "C001 G1 小轮轴（M31 S0）",
+            "x_A": {
+              "value": 0.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "x_B": {
+              "value": 100.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "axial_support": {
+              "value": "A",
+              "unit": "-",
+              "source": "data/m31/golden/C001/derived-candidate.json supports.S0[0].axial_role=locating"
+            },
+            "segments": [
+              {
+                "x0": {
+                  "value": 0.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "x1": {
+                  "value": 150.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "d": {
+                  "value": 20,
+                  "unit": "mm",
+                  "source": "Authored finite shaft diameter probe"
+                },
+                "d_i": {
+                  "value": 0.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                }
+              }
+            ],
+            "loads": [
+              {
+                "kind": "mesh",
+                "name": "G1 啮合",
+                "x": {
+                  "value": 50.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "F_tw": {
+                  "from_design": "F_t",
+                  "unit": "N",
+                  "source": "x1 + x2 = 0 → 工作节圆 = 分度圆，F_tw = F_t（设计模型 load.F_t）"
+                },
+                "d_w": {
+                  "from_design": "d_1",
+                  "unit": "mm",
+                  "source": "x1 + x2 = 0 → d_w1 = d_1"
+                },
+                "alpha_wt_deg": {
+                  "from_design": "alpha_wt",
+                  "unit": "deg",
+                  "source": "设计模型 α_wt"
+                },
+                "beta_w_deg": {
+                  "from_design": "beta",
+                  "unit": "deg",
+                  "source": "直齿 β = 0"
+                },
+                "theta_deg": {
+                  "value": 0.0,
+                  "unit": "deg",
+                  "source": "data/m31/golden/C001/derived-candidate.json mesh_force_frames.G1 radial=[1,0,0]；轴承径向合力与合成弯矩与该方位无关"
+                },
+                "tangential_sign": {
+                  "value": -1,
+                  "unit": "1",
+                  "source": "小轮主动（与 tests/test_m36_shaft_line.py 同号约定）"
+                },
+                "axial_sign": {
+                  "value": 1,
+                  "unit": "1",
+                  "source": "直齿无轴向力，符号不影响结果"
+                }
+              },
+              {
+                "kind": "torque",
+                "name": "S0 输入扭矩",
+                "x": {
+                  "value": 140.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "T": {
+                  "from_design": "T_1",
+                  "unit": "N*mm",
+                  "source": "设计模型 T_1（M31 input.torque_Nm=25）"
+                }
+              }
+            ],
+            "sections": [
+              {
+                "name": "S2",
+                "x": {
+                  "value": 55.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "stress_state": {
+                  "value": "rotating_shaft_stationary_loads",
+                  "unit": "-",
+                  "source": "测试演示输入"
+                },
+                "checks": {
+                  "value": [
+                    "static"
+                  ],
+                  "unit": "-",
+                  "source": "测试演示输入"
+                },
+                "fatigue": {
+                  "value": "not_requested",
+                  "unit": "-",
+                  "source": "测试演示输入"
+                },
+                "static": {
+                  "load_factor": {
+                    "value": 2.0,
+                    "unit": "1",
+                    "source": "测试演示输入"
+                  },
+                  "S_min": {
+                    "value": 1.2,
+                    "unit": "1",
+                    "source": "测试演示输入"
+                  },
+                  "sigma_zdFK": {
+                    "value": 700.0,
+                    "unit": "MPa",
+                    "source": "测试演示输入"
+                  },
+                  "sigma_bFK": {
+                    "value": 800.0,
+                    "unit": "MPa",
+                    "source": "测试演示输入"
+                  },
+                  "tau_tFK": {
+                    "value": 400.0,
+                    "unit": "MPa",
+                    "source": "测试演示输入"
+                  }
+                }
+              }
+            ],
+            "bearings": {
+              "A": "B_S0_0",
+              "B": "B_S0_1"
+            }
+          }
+        ],
+        "keys": [
+          {
+            "id": "G1.pinion",
+            "method": {
+              "value": "C",
+              "unit": "-",
+              "source": "DIN 6892 方法 C（本库已接入）"
+            },
+            "d": {
+              "value": 20,
+              "unit": "mm",
+              "source": "Same authored shaft/key diameter"
+            },
+            "h": {
+              "value": "din6885_1_table",
+              "unit": "-",
+              "source": "DIN 6885-1 表1 按 d 查（M31 键 6×6 为 synthetic，不采用）"
+            },
+            "t1": {
+              "value": "din6885_1_table",
+              "unit": "-",
+              "source": "DIN 6885-1 表1 按 d 查"
+            },
+            "l_tr": {
+              "value": 24.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "i": {
+              "value": 1,
+              "unit": "1",
+              "source": "data/m31/golden/C001/derived-candidate.json connections.G1.pinion 单键"
+            },
+            "torque_reversal": {
+              "value": false,
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "Re_shaft": {
+              "value": 800.0,
+              "unit": "MPa",
+              "source": "测试演示输入"
+            },
+            "Re_hub": {
+              "value": 355.0,
+              "unit": "MPa",
+              "source": "测试演示输入"
+            },
+            "Re_key": {
+              "value": 350.0,
+              "unit": "MPa",
+              "source": "测试演示输入"
+            },
+            "hub_brittle": {
+              "value": false,
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "Rm_hub": {
+              "value": "not_applicable",
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "K_A": {
+              "from_design": "K_A",
+              "unit": "1",
+              "source": "设计模型 K_A（M31 application_factor 1,25）"
+            },
+            "M_tnenn": {
+              "from_design": "T_1",
+              "unit": "N*mm",
+              "source": "设计模型 T_1"
+            },
+            "M_tmax": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "峰值扭矩未给"
+            },
+            "f_L": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "不做峰值核算"
+            },
+            "M_tRmin": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "不做峰值核算"
+            }
+          }
+        ]
+      },
+      {
+        "id": "strong",
+        "source": "test_sys_design_check._demo_system_input (authored probe)",
+        "shafts": [
+          {
+            "id": "S0",
+            "note": "C001 G1 小轮轴（M31 S0）",
+            "x_A": {
+              "value": 0.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "x_B": {
+              "value": 100.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "axial_support": {
+              "value": "A",
+              "unit": "-",
+              "source": "data/m31/golden/C001/derived-candidate.json supports.S0[0].axial_role=locating"
+            },
+            "segments": [
+              {
+                "x0": {
+                  "value": 0.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "x1": {
+                  "value": 150.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "d": {
+                  "value": 34,
+                  "unit": "mm",
+                  "source": "Authored finite shaft diameter probe"
+                },
+                "d_i": {
+                  "value": 0.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                }
+              }
+            ],
+            "loads": [
+              {
+                "kind": "mesh",
+                "name": "G1 啮合",
+                "x": {
+                  "value": 50.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "F_tw": {
+                  "from_design": "F_t",
+                  "unit": "N",
+                  "source": "x1 + x2 = 0 → 工作节圆 = 分度圆，F_tw = F_t（设计模型 load.F_t）"
+                },
+                "d_w": {
+                  "from_design": "d_1",
+                  "unit": "mm",
+                  "source": "x1 + x2 = 0 → d_w1 = d_1"
+                },
+                "alpha_wt_deg": {
+                  "from_design": "alpha_wt",
+                  "unit": "deg",
+                  "source": "设计模型 α_wt"
+                },
+                "beta_w_deg": {
+                  "from_design": "beta",
+                  "unit": "deg",
+                  "source": "直齿 β = 0"
+                },
+                "theta_deg": {
+                  "value": 0.0,
+                  "unit": "deg",
+                  "source": "data/m31/golden/C001/derived-candidate.json mesh_force_frames.G1 radial=[1,0,0]；轴承径向合力与合成弯矩与该方位无关"
+                },
+                "tangential_sign": {
+                  "value": -1,
+                  "unit": "1",
+                  "source": "小轮主动（与 tests/test_m36_shaft_line.py 同号约定）"
+                },
+                "axial_sign": {
+                  "value": 1,
+                  "unit": "1",
+                  "source": "直齿无轴向力，符号不影响结果"
+                }
+              },
+              {
+                "kind": "torque",
+                "name": "S0 输入扭矩",
+                "x": {
+                  "value": 140.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "T": {
+                  "from_design": "T_1",
+                  "unit": "N*mm",
+                  "source": "设计模型 T_1（M31 input.torque_Nm=25）"
+                }
+              }
+            ],
+            "sections": [
+              {
+                "name": "S2",
+                "x": {
+                  "value": 55.0,
+                  "unit": "mm",
+                  "source": "测试演示输入"
+                },
+                "stress_state": {
+                  "value": "rotating_shaft_stationary_loads",
+                  "unit": "-",
+                  "source": "测试演示输入"
+                },
+                "checks": {
+                  "value": [
+                    "static"
+                  ],
+                  "unit": "-",
+                  "source": "测试演示输入"
+                },
+                "fatigue": {
+                  "value": "not_requested",
+                  "unit": "-",
+                  "source": "测试演示输入"
+                },
+                "static": {
+                  "load_factor": {
+                    "value": 2.0,
+                    "unit": "1",
+                    "source": "测试演示输入"
+                  },
+                  "S_min": {
+                    "value": 1.2,
+                    "unit": "1",
+                    "source": "测试演示输入"
+                  },
+                  "sigma_zdFK": {
+                    "value": 700.0,
+                    "unit": "MPa",
+                    "source": "测试演示输入"
+                  },
+                  "sigma_bFK": {
+                    "value": 800.0,
+                    "unit": "MPa",
+                    "source": "测试演示输入"
+                  },
+                  "tau_tFK": {
+                    "value": 400.0,
+                    "unit": "MPa",
+                    "source": "测试演示输入"
+                  }
+                }
+              }
+            ],
+            "bearings": {
+              "A": "B_S0_0",
+              "B": "B_S0_1"
+            }
+          }
+        ],
+        "keys": [
+          {
+            "id": "G1.pinion",
+            "method": {
+              "value": "C",
+              "unit": "-",
+              "source": "DIN 6892 方法 C（本库已接入）"
+            },
+            "d": {
+              "value": 34,
+              "unit": "mm",
+              "source": "Same authored shaft/key diameter"
+            },
+            "h": {
+              "value": "din6885_1_table",
+              "unit": "-",
+              "source": "DIN 6885-1 表1 按 d 查（M31 键 6×6 为 synthetic，不采用）"
+            },
+            "t1": {
+              "value": "din6885_1_table",
+              "unit": "-",
+              "source": "DIN 6885-1 表1 按 d 查"
+            },
+            "l_tr": {
+              "value": 24.0,
+              "unit": "mm",
+              "source": "测试演示输入"
+            },
+            "i": {
+              "value": 1,
+              "unit": "1",
+              "source": "data/m31/golden/C001/derived-candidate.json connections.G1.pinion 单键"
+            },
+            "torque_reversal": {
+              "value": false,
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "Re_shaft": {
+              "value": 800.0,
+              "unit": "MPa",
+              "source": "测试演示输入"
+            },
+            "Re_hub": {
+              "value": 355.0,
+              "unit": "MPa",
+              "source": "测试演示输入"
+            },
+            "Re_key": {
+              "value": 350.0,
+              "unit": "MPa",
+              "source": "测试演示输入"
+            },
+            "hub_brittle": {
+              "value": false,
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "Rm_hub": {
+              "value": "not_applicable",
+              "unit": "-",
+              "source": "测试演示输入"
+            },
+            "K_A": {
+              "from_design": "K_A",
+              "unit": "1",
+              "source": "设计模型 K_A（M31 application_factor 1,25）"
+            },
+            "M_tnenn": {
+              "from_design": "T_1",
+              "unit": "N*mm",
+              "source": "设计模型 T_1"
+            },
+            "M_tmax": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "峰值扭矩未给"
+            },
+            "f_L": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "不做峰值核算"
+            },
+            "M_tRmin": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "不做峰值核算"
+            }
+          }
+        ]
+      }
+    ],
+    "bearing": [
+      {
+        "id": "low",
+        "source": "C001 bearing method + authored capacity probe",
+        "bearings": {
+          "B_S0_0": {
+            "bearing_kind": {
+              "value": "radial_ball",
+              "unit": "-",
+              "source": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）"
+            },
+            "C_r": {
+              "value": 2000,
+              "unit": "N",
+              "source": "Authored finite capacity probe; not a catalogue selection"
+            },
+            "C_0r": {
+              "value": 11200.0,
+              "unit": "N",
+              "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）"
+            },
+            "xy": {
+              "value": {
+                "relative_axial_load": null
+              },
+              "unit": "-",
+              "source": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷"
+            },
+            "n": {
+              "from_design": "n_1",
+              "unit": "rpm",
+              "source": "设计模型 n_1（M31 input.speed_rpm 900）"
+            },
+            "reliability_percent": {
+              "value": 90.0,
+              "unit": "%",
+              "source": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）"
+            },
+            "a_ISO_inputs": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "M31 只做 basic L10；κ、ec、Cu 未给"
+            },
+            "required_life_h": {
+              "value": 10000.0,
+              "unit": "h",
+              "source": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h"
+            }
+          },
+          "B_S0_1": {
+            "bearing_kind": {
+              "value": "radial_ball",
+              "unit": "-",
+              "source": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）"
+            },
+            "C_r": {
+              "value": 2000,
+              "unit": "N",
+              "source": "Authored finite capacity probe; not a catalogue selection"
+            },
+            "C_0r": {
+              "value": 11200.0,
+              "unit": "N",
+              "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）"
+            },
+            "xy": {
+              "value": {
+                "relative_axial_load": null
+              },
+              "unit": "-",
+              "source": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷"
+            },
+            "n": {
+              "from_design": "n_1",
+              "unit": "rpm",
+              "source": "设计模型 n_1（M31 input.speed_rpm 900）"
+            },
+            "reliability_percent": {
+              "value": 90.0,
+              "unit": "%",
+              "source": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）"
+            },
+            "a_ISO_inputs": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "M31 只做 basic L10；κ、ec、Cu 未给"
+            },
+            "required_life_h": {
+              "value": 10000.0,
+              "unit": "h",
+              "source": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h"
+            }
+          }
+        }
+      },
+      {
+        "id": "original",
+        "source": "C001 bearing method + authored capacity probe",
+        "bearings": {
+          "B_S0_0": {
+            "bearing_kind": {
+              "value": "radial_ball",
+              "unit": "-",
+              "source": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）"
+            },
+            "C_r": {
+              "value": 35000,
+              "unit": "N",
+              "source": "Authored finite capacity probe; not a catalogue selection"
+            },
+            "C_0r": {
+              "value": 11200.0,
+              "unit": "N",
+              "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）"
+            },
+            "xy": {
+              "value": {
+                "relative_axial_load": null
+              },
+              "unit": "-",
+              "source": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷"
+            },
+            "n": {
+              "from_design": "n_1",
+              "unit": "rpm",
+              "source": "设计模型 n_1（M31 input.speed_rpm 900）"
+            },
+            "reliability_percent": {
+              "value": 90.0,
+              "unit": "%",
+              "source": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）"
+            },
+            "a_ISO_inputs": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "M31 只做 basic L10；κ、ec、Cu 未给"
+            },
+            "required_life_h": {
+              "value": 10000.0,
+              "unit": "h",
+              "source": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h"
+            }
+          },
+          "B_S0_1": {
+            "bearing_kind": {
+              "value": "radial_ball",
+              "unit": "-",
+              "source": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）"
+            },
+            "C_r": {
+              "value": 35000,
+              "unit": "N",
+              "source": "Authored finite capacity probe; not a catalogue selection"
+            },
+            "C_0r": {
+              "value": 11200.0,
+              "unit": "N",
+              "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）"
+            },
+            "xy": {
+              "value": {
+                "relative_axial_load": null
+              },
+              "unit": "-",
+              "source": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷"
+            },
+            "n": {
+              "from_design": "n_1",
+              "unit": "rpm",
+              "source": "设计模型 n_1（M31 input.speed_rpm 900）"
+            },
+            "reliability_percent": {
+              "value": 90.0,
+              "unit": "%",
+              "source": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）"
+            },
+            "a_ISO_inputs": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "M31 只做 basic L10；κ、ec、Cu 未给"
+            },
+            "required_life_h": {
+              "value": 10000.0,
+              "unit": "h",
+              "source": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h"
+            }
+          }
+        }
+      },
+      {
+        "id": "tie",
+        "source": "C001 bearing method + authored capacity probe",
+        "bearings": {
+          "B_S0_0": {
+            "bearing_kind": {
+              "value": "radial_ball",
+              "unit": "-",
+              "source": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）"
+            },
+            "C_r": {
+              "value": 35000,
+              "unit": "N",
+              "source": "Authored finite capacity probe; not a catalogue selection"
+            },
+            "C_0r": {
+              "value": 11200.0,
+              "unit": "N",
+              "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）"
+            },
+            "xy": {
+              "value": {
+                "relative_axial_load": null
+              },
+              "unit": "-",
+              "source": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷"
+            },
+            "n": {
+              "from_design": "n_1",
+              "unit": "rpm",
+              "source": "设计模型 n_1（M31 input.speed_rpm 900）"
+            },
+            "reliability_percent": {
+              "value": 90.0,
+              "unit": "%",
+              "source": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）"
+            },
+            "a_ISO_inputs": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "M31 只做 basic L10；κ、ec、Cu 未给"
+            },
+            "required_life_h": {
+              "value": 10000.0,
+              "unit": "h",
+              "source": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h"
+            }
+          },
+          "B_S0_1": {
+            "bearing_kind": {
+              "value": "radial_ball",
+              "unit": "-",
+              "source": "data/m31/golden/C001/derived-candidate.json bearing_catalog.6206-RZ.family=ball（深沟球轴承）"
+            },
+            "C_r": {
+              "value": 35000,
+              "unit": "N",
+              "source": "Authored finite capacity probe; not a catalogue selection"
+            },
+            "C_0r": {
+              "value": 11200.0,
+              "unit": "N",
+              "source": "data/m31/golden/C001/derived-candidate.json system_boundary.bearing_catalog.6206-RZ.static_rating_N（SKF 产品页人工转录）"
+            },
+            "xy": {
+              "value": {
+                "relative_axial_load": null
+              },
+              "unit": "-",
+              "source": "直齿无轴向力：F_a = 0 时不需要相对轴向载荷"
+            },
+            "n": {
+              "from_design": "n_1",
+              "unit": "rpm",
+              "source": "设计模型 n_1（M31 input.speed_rpm 900）"
+            },
+            "reliability_percent": {
+              "value": 90.0,
+              "unit": "%",
+              "source": "data/m31/golden/C001/derived-candidate.json 轴承筛查方法为 basic L10（90 % 可靠度）"
+            },
+            "a_ISO_inputs": {
+              "value": "not_requested",
+              "unit": "-",
+              "source": "M31 只做 basic L10；κ、ec、Cu 未给"
+            },
+            "required_life_h": {
+              "value": 10000.0,
+              "unit": "h",
+              "source": "data/m31/golden/C001/derived-candidate.json engineering.operating.design_life_h"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

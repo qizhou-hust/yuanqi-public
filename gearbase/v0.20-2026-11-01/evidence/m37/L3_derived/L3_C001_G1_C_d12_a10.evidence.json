@@ -1,0 +1,1395 @@
+{
+  "id": "L3_C001_G1_C_d12_a10",
+  "source_sha256": "2d1299e4548bb8b282e6c5df1b22d95c2a88a3314ad45574b9e4ecdd7b848383",
+  "derived_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+  "output_only_exact_reversal": true,
+  "returncode": 0,
+  "wall_seconds": 147.03099999995902,
+  "prepared": {
+    "files": {
+      "inp": {
+        "path": "L3_C001_G1_C_d12_a10.inp",
+        "sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+        "missing": false
+      },
+      "metadata": {
+        "path": "L3_C001_G1_C_d12_a10.meta.json",
+        "sha256": "60d2fdda5fe780724e12ccdc8e75e6f43f08198c59cee8c91870da0f2f4318b3",
+        "missing": false
+      },
+      "includes": [],
+      "solver": {
+        "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+        "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "missing": false
+      }
+    },
+    "digest": "7b757a10428a57021d80155cc6d4fa5e0de65c9e2016e6084e6e2d1a27ef0cb5",
+    "utc": "2026-11-01T10:08:06.260113Z"
+  },
+  "prelaunch": {
+    "files": {
+      "inp": {
+        "path": "L3_C001_G1_C_d12_a10.inp",
+        "sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+        "missing": false
+      },
+      "metadata": {
+        "path": "L3_C001_G1_C_d12_a10.meta.json",
+        "sha256": "60d2fdda5fe780724e12ccdc8e75e6f43f08198c59cee8c91870da0f2f4318b3",
+        "missing": false
+      },
+      "includes": [],
+      "solver": {
+        "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+        "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "missing": false
+      }
+    },
+    "digest": "7b757a10428a57021d80155cc6d4fa5e0de65c9e2016e6084e6e2d1a27ef0cb5",
+    "utc": "2026-11-01T10:08:06.465478Z"
+  },
+  "post": {
+    "files": {
+      "inp": {
+        "path": "L3_C001_G1_C_d12_a10.inp",
+        "sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+        "missing": false
+      },
+      "metadata": {
+        "path": "L3_C001_G1_C_d12_a10.meta.json",
+        "sha256": "60d2fdda5fe780724e12ccdc8e75e6f43f08198c59cee8c91870da0f2f4318b3",
+        "missing": false
+      },
+      "includes": [],
+      "solver": {
+        "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+        "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "missing": false
+      }
+    },
+    "digest": "7b757a10428a57021d80155cc6d4fa5e0de65c9e2016e6084e6e2d1a27ef0cb5",
+    "utc": "2026-11-01T10:10:33.610619Z"
+  },
+  "identity_drift": [],
+  "deck_check": {
+    "version": "m37.step-state/1.0",
+    "profile": "m37-restricted-2d-static/1.0",
+    "pass": true,
+    "errors": [],
+    "error_count": 0,
+    "steps": [
+      {
+        "index": 1,
+        "line": 82942,
+        "procedure": "STATIC",
+        "period": 1.0,
+        "period_source": "data",
+        "bc_op_new": false,
+        "cload_op_new": false,
+        "bc_count": 373,
+        "cload_count": 0,
+        "bc_inherited_count": 372,
+        "outputs": []
+      },
+      {
+        "index": 2,
+        "line": 82948,
+        "procedure": "STATIC",
+        "period": 1.0,
+        "period_source": "data",
+        "bc_op_new": true,
+        "cload_op_new": false,
+        "bc_count": 372,
+        "cload_count": 1,
+        "bc_inherited_count": 0,
+        "outputs": [
+          "*NODE PRINT {'NSET': 'PMASTER'} ['U']",
+          "*NODE PRINT {'NSET': 'WBORE'} ['RF']",
+          "*CONTACT PRINT {'SLAVE': 'PFL', 'MASTER': 'WFL'} ['CDIS', 'CSTR', 'CF']",
+          "*CONTACT FILE {} ['CSTR']"
+        ]
+      }
+    ],
+    "total_time": 2.0,
+    "includes": [],
+    "input_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf"
+  },
+  "strict_read": {
+    "reader_version": "m37.ccx-strict-dat/1.1",
+    "status": "accepted",
+    "reasons": [],
+    "identity": {
+      "run_id": "L3_C001_G1_C_d12_a10",
+      "input_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+      "dat_sha256": "af4a987b82185a26016d4af45529a68f41eccdf5da11dd47e7f57b32dd1085ec",
+      "sta_sha256": "5f773739feb8ae49f3883355fb5fb0f02c296714556c73c39c96db2f71895a25"
+    },
+    "expected": {
+      "final_step": 2,
+      "total_time": 2.0
+    },
+    "final_state": {
+      "step": 2,
+      "increment": 4,
+      "total_time": 2.0,
+      "step_time": 1.0,
+      "sta_line": 10,
+      "sta_converged_rows": 8
+    },
+    "pstep": {
+      "step": 2,
+      "increment": 4,
+      "count": 4
+    },
+    "coverage_declaration": [
+      {
+        "id": "U@PMASTER",
+        "kind": "field",
+        "field": "displacements",
+        "region": "PMASTER",
+        "location": "node",
+        "components": [
+          "vx",
+          "vy",
+          "vz"
+        ],
+        "mode": "exact_keys",
+        "keys_ranges": [
+          [
+            5722,
+            5722
+          ]
+        ],
+        "declared_count": 1,
+        "declared_sha256": "16a082754f64a11cd75f4ddd0bef560bee8f16222a72a63d1b13983cdd73e442"
+      },
+      {
+        "id": "RF@WBORE",
+        "kind": "field",
+        "field": "forces",
+        "region": "WBORE",
+        "location": "node",
+        "components": [
+          "fx",
+          "fy",
+          "fz"
+        ],
+        "mode": "exact_keys",
+        "keys_ranges": [
+          [
+            16026,
+            16027
+          ],
+          [
+            16029,
+            16029
+          ],
+          [
+            16031,
+            16031
+          ],
+          [
+            18677,
+            18856
+          ]
+        ],
+        "declared_count": 184,
+        "declared_sha256": "0442f97ccbcd25c9170caf7e6c332dd2d57b21cfcd2ef7c7c1080533efa50180"
+      },
+      {
+        "id": "CDIS@PFL",
+        "kind": "field",
+        "field": "relative contact displacement",
+        "region": "ALL_CONTACT_ELEMENTS",
+        "location": "contact_row",
+        "components": [
+          "slave element+face",
+          "normal",
+          "tang1",
+          "tang2"
+        ],
+        "mode": "rows_within_faces",
+        "faces_by_type_side": {
+          "CPE6": {
+            "3": [
+              [
+                48,
+                48
+              ],
+              [
+                160,
+                160
+              ],
+              [
+                220,
+                220
+              ],
+              [
+                223,
+                223
+              ],
+              [
+                530,
+                530
+              ],
+              [
+                577,
+                577
+              ],
+              [
+                1113,
+                1113
+              ],
+              [
+                1139,
+                1139
+              ],
+              [
+                1267,
+                1267
+              ],
+              [
+                1580,
+                1580
+              ],
+              [
+                1585,
+                1585
+              ],
+              [
+                1594,
+                1594
+              ],
+              [
+                1599,
+                1599
+              ],
+              [
+                1604,
+                1604
+              ],
+              [
+                1613,
+                1613
+              ],
+              [
+                1616,
+                1616
+              ],
+              [
+                1623,
+                1623
+              ],
+              [
+                1630,
+                1630
+              ],
+              [
+                1634,
+                1634
+              ],
+              [
+                1707,
+                1707
+              ],
+              [
+                1786,
+                1786
+              ],
+              [
+                1881,
+                1881
+              ],
+              [
+                1883,
+                1883
+              ],
+              [
+                6372,
+                6372
+              ],
+              [
+                6386,
+                6386
+              ],
+              [
+                6398,
+                6398
+              ],
+              [
+                6406,
+                6406
+              ],
+              [
+                6430,
+                6459
+              ],
+              [
+                6469,
+                6476
+              ],
+              [
+                6577,
+                6577
+              ],
+              [
+                6579,
+                6579
+              ],
+              [
+                6616,
+                6616
+              ],
+              [
+                6667,
+                6667
+              ],
+              [
+                6669,
+                6669
+              ],
+              [
+                6673,
+                6673
+              ],
+              [
+                6706,
+                6706
+              ],
+              [
+                6818,
+                6818
+              ],
+              [
+                6879,
+                6879
+              ],
+              [
+                7045,
+                7045
+              ],
+              [
+                7051,
+                7051
+              ],
+              [
+                7097,
+                7097
+              ],
+              [
+                7187,
+                7187
+              ],
+              [
+                7245,
+                7245
+              ],
+              [
+                7282,
+                7282
+              ],
+              [
+                7371,
+                7371
+              ],
+              [
+                7407,
+                7407
+              ],
+              [
+                7420,
+                7420
+              ],
+              [
+                7513,
+                7513
+              ],
+              [
+                7534,
+                7534
+              ],
+              [
+                7578,
+                7578
+              ],
+              [
+                7585,
+                7586
+              ],
+              [
+                7690,
+                7690
+              ],
+              [
+                7787,
+                7787
+              ],
+              [
+                7792,
+                7793
+              ],
+              [
+                7808,
+                7808
+              ],
+              [
+                7820,
+                7820
+              ],
+              [
+                7830,
+                7830
+              ],
+              [
+                7854,
+                7854
+              ],
+              [
+                7856,
+                7859
+              ],
+              [
+                7861,
+                7867
+              ],
+              [
+                7869,
+                7869
+              ],
+              [
+                7871,
+                7874
+              ],
+              [
+                7876,
+                7887
+              ],
+              [
+                7889,
+                7891
+              ],
+              [
+                7893,
+                7893
+              ],
+              [
+                7895,
+                7896
+              ],
+              [
+                7910,
+                7913
+              ],
+              [
+                7932,
+                7932
+              ],
+              [
+                7934,
+                7934
+              ],
+              [
+                7938,
+                7938
+              ],
+              [
+                7945,
+                7945
+              ],
+              [
+                7950,
+                7950
+              ],
+              [
+                7958,
+                7958
+              ],
+              [
+                7983,
+                7986
+              ],
+              [
+                7988,
+                7990
+              ],
+              [
+                7997,
+                7997
+              ],
+              [
+                8002,
+                8004
+              ],
+              [
+                8009,
+                8009
+              ],
+              [
+                8016,
+                8018
+              ],
+              [
+                8028,
+                8029
+              ],
+              [
+                8036,
+                8037
+              ],
+              [
+                8045,
+                8046
+              ],
+              [
+                8056,
+                8057
+              ],
+              [
+                8068,
+                8069
+              ],
+              [
+                8079,
+                8080
+              ],
+              [
+                8085,
+                8086
+              ],
+              [
+                8095,
+                8095
+              ],
+              [
+                8099,
+                8100
+              ],
+              [
+                8136,
+                8138
+              ],
+              [
+                8148,
+                8148
+              ],
+              [
+                8155,
+                8155
+              ],
+              [
+                8193,
+                8213
+              ],
+              [
+                8246,
+                8246
+              ],
+              [
+                8259,
+                8260
+              ],
+              [
+                8283,
+                8299
+              ],
+              [
+                8350,
+                8351
+              ],
+              [
+                8388,
+                8388
+              ],
+              [
+                8395,
+                8395
+              ],
+              [
+                8413,
+                8413
+              ],
+              [
+                8419,
+                8419
+              ],
+              [
+                8446,
+                8446
+              ],
+              [
+                8482,
+                8482
+              ],
+              [
+                8485,
+                8485
+              ],
+              [
+                8489,
+                8489
+              ],
+              [
+                8525,
+                8526
+              ],
+              [
+                8639,
+                8639
+              ],
+              [
+                8699,
+                8699
+              ],
+              [
+                8735,
+                8735
+              ],
+              [
+                8751,
+                8751
+              ],
+              [
+                8777,
+                8777
+              ],
+              [
+                8779,
+                8779
+              ],
+              [
+                8876,
+                8876
+              ],
+              [
+                8989,
+                8989
+              ],
+              [
+                9015,
+                9015
+              ],
+              [
+                9241,
+                9241
+              ],
+              [
+                9282,
+                9282
+              ],
+              [
+                9633,
+                9633
+              ]
+            ]
+          }
+        },
+        "face_map_registered": {
+          "CPE6": {
+            "3": 5
+          }
+        },
+        "declared_count": 242,
+        "declared_sha256": "fd14ac6c602712761b967d2d89fac11c9c968e9e7fefe801859e7e8ff3af6326",
+        "coverage_unverifiable": true
+      },
+      {
+        "id": "CSTR@PFL",
+        "kind": "field",
+        "field": "contact stress",
+        "region": "ALL_CONTACT_ELEMENTS",
+        "location": "contact_row",
+        "components": [
+          "slave element+face",
+          "press",
+          "tang1",
+          "tang2"
+        ],
+        "mode": "rows_within_faces",
+        "faces_by_type_side": {
+          "CPE6": {
+            "3": [
+              [
+                48,
+                48
+              ],
+              [
+                160,
+                160
+              ],
+              [
+                220,
+                220
+              ],
+              [
+                223,
+                223
+              ],
+              [
+                530,
+                530
+              ],
+              [
+                577,
+                577
+              ],
+              [
+                1113,
+                1113
+              ],
+              [
+                1139,
+                1139
+              ],
+              [
+                1267,
+                1267
+              ],
+              [
+                1580,
+                1580
+              ],
+              [
+                1585,
+                1585
+              ],
+              [
+                1594,
+                1594
+              ],
+              [
+                1599,
+                1599
+              ],
+              [
+                1604,
+                1604
+              ],
+              [
+                1613,
+                1613
+              ],
+              [
+                1616,
+                1616
+              ],
+              [
+                1623,
+                1623
+              ],
+              [
+                1630,
+                1630
+              ],
+              [
+                1634,
+                1634
+              ],
+              [
+                1707,
+                1707
+              ],
+              [
+                1786,
+                1786
+              ],
+              [
+                1881,
+                1881
+              ],
+              [
+                1883,
+                1883
+              ],
+              [
+                6372,
+                6372
+              ],
+              [
+                6386,
+                6386
+              ],
+              [
+                6398,
+                6398
+              ],
+              [
+                6406,
+                6406
+              ],
+              [
+                6430,
+                6459
+              ],
+              [
+                6469,
+                6476
+              ],
+              [
+                6577,
+                6577
+              ],
+              [
+                6579,
+                6579
+              ],
+              [
+                6616,
+                6616
+              ],
+              [
+                6667,
+                6667
+              ],
+              [
+                6669,
+                6669
+              ],
+              [
+                6673,
+                6673
+              ],
+              [
+                6706,
+                6706
+              ],
+              [
+                6818,
+                6818
+              ],
+              [
+                6879,
+                6879
+              ],
+              [
+                7045,
+                7045
+              ],
+              [
+                7051,
+                7051
+              ],
+              [
+                7097,
+                7097
+              ],
+              [
+                7187,
+                7187
+              ],
+              [
+                7245,
+                7245
+              ],
+              [
+                7282,
+                7282
+              ],
+              [
+                7371,
+                7371
+              ],
+              [
+                7407,
+                7407
+              ],
+              [
+                7420,
+                7420
+              ],
+              [
+                7513,
+                7513
+              ],
+              [
+                7534,
+                7534
+              ],
+              [
+                7578,
+                7578
+              ],
+              [
+                7585,
+                7586
+              ],
+              [
+                7690,
+                7690
+              ],
+              [
+                7787,
+                7787
+              ],
+              [
+                7792,
+                7793
+              ],
+              [
+                7808,
+                7808
+              ],
+              [
+                7820,
+                7820
+              ],
+              [
+                7830,
+                7830
+              ],
+              [
+                7854,
+                7854
+              ],
+              [
+                7856,
+                7859
+              ],
+              [
+                7861,
+                7867
+              ],
+              [
+                7869,
+                7869
+              ],
+              [
+                7871,
+                7874
+              ],
+              [
+                7876,
+                7887
+              ],
+              [
+                7889,
+                7891
+              ],
+              [
+                7893,
+                7893
+              ],
+              [
+                7895,
+                7896
+              ],
+              [
+                7910,
+                7913
+              ],
+              [
+                7932,
+                7932
+              ],
+              [
+                7934,
+                7934
+              ],
+              [
+                7938,
+                7938
+              ],
+              [
+                7945,
+                7945
+              ],
+              [
+                7950,
+                7950
+              ],
+              [
+                7958,
+                7958
+              ],
+              [
+                7983,
+                7986
+              ],
+              [
+                7988,
+                7990
+              ],
+              [
+                7997,
+                7997
+              ],
+              [
+                8002,
+                8004
+              ],
+              [
+                8009,
+                8009
+              ],
+              [
+                8016,
+                8018
+              ],
+              [
+                8028,
+                8029
+              ],
+              [
+                8036,
+                8037
+              ],
+              [
+                8045,
+                8046
+              ],
+              [
+                8056,
+                8057
+              ],
+              [
+                8068,
+                8069
+              ],
+              [
+                8079,
+                8080
+              ],
+              [
+                8085,
+                8086
+              ],
+              [
+                8095,
+                8095
+              ],
+              [
+                8099,
+                8100
+              ],
+              [
+                8136,
+                8138
+              ],
+              [
+                8148,
+                8148
+              ],
+              [
+                8155,
+                8155
+              ],
+              [
+                8193,
+                8213
+              ],
+              [
+                8246,
+                8246
+              ],
+              [
+                8259,
+                8260
+              ],
+              [
+                8283,
+                8299
+              ],
+              [
+                8350,
+                8351
+              ],
+              [
+                8388,
+                8388
+              ],
+              [
+                8395,
+                8395
+              ],
+              [
+                8413,
+                8413
+              ],
+              [
+                8419,
+                8419
+              ],
+              [
+                8446,
+                8446
+              ],
+              [
+                8482,
+                8482
+              ],
+              [
+                8485,
+                8485
+              ],
+              [
+                8489,
+                8489
+              ],
+              [
+                8525,
+                8526
+              ],
+              [
+                8639,
+                8639
+              ],
+              [
+                8699,
+                8699
+              ],
+              [
+                8735,
+                8735
+              ],
+              [
+                8751,
+                8751
+              ],
+              [
+                8777,
+                8777
+              ],
+              [
+                8779,
+                8779
+              ],
+              [
+                8876,
+                8876
+              ],
+              [
+                8989,
+                8989
+              ],
+              [
+                9015,
+                9015
+              ],
+              [
+                9241,
+                9241
+              ],
+              [
+                9282,
+                9282
+              ],
+              [
+                9633,
+                9633
+              ]
+            ]
+          }
+        },
+        "face_map_registered": {
+          "CPE6": {
+            "3": 5
+          }
+        },
+        "declared_count": 242,
+        "declared_sha256": "fd14ac6c602712761b967d2d89fac11c9c968e9e7fefe801859e7e8ff3af6326",
+        "coverage_unverifiable": true
+      },
+      {
+        "id": "CF@PFL/WFL",
+        "kind": "statistics",
+        "slave": "PFL",
+        "master": "WFL",
+        "location": "statistics",
+        "mode": "statistics_parts",
+        "parts": [
+          "total surface force",
+          "center of gravity and mean normal",
+          "moment about the center of gravity",
+          "area normal shear"
+        ],
+        "declared_count": 4,
+        "declared_sha256": "57ddae22d76bb1591b4385dd37c0e2d7ac7cc6064ba68879e8bda70b4e52ce13"
+      }
+    ],
+    "fields": [
+      {
+        "id": "U@PMASTER",
+        "run_id": "L3_C001_G1_C_d12_a10",
+        "input_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "displacements",
+        "region": "PMASTER",
+        "location": "node",
+        "components": [
+          "vx",
+          "vy",
+          "vz"
+        ],
+        "header_line": 20785,
+        "header": "displacements (vx,vy,vz) for set PMASTER and time  0.2000000E+01",
+        "coverage_mode": "exact_keys",
+        "coverage_observed": {
+          "keys": 1
+        },
+        "values_sha256": "f8bbf67f6316d35eb15c852a3bb043de18ba29eabdb460fe0a290ad0a29832bf"
+      },
+      {
+        "id": "RF@WBORE",
+        "run_id": "L3_C001_G1_C_d12_a10",
+        "input_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "forces",
+        "region": "WBORE",
+        "location": "node",
+        "components": [
+          "fx",
+          "fy",
+          "fz"
+        ],
+        "header_line": 20789,
+        "header": "forces (fx,fy,fz) for set WBORE and time  0.2000000E+01",
+        "coverage_mode": "exact_keys",
+        "coverage_observed": {
+          "keys": 184
+        },
+        "values_sha256": "47cdbfcb2480fea5b25b141b7966d174b0f49bc0d1a6cd26394429f79be7da64"
+      },
+      {
+        "id": "CDIS@PFL",
+        "run_id": "L3_C001_G1_C_d12_a10",
+        "input_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "relative contact displacement",
+        "region": "ALL_CONTACT_ELEMENTS",
+        "location": "contact_row",
+        "components": [
+          "slave element+face",
+          "normal",
+          "tang1",
+          "tang2"
+        ],
+        "header_line": 20976,
+        "header": "relative contact displacement (slave element+face,normal,tang1,tang2) for all contact elements and time 0.2000000E+01",
+        "coverage_mode": "rows_within_faces",
+        "coverage_observed": {
+          "rows": 4702,
+          "distinct_faces": 25,
+          "declared_faces": 242,
+          "faces_observed": [
+            5
+          ],
+          "face_mapping": "FACE_REGISTRY（实测登记，非手册条文）",
+          "coverage_unverifiable": true,
+          "note": ".dat 只打印活跃接触行；行缺失或冲突重复行无法由本读取器发现，依赖这些行的量须独立交叉核对"
+        },
+        "values_sha256": "bc104ef685b56e1286af25724503590f4fd5aacae061068f8d2b83039d51ef47"
+      },
+      {
+        "id": "CSTR@PFL",
+        "run_id": "L3_C001_G1_C_d12_a10",
+        "input_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "contact stress",
+        "region": "ALL_CONTACT_ELEMENTS",
+        "location": "contact_row",
+        "components": [
+          "slave element+face",
+          "press",
+          "tang1",
+          "tang2"
+        ],
+        "header_line": 25681,
+        "header": "contact stress (slave element+face,press,tang1,tang2) for all contact elements and time 0.2000000E+01",
+        "coverage_mode": "rows_within_faces",
+        "coverage_observed": {
+          "rows": 4702,
+          "distinct_faces": 25,
+          "declared_faces": 242,
+          "faces_observed": [
+            5
+          ],
+          "face_mapping": "FACE_REGISTRY（实测登记，非手册条文）",
+          "coverage_unverifiable": true,
+          "note": ".dat 只打印活跃接触行；行缺失或冲突重复行无法由本读取器发现，依赖这些行的量须独立交叉核对"
+        },
+        "values_sha256": "9a0def282a5b5e312125f5887fbf596aa85af05d2e9e92f9e380fd7e42363701"
+      },
+      {
+        "id": "CF@PFL/WFL",
+        "run_id": "L3_C001_G1_C_d12_a10",
+        "input_sha256": "eb169277cb99d9bb920608c25146a33d42458453b443cfcebbd4af2f132315bf",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "statistics",
+        "region": "PFL/WFL",
+        "location": "statistics",
+        "components": [
+          "total surface force",
+          "center of gravity and mean normal",
+          "moment about the center of gravity",
+          "area normal shear"
+        ],
+        "header_line": 30387,
+        "header": "statistics for slave set PFL, master set WFL and time  0.2000000E+01",
+        "coverage_mode": "statistics_parts",
+        "coverage_observed": {
+          "parts": [
+            "area normal shear",
+            "center of gravity and mean normal",
+            "moment about the center of gravity",
+            "total surface force"
+          ]
+        },
+        "values_sha256": "9a1b1723f561ba4ca136ba4634218e88a4615d8afcd91ccc6b2b6ab143db1467"
+      }
+    ],
+    "unrecognised_headers": [],
+    "orphan_rows": 0,
+    "time_rel_tol": 5.5e-06,
+    "solver_version": "2.23",
+    "registry_evidence": {
+      "ip": "lanes/F2/REPORT.md §3（ccx 2.21 实测）",
+      "face": "lanes/F2/REPORT.md §3（ccx 2.21：S1→3、S3→5）；F3/审查 G-02 ph10（ccx 2.23：S3→5，4038 行）",
+      "nature": "实测登记，非手册条文",
+      "ip_v017": {
+        "solver_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "probe_sha256": {
+          "L0_patch_CPE6_h0.inp": "cbc2e56fcda1db254e0ea159e8185152506856af5da20a9aa24f925da7e13d53",
+          "L0_patch_CPE6_h0.dat": "4c8112b394bca0cac239da0c87a4b14f4ff4eca4564b41d0b9fd59dc17584c6b",
+          "L0_patch_CPE6_h0.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d"
+        }
+      }
+    }
+  },
+  "extracted": {
+    "theta_rad": 0.00019195775,
+    "delta_LOA_um": 3.6076256235533246,
+    "mesh_stiffness_N_per_mm_um": 12.290837560954103,
+    "p_max_MPa": 604.7065,
+    "contact_normal_force_rel_err": 2.66003714982726e-05,
+    "wheel_torque_rel_err": 5.378108662762315e-05
+  },
+  "warnings": [],
+  "contact_crosscheck": {
+    "version": "m37.contact-crosscheck/1.0",
+    "entries": [
+      {
+        "quantity": "p_max_MPa",
+        "dat_value": 604.7065,
+        "dat_source": "strict CSTR@PFL",
+        "independent_source": "frd_cpress_final_pstep",
+        "independent_value": 604.503,
+        "frd_nodes": 55056,
+        "frd_sha256": "762599564fdd8588aa1548fd745160ab68316088dfeedd417b1a9662e6b7b19b",
+        "state": [
+          2,
+          4
+        ]
+      }
+    ]
+  }
+}

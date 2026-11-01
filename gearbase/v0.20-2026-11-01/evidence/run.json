@@ -1,0 +1,22 @@
+{
+  "schema": "gearbase.v020-delivery-run/1",
+  "version": "0.20",
+  "headless": true,
+  "mouse_used": false,
+  "baseline_commit": "c408db0ace0d9b38e37e0d1f5ba6b0e7c3e7e169",
+  "functional_ci_commit": "3b27cdfd6c371616384258a5fcd09eeac4de90bc",
+  "ci_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41298492209",
+  "new_gate": "M33 example7/8 user-scoped numerical geometry gate",
+  "new_whole_milestone_closed": false,
+  "new_KISSsoft_run": false,
+  "historical_KISSsoft_reference_version": "2026",
+  "solver": "CalculiX2.23",
+  "solver_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+  "canonical_L2_solved_jobs": 42,
+  "L2_points_passed": 9,
+  "L2_points_total": 14,
+  "L3_successful_meshes": 3,
+  "derived_force_moment_controls": 2,
+  "L3_qualification": "not_granted",
+  "Claude_real_client": "deferred_by_user"
+}

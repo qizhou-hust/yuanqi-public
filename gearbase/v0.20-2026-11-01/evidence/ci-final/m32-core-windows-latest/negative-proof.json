@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "geometry",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "report": {
+        "schema": "gearbase.architecture-gate/1",
+        "passed": false,
+        "files_checked": 1,
+        "l2_owners": [
+          "gear",
+          "system"
+        ],
+        "violations": [
+          {
+            "path": "gearmath/product/bad.py",
+            "line": 2,
+            "rule": "formula-outside-l2",
+            "detail": "m_n * z1"
+          }
+        ]
+      }
+    },
+    {
+      "case": "strength",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "report": {
+        "schema": "gearbase.architecture-gate/1",
+        "passed": false,
+        "files_checked": 1,
+        "l2_owners": [
+          "gear",
+          "system"
+        ],
+        "violations": [
+          {
+            "path": "gearmath/tools/bad.py",
+            "line": 1,
+            "rule": "formula-outside-l2",
+            "detail": "(F_t / (b * d_1)) ** 0.5"
+          },
+          {
+            "path": "gearmath/tools/bad.py",
+            "line": 1,
+            "rule": "formula-outside-l2",
+            "detail": "F_t / (b * d_1)"
+          },
+          {
+            "path": "gearmath/tools/bad.py",
+            "line": 1,
+            "rule": "formula-outside-l2",
+            "detail": "Z_H * (F_t / (b * d_1)) ** 0.5"
+          },
+          {
+            "path": "gearmath/tools/bad.py",
+            "line": 1,
+            "rule": "formula-outside-l2",
+            "detail": "b * d_1"
+          },
+          {
+            "path": "gearmath/tools/bad.py",
+            "line": 1,
+            "rule": "formula-outside-l2",
+            "detail": "sigma_H = Z_H * (F_t / (b * d_1)) ** 0.5"
+          }
+        ]
+      }
+    },
+    {
+      "case": "optimizer",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "report": {
+        "schema": "gearbase.architecture-gate/1",
+        "passed": false,
+        "files_checked": 1,
+        "l2_owners": [
+          "gear",
+          "system"
+        ],
+        "violations": [
+          {
+            "path": "gearmath/kernel/new_optimizer.py",
+            "line": 1,
+            "rule": "kernel-domain-code",
+            "detail": "teeth"
+          },
+          {
+            "path": "gearmath/kernel/new_optimizer.py",
+            "line": 2,
+            "rule": "formula-outside-l2",
+            "detail": "teeth * 2"
+          },
+          {
+            "path": "gearmath/kernel/new_optimizer.py",
+            "line": 2,
+            "rule": "kernel-domain-code",
+            "detail": "teeth"
+          }
+        ]
+      }
+    },
+    {
+      "case": "generic",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "report": {
+        "schema": "gearbase.architecture-gate/1",
+        "passed": true,
+        "files_checked": 1,
+        "l2_owners": [
+          "gear",
+          "system"
+        ],
+        "violations": []
+      }
+    }
+  ],
+  "fixture_exit_code": 0,
+  "gate": "negative-proof",
+  "seconds": 0.547
+}

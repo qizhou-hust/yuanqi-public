@@ -1,0 +1,56 @@
+{
+  "conclusion": null,
+  "independent_of_author": null,
+  "issues": [
+    {
+      "closure_evidence": null,
+      "disposition": null,
+      "id": "G1",
+      "issue": "G1: audited tooth_authority rejects nonzero shift; shifted helical flank/root/cutter envelope absent"
+    },
+    {
+      "closure_evidence": null,
+      "disposition": null,
+      "id": "G2",
+      "issue": "G2: DIN 3961:1978 grade 6 retained; ISO 1328 grade/requirements not authorized"
+    },
+    {
+      "closure_evidence": null,
+      "disposition": null,
+      "id": "G3",
+      "issue": "G3: bore/hub/keyway, datum scheme, fits, dimensional tolerances and surface finish unspecified"
+    },
+    {
+      "closure_evidence": null,
+      "disposition": null,
+      "id": "G4",
+      "issue": "G4: material/heat-treatment manufacturing specification and inspection acceptance need approval"
+    },
+    {
+      "closure_evidence": null,
+      "disposition": null,
+      "id": "G5",
+      "issue": "G5: helix hand and coordinate convention not explicit in source; no hand inferred from absolute beta"
+    },
+    {
+      "closure_evidence": null,
+      "disposition": null,
+      "id": "G6",
+      "issue": "G6: measurement span k and ball diameter not evidenced; Wk/MdK inspection plan pending"
+    },
+    {
+      "closure_evidence": null,
+      "disposition": null,
+      "id": "G7",
+      "issue": "G7: external process reviewer, issues closure and signature absent"
+    }
+  ],
+  "organization": null,
+  "review_date": null,
+  "reviewer_name": null,
+  "schema": "gearbase.external-process-review-form/1",
+  "signature": null,
+  "source_id": "K02-helical",
+  "source_sha256": "3e9571540e9ac2d680067cbdd1a03c17ca782b38b3f9711b42c80a8335d542aa",
+  "status": "unsigned_template"
+}

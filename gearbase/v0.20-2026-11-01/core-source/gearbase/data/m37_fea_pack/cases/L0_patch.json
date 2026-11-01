@@ -1,0 +1,48 @@
+{
+ "id": "L0",
+ "title": "补丁/单元检验 + 接触补丁",
+ "material": {
+  "E_MPa": 206000.0,
+  "nu": 0.3
+ },
+ "geometry": {
+  "L_mm": 10.0,
+  "H_mm": 4.0
+ },
+ "mesh": {
+  "h_mm": [
+   2.0,
+   1.2,
+   0.7
+  ],
+  "elements": [
+   "CPE6",
+   "CPE8"
+  ]
+ },
+ "load": {
+  "sigma_MPa": 100.0
+ },
+ "plane": "plane_strain",
+ "thickness_mm": 1.0,
+ "contact_patch": {
+  "material": {
+   "E_MPa": 206000.0,
+   "nu": 0.3
+  },
+  "geometry": {
+   "W_mm": 10.0,
+   "H_mm": 2.0
+  },
+  "mesh": {
+   "h_mm": [
+    1.0,
+    0.6
+   ]
+  },
+  "load": {
+   "pressure_MPa": 50.0
+  },
+  "penalty_alpha": 10.0
+ }
+}

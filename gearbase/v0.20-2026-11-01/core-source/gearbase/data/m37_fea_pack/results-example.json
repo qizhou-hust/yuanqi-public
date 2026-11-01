@@ -1,0 +1,2362 @@
+{
+ "schema": "m37.fea-results/v1",
+ "pack_version": "M37-FEA-pack 1.0 (2026-10-29)",
+ "generated_utc": "2026-10-29T20:00:00Z",
+ "mode": "full",
+ "_note": "伪造示例（节选：L2 只保留 P01、L3 只保留 2 个相位）。extracted 为合成数值，仅用于说明回传格式，不是 FE 结果。完整回传含全部 82 个作业。",
+ "machine": {
+  "platform": "Windows-10-10.0.19045-SP0 (伪造)",
+  "machine": "AMD64",
+  "processor": "x86_64",
+  "cpu_count": 16,
+  "python": "3.11.9",
+  "hostname_sha8": "deadbeef",
+  "gmsh_version": "4.15.2"
+ },
+ "solver": {
+  "path": "C:/CalculiX/ccx_static.exe",
+  "version_output": "This is Version 2.22",
+  "version": "2.22",
+  "sha256": "82e677b1a20b3a43e72d0aaebf2757f64f591817cc31d4d022ebe8984c1275b3",
+  "threads": 4
+ },
+ "coord_supported": true,
+ "options": {
+  "threads": 4,
+  "timeout": 3600,
+  "mortar": true
+ },
+ "total_wall_s": 489.7,
+ "inputs_sha256": {
+  "cases/L0_patch.json": "5fb9c56405db4df29806d2e30b57aebaeeb2f2cd55403e4a6961730508518856",
+  "cases/L1_hertz.json": "bf33b78b2a64adb69d9929e562fab6427199366a6b04e82862410a21c3e7bdb0",
+  "cases/L2_yfs_matrix.json": "4daa76b03f55ffacd8ec177a64ade5b97a80f22f8ad86346ae2cd1fe08d2b4be",
+  "cases/L3_C001_G1.json": "eb51523e854d254629f402e8956343ebaa5cf81d92f436f5e37973cac8ee5d77",
+  "expected/L0_patch.json": "0fad0d336c35e1e9f2589878596cb942e227a9e3aa31b861e6918a972ff95e48",
+  "expected/L1_hertz.json": "fccfb81bfde53dcf87985383da5710b3643a1bb9ab6a35d5dda44e4fa77465fc",
+  "expected/L2_yfs_matrix.json": "f4b862b83b8b8d9006dcc10abf9f938b9a081ffdf352561c480c14f0a6cada7f",
+  "expected/L3_C001_G1.json": "7218f91af84687b8ab986041b2b9ce7c60f1f80102649e188b7fc2fa77cc288f",
+  "scripts/cases.py": "59baacb9325549174fbfd661f539bab81fa7337f035815b163d12049b962daeb",
+  "scripts/ccx_io.py": "2559f59d17cd8c336a8e92156432605b07be314a2881536d5c01b360a712ad6f",
+  "scripts/gear_geom.py": "82a6188b725230386f8b8a6a01b6579598fe3d1874809f9e282b2e5a41a28ef2",
+  "scripts/inp_writer.py": "6a346e8f0150968762d2ed4cb1aa42b5ae8ea1c0c427852899bcaa256682c6be",
+  "scripts/mesh_gmsh.py": "e14b9aa31afbac992dff657b34e837f419164b7dda0c371311bcf329a0059609",
+  "scripts/pack_results.py": "fdf47a5e747418d44e9cc4833cdbc01d1811af9606c4749ab01d967e837ff044",
+  "scripts/post.py": "d414686979b02694020f212778bc43ba3b4dca2916874c5e9c43752829b2478d",
+  "scripts/run_m37.py": "370456c87a5385e39c8cb66caad4f325c69bcb4e2a6accf23c8b3e8ffcdf8d91",
+  "scripts/selfcheck.py": "efb209e21b38bf42c97497a904cb0f7431a1ea06385681e26c82a89b09b23268",
+  "scripts/study.py": "6a70245f4140dbe132f0a56c96af0bf6201d7a312046df05e786f3210c535d2b"
+ },
+ "cases": [
+  {
+   "case_id": "L0",
+   "ladder_level": "L0",
+   "local_assessment": {
+    "pass": null,
+    "note": "示例省略"
+   }
+  },
+  {
+   "case_id": "L1",
+   "ladder_level": "L1",
+   "local_assessment": {
+    "pass": null,
+    "note": "示例省略"
+   }
+  },
+  {
+   "case_id": "L2",
+   "ladder_level": "L2",
+   "local_assessment": {
+    "pass": null,
+    "note": "示例省略"
+   }
+  },
+  {
+   "case_id": "L3",
+   "ladder_level": "L3",
+   "local_assessment": {
+    "pass": null,
+    "note": "示例省略"
+   }
+  }
+ ],
+ "jobs": [
+  {
+   "id": "L0_patch_CPE6_h0",
+   "case": "L0",
+   "group": "patch",
+   "tags": {
+    "elem": "CPE6",
+    "level": 0
+   },
+   "warnings": [],
+   "build_s": 0.01,
+   "h": 2.0,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 101,
+    "elements": 42,
+    "element_kinds": {
+     "T6": 42
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999923891,
+      "p01": 0.9999999999923891,
+      "median": 0.9999999999999974,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.803761279163226,
+      "p01": 0.803761279163226,
+      "median": 0.9695005867069622,
+      "n_below_0.2": 0
+     },
+     "n": 42,
+     "min": 0.9999999999923891
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "5f48d32e16ed6bcd5d462a397e2969883943c3b2c46e828680e48ffb66dac2a1",
+   "status": "solved",
+   "solve_s": 0.51,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.51,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "0e69bb96f9895873c86a3bcc7e975876c330a24867b5251693f7bd2d455da427",
+   "extracted": {
+    "disp_rel_err": 3e-08,
+    "stress_rel_err": 2e-07,
+    "force_balance_rel": 4e-07,
+    "coord_supported": true,
+    "ip_per_element": [
+     9
+    ]
+   }
+  },
+  {
+   "id": "L0_patch_CPE6_h1",
+   "case": "L0",
+   "group": "patch",
+   "tags": {
+    "elem": "CPE6",
+    "level": 1
+   },
+   "warnings": [],
+   "build_s": 0.02,
+   "h": 1.2,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 274,
+    "elements": 123,
+    "element_kinds": {
+     "T6": 123
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999920917,
+      "p01": 0.9999999999920917,
+      "median": 0.9999999999999964,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.6756510989681628,
+      "p01": 0.6756510989681628,
+      "median": 0.9663128900802438,
+      "n_below_0.2": 0
+     },
+     "n": 123,
+     "min": 0.9999999999920917
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "0ea66907ff7f5841775dafd3d146ba9237fc0b6f72a9d8e661c7a32de4516c22",
+   "status": "solved",
+   "solve_s": 0.53,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.53,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "6e730002ded6b308c3cfc4042b3a9cf3672a7b3cdd4b1fcd7d0058e8a2234c5b",
+   "extracted": {
+    "disp_rel_err": 3e-08,
+    "stress_rel_err": 2e-07,
+    "force_balance_rel": 4e-07,
+    "coord_supported": true,
+    "ip_per_element": [
+     9
+    ]
+   }
+  },
+  {
+   "id": "L0_patch_CPE6_h2",
+   "case": "L0",
+   "group": "patch",
+   "tags": {
+    "elem": "CPE6",
+    "level": 2
+   },
+   "warnings": [],
+   "build_s": 0.05,
+   "h": 0.7,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 717,
+    "elements": 336,
+    "element_kinds": {
+     "T6": 336
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.999999999993684,
+      "p01": 0.9999999999964457,
+      "median": 0.9999999999999952,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.8491399416152716,
+      "p01": 0.8621232655935455,
+      "median": 0.9886277439149992,
+      "n_below_0.2": 0
+     },
+     "n": 336,
+     "min": 0.999999999993684
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "a3b1ef2472f64c0ec14a5e47847df32e95c5b0a3945a0f1e244cfacbbe882f67",
+   "status": "solved",
+   "solve_s": 0.58,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.58,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "1b438d43cb6d3d48dbed2aa2ee4c012fc82054c948ad8611de0e394faca6a238",
+   "extracted": {
+    "disp_rel_err": 3e-08,
+    "stress_rel_err": 2e-07,
+    "force_balance_rel": 4e-07,
+    "coord_supported": true,
+    "ip_per_element": [
+     9
+    ]
+   }
+  },
+  {
+   "id": "L0_patch_CPE8_h0",
+   "case": "L0",
+   "group": "patch",
+   "tags": {
+    "elem": "CPE8",
+    "level": 0
+   },
+   "warnings": [],
+   "build_s": 0.01,
+   "h": 2.0,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE8"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 76,
+    "elements": 19,
+    "element_kinds": {
+     "Q8": 19
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.6260667721177179,
+      "p01": 0.6260667721177179,
+      "median": 0.8829772740181141,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.552176437944923,
+      "p01": 0.552176437944923,
+      "median": 0.865071384436211,
+      "n_below_0.2": 0
+     },
+     "n": 19,
+     "min": 0.6260667721177179
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "a9497fdf0507e2aa706df4c095ce3b5f0013751e5efde618b37be5d98b5561ca",
+   "status": "solved",
+   "solve_s": 0.5,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.5,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "9724205c1ac37108e5fd4e98581a136cf7082b3c564b0e2a2b758599a87d0286",
+   "extracted": {
+    "disp_rel_err": 3e-08,
+    "stress_rel_err": 2e-07,
+    "force_balance_rel": 4e-07,
+    "coord_supported": true,
+    "ip_per_element": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "L0_patch_CPE8_h1",
+   "case": "L0",
+   "group": "patch",
+   "tags": {
+    "elem": "CPE8",
+    "level": 1
+   },
+   "warnings": [],
+   "build_s": 0.02,
+   "h": 1.2,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE8"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 190,
+    "elements": 53,
+    "element_kinds": {
+     "Q8": 53
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.44666353381331886,
+      "p01": 0.44666353381331886,
+      "median": 0.862240141245951,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.5015742892552333,
+      "p01": 0.5015742892552333,
+      "median": 0.8375873399512415,
+      "n_below_0.2": 0
+     },
+     "n": 53,
+     "min": 0.44666353381331886
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "e59a5c453682e73b437faf5832c9ec08daa8570e0e8f51cd68cb3ff9e4b4861a",
+   "status": "solved",
+   "solve_s": 0.51,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.51,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "9c302d7de9a89b778109d18557b487b1632b6285c2b401e71843427d38e6a91f",
+   "extracted": {
+    "disp_rel_err": 3e-08,
+    "stress_rel_err": 2e-07,
+    "force_balance_rel": 4e-07,
+    "coord_supported": true,
+    "ip_per_element": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "L0_patch_CPE8_h2",
+   "case": "L0",
+   "group": "patch",
+   "tags": {
+    "elem": "CPE8",
+    "level": 2
+   },
+   "warnings": [],
+   "build_s": 0.03,
+   "h": 0.7,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE8"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 420,
+    "elements": 125,
+    "element_kinds": {
+     "Q8": 125
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.4959950305031479,
+      "p01": 0.4959950305031479,
+      "median": 0.924365730093912,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.4366610856139125,
+      "p01": 0.4366610856139125,
+      "median": 0.9335738802126952,
+      "n_below_0.2": 0
+     },
+     "n": 125,
+     "min": 0.4959950305031479
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "187e71df11c6b21384e338d165232ee7388a0bec8a07179e9149716ed02b1a5e",
+   "status": "solved",
+   "solve_s": 0.53,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.53,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "fae7b54485b3f2253323d59e0e334ce185f11df101ac9b39445a20b2a7dfa485",
+   "extracted": {
+    "disp_rel_err": 3e-08,
+    "stress_rel_err": 2e-07,
+    "force_balance_rel": 4e-07,
+    "coord_supported": true,
+    "ip_per_element": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "L0c_penalty_h0",
+   "case": "L0",
+   "group": "contact_patch",
+   "tags": {
+    "contact": "penalty",
+    "level": 0
+   },
+   "warnings": [],
+   "build_s": 0.01,
+   "h": 1.0,
+   "penalty": 2060000.0,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 322,
+    "elements": 132,
+    "element_kinds": {
+     "T6": 132
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999961504,
+      "p01": 0.9999999999961504,
+      "median": 0.9999999999999943,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.769904809542033,
+      "p01": 0.769904809542033,
+      "median": 0.9851438942439712,
+      "n_below_0.2": 0
+     },
+     "n": 132,
+     "min": 0.9999999999961504
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "4a1ab610363bbe3bcd58193af882b792cff466cb67eac8f7241f81d7281df825",
+   "status": "solved",
+   "solve_s": 0.53,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.53,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "5f0a4d5eeb3bf673b06d9de25132011c45deef86bc2eb7f9c166f4c22e964398",
+   "extracted": {
+    "pressure_rel_err": 1e-06,
+    "n_contact_points": 30,
+    "force_balance_rel": 1e-07,
+    "penetration_rel_err": 0.0001
+   }
+  },
+  {
+   "id": "L0c_penalty_h1",
+   "case": "L0",
+   "group": "contact_patch",
+   "tags": {
+    "contact": "penalty",
+    "level": 1
+   },
+   "warnings": [],
+   "build_s": 0.03,
+   "h": 0.6,
+   "penalty": 3433333.3333333335,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 796,
+    "elements": 348,
+    "element_kinds": {
+     "T6": 348
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999938258,
+      "p01": 0.999999999995353,
+      "median": 0.9999999999999939,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.6090927104086135,
+      "p01": 0.731682355843214,
+      "median": 0.9827361659812296,
+      "n_below_0.2": 0
+     },
+     "n": 348,
+     "min": 0.9999999999938258
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "94c21f65e0b19b2149b6d6e01c59005a19c66dcd8a78c5f8548afd0fd2a13a35",
+   "status": "solved",
+   "solve_s": 0.59,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.59,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "681f24344b275c320427f03ef0a4b562c8ac7af977daa64b737a229ccf4bc634",
+   "extracted": {
+    "pressure_rel_err": 1e-06,
+    "n_contact_points": 30,
+    "force_balance_rel": 1e-07,
+    "penetration_rel_err": 0.0001
+   }
+  },
+  {
+   "id": "L0c_mortar_h0",
+   "case": "L0",
+   "group": "contact_patch",
+   "tags": {
+    "contact": "mortar",
+    "level": 0
+   },
+   "warnings": [],
+   "build_s": 0.01,
+   "h": 1.0,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 322,
+    "elements": 132,
+    "element_kinds": {
+     "T6": 132
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999961504,
+      "p01": 0.9999999999961504,
+      "median": 0.9999999999999943,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.769904809542033,
+      "p01": 0.769904809542033,
+      "median": 0.9851438942439712,
+      "n_below_0.2": 0
+     },
+     "n": 132,
+     "min": 0.9999999999961504
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "2bdf7ec042047bdfca48a00b11c1b8f291a7be4327777811d280f89e219550f2",
+   "status": "solved",
+   "solve_s": 0.53,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.53,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "6eaa8a67910224b9da0ed57f77c6bbc750c25f95dd81a19bd3e187bc4c7266e3",
+   "extracted": {
+    "pressure_rel_err": 1e-06,
+    "n_contact_points": 30,
+    "force_balance_rel": 1e-07
+   }
+  },
+  {
+   "id": "L0c_mortar_h1",
+   "case": "L0",
+   "group": "contact_patch",
+   "tags": {
+    "contact": "mortar",
+    "level": 1
+   },
+   "warnings": [],
+   "build_s": 0.03,
+   "h": 0.6,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": null,
+   "mesh": {
+    "nodes": 796,
+    "elements": 348,
+    "element_kinds": {
+     "T6": 348
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999938258,
+      "p01": 0.999999999995353,
+      "median": 0.9999999999999939,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.6090927104086135,
+      "p01": 0.731682355843214,
+      "median": 0.9827361659812296,
+      "n_below_0.2": 0
+     },
+     "n": 348,
+     "min": 0.9999999999938258
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "9b8623f8384bacfe24602b0815d1fe3ef145fceb5ffde654f225487e6ed2c605",
+   "status": "solved",
+   "solve_s": 0.59,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 0.59,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "af81870f6b94ecde5da0fd791d36f7d66547caf6c307f237e11135b9e1e934eb",
+   "extracted": {
+    "pressure_rel_err": 1e-06,
+    "n_contact_points": 30,
+    "force_balance_rel": 1e-07
+   }
+  },
+  {
+   "id": "L1_penalty_d8_a10",
+   "case": "L1",
+   "group": "mesh",
+   "tags": {
+    "contact": "penalty",
+    "level": 0,
+    "alpha": 10.0
+   },
+   "warnings": [],
+   "build_s": 0.51,
+   "h": 0.009374587311745996,
+   "penalty": 219743006.43815005,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "UP_CONT",
+    "target": 0.009374587311745996,
+    "n": 24,
+    "max": 0.009260597826080085,
+    "median": 0.009260597817219145,
+    "max_over_target": 0.9878405862705992
+   },
+   "mesh": {
+    "nodes": 10958,
+    "elements": 5368,
+    "element_kinds": {
+     "T6": 5368
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999974165,
+      "p01": 0.9999999999999798,
+      "median": 0.9999999999999958,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.7310008514332225,
+      "p01": 0.8462132288590462,
+      "median": 0.9949329479642309,
+      "n_below_0.2": 0
+     },
+     "n": 5368,
+     "min": 0.9999999999974165
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "2ca6ac14cfe16ce5a9a1994f2f47518d9f46aa890d1ac468cc53aade53a68e7f",
+   "status": "solved",
+   "solve_s": 1.84,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 1.84,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "2e14496d7235edc2d649c7e809b07c2955c24d8c3232f495bf4a5765378565a0",
+   "extracted": {
+    "p_max_MPa": 826.1566254234281,
+    "contact_normal_force_rel_err": 2e-06,
+    "half_width_mm": 0.07754658624276288,
+    "half_width_method": "frd_nodal_ellipse_fit",
+    "reaction_rel_err": 1e-07,
+    "p_max_rel_err": -0.02674999999999994,
+    "half_width_rel_err": 0.03400000000000003
+   }
+  },
+  {
+   "id": "L1_penalty_d12_a10",
+   "case": "L1",
+   "group": "mesh",
+   "tags": {
+    "contact": "penalty",
+    "level": 1,
+    "alpha": 10.0
+   },
+   "warnings": [],
+   "build_s": 1.22,
+   "h": 0.00624972487449733,
+   "penalty": 329614509.6572251,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "UP_CONT",
+    "target": 0.00624972487449733,
+    "n": 36,
+    "max": 0.00623761125221118,
+    "median": 0.006237611226742577,
+    "max_over_target": 0.9980617351116396
+   },
+   "mesh": {
+    "nodes": 19794,
+    "elements": 9764,
+    "element_kinds": {
+     "T6": 9764
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999974143,
+      "p01": 0.9999999999999697,
+      "median": 0.9999999999999933,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.7235839247386505,
+      "p01": 0.8538821618750849,
+      "median": 0.9974689340267762,
+      "n_below_0.2": 0
+     },
+     "n": 9764,
+     "min": 0.9999999999974143
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "67506ed3a9200dd7c828f5538e961da4a2e11bb8dbdfd974a87bfb4560020874",
+   "status": "solved",
+   "solve_s": 2.94,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 2.94,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "b03ecf63b9a4f6d65e7865148a0c7a51a6c3af126c542eeafaf646e211ad43f7",
+   "extracted": {
+    "p_max_MPa": 836.6495243107022,
+    "contact_normal_force_rel_err": 2e-06,
+    "half_width_mm": 0.07629664126786341,
+    "half_width_method": "frd_nodal_ellipse_fit",
+    "reaction_rel_err": 1e-07,
+    "p_max_rel_err": -0.014388888888888896,
+    "half_width_rel_err": 0.017333333333333423
+   }
+  },
+  {
+   "id": "L1_penalty_d18_a10",
+   "case": "L1",
+   "group": "mesh",
+   "tags": {
+    "contact": "penalty",
+    "level": 2,
+    "alpha": 10.0
+   },
+   "warnings": [],
+   "build_s": 2.44,
+   "h": 0.004166483249664887,
+   "penalty": 494421764.4858376,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "UP_CONT",
+    "target": 0.004166483249664887,
+    "n": 54,
+    "max": 0.004109169894329927,
+    "median": 0.00410916987411263,
+    "max_over_target": 0.9862441891877113
+   },
+   "mesh": {
+    "nodes": 38142,
+    "elements": 18904,
+    "element_kinds": {
+     "T6": 18904
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999974121,
+      "p01": 0.9999999999999546,
+      "median": 0.9999999999999899,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.6611186659555883,
+      "p01": 0.8670203457467361,
+      "median": 0.9995111408764206,
+      "n_below_0.2": 0
+     },
+     "n": 18904,
+     "min": 0.9999999999974121
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "e477d9f0e67597f9420a938c4778b939fe83db5f51ba949477305e1baac55246",
+   "status": "solved",
+   "solve_s": 5.23,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 5.23,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "9e5c401f8b290dae704e77de691a2fff6e6ef9462a412d5b4360548b298db86f",
+   "extracted": {
+    "p_max_MPa": 841.5488304078814,
+    "contact_normal_force_rel_err": 2e-06,
+    "half_width_mm": 0.07574111016790809,
+    "half_width_method": "frd_nodal_ellipse_fit",
+    "reaction_rel_err": 1e-07,
+    "p_max_rel_err": -0.008617283950617338,
+    "half_width_rel_err": 0.009925925925925894
+   }
+  },
+  {
+   "id": "L1_penalty_d18_a5",
+   "case": "L1",
+   "group": "penalty",
+   "tags": {
+    "contact": "penalty",
+    "level": 2,
+    "alpha": 5.0
+   },
+   "warnings": [],
+   "build_s": 2.34,
+   "h": 0.004166483249664887,
+   "penalty": 247210882.2429188,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "UP_CONT",
+    "target": 0.004166483249664887,
+    "n": 54,
+    "max": 0.004109169894329927,
+    "median": 0.00410916987411263,
+    "max_over_target": 0.9862441891877113
+   },
+   "mesh": {
+    "nodes": 38142,
+    "elements": 18904,
+    "element_kinds": {
+     "T6": 18904
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999974121,
+      "p01": 0.9999999999999546,
+      "median": 0.9999999999999899,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.6611186659555883,
+      "p01": 0.8670203457467361,
+      "median": 0.9995111408764206,
+      "n_below_0.2": 0
+     },
+     "n": 18904,
+     "min": 0.9999999999974121
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "5e56e2101a9bd10da41a94eaf433a943f7480814940a47fa2bd6c35212ce4c7f",
+   "status": "solved",
+   "solve_s": 5.23,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 5.23,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "3368a9e8bc00ee4b3b90e146b1f0fe7178bf45ef24fc0c73f3d3114f614eb8ed",
+   "extracted": {
+    "p_max_MPa": 840.134057524204,
+    "contact_normal_force_rel_err": 2e-06,
+    "half_width_mm": 0.07574111016790809,
+    "half_width_method": "frd_nodal_ellipse_fit",
+    "reaction_rel_err": 1e-07,
+    "p_max_rel_err": -0.010283950617283932,
+    "half_width_rel_err": 0.009925925925925894
+   }
+  },
+  {
+   "id": "L1_penalty_d18_a20",
+   "case": "L1",
+   "group": "penalty",
+   "tags": {
+    "contact": "penalty",
+    "level": 2,
+    "alpha": 20.0
+   },
+   "warnings": [],
+   "build_s": 2.05,
+   "h": 0.004166483249664887,
+   "penalty": 988843528.9716752,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "UP_CONT",
+    "target": 0.004166483249664887,
+    "n": 54,
+    "max": 0.004109169894329927,
+    "median": 0.00410916987411263,
+    "max_over_target": 0.9862441891877113
+   },
+   "mesh": {
+    "nodes": 38142,
+    "elements": 18904,
+    "element_kinds": {
+     "T6": 18904
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999974121,
+      "p01": 0.9999999999999546,
+      "median": 0.9999999999999899,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.6611186659555883,
+      "p01": 0.8670203457467361,
+      "median": 0.9995111408764206,
+      "n_below_0.2": 0
+     },
+     "n": 18904,
+     "min": 0.9999999999974121
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "02bcb46bd5cf24eb5c0fc7066a2006bc753ebb9d9630ea5d189934764a4fc881",
+   "status": "solved",
+   "solve_s": 5.23,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 5.23,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "aacbf0202dcbcd62bfcdc10e4d80f0e4653a4a549dd0410a45b97d0e2259220f",
+   "extracted": {
+    "p_max_MPa": 842.2562168497201,
+    "contact_normal_force_rel_err": 2e-06,
+    "half_width_mm": 0.07574111016790809,
+    "half_width_method": "frd_nodal_ellipse_fit",
+    "reaction_rel_err": 1e-07,
+    "p_max_rel_err": -0.007783950617283986,
+    "half_width_rel_err": 0.009925925925925894
+   }
+  },
+  {
+   "id": "L1_mortar_d8",
+   "case": "L1",
+   "group": "mortar",
+   "tags": {
+    "contact": "mortar",
+    "level": 0
+   },
+   "warnings": [],
+   "build_s": 0.54,
+   "h": 0.009374587311745996,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "UP_CONT",
+    "target": 0.009374587311745996,
+    "n": 24,
+    "max": 0.009260597826080085,
+    "median": 0.009260597817219145,
+    "max_over_target": 0.9878405862705992
+   },
+   "mesh": {
+    "nodes": 10958,
+    "elements": 5368,
+    "element_kinds": {
+     "T6": 5368
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999974165,
+      "p01": 0.9999999999999798,
+      "median": 0.9999999999999958,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.7310008514332225,
+      "p01": 0.8462132288590462,
+      "median": 0.9949329479642309,
+      "n_below_0.2": 0
+     },
+     "n": 5368,
+     "min": 0.9999999999974165
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "b298595bf7a7792f19a299e4739ec74d532be584838907b9082afb2da6911aa5",
+   "status": "solver_failed",
+   "solve_s": 1.84,
+   "run": {
+    "ok": false,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 1.84,
+    "finished_marker": true,
+    "errors": [
+     "*ERROR in contact: (伪造) MORTAR not supported for 2D"
+    ],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   }
+  },
+  {
+   "id": "L1_mortar_d12",
+   "case": "L1",
+   "group": "mortar",
+   "tags": {
+    "contact": "mortar",
+    "level": 1
+   },
+   "warnings": [],
+   "build_s": 1.01,
+   "h": 0.00624972487449733,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "UP_CONT",
+    "target": 0.00624972487449733,
+    "n": 36,
+    "max": 0.00623761125221118,
+    "median": 0.006237611226742577,
+    "max_over_target": 0.9980617351116396
+   },
+   "mesh": {
+    "nodes": 19794,
+    "elements": 9764,
+    "element_kinds": {
+     "T6": 9764
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999974143,
+      "p01": 0.9999999999999697,
+      "median": 0.9999999999999933,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.7235839247386505,
+      "p01": 0.8538821618750849,
+      "median": 0.9974689340267762,
+      "n_below_0.2": 0
+     },
+     "n": 9764,
+     "min": 0.9999999999974143
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "962444d3e5c7b3f2916a72e8ef8c4e2c5a91365387e0ae82b98859b2adaa5357",
+   "status": "solver_failed",
+   "solve_s": 2.94,
+   "run": {
+    "ok": false,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 2.94,
+    "finished_marker": true,
+    "errors": [
+     "*ERROR in contact: (伪造) MORTAR not supported for 2D"
+    ],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   }
+  },
+  {
+   "id": "L1_mortar_d18",
+   "case": "L1",
+   "group": "mortar",
+   "tags": {
+    "contact": "mortar",
+    "level": 2
+   },
+   "warnings": [],
+   "build_s": 2.19,
+   "h": 0.004166483249664887,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "UP_CONT",
+    "target": 0.004166483249664887,
+    "n": 54,
+    "max": 0.004109169894329927,
+    "median": 0.00410916987411263,
+    "max_over_target": 0.9862441891877113
+   },
+   "mesh": {
+    "nodes": 38142,
+    "elements": 18904,
+    "element_kinds": {
+     "T6": 18904
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.9999999999974121,
+      "p01": 0.9999999999999546,
+      "median": 0.9999999999999899,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.6611186659555883,
+      "p01": 0.8670203457467361,
+      "median": 0.9995111408764206,
+      "n_below_0.2": 0
+     },
+     "n": 18904,
+     "min": 0.9999999999974121
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "45dbb2d385e06b55cad08cd314aac71e401de8ff898b9373db37b8cba44b2b94",
+   "status": "solver_failed",
+   "solve_s": 5.23,
+   "run": {
+    "ok": false,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 5.23,
+    "finished_marker": true,
+    "errors": [
+     "*ERROR in contact: (伪造) MORTAR not supported for 2D"
+    ],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   }
+  },
+  {
+   "id": "L2_P01_d8",
+   "case": "L2",
+   "group": "mesh",
+   "tags": {
+    "point": "P01",
+    "level": 0
+   },
+   "warnings": [],
+   "build_s": 0.48,
+   "h": 0.11988405787541395,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "T0_R_FIL",
+    "target": 0.11988405787541395,
+    "n": 13,
+    "max": 0.1109131261722511,
+    "median": 0.1109013824585647,
+    "max_over_target": 0.9251699361687804
+   },
+   "mesh": {
+    "nodes": 7889,
+    "elements": 3840,
+    "element_kinds": {
+     "T6": 3840
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.712799120439943,
+      "p01": 0.964583914194779,
+      "median": 0.9999999999999793,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.4082670971595909,
+      "p01": 0.8699624335076696,
+      "median": 0.9953677438188804,
+      "n_below_0.2": 0
+     },
+     "n": 3840,
+     "min": 0.712799120439943
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "b8f73f50bb907ecd1ec8455386a3a3410667d373efae5de387b10c404ab222ba",
+   "status": "solved",
+   "solve_s": 1.46,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 1.46,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "cbbb46db1d9edb45826a20a91da9de3c7ff6e82238dd9169a265407265eea8be",
+   "extracted": {
+    "sigma1_ip_max_MPa": 128.56261169705377,
+    "sigma_root_MPa": 135.32906494426712,
+    "YFS_FE": 2.7065812988853426,
+    "sigma_root_method": "gauss_point_polynomial_extrapolation_to_fillet_surface_no_nodal_smoothing",
+    "peak_offset_from_30deg_point_mm": 0.12,
+    "force_balance_rel": 3e-07,
+    "extrapolation": [
+     "linear/3pts"
+    ]
+   }
+  },
+  {
+   "id": "L2_P01_d12",
+   "case": "L2",
+   "group": "mesh",
+   "tags": {
+    "point": "P01",
+    "level": 1
+   },
+   "warnings": [],
+   "build_s": 0.55,
+   "h": 0.07992270525027596,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "T0_R_FIL",
+    "target": 0.07992270525027596,
+    "n": 19,
+    "max": 0.07588952137894334,
+    "median": 0.07588570885615183,
+    "max_over_target": 0.9495364445096945
+   },
+   "mesh": {
+    "nodes": 10237,
+    "elements": 5002,
+    "element_kinds": {
+     "T6": 5002
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.8187949035854569,
+      "p01": 0.9775795912904638,
+      "median": 0.999999999999975,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.48360684805469556,
+      "p01": 0.8778334693747787,
+      "median": 0.9948633569457351,
+      "n_below_0.2": 0
+     },
+     "n": 5002,
+     "min": 0.8187949035854569
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "622d7f0e39a1974c05fcad9b79832594e7429f6ebdfa5870f24fa26ba0d093ba",
+   "status": "solved",
+   "solve_s": 1.75,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 1.75,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "d24b57a99411e6989ebcac9e7f399e74d4ac94e4b5732b8754f121aa19474c6c",
+   "extracted": {
+    "sigma1_ip_max_MPa": 130.77159127986477,
+    "sigma_root_MPa": 137.65430661038397,
+    "YFS_FE": 2.7530861322076796,
+    "sigma_root_method": "gauss_point_polynomial_extrapolation_to_fillet_surface_no_nodal_smoothing",
+    "peak_offset_from_30deg_point_mm": 0.12,
+    "force_balance_rel": 3e-07,
+    "extrapolation": [
+     "linear/3pts"
+    ]
+   }
+  },
+  {
+   "id": "L2_P01_d18",
+   "case": "L2",
+   "group": "mesh",
+   "tags": {
+    "point": "P01",
+    "level": 2
+   },
+   "warnings": [],
+   "build_s": 0.8,
+   "h": 0.05328180350018398,
+   "penalty": null,
+   "pairs_in_contact": null,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "T0_R_FIL",
+    "target": 0.05328180350018398,
+    "n": 28,
+    "max": 0.051496948057905986,
+    "median": 0.05149585866019184,
+    "max_over_target": 0.9665015948217325
+   },
+   "mesh": {
+    "nodes": 13612,
+    "elements": 6673,
+    "element_kinds": {
+     "T6": 6673
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.7969335901563032,
+      "p01": 0.982743174277046,
+      "median": 0.9999999999999685,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.48360684805469556,
+      "p01": 0.8582890259723732,
+      "median": 0.9951666393850591,
+      "n_below_0.2": 0
+     },
+     "n": 6673,
+     "min": 0.7969335901563032
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "1b06a172ba95a533995ef2316abe18ed1489be62c04d29b4700fea74e7542b67",
+   "status": "solved",
+   "solve_s": 2.17,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 2.17,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "96af98443469a87778cab275178e4b8ca11eb0280941c6f5b360ffd787e990e1",
+   "extracted": {
+    "sigma1_ip_max_MPa": 131.7533599833363,
+    "sigma_root_MPa": 138.68774735088033,
+    "YFS_FE": 2.773754947017607,
+    "sigma_root_method": "gauss_point_polynomial_extrapolation_to_fillet_surface_no_nodal_smoothing",
+    "peak_offset_from_30deg_point_mm": 0.12,
+    "force_balance_rel": 3e-07,
+    "extrapolation": [
+     "linear/3pts"
+    ]
+   }
+  },
+  {
+   "id": "L3_C001_G1_C_d8_a10",
+   "case": "L3",
+   "group": "mesh",
+   "tags": {
+    "level": 0,
+    "alpha": 10.0,
+    "s": 0.0
+   },
+   "warnings": [],
+   "build_s": 4.63,
+   "h": 0.005854188524896888,
+   "penalty": 351884807.13239133,
+   "pairs_in_contact": 1,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "P_FLANK",
+    "target": 0.005854188524896888,
+    "n": 24,
+    "max": 0.005853794311644341,
+    "median": 0.005853783318816771,
+    "max_over_target": 0.999932661332844
+   },
+   "mesh": {
+    "nodes": 43041,
+    "elements": 20741,
+    "element_kinds": {
+     "T6": 20741
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.5135870587133853,
+      "p01": 0.8550460520952814,
+      "median": 0.9999999999999671,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.4238564901862785,
+      "p01": 0.6871719011128975,
+      "median": 0.9940834514148773,
+      "n_below_0.2": 0
+     },
+     "n": 20741,
+     "min": 0.5135870587133853
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "acb76b9d456126d601171d111d4b930a465ca72b5124caaf218af86f1aca3f2d",
+   "status": "solved",
+   "solve_s": 5.69,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 5.69,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "a2d7c458d1a1f83d5f39234724843db06d6f6769e5e5135edfefe6e5bc07a8fa",
+   "extracted": {
+    "theta_rad": 0.0001,
+    "delta_LOA_um": 3.090112758031877,
+    "mesh_stiffness_N_per_mm_um": 14.348990950168623,
+    "p_max_MPa": 603.2623412345795,
+    "contact_normal_force_rel_err": 3e-06,
+    "wheel_torque_rel_err": 2e-06
+   }
+  },
+  {
+   "id": "L3_C001_G1_C_d12_a10",
+   "case": "L3",
+   "group": "mesh",
+   "tags": {
+    "level": 1,
+    "alpha": 10.0,
+    "s": 0.0
+   },
+   "warnings": [],
+   "build_s": 5.54,
+   "h": 0.0039027923499312584,
+   "penalty": 527827210.69858706,
+   "pairs_in_contact": 1,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "P_FLANK",
+    "target": 0.0039027923499312584,
+    "n": 36,
+    "max": 0.00387903752718911,
+    "median": 0.00387902725800185,
+    "max_over_target": 0.9939133777530934
+   },
+   "mesh": {
+    "nodes": 55040,
+    "elements": 26714,
+    "element_kinds": {
+     "T6": 26714
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.5135870587133853,
+      "p01": 0.9213727563261691,
+      "median": 0.999999999999947,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.4238566305983249,
+      "p01": 0.714980780134035,
+      "median": 0.997899226959757,
+      "n_below_0.2": 0
+     },
+     "n": 26714,
+     "min": 0.5135870587133853
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "79027d7c5072ed448ff69ad3e24db7862162e55c51d3f03fc822afd9b16a65f4",
+   "status": "solved",
+   "solve_s": 7.18,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 7.18,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "dc4227764a3ccc8a76e3c464c86d021107d222724202fac262e9d6b6eeef28c1",
+   "extracted": {
+    "theta_rad": 0.0001,
+    "delta_LOA_um": 3.066440229361677,
+    "mesh_stiffness_N_per_mm_um": 14.459763335817573,
+    "p_max_MPa": 609.154075352794,
+    "contact_normal_force_rel_err": 3e-06,
+    "wheel_torque_rel_err": 2e-06
+   }
+  },
+  {
+   "id": "L3_C001_G1_C_d18_a10",
+   "case": "L3",
+   "group": "mesh",
+   "tags": {
+    "level": 2,
+    "alpha": 10.0,
+    "s": 0.0
+   },
+   "warnings": [],
+   "build_s": 7.2,
+   "h": 0.0026018615666208392,
+   "penalty": 791740816.0478805,
+   "pairs_in_contact": 1,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "P_FLANK",
+    "target": 0.0026018615666208392,
+    "n": 54,
+    "max": 0.0025966582397106575,
+    "median": 0.002596655668639516,
+    "max_over_target": 0.9980001522844509
+   },
+   "mesh": {
+    "nodes": 80711,
+    "elements": 39511,
+    "element_kinds": {
+     "T6": 39511
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.5135870587133853,
+      "p01": 0.972859424219211,
+      "median": 0.9999999999987815,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.4238566305802852,
+      "p01": 0.8051873526184594,
+      "median": 0.9997441361990431,
+      "n_below_0.2": 0
+     },
+     "n": 39511,
+     "min": 0.5135870587133853
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "f0632889196b46f621f156168f51277aa015d8c10dd3e7c33c7f2d614e35eb73",
+   "status": "solved",
+   "solve_s": 10.38,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 10.38,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "5f3d59ea14043f2552053469641c16553cf3009f97f8a8143914fc427b98c1f7",
+   "extracted": {
+    "theta_rad": 0.0001,
+    "delta_LOA_um": 3.0545935443965666,
+    "mesh_stiffness_N_per_mm_um": 14.515842895477391,
+    "p_max_MPa": 611.9433987517556,
+    "contact_normal_force_rel_err": 3e-06,
+    "wheel_torque_rel_err": 2e-06
+   }
+  },
+  {
+   "id": "L3_C001_G1_C_d18_a5",
+   "case": "L3",
+   "group": "penalty",
+   "tags": {
+    "level": 2,
+    "alpha": 5.0,
+    "s": 0.0
+   },
+   "warnings": [],
+   "build_s": 6.98,
+   "h": 0.0026018615666208392,
+   "penalty": 395870408.02394027,
+   "pairs_in_contact": 1,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "P_FLANK",
+    "target": 0.0026018615666208392,
+    "n": 54,
+    "max": 0.0025966582397106575,
+    "median": 0.002596655668639516,
+    "max_over_target": 0.9980001522844509
+   },
+   "mesh": {
+    "nodes": 80711,
+    "elements": 39511,
+    "element_kinds": {
+     "T6": 39511
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.5135870587133853,
+      "p01": 0.972859424219211,
+      "median": 0.9999999999987815,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.4238566305679675,
+      "p01": 0.8051873526184594,
+      "median": 0.9997441361990431,
+      "n_below_0.2": 0
+     },
+     "n": 39511,
+     "min": 0.5135870587133853
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "14572a44dcab3a7765ae4820691b82fda076facb34febaeaebc914a939d8d57e",
+   "status": "solved",
+   "solve_s": 10.38,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 10.38,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "f3d8c1e7a640389746561f2abeae39641d47899d4961118742543447a23d230a",
+   "extracted": {
+    "theta_rad": 0.0001,
+    "delta_LOA_um": 3.063125928598792,
+    "mesh_stiffness_N_per_mm_um": 14.475408792704473,
+    "p_max_MPa": 610.9187493398922,
+    "contact_normal_force_rel_err": 3e-06,
+    "wheel_torque_rel_err": 2e-06
+   }
+  },
+  {
+   "id": "L3_C001_G1_C_d18_a20",
+   "case": "L3",
+   "group": "penalty",
+   "tags": {
+    "level": 2,
+    "alpha": 20.0,
+    "s": 0.0
+   },
+   "warnings": [],
+   "build_s": 5.82,
+   "h": 0.0026018615666208392,
+   "penalty": 1583481632.095761,
+   "pairs_in_contact": 1,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "P_FLANK",
+    "target": 0.0026018615666208392,
+    "n": 54,
+    "max": 0.0025966582397106575,
+    "median": 0.002596655668639516,
+    "max_over_target": 0.9980001522844509
+   },
+   "mesh": {
+    "nodes": 80711,
+    "elements": 39511,
+    "element_kinds": {
+     "T6": 39511
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.5135870587133853,
+      "p01": 0.972859424219211,
+      "median": 0.9999999999987815,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.42385663057271916,
+      "p01": 0.8051873526184594,
+      "median": 0.9997441361990431,
+      "n_below_0.2": 0
+     },
+     "n": 39511,
+     "min": 0.5135870587133853
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "658e640965027d1a04529fcbd57102878f98c539f104cdecf2249fbc6e1f735a",
+   "status": "solved",
+   "solve_s": 10.38,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 10.38,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "3266de4bb1e09bbd4e07703d9b5dfc792f75a63b814655753e86a9a4f34f9d6c",
+   "extracted": {
+    "theta_rad": 0.0001,
+    "delta_LOA_um": 3.0503451528188243,
+    "mesh_stiffness_N_per_mm_um": 14.53605994686385,
+    "p_max_MPa": 612.4557234576872,
+    "contact_normal_force_rel_err": 3e-06,
+    "wheel_torque_rel_err": 2e-06
+   }
+  },
+  {
+   "id": "L3_C001_G1_C_d18_mortar",
+   "case": "L3",
+   "group": "mortar",
+   "tags": {
+    "level": 2,
+    "s": 0.0
+   },
+   "warnings": [],
+   "build_s": 6.3,
+   "h": 0.0026018615666208392,
+   "penalty": null,
+   "pairs_in_contact": 1,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "P_FLANK",
+    "target": 0.0026018615666208392,
+    "n": 54,
+    "max": 0.0025966582397106575,
+    "median": 0.002596655668639516,
+    "max_over_target": 0.9980001522844509
+   },
+   "mesh": {
+    "nodes": 80711,
+    "elements": 39511,
+    "element_kinds": {
+     "T6": 39511
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.5135870587133853,
+      "p01": 0.972859424219211,
+      "median": 0.9999999999987815,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.42385663061515677,
+      "p01": 0.8051873526184594,
+      "median": 0.9997441361990431,
+      "n_below_0.2": 0
+     },
+     "n": 39511,
+     "min": 0.5135870587133853
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "4b886bd0299d2a93ea7fd2f19502347adca87a68155b623f3df2f0e5c591e94e",
+   "status": "solver_failed",
+   "solve_s": 10.38,
+   "run": {
+    "ok": false,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 10.38,
+    "finished_marker": true,
+    "errors": [
+     "*ERROR (伪造)"
+    ],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   }
+  },
+  {
+   "id": "L3_C001_G1_ph00_d12",
+   "case": "L3",
+   "group": "phase",
+   "tags": {
+    "phase": 0,
+    "s": -4.8118163066328306,
+    "alpha": 10.0
+   },
+   "warnings": [],
+   "build_s": 5.97,
+   "h": 0.0039027923499312584,
+   "penalty": 527827210.69858706,
+   "pairs_in_contact": 2,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "P_FLANK",
+    "target": 0.0039027923499312584,
+    "n": 72,
+    "max": 0.003890686272631781,
+    "median": 0.003889898240610305,
+    "max_over_target": 0.9968980985371433
+   },
+   "mesh": {
+    "nodes": 78624,
+    "elements": 38390,
+    "element_kinds": {
+     "T6": 38390
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.5018110958950692,
+      "p01": 0.9771933486925213,
+      "median": 0.9999999999993241,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.4355548396294564,
+      "p01": 0.7937530069727919,
+      "median": 0.9988390289004518,
+      "n_below_0.2": 0
+     },
+     "n": 38390,
+     "min": 0.5018110958950692
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "e4b3589d6a220999fe3db2ce0ae7f7e815460bb8ee50aa9b93f3d39e26b9a36b",
+   "status": "solved",
+   "solve_s": 10.1,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 10.1,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "458541743f866e36e548b42243c994892be6bd8a9553c785845491ba30e800fb",
+   "extracted": {
+    "theta_rad": 0.0001,
+    "delta_LOA_um": 2.0555047719819037,
+    "mesh_stiffness_N_per_mm_um": 21.571343742125045,
+    "p_max_MPa": 553.3106824062386,
+    "contact_normal_force_rel_err": 3e-06,
+    "wheel_torque_rel_err": 2e-06
+   }
+  },
+  {
+   "id": "L3_C001_G1_ph01_d12",
+   "case": "L3",
+   "group": "phase",
+   "tags": {
+    "phase": 1,
+    "s": -4.442799877371137,
+    "alpha": 10.0
+   },
+   "warnings": [],
+   "build_s": 6.46,
+   "h": 0.0039027923499312584,
+   "penalty": 527827210.69858706,
+   "pairs_in_contact": 2,
+   "element_types": [
+    "CPE6"
+   ],
+   "h_check": {
+    "curve": "P_FLANK",
+    "target": 0.0039027923499312584,
+    "n": 72,
+    "max": 0.0038864637726107767,
+    "median": 0.0038864404062608844,
+    "max_over_target": 0.9958161808632301
+   },
+   "mesh": {
+    "nodes": 79536,
+    "elements": 38850,
+    "element_kinds": {
+     "T6": 38850
+    },
+    "quality": {
+     "minSJ": {
+      "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+      "min": 0.5024650781095492,
+      "p01": 0.9727706337730717,
+      "median": 0.9999999999993053,
+      "n_below_0.3": 0,
+      "n_nonpositive": 0
+     },
+     "gamma": {
+      "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+      "min": 0.4169130271234602,
+      "p01": 0.7973740886342481,
+      "median": 0.9988070243302668,
+      "n_below_0.2": 0
+     },
+     "n": 38850,
+     "min": 0.5024650781095492
+    },
+    "gmsh_version": "4.15.2"
+   },
+   "lint_errors": [],
+   "inp_sha256": "32639a2d07598b429f1cd3592a4682a824e6fbacfe2742e3e1202af5cb458315",
+   "status": "solved",
+   "solve_s": 10.21,
+   "run": {
+    "ok": true,
+    "returncode": 0,
+    "timeout": false,
+    "wall_s": 10.21,
+    "finished_marker": true,
+    "errors": [],
+    "warnings_count": 0,
+    "warnings_head": []
+   },
+   "sta": {
+    "present": true,
+    "increments": 4,
+    "lines": 8,
+    "tail": []
+   },
+   "dat_sha256": "b57abf3398c124be0336565de77003f4be0d9fa94ebda248f88e08abbb08b457",
+   "extracted": {
+    "theta_rad": 0.0001,
+    "delta_LOA_um": 2.05857731841012,
+    "mesh_stiffness_N_per_mm_um": 21.539147256438568,
+    "p_max_MPa": 553.3106824062386,
+    "contact_normal_force_rel_err": 3e-06,
+    "wheel_torque_rel_err": 2e-06
+   }
+  }
+ ],
+ "warnings": [
+  "2 个作业未成功：MORTAR 变体（伪造示例）"
+ ]
+}

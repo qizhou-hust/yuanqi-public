@@ -1,0 +1,20 @@
+{
+  "raw_dat": {
+    "rejected": "profile raw output identity mismatch"
+  },
+  "raw_sta": {
+    "rejected": "profile raw output identity mismatch"
+  },
+  "deck": {
+    "rejected": "profile input or metadata identity mismatch"
+  },
+  "metadata": {
+    "rejected": "profile input or metadata identity mismatch"
+  },
+  "solver_version": {
+    "rejected": "profile solver identity or version mismatch"
+  },
+  "case_hash": {
+    "rejected": "verified profile requires matching pack and attached raw repost"
+  }
+}

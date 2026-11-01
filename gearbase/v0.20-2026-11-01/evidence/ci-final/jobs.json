@@ -1,0 +1,437 @@
+{
+  "total_count": 4,
+  "jobs": [
+    {
+      "id": 124824330693,
+      "run_id": 41298492209,
+      "workflow_name": "GearBase v020 closure acceptance",
+      "head_branch": "codex/gearbase-v020-closure-2026-11-01",
+      "run_url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/actions/runs/41298492209",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVZGAyc8AAAAdEBwhxQ",
+      "head_sha": "3b27cdfd6c371616384258a5fcd09eeac4de90bc",
+      "url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/actions/jobs/124824330693",
+      "html_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41298492209/job/124824330693",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-01T10:40:08Z",
+      "started_at": "2026-11-01T10:40:11Z",
+      "completed_at": "2026-11-01T10:43:21Z",
+      "name": "legacy",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-01T10:40:11Z",
+          "completed_at": "2026-11-01T10:40:12Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-01T10:40:12Z",
+          "completed_at": "2026-11-01T10:40:19Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-01T10:40:19Z",
+          "completed_at": "2026-11-01T10:40:19Z"
+        },
+        {
+          "name": "Create separate compatibility and native worker environments",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-01T10:40:19Z",
+          "completed_at": "2026-11-01T10:41:28Z"
+        },
+        {
+          "name": "Preserve resolved dependency inventories",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-01T10:41:28Z",
+          "completed_at": "2026-11-01T10:41:29Z"
+        },
+        {
+          "name": "Verify canonical NumPy norm compatibility API",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-01T10:41:29Z",
+          "completed_at": "2026-11-01T10:41:30Z"
+        },
+        {
+          "name": "Complete unchanged M31 acceptance (73 modules, no skips)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-01T10:41:30Z",
+          "completed_at": "2026-11-01T10:43:18Z"
+        },
+        {
+          "name": "Preserve legacy gate evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-01T10:43:18Z",
+          "completed_at": "2026-11-01T10:43:19Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-01T10:43:19Z",
+          "completed_at": "2026-11-01T10:43:19Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-11-01T10:43:19Z",
+          "completed_at": "2026-11-01T10:43:19Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-01T10:43:19Z",
+          "completed_at": "2026-11-01T10:43:19Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/check-runs/124824330693",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000056,
+      "runner_name": "GitHub Actions 1000000056",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 124824330892,
+      "run_id": 41298492209,
+      "workflow_name": "GearBase v020 closure acceptance",
+      "head_branch": "codex/gearbase-v020-closure-2026-11-01",
+      "run_url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/actions/runs/41298492209",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVZGAyc8AAAAdEBwijA",
+      "head_sha": "3b27cdfd6c371616384258a5fcd09eeac4de90bc",
+      "url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/actions/jobs/124824330892",
+      "html_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41298492209/job/124824330892",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-01T10:40:08Z",
+      "started_at": "2026-11-01T10:40:11Z",
+      "completed_at": "2026-11-01T10:43:43Z",
+      "name": "core (windows-latest)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-01T10:40:12Z",
+          "completed_at": "2026-11-01T10:40:13Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-01T10:40:13Z",
+          "completed_at": "2026-11-01T10:40:24Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-01T10:40:24Z",
+          "completed_at": "2026-11-01T10:40:25Z"
+        },
+        {
+          "name": "Core acceptance before dependency installation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-01T10:40:25Z",
+          "completed_at": "2026-11-01T10:43:36Z"
+        },
+        {
+          "name": "Original three Stage0 requirements through real MCP transport",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-01T10:43:36Z",
+          "completed_at": "2026-11-01T10:43:37Z"
+        },
+        {
+          "name": "Joint system problem versus fresh full enumeration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-01T10:43:37Z",
+          "completed_at": "2026-11-01T10:43:38Z"
+        },
+        {
+          "name": "Preserve core gate evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-01T10:43:38Z",
+          "completed_at": "2026-11-01T10:43:40Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-01T10:43:40Z",
+          "completed_at": "2026-11-01T10:43:40Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-01T10:43:40Z",
+          "completed_at": "2026-11-01T10:43:42Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-01T10:43:42Z",
+          "completed_at": "2026-11-01T10:43:42Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/check-runs/124824330892",
+      "labels": [
+        "windows-latest"
+      ],
+      "runner_id": 1000000058,
+      "runner_name": "GitHub Actions 1000000058",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 124824330966,
+      "run_id": 41298492209,
+      "workflow_name": "GearBase v020 closure acceptance",
+      "head_branch": "codex/gearbase-v020-closure-2026-11-01",
+      "run_url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/actions/runs/41298492209",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVZGAyc8AAAAdEBwi1g",
+      "head_sha": "3b27cdfd6c371616384258a5fcd09eeac4de90bc",
+      "url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/actions/jobs/124824330966",
+      "html_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41298492209/job/124824330966",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-01T10:40:08Z",
+      "started_at": "2026-11-01T10:40:11Z",
+      "completed_at": "2026-11-01T10:42:55Z",
+      "name": "core (ubuntu-latest)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-01T10:40:11Z",
+          "completed_at": "2026-11-01T10:40:12Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-01T10:40:12Z",
+          "completed_at": "2026-11-01T10:40:21Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-01T10:40:21Z",
+          "completed_at": "2026-11-01T10:40:21Z"
+        },
+        {
+          "name": "Core acceptance before dependency installation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-01T10:40:21Z",
+          "completed_at": "2026-11-01T10:42:50Z"
+        },
+        {
+          "name": "Original three Stage0 requirements through real MCP transport",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-01T10:42:50Z",
+          "completed_at": "2026-11-01T10:42:51Z"
+        },
+        {
+          "name": "Joint system problem versus fresh full enumeration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-01T10:42:51Z",
+          "completed_at": "2026-11-01T10:42:52Z"
+        },
+        {
+          "name": "Preserve core gate evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-01T10:42:52Z",
+          "completed_at": "2026-11-01T10:42:53Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-01T10:42:53Z",
+          "completed_at": "2026-11-01T10:42:53Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-01T10:42:53Z",
+          "completed_at": "2026-11-01T10:42:53Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-11-01T10:42:53Z",
+          "completed_at": "2026-11-01T10:42:53Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/check-runs/124824330966",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000057,
+      "runner_name": "GitHub Actions 1000000057",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 124824331110,
+      "run_id": 41298492209,
+      "workflow_name": "GearBase v020 closure acceptance",
+      "head_branch": "codex/gearbase-v020-closure-2026-11-01",
+      "run_url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/actions/runs/41298492209",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVZGAyc8AAAAdEBwjZg",
+      "head_sha": "3b27cdfd6c371616384258a5fcd09eeac4de90bc",
+      "url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/actions/jobs/124824331110",
+      "html_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41298492209/job/124824331110",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-01T10:40:08Z",
+      "started_at": "2026-11-01T10:40:12Z",
+      "completed_at": "2026-11-01T10:40:43Z",
+      "name": "portable-fresh",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-01T10:40:13Z",
+          "completed_at": "2026-11-01T10:40:15Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-01T10:40:15Z",
+          "completed_at": "2026-11-01T10:40:30Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-01T10:40:30Z",
+          "completed_at": "2026-11-01T10:40:30Z"
+        },
+        {
+          "name": "Require private repository for private evidence",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 4,
+          "started_at": "2026-11-01T10:40:30Z",
+          "completed_at": "2026-11-01T10:40:30Z"
+        },
+        {
+          "name": "Build and verify fresh portable profile",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-01T10:40:30Z",
+          "completed_at": "2026-11-01T10:40:36Z"
+        },
+        {
+          "name": "Upload private receipt and logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-01T10:40:36Z",
+          "completed_at": "2026-11-01T10:40:38Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-01T10:40:38Z",
+          "completed_at": "2026-11-01T10:40:38Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-01T10:40:38Z",
+          "completed_at": "2026-11-01T10:40:42Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-01T10:40:42Z",
+          "completed_at": "2026-11-01T10:40:42Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/qizhou-hust/yuanqi-private/check-runs/124824331110",
+      "labels": [
+        "windows-latest"
+      ],
+      "runner_id": 1000000059,
+      "runner_name": "GitHub Actions 1000000059",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

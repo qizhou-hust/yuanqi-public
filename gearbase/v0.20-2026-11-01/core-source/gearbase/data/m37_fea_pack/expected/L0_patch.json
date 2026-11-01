@@ -1,0 +1,36 @@
+{
+ "schema": "m37.expected/v1",
+ "case_id": "L0",
+ "source": "线弹性平面应变单轴拉伸精确解：εxx=σ(1-ν²)/E，εyy=-σν(1+ν)/E，σzz=νσ；接触补丁：p=q",
+ "values": {
+  "u_tip_mm": {
+   "value": 0.0044174757281553395,
+   "unit": "mm"
+  },
+  "sigma_xx_MPa": {
+   "value": 100.0,
+   "unit": "MPa"
+  },
+  "sigma_zz_MPa": {
+   "value": 30.0,
+   "unit": "MPa"
+  },
+  "contact_pressure_MPa": {
+   "value": 50.0,
+   "unit": "MPa"
+  }
+ },
+ "provenance": {
+  "generator": "fea-pack/ingest/make_expected.py",
+  "gearbase_version": "0.9",
+  "gearmath_formulas_py_sha256": "02727f963b025e4fc0f7d43f868888b897b1d62e814b3c99c514fddd9115411f",
+  "editions": {
+   "ISO 21771": "2007",
+   "ISO 6336-1": "2019",
+   "ISO 6336-2": "2019",
+   "ISO 6336-3": "2019"
+  },
+  "generated_utc": "2026-10-29T19:37:37Z"
+ },
+ "case_sha256": "5fb9c56405db4df29806d2e30b57aebaeeb2f2cd55403e4a6961730508518856"
+}

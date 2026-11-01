@@ -1,0 +1,1 @@
+Public v0.20 core source, actual FE raw evidence, source-bound reports and blank engineer form. Private standards scans/numerical data, commercial natives and executable binaries excluded. Alone does not reproduce all private regression or M33 model data. Read evidence/CLOSURE.md. NumericFE qualification not granted.

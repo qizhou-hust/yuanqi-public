@@ -1,0 +1,39 @@
+{
+  "schema": "gearbase.m36-gate2/1",
+  "system_optimization_passed": true,
+  "identity_profile": "m36-static-transitive-v1",
+  "implementation_sha256": "6aafb45494988deca03c9162460df7faf57604aff281c3d0a16b87857fbd5d71",
+  "input_file": "data/system-optimization/v017-capability-probe.json",
+  "input_file_sha256": "8dbf89d48f9dd2f20fcf229db47a8b714e119e9e4d75d4a48a7afc70ea784ec5",
+  "full_report_sha256": "1302938e11c2d539c9de32a15ed83feeac6810b396fec8514b835a34a376b6e0",
+  "full_reference_combinations": 27,
+  "feasible_count": 8,
+  "stats": {
+    "cartesian_combinations": 27,
+    "visited_combinations": 12,
+    "pruned_combinations": 15,
+    "design_check_calls": 17,
+    "gear_evaluations": 3,
+    "shaft_key_evaluations": 6,
+    "bearing_evaluations": 8,
+    "objective_evaluations": 8,
+    "cache_hits": 4
+  },
+  "best": {
+    "ids": [
+      "original",
+      "economy",
+      "original"
+    ],
+    "objective": 206968.12401849555,
+    "objective_unit": "mm^3"
+  },
+  "gate1": "partial_real_C001_inputs_missing",
+  "gate3": "partial_missing_engineering_inputs_and_M40_frozen",
+  "limits": [
+    "Finite authored cylindrical demo only; real C001 source inputs remain incomplete.",
+    "Objective excludes bearing envelopes, keys, housings and feedback of shaft deflection into KHbeta.",
+    "Original Stage0 regressions are separate from full-system worm/planet ratings; M40 remains frozen."
+  ],
+  "regenerated": "v0.19 fresh independent full enumeration after implementation freeze"
+}

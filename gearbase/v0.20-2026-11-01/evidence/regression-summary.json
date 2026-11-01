@@ -1,0 +1,131 @@
+{
+  "core_counts": {
+    "m32-core-ubuntu-latest": {
+      "run": 1379,
+      "optional_skips": 18
+    },
+    "m32-core-windows-latest": {
+      "run": 1379,
+      "optional_skips": 30
+    }
+  },
+  "legacy": {
+    "collected": 678,
+    "passed": 678,
+    "skipped": 0,
+    "failed": 0,
+    "errors": 0
+  },
+  "M33": {
+    "passed": true,
+    "scope": "example7/8_geometry_user_identified",
+    "full_E4": false,
+    "original_2_of_6_reconstructed": false,
+    "basis": "v0.20 用户指认例7/8八条几何差异；历史2/6身份未复原，不替代完整E4或全部齿轮族；当前模型8/8相对误差≤1%且重放/来源哈希有效，最大0.00475106%；硬度、fsh0、原表输入身份仍属E4开放项",
+    "max_relative_error": 4.7510558934123103e-05
+  },
+  "M37_L2": {
+    "status": "blocked_by_lower_level",
+    "own_result": "failed",
+    "n_pass": 9,
+    "n_points": 14,
+    "rows": [
+      {
+        "point": "P01",
+        "pass": true,
+        "ratio": 0.9143866424301861,
+        "converged": true
+      },
+      {
+        "point": "P02",
+        "pass": false,
+        "ratio": 0.8510413300732456,
+        "converged": false
+      },
+      {
+        "point": "P03",
+        "pass": true,
+        "ratio": 1.000955490727879,
+        "converged": true
+      },
+      {
+        "point": "P04",
+        "pass": true,
+        "ratio": 0.988753859582894,
+        "converged": true
+      },
+      {
+        "point": "P05",
+        "pass": false,
+        "ratio": 0.875758566572313,
+        "converged": true
+      },
+      {
+        "point": "P06",
+        "pass": true,
+        "ratio": 1.0097984825912145,
+        "converged": true
+      },
+      {
+        "point": "P07",
+        "pass": true,
+        "ratio": 0.9807814818903748,
+        "converged": true
+      },
+      {
+        "point": "P08",
+        "pass": false,
+        "ratio": 0.8450524846534586,
+        "converged": true
+      },
+      {
+        "point": "P09",
+        "pass": true,
+        "ratio": 1.0422264300553081,
+        "converged": true
+      },
+      {
+        "point": "P10",
+        "pass": true,
+        "ratio": 0.9411812204677132,
+        "converged": true
+      },
+      {
+        "point": "P11",
+        "pass": true,
+        "ratio": 1.0173567733367894,
+        "converged": true
+      },
+      {
+        "point": "P12",
+        "pass": false,
+        "ratio": 0.877173093367695,
+        "converged": true
+      },
+      {
+        "point": "P13",
+        "pass": true,
+        "ratio": 1.0296089689937906,
+        "converged": true
+      },
+      {
+        "point": "P14",
+        "pass": false,
+        "ratio": 0.8765658569190092,
+        "converged": true
+      }
+    ],
+    "trend": {
+      "corr_ratio_vs_z": 0.0543480757440197,
+      "corr_ratio_vs_x": -0.975241422556708,
+      "corr_ratio_vs_rhofP": -0.058353511542683346
+    },
+    "unlocks_if_passed": "标定 YF·YS（fe_calibrated: YFS）"
+  },
+  "readonly_replay": {
+    "files_before": 24,
+    "files_after": 24,
+    "unchanged": true,
+    "cache_paths": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "gearbase.m38-closure/1",
+  "status": "partial",
+  "generated_at": "2026-11-01T02:52:29.427746+00:00",
+  "gates": {
+    "number_traceability": true,
+    "original_flagships": true,
+    "fresh_windows": true,
+    "first_multi_model_report": true,
+    "engineer_gold": false
+  },
+  "source_bench_sha256": "f69f2268135f0ab494f263f11ec10ad265b538bf9a91b3a69779305a2cbebeae",
+  "hosted_run_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41266599287",
+  "artifacts_sha256": {
+    "comparison.json": "67156b18d0e6e401058b14a4152367dc9f6fba5e7ea67e5d18a259a291a3e888",
+    "flagships-receipt.json": "66b80a502e2747d2e5f5319938d50c62b83be68e7f9b594ec0b82b9cf15a00a7",
+    "MODEL-COMPARISON.md": "601426e0996d47bff69b12ddd36f47a258965121ef8bab80e301d643de014727",
+    "portable-hosted-receipt.json": "5d2377f43fa0502917c1211eafcdd32c31293117ec8535a75f423d78c46bb962"
+  },
+  "limits": [
+    "Numeric traceability only, semantic accuracy is null; no engineer gold created.",
+    "First actual model run is exploratory, not blind; provider build identity opaque.",
+    "Original flagship Stage0 only; W2W thermal fails and no engineering acceptance.",
+    "Fresh VM uses deterministic MCP client, not Claude Code; M34 remains open."
+  ],
+  "acceptance_basis": "v0.17 requires independent engineer gold labels; numeric traceability alone insufficient",
+  "gold_labelled_cases": 0,
+  "gold_pending_cases": 40
+}

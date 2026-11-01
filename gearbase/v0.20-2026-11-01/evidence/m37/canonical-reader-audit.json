@@ -1,0 +1,60 @@
+{
+  "rows": [
+    {
+      "level": 8,
+      "yfs": 2.666225431044993,
+      "canonical_repost_status": "rejected",
+      "canonical_repost_reasons": [
+        {
+          "code": "registry_missing",
+          "detail": "S@ROOTT: (ccx '2.23', CPE6) \u7684\u79ef\u5206\u70b9\u6570\u672a\u767b\u8bb0\uff0c\u62d2\u7edd\u8bfb\u53d6",
+          "request": "S@ROOTT"
+        },
+        {
+          "code": "registry_missing",
+          "detail": "COORD@ROOTT: (ccx '2.23', CPE6) \u7684\u79ef\u5206\u70b9\u6570\u672a\u767b\u8bb0\uff0c\u62d2\u7edd\u8bfb\u53d6",
+          "request": "COORD@ROOTT"
+        }
+      ],
+      "ratio_finitemesh_to_iso": 0.9459816642025426
+    },
+    {
+      "level": 12,
+      "yfs": 2.637834906530083,
+      "canonical_repost_status": "rejected",
+      "canonical_repost_reasons": [
+        {
+          "code": "registry_missing",
+          "detail": "S@ROOTT: (ccx '2.23', CPE6) \u7684\u79ef\u5206\u70b9\u6570\u672a\u767b\u8bb0\uff0c\u62d2\u7edd\u8bfb\u53d6",
+          "request": "S@ROOTT"
+        },
+        {
+          "code": "registry_missing",
+          "detail": "COORD@ROOTT: (ccx '2.23', CPE6) \u7684\u79ef\u5206\u70b9\u6570\u672a\u767b\u8bb0\uff0c\u62d2\u7edd\u8bfb\u53d6",
+          "request": "COORD@ROOTT"
+        }
+      ],
+      "ratio_finitemesh_to_iso": 0.935908654127895
+    },
+    {
+      "level": 18,
+      "yfs": 2.6184957459143243,
+      "canonical_repost_status": "rejected",
+      "canonical_repost_reasons": [
+        {
+          "code": "registry_missing",
+          "detail": "S@ROOTT: (ccx '2.23', CPE6) \u7684\u79ef\u5206\u70b9\u6570\u672a\u767b\u8bb0\uff0c\u62d2\u7edd\u8bfb\u53d6",
+          "request": "S@ROOTT"
+        },
+        {
+          "code": "registry_missing",
+          "detail": "COORD@ROOTT: (ccx '2.23', CPE6) \u7684\u79ef\u5206\u70b9\u6570\u672a\u767b\u8bb0\uff0c\u62d2\u7edd\u8bfb\u53d6",
+          "request": "COORD@ROOTT"
+        }
+      ],
+      "ratio_finitemesh_to_iso": 0.9290470845357075
+    }
+  ],
+  "reference": 2.8184747463288375,
+  "last_level_relative_change": 0.00733145223299736
+}

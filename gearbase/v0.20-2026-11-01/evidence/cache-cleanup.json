@@ -1,0 +1,16 @@
+{
+  "removed_generated_pyc_only": [
+    "cases.cpython-312.pyc",
+    "ccx_io.cpython-312.pyc",
+    "ccx_strict.cpython-312.pyc",
+    "deck_state.cpython-312.pyc",
+    "gear_geom.cpython-312.pyc",
+    "inp_writer.cpython-312.pyc",
+    "mesh_gmsh.cpython-312.pyc",
+    "post.cpython-312.pyc",
+    "run_m37.cpython-312.pyc",
+    "study.cpython-312.pyc"
+  ],
+  "source_scripts_deleted": false,
+  "target_inside_workspace": true
+}

@@ -1,0 +1,283 @@
+{
+  "schema": "gearbase.fea-evidence/v1",
+  "ingested_utc": "2026-11-01T10:36:01Z",
+  "source": {
+    "results_sha256": "ae01eb763d0ea1ff61eb2ea145184e42d12243ba2561cff23b6d15deb3b1d745",
+    "pack_version": "M37-FEA-pack 1.1 (2026-10-30)",
+    "mode": "full",
+    "machine": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "cpu_count": 20,
+      "python": "3.12.4",
+      "gmsh_version": "4.15.2 (source deck metadata)"
+    },
+    "solver": {
+      "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+      "version": "2.23",
+      "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+      "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+      "threads": 1
+    }
+  },
+  "checks": {
+    "numerical_method": {
+      "richardson": "signed-unequal-grid/1",
+      "ingest_sha256": "89499e55de8490684604bfb70fb7f1eaaa4e67c7759c0c87284fcfaacebabad3"
+    },
+    "schema": {
+      "pass": true,
+      "errors": []
+    },
+    "inputs_match_pack": {
+      "pass": true,
+      "mismatch": [],
+      "not_reported": []
+    },
+    "verified_profile": {
+      "name": "v017_verified_probe",
+      "solver_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862"
+    },
+    "strict_field_read": {
+      "pass": true,
+      "path": "strict_protocol",
+      "errors": [],
+      "error_count": 0,
+      "jobs_checked": 3
+    },
+    "attachments": {
+      "pass": true,
+      "missing_dat": [],
+      "sha_mismatch": [],
+      "frd_included": 3
+    },
+    "repost": {
+      "pass": true,
+      "jobs_reposted": 3,
+      "diffs": [],
+      "note": "L1 半宽若来自 .frd（未回传）则不比对"
+    },
+    "strict_repost": {
+      "pass": true,
+      "jobs_reread": 3,
+      "not_attached": [],
+      "failures": []
+    }
+  },
+  "warnings": [],
+  "records": [
+    {
+      "quantity": "YFS_root",
+      "value": 2.577175660069896,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.8184747463288375,
+        "Y_F": 1.3774461758377081,
+        "Y_S": 2.0461596218921243,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 0.9143866424301861,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.11988405787687545,
+          0.0799227052512503,
+          0.05328180350083353
+        ],
+        "values": [
+          2.666225431044993,
+          2.637834906530083,
+          2.6184957459143243
+        ],
+        "relative_changes": [
+          0.010762813261977854,
+          0.007385599402226882
+        ],
+        "assumed_order": 2.0,
+        "observed_order": 0.946871507200187,
+        "order_used": 0.946871507200187,
+        "richardson_estimate": 2.577175660069896,
+        "discretization_error_estimate": 0.041320085844428256,
+        "gci_fine": 0.019725106441790347,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 4.5602655152216685e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P01_d8",
+            "L2_P01_d12",
+            "L2_P01_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": null,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "90d94c6873c72c0ad0dc9ee6be44be22b3d9ae352968a975878b2eb2277ee125",
+      "validity": {
+        "z": 17,
+        "x": 0.3,
+        "rhofP": 0.38,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "c824ad6757cbc620"
+    }
+  ],
+  "ladder": {
+    "L0": {
+      "status": "not_run",
+      "own_result": "not_run",
+      "unlocks_if_passed": null
+    },
+    "L1": {
+      "status": "not_run",
+      "own_result": "not_run",
+      "unlocks_if_passed": "复核（verification，配合对应几何级）"
+    },
+    "L2": {
+      "status": "blocked_by_lower_level",
+      "own_result": "failed",
+      "n_pass": 1,
+      "n_points": 14,
+      "rows": [
+        {
+          "point": "P01",
+          "pass": true,
+          "ratio": 0.9143866424301861,
+          "converged": true
+        },
+        {
+          "point": "P02",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P03",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P04",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P05",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P06",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P07",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P08",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P09",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P10",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P11",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P12",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P13",
+          "pass": false,
+          "reason": "无已求解作业"
+        },
+        {
+          "point": "P14",
+          "pass": false,
+          "reason": "无已求解作业"
+        }
+      ],
+      "trend": null,
+      "unlocks_if_passed": "标定 YF·YS（fe_calibrated: YFS）"
+    },
+    "L3": {
+      "status": "not_run",
+      "own_result": "not_run",
+      "unlocks_if_passed": "标定 c′、cγ（fe_calibrated: c_prime, c_gamma）"
+    }
+  },
+  "ladder_level_reached": null,
+  "verdict": "recorded",
+  "summary": {
+    "L0": "not_run",
+    "L1": "not_run",
+    "L2": "blocked_by_lower_level",
+    "L3": "not_run"
+  }
+}

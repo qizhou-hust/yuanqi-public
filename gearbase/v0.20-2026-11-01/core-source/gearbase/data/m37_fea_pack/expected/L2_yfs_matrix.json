@@ -1,0 +1,2542 @@
+{
+ "schema": "m37.expected/v1",
+ "case_id": "L2",
+ "quantity": "YFS = Y_F·Y_S（ISO 6336-3:2019 方法 B，名义变位，HPSTC）",
+ "basis": "gearbase gearmath.gear.formulas.ROOT（root.Y_F.*, root.Y_S.*；Y_F 含 fε，直齿 εαn<2 时 fε=1）",
+ "comparison": "YFS_FE = σ1,root,peak·b·mn/Ft（b=1 mm 平面应变，Ft=Fn·cosαn）；验收 FE/ISO ∈ [0.90, 1.10]",
+ "points": {
+  "P01": {
+   "z": 17,
+   "x": 0.3,
+   "rhofP": 0.38,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.3774461758377081,
+   "Y_S": 2.0461596218921243,
+   "YFS": 2.8184747463288375,
+   "f_eps": 1.0,
+   "eps_alpha": 1.5368094411911595,
+   "sFn_mm": 4.139816532409627,
+   "rhoF_mm": 0.9590724629217355,
+   "hFe_mm": 2.0006038875170673,
+   "den_mm": 35.9008883557045,
+   "alpha_Fen_deg": 22.479304902349472,
+   "qs": 2.1582397016165054,
+   "model_sha256": "9fb0edbf8050e39347162f7b12ba4531bb25cce50a1d25727da529f89b170548",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.3774461758377081,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.3923378841057007,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.47358807322729857,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.08125018912159786,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 2.0006038875170673,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -0.5700000000000001,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.8008108700605553,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 4.139816532409627,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 2.0461596218921243,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 2.0692834589797378,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 2.0006038875170673,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -0.5700000000000001,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.3923378841057007,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.8008108700605553,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 4.139816532409627,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 2.1582397016165054,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 0.9590724629217355,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P02": {
+   "z": 17,
+   "x": 0.8,
+   "rhofP": 0.25,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.1857242227237261,
+   "Y_S": 2.7361335425716016,
+   "YFS": 3.2442998180340274,
+   "f_eps": 1.0,
+   "eps_alpha": 1.4123225657810712,
+   "sFn_mm": 4.617929475502958,
+   "rhoF_mm": 0.5314437397534594,
+   "hFe_mm": 2.2819742812202315,
+   "den_mm": 38.31237040590319,
+   "alpha_Fen_deg": 29.8069667618302,
+   "qs": 4.3447021105613635,
+   "model_sha256": "b99b08cad746e1b4904866e1892c7c98279eeffb652edc2b52b7ec4b721d0083",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.1857242227237261,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.5202297100264495,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.5846187768986354,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.06438906687218598,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 2.2819742812202315,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -0.19999999999999996,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.8536937203556686,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 4.617929475502958,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 2.7361335425716016,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 2.0236553555869308,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 2.2819742812202315,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -0.19999999999999996,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.5202297100264495,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.8536937203556686,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 4.617929475502958,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 4.3447021105613635,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 0.5314437397534594,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P03": {
+   "z": 20,
+   "x": 0,
+   "rhofP": 0.38,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.5635451830850413,
+   "Y_S": 1.8268918308559516,
+   "YFS": 2.856427922152235,
+   "f_eps": 1.0,
+   "eps_alpha": 1.6557557940366292,
+   "sFn_mm": 3.8894970935374307,
+   "rhoF_mm": 1.145905459864498,
+   "hFe_mm": 1.9443861367603494,
+   "den_mm": 40.5182754082183,
+   "alpha_Fen_deg": 17.70794043771708,
+   "qs": 1.6971282665837717,
+   "model_sha256": "0b476fe9e1aebf9fee00b217480b4da9da9c2c69614aecf5f1dd336966659110",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.5635451830850413,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.30906186438520894,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.3826649089503559,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.07360304456514694,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 1.9443861367603494,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -0.87,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.8059093623835982,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 3.8894970935374307,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 1.8268918308559516,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 2.000372775758389,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 1.9443861367603494,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -0.87,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.30906186438520894,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.8059093623835982,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 3.8894970935374307,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 1.6971282665837717,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 1.145905459864498,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P04": {
+   "z": 20,
+   "x": 0,
+   "rhofP": 0.25,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.6520486013297022,
+   "Y_S": 1.9057642779071367,
+   "YFS": 3.148415209780595,
+   "f_eps": 1.0,
+   "eps_alpha": 1.6557557940366292,
+   "sFn_mm": 3.8513337891437436,
+   "rhoF_mm": 0.9933841057541889,
+   "hFe_mm": 2.014328589737202,
+   "den_mm": 40.5182754082183,
+   "alpha_Fen_deg": 17.70794043771708,
+   "qs": 1.9384917509928175,
+   "model_sha256": "dcd3b7dfb01ae0b5afc4eb16b546f1d9671e60f41050148dd2d0bdb185db5f76",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.6520486013297022,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.30906186438520894,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.3826649089503559,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.07360304456514694,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 2.014328589737202,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -1.0,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.8022316062353237,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 3.8513337891437436,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 1.9057642779071367,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 1.9119689849838277,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 2.014328589737202,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -1.0,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.30906186438520894,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.8022316062353237,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 3.8513337891437436,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 1.9384917509928175,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 0.9933841057541889,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P05": {
+   "z": 20,
+   "x": 0.5,
+   "rhofP": 0.3,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.236510319003863,
+   "Y_S": 2.3944089752050655,
+   "YFS": 2.9607114057565282,
+   "f_eps": 1.0,
+   "eps_alpha": 1.5141478449494237,
+   "sFn_mm": 4.400358469197611,
+   "rhoF_mm": 0.7280359025091382,
+   "hFe_mm": 2.064868207238015,
+   "den_mm": 42.788680743930954,
+   "alpha_Fen_deg": 24.769517159209045,
+   "qs": 3.0220751847759173,
+   "model_sha256": "399fd4840fc6268e8f08d5412fbe380ddee1dc95ad5b5831ca5d2e2d7b4a2f76",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.236510319003863,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.4323096285574303,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.4981882402844701,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.06587861172703981,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 2.064868207238015,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -0.44999999999999996,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.85084307470006,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 4.400358469197611,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 2.3944089752050655,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 2.131060207025788,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 2.064868207238015,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -0.44999999999999996,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.4323096285574303,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.85084307470006,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 4.400358469197611,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 3.0220751847759173,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 0.7280359025091382,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P06": {
+   "z": 25,
+   "x": -0.2,
+   "rhofP": 0.3,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.6742083842115048,
+   "Y_S": 1.7746926521500437,
+   "YFS": 2.9712053176281548,
+   "f_eps": 1.0,
+   "eps_alpha": 1.7490226678468304,
+   "sFn_mm": 3.806456370441989,
+   "rhoF_mm": 1.1735079272153697,
+   "hFe_mm": 1.9714925352718333,
+   "den_mm": 49.669394496325225,
+   "alpha_Fen_deg": 15.52369931624022,
+   "qs": 1.6218281454111574,
+   "model_sha256": "f32e76e022489a629ffd9622bd0584334d278fb522580b079a48dfb14ada1c82",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.6742083842115048,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.2709396651579843,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.33029309147557867,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.05935342631759441,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 1.9714925352718333,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -1.15,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.8304723947881725,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 3.806456370441989,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 1.7746926521500437,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 1.9307485584352706,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 1.9714925352718333,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -1.15,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.2709396651579843,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.8304723947881725,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 3.806456370441989,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 1.6218281454111574,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 1.1735079272153697,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P07": {
+   "z": 30,
+   "x": 0,
+   "rhofP": 0.25,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.4118897464110658,
+   "Y_S": 2.0707637329884228,
+   "YFS": 2.923690081846256,
+   "f_eps": 1.0,
+   "eps_alpha": 1.7040935828005317,
+   "sFn_mm": 4.12296010976929,
+   "rhoF_mm": 0.9331602089722391,
+   "hFe_mm": 1.98150868669317,
+   "den_mm": 60.51071744299766,
+   "alpha_Fen_deg": 18.47196029181138,
+   "qs": 2.209138404170824,
+   "model_sha256": "7c6014b3a45589a93e20ca7a2e3d7779c69812bd91f32e77eba4ac74bb32a91f",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.4118897464110658,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.32239652638976113,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.3715616105826981,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.049165084192937,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 1.98150868669317,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -1.0,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.8732861046211756,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 4.12296010976929,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 2.0707637329884228,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 2.080717655924017,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 1.98150868669317,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -1.0,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.32239652638976113,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.8732861046211756,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 4.12296010976929,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 2.209138404170824,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 0.9331602089722391,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P08": {
+   "z": 30,
+   "x": 0.8,
+   "rhofP": 0.4,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.0289617844656258,
+   "Y_S": 2.4729481315132227,
+   "YFS": 2.544569122292781,
+   "f_eps": 1.0,
+   "eps_alpha": 1.5385825978983998,
+   "sFn_mm": 4.6646433744550055,
+   "rhoF_mm": 0.8016176430456674,
+   "hFe_mm": 1.9461741700203992,
+   "den_mm": 63.96247094056594,
+   "alpha_Fen_deg": 25.728192819556643,
+   "qs": 2.9095189052552235,
+   "model_sha256": "df4e2ace5f3076a4402cd480717a58b801ffac7971a220c1f660423b50ea8df8",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.0289617844656258,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.4490416752892268,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.4918118153451612,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.04277014005593441,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 1.9461741700203992,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -0.04999999999999993,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.9412584249249355,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 4.6646433744550055,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 2.4729481315132227,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 2.3968272965035355,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 1.9461741700203992,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -0.04999999999999993,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.4490416752892268,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.9412584249249355,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 4.6646433744550055,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 2.9095189052552235,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 0.8016176430456674,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P09": {
+   "z": 40,
+   "x": -0.5,
+   "rhofP": 0.38,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.5502499533260201,
+   "Y_S": 1.6887333595858516,
+   "YFS": 2.6179588118780597,
+   "f_eps": 1.0,
+   "eps_alpha": 1.8781982277426295,
+   "sFn_mm": 3.870505070512195,
+   "rhoF_mm": 1.3968611206535237,
+   "hFe_mm": 1.8782439190656457,
+   "den_mm": 78.43635379943598,
+   "alpha_Fen_deg": 14.475494193924437,
+   "qs": 1.38542945081805,
+   "model_sha256": "fdad6548cfbaebe95ded76e4e51c3e5a00ce56d4ec022ba5505a89ba9f61d466",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.5502499533260201,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.25264503453730397,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.2893638059340614,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.03671877139675744,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 1.8782439190656457,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -1.37,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.887701762200213,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 3.870505070512195,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 1.6887333595858516,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 2.0607041669207815,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 1.8782439190656457,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -1.37,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.25264503453730397,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.887701762200213,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 3.870505070512195,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 1.38542945081805,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 1.3968611206535237,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P10": {
+   "z": 50,
+   "x": 0.2,
+   "rhofP": 0.25,
+   "gear_index_in_gearbase_pair": 1,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.1761614234680036,
+   "Y_S": 2.4707424030014,
+   "YFS": 2.9059919017368823,
+   "f_eps": 1.0,
+   "eps_alpha": 1.717783002131434,
+   "sFn_mm": 4.478413192565409,
+   "rhoF_mm": 0.7341259611297118,
+   "hFe_mm": 1.9695774740966827,
+   "den_mm": 101.33281236035299,
+   "alpha_Fen_deg": 20.301661290821436,
+   "qs": 3.0501667490915247,
+   "model_sha256": "e86ef1188d364fa5a39f1ee1fbaa6f7590e8842db253fda085605d54b8d131f7",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_1",
+      "value": 1.1761614234680036,
+      "unit": "1",
+      "id": "root.Y_F.1",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_1",
+      "value": 0.3543308331495161,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_1",
+      "value": 0.38357406874365163,
+      "unit": "rad",
+      "id": "root.alpha_en.1",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_1",
+      "value": 0.029243235594135567,
+      "unit": "rad",
+      "id": "root.gamma_e.1",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_1",
+      "value": 1.9695774740966827,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_1",
+      "value": -0.8,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_1",
+      "value": 0.9461911139536622,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_1",
+      "value": 4.478413192565409,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_1",
+      "value": 2.4707424030014,
+      "unit": "1",
+      "id": "root.Y_S.1",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_1",
+      "value": 2.2737938727794225,
+      "unit": "1",
+      "id": "root.L.1",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_1",
+      "value": 1.9695774740966827,
+      "unit": "mm",
+      "id": "root.hFe.1",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_1",
+      "value": -0.8,
+      "unit": "1",
+      "id": "root.G.1",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_1",
+      "value": 0.3543308331495161,
+      "unit": "rad",
+      "id": "root.alpha_Fen.1",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_1",
+      "value": 0.9461911139536622,
+      "unit": "rad",
+      "id": "root.theta.1",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_1",
+      "value": 4.478413192565409,
+      "unit": "mm",
+      "id": "root.sFn.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_1",
+      "value": 3.0501667490915247,
+      "unit": "1",
+      "id": "root.qs.1",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_1",
+      "value": 0.7341259611297118,
+      "unit": "mm",
+      "id": "root.rhoF.1",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P11": {
+   "z": 60,
+   "x": -0.3,
+   "rhofP": 0.4,
+   "gear_index_in_gearbase_pair": 2,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.240744193670645,
+   "Y_S": 1.9480294575881245,
+   "YFS": 2.417006238601841,
+   "f_eps": 1.0,
+   "eps_alpha": 1.8297536331640325,
+   "sFn_mm": 4.232364035414987,
+   "rhoF_mm": 1.19253511431094,
+   "hFe_mm": 1.8257058715509342,
+   "den_mm": 119.26016331956203,
+   "alpha_Fen_deg": 17.582415708187835,
+   "qs": 1.774523862913879,
+   "model_sha256": "04abb252e8a584e6738d561d49e27c12425fe119375da9228a2f89eeca77c306",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_2",
+      "value": 1.240744193670645,
+      "unit": "1",
+      "id": "root.Y_F.2",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_2",
+      "value": 0.30687104456224823,
+      "unit": "rad",
+      "id": "root.alpha_Fen.2",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_2",
+      "value": 0.3316018758853815,
+      "unit": "rad",
+      "id": "root.alpha_en.2",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_2",
+      "value": 0.024730831323133223,
+      "unit": "rad",
+      "id": "root.gamma_e.2",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_2",
+      "value": 1.8257058715509342,
+      "unit": "mm",
+      "id": "root.hFe.2",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_2",
+      "value": -1.15,
+      "unit": "1",
+      "id": "root.G.2",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_2",
+      "value": 0.9436270619058614,
+      "unit": "rad",
+      "id": "root.theta.2",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_2",
+      "value": 4.232364035414987,
+      "unit": "mm",
+      "id": "root.sFn.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_2",
+      "value": 1.9480294575881245,
+      "unit": "1",
+      "id": "root.Y_S.2",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_2",
+      "value": 2.3182069474419777,
+      "unit": "1",
+      "id": "root.L.2",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_2",
+      "value": 1.8257058715509342,
+      "unit": "mm",
+      "id": "root.hFe.2",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_2",
+      "value": -1.15,
+      "unit": "1",
+      "id": "root.G.2",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_2",
+      "value": 0.30687104456224823,
+      "unit": "rad",
+      "id": "root.alpha_Fen.2",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_2",
+      "value": 0.9436270619058614,
+      "unit": "rad",
+      "id": "root.theta.2",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_2",
+      "value": 4.232364035414987,
+      "unit": "mm",
+      "id": "root.sFn.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_2",
+      "value": 1.774523862913879,
+      "unit": "1",
+      "id": "root.qs.2",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_2",
+      "value": 1.19253511431094,
+      "unit": "mm",
+      "id": "root.rhoF.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P12": {
+   "z": 80,
+   "x": 0.5,
+   "rhofP": 0.3,
+   "gear_index_in_gearbase_pair": 2,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.0461218357453412,
+   "Y_S": 2.726410435209542,
+   "YFS": 2.852157489476661,
+   "f_eps": 1.0,
+   "eps_alpha": 1.7324709327174674,
+   "sFn_mm": 4.666006956340064,
+   "rhoF_mm": 0.6600615444782386,
+   "hFe_mm": 1.9139857846518311,
+   "den_mm": 162.5227856084458,
+   "alpha_Fen_deg": 21.27735355934936,
+   "qs": 3.5345241632190683,
+   "model_sha256": "42156a930777146121d9e8356804798cb4a93d844f219697de4134936da20452",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_2",
+      "value": 1.0461218357453412,
+      "unit": "1",
+      "id": "root.Y_F.2",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_2",
+      "value": 0.371359875721581,
+      "unit": "rad",
+      "id": "root.alpha_Fen.2",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_2",
+      "value": 0.3894814198060201,
+      "unit": "rad",
+      "id": "root.alpha_en.2",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_2",
+      "value": 0.018121544084439056,
+      "unit": "rad",
+      "id": "root.gamma_e.2",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_2",
+      "value": 1.9139857846518311,
+      "unit": "mm",
+      "id": "root.hFe.2",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_2",
+      "value": -0.44999999999999996,
+      "unit": "1",
+      "id": "root.G.2",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_2",
+      "value": 0.9936581434769687,
+      "unit": "rad",
+      "id": "root.theta.2",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_2",
+      "value": 4.666006956340064,
+      "unit": "mm",
+      "id": "root.sFn.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_2",
+      "value": 2.726410435209542,
+      "unit": "1",
+      "id": "root.Y_S.2",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_2",
+      "value": 2.4378482817148233,
+      "unit": "1",
+      "id": "root.L.2",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_2",
+      "value": 1.9139857846518311,
+      "unit": "mm",
+      "id": "root.hFe.2",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_2",
+      "value": -0.44999999999999996,
+      "unit": "1",
+      "id": "root.G.2",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_2",
+      "value": 0.371359875721581,
+      "unit": "rad",
+      "id": "root.alpha_Fen.2",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_2",
+      "value": 0.9936581434769687,
+      "unit": "rad",
+      "id": "root.theta.2",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_2",
+      "value": 4.666006956340064,
+      "unit": "mm",
+      "id": "root.sFn.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_2",
+      "value": 3.5345241632190683,
+      "unit": "1",
+      "id": "root.qs.2",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_2",
+      "value": 0.6600615444782386,
+      "unit": "mm",
+      "id": "root.rhoF.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P13": {
+   "z": 100,
+   "x": -0.5,
+   "rhofP": 0.25,
+   "gear_index_in_gearbase_pair": 2,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 1.2188996016038207,
+   "Y_S": 2.1641076409799407,
+   "YFS": 2.637829941418234,
+   "f_eps": 1.0,
+   "eps_alpha": 1.8779544289891719,
+   "sFn_mm": 4.37138753017158,
+   "rhoF_mm": 0.9643550265282091,
+   "hFe_mm": 1.916383151356131,
+   "den_mm": 198.43416673014866,
+   "alpha_Fen_deg": 17.868559947180323,
+   "qs": 2.2664824726994404,
+   "model_sha256": "1f487b1926782a4787a35a4cc0972834076a250220edb36c38f6768461225fee",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_2",
+      "value": 1.2188996016038207,
+      "unit": "1",
+      "id": "root.Y_F.2",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_2",
+      "value": 0.3118652036682807,
+      "unit": "rad",
+      "id": "root.alpha_Fen.2",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_2",
+      "value": 0.3266964102552794,
+      "unit": "rad",
+      "id": "root.alpha_en.2",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_2",
+      "value": 0.0148312065869987,
+      "unit": "rad",
+      "id": "root.gamma_e.2",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_2",
+      "value": 1.916383151356131,
+      "unit": "mm",
+      "id": "root.hFe.2",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_2",
+      "value": -1.5,
+      "unit": "1",
+      "id": "root.G.2",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_2",
+      "value": 0.9746716790499836,
+      "unit": "rad",
+      "id": "root.theta.2",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_2",
+      "value": 4.37138753017158,
+      "unit": "mm",
+      "id": "root.sFn.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_2",
+      "value": 2.1641076409799407,
+      "unit": "1",
+      "id": "root.Y_S.2",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_2",
+      "value": 2.281061345732539,
+      "unit": "1",
+      "id": "root.L.2",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_2",
+      "value": 1.916383151356131,
+      "unit": "mm",
+      "id": "root.hFe.2",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_2",
+      "value": -1.5,
+      "unit": "1",
+      "id": "root.G.2",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_2",
+      "value": 0.3118652036682807,
+      "unit": "rad",
+      "id": "root.alpha_Fen.2",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_2",
+      "value": 0.9746716790499836,
+      "unit": "rad",
+      "id": "root.theta.2",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_2",
+      "value": 4.37138753017158,
+      "unit": "mm",
+      "id": "root.sFn.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_2",
+      "value": 2.2664824726994404,
+      "unit": "1",
+      "id": "root.qs.2",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_2",
+      "value": 0.9643550265282091,
+      "unit": "mm",
+      "id": "root.rhoF.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  },
+  "P14": {
+   "z": 100,
+   "x": 0.8,
+   "rhofP": 0.4,
+   "gear_index_in_gearbase_pair": 2,
+   "mate": {
+    "z": 50,
+    "x": 0.0
+   },
+   "Y_F": 0.9675859775142857,
+   "Y_S": 2.5739959550898805,
+   "YFS": 2.490562392323459,
+   "f_eps": 1.0,
+   "eps_alpha": 1.7360989229854171,
+   "sFn_mm": 4.688803332035011,
+   "rhoF_mm": 0.8006789718044411,
+   "hFe_mm": 1.7948250790282638,
+   "den_mm": 203.69280599129024,
+   "alpha_Fen_deg": 21.85903238393902,
+   "qs": 2.928017031262943,
+   "model_sha256": "7a12ae0f1a8ee6c25b1abb8d266328ce9422984c2dd05b654b432375c0794065",
+   "formula_chain": {
+    "Y_F": [
+     {
+      "depth": 0,
+      "name": "Y_F_2",
+      "value": 0.9675859775142857,
+      "unit": "1",
+      "id": "root.Y_F.2",
+      "ref": "ISO 6336-3:2019 6.2.1 式(9) 齿形系数YF，含fε（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 1,
+      "name": "alpha_Fen_2",
+      "value": 0.38151208639980116,
+      "unit": "rad",
+      "id": "root.alpha_Fen.2",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 2,
+      "name": "alpha_en_2",
+      "value": 0.3958823734439755,
+      "unit": "rad",
+      "id": "root.alpha_en.2",
+      "ref": "ISO 6336-3:2019 外界点压力角"
+     },
+     {
+      "depth": 2,
+      "name": "gamma_e_2",
+      "value": 0.014370287044174299,
+      "unit": "rad",
+      "id": "root.gamma_e.2",
+      "ref": "ISO 6336-3:2019 γe"
+     },
+     {
+      "depth": 1,
+      "name": "f_eps",
+      "value": 1.0,
+      "unit": "1",
+      "id": "root.f_eps",
+      "ref": "ISO 6336-3:2019 6.2.1 式(10)-(14) 齿根载荷分配系数，使用当量端面重合度εαn（PDF25/印刷17原图核实）"
+     },
+     {
+      "depth": 2,
+      "name": "eps_beta",
+      "value": 0.0,
+      "unit": "1",
+      "id": "geo.eps_beta",
+      "ref": "ISO 21771:2007 纵向重合度"
+     },
+     {
+      "depth": 1,
+      "name": "hFe_2",
+      "value": 1.7948250790282638,
+      "unit": "mm",
+      "id": "root.hFe.2",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 2,
+      "name": "G_2",
+      "value": -0.04999999999999993,
+      "unit": "1",
+      "id": "root.G.2",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 2,
+      "name": "theta_2",
+      "value": 1.015178008525803,
+      "unit": "rad",
+      "id": "root.theta.2",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 1,
+      "name": "sFn_2",
+      "value": 4.688803332035011,
+      "unit": "mm",
+      "id": "root.sFn.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     }
+    ],
+    "Y_S": [
+     {
+      "depth": 0,
+      "name": "Y_S_2",
+      "value": 2.5739959550898805,
+      "unit": "1",
+      "id": "root.Y_S.2",
+      "ref": "ISO 6336-3:2019 应力修正系数 YS"
+     },
+     {
+      "depth": 1,
+      "name": "L_2",
+      "value": 2.6124012790001663,
+      "unit": "1",
+      "id": "root.L.2",
+      "ref": "ISO 6336-3:2019 L"
+     },
+     {
+      "depth": 2,
+      "name": "hFe_2",
+      "value": 1.7948250790282638,
+      "unit": "mm",
+      "id": "root.hFe.2",
+      "ref": "ISO 6336-3:2019 弯曲力臂"
+     },
+     {
+      "depth": 3,
+      "name": "G_2",
+      "value": -0.04999999999999993,
+      "unit": "1",
+      "id": "root.G.2",
+      "ref": "ISO 6336-3:2019 辅助量 G"
+     },
+     {
+      "depth": 3,
+      "name": "alpha_Fen_2",
+      "value": 0.38151208639980116,
+      "unit": "rad",
+      "id": "root.alpha_Fen.2",
+      "ref": "ISO 6336-3:2019 载荷作用角"
+     },
+     {
+      "depth": 3,
+      "name": "theta_2",
+      "value": 1.015178008525803,
+      "unit": "rad",
+      "id": "root.theta.2",
+      "ref": "ISO 6336-3:2019 辅助角 θ（不动点迭代）"
+     },
+     {
+      "depth": 2,
+      "name": "sFn_2",
+      "value": 4.688803332035011,
+      "unit": "mm",
+      "id": "root.sFn.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根弦齿厚"
+     },
+     {
+      "depth": 1,
+      "name": "qs_2",
+      "value": 2.928017031262943,
+      "unit": "1",
+      "id": "root.qs.2",
+      "ref": "ISO 6336-3:2019 缺口参数 qs"
+     },
+     {
+      "depth": 2,
+      "name": "rhoF_2",
+      "value": 0.8006789718044411,
+      "unit": "mm",
+      "id": "root.rhoF.2",
+      "ref": "ISO 6336-3:2019 危险截面齿根圆角半径"
+     }
+    ]
+   }
+  }
+ },
+ "provenance": {
+  "generator": "fea-pack/ingest/make_expected.py",
+  "gearbase_version": "0.9",
+  "gearmath_formulas_py_sha256": "02727f963b025e4fc0f7d43f868888b897b1d62e814b3c99c514fddd9115411f",
+  "editions": {
+   "ISO 21771": "2007",
+   "ISO 6336-1": "2019",
+   "ISO 6336-2": "2019",
+   "ISO 6336-3": "2019"
+  },
+  "generated_utc": "2026-10-29T19:37:37Z"
+ },
+ "case_sha256": "d9b7fb065b42a0193968d91d7b18e24c43edf5ea45f3993ed357479903963c5a"
+}

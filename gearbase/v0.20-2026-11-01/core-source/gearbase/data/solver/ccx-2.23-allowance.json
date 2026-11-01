@@ -1,0 +1,19 @@
+{
+  "schema": "gearbase.solver-allowance/1",
+  "solver_id": "calculix-ccx-2.23-linux-x86_64",
+  "archive_url": "https://www.dhondt.de/ccx_2.23.tar.bz2",
+  "archive_sha256": "35d426fed5eb164fbbaaafa20819d13d22e30bc2b9bc9c6c4ed957e9468355dd",
+  "archive_member": "./CalculiX/ccx_2.23/src/ccx_2.23",
+  "executable_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+  "origin_proof_file": "ccx-2.23-origin-proof.json",
+  "origin_proof_sha256": "67d963779e7632f344193d68ba440c4ee7509c3e40a11e833ddd4a8ceca12a74",
+  "scope": "explicit-local-verification",
+  "numerical_gear_qualification": "not_granted",
+  "authority": "User v0.18 task A11: official archive and executable hashes match -> allow this exact solver.",
+  "authorized_utc": "2026-11-01T08:55:51.513421+00:00",
+  "limits": [
+    "No numerical M37 gate is promoted by origin verification.",
+    "No default execution, platform emulation, reader registration or CONTACT FILE decision.",
+    "The previous v0.17 probe preceded this allowance; this record does not rewrite that chronology."
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "receipt_sha256": "39edb86adeae007c9e402dee98e7b38f8602cca211b12cd067604af500495099",
+  "plot_source_sha256": "68024aa51f6335ecc716139707f9816ae9d6b47f25746bda27ffdedfd35bd8d6",
+  "rows": [
+    {
+      "point": "P01",
+      "pass": true,
+      "ratio": 0.9143866424301861,
+      "converged": true
+    },
+    {
+      "point": "P02",
+      "pass": false,
+      "ratio": 0.8510413300732456,
+      "converged": false
+    },
+    {
+      "point": "P03",
+      "pass": true,
+      "ratio": 1.000955490727879,
+      "converged": true
+    },
+    {
+      "point": "P04",
+      "pass": true,
+      "ratio": 0.988753859582894,
+      "converged": true
+    },
+    {
+      "point": "P05",
+      "pass": false,
+      "ratio": 0.875758566572313,
+      "converged": true
+    },
+    {
+      "point": "P06",
+      "pass": true,
+      "ratio": 1.0097984825912145,
+      "converged": true
+    },
+    {
+      "point": "P07",
+      "pass": true,
+      "ratio": 0.9807814818903748,
+      "converged": true
+    },
+    {
+      "point": "P08",
+      "pass": false,
+      "ratio": 0.8450524846534586,
+      "converged": true
+    },
+    {
+      "point": "P09",
+      "pass": true,
+      "ratio": 1.0422264300553081,
+      "converged": true
+    },
+    {
+      "point": "P10",
+      "pass": true,
+      "ratio": 0.9411812204677132,
+      "converged": true
+    },
+    {
+      "point": "P11",
+      "pass": true,
+      "ratio": 1.0173567733367894,
+      "converged": true
+    },
+    {
+      "point": "P12",
+      "pass": false,
+      "ratio": 0.877173093367695,
+      "converged": true
+    },
+    {
+      "point": "P13",
+      "pass": true,
+      "ratio": 1.0296089689937906,
+      "converged": true
+    },
+    {
+      "point": "P14",
+      "pass": false,
+      "ratio": 0.8765658569190092,
+      "converged": true
+    }
+  ],
+  "limits": "All fixed 14 points; no omitted failures; validation ladder remains blocked."
+}

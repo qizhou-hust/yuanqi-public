@@ -1,0 +1,1704 @@
+{
+  "schema": "gearbase.fea-evidence/v1",
+  "ingested_utc": "2026-11-01T10:36:02Z",
+  "source": {
+    "results_sha256": "3a1fa27137ff20db6aea5d3c9d2741d679ab3b2fac77b615188c83f0106d8eb2",
+    "pack_version": "M37-FEA-pack 1.1 (2026-10-30)",
+    "mode": "full",
+    "machine": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "cpu_count": 20,
+      "python": "3.12.4",
+      "gmsh_version": "4.15.2"
+    },
+    "solver": {
+      "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+      "version": "2.23",
+      "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+      "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+      "threads": 1
+    }
+  },
+  "checks": {
+    "numerical_method": {
+      "richardson": "signed-unequal-grid/1",
+      "ingest_sha256": "89499e55de8490684604bfb70fb7f1eaaa4e67c7759c0c87284fcfaacebabad3"
+    },
+    "schema": {
+      "pass": true,
+      "errors": []
+    },
+    "inputs_match_pack": {
+      "pass": true,
+      "mismatch": [],
+      "not_reported": []
+    },
+    "verified_profile": {
+      "name": "v017_verified_probe",
+      "solver_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862"
+    },
+    "strict_field_read": {
+      "pass": true,
+      "path": "strict_protocol",
+      "errors": [],
+      "error_count": 0,
+      "jobs_checked": 42
+    },
+    "attachments": {
+      "pass": true,
+      "missing_dat": [],
+      "sha_mismatch": [],
+      "frd_included": 42
+    },
+    "repost": {
+      "pass": true,
+      "jobs_reposted": 42,
+      "diffs": [],
+      "note": "L1 半宽若来自 .frd（未回传）则不比对"
+    },
+    "strict_repost": {
+      "pass": true,
+      "jobs_reread": 42,
+      "not_attached": [],
+      "failures": []
+    }
+  },
+  "warnings": [],
+  "records": [
+    {
+      "quantity": "YFS_root",
+      "value": 2.577175660069896,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.8184747463288375,
+        "Y_F": 1.3774461758377081,
+        "Y_S": 2.0461596218921243,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 0.9143866424301861,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.11988405787687545,
+          0.0799227052512503,
+          0.05328180350083353
+        ],
+        "values": [
+          2.666225431044993,
+          2.637834906530083,
+          2.6184957459143243
+        ],
+        "relative_changes": [
+          0.010762813261977854,
+          0.007385599402226882
+        ],
+        "assumed_order": 2.0,
+        "observed_order": 0.946871507200187,
+        "order_used": 0.946871507200187,
+        "richardson_estimate": 2.577175660069896,
+        "discretization_error_estimate": 0.041320085844428256,
+        "gci_fine": 0.019725106441790347,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 4.5602655152216685e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P01_d8",
+            "L2_P01_d12",
+            "L2_P01_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7127991086445828,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "90d94c6873c72c0ad0dc9ee6be44be22b3d9ae352968a975878b2eb2277ee125",
+      "validity": {
+        "z": 17,
+        "x": 0.3,
+        "rhofP": 0.38,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "c824ad6757cbc620"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.761033232296067,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 3.2442998180340274,
+        "Y_F": 1.1857242227237261,
+        "Y_S": 2.7361335425716016,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 0.8510413300732456,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": false,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "not_converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.06643046746359228,
+          0.044286978309061524,
+          0.029524652206041016
+        ],
+        "values": [
+          2.7322732892975075,
+          2.628858699665819,
+          2.7022889955715126
+        ],
+        "relative_changes": [
+          0.03933820773434279,
+          0.027173368957217496
+        ],
+        "assumed_order": 2.0,
+        "observed_order": null,
+        "order_used": 2.0,
+        "richardson_estimate": 2.761033232296067,
+        "discretization_error_estimate": 0.05874423672455453,
+        "gci_fine": 0.027173368957217496,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 2.8429592600248293e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P02_d8",
+            "L2_P02_d12",
+            "L2_P02_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7257581211520773,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": false,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "4550c381a742aef65a258de6ecdef71495a0104d6eb03c86175975c546e0b503",
+      "validity": {
+        "z": 17,
+        "x": 0.8,
+        "rhofP": 0.25,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "c61d96f6456771c8"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.8591572125467066,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.856427922152235,
+        "Y_F": 1.5635451830850413,
+        "Y_S": 1.8268918308559516,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 1.000955490727879,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.14323818233980812,
+          0.09549212155987208,
+          0.06366141437324806
+        ],
+        "values": [
+          2.904659506593964,
+          2.8579790282522266,
+          2.8586335750824934
+        ],
+        "relative_changes": [
+          0.016333387292307974,
+          0.00022897192419909544
+        ],
+        "assumed_order": 2.0,
+        "observed_order": null,
+        "order_used": 2.0,
+        "richardson_estimate": 2.8591572125467066,
+        "discretization_error_estimate": 0.0005236374642132446,
+        "gci_fine": 0.00022897192419909544,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 1.9129985655700773e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P03_d8",
+            "L2_P03_d12",
+            "L2_P03_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7278379765946144,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "fef64a248e357a6e7f710403347bbd81451911134ef0816b456461796adc5302",
+      "validity": {
+        "z": 20,
+        "x": 0,
+        "rhofP": 0.38,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "054f083f73915be0"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 3.11300769024005,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 3.148415209780595,
+        "Y_F": 1.6520486013297022,
+        "Y_S": 1.9057642779071367,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 0.988753859582894,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.12417301308363425,
+          0.08278200872242283,
+          0.05518800581494856
+        ],
+        "values": [
+          3.1398179239130557,
+          3.139394584519839,
+          3.124735198808845
+        ],
+        "relative_changes": [
+          0.00013484746240697632,
+          0.004691400959857966
+        ],
+        "assumed_order": 2.0,
+        "observed_order": -8.74221183506139,
+        "order_used": 2.0,
+        "richardson_estimate": 3.11300769024005,
+        "discretization_error_estimate": 0.01172750856879512,
+        "gci_fine": 0.004691400959857966,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 3.605401183343208e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P04_d8",
+            "L2_P04_d12",
+            "L2_P04_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7562877603317291,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "8ec6f49ea5c7a47e4abaa79b29d3452724a3feded9ed761ff375382d67d59d84",
+      "validity": {
+        "z": 20,
+        "x": 0,
+        "rhofP": 0.25,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "7135ddda2207ba6d"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.5928683767396348,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.9607114057565282,
+        "Y_F": 1.236510319003863,
+        "Y_S": 2.3944089752050655,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 0.875758566572313,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": false,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.09100448781320254,
+          0.060669658542135026,
+          0.04044643902809002
+        ],
+        "values": [
+          2.639556446389081,
+          2.628343934102046,
+          2.6198241960661393
+        ],
+        "relative_changes": [
+          0.004265998883006035,
+          0.003252026624038283
+        ],
+        "assumed_order": 2.0,
+        "observed_order": 0.6773572480507717,
+        "order_used": 0.6773572480507717,
+        "richardson_estimate": 2.5928683767396348,
+        "discretization_error_estimate": 0.026955819326504482,
+        "gci_fine": 0.012861463837430776,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 5.6221998714895554e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P05_d8",
+            "L2_P05_d12",
+            "L2_P05_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.751658160440038,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "0e6a6e7d1e9d81f23c37d34ce2674c545fb7da5b4b477ea078282e5a630eafc5",
+      "validity": {
+        "z": 20,
+        "x": 0.5,
+        "rhofP": 0.3,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "06deb732ef677fe2"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 3.0003186212078585,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.9712053176281548,
+        "Y_F": 1.6742083842115048,
+        "Y_S": 1.7746926521500437,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 1.0097984825912145,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.1466884908709588,
+          0.09779232724730587,
+          0.06519488483153725
+        ],
+        "values": [
+          3.0922684913505067,
+          3.074095905101181,
+          3.033108525160446
+        ],
+        "relative_changes": [
+          0.005911522219970458,
+          0.01351332456479334
+        ],
+        "assumed_order": 2.0,
+        "observed_order": -2.0059679321925543,
+        "order_used": 2.0,
+        "richardson_estimate": 3.0003186212078585,
+        "discretization_error_estimate": 0.03278990395258763,
+        "gci_fine": 0.01351332456479334,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 2.4108268528577937e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P06_d8",
+            "L2_P06_d12",
+            "L2_P06_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7792520414087329,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "6e22c1bdb265775e62f74c05e56af0819a9865ffb1901b8c65ec808860114a68",
+      "validity": {
+        "z": 25,
+        "x": -0.2,
+        "rhofP": 0.3,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "07d6540cdd0c5ef4"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.8675010910613623,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.923690081846256,
+        "Y_F": 1.4118897464110658,
+        "Y_S": 2.0707637329884228,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 0.9807814818903748,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.11664502611514839,
+          0.07776335074343226,
+          0.05184223382895484
+        ],
+        "values": [
+          2.942732855758011,
+          2.9028984309195276,
+          2.8841559133174495
+        ],
+        "relative_changes": [
+          0.013722293695913226,
+          0.006498441195753483
+        ],
+        "assumed_order": 2.0,
+        "observed_order": 1.8594371192651158,
+        "order_used": 1.8594371192651158,
+        "richardson_estimate": 2.8675010910613623,
+        "discretization_error_estimate": 0.016654822256087165,
+        "gci_fine": 0.007218239389895805,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 5.417193442006384e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P07_d8",
+            "L2_P07_d12",
+            "L2_P07_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7652361887228154,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "778c9c54042f8f95d77928d8dea3b0bd6cb7d55a79aa07edc0a3c9037ccacfef",
+      "validity": {
+        "z": 30,
+        "x": 0,
+        "rhofP": 0.25,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "f95b333f166950b6"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.150294459165985,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.544569122292781,
+        "Y_F": 1.0289617844656258,
+        "Y_S": 2.4729481315132227,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 0.8450524846534586,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": false,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.10020220538077455,
+          0.0668014702538497,
+          0.04453431350256647
+        ],
+        "values": [
+          2.207783905511905,
+          2.197859588495465,
+          2.171434516645754
+        ],
+        "relative_changes": [
+          0.004515446331689313,
+          0.0121694076644459
+        ],
+        "assumed_order": 2.0,
+        "observed_order": -2.41531323271239,
+        "order_used": 2.0,
+        "richardson_estimate": 2.150294459165985,
+        "discretization_error_estimate": 0.02114005747976888,
+        "gci_fine": 0.01216940766444589,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 3.857497184886698e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P08_d8",
+            "L2_P08_d12",
+            "L2_P08_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.8291638227729056,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "f1a5c3847224503b4864b64d8eb2739382b8769a0ba3d0cd4ff10c472502f2a0",
+      "validity": {
+        "z": 30,
+        "x": 0.8,
+        "rhofP": 0.4,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "850a62496bbe4c6f"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.728505866535506,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.6179588118780597,
+        "Y_F": 1.5502499533260201,
+        "Y_S": 1.6887333595858516,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 1.0422264300553081,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.1746076398737959,
+          0.11640509324919728,
+          0.07760339549946485
+        ],
+        "values": [
+          2.8146226822856852,
+          2.796402827477182,
+          2.7820377727602885
+        ],
+        "relative_changes": [
+          0.006515461445495899,
+          0.00516350096233261
+        ],
+        "assumed_order": 2.0,
+        "observed_order": 0.5862734345872527,
+        "order_used": 0.5862734345872527,
+        "richardson_estimate": 2.728505866535506,
+        "discretization_error_estimate": 0.05353190622478232,
+        "gci_fine": 0.02405247097511046,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 1.5249026570679953e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P09_d8",
+            "L2_P09_d12",
+            "L2_P09_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7577675813424614,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "2b30f0b1d3f85587531c8f96569060bca31191cc8bad21ca9fa03fea8f556b78",
+      "validity": {
+        "z": 40,
+        "x": -0.5,
+        "rhofP": 0.38,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "37ba43c04f47dbd1"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.73506500474601,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.9059919017368823,
+        "Y_F": 1.1761614234680036,
+        "Y_S": 2.4707424030014,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.1",
+          "root.L.1",
+          "root.Y_F.1",
+          "root.Y_S.1",
+          "root.alpha_Fen.1",
+          "root.alpha_en.1",
+          "root.f_eps",
+          "root.gamma_e.1",
+          "root.hFe.1",
+          "root.qs.1",
+          "root.rhoF.1",
+          "root.sFn.1",
+          "root.theta.1"
+        ]
+      },
+      "ratio_FE_over_reference": 0.9411812204677132,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.09176574530101736,
+          0.06117716353401157,
+          0.04078477568934105
+        ],
+        "values": [
+          2.765621117803809,
+          2.7532957306313803,
+          2.7431675495839523
+        ],
+        "relative_changes": [
+          0.004476594008883328,
+          0.0036921481697186837
+        ],
+        "assumed_order": 2.0,
+        "observed_order": 0.4842325219128384,
+        "order_used": 2.0,
+        "richardson_estimate": 2.73506500474601,
+        "discretization_error_estimate": 0.008102544837942371,
+        "gci_fine": 0.003692148169718685,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 3.5114717286301966e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P10_d8",
+            "L2_P10_d12",
+            "L2_P10_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7344462114890995,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "af53aea3c7de5f99619f23b1182468ce0ac4061d46ab1cded8d57d36c8f7d465",
+      "validity": {
+        "z": 50,
+        "x": 0.2,
+        "rhofP": 0.25,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "df35773830a36348"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.458957668038859,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.417006238601841,
+        "Y_F": 1.240744193670645,
+        "Y_S": 1.9480294575881245,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.2",
+          "root.L.2",
+          "root.Y_F.2",
+          "root.Y_S.2",
+          "root.alpha_Fen.2",
+          "root.alpha_en.2",
+          "root.f_eps",
+          "root.gamma_e.2",
+          "root.hFe.2",
+          "root.qs.2",
+          "root.rhoF.2",
+          "root.sFn.2",
+          "root.theta.2"
+        ]
+      },
+      "ratio_FE_over_reference": 1.0173567733367894,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.1490668890658728,
+          0.0993779260439152,
+          0.06625195069594346
+        ],
+        "values": [
+          2.46562613808053,
+          2.467983573950648,
+          2.462969181777432
+        ],
+        "relative_changes": [
+          0.0009552072773095792,
+          0.0020359134861758603
+        ],
+        "assumed_order": 2.0,
+        "observed_order": null,
+        "order_used": 2.0,
+        "richardson_estimate": 2.458957668038859,
+        "discretization_error_estimate": 0.004011513738572781,
+        "gci_fine": 0.0020359134861758603,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 4.127663998984639e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P11_d8",
+            "L2_P11_d12",
+            "L2_P11_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7625081452405265,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "983fb8f0b738a3826f26fa98ea9dd7c656c7d60d3a6d540db77610cf8de36fee",
+      "validity": {
+        "z": 60,
+        "x": -0.3,
+        "rhofP": 0.4,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "8b2d76bcf2b1a771"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.501835807816082,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.852157489476661,
+        "Y_F": 1.0461218357453412,
+        "Y_S": 2.726410435209542,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.2",
+          "root.L.2",
+          "root.Y_F.2",
+          "root.Y_S.2",
+          "root.alpha_Fen.2",
+          "root.alpha_en.2",
+          "root.f_eps",
+          "root.gamma_e.2",
+          "root.hFe.2",
+          "root.qs.2",
+          "root.rhoF.2",
+          "root.sFn.2",
+          "root.theta.2"
+        ]
+      },
+      "ratio_FE_over_reference": 0.877173093367695,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": false,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.08250769309435124,
+          0.0550051287295675,
+          0.036670085819711665
+        ],
+        "values": [
+          2.5508851602923523,
+          2.534546780528918,
+          2.5236507285398075
+        ],
+        "relative_changes": [
+          0.006446272717848462,
+          0.004317575275329435
+        ],
+        "assumed_order": 2.0,
+        "observed_order": 0.999139994884235,
+        "order_used": 0.999139994884235,
+        "richardson_estimate": 2.501835807816082,
+        "discretization_error_estimate": 0.021814920723725706,
+        "gci_fine": 0.010805239645992901,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 2.716624458415531e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P12_d8",
+            "L2_P12_d12",
+            "L2_P12_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.7023208724789816,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "68ddf7d415782c549d75e261aafe38ed1f4792565eed7957590db2d34b59687d",
+      "validity": {
+        "z": 80,
+        "x": 0.5,
+        "rhofP": 0.3,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "130280dfb0cb1597"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.715933366364579,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.637829941418234,
+        "Y_F": 1.2188996016038207,
+        "Y_S": 2.1641076409799407,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.2",
+          "root.L.2",
+          "root.Y_F.2",
+          "root.Y_S.2",
+          "root.alpha_Fen.2",
+          "root.alpha_en.2",
+          "root.f_eps",
+          "root.gamma_e.2",
+          "root.hFe.2",
+          "root.qs.2",
+          "root.rhoF.2",
+          "root.sFn.2",
+          "root.theta.2"
+        ]
+      },
+      "ratio_FE_over_reference": 1.0296089689937906,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": true,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.1205443785615915,
+          0.080362919041061,
+          0.053575279360707335
+        ],
+        "values": [
+          2.7437169173082143,
+          2.721704428565117,
+          2.717132102947604
+        ],
+        "relative_changes": [
+          0.008087758726505889,
+          0.0016827763407428057
+        ],
+        "assumed_order": 2.0,
+        "observed_order": 3.876012923635078,
+        "order_used": 3.876012923635078,
+        "richardson_estimate": 2.715933366364579,
+        "discretization_error_estimate": 0.0011987365830252728,
+        "gci_fine": 0.0005514714309090861,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 2.865721694120464e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P13_d8",
+            "L2_P13_d12",
+            "L2_P13_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.797923299314918,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "1b4b9e5cd68a912685867845b357a23d3390cdeb432eecb7b7baa790f386c0ca",
+      "validity": {
+        "z": 100,
+        "x": -0.5,
+        "rhofP": 0.25,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "ae42609fc3666ff7"
+    },
+    {
+      "quantity": "YFS_root",
+      "value": 2.183141957637271,
+      "unit": "1",
+      "field_summary": null,
+      "reference": {
+        "value": 2.490562392323459,
+        "Y_F": 0.9675859775142857,
+        "Y_S": 2.5739959550898805,
+        "source": "gearbase ISO 6336-3:2019 方法 B",
+        "formula_ids": [
+          "geo.eps_beta",
+          "root.G.2",
+          "root.L.2",
+          "root.Y_F.2",
+          "root.Y_S.2",
+          "root.alpha_Fen.2",
+          "root.alpha_en.2",
+          "root.f_eps",
+          "root.gamma_e.2",
+          "root.hFe.2",
+          "root.qs.2",
+          "root.rhoF.2",
+          "root.sFn.2",
+          "root.theta.2"
+        ]
+      },
+      "ratio_FE_over_reference": 0.8765658569190092,
+      "acceptance_band": [
+        0.9,
+        1.1
+      ],
+      "within_band": false,
+      "certificate": {
+        "property": "numerical_convergence",
+        "kind": "level_refinement",
+        "status": "converged",
+        "method": "CCX 2D 三齿扇区，HPSTC 力加载，受拉侧过渡曲线 σ1 积分点外推（无节点平滑）",
+        "levels": [
+          0.10008487147603408,
+          0.06672324765068939,
+          0.04448216510045959
+        ],
+        "values": [
+          2.234045855855434,
+          2.229110365394796,
+          2.20357236108506
+        ],
+        "relative_changes": [
+          0.0022141077163597028,
+          0.011589364960613786
+        ],
+        "assumed_order": 2.0,
+        "observed_order": -4.053901612795293,
+        "order_used": 2.0,
+        "richardson_estimate": 2.183141957637271,
+        "discretization_error_estimate": 0.020430403447789125,
+        "gci_fine": 0.011589364960613779,
+        "penalty_study": null,
+        "phase_study": null,
+        "conservation": {
+          "max_force_balance_rel": 3.3080772775420464e-08
+        },
+        "field_integrity": {
+          "jobs": [
+            "L2_P14_d8",
+            "L2_P14_d12",
+            "L2_P14_d18"
+          ],
+          "all_solved": true,
+          "not_solved": [],
+          "lint_errors": 0,
+          "min_minSJ": 0.8411353769869897,
+          "solver_warnings_total": 0,
+          "job_warnings": []
+        },
+        "ladder_level": "L2",
+        "solver_identity": {
+          "version": "2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "version_output": "CalculiX Version 2.23, Copyright(C) 1998-2025 Guido Dhondt",
+          "threads": 1
+        },
+        "accepted": true,
+        "rule": "三级网格末级变化 <0.02；力平衡 <0.0001",
+        "meaning": "数值收敛：只说明加密后数值稳定并估计离散误差；不表示模型正确，也不是证据等级",
+        "ladder_level_reached_by_toolchain": null
+      },
+      "provenance": null,
+      "provenance_if_admitted": "fe_verified",
+      "graph_admission": {
+        "admitted": false,
+        "reason": "M37 记录模式：证据只记录，不进入公式图；入图另需用途对应的阶梯级别与人工批准"
+      },
+      "tool": "ccx_plane_root_sector",
+      "projection_hash": "5d05d65da917d56505e0540901010c28d3b8d9f29a8949c0992ddf45129130c9",
+      "validity": {
+        "z": 100,
+        "x": 0.8,
+        "rhofP": 0.4,
+        "mate": {
+          "z": 50,
+          "x": 0.0
+        }
+      },
+      "note": "",
+      "record_id": "47c8db5439d2ec02"
+    }
+  ],
+  "ladder": {
+    "L0": {
+      "status": "not_run",
+      "own_result": "not_run",
+      "unlocks_if_passed": null
+    },
+    "L1": {
+      "status": "not_run",
+      "own_result": "not_run",
+      "unlocks_if_passed": "复核（verification，配合对应几何级）"
+    },
+    "L2": {
+      "status": "blocked_by_lower_level",
+      "own_result": "failed",
+      "n_pass": 9,
+      "n_points": 14,
+      "rows": [
+        {
+          "point": "P01",
+          "pass": true,
+          "ratio": 0.9143866424301861,
+          "converged": true
+        },
+        {
+          "point": "P02",
+          "pass": false,
+          "ratio": 0.8510413300732456,
+          "converged": false
+        },
+        {
+          "point": "P03",
+          "pass": true,
+          "ratio": 1.000955490727879,
+          "converged": true
+        },
+        {
+          "point": "P04",
+          "pass": true,
+          "ratio": 0.988753859582894,
+          "converged": true
+        },
+        {
+          "point": "P05",
+          "pass": false,
+          "ratio": 0.875758566572313,
+          "converged": true
+        },
+        {
+          "point": "P06",
+          "pass": true,
+          "ratio": 1.0097984825912145,
+          "converged": true
+        },
+        {
+          "point": "P07",
+          "pass": true,
+          "ratio": 0.9807814818903748,
+          "converged": true
+        },
+        {
+          "point": "P08",
+          "pass": false,
+          "ratio": 0.8450524846534586,
+          "converged": true
+        },
+        {
+          "point": "P09",
+          "pass": true,
+          "ratio": 1.0422264300553081,
+          "converged": true
+        },
+        {
+          "point": "P10",
+          "pass": true,
+          "ratio": 0.9411812204677132,
+          "converged": true
+        },
+        {
+          "point": "P11",
+          "pass": true,
+          "ratio": 1.0173567733367894,
+          "converged": true
+        },
+        {
+          "point": "P12",
+          "pass": false,
+          "ratio": 0.877173093367695,
+          "converged": true
+        },
+        {
+          "point": "P13",
+          "pass": true,
+          "ratio": 1.0296089689937906,
+          "converged": true
+        },
+        {
+          "point": "P14",
+          "pass": false,
+          "ratio": 0.8765658569190092,
+          "converged": true
+        }
+      ],
+      "trend": {
+        "corr_ratio_vs_z": 0.0543480757440197,
+        "corr_ratio_vs_x": -0.975241422556708,
+        "corr_ratio_vs_rhofP": -0.058353511542683346
+      },
+      "unlocks_if_passed": "标定 YF·YS（fe_calibrated: YFS）"
+    },
+    "L3": {
+      "status": "not_run",
+      "own_result": "not_run",
+      "unlocks_if_passed": "标定 c′、cγ（fe_calibrated: c_prime, c_gamma）"
+    }
+  },
+  "ladder_level_reached": null,
+  "verdict": "recorded",
+  "summary": {
+    "L0": "not_run",
+    "L1": "not_run",
+    "L2": "blocked_by_lower_level",
+    "L3": "not_run"
+  }
+}

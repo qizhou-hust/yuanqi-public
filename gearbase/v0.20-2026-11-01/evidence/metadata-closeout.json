@@ -1,0 +1,44 @@
+{
+  "schema": "gearbase.metadata-closeout/1",
+  "passed": true,
+  "functional_source_commit": "3b27cdfd6c371616384258a5fcd09eeac4de90bc",
+  "functional_source_manifest_sha256": "eac761a9c8f37bda0cb8ae8c999ba5ff83d9de94717c49aa18cc5eb522f375b9",
+  "changed_source_files_after_hosted_ci": [
+    "PACKAGE-CONTENTS.sha256",
+    "docs/v020-progress.md",
+    "output/milestones-v020-current.json",
+    "output/milestones-v020-current.md"
+  ],
+  "executable_sources_unchanged": true,
+  "only_docs_outputs_checksums_changed": true,
+  "frontier_identity_current": true,
+  "checks": [
+    {
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "gearmath.tools.package_hashes",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "tests.test_package",
+        "tests.test_m38_ai_native.TestDoctor",
+        "tests.test_sys_design_check.TestMilestones",
+        "tests.test_v017_fea_prepare",
+        "tests.test_v017_thermal_integration",
+        "-v"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

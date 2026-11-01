@@ -1,0 +1,351 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "m37.fea-results/v1",
+ "title": "M37 FEA 题目包回传结果 results.json",
+ "description": "由 scripts/run_m37.py 生成。gearbase 侧 ingest_fea_results.py 按本 schema 校验，并按各作业的逐级原始值重新计算收敛与判定（不采信 cases[].local_assessment）。",
+ "type": "object",
+ "required": [
+  "schema",
+  "pack_version",
+  "generated_utc",
+  "mode",
+  "machine",
+  "solver",
+  "coord_supported",
+  "total_wall_s",
+  "inputs_sha256",
+  "cases",
+  "jobs",
+  "warnings"
+ ],
+ "properties": {
+  "schema": {
+   "const": "m37.fea-results/v1"
+  },
+  "pack_version": {
+   "type": "string"
+  },
+  "generated_utc": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+  },
+  "mode": {
+   "type": "string",
+   "enum": [
+    "full",
+    "smoke",
+    "dry_run"
+   ]
+  },
+  "machine": {
+   "type": "object",
+   "required": [
+    "platform",
+    "cpu_count",
+    "python",
+    "gmsh_version"
+   ],
+   "properties": {
+    "platform": {
+     "type": "string"
+    },
+    "cpu_count": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    },
+    "python": {
+     "type": "string"
+    },
+    "gmsh_version": {
+     "type": "string"
+    },
+    "hostname_sha8": {
+     "type": "string"
+    }
+   }
+  },
+  "solver": {
+   "type": "object",
+   "description": "ccx -v 原样输出、解析版本、可执行文件 sha256、线程数",
+   "properties": {
+    "path": {
+     "type": "string"
+    },
+    "version_output": {
+     "type": "string"
+    },
+    "version": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "sha256": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{64}$"
+    },
+    "threads": {
+     "type": "integer",
+     "minimum": 1
+    }
+   }
+  },
+  "coord_supported": {
+   "type": "boolean"
+  },
+  "options": {
+   "type": "object"
+  },
+  "total_wall_s": {
+   "type": "number"
+  },
+  "inputs_sha256": {
+   "type": "object",
+   "description": "cases/*.json、expected/*.json、scripts/*.py 的 sha256（用于确认用户运行的就是本包版本）"
+  },
+  "cases": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "case_id"
+    ],
+    "properties": {
+     "case_id": {
+      "type": "string"
+     },
+     "ladder_level": {
+      "type": "string"
+     },
+     "local_assessment": {
+      "type": "object"
+     },
+     "wall_s": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  "jobs": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "case",
+     "group",
+     "tags",
+     "status",
+     "warnings"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^(L0|L0c|L1|L2|L3)_[A-Za-z0-9_.-]+$"
+     },
+     "case": {
+      "type": "string",
+      "enum": [
+       "L0",
+       "L1",
+       "L2",
+       "L3"
+      ]
+     },
+     "group": {
+      "type": "string",
+      "enum": [
+       "patch",
+       "contact_patch",
+       "mesh",
+       "penalty",
+       "mortar",
+       "phase"
+      ]
+     },
+     "tags": {
+      "type": "object",
+      "description": "题内维度：level（网格级别，0=最粗）、alpha（penalty 系数）、phase、point、contact、elem"
+     },
+     "status": {
+      "type": "string",
+      "enum": [
+       "solved",
+       "solver_failed",
+       "post_failed",
+       "lint_failed",
+       "build_failed",
+       "dry_run"
+      ]
+     },
+     "element_types": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "enum": [
+        "CPE6",
+        "CPE8",
+        "CPE8R"
+       ]
+      },
+      "minItems": 1
+     },
+     "mesh": {
+      "type": "object",
+      "required": [
+       "nodes",
+       "elements",
+       "element_kinds",
+       "quality",
+       "gmsh_version"
+      ],
+      "properties": {
+       "nodes": {
+        "type": "integer",
+        "minimum": 1
+       },
+       "elements": {
+        "type": "integer",
+        "minimum": 1
+       },
+       "element_kinds": {
+        "type": "object"
+       },
+       "quality": {
+        "type": "object",
+        "required": [
+         "minSJ",
+         "gamma",
+         "n"
+        ],
+        "properties": {
+         "minSJ": {
+          "type": "object",
+          "required": [
+           "min"
+          ],
+          "properties": {
+           "min": {
+            "type": "number"
+           }
+          }
+         },
+         "gamma": {
+          "type": "object",
+          "required": [
+           "min"
+          ],
+          "properties": {
+           "min": {
+            "type": "number"
+           }
+          }
+         },
+         "n": {
+          "type": "integer",
+          "minimum": 1
+         }
+        }
+       },
+       "gmsh_version": {
+        "type": "string"
+       }
+      }
+     },
+     "h": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "penalty": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "pairs_in_contact": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "h_check": {
+      "type": [
+       "object",
+       "null"
+      ]
+     },
+     "build_s": {
+      "type": "number"
+     },
+     "solve_s": {
+      "type": "number"
+     },
+     "run": {
+      "type": "object",
+      "required": [
+       "ok",
+       "wall_s",
+       "errors"
+      ],
+      "properties": {
+       "ok": {
+        "type": "boolean"
+       },
+       "wall_s": {
+        "type": "number"
+       },
+       "errors": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "warnings_count": {
+        "type": "integer"
+       }
+      }
+     },
+     "sta": {
+      "type": "object"
+     },
+     "extracted": {
+      "type": "object",
+      "description": "本作业提取量（见题目说明各题'要提取的量'）"
+     },
+     "inp_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+     },
+     "dat_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+     },
+     "lint_errors": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "maxItems": 0
+     },
+     "warnings": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "warnings": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ }
+}

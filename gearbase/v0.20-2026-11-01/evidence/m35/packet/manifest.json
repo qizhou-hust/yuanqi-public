@@ -1,0 +1,35 @@
+{
+  "artifacts": [
+    {
+      "path": "external-review-unsigned.json",
+      "sha256": "5400229112e07a6dbf617a9edaa558f0a085daf9aa0b64b77b670d3f55e6c876"
+    },
+    {
+      "path": "manufacturing-review.svg",
+      "sha256": "3043a8119040c7e6241806bfb3052728180a31adefa9c02edf8abc72999ef498"
+    },
+    {
+      "path": "parameters.json",
+      "sha256": "b13affc7de35ce0abf18dc12331dc833d87f5ec38e9e01eefaaa9fc3da4d2a8d"
+    },
+    {
+      "path": "parameters.md",
+      "sha256": "68f9ade23b315ee7152144f566bfab22b596b73a955259bb364c4fdc3a4d0124"
+    },
+    {
+      "path": "source.json",
+      "sha256": "3e9571540e9ac2d680067cbdd1a03c17ca782b38b3f9711b42c80a8335d542aa"
+    }
+  ],
+  "external_review_completed": false,
+  "manufacturing_release": false,
+  "producer_sources": {
+    "archive/m31/src/cadbench/tooth_authority.py": "95c9d3bfa8af5c1e22a50b8cc001b739ec753c5eb6a28cc185e53bb03370953a",
+    "gearmath/gear/formulas.py": "02727f963b025e4fc0f7d43f868888b897b1d62e814b3c99c514fddd9115411f",
+    "gearmath/gear/parameter_sheet.py": "6f3a6d38fb222c9f89b8f507e4b839ff740e13eeb182da929a6e89abe5bc9158",
+    "gearmath/gear/tooth_thickness.py": "49233e0660806ccdd9a30a10de02c6bcceb369b25aa4df27a11b47ddbd4da7e9",
+    "gearmath/tools/m35_packet.py": "ca66e440593ef50914510b8f5395b185790064b4a361feff4645149047f7a9bf"
+  },
+  "schema": "gearbase.m35-review-preparation/1",
+  "source_id": "K02-helical"
+}

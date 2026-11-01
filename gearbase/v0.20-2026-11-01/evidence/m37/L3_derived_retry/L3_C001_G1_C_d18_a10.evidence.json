@@ -1,0 +1,1491 @@
+{
+  "id": "L3_C001_G1_C_d18_a10",
+  "source_sha256": "1a1a82abc6f15f312c793348c3ab3ee71768e36111bc4d576bf471c38a93e7ac",
+  "derived_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+  "output_only_exact_reversal": true,
+  "returncode": 0,
+  "wall_seconds": 226.23399999993853,
+  "prepared": {
+    "files": {
+      "inp": {
+        "path": "L3_C001_G1_C_d18_a10.inp",
+        "sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "missing": false
+      },
+      "metadata": {
+        "path": "L3_C001_G1_C_d18_a10.meta.json",
+        "sha256": "79b8721fb69401ee44173c68ee278982294fd306ee4bef44f9528895ced01f95",
+        "missing": false
+      },
+      "includes": [],
+      "solver": {
+        "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+        "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "missing": false
+      }
+    },
+    "digest": "30a8782db8f0a0753022bed66af2715cc98b292e853941c5c2d4a262fdf2da55",
+    "utc": "2026-11-01T10:13:48.467704Z"
+  },
+  "prelaunch": {
+    "files": {
+      "inp": {
+        "path": "L3_C001_G1_C_d18_a10.inp",
+        "sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "missing": false
+      },
+      "metadata": {
+        "path": "L3_C001_G1_C_d18_a10.meta.json",
+        "sha256": "79b8721fb69401ee44173c68ee278982294fd306ee4bef44f9528895ced01f95",
+        "missing": false
+      },
+      "includes": [],
+      "solver": {
+        "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+        "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "missing": false
+      }
+    },
+    "digest": "30a8782db8f0a0753022bed66af2715cc98b292e853941c5c2d4a262fdf2da55",
+    "utc": "2026-11-01T10:13:48.758062Z"
+  },
+  "post": {
+    "files": {
+      "inp": {
+        "path": "L3_C001_G1_C_d18_a10.inp",
+        "sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "missing": false
+      },
+      "metadata": {
+        "path": "L3_C001_G1_C_d18_a10.meta.json",
+        "sha256": "79b8721fb69401ee44173c68ee278982294fd306ee4bef44f9528895ced01f95",
+        "missing": false
+      },
+      "includes": [],
+      "solver": {
+        "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+        "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "missing": false
+      }
+    },
+    "digest": "30a8782db8f0a0753022bed66af2715cc98b292e853941c5c2d4a262fdf2da55",
+    "utc": "2026-11-01T10:17:35.130039Z"
+  },
+  "identity_drift": [],
+  "deck_check": {
+    "version": "m37.step-state/1.0",
+    "profile": "m37-restricted-2d-static/1.0",
+    "pass": true,
+    "errors": [],
+    "error_count": 0,
+    "steps": [
+      {
+        "index": 1,
+        "line": 121367,
+        "procedure": "STATIC",
+        "period": 1.0,
+        "period_source": "data",
+        "bc_op_new": false,
+        "cload_op_new": false,
+        "bc_count": 373,
+        "cload_count": 0,
+        "bc_inherited_count": 372,
+        "outputs": []
+      },
+      {
+        "index": 2,
+        "line": 121373,
+        "procedure": "STATIC",
+        "period": 1.0,
+        "period_source": "data",
+        "bc_op_new": true,
+        "cload_op_new": false,
+        "bc_count": 372,
+        "cload_count": 1,
+        "bc_inherited_count": 0,
+        "outputs": [
+          "*NODE PRINT {'NSET': 'PMASTER'} ['U']",
+          "*NODE PRINT {'NSET': 'WBORE'} ['RF']",
+          "*CONTACT PRINT {'SLAVE': 'PFL', 'MASTER': 'WFL'} ['CDIS', 'CSTR', 'CF']",
+          "*CONTACT FILE {} ['CSTR']"
+        ]
+      }
+    ],
+    "total_time": 2.0,
+    "includes": [],
+    "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03"
+  },
+  "strict_read": {
+    "reader_version": "m37.ccx-strict-dat/1.1",
+    "status": "accepted",
+    "reasons": [],
+    "identity": {
+      "run_id": "L3_C001_G1_C_d18_a10",
+      "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+      "dat_sha256": "da42a9003f7dae548069e9a189dc79a9ddee61bd6eb405176b64cdecd1b25da7",
+      "sta_sha256": "e2efcb3facd42d4759ccd4554be295027b7f35dab7d5d220f2efe1c009a9abe5"
+    },
+    "expected": {
+      "final_step": 2,
+      "total_time": 2.0
+    },
+    "final_state": {
+      "step": 2,
+      "increment": 4,
+      "total_time": 2.0,
+      "step_time": 1.0,
+      "sta_line": 10,
+      "sta_converged_rows": 8
+    },
+    "pstep": {
+      "step": 2,
+      "increment": 4,
+      "count": 4
+    },
+    "coverage_declaration": [
+      {
+        "id": "U@PMASTER",
+        "kind": "field",
+        "field": "displacements",
+        "region": "PMASTER",
+        "location": "node",
+        "components": [
+          "vx",
+          "vy",
+          "vz"
+        ],
+        "mode": "exact_keys",
+        "keys_ranges": [
+          [
+            5722,
+            5722
+          ]
+        ],
+        "declared_count": 1,
+        "declared_sha256": "16a082754f64a11cd75f4ddd0bef560bee8f16222a72a63d1b13983cdd73e442"
+      },
+      {
+        "id": "RF@WBORE",
+        "kind": "field",
+        "field": "forces",
+        "region": "WBORE",
+        "location": "node",
+        "components": [
+          "fx",
+          "fy",
+          "fz"
+        ],
+        "mode": "exact_keys",
+        "keys_ranges": [
+          [
+            16026,
+            16027
+          ],
+          [
+            16029,
+            16029
+          ],
+          [
+            16031,
+            16031
+          ],
+          [
+            18831,
+            19010
+          ]
+        ],
+        "declared_count": 184,
+        "declared_sha256": "bcb2583a308b9b837e559c57ceb84d8bee80e0906fc921e50fc776be9a83e68c"
+      },
+      {
+        "id": "CDIS@PFL",
+        "kind": "field",
+        "field": "relative contact displacement",
+        "region": "ALL_CONTACT_ELEMENTS",
+        "location": "contact_row",
+        "components": [
+          "slave element+face",
+          "normal",
+          "tang1",
+          "tang2"
+        ],
+        "mode": "rows_within_faces",
+        "faces_by_type_side": {
+          "CPE6": {
+            "3": [
+              [
+                106,
+                106
+              ],
+              [
+                229,
+                229
+              ],
+              [
+                956,
+                956
+              ],
+              [
+                1266,
+                1266
+              ],
+              [
+                1362,
+                1362
+              ],
+              [
+                1376,
+                1376
+              ],
+              [
+                1447,
+                1447
+              ],
+              [
+                1683,
+                1683
+              ],
+              [
+                1685,
+                1685
+              ],
+              [
+                1696,
+                1696
+              ],
+              [
+                1707,
+                1707
+              ],
+              [
+                1712,
+                1712
+              ],
+              [
+                1726,
+                1726
+              ],
+              [
+                1729,
+                1729
+              ],
+              [
+                1731,
+                1731
+              ],
+              [
+                1735,
+                1735
+              ],
+              [
+                1740,
+                1740
+              ],
+              [
+                1743,
+                1743
+              ],
+              [
+                1808,
+                1808
+              ],
+              [
+                1856,
+                1856
+              ],
+              [
+                1898,
+                1898
+              ],
+              [
+                1938,
+                1938
+              ],
+              [
+                2006,
+                2006
+              ],
+              [
+                2118,
+                2118
+              ],
+              [
+                2132,
+                2132
+              ],
+              [
+                2148,
+                2148
+              ],
+              [
+                2178,
+                2178
+              ],
+              [
+                2184,
+                2184
+              ],
+              [
+                2197,
+                2197
+              ],
+              [
+                12280,
+                12322
+              ],
+              [
+                12338,
+                12341
+              ],
+              [
+                12343,
+                12360
+              ],
+              [
+                12379,
+                12380
+              ],
+              [
+                12481,
+                12481
+              ],
+              [
+                12489,
+                12489
+              ],
+              [
+                12556,
+                12556
+              ],
+              [
+                12587,
+                12587
+              ],
+              [
+                12653,
+                12653
+              ],
+              [
+                12657,
+                12657
+              ],
+              [
+                12889,
+                12889
+              ],
+              [
+                12939,
+                12939
+              ],
+              [
+                12944,
+                12944
+              ],
+              [
+                12960,
+                12960
+              ],
+              [
+                13045,
+                13045
+              ],
+              [
+                13106,
+                13106
+              ],
+              [
+                13212,
+                13212
+              ],
+              [
+                13258,
+                13258
+              ],
+              [
+                13372,
+                13373
+              ],
+              [
+                13376,
+                13376
+              ],
+              [
+                13380,
+                13380
+              ],
+              [
+                13452,
+                13453
+              ],
+              [
+                13455,
+                13455
+              ],
+              [
+                13557,
+                13557
+              ],
+              [
+                13560,
+                13560
+              ],
+              [
+                13577,
+                13577
+              ],
+              [
+                13585,
+                13585
+              ],
+              [
+                13595,
+                13595
+              ],
+              [
+                13609,
+                13609
+              ],
+              [
+                13611,
+                13611
+              ],
+              [
+                13616,
+                13616
+              ],
+              [
+                13631,
+                13631
+              ],
+              [
+                13748,
+                13748
+              ],
+              [
+                13835,
+                13835
+              ],
+              [
+                13838,
+                13839
+              ],
+              [
+                13878,
+                13878
+              ],
+              [
+                13901,
+                13901
+              ],
+              [
+                13912,
+                13912
+              ],
+              [
+                13917,
+                13917
+              ],
+              [
+                13958,
+                13961
+              ],
+              [
+                13963,
+                13967
+              ],
+              [
+                13969,
+                13971
+              ],
+              [
+                13973,
+                13975
+              ],
+              [
+                13977,
+                13988
+              ],
+              [
+                13991,
+                13992
+              ],
+              [
+                13994,
+                13997
+              ],
+              [
+                14000,
+                14001
+              ],
+              [
+                14014,
+                14017
+              ],
+              [
+                14021,
+                14021
+              ],
+              [
+                14027,
+                14027
+              ],
+              [
+                14032,
+                14032
+              ],
+              [
+                14040,
+                14040
+              ],
+              [
+                14044,
+                14044
+              ],
+              [
+                14051,
+                14051
+              ],
+              [
+                14098,
+                14101
+              ],
+              [
+                14104,
+                14105
+              ],
+              [
+                14109,
+                14109
+              ],
+              [
+                14114,
+                14116
+              ],
+              [
+                14121,
+                14121
+              ],
+              [
+                14131,
+                14133
+              ],
+              [
+                14145,
+                14146
+              ],
+              [
+                14151,
+                14152
+              ],
+              [
+                14159,
+                14160
+              ],
+              [
+                14170,
+                14171
+              ],
+              [
+                14181,
+                14182
+              ],
+              [
+                14194,
+                14195
+              ],
+              [
+                14203,
+                14204
+              ],
+              [
+                14213,
+                14213
+              ],
+              [
+                14216,
+                14217
+              ],
+              [
+                14251,
+                14252
+              ],
+              [
+                14267,
+                14267
+              ],
+              [
+                14277,
+                14277
+              ],
+              [
+                14316,
+                14336
+              ],
+              [
+                14381,
+                14382
+              ],
+              [
+                14402,
+                14418
+              ],
+              [
+                14475,
+                14476
+              ],
+              [
+                14501,
+                14501
+              ],
+              [
+                14534,
+                14534
+              ],
+              [
+                14541,
+                14541
+              ],
+              [
+                14543,
+                14543
+              ],
+              [
+                14569,
+                14569
+              ],
+              [
+                14618,
+                14618
+              ],
+              [
+                14637,
+                14637
+              ],
+              [
+                14640,
+                14640
+              ],
+              [
+                14692,
+                14692
+              ],
+              [
+                14897,
+                14897
+              ],
+              [
+                14951,
+                14951
+              ],
+              [
+                14980,
+                14980
+              ],
+              [
+                14984,
+                14984
+              ],
+              [
+                14986,
+                14986
+              ],
+              [
+                14989,
+                14989
+              ],
+              [
+                15089,
+                15089
+              ],
+              [
+                15165,
+                15165
+              ],
+              [
+                15222,
+                15222
+              ],
+              [
+                15240,
+                15240
+              ],
+              [
+                15290,
+                15290
+              ],
+              [
+                15296,
+                15296
+              ],
+              [
+                15324,
+                15324
+              ],
+              [
+                15509,
+                15509
+              ],
+              [
+                15910,
+                15910
+              ]
+            ]
+          }
+        },
+        "face_map_registered": {
+          "CPE6": {
+            "3": 5
+          }
+        },
+        "declared_count": 280,
+        "declared_sha256": "bd410da8b64f111b801cd4e1277b8bb3bcf3545186db40c5c7bb5ec0e6f673c4",
+        "coverage_unverifiable": true
+      },
+      {
+        "id": "CSTR@PFL",
+        "kind": "field",
+        "field": "contact stress",
+        "region": "ALL_CONTACT_ELEMENTS",
+        "location": "contact_row",
+        "components": [
+          "slave element+face",
+          "press",
+          "tang1",
+          "tang2"
+        ],
+        "mode": "rows_within_faces",
+        "faces_by_type_side": {
+          "CPE6": {
+            "3": [
+              [
+                106,
+                106
+              ],
+              [
+                229,
+                229
+              ],
+              [
+                956,
+                956
+              ],
+              [
+                1266,
+                1266
+              ],
+              [
+                1362,
+                1362
+              ],
+              [
+                1376,
+                1376
+              ],
+              [
+                1447,
+                1447
+              ],
+              [
+                1683,
+                1683
+              ],
+              [
+                1685,
+                1685
+              ],
+              [
+                1696,
+                1696
+              ],
+              [
+                1707,
+                1707
+              ],
+              [
+                1712,
+                1712
+              ],
+              [
+                1726,
+                1726
+              ],
+              [
+                1729,
+                1729
+              ],
+              [
+                1731,
+                1731
+              ],
+              [
+                1735,
+                1735
+              ],
+              [
+                1740,
+                1740
+              ],
+              [
+                1743,
+                1743
+              ],
+              [
+                1808,
+                1808
+              ],
+              [
+                1856,
+                1856
+              ],
+              [
+                1898,
+                1898
+              ],
+              [
+                1938,
+                1938
+              ],
+              [
+                2006,
+                2006
+              ],
+              [
+                2118,
+                2118
+              ],
+              [
+                2132,
+                2132
+              ],
+              [
+                2148,
+                2148
+              ],
+              [
+                2178,
+                2178
+              ],
+              [
+                2184,
+                2184
+              ],
+              [
+                2197,
+                2197
+              ],
+              [
+                12280,
+                12322
+              ],
+              [
+                12338,
+                12341
+              ],
+              [
+                12343,
+                12360
+              ],
+              [
+                12379,
+                12380
+              ],
+              [
+                12481,
+                12481
+              ],
+              [
+                12489,
+                12489
+              ],
+              [
+                12556,
+                12556
+              ],
+              [
+                12587,
+                12587
+              ],
+              [
+                12653,
+                12653
+              ],
+              [
+                12657,
+                12657
+              ],
+              [
+                12889,
+                12889
+              ],
+              [
+                12939,
+                12939
+              ],
+              [
+                12944,
+                12944
+              ],
+              [
+                12960,
+                12960
+              ],
+              [
+                13045,
+                13045
+              ],
+              [
+                13106,
+                13106
+              ],
+              [
+                13212,
+                13212
+              ],
+              [
+                13258,
+                13258
+              ],
+              [
+                13372,
+                13373
+              ],
+              [
+                13376,
+                13376
+              ],
+              [
+                13380,
+                13380
+              ],
+              [
+                13452,
+                13453
+              ],
+              [
+                13455,
+                13455
+              ],
+              [
+                13557,
+                13557
+              ],
+              [
+                13560,
+                13560
+              ],
+              [
+                13577,
+                13577
+              ],
+              [
+                13585,
+                13585
+              ],
+              [
+                13595,
+                13595
+              ],
+              [
+                13609,
+                13609
+              ],
+              [
+                13611,
+                13611
+              ],
+              [
+                13616,
+                13616
+              ],
+              [
+                13631,
+                13631
+              ],
+              [
+                13748,
+                13748
+              ],
+              [
+                13835,
+                13835
+              ],
+              [
+                13838,
+                13839
+              ],
+              [
+                13878,
+                13878
+              ],
+              [
+                13901,
+                13901
+              ],
+              [
+                13912,
+                13912
+              ],
+              [
+                13917,
+                13917
+              ],
+              [
+                13958,
+                13961
+              ],
+              [
+                13963,
+                13967
+              ],
+              [
+                13969,
+                13971
+              ],
+              [
+                13973,
+                13975
+              ],
+              [
+                13977,
+                13988
+              ],
+              [
+                13991,
+                13992
+              ],
+              [
+                13994,
+                13997
+              ],
+              [
+                14000,
+                14001
+              ],
+              [
+                14014,
+                14017
+              ],
+              [
+                14021,
+                14021
+              ],
+              [
+                14027,
+                14027
+              ],
+              [
+                14032,
+                14032
+              ],
+              [
+                14040,
+                14040
+              ],
+              [
+                14044,
+                14044
+              ],
+              [
+                14051,
+                14051
+              ],
+              [
+                14098,
+                14101
+              ],
+              [
+                14104,
+                14105
+              ],
+              [
+                14109,
+                14109
+              ],
+              [
+                14114,
+                14116
+              ],
+              [
+                14121,
+                14121
+              ],
+              [
+                14131,
+                14133
+              ],
+              [
+                14145,
+                14146
+              ],
+              [
+                14151,
+                14152
+              ],
+              [
+                14159,
+                14160
+              ],
+              [
+                14170,
+                14171
+              ],
+              [
+                14181,
+                14182
+              ],
+              [
+                14194,
+                14195
+              ],
+              [
+                14203,
+                14204
+              ],
+              [
+                14213,
+                14213
+              ],
+              [
+                14216,
+                14217
+              ],
+              [
+                14251,
+                14252
+              ],
+              [
+                14267,
+                14267
+              ],
+              [
+                14277,
+                14277
+              ],
+              [
+                14316,
+                14336
+              ],
+              [
+                14381,
+                14382
+              ],
+              [
+                14402,
+                14418
+              ],
+              [
+                14475,
+                14476
+              ],
+              [
+                14501,
+                14501
+              ],
+              [
+                14534,
+                14534
+              ],
+              [
+                14541,
+                14541
+              ],
+              [
+                14543,
+                14543
+              ],
+              [
+                14569,
+                14569
+              ],
+              [
+                14618,
+                14618
+              ],
+              [
+                14637,
+                14637
+              ],
+              [
+                14640,
+                14640
+              ],
+              [
+                14692,
+                14692
+              ],
+              [
+                14897,
+                14897
+              ],
+              [
+                14951,
+                14951
+              ],
+              [
+                14980,
+                14980
+              ],
+              [
+                14984,
+                14984
+              ],
+              [
+                14986,
+                14986
+              ],
+              [
+                14989,
+                14989
+              ],
+              [
+                15089,
+                15089
+              ],
+              [
+                15165,
+                15165
+              ],
+              [
+                15222,
+                15222
+              ],
+              [
+                15240,
+                15240
+              ],
+              [
+                15290,
+                15290
+              ],
+              [
+                15296,
+                15296
+              ],
+              [
+                15324,
+                15324
+              ],
+              [
+                15509,
+                15509
+              ],
+              [
+                15910,
+                15910
+              ]
+            ]
+          }
+        },
+        "face_map_registered": {
+          "CPE6": {
+            "3": 5
+          }
+        },
+        "declared_count": 280,
+        "declared_sha256": "bd410da8b64f111b801cd4e1277b8bb3bcf3545186db40c5c7bb5ec0e6f673c4",
+        "coverage_unverifiable": true
+      },
+      {
+        "id": "CF@PFL/WFL",
+        "kind": "statistics",
+        "slave": "PFL",
+        "master": "WFL",
+        "location": "statistics",
+        "mode": "statistics_parts",
+        "parts": [
+          "total surface force",
+          "center of gravity and mean normal",
+          "moment about the center of gravity",
+          "area normal shear"
+        ],
+        "declared_count": 4,
+        "declared_sha256": "57ddae22d76bb1591b4385dd37c0e2d7ac7cc6064ba68879e8bda70b4e52ce13"
+      }
+    ],
+    "fields": [
+      {
+        "id": "U@PMASTER",
+        "run_id": "L3_C001_G1_C_d18_a10",
+        "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "displacements",
+        "region": "PMASTER",
+        "location": "node",
+        "components": [
+          "vx",
+          "vy",
+          "vz"
+        ],
+        "header_line": 31061,
+        "header": "displacements (vx,vy,vz) for set PMASTER and time  0.2000000E+01",
+        "coverage_mode": "exact_keys",
+        "coverage_observed": {
+          "keys": 1
+        },
+        "values_sha256": "63d73dd8728f5a57921e2ade33280d1e87f0145c4d17962b51065dcd910e0185"
+      },
+      {
+        "id": "RF@WBORE",
+        "run_id": "L3_C001_G1_C_d18_a10",
+        "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "forces",
+        "region": "WBORE",
+        "location": "node",
+        "components": [
+          "fx",
+          "fy",
+          "fz"
+        ],
+        "header_line": 31065,
+        "header": "forces (fx,fy,fz) for set WBORE and time  0.2000000E+01",
+        "coverage_mode": "exact_keys",
+        "coverage_observed": {
+          "keys": 184
+        },
+        "values_sha256": "af0d723ed21b192c0a13406f39134a6197f74bd75c234495bcd230b25983d9ae"
+      },
+      {
+        "id": "CDIS@PFL",
+        "run_id": "L3_C001_G1_C_d18_a10",
+        "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "relative contact displacement",
+        "region": "ALL_CONTACT_ELEMENTS",
+        "location": "contact_row",
+        "components": [
+          "slave element+face",
+          "normal",
+          "tang1",
+          "tang2"
+        ],
+        "header_line": 31252,
+        "header": "relative contact displacement (slave element+face,normal,tang1,tang2) for all contact elements and time 0.2000000E+01",
+        "coverage_mode": "rows_within_faces",
+        "coverage_observed": {
+          "rows": 7086,
+          "distinct_faces": 37,
+          "declared_faces": 280,
+          "faces_observed": [
+            5
+          ],
+          "face_mapping": "FACE_REGISTRY（实测登记，非手册条文）",
+          "coverage_unverifiable": true,
+          "note": ".dat 只打印活跃接触行；行缺失或冲突重复行无法由本读取器发现，依赖这些行的量须独立交叉核对"
+        },
+        "values_sha256": "5fe5d9d73c53dfb75be83f4b63d65493503e6f84866166caf0421bae42657bcb"
+      },
+      {
+        "id": "CSTR@PFL",
+        "run_id": "L3_C001_G1_C_d18_a10",
+        "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "contact stress",
+        "region": "ALL_CONTACT_ELEMENTS",
+        "location": "contact_row",
+        "components": [
+          "slave element+face",
+          "press",
+          "tang1",
+          "tang2"
+        ],
+        "header_line": 38341,
+        "header": "contact stress (slave element+face,press,tang1,tang2) for all contact elements and time 0.2000000E+01",
+        "coverage_mode": "rows_within_faces",
+        "coverage_observed": {
+          "rows": 7086,
+          "distinct_faces": 37,
+          "declared_faces": 280,
+          "faces_observed": [
+            5
+          ],
+          "face_mapping": "FACE_REGISTRY（实测登记，非手册条文）",
+          "coverage_unverifiable": true,
+          "note": ".dat 只打印活跃接触行；行缺失或冲突重复行无法由本读取器发现，依赖这些行的量须独立交叉核对"
+        },
+        "values_sha256": "c6fe2d904954ab357ff28d372579a25bb9c1ed094ae129c81621071936aad664"
+      },
+      {
+        "id": "CF@PFL/WFL",
+        "run_id": "L3_C001_G1_C_d18_a10",
+        "input_sha256": "f47836272924bfbf93397fbd335570991b3186e500dd72992ae7f84eb2f13a03",
+        "step": 2,
+        "increment": 4,
+        "time": 2.0,
+        "field": "statistics",
+        "region": "PFL/WFL",
+        "location": "statistics",
+        "components": [
+          "total surface force",
+          "center of gravity and mean normal",
+          "moment about the center of gravity",
+          "area normal shear"
+        ],
+        "header_line": 45431,
+        "header": "statistics for slave set PFL, master set WFL and time  0.2000000E+01",
+        "coverage_mode": "statistics_parts",
+        "coverage_observed": {
+          "parts": [
+            "area normal shear",
+            "center of gravity and mean normal",
+            "moment about the center of gravity",
+            "total surface force"
+          ]
+        },
+        "values_sha256": "f6b1eb8928f4ece373e3b2b6ab469c84d4de39e67960ad20fd6fa53acf2c6162"
+      }
+    ],
+    "unrecognised_headers": [],
+    "orphan_rows": 0,
+    "time_rel_tol": 5.5e-06,
+    "solver_version": "2.23",
+    "registry_evidence": {
+      "ip": "lanes/F2/REPORT.md §3（ccx 2.21 实测）",
+      "face": "lanes/F2/REPORT.md §3（ccx 2.21：S1→3、S3→5）；F3/审查 G-02 ph10（ccx 2.23：S3→5，4038 行）",
+      "nature": "实测登记，非手册条文",
+      "ip_v017": {
+        "solver_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "probe_sha256": {
+          "L0_patch_CPE6_h0.inp": "cbc2e56fcda1db254e0ea159e8185152506856af5da20a9aa24f925da7e13d53",
+          "L0_patch_CPE6_h0.dat": "4c8112b394bca0cac239da0c87a4b14f4ff4eca4564b41d0b9fd59dc17584c6b",
+          "L0_patch_CPE6_h0.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d"
+        }
+      }
+    }
+  },
+  "extracted": {
+    "theta_rad": 0.000191945,
+    "delta_LOA_um": 3.6073860019350246,
+    "mesh_stiffness_N_per_mm_um": 12.291653983256856,
+    "p_max_MPa": 604.9156,
+    "contact_normal_force_rel_err": 2.66003714982726e-05,
+    "wheel_torque_rel_err": 5.369597618467499e-05
+  },
+  "warnings": [],
+  "contact_crosscheck": {
+    "version": "m37.contact-crosscheck/1.0",
+    "entries": [
+      {
+        "quantity": "p_max_MPa",
+        "dat_value": 604.9156,
+        "dat_source": "strict CSTR@PFL",
+        "independent_source": "frd_cpress_final_pstep",
+        "independent_value": 604.876,
+        "frd_nodes": 80647,
+        "frd_sha256": "b337f3c159fb1fcac49e790823ea2b5ab73fb8feeff203da4664d91c6d22c709",
+        "state": [
+          2,
+          4
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+ "id": "L1",
+ "title": "2D Hertz 圆柱接触（平面应变）",
+ "material": {
+  "E_MPa": 206000.0,
+  "nu": 0.3
+ },
+ "geometry": {
+  "R_mm": 10.0,
+  "contact_surface_halfwidth_in_a": 6.0
+ },
+ "load": {
+  "q_N_per_mm": 100.0
+ },
+ "mesh": {
+  "contact_divisions": [
+   8,
+   12,
+   18
+  ],
+  "element": "CPE6",
+  "h_max_in_R": 0.125
+ },
+ "penalty": {
+  "alpha_mesh_study": 10.0,
+  "alpha_penalty_study": [
+   5.0,
+   10.0,
+   20.0
+  ],
+  "definition": "K = alpha*E/h_contact (MPa/mm)"
+ },
+ "mortar_variant": true
+}

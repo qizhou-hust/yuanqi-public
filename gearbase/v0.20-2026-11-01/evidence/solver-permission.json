@@ -1,0 +1,12 @@
+{
+  "schema": "gearbase.solver-permission-check/1",
+  "allowed": true,
+  "solver_id": "calculix-ccx-2.23-linux-x86_64",
+  "executable_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+  "archive_sha256": "35d426fed5eb164fbbaaafa20819d13d22e30bc2b9bc9c6c4ed957e9468355dd",
+  "archive_rechecked": true,
+  "scope": "explicit-local-verification",
+  "origin_proof_sha256": "67d963779e7632f344193d68ba440c4ee7509c3e40a11e833ddd4a8ceca12a74",
+  "solver_executed": false,
+  "numerical_gear_qualification": "not_granted"
+}

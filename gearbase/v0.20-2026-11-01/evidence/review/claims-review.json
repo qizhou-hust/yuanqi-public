@@ -1,0 +1,26 @@
+{
+  "schema": "gearbase.claims-review/1",
+  "reviewed_utc": "2026-11-01T10:48:58.258942+00:00",
+  "reviewed_files_sha256": {
+    "CLOSURE.md": "1680dd9f7f7a3a3a31ce84ff15013d8530c10150b42c69223322ba32374cc71f",
+    "STATUS.json": "12adef127535e31a8c16bd9beadd454d6c1c0837ae0efd04e037b89c81bd38ab",
+    "run.json": "ce6ddc1733476f1e2f309a22e310132b1413f996c37a5799737cbbb05ca673a8"
+  },
+  "checks": {
+    "M33_scoped_3of4": true,
+    "no_whole_milestone": true,
+    "M37_exact_actual_L2_receipt": true,
+    "M37_0of4_no_qualification": true,
+    "L3_exact_partial_receipt": true,
+    "CI_functional_commit_and_success": true,
+    "no_new_KISSsoft": true,
+    "legacy678_noskip": true
+  },
+  "material_errors": [],
+  "passed": true,
+  "limitations": [
+    "Claims compared with local downloaded CI run metadata and existing raw-result receipts; no independent network refresh.",
+    "Packaging contents were being assembled concurrently; public/private archive filtering is outside this claims-only review.",
+    "M33 completion applies only to user-identified example7/8 geometry scope, not full E4; M37 remains failed/unqualified."
+  ]
+}

@@ -1,0 +1,465 @@
+{
+  "id": "L2_P13_d12",
+  "case": "L2",
+  "group": "mesh",
+  "tags": {
+    "point": "P13",
+    "level": 1
+  },
+  "status": "solved",
+  "warnings": [],
+  "h": 0.080362919041061,
+  "mesh": {
+    "nodes": 11011,
+    "elements": 5380,
+    "element_kinds": {
+      "T6": 5380
+    },
+    "quality": {
+      "minSJ": {
+        "meaning": "gmsh 缩放雅可比最小值（二次单元、含曲边；>0 即无翻转，验收 >0.3）",
+        "min": 0.8090245140319716,
+        "p01": 0.998555116883894,
+        "median": 0.9999999999998473,
+        "n_below_0.3": 0,
+        "n_nonpositive": 0
+      },
+      "gamma": {
+        "meaning": "gmsh 形状质量（内切/外接半径比，1=正三角形；四边形按 gmsh 定义）",
+        "min": 0.66153545026207,
+        "p01": 0.8891730711163968,
+        "median": 0.9958075564902875,
+        "n_below_0.2": 0
+      },
+      "n": 5380,
+      "min": 0.8090245140319716
+    },
+    "gmsh_version": "4.15.2"
+  },
+  "element_types": [
+    "CPE6"
+  ],
+  "inp_sha256": "f1f6de3f5e53afb3940898ffac25da0a747b866d04cbd84540088ea4d745b5ed",
+  "dat_sha256": "d3c870a1b4fe5c7dc551f9052069c9105f0363c21d52bb57841a901ba3f718ca",
+  "step_check": {
+    "version": "m37.step-state/1.0",
+    "profile": "m37-restricted-2d-static/1.0",
+    "pass": true,
+    "errors": [],
+    "error_count": 0,
+    "steps": [
+      {
+        "index": 1,
+        "line": 16427,
+        "procedure": "STATIC",
+        "period": 1.0,
+        "period_source": "ccx_default",
+        "bc_op_new": false,
+        "cload_op_new": false,
+        "bc_count": 322,
+        "cload_count": 10,
+        "bc_inherited_count": 322,
+        "outputs": [
+          "*NODE PRINT {'NSET': 'FIXED'} ['RF']",
+          "*EL PRINT {'ELSET': 'ROOTT'} ['S']",
+          "*EL PRINT {'ELSET': 'ROOTT'} ['COORD']"
+        ]
+      }
+    ],
+    "total_time": 1.0,
+    "includes": [],
+    "input_sha256": "f1f6de3f5e53afb3940898ffac25da0a747b866d04cbd84540088ea4d745b5ed"
+  },
+  "run_identity": {
+    "version": "m37.run-identity/1.1",
+    "prepared": {
+      "files": {
+        "inp": {
+          "path": "L2_P13_d12.inp",
+          "sha256": "f1f6de3f5e53afb3940898ffac25da0a747b866d04cbd84540088ea4d745b5ed",
+          "missing": false
+        },
+        "metadata": {
+          "path": "L2_P13_d12.meta.json",
+          "sha256": "9255be8ae7a3036fe76b2f661eb0577bd1fcc836123510a914ae39e42cd45a21",
+          "missing": false
+        },
+        "includes": [],
+        "solver": {
+          "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "missing": false
+        }
+      },
+      "digest": "c11aa46785fc9b835ccc0cbc52d8a5e1867447fe6cba2f877c78f273398d79aa",
+      "utc": "2026-11-01T10:02:55.383803Z"
+    },
+    "prelaunch": {
+      "files": {
+        "inp": {
+          "path": "L2_P13_d12.inp",
+          "sha256": "f1f6de3f5e53afb3940898ffac25da0a747b866d04cbd84540088ea4d745b5ed",
+          "missing": false
+        },
+        "metadata": {
+          "path": "L2_P13_d12.meta.json",
+          "sha256": "9255be8ae7a3036fe76b2f661eb0577bd1fcc836123510a914ae39e42cd45a21",
+          "missing": false
+        },
+        "includes": [],
+        "solver": {
+          "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "missing": false
+        }
+      },
+      "digest": "c11aa46785fc9b835ccc0cbc52d8a5e1867447fe6cba2f877c78f273398d79aa",
+      "utc": "2026-11-01T10:02:55.526507Z"
+    },
+    "post": {
+      "files": {
+        "inp": {
+          "path": "L2_P13_d12.inp",
+          "sha256": "f1f6de3f5e53afb3940898ffac25da0a747b866d04cbd84540088ea4d745b5ed",
+          "missing": false
+        },
+        "metadata": {
+          "path": "L2_P13_d12.meta.json",
+          "sha256": "9255be8ae7a3036fe76b2f661eb0577bd1fcc836123510a914ae39e42cd45a21",
+          "missing": false
+        },
+        "includes": [],
+        "solver": {
+          "path": "D:\\my_Works\\Gears\\gearbase-v0.8-work\\gearbase\\vendor\\fea\\vendor\\CalculiX\\ccx_2.23\\src\\ccx_2.23",
+          "sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+          "missing": false
+        }
+      },
+      "digest": "c11aa46785fc9b835ccc0cbc52d8a5e1867447fe6cba2f877c78f273398d79aa",
+      "utc": "2026-11-01T10:02:57.437375Z"
+    },
+    "consistent": true
+  },
+  "strict_read": {
+    "reader_version": "m37.ccx-strict-dat/1.1",
+    "status": "accepted",
+    "reasons": [],
+    "identity": {
+      "run_id": "L2_P13_d12",
+      "input_sha256": "f1f6de3f5e53afb3940898ffac25da0a747b866d04cbd84540088ea4d745b5ed",
+      "dat_sha256": "d3c870a1b4fe5c7dc551f9052069c9105f0363c21d52bb57841a901ba3f718ca",
+      "sta_sha256": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d"
+    },
+    "expected": {
+      "final_step": 1,
+      "total_time": 1.0
+    },
+    "final_state": {
+      "step": 1,
+      "increment": 1,
+      "total_time": 1.0,
+      "step_time": 1.0,
+      "sta_line": 3,
+      "sta_converged_rows": 1
+    },
+    "pstep": null,
+    "coverage_declaration": [
+      {
+        "id": "RF@FIXED",
+        "kind": "field",
+        "field": "forces",
+        "region": "FIXED",
+        "location": "node",
+        "components": [
+          "fx",
+          "fy",
+          "fz"
+        ],
+        "mode": "exact_keys",
+        "keys_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            860,
+            861
+          ],
+          [
+            863,
+            863
+          ],
+          [
+            865,
+            899
+          ],
+          [
+            1219,
+            1339
+          ]
+        ],
+        "declared_count": 161,
+        "declared_sha256": "189edaf8a2a780d764e69aa0452e5c7deeee8d1a3882c8d4a979536501b57b28"
+      },
+      {
+        "id": "S@ROOTT",
+        "kind": "field",
+        "field": "stresses",
+        "region": "ROOTT",
+        "location": "element_ip",
+        "components": [
+          "elem",
+          "integ.pnt.",
+          "sxx",
+          "syy",
+          "szz",
+          "sxy",
+          "sxz",
+          "syz"
+        ],
+        "mode": "elements_ip_registered",
+        "element_groups_ranges": {
+          "CPE6": [
+            [
+              17,
+              17
+            ],
+            [
+              2664,
+              2664
+            ],
+            [
+              2799,
+              2799
+            ],
+            [
+              2801,
+              2801
+            ],
+            [
+              2803,
+              2803
+            ],
+            [
+              2806,
+              2806
+            ],
+            [
+              2810,
+              2810
+            ],
+            [
+              2812,
+              2815
+            ],
+            [
+              3473,
+              3473
+            ],
+            [
+              3921,
+              3921
+            ],
+            [
+              4684,
+              4684
+            ]
+          ]
+        },
+        "ip_per_element_registered": {
+          "CPE6": 9
+        },
+        "declared_count": 126,
+        "declared_sha256": "58895947b10ba9db03916552704ba3bd52cf74019f75e0966d00ee6da586cabd"
+      },
+      {
+        "id": "COORD@ROOTT",
+        "kind": "field",
+        "field": "global coordinates",
+        "region": "ROOTT",
+        "location": "element_ip",
+        "components": [
+          "elem",
+          "integ.pnt.",
+          "x",
+          "y",
+          "z"
+        ],
+        "mode": "elements_ip_registered",
+        "element_groups_ranges": {
+          "CPE6": [
+            [
+              17,
+              17
+            ],
+            [
+              2664,
+              2664
+            ],
+            [
+              2799,
+              2799
+            ],
+            [
+              2801,
+              2801
+            ],
+            [
+              2803,
+              2803
+            ],
+            [
+              2806,
+              2806
+            ],
+            [
+              2810,
+              2810
+            ],
+            [
+              2812,
+              2815
+            ],
+            [
+              3473,
+              3473
+            ],
+            [
+              3921,
+              3921
+            ],
+            [
+              4684,
+              4684
+            ]
+          ]
+        },
+        "ip_per_element_registered": {
+          "CPE6": 9
+        },
+        "declared_count": 126,
+        "declared_sha256": "58895947b10ba9db03916552704ba3bd52cf74019f75e0966d00ee6da586cabd"
+      }
+    ],
+    "fields": [
+      {
+        "id": "RF@FIXED",
+        "run_id": "L2_P13_d12",
+        "input_sha256": "f1f6de3f5e53afb3940898ffac25da0a747b866d04cbd84540088ea4d745b5ed",
+        "step": 1,
+        "increment": 1,
+        "time": 1.0,
+        "field": "forces",
+        "region": "FIXED",
+        "location": "node",
+        "components": [
+          "fx",
+          "fy",
+          "fz"
+        ],
+        "header_line": 8,
+        "header": "forces (fx,fy,fz) for set FIXED and time  0.1000000E+01",
+        "coverage_mode": "exact_keys",
+        "coverage_observed": {
+          "keys": 161
+        },
+        "values_sha256": "44577eaf55ad13e20ba54aac24e1dc759be6744d31bb9f0ed5afd635fa8f9b68"
+      },
+      {
+        "id": "S@ROOTT",
+        "run_id": "L2_P13_d12",
+        "input_sha256": "f1f6de3f5e53afb3940898ffac25da0a747b866d04cbd84540088ea4d745b5ed",
+        "step": 1,
+        "increment": 1,
+        "time": 1.0,
+        "field": "stresses",
+        "region": "ROOTT",
+        "location": "element_ip",
+        "components": [
+          "elem",
+          "integ.pnt.",
+          "sxx",
+          "syy",
+          "szz",
+          "sxy",
+          "sxz",
+          "syz"
+        ],
+        "header_line": 172,
+        "header": "stresses (elem, integ.pnt.,sxx,syy,szz,sxy,sxz,syz) for set ROOTT and time  0.1000000E+01",
+        "coverage_mode": "elements_ip_registered",
+        "coverage_observed": {
+          "keys": 126,
+          "ip_per_element_registered": {
+            "CPE6": 9
+          },
+          "ip_count_source": "IP_REGISTRY"
+        },
+        "values_sha256": "e78f08564ef7e214f481ce2add5fb7f1da5d518001ae0e25c2a44bca04d00d43"
+      },
+      {
+        "id": "COORD@ROOTT",
+        "run_id": "L2_P13_d12",
+        "input_sha256": "f1f6de3f5e53afb3940898ffac25da0a747b866d04cbd84540088ea4d745b5ed",
+        "step": 1,
+        "increment": 1,
+        "time": 1.0,
+        "field": "global coordinates",
+        "region": "ROOTT",
+        "location": "element_ip",
+        "components": [
+          "elem",
+          "integ.pnt.",
+          "x",
+          "y",
+          "z"
+        ],
+        "header_line": 301,
+        "header": "global coordinates (elem, integ.pnt.,x,y,z) for set ROOTT and time  0.1000000E+01",
+        "coverage_mode": "elements_ip_registered",
+        "coverage_observed": {
+          "keys": 126,
+          "ip_per_element_registered": {
+            "CPE6": 9
+          },
+          "ip_count_source": "IP_REGISTRY"
+        },
+        "values_sha256": "a5fb36cceccff2ff28ae53838a7d272d7a8318ec1671b8e047e4c82abab7c524"
+      }
+    ],
+    "unrecognised_headers": [],
+    "orphan_rows": 0,
+    "time_rel_tol": 5.5e-06,
+    "solver_version": "2.23",
+    "registry_evidence": {
+      "ip": "lanes/F2/REPORT.md §3（ccx 2.21 实测）",
+      "face": "lanes/F2/REPORT.md §3（ccx 2.21：S1→3、S3→5）；F3/审查 G-02 ph10（ccx 2.23：S3→5，4038 行）",
+      "nature": "实测登记，非手册条文",
+      "ip_v017": {
+        "solver_sha256": "31be21fc2f0902bd9a05acc2651dbac6dc2a2573dabbf235e39a38cb6f458862",
+        "probe_sha256": {
+          "L0_patch_CPE6_h0.inp": "cbc2e56fcda1db254e0ea159e8185152506856af5da20a9aa24f925da7e13d53",
+          "L0_patch_CPE6_h0.dat": "4c8112b394bca0cac239da0c87a4b14f4ff4eca4564b41d0b9fd59dc17584c6b",
+          "L0_patch_CPE6_h0.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d"
+        }
+      }
+    }
+  },
+  "extracted": {
+    "sigma1_ip_max_MPa": 130.61600759945065,
+    "extrapolation": [
+      "linear/3pts"
+    ],
+    "sigma1_surface_peak_MPa": 136.08522142825586,
+    "peak_point_mm": [
+      2.313856037576977,
+      96.64626417396973
+    ],
+    "sigma_root_MPa": 136.08522142825586,
+    "sigma_root_method": "gauss_point_polynomial_extrapolation_to_fillet_surface_no_nodal_smoothing",
+    "peak_offset_from_30deg_point_mm": 0.21221877359033708,
+    "peak_radius_mm": 96.67395879215547,
+    "YFS_FE": 2.721704428565117,
+    "force_balance_rel": 8.565238314221158e-09
+  }
+}

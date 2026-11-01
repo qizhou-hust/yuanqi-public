@@ -1,0 +1,1 @@
+v0.20: user-scoped M33 gate3 closed; actual42-jobL2 failed9/14 recorded; controlled/load and L3 partial studies preserved; readonly source-pack and Richardson defects fixed; four hosted jobs passed; metadata-only closeout and binary/public verification follow.

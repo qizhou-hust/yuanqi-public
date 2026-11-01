@@ -1,0 +1,36 @@
+{
+ "schema": "m37.expected/v1",
+ "case_id": "L1",
+ "source": "Johnson, Contact Mechanics (1985) §4.2 / 式(4.43)(4.45)：两等径圆柱平面应变线接触，a=√(4qR/(πE*))，p0=2q/(πa)",
+ "values": {
+  "half_width_mm": {
+   "value": 0.07499669849396796,
+   "unit": "mm"
+  },
+  "p0_MPa": {
+   "value": 848.8637302064506,
+   "unit": "MPa"
+  },
+  "R_eff_mm": {
+   "value": 5.0,
+   "unit": "mm"
+  },
+  "E_star_MPa": {
+   "value": 113186.81318681319,
+   "unit": "MPa"
+  }
+ },
+ "provenance": {
+  "generator": "fea-pack/ingest/make_expected.py",
+  "gearbase_version": "0.9",
+  "gearmath_formulas_py_sha256": "02727f963b025e4fc0f7d43f868888b897b1d62e814b3c99c514fddd9115411f",
+  "editions": {
+   "ISO 21771": "2007",
+   "ISO 6336-1": "2019",
+   "ISO 6336-2": "2019",
+   "ISO 6336-3": "2019"
+  },
+  "generated_utc": "2026-10-29T19:37:37Z"
+ },
+ "case_sha256": "bf33b78b2a64adb69d9929e562fab6427199366a6b04e82862410a21c3e7bdb0"
+}

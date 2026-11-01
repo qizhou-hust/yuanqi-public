@@ -1,0 +1,20 @@
+{
+  "schema": "gearbase.m39-partial-closure/1",
+  "frontier_passed": true,
+  "tolerance_report_passed": true,
+  "full_failure_modes_passed": false,
+  "identity": {
+    "source_sha256": "9c60a75255b3297f7bb29418bf9361f70a33292bec65c72fa9a7d6d802a6f74f",
+    "declaration_sha256": "d10310d493b273e4799f97c5202e78154ff672d4d8935537807fc4f0e8800602",
+    "spec_sha256": "583ecaa1bcae2f87e603769be17209cfd996727091e14fab4752126ed3e341da",
+    "implementation_sha256": "c85e0ddce99ab77ce8a81914bebb2471b16c067c5bce762b7382fe2900acacbf",
+    "evidence_file_sha256": {
+      "data/kisssoft/K01-spur.json": "ffe85b0695ae253e49bc5e2058204f297ba2c1dd99b80c85e5bd21518131a30b"
+    }
+  },
+  "evidence_file_sha256": "058cbdad927fefe463c442c79b00aea5c966c176cae5bf62aa5fa41922f2bf18",
+  "finite_candidates": 12,
+  "feasible": 9,
+  "tolerance_scenarios_per_candidate": 3,
+  "limits": "Complete only for explicit finite axes. Not a global continuous Pareto front. Safety=min(SF1,SF2,SH1,SH2); each acceptance limit is checked separately. Tolerance fraction is unweighted specified-scenario coverage, not probability or interval proof. Tribology, thermal, shaft/bearing/key are not checked here. Held evidence limitations remain."
+}

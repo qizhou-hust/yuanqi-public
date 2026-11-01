@@ -1,0 +1,133 @@
+{
+  "predeclared": "Two same-mesh P08/P03 d18 controls; only patch nodal magnitudes change. Maximum-entropy reweight of original strictly positive normal weights imposes sum=Fn and moment=HPSTC. No tuning against stress/reference. Stop if residual mismatch persists.",
+  "cases": [
+    {
+      "point": "P08",
+      "original": {
+        "force_N": [
+          -95.86789414982,
+          -46.19621397462
+        ],
+        "moment_Nmm": 2995.99839240626,
+        "target_moment_Nmm": 2999.9999999999995,
+        "moment_residual_Nmm": -4.001607593739664,
+        "force_residual_N": [
+          8.037659426918253e-11,
+          -8.052580824369215e-11
+        ]
+      },
+      "moment_per_unit_force_range": [
+        28.053201311284585,
+        28.25315143286034
+      ],
+      "target_moment_per_unit_force": 28.19077862357725,
+      "feasible": true,
+      "derived": {
+        "force_N": [
+          -95.86789414990038,
+          -46.196213974539475
+        ],
+        "moment_Nmm": 2999.9999999999995,
+        "target_moment_Nmm": 2999.9999999999995,
+        "moment_residual_Nmm": 0.0,
+        "force_residual_N": [
+          0.0,
+          0.0
+        ]
+      },
+      "weights_before": [
+        0.0833333275669041,
+        0.16666666666659763,
+        0.08333333909986283,
+        0.33333331026727164,
+        0.3333333563993637
+      ],
+      "weights_after": [
+        0.01914825852553066,
+        0.13095793733054598,
+        0.22391510636629275,
+        0.14163575991651958,
+        0.48434293786111104
+      ],
+      "nodes": [
+        1081,
+        1082,
+        1083,
+        1121,
+        1122
+      ],
+      "minimum_weight": 0.01914825852553066,
+      "path": "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P08_d18_moment.inp",
+      "unchanged_outside_CLOAD": true
+    },
+    {
+      "point": "P03",
+      "original": {
+        "force_N": [
+          -101.37563242164,
+          -32.36857218702
+        ],
+        "moment_Nmm": 2002.030971804788,
+        "target_moment_Nmm": 1999.9999999999998,
+        "moment_residual_Nmm": 2.0309718047881233,
+        "force_residual_N": [
+          3.977618234785041e-11,
+          -6.053113565940293e-11
+        ]
+      },
+      "moment_per_unit_force_range": [
+        18.715486767562773,
+        18.910385842522217
+      ],
+      "target_moment_per_unit_force": 18.793852415718167,
+      "feasible": true,
+      "derived": {
+        "force_N": [
+          -101.37563242167978,
+          -32.36857218695947
+        ],
+        "moment_Nmm": 1999.9999999999995,
+        "target_moment_Nmm": 1999.9999999999998,
+        "moment_residual_Nmm": -2.2737367544323206e-13,
+        "force_residual_N": [
+          0.0,
+          0.0
+        ]
+      },
+      "weights_before": [
+        0.08333333663618658,
+        0.16666666666628,
+        0.08333333003045151,
+        0.33333334654486063,
+        0.3333333201222213
+      ],
+      "weights_after": [
+        0.1431639382994425,
+        0.157045338693763,
+        0.043068982405998435,
+        0.424107565032714,
+        0.23261417556808203
+      ],
+      "nodes": [
+        1073,
+        1074,
+        1075,
+        1103,
+        1104
+      ],
+      "minimum_weight": 0.043068982405998435,
+      "path": "D:\\my_Works\\Gears\\v020-closure-run\\m37\\physics_controls\\P03_d18_moment.inp",
+      "unchanged_outside_CLOAD": true
+    }
+  ],
+  "source_sha256": {
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.inp": "1ec34bbbba85bd00f43c1a12b25abebbb21e67790de6633a728c18b5f928fca6",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.meta.json": "5f56b4e0551350769df2beb6ede93b5160c17c1fcc13e4ad15bafd5c554c11cc",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.dat": "bd7bc53904951047bfd263677ec4bd9671c15e2e212e8d2f5d87ff527cae2e58",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P08_d18.record.json": "ab341308c93249710d88129218ac21ff4cbe922c1433af739b93cb31cebc0557",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.inp": "a8b16b3f79a594d3c23d646ad7984abc159a099aa23ba1e1c8a6e0735c150f7c",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.meta.json": "1411998165cfa52fceec73c1c2709f504839dbc41942c838692bb78dd528bff0",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.dat": "216a40a7b35eeaa715df1c1d588d52d8e477ea8ce8933e4be3fb5c857f1856cb",
+    "D:\\my_Works\\Gears\\v020-closure-run\\m37\\matrix\\L2_P03_d18.record.json": "b78a11d33b1f56b4268874b6ba542bbb204f901ae126389ad65f010ceb3f02cb"
+  }
+}

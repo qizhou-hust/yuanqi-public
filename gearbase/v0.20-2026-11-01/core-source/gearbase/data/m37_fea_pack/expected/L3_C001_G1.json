@@ -1,0 +1,357 @@
+{
+ "schema": "m37.expected/v1",
+ "case_id": "L3_C001_G1",
+ "model_sha256": "459ba29bc3195e1e285c95810c6a414934f3c52380b28e4fc664d3a60846e822",
+ "nominal_load": "KA=KV=KHβ=KHα=Kγ=1",
+ "values": {
+  "sigma_H0": {
+   "value": 536.3277226619417,
+   "unit": "MPa",
+   "source": "gearbase pit.sigma_H0（ISO 6336-2:2019，含 Z_eps）",
+   "formula_chain": [
+    {
+     "depth": 0,
+     "name": "sigma_H0",
+     "value": 536.3277226619417,
+     "unit": "MPa",
+     "id": "pit.sigma_H0",
+     "ref": "ISO 6336-2:2019 名义接触应力"
+    },
+    {
+     "depth": 1,
+     "name": "F_t",
+     "value": 1250.0,
+     "unit": "N",
+     "id": "load.F_t",
+     "ref": "ISO 6336-1:2019 名义切向力"
+    },
+    {
+     "depth": 2,
+     "name": "T_1",
+     "value": 25.0,
+     "unit": "N*m",
+     "input": true
+    },
+    {
+     "depth": 2,
+     "name": "d_1",
+     "value": 40.0,
+     "unit": "mm",
+     "id": "geo.d.1",
+     "ref": "ISO 21771:2007 分度圆直径"
+    },
+    {
+     "depth": 1,
+     "name": "Z_E",
+     "value": 189.8117004375665,
+     "unit": "sqrt(MPa)",
+     "id": "pit.Z_E",
+     "ref": "ISO 6336-2:2019 弹性系数（同材料）"
+    },
+    {
+     "depth": 2,
+     "name": "E",
+     "value": 206000.0,
+     "unit": "MPa",
+     "input": true
+    },
+    {
+     "depth": 2,
+     "name": "nu",
+     "value": 0.3,
+     "unit": "1",
+     "input": true
+    },
+    {
+     "depth": 1,
+     "name": "Z_H",
+     "value": 2.4945731713945873,
+     "unit": "1",
+     "id": "pit.Z_H",
+     "ref": "ISO 6336-2:2019 节点区域系数"
+    },
+    {
+     "depth": 2,
+     "name": "alpha_t",
+     "value": 0.3490658503988659,
+     "unit": "rad",
+     "id": "geo.alpha_t",
+     "ref": "ISO 21771:2007 端面压力角"
+    },
+    {
+     "depth": 2,
+     "name": "alpha_wt",
+     "value": 0.34906585039886584,
+     "unit": "rad",
+     "id": "geo.alpha_wt",
+     "ref": "ISO 21771:2007 无侧隙啮合方程（变位求工作压力角）"
+    },
+    {
+     "depth": 2,
+     "name": "beta_b",
+     "value": 0.0,
+     "unit": "rad",
+     "id": "geo.beta_b",
+     "ref": "ISO 21771:2007 基圆螺旋角"
+    },
+    {
+     "depth": 1,
+     "name": "Z_beta",
+     "value": 1.0,
+     "unit": "1",
+     "id": "pit.Z_beta",
+     "ref": "ISO 6336-2:2019 螺旋角系数"
+    },
+    {
+     "depth": 1,
+     "name": "Z_eps",
+     "value": 0.8898235025258051,
+     "unit": "1",
+     "id": "pit.Z_eps",
+     "ref": "ISO 6336-2:2019 重合度系数"
+    },
+    {
+     "depth": 2,
+     "name": "eps_alpha",
+     "value": 1.6246424030581257,
+     "unit": "1",
+     "id": "geo.eps_alpha",
+     "ref": "ISO 21771:2007 端面重合度"
+    },
+    {
+     "depth": 2,
+     "name": "eps_beta",
+     "value": 0.0,
+     "unit": "1",
+     "id": "geo.eps_beta",
+     "ref": "ISO 21771:2007 纵向重合度"
+    },
+    {
+     "depth": 1,
+     "name": "u",
+     "value": 1.8,
+     "unit": "1",
+     "id": "geo.u",
+     "ref": "ISO 21771:2007 齿数比"
+    }
+   ]
+  },
+  "sigma_H_C_hertz": {
+   "value": 602.7349481549439,
+   "unit": "MPa",
+   "source": "σH0/Zε = Z_H·Z_E·√(Ft/(d1·b)·(u+1)/u)：节点 C 单齿对全载 Hertz 峰值（主比较量）"
+  },
+  "Z_eps": {
+   "value": 0.8898235025258051,
+   "unit": "1",
+   "source": "gearbase pit.Z_eps"
+  },
+  "Z_B": {
+   "value": 1.0572245738784967,
+   "unit": "1",
+   "source": "gearbase pit.Z_B（信息）"
+  },
+  "eps_alpha": {
+   "value": 1.6246424030581257,
+   "unit": "1",
+   "source": "gearbase geo.eps_alpha"
+  },
+  "F_t": {
+   "value": 1250.0,
+   "unit": "N",
+   "source": "gearbase load.F_t = 2T1/d1"
+  },
+  "T1_per_b": {
+   "value": 833.3333333333334,
+   "unit": "N*mm/mm",
+   "source": "T1/b（2D 单位厚度模型施加的扭矩）"
+  },
+  "Fn_per_b": {
+   "value": 44.340740519829666,
+   "unit": "N/mm",
+   "source": "T1/(rb1·b)"
+  },
+  "hertz_half_width_C_mm": {
+   "value": 0.0468335081991751,
+   "unit": "mm",
+   "source": "平面应变 Hertz：a = √(4·Fn/b·Rred/(π·E*))，Rred 取节点处两轮曲率半径"
+  },
+  "c_th": {
+   "value": 16.085014664171702,
+   "unit": "N/(mm*um)",
+   "source": "gearbase dyn.c_th = 1/q'（ISO 6336-1:2019 9.3 式(83)(84)）",
+   "formula_chain": [
+    {
+     "depth": 0,
+     "name": "c_th",
+     "value": 16.085014664171702,
+     "unit": "N/(mm*um)",
+     "id": "dyn.c_th",
+     "ref": "ISO 6336-1:2019 9.3 式(83) 理论单齿刚度 c'th = 1/q'"
+    },
+    {
+     "depth": 1,
+     "name": "c_unit",
+     "value": 1.0,
+     "unit": "N/(mm*um)",
+     "input": true
+    },
+    {
+     "depth": 1,
+     "name": "q_s",
+     "value": 0.062169666666666665,
+     "unit": "1",
+     "id": "dyn.q_s",
+     "ref": "ISO 6336-1:2019 9.3 式(84) 最小柔度 q'（数值以 mm·µm/N 计，量纲由 c_unit 承担）"
+    },
+    {
+     "depth": 2,
+     "name": "x_1",
+     "value": 0.0,
+     "unit": "1",
+     "input": true
+    },
+    {
+     "depth": 2,
+     "name": "x_2",
+     "value": 0.0,
+     "unit": "1",
+     "input": true
+    },
+    {
+     "depth": 2,
+     "name": "zn_c_1",
+     "value": 20.0,
+     "unit": "1",
+     "id": "dyn.zn_c.1",
+     "ref": "ISO 6336-1:2019 9.3 式(81) 刚度计算用当量齿数 z/cos³β"
+    },
+    {
+     "depth": 2,
+     "name": "zn_c_2",
+     "value": 36.0,
+     "unit": "1",
+     "id": "dyn.zn_c.2",
+     "ref": "ISO 6336-1:2019 9.3 式(81) 刚度计算用当量齿数 z/cos³β"
+    }
+   ]
+  },
+  "C_B": {
+   "value": 0.975,
+   "unit": "1",
+   "source": "gearbase dyn.C_B（ISO 6336-1:2019 式(88)(89)）"
+  },
+  "c_prime_th_CB": {
+   "value": 15.682889297567408,
+   "unit": "N/(mm*um)",
+   "source": "c'th·C_B·C_R（C_R=1，不含 C_M=0.8 与低载系数）：FE 理想几何主比较量"
+  },
+  "c_prime_ISO": {
+   "value": 10.080063162262865,
+   "unit": "N/(mm*um)",
+   "source": "gearbase dyn.c_s = c'th·0.8·C_R·C_B·cosβ·E/E_St·(w/100)^0.25（信息）",
+   "formula_chain": [
+    {
+     "depth": 0,
+     "name": "c_s",
+     "value": 10.080063162262865,
+     "unit": "N/(mm*um)",
+     "id": "dyn.c_s",
+     "ref": "ISO 6336-1:2019 9.3 式(82)(85)(90)-(92) 单齿刚度 c' = c'th·C_M·C_R·C_B·cosβ，C_M=0.8；同材料时 2E1E2/(E1+E2)=E；载荷 <100 N/mm 时乘 (载荷/100)^0.25"
+    },
+    {
+     "depth": 1,
+     "name": "C_B",
+     "value": 0.975,
+     "unit": "1",
+     "id": "dyn.C_B",
+     "ref": "ISO 6336-1:2019 9.3 式(88)(89) 基本齿条系数 C_B（两轮同刀具，均值即本值）"
+    },
+    {
+     "depth": 1,
+     "name": "C_R",
+     "value": 1.0,
+     "unit": "1",
+     "input": true
+    },
+    {
+     "depth": 1,
+     "name": "E",
+     "value": 206000.0,
+     "unit": "MPa",
+     "input": true
+    },
+    {
+     "depth": 1,
+     "name": "E_St",
+     "value": 206000.0,
+     "unit": "MPa",
+     "input": true
+    },
+    {
+     "depth": 1,
+     "name": "beta",
+     "value": 0.0,
+     "unit": "deg",
+     "input": true
+    },
+    {
+     "depth": 1,
+     "name": "c_th",
+     "value": 16.085014664171702,
+     "unit": "N/(mm*um)",
+     "id": "dyn.c_th",
+     "ref": "ISO 6336-1:2019 9.3 式(83) 理论单齿刚度 c'th = 1/q'"
+    },
+    {
+     "depth": 1,
+     "name": "line_load",
+     "value": 41.666666666666664,
+     "unit": "N/mm",
+     "id": "dyn.line_load",
+     "ref": "ISO 6336-1:2019 6.5 单位齿宽载荷 F_t·K_A·K_γ/b"
+    },
+    {
+     "depth": 1,
+     "name": "w_ref",
+     "value": 100.0,
+     "unit": "N/mm",
+     "input": true
+    }
+   ]
+  },
+  "c_gamma_alpha_th": {
+   "value": 23.03003754086271,
+   "unit": "N/(mm*um)",
+   "source": "c'th·C_B·(0.75εα+0.25)：主比较量"
+  },
+  "c_gamma_alpha_ISO": {
+   "value": 14.802389319753042,
+   "unit": "N/(mm*um)",
+   "source": "gearbase dyn.c_gamma_alpha（信息）"
+  },
+  "line_load": {
+   "value": 41.666666666666664,
+   "unit": "N/mm",
+   "source": "Ft·KA·Kγ/b，K=1"
+  }
+ },
+ "notes": [
+  "FE 用齿厚减薄 Asn=-0.02m 只为给非工作齿面留侧隙；ISO 值按名义变位（差异 <0.1%）",
+  "σH 比较：节点 C 处单对齿承全载，FE 峰值应与 Hertz 值（Zε=1）比；FE/σH0（含 Zε）仅作信息",
+  "c' 比较：FE 是理想几何、无误差，主比较对象为 c'th·C_B（不含经验系数 C_M=0.8 与 (w/100)^0.25）"
+ ],
+ "provenance": {
+  "generator": "fea-pack/ingest/make_expected.py",
+  "gearbase_version": "0.9",
+  "gearmath_formulas_py_sha256": "02727f963b025e4fc0f7d43f868888b897b1d62e814b3c99c514fddd9115411f",
+  "editions": {
+   "ISO 21771": "2007",
+   "ISO 6336-1": "2019",
+   "ISO 6336-2": "2019",
+   "ISO 6336-3": "2019"
+  },
+  "generated_utc": "2026-10-29T19:37:37Z"
+ },
+ "case_sha256": "eb51523e854d254629f402e8956343ebaa5cf81d92f436f5e37973cac8ee5d77"
+}

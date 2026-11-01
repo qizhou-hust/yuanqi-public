@@ -1,0 +1,72 @@
+{
+  "schema": "gearbase.package-review/1",
+  "reviewed_utc": "2026-11-01T10:51:32.205037+00:00",
+  "packager_sha256": "de1c63ac94d9dfd2d3a9bda29518ae2f1354cd3b99e8afc420515f8bc3689261",
+  "packages_json_sha256": "8b0874a507034375a2b6c8ea7092e07d18a6b0158e45d069bbc2666ab2c88e0a",
+  "archives": {
+    "full": {
+      "path": "D:\\my_Works\\Gears\\deliverables\\gearbase-v0.20.zip",
+      "sha256": "e5272ec371b0a4811c9efef9767326ddfaba7ba8458c99fadf74ea98357081ae",
+      "member_count": 3496,
+      "manifest_count": 3494,
+      "checks": {
+        "outer_sha_matches": true,
+        "bytes_match": true,
+        "manifest_entries_match": true,
+        "no_duplicates": true,
+        "manifest_exact_members": true,
+        "manifest_hashes_match": true
+      }
+    },
+    "public": {
+      "path": "D:\\my_Works\\Gears\\deliverables\\gearbase-v0.20-public-evidence.zip",
+      "sha256": "4b479568bfca70b4cd79f7f2f99d2f68446e34ad8bfaebe602d15536d7a1b107",
+      "member_count": 876,
+      "manifest_count": 874,
+      "checks": {
+        "outer_sha_matches": true,
+        "bytes_match": true,
+        "manifest_entries_match": true,
+        "no_duplicates": true,
+        "manifest_exact_members": true,
+        "manifest_hashes_match": true,
+        "public_exclusions": true,
+        "raw_matrix_retained": true,
+        "scoped_M33_and_failed_M37": true,
+        "private_replay_limit_explicit": true
+      },
+      "forbidden_paths": [],
+      "forbidden_binary_signatures": [],
+      "nested_archives": [
+        {
+          "path": "evidence/m37/matrix-raw.zip",
+          "members": 253,
+          "forbidden_members": []
+        },
+        {
+          "path": "evidence/m37/p01-raw.zip",
+          "members": 16,
+          "forbidden_members": []
+        }
+      ],
+      "M33_scope": {
+        "passed": true,
+        "scope": "example7/8_geometry_user_identified",
+        "full_E4": false,
+        "original_2_of_6_reconstructed": false,
+        "basis": "v0.20 用户指认例7/8八条几何差异；历史2/6身份未复原，不替代完整E4或全部齿轮族；当前模型8/8相对误差≤1%且重放/来源哈希有效，最大0.00475106%；硬度、fsh0、原表输入身份仍属E4开放项",
+        "max_relative_error": 4.7510558934123103e-05
+      },
+      "M37_npass": 9,
+      "M37_result": "failed",
+      "readme": "Public v0.20 core source, actual FE raw evidence, source-bound reports and blank engineer form. Private standards scans/numerical data, commercial natives and executable binaries excluded. Alone does not reproduce all private regression or M33 model data. Read evidence/CLOSURE.md. NumericFE qualification not granted.\n"
+    }
+  },
+  "passed": true,
+  "material_errors": [],
+  "limitations": [
+    "Checks cover current ZIP members, bytes, nested FE ZIPs and manifests, not later Git-source-tree or hosted-asset upload integrity.",
+    "Published formula implementations and authored derived comparison outputs remain included; private standard data directories and commercial native files are excluded from public archive.",
+    "This review is an external sidecar and is not inserted into the already hashed ZIPs."
+  ]
+}

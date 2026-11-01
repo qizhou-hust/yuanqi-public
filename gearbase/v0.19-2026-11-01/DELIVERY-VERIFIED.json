@@ -1,0 +1,44 @@
+{
+  "schema": "gearbase.v019-delivery-verified/1",
+  "verified_utc": "2026-11-01T09:33:57.196401+00:00",
+  "passed": true,
+  "functional_ci_commit": "d1b8f1ae7715a65bc83a8981a82adc4677513e5e",
+  "ci_run_url": "https://github.com/qizhou-hust/yuanqi-private/actions/runs/41292882007",
+  "hosted_jobs_passed": 4,
+  "source_publication_commit": "f0edc4b0bf91b47f6e6f7b0b0b844d3b575df501",
+  "anonymous_zip_same_name_sha256_and_base64_verified": true,
+  "source_files_anonymous_byte_check": [
+    "nearest_feasible_edit.py",
+    "nitrided_factors.py",
+    "factor_recompute.py",
+    "m36_identity.py"
+  ],
+  "packages": {
+    "full": {
+      "filename": "gearbase-v0.19.zip",
+      "sha256": "b80ca39e5659df3822443c695f4e368936138fa2ba177c544e9f302d08e78eef",
+      "bytes": 74577177,
+      "manifest_files": 2880
+    },
+    "public": {
+      "filename": "gearbase-v0.19-public-evidence.zip",
+      "sha256": "9768f5a3a302c253bf170709c102f5774860beae129d1e53d9da997e731d725a",
+      "bytes": 1595201,
+      "manifest_files": 257
+    }
+  },
+  "release_url": "https://github.com/qizhou-hust/yuanqi-public/releases/tag/gearbase-v019-2026-11-01",
+  "public_zip_url": "https://github.com/qizhou-hust/yuanqi-public/releases/download/gearbase-v019-2026-11-01/gearbase-v0.19-public-evidence.zip",
+  "original_81_files_unchanged": true,
+  "original_kernel_python_files_unchanged": 18,
+  "executable_freeze_files_unchanged": 256,
+  "post_CI_only_docs_outputs_checksums_changed": true,
+  "local_git_clean": true,
+  "private_main_unchanged": true,
+  "A11_closed": true,
+  "new_whole_milestone_closed": false,
+  "Claude_client": "deferred_by_user",
+  "full_beam_fsh": "partial_not_computed",
+  "public_private_split": "Public excludes standard scans/private numerical corpus/native commercial files/binaries; complete local ZIP includes new reports and native run artifacts."
+}
+

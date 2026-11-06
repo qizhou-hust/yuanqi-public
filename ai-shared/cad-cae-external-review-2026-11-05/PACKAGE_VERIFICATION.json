@@ -1,0 +1,213 @@
+{
+  "scope": "Package integrity and bounded deterministic fresh-unzip checks; no new stochastic optimization",
+  "archives": [
+    {
+      "name": "00_START_HERE.zip",
+      "bytes": 1155366,
+      "sha256": "2a9a55f14a93de4150b593266ae89d48e0b2efc79e7374deb101f39275257fe8"
+    },
+    {
+      "name": "01_DOCS_EVIDENCE_01.zip",
+      "bytes": 3859375,
+      "sha256": "56fa28df562cc7f65c092b6fd07d359b9aa3c04b2e8bee257014a58c9e639cb3"
+    },
+    {
+      "name": "02_ORIGINALS_01.zip",
+      "bytes": 13128693,
+      "sha256": "ebb8a0c23f1b3c2b9b74cf309400261e41c76cb663a9cefa5eb0f6d847e00f11"
+    },
+    {
+      "name": "02_ORIGINALS_02.zip",
+      "bytes": 15462142,
+      "sha256": "e2d926486bf7b8737097664569c7392148a0d5d066473f5716125f530c1178b4"
+    },
+    {
+      "name": "02_ORIGINALS_03.zip",
+      "bytes": 16634491,
+      "sha256": "3ccb56c55214ccecd9d61b70203e2b139bacb55cdfc66cc44ae0afdcbc1f46cd"
+    },
+    {
+      "name": "02_ORIGINALS_04.zip",
+      "bytes": 6857799,
+      "sha256": "4376ccf365cd84ff8d51d2b30720990401cc5c2805e631559cb8a51286d46dba"
+    },
+    {
+      "name": "02_ORIGINALS_05.zip",
+      "bytes": 16949528,
+      "sha256": "5c6285d39be1913047444d03c83ab574d59a8fa9216b6202b9050d82e251ca52"
+    },
+    {
+      "name": "02_ORIGINALS_06.zip",
+      "bytes": 17005428,
+      "sha256": "7440c035b608218942a33c48b098e29a15923b69de468dde7fc3637ad13faafa"
+    },
+    {
+      "name": "02_ORIGINALS_07.zip",
+      "bytes": 17005411,
+      "sha256": "67916c5ae3b7cdd3aed07fe382b3c6fffa558d7e767b82edb8b438b849d7f37b"
+    },
+    {
+      "name": "02_ORIGINALS_08.zip",
+      "bytes": 16629885,
+      "sha256": "a573f2bd1b88ab50988bf40528891e5420eaf0ed465e6ed2120b39b454c28148"
+    },
+    {
+      "name": "02_ORIGINALS_09.zip",
+      "bytes": 16906326,
+      "sha256": "5aa199b67fca6e4577e8ffbceb0db7492bf7cd374197cd4e39d99952c538402a"
+    },
+    {
+      "name": "02_ORIGINALS_10.zip",
+      "bytes": 16949528,
+      "sha256": "c35e05ced18072339faa65b22df66ba43b4cbb2b739945d5898b8e9d840dd40d"
+    },
+    {
+      "name": "02_ORIGINALS_11.zip",
+      "bytes": 17005428,
+      "sha256": "c1c50fb69819b7cf017e59622a40eb78e8b28a7d15e0f73711a0c81403a04c84"
+    },
+    {
+      "name": "02_ORIGINALS_12.zip",
+      "bytes": 17005411,
+      "sha256": "a87ae9962a0985b7b54f346c9e2361091d28eb10f8ef490b9b952f03a0a72cc2"
+    },
+    {
+      "name": "02_ORIGINALS_13.zip",
+      "bytes": 4315760,
+      "sha256": "53ea376f075868a6ed32189e1be5838a63ece7f0bedcd07621c3d235069125a5"
+    },
+    {
+      "name": "02_ORIGINALS_14.zip",
+      "bytes": 16636936,
+      "sha256": "ecbc5026ced436578b532eede3862a0abcdab765c43859b99cb8eba710ff8f8d"
+    },
+    {
+      "name": "02_ORIGINALS_15.zip",
+      "bytes": 7072968,
+      "sha256": "606f617949f6e4508eeea1db2a96c1fd6971ad591dd4f92b1ab1f3d8f4b18163"
+    },
+    {
+      "name": "03_WEB_B8_01.zip",
+      "bytes": 11835775,
+      "sha256": "3ed818f108c0823025f0d42be9808dc15cac9db1ecc6aa84f824579245f40d21"
+    },
+    {
+      "name": "04_WEB_BASELINES_01.zip",
+      "bytes": 7823445,
+      "sha256": "f30042fd28855b516f1d0dc1ff7c7c107ee4a3723efd14baa5d4e9525238c7b2"
+    },
+    {
+      "name": "05_CORE_OPT_GUI_01.zip",
+      "bytes": 3884173,
+      "sha256": "207bfa1734bbb80772f7f455174a5d915717389a1f420cd45f8003d895bf62dc"
+    },
+    {
+      "name": "06_SYNTHESIS_CAM_01.zip",
+      "bytes": 18795467,
+      "sha256": "6dc1be7f621598a95c45fb323c81ead0dc7830e0921c26526a1c954cb8618496"
+    },
+    {
+      "name": "06_SYNTHESIS_CAM_02.zip",
+      "bytes": 3168586,
+      "sha256": "0b006b0b47aa8918f19aa8f093b2d541e8f615755ac810a406313b8f1ecaf18d"
+    }
+  ],
+  "checks": [
+    {
+      "name": "restore",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "pass": true,
+      "seconds": 129.625,
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "D:\\my_Works\\自研CAD-CAE系统\\外部独立审查包_20261105\\解包并校验.py",
+        "--output",
+        "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\REVIEW_UNPACKED"
+      ],
+      "log": "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\restore.log"
+    },
+    {
+      "name": "portable_fast",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "pass": true,
+      "seconds": 1.3279999999940628,
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\REVIEW_UNPACKED\\review\\REPLAY_REVIEW.py",
+        "--mode",
+        "fast"
+      ],
+      "log": "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\portable_fast.log"
+    },
+    {
+      "name": "torque_fresh",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "pass": true,
+      "seconds": 4.452999999994063,
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\REVIEW_UNPACKED\\review\\REPLAY_REVIEW.py",
+        "--mode",
+        "torque"
+      ],
+      "log": "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\torque_fresh.log"
+    },
+    {
+      "name": "version_probe_fresh",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "pass": true,
+      "seconds": 0.9070000000065193,
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\REVIEW_UNPACKED\\tools\\core_profile_probe.py"
+      ],
+      "log": "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\version_probe_fresh.log"
+    },
+    {
+      "name": "formal_r1_selfcheck_fresh",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "pass": true,
+      "seconds": 1.764999999999418,
+      "command": [
+        "D:\\my_Works\\py_Works\\_linkage_v2_formal_env2\\Scripts\\python.exe",
+        "-B",
+        "selfcheck.py"
+      ],
+      "log": "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\formal_r1_selfcheck_fresh.log"
+    }
+  ],
+  "fresh_torque": {
+    "AB_Nmm": 4919.652458696289,
+    "GF_Nmm": 2677.734955670278,
+    "scope": "Ideal100N, AB document override and GF source configuration separately replayed"
+  },
+  "negative_missing_archive": {
+    "pass": true,
+    "exit_code": 1,
+    "message": "RESTORE FAILED: FileNotFoundError('Missing archive: 01_DOCS_EVIDENCE_01.zip')"
+  },
+  "status": "PASS",
+  "logical_files": 7698,
+  "unique_objects": 4087,
+  "deduplicated_paths": 3611,
+  "logical_bytes": 663165327,
+  "unique_bytes": 480590922,
+  "zip_count": 22,
+  "maximum_zip_bytes": 18795467,
+  "all_archives_strictly_below_19million": true,
+  "fresh_restored_directory": "D:\\my_Works\\自研CAD-CAE系统\\linkage-integration-blueprint-20261105\\tmp\\external_review_fresh_033421\\REVIEW_UNPACKED",
+  "limitations": [
+    "Original corrupted fusion ZIPs preserved byte-exact and not repaired",
+    "Not all3751 historical original records are included;36 selected materials are included",
+    "Third-party runtimes/browser binaries/venvs/caches are excluded",
+    "Fresh checks do not certify full platform or re-run historical stochastic benchmarks"
+  ],
+  "payload_manifest_sha256": "e7a191632b6b0341dad8faed6d08ef5ef9239c10462ccbefa419ee89689472f9",
+  "evidence_attachment_note": "验证顺序说明：\n先对22个ZIP做CRC/大小/哈希校验，在全新目录还原7698逻辑文件，做便携完整性检查、扭矩、版本差异、R1自检及缺包负控制。\n随后只向00入口包补入本目录验证日志，没有改动PACKAGE_MANIFEST、解包脚本、任何数据对象或源工程内容。\n补日志后重新校验00的CRC与逻辑manifest身份，更新外部SHA256SUMS/PACKAGES和最终验证报告。\n因此本日志内00的初始哈希属于补入证据之前的身份；最终运输哈希以根目录SHA256SUMS.txt为准。\nUSER_REQUEST.md为用户需求整理，不是逐字聊天导出；三份原始技术附件和全部materials原件按字节保留。\n解包需Python3.11+，推荐Python3.12。历史程序依赖另见requirements-audit.txt。\n",
+  "total_zip_bytes": 266087921
+}

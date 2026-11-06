@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>外部独立审查包</title><style>body{max-width:1000px;margin:40px auto;padding:20px;font:16px/1.8 Microsoft YaHei,sans-serif}td{padding:7px 20px;border-bottom:1px solid #ddd}a{color:#076675}pre{white-space:pre-wrap;background:#eef4f5;padding:20px}</style><h1>外部独立审查包</h1><p>22个ZIP，每包严格小于19,000,000字节。<a href="审查需求.md">审查需求</a> · <a href="解包并校验.py">一键解包校验脚本</a> · <a href="SHA256SUMS.txt">运输SHA256</a> · <a href="PACKAGE_VERIFICATION.json">新鲜验证结果</a></p><p>完整验证日志在00包的review/package_validation/。原始精选资料、核心代码和新产物按相对路径完整还原。</p><pre># 从这里开始
+这是外部独立审查资料包，不是新产品发布。
+
+1. 把全部ZIP和“解包并校验.py”放同一目录。
+2. 运行：python 解包并校验.py --output REVIEW_UNPACKED
+   只用Python标准库，无需7-Zip，也不需要手工合并分卷。
+3. 该脚本核对每包SHA256、片段/原文件SHA256并还原全部逻辑路径。
+4. 打开 REVIEW_UNPACKED/review/REVIEW_REQUEST.md，按建议顺序审查。
+5. 如需先看设计者意图，阅读三页讲清楚.html；详细技术依据为整合蓝图.html。先独立判断再对照作者报告。
+6. 完整性：python REVIEW_UNPACKED/review/REPLAY_REVIEW.py --mode fast
+7. 固定数学/扭矩/产品重放分别用 --mode core / torque / web。依赖见requirements-audit.txt；core/torque另需JAX。
+不要直接使用作者的runtime_environment.local.json。可给便携入口加 --python 你的解释器。
+每包严格小于19,000,000字节，19MB按十进制保守控制。01至06是数据对象包，必须整组保留；00包含清单/需求/工具。
+去重采用内容哈希，不能仅解压某个数据包就运行工程；应使用一键还原脚本。
+已有报告、已知失败和损坏原件均保留，完整性PASS不等于工程能力PASS。
+
+解包推荐Python 3.12，最低Python 3.11。review/USER_REQUEST.md是用户需求的整理记录，并非逐字聊天导出；用户原始三份技术文件按原始字节保留。根目录审查需求.md与00包内需求相同，便于直接阅读。
+</pre><table><tr><td><a href="00_START_HERE.zip">00_START_HERE.zip</a></td><td>1.155 MB</td></tr><tr><td><a href="01_DOCS_EVIDENCE_01.zip">01_DOCS_EVIDENCE_01.zip</a></td><td>3.859 MB</td></tr><tr><td><a href="02_ORIGINALS_01.zip">02_ORIGINALS_01.zip</a></td><td>13.129 MB</td></tr><tr><td><a href="02_ORIGINALS_02.zip">02_ORIGINALS_02.zip</a></td><td>15.462 MB</td></tr><tr><td><a href="02_ORIGINALS_03.zip">02_ORIGINALS_03.zip</a></td><td>16.634 MB</td></tr><tr><td><a href="02_ORIGINALS_04.zip">02_ORIGINALS_04.zip</a></td><td>6.858 MB</td></tr><tr><td><a href="02_ORIGINALS_05.zip">02_ORIGINALS_05.zip</a></td><td>16.950 MB</td></tr><tr><td><a href="02_ORIGINALS_06.zip">02_ORIGINALS_06.zip</a></td><td>17.005 MB</td></tr><tr><td><a href="02_ORIGINALS_07.zip">02_ORIGINALS_07.zip</a></td><td>17.005 MB</td></tr><tr><td><a href="02_ORIGINALS_08.zip">02_ORIGINALS_08.zip</a></td><td>16.630 MB</td></tr><tr><td><a href="02_ORIGINALS_09.zip">02_ORIGINALS_09.zip</a></td><td>16.906 MB</td></tr><tr><td><a href="02_ORIGINALS_10.zip">02_ORIGINALS_10.zip</a></td><td>16.950 MB</td></tr><tr><td><a href="02_ORIGINALS_11.zip">02_ORIGINALS_11.zip</a></td><td>17.005 MB</td></tr><tr><td><a href="02_ORIGINALS_12.zip">02_ORIGINALS_12.zip</a></td><td>17.005 MB</td></tr><tr><td><a href="02_ORIGINALS_13.zip">02_ORIGINALS_13.zip</a></td><td>4.316 MB</td></tr><tr><td><a href="02_ORIGINALS_14.zip">02_ORIGINALS_14.zip</a></td><td>16.637 MB</td></tr><tr><td><a href="02_ORIGINALS_15.zip">02_ORIGINALS_15.zip</a></td><td>7.073 MB</td></tr><tr><td><a href="03_WEB_B8_01.zip">03_WEB_B8_01.zip</a></td><td>11.836 MB</td></tr><tr><td><a href="04_WEB_BASELINES_01.zip">04_WEB_BASELINES_01.zip</a></td><td>7.823 MB</td></tr><tr><td><a href="05_CORE_OPT_GUI_01.zip">05_CORE_OPT_GUI_01.zip</a></td><td>3.884 MB</td></tr><tr><td><a href="06_SYNTHESIS_CAM_01.zip">06_SYNTHESIS_CAM_01.zip</a></td><td>18.795 MB</td></tr><tr><td><a href="06_SYNTHESIS_CAM_02.zip">06_SYNTHESIS_CAM_02.zip</a></td><td>3.169 MB</td></tr></table></html>
